@@ -103,7 +103,7 @@
             </p>
 
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                <!-- Botón RoleMIAster -->
+                <!-- Botón RoleMIAster (Primario) -->
                 <a href="https://script.google.com/macros/s/AKfycbz14uDk3DPUKrtK_IQ6jHRyTnQopRM0q6DX5Eb1GTZg0iPFboz8da2x5gmALGvpF9NI/exec"
                     style="
                     display: flex;
@@ -113,40 +113,41 @@
                     padding: 12px 30px;
                     font-family: 'Rajdhani', sans-serif;
                     font-weight: 700;
-                    font-size: 1.2rem;
+                    font-size: 1.3rem;
                     text-decoration: none;
                     border-radius: 4px;
                     text-transform: uppercase;
                     transition: transform 0.2s, box-shadow 0.2s;
-                    box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
+                    box-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+                    border: 2px solid var(--primary);
                    "
-                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 25px rgba(0, 210, 255, 0.6)';"
-                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 15px rgba(0, 210, 255, 0.3)';">
-                    <img src="assets/rolemiaster_logo.png" alt="Logo RoleMIAster" style="height: 30px; margin-right: 10px;">
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 30px rgba(0, 210, 255, 0.8)';"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 20px rgba(0, 210, 255, 0.5)';">
+                    <img src="assets/rolemiaster_logo.png" alt="Logo RoleMIAster" style="height: 35px; margin-right: 12px;">
                     Entrar en Rolemiaster
                 </a>
 
-                <!-- Botón EmulAItor -->
+                <!-- Botón EmulAItor (Secundario/Discreto) -->
                 <a href="https://play.google.com/store/apps/details?id=com.rolemiaster.emulaitor&pcampaignid=web_share"
                     style="
                     display: flex;
                     align-items: center;
-                    background-color: var(--secondary);
-                    color: #fff;
-                    padding: 12px 30px;
+                    background-color: rgba(255, 255, 255, 0.05);
+                    color: var(--text-muted);
+                    padding: 10px 20px;
                     font-family: 'Rajdhani', sans-serif;
-                    font-weight: 700;
-                    font-size: 1.2rem;
+                    font-weight: 600;
+                    font-size: 1rem;
                     text-decoration: none;
                     border-radius: 4px;
                     text-transform: uppercase;
-                    transition: transform 0.2s, box-shadow 0.2s;
-                    box-shadow: 0 0 15px rgba(255, 0, 85, 0.3);
+                    transition: all 0.2s;
+                    border: 1px solid var(--border);
                    "
-                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 25px rgba(255, 0, 85, 0.6)';"
-                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 15px rgba(255, 0, 85, 0.3)';">
-                    <img src="assets/emulaitor_logo.png" alt="Logo EmulAItor" style="height: 30px; margin-right: 10px;">
-                    Entrar en Emulaitor
+                    onmouseover="this.style.borderColor='var(--text-main)'; this.style.color='var(--text-main)'; this.style.backgroundColor='rgba(255, 255, 255, 0.1)';"
+                    onmouseout="this.style.borderColor='var(--border)'; this.style.color='var(--text-muted)'; this.style.backgroundColor='rgba(255, 255, 255, 0.05)';">
+                    <img src="assets/emulaitor_logo.png" alt="Logo EmulAItor" style="height: 20px; margin-right: 8px; opacity: 0.8;">
+                    Prueba también Emulaitor
                 </a>
             </div>
         </div>
