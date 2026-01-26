@@ -31,9 +31,6 @@
             background-color: var(--bg-dark);
             color: var(--text-main);
             line-height: 1.6;
-            top: 0 !important;
-            /* Force top 0 for Google Translate */
-            position: static !important;
         }
 
         h1,
@@ -126,6 +123,47 @@
             color: var(--primary);
         }
 
+        /* Selectors Group */
+        .selector-group {
+            display: flex;
+            gap: 0;
+            margin-left: 15px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .btn-plat,
+        .btn-lang {
+            background: rgba(0, 0, 0, 0.3);
+            border: none;
+            border-right: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 5px 12px;
+            cursor: pointer;
+            font-family: 'Rajdhani', sans-serif;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .btn-plat:last-child,
+        .btn-lang:last-child {
+            border-right: none;
+        }
+
+        .btn-plat:hover,
+        .btn-lang:hover {
+            color: var(--primary);
+            background: rgba(0, 210, 255, 0.1);
+        }
+
+        .btn-plat.active,
+        .btn-lang.active {
+            background: var(--primary);
+            color: #000;
+            font-weight: bold;
+        }
+
         .container {
             max-width: 900px;
             margin: 100px auto 4rem;
@@ -188,114 +226,6 @@
             background: rgba(255, 0, 85, 0.1);
             border-radius: 8px;
         }
-
-        /* Platform Selector & Translate Styles */
-        .btn-plat {
-            background: transparent;
-            border: 1px solid var(--border);
-            color: var(--text-muted);
-            padding: 5px 10px;
-            cursor: pointer;
-            font-family: 'Rajdhani', sans-serif;
-            transition: all 0.3s;
-        }
-
-        .btn-plat:hover {
-            color: var(--primary);
-            border-color: var(--primary);
-        }
-
-        .btn-plat.active {
-            background: var(--primary);
-            color: #000;
-            font-weight: bold;
-            border-color: var(--primary);
-        }
-
-        /* Google Translate Styling Hack - FINAL FORM V3 */
-        #google_translate_element {
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        /* FORCE HIDE BANNER */
-        .goog-te-banner-frame {
-            display: none !important;
-            visibility: hidden !important;
-            height: 0 !important;
-        }
-
-        body {
-            top: 0px !important;
-            position: static !important;
-        }
-
-        /* Widget Styling */
-        .goog-te-gadget-simple {
-            background-color: transparent !important;
-            border: 1px solid var(--border) !important;
-            padding: 5px 10px !important;
-            border-radius: 4px;
-            font-family: 'Rajdhani', sans-serif !important;
-            font-size: 1rem !important;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: flex !important;
-            align-items: center;
-        }
-
-        .goog-te-gadget-simple:hover {
-            border-color: var(--primary) !important;
-        }
-
-        /* Override Text Colors */
-        .goog-te-gadget-simple a,
-        .goog-te-gadget-simple span,
-        .goog-te-menu-value span {
-            color: var(--text-muted) !important;
-            text-decoration: none !important;
-            font-weight: normal !important;
-        }
-
-        .goog-te-gadget-simple:hover a,
-        .goog-te-gadget-simple:hover span,
-        .goog-te-gadget-simple:hover .goog-te-menu-value span {
-            color: var(--primary) !important;
-        }
-
-        /* Clean up widget content */
-        .goog-te-gadget-icon {
-            display: none !important;
-        }
-
-        .goog-te-menu-value span:first-child {
-            display: block;
-            padding-right: 5px;
-        }
-
-        /* Language Name */
-        .goog-te-menu-value span:nth-child(2) {
-            display: none !important;
-        }
-
-        /* Separator */
-        .goog-te-menu-value span:nth-child(3) {
-            display: none !important;
-        }
-
-        /* 'Translate' text */
-
-        /* Attempt to style the popup (limited by iframe) */
-        .goog-te-menu-frame {
-            top: 60px !important;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
-            border: 1px solid var(--border) !important;
-
-            /* BRICK FIX: Constrain dimensions */
-            max-width: 300px !important;
-            max-height: 400px !important;
-            overflow-y: auto !important;
-        }
     </style>
 </head>
 
@@ -310,13 +240,18 @@
             <a href="index.html">Inicio</a>
             <a href="manual.html">Manual</a>
             <a href="changelog.html" class="active">Changelog</a>
+
             <!-- Platform Selector -->
-            <div class="platform-selector" style="margin-left: 20px; display: flex; gap: 5px;">
+            <div class="selector-group">
                 <button id="btn-pc" class="btn-plat active" onclick="switchPlatform('pc')">PC</button>
                 <button id="btn-android" class="btn-plat" onclick="switchPlatform('android')">Android</button>
             </div>
-            <!-- Google Translate Container -->
-            <div id="google_translate_element" style="margin-left: 20px;"></div>
+
+            <!-- Language Selector -->
+            <div class="selector-group">
+                <button id="btn-es" class="btn-lang active" onclick="switchLanguage('es')">ES</button>
+                <button id="btn-en" class="btn-lang" onclick="switchLanguage('en')">EN</button>
+            </div>
         </div>
     </nav>
 
@@ -327,36 +262,39 @@
         </div>
     </div>
 
-    <!-- Google Translate Script -->
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'es',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false
-            }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript"
-        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
     <script>
         let currentPlatform = 'pc';
+        let currentLang = 'es';
 
         function switchPlatform(plat) {
             currentPlatform = plat;
-            document.querySelectorAll('.btn-plat').forEach(b => b.classList.remove('active'));
-            document.getElementById('btn-' + plat).classList.add('active');
+            updateButtons();
             loadChangelog();
+        }
+
+        function switchLanguage(lang) {
+            currentLang = lang;
+            updateButtons();
+            loadChangelog();
+        }
+
+        function updateButtons() {
+            // Platform Buttons
+            document.querySelectorAll('.btn-plat').forEach(b => b.classList.remove('active'));
+            document.getElementById('btn-' + currentPlatform).classList.add('active');
+
+            // Language Buttons
+            document.querySelectorAll('.btn-lang').forEach(b => b.classList.remove('active'));
+            document.getElementById('btn-' + currentLang).classList.add('active');
         }
 
         function loadChangelog() {
             const contentDiv = document.getElementById('changelog-content');
-            const changelogFile = `changelog_produccion_${currentPlatform}.md`;
+            // Filename format: changelog_produccion_pc_es.md
+            const changelogFile = `changelog_produccion_${currentPlatform}_${currentLang}.md`;
 
-            contentDiv.innerHTML = '<div class="loading">Cargando...</div>';
+            contentDiv.innerHTML = '<div class="loading">Cargando... / Loading...</div>';
 
-            // Configurar Marked
             marked.setOptions({ breaks: true, gfm: true });
 
             fetch(changelogFile + '?t=' + new Date().getTime())
@@ -371,8 +309,8 @@
                     console.error('Error:', error);
                     contentDiv.innerHTML = `
                         <div class="error-msg">
-                            <h3>Error de Carga</h3>
-                            <p>No se encontró el changelog para ${currentPlatform.toUpperCase()}.</p>
+                            <h3>Error de Carga / Load Error</h3>
+                            <p>File not found: ${changelogFile}</p>
                         </div>
                     `;
                 });
@@ -380,22 +318,8 @@
 
         document.addEventListener('DOMContentLoaded', () => {
             loadChangelog();
-
-            // --- GOOGLE TRANSLATE HACKS (JS EDITION) ---
-            const observer = new MutationObserver((mutations) => {
-                const banner = document.querySelector('.goog-te-banner-frame');
-                if (banner) banner.remove();
-
-                if (document.body.style.top !== '0px') {
-                    document.body.style.top = '0px';
-                    document.body.style.position = 'static';
-                }
-            });
-
-            observer.observe(document.body, { attributes: true, childList: true, subtree: true });
         });
     </script>
-
 </body>
 
 </html>
