@@ -289,6 +289,67 @@
             font-weight: bold;
             border-color: var(--primary);
         }
+
+        /* Google Translate Styling Hack - FINAL FORM */
+        #google_translate_element {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        /* HIDE THE ANNOYING TOP BANNER */
+        .goog-te-banner-frame.skiptranslate {
+            display: none !important;
+        }
+
+        body {
+            top: 0px !important;
+        }
+
+        /* Style the 'Select Language' Button */
+        .goog-te-gadget-simple {
+            background-color: transparent !important;
+            border: 1px solid var(--border) !important;
+            padding: 5px 10px !important;
+            border-radius: 4px;
+            font-family: 'Rajdhani', sans-serif !important;
+            font-size: 1rem !important;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .goog-te-gadget-simple:hover {
+            border-color: var(--primary) !important;
+        }
+
+        /* Text Colors inside the widget */
+        .goog-te-gadget-simple a,
+        .goog-te-gadget-simple span,
+        .goog-te-menu-value span {
+            color: var(--text-muted) !important;
+            text-decoration: none !important;
+        }
+
+        .goog-te-gadget-simple:hover a,
+        .goog-te-gadget-simple:hover span,
+        .goog-te-gadget-simple:hover .goog-te-menu-value span {
+            color: var(--primary) !important;
+        }
+
+        /* Hide Google Icon & Separator */
+        .goog-te-gadget-icon {
+            display: none !important;
+        }
+
+        .goog-te-menu-value span:last-child {
+            display: none !important;
+        }
+
+        /* Hide the arrow if possible or separator */
+
+        /* Popup Menu Styling (Hard to override as it's an iframe, but we try) */
+        .goog-te-menu-frame {
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.2) !important;
+        }
     </style>
 
     <div class="doc-container">

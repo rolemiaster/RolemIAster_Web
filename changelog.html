@@ -185,6 +185,92 @@
             background: rgba(255, 0, 85, 0.1);
             border-radius: 8px;
         }
+
+        /* Platform Selector & Translate Styles */
+        .btn-plat {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 5px 10px;
+            cursor: pointer;
+            font-family: 'Rajdhani', sans-serif;
+            transition: all 0.3s;
+        }
+
+        .btn-plat:hover {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .btn-plat.active {
+            background: var(--primary);
+            color: #000;
+            font-weight: bold;
+            border-color: var(--primary);
+        }
+
+        /* Google Translate Styling Hack - FINAL FORM */
+        #google_translate_element {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        /* HIDE THE ANNOYING TOP BANNER */
+        .goog-te-banner-frame.skiptranslate {
+            display: none !important;
+        }
+
+        body {
+            top: 0px !important;
+        }
+
+        /* Style the 'Select Language' Button */
+        .goog-te-gadget-simple {
+            background-color: transparent !important;
+            border: 1px solid var(--border) !important;
+            padding: 5px 10px !important;
+            border-radius: 4px;
+            font-family: 'Rajdhani', sans-serif !important;
+            font-size: 1rem !important;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex !important;
+            align-items: center;
+        }
+
+        .goog-te-gadget-simple:hover {
+            border-color: var(--primary) !important;
+        }
+
+        /* Text Colors inside the widget */
+        .goog-te-gadget-simple a,
+        .goog-te-gadget-simple span,
+        .goog-te-menu-value span {
+            color: var(--text-muted) !important;
+            text-decoration: none !important;
+        }
+
+        .goog-te-gadget-simple:hover a,
+        .goog-te-gadget-simple:hover span,
+        .goog-te-gadget-simple:hover .goog-te-menu-value span {
+            color: var(--primary) !important;
+        }
+
+        /* Hide Google Icon & Separator */
+        .goog-te-gadget-icon {
+            display: none !important;
+        }
+
+        .goog-te-menu-value span:last-child {
+            display: none !important;
+        }
+
+        /* Hide the arrow if possible or separator */
+
+        /* Popup Menu Styling (Hard to override as it's an iframe, but we try) */
+        .goog-te-menu-frame {
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.2) !important;
+        }
     </style>
 </head>
 
@@ -199,6 +285,13 @@
             <a href="index.html">Inicio</a>
             <a href="manual.html">Manual</a>
             <a href="changelog.html" class="active">Changelog</a>
+            <!-- Platform Selector -->
+            <div class="platform-selector" style="margin-left: 20px; display: flex; gap: 5px;">
+                <button id="btn-pc" class="btn-plat active" onclick="switchPlatform('pc')">PC</button>
+                <button id="btn-android" class="btn-plat" onclick="switchPlatform('android')">Android</button>
+            </div>
+            <!-- Google Translate Container -->
+            <div id="google_translate_element" style="margin-left: 20px;"></div>
         </div>
     </nav>
 
@@ -209,24 +302,44 @@
         </div>
     </div>
 
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'es',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        let currentPlatform = 'pc';
+
+        function switchPlatform(plat) {
+            currentPlatform = plat;
+            document.querySelectorAll('.btn-plat').forEach(b => b.classList.remove('active'));
+            document.getElementById('btn-' + plat).classList.add('active');
+            loadChangelog();
+        }
+
+        function loadChangelog() {
             const contentDiv = document.getElementById('changelog-content');
+            const changelogFile = `changelog_produccion_${currentPlatform}.md`;
 
-            // Configurar Marked para que renderice saltos de línea como <br>
-            marked.setOptions({
-                breaks: true,
-                gfm: true
-            });
+            contentDiv.innerHTML = '<div class="loading">Cargando...</div>';
 
-            fetch('changelog_produccion.md?t=' + new Date().getTime()) // Anti-cache
+            // Configurar Marked
+            marked.setOptions({ breaks: true, gfm: true });
+
+            fetch(changelogFile + '?t=' + new Date().getTime())
                 .then(response => {
                     if (!response.ok) throw new Error("No se pudo cargar el archivo de registro.");
                     return response.text();
                 })
                 .then(markdown => {
-                    // Pre-procesamiento opcional si queremos quitar ciertas líneas o headers extraños
-                    // Por ahora renderizamos el markdown tal cual
                     contentDiv.innerHTML = marked.parse(markdown);
                 })
                 .catch(error => {
@@ -234,10 +347,14 @@
                     contentDiv.innerHTML = `
                         <div class="error-msg">
                             <h3>Error de Carga</h3>
-                            <p>No se pudo obtener el historial de cambios.<br>Intenta recargar la página.</p>
+                            <p>No se encontró el changelog para ${currentPlatform.toUpperCase()}.</p>
                         </div>
                     `;
                 });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadChangelog();
         });
     </script>
 
