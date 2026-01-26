@@ -369,6 +369,44 @@
         .card-android .version-features li::before {
             color: #4285f4;
         }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: var(--bg-panel);
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+
+        .dropdown-content a {
+            color: var(--text-main);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: var(--primary);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover>a {
+            color: var(--primary);
+        }
     </style>
 </head>
 
@@ -381,6 +419,15 @@
         </a>
         <div class="nav-links">
             <a onclick="navigate('home')" class="active" data-i18n="nav_home">Inicio</a>
+
+            <div class="dropdown">
+                <a style="cursor: pointer;" data-i18n="nav_docs">Documentación ▼</a>
+                <div class="dropdown-content">
+                    <a href="manual.html" data-i18n="nav_manual">Manual de Usuario</a>
+                    <a href="changelog.html" data-i18n="nav_changelog">Changelog</a>
+                </div>
+            </div>
+
             <a onclick="scrollToFooter()" style="cursor: pointer;" data-i18n="nav_more">Más</a>
             <select class="lang-selector" onchange="changeLanguage(this.value)">
                 <option value="es">ES</option>
@@ -706,6 +753,9 @@
         const translations = {
             es: {
                 nav_home: "Inicio",
+                nav_docs: "Documentación",
+                nav_manual: "Manual de Usuario",
+                nav_changelog: "Changelog",
                 nav_about: "Características",
                 nav_bugs: "Reportar Bug",
                 nav_admin: "Admin",
@@ -770,6 +820,9 @@
             },
             en: {
                 nav_home: "Home",
+                nav_docs: "Documentation",
+                nav_manual: "User Manual",
+                nav_changelog: "Changelog",
                 nav_about: "Features",
                 nav_bugs: "Report Bug",
                 nav_admin: "Admin",
