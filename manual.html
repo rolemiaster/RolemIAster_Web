@@ -257,10 +257,39 @@
             <a href="index.html">Inicio</a>
             <a href="manual.html" class="active">Manual</a>
             <a href="changelog.html">Changelog</a>
+            <!-- Platform Selector -->
+            <div class="platform-selector" style="margin-left: 20px; display: flex; gap: 5px;">
+                <button id="btn-pc" class="btn-plat active" onclick="switchPlatform('pc')">PC</button>
+                <button id="btn-android" class="btn-plat" onclick="switchPlatform('android')">Android</button>
+            </div>
             <!-- Google Translate Container -->
             <div id="google_translate_element" style="margin-left: 20px;"></div>
         </div>
     </nav>
+
+    <style>
+        .btn-plat {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 5px 10px;
+            cursor: pointer;
+            font-family: 'Rajdhani', sans-serif;
+            transition: all 0.3s;
+        }
+
+        .btn-plat:hover {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .btn-plat.active {
+            background: var(--primary);
+            color: #000;
+            font-weight: bold;
+            border-color: var(--primary);
+        }
+    </style>
 
     <div class="doc-container">
         <!-- Sidebar Navigation -->
@@ -300,10 +329,24 @@
 
     <!-- Main Logic -->
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        let currentPlatform = 'pc';
+
+        function switchPlatform(plat) {
+            currentPlatform = plat;
+
+            // UI Update
+            document.querySelectorAll('.btn-plat').forEach(b => b.classList.remove('active'));
+            document.getElementById('btn-' + plat).classList.add('active');
+
+            loadManual();
+        }
+
+        function loadManual() {
             const contentDiv = document.getElementById('manual-content');
             const tocList = document.getElementById('toc-list');
-            const manualFile = 'rolemiaster_manual_usuario.md';
+            const manualFile = `rolemiaster_manual_usuario_${currentPlatform}.md`;
+
+            contentDiv.innerHTML = '<div style="text-align: center; margin-top: 50px;"><h2 style="color: var(--primary);">Cargando...</h2></div>';
 
             // 1. Fetch Markdown
             fetch(manualFile + '?t=' + new Date().getTime())
@@ -318,17 +361,19 @@
 
                     // 3. Generate Sidebar TOC
                     generateTOC();
-
-                    // 4. Highlight Code Blocks (Optional, simple style applied via CSS already)
                 })
                 .catch(error => {
                     console.error(error);
                     contentDiv.innerHTML = `<div style="color: var(--secondary); text-align: center; padding: 2rem;">
                         <h3>Error</h3><p>${error.message}</p>
-                        <p>Asegúrate de que <code>${manualFile}</code> existe en la carpeta Web.</p>
+                        <p>No se encontró el manual para <strong>${currentPlatform.toUpperCase()}</strong>.</p>
                     </div>`;
                     tocList.innerHTML = '<li>Error de carga</li>';
                 });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadManual();
         });
 
         function generateTOC() {
