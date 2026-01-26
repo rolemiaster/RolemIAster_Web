@@ -1,8 +1,8 @@
-# Manual de Usuario - Versión Android
+# User Manual - Android Version
 
-**Estado: En Desarrollo**
+**Status: In Development**
 
-Esta versión de RolemIAster para Android utiliza el motor Gemini de Google en la nube.
-La documentación específica estará disponible próximamente.
+This version of RolemIAster for Android uses Google's Gemini engine in the cloud.
+Specific documentation will be available soon.
 
-Por favor, consulte la versión de PC para conceptos generales.
+Please refer to the PC version for general concepts.
