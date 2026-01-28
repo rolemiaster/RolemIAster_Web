@@ -1,4 +1,15 @@
 ****************************************************************************************************
+28/01/2026 22:49 - Estabilización y Mejoras de IA - Beta_v049
+****************************************************************************************************
+- What's New:
+  We've polished the gameplay experience with key fixes and a new visual tool:
+
+  * **Clean & Reliable Inventory:** No more "ghost items" or strangely named objects appearing in your backpack. We check that everything you loot or buy actually exists in the game world.
+  * **Fluid Dialogues:** We fixed those annoying buttons that sometimes showed up as "Unknown" or didn't respond. NPC dialogue options will now always display the correct text.
+  * **Robust Character Generation:** Creating your hero is now a rock-solid process. We've resolved conflicts that sometimes left character sheets incomplete or with incorrect stats when combining biography and gameplay data.
+  * **New AI Status Bar:** Now you can see the machine's brain at work! We've added a status bar at the top showing response speed and memory usage in real-time. You'll always know if the AI is "thinking" up your next adventure.
+
+****************************************************************************************************
 28/01/2026 03:50 - Fix Critico Compilacion - Beta_v048
 ****************************************************************************************************
 - What's New:

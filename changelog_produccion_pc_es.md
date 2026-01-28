@@ -1,4 +1,15 @@
 ****************************************************************************************************
+28/01/2026 22:49 - Estabilización y Mejoras de IA - Beta_v049
+****************************************************************************************************
+- Novedades:
+  Hemos pulido la experiencia de juego con correcciones importantes y una nueva herramienta visual:
+
+  * **Inventario Limpio y Fiable:** Se acabó encontrar "objetos fantasma" o ítems con nombres extraños en tu mochila. Hemos implementado un sistema validación narrativa que asegura que todo lo que recojas o compres exista realmente en el mundo de juego.
+  * **Diálogos Fluidos:** Hemos reparado esos molestos botones que a veces aparecían como "Unknown" o no respondían. Ahora las opciones de diálogo con los NPCs siempre mostrarán el texto correcto.
+  * **Generación de Personajes Robusta:** Crear tu héroe es ahora un proceso sólido. Hemos solucionado los conflictos que a veces dejaban la ficha incompleta o con estadísticas erróneas al combinar biografía y stats.
+  * **Nueva Barra de Estado de IA:** ¡Ahora puedes ver el cerebro de la máquina funcionando! Hemos añadido una barra en la parte superior que te muestra la velocidad de respuesta y el uso de memoria en tiempo real. Así sabrás siempre si la IA está "pensando" tu próxima aventura.
+
+****************************************************************************************************
 28/01/2026 03:50 - Fix Critico Compilacion - Beta_v048
 ****************************************************************************************************
 - Novedades:
