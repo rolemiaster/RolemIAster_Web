@@ -435,6 +435,10 @@
                 <button id="btn-es" class="btn-lang active" onclick="changeLanguage('es')">ES</button>
                 <button id="btn-en" class="btn-lang" onclick="changeLanguage('en')">EN</button>
             </div>
+
+            <a onclick="navigate('survey')"
+                style="margin-left: 2rem; color: var(--primary); font-weight: bold; border: 1px solid var(--primary); padding: 5px 10px; border-radius: 4px; cursor: pointer;"
+                data-i18n="nav_survey">Votación</a>
         </div>
     </nav>
 
@@ -710,6 +714,23 @@
             </div>
         </section>
 
+        <!-- SURVEY SECTION -->
+        <section id="survey">
+            <h2 data-i18n="survey_title">Elige el Futuro</h2>
+            <p data-i18n="survey_desc"
+                style="text-align: center; color: var(--text-muted); margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Tu opinión moldea RolemIAster. Dinos qué sistema multijugador prefieres que desarrollemos primero.
+            </p>
+
+            <div
+                style="background: var(--bg-panel); padding: 1rem; border-radius: 8px; margin-top: 1rem; display: flex; justify-content: center;">
+                <iframe id="survey-frame"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSduFLC5xaa7WMPSY2FOeqKqJ4a3tJHFAln4w7kG-UhseNsBsg/viewform?embedded=true"
+                    width="640" height="1500" frameborder="0" marginheight="0" marginwidth="0"
+                    style="max-width: 100%;">Cargando…</iframe>
+            </div>
+        </section>
+
         <!-- PRIVACY SECTION -->
         <section id="privacy">
             <h2 data-i18n="privacy_title">Política de Privacidad</h2>
@@ -798,6 +819,9 @@
                 nav_about: "Características",
                 nav_bugs: "Reportar Bug",
                 nav_admin: "Admin",
+                nav_survey: "Votación",
+                survey_title: "Elige el Futuro",
+                survey_desc: "Tu opinión moldea RolemIAster. Dinos qué sistema multijugador prefieres que desarrollemos primero.",
                 hero_subtitle: "potenciado por Inteligencia Artificial",
                 btn_steam: "Ver en Steam",
                 btn_steam: "Ver en Steam",
@@ -865,6 +889,9 @@
                 nav_about: "Features",
                 nav_bugs: "Report Bug",
                 nav_admin: "Admin",
+                nav_survey: "Vote",
+                survey_title: "Choose the Future",
+                survey_desc: "Your opinion shapes RolemIAster. Tell us which multiplayer system you prefer us to develop first.",
                 hero_subtitle: "powered by Artificial Intelligence",
                 versions_title: "Choose Your Platform",
                 ver_pc_title: "PC (Steam Edition)",
@@ -961,6 +988,19 @@
                     }
                 }
             });
+
+            // Handle Survey Iframe switching
+            const surveyFrame = document.getElementById('survey-frame');
+            if (surveyFrame) {
+                const urls = {
+                    es: "https://docs.google.com/forms/d/e/1FAIpQLSduFLC5xaa7WMPSY2FOeqKqJ4a3tJHFAln4w7kG-UhseNsBsg/viewform?embedded=true",
+                    en: "https://docs.google.com/forms/d/e/1FAIpQLSf6Ff7iv3JV8mgzXIS2ULBRk9TuoSOVBXcnkAWkgWSjxc0zpQ/viewform?embedded=true"
+                };
+                // Only update if different to avoid reloading on every click if already correct
+                if (urls[lang] && surveyFrame.src !== urls[lang]) {
+                    surveyFrame.src = urls[lang];
+                }
+            }
         }
 
         // Navigation Logic
@@ -1010,6 +1050,9 @@
             const urlParams = new URLSearchParams(window.location.search);
             if (urlParams.get('page') === 'privacy') {
                 navigate('privacy');
+            }
+            if (urlParams.get('page') === 'survey') {
+                navigate('survey');
             }
         });
     </script>
