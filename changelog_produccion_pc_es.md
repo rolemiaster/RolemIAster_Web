@@ -1,20 +1,15 @@
 ****************************************************************************************************
-30/01/2026 05:00 - Web Manual & Connection Fixes - Beta_v051
+30/01/2026 02:09 - Multi-GPU, Fix Manuales & Estabilidad - Beta_v050
 ****************************************************************************************************
 - Novedades:
-  * **Selector de Texto Manual Dinámico:** Ahora puedes elegir el idioma del manual independientemente del idioma de la web. Se acabaron los selectores vacíos; ahora solo verás los manuales que realmente existen.
-  * **Adiós Error 403:** Solucionado el problema de conexión que impedía ver el registro de cambios (Changelog) dentro de la app. Ahora nos identificamos correctamente ante el servidor.
-  * **Manual con Humor:** Actualizado el manual en español con toques más divertidos y 'roleros'.
-
-****************************************************************************************************
-30/01/2026 02:09 - Multi-GPU & Stability Update - Beta_v050
-****************************************************************************************************
-- Novedades:
-  **¡Potencia Multi-GPU y Estabilidad Blindada!**
-  * **Soporte Multi-GPU:** Divide modelos gigantes entre todas tus tarjetas gráficas.
-  * **Cero Crashes:** Motor blindado con todas las librerías DLL necesarias.
-  * **Conexión:** Arreglado el acceso al manual online.
-  * **Idiomas:** 100% textos revisados.
+  **¡Potencia Multi-GPU y Correcciones Críticas!**
+  
+  * **🚀 Soporte Multi-GPU:** Implementada la capacidad de dividir modelos de IA grandes entre múltiples tarjetas gráficas. *Ahora puedes usar todo tu arsenal de hardware; ¡Poder Ilimitado!*
+  * **🛡️ Estabilidad:** Añadidas todas las librerías DLL faltantes para evitar cierres inesperados. *He blindado el motor, si falla ahora será culpa de una pifia en los dados.*
+  * **📖 Manuales Web Dinámicos:**
+    * **Selector Real:** El menú de idiomas ahora verifica qué archivos existen realmente antes de mostrarlos. *Se acabaron las opciones fantasma que no hacían nada; magia de adivinación nivel 5.*
+    * **Fix Error 403:** Solucionado el error de permisos que impedía ver el Changelog dentro del juego. *He enseñado a la app a pedir paso correctamente ("¡Abrete Sésamo!").*
+  * **🌍 Idiomas:** Revisión de textos y traducciones. *Modo Políglota activado.*
 
 ****************************************************************************************************
 28/01/2026 22:49 - Estabilización y Mejoras de IA - Beta_v049

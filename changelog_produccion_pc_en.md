@@ -1,20 +1,15 @@
 ****************************************************************************************************
-30/01/2026 05:00 - Web Manual & Connection Fixes - Beta_v051
+30/01/2026 02:09 - Multi-GPU, Manual Fixes & Stability - Beta_v050
 ****************************************************************************************************
 - What's New:
-  * **Dynamic Manual Language Selector:** You can now choose the manual language independently of the web interface language. No more empty selectors; you will only see manuals that actually exist.
-  * **Bye Bye 403 Error:** Fixed the connection issue that prevented viewing the Changelog inside the app. We now identify ourselves correctly to the server.
-  * **Polished Manual:** Spanish manual updated with more humor and RPG flair.
-
-****************************************************************************************************
-30/01/2026 02:09 - Multi-GPU & Stability Update - Beta_v050
-****************************************************************************************************
-- What's New:
-  **Multi-GPU Power & Ironclad Stability!**
-  * **Multi-GPU Support:** Split giant models across all your graphics cards.
-  * **Zero Crashes:** Engine reinforced with all necessary DLL libraries.
-  * **Connection:** Fixed online manual access.
-  * **Languages:** 100% text coverage verified.
+  **Multi-GPU Support & Critical Fixes!**
+  
+  * **🚀 Multi-GPU Support:** Implemented the ability to split large AI models across multiple graphics cards. *Put all your hardware to work; Unlimited Power!*
+  * **🛡️ Stability:** Added all missing DLL libraries to prevent unexpected crashes. *Engine shielded; if it breaks now, blame a critical fail on the dice.*
+  * **📖 Dynamic Web Manuals:**
+    * **Real Selector:** The language menu now verifies which files actually exist before showing them. *No more ghost options doing nothing; Level 5 Divination Magic.*
+    * **Fix 403 Error:** Solved the permission error preventing the Changelog from loading inside the game. *I taught the app the correct password ("Open Sesame!").*
+  * **🌍 Languages:** Text and translation review. *Polyglot Mode activated.*
 
 ****************************************************************************************************
 28/01/2026 22:49 - Estabilización y Mejoras de IA - Beta_v049
