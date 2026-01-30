@@ -1,4 +1,10 @@
 ****************************************************************************************************
+30/01/2026 02:09 - Multi-GPU & Stability Update - Beta_v050
+****************************************************************************************************
+- Novedades:
+   **¡Potencia Multi-GPU y Estabilidad Blindada!**  *   **Soporte Multi-GPU:** Divide modelos gigantes entre todas tus tarjetas gráficas. *   **Cero Crashes:** Motor blindado con todas las librerías DLL necesarias. *   **Conexión:** Arreglado el acceso al manual online. *   **Idiomas:** 100% textos revisados.
+
+****************************************************************************************************
 28/01/2026 22:49 - Estabilización y Mejoras de IA - Beta_v049
 ****************************************************************************************************
 - Novedades:

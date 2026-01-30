@@ -1,0 +1,149 @@
+{
+    "languages": [
+        {
+            "code": "arabic",
+            "name": "Arabic",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_ar.md"
+        },
+        {
+            "code": "bulgarian",
+            "name": "Bulgarian",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_bg.md"
+        },
+        {
+            "code": "czech",
+            "name": "Czech",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_cs.md"
+        },
+        {
+            "code": "danish",
+            "name": "Danish",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_da.md"
+        },
+        {
+            "code": "german",
+            "name": "German",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_de.md"
+        },
+        {
+            "code": "greek",
+            "name": "Greek",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_el.md"
+        },
+        {
+            "code": "english",
+            "name": "English",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_en.md"
+        },
+        {
+            "code": "latam",
+            "name": "Spanish (Latin America)",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_es-419.md"
+        },
+        {
+            "code": "spanish",
+            "name": "Spanish (Español) - Original",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_es.md"
+        },
+        {
+            "code": "finnish",
+            "name": "Finnish",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_fi.md"
+        },
+        {
+            "code": "french",
+            "name": "French",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_fr.md"
+        },
+        {
+            "code": "hungarian",
+            "name": "Hungarian",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_hu.md"
+        },
+        {
+            "code": "indonesian",
+            "name": "Indonesian",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_id.md"
+        },
+        {
+            "code": "italian",
+            "name": "Italian",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_it.md"
+        },
+        {
+            "code": "japanese",
+            "name": "Japanese",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_ja.md"
+        },
+        {
+            "code": "koreana",
+            "name": "Korean",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_ko.md"
+        },
+        {
+            "code": "dutch",
+            "name": "Dutch",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_nl.md"
+        },
+        {
+            "code": "norwegian",
+            "name": "Norwegian",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_no.md"
+        },
+        {
+            "code": "polish",
+            "name": "Polish",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_pl.md"
+        },
+        {
+            "code": "portuguese",
+            "name": "Portuguese (Portugal)",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_pt.md"
+        },
+        {
+            "code": "romanian",
+            "name": "Romanian",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_ro.md"
+        },
+        {
+            "code": "russian",
+            "name": "Russian",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_ru.md"
+        },
+        {
+            "code": "swedish",
+            "name": "Swedish",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_sv.md"
+        },
+        {
+            "code": "thai",
+            "name": "Thai",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_th.md"
+        },
+        {
+            "code": "turkish",
+            "name": "Turkish",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_tr.md"
+        },
+        {
+            "code": "ukrainian",
+            "name": "Ukrainian",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_uk.md"
+        },
+        {
+            "code": "vietnamese",
+            "name": "Vietnamese",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_vi.md"
+        },
+        {
+            "code": "tchinese",
+            "name": "zh-tw",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_zh-tw.md"
+        },
+        {
+            "code": "schinese",
+            "name": "Simplified Chinese",
+            "file": "locales/manual/rolemiaster_manual_usuario_pc_zh.md"
+        }
+    ]
+}

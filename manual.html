@@ -313,6 +313,15 @@
         <!-- Sidebar Navigation -->
         <aside class="sidebar">
             <h3><span id="sidebar-title">Contenido</span></h3>
+
+            <!-- Manual Language Selector -->
+            <div style="margin-bottom: 20px;">
+                <select id="manual-lang-select" onchange="changeManualLanguage(this.value)"
+                    style="width: 100%; padding: 8px; background: var(--bg-dark); color: var(--text-main); border: 1px solid var(--border); border-radius: 4px; font-family: 'Roboto', sans-serif;">
+                    <option value="spanish">Cargando idiomas...</option>
+                </select>
+            </div>
+
             <ul id="toc-list">
                 <!-- Generated dynamically -->
                 <li style="color: grey; padding: 10px;">Cargando índice...</li>
@@ -338,18 +347,39 @@
         let currentPlatform = localStorage.getItem('rolemiaster_platform') || 'pc';
         let currentLang = localStorage.getItem('rolemiaster_lang') || 'es';
 
+        // Manual Language Logic: Default to currentLang mapped, or use persisted override
+        const langMap = {
+            'es': 'spanish',
+            'en': 'english'
+        };
+
+        let currentManualLang = localStorage.getItem('rolemiaster_manual_view_lang');
+        // Initial fallback
+        if (!currentManualLang) {
+            currentManualLang = langMap[currentLang] || 'spanish';
+        }
+
+        let availableLanguages = [];
+
         function switchPlatform(plat) {
             currentPlatform = plat;
             localStorage.setItem('rolemiaster_platform', plat);
             updateButtons();
-            loadManual();
+            loadManual(); // Reloads content based on currentManualLang and platform
         }
 
         function switchLanguage(lang) {
+            // Site UI language
             currentLang = lang;
             localStorage.setItem('rolemiaster_lang', lang);
             updateButtons();
             updateLabels();
+            // We do NOT auto-switch manual language to respect user choice
+        }
+
+        function changeManualLanguage(manualLang) {
+            currentManualLang = manualLang;
+            localStorage.setItem('rolemiaster_manual_view_lang', manualLang);
             loadManual();
         }
 
@@ -370,11 +400,63 @@
             }
         }
 
+        function initManual() {
+            // 1. Fetch Manifest
+            fetch('locales/manual/manual_manifest.json?t=' + new Date().getTime())
+                .then(r => r.json())
+                .then(data => {
+                    availableLanguages = data.languages;
+                    populateLanguageDropdown();
+                    loadManual();
+                })
+                .catch(e => {
+                    console.error("Error loading manifest", e);
+                    // Fallback to minimal if manifest missing
+                    availableLanguages = [
+                        { code: 'spanish', name: 'Spanish (Español)', file: 'locales/manual/rolemiaster_manual_usuario_pc_es.md' }
+                    ];
+                    populateLanguageDropdown();
+                    loadManual();
+                });
+        }
+
+        function populateLanguageDropdown() {
+            const select = document.getElementById('manual-lang-select');
+            select.innerHTML = '';
+
+            // Validate selection
+            const exists = availableLanguages.find(l => l.code === currentManualLang);
+            if (!exists && availableLanguages.length > 0) {
+                currentManualLang = availableLanguages[0].code;
+            }
+
+            availableLanguages.forEach(lang => {
+                const opt = document.createElement('option');
+                opt.value = lang.code;
+                opt.textContent = lang.name;
+                if (lang.code === currentManualLang) opt.selected = true;
+                select.appendChild(opt);
+            });
+        }
+
         function loadManual() {
             const contentDiv = document.getElementById('manual-content');
             const tocList = document.getElementById('toc-list');
-            // Filename format: rolemiaster_manual_usuario_pc_es.md
-            const manualFile = `rolemiaster_manual_usuario_${currentPlatform}_${currentLang}.md`;
+
+            // Determine file path from manifest
+            let manualFile = '';
+            const langEntry = availableLanguages.find(l => l.code === currentManualLang);
+
+            if (langEntry && langEntry.file) {
+                manualFile = langEntry.file;
+                // Simple platform switch logic if we had android files
+                if (currentPlatform === 'android') {
+                    manualFile = manualFile.replace('_pc_', '_android_');
+                }
+            } else {
+                // Fallback
+                manualFile = `locales/manual/rolemiaster_manual_usuario_${currentPlatform}_es.md`;
+            }
 
             const loadingText = currentLang === 'en' ? 'Loading...' : 'Cargando...';
             contentDiv.innerHTML = `<div style="text-align: center; margin-top: 50px;"><h2 style="color: var(--primary);">${loadingText}</h2></div>`;
@@ -445,7 +527,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             updateButtons();
             updateLabels();
-            loadManual();
+            initManual();
         });
     </script>
 
