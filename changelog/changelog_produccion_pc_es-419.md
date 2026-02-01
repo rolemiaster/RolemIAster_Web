@@ -1,4 +1,12 @@
 ****************************************************************************************************
+01/02/2026 21:37 - Hotfix Crítico: Estabilidad del Launcher y Detección Multi-GPU - Alfa_v052
+****************************************************************************************************
+- What's New (ES-419):
+  - 🚑 **Corrección Crítica:** Se solucionó un problema que impedía, en algunas circunstancias inusuales, iniciar el juego ("Falla Total") debido a una corrupción en la base de datos que el Launcher no podía limpiar. Ahora la opción "Borrar Base de Datos" es mucho más efectiva.
+  - ⚡ **Mejora de Hardware:** Se corrigió una falla que hacía que el modo de "Configuración Automática" ignorara la potencia de sistemas con múltiples tarjetas gráficas en algunas configuraciones con GPUs no idénticas.
+  - 🛠️ **Utilidad:** Se agregó una nueva opción en el Launcher para abrir fácilmente el registro (log) de la sesión anterior y facilitar el soporte.
+
+****************************************************************************************************
 30/01/2026 02:09 - Multi-GPU, Fix Manuales & Estabilidad - Beta_v050
 ****************************************************************************************************
 - Novedades:

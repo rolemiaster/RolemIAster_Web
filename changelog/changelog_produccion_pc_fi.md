@@ -1,4 +1,12 @@
 ****************************************************************************************************
+01/02/2026 21:37 - Kriittinen pikakorjaus: Launcherin vakaus ja Multi-GPU-tunnistus - Alfa_v052
+****************************************************************************************************
+- What's New (FI):
+  - 🚑 **Kriittinen korjaus:** Korjattu ongelma, joka esti pelin käynnistymisen tietyissä harvinaisissa olosuhteissa ("Totaalinen virhe") tietokannan vioittumisen vuoksi, jota Launcher ei voinut puhdistaa. "Tyhjennä tietokanta" -toiminto on nyt paljon tehokkaampi.
+  - ⚡ **Laitteistoparannus:** Korjattu virhe, jonka vuoksi "Automaattinen määritys" -tila jätti huomioimatta tehon järjestelmissä, joissa on useita ei-identtisiä näytönohjaimia (GPU).
+  - 🛠️ **Apuohjelma:** Launcheriin on lisätty uusi toiminto, jolla edellisen istunnon lokitiedoston (log) voi avata helposti tuen avuksi.
+
+****************************************************************************************************
 30/01/2026 02:09 - Multi-GPU, Manuaalien korjaukset & Vakaus - Beta_v050
 ****************************************************************************************************
 - Uutta:

@@ -1,4 +1,12 @@
 ****************************************************************************************************
+01/02/2026 21:37 - Hotfix Khẩn cấp: Độ ổn định Launcher và Phát hiện Đa GPU - Alfa_v052
+****************************************************************************************************
+- What's New (VI):
+  - 🚑 **Sửa lỗi Quan trọng:** Đã khắc phục sự cố ngăn trò chơi khởi động trong một số trường hợp hiếm gặp ("Lỗi Toàn bộ") do hỏng cơ sở dữ liệu mà Launcher không thể dọn dẹp. Giờ đây tùy chọn "Xóa Cơ sở Dữ liệu" đã hoạt động hiệu quả hơn nhiều.
+  - ⚡ **Cải thiện Phần cứng:** Đã sửa lỗi khiến chế độ "Cấu hình Tự động" bỏ qua hiệu năng của các hệ thống đa card đồ họa trong một số cấu hình sử dụng GPU không đồng nhất.
+  - 🛠️ **Tiện ích:** Đã thêm tùy chọn mới trong Launcher để dễ dàng mở nhật ký (log) của phiên trước, giúp việc hỗ trợ kỹ thuật thuận tiện hơn.
+
+****************************************************************************************************
 30/01/2026 02:09 - Đa GPU, Sửa lỗi Hướng dẫn & Ổn định - Beta_v050
 ****************************************************************************************************
 - Tính năng mới:

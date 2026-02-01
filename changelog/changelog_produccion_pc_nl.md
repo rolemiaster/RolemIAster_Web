@@ -1,4 +1,12 @@
 ****************************************************************************************************
+01/02/2026 21:37 - Kritieke Hotfix: Launcher-stabiliteit en Multi-GPU-detectie - Alfa_v052
+****************************************************************************************************
+- What's New (NL):
+  - 🚑 **Kritieke Fix:** Probleem opgelost dat in zeldzame gevallen het starten van het spel verhinderde ("Totale Fout") vanwege databasecorruptie die de Launcher niet kon opschonen. De optie "Database wissen" is nu veel effectiever.
+  - ⚡ **Hardwareverbetering:** Fout verholpen waardoor de modus "Automatische Configuratie" de kracht van systemen met meerdere grafische kaarten negeerde in sommige configuraties met niet-identieke GPU's.
+  - 🛠️ **Hulpmiddel:** Nieuwe optie toegevoegd aan de Launcher om eenvoudig het logboek (log) van de vorige sessie te openen en ondersteuning te vergemakkelijken.
+
+****************************************************************************************************
 30/01/2026 02:09 - Multi-GPU, Fix Handleidingen & Stabiliteit - Beta_v050
 ****************************************************************************************************
 - Nieuw:

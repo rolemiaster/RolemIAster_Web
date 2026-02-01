@@ -1,4 +1,12 @@
 ****************************************************************************************************
+01/02/2026 21:37 - Hotfix Kritis: Stabilitas Launcher dan Deteksi Multi-GPU - Alfa_v052
+****************************************************************************************************
+- What's New (ID):
+  - 🚑 **Perbaikan Kritis:** Memperbaiki masalah yang dalam keadaan tertentu mencegah game untuk dimulai ("Kegagalan Total") akibat kerusakan basis data yang tidak dapat dibersihkan oleh Launcher. Opsi "Hapus Basis Data" kini jauh lebih efektif.
+  - ⚡ **Peningkatan Hardware:** Memperbaiki bug yang menyebabkan mode "Pengaturan Otomatis" mengabaikan kekuatan sistem dengan banyak kartu grafis pada konfigurasi dengan GPU yang tidak identik.
+  - 🛠️ **Utilitas:** Menambahkan opsi baru pada Launcher untuk membuka catatan (log) sesi sebelumnya dengan mudah guna mempermudah dukungan teknis.
+
+****************************************************************************************************
 30/01/2026 02:09 - Multi-GPU, Perbaikan Manual & Stabilitas - Beta_v050
 ****************************************************************************************************
 - Fitur Baru:

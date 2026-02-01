@@ -1,4 +1,12 @@
 ****************************************************************************************************
+01/02/2026 21:37 - Kritický hotfix: Stabilita launcheru a detekce více GPU - Alfa_v052
+****************************************************************************************************
+- What's New (CS):
+  - 🚑 **Kritická oprava:** Vyřešen problém, který za určitých vzácných okolností bránil spuštění hry („Úplné selhání“) kvůli poškození databáze, které launcher nedokázal vyčistit. Možnost „Vymazat databázi“ je nyní mnohem účinnější.
+  - ⚡ **Vylepšení hardwaru:** Opravena chyba, která způsobovala, že režim „Automatická konfigurace“ v některých konfiguracích s neidentickými GPU ignoroval výkon systémů s více grafickými kartami.
+  - 🛠️ **Nástroje:** Do launcheru byla přidána nová možnost pro snadné otevření záznamu (logu) z předchozí relace pro usnadnění podpory.
+
+****************************************************************************************************
 30/01/2026 02:09 - Multi-GPU, Oprava manuálů a stabilita - Beta_v050
 ****************************************************************************************************
 - Novinky:

@@ -1,4 +1,12 @@
 ****************************************************************************************************
+01/02/2026 21:37 - Kritikus gyorsjavítás: Launcher stabilitás és több GPU észlelése - Alfa_v052
+****************************************************************************************************
+- What's New (HU):
+  - 🚑 **Kritikus javítás:** Megoldottunk egy problémát, amely ritka körülmények között lehetetlenné tette a játék elindítását („Teljes hiba”) egy adatbázis-sérülés miatt, amit a Launcher nem tudott megtisztítani. Az „Adatbázis törlése” opció mostantól sokkal hatékonyabb.
+  - ⚡ **Hardveres javítás:** Kijavítottunk egy hibát, amely miatt az „Automatikus konfigurálás” mód figyelmen kívül hagyta a több videókártyával rendelkező rendszerek teljesítményét bizonyos, nem azonos GPU-kat használó konfigurációk esetén.
+  - 🛠️ **Hasznos funkció:** Egy új opcióval bővült a Launcher, amely lehetővé teszi az előző munkamenet naplójának (log) egyszerű megnyitását, ezzel is segítve a terméktámogatást.
+
+****************************************************************************************************
 30/01/2026 02:09 - Multi-GPU, Kézikönyv javítások & Stabilitás - Beta_v050
 ****************************************************************************************************
 - Újdonságok:

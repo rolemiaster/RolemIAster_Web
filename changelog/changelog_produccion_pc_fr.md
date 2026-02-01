@@ -1,4 +1,12 @@
 ****************************************************************************************************
+01/02/2026 21:37 - Correctif critique : Stabilité du lanceur et détection multi-GPU - Alfa_v052
+****************************************************************************************************
+- What's New (FR):
+  - 🚑 **Correctif critique :** Correction d'un problème qui empêchait, dans certaines circonstances rares, le lancement du jeu ("Échec total") en raison d'une corruption de la base de données que le lanceur ne pouvait pas nettoyer. L'option "Effacer la base de données" est désormais beaucoup plus efficace.
+  - ⚡ **Amélioration matérielle :** Correction d'un bug où le mode "Configuration automatique" ignorait la puissance des systèmes équipés de plusieurs cartes graphiques dans certaines configurations avec des GPU non identiques.
+  - 🛠️ **Utilitaire :** Ajout d'une nouvelle option dans le lanceur pour ouvrir facilement le journal (log) de la session précédente et faciliter le support.
+
+****************************************************************************************************
 30/01/2026 02:09 - Multi-GPU, Correction Manuels & Stabilité - Beta_v050
 ****************************************************************************************************
 - Nouveautés :

@@ -1,4 +1,12 @@
 ****************************************************************************************************
+01/02/2026 21:37 - Kritisk hotfix: Launcher-stabilitet og multi-GPU-deteksjon - Alfa_v052
+****************************************************************************************************
+- What's New (NO):
+  - 🚑 **Kritisk rettelse:** Løste et problem som under sjeldne omstendigheter forhindret spillet i å starte («Total svikt») på grunn av databasekorrupsjon som launcheren ikke kunne rydde opp i. Alternativet «Slett database» er nå mye mer effektivt.
+  - ⚡ **Maskinvareforbedring:** Rettet en feil som gjorde at modusen «Automatisk konfigurasjon» ignorerte ytelsen til systemer med flere grafikkort i enkelte oppsett med ulike GPU-er.
+  - 🛠️ **Verktøy:** La til et nytt alternativ i launcheren for å enkelt åpne loggen fra forrige økt og forenkle brukerstøtte.
+
+****************************************************************************************************
 30/01/2026 02:09 - Multi-GPU, Fiks av Manualer & Stabilitet - Beta_v050
 ****************************************************************************************************
 - Nyheter:

@@ -1,4 +1,12 @@
 ****************************************************************************************************
+01/02/2026 21:37 - Kritik Düzeltme: Launcher Kararlılığı ve Çoklu GPU Algılama - Alfa_v052
+****************************************************************************************************
+- What's New (TR):
+  - 🚑 **Kritik Düzeltme:** Başlatıcının temizleyemediği veritabanı bozulması nedeniyle bazı nadir durumlarda oyunun başlatılmasını engelleyen ("Tam Çökme") bir sorun giderildi. Artık "Veritabanını Temizle" seçeneği çok daha etkili.
+  - ⚡ **Donanım İyileştirmesi:** "Otomatik Yapılandırma" modunun, özdeş olmayan GPU'lara sahip bazı yapılandırmalarda birden fazla ekran kartı bulunan sistemlerin gücünü göz ardı etmesine neden olan bir hata düzeltildi.
+  - 🛠️ **Araç:** Önceki oturumun kaydını (log) kolayca açmak ve destek sürecini kolaylaştırmak için Launcher'a yeni bir seçenek eklendi.
+
+****************************************************************************************************
 30/01/2026 02:09 - Multi-GPU, Kılavuz Düzeltmesi & Kararlılık - Beta_v050
 ****************************************************************************************************
 - Yenilikler:
