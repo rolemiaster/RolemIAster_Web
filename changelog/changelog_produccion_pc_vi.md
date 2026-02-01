@@ -1,10 +1,14 @@
 ****************************************************************************************************
-01/02/2026 21:37 - Hotfix Khẩn cấp: Độ ổn định Launcher và Phát hiện Đa GPU - Alfa_v052
+02/02/2026 00:18 - Hotfix Quan trọng: Ổn định, Đa GPU và Cải thiện Bản địa hóa - Beta_v051
 ****************************************************************************************************
 - What's New (VI):
-  - 🚑 **Sửa lỗi Quan trọng:** Đã khắc phục sự cố ngăn trò chơi khởi động trong một số trường hợp hiếm gặp ("Lỗi Toàn bộ") do hỏng cơ sở dữ liệu mà Launcher không thể dọn dẹp. Giờ đây tùy chọn "Xóa Cơ sở Dữ liệu" đã hoạt động hiệu quả hơn nhiều.
-  - ⚡ **Cải thiện Phần cứng:** Đã sửa lỗi khiến chế độ "Cấu hình Tự động" bỏ qua hiệu năng của các hệ thống đa card đồ họa trong một số cấu hình sử dụng GPU không đồng nhất.
-  - 🛠️ **Tiện ích:** Đã thêm tùy chọn mới trong Launcher để dễ dàng mở nhật ký (log) của phiên trước, giúp việc hỗ trợ kỹ thuật thuận tiện hơn.
+  - 🚑 **Sửa lỗi Quan trọng:** Đã khắc phục sự cố ngăn chặn việc khởi động trò chơi trong một số trường hợp hiếm gặp ("Hỏng Hoàn toàn") do hỏng cơ sở dữ liệu mà Launcher không thể dọn dẹp. Giờ đây, tùy chọn "Xóa Cơ sở Dữ liệu" đã hiệu quả hơn nhiều.
+  - ⚡ **Cải thiện Phần cứng:** Đã sửa lỗi khiến chế độ "Cấu hình Tự động" bỏ qua sức mạnh của các hệ thống dùng nhiều card đồ họa trong một số cấu hình có các GPU không đồng nhất.
+  - 🛠️ **Tiện ích:** Đã thêm một tùy chọn mới trong Launcher để dễ dàng mở nhật ký (log) của phiên trước đó nhằm hỗ trợ việc giải quyết sự cố.
+  - 🌍 **Bản địa hóa:** Đã sửa một số nút hiển thị bằng tiếng Anh (Yes/No) trong trình khởi chạy. Hiện tại chúng đã hiển thị đúng theo ngôn ngữ được chọn.
+  - 📖 **Giao diện:** Đã cải thiện định dạng văn bản thông tin phiên bản để dễ đọc hơn.
+  
+  - **Sắp ra mắt:** Đang trong quá trình triển khai: khả năng tương thích với GPU AMD, NVIDIA và Intel thông qua Vulkan.
 
 ****************************************************************************************************
 30/01/2026 02:09 - Đa GPU, Sửa lỗi Hướng dẫn & Ổn định - Beta_v050

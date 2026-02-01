@@ -1,10 +1,14 @@
 ****************************************************************************************************
-01/02/2026 21:37 - Kritisk Hotfix: Launcher-stabilitet og Multi-GPU-detektion - Alfa_v052
+02/02/2026 00:18 - Kritisk hotfix: Stabilitet, Multi-GPU og lokaliseringsforbedringer - Beta_v051
 ****************************************************************************************************
 - What's New (DA):
-  - 🚑 **Kritisk rettelse:** Løst et problem, der under visse særlige omstændigheder forhindrede spillet i at starte ("Totalfejl") på grund af databasekorruption, som launcheren ikke kunne rydde. Muligheden "Ryd database" er nu meget mere effektiv.
-  - ⚡ **Hardwareforbedring:** Rettet en fejl, der fik tilstanden "Automatisk konfiguration" til at ignorere ydeevnen på systemer med flere grafikkort i visse konfigurationer med ikke-identiske GPU'er.
-  - 🛠️ **Værktøj:** Tilføjet en ny mulighed i launcheren til nemt at åbne loggen fra forrige session for at lette supporten.
+  - 🚑 **Kritisk rettelse:** Løste et problem, der under visse sjældne omstændigheder forhindrede spillet i at starte ("Totalt nedbrud") på grund af korruption i databasen, som launcheren ikke kunne rydde op i. Nu er muligheden "Slet database" meget mere effektiv.
+  - ⚡ **Hardwareforbedring:** Rettede en fejl, der fik tilstanden "Automatisk konfiguration" til at ignorere ydeevnen på systemer med flere grafikkort i visse konfigurationer med ikke-identiske GPU'er.
+  - 🛠️ **Værktøj:** Tilføjede en ny mulighed i launcheren for nemt at åbne loggen fra den forrige session og lette support.
+  - 🌍 **Lokalisering:** Rettede flere knapper, der blev vist på engelsk (Yes/No) i launcheren. De følger nu det valgte sprog.
+  - 📖 **Grænseflade:** Forbedrede tekstformatet for versionsoplysninger, så det er mere læseligt.
+  
+  - **Kommer snart:** Næste punkt under implementering: Kompatibilitet med AMD-, NVIDIA- og Intel-GPU'er via Vulkan.
 
 ****************************************************************************************************
 30/01/2026 02:09 - Multi-GPU, Manualrettelser & Stabilitet - Beta_v050

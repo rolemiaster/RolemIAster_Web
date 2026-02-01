@@ -1,10 +1,14 @@
 ****************************************************************************************************
-01/02/2026 21:37 - Kritický hotfix: Stabilita launcheru a detekce více GPU - Alfa_v052
+02/02/2026 00:18 - Kritická oprava: Stabilita, Multi-GPU a vylepšení lokalizace - Beta_v051
 ****************************************************************************************************
 - What's New (CS):
-  - 🚑 **Kritická oprava:** Vyřešen problém, který za určitých vzácných okolností bránil spuštění hry („Úplné selhání“) kvůli poškození databáze, které launcher nedokázal vyčistit. Možnost „Vymazat databázi“ je nyní mnohem účinnější.
-  - ⚡ **Vylepšení hardwaru:** Opravena chyba, která způsobovala, že režim „Automatická konfigurace“ v některých konfiguracích s neidentickými GPU ignoroval výkon systémů s více grafickými kartami.
-  - 🛠️ **Nástroje:** Do launcheru byla přidána nová možnost pro snadné otevření záznamu (logu) z předchozí relace pro usnadnění podpory.
+  - 🚑 **Kritická oprava:** Vyřešen problém, který za určitých vzácných okolností bránil spuštění hry („Celkové selhání“) kvůli poškození databáze, které spouštěč nedokázal vyčistit. Nyní je možnost „Vymazat databázi“ mnohem účinnější.
+  - ⚡ **Vylepšení hardwaru:** Opravena chyba, kvůli které režim „Automatická konfigurace“ v některých sestavách s neidentickými GPU ignoroval výkon systémů s více grafickými kartami.
+  - 🛠️ **Nástroje:** Do spouštěče byla přidána nová možnost pro snadné otevření záznamu (logu) předchozí relace pro usnadnění podpory.
+  - 🌍 **Lokalizace:** Opraveno několik tlačítek, která se ve spouštěči zobrazovala v angličtině (Yes/No). Nyní respektují vybraný jazyk.
+  - 📖 **Rozhraní:** Vylepšen formát textu informací o verzi pro lepší čitelnost.
+  
+  - **Již brzy:** Další bod v procesu implementace: kompatibilita s GPU AMD, NVIDIA a Intel prostřednictvím rozhraní Vulkan.
 
 ****************************************************************************************************
 30/01/2026 02:09 - Multi-GPU, Oprava manuálů a stabilita - Beta_v050

@@ -1,10 +1,14 @@
 ****************************************************************************************************
-01/02/2026 21:37 - Kritieke Hotfix: Launcher-stabiliteit en Multi-GPU-detectie - Alfa_v052
+02/02/2026 00:18 - Kritieke Hotfix: Stabiliteit, Multi-GPU en Lokalisatieverbeteringen - Beta_v051
 ****************************************************************************************************
 - What's New (NL):
-  - 🚑 **Kritieke Fix:** Probleem opgelost dat in zeldzame gevallen het starten van het spel verhinderde ("Totale Fout") vanwege databasecorruptie die de Launcher niet kon opschonen. De optie "Database wissen" is nu veel effectiever.
-  - ⚡ **Hardwareverbetering:** Fout verholpen waardoor de modus "Automatische Configuratie" de kracht van systemen met meerdere grafische kaarten negeerde in sommige configuraties met niet-identieke GPU's.
-  - 🛠️ **Hulpmiddel:** Nieuwe optie toegevoegd aan de Launcher om eenvoudig het logboek (log) van de vorige sessie te openen en ondersteuning te vergemakkelijken.
+  - 🚑 **Kritieke Fix:** Een probleem verholpen dat er in zeldzame omstandigheden voor zorgde dat het spel niet kon starten ("Totale Uitval") door corruptie in de database die de Launcher niet kon opschonen. De optie "Database Wissen" is nu veel effectiever.
+  - ⚡ **Hardwareverbetering:** Een fout verholpen waardoor de modus "Automatische Configuratie" de rekenkracht van systemen met meerdere grafische kaarten negeerde in sommige configuraties met niet-identieke GPU's.
+  - 🛠️ **Hulpmiddel:** Een nieuwe optie toegevoegd aan de Launcher om eenvoudig het logboek (log) van de vorige sessie te openen en ondersteuning te vergemakkelijken.
+  - 🌍 **Lokalisatie:** Diverse knoppen gecorrigeerd die in het Engels (Yes/No) in de launcher verschenen. Ze respecteren nu de geselecteerde taal.
+  - 📖 **Interface:** De opmaak van de tekst met versie-informatie verbeterd om deze leesbaarder te maken.
+  
+  - **Binnenkort:** Volgende punt in het implementatieproces: compatibiliteit met AMD-, NVIDIA- en Intel-GPU's via Vulkan.
 
 ****************************************************************************************************
 30/01/2026 02:09 - Multi-GPU, Fix Handleidingen & Stabiliteit - Beta_v050

@@ -1,10 +1,14 @@
 ****************************************************************************************************
-01/02/2026 21:37 - Critical Hotfix: Launcher Stability and Multi-GPU Detection - Alfa_v052
+02/02/2026 00:18 - Critical Hotfix: Stability, Multi-GPU, and Localization Improvements - Beta_v051
 ****************************************************************************************************
 - What's New (EN):
-  - 🚑 **Critical Fix:** Resolved an issue that prevented the game from starting under some rare circumstances ("Total Failure") due to database corruption that the Launcher could not clean. The "Clear Database" option is now much more effective.
-  - ⚡ **Hardware Improvement:** Fixed a bug that caused "Auto-Configuration" mode to ignore the power of multi-GPU systems in some configurations with non-identical GPUs.
-  - 🛠️ **Utility:** Added a new option in the Launcher to easily open the previous session's log to facilitate support.
+  - 🚑 **Critical Fix:** Fixed an issue preventing the game from starting in rare circumstances ("Total Failure") due to database corruption that the Launcher could not clean. The "Clear Database" option is now much more effective.
+  - ⚡ **Hardware Improvement:** Fixed a bug where "Auto-Configuration" mode ignored the power of multi-GPU systems in certain setups with non-identical GPUs.
+  - 🛠️ **Utility:** Added a new option in the Launcher to easily open the previous session log to facilitate support.
+  - 🌍 **Localization:** Fixed several buttons appearing in English (Yes/No) in the launcher. They now respect the selected language.
+  - 📖 **Interface:** Improved version information text formatting to make it more readable.
+  
+  - **Coming Soon:** Next item in implementation: AMD, NVIDIA, and Intel GPU compatibility via Vulkan.
 
 ****************************************************************************************************
 30/01/2026 02:09 - Multi-GPU, Fix Manuals & Stability - Beta_v050

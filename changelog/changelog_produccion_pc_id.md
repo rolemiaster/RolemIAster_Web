@@ -1,10 +1,14 @@
 ****************************************************************************************************
-01/02/2026 21:37 - Hotfix Kritis: Stabilitas Launcher dan Deteksi Multi-GPU - Alfa_v052
+02/02/2026 00:18 - Hotfix Kritis: Stabilitas, Multi-GPU, dan Peningkatan Lokalisasi - Beta_v051
 ****************************************************************************************************
 - What's New (ID):
-  - 🚑 **Perbaikan Kritis:** Memperbaiki masalah yang dalam keadaan tertentu mencegah game untuk dimulai ("Kegagalan Total") akibat kerusakan basis data yang tidak dapat dibersihkan oleh Launcher. Opsi "Hapus Basis Data" kini jauh lebih efektif.
-  - ⚡ **Peningkatan Hardware:** Memperbaiki bug yang menyebabkan mode "Pengaturan Otomatis" mengabaikan kekuatan sistem dengan banyak kartu grafis pada konfigurasi dengan GPU yang tidak identik.
-  - 🛠️ **Utilitas:** Menambahkan opsi baru pada Launcher untuk membuka catatan (log) sesi sebelumnya dengan mudah guna mempermudah dukungan teknis.
+  - 🚑 **Perbaikan Kritis:** Memperbaiki masalah yang mencegah game dimulai dalam situasi tertentu ("Gagal Total") akibat kerusakan basis data yang tidak dapat dibersihkan oleh Launcher. Sekarang opsi "Hapus Basis Data" jauh lebih efektif.
+  - ⚡ **Peningkatan Hardware:** Memperbaiki kesalahan yang membuat mode "Konfigurasi Otomatis" mengabaikan performa sistem dengan beberapa kartu grafis pada konfigurasi GPU yang tidak identik.
+  - 🛠️ **Utilitas:** Menambahkan opsi baru di Launcher untuk membuka catatan (log) sesi sebelumnya dengan mudah guna mempermudah dukungan teknis.
+  - 🌍 **Lokalisasi:** Memperbaiki beberapa tombol yang muncul dalam bahasa Inggris (Yes/No) di Launcher. Sekarang tombol tersebut menyesuaikan dengan bahasa yang dipilih.
+  - 📖 **Antarmuka:** Format teks informasi versi telah ditingkatkan agar lebih mudah dibaca.
+  
+  - **Segera Hadir:** Tahap implementasi berikutnya: kompatibilitas GPU AMD, NVIDIA, dan Intel melalui Vulkan.
 
 ****************************************************************************************************
 30/01/2026 02:09 - Multi-GPU, Perbaikan Manual & Stabilitas - Beta_v050

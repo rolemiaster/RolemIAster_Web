@@ -1,23 +1,26 @@
 ****************************************************************************************************
-01/02/2026 21:37 - Hotfix Crítico: Estabilidad del Launcher y Detección Multi-GPU - Alfa_v052
+02/02/2026 00:18 - Hotfix Crítico: Estabilidad, Multi-GPU y Mejoras de Localización - Beta_v051
 ****************************************************************************************************
 - Novedades (ES):
   - 🚑 **Arreglo Crítico:** Solucionado un problema que impedía en algunas circunstancias extrañas iniciar el juego ("Fallo Total") debido a corrupción en la base de datos que el Launcher no podía limpiar. Ahora la opción "Borrar Base de Datos" es mucho más efectiva.
   - ⚡ **Mejora Hardware:** Corregido un fallo que hacía que el modo de "Configuración Automática" ignorase la potencia de sistemas con múltiples tarjetas gráficas en algunas configuraciones con GPUs no idénticas.
   - 🛠️ **Utilidad:** Añadida una nueva opción en el Launcher para abrir fácilmente el registro (log) de la sesión anterior y facilitar el soporte.
+  - 🌍 **Localización:** Corregidos varios botones que aparecían en inglés (Yes/No) en el lanzador. Ahora respetan el idioma seleccionado.
+  - 📖 **Interfaz:** Mejorado el formato del texto de información de versiones para que sea más legible.
+  
+  - **Próximamente:** Siguiente punto en proceso de implementación: compatibilidad con GPU AMD, NVIDIA e Intel mediante Vulkan.
 
 ****************************************************************************************************
-30/01/2026 02:09 - Multi-GPU, Fix Manuales & Estabilidad - Beta_v050
+01/02/2026 23:44 - Multi-GPU, corrección de manuales y estabilidad - v050
 ****************************************************************************************************
 - Novedades:
-  **¡Potencia Multi-GPU y Correcciones Críticas!**
-  
-  * **🚀 Soporte Multi-GPU:** Implementada la capacidad de dividir modelos de IA grandes entre múltiples tarjetas gráficas. *Ahora puedes usar todo tu arsenal de hardware; ¡Poder Ilimitado!*
-  * **🛡️ Estabilidad:** Añadidas todas las librerías DLL faltantes para evitar cierres inesperados. *Blindé el motor; si falla ahora, será culpa de una pifia en los dados.*
-  * **📖 Manuales Web Dinámicos:**
-    * **Selector Real:** El menú de idiomas ahora verifica qué archivos existen realmente antes de mostrarlos. *Se acabaron las opciones fantasma que no hacían nada; magia de adivinación nivel 5.*
-    * **Fix Error 403:** Solucionado el error de permisos que impedía ver el Changelog dentro del juego. *Le enseñé a la app a pedir paso correctamente ("¡Ábrete Sésamo!").*
-  * **🌍 Idiomas:** Revisión de textos y traducciones. *Modo Políglota activado.*
+  **¡Potencia Multi-GPU y arreglos críticos!**
+  * **🚀 Soporte Multi-GPU:** Implementada la capacidad de dividir grandes modelos de IA entre varias tarjetas gráficas. *Ahora puedes usar todo tu arsenal de hardware; ¡Poder ilimitado!*
+  * **🛡️ Estabilidad:** Añadidas todas las bibliotecas DLL faltantes para evitar cierres inesperados. *He blindado el motor; si falla ahora, será debido a un fallo crítico en los datos.*
+  * **📖 Manuales web dinámicos:**
+  * **Selector real:** El menú de idiomas ahora comprueba qué archivos existen realmente antes de mostrarlos. *Se acabaron las opciones fantasma que no hacían nada; magia de adivinación de nivel 5.*
+  * **Solución Error 403:** Corregido el error de permisos que impedía ver el registro de cambios dentro del juego. *Le enseñé a la aplicación cómo pedir acceso correctamente («¡Ábrete, sésamo!»).*
+  * **🌍 Idiomas:** Revisión de textos y traducciones. *Modo políglota activado.*
 
 ****************************************************************************************************
 28/01/2026 22:49 - Estabilización y Mejoras de IA - Beta_v049

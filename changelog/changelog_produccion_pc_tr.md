@@ -1,10 +1,14 @@
 ****************************************************************************************************
-01/02/2026 21:37 - Kritik Düzeltme: Launcher Kararlılığı ve Çoklu GPU Algılama - Alfa_v052
+02/02/2026 00:18 - Kritik Hotfix: Kararlılık, Çoklu GPU ve Yerelleştirme İyileştirmeleri - Beta_v051
 ****************************************************************************************************
 - What's New (TR):
-  - 🚑 **Kritik Düzeltme:** Başlatıcının temizleyemediği veritabanı bozulması nedeniyle bazı nadir durumlarda oyunun başlatılmasını engelleyen ("Tam Çökme") bir sorun giderildi. Artık "Veritabanını Temizle" seçeneği çok daha etkili.
-  - ⚡ **Donanım İyileştirmesi:** "Otomatik Yapılandırma" modunun, özdeş olmayan GPU'lara sahip bazı yapılandırmalarda birden fazla ekran kartı bulunan sistemlerin gücünü göz ardı etmesine neden olan bir hata düzeltildi.
-  - 🛠️ **Araç:** Önceki oturumun kaydını (log) kolayca açmak ve destek sürecini kolaylaştırmak için Launcher'a yeni bir seçenek eklendi.
+  - 🚑 **Kritik Düzeltme:** Başlatıcının temizleyemediği veritabanı bozulması nedeniyle, bazı nadir durumlarda oyunun başlatılmasını ("Tam Çökme") engelleyen bir sorun giderildi. Artık "Veritabanını Sil" seçeneği çok daha etkili.
+  - ⚡ **Donanım İyileştirmesi:** "Otomatik Yapılandırma" modunun, özdeş olmayan GPU'lara sahip bazı yapılandırmalarda çoklu ekran kartlı sistemlerin gücünü yok saymasına neden olan bir hata düzeltildi.
+  - 🛠️ **Yardımcı Araç:** Destek sürecini kolaylaştırmak amacıyla, önceki oturumun kaydını (log) kolayca açmak için Başlatıcıya yeni bir seçenek eklendi.
+  - 🌍 **Yerelleştirme:** Başlatıcıda İngilizce (Yes/No) görünen çeşitli butonlar düzeltildi. Artık seçilen dile uyum sağlıyorlar.
+  - 📖 **Arayüz:** Sürüm bilgisi metninin formatı daha okunaklı olacak şekilde iyileştirildi.
+  
+  - **Yakında:** Uygulama sürecindeki bir sonraki adım: Vulkan aracılığıyla AMD, NVIDIA ve Intel GPU uyumluluğu.
 
 ****************************************************************************************************
 30/01/2026 02:09 - Multi-GPU, Kılavuz Düzeltmesi & Kararlılık - Beta_v050

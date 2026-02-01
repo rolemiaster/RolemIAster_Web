@@ -1,10 +1,14 @@
 ****************************************************************************************************
-01/02/2026 21:37 - Hotfix Crítico: Estabilidade do Launcher e Detecção Multi-GPU - Alfa_v052
+02/02/2026 00:18 - Hotfix Crítico: Estabilidade, Multi-GPU e Melhorias de Localização - Beta_v051
 ****************************************************************************************************
 - What's New (PT):
-  - 🚑 **Correção Crítica:** Corrigido um problema que impedia a inicialização do jogo em algumas circunstâncias raras ("Falha Total") devido à corrupção no banco de dados que o Launcher não conseguia limpar. Agora a opção "Limpar Banco de Dados" é muito mais eficaz.
+  - 🚑 **Correção Crítica:** Corrigido um problema que impedia, em algumas circunstâncias raras, a inicialização do jogo ("Falha Total") devido à corrupção no banco de dados que o Launcher não conseguia limpar. Agora a opção "Limpar Banco de Dados" é muito mais eficaz.
   - ⚡ **Melhoria de Hardware:** Corrigida uma falha que fazia com que o modo de "Configuração Automática" ignorasse a potência de sistemas com múltiplas placas de vídeo em algumas configurações com GPUs não idênticas.
   - 🛠️ **Utilidade:** Adicionada uma nova opção no Launcher para abrir facilmente o registro (log) da sessão anterior e facilitar o suporte.
+  - 🌍 **Localização:** Corrigidos vários botões que apareciam em inglês (Yes/No) no launcher. Agora eles respeitam o idioma selecionado.
+  - 📖 **Interface:** Melhorado o formato do texto de informações da versão para torná-lo mais legível.
+  
+  - **Em Breve:** Próximo item em processo de implementação: compatibilidade com GPU AMD, NVIDIA e Intel via Vulkan.
 
 ****************************************************************************************************
 30/01/2026 02:09 - Multi-GPU, Correção de Manuais & Estabilidade - Beta_v050

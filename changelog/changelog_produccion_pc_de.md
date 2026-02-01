@@ -1,10 +1,14 @@
 ****************************************************************************************************
-01/02/2026 21:37 - Kritischer Hotfix: Launcher-Stabilität und Multi-GPU-Erkennung - Alfa_v052
+02/02/2026 00:18 - Kritischer Hotfix: Stabilität, Multi-GPU und Verbesserungen der Lokalisierung - Beta_v051
 ****************************************************************************************************
 - What's New (DE):
-  - 🚑 **Kritische Fehlerbehebung:** Ein Problem wurde behoben, das unter seltenen Umständen das Starten des Spiels verhinderte („Totalausfall“), verursacht durch eine beschädigte Datenbank, die der Launcher nicht bereinigen konnte. Die Option „Datenbank löschen“ ist nun deutlich effektiver.
-  - ⚡ **Hardware-Verbesserung:** Ein Fehler wurde behoben, durch den der Modus „Automatische Konfiguration“ bei einigen Konfigurationen mit nicht identischen GPUs die Leistung von Multi-GPU-Systemen ignorierte.
-  - 🛠️ **Hilfsmittel:** Eine neue Option wurde dem Launcher hinzugefügt, um das Protokoll (Log) der letzten Sitzung einfach zu öffnen und den Support zu erleichtern.
+  - 🚑 **Kritische Fehlerbehebung:** Ein Problem wurde behoben, das unter seltenen Umständen den Spielstart verhinderte ("Totalausfall"), verursacht durch eine beschädigte Datenbank, die der Launcher nicht bereinigen konnte. Die Option "Datenbank löschen" ist nun deutlich effektiver.
+  - ⚡ **Hardware-Verbesserung:** Ein Fehler wurde korrigiert, durch den der Modus "Automatische Konfiguration" bei Systemen mit mehreren Grafikkarten (in einigen Konfigurationen mit nicht identischen GPUs) die Leistung ignorierte.
+  - 🛠️ **Utility:** Eine neue Option wurde im Launcher hinzugefügt, um das Protokoll (Log) der vorherigen Sitzung einfach zu öffnen und so den Support zu erleichtern.
+  - 🌍 **Lokalisierung:** Mehrere Schaltflächen im Launcher korrigiert, die noch auf Englisch (Yes/No) angezeigt wurden. Diese richten sich nun nach der gewählten Sprache.
+  - 📖 **Benutzeroberfläche:** Die Formatierung des Textes für die Versionsinformationen wurde verbessert, um die Lesbarkeit zu erhöhen.
+  
+  - **Demnächst:** Der nächste Punkt in der Umsetzung: Kompatibilität mit AMD-, NVIDIA- und Intel-GPUs via Vulkan.
 
 ****************************************************************************************************
 30/01/2026 02:09 - Multi-GPU, Handbücher-Fix & Stabilität - Beta_v050

@@ -1,10 +1,14 @@
 ****************************************************************************************************
-01/02/2026 21:37 - Kriittinen pikakorjaus: Launcherin vakaus ja Multi-GPU-tunnistus - Alfa_v052
+02/02/2026 00:18 - Kriittinen pikakorjaus: Vakaus, Multi-GPU ja lokalisointiparannuksia - Beta_v051
 ****************************************************************************************************
 - What's New (FI):
-  - 🚑 **Kriittinen korjaus:** Korjattu ongelma, joka esti pelin käynnistymisen tietyissä harvinaisissa olosuhteissa ("Totaalinen virhe") tietokannan vioittumisen vuoksi, jota Launcher ei voinut puhdistaa. "Tyhjennä tietokanta" -toiminto on nyt paljon tehokkaampi.
-  - ⚡ **Laitteistoparannus:** Korjattu virhe, jonka vuoksi "Automaattinen määritys" -tila jätti huomioimatta tehon järjestelmissä, joissa on useita ei-identtisiä näytönohjaimia (GPU).
-  - 🛠️ **Apuohjelma:** Launcheriin on lisätty uusi toiminto, jolla edellisen istunnon lokitiedoston (log) voi avata helposti tuen avuksi.
+  - 🚑 **Kriittinen korjaus:** Korjattu ongelma, joka esti tietyissä harvinaisissa tilanteissa pelin käynnistymisen (ns. "Totaalinen virhe") tietokannan korruptoitumisen vuoksi, jota käynnistysohjelma ei pystynyt puhdistamaan. "Tyhjennä tietokanta" -toiminto on nyt huomattavasti tehokkaampi.
+  - ⚡ **Laitteistoparannus:** Korjattu virhe, jonka vuoksi "Automaattinen määritys" -tila jätti huomiotta usean näytönohjaimen järjestelmien tehon tietyissä kokoonpanoissa, joissa on käytössä erilaisia näytönohjaimia.
+  - 🛠️ **Työkalu:** Käynnistysohjelmaan on lisätty uusi vaihtoehto, jolla voi helposti avata edellisen istunnon lokin (log) tuen helpottamiseksi.
+  - 🌍 **Lokalisointi:** Korjattu käynnistysohjelmassa useita painikkeita, jotka näkyivät englanniksi (Yes/No). Nyt ne noudattavat valittua kieltä.
+  - 📖 **Käyttöliittymä:** Parannettu versiotietotekstin muotoilua luettavuuden parantamiseksi.
+  
+  - **Tulossa pian:** Seuraavana toteutusvuorossa: AMD-, NVIDIA- ja Intel-näytönohjaintuki Vulkanin kautta.
 
 ****************************************************************************************************
 30/01/2026 02:09 - Multi-GPU, Manuaalien korjaukset & Vakaus - Beta_v050

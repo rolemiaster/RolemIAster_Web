@@ -1,10 +1,14 @@
 ****************************************************************************************************
-01/02/2026 21:37 - Hotfix Crítico: Estabilidad del Launcher y Detección Multi-GPU - Alfa_v052
+02/02/2026 00:18 - Hotfix Crítico: Estabilidad, Multi-GPU y Mejoras de Localización - Beta_v051
 ****************************************************************************************************
 - What's New (ES-419):
-  - 🚑 **Corrección Crítica:** Se solucionó un problema que impedía, en algunas circunstancias inusuales, iniciar el juego ("Falla Total") debido a una corrupción en la base de datos que el Launcher no podía limpiar. Ahora la opción "Borrar Base de Datos" es mucho más efectiva.
-  - ⚡ **Mejora de Hardware:** Se corrigió una falla que hacía que el modo de "Configuración Automática" ignorara la potencia de sistemas con múltiples tarjetas gráficas en algunas configuraciones con GPUs no idénticas.
-  - 🛠️ **Utilidad:** Se agregó una nueva opción en el Launcher para abrir fácilmente el registro (log) de la sesión anterior y facilitar el soporte.
+  - 🚑 **Corrección Crítica:** Solucionado un problema que impedía, en algunas circunstancias extrañas, iniciar el juego ("Falla Total") debido a corrupción en la base de datos que el Launcher no podía limpiar. Ahora la opción "Borrar Base de Datos" es mucho más efectiva.
+  - ⚡ **Mejora de Hardware:** Corregido un error que hacía que el modo de "Configuración Automática" ignorara la potencia de sistemas con múltiples tarjetas gráficas en algunas configuraciones con GPU no idénticas.
+  - 🛠️ **Utilidad:** Agregada una nueva opción en el Launcher para abrir fácilmente el registro (log) de la sesión anterior y facilitar el soporte.
+  - 🌍 **Localización:** Corregidos varios botones que aparecían en inglés (Yes/No) en el lanzador. Ahora respetan el idioma seleccionado.
+  - 📖 **Interfaz:** Mejorado el formato del texto de información de versiones para que sea más legible.
+  
+  - **Próximamente:** Siguiente punto en proceso de implementación: compatibilidad con GPU AMD, NVIDIA e Intel mediante Vulkan.
 
 ****************************************************************************************************
 30/01/2026 02:09 - Multi-GPU, Fix Manuales & Estabilidad - Beta_v050
