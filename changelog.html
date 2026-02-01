@@ -268,12 +268,7 @@
             <a href="manual.html">Manual</a>
             <a href="changelog.html" class="active">Changelog</a>
 
-            <!-- Filter Selector (First, as requested by logical flow) -->
-            <div class="selector-group">
-                <button id="btn-filter-stable" class="btn-filter active" onclick="setFilter('stable')">Estable</button>
-                <button id="btn-filter-exp" class="btn-filter" onclick="setFilter('experimental')">Exp. Only</button>
-                <button id="btn-filter-all" class="btn-filter" onclick="setFilter('all')">All</button>
-            </div>
+
 
             <!-- Platform Selector -->
             <div class="selector-group">
@@ -291,6 +286,16 @@
 
     <div class="container">
         <h1>Registro de Cambios (Changelog)</h1>
+
+        <!-- Filter Selector (Centered) -->
+        <div class="filter-controls" style="display: flex; justify-content: center; margin-bottom: 20px;">
+            <div class="selector-group" style="margin: 0;">
+                <button id="btn-filter-stable" class="btn-filter active" onclick="setFilter('stable')">Estable</button>
+                <button id="btn-filter-exp" class="btn-filter" onclick="setFilter('experimental')">Exp. Only</button>
+                <button id="btn-filter-all" class="btn-filter" onclick="setFilter('all')">All</button>
+            </div>
+        </div>
+
         <div id="changelog-content">
             <div class="loading">Cargando últimas novedades...</div>
         </div>
