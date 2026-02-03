@@ -1,4 +1,11 @@
 ****************************************************************************************************
+03/02/2026 20:23 - Optimisation de la mémoire VRAM et stabilité du chargement - Beta_v052
+****************************************************************************************************
+- What's New (FR):
+  - 🧠 **Cerveau optimisé :** Nous avons corrigé un bug majeur qui poussait l'IA à essayer de « penser deux fois » en même temps, doublant ainsi l'utilisation de la mémoire de la carte graphique et provoquant des ralentissements extrêmes ou des blocages. Votre VRAM vous remerciera !
+  - 💾 **Chargement sécurisé :** Amélioration de la stabilité générale lors du chargement des parties pour garantir que la reprise de votre aventure soit toujours une expérience fluide.
+
+****************************************************************************************************
 02/02/2026 00:18 - Hotfix Critique : Stabilité, Multi-GPU et Améliorations de la Localisation - Beta_v051
 ****************************************************************************************************
 - What's New (FR):

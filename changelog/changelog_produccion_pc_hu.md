@@ -1,4 +1,11 @@
 ****************************************************************************************************
+03/02/2026 20:23 - VRAM-optimalizálás és betöltési stabilitás - Beta_v052
+****************************************************************************************************
+- What's New (HU):
+  - 🧠 **Optimalizált agy:** Javítottunk egy súlyos hibát, amely miatt az MI egyszerre próbált „kétszer gondolkodni”, megduplázva a videokártya memóriahasználatát, ami extrém lassulást vagy fagyást okozott. A VRAM-od hálás lesz érte!
+  - 💾 **Biztonságos betöltés:** Javult az általános stabilitás a mentések betöltésekor, hogy a kaland folytatása mindig zökkenőmentes élmény legyen.
+
+****************************************************************************************************
 02/02/2026 00:18 - Kritikus gyorsjavítás: Stabilitás, Multi-GPU és honosítási fejlesztések - Beta_v051
 ****************************************************************************************************
 - What's New (HU):

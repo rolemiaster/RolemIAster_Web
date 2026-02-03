@@ -1,4 +1,11 @@
 ****************************************************************************************************
+03/02/2026 20:23 - Tối ưu hóa Bộ nhớ VRAM và Độ ổn định Tải game - Beta_v052
+****************************************************************************************************
+- What's New (VI):
+  - 🧠 **Bộ não Tối ưu:** Chúng tôi đã khắc phục một lỗi nghiêm trọng khiến AI cố gắng "suy nghĩ hai lần" cùng một lúc, làm nhân đôi lượng bộ nhớ card đồ họa sử dụng và gây ra tình trạng chậm cực độ hoặc treo máy. VRAM của bạn sẽ cảm ơn điều này!
+  - 💾 **Tải An toàn:** Cải thiện độ ổn định chung khi tải các bản lưu game để đảm bảo việc tiếp tục cuộc phiêu lưu của bạn luôn là một trải nghiệm mượt mà.
+
+****************************************************************************************************
 02/02/2026 00:18 - Hotfix Quan trọng: Ổn định, Đa GPU và Cải thiện Bản địa hóa - Beta_v051
 ****************************************************************************************************
 - What's New (VI):

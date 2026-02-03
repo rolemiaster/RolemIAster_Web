@@ -1,4 +1,11 @@
 ****************************************************************************************************
+03/02/2026 20:23 - VRAM Bellek Optimizasyonu ve Yükleme Kararlılığı - Beta_v052
+****************************************************************************************************
+- What's New (TR):
+  - 🧠 **Optimize Edilmiş Beyin:** Yapay Zekanın aynı anda "iki kez düşünmeye" çalışmasına neden olan, ekran kartı bellek kullanımını ikiye katlayarak aşırı yavaşlamaya veya çökmelere yol açan ciddi bir hatayı düzelttik. VRAM'iniz size teşekkür edecek!
+  - 💾 **Güvenli Yükleme:** Maceranıza devam etmenin her zaman akıcı bir deneyim olmasını sağlamak için kayıtlı oyunları yüklerken genel kararlılık iyileştirildi.
+
+****************************************************************************************************
 02/02/2026 00:18 - Kritik Hotfix: Kararlılık, Çoklu GPU ve Yerelleştirme İyileştirmeleri - Beta_v051
 ****************************************************************************************************
 - What's New (TR):

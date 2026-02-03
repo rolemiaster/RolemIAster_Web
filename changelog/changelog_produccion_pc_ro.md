@@ -1,4 +1,11 @@
 ****************************************************************************************************
+03/02/2026 20:23 - Optimizare Memorie VRAM și Stabilitate la Încărcare - Beta_v052
+****************************************************************************************************
+- What's New (RO):
+  - 🧠 **Creier Optimizat:** Am corectat o eroare gravă care determina AI-ul să încerce să „gândească de două ori” simultan, dublând utilizarea memoriei plăcii video și cauzând lag extrem sau blocaje. VRAM-ul tău îți va mulțumi!
+  - 💾 **Încărcare Sigură:** Stabilitate generală îmbunătățită la încărcarea salvărilor pentru a garanta că reluarea aventurii tale este întotdeauna o experiență fluidă.
+
+****************************************************************************************************
 02/02/2026 00:18 - Hotfix Critic: Stabilitate, Multi-GPU și Îmbunătățiri de Localizare - Beta_v051
 ****************************************************************************************************
 - What's New (RO):

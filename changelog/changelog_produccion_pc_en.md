@@ -1,4 +1,11 @@
 ****************************************************************************************************
+03/02/2026 20:23 - VRAM Optimization & Loading Stability - Beta_v052
+****************************************************************************************************
+- What's New (EN):
+  - 🧠 **Optimized Brain:** We fixed a critical bug that made the AI try to "think twice" at the same time, doubling graphics card memory usage and causing extreme slowdowns or crashes. Your VRAM will thank you!
+  - 💾 **Safe Loading:** Improved general stability when loading save games to ensure that resuming your adventure is always a smooth experience.
+
+****************************************************************************************************
 02/02/2026 00:18 - Critical Hotfix: Stability, Multi-GPU, and Localization Improvements - Beta_v051
 ****************************************************************************************************
 - What's New (EN):

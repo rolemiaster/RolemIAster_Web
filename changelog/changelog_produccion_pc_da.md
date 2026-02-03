@@ -1,4 +1,11 @@
 ****************************************************************************************************
+03/02/2026 20:23 - Optimering af VRAM og indlæsningsstabilitet - Beta_v052
+****************************************************************************************************
+- What's New (DA):
+  - 🧠 **Optimeret hjerne:** Vi har rettet en alvorlig fejl, der fik AI'en til at forsøge at "tænke to gange" på samme tid, hvilket fordoblede VRAM-forbruget og forårsagede ekstrem langsomhed eller nedbrud. Din VRAM vil takke dig!
+  - 💾 **Sikker indlæsning:** Den generelle stabilitet ved indlæsning af spil er forbedret for at sikre, at det altid er en flydende oplevelse at genoptage dit eventyr.
+
+****************************************************************************************************
 02/02/2026 00:18 - Kritisk hotfix: Stabilitet, Multi-GPU og lokaliseringsforbedringer - Beta_v051
 ****************************************************************************************************
 - What's New (DA):

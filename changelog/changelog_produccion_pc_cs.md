@@ -1,4 +1,11 @@
 ****************************************************************************************************
+03/02/2026 20:23 - Optimalizace paměti VRAM a stabilita načítání - Beta_v052
+****************************************************************************************************
+- What's New (CS):
+  - 🧠 **Optimalizovaný mozek:** Opravili jsme závažnou chybu, kvůli které se UI snažila „myslet dvakrát“ najednou, což zdvojnásobovalo využití paměti grafické karty a způsobovalo extrémní zpomalení nebo pády hry. Vaše VRAM vám poděkuje!
+  - 💾 **Bezpečné načítání:** Vylepšili jsme celkovou stabilitu při načítání uložených her, abychom zajistili, že návrat do vašeho dobrodružství bude vždy plynulý.
+
+****************************************************************************************************
 02/02/2026 00:18 - Kritická oprava: Stabilita, Multi-GPU a vylepšení lokalizace - Beta_v051
 ****************************************************************************************************
 - What's New (CS):

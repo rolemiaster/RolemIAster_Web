@@ -1,4 +1,11 @@
 ****************************************************************************************************
+03/02/2026 20:23 - VRAM-Speicheroptimierung und Ladestabilität - Beta_v052
+****************************************************************************************************
+- What's New (DE):
+  - 🧠 **Optimiertes Gehirn:** Wir haben einen schweren Fehler behoben, durch den die KI versuchte, „zweimal gleichzeitig zu denken“. Dies verdoppelte die VRAM-Nutzung und führte zu extremen Lags oder Abstürzen. Dein VRAM wird es dir danken!
+  - 💾 **Sicheres Laden:** Die allgemeine Stabilität beim Laden von Spielständen wurde verbessert. So wird sichergestellt, dass das Fortsetzen deines Abenteuers stets reibungslos verläuft.
+
+****************************************************************************************************
 02/02/2026 00:18 - Kritischer Hotfix: Stabilität, Multi-GPU und Verbesserungen der Lokalisierung - Beta_v051
 ****************************************************************************************************
 - What's New (DE):

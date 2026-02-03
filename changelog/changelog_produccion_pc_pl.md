@@ -1,4 +1,11 @@
 ****************************************************************************************************
+03/02/2026 20:23 - Optymalizacja pamięci VRAM i stabilność wczytywania - Beta_v052
+****************************************************************************************************
+- What's New (PL):
+  - 🧠 **Zoptymalizowany mózg:** Naprawiliśmy poważny błąd, przez który SI próbowała „myśleć dwa razy” jednocześnie, podwajając zużycie pamięci karty graficznej i powodując ekstremalne spowolnienia lub awarie. Twoja pamięć VRAM Ci podziękuje!
+  - 💾 **Bezpieczne wczytywanie:** Poprawiliśmy ogólną stabilność wczytywania zapisów, aby powrót do przygody był zawsze płynnym doświadczeniem.
+
+****************************************************************************************************
 02/02/2026 00:18 - Krytyczny Hotfix: Stabilność, Multi-GPU i Usprawnienia Lokalizacji - Beta_v051
 ****************************************************************************************************
 - What's New (PL):

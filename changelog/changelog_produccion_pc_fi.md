@@ -1,4 +1,11 @@
 ****************************************************************************************************
+03/02/2026 20:23 - VRAM-optimointi ja latausvakaus - Beta_v052
+****************************************************************************************************
+- What's New (FI):
+  - 🧠 **Optimoidut aivot:** Olemme korjanneet vakavan virheen, joka sai tekoälyn yrittämään "ajatella kahdesti" samaan aikaan. Tämä kaksinkertaisti näytönohjaimen muistin käytön ja aiheutti äärimmäistä hidastelua tai kaatumisia. VRAM-muistisi kiittää!
+  - 💾 **Varma lataus:** Yleistä vakautta on parannettu tallennuksia ladattaessa, jotta seikkailun jatkaminen on aina sujuvaa.
+
+****************************************************************************************************
 02/02/2026 00:18 - Kriittinen pikakorjaus: Vakaus, Multi-GPU ja lokalisointiparannuksia - Beta_v051
 ****************************************************************************************************
 - What's New (FI):

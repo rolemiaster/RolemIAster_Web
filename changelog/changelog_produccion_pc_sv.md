@@ -1,4 +1,11 @@
 ****************************************************************************************************
+03/02/2026 20:23 - VRAM-optimering och laddningsstabilitet - Beta_v052
+****************************************************************************************************
+- What's New (SV):
+  - 🧠 **Optimerad hjärna:** Vi har åtgärdat ett allvarligt fel som fick AI:n att försöka "tänka två gånger" samtidigt, vilket fördubblade användningen av grafikkortsminnet och orsakade extrem lagg eller krascher. Ditt VRAM kommer att tacka dig!
+  - 💾 **Säker laddning:** Förbättrad allmän stabilitet vid laddning av sparfiler för att säkerställa att det alltid är en smidig upplevelse att återuppta ditt äventyr.
+
+****************************************************************************************************
 02/02/2026 00:18 - Kritisk hotfix: Stabilitet, Multi-GPU och lokaliseringsförbättringar - Beta_v051
 ****************************************************************************************************
 - What's New (SV):

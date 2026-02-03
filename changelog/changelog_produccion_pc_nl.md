@@ -1,4 +1,11 @@
 ****************************************************************************************************
+03/02/2026 20:23 - VRAM-optimalisatie en Laadstabiliteit - Beta_v052
+****************************************************************************************************
+- What's New (NL):
+  - 🧠 **Geoptimaliseerd Brein:** We hebben een ernstige fout verholpen waardoor de AI tegelijkertijd "twee keer probeerde na te denken", waardoor het geheugengebruik van de videokaart verdubbelde en extreme vertraging of crashes ontstonden. Je VRAM zal je dankbaar zijn!
+  - 💾 **Veilig Laden:** De algemene stabiliteit bij het laden van opgeslagen spellen is verbeterd, zodat het hervatten van je avontuur altijd soepel verloopt.
+
+****************************************************************************************************
 02/02/2026 00:18 - Kritieke Hotfix: Stabiliteit, Multi-GPU en Lokalisatieverbeteringen - Beta_v051
 ****************************************************************************************************
 - What's New (NL):
