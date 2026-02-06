@@ -1,4 +1,15 @@
 ****************************************************************************************************
+06/02/2026 02:32 - Wsparcie dla Vulkan (AMD/Intel) i niezawodna obsługa błędów - Beta_v053
+****************************************************************************************************
+- What's New (PL):
+  - 🚀 **Hybrydowy Silnik Vulkan:** Oficjalne wsparcie dla kart graficznych AMD i Intel! Teraz gra zawiera dedykowany silnik Vulkan, który aktywuje się automatycznie (lub ręcznie), aby przyspieszyć AI na sprzęcie innym niż NVIDIA.
+  - ⚙️ **Pełna kontrola nad silnikiem:** Dodaliśmy opcję "Wymuś Vulkan" zarówno w programie uruchamiającym, jak i w Ustawieniach. Jeśli masz problemy z CUDA lub chcesz sprawdzić wydajność Vulkan (który w wielu konfiguracjach śmiga aż miło), teraz masz pełną kontrolę.
+  - 🚦 **Stan systemu:** Teraz w panelu stanu możesz dokładnie zobaczyć, jaki silnik pracuje pod maską (🟢 ZIELONY dla CUDA, 🔴 CZERWONY dla Vulkan).
+  - 🛡️ **Status AI:** Jeśli Sztuczna Inteligencja się "zmęczy" (przekroczy limit) lub utracisz połączenie z internetem, gra powiadomi Cię o tym czytelnym i przydatnym oknem, zamiast pozostawiać Cię w niepewności.
+  - 🔄 **Zabezpieczenie przed blokadą:** W przypadku błędu połączenia gra nie "zepsuje" już rozmowy. Twoje opcje dialogowe pojawią się ponownie, abyś mógł spróbować jeszcze raz bez utraty postępów.
+  - ☁️ **Pamięć chmury:** Menu ustawień zapamiętuje teraz poprawnie Twoje preferencje dotyczące dostawców w chmurze pomiędzy sesjami.
+
+****************************************************************************************************
 03/02/2026 20:23 - Optymalizacja pamięci VRAM i stabilność wczytywania - Beta_v052
 ****************************************************************************************************
 - What's New (PL):

@@ -1,4 +1,15 @@
 ****************************************************************************************************
+06/02/2026 02:32 - Vulkan-tuki (AMD/Intel) ja vankka virheiden hallinta - Beta_v053
+****************************************************************************************************
+- What's New (FI):
+  - 🚀 **Vulkan-hybridimoottori:** Virallinen tuki AMD- ja Intel-näytönohjaimille! Peli sisältää nyt dedikoidun Vulkan-moottorin, joka aktivoituu automaattisesti (tai manuaalisesti) tekoälyn kiihdyttämiseksi muilla kuin NVIDIAn laitteilla.
+  - ⚙️ **Täysi moottorin hallinta:** Olemme lisänneet "Pakota Vulkan" -valinnan sekä käynnistysohjelmaan että asetuksiin. Jos CUDA:n kanssa ilmenee ongelmia tai haluat testata Vulkanin suorituskykyä (joka on monissa kokoonpanoissa huippunopea), päätösvalta on sinulla.
+  - 🚦 **Järjestelmän tila:** Nyt näet tilapaneelista tarkalleen, mikä moottori konepellin alla jyllää (🟢 VIHREÄ = CUDA, 🔴 PUNAINEN = Vulkan).
+  - 🛡️ **Tekoälyn tilailmaisin:** Jos tekoäly "väsyy" (kiintiö ylittyy) tai internetyhteys katkeaa, peli varoittaa sinua selkeällä ja hyödyllisellä ikkunalla sen sijaan, että jättäisi sinut odottamaan tietämättömänä.
+  - 🔄 **Jumiutumisen esto:** Yhteysvirheen sattuessa peli ei enää "katkaise" keskustelua. Dialogivaihtoehtosi ilmestyvät takaisin, jotta voit yrittää uudelleen menettämättä edistymistä.
+  - ☁️ **Pilvimuisti:** Asetusvalikko muistaa nyt pilvipalveluntarjoajien asetuksesi oikein pelikertojen välillä.
+
+****************************************************************************************************
 03/02/2026 20:23 - VRAM-optimointi ja latausvakaus - Beta_v052
 ****************************************************************************************************
 - What's New (FI):

@@ -1,4 +1,15 @@
 ****************************************************************************************************
+06/02/2026 02:32 - Soporte para Vulkan (AMD/Intel) y Manejo Robusto de Errores - Beta_v053
+****************************************************************************************************
+- What's New (ES-419):
+  - 🚀 **Motor Híbrido Vulkan:** ¡Soporte oficial para tarjetas gráficas AMD e Intel! Ahora el juego incluye un motor Vulkan dedicado que se activa automáticamente (o manualmente) para acelerar la IA en equipos que no son NVIDIA.
+  - ⚙️ **Control Total del Motor:** Agregamos la opción "Forzar Vulkan" tanto en el Launcher como en la Configuración. Si tienes problemas con CUDA o quieres probar el rendimiento de Vulkan (que en muchas configuraciones vuela), tú tienes el control.
+  - 🚦 **Estado del Sistema:** Ahora puedes ver exactamente qué motor está rugiendo bajo el capó (🟢 VERDE para CUDA, 🔴 ROJO para Vulkan) en el panel de estado.
+  - 🛡️ **Semáforo de IA:** Si la Inteligencia Artificial se "cansa" (supera su cuota) o se pierde la conexión a internet, el juego te avisará con una ventana clara y útil en lugar de dejarte esperando en silencio.
+  - 🔄 **Seguridad Anti-Bloqueo:** Si ocurre un error de conexión, el juego ya no "rompe" la conversación. Tus opciones de diálogo reaparecerán para que puedas reintentar sin perder progreso.
+  - ☁️ **Memoria en la Nube:** El menú de configuración ahora recuerda correctamente tus preferencias de proveedores en la nube entre sesiones.
+
+****************************************************************************************************
 03/02/2026 20:23 - Optimización de Memoria VRAM y Estabilidad de Carga - Beta_v052
 ****************************************************************************************************
 - What's New (ES-419):

@@ -1,4 +1,15 @@
 ****************************************************************************************************
+06/02/2026 02:32 - Vulkan-ondersteuning (AMD/Intel) en Robuuste Foutafhandeling - Beta_v053
+****************************************************************************************************
+- What's New (NL):
+  - 🚀 **Hybride Vulkan-engine:** Officiële ondersteuning voor grafische kaarten van AMD en Intel! De game bevat nu een speciale Vulkan-engine die automatisch (of handmatig) wordt geactiveerd om de AI te versnellen op niet-NVIDIA-systemen.
+  - ⚙️ **Totale controle over de engine:** We hebben de optie "Vulkan forceren" toegevoegd aan zowel de Launcher als de Instellingen. Als je problemen hebt met CUDA of de prestaties van Vulkan wilt testen (die in veel configuraties razendsnel is), heb jij de controle.
+  - 🚦 **Systeemstatus:** Je kunt nu in het statuspaneel precies zien welke engine er onder de motorkap draait (🟢 GROEN voor CUDA, 🔴 ROOD voor Vulkan).
+  - 🛡️ **AI-verkeerslicht:** Als de AI "moe" wordt (het quotum overschrijdt) of de internetverbinding wegvalt, waarschuwt de game je met een duidelijk en nuttig venster in plaats van je in stilte te laten wachten.
+  - 🔄 **Anti-vastloopbeveiliging:** Bij een verbindingsfout wordt het gesprek niet meer afgebroken. Je dialoogopties verschijnen opnieuw, zodat je het opnieuw kunt proberen zonder voortgang te verliezen.
+  - ☁️ **Cloudgeheugen:** Het instellingenmenu onthoudt nu correct je voorkeuren voor cloudproviders tussen sessies door.
+
+****************************************************************************************************
 03/02/2026 20:23 - VRAM-optimalisatie en Laadstabiliteit - Beta_v052
 ****************************************************************************************************
 - What's New (NL):

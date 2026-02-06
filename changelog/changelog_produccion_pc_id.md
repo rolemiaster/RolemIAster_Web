@@ -1,4 +1,15 @@
 ****************************************************************************************************
+06/02/2026 02:32 - Dukungan Vulkan (AMD/Intel) dan Penanganan Error yang Andal - Beta_v053
+****************************************************************************************************
+- What's New (ID):
+  - 🚀 **Mesin Hibrida Vulkan:** Dukungan resmi untuk kartu grafis AMD dan Intel! Game ini sekarang menyertakan mesin Vulkan khusus yang aktif secara otomatis (atau manual) untuk mempercepat AI pada perangkat non-NVIDIA.
+  - ⚙️ **Kontrol Mesin Penuh:** Kami telah menambahkan opsi "Paksa Vulkan" di Launcher maupun Pengaturan. Jika kamu mengalami masalah dengan CUDA atau ingin menjajal performa Vulkan (yang sangat ngebut di banyak konfigurasi), kendali ada di tanganmu.
+  - 🚦 **Status Sistem:** Sekarang kamu bisa melihat persis mesin mana yang sedang menderu di balik kap (🟢 HIJAU untuk CUDA, 🔴 MERAH untuk Vulkan) di panel status.
+  - 🛡️ **Indikator AI:** Jika AI "lelah" (melebihi kuota) atau internet terputus, game akan memberitahumu dengan jendela yang jelas dan berguna, daripada membiarkanmu menunggu dalam diam.
+  - 🔄 **Keamanan Anti-Macet:** Jika terjadi error koneksi, game tidak akan lagi "memutuskan" percakapan. Opsi dialogmu akan muncul kembali sehingga kamu bisa mencoba lagi tanpa kehilangan progres.
+  - ☁️ **Memori Cloud:** Menu pengaturan sekarang mengingat preferensi penyedia cloud kamu dengan benar antar sesi.
+
+****************************************************************************************************
 03/02/2026 20:23 - Optimalisasi Memori VRAM dan Stabilitas Pemuatan - Beta_v052
 ****************************************************************************************************
 - What's New (ID):

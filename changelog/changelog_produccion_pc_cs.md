@@ -1,4 +1,15 @@
 ****************************************************************************************************
+06/02/2026 02:32 - Podpora Vulkanu (AMD/Intel) a robustní zpracování chyb - Beta_v053
+****************************************************************************************************
+- What's New (CS):
+  - 🚀 **Hybridní engine Vulkan:** Oficiální podpora pro grafické karty AMD a Intel! Hra nyní obsahuje dedikovaný engine Vulkan, který se aktivuje automaticky (nebo ručně) pro zrychlení AI na sestavách bez NVIDIA.
+  - ⚙️ **Úplná kontrola nad enginem:** Přidali jsme možnost "Vynutit Vulkan" jak do spouštěče, tak do nastavení. Pokud máte problémy s CUDA nebo chcete vyzkoušet výkon Vulkanu (který na mnoha konfiguracích letí), máte to ve svých rukou.
+  - 🚦 **Stav systému:** Nyní v panelu stavu přesně uvidíte, jaký engine řve pod kapotou (🟢 ZELENÁ pro CUDA, 🔴 ČERVENÁ pro Vulkan).
+  - 🛡️ **Semafor AI:** Pokud se umělá inteligence "unaví" (překročí svou kvótu) nebo vypadne internet, hra vás upozorní jasným a užitečným oknem, místo aby vás nechala čekat v tichosti.
+  - 🔄 **Ochrana proti zásekům:** Pokud dojde k chybě připojení, hra už "nerozbije" konverzaci. Vaše možnosti dialogu se znovu objeví, takže to můžete zkusit znovu bez ztráty postupu.
+  - ☁️ **Cloudová paměť:** Nabídka nastavení si nyní mezi relacemi správně pamatuje vaše preference poskytovatelů cloudu.
+
+****************************************************************************************************
 03/02/2026 20:23 - Optimalizace paměti VRAM a stabilita načítání - Beta_v052
 ****************************************************************************************************
 - What's New (CS):

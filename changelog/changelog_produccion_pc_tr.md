@@ -1,4 +1,15 @@
 ****************************************************************************************************
+06/02/2026 02:32 - Vulkan Desteği (AMD/Intel) ve Güçlü Hata Yönetimi - Beta_v053
+****************************************************************************************************
+- What's New (TR):
+  - 🚀 **Hibrit Vulkan Motoru:** AMD ve Intel ekran kartları için resmi destek! Oyun artık, NVIDIA olmayan sistemlerde yapay zekayı hızlandırmak için otomatik (veya manuel) olarak devreye giren özel bir Vulkan motoru içeriyor.
+  - ⚙️ **Tam Motor Kontrolü:** Hem Başlatıcıya hem de Ayarlara "Vulkan'ı Zorla" seçeneğini ekledik. CUDA ile sorun yaşıyorsanız veya (birçok yapılandırmada uçuşa geçen) Vulkan performansını test etmek istiyorsanız, kontrol sizde.
+  - 🚦 **Sistem Durumu:** Artık durum panelinde kaputun altında hangi motorun kükrediğini (CUDA için 🟢 YEŞİL, Vulkan için 🔴 KIRMIZI) tam olarak görebilirsiniz.
+  - 🛡️ **Yapay Zeka Uyarıları:** Yapay Zeka "yorulursa" (kotasını aşarsa) veya internet kesilirse, oyun sizi sessizce bekletmek yerine net ve yararlı bir pencere ile uyaracaktır.
+  - 🔄 **Kilitlenme Önleyici Güvenlik:** Bir bağlantı hatası oluşursa, oyun artık konuşmayı "yarıda kesmeyecek". İlerleme kaybetmeden tekrar deneyebilmeniz için diyalog seçenekleriniz yeniden görünecektir.
+  - ☁️ **Bulut Hafızası:** Ayarlar menüsü artık oturumlar arasında bulut sağlayıcı tercihlerinizi doğru bir şekilde hatırlıyor.
+
+****************************************************************************************************
 03/02/2026 20:23 - VRAM Bellek Optimizasyonu ve Yükleme Kararlılığı - Beta_v052
 ****************************************************************************************************
 - What's New (TR):

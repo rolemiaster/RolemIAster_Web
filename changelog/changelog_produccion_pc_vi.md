@@ -1,4 +1,15 @@
 ****************************************************************************************************
+06/02/2026 02:32 - Hỗ trợ Vulkan (AMD/Intel) và Xử lý Lỗi Mạnh mẽ - Beta_v053
+****************************************************************************************************
+- What's New (VI):
+  - 🚀 **Engine Vulkan Lai:** Hỗ trợ chính thức cho card đồ họa AMD và Intel! Giờ đây, trò chơi tích hợp một engine Vulkan chuyên dụng, tự động kích hoạt (hoặc thủ công) để tăng tốc AI trên các thiết bị không sử dụng NVIDIA.
+  - ⚙️ **Kiểm soát Hoàn toàn Engine:** Chúng tôi đã thêm tùy chọn "Buộc dùng Vulkan" vào cả Trình khởi chạy và Cài đặt. Nếu bạn gặp sự cố với CUDA hoặc muốn thử nghiệm hiệu suất Vulkan (thứ chạy cực nhanh trên nhiều cấu hình), quyền kiểm soát thuộc về bạn.
+  - 🚦 **Trạng thái Hệ thống:** Giờ đây bạn có thể thấy chính xác engine nào đang hoạt động (🟢 XANH cho CUDA, 🔴 ĐỎ cho Vulkan) trong bảng trạng thái.
+  - 🛡️ **Tín hiệu AI:** Nếu Trí tuệ Nhân tạo bị "đuối" (vượt quá hạn mức) hoặc mất kết nối internet, trò chơi sẽ cảnh báo bạn bằng một cửa sổ rõ ràng và hữu ích thay vì để bạn chờ đợi trong im lặng.
+  - 🔄 **Bảo vệ Chống Treo:** Nếu xảy ra lỗi kết nối, trò chơi sẽ không còn làm "vỡ" cuộc trò chuyện. Các lựa chọn đối thoại của bạn sẽ xuất hiện lại để bạn có thể thử lại mà không bị mất tiến trình.
+  - ☁️ **Bộ nhớ Đám mây:** Menu cài đặt giờ đây ghi nhớ chính xác các tùy chọn nhà cung cấp đám mây của bạn giữa các phiên chơi.
+
+****************************************************************************************************
 03/02/2026 20:23 - Tối ưu hóa Bộ nhớ VRAM và Độ ổn định Tải game - Beta_v052
 ****************************************************************************************************
 - What's New (VI):

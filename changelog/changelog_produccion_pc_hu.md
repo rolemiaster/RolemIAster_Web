@@ -1,4 +1,15 @@
 ****************************************************************************************************
+06/02/2026 02:32 - Vulkan támogatás (AMD/Intel) és robusztus hibakezelés - Beta_v053
+****************************************************************************************************
+- What's New (HU):
+  - 🚀 **Hibrid Vulkan motor:** Hivatalos támogatás AMD és Intel videókártyákhoz! A játék mostantól tartalmaz egy dedikált Vulkan motort, amely automatikusan (vagy manuálisan) aktiválódik, hogy felgyorsítsa az MI-t a nem NVIDIA rendszereken.
+  - ⚙️ **Teljes motorvezérlés:** Hozzáadtuk a „Vulkan kényszerítése” opciót az indítóhoz és a beállításokhoz is. Ha problémád van a CUDA-val, vagy tesztelni szeretnéd a Vulkan teljesítményét (ami sok konfiguráción száguld), a döntés a te kezedben van.
+  - 🚦 **Rendszerállapot:** Az állapotjelző panelen mostantól pontosan láthatod, melyik motor dübörög a motorháztető alatt (🟢 ZÖLD a CUDA, 🔴 PIROS a Vulkan esetében).
+  - 🛡️ **MI állapotjelző:** Ha a Mesterséges Intelligencia „elfárad” (túllépi a kvótát) vagy megszakad az internet, a játék egy egyértelmű és hasznos ablakban figyelmeztet ahelyett, hogy csendben várakoztatna.
+  - 🔄 **Elakadás elleni védelem:** Csatlakozási hiba esetén a játék többé nem „töri meg” a beszélgetést. A válaszlehetőségek újra megjelennek, így újra próbálkozhatsz anélkül, hogy elveszítenéd az előrehaladást.
+  - ☁️ **Felhő memória:** A beállítások menü mostantól megfelelően megjegyzi a felhőszolgáltatókkal kapcsolatos preferenciáidat a munkamenetek között.
+
+****************************************************************************************************
 03/02/2026 20:23 - VRAM-optimalizálás és betöltési stabilitás - Beta_v052
 ****************************************************************************************************
 - What's New (HU):

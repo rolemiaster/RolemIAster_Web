@@ -1,4 +1,15 @@
 ****************************************************************************************************
+06/02/2026 02:32 - Vulkan-understøttelse (AMD/Intel) og robust fejlhåndtering - Beta_v053
+****************************************************************************************************
+- What's New (DA):
+  - 🚀 **Hybrid Vulkan-motor:** Officiel understøttelse af AMD- og Intel-grafikkort! Spillet inkluderer nu en dedikeret Vulkan-motor, der aktiveres automatisk (eller manuelt) for at accelerere AI på ikke-NVIDIA-systemer.
+  - ⚙️ **Fuld kontrol over motoren:** Vi har tilføjet muligheden "Tving Vulkan" i både launcheren og indstillingerne. Hvis du har problemer med CUDA eller vil teste Vulkans ydeevne (som i mange opsætninger kører lynhurtigt), er det dig, der bestemmer.
+  - 🚦 **Systemstatus:** Nu kan du se præcis, hvilken motor der brøler under motorhjelmen (🟢 GRØN for CUDA, 🔴 RØD for Vulkan) i statuspanelet.
+  - 🛡️ **AI-trafiklys:** Hvis den kunstige intelligens bliver "træt" (overskrider sin kvote), eller internettet ryger, vil spillet give dig besked med et klart og nyttigt vindue i stedet for at lade dig vente i stilhed.
+  - 🔄 **Sikkerhed mod fastlåsning:** Hvis der opstår en forbindelsesfejl, "ødelægger" spillet ikke længere samtalen. Dine dialogmuligheder vil dukke op igen, så du kan prøve igen uden at miste fremskridt.
+  - ☁️ **Cloud-hukommelse:** Indstillingsmenuen husker nu dine præferencer for cloud-udbydere korrekt mellem sessioner.
+
+****************************************************************************************************
 03/02/2026 20:23 - Optimering af VRAM og indlæsningsstabilitet - Beta_v052
 ****************************************************************************************************
 - What's New (DA):
