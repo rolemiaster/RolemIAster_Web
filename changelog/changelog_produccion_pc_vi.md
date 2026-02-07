@@ -1,4 +1,23 @@
 ****************************************************************************************************
+07/02/2026 20:26 - Hệ thống Diễn giải Ngữ nghĩa Chiến đấu - EXPERIMENTAL_v053
+****************************************************************************************************
+- What's New (VI):
+  🧪 HIỆN ĐÃ CÓ: PHIÊN BẢN THỬ NGHIỆM (Để truy cập: Chuột phải vào Steam ➡️ Thuộc tính ➡️ Beta)
+  
+  🛡️ Gửi những chiến binh dũng cảm DÁM chiến đấu nơi tiền tuyến: Cuộc phiêu lưu đang chờ đón, giờ đây dữ dội hơn bao giờ hết!
+  
+  📝 Tôi chờ đợi Báo cáo Chiến trường (lỗi và phản hồi) từ các bạn. Hãy chiến hết mình! ⚔️
+  
+  - 🧠 **Chiến đấu bằng Văn bản Tự do:** Giờ đây bạn có thể viết hành động chiến đấu như thể đang nói chuyện với nhân vật trong game tabletop: "thi triển phép hồi máu lên bản thân", "rút kiếm", "dùng bình máu". AI sẽ hiểu ý định của bạn và chuyển thành cơ chế trò chơi.
+  - ⚔️ **Rút vũ khí bằng Lời nói:** Không cần nhấp vào ô vũ khí nữa. Chỉ cần viết "rút kiếm" hoặc "lấy rìu ra" và hệ thống sẽ tự động diễn giải (CHÚ Ý!, làm vậy trong khi chiến đấu có thể dẫn đến thất bại, lỗi kỹ năng và mất lượt!... "Ra trận là phải chuẩn bị từ nhà!").
+  - 📖 **Nhận diện Phép thuật:** AI hiện đã biết toàn bộ sách phép của bạn. Hãy nhập "bắn cầu lửa" và nếu bạn có phép đó, nó sẽ được thi triển.
+  - 🛡️ **Không còn Mất lượt:** Nếu trò chơi không hiểu hành động của bạn, nó sẽ yêu cầu bạn diễn đạt lại. Lượt của bạn sẽ KHÔNG bị mất.
+  - 🎒 **Kho đồ Thủ công:** Để di chuyển vật phẩm giữa các ô (trang bị từ ba lô, nạp đạn), hãy dùng giao diện kéo và thả. Điều này giúp tránh nhầm lẫn và tiết kiệm tài nguyên AI.
+  - 🎬 **AI Đạo diễn (CẢI TIẾN):** Chiến đấu giờ đây trở nên sống động. AI tạo ra các sự kiện môi trường và phản ứng làm phong phú thêm cốt truyện: đuốc rơi, kẻ thù lùi bước, xà nhà sụp đổ. Chiến trường không còn tĩnh lặng nữa!
+  - 🐛 **Sửa lỗi Nghiêm trọng NPC:** Đã khắc phục lỗi ngăn NPC đưa ra quyết định chiến thuật chính xác, khiến chúng luôn "chờ đợi" thay vì tấn công hoặc phòng thủ.
+  - 🎵 **Sửa lỗi Âm thanh:** Nhạc chiến đấu không còn bị ngắt khi nhấn các nút định sẵn (Tấn công, Đỡ đòn, v.v.).
+
+****************************************************************************************************
 06/02/2026 02:32 - Hỗ trợ Vulkan (AMD/Intel) và Xử lý Lỗi Mạnh mẽ - Beta_v053
 ****************************************************************************************************
 - What's New (VI):

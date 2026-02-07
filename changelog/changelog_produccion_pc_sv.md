@@ -1,4 +1,23 @@
 ****************************************************************************************************
+07/02/2026 20:26 - System för semantisk stridstolkning - EXPERIMENTAL_v053
+****************************************************************************************************
+- What's New (SV):
+  🧪 NU TILLGÄNGLIG: EXPERIMENTELL VERSION (För åtkomst: Högerklicka i Steam ➡️ Egenskaper ➡️ Betas)
+  
+  🛡️ Till de tappra som VÅGAR strida vid frontlinjen: Äventyret väntar, nu mer otämjt än någonsin!
+  
+  📝 Jag ser fram emot era krigsrapporter (buggar och feedback) från fronten. Ge järnet! ⚔️
+  
+  - 🧠 **Strid med fritext:** Nu kan du skriva dina handlingar i strid som om du pratade med en rollspelskaraktär: "kasta helande trollformel på mig", "dra mitt svärd", "använd helande dryck". AI:n förstår din avsikt och översätter den till spelmekanik.
+  - ⚔️ **Dra vapen med ord:** Du behöver inte längre klicka på vapenplatsen. Skriv bara "dra svärd" eller "ta fram min yxa" så tolkar systemet det automatiskt (OBS! Att göra detta i strid kan leda till misslyckande, fummel och förlorad tur!... "Man kommer förberedd till strid!").
+  - 📖 **Igenkända trollformler:** AI:n känner nu till hela din trollformelbok. Säg "kasta eldklot" och om du har den trollformeln, kommer den att kastas.
+  - 🛡️ **Inga fler förlorade turer:** Om spelet inte förstår din handling kommer det att be dig formulera om den. Din tur går INTE förlorad.
+  - 🎒 **Manuell inventarie:** För att flytta föremål mellan platser (utrusta från ryggsäck, ladda ammunition), använd dra-och-släpp-gränssnittet. Detta undviker förvirring och sparar AI-resurser.
+  - 🎬 **AI-scenregissör (FÖRBÄTTRAD):** Striden får nu liv. AI:n genererar miljörelaterade händelser och reaktioner som berikar berättelsen: facklor som faller, fiender som drar sig tillbaka, bjälkar som rasar. Slagfältet är inte längre statiskt!
+  - 🐛 **Kritisk NPC-fix:** Åtgärdade ett fel som hindrade NPC:er från att fatta taktiska beslut korrekt, vilket gjorde att de alltid "väntade" istället för att attackera eller försvara sig.
+  - 🎵 **Ljudkorrigering:** Stridsmusiken stannar inte längre när du trycker på fördefinierade knappar (Attackera, Blockera, etc.).
+
+****************************************************************************************************
 06/02/2026 02:32 - Vulkan-stöd (AMD/Intel) och robust felhantering - Beta_v053
 ****************************************************************************************************
 - What's New (SV):

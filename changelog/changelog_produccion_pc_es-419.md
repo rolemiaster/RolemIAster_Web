@@ -1,4 +1,23 @@
 ****************************************************************************************************
+07/02/2026 20:26 - Sistema de Interpretación Semántica de Combate - EXPERIMENTAL_v053
+****************************************************************************************************
+- What's New (ES-419):
+  🧪 YA DISPONIBLE: VERSIÓN EXPERIMENTAL (Para acceder: Clic derecho en Steam ➡️ Propiedades ➡️ Betas)
+  
+  🛡️ A los valientes que se ATREVAN a luchar en la primera línea de batalla: ¡La aventura los espera, ahora más indomable que nunca!
+  
+  📝 Espero sus Informes de Guerra (bugs y feedback) en el frente. ¡Denles duro! ⚔️
+  
+  - 🧠 **Combate por Texto Libre:** Ahora puedes escribir tus acciones en combate como si hablaras con un PJ de mesa: "lanzar hechizo de curación sobre mí", "desenfundar mi espada", "usar poción de curación". La IA entiende tu intención y la traduce a mecánica de juego.
+  - ⚔️ **Desenfundar con Palabras:** Ya no necesitas hacer clic en la ranura del arma. Simplemente escribe "desenfundar espada" o "sacar mi hacha" y el sistema lo interpreta automáticamente (¡OJO! Hacerlo en combate puede resultar en fracaso, pifia y pérdida de turno... "¡A los combates se viene preparado desde casa!").
+  - 📖 **Hechizos Reconocidos:** La IA ahora conoce tu libro de hechizos completo. Di "lanzar bola de fuego" y si tienes ese hechizo, lo lanzará.
+  - 🛡️ **No Más Turnos Perdidos:** Si el juego no entiende tu acción, te pedirá que la reformules. Tu turno NO se pierde.
+  - 🎒 **Inventario Manual:** Para mover objetos entre ranuras (equipar desde la mochila, cargar munición), usa la interfaz de arrastrar y soltar. Esto evita confusiones y ahorra recursos de IA.
+  - 🎬 **IA Director de Escena (MEJORADO):** El combate ahora cobra vida. La IA genera eventos ambientales y reacciones que enriquecen la narrativa: antorchas que caen, enemigos que retroceden, vigas que se derrumban. ¡El campo de batalla ya no es estático!
+  - 🐛 **Corrección Crítica de NPC:** Se solucionó un error que impedía que los NPC tomaran decisiones tácticas correctamente, causando que siempre "esperaran" en lugar de atacar o defenderse.
+  - 🎵 **Corrección de Audio:** La música de combate ya no se detiene al presionar los botones predefinidos (Atacar, Bloquear, etc.).
+
+****************************************************************************************************
 06/02/2026 02:32 - Soporte para Vulkan (AMD/Intel) y Manejo Robusto de Errores - Beta_v053
 ****************************************************************************************************
 - What's New (ES-419):

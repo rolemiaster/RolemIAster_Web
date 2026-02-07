@@ -1,4 +1,23 @@
 ****************************************************************************************************
+07/02/2026 20:26 - Systém sémantické interpretace boje - EXPERIMENTAL_v053
+****************************************************************************************************
+- What's New (CS):
+  🧪 NYNÍ K DISPOZICI: EXPERIMENTÁLNÍ VERZE (Pro přístup: Klikněte pravým tlačítkem ve službě Steam ➡️ Vlastnosti ➡️ Beta verze)
+  
+  🛡️ Pro odvážné, kteří se ODVÁŽÍ bojovat v první linii: Dobrodružství čeká, nyní nezkrotnější než kdy dřív!
+  
+  📝 Očekávám vaše válečná hlášení (chyby a zpětnou vazbu) na frontě. Dejte jim co proto! ⚔️
+  
+  - 🧠 **Boj volným textem:** Nyní můžete psát své bojové akce, jako byste mluvili s postavou ve stolní hře: "seslat na mě léčivé kouzlo", "tasit meč", "použít léčivý lektvar". UI pochopí váš záměr a přeloží ho do herních mechanismů.
+  - ⚔️ **Tasení slovy:** Už nemusíte klikat na slot zbraně. Stačí napsat "tasit meč" nebo "vytáhnout sekeru" a systém to automaticky interpretuje (POZOR!, dělání tohoto v boji může vést k neúspěchu, fatálnímu selhání a ztrátě tahu!... "Do boje se chodí připravený z domova!").
+  - 📖 **Rozpoznaná kouzla:** UI nyní zná celou vaši knihu kouzel. Řekněte "seslat ohnivou kouli", a pokud toto kouzlo máte, sešle ho.
+  - 🛡️ **Žádné další ztracené tahy:** Pokud hra vaší akci neporozumí, požádá vás o její přeformulování. Váš tah se NEZTRATÍ.
+  - 🎒 **Manuální inventář:** Pro přesun předmětů mezi sloty (vybavení z batohu, nabíjení munice) použijte rozhraní drag & drop. To zabraňuje zmatkům a šetří zdroje UI.
+  - 🎬 **Režisér scény UI (VYLEPŠENO):** Boj nyní ožívá. UI generuje environmentální události a reakce, které obohacují příběh: padající pochodně, ustupující nepřátelé, hroutící se trámy. Bojiště už není statické!
+  - 🐛 **Kritická oprava NPC:** Opravena chyba, která bránila NPC ve správném taktickém rozhodování, což způsobovalo, že místo útoku nebo obrany vždy jen "čekaly".
+  - 🎵 **Oprava zvuku:** Bojová hudba se již nezastaví při stisknutí předdefinovaných tlačítek (Útok, Blokování atd.).
+
+****************************************************************************************************
 06/02/2026 02:32 - Podpora Vulkanu (AMD/Intel) a robustní zpracování chyb - Beta_v053
 ****************************************************************************************************
 - What's New (CS):

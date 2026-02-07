@@ -1,4 +1,23 @@
 ****************************************************************************************************
+07/02/2026 20:26 - Système d'Interprétation Sémantique de Combat - EXPERIMENTAL_v053
+****************************************************************************************************
+- What's New (FR):
+  🧪 DISPONIBLE MAINTENANT : VERSION EXPÉRIMENTALE (Pour y accéder : Clic droit sur Steam ➡️ Propriétés ➡️ Bêtas)
+  
+  🛡️ Aux courageux qui OSERONT se battre en première ligne : l'aventure vous attend, plus indomptable que jamais !
+  
+  📝 J'attends vos Rapports de Guerre (bugs et retours) sur le front. Frappez fort ! ⚔️
+  
+  - 🧠 **Combat en Texte Libre :** Vous pouvez désormais écrire vos actions en combat comme dans un jeu de rôle sur table : "lancer sort de soin sur moi", "dégainer mon épée", "utiliser potion de soin". L'IA comprend votre intention et la traduit en mécanique de jeu.
+  - ⚔️ **Dégainer avec des Mots :** Plus besoin de cliquer sur l'emplacement de l'arme. Écrivez simplement "dégainer épée" ou "sortir ma hache" et le système l'interprète automatiquement (ATTENTION ! Le faire en combat peut entraîner un échec, une maladresse et la perte du tour !... "On vient au combat préparé !").
+  - 📖 **Sorts Reconnus :** L'IA connaît désormais l'intégralité de votre grimoire. Dites "lancer boule de feu" et si vous possédez ce sort, il sera lancé.
+  - 🛡️ **Plus de Tours Perdus :** Si le jeu ne comprend pas votre action, il vous demandera de la reformuler. Votre tour N'EST PAS perdu.
+  - 🎒 **Inventaire Manuel :** Pour déplacer des objets entre les emplacements (équiper depuis le sac, charger des munitions), utilisez l'interface glisser-déposer. Cela évite les confusions et économise les ressources de l'IA.
+  - 🎬 **IA Directeur de Scène (AMÉLIORÉ) :** Le combat prend vie. L'IA génère des événements environnementaux et des réactions qui enrichissent la narration : torches qui tombent, ennemis qui reculent, poutres qui s'effondrent. Le champ de bataille n'est plus statique !
+  - 🐛 **Correction Critique PNJ :** Correction d'un bug qui empêchait les PNJ de prendre des décisions tactiques correctes, les obligeant à toujours "attendre" au lieu d'attaquer ou de se défendre.
+  - 🎵 **Correction Audio :** La musique de combat ne s'arrête plus lorsque vous appuyez sur les boutons prédéfinis (Attaquer, Parer, etc.).
+
+****************************************************************************************************
 06/02/2026 02:32 - Support Vulkan (AMD/Intel) et Gestion Robuste des Erreurs - Beta_v053
 ****************************************************************************************************
 - What's New (FR):

@@ -1,4 +1,23 @@
 ****************************************************************************************************
+07/02/2026 20:26 - Combat Semantic Interpretation System - EXPERIMENTAL_v053
+****************************************************************************************************
+- What's New (EN):
+  🧪 NOW AVAILABLE: EXPERIMENTAL VERSION (To access: Right-click on Steam ➡️ Properties ➡️ Betas)
+  
+  🛡️ To the brave souls who DARE to fight on the front lines: Adventure awaits, now more untamable than ever!
+  
+  📝 I await your War Reports (bugs and feedback) from the front. Give 'em hell! ⚔️
+  
+  - 🧠 **Free Text Combat:** You can now write your combat actions as if you were speaking to a tabletop character: "cast healing spell on myself", "draw my sword", "use healing potion". The AI understands your intent and translates it into game mechanics.
+  - ⚔️ **Draw with Words:** You no longer need to click on the weapon slot. Simply type "draw sword" or "take out my axe" and the system interprets it automatically (HEADS UP! Doing this in combat may result in failure, fumbles, and losing a turn!... "You should come prepared to a fight!").
+  - 📖 **Recognized Spells:** The AI now knows your entire spellbook. Say "cast fireball" and if you have that spell, it will cast it.
+  - 🛡️ **No More Lost Turns:** If the game doesn't understand your action, it will ask you to rephrase it. Your turn is NOT lost.
+  - 🎒 **Manual Inventory:** To move items between slots (equip from backpack, load ammo), use the drag-and-drop interface. This prevents confusion and saves AI resources.
+  - 🎬 **AI Scene Director (IMPROVED):** Combat comes to life. The AI generates environmental events and reactions that enrich the narrative: torches falling, enemies retreating, beams collapsing. The battlefield is no longer static!
+  - 🐛 **Critical NPC Fix:** Fixed a bug that prevented NPCs from making tactical decisions correctly, causing them to always "wait" instead of attacking or defending.
+  - 🎵 **Audio Fix:** Combat music no longer stops when pressing predefined buttons (Attack, Block, etc.).
+
+****************************************************************************************************
 06/02/2026 02:32 - Vulkan Support (AMD/Intel) and Robust Error Handling - Beta_v053
 ****************************************************************************************************
 - What's New (EN):

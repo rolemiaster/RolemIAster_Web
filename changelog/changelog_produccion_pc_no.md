@@ -1,4 +1,23 @@
 ****************************************************************************************************
+07/02/2026 20:26 - System for semantisk kamptolkning - EXPERIMENTAL_v053
+****************************************************************************************************
+- What's New (NO):
+  🧪 NÅ TILGJENGELIG: EKSPERIMENTELL VERSJON (For tilgang: Høyreklikk i Steam ➡️ Egenskaper ➡️ Betaer)
+  
+  🛡️ Til de modige som VÅGER å kjempe i frontlinjen: Eventyret venter, nå villere enn noen gang!
+  
+  📝 Jeg ser frem til krigsrapportene deres (bugs og tilbakemeldinger) fra fronten. Gi jernet! ⚔️
+  
+  - 🧠 **Fritekstkamp:** Nå kan du skrive kamphandlingene dine som om du snakket med en rollespillkarakter: «kast helbredelsesformel på meg», «trekk sverdet mitt», «bruk helbredelsesdrikk». KI-en forstår hensikten din og oversetter den til spillmekanikk.
+  - ⚔️ **Trekk våpen med ord:** Du trenger ikke lenger å klikke på våpenplassen. Bare skriv «trekk sverd» eller «ta frem øksen min», så tolker systemet det automatisk (OBS! Å gjøre dette i kamp kan føre til mislykket handling, tabbe og tapt tur!... «Man møter forberedt til kamp!»).
+  - 📖 **Gjenkjente formler:** KI-en kjenner nå til hele trolldomsboken din. Si «kast ildkule», og hvis du har den formelen, vil den bli kastet.
+  - 🛡️ **Ingen flere tapte turer:** Hvis spillet ikke forstår handlingen din, vil det be deg om å formulere den på nytt. Turen din går IKKE tapt.
+  - 🎒 **Manuelt inventar:** For å flytte gjenstander mellom plasser (utstyre fra ryggsekk, lade ammunisjon), bruk dra-og-slipp-grensesnittet. Dette forhindrer forvirring og sparer KI-ressurser.
+  - 🎬 **KI-regissør (FORBEDRET):** Kampene våkner nå til liv. KI-en genererer miljøhendelser og reaksjoner som beriker fortellingen: fakler som faller, fiender som trekker seg tilbake, bjelker som kollapser. Slagmarken er ikke lenger statisk!
+  - 🐛 **Kritisk NPC-fiks:** Løst en feil som hindret NPC-er i å ta taktiske beslutninger korrekt, noe som førte til at de alltid «ventet» i stedet for å angripe eller forsvare seg.
+  - 🎵 **Lydfiks:** Kampmusikken stopper ikke lenger når du trykker på forhåndsdefinerte knapper (Angrip, Blokker osv.).
+
+****************************************************************************************************
 06/02/2026 02:32 - Vulkan-støtte (AMD/Intel) og robust feilhåndtering - Beta_v053
 ****************************************************************************************************
 - What's New (NO):

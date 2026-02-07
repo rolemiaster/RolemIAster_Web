@@ -1,4 +1,23 @@
 ****************************************************************************************************
+07/02/2026 20:26 - Szemantikus Harci Értelmező Rendszer - EXPERIMENTAL_v053
+****************************************************************************************************
+- What's New (HU):
+  🧪 MÁR ELÉRHETŐ: KÍSÉRLETI VERZIÓ (Elérés: Jobb klikk a Steamen ➡️ Tulajdonságok ➡️ Béták)
+  
+  🛡️ A bátraknak, akik MERÉSZELNEK az első sorban harcolni: A kaland vár, most zabolátlanabb, mint valaha!
+  
+  📝 Várom a Háborús Jelentéseiteket (hibák és visszajelzések) a frontról. Adjatok nekik! ⚔️
+  
+  - 🧠 **Szabad Szöveges Harc:** Mostantól úgy írhatod le a harci cselekedeteidet, mintha egy asztali szerepjátékban beszélnél: "gyógyító varázslat magamra", "kard előhúzása", "gyógyital használata". A MI megérti a szándékodat, és átülteti játékmechanikába.
+  - ⚔️ **Fegyverrántás Szavakkal:** Nem kell többé a fegyverhelyre kattintanod. Csak írd be, hogy "kard előhúzása" vagy "fejsze elővétele", és a rendszer automatikusan értelmezi (VIGYÁZAT! Ha harc közben teszed, az kudarcot, balsikert és körveszteséget okozhat!... "A csatába felkészülten érkezünk!").
+  - 📖 **Felismert Varázslatok:** A MI mostantól ismeri a teljes varázskönyvedet. Mondd, hogy "tűzgolyó", és ha megvan a varázslat, el is süti.
+  - 🛡️ **Nincs Több Elveszett Kör:** Ha a játék nem érti a cselekedetedet, megkér, hogy fogalmazd át. A köröd NEM vész el.
+  - 🎒 **Manuális Tárgylistakezelés:** A tárgyak helyek közötti mozgatásához (felszerelés a hátizsákból, lőszer betöltése) használd a fogd és vidd felületet. Ez elkerüli a félreértéseket és MI-erőforrást takarít meg.
+  - 🎬 **MI Jelenetrendező (JAVÍTOTT):** A harc mostantól életre kel. A MI környezeti eseményeket és reakciókat generál, amelyek gazdagítják a narratívát: leeső fáklyák, hátráló ellenségek, beomló gerendák. A csatatér többé nem statikus!
+  - 🐛 **Kritikus NPC Javítás:** Javítva egy hiba, amely megakadályozta, hogy az NPC-k megfelelő taktikai döntéseket hozzanak, ami miatt mindig csak "várakoztak" támadás vagy védekezés helyett.
+  - 🎵 **Hang Javítás:** A harci zene többé nem áll le az előre meghatározott gombok (Támadás, Blokkolás stb.) megnyomásakor.
+
+****************************************************************************************************
 06/02/2026 02:32 - Vulkan támogatás (AMD/Intel) és robusztus hibakezelés - Beta_v053
 ****************************************************************************************************
 - What's New (HU):

@@ -1,4 +1,23 @@
 ****************************************************************************************************
+07/02/2026 20:26 - System zur semantischen Kampfinterpretation - EXPERIMENTAL_v053
+****************************************************************************************************
+- What's New (DE):
+  🧪 JETZT VERFÜGBAR: EXPERIMENTELLE VERSION (Zugriff: Rechtsklick in Steam ➡️ Eigenschaften ➡️ Betas)
+  
+  🛡️ An die Mutigen, die es WAGEN, an vorderster Front zu kämpfen: Das Abenteuer erwartet euch, jetzt unzähmbarer als je zuvor!
+  
+  📝 Ich erwarte eure Kriegsberichte (Bugs und Feedback) an der Front. Macht sie fertig! ⚔️
+  
+  - 🧠 **Freitext-Kampf:** Du kannst deine Aktionen im Kampf jetzt so schreiben, als würdest du ein Pen-&-Paper-Rollenspiel spielen: "Heilzauber auf mich wirken", "Schwert ziehen", "Heiltrank benutzen". Die KI versteht deine Absicht und übersetzt sie in Spielmechaniken.
+  - ⚔️ **Ziehen mit Worten:** Du musst nicht mehr auf den Waffenslot klicken. Schreibe einfach "Schwert ziehen" oder "meine Axt herausholen" und das System interpretiert es automatisch (ACHTUNG! Dies im Kampf zu tun, kann zu einem Fehlschlag, Patzer und dem Verlust des Zuges führen! ... "Man kommt vorbereitet zum Kampf!").
+  - 📖 **Erkannte Zauber:** Die KI kennt jetzt dein komplettes Zauberbuch. Sage "Feuerball wirken" und wenn du diesen Zauber besitzt, wird er gewirkt.
+  - 🛡️ **Keine verlorenen Züge mehr:** Wenn das Spiel deine Aktion nicht versteht, wirst du gebeten, sie umzuformulieren. Dein Zug geht NICHT verloren.
+  - 🎒 **Manuelles Inventar:** Um Gegenstände zwischen Slots zu bewegen (aus dem Rucksack ausrüsten, Munition laden), nutze die Drag-and-Drop-Oberfläche. Dies vermeidet Verwirrung und spart KI-Ressourcen.
+  - 🎬 **KI-Regisseur (VERBESSERT):** Der Kampf erwacht zum Leben. Die KI generiert Umgebungsereignisse und Reaktionen, die die Erzählung bereichern: herabfallende Fackeln, zurückweichende Feinde, einstürzende Balken. Das Schlachtfeld ist nicht mehr statisch!
+  - 🐛 **Kritischer NPC-Fix:** Ein Fehler wurde behoben, der verhinderte, dass NPCs taktische Entscheidungen korrekt treffen, was dazu führte, dass sie immer "warteten", anstatt anzugreifen oder sich zu verteidigen.
+  - 🎵 **Audio-Korrektur:** Die Kampfmusik stoppt nicht mehr, wenn die vordefinierten Tasten (Angreifen, Blocken usw.) gedrückt werden.
+
+****************************************************************************************************
 06/02/2026 02:32 - Vulkan-Unterstützung (AMD/Intel) und robuste Fehlerbehandlung - Beta_v053
 ****************************************************************************************************
 - What's New (DE):

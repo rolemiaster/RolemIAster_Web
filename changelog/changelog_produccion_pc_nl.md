@@ -1,4 +1,23 @@
 ****************************************************************************************************
+07/02/2026 20:26 - Systeem voor Semantische Gevechtsinterpretatie - EXPERIMENTAL_v053
+****************************************************************************************************
+- What's New (NL):
+  🧪 NU BESCHIKBAAR: EXPERIMENTELE VERSIE (Toegang: Rechtsklikken in Steam ➡️ Eigenschappen ➡️ Beta's)
+  
+  🛡️ Aan de dapperen die het DURVEN op te nemen in de frontlinie: Het avontuur wacht, nu ontembaarder dan ooit!
+  
+  📝 Ik verwacht jullie Oorlogsrapporten (bugs en feedback) aan het front. Geef ze ervan langs! ⚔️
+  
+  - 🧠 **Vrije Tekstgevechten:** Je kunt nu je acties tijdens gevechten typen alsof je praat met een personage in een tafelrollenspel: "spreek genezingsspreuk over mij uit", "trek mijn zwaard", "gebruik genezingsdrankje". De AI begrijpt je intentie en vertaalt deze naar spelmechanismen.
+  - ⚔️ **Trekken met Woorden:** Je hoeft niet langer op het wapenslot te klikken. Typ gewoon "trek zwaard" of "pak mijn bijl" en het systeem interpreteert dit automatisch (LET OP! Dit doen tijdens een gevecht kan leiden tot mislukking, een flater en het verlies van een beurt!... "Je komt voorbereid naar een gevecht!").
+  - 📖 **Herkende Spreuken:** De AI kent nu je volledige spreukenboek. Zeg "werp vuurbal" en als je die spreuk hebt, wordt deze uitgevoerd.
+  - 🛡️ **Geen Verloren Beurten Meer:** Als het spel je actie niet begrijpt, vraagt het je om deze te herformuleren. Je beurt gaat NIET verloren.
+  - 🎒 **Handmatige Inventaris:** Gebruik de sleep-en-neerzet interface om voorwerpen tussen vakjes te verplaatsen (uitrusten vanuit rugzak, munitie laden). Dit voorkomt verwarring en bespaart AI-bronnen.
+  - 🎬 **AI Scèneregisseur (VERBETERD):** Het gevecht komt nu tot leven. De AI genereert omgevingsgebeurtenissen en reacties die het verhaal verrijken: vallende fakkels, terugdeinzende vijanden, instortende balken. Het slagveld is niet langer statisch!
+  - 🐛 **Kritieke NPC-fix:** Een fout opgelost waardoor NPC's geen correcte tactische beslissingen namen, waardoor ze altijd "wachtten" in plaats van aan te vallen of zich te verdedigen.
+  - 🎵 **Audiocorrectie:** De gevechtsmuziek stopt niet langer wanneer je op de vooraf gedefinieerde knoppen drukt (Aanvallen, Blokkeren, enz.).
+
+****************************************************************************************************
 06/02/2026 02:32 - Vulkan-ondersteuning (AMD/Intel) en Robuuste Foutafhandeling - Beta_v053
 ****************************************************************************************************
 - What's New (NL):

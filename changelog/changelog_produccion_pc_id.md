@@ -1,4 +1,23 @@
 ****************************************************************************************************
+07/02/2026 20:26 - Sistem Interpretasi Semantik Pertarungan - EXPERIMENTAL_v053
+****************************************************************************************************
+- What's New (ID):
+  🧪 TERSEDIA SEKARANG: VERSI EKSPERIMENTAL (Untuk mengakses: Klik kanan di Steam ➡️ Properti ➡️ Beta)
+  
+  🛡️ Kepada para pemberani yang BERANI bertarung di garis depan pertempuran: Petualangan menanti kalian, kini lebih ganas dari sebelumnya!
+  
+  📝 Saya menantikan Laporan Perang kalian (bug dan masukan) di garis depan. Hajar terus! ⚔️
+  
+  - 🧠 **Pertarungan Teks Bebas:** Sekarang kamu bisa menulis aksimu dalam pertarungan seolah berbicara dengan karakter RPG meja: "rapalkan mantra penyembuh pada diriku", "hunus pedangku", "gunakan ramuan penyembuh". AI memahami niatmu dan menerjemahkannya ke mekanisme permainan.
+  - ⚔️ **Hunus dengan Kata-kata:** Kamu tidak perlu lagi mengeklik slot senjata. Cukup tulis "hunus pedang" atau "keluarkan kapakku" dan sistem akan menafsirkannya secara otomatis (PERHATIAN!, melakukannya saat bertarung bisa mengakibatkan kegagalan, blunder, dan kehilangan giliran!... "Ke medan tempur harus sudah siap sedia!").
+  - 📖 **Mantra Dikenali:** AI sekarang mengetahui seluruh buku mantramu. Katakan "lontarkan bola api" dan jika kamu punya mantra itu, ia akan melontarkannya.
+  - 🛡️ **Tidak Ada Lagi Giliran Terbuang:** Jika game tidak mengerti aksimu, ia akan memintamu untuk merumuskannya ulang. Giliranmu TIDAK akan hilang.
+  - 🎒 **Inventaris Manual:** Untuk memindahkan objek antar slot (melengkapi dari tas, memuat amunisi), gunakan antarmuka seret dan lepas (drag and drop). Ini menghindari kebingungan dan menghemat sumber daya AI.
+  - 🎬 **Sutradara Adegan AI (DITINGKATKAN):** Pertarungan kini menjadi hidup. AI menghasilkan peristiwa lingkungan dan reaksi yang memperkaya narasi: obor yang jatuh, musuh yang mundur, balok yang runtuh. Medan perang tidak lagi statis!
+  - 🐛 **Perbaikan Kritis NPC:** Memperbaiki bug yang mencegah NPC mengambil keputusan taktis dengan benar, menyebabkan mereka selalu "menunggu" alih-alih menyerang atau bertahan.
+  - 🎵 **Perbaikan Audio:** Musik pertarungan tidak lagi berhenti saat menekan tombol prasetel (Serang, Blokir, dll.).
+
+****************************************************************************************************
 06/02/2026 02:32 - Dukungan Vulkan (AMD/Intel) dan Penanganan Error yang Andal - Beta_v053
 ****************************************************************************************************
 - What's New (ID):
