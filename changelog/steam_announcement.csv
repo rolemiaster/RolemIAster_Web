@@ -1,0 +1,407 @@
+language,Description,Title
+arabic,"🧪 متوفر الآن: نسخة تجريبية (للوصول: انقر بزر الماوس الأيمن في Steam ⬅️ خصائص ""Properties"" ⬅️ بيتا ""Betas"")
+
+🛡️ إلى الشجعان الذين يجرؤون على القتال في الخطوط الأمامية: المغامرة بانتظاركم، وهي الآن أكثر جموحًا من أي وقت مضى!
+
+📝 أنتظر تقارير الحرب منكم (الأخطاء والتعليقات) في الجبهة. اضربوهم بقوة! ⚔️
+
+- 🧠 **قتال بالنص الحر:** يمكنك الآن كتابة أفعالك في القتال كما لو كنت تتحدث إلى شخصية في لعبة طاولة: ""إلقاء تعويذة شفاء عليّ""، ""استلال سيفي""، ""استخدام جرعة شفاء"". يفهم الذكاء الاصطناعي نيتك ويترجمها إلى ميكانيكا اللعبة.
+- ⚔️ **استلال السلاح بالكلمات:** لم تعد بحاجة للنقر على خانة السلاح. ببساطة اكتب ""استلال السيف"" أو ""إخراج فأسي"" وسيقوم النظام بتفسير ذلك تلقائيًا (انتبه! القيام بذلك أثناء القتال قد يؤدي إلى الفشل، أو إخفاق حرج وضياع الدور!... ""يجب أن تأتي إلى المعارك مستعدًا من المنزل!"").
+- 📖 **تعاويذ معترف بها:** يعرف الذكاء الاصطناعي الآن كتاب تعاويذك بالكامل. قل ""إطلاق كرة نارية"" وإذا كان لديك تلك التعويذة، فسيقوم بإطلاقها.
+- 🛡️ **لا مزيد من الأدوار الضائعة:** إذا لم تفهم اللعبة فعلك، ستطلب منك إعادة صياغته. دورك *لن* يضيع.
+- 🎒 **مخزون يدوي:** لنقل العناصر بين الخانات (التجهيز من الحقيبة، تحميل الذخيرة)، استخدم واجهة السحب والإفلات. هذا يمنع الارتباك ويوفر موارد الذكاء الاصطناعي.
+- 🎬 **الذكاء الاصطناعي مخرج المشهد (محسّن):** القتال ينبض بالحياة الآن. يولد الذكاء الاصطناعي أحداثًا بيئية وردود فعل تثري السرد: مشاعل تسقط، أعداء يتراجعون، عوارض تنهار. ساحة المعركة لم تعد ثابتة!
+- 🐛 **تصحيح حرج للشخصيات غير اللاعبة (NPC):** تم إصلاح خلل كان يمنع الشخصيات غير اللاعبة من اتخاذ قرارات تكتيكية بشكل صحيح، مما كان يتسبب في ""انتظارهم"" دائمًا بدلاً من الهجوم أو الدفاع.
+- 🎵 **تصحيح الصوت:** لم تعد موسيقى القتال تتوقف عند الضغط على الأزرار المحددة مسبقًا (هجوم، صد، إلخ).",نظام التفسير الدلالي للقتال
+bulgarian,"🧪 ВЕЧЕ Е ДОСТЪПНО: ЕКСПЕРИМЕНТАЛНА ВЕРСИЯ (За достъп: Десен клик в Steam ➡️ Properties (Свойства) ➡️ Betas (Бети))
+
+🛡️ За смелчаците, които се ОСМЕЛЯТ да се бият на първа линия: Приключението ви очаква, сега по-неукротимо от всякога!
+
+📝 Очаквам вашите Военни доклади (бъгове и обратна връзка) от фронта. Дайте им да се разберат! ⚔️
+
+- 🧠 **Свободен текст в битка:** Сега можете да пишете действията си в битка, сякаш говорите с персонаж от настолна игра: ""хвърли лекуваща магия върху мен"", ""извади меча ми"", ""използвай лекуваща отвара"". ИИ разбира намерението ви и го превежда в игрова механика.
+- ⚔️ **Вадене на оръжие с думи:** Вече не е нужно да кликвате върху слота за оръжие. Просто напишете ""извади меч"" или ""извади брадвата ми"" и системата ще го интерпретира автоматично (ВНИМАНИЕ!, ако го направите по време на битка, може да доведе до провал, фал и загуба на ход!... ""За битките се идва подготвен от вкъщи!"").
+- 📖 **Разпознати магии:** ИИ вече познава цялата ви книга със заклинания. Кажете ""хвърли огнена топка"" и ако имате тази магия, той ще я хвърли.
+- 🛡️ **Без повече загубени ходове:** Ако играта не разбере действието ви, ще ви помоли да го формулирате отново. Ходът ви НЕ се губи.
+- 🎒 **Ръчен инвентар:** За да местите предмети между слотовете (екипиране от раницата, зареждане на амуниции), използвайте интерфейса с влачене и пускане. Това предотвратява объркване и пести ресурси на ИИ.
+- 🎬 **ИИ Сценичен директор (ПОДОБРЕНО):** Битката вече оживява. ИИ генерира събития от околната среда и реакции, които обогатяват разказа: падащи факли, отстъпващи врагове, срутващи се греди. Бойното поле вече не е статично!
+- 🐛 **Критична корекция на NPC:** Поправен е бъг, който пречеше на NPC-тата да вземат правилни тактически решения, карайки ги винаги да ""чакат"", вместо да атакуват или да се защитават.
+- 🎵 **Корекция на звука:** Бойната музика вече не спира при натискане на предварително зададените бутони (Атака, Блокиране и т.н.).",Система за семантична интерпретация на боя
+czech,"🧪 NYNÍ K DISPOZICI: EXPERIMENTÁLNÍ VERZE (Pro přístup: Klikněte pravým tlačítkem ve službě Steam ➡️ Vlastnosti ➡️ Beta verze)
+
+🛡️ Pro odvážné, kteří se ODVÁŽÍ bojovat v první linii: Dobrodružství čeká, nyní nezkrotnější než kdy dřív!
+
+📝 Očekávám vaše válečná hlášení (chyby a zpětnou vazbu) na frontě. Dejte jim co proto! ⚔️
+
+- 🧠 **Boj volným textem:** Nyní můžete psát své bojové akce, jako byste mluvili s postavou ve stolní hře: ""seslat na mě léčivé kouzlo"", ""tasit meč"", ""použít léčivý lektvar"". UI pochopí váš záměr a přeloží ho do herních mechanismů.
+- ⚔️ **Tasení slovy:** Už nemusíte klikat na slot zbraně. Stačí napsat ""tasit meč"" nebo ""vytáhnout sekeru"" a systém to automaticky interpretuje (POZOR!, dělání tohoto v boji může vést k neúspěchu, fatálnímu selhání a ztrátě tahu!... ""Do boje se chodí připravený z domova!"").
+- 📖 **Rozpoznaná kouzla:** UI nyní zná celou vaši knihu kouzel. Řekněte ""seslat ohnivou kouli"", a pokud toto kouzlo máte, sešle ho.
+- 🛡️ **Žádné další ztracené tahy:** Pokud hra vaší akci neporozumí, požádá vás o její přeformulování. Váš tah se NEZTRATÍ.
+- 🎒 **Manuální inventář:** Pro přesun předmětů mezi sloty (vybavení z batohu, nabíjení munice) použijte rozhraní drag & drop. To zabraňuje zmatkům a šetří zdroje UI.
+- 🎬 **Režisér scény UI (VYLEPŠENO):** Boj nyní ožívá. UI generuje environmentální události a reakce, které obohacují příběh: padající pochodně, ustupující nepřátelé, hroutící se trámy. Bojiště už není statické!
+- 🐛 **Kritická oprava NPC:** Opravena chyba, která bránila NPC ve správném taktickém rozhodování, což způsobovalo, že místo útoku nebo obrany vždy jen ""čekaly"".
+- 🎵 **Oprava zvuku:** Bojová hudba se již nezastaví při stisknutí předdefinovaných tlačítek (Útok, Blokování atd.).",Systém sémantické interpretace boje
+danish,"🧪 NU TILGÆNGELIG: EKSPERIMENTEL VERSION (For adgang: Højreklik i Steam ➡️ Egenskaber ➡️ Betaer)
+
+🛡️ Til de modige, der TØR kæmpe ved frontlinjen: Eventyret venter jer, nu mere utæmmeligt end nogensinde!
+
+📝 Jeg ser frem til jeres Krigsrapporter (fejl og feedback) fra fronten. Giv dem tørt på! ⚔️
+
+- 🧠 **Fritekstkamp:** Nu kan du skrive dine handlinger i kamp, som om du talte med en karakter i et bordrollespil: ""kast helbredelsesformular på mig"", ""træk mit sværd"", ""brug helbredelsesdrik"". Den kunstige intelligens forstår din hensigt og oversætter den til spilmekanik.
+- ⚔️ **Træk våben med ord:** Du behøver ikke længere klikke på våbenpladsen. Skriv blot ""træk sværd"" eller ""tag min økse frem"", og systemet fortolker det automatisk (OBS!, gør du det i kamp, kan det resultere i fiasko, en bommert og tab af tur!... ""Man kommer forberedt til kamp!"").
+- 📖 **Genkendte formularer:** Den kunstige intelligens kender nu hele din formularbog. Sig ""kast ildkugle"", og hvis du har den formular, vil den blive kastet.
+- 🛡️ **Ingen tabte ture:** Hvis spillet ikke forstår din handling, vil det bede dig om at omformulere den. Din tur går IKKE tabt.
+- 🎒 **Manuelt inventar:** For at flytte genstande mellem pladser (udstyr fra rygsæk, lad ammunition), skal du bruge træk og slip-grænsefladen. Dette forhindrer forvirring og sparer AI-ressourcer.
+- 🎬 **AI Sceneinstruktør (FORBEDRET):** Kampene kommer nu til live. Den kunstige intelligens genererer miljøhændelser og reaktioner, der beriger fortællingen: fakler der falder, fjender der trækker sig tilbage, bjælker der styrter sammen. Slagmarken er ikke længere statisk!
+- 🐛 **Kritisk NPC-rettelse:** Løst en fejl, der forhindrede NPC'er i at tage korrekte taktiske beslutninger, hvilket fik dem til altid at ""vente"" i stedet for at angribe eller forsvare sig.
+- 🎵 **Lydrettelse:** Kampmusikken stopper ikke længere, når der trykkes på de foruddefinerede knapper (Angrib, Bloker osv.).",System til Semantisk Kampfortolkning
+german,"🧪 JETZT VERFÜGBAR: EXPERIMENTELLE VERSION (Zugriff: Rechtsklick in Steam ➡️ Eigenschaften ➡️ Betas)
+
+🛡️ An die Mutigen, die es WAGEN, an vorderster Front zu kämpfen: Das Abenteuer erwartet euch, jetzt unzähmbarer als je zuvor!
+
+📝 Ich erwarte eure Kriegsberichte (Bugs und Feedback) an der Front. Macht sie fertig! ⚔️
+
+- 🧠 **Freitext-Kampf:** Du kannst deine Aktionen im Kampf jetzt so schreiben, als würdest du ein Pen-&-Paper-Rollenspiel spielen: ""Heilzauber auf mich wirken"", ""Schwert ziehen"", ""Heiltrank benutzen"". Die KI versteht deine Absicht und übersetzt sie in Spielmechaniken.
+- ⚔️ **Ziehen mit Worten:** Du musst nicht mehr auf den Waffenslot klicken. Schreibe einfach ""Schwert ziehen"" oder ""meine Axt herausholen"" und das System interpretiert es automatisch (ACHTUNG! Dies im Kampf zu tun, kann zu einem Fehlschlag, Patzer und dem Verlust des Zuges führen! ... ""Man kommt vorbereitet zum Kampf!"").
+- 📖 **Erkannte Zauber:** Die KI kennt jetzt dein komplettes Zauberbuch. Sage ""Feuerball wirken"" und wenn du diesen Zauber besitzt, wird er gewirkt.
+- 🛡️ **Keine verlorenen Züge mehr:** Wenn das Spiel deine Aktion nicht versteht, wirst du gebeten, sie umzuformulieren. Dein Zug geht NICHT verloren.
+- 🎒 **Manuelles Inventar:** Um Gegenstände zwischen Slots zu bewegen (aus dem Rucksack ausrüsten, Munition laden), nutze die Drag-and-Drop-Oberfläche. Dies vermeidet Verwirrung und spart KI-Ressourcen.
+- 🎬 **KI-Regisseur (VERBESSERT):** Der Kampf erwacht zum Leben. Die KI generiert Umgebungsereignisse und Reaktionen, die die Erzählung bereichern: herabfallende Fackeln, zurückweichende Feinde, einstürzende Balken. Das Schlachtfeld ist nicht mehr statisch!
+- 🐛 **Kritischer NPC-Fix:** Ein Fehler wurde behoben, der verhinderte, dass NPCs taktische Entscheidungen korrekt treffen, was dazu führte, dass sie immer ""warteten"", anstatt anzugreifen oder sich zu verteidigen.
+- 🎵 **Audio-Korrektur:** Die Kampfmusik stoppt nicht mehr, wenn die vordefinierten Tasten (Angreifen, Blocken usw.) gedrückt werden.",System zur semantischen Kampfinterpretation
+greek,"🧪 ΤΩΡΑ ΔΙΑΘΕΣΙΜΟ: ΠΕΙΡΑΜΑΤΙΚΗ ΕΚΔΟΣΗ (Πρόσβαση: Δεξί κλικ στο Steam ➡️ Ιδιότητες ➡️ Betas)
+
+🛡️ Στους γενναίους που ΤΟΛΜΟΥΝ να πολεμήσουν στην πρώτη γραμμή: Η περιπέτεια σας περιμένει, πιο ατίθαση από ποτέ!
+
+📝 Αναμένω τις Πολεμικές Αναφορές σας (bugs και σχόλια) από το μέτωπο. Δώστε τους να καταλάβουν! ⚔️
+
+- 🧠 **Μάχη Ελεύθερου Κειμένου:** Τώρα μπορείτε να γράψετε τις ενέργειές σας στη μάχη σαν να μιλούσατε σε έναν χαρακτήρα επιτραπέζιου παιχνιδιού: ""κάνε ξόρκι θεραπείας σε μένα"", ""τράβα το σπαθί μου"", ""χρησιμοποίησε φίλτρο θεραπείας"". Η Τεχνητή Νοημοσύνη (AI) κατανοεί την πρόθεσή σας και τη μεταφράζει σε μηχανισμούς παιχνιδιού.
+- ⚔️ **Τραβήξτε Όπλο με Λέξεις:** Δεν χρειάζεται πλέον να κάνετε κλικ στην υποδοχή του όπλου. Απλώς γράψτε ""τράβα σπαθί"" ή ""βγάλε το τσεκούρι μου"" και το σύστημα το ερμηνεύει αυτόματα (ΠΡΟΣΟΧΗ!, αν το κάνετε στη μάχη μπορεί να οδηγήσει σε αποτυχία, γκάφα και απώλεια σειράς!... ""Στις μάχες ερχόμαστε προετοιμασμένοι από το σπίτι!"").
+- 📖 **Αναγνώριση Ξορκιών:** Η AI γνωρίζει πλέον ολόκληρο το βιβλίο ξορκιών σας. Πείτε ""ρίξε μπάλα φωτιάς"" και αν έχετε αυτό το ξόρκι, θα το εκτελέσει.
+- 🛡️ **Τέλος στις Χαμένες Σειρές:** Αν το παιχνίδι δεν καταλάβει την ενέργειά σας, θα σας ζητήσει να τη διατυπώσετε ξανά. Η σειρά σας ΔΕΝ χάνεται.
+- 🎒 **Χειροκίνητο Απόθεμα:** Για να μετακινήσετε αντικείμενα μεταξύ υποδοχών (εξοπλισμός από σακίδιο, γέμισμα πυρομαχικών), χρησιμοποιήστε τη διεπαφή drag-and-drop. Αυτό αποτρέπει συγχύσεις και εξοικονομεί πόρους της AI.
+- 🎬 **Σκηνοθέτης Σκηνής AI (ΒΕΛΤΙΩΜΕΝΟ):** Η μάχη ζωντανεύει. Η AI δημιουργεί περιβαλλοντικά συμβάντα και αντιδράσεις που εμπλουτίζουν την αφήγηση: πυρσοί που πέφτουν, εχθροί που υποχωρούν, δοκάρια που καταρρέουν. Το πεδίο της μάχης δεν είναι πια στατικό!
+- 🐛 **Κρίσιμη Διόρθωση NPC:** Διορθώθηκε σφάλμα που εμπόδιζε τους NPC να λαμβάνουν σωστές τακτικές αποφάσεις, με αποτέλεσμα να ""περιμένουν"" πάντα αντί να επιτίθενται ή να αμύνονται.
+- 🎵 **Διόρθωση Ήχου:** Η μουσική μάχης δεν σταματά πλέον όταν πατάτε τα προκαθορισμένα κουμπιά (Επίθεση, Άμυνα, κ.λπ.).",Σύστημα Σημασιολογικής Ερμηνείας Μάχης
+english,"🧪 NOW AVAILABLE: EXPERIMENTAL VERSION (To access: Right-click on Steam ➡️ Properties ➡️ Betas)
+
+🛡️ To the brave souls who DARE to fight on the front lines: Adventure awaits, now more untamable than ever!
+
+📝 I await your War Reports (bugs and feedback) from the front. Give 'em hell! ⚔️
+
+- 🧠 **Free Text Combat:** You can now write your combat actions as if you were speaking to a tabletop character: ""cast healing spell on myself"", ""draw my sword"", ""use healing potion"". The AI understands your intent and translates it into game mechanics.
+- ⚔️ **Draw with Words:** You no longer need to click on the weapon slot. Simply type ""draw sword"" or ""take out my axe"" and the system interprets it automatically (HEADS UP! Doing this in combat may result in failure, fumbles, and losing a turn!... ""You should come prepared to a fight!"").
+- 📖 **Recognized Spells:** The AI now knows your entire spellbook. Say ""cast fireball"" and if you have that spell, it will cast it.
+- 🛡️ **No More Lost Turns:** If the game doesn't understand your action, it will ask you to rephrase it. Your turn is NOT lost.
+- 🎒 **Manual Inventory:** To move items between slots (equip from backpack, load ammo), use the drag-and-drop interface. This prevents confusion and saves AI resources.
+- 🎬 **AI Scene Director (IMPROVED):** Combat comes to life. The AI generates environmental events and reactions that enrich the narrative: torches falling, enemies retreating, beams collapsing. The battlefield is no longer static!
+- 🐛 **Critical NPC Fix:** Fixed a bug that prevented NPCs from making tactical decisions correctly, causing them to always ""wait"" instead of attacking or defending.
+- 🎵 **Audio Fix:** Combat music no longer stops when pressing predefined buttons (Attack, Block, etc.).",Combat Semantic Interpretation System
+spanish,"🧪 YA DISPONIBLE: VERSIÓN EXPERIMENTAL (Para acceder: Clic derecho en Steam ➡️ Propiedades ➡️ Betas)
+
+🛡️ A los valientes que se ATREVAN a luchar en la primera línea de batalla: ¡La aventura os espera, ahora más indomable que nunca!
+
+📝 Espero vuestros Informes de Guerra (bugs y feedback) en el frente. ¡Dadles duro! ⚔️
+
+- 🧠 **Combate por Texto Libre:** Ahora puedes escribir tus acciones en combate como si hablaras con un pj de mesa: ""lanzar hechizo de curación sobre mí"", ""desenfundar mi espada"", ""usar poción de curación"". La IA entiende tu intención y la traduce a mecánica de juego.
+- ⚔️ **Desenfundar con Palabras:** Ya no necesitas hacer clic en el slot del arma. Simplemente escribe ""desenfundar espada"" o ""sacar mi hacha"" y el sistema lo interpreta automáticamente (OJO!, hacerlo en combate puede resultar en fracaso, pifia y perdida de turno!... ""A los combates se viene preparado de casa!"").
+- 📖 **Hechizos Reconocidos:** La IA ahora conoce tu libro de hechizos completo. Di ""lanzar bola de fuego"" y si tienes ese hechizo, lo lanzará.
+- 🛡️ **No Más Turnos Perdidos:** Si el juego no entiende tu acción, te pedirá que la reformules. Tu turno NO se pierde.
+- 🎒 **Inventario Manual:** Para mover objetos entre slots (equipar desde mochila, cargar munición), usa la interfaz de arrastrar y soltar. Esto evita confusiones y ahorra recursos de IA.
+- 🎬 **IA Director de Escena (MEJORADO):** El combate ahora cobra vida. La IA genera eventos ambientales y reacciones que enriquecen la narrativa: antorchas que caen, enemigos que retroceden, vigas que se derrumban. ¡El campo de batalla ya no es estático!
+- 🐛 **Corrección Crítica NPC:** Solucionado un fallo que impedía que los NPCs tomaran decisiones tácticas correctamente, causando que siempre ""esperaran"" en lugar de atacar o defenderse.
+- 🎵 **Corrección Audio:** La música de combate ya no se detiene al pulsar los botones predefinidos (Atacar, Bloquear, etc.).",Sistema de Interpretación Semántica de Combate
+latam,"🧪 YA DISPONIBLE: VERSIÓN EXPERIMENTAL (Para acceder: Clic derecho en Steam ➡️ Propiedades ➡️ Betas)
+
+🛡️ A los valientes que se ATREVAN a luchar en la primera línea de batalla: ¡La aventura los espera, ahora más indomable que nunca!
+
+📝 Espero sus Informes de Guerra (bugs y feedback) en el frente. ¡Denles duro! ⚔️
+
+- 🧠 **Combate por Texto Libre:** Ahora puedes escribir tus acciones en combate como si hablaras con un PJ de mesa: ""lanzar hechizo de curación sobre mí"", ""desenfundar mi espada"", ""usar poción de curación"". La IA entiende tu intención y la traduce a mecánica de juego.
+- ⚔️ **Desenfundar con Palabras:** Ya no necesitas hacer clic en la ranura del arma. Simplemente escribe ""desenfundar espada"" o ""sacar mi hacha"" y el sistema lo interpreta automáticamente (¡OJO! Hacerlo en combate puede resultar en fracaso, pifia y pérdida de turno... ""¡A los combates se viene preparado desde casa!"").
+- 📖 **Hechizos Reconocidos:** La IA ahora conoce tu libro de hechizos completo. Di ""lanzar bola de fuego"" y si tienes ese hechizo, lo lanzará.
+- 🛡️ **No Más Turnos Perdidos:** Si el juego no entiende tu acción, te pedirá que la reformules. Tu turno NO se pierde.
+- 🎒 **Inventario Manual:** Para mover objetos entre ranuras (equipar desde la mochila, cargar munición), usa la interfaz de arrastrar y soltar. Esto evita confusiones y ahorra recursos de IA.
+- 🎬 **IA Director de Escena (MEJORADO):** El combate ahora cobra vida. La IA genera eventos ambientales y reacciones que enriquecen la narrativa: antorchas que caen, enemigos que retroceden, vigas que se derrumban. ¡El campo de batalla ya no es estático!
+- 🐛 **Corrección Crítica de NPC:** Se solucionó un error que impedía que los NPC tomaran decisiones tácticas correctamente, causando que siempre ""esperaran"" en lugar de atacar o defenderse.
+- 🎵 **Corrección de Audio:** La música de combate ya no se detiene al presionar los botones predefinidos (Atacar, Bloquear, etc.).",Sistema de Interpretación Semántica de Combate
+finnish,"🧪 NYT SAATAVILLA: KOKEILUVERSIO (Pääsy: Hiiren oikea painike Steamissä ➡️ Ominaisuudet ➡️ Betat)
+
+🛡️ Rohkeille, jotka USKALTAVAT taistella etulinjassa: Seikkailu odottaa teitä, nyt kesyttömämpänä kuin koskaan!
+
+📝 Odotan sotaraporttejanne (bugit ja palaute) rintamalta. Antakaa palaa! ⚔️
+
+- 🧠 **Vapaatekstitaistelu:** Voit nyt kirjoittaa toimintosi taistelussa kuin puhuisit pelinjohtajalle pöytäroolipelissä: ""loihdi parannusloitsu itseeni"", ""vedä miekka esiin"", ""käytä parannusjuoma"". Tekoäly ymmärtää aikeesi ja kääntää sen pelimekaniikaksi.
+- ⚔️ **Aseen vetäminen sanoin:** Sinun ei enää tarvitse klikata asepaikkaa. Kirjoita vain ""vedä miekka"" tai ""ota kirves esiin"", ja järjestelmä tulkitsee sen automaattisesti (HUOM! Tämän tekeminen taistelussa voi johtaa epäonnistumiseen, kämmiin ja vuoron menetykseen!... ""Taisteluihin tullaan valmistautuneina!"").
+- 📖 **Tunnistetut loitsut:** Tekoäly tuntee nyt koko loitsukirjasi. Sano ""loihdi tulipallo"", ja jos sinulla on kyseinen loitsu, hahmosi loitsii sen.
+- 🛡️ **Ei enää menetettyjä vuoroja:** Jos peli ei ymmärrä toimintoasi, se pyytää sinua muotoilemaan sen uudelleen. Vuorosi EI mene hukkaan.
+- 🎒 **Manuaalinen tavaraluettelo:** Siirtääksesi esineitä paikkojen välillä (varusta repusta, lataa ammuksia) käytä vedä ja pudota -käyttöliittymää. Tämä välttää sekaannukset ja säästää tekoälyresursseja.
+- 🎬 **Tekoälyohjaaja (PARANNETTU):** Taistelu herää nyt eloon. Tekoäly luo ympäristötapahtumia ja reaktioita, jotka rikastuttavat kerrontaa: soihtuja putoilee, viholliset perääntyvät, palkkeja romahtaa. Taistelukenttä ei ole enää staattinen!
+- 🐛 **Kriittinen NPC-korjaus:** Korjattu virhe, joka esti ei-pelaajahahmoja tekemästä taktisia päätöksiä oikein, minkä vuoksi ne aina ""odottivat"" hyökkäämisen tai puolustamisen sijaan.
+- 🎵 **Äänikorjaus:** Taistelumusiikki ei enää pysähdy, kun painetaan esimääritettyjä painikkeita (Hyökkää, Torju jne.).",Taistelun semanttinen tulkintajärjestelmä
+french,"🧪 DISPONIBLE MAINTENANT : VERSION EXPÉRIMENTALE (Pour y accéder : Clic droit sur Steam ➡️ Propriétés ➡️ Bêtas)
+
+🛡️ Aux courageux qui OSERONT se battre en première ligne : l'aventure vous attend, plus indomptable que jamais !
+
+📝 J'attends vos Rapports de Guerre (bugs et retours) sur le front. Frappez fort ! ⚔️
+
+- 🧠 **Combat en Texte Libre :** Vous pouvez désormais écrire vos actions en combat comme dans un jeu de rôle sur table : ""lancer sort de soin sur moi"", ""dégainer mon épée"", ""utiliser potion de soin"". L'IA comprend votre intention et la traduit en mécanique de jeu.
+- ⚔️ **Dégainer avec des Mots :** Plus besoin de cliquer sur l'emplacement de l'arme. Écrivez simplement ""dégainer épée"" ou ""sortir ma hache"" et le système l'interprète automatiquement (ATTENTION ! Le faire en combat peut entraîner un échec, une maladresse et la perte du tour !... ""On vient au combat préparé !"").
+- 📖 **Sorts Reconnus :** L'IA connaît désormais l'intégralité de votre grimoire. Dites ""lancer boule de feu"" et si vous possédez ce sort, il sera lancé.
+- 🛡️ **Plus de Tours Perdus :** Si le jeu ne comprend pas votre action, il vous demandera de la reformuler. Votre tour N'EST PAS perdu.
+- 🎒 **Inventaire Manuel :** Pour déplacer des objets entre les emplacements (équiper depuis le sac, charger des munitions), utilisez l'interface glisser-déposer. Cela évite les confusions et économise les ressources de l'IA.
+- 🎬 **IA Directeur de Scène (AMÉLIORÉ) :** Le combat prend vie. L'IA génère des événements environnementaux et des réactions qui enrichissent la narration : torches qui tombent, ennemis qui reculent, poutres qui s'effondrent. Le champ de bataille n'est plus statique !
+- 🐛 **Correction Critique PNJ :** Correction d'un bug qui empêchait les PNJ de prendre des décisions tactiques correctes, les obligeant à toujours ""attendre"" au lieu d'attaquer ou de se défendre.
+- 🎵 **Correction Audio :** La musique de combat ne s'arrête plus lorsque vous appuyez sur les boutons prédéfinis (Attaquer, Parer, etc.).",Système d'Interprétation Sémantique de Combat
+hungarian,"🧪 MÁR ELÉRHETŐ: KÍSÉRLETI VERZIÓ (Elérés: Jobb klikk a Steamen ➡️ Tulajdonságok ➡️ Béták)
+
+🛡️ A bátraknak, akik MERÉSZELNEK az első sorban harcolni: A kaland vár, most zabolátlanabb, mint valaha!
+
+📝 Várom a Háborús Jelentéseiteket (hibák és visszajelzések) a frontról. Adjatok nekik! ⚔️
+
+- 🧠 **Szabad Szöveges Harc:** Mostantól úgy írhatod le a harci cselekedeteidet, mintha egy asztali szerepjátékban beszélnél: ""gyógyító varázslat magamra"", ""kard előhúzása"", ""gyógyital használata"". A MI megérti a szándékodat, és átülteti játékmechanikába.
+- ⚔️ **Fegyverrántás Szavakkal:** Nem kell többé a fegyverhelyre kattintanod. Csak írd be, hogy ""kard előhúzása"" vagy ""fejsze elővétele"", és a rendszer automatikusan értelmezi (VIGYÁZAT! Ha harc közben teszed, az kudarcot, balsikert és körveszteséget okozhat!... ""A csatába felkészülten érkezünk!"").
+- 📖 **Felismert Varázslatok:** A MI mostantól ismeri a teljes varázskönyvedet. Mondd, hogy ""tűzgolyó"", és ha megvan a varázslat, el is süti.
+- 🛡️ **Nincs Több Elveszett Kör:** Ha a játék nem érti a cselekedetedet, megkér, hogy fogalmazd át. A köröd NEM vész el.
+- 🎒 **Manuális Tárgylistakezelés:** A tárgyak helyek közötti mozgatásához (felszerelés a hátizsákból, lőszer betöltése) használd a fogd és vidd felületet. Ez elkerüli a félreértéseket és MI-erőforrást takarít meg.
+- 🎬 **MI Jelenetrendező (JAVÍTOTT):** A harc mostantól életre kel. A MI környezeti eseményeket és reakciókat generál, amelyek gazdagítják a narratívát: leeső fáklyák, hátráló ellenségek, beomló gerendák. A csatatér többé nem statikus!
+- 🐛 **Kritikus NPC Javítás:** Javítva egy hiba, amely megakadályozta, hogy az NPC-k megfelelő taktikai döntéseket hozzanak, ami miatt mindig csak ""várakoztak"" támadás vagy védekezés helyett.
+- 🎵 **Hang Javítás:** A harci zene többé nem áll le az előre meghatározott gombok (Támadás, Blokkolás stb.) megnyomásakor.",Szemantikus Harci Értelmező Rendszer
+indonesian,"🧪 TERSEDIA SEKARANG: VERSI EKSPERIMENTAL (Untuk mengakses: Klik kanan di Steam ➡️ Properti ➡️ Beta)
+
+🛡️ Kepada para pemberani yang BERANI bertarung di garis depan pertempuran: Petualangan menanti kalian, kini lebih ganas dari sebelumnya!
+
+📝 Saya menantikan Laporan Perang kalian (bug dan masukan) di garis depan. Hajar terus! ⚔️
+
+- 🧠 **Pertarungan Teks Bebas:** Sekarang kamu bisa menulis aksimu dalam pertarungan seolah berbicara dengan karakter RPG meja: ""rapalkan mantra penyembuh pada diriku"", ""hunus pedangku"", ""gunakan ramuan penyembuh"". AI memahami niatmu dan menerjemahkannya ke mekanisme permainan.
+- ⚔️ **Hunus dengan Kata-kata:** Kamu tidak perlu lagi mengeklik slot senjata. Cukup tulis ""hunus pedang"" atau ""keluarkan kapakku"" dan sistem akan menafsirkannya secara otomatis (PERHATIAN!, melakukannya saat bertarung bisa mengakibatkan kegagalan, blunder, dan kehilangan giliran!... ""Ke medan tempur harus sudah siap sedia!"").
+- 📖 **Mantra Dikenali:** AI sekarang mengetahui seluruh buku mantramu. Katakan ""lontarkan bola api"" dan jika kamu punya mantra itu, ia akan melontarkannya.
+- 🛡️ **Tidak Ada Lagi Giliran Terbuang:** Jika game tidak mengerti aksimu, ia akan memintamu untuk merumuskannya ulang. Giliranmu TIDAK akan hilang.
+- 🎒 **Inventaris Manual:** Untuk memindahkan objek antar slot (melengkapi dari tas, memuat amunisi), gunakan antarmuka seret dan lepas (drag and drop). Ini menghindari kebingungan dan menghemat sumber daya AI.
+- 🎬 **Sutradara Adegan AI (DITINGKATKAN):** Pertarungan kini menjadi hidup. AI menghasilkan peristiwa lingkungan dan reaksi yang memperkaya narasi: obor yang jatuh, musuh yang mundur, balok yang runtuh. Medan perang tidak lagi statis!
+- 🐛 **Perbaikan Kritis NPC:** Memperbaiki bug yang mencegah NPC mengambil keputusan taktis dengan benar, menyebabkan mereka selalu ""menunggu"" alih-alih menyerang atau bertahan.
+- 🎵 **Perbaikan Audio:** Musik pertarungan tidak lagi berhenti saat menekan tombol prasetel (Serang, Blokir, dll.).",Sistem Interpretasi Semantik Pertarungan
+italian,"🧪 ORA DISPONIBILE: VERSIONE SPERIMENTALE (Per accedere: Tasto destro su Steam ➡️ Proprietà ➡️ Beta)
+
+🛡️ Ai coraggiosi che OSANO combattere in prima linea: l'avventura vi attende, ora più indomita che mai!
+
+📝 Attendo i vostri Rapporti di Guerra (bug e feedback) dal fronte. Dategli dentro! ⚔️
+
+- 🧠 **Combattimento a Testo Libero:** Ora puoi scrivere le tue azioni in combattimento come se parlassi con un PG da tavolo: ""lanciare incantesimo di cura su di me"", ""sfoderare la mia spada"", ""usare pozione di cura"". L'IA capisce la tua intenzione e la traduce in meccaniche di gioco.
+- ⚔️ **Sfoderare con le Parole:** Non hai più bisogno di cliccare sullo slot dell'arma. Scrivi semplicemente ""sfoderare spada"" o ""estrarre la mia ascia"" e il sistema lo interpreterà automaticamente (ATTENZIONE!, farlo in combattimento può risultare in fallimento, errore critico e perdita del turno!... ""Ai combattimenti si arriva preparati da casa!"").
+- 📖 **Incantesimi Riconosciuti:** L'IA ora conosce il tuo libro degli incantesimi completo. Di' ""lanciare palla di fuoco"" e se possiedi quell'incantesimo, lo lancerà.
+- 🛡️ **Niente Più Turni Persi:** Se il gioco non capisce la tua azione, ti chiederà di riformularla. Il tuo turno NON viene perso.
+- 🎒 **Inventario Manuale:** Per spostare oggetti tra gli slot (equipaggiare dallo zaino, caricare munizioni), usa l'interfaccia trascina e rilascia. Questo evita confusioni e risparmia risorse dell'IA.
+- 🎬 **Regista di Scena IA (MIGLIORATO):** Il combattimento ora prende vita. L'IA genera eventi ambientali e reazioni che arricchiscono la narrazione: torce che cadono, nemici che indietreggiano, travi che crollano. Il campo di battaglia non è più statico!
+- 🐛 **Correzione Critica NPC:** Risolto un problema che impediva agli NPC di prendere decisioni tattiche correttamente, facendo sì che ""attendessero"" sempre invece di attaccare o difendersi.
+- 🎵 **Correzione Audio:** La musica di combattimento non si ferma più quando si premono i pulsanti predefiniti (Attacca, Blocca, ecc.).",Sistema di Interpretazione Semantica del Combattimento
+japanese,"🧪 利用可能：実験的バージョン（アクセス方法：Steamで右クリック ➡️ プロパティ ➡️ ベータ）
+
+🛡️ 最前線で戦うことを**あえて選ぶ**勇者たちへ：冒険が待っています。かつてないほど手強い冒険が！
+
+📝 前線からの「戦況報告」（バグやフィードバック）を待っています。全力で挑んでください！ ⚔️
+
+- 🧠 **自由記述戦闘：** TRPGのキャラクターと話すように、戦闘アクションを書けるようになりました。「自分に回復魔法をかける」「剣を抜く」「回復ポーションを使う」など。AIが意図を理解し、ゲームのメカニクスに変換します。
+- ⚔️ **言葉で抜刀：** もう武器スロットをクリックする必要はありません。「剣を抜く」や「斧を取り出す」と書くだけで、システムが自動的に解釈します（注意！戦闘中にこれを行うと、失敗やファンブル、ターンの喪失につながる可能性があります！...「戦場には準備を整えてから来るべし！」）。
+- 📖 **呪文の認識：** AIはあなたの呪文集（スペルブック）を完全に把握しています。「ファイアボールを唱える」と言えば、その呪文を持っていれば発動します。
+- 🛡️ **ターン喪失なし：** ゲームがアクションを理解できなかった場合、言い直しを求められます。ターンは消費されません。
+- 🎒 **手動インベントリ操作：** スロット間のアイテム移動（バックパックから装備、弾薬の装填など）には、ドラッグ＆ドロップのインターフェースを使用してください。これにより混乱を防ぎ、AIリソースを節約します。
+- 🎬 **AIシーンディレクター（改良版）：** 戦闘が生き生きと動き出します。AIが環境イベントやリアクションを生成し、物語を豊かにします。落ちる松明、後退する敵、崩れ落ちる梁など。戦場はもはや静的ではありません！
+- 🐛 **NPCの重大な修正：** NPCが戦術的な決定を正しく行えず、攻撃や防御の代わりに常に「待機」してしまうバグを修正しました。
+- 🎵 **オーディオの修正：** 定型ボタン（攻撃、防御など）を押しても、戦闘BGMが止まらなくなりました。",戦闘セマンティック解釈システム
+korean,"🧪 출시 완료: 실험 버전 (액세스 방법: Steam에서 우클릭 ➡️ 속성 ➡️ 베타)
+
+🛡️ 최전선에서 싸울 용기가 있는 용감한 자들이여: 모험이 기다리고 있습니다, 이제 그 어느 때보다 거칠어졌습니다!
+
+📝 전선에서 여러분의 전쟁 보고서(버그 및 피드백)를 기다리겠습니다. 적들을 쓸어버리세요! ⚔️
+
+- 🧠 **자유 텍스트 전투:** 이제 TRPG를 하듯 전투 행동을 입력할 수 있습니다: ""나에게 치유 주문 시전"", ""검 뽑기"", ""치유 물약 사용"". AI가 의도를 파악하고 게임 메커니즘으로 변환합니다.
+- ⚔️ **말로 무기 꺼내기:** 더 이상 무기 슬롯을 클릭할 필요가 없습니다. 그저 ""검 뽑기"" 또는 ""도끼 꺼내기""라고 입력하면 시스템이 자동으로 해석합니다 (주의! 전투 중에 시도하면 실패, 펌블 및 턴 낭비가 발생할 수 있습니다!... ""전투에는 미리 준비하고 오세요!"").
+- 📖 **주문 인식:** AI가 이제 여러분의 주문서 전체를 알고 있습니다. ""화염구 시전""이라고 말하면, 해당 주문을 가지고 있을 경우 즉시 시전합니다.
+- 🛡️ **턴 낭비 방지:** 게임이 행동을 이해하지 못하면 다시 입력해달라고 요청합니다. 턴은 사라지지 **않습니다**.
+- 🎒 **수동 인벤토리:** 슬롯 간 아이템 이동(배낭에서 장착, 탄약 장전)은 드래그 앤 드롭 인터페이스를 사용하세요. 이는 혼란을 방지하고 AI 리소스를 절약합니다.
+- 🎬 **AI 무대 감독 (개선됨):** 전투가 더욱 생동감 넘치게 변했습니다. AI가 내러티브를 풍부하게 만드는 환경 이벤트와 반응을 생성합니다: 횃불이 떨어지거나, 적이 후퇴하거나, 들보가 무너집니다. 전장은 더 이상 고정되어 있지 않습니다!
+- 🐛 **치명적인 NPC 수정:** NPC가 전술적 결정을 올바르게 내리지 못해 공격이나 방어 대신 항상 ""대기""만 하던 버그를 수정했습니다.
+- 🎵 **오디오 수정:** 미리 정의된 버튼(공격, 방어 등)을 눌러도 전투 음악이 더 이상 멈추지 않습니다.",전투 의미 해석 시스템
+dutch,"🧪 NU BESCHIKBAAR: EXPERIMENTELE VERSIE (Toegang: Rechtsklikken in Steam ➡️ Eigenschappen ➡️ Beta's)
+
+🛡️ Aan de dapperen die het DURVEN op te nemen in de frontlinie: Het avontuur wacht, nu ontembaarder dan ooit!
+
+📝 Ik verwacht jullie Oorlogsrapporten (bugs en feedback) aan het front. Geef ze ervan langs! ⚔️
+
+- 🧠 **Vrije Tekstgevechten:** Je kunt nu je acties tijdens gevechten typen alsof je praat met een personage in een tafelrollenspel: ""spreek genezingsspreuk over mij uit"", ""trek mijn zwaard"", ""gebruik genezingsdrankje"". De AI begrijpt je intentie en vertaalt deze naar spelmechanismen.
+- ⚔️ **Trekken met Woorden:** Je hoeft niet langer op het wapenslot te klikken. Typ gewoon ""trek zwaard"" of ""pak mijn bijl"" en het systeem interpreteert dit automatisch (LET OP! Dit doen tijdens een gevecht kan leiden tot mislukking, een flater en het verlies van een beurt!... ""Je komt voorbereid naar een gevecht!"").
+- 📖 **Herkende Spreuken:** De AI kent nu je volledige spreukenboek. Zeg ""werp vuurbal"" en als je die spreuk hebt, wordt deze uitgevoerd.
+- 🛡️ **Geen Verloren Beurten Meer:** Als het spel je actie niet begrijpt, vraagt het je om deze te herformuleren. Je beurt gaat NIET verloren.
+- 🎒 **Handmatige Inventaris:** Gebruik de sleep-en-neerzet interface om voorwerpen tussen vakjes te verplaatsen (uitrusten vanuit rugzak, munitie laden). Dit voorkomt verwarring en bespaart AI-bronnen.
+- 🎬 **AI Scèneregisseur (VERBETERD):** Het gevecht komt nu tot leven. De AI genereert omgevingsgebeurtenissen en reacties die het verhaal verrijken: vallende fakkels, terugdeinzende vijanden, instortende balken. Het slagveld is niet langer statisch!
+- 🐛 **Kritieke NPC-fix:** Een fout opgelost waardoor NPC's geen correcte tactische beslissingen namen, waardoor ze altijd ""wachtten"" in plaats van aan te vallen of zich te verdedigen.
+- 🎵 **Audiocorrectie:** De gevechtsmuziek stopt niet langer wanneer je op de vooraf gedefinieerde knoppen drukt (Aanvallen, Blokkeren, enz.).",Systeem voor Semantische Gevechtsinterpretatie
+norwegian,"🧪 NÅ TILGJENGELIG: EKSPERIMENTELL VERSJON (For tilgang: Høyreklikk i Steam ➡️ Egenskaper ➡️ Betaer)
+
+🛡️ Til de modige som VÅGER å kjempe i frontlinjen: Eventyret venter, nå villere enn noen gang!
+
+📝 Jeg ser frem til krigsrapportene deres (bugs og tilbakemeldinger) fra fronten. Gi jernet! ⚔️
+
+- 🧠 **Fritekstkamp:** Nå kan du skrive kamphandlingene dine som om du snakket med en rollespillkarakter: «kast helbredelsesformel på meg», «trekk sverdet mitt», «bruk helbredelsesdrikk». KI-en forstår hensikten din og oversetter den til spillmekanikk.
+- ⚔️ **Trekk våpen med ord:** Du trenger ikke lenger å klikke på våpenplassen. Bare skriv «trekk sverd» eller «ta frem øksen min», så tolker systemet det automatisk (OBS! Å gjøre dette i kamp kan føre til mislykket handling, tabbe og tapt tur!... «Man møter forberedt til kamp!»).
+- 📖 **Gjenkjente formler:** KI-en kjenner nå til hele trolldomsboken din. Si «kast ildkule», og hvis du har den formelen, vil den bli kastet.
+- 🛡️ **Ingen flere tapte turer:** Hvis spillet ikke forstår handlingen din, vil det be deg om å formulere den på nytt. Turen din går IKKE tapt.
+- 🎒 **Manuelt inventar:** For å flytte gjenstander mellom plasser (utstyre fra ryggsekk, lade ammunisjon), bruk dra-og-slipp-grensesnittet. Dette forhindrer forvirring og sparer KI-ressurser.
+- 🎬 **KI-regissør (FORBEDRET):** Kampene våkner nå til liv. KI-en genererer miljøhendelser og reaksjoner som beriker fortellingen: fakler som faller, fiender som trekker seg tilbake, bjelker som kollapser. Slagmarken er ikke lenger statisk!
+- 🐛 **Kritisk NPC-fiks:** Løst en feil som hindret NPC-er i å ta taktiske beslutninger korrekt, noe som førte til at de alltid «ventet» i stedet for å angripe eller forsvare seg.
+- 🎵 **Lydfiks:** Kampmusikken stopper ikke lenger når du trykker på forhåndsdefinerte knapper (Angrip, Blokker osv.).",System for semantisk kamptolkning
+polish,"🧪 JUŻ DOSTĘPNE: WERSJA EKSPERYMENTALNA (Aby uzyskać dostęp: Prawy przycisk myszy na Steam ➡️ Właściwości ➡️ Bety)
+
+🛡️ Do odważnych, którzy OŚMIELĄ SIĘ walczyć na pierwszej linii frontu: Przygoda czeka, teraz bardziej nieujarzmiona niż kiedykolwiek!
+
+📝 Oczekuję waszych Raportów Wojennych (błędy i opinie) na froncie. Dajcie im popalić! ⚔️
+
+- 🧠 **Walka Dowolnym Tekstem:** Teraz możesz wpisywać swoje akcje bojowe tak, jakbyś rozmawiał z Mistrzem Gry w papierowym RPG: ""rzuć zaklęcie leczenia na mnie"", ""dobądź miecza"", ""użyj mikstury leczenia"". AI rozumie twoje intencje i tłumaczy je na mechanikę gry.
+- ⚔️ **Dobieranie Broni Słowami:** Nie musisz już klikać w slot broni. Po prostu napisz ""dobądź miecza"" lub ""wyciągnij mój topór"", a system zinterpretuje to automatycznie (UWAGA!, robienie tego w trakcie walki może skutkować porażką, pechem i utratą tury!... ""Do walki trzeba przychodzić przygotowanym z domu!"").
+- 📖 **Rozpoznawanie Zaklęć:** AI zna teraz całą twoją księgę zaklęć. Powiedz ""rzuć kulę ognia"", a jeśli posiadasz to zaklęcie, zostanie ono rzucone.
+- 🛡️ **Koniec z Utratą Tur:** Jeśli gra nie zrozumie twojej akcji, poprosi cię o jej sformułowanie na nowo. Twoja tura NIE przepada.
+- 🎒 **Ręczny Ekwipunek:** Aby przenosić przedmioty między slotami (zakładanie z plecaka, ładowanie amunicji), użyj interfejsu przeciągnij i upuść. Pozwala to uniknąć pomyłek i oszczędza zasoby AI.
+- 🎬 **AI Reżyser Sceny (ULEPSZONY):** Walka nabiera teraz życia. AI generuje zdarzenia środowiskowe i reakcje wzbogacające narrację: spadające pochodnie, cofający się wrogowie, zawalające się belki. Pole bitwy nie jest już statyczne!
+- 🐛 **Krytyczna Poprawka NPC:** Naprawiono błąd, który uniemożliwiał NPC podejmowanie właściwych decyzji taktycznych, przez co zawsze ""czekali"" zamiast atakować lub się bronić.
+- 🎵 **Poprawka Audio:** Muzyka bojowa nie zatrzymuje się już po naciśnięciu predefiniowanych przycisków (Atak, Blok itp.).",System Semantycznej Interpretacji Walki
+portuguese,"🧪 JÁ DISPONÍVEL: VERSÃO EXPERIMENTAL (Para acessar: Botão direito na Steam ➡️ Propriedades ➡️ Betas)
+
+🛡️ Aos corajosos que OUSAREM lutar na linha de frente: A aventura os aguarda, agora mais indomável do que nunca!
+
+📝 Aguardo seus Relatórios de Guerra (bugs e feedback) no front. Mandem ver! ⚔️
+
+- 🧠 **Combate por Texto Livre:** Agora você pode escrever suas ações em combate como se falasse com um personagem de RPG de mesa: ""lançar feitiço de cura em mim"", ""sacar minha espada"", ""usar poção de cura"". A IA entende sua intenção e a traduz para a mecânica de jogo.
+- ⚔️ **Sacar com Palavras:** Você não precisa mais clicar no slot da arma. Simplesmente escreva ""sacar espada"" ou ""pegar meu machado"" e o sistema interpreta automaticamente (ATENÇÃO!, fazer isso em combate pode resultar em falha, erro crítico e perda de turno!... ""Para os combates, a gente já vem preparado de casa!"").
+- 📖 **Feitiços Reconhecidos:** A IA agora conhece seu livro de feitiços completo. Diga ""lançar bola de fogo"" e, se você tiver esse feitiço, ela o lançará.
+- 🛡️ **Chega de Turnos Perdidos:** Se o jogo não entender sua ação, pedirá que você a reformule. Seu turno NÃO é perdido.
+- 🎒 **Inventário Manual:** Para mover objetos entre slots (equipar da mochila, carregar munição), use a interface de arrastar e soltar. Isso evita confusões e economiza recursos de IA.
+- 🎬 **IA Diretor de Cena (MELHORADO):** O combate agora ganha vida. A IA gera eventos ambientais e reações que enriquecem a narrativa: tochas que caem, inimigos que recuam, vigas que desabam. O campo de batalha não é mais estático!
+- 🐛 **Correção Crítica em NPCs:** Solucionado um erro que impedia os NPCs de tomarem decisões táticas corretamente, fazendo com que sempre ""esperassem"" em vez de atacar ou se defender.
+- 🎵 **Correção de Áudio:** A música de combate não para mais ao pressionar os botões predefinidos (Atacar, Bloquear, etc.).",Sistema de Interpretação Semântica de Combate
+romanian,"🧪 DISPONIBIL ACUM: VERSIUNE EXPERIMENTALĂ (Pentru acces: Click dreapta în Steam ➡️ Proprietăți ➡️ Beta)
+
+🛡️ Pentru cei curajoși care ÎNDRĂZNESC să lupte în prima linie: Aventura vă așteaptă, acum mai neîmblânzită ca niciodată!
+
+📝 Aștept Rapoartele voastre de Război (erori și feedback) pe front. Dați-le tare! ⚔️
+
+- 🧠 **Luptă prin Text Liber:** Acum poți scrie acțiunile tale de luptă ca și cum ai vorbi cu un personaj de tip tabletop: ""lansează vrajă de vindecare asupra mea"", ""scoate sabia"", ""folosește poțiune de vindecare"". AI-ul îți înțelege intenția și o traduce în mecanici de joc.
+- ⚔️ **Scoate Arma prin Cuvinte:** Nu mai trebuie să dai click pe slotul armei. Pur și simplu scrie ""scoate sabia"" sau ""scoate toporul"" și sistemul interpretează automat (ATENȚIE!, dacă faci asta în luptă poate rezulta un eșec, o gafă și pierderea turei!... ""La luptă vii pregătit de acasă!"").
+- 📖 **Vrăji Recunoscute:** AI-ul cunoaște acum întreaga ta carte de vrăji. Spune ""lansează minge de foc"", iar dacă ai acea vrajă, o va lansa.
+- 🛡️ **Fără Ture Pierdute:** Dacă jocul nu îți înțelege acțiunea, îți va cere să o reformulezi. Tura ta NU se pierde.
+- 🎒 **Inventar Manual:** Pentru a muta obiecte între sloturi (echipare din rucsac, încărcare muniție), folosește interfața de tragere și plasare (drag and drop). Acest lucru evită confuziile și economisește resursele AI.
+- 🎬 **AI Regizor de Scenă (ÎMBUNĂTĂȚIT):** Lupta prinde acum viață. AI-ul generează evenimente ambientale și reacții care îmbogățesc narațiunea: torțe care cad, inamici care se retrag, grinzi care se prăbușesc. Câmpul de luptă nu mai este static!
+- 🐛 **Corecție Critică NPC:** S-a remediat o eroare care împiedica NPC-urile să ia decizii tactice corecte, determinându-le să ""aștepte"" mereu în loc să atace sau să se apere.
+- 🎵 **Corecție Audio:** Muzica de luptă nu se mai oprește la apăsarea butoanelor predefinite (Atacă, Blochează etc.).",Sistem de Interpretare Semantică a Luptei
+russian,"🧪 ТЕПЕРЬ ДОСТУПНО: ЭКСПЕРИМЕНТАЛЬНАЯ ВЕРСИЯ (Как получить доступ: ПКМ в Steam ➡️ Свойства ➡️ Бета-версии)
+
+🛡️ Храбрецам, которые ОСМЕЛЯТСЯ сражаться на передовой: приключение ждет вас, теперь еще более неукротимое, чем прежде!
+
+📝 Жду ваших военных сводок (баги и отзывы) с фронта. Задайте им жару! ⚔️
+
+- 🧠 **Свободный текстовый бой:** Теперь вы можете описывать свои действия в бою так, словно играете в настольную ролевую игру: ""наложить исцеление на себя"", ""обнажить меч"", ""выпить лечебное зелье"". ИИ понимает ваши намерения и переводит их в игровые механики.
+- ⚔️ **Обнажайте оружие словами:** Больше не нужно кликать по слоту оружия. Просто напишите ""обнажить меч"" или ""достать топор"", и система поймет это автоматически (ВНИМАНИЕ! Если делать это во время боя, возможен провал, критическая неудача и потеря хода!... ""К бою нужно готовиться заранее!"").
+- 📖 **Распознавание заклинаний:** ИИ теперь знает всю вашу книгу заклинаний. Напишите ""скастовать огненный шар"", и если у вас есть это заклинание, персонаж его использует.
+- 🛡️ **Никаких потерянных ходов:** Если игра не поймет ваше действие, она попросит перефразировать. Ваш ход НЕ будет потерян.
+- 🎒 **Ручной инвентарь:** Для перемещения предметов между слотами (экипировка из рюкзака, заряжание боеприпасов) используйте интерфейс перетаскивания. Это позволяет избежать путаницы и экономит ресурсы ИИ.
+- 🎬 **ИИ-режиссер (УЛУЧШЕНО):** Бой оживает. ИИ генерирует события окружающей среды и реакции, обогащающие повествование: падающие факелы, отступающие враги, рушащиеся балки. Поле битвы больше не статично!
+- 🐛 **Критическое исправление NPC:** Исправлена ошибка, из-за которой NPC не могли принимать правильные тактические решения, в результате чего они всегда ""ждали"" вместо того, чтобы атаковать или защищаться.
+- 🎵 **Исправление звука:** Боевая музыка больше не прерывается при нажатии стандартных кнопок (Атака, Блок и т.д.).",Система семантической интерпретации боя
+swedish,"🧪 NU TILLGÄNGLIG: EXPERIMENTELL VERSION (För åtkomst: Högerklicka i Steam ➡️ Egenskaper ➡️ Betas)
+
+🛡️ Till de tappra som VÅGAR strida vid frontlinjen: Äventyret väntar, nu mer otämjt än någonsin!
+
+📝 Jag ser fram emot era krigsrapporter (buggar och feedback) från fronten. Ge järnet! ⚔️
+
+- 🧠 **Strid med fritext:** Nu kan du skriva dina handlingar i strid som om du pratade med en rollspelskaraktär: ""kasta helande trollformel på mig"", ""dra mitt svärd"", ""använd helande dryck"". AI:n förstår din avsikt och översätter den till spelmekanik.
+- ⚔️ **Dra vapen med ord:** Du behöver inte längre klicka på vapenplatsen. Skriv bara ""dra svärd"" eller ""ta fram min yxa"" så tolkar systemet det automatiskt (OBS! Att göra detta i strid kan leda till misslyckande, fummel och förlorad tur!... ""Man kommer förberedd till strid!"").
+- 📖 **Igenkända trollformler:** AI:n känner nu till hela din trollformelbok. Säg ""kasta eldklot"" och om du har den trollformeln, kommer den att kastas.
+- 🛡️ **Inga fler förlorade turer:** Om spelet inte förstår din handling kommer det att be dig formulera om den. Din tur går INTE förlorad.
+- 🎒 **Manuell inventarie:** För att flytta föremål mellan platser (utrusta från ryggsäck, ladda ammunition), använd dra-och-släpp-gränssnittet. Detta undviker förvirring och sparar AI-resurser.
+- 🎬 **AI-scenregissör (FÖRBÄTTRAD):** Striden får nu liv. AI:n genererar miljörelaterade händelser och reaktioner som berikar berättelsen: facklor som faller, fiender som drar sig tillbaka, bjälkar som rasar. Slagfältet är inte längre statiskt!
+- 🐛 **Kritisk NPC-fix:** Åtgärdade ett fel som hindrade NPC:er från att fatta taktiska beslut korrekt, vilket gjorde att de alltid ""väntade"" istället för att attackera eller försvara sig.
+- 🎵 **Ljudkorrigering:** Stridsmusiken stannar inte längre när du trycker på fördefinierade knappar (Attackera, Blockera, etc.).",System för semantisk stridstolkning
+thai,"🧪 เล่นได้แล้ว: เวอร์ชันทดลอง (วิธีเข้า: คลิกขวาใน Steam ➡️ คุณสมบัติ ➡️ เบต้า)
+
+🛡️ ถึงเหล่าผู้กล้าที่ **กล้า** เข้ามาสู้ในแนวหน้า: การผจญภัยรอคุณอยู่ ตอนนี้ดุเดือดยิ่งกว่าที่เคย!
+
+📝 ผมรออ่านรายงานสงคราม (บั๊กและข้อเสนอแนะ) จากแนวหน้าอยู่นะ จัดหนักไปเลย! ⚔️
+
+- 🧠 **การต่อสู้ด้วยข้อความอิสระ:** ตอนนี้คุณสามารถพิมพ์การกระทำในการต่อสู้ได้เหมือนคุยกับตัวละครในเกมกระดาน: ""ร่ายเวทรักษาใส่ฉัน"", ""ชักดาบ"", ""ใช้น้ำยารักษา"" AI จะเข้าใจเจตนาของคุณและแปลเป็นกลไกของเกม
+- ⚔️ **ชักอาวุธด้วยคำพูด:** ไม่ต้องคลิกที่ช่องอาวุธอีกต่อไป เพียงพิมพ์ ""ชักดาบ"" หรือ ""หยิบขวานออกมา"" ระบบจะตีความอัตโนมัติ (ระวัง! การทำแบบนี้ระหว่างต่อสู้อาจส่งผลให้ล้มเหลว พลาดท่า และเสียเทิร์นได้!... ""จะมารบก็ต้องเตรียมตัวมาให้พร้อมจากบ้าน!"")
+- 📖 **จดจำเวทมนตร์:** ตอนนี้ AI รู้จักสมุดเวทมนตร์ทั้งหมดของคุณแล้ว พูดว่า ""ร่ายลูกไฟ"" และถ้าคุณมีเวทนั้น ตัวละครก็จะร่ายมันออกมา
+- 🛡️ **ไม่เสียเทิร์นฟรี:** หากเกมไม่เข้าใจการกระทำของคุณ เกมจะขอให้คุณพิมพ์ใหม่ เทิร์นของคุณจะ **ไม่** สูญเปล่า
+- 🎒 **ช่องเก็บของแบบกดเอง:** หากต้องการย้ายไอเทมระหว่างช่อง (สวมใส่จากกระเป๋า, โหลดกระสุน) ให้ใช้วิธีลากและวาง สิ่งนี้ช่วยลดความสับสนและประหยัดทรัพยากร AI
+- 🎬 **AI ผู้กำกับฉาก (ปรับปรุงใหม่):** การต่อสู้มีชีวิตชีวาขึ้น AI จะสร้างเหตุการณ์สภาพแวดล้อมและปฏิกิริยาที่ช่วยเสริมเรื่องราว: คบเพลิงร่วงหล่น, ศัตรูถอยร่น, คานถล่มลงมา สนามรบจะไม่หยุดนิ่งอีกต่อไป!
+- 🐛 **แก้ไขบั๊ก NPC ร้ายแรง:** แก้ไขข้อผิดพลาดที่ทำให้ NPC ไม่สามารถตัดสินใจเชิงกลยุทธ์ได้อย่างถูกต้อง ซึ่งทำให้พวกมันเอาแต่ ""รอ"" แทนที่จะโจมตีหรือป้องกัน
+- 🎵 **แก้ไขระบบเสียง:** เพลงประกอบการต่อสู้จะไม่หยุดเล่นเมื่อกดปุ่มคำสั่งที่มีให้ (โจมตี, บล็อก ฯลฯ) อีกต่อไป",ระบบการตีความความหมายการต่อสู้ (Semantic Combat Interpretation System)
+turkish,"🧪 ŞİMDİ MEVCUT: DENEYSEL SÜRÜM (Erişmek için: Steam'de sağ tıkla ➡️ Özellikler ➡️ Betalar)
+
+🛡️ Ön saflarda savaşmaya CÜRET EDEN cesurlara: Macera sizi bekliyor, şimdi her zamankinden daha boyun eğmez!
+
+📝 Cepheden Savaş Raporlarınızı (hatalar ve geri bildirimler) bekliyorum. Canlarına okuyun! ⚔️
+
+- 🧠 **Serbest Metinle Savaş:** Artık savaş eylemlerinizi bir masaüstü RYO karakteriyle konuşur gibi yazabilirsiniz: ""kendime iyileştirme büyüsü yap"", ""kılıcımı çek"", ""iyileştirme iksiri kullan"". YZ niyetinizi anlar ve bunu oyun mekaniğine çevirir.
+- ⚔️ **Sözcüklerle Silah Çekme:** Artık silah yuvasına tıklamanıza gerek yok. Sadece ""kılıcı çek"" veya ""baltamı çıkar"" yazın, sistem bunu otomatik olarak yorumlar (DİKKAT! Bunu savaş sırasında yapmak başarısızlığa, kritik hataya ve tur kaybına yol açabilir!... ""Savaşa hazırlıklı gelinir!"").
+- 📖 **Tanınan Büyüler:** YZ artık büyü kitabınızın tamamını biliyor. ""Ateş topu fırlat"" dediğinizde, eğer o büyüye sahipseniz, büyüyü yapacaktır.
+- 🛡️ **Boşa Giden Turlara Son:** Eğer oyun eyleminizi anlamazsa, yeniden ifade etmenizi isteyecektir. Turunuz KAYBOLMAZ.
+- 🎒 **Manuel Envanter:** Eşyaları yuvalar arasında taşımak (çantadan kuşanmak, cephane doldurmak) için sürükle ve bırak arayüzünü kullanın. Bu, karışıklıkları önler ve YZ kaynaklarından tasarruf sağlar.
+- 🎬 **YZ Sahne Yönetmeni (GELİŞTİRİLDİ):** Savaş artık canlanıyor. YZ, anlatımı zenginleştiren çevresel olaylar ve tepkiler üretir: düşen meşaleler, geri çekilen düşmanlar, çöken kirişler. Savaş alanı artık durağan değil!
+- 🐛 **Kritik NPC Düzeltmesi:** NPC'lerin taktiksel kararları doğru şekilde almasını engelleyen, saldırmak veya savunmak yerine sürekli ""beklemelerine"" neden olan bir hata düzeltildi.
+- 🎵 **Ses Düzeltmesi:** Önceden tanımlanmış düğmelere (Saldır, Blokla vb.) basıldığında savaş müziği artık durmuyor.",Semantik Savaş Yorumlama Sistemi
+ukrainian,"🧪 ВЖЕ ДОСТУПНО: ЕКСПЕРИМЕНТАЛЬНА ВЕРСІЯ (Доступ: Права кнопка миші у Steam ➡️ Властивості ➡️ Бета-версії)
+
+🛡️ До відважних, хто НАВАЖИТЬСЯ боротися на передовій: Пригода чекає на вас, тепер ще більш неприборкана, ніж будь-коли!
+
+📝 Чекаю на ваші Воєнні Звіти (баги та відгуки) з фронту. Задайте їм жару! ⚔️
+
+- 🧠 **Бій у вільному тексті:** Тепер ви можете описувати свої дії в бою так, ніби розмовляєте з персонажем настільної гри: ""накласти заклинання зцілення на себе"", ""оголити мій меч"", ""випити зілля зцілення"". ШІ розуміє ваш намір і перетворює його на ігрову механіку.
+- ⚔️ **Діставайте зброю словами:** Більше не потрібно клацати на слот зброї. Просто напишіть ""оголити меч"" або ""дістати сокиру"", і система інтерпретує це автоматично (УВАГА!, виконання цього в бою може призвести до невдачі, критичного промаху та втрати ходу!... ""До бою треба готуватися заздалегідь!"").
+- 📖 **Розпізнавання заклинань:** ШІ тепер знає всю вашу книгу заклинань. Скажіть ""кинути вогняну кулю"", і якщо у вас є це заклинання, воно спрацює.
+- 🛡️ **Жодних втрачених ходів:** Якщо гра не зрозуміє вашу дію, вона попросить переформулювати. Ваш хід НЕ втрачається.
+- 🎒 **Ручний інвентар:** Для переміщення предметів між слотами (спорядження з рюкзака, заряджання амуніції) використовуйте інтерфейс перетягування. Це дозволяє уникнути плутанини та економить ресурси ШІ.
+- 🎬 **ШІ Режисер (ПОКРАЩЕНО):** Бій оживає. ШІ генерує події навколишнього середовища та реакції, що збагачують розповідь: смолоскипи падають, вороги відступають, балки руйнуються. Поле бою більше не статичне!
+- 🐛 **Критичне виправлення NPC:** Виправлено помилку, через яку NPC не могли правильно приймати тактичні рішення, через що вони завжди ""чекали"" замість того, щоб атакувати або захищатися.
+- 🎵 **Виправлення звуку:** Бойова музика більше не зупиняється при натисканні стандартних кнопок (Атака, Блок тощо).",Система семантичної інтерпретації бою
+vietnamese,"🧪 HIỆN ĐÃ CÓ: PHIÊN BẢN THỬ NGHIỆM (Để truy cập: Chuột phải vào Steam ➡️ Thuộc tính ➡️ Beta)
+
+🛡️ Gửi những chiến binh dũng cảm DÁM chiến đấu nơi tiền tuyến: Cuộc phiêu lưu đang chờ đón, giờ đây dữ dội hơn bao giờ hết!
+
+📝 Tôi chờ đợi Báo cáo Chiến trường (lỗi và phản hồi) từ các bạn. Hãy chiến hết mình! ⚔️
+
+- 🧠 **Chiến đấu bằng Văn bản Tự do:** Giờ đây bạn có thể viết hành động chiến đấu như thể đang nói chuyện với nhân vật trong game tabletop: ""thi triển phép hồi máu lên bản thân"", ""rút kiếm"", ""dùng bình máu"". AI sẽ hiểu ý định của bạn và chuyển thành cơ chế trò chơi.
+- ⚔️ **Rút vũ khí bằng Lời nói:** Không cần nhấp vào ô vũ khí nữa. Chỉ cần viết ""rút kiếm"" hoặc ""lấy rìu ra"" và hệ thống sẽ tự động diễn giải (CHÚ Ý!, làm vậy trong khi chiến đấu có thể dẫn đến thất bại, lỗi kỹ năng và mất lượt!... ""Ra trận là phải chuẩn bị từ nhà!"").
+- 📖 **Nhận diện Phép thuật:** AI hiện đã biết toàn bộ sách phép của bạn. Hãy nhập ""bắn cầu lửa"" và nếu bạn có phép đó, nó sẽ được thi triển.
+- 🛡️ **Không còn Mất lượt:** Nếu trò chơi không hiểu hành động của bạn, nó sẽ yêu cầu bạn diễn đạt lại. Lượt của bạn sẽ KHÔNG bị mất.
+- 🎒 **Kho đồ Thủ công:** Để di chuyển vật phẩm giữa các ô (trang bị từ ba lô, nạp đạn), hãy dùng giao diện kéo và thả. Điều này giúp tránh nhầm lẫn và tiết kiệm tài nguyên AI.
+- 🎬 **AI Đạo diễn (CẢI TIẾN):** Chiến đấu giờ đây trở nên sống động. AI tạo ra các sự kiện môi trường và phản ứng làm phong phú thêm cốt truyện: đuốc rơi, kẻ thù lùi bước, xà nhà sụp đổ. Chiến trường không còn tĩnh lặng nữa!
+- 🐛 **Sửa lỗi Nghiêm trọng NPC:** Đã khắc phục lỗi ngăn NPC đưa ra quyết định chiến thuật chính xác, khiến chúng luôn ""chờ đợi"" thay vì tấn công hoặc phòng thủ.
+- 🎵 **Sửa lỗi Âm thanh:** Nhạc chiến đấu không còn bị ngắt khi nhấn các nút định sẵn (Tấn công, Đỡ đòn, v.v.).",Hệ thống Diễn giải Ngữ nghĩa Chiến đấu
+schinese,"🧪 现已推出：实验版本（进入方法：Steam 右键点击 ➡️ 属性 ➡️ 测试版）
+
+🛡️ 致那些**敢于**在前线战斗的勇士们：冒险在等待着你们，现在的挑战比以往任何时候都更加狂野！
+
+📝 期待在前线收到你们的战报（Bug 和反馈）。狠狠地打！⚔️
+
+- 🧠 **自由文本战斗：** 现在你可以像在跑团（TRPG）中与角色对话一样输入战斗行动：“对自己施放治疗术”、“拔出剑”、“使用治疗药水”。AI 会理解你的意图并将其转化为游戏机制。
+- ⚔️ **言语拔刀：** 不再需要点击武器槽。只需输入“拔出剑”或“拿出斧头”，系统就会自动解读（注意！在战斗中这样做可能会导致失败、大失败并丢失回合！……“上战场前要做好准备！”）。
+- 📖 **法术识别：** AI 现在知晓你完整的法术书。输入“施放火球术”，如果你拥有该法术，就会施放它。
+- 🛡️ **不再浪费回合：** 如果游戏无法理解你的行动，它会要求你重新表述。你的回合**不会**因此丢失。
+- 🎒 **手动库存管理：** 要在槽位间移动物品（从背包装备、装填弹药），请使用拖放界面。这可以避免混淆并节省 AI 资源。
+- 🎬 **AI 场景导演（改进版）：** 战斗现在栩栩如生。AI 会生成环境事件和反应来丰富叙事：掉落的火把、后撤的敌人、坍塌的横梁。战场不再是一成不变的！
+- 🐛 **NPC 关键修复：** 修复了一个导致 NPC 无法正确做出战术决策，从而导致它们总是“等待”而不是攻击或防御的错误。
+- 🎵 **音频修复：** 点击预设按钮（攻击、格挡等）时，战斗音乐不再停止。",战斗语义解析系统
+tchinese,"🧪 現已推出：實驗版本（存取方式：在 Steam 上按右鍵 ➡️ 內容 ➡️ Beta 測試）
+
+🛡️ 致那些敢於在第一線戰鬥的勇者們：冒險正等待著你們，現在比以往更加狂野難馴！
+
+📝 我在前線等待你們的戰報（Bug 回報與意見反饋）。狠狠地戰鬥吧！⚔️
+
+- 🧠 **自由文本戰鬥：** 現在你可以像在玩桌上角色扮演遊戲（TRPG）一樣輸入戰鬥行動：「對自己施放治療術」、「拔劍」、「使用治療藥水」。AI 會理解你的意圖並將其轉化為遊戲機制。
+- ⚔️ **用文字拔刀：** 不再需要點擊武器欄位。只需輸入「拔劍」或「拿出斧頭」，系統就會自動解讀（注意！在戰鬥中這樣做可能會導致失敗、大失誤並失去回合！...「上戰場前要先做好準備！」）。
+- 📖 **法術識別：** AI 現在認得你完整的法術書。輸入「施放火球術」，如果你有這個法術，就會施放出來。
+- 🛡️ **不再浪費回合：** 如果遊戲無法理解你的行動，會要求你重新描述。你的回合**不會**因此跳過。
+- 🎒 **手動庫存管理：** 要在欄位間移動物品（從背包裝備、填裝彈藥），請使用拖放介面。這能避免混淆並節省 AI 資源。
+- 🎬 **AI 場景導演（改進版）：** 戰鬥現在栩栩如生。AI 會生成環境事件與反應來豐富敘事：掉落的火把、後退的敵人、坍塌的樑柱。戰場不再是一成不變的！
+- 🐛 **NPC 關鍵修正：** 修復了導致 NPC 無法正確做出戰術決策，導致他們總是「等待」而不是攻擊或防禦的錯誤。
+- 🎵 **音效修正：** 按下預設按鈕（攻擊、格擋等）時，戰鬥音樂不再會停止。",戰鬥語意解讀系統

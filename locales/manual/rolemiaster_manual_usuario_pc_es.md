@@ -190,6 +190,16 @@ Cuando las palabras fallan, llega la hora de las tortas. El combate es **táctic
 *   **🏳️ Rendirse:** Si ves que no ganas, puedes suplicar piedad.
 *   **✨ Magia / Cyberware:** Fuego, rayos láser, hackeos...
 
+### 💬 Acciones por Texto Libre (¡NUEVO!)
+¿No te gustan los botones? ¡Escribe lo que quieras hacer!
+*   **Ejemplos válidos:**
+    *   *"Lanzar bola de fuego al goblin"* → La IA busca en tu grimorio y lanza el hechizo.
+    *   *"Desenfundar mi espada"* → Se desenfunda automáticamente.
+    *   *"Usar poción de curación sobre mí"* → La poción se consume y te cura.
+    *   *"Atacar al guardia con mi hacha"* → Ataque dirigido.
+*   **Si la IA no entiende:** Te pedirá que reformules. ¡Tu turno NO se pierde!
+*   **⚠️ Limitación:** Mover objetos entre slots (equipar desde mochila, cargar munición) se hace con **Drag & Drop** en la interfaz, no por texto.
+
 ### ⚠️ REGLA DE ORO DE SUPERVIVENCIA
 **¡DESENFUNDA ANTES DE PELEAR!**
 Sacar el arma en medio del combate consume tiempo (Ticks). Si te pillan con la espada en la vaina, te van a dar hasta en el carnet de identidad mientras intentas sacarla torpemente. O PEOR AÚN!, SI VAS CON TUS ARMAS EN LA MOCHILA EN LUGAR DE EN SU SLOT DE EQUIPAMIENTO (Escuse un segundo, tengo que sacar el mandoble de la mochila, sé que lo tenía por aquí... en alguna parte...) 🤦‍♂️
