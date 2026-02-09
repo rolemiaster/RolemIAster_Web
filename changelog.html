@@ -13,6 +13,7 @@
         :root {
             --primary: #00d2ff;
             --secondary: #ff0055;
+            --discord: #5865F2;
             --bg-dark: #0a0a12;
             --bg-panel: #161622;
             --text-main: #e0e0e0;
@@ -121,6 +122,19 @@
         .nav-links a:hover,
         .nav-links a.active {
             color: var(--primary);
+        }
+
+        .discord-btn {
+            background: var(--discord);
+            color: #fff !important;
+            padding: 5px 15px;
+            border-radius: 4px;
+            margin-right: 15px;
+        }
+
+        .discord-btn:hover {
+            box-shadow: 0 0 10px var(--discord);
+            text-shadow: none;
         }
 
         /* Selectors Group */
@@ -291,6 +305,7 @@
             <a href="index.html">Inicio</a>
             <a href="manual.html">Manual</a>
             <a href="changelog.html" class="active">Changelog</a>
+            <a href="https://discord.gg/k8gpfhZ7" target="_blank" class="discord-btn">Discord</a>
 
 
 

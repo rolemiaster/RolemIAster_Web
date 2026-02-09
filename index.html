@@ -13,6 +13,7 @@
             /* Cyberpunk Blue */
             --secondary: #ff0055;
             /* Cyberpunk Pink */
+            --discord: #5865F2;
             --bg-dark: #0a0a12;
             --bg-panel: #161622;
             --text-main: #e0e0e0;
@@ -96,6 +97,24 @@
         .nav-links a:hover,
         .nav-links a.active {
             color: var(--primary);
+        }
+
+        .discord-btn {
+            background: var(--discord);
+            color: #fff !important;
+            padding: 5px 15px;
+            border-radius: 4px;
+            transition: transform 0.2s;
+            display: flex;
+            /* Para alinear icono si hubiese */
+            align-items: center;
+            gap: 5px;
+        }
+
+        .discord-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 10px var(--discord);
+            text-shadow: none;
         }
 
         .lang-selector {
@@ -429,6 +448,8 @@
             </div>
 
             <a onclick="scrollToFooter()" style="cursor: pointer;" data-i18n="nav_more">Más</a>
+
+            <a href="https://discord.gg/k8gpfhZ7" target="_blank" class="discord-btn">Discord</a>
 
             <!-- Unified Language Selector -->
             <div class="lang-selector-group">
