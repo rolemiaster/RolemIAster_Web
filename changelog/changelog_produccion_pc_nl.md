@@ -1,35 +1,54 @@
 ****************************************************************************************************
-07/02/2026 20:26 - Sistema de Interpretación Semántica de Combate - BETA_v054
+13/02/2026 07:56 - Semantisch Gevechtsinterpretatiesysteem - Beta_v054
 ****************************************************************************************************
-🧪 YA DISPONIBLE:
-
-⚠️ **AVISO IMPORTANTE:** EL JUEGO PUEDE MIGRAR LA ANTIGUA BASE DE DATOS PARA LA NUEVA ESTRUCTURA MEDIANTE OPCIONES DEL LAUNCHER. NO RECOMIENDO ESTO, AUNQUE FUNCIONE TU ANTIGUA PARTIDA, MUCHAS COSAS ESTARÁN ROTAS. MI RECOMENDACIÓN ES ELIMINAR TODAS LAS PARTIDAS ANTERIORES GUARDADAS. NO ES NECESARIO BORRAR LA BASE DE DATOS AL COMPLETO SALVO CASO EXTREMO.
-
-Cambios:
-
-- 🌍 **Gestor de Mundos y Personajes:** Ahora tienes total libertad. Crea tus propios Mundos con sus propias reglas y ambientación, y dentro de cada uno, crea tantos personajes como quieras. **Nota Importante:** Todos los personajes de un mismo mundo comparten la misma línea temporal y los eventos sucedidos, lo que sienta las bases para el futuro modo multijugador.
-- 🧠 **Memoria Contextual (Súper RAG):** La IA ahora tiene "sentidos". Al buscar información en el Lore o en su memoria, tiene en cuenta dónde estás, con quién estás, si estás herido y qué acaba de pasar. ¡Es mucho más intuitivo y coherente!
-- 🌍 **Lore en el Primer Personaje:** ¿Escribías una descripción épica de tu mundo y la IA la ignoraba en tu primer personaje? ¡Solucionado! Ahora la descripción manual del mundo llega directamente a la IA durante la creación inicial.
-- ⚙️ **Sistema de Mundos Mejorado:** He independizado el nombre de tu mundo de las reglas técnicas.
-- 📝 **Claridad en Creación:** He mejorado las instrucciones internas para que la IA entienda mejor cuándo debe inventar un trasfondo.
-- 🧠 **Combate por Texto Libre:** Escribe acciones como "lanzar hechizo de curación" o "desenfundar espada". La IA entiende tu intención.
-- 🎨 **¡Nueva Interfaz Épica!** Remodelación completa estilo RPG con menús animados y bordes neón.
-- 🎬 **IA Director de Escena (MEJORADO):** El combate ahora cobra vida con eventos ambientales.
-- ⚔️ **Desenfundar con Palabras:** Escribe "desenfundar espada" en lugar de hacer clic. ¡Cuidado en combate!
-- 📖 **Hechizos Reconocidos:** La IA conoce tu libro de hechizos completo.
-- 🌍 **Narrativa en tu Idioma:** Respeta estrictamente el idioma seleccionado, evitando mezclas.
-- 🛡️ **No Más Turnos Perdidos:** Si el juego no entiende, te pedirá aclaraciones. Tu turno NO se pierde.
-- 🎒 **Inventario Manual:** Interfaz de arrastrar y soltar para mover objetos.
-- 🧪 **Uso de Pociones Fluido:** Arrastra sobre retrato o usa el menú de clic derecho.
-- 🩸 **Corrección de Daño:** Barra de vida corregida. Ya no eres inmortal.
-- 👻 **Adiós a los Items Fantasma:** Reparación automática de objetos que la IA olvida crear.
-- 🐛 **Corrección Crítica NPC:** Decisiones tácticas de NPCs corregidas.
-- 🎒 **Corrección Inventario Inicial:** Personajes ya no empiezan desnudos.
-- 🎲 **Creación de Personaje:** Exploit de puntos infinitos corregido.
-- 🖼️ **Retratos Arreglados:** El sistema encuentra imágenes correctas independientemente del nombre del mundo.
-- 💍 **Iconos Inteligentes:** Objetos y anillos con iconos precisos.
-- 🧪 **Tooltips Mejorados:** Información completa al pasar el ratón.
-- 🎵 **Mejoras de Audio:** Música no se detiene al pulsar botones.
+- What's New (NL):
+  🧪 NU BESCHIKBAAR:
+  
+  ⚠️ **BELANGRIJKE MEDEDELING:** HET SPEL KAN DE OUDE DATABASE MIGREREN NAAR DE NIEUWE STRUCTUUR VIA OPTIES IN DE LAUNCHER. IK RAAD DIT NIET AAN; ZELFS ALS JE OUDE SAVE WERKT, ZULLEN VEEL DINGEN STUK ZIJN. MIJN ADVIES IS OM ALLE VORIGE OPGESLAGEN SPELLEN TE VERWIJDEREN. HET IS NIET NODIG OM DE VOLLEDIGE DATABASE TE WISSEN, TENZIJ IN EXTREME GEVALLEN.
+  
+  Wijzigingen:
+  
+  - 🌍 **Wereld- en Personagebeheer:** Je hebt nu totale vrijheid. Creëer je eigen werelden met hun eigen regels en setting, en maak daarbinnen zoveel personages als je wilt. **Belangrijke opmerking:** Alle personages in dezelfde wereld delen dezelfde tijdlijn en gebeurtenissen, wat de basis legt voor de toekomstige multiplayer-modus.
+  - 🧠 **Contextueel Geheugen (Super RAG):** De AI heeft nu "zintuigen". Bij het zoeken naar informatie in de Lore of het geheugen, wordt er rekening gehouden met waar je bent, met wie je bent, of je gewond bent en wat er net is gebeurd. Als je bij een Koning bent, herinnert hij zich dingen over koningen. Als je gewond bent, zoekt hij naar regels voor genezing. Het is veel intuïtiever en coherenter!
+  - 🌍 **Lore bij het Eerste Personage:** Schreef je een epische beschrijving van je wereld en negeerde de AI die bij je eerste personage? Opgelost! De handmatige wereldbeschrijving gaat nu rechtstreeks naar de AI tijdens de initiële creatie, zelfs voordat het geheugensysteem actief wordt.
+  - ⚙️ **Verbeterd Wereldsysteem:** Ik heb de naam van je wereld losgekoppeld van de technische regels. Je kunt je wereld nu noemen zoals je wilt zonder dat dit invloed heeft op het laden van Fantasy- of Cyberpunk-regels.
+  - 📝 **Duidelijkheid bij Creatie:** Ik heb de interne instructies verbeterd zodat de AI beter begrijpt wanneer hij een achtergrondverhaal moet verzinnen en wanneer hij zich moet beperken tot het extraheren van je statistieken.
+  - 🧠 **Vrije Tekstgevechten:** Je kunt je acties in gevechten nu schrijven alsof je tegen een tafelrollenspel-personage praat: "spreek genezingsspreuk over mij uit", "trek mijn zwaard", "gebruik genezingsdrankje". De AI begrijpt je bedoeling en vertaalt deze naar spelmechanismen.
+  - 🎨 **Nieuwe Epische Interface!** Ik heb het spel volledig verbouwd. Menu's in RPG-stijl, geanimeerde achtergronden en een compleet vernieuwde visuele ervaring. Donkere halfdoorzichtige stijl, neonranden en zachte schaduwen voor totale immersie.
+  - 🎬 **AI Scèneregisseur (VERBETERD):** Gevechten komen nu tot leven. De AI genereert omgevingsgebeurtenissen en reacties die het verhaal verrijken: vallende fakkels, terugtrekkende vijanden, instortende balken. Het slagveld is niet langer statisch!
+  - ⚔️ **Wapen Trekken met Woorden:** Je hoeft niet meer op het wapenslot te klikken. Typ gewoon "trek zwaard" of "pak mijn bijl" en het systeem interpreteert het automatisch (LET OP! Dit doen tijdens een gevecht kan leiden tot falen, blunders en verlies van beurt!... "Kom voorbereid naar het gevecht!").
+  - 📖 **Herkende Spreuken:** De AI kent nu je volledige spreukenboek. Zeg "werp vuurbal" en als je die spreuk hebt, wordt hij uitgevoerd.
+  - 🌍 **Verhaal in je Eigen Taal:** Het verhaal respecteert nu strikt de geselecteerde taal en voorkomt vreemde mengelmoesjes van talen (hopelijk hoef ik nooit meer 'Spanglish' te zien! Ik heb de AI zo gedwongen dat als hij nu tekst in een andere taal genereert, hij echt vervloekt moet zijn).
+  - 🛡️ **Geen Verloren Beurten Meer:** Als het spel je actie niet begrijpt, wordt je gevraagd deze anders te formuleren. Je beurt gaat NIET verloren.
+  - 🎒 **Handmatige Inventaris:** Gebruik de sleep-en-neerzet interface om voorwerpen tussen vakken te verplaatsen (uitrusten vanuit rugzak, munitie laden). Dit voorkomt verwarring en bespaart AI-rekenkracht.
+  - 🧪 **Vloeiend Drankjesgebruik:** Je kunt nu drankjes en voedsel rechtstreeks naar je portret slepen om ze te gebruiken. Ik heb ook de optie "Gebruiken" toegevoegd aan de rechtermuisknop. Intuïtiever en sneller!
+  - 🩸 **Schadecorrectie:** Je bent niet langer onsterfelijk! We hebben een probleem opgelost waarbij de levensbalk niet zakte, zelfs niet als je geraakt werd. Nu zul je lijden zoals het hoort.
+  - 👻 **Vaarwel Spookvoorwerpen:** Vond je een voorwerp in het verhaal maar verscheen het nooit in je rugzak? Probleem opgelost! Het systeem herstelt nu automatisch voorwerpen die de AI "vergeet" aan te maken.
+  - 🐛 **Kritieke NPC-fix:** Een fout opgelost waardoor NPC's geen tactische beslissingen konden nemen correct, waardoor ze altijd "wachtten" in plaats van aan te vallen of zich te verdedigen.
+  - 🎒 **Correctie Startinventaris:** Nieuwe personages beginnen niet langer naakt. Ze ontvangen nu hun startuitrusting correct.
+  - 🎲 **Personagecreatie:** Een exploit verholpen waarbij het verhogen en verlagen van een attribuut bij bepaalde drempels oneindige extra punten opleverde. Weg met de Charisma-truc!
+  - 🖼️ **Portretten Hersteld:** Maakte je een wereld met een eigen naam en verdwenen de portretten? Opgelost! Het systeem vindt nu de juiste afbeeldingen, ongeacht hoe je je wereld doopt.
+  - 💍 **Slimme Iconen:** Voorwerpen (inclusief ringen) tonen nu nauwkeurigere en correcte iconen in de interface.
+  - 🧪 **Verbeterde Tooltips:** Drankjes, verbruiksartikelen en spreuken tonen nu correct al hun informatie en effecten wanneer je er met de muis overheen gaat.
+  - 🎵 **Audioverbeteringen:** De gevechtsmuziek stopt niet meer bij het indrukken van de voorgedefinieerde knoppen.
+  - [I18N] **Fix Implantaten:** Ontbrekende vertaalsleutels toegevoegd voor implantaatslots (`slot_implant_*`) en bijbehorende iconen (`icon_implant_*`) in `es.json`.
+  - [FIX][AUDIO] **Inconsistente Audio:** Geluidseffecten (SFX) voor het uitrusten van items en trekken van wapens aangepast aan de setting. Het systeem detecteert nu de `setting_key` en gebruikt futuristische/industriële geluiden in Cyberpunk en klassieke geluiden in Fantasy.
+  - [FIX][I18N] **Opschoning es.json:** Meer dan 20 dubbele sleutels verwijderd uit `es.json` en typefouten in slotnamen gecorrigeerd (bijv. "Oíidos" -> "Oídos").
+  - ⚙️ **Slimme Modeldetectie:** Het spel leest nu direct het "brein" van de modellen die je importeert (GGUF). Het detecteert automatisch de echte maximale context. (Geoptimaliseerde officiële modellen worden met rust gelaten voor maximale stabiliteit).
+  - 📂 **Ruimtebesparing:** Bij het toevoegen van een model vanaf je computer, verplaatst het spel het nu rechtstreeks naar de map in plaats van het te kopiëren. Je Gigabytes zullen je dankbaar zijn!
+  - ⚖️ **Rechtvaardigheid in Attributen:** Een exploit verholpen waarmee je oneindige punten kon krijgen door attributen te verhogen en verlagen tijdens de creatie.
+  - 📖 **Trainingsgids:** Ik heb de Handleiding (README) bijgewerkt met alle details over hoe je personages ervaring opdoen en hun attributen verhogen.
+  - 📜 **Codex van Epische Werelden:** Geen lore meer van slechts een "naschrift"! De generator creëert nu werelden met een diepe geschiedenis, waarin religies, wetten, geografie en beroemde personages worden beschreven in een gedetailleerd kroniekformaat.
+  - 🧙 **Coherente Verhalen:** Je personage wordt niet langer in het luchtledige geboren. Zijn achtergrond integreert nu slim met de lore van de wereld die je net hebt gecreëerd of gekozen.
+  - ⚡ **Vloeiende Interface:** De automatische generatie van verhalen en werelden gebeurt nu op de achtergrond. Geen wachttijden meer met een bevroren scherm!
+  - 🚀 **Direct Avontuur:** Ik heb de wachttijden geëlimineerd! Na het aanmaken van je personage spring je nu direct in het verhaal. Het systeem gebruikt je verrijkte achtergrond om het perfecte begin te creëren zonder dat je nog een woord hoeft te schrijven.
+  - 🎭 **Achtergronden met Aanleiding:** Je personages hebben niet langer alleen een verleden, maar ook een dringende reden om het avontuur te beginnen. Het nieuwe AI-systeem genereert automatisch de initiële vonk van het verhaal, geïntegreerd in je biografie.
+  - 🧹 **Vereenvoudigde Interface:** Ik heb knoppen en schermen verwijderd die geen waarde toevoegden. De knop "Verhaal Starten" centraliseert nu alle kracht, zodat je zo snel mogelijk kunt gaan spelen.
+  - [FIX][UI] **Visuele Duplicatie bij Wereldselectie:** Bug verholpen waarbij de wereldnaam dubbel verscheen als "Naam [Naam]". Het typelabel wordt nu verborgen als het overbodig is.
+  - [FEAT][UI] **Snel Laden (Eén Klik):** Je kunt nu een personage laden of een nieuwe creatie starten met slechts één klik in het wereldselectiescherm. Het uitklappen van werelden blijft behouden om conflicten te voorkomen.
+  - 🧠 **Creatievere AI:** Ik heb de "herhalingslus" van de AI doorbroken door technische variabiliteit in elk verzoek te injecteren. Willekeurig gegenereerde personages zullen nu veel unieker en origineler zijn en de voorbeelden uit de gids negeren.
+  
+  🛡️ Aan de dapperen die het AANDURVEN om in de voorste linies te vechten: Het avontuur wacht op jullie, nu onstuimiger dan ooit!
 
 ****************************************************************************************************
 06/02/2026 02:32 - Vulkan-ondersteuning (AMD/Intel) en Robuuste Foutafhandeling - Beta_v053

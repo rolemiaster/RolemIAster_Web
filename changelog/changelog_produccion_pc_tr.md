@@ -1,35 +1,54 @@
 ****************************************************************************************************
-07/02/2026 20:26 - Sistema de Interpretación Semántica de Combate - BETA_v054
+13/02/2026 07:56 - Semantik Savaş Yorumlama Sistemi - Beta_v054
 ****************************************************************************************************
-🧪 YA DISPONIBLE:
-
-⚠️ **AVISO IMPORTANTE:** EL JUEGO PUEDE MIGRAR LA ANTIGUA BASE DE DATOS PARA LA NUEVA ESTRUCTURA MEDIANTE OPCIONES DEL LAUNCHER. NO RECOMIENDO ESTO, AUNQUE FUNCIONE TU ANTIGUA PARTIDA, MUCHAS COSAS ESTARÁN ROTAS. MI RECOMENDACIÓN ES ELIMINAR TODAS LAS PARTIDAS ANTERIORES GUARDADAS. NO ES NECESARIO BORRAR LA BASE DE DATOS AL COMPLETO SALVO CASO EXTREMO.
-
-Cambios:
-
-- 🌍 **Gestor de Mundos y Personajes:** Ahora tienes total libertad. Crea tus propios Mundos con sus propias reglas y ambientación, y dentro de cada uno, crea tantos personajes como quieras. **Nota Importante:** Todos los personajes de un mismo mundo comparten la misma línea temporal y los eventos sucedidos, lo que sienta las bases para el futuro modo multijugador.
-- 🧠 **Memoria Contextual (Súper RAG):** La IA ahora tiene "sentidos". Al buscar información en el Lore o en su memoria, tiene en cuenta dónde estás, con quién estás, si estás herido y qué acaba de pasar. ¡Es mucho más intuitivo y coherente!
-- 🌍 **Lore en el Primer Personaje:** ¿Escribías una descripción épica de tu mundo y la IA la ignoraba en tu primer personaje? ¡Solucionado! Ahora la descripción manual del mundo llega directamente a la IA durante la creación inicial.
-- ⚙️ **Sistema de Mundos Mejorado:** He independizado el nombre de tu mundo de las reglas técnicas.
-- 📝 **Claridad en Creación:** He mejorado las instrucciones internas para que la IA entienda mejor cuándo debe inventar un trasfondo.
-- 🧠 **Combate por Texto Libre:** Escribe acciones como "lanzar hechizo de curación" o "desenfundar espada". La IA entiende tu intención.
-- 🎨 **¡Nueva Interfaz Épica!** Remodelación completa estilo RPG con menús animados y bordes neón.
-- 🎬 **IA Director de Escena (MEJORADO):** El combate ahora cobra vida con eventos ambientales.
-- ⚔️ **Desenfundar con Palabras:** Escribe "desenfundar espada" en lugar de hacer clic. ¡Cuidado en combate!
-- 📖 **Hechizos Reconocidos:** La IA conoce tu libro de hechizos completo.
-- 🌍 **Narrativa en tu Idioma:** Respeta estrictamente el idioma seleccionado, evitando mezclas.
-- 🛡️ **No Más Turnos Perdidos:** Si el juego no entiende, te pedirá aclaraciones. Tu turno NO se pierde.
-- 🎒 **Inventario Manual:** Interfaz de arrastrar y soltar para mover objetos.
-- 🧪 **Uso de Pociones Fluido:** Arrastra sobre retrato o usa el menú de clic derecho.
-- 🩸 **Corrección de Daño:** Barra de vida corregida. Ya no eres inmortal.
-- 👻 **Adiós a los Items Fantasma:** Reparación automática de objetos que la IA olvida crear.
-- 🐛 **Corrección Crítica NPC:** Decisiones tácticas de NPCs corregidas.
-- 🎒 **Corrección Inventario Inicial:** Personajes ya no empiezan desnudos.
-- 🎲 **Creación de Personaje:** Exploit de puntos infinitos corregido.
-- 🖼️ **Retratos Arreglados:** El sistema encuentra imágenes correctas independientemente del nombre del mundo.
-- 💍 **Iconos Inteligentes:** Objetos y anillos con iconos precisos.
-- 🧪 **Tooltips Mejorados:** Información completa al pasar el ratón.
-- 🎵 **Mejoras de Audio:** Música no se detiene al pulsar botones.
+- What's New (TR):
+  🧪 ŞİMDİ YAYINDA:
+  
+  ⚠️ **ÖNEMLİ UYARI:** OYUN, LAUNCHER SEÇENEKLERİ ARACILIĞIYLA ESKİ VERİ TABANINI YENİ YAPIYA TAŞIYABİLİR. BUNU TAVSİYE ETMİYORUM; ESKİ KAYDINIZ ÇALIŞSA BİLE BİRÇOK ŞEY BOZUK OLACAKTIR. ÖNERİM, ÖNCEKİ TÜM KAYITLI OYUNLARI SİLMENİZDİR. AŞIRI BİR DURUM OLMADIKÇA VERİ TABANINI TAMAMEN SİLMENİZE GEREK YOKTUR.
+  
+  Değişiklikler:
+  
+  - 🌍 **Dünya ve Karakter Yöneticisi:** Artık tamamen özgürsünüz. Kendi kuralları ve ortamlarıyla kendi Dünyalarınızı yaratın ve her birinin içinde istediğiniz kadar karakter oluşturun. **Önemli Not:** Aynı dünyadaki tüm karakterler aynı zaman çizelgesini ve gerçekleşen olayları paylaşır, bu da gelecekteki çok oyunculu modun temellerini atar.
+  - 🧠 **Bağlamsal Hafıza (Süper RAG):** Yapay Zeka'nın artık "duyuları" var. İlim (Lore) veya hafızasında bilgi ararken nerede olduğunuzu, kiminle olduğunuzu, yaralı olup olmadığınızı ve az önce ne olduğunu hesaba katar. Bir Kral ile birlikteyseniz, krallarla ilgili şeyleri hatırlar. Yaralıysanız, iyileşme kurallarını arar. Çok daha sezgisel ve tutarlı!
+  - 🌍 **İlk Karakterde İlim (Lore):** Dünyanız için epik bir açıklama yazıyordunuz ama YZ ilk karakterinizde bunu görmezden mi geliyordu? Çözüldü! Artık manuel dünya açıklaması, daha hafıza sistemi devreye girmeden, ilk oluşturma sırasında doğrudan YZ'ye ulaşır.
+  - ⚙️ **Geliştirilmiş Dünya Sistemi:** Dünyanızın adını teknik kurallardan bağımsız hale getirdim. Artık dünyanıza istediğiniz adı verebilirsiniz ve bu Fantastik veya Cyberpunk kurallarının yüklenmesini etkilemez.
+  - 📝 **Oluşturmada Netlik:** YZ'nin ne zaman bir arka plan uydurması gerektiğini ve ne zaman sadece istatistiklerinizi çıkarması gerektiğini daha iyi anlaması için dahili talimatları geliştirdim.
+  - 🧠 **Serbest Metinle Savaş:** Artık savaş eylemlerinizi bir masaüstü RYO karakteriyle konuşur gibi yazabilirsiniz: "kendime iyileştirme büyüsü yap", "kılıcımı çek", "iyileştirme iksiri kullan". YZ niyetinizi anlar ve bunu oyun mekaniğine çevirir.
+  - 🎨 **Yeni Epik Arayüz!** Oyunu tamamen yeniden modelledim. RYO tarzı menüler, hareketli arka planlar ve tamamen yenilenmiş bir görsel deneyim. Tam daldırma (immersion) için yarı saydam karanlık stil, neon kenarlar ve yumuşatılmış gölgeler.
+  - 🎬 **YZ Sahne Yönetmeni (GELİŞTİRİLDİ):** Savaş artık canlanıyor. YZ, anlatıyı zenginleştiren çevresel olaylar ve tepkiler üretir: düşen meşaleler, geri çekilen düşmanlar, çöken kirişler. Savaş alanı artık durağan değil!
+  - ⚔️ **Kelimelerle Silah Çekme:** Artık silah yuvasına tıklamanıza gerek yok. Sadece "kılıcı kınından çıkar" veya "baltamı çek" yazın, sistem bunu otomatik olarak yorumlar (DİKKAT! Bunu savaş sırasında yapmak başarısızlığa, sakarlığa ve tur kaybına neden olabilir!... "Savaşlara evden hazırlıklı gelinir!").
+  - 📖 **Tanınan Büyüler:** YZ artık büyü kitabınızın tamamını biliyor. "Alev topu fırlat" deyin, eğer o büyüye sahipseniz fırlatacaktır.
+  - 🌍 **Dilinizde Anlatı:** Hikaye artık seçilen dile kesinlikle uyuyor, diller arasında garip karışımları önlüyor (umarım bir daha asla spanglish görmek zorunda kalmam! YZ'yi o kadar zorladım ki, seçilenden farklı bir dilde metin üretirse, gerçekten lanetlenmiş demektir).
+  - 🛡️ **Boşa Giden Turlar Yok:** Oyun eyleminizi anlamazsa, yeniden formüle etmenizi isteyecektir. Turunuz KAYBOLMAZ.
+  - 🎒 **Manuel Envanter:** Eşyaları yuvalar arasında taşımak (çantadan kuşanmak, cephane doldurmak) için sürükle ve bırak arayüzünü kullanın. Bu kafa karışıklığını önler ve YZ kaynaklarından tasarruf sağlar.
+  - 🧪 **Akıcı İksir Kullanımı:** Artık iksirleri ve yiyecekleri kullanmak için doğrudan portrenizin üzerine sürükleyebilirsiniz. Ayrıca sağ tıklamaya "Kullan" seçeneğini de ekledim. Daha sezgisel ve hızlı!
+  - 🩸 **Hasar Düzeltmesi:** Artık ölümsüz değilsiniz! Darbe alsanız bile can çubuğunun düşmemesine neden olan bir sorunu düzelttik. Artık olması gerektiği gibi acı çekeceksiniz.
+  - 👻 **Hayalet Eşyalara Elveda:** Hikayede bir eşya buluyor ama çantanızda hiç görünmüyor muydu? Sorun çözüldü! Sistem artık YZ'nin oluşturmayı "unuttuğu" eşyaları otomatik olarak onarıyor.
+  - 🐛 **Kritik NPC Düzeltmesi:** NPC'lerin taktiksel kararları doğru şekilde almasını engelleyen, saldırmak veya savunmak yerine sürekli "beklemelerine" neden olan bir hata giderildi.
+  - 🎒 **Başlangıç Envanteri Düzeltmesi:** Yeni karakterler artık çıplak başlamıyor. Başlangıç ekipmanlarını doğru şekilde alıyorlar.
+  - 🎲 **Karakter Oluşturma:** Belirli eşiklerde bir niteliği yükseltip düşürmenin sonsuz ekstra puan ürettiği bir açık (exploit) düzeltildi. Karizma hilesi sona erdi!
+  - 🖼️ **Portreler Düzeltildi:** Özel isimli bir dünya yaratıyordunuz ve portreler kayboluyor muydu? Düzeltildi! Sistem artık dünyanızı nasıl adlandırırsanız adlandırın doğru görselleri buluyor.
+  - 💍 **Akıllı Simgeler:** Eşyalar (yüzükler dahil) artık arayüzde daha hassas ve doğru simgeler gösteriyor.
+  - 🧪 **Geliştirilmiş İpuçları:** İksirler, sarf malzemeleri ve büyüler artık fareyle üzerine gelindiğinde tüm bilgilerini ve etkilerini doğru şekilde gösteriyor.
+  - 🎵 **Ses İyileştirmeleri:** Savaş müziği artık önceden tanımlanmış düğmelere basıldığında durmuyor.
+  - [I18N] **İmplant Düzeltmesi:** `es.json` dosyasına eksik implant yuvası çeviri anahtarları (`slot_implant_*`) ve ilgili simgeler (`icon_implant_*`) eklendi.
+  - [FIX][AUDIO] **Tutarsız Ses:** Eşya kuşanma ve silah çekme ses efektleri (SFX) ortama uyarlandı. Sistem artık `setting_key`'i algılıyor ve Cyberpunk'ta fütüristik/endüstriyel sesler, Fantastik'te ise klasik sesler kullanıyor.
+  - [FIX][I18N] **es.json Temizliği:** `es.json` dosyasındaki 20'den fazla yinelenen anahtar silindi ve yuva adlarındaki yazım hataları düzeltildi (örn. "Oíidos" -> "Oídos").
+  - ⚙️ **Akıllı Model Algılama:** Oyun artık içe aktardığınız modellerin (GGUF) doğrudan "beynini" okuyor. Gerçek maksimum bağlamı otomatik olarak algılar. (Optimize edilmiş resmi modellere maksimum kararlılık için dokunulmaz).
+  - 📂 **Yer Tasarrufu:** Bilgisayarınızdan bir model eklerken, oyun artık kopyalamak yerine doğrudan kendi klasörüne taşıyor. Gigabaytlarınız size teşekkür edecek!
+  - ⚖️ **Niteliklerde Adalet:** Oluşturma sırasında nitelikleri yükseltip düşürerek sonsuz puan kazanmaya izin veren bir açık düzeltildi.
+  - 📖 **Eğitim Kılavuzu:** Karakterlerinizin nasıl deneyim kazandığı ve niteliklerini nasıl yükselttiğiyle ilgili tüm detaylarla Kılavuzu (README) güncelledim.
+  - 📜 **Epik Dünyalar Kodeksi:** "Dipnot" gibi ilimlere son! Oluşturucu artık derin bir tarihe sahip dünyalar yaratıyor; dinlerini, yasalarını, coğrafyasını ve ünlü karakterlerini detaylı bir kronik formatında tanımlıyor.
+  - 🧙 **Tutarlı Hikayeler:** Karakteriniz artık boşlukta doğmuyor. Arka planı, yeni yarattığınız veya seçtiğiniz dünyanın ilmiyle akıllıca bütünleşiyor.
+  - ⚡ **Akıcı Arayüz:** Otomatik hikaye ve dünya oluşturma artık arka planda gerçekleşiyor. Donmuş ekranla beklemelere son!
+  - 🚀 **Anında Macera Başlangıcı:** Beklemeleri ortadan kaldırdım! Artık karakterinizi yarattıktan sonra doğrudan hikayeye atlıyorsunuz. Sistem, tek bir kelime bile yazmanıza gerek kalmadan mükemmel başlangıcı yaratmak için zenginleştirilmiş arka planınızı kullanır.
+  - 🎭 **Bahaneli Arka Planlar:** Karakterlerinizin artık sadece bir geçmişi yok, aynı zamanda maceraya başlamak için acil bir nedenleri de var. Yeni YZ sistemi, biyografinize entegre edilmiş hikayenin ilk kıvılcımını otomatik olarak üretir.
+  - 🧹 **Basitleştirilmiş Arayüz:** Değer katmayan düğmeleri ve ekranları kaldırdım. "Hikayeyi Başlat" düğmesi artık oynamaya en kısa sürede başlamanız için tüm gücü merkezileştiriyor.
+  - [FIX][UI] **Dünya Seçiminde Görsel Çiftleme:** Dünya adının "İsim [İsim]" şeklinde çift göründüğü hata düzeltildi. Artık tür etiketi gereksizse gizleniyor.
+  - [FEAT][UI] **Hızlı Yükleme (Tek Tık):** Artık dünya seçim ekranında tek bir tıklama ile bir karakter yüklenebilir veya yeni bir karakter oluşturulabilir. Çakışmaları önlemek için dünya genişletme özelliği korunuyor.
+  - 🧠 **Daha Yaratıcı YZ:** Her isteğe teknik değişkenlik enjekte ederek YZ'nin "tekrar döngüsünü" kırdım. Artık rastgele oluşturulan karakterler, kılavuzdaki örnekleri görmezden gelerek çok daha benzersiz ve orijinal olacak.
+  
+  🛡️ Savaşın ön saflarında savaşmaya CESARET eden cesurlara: Macera sizi bekliyor, şimdi hiç olmadığı kadar vahşi!
 
 ****************************************************************************************************
 06/02/2026 02:32 - Vulkan Desteği (AMD/Intel) ve Güçlü Hata Yönetimi - Beta_v053

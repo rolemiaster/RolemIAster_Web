@@ -1,35 +1,54 @@
 ****************************************************************************************************
-07/02/2026 20:26 - Sistema de Interpretación Semántica de Combate - BETA_v054
+13/02/2026 07:56 - Szemantikus Harci Értelmező Rendszer - Beta_v054
 ****************************************************************************************************
-🧪 YA DISPONIBLE:
-
-⚠️ **AVISO IMPORTANTE:** EL JUEGO PUEDE MIGRAR LA ANTIGUA BASE DE DATOS PARA LA NUEVA ESTRUCTURA MEDIANTE OPCIONES DEL LAUNCHER. NO RECOMIENDO ESTO, AUNQUE FUNCIONE TU ANTIGUA PARTIDA, MUCHAS COSAS ESTARÁN ROTAS. MI RECOMENDACIÓN ES ELIMINAR TODAS LAS PARTIDAS ANTERIORES GUARDADAS. NO ES NECESARIO BORRAR LA BASE DE DATOS AL COMPLETO SALVO CASO EXTREMO.
-
-Cambios:
-
-- 🌍 **Gestor de Mundos y Personajes:** Ahora tienes total libertad. Crea tus propios Mundos con sus propias reglas y ambientación, y dentro de cada uno, crea tantos personajes como quieras. **Nota Importante:** Todos los personajes de un mismo mundo comparten la misma línea temporal y los eventos sucedidos, lo que sienta las bases para el futuro modo multijugador.
-- 🧠 **Memoria Contextual (Súper RAG):** La IA ahora tiene "sentidos". Al buscar información en el Lore o en su memoria, tiene en cuenta dónde estás, con quién estás, si estás herido y qué acaba de pasar. ¡Es mucho más intuitivo y coherente!
-- 🌍 **Lore en el Primer Personaje:** ¿Escribías una descripción épica de tu mundo y la IA la ignoraba en tu primer personaje? ¡Solucionado! Ahora la descripción manual del mundo llega directamente a la IA durante la creación inicial.
-- ⚙️ **Sistema de Mundos Mejorado:** He independizado el nombre de tu mundo de las reglas técnicas.
-- 📝 **Claridad en Creación:** He mejorado las instrucciones internas para que la IA entienda mejor cuándo debe inventar un trasfondo.
-- 🧠 **Combate por Texto Libre:** Escribe acciones como "lanzar hechizo de curación" o "desenfundar espada". La IA entiende tu intención.
-- 🎨 **¡Nueva Interfaz Épica!** Remodelación completa estilo RPG con menús animados y bordes neón.
-- 🎬 **IA Director de Escena (MEJORADO):** El combate ahora cobra vida con eventos ambientales.
-- ⚔️ **Desenfundar con Palabras:** Escribe "desenfundar espada" en lugar de hacer clic. ¡Cuidado en combate!
-- 📖 **Hechizos Reconocidos:** La IA conoce tu libro de hechizos completo.
-- 🌍 **Narrativa en tu Idioma:** Respeta estrictamente el idioma seleccionado, evitando mezclas.
-- 🛡️ **No Más Turnos Perdidos:** Si el juego no entiende, te pedirá aclaraciones. Tu turno NO se pierde.
-- 🎒 **Inventario Manual:** Interfaz de arrastrar y soltar para mover objetos.
-- 🧪 **Uso de Pociones Fluido:** Arrastra sobre retrato o usa el menú de clic derecho.
-- 🩸 **Corrección de Daño:** Barra de vida corregida. Ya no eres inmortal.
-- 👻 **Adiós a los Items Fantasma:** Reparación automática de objetos que la IA olvida crear.
-- 🐛 **Corrección Crítica NPC:** Decisiones tácticas de NPCs corregidas.
-- 🎒 **Corrección Inventario Inicial:** Personajes ya no empiezan desnudos.
-- 🎲 **Creación de Personaje:** Exploit de puntos infinitos corregido.
-- 🖼️ **Retratos Arreglados:** El sistema encuentra imágenes correctas independientemente del nombre del mundo.
-- 💍 **Iconos Inteligentes:** Objetos y anillos con iconos precisos.
-- 🧪 **Tooltips Mejorados:** Información completa al pasar el ratón.
-- 🎵 **Mejoras de Audio:** Música no se detiene al pulsar botones.
+- What's New (HU):
+  🧪 MÁR ELÉRHETŐ:
+  
+  ⚠️ **FONTOS FIGYELMEZTETÉS:** A JÁTÉK ÁT TUDJA MIGRÁLNI A RÉGI ADATBÁZIST AZ ÚJ STRUKTÚRÁBA A LAUNCHER OPCIÓIN KERESZTÜL. EZT NEM JAVASLOM, MÉG HA A RÉGI MENTÉSED MŰKÖDIK IS, SOK DOLOG HIBÁS LESZ. AZT JAVASLOM, HOGY TÖRÖLD AZ ÖSSZES KORÁBBI MENTÉST. NEM SZÜKSÉGES A TELJES ADATBÁZIST TÖRÖLNI, KIVÉVE EXTRÉM ESETBEN.
+  
+  Változások:
+  
+  - 🌍 **Világ- és Karakterkezelő:** Most már teljes szabadságot élvezel. Hozz létre saját világokat egyedi szabályokkal és környezettel, és alkoss bennük annyi karaktert, amennyit csak szeretnél. **Fontos megjegyzés:** Egy adott világ karakterei ugyanazon az idővonalon és eseményeken osztoznak, ami megteremti a jövőbeli többjátékos mód alapjait.
+  - 🧠 **Kontextuális Memória (Szuper RAG):** A MI most már rendelkezik „érzékekkel”. Amikor a háttértörténetben (Lore) vagy a memóriájában keres információt, figyelembe veszi, hol vagy, kivel vagy, sérült vagy-e, és mi történt éppen. Ha egy Királlyal vagy, királyokkal kapcsolatos dolgokra fog emlékezni. Ha sérült vagy, a gyógyítás szabályait keresi. Sokkal intuitívabb és koherensebb!
+  - 🌍 **Lore az Első Karakternél:** Írtál egy epikus leírást a világodról, és a MI figyelmen kívül hagyta az első karakterednél? Megoldva! A világ manuális leírása most közvetlenül eljut a MI-hez a kezdeti létrehozás során, még mielőtt a memóriarendszer aktiválódna.
+  - ⚙️ **Továbbfejlesztett Világrendszer:** Függetlenítettem a világod nevét a technikai szabályoktól. Mostantól úgy nevezheted el a világodat, ahogy akarod, anélkül, hogy ez befolyásolná a Fantasy vagy Cyberpunk szabályok betöltését.
+  - 📝 **Egyértelműség a Létrehozásnál:** Javítottam a belső utasításokon, hogy a MI jobban értse, mikor kell háttértörténetet kitalálnia, és mikor kell csupán a statisztikáidat kinyernie.
+  - 🧠 **Szabad Szöveges Harc:** Mostantól úgy írhatod le a harci cselekedeteidet, mintha egy asztali szerepjátékon beszélnél: „gyógyító varázslat használata magamon”, „kard előhúzása”, „gyógyital használata”. A MI megérti a szándékodat, és lefordítja játékmechanikára.
+  - 🎨 **Új Epikus Kezelőfelület!** Teljesen átalakítottam a játékot. RPG stílusú menük, animált hátterek és teljesen megújult vizuális élmény. Sötét, félig átlátszó stílus, neon szegélyek és lágyított árnyékok a teljes immerzióért.
+  - 🎬 **MI Jelenetrendező (JAVÍTVA):** A harc most életre kel. A MI környezeti eseményeket és reakciókat generál, amelyek gazdagítják a narratívát: leeső fáklyák, hátráló ellenségek, összeomló gerendák. A csatamező többé nem statikus!
+  - ⚔️ **Fegyverrántás Szavakkal:** Nem kell többé a fegyverhelyre kattintanod. Egyszerűen írd be, hogy „kard előhúzása” vagy „bárd elővétele”, és a rendszer automatikusan értelmezi (VIGYÁZAT! Ha ezt harc közben teszed, az kudarcot, balsikert és körveszteséget okozhat!... „A harcba felkészülten érkezünk!”).
+  - 📖 **Felismert Varázslatok:** A MI most már ismeri a teljes varázskönyvedet. Mondd, hogy „tűzgolyó varázslása”, és ha rendelkezel ezzel a varázslattal, végrehajtja.
+  - 🌍 **Narratíva a Te Nyelveden:** A történet most szigorúan tiszteletben tartja a kiválasztott nyelvet, elkerülve a furcsa nyelvi keveredéseket (remélhetőleg soha többé nem látok „spanglish”-t! Annyira kényszerítettem a MI-t, hogy ha mégis más nyelven generál szöveget, mint a kiválasztott, az tisztán azért lesz, mert tényleg el van átkozva).
+  - 🛡️ **Nincs Több Elveszett Kör:** Ha a játék nem érti a cselekvésedet, megkér, hogy fogalmazd át. A köröd NEM vész el.
+  - 🎒 **Manuális Tárgylista:** Tárgyak mozgatásához a slotok között (felszerelés a hátizsákból, lőszer betöltése) használd a „fogd és vidd” felületet. Ez elkerüli a félreértéseket és MI-erőforrást takarít meg.
+  - 🧪 **Folyékony Bájitalhasználat:** Most már közvetlenül a portrédra húzhatod a bájitalokat és az ételt a használathoz. Hozzáadtam a „Használat” opciót is a jobb egérgombos menübe. Intuitívabb és gyorsabb!
+  - 🩸 **Sebzés Javítása:** Már nem vagy halhatatlan! Javítottunk egy problémát, ahol az életerőcsík nem csökkent, hiába találtak el. Most úgy fogsz szenvedni, ahogy illik.
+  - 👻 **Viszlát, Szellemtárgyak:** Találtál egy tárgyat a történetben, de soha nem jelent meg a hátizsákodban? Probléma megoldva! A rendszer most automatikusan javítja azokat a tárgyakat, amelyeket a MI „elfelejt” létrehozni.
+  - 🐛 **Kritikus NPC Javítás:** Javítva egy hiba, amely megakadályozta, hogy az NPC-k helyes taktikai döntéseket hozzanak, ami miatt mindig csak „várakoztak” támadás vagy védekezés helyett.
+  - 🎒 **Kezdő Felszerelés Javítása:** Az új karakterek többé nem meztelenül kezdenek. Mostantól megfelelően megkapják a kezdő felszerelésüket.
+  - 🎲 **Karakterkészítés:** Javítva egy exploit, ahol egy tulajdonság növelése és csökkentése bizonyos küszöbértékeknél végtelen extra pontokat generált. Vége a Karizma trükknek!
+  - 🖼️ **Javított Portrék:** Egyedi nevet adtál a világnak, és eltűntek a portrék? Javítva! A rendszer most megtalálja a megfelelő képeket, függetlenül attól, hogyan nevezed el a világodat.
+  - 💍 **Intelligens Ikonok:** A tárgyak (beleértve a gyűrűket is) most pontosabb és helyesebb ikonokat jelenítenek meg a felületen.
+  - 🧪 **Javított Elemleírások:** A bájitalok, fogyóeszközök és varázslatok most helyesen jelenítik meg az összes információt és hatást, ha rájuk viszed az egeret.
+  - 🎵 **Audio Javítások:** A harci zene többé nem áll le az előre beállított gombok megnyomásakor.
+  - [I18N] **Implantátum Javítás:** Hozzáadva a hiányzó fordítási kulcsok az implantátum helyekhez (`slot_implant_*`) és a megfelelő ikonokhoz (`icon_implant_*`) az `es.json` fájlban.
+  - [FIX][AUDIO] **Inkonzisztens Hang:** A tárgyak felszerelésének és a fegyverek előhúzásának hangeffektjeit (SFX) a környezethez igazítottuk. A rendszer most érzékeli a `setting_key`-t, és futurisztikus/ipari hangokat használ Cyberpunk, illetve klasszikus hangokat Fantasy környezetben.
+  - [FIX][I18N] **es.json Tisztítás:** Eltávolítva több mint 20 duplikált kulcs az `es.json`-ból, és javítva a helyesírási hibák a slotok neveiben (pl. „Oíidos” -> „Oídos”).
+  - ⚙️ **Intelligens Modellérzékelés:** A játék most közvetlenül olvassa az importált modellek (GGUF) „agyát”. Automatikusan észleli a valós maximális kontextust. (A hivatalos optimalizált modelleket a maximális stabilitás érdekében nem módosítja).
+  - 📂 **Helytakarékosság:** Amikor modellt adsz hozzá a számítógépedről, a játék most áthelyezi azt a saját mappájába a másolás helyett. A Gigabájtjaid hálásak lesznek!
+  - ⚖️ **Igazságosság a Tulajdonságoknál:** Javítva egy exploit, amely lehetővé tette végtelen pontok szerzését a tulajdonságok növelésével és csökkentésével a létrehozás során.
+  - 📖 **Képzési Útmutató:** Frissítettem a Kézikönyvet (README) minden részlettel arról, hogyan szereznek tapasztalatot a karaktereid és hogyan nőnek a tulajdonságaik.
+  - 📜 **Epikus Világok Kódexe:** Vége az „utóirat” jellegű háttértörténeteknek! A generátor most mély történelemmel rendelkező világokat hoz létre, részletes krónika formátumban leírva a vallásokat, törvényeket, földrajzot és híres személyeket.
+  - 🧙 **Koherens Történetek:** A karaktered többé nem a semmiben születik. A háttértörténete most intelligensen integrálódik az éppen létrehozott vagy kiválasztott világ történetébe.
+  - ⚡ **Folyamatos Kezelőfelület:** A történetek és világok automatikus generálása most a háttérben zajlik. Nincs több várakozás lefagyott képernyővel!
+  - 🚀 **Azonnali Kalandkezdés:** Megszüntettem a várakozást! Most, a karakter létrehozása után azonnal belecsöppensz a történetbe. A rendszer a gazdagított háttértörténetedet használja a tökéletes kezdés megteremtéséhez anélkül, hogy egyetlen szót is írnod kellene.
+  - 🎭 **Háttértörténetek Indítékkal:** A karaktereidnek már nemcsak múltja van, hanem sürgető indítéka is a kaland megkezdésére. Az új MI-rendszer automatikusan generálja a történet kezdeti szikráját, integrálva az életrajzodba.
+  - 🧹 **Egyszerűsített Kezelőfelület:** Eltávolítottam azokat a gombokat és képernyőket, amelyek nem adtak hozzá értéket. A „Történet Indítása” gomb most mindent központosít, hogy minél hamarabb elkezdhess játszani.
+  - [FIX][UI] **Vizuális Duplikáció a Világválasztásnál:** Javítva a hiba, ahol a világ neve duplán jelent meg, mint „Név [Név]”. Most elrejti a típuscímkét, ha az redundáns.
+  - [FEAT][UI] **Gyors Betöltés (Egyszerű Kattintás):** Mostantól egyetlen kattintással betölthetsz egy karaktert, vagy újat hozhatsz létre a világválasztó képernyőn. A világok kibontása megmaradt a konfliktusok elkerülése érdekében.
+  - 🧠 **Kreatívabb MI:** Megtörtem a MI „ismétlődési hurkát” technikai variabilitás beillesztésével minden kérésbe. A véletlenszerűen generált karakterek most sokkal egyedibbek és eredetibbek lesznek, figyelmen kívül hagyva az útmutató példáit.
+  
+  🛡️ A bátraknak, akik MERNEK harcolni a csatamező első vonalában: A kaland vár rátok, most fékezhetetlenebb, mint valaha!
 
 ****************************************************************************************************
 06/02/2026 02:32 - Vulkan támogatás (AMD/Intel) és robusztus hibakezelés - Beta_v053

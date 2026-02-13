@@ -1,35 +1,54 @@
 ****************************************************************************************************
-07/02/2026 20:26 - Sistema de Interpretación Semántica de Combate - BETA_v054
+13/02/2026 07:56 - 시맨틱 전투 해석 시스템 - Beta_v054
 ****************************************************************************************************
-🧪 YA DISPONIBLE:
-
-⚠️ **AVISO IMPORTANTE:** EL JUEGO PUEDE MIGRAR LA ANTIGUA BASE DE DATOS PARA LA NUEVA ESTRUCTURA MEDIANTE OPCIONES DEL LAUNCHER. NO RECOMIENDO ESTO, AUNQUE FUNCIONE TU ANTIGUA PARTIDA, MUCHAS COSAS ESTARÁN ROTAS. MI RECOMENDACIÓN ES ELIMINAR TODAS LAS PARTIDAS ANTERIORES GUARDADAS. NO ES NECESARIO BORRAR LA BASE DE DATOS AL COMPLETO SALVO CASO EXTREMO.
-
-Cambios:
-
-- 🌍 **Gestor de Mundos y Personajes:** Ahora tienes total libertad. Crea tus propios Mundos con sus propias reglas y ambientación, y dentro de cada uno, crea tantos personajes como quieras. **Nota Importante:** Todos los personajes de un mismo mundo comparten la misma línea temporal y los eventos sucedidos, lo que sienta las bases para el futuro modo multijugador.
-- 🧠 **Memoria Contextual (Súper RAG):** La IA ahora tiene "sentidos". Al buscar información en el Lore o en su memoria, tiene en cuenta dónde estás, con quién estás, si estás herido y qué acaba de pasar. ¡Es mucho más intuitivo y coherente!
-- 🌍 **Lore en el Primer Personaje:** ¿Escribías una descripción épica de tu mundo y la IA la ignoraba en tu primer personaje? ¡Solucionado! Ahora la descripción manual del mundo llega directamente a la IA durante la creación inicial.
-- ⚙️ **Sistema de Mundos Mejorado:** He independizado el nombre de tu mundo de las reglas técnicas.
-- 📝 **Claridad en Creación:** He mejorado las instrucciones internas para que la IA entienda mejor cuándo debe inventar un trasfondo.
-- 🧠 **Combate por Texto Libre:** Escribe acciones como "lanzar hechizo de curación" o "desenfundar espada". La IA entiende tu intención.
-- 🎨 **¡Nueva Interfaz Épica!** Remodelación completa estilo RPG con menús animados y bordes neón.
-- 🎬 **IA Director de Escena (MEJORADO):** El combate ahora cobra vida con eventos ambientales.
-- ⚔️ **Desenfundar con Palabras:** Escribe "desenfundar espada" en lugar de hacer clic. ¡Cuidado en combate!
-- 📖 **Hechizos Reconocidos:** La IA conoce tu libro de hechizos completo.
-- 🌍 **Narrativa en tu Idioma:** Respeta estrictamente el idioma seleccionado, evitando mezclas.
-- 🛡️ **No Más Turnos Perdidos:** Si el juego no entiende, te pedirá aclaraciones. Tu turno NO se pierde.
-- 🎒 **Inventario Manual:** Interfaz de arrastrar y soltar para mover objetos.
-- 🧪 **Uso de Pociones Fluido:** Arrastra sobre retrato o usa el menú de clic derecho.
-- 🩸 **Corrección de Daño:** Barra de vida corregida. Ya no eres inmortal.
-- 👻 **Adiós a los Items Fantasma:** Reparación automática de objetos que la IA olvida crear.
-- 🐛 **Corrección Crítica NPC:** Decisiones tácticas de NPCs corregidas.
-- 🎒 **Corrección Inventario Inicial:** Personajes ya no empiezan desnudos.
-- 🎲 **Creación de Personaje:** Exploit de puntos infinitos corregido.
-- 🖼️ **Retratos Arreglados:** El sistema encuentra imágenes correctas independientemente del nombre del mundo.
-- 💍 **Iconos Inteligentes:** Objetos y anillos con iconos precisos.
-- 🧪 **Tooltips Mejorados:** Información completa al pasar el ratón.
-- 🎵 **Mejoras de Audio:** Música no se detiene al pulsar botones.
+- What's New (KO):
+  🧪 지금 이용 가능:
+  
+  ⚠️ **중요 공지:** 런처 옵션을 통해 이전 데이터베이스를 새 구조로 마이그레이션할 수 있습니다. 하지만 이전 저장 파일이 작동하더라도 많은 부분이 깨질 수 있으므로 권장하지 않습니다. 이전 저장 파일을 모두 삭제하는 것을 추천합니다. 극단적인 경우가 아니라면 데이터베이스 전체를 지울 필요는 없습니다.
+  
+  변경 사항:
+  
+  - 🌍 **월드 및 캐릭터 관리자:** 이제 완전한 자유가 주어집니다. 고유한 규칙과 배경을 가진 나만의 월드를 만들고, 그 안에 원하는 만큼 캐릭터를 생성하세요. **중요 참고:** 같은 월드의 모든 캐릭터는 동일한 타임라인과 사건을 공유하며, 이는 향후 멀티플레이어 모드의 기반이 됩니다.
+  - 🧠 **문맥 기억 (슈퍼 RAG):** AI에게 "감각"이 생겼습니다. 로어(Lore)나 기억에서 정보를 찾을 때 현재 위치, 동행인, 부상 여부, 방금 일어난 일 등을 고려합니다. 왕과 함께 있다면 왕에 대한 정보를, 다쳤다면 치유 규칙을 찾습니다. 훨씬 더 직관적이고 일관성 있게 변했습니다!
+  - 🌍 **첫 캐릭터의 로어 적용:** 월드에 대한 웅장한 설명을 썼는데 AI가 첫 캐릭터에서 무시했나요? 해결되었습니다! 이제 수동으로 작성한 월드 설명이 메모리 시스템이 활성화되기도 전인 초기 생성 단계에서 AI에게 직접 전달됩니다.
+  - ⚙️ **개선된 월드 시스템:** 월드 이름과 기술적 규칙을 분리했습니다. 이제 판타지나 사이버펑크 규칙 로딩에 영향을 주지 않고 월드 이름을 원하는 대로 지을 수 있습니다.
+  - 📝 **생성 명확성:** AI가 배경 이야기를 창작해야 할 때와 단순히 통계치를 추출해야 할 때를 더 잘 이해하도록 내부 지침을 개선했습니다.
+  - 🧠 **자유 텍스트 전투:** 이제 TRPG를 하듯 전투 행동을 글로 적을 수 있습니다: "나 자신에게 치유 주문 시전", "검 뽑기", "치유 물약 사용". AI가 의도를 파악하고 게임 메커니즘으로 변환합니다.
+  - 🎨 **새로운 에픽 인터페이스!** 게임을 완전히 리모델링했습니다. RPG 스타일 메뉴, 애니메이션 배경, 완전히 새로워진 시각적 경험을 제공합니다. 반투명 다크 스타일, 네온 테두리, 부드러운 그림자로 몰입감을 높였습니다.
+  - 🎬 **AI 무대 감독 (개선됨):** 전투가 생생해집니다. AI가 환경 이벤트와 반응을 생성하여 서사를 풍부하게 합니다: 횃불이 떨어지거나, 적이 뒷걸음질 치거나, 기둥이 무너집니다. 전장은 더 이상 정지된 공간이 아닙니다!
+  - ⚔️ **글로 무기 뽑기:** 더 이상 무기 슬롯을 클릭할 필요가 없습니다. "검 뽑기"나 "도끼 꺼내기"라고 적으면 시스템이 자동으로 해석합니다 (주의! 전투 중에 하면 실패하거나 턴을 낭비할 수 있습니다... "싸움터엔 준비하고 가야죠!").
+  - 📖 **주문 인식:** AI가 이제 당신의 주문서를 완벽히 파악합니다. "화염구 발사"라고 말했을 때 해당 주문이 있다면 시전합니다.
+  - 🌍 **언어별 서사:** 스토리가 선택한 언어를 엄격히 준수하여 이상하게 언어가 섞이는 일을 방지합니다 (다시는 '스팽글리시' 같은 혼종을 보지 않길 바랍니다! AI를 강력하게 통제했으니, 만약 선택한 언어 이외의 텍스트가 나온다면 그건 정말 저주받은 걸 겁니다).
+  - 🛡️ **턴 낭비 방지:** 게임이 행동을 이해하지 못하면 다시 말해달라고 요청합니다. 턴은 사라지지 않습니다.
+  - 🎒 **수동 인벤토리:** 슬롯 간 아이템 이동(배낭에서 장착, 탄약 장전)은 드래그 앤 드롭 인터페이스를 사용하세요. 혼란을 방지하고 AI 리소스를 아낄 수 있습니다.
+  - 🧪 **유연한 물약 사용:** 이제 물약과 음식을 초상화 위로 드래그하여 바로 사용할 수 있습니다. 우클릭 메뉴에 "사용" 옵션도 추가했습니다. 더 직관적이고 빠릅니다!
+  - 🩸 **피해량 수정:** 당신은 불사가 아닙니다! 맞아도 체력 바가 줄어들지 않던 문제를 수정했습니다. 이제 제대로 고통받을 것입니다.
+  - 👻 **유령 아이템 작별:** 스토리에서 아이템을 얻었는데 배낭에 없었나요? 해결되었습니다! AI가 생성을 "깜빡한" 아이템을 시스템이 자동으로 복구합니다.
+  - 🐛 **NPC 치명적 오류 수정:** NPC가 공격이나 방어 대신 항상 "대기"만 하던 전술적 결정 오류를 수정했습니다.
+  - 🎒 **초기 인벤토리 수정:** 새 캐릭터가 더 이상 벌거벗은 채로 시작하지 않습니다. 초기 장비를 올바르게 지급받습니다.
+  - 🎲 **캐릭터 생성:** 특정 임계값에서 속성을 올리고 내릴 때 무한 포인트가 생기던 악용 사례를 수정했습니다. 매력 수치 꼼수는 끝났습니다!
+  - 🖼️ **초상화 수정:** 고유한 이름으로 월드를 만들면 초상화가 사라지던 문제를 수정했습니다! 이제 월드 이름과 상관없이 올바른 이미지를 찾아냅니다.
+  - 💍 **스마트 아이콘:** 아이템(반지 포함)이 이제 인터페이스에서 더 정확하고 올바른 아이콘을 표시합니다.
+  - 🧪 **개선된 툴팁:** 물약, 소모품, 주문 위에 마우스를 올리면 모든 정보와 효과가 올바르게 표시됩니다.
+  - 🎵 **오디오 개선:** 미리 지정된 버튼을 눌러도 전투 음악이 멈추지 않습니다.
+  - [I18N] **임플란트 수정:** `es.json`에 누락된 임플란트 슬롯(`slot_implant_*`) 및 해당 아이콘(`icon_implant_*`) 번역 키를 추가했습니다.
+  - [FIX][AUDIO] **오디오 불일치:** 아이템 장착 및 무기 꺼내는 효과음(SFX)을 배경 설정에 맞게 조정했습니다. 시스템이 `setting_key`를 감지하여 사이버펑크에서는 미래적/산업적 소리를, 판타지에서는 클래식한 소리를 사용합니다.
+  - [FIX][I18N] **es.json 정리:** `es.json`에서 20개 이상의 중복 키를 제거하고 슬롯 이름의 오타를 수정했습니다.
+  - ⚙️ **지능형 모델 감지:** 이제 게임이 가져온 모델(GGUF)의 "두뇌"를 직접 읽어 실제 최대 컨텍스트를 자동으로 감지합니다. (최대 안정성을 위해 최적화된 공식 모델은 건드리지 않습니다).
+  - 📂 **공간 절약:** 컴퓨터에서 모델을 추가할 때, 복사하는 대신 해당 폴더로 직접 이동시킵니다. 하드디스크 용량을 아끼세요!
+  - ⚖️ **속성 공정성:** 생성 시 속성을 조작해 무한 포인트를 얻던 또 다른 악용 사례를 수정했습니다.
+  - 📖 **훈련 가이드:** 캐릭터가 경험치를 얻고 속성을 올리는 방법에 대한 모든 세부 사항을 매뉴얼(README)에 업데이트했습니다.
+  - 📜 **에픽 월드 코덱스:** "추신" 수준의 로어는 끝났습니다! 이제 생성기는 종교, 법률, 지리, 유명 인물 등을 상세한 연대기 형식으로 기술하여 깊이 있는 역사를 가진 월드를 만듭니다.
+  - 🧙 **개연성 있는 이야기:** 캐릭터가 허공에서 태어나지 않습니다. 배경 이야기가 방금 생성하거나 선택한 월드의 로어와 지능적으로 통합됩니다.
+  - ⚡ **유동적인 인터페이스:** 스토리 및 월드 자동 생성이 이제 백그라운드에서 수행됩니다. 화면이 멈춘 채 기다릴 필요가 없습니다!
+  - 🚀 **즉각적인 모험 시작:** 대기 시간을 없앴습니다! 캐릭터 생성 후 바로 스토리로 뛰어듭니다. 시스템은 당신이 한 글자도 더 쓸 필요 없이 풍부한 배경을 사용하여 완벽한 시작을 만들어냅니다.
+  - 🎭 **명분이 있는 배경:** 캐릭터에게는 과거뿐만 아니라 모험을 시작할 긴급한 동기도 생깁니다. 새로운 AI 시스템이 전기(biography)에 통합된 스토리의 발단(spark)을 자동으로 생성합니다.
+  - 🧹 **단순화된 인터페이스:** 가치 없는 버튼과 화면을 제거했습니다. "스토리 시작" 버튼이 모든 권한을 통합하여 최대한 빨리 게임을 시작할 수 있게 합니다.
+  - [FIX][UI] **월드 선택 시각적 중복:** 월드 이름이 "이름 [이름]"처럼 중복 표시되던 버그를 수정했습니다. 이제 중복될 경우 유형 태그를 숨깁니다.
+  - [FEAT][UI] **빠른 로드 (단일 클릭):** 이제 월드 선택 화면에서 클릭 한 번으로 캐릭터를 로드하거나 새로 만들 수 있습니다. 충돌 방지를 위해 월드 확장 기능은 유지됩니다.
+  - 🧠 **더 창의적인 AI:** 각 요청에 기술적 변동성을 주입하여 AI의 "반복 루프"를 끊었습니다. 이제 무작위 생성된 캐릭터는 가이드 예시를 무시하고 훨씬 더 독특하고 독창적일 것입니다.
+  
+  🛡️ 최전선에서 싸울 용기가 있는 분들에게: 모험이 여러분을 기다립니다. 그 어느 때보다 거칠고 자유로운 모험이!
 
 ****************************************************************************************************
 06/02/2026 02:32 - Vulkan 지원 (AMD/Intel) 및 강력한 오류 처리 - Beta_v053

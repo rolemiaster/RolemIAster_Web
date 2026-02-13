@@ -1,35 +1,54 @@
 ****************************************************************************************************
-07/02/2026 20:26 - Sistema de Interpretación Semántica de Combate - BETA_v054
+13/02/2026 07:56 - System Semantycznej Interpretacji Walki - Beta_v054
 ****************************************************************************************************
-🧪 YA DISPONIBLE:
-
-⚠️ **AVISO IMPORTANTE:** EL JUEGO PUEDE MIGRAR LA ANTIGUA BASE DE DATOS PARA LA NUEVA ESTRUCTURA MEDIANTE OPCIONES DEL LAUNCHER. NO RECOMIENDO ESTO, AUNQUE FUNCIONE TU ANTIGUA PARTIDA, MUCHAS COSAS ESTARÁN ROTAS. MI RECOMENDACIÓN ES ELIMINAR TODAS LAS PARTIDAS ANTERIORES GUARDADAS. NO ES NECESARIO BORRAR LA BASE DE DATOS AL COMPLETO SALVO CASO EXTREMO.
-
-Cambios:
-
-- 🌍 **Gestor de Mundos y Personajes:** Ahora tienes total libertad. Crea tus propios Mundos con sus propias reglas y ambientación, y dentro de cada uno, crea tantos personajes como quieras. **Nota Importante:** Todos los personajes de un mismo mundo comparten la misma línea temporal y los eventos sucedidos, lo que sienta las bases para el futuro modo multijugador.
-- 🧠 **Memoria Contextual (Súper RAG):** La IA ahora tiene "sentidos". Al buscar información en el Lore o en su memoria, tiene en cuenta dónde estás, con quién estás, si estás herido y qué acaba de pasar. ¡Es mucho más intuitivo y coherente!
-- 🌍 **Lore en el Primer Personaje:** ¿Escribías una descripción épica de tu mundo y la IA la ignoraba en tu primer personaje? ¡Solucionado! Ahora la descripción manual del mundo llega directamente a la IA durante la creación inicial.
-- ⚙️ **Sistema de Mundos Mejorado:** He independizado el nombre de tu mundo de las reglas técnicas.
-- 📝 **Claridad en Creación:** He mejorado las instrucciones internas para que la IA entienda mejor cuándo debe inventar un trasfondo.
-- 🧠 **Combate por Texto Libre:** Escribe acciones como "lanzar hechizo de curación" o "desenfundar espada". La IA entiende tu intención.
-- 🎨 **¡Nueva Interfaz Épica!** Remodelación completa estilo RPG con menús animados y bordes neón.
-- 🎬 **IA Director de Escena (MEJORADO):** El combate ahora cobra vida con eventos ambientales.
-- ⚔️ **Desenfundar con Palabras:** Escribe "desenfundar espada" en lugar de hacer clic. ¡Cuidado en combate!
-- 📖 **Hechizos Reconocidos:** La IA conoce tu libro de hechizos completo.
-- 🌍 **Narrativa en tu Idioma:** Respeta estrictamente el idioma seleccionado, evitando mezclas.
-- 🛡️ **No Más Turnos Perdidos:** Si el juego no entiende, te pedirá aclaraciones. Tu turno NO se pierde.
-- 🎒 **Inventario Manual:** Interfaz de arrastrar y soltar para mover objetos.
-- 🧪 **Uso de Pociones Fluido:** Arrastra sobre retrato o usa el menú de clic derecho.
-- 🩸 **Corrección de Daño:** Barra de vida corregida. Ya no eres inmortal.
-- 👻 **Adiós a los Items Fantasma:** Reparación automática de objetos que la IA olvida crear.
-- 🐛 **Corrección Crítica NPC:** Decisiones tácticas de NPCs corregidas.
-- 🎒 **Corrección Inventario Inicial:** Personajes ya no empiezan desnudos.
-- 🎲 **Creación de Personaje:** Exploit de puntos infinitos corregido.
-- 🖼️ **Retratos Arreglados:** El sistema encuentra imágenes correctas independientemente del nombre del mundo.
-- 💍 **Iconos Inteligentes:** Objetos y anillos con iconos precisos.
-- 🧪 **Tooltips Mejorados:** Información completa al pasar el ratón.
-- 🎵 **Mejoras de Audio:** Música no se detiene al pulsar botones.
+- What's New (PL):
+  🧪 JUŻ DOSTĘPNE:
+  
+  ⚠️ **WAŻNA UWAGA:** GRA MOŻE ZMIGROWAĆ STARĄ BAZĘ DANYCH DO NOWEJ STRUKTURY POPRZEZ OPCJE LAUNCHERA. NIE ZALEÇAM TEGO, NAWET JEŚLI STARY ZAPIS ZADZIAŁA, WIELE RZECZY BĘDZIE POPSUTYCH. MOIM ZALECENIEM JEST USUNIĘCIE WSZYSTKICH POPRZEDNICH ZAPISÓW GRY. NIE JEST KONIECZNE USUWANIE CAŁEJ BAZY DANYCH, CHYBA ŻE W SKRAJNYCH PRZYPADKACH.
+  
+  Zmiany:
+  
+  - 🌍 **Menedżer Światów i Postaci:** Masz teraz pełną swobodę. Twórz własne Światy z ich własnymi zasadami i scenerią, a wewnątrz każdego z nich twórz tyle postaci, ile chcesz. **Ważna uwaga:** Wszystkie postacie w tym samym świecie dzielą tę samą linię czasową i wydarzenia, co stanowi fundament pod przyszły tryb wieloosobowy.
+  - 🧠 **Pamięć Kontekstowa (Super RAG):** AI ma teraz „zmysły”. Szukając informacji w Lore lub w swojej pamięci, bierze pod uwagę, gdzie jesteś, z kim jesteś, czy jesteś ranny i co się właśnie wydarzyło. Jeśli jesteś z Królem, zapamięta rzeczy o królach. Jeśli jesteś ranny, poszuka zasad leczenia. Jest to o wiele bardziej intuicyjne i spójne!
+  - 🌍 **Lore przy Pierwszej Postaci:** Pisałeś epicki opis swojego świata, a AI ignorowało go przy twojej pierwszej postaci? Naprawione! Teraz ręczny opis świata trafia bezpośrednio do AI podczas początkowego tworzenia, jeszcze zanim aktywuje się system pamięci.
+  - ⚙️ **Ulepszony System Światów:** Uniezależniłem nazwę twojego świata od reguł technicznych. Teraz możesz nazwać swój świat jak chcesz, bez wpływu na ładowanie zasad Fantasy lub Cyberpunk.
+  - 📝 **Przejrzystość w Tworzeniu:** Ulepszyłem wewnętrzne instrukcje, aby AI lepiej rozumiało, kiedy powinno wymyślić tło fabularne, a kiedy ograniczyć się do pobrania twoich statystyk.
+  - 🧠 **Walka w Wolnym Tekście:** Teraz możesz pisać swoje akcje w walce tak, jakbyś rozmawiał z postacią w grze stołowej: „rzucam zaklęcie leczenia na siebie”, „wyciągam miecz”, „używam mikstury leczenia”. AI rozumie twoją intencję i tłumaczy ją na mechanikę gry.
+  - 🎨 **Nowy Epicki Interfejs!** Całkowicie przebudowałem grę. Menu w stylu RPG, animowane tła i zupełnie odświeżone wrażenia wizualne. Ciemny styl półprzezroczysty, neonowe krawędzie i wygładzone cienie dla pełnej immersji.
+  - 🎬 **AI Reżyser Sceny (ULEPSZONY):** Walka teraz ożywa. AI generuje wydarzenia środowiskowe i reakcje, które wzbogacają narrację: spadające pochodnie, cofający się wrogowie, zawalające się belki. Pole bitwy nie jest już statyczne!
+  - ⚔️ **Wyciąganie Broni Słowami:** Nie musisz już klikać w slot broni. Po prostu napisz „wyciągam miecz” lub „wyciągam topór”, a system zinterpretuje to automatycznie (UWAGA!, robienie tego w walce może skończyć się porażką, krytyczną pomyłką i utratą tury!... „Do walki przychodzi się przygotowanym z domu!”).
+  - 📖 **Rozpoznawane Zaklęcia:** AI zna teraz całą twoją księgę zaklęć. Powiedz „rzucam kulę ognia”, a jeśli masz to zaklęcie, rzuci je.
+  - 🌍 **Narracja w Twoim Języku:** Historia teraz ściśle przestrzega wybranego języka, unikając dziwnych mieszanek (mam nadzieję, że nigdy więcej nie zobaczę spanglish!, tak bardzo wymusiłem to na AI, że jeśli znów wygeneruje tekst w innym języku niż wybrany, to znaczy, że naprawdę jest przeklęte).
+  - 🛡️ **Koniec z Utraconymi Turami:** Jeśli gra nie zrozumie twojej akcji, poprosi cię o jej sformułowanie na nowo. Twoja tura NIE przepada.
+  - 🎒 **Ręczny Ekwipunek:** Aby przenosić przedmioty między slotami (wyposażyć z plecaka, załadować amunicję), użyj interfejsu przeciągnij i upuść. Unika to pomyłek i oszczędza zasoby AI.
+  - 🧪 **Płynne Używanie Mikstur:** Teraz możesz przeciągać mikstury i jedzenie bezpośrednio na swój portret, aby ich użyć. Dodałem też opcję „Użyj” po kliknięciu prawym przyciskiem myszy. Bardziej intuicyjnie i szybciej!
+  - 🩸 **Poprawka Obrażeń:** Nie jesteś już nieśmiertelny! Naprawiliśmy problem, w którym pasek życia nie spadał, mimo otrzymywania ciosów. Teraz będziesz cierpieć, jak należy.
+  - 👻 **Pożegnanie z Przedmiotami Widmo:** Znajdowałeś przedmiot w historii, ale nigdy nie pojawiał się w plecaku? Problem rozwiązany! Teraz system automatycznie naprawia przedmioty, które AI „zapomniało” stworzyć.
+  - 🐛 **Krytyczna Poprawka NPC:** Naprawiono błąd, który uniemożliwiał NPC poprawne podejmowanie decyzji taktycznych, powodując, że zawsze „czekali” zamiast atakować lub się bronić.
+  - 🎒 **Poprawka Ekwipunku Początkowego:** Nowe postacie nie zaczynają już nago. Teraz otrzymują swój ekwipunek początkowy poprawnie.
+  - 🎲 **Tworzenie Postaci:** Naprawiono exploit, w którym podnoszenie i obniżanie atrybutu w pewnych progach generowało nieskończone punkty dodatkowe. Koniec ze sztuczką z Charyzmą!
+  - 🖼️ **Naprawione Portrety:** Tworzyłeś świat z własną nazwą i portrety znikały? Naprawione! Teraz system znajduje odpowiednie obrazy niezależnie od tego, jak nazwiesz swój świat.
+  - 💍 **Inteligentne Ikony:** Przedmioty (w tym pierścienie) teraz wyświetlają dokładniejsze i poprawniejsze ikony w interfejsie.
+  - 🧪 **Ulepszone Dymki Informacyjne:** Mikstury, przedmioty konsumpcyjne i zaklęcia teraz poprawnie wyświetlają wszystkie informacje i efekty po najechaniu myszką.
+  - 🎵 **Ulepszenia Dźwięku:** Muzyka bojowa nie zatrzymuje się już po naciśnięciu predefiniowanych przycisków.
+  - [I18N] **Poprawka Implantów:** Dodano brakujące klucze tłumaczeń dla slotów implantów (`slot_implant_*`) i odpowiednich ikon (`icon_implant_*`) w `es.json`.
+  - [FIX][AUDIO] **Niespójny Dźwięk:** Dostosowano efekty dźwiękowe (SFX) wyposażania przedmiotów i wyciągania broni do scenerii. Teraz system wykrywa `setting_key` i używa futurystycznych/przemysłowych dźwięków w Cyberpunk oraz klasycznych dźwięków w Fantasy.
+  - [FIX][I18N] **Czyszczenie es.json:** Usunięto ponad 20 zduplikowanych kluczy w `es.json` i poprawiono literówki w nazwach slotów (np. „Oíidos” -> „Oídos”).
+  - ⚙️ **Inteligentne Wykrywanie Modeli:** Teraz gra czyta bezpośrednio „mózg” importowanych modeli (GGUF). Automatycznie wykrywa rzeczywisty maksymalny kontekst. (Oficjalne zoptymalizowane modele nie są ruszane dla maksymalnej stabilności).
+  - 📂 **Oszczędność Miejsca:** Dodając model z komputera, gra teraz przenosi go bezpośrednio do swojego folderu zamiast go kopiować. Twoje gigabajty ci podziękują!
+  - ⚖️ **Sprawiedliwość w Atrybutach:** Naprawiono exploit, który pozwalał na zdobywanie nieskończonych punktów poprzez podnoszenie i obniżanie atrybutów przy tworzeniu.
+  - 📖 **Przewodnik Treningowy:** Zaktualizowałem Podręcznik (README) o wszystkie szczegóły dotyczące tego, jak postacie zdobywają doświadczenie i podnoszą swoje atrybuty.
+  - 📜 **Kodeks Epickich Światów:** Koniec z lore w stylu „postscriptum”! Teraz generator tworzy światy z głęboką historią, opisując ich religie, prawa, geografię i sławne postacie w formacie szczegółowej kroniki.
+  - 🧙 **Spójne Historie:** Twoja postać nie rodzi się już w próżni. Jej tło fabularne teraz inteligentnie integruje się z lore świata, który właśnie stworzyłeś lub wybrałeś.
+  - ⚡ **Płynny Interfejs:** Automatyczne generowanie historii i światów odbywa się teraz w tle. Koniec z czekaniem przy zamrożonym ekranie!
+  - 🚀 **Natychmiastowy Start Przygody:** Wyeliminowałem czekanie! Teraz po stworzeniu postaci od razu wskakujesz do historii. System wykorzystuje twoje wzbogacone tło fabularne, aby stworzyć idealny początek, bez konieczności pisania przez ciebie ani jednego słowa więcej.
+  - 🎭 **Tło Fabularne z Pretekstem:** Twoje postacie mają już nie tylko przeszłość, ale także pilny powód, by rozpocząć przygodę. Nowy system AI automatycznie generuje iskrę początkową historii zintegrowaną z twoją biografią.
+  - 🧹 **Uproszczony Interfejs:** Usunąłem przyciski i ekrany, które nie wnosiły wartości. Przycisk „Rozpocznij Historię” centralizuje teraz całą moc, abyś mógł zacząć grać jak najszybciej.
+  - [FIX][UI] **Duplikacja Wizualna przy Wyborze Świata:** Naprawiono błąd, w którym nazwa świata pojawiała się podwójnie jako „Nazwa [Nazwa]”. Teraz etykieta typu jest ukrywana, jeśli jest zbędna.
+  - [FEAT][UI] **Szybkie Ładowanie (Pojedyncze Kliknięcie):** Teraz można załadować postać lub rozpocząć tworzenie nowej jednym kliknięciem na ekranie wyboru światów. Zachowano rozwijanie światów, aby uniknąć konfliktów.
+  - 🧠 **Bardziej Kreatywne AI:** Przełamałem „pętlę powtórzeń” AI, wstrzykując zmienność techniczną do każdego zapytania. Teraz losowo generowane postacie będą o wiele bardziej unikalne i oryginalne, ignorując przykłady z przewodnika.
+  
+  🛡️ Do odważnych, którzy ODWAŻĄ SIĘ walczyć na pierwszej linii frontu: Przygoda czeka, teraz bardziej nieposkromiona niż kiedykolwiek!
 
 ****************************************************************************************************
 06/02/2026 02:32 - Wsparcie dla Vulkan (AMD/Intel) i niezawodna obsługa błędów - Beta_v053

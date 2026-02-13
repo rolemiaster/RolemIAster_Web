@@ -1,35 +1,54 @@
 ****************************************************************************************************
-07/02/2026 20:26 - Sistema de Interpretación Semántica de Combate - BETA_v054
+13/02/2026 07:56 - System til semantisk fortolkning af kamp - Beta_v054
 ****************************************************************************************************
-🧪 YA DISPONIBLE:
-
-⚠️ **AVISO IMPORTANTE:** EL JUEGO PUEDE MIGRAR LA ANTIGUA BASE DE DATOS PARA LA NUEVA ESTRUCTURA MEDIANTE OPCIONES DEL LAUNCHER. NO RECOMIENDO ESTO, AUNQUE FUNCIONE TU ANTIGUA PARTIDA, MUCHAS COSAS ESTARÁN ROTAS. MI RECOMENDACIÓN ES ELIMINAR TODAS LAS PARTIDAS ANTERIORES GUARDADAS. NO ES NECESARIO BORRAR LA BASE DE DATOS AL COMPLETO SALVO CASO EXTREMO.
-
-Cambios:
-
-- 🌍 **Gestor de Mundos y Personajes:** Ahora tienes total libertad. Crea tus propios Mundos con sus propias reglas y ambientación, y dentro de cada uno, crea tantos personajes como quieras. **Nota Importante:** Todos los personajes de un mismo mundo comparten la misma línea temporal y los eventos sucedidos, lo que sienta las bases para el futuro modo multijugador.
-- 🧠 **Memoria Contextual (Súper RAG):** La IA ahora tiene "sentidos". Al buscar información en el Lore o en su memoria, tiene en cuenta dónde estás, con quién estás, si estás herido y qué acaba de pasar. ¡Es mucho más intuitivo y coherente!
-- 🌍 **Lore en el Primer Personaje:** ¿Escribías una descripción épica de tu mundo y la IA la ignoraba en tu primer personaje? ¡Solucionado! Ahora la descripción manual del mundo llega directamente a la IA durante la creación inicial.
-- ⚙️ **Sistema de Mundos Mejorado:** He independizado el nombre de tu mundo de las reglas técnicas.
-- 📝 **Claridad en Creación:** He mejorado las instrucciones internas para que la IA entienda mejor cuándo debe inventar un trasfondo.
-- 🧠 **Combate por Texto Libre:** Escribe acciones como "lanzar hechizo de curación" o "desenfundar espada". La IA entiende tu intención.
-- 🎨 **¡Nueva Interfaz Épica!** Remodelación completa estilo RPG con menús animados y bordes neón.
-- 🎬 **IA Director de Escena (MEJORADO):** El combate ahora cobra vida con eventos ambientales.
-- ⚔️ **Desenfundar con Palabras:** Escribe "desenfundar espada" en lugar de hacer clic. ¡Cuidado en combate!
-- 📖 **Hechizos Reconocidos:** La IA conoce tu libro de hechizos completo.
-- 🌍 **Narrativa en tu Idioma:** Respeta estrictamente el idioma seleccionado, evitando mezclas.
-- 🛡️ **No Más Turnos Perdidos:** Si el juego no entiende, te pedirá aclaraciones. Tu turno NO se pierde.
-- 🎒 **Inventario Manual:** Interfaz de arrastrar y soltar para mover objetos.
-- 🧪 **Uso de Pociones Fluido:** Arrastra sobre retrato o usa el menú de clic derecho.
-- 🩸 **Corrección de Daño:** Barra de vida corregida. Ya no eres inmortal.
-- 👻 **Adiós a los Items Fantasma:** Reparación automática de objetos que la IA olvida crear.
-- 🐛 **Corrección Crítica NPC:** Decisiones tácticas de NPCs corregidas.
-- 🎒 **Corrección Inventario Inicial:** Personajes ya no empiezan desnudos.
-- 🎲 **Creación de Personaje:** Exploit de puntos infinitos corregido.
-- 🖼️ **Retratos Arreglados:** El sistema encuentra imágenes correctas independientemente del nombre del mundo.
-- 💍 **Iconos Inteligentes:** Objetos y anillos con iconos precisos.
-- 🧪 **Tooltips Mejorados:** Información completa al pasar el ratón.
-- 🎵 **Mejoras de Audio:** Música no se detiene al pulsar botones.
+- What's New (DA):
+  🧪 NU TILGÆNGELIG:
+  
+  ⚠️ **VIGTIG MEDDELELSE:** SPILLET KAN MIGRERE DEN GAMLE DATABASE TIL DEN NYE STRUKTUR VIA INDSTILLINGER I LAUNCHEREN. JEG ANBEFALER DETTE IKKE. SELVOM DIT GAMLE SPIL MÅSKE VIRKER, VIL MANGE TING VÆRE ØDELAGTE. MIN ANBEFALING ER AT SLETTE ALLE TIDLIGERE GEMTE SPIL. DET ER IKKE NØDVENDIGT AT SLETTE HELE DATABASEN, MEDMINDRE DET ER ET EKSTREMT TILFÆLDE.
+  
+  Ændringer:
+  
+  - 🌍 **Verdens- og karakterstyring:** Nu har du fuld frihed. Skab dine egne verdener med deres egne regler og miljøer, og opret lige så mange karakterer, du vil, i hver af dem. **Vigtig bemærkning:** Alle karakterer i samme verden deler samme tidslinje og begivenheder, hvilket danner grundlaget for den fremtidige multiplayer-tilstand.
+  - 🧠 **Kontekstuel hukommelse (Super RAG):** AI'en har nu "sanser". Når den søger information i lore eller sin hukommelse, tager den højde for, hvor du er, hvem du er sammen med, om du er såret, og hvad der lige er sket. Hvis du er sammen med en konge, vil den huske ting om konger. Hvis du er såret, vil den søge efter regler om helbredelse. Det er meget mere intuitivt og sammenhængende!
+  - 🌍 **Lore på den første karakter:** Skrev du en episk beskrivelse af din verden, og AI'en ignorerede den på din første karakter? Løst! Nu sendes den manuelle beskrivelse af verden direkte til AI'en under den indledende skabelse, selv før hukommelsessystemet aktiveres.
+  - ⚙️ **Forbedret verdenssystem:** Jeg har gjort navnet på din verden uafhængigt af de tekniske regler. Nu kan du kalde din verden, hvad du vil, uden at det påvirker indlæsningen af Fantasy- eller Cyberpunk-regler.
+  - 📝 **Klarhed i skabelse:** Jeg har forbedret de interne instruktioner, så AI'en bedre forstår, hvornår den skal opfinde en baggrundshistorie, og hvornår den blot skal udtrække dine statistikker.
+  - 🧠 **Kamp med fritekst:** Nu kan du skrive dine handlinger i kamp, som om du talte med en bordrollespilskarakter: "kast helbredelsesformular på mig selv", "træk mit sværd", "brug helbredelsesdrik". AI'en forstår din hensigt og oversætter den til spilmekanikker.
+  - 🎨 **Ny episk brugerflade!** Jeg har redesignet spillet fuldstændigt. Menuer i RPG-stil, animerede baggrunde og en helt fornyet visuel oplevelse. Mørk semitransparent stil, neonkanter og bløde skygger for total fordybelse.
+  - 🎬 **AI Sceneinstruktør (FORBEDRET):** Kampene kommer nu til live. AI'en genererer miljøbegivenheder og reaktioner, der beriger fortællingen: fakler der falder, fjender der trækker sig tilbage, bjælker der kollapser. Slagmarken er ikke længere statisk!
+  - ⚔️ **Træk våben med ord:** Du behøver ikke længere klikke på våbenpladsen. Skriv blot "træk sværd" eller "tag min økse frem", så fortolker systemet det automatisk (OBS! At gøre dette i kamp kan resultere i fiasko, fejlslag og tab af tur!... "Man kommer forberedt til kamp!").
+  - 📖 **Genkendte formularer:** AI'en kender nu hele din formelbog. Sig "kast ildkugle", og hvis du har den formular, vil den blive kastet.
+  - 🌍 **Fortælling på dit sprog:** Historien respekterer nu strengt det valgte sprog og undgår mærkelige blandinger af sprog (forhåbentlig skal jeg aldrig se mere "spanglish"! Jeg har tvunget AI'en så meget, at jeg vil sige, at hvis den genererer tekster på et andet sprog end det valgte, er den virkelig forbandet).
+  - 🛡️ **Ikke flere tabte ture:** Hvis spillet ikke forstår din handling, vil det bede dig om at omformulere den. Din tur går IKKE tabt.
+  - 🎒 **Manuelt inventar:** Brug træk-og-slip-grænsefladen til at flytte genstande mellem pladser (udstyr fra rygsæk, indlæs ammunition). Dette undgår forvirring og sparer AI-ressourcer.
+  - 🧪 **Flydende brug af eliksirer:** Nu kan du trække eliksirer og mad direkte over på dit portræt for at bruge dem. Jeg har også tilføjet muligheden "Brug" ved højreklik. Mere intuitivt og hurtigere!
+  - 🩸 **Skadesrettelse:** Du er ikke længere udødelig! Vi har rettet et problem, hvor helbredsbjælken ikke faldt, selvom du blev ramt. Nu vil du lide, som det hør og bør.
+  - 👻 **Farvel til spøgelsesgenstande:** Fandt du en genstand i historien, men den dukkede aldrig op i din rygsæk? Problemet er løst! Nu reparerer systemet automatisk de genstande, som AI'en "glemmer" at oprette.
+  - 🐛 **Kritisk NPC-rettelse:** Løst en fejl, der forhindrede NPC'er i at tage taktiske beslutninger korrekt, hvilket fik dem til altid at "vente" i stedet for at angribe eller forsvare sig.
+  - 🎒 **Rettelse af startinventar:** Nye karakterer starter ikke længere nøgne. De modtager nu deres startudstyr korrekt.
+  - 🎲 **Karakterskabelse:** Rettet en exploit, hvor hævning og sænkning af en attribut ved bestemte grænser genererede uendelige ekstra point. Slut med karisma-tricket!
+  - 🖼️ **Portrætter rettet:** Oprettede du en verden med et eget navn, og portrætterne forsvandt? Rettet! Nu finder systemet de korrekte billeder, uanset hvad du kalder din verden.
+  - 💍 **Intelligente ikoner:** Genstande (inklusive ringe) viser nu mere præcise og korrekte ikoner i brugerfladen.
+  - 🧪 **Forbedrede værktøjstip:** Eliksirer, forbrugsvarer og formularer viser nu korrekt al deres information og effekter, når du holder musen over dem.
+  - 🎵 **Lydforbedringer:** Kampmusikken stopper ikke længere, når du trykker på de foruddefinerede knapper.
+  - [I18N] **Fix Implantater:** Tilføjet manglende oversættelsesnøgler for implantatpladser (`slot_implant_*`) og tilsvarende ikoner (`icon_implant_*`) i `es.json`.
+  - [FIX][AUDIO] **Inkonsistent lyd:** Tilpasset lydeffekter (SFX) for udstyr af genstande og trækning af våben til omgivelserne. Systemet registrerer nu `setting_key` og bruger futuristiske/industrielle lyde i Cyberpunk og klassiske lyde i Fantasy.
+  - [FIX][I18N] **Oprydning i es.json:** Fjernet mere end 20 dublerede nøgler i `es.json` og rettet stavefejl i navne på pladser (f.eks. "Oíidos" -> "Oídos").
+  - ⚙️ **Intelligent modeldetektering:** Nu læser spillet direkte "hjernen" i de modeller, du importerer (GGUF). Det registrerer automatisk den maksimale kontekst. (Officielle optimerede modeller røres ikke for maksimal stabilitet).
+  - 📂 **Pladsbesparelse:** Når du tilføjer en model fra din computer, flytter spillet den nu direkte til sin mappe i stedet for at kopiere den. Dine gigabytes vil takke dig!
+  - ⚖️ **Retfærdighed i attributter:** Rettet en exploit, der tillod uendelige point ved at hæve og sænke attributter under skabelsen.
+  - 📖 **Træningsguide:** Jeg har opdateret manualen (README) med alle detaljer om, hvordan dine karakterer får erfaring og øger deres attributter.
+  - 📜 **Kodeks for episke verdener:** Slut med lore som en "eftertanke"! Nu skaber generatoren verdener med dyb historie, der beskriver deres religioner, love, geografi og berømte personer i et detaljeret krønikeformat.
+  - 🧙 **Sammenhængende historier:** Din karakter fødes ikke længere i et tomrum. Baggrundshistorien integreres nu intelligent med loren i den verden, du lige har skabt eller valgt.
+  - ⚡ **Flydende grænseflade:** Autogenerering af historier og verdener sker nu i baggrunden. Slut med at vente med en frosset skærm!
+  - 🚀 **Øjeblikkelig eventyrstart:** Jeg har fjernet ventetiden! Nu springer du direkte ind i historien, efter du har skabt din karakter. Systemet bruger din berigede baggrund til at skabe den perfekte start, uden at du behøver at skrive et eneste ord mere.
+  - 🎭 **Baggrunde med påskud:** Dine karakterer har ikke længere kun en fortid, men også en presserende grund til at starte eventyret. Det nye AI-system genererer automatisk den indledende gnist til historien, integreret i din biografi.
+  - 🧹 **Forenklet grænseflade:** Jeg har fjernet knapper og skærme, der ikke tilførte værdi. Knappen "Start historie" centraliserer nu al magten, så du kan begynde at spille så hurtigt som muligt.
+  - [FIX][UI] **Visuel dublering i verdensvalg:** Rettet en fejl, hvor verdensnavnet blev vist to gange som "Navn [Navn]". Type-etiketten skjules nu, hvis den er overflødig.
+  - [FEAT][UI] **Hurtig indlæsning (Enkeltklik):** Nu kan du indlæse en karakter eller starte oprettelsen af en ny med et enkelt klik på skærmen for valg af verden. Udvidelsen af verdener bibeholdes for at undgå konflikter.
+  - 🧠 **Mere kreativ AI:** Jeg har brudt AI'ens "gentagelsesløkke" ved at injicere teknisk variation i hver forespørgsel. Nu vil de tilfældigt genererede karakterer være meget mere unikke og originale og ignorere eksemplerne i guiden.
+  
+  🛡️ Til de modige, der VOVER at kæmpe på frontlinjen: Eventyret venter på jer, nu mere utæmmeligt end nogensinde!
 
 ****************************************************************************************************
 06/02/2026 02:32 - Vulkan-understøttelse (AMD/Intel) og robust fejlhåndtering - Beta_v053

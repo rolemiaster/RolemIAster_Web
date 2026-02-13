@@ -1,35 +1,54 @@
 ****************************************************************************************************
-07/02/2026 20:26 - Sistema de Interpretación Semántica de Combate - BETA_v054
+13/02/2026 07:56 - Sistem de Interpretare Semantică a Luptei - Beta_v054
 ****************************************************************************************************
-🧪 YA DISPONIBLE:
-
-⚠️ **AVISO IMPORTANTE:** EL JUEGO PUEDE MIGRAR LA ANTIGUA BASE DE DATOS PARA LA NUEVA ESTRUCTURA MEDIANTE OPCIONES DEL LAUNCHER. NO RECOMIENDO ESTO, AUNQUE FUNCIONE TU ANTIGUA PARTIDA, MUCHAS COSAS ESTARÁN ROTAS. MI RECOMENDACIÓN ES ELIMINAR TODAS LAS PARTIDAS ANTERIORES GUARDADAS. NO ES NECESARIO BORRAR LA BASE DE DATOS AL COMPLETO SALVO CASO EXTREMO.
-
-Cambios:
-
-- 🌍 **Gestor de Mundos y Personajes:** Ahora tienes total libertad. Crea tus propios Mundos con sus propias reglas y ambientación, y dentro de cada uno, crea tantos personajes como quieras. **Nota Importante:** Todos los personajes de un mismo mundo comparten la misma línea temporal y los eventos sucedidos, lo que sienta las bases para el futuro modo multijugador.
-- 🧠 **Memoria Contextual (Súper RAG):** La IA ahora tiene "sentidos". Al buscar información en el Lore o en su memoria, tiene en cuenta dónde estás, con quién estás, si estás herido y qué acaba de pasar. ¡Es mucho más intuitivo y coherente!
-- 🌍 **Lore en el Primer Personaje:** ¿Escribías una descripción épica de tu mundo y la IA la ignoraba en tu primer personaje? ¡Solucionado! Ahora la descripción manual del mundo llega directamente a la IA durante la creación inicial.
-- ⚙️ **Sistema de Mundos Mejorado:** He independizado el nombre de tu mundo de las reglas técnicas.
-- 📝 **Claridad en Creación:** He mejorado las instrucciones internas para que la IA entienda mejor cuándo debe inventar un trasfondo.
-- 🧠 **Combate por Texto Libre:** Escribe acciones como "lanzar hechizo de curación" o "desenfundar espada". La IA entiende tu intención.
-- 🎨 **¡Nueva Interfaz Épica!** Remodelación completa estilo RPG con menús animados y bordes neón.
-- 🎬 **IA Director de Escena (MEJORADO):** El combate ahora cobra vida con eventos ambientales.
-- ⚔️ **Desenfundar con Palabras:** Escribe "desenfundar espada" en lugar de hacer clic. ¡Cuidado en combate!
-- 📖 **Hechizos Reconocidos:** La IA conoce tu libro de hechizos completo.
-- 🌍 **Narrativa en tu Idioma:** Respeta estrictamente el idioma seleccionado, evitando mezclas.
-- 🛡️ **No Más Turnos Perdidos:** Si el juego no entiende, te pedirá aclaraciones. Tu turno NO se pierde.
-- 🎒 **Inventario Manual:** Interfaz de arrastrar y soltar para mover objetos.
-- 🧪 **Uso de Pociones Fluido:** Arrastra sobre retrato o usa el menú de clic derecho.
-- 🩸 **Corrección de Daño:** Barra de vida corregida. Ya no eres inmortal.
-- 👻 **Adiós a los Items Fantasma:** Reparación automática de objetos que la IA olvida crear.
-- 🐛 **Corrección Crítica NPC:** Decisiones tácticas de NPCs corregidas.
-- 🎒 **Corrección Inventario Inicial:** Personajes ya no empiezan desnudos.
-- 🎲 **Creación de Personaje:** Exploit de puntos infinitos corregido.
-- 🖼️ **Retratos Arreglados:** El sistema encuentra imágenes correctas independientemente del nombre del mundo.
-- 💍 **Iconos Inteligentes:** Objetos y anillos con iconos precisos.
-- 🧪 **Tooltips Mejorados:** Información completa al pasar el ratón.
-- 🎵 **Mejoras de Audio:** Música no se detiene al pulsar botones.
+- What's New (RO):
+  🧪 ACUM DISPONIBIL:
+  
+  ⚠️ **AVERTISMENT IMPORTANT:** JOCUL POATE MIGRA VECHEA BAZĂ DE DATE CĂTRE NOUA STRUCTURĂ PRIN OPȚIUNILE LAUNCHERULUI. NU RECOMAND ACEST LUCRU; CHIAR DACĂ VECHEA SALVARE FUNCȚIONEAZĂ, MULTE LUCRURI VOR FI STRICATE. RECOMANDAREA MEA ESTE SĂ ȘTERGI TOATE SALVĂRILE ANTERIOARE. NU ESTE NECESAR SĂ ȘTERGI ÎNTREAGA BAZĂ DE DATE DECÂT ÎN CAZURI EXTREME.
+  
+  Schimbări:
+  
+  - 🌍 **Manager de Lumi și Personaje:** Acum ai libertate deplină. Creează-ți propriile Lumi cu propriile reguli și atmosferă, iar în fiecare dintre ele, creează oricâte personaje dorești. **Notă Importantă:** Toate personajele din aceeași lume împart aceeași axă temporală și evenimentele petrecute, ceea ce pune bazele viitorului mod multiplayer.
+  - 🧠 **Memorie Contextuală (Super RAG):** IA are acum „simțuri”. Când caută informații în Lore sau în memoria sa, ține cont de unde ești, cu cine ești, dacă ești rănit și ce tocmai s-a întâmplat. Dacă ești cu un Rege, își va aminti lucruri despre regi. Dacă ești rănit, va căuta reguli despre vindecare. Este mult mai intuitiv și coerent!
+  - 🌍 **Lore la Primul Personaj:** Scriai o descriere epică a lumii tale și IA o ignora la primul tău personaj? Rezolvat! Acum descrierea manuală a lumii ajunge direct la IA în timpul creării inițiale, chiar înainte ca sistemul de memorie să se activeze.
+  - ⚙️ **Sistem de Lumi Îmbunătățit:** Am separat numele lumii tale de regulile tehnice. Acum poți numi lumea cum dorești, fără ca acest lucru să afecteze încărcarea regulilor de Fantezie sau Cyberpunk.
+  - 📝 **Claritate în Creare:** Am îmbunătățit instrucțiunile interne pentru ca IA să înțeleagă mai bine când trebuie să inventeze un trecut și când trebuie să se limiteze la extragerea statisticilor tale.
+  - 🧠 **Luptă prin Text Liber:** Acum poți scrie acțiunile în luptă ca și cum ai vorbi cu un GM la masă: „arunc vrajă de vindecare pe mine”, „îmi scot sabia”, „folosesc poțiune de vindecare”. IA îți înțelege intenția și o traduce în mecanici de joc.
+  - 🎨 **O Nouă Interfață Epică!** Am remodelat jocul complet. Meniuri stil RPG, fundaluri animate și o experiență vizuală complet reînnoită. Stil întunecat semitransparent, margini neon și umbre netezite pentru o imersiune totală.
+  - 🎬 **IA Regizor de Scenă (ÎMBUNĂTĂȚIT):** Lupta prinde viață. IA generează evenimente ambientale și reacții care îmbogățesc narațiunea: torțe care cad, inamici care se retrag, grinzi care se prăbușesc. Câmpul de luptă nu mai este static!
+  - ⚔️ **Scoaterea Armei prin Cuvinte:** Nu mai trebuie să dai clic pe slotul armei. Pur și simplu scrie „scot sabia” sau „îmi scot toporul” și sistemul interpretează automat (ATENȚIE!, a face asta în luptă poate duce la eșec, gafă și pierderea turei!... „La luptă se vine pregătit de acasă!”).
+  - 📖 **Vrăji Recunoscute:** IA îți cunoaște acum întreaga carte de vrăji. Spune „arunc minge de foc” și, dacă ai acea vrajă, o va lansa.
+  - 🌍 **Narațiune în Limba Ta:** Povestea respectă acum strict limba selectată, evitând amestecurile ciudate între limbi (sper să nu mai văd niciodată spanglish!, am forțat atât de mult IA-ul încât aș zice că, dacă mai generează texte în altă limbă decât cea selectată, e pur și simplu blestemată).
+  - 🛡️ **Gata cu Turele Pierdute:** Dacă jocul nu îți înțelege acțiunea, îți va cere să o reformulezi. Tura ta NU se pierde.
+  - 🎒 **Inventar Manual:** Pentru a muta obiecte între sloturi (echipare din rucsac, încărcare muniție), folosește interfața de tragere și plasare. Acest lucru evită confuziile și economisește resurse IA.
+  - 🧪 **Utilizare Fluidă a Poțiunilor:** Acum poți trage poțiuni și mâncare direct peste portretul tău pentru a le folosi. Am adăugat și opțiunea „Folosește” la clic dreapta. Mai intuitiv și mai rapid!
+  - 🩸 **Corecție Daune:** Nu mai ești nemuritor! Am reparat o problemă unde bara de viață nu scădea deși erai lovit. Acum vei suferi așa cum se cuvine.
+  - 👻 **Adio Obiecte Fantomă:** Găseai un obiect în poveste dar nu apărea niciodată în rucsac? Problema rezolvată! Acum sistemul repară automat obiectele pe care IA „uită” să le creeze.
+  - 🐛 **Corecție Critică NPC:** Rezolvat un bug care împiedica NPC-urile să ia decizii tactice corect, determinându-le să „aștepte” mereu în loc să atace sau să se apere.
+  - 🎒 **Corecție Inventar Inițial:** Noile personaje nu mai încep dezbrăcate. Acum își primesc echipamentul inițial corect.
+  - 🎲 **Crearea Personajului:** Corectat un exploit unde creșterea și scăderea unui atribut la anumite praguri genera puncte extra infinite. S-a terminat cu trucul Carismei!
+  - 🖼️ **Portrete Reparate:** Creai o lume cu nume propriu și portretele dispăreau? Reparat! Acum sistemul găsește imaginile corecte indiferent de cum îți botezi lumea.
+  - 💍 **Iconițe Inteligente:** Obiectele (inclusiv inelele) afișează acum iconițe mai precise și corecte în interfață.
+  - 🧪 **Tooltip-uri Îmbunătățite:** Poțiunile, consumabilele și vrăjile își afișează acum corect toate informațiile și efectele la trecerea mouse-ului.
+  - 🎵 **Îmbunătățiri Audio:** Muzica de luptă nu se mai oprește la apăsarea butoanelor predefinite.
+  - [I18N] **Fix Implanturi:** Adăugate chei de traducere lipsă pentru sloturile de implanturi (`slot_implant_*`) și iconițele corespunzătoare (`icon_implant_*`) în `es.json`.
+  - [FIX][AUDIO] **Audio Inconsistent:** Adaptate efectele sonore (SFX) de echipare a obiectelor și scoatere a armelor la atmosferă. Acum sistemul detectează `setting_key` și folosește sunete futuriste/industriale în Cyberpunk și sunete clasice în Fantezie.
+  - [FIX][I18N] **Curățare es.json:** Eliminate peste 20 de chei duplicate în `es.json` și corectate greșeli de tipar în numele sloturilor (ex. „Oíidos” -> „Oídos”).
+  - ⚙️ **Detectare Inteligentă a Modelelor:** Acum jocul citește direct „creierul” modelelor pe care le imporți (GGUF). Detectează contextul maxim real în mod automat. (Modelele oficiale optimizate nici nu sunt atinse pentru stabilitate maximă).
+  - 📂 **Economisire Spațiu:** La adăugarea unui model din calculatorul tău, acum jocul îl mută direct în folderul său în loc să îl copieze. Gigabaiții tăi îți vor mulțumi!
+  - ⚖️ **Dreptate în Atribute:** Corectat un exploit care permitea obținerea de puncte infinite la creșterea și scăderea atributelor la creare.
+  - 📖 **Ghid de Antrenament:** Am actualizat Manualul (README) cu toate detaliile despre cum personajele tale câștigă experiență și își cresc atributele.
+  - 📜 **Codex de Lumi Epice:** S-a terminat cu lore-ul de tip „un post-scriptum”! Acum generatorul creează lumi cu o istorie profundă, descriind religiile, legile, geografia și personajele faimoase într-un format de cronică detaliată.
+  - 🧙 **Povești Coerente:** Personajul tău nu se mai naște în vid. Trecutul său se integrează acum inteligent cu lore-ul lumii pe care tocmai ai creat-o sau ales-o.
+  - ⚡ **Interfață Fluidă:** Autogenerarea poveștilor și lumilor se realizează acum în fundal. S-au terminat așteptările cu ecranul înghețat!
+  - 🚀 **Început de Aventură Instantaneu:** Am eliminat așteptările! Acum, după ce îți creezi personajul, sari direct în poveste. Sistemul folosește trecutul tău îmbogățit pentru a crea începutul perfect fără să trebuiască să scrii nici măcar un singur cuvânt în plus.
+  - 🎭 **Trecuturi cu Motivație:** Personajele tale nu mai au doar un trecut, ci și un motiv urgent pentru a începe aventura. Noul sistem de IA generează automat scânteia inițială a poveștii integrată în biografia ta.
+  - 🧹 **Interfață Simplificată:** Am scos butoanele și ecranele care nu aduceau valoare. Butonul „Începe Povestea” centralizează acum toată puterea ca să începi să joci cât mai curând.
+  - [FIX][UI] **Duplicare Vizuală în Selecția Lumii:** Corectat bug unde numele lumii apărea duplicat ca „Nume [Nume]”. Acum eticheta de tip este ascunsă dacă este redundantă.
+  - [FEAT][UI] **Încărcare Rapidă (Clic Simplu):** Acum se poate încărca un personaj sau începe crearea unuia nou cu un singur clic în ecranul de selecție a lumilor. Se menține expansiunea lumilor pentru a evita conflictele.
+  - 🧠 **IA mai Creativă:** Am spart „bucla de repetiție” a IA injectând variabilitate tehnică în fiecare cerere. Acum personajele generate aleatoriu vor fi mult mai unice și originale, ignorând exemplele din ghid.
+  
+  🛡️ Celor curajoși care ÎNDRĂZNESC să lupte în prima linie a bătăliei: Aventura vă așteaptă, acum mai neîmblânzită ca niciodată!
 
 ****************************************************************************************************
 06/02/2026 02:32 - Suport Vulkan (AMD/Intel) și Gestionare Robustă a Erorilor - Beta_v053

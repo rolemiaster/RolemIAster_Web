@@ -1,35 +1,54 @@
 ****************************************************************************************************
-07/02/2026 20:26 - Sistema de Interpretación Semántica de Combate - BETA_v054
+13/02/2026 07:56 - 戰鬥語意解讀系統 - Beta_v054
 ****************************************************************************************************
-🧪 YA DISPONIBLE:
-
-⚠️ **AVISO IMPORTANTE:** EL JUEGO PUEDE MIGRAR LA ANTIGUA BASE DE DATOS PARA LA NUEVA ESTRUCTURA MEDIANTE OPCIONES DEL LAUNCHER. NO RECOMIENDO ESTO, AUNQUE FUNCIONE TU ANTIGUA PARTIDA, MUCHAS COSAS ESTARÁN ROTAS. MI RECOMENDACIÓN ES ELIMINAR TODAS LAS PARTIDAS ANTERIORES GUARDADAS. NO ES NECESARIO BORRAR LA BASE DE DATOS AL COMPLETO SALVO CASO EXTREMO.
-
-Cambios:
-
-- 🌍 **Gestor de Mundos y Personajes:** Ahora tienes total libertad. Crea tus propios Mundos con sus propias reglas y ambientación, y dentro de cada uno, crea tantos personajes como quieras. **Nota Importante:** Todos los personajes de un mismo mundo comparten la misma línea temporal y los eventos sucedidos, lo que sienta las bases para el futuro modo multijugador.
-- 🧠 **Memoria Contextual (Súper RAG):** La IA ahora tiene "sentidos". Al buscar información en el Lore o en su memoria, tiene en cuenta dónde estás, con quién estás, si estás herido y qué acaba de pasar. ¡Es mucho más intuitivo y coherente!
-- 🌍 **Lore en el Primer Personaje:** ¿Escribías una descripción épica de tu mundo y la IA la ignoraba en tu primer personaje? ¡Solucionado! Ahora la descripción manual del mundo llega directamente a la IA durante la creación inicial.
-- ⚙️ **Sistema de Mundos Mejorado:** He independizado el nombre de tu mundo de las reglas técnicas.
-- 📝 **Claridad en Creación:** He mejorado las instrucciones internas para que la IA entienda mejor cuándo debe inventar un trasfondo.
-- 🧠 **Combate por Texto Libre:** Escribe acciones como "lanzar hechizo de curación" o "desenfundar espada". La IA entiende tu intención.
-- 🎨 **¡Nueva Interfaz Épica!** Remodelación completa estilo RPG con menús animados y bordes neón.
-- 🎬 **IA Director de Escena (MEJORADO):** El combate ahora cobra vida con eventos ambientales.
-- ⚔️ **Desenfundar con Palabras:** Escribe "desenfundar espada" en lugar de hacer clic. ¡Cuidado en combate!
-- 📖 **Hechizos Reconocidos:** La IA conoce tu libro de hechizos completo.
-- 🌍 **Narrativa en tu Idioma:** Respeta estrictamente el idioma seleccionado, evitando mezclas.
-- 🛡️ **No Más Turnos Perdidos:** Si el juego no entiende, te pedirá aclaraciones. Tu turno NO se pierde.
-- 🎒 **Inventario Manual:** Interfaz de arrastrar y soltar para mover objetos.
-- 🧪 **Uso de Pociones Fluido:** Arrastra sobre retrato o usa el menú de clic derecho.
-- 🩸 **Corrección de Daño:** Barra de vida corregida. Ya no eres inmortal.
-- 👻 **Adiós a los Items Fantasma:** Reparación automática de objetos que la IA olvida crear.
-- 🐛 **Corrección Crítica NPC:** Decisiones tácticas de NPCs corregidas.
-- 🎒 **Corrección Inventario Inicial:** Personajes ya no empiezan desnudos.
-- 🎲 **Creación de Personaje:** Exploit de puntos infinitos corregido.
-- 🖼️ **Retratos Arreglados:** El sistema encuentra imágenes correctas independientemente del nombre del mundo.
-- 💍 **Iconos Inteligentes:** Objetos y anillos con iconos precisos.
-- 🧪 **Tooltips Mejorados:** Información completa al pasar el ratón.
-- 🎵 **Mejoras de Audio:** Música no se detiene al pulsar botones.
+- What's New (ZH-TW):
+  🧪 現已推出：
+  
+  ⚠️ **重要通知：** 遊戲可以透過啟動器選項將舊資料庫遷移到新結構。但我不建議這樣做，即使你的舊存檔能運作，很多東西也會壞掉。我強烈建議刪除所有舊的存檔。除非是極端情況，否則不需要刪除整個資料庫。
+  
+  變更內容：
+  
+  - 🌍 **世界與角色管理器：** 現在你擁有完全的自由。創造你自己的世界，設定專屬規則和背景，並在其中創造任意數量的角色。**重要提示：** 同一個世界的所有角色共享相同的時間線和發生過的事件，這為未來的多人模式奠定了基礎。
+  - 🧠 **情境記憶 (超級 RAG)：** AI 現在有了「感官」。在從背景故事 (Lore) 或記憶中搜尋資訊時，它會考慮你在哪裡、和誰在一起、是否受傷以及剛發生了什麼。如果你和國王在一起，它會記得關於國王的事。如果你受傷了，它會搜尋治療規則。這變得更加直觀且連貫！
+  - 🌍 **首位角色的背景故事：** 以前寫了史詩般的世界描述，但在第一個角色時 AI 卻忽略了？已解決！現在手動輸入的世界描述會在初始創造階段、甚至在記憶系統啟動前就直接傳達給 AI。
+  - ⚙️ **改進的世界系統：** 我已將你的世界名稱與技術規則分開。現在你可以隨意命名你的世界，而不會影響奇幻或賽博龐克規則的載入。
+  - 📝 **創造過程更清晰：** 我改進了內部指令，讓 AI 更清楚何時該編造背景故事，何時該僅限於提取你的屬性數據。
+  - 🧠 **自由文本戰鬥：** 現在你可以像在玩桌上角色扮演遊戲一樣寫下你的戰鬥行動：「對自己施放治療法術」、「拔劍」、「使用治療藥水」。AI 會理解你的意圖並將其轉化為遊戲機制。
+  - 🎨 **全新史詩級介面！** 我已將遊戲完全重塑。RPG 風格選單、動態背景和煥然一新的視覺體驗。半透明暗色風格、霓虹邊框和柔和陰影，帶來完全的沉浸感。
+  - 🎬 **AI 場景導演 (增強版)：** 戰鬥現在栩栩如生。AI 會生成環境事件和反應來豐富敘事：火把掉落、敵人後退、橫梁倒塌。戰場不再是一成不變的！
+  - ⚔️ **用文字拔出武器：** 不再需要點擊武器欄位。只需輸入「拔劍」或「拿出我的斧頭」，系統就會自動解讀（注意！在戰鬥中這樣做可能會導致失敗、失誤和失去回合！……「上戰場前就要做好準備！」）。
+  - 📖 **法術識別：** AI 現在知道你完整的法術書。說「施放火球術」，如果你有這個法術，它就會施放。
+  - 🌍 **母語敘事：** 故事現在嚴格遵守所選語言，避免奇怪的語言混合（希望再也不會看到中英夾雜了！我強迫 AI 遵守規則，如果它再生成非所選語言的文本，那純粹是因為它真的被詛咒了）。
+  - 🛡️ **不再白費回合：** 如果遊戲不理解你的行動，會要求你重新表述。你的回合**不會**因此跳過。
+  - 🎒 **手動庫存：** 要在欄位間移動物品（從背包裝備、裝填彈藥），請使用拖放介面。這能避免混淆並節省 AI 資源。
+  - 🧪 **流暢使用藥水：** 現在可以直接將藥水和食物拖到你的頭像上使用。我還在右鍵選單中新增了「使用」選項。更直觀、更快速！
+  - 🩸 **傷害修正：** 你不再是不死之身了！我們修復了即使被打中血條也不會下降的問題。現在你會受到應有的痛苦。
+  - 👻 **告別幽靈物品：** 在故事中找到物品卻沒出現在背包裡？問題解決！現在系統會自動修復 AI 「忘記」創建的物品。
+  - 🐛 **NPC 關鍵修正：** 修復了導致 NPC 無法正確做出戰術決策，導致他們總是「等待」而不是攻擊或防禦的錯誤。
+  - 🎒 **初始庫存修正：** 新角色不再赤身裸體。現在他們會正確收到初始裝備。
+  - 🎲 **角色創造：** 修復了在特定閾值上下調整屬性會產生無限額外點數的漏洞。魅力值作弊法已經結束了！
+  - 🖼️ **頭像修復：** 創建自定義名稱的世界會導致頭像消失？已修復！現在無論你如何命名世界，系統都能找到正確的圖片。
+  - 💍 **智慧圖示：** 物品（包括戒指）現在在介面上顯示更精確、正確的圖示。
+  - 🧪 **工具提示改進：** 藥水、消耗品和法術現在滑鼠懸停時會正確顯示所有資訊和效果。
+  - 🎵 **音效改進：** 按下預設按鈕時，戰鬥音樂不再停止。
+  - [I18N] **植入物修復：** 新增了植入物欄位 (`slot_implant_*`) 和相應圖示 (`icon_implant_*`) 在 `es.json` 中缺失的翻譯鍵值。
+  - [FIX][AUDIO] **音效不一致：** 調整了裝備物品和拔出武器的音效 (SFX) 以適應環境。現在系統會偵測 `setting_key`，在賽博龐克中使用未來/工業音效，在奇幻中使用經典音效。
+  - [FIX][I18N] **清理 es.json：** 移除了 `es.json` 中超過 20 個重複的鍵值並修正了欄位名稱的錯字（例如 "Oíidos" -> "Oídos"）。
+  - ⚙️ **智慧模型偵測：** 現在遊戲會直接讀取你導入的模型 (GGUF) 的「大腦」。自動偵測真實的最大上下文長度。（官方優化模型保持原樣以獲得最大穩定性）。
+  - 📂 **節省空間：** 從電腦新增模型時，遊戲現在會直接將其移動到資料夾中，而不是複製。你的硬碟容量會感謝你的！
+  - ⚖️ **屬性公平性：** 修復了在創造時上下調整屬性可獲得無限點數的漏洞。
+  - 📖 **訓練指南：** 我更新了手冊 (README)，詳細說明了角色如何獲得經驗和提升屬性。
+  - 📜 **史詩世界法典：** 不再有「附註」式的背景故事！現在生成器會以詳細編年史的格式創造具有深度歷史、宗教、法律、地理和著名人物的世界。
+  - 🧙 **連貫的故事：** 你的角色不再誕生於虛空之中。其背景故事現在會智慧地與你剛剛創造或選擇的世界背景相結合。
+  - ⚡ **流暢介面：** 故事和世界的自動生成現在於背景執行。告別畫面凍結的等待時間！
+  - 🚀 **冒險即刻開始：** 我消除了等待時間！現在，創建角色後，你將直接跳入故事。系統使用豐富的背景故事來創造完美的開端，你無需再多寫一個字。
+  - 🎭 **有動機的背景：** 你的角色不再只有過去，還有開始冒險的緊急動機。新的 AI 系統會自動生成整合在你傳記中的故事初始火花。
+  - 🧹 **簡化介面：** 我移除了沒有價值的按鈕和畫面。「開始故事」按鈕現在集中了所有功能，讓你盡快開始遊戲。
+  - [FIX][UI] **世界選擇中的視覺重複：** 修復了世界名稱顯示為「名稱 [名稱]」的重複錯誤。如果類型標籤多餘，現在會將其隱藏。
+  - [FEAT][UI] **快速載入 (單擊)：** 現在可以在世界選擇畫面中透過單次點擊載入角色或開始創建新角色。保留世界展開功能以避免衝突。
+  - 🧠 **更有創意的 AI：** 我透過在每次請求中注入技術變異性，打破了 AI 的「重複循環」。現在隨機生成的角色將更加獨特原創，不再受指南範例的限制。
+  
+  🛡️ 給那些敢於在第一線戰鬥的勇士們：冒險在等著你們，現在比以往任何時候都更加狂野不羈！
 
 ****************************************************************************************************
 06/02/2026 02:32 - 支援 Vulkan (AMD/Intel) 與穩健的錯誤處理 - Beta_v053

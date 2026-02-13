@@ -1,35 +1,54 @@
 ****************************************************************************************************
-07/02/2026 20:26 - Sistema de Interpretación Semántica de Combate - BETA_v054
+13/02/2026 07:56 - Systém sémantické interpretace boje - Beta_v054
 ****************************************************************************************************
-🧪 YA DISPONIBLE:
-
-⚠️ **AVISO IMPORTANTE:** EL JUEGO PUEDE MIGRAR LA ANTIGUA BASE DE DATOS PARA LA NUEVA ESTRUCTURA MEDIANTE OPCIONES DEL LAUNCHER. NO RECOMIENDO ESTO, AUNQUE FUNCIONE TU ANTIGUA PARTIDA, MUCHAS COSAS ESTARÁN ROTAS. MI RECOMENDACIÓN ES ELIMINAR TODAS LAS PARTIDAS ANTERIORES GUARDADAS. NO ES NECESARIO BORRAR LA BASE DE DATOS AL COMPLETO SALVO CASO EXTREMO.
-
-Cambios:
-
-- 🌍 **Gestor de Mundos y Personajes:** Ahora tienes total libertad. Crea tus propios Mundos con sus propias reglas y ambientación, y dentro de cada uno, crea tantos personajes como quieras. **Nota Importante:** Todos los personajes de un mismo mundo comparten la misma línea temporal y los eventos sucedidos, lo que sienta las bases para el futuro modo multijugador.
-- 🧠 **Memoria Contextual (Súper RAG):** La IA ahora tiene "sentidos". Al buscar información en el Lore o en su memoria, tiene en cuenta dónde estás, con quién estás, si estás herido y qué acaba de pasar. ¡Es mucho más intuitivo y coherente!
-- 🌍 **Lore en el Primer Personaje:** ¿Escribías una descripción épica de tu mundo y la IA la ignoraba en tu primer personaje? ¡Solucionado! Ahora la descripción manual del mundo llega directamente a la IA durante la creación inicial.
-- ⚙️ **Sistema de Mundos Mejorado:** He independizado el nombre de tu mundo de las reglas técnicas.
-- 📝 **Claridad en Creación:** He mejorado las instrucciones internas para que la IA entienda mejor cuándo debe inventar un trasfondo.
-- 🧠 **Combate por Texto Libre:** Escribe acciones como "lanzar hechizo de curación" o "desenfundar espada". La IA entiende tu intención.
-- 🎨 **¡Nueva Interfaz Épica!** Remodelación completa estilo RPG con menús animados y bordes neón.
-- 🎬 **IA Director de Escena (MEJORADO):** El combate ahora cobra vida con eventos ambientales.
-- ⚔️ **Desenfundar con Palabras:** Escribe "desenfundar espada" en lugar de hacer clic. ¡Cuidado en combate!
-- 📖 **Hechizos Reconocidos:** La IA conoce tu libro de hechizos completo.
-- 🌍 **Narrativa en tu Idioma:** Respeta estrictamente el idioma seleccionado, evitando mezclas.
-- 🛡️ **No Más Turnos Perdidos:** Si el juego no entiende, te pedirá aclaraciones. Tu turno NO se pierde.
-- 🎒 **Inventario Manual:** Interfaz de arrastrar y soltar para mover objetos.
-- 🧪 **Uso de Pociones Fluido:** Arrastra sobre retrato o usa el menú de clic derecho.
-- 🩸 **Corrección de Daño:** Barra de vida corregida. Ya no eres inmortal.
-- 👻 **Adiós a los Items Fantasma:** Reparación automática de objetos que la IA olvida crear.
-- 🐛 **Corrección Crítica NPC:** Decisiones tácticas de NPCs corregidas.
-- 🎒 **Corrección Inventario Inicial:** Personajes ya no empiezan desnudos.
-- 🎲 **Creación de Personaje:** Exploit de puntos infinitos corregido.
-- 🖼️ **Retratos Arreglados:** El sistema encuentra imágenes correctas independientemente del nombre del mundo.
-- 💍 **Iconos Inteligentes:** Objetos y anillos con iconos precisos.
-- 🧪 **Tooltips Mejorados:** Información completa al pasar el ratón.
-- 🎵 **Mejoras de Audio:** Música no se detiene al pulsar botones.
+- What's New (CS):
+  🧪 NYNÍ DOSTUPNÉ:
+  
+  ⚠️ **DŮLEŽITÉ UPOZORNĚNÍ:** HRA MŮŽE MIGROVAT STAROU DATABÁZI NA NOVOU STRUKTURU POMOCÍ MOŽNOSTÍ V LAUNCHERU. NEDOPORUČUJI TO, I KDYŽ VAŠE STARÁ ULOŽENÁ HRA MŮŽE FUNGOVAT, MNOHO VĚCÍ BUDE ROZBITÝCH. MÉ DOPORUČENÍ JE SMAZAT VŠECHNY PŘEDCHOZÍ ULOŽENÉ POZICE. NENÍ NUTNÉ MAZAT CELOU DATABÁZI, POKUD NEJDE O EXTRÉMNÍ PŘÍPAD.
+  
+  Změny:
+  
+  - 🌍 **Správce světů a postav:** Nyní máte naprostou svobodu. Vytvářejte vlastní světy s vlastními pravidly a prostředím a v každém z nich vytvořte tolik postav, kolik chcete. **Důležitá poznámka:** Všechny postavy ve stejném světě sdílejí stejnou časovou osu a události, což pokládá základy pro budoucí režim pro více hráčů.
+  - 🧠 **Kontextová paměť (Super RAG):** AI má nyní "smysly". Při hledání informací v Lore nebo ve své paměti bere v úvahu, kde jste, s kým jste, zda jste zraněni a co se právě stalo. Pokud jste s králem, vybaví si věci o králích. Pokud jste zraněni, vyhledá pravidla o léčení. Je to mnohem intuitivnější a koherentnější!
+  - 🌍 **Lore u první postavy:** Psali jste epický popis svého světa a AI ho u první postavy ignorovala? Vyřešeno! Nyní se manuální popis světa dostane přímo k AI během počáteční tvorby, ještě předtím, než se aktivuje paměťový systém.
+  - ⚙️ **Vylepšený systém světů:** Oddělil jsem název vašeho světa od technických pravidel. Nyní můžete svůj svět nazvat, jak chcete, aniž by to ovlivnilo načítání pravidel pro Fantasy nebo Cyberpunk.
+  - 📝 **Jasnost při tvorbě:** Vylepšil jsem interní instrukce, aby AI lépe chápala, kdy má vymyslet pozadí příběhu a kdy se má omezit na extrakci vašich statistik.
+  - 🧠 **Boj volným textem:** Nyní můžete psát své akce v boji, jako byste mluvili s vypravěčem u stolu: "seslat na sebe léčivé kouzlo", "tasit meč", "použít léčivý lektvar". AI pochopí váš záměr a převede jej do herních mechanik.
+  - 🎨 **Nové epické rozhraní!** Hru jsem kompletně předělal. Menu ve stylu RPG, animovaná pozadí a zcela nový vizuální zážitek. Tmavý poloprůhledný styl, neonové okraje a zjemněné stíny pro naprosté vtažení do hry.
+  - 🎬 **AI režisér scény (VYLEPŠENO):** Boj nyní ožívá. AI generuje environmentální události a reakce, které obohacují vyprávění: padající pochodně, ustupující nepřátelé, hroutící se trámy. Bojiště už není statické!
+  - ⚔️ **Tasení slovy:** Už nemusíte klikat na slot zbraně. Stačí napsat "tasit meč" nebo "vytáhnout sekeru" a systém to automaticky vyhodnotí (POZOR! Udělat to v boji může vést k neúspěchu, fatální chybě a ztrátě tahu!... "Do boje se chodí připraven z domova!").
+  - 📖 **Rozpoznaná kouzla:** AI nyní zná celou vaši knihu kouzel. Řekněte "seslat ohnivou kouli", a pokud toto kouzlo máte, sešle ho.
+  - 🌍 **Vyprávění ve vašem jazyce:** Příběh nyní striktně respektuje vybraný jazyk a vyhýbá se podivným mixům jazyků (kéž už nikdy neuvidím žádný "spanglish"! Tlačil jsem na AI tolik, že jestli znovu vygeneruje text v jiném jazyce, než je vybrán, tak je asi opravdu prokletá).
+  - 🛡️ **Žádné ztracené tahy:** Pokud hra nepochopí vaši akci, požádá vás o přeformulování. Váš tah SE NEZTRÁCÍ.
+  - 🎒 **Manuální inventář:** Pro přesun předmětů mezi sloty (vybavení z batohu, nabití munice) používejte rozhraní "táhni a pusť". Zabrání to zmatkům a šetří zdroje AI.
+  - 🧪 **Plynulé používání lektvarů:** Nyní můžete přetáhnout lektvary a jídlo přímo na svůj portrét a použít je. Přidal jsem také možnost "Použít" při kliknutí pravým tlačítkem. Intuitivnější a rychlejší!
+  - 🩸 **Oprava poškození:** Už nejste nesmrtelní! Opravili jsme problém, kdy ukazatel zdraví neklesal, i když vás zasáhli. Nyní budete trpět, jak se patří.
+  - 👻 **Sbohem, duchové předmětů:** Našli jste v příběhu předmět, ale nikdy se neobjevil ve vašem batohu? Problém vyřešen! Systém nyní automaticky opravuje předměty, které AI "zapomene" vytvořit.
+  - 🐛 **Kritická oprava NPC:** Vyřešena chyba, která bránila NPC ve správném taktickém rozhodování, což způsobovalo, že místo útoku nebo obrany stále jen "čekaly".
+  - 🎒 **Oprava počátečního inventáře:** Nové postavy už nezačínají nahé. Nyní správně obdrží své počáteční vybavení.
+  - 🎲 **Tvorba postavy:** Opraven exploit, kdy zvyšování a snižování atributu v určitých mezích generovalo nekonečné body navíc. Konec triku s Charismatem!
+  - 🖼️ **Opravené portréty:** Vytvářeli jste svět s vlastním názvem a portréty mizely? Opraveno! Systém nyní najde správné obrázky bez ohledu na to, jak svůj svět pojmenujete.
+  - 💍 **Chytré ikony:** Předměty (včetně prstenů) nyní v rozhraní zobrazují přesnější a správné ikony.
+  - 🧪 **Vylepšené popisky:** Lektvary, spotřební doplňky a kouzla nyní při najetí myší správně zobrazují všechny informace a účinky.
+  - 🎵 **Vylepšení zvuku:** Bojová hudba se už nezastaví po stisknutí předdefinovaných tlačítek.
+  - [I18N] **Oprava implantátů:** Přidány chybějící překladové klíče pro sloty implantátů (`slot_implant_*`) a odpovídající ikony (`icon_implant_*`) v `es.json`.
+  - [FIX][AUDIO] **Nekonzistentní zvuk:** Zvukové efekty (SFX) vybavování předmětů a tasení zbraní přizpůsobeny prostředí. Systém nyní detekuje `setting_key` a používá futuristické/industriální zvuky v Cyberpunku a klasické zvuky ve Fantasy.
+  - [FIX][I18N] **Čištění es.json:** Odstraněno více než 20 duplicitních klíčů v `es.json` a opraveny překlepy v názvech slotů (např. "Oíidos" -> "Oídos").
+  - ⚙️ **Inteligentní detekce modelů:** Hra nyní čte přímo "mozek" modelů, které importujete (GGUF). Automaticky detekuje skutečný maximální kontext. (Optimalizovaných oficiálních modelů se to netýká pro zajištění maximální stability).
+  - 📂 **Úspora místa:** Při přidání modelu z vašeho počítače jej nyní hra přesune přímo do své složky, místo aby jej kopírovala. Vaše gigabajty vám poděkují!
+  - ⚖️ **Spravedlnost v atributech:** Opraven exploit, který umožňoval získat nekonečno bodů při zvyšování a snižování atributů během tvorby.
+  - 📖 **Průvodce tréninkem:** Aktualizoval jsem manuál (README) o všechny podrobnosti týkající se toho, jak vaše postavy získávají zkušenosti a zvyšují své atributy.
+  - 📜 **Kodex epických světů:** Konec lore ve stylu "poznámka pod čarou"! Generátor nyní vytváří světy s hlubokou historií, popisuje jejich náboženství, zákony, geografii a slavné postavy ve formátu podrobné kroniky.
+  - 🧙 **Koherentní příběhy:** Vaše postava se už nerodí v prázdnotě. Její pozadí se nyní inteligentně prolíná s lore světa, který jste právě vytvořili nebo zvolili.
+  - ⚡ **Plynulé rozhraní:** Automatické generování příběhů a světů nyní probíhá na pozadí. Konec čekání se zamrzlou obrazovkou!
+  - 🚀 **Okamžitý začátek dobrodružství:** Odstranil jsem čekání! Nyní po vytvoření postavy skočíte rovnou do příběhu. Systém využije vaše obohacené pozadí k vytvoření dokonalého začátku, aniž byste museli napsat jediné další slovo.
+  - 🎭 **Pozadí s záminkou:** Vaše postavy už nemají jen minulost, ale také naléhavý důvod začít dobrodružství. Nový systém AI automaticky generuje počáteční jiskru příběhu integrovanou do vaší biografie.
+  - 🧹 **Zjednodušené rozhraní:** Odstranil jsem tlačítka a obrazovky, které nepřinášely žádnou hodnotu. Tlačítko "Spustit příběh" nyní centralizuje veškerou sílu, abyste mohli začít hrát co nejdříve.
+  - [FIX][UI] **Vizuální duplicita při výběru světa:** Opravena chyba, kdy se název světa zobrazoval duplicitně jako "Název [Název]". Nyní se štítek typu skryje, pokud je redundantní.
+  - [FEAT][UI] **Rychlé načítání (Jednoduché kliknutí):** Nyní lze načíst postavu nebo zahájit tvorbu nové jedním kliknutím na obrazovce výběru světů. Rozbalování světů zůstalo zachováno, aby se předešlo konfliktům.
+  - 🧠 **Kreativnější AI:** Rozbil jsem "smyčku opakování" AI vložením technické variability do každého požadavku. Náhodně generované postavy budou nyní mnohem unikátnější a originálnější a budou ignorovat příklady z průvodce.
+  
+  🛡️ Pro odvážné, kteří se ODVÁŽÍ bojovat v první linii: Dobrodružství čeká, nyní nezkrotnější než kdy dřív!
 
 ****************************************************************************************************
 06/02/2026 02:32 - Podpora Vulkanu (AMD/Intel) a robustní zpracování chyb - Beta_v053

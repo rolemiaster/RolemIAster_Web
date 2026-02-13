@@ -1,35 +1,54 @@
 ****************************************************************************************************
-07/02/2026 20:26 - Sistema de Interpretación Semántica de Combate - BETA_v054
+13/02/2026 07:56 - Hệ thống Diễn giải Chiến đấu theo Ngữ nghĩa - Beta_v054
 ****************************************************************************************************
-🧪 YA DISPONIBLE:
-
-⚠️ **AVISO IMPORTANTE:** EL JUEGO PUEDE MIGRAR LA ANTIGUA BASE DE DATOS PARA LA NUEVA ESTRUCTURA MEDIANTE OPCIONES DEL LAUNCHER. NO RECOMIENDO ESTO, AUNQUE FUNCIONE TU ANTIGUA PARTIDA, MUCHAS COSAS ESTARÁN ROTAS. MI RECOMENDACIÓN ES ELIMINAR TODAS LAS PARTIDAS ANTERIORES GUARDADAS. NO ES NECESARIO BORRAR LA BASE DE DATOS AL COMPLETO SALVO CASO EXTREMO.
-
-Cambios:
-
-- 🌍 **Gestor de Mundos y Personajes:** Ahora tienes total libertad. Crea tus propios Mundos con sus propias reglas y ambientación, y dentro de cada uno, crea tantos personajes como quieras. **Nota Importante:** Todos los personajes de un mismo mundo comparten la misma línea temporal y los eventos sucedidos, lo que sienta las bases para el futuro modo multijugador.
-- 🧠 **Memoria Contextual (Súper RAG):** La IA ahora tiene "sentidos". Al buscar información en el Lore o en su memoria, tiene en cuenta dónde estás, con quién estás, si estás herido y qué acaba de pasar. ¡Es mucho más intuitivo y coherente!
-- 🌍 **Lore en el Primer Personaje:** ¿Escribías una descripción épica de tu mundo y la IA la ignoraba en tu primer personaje? ¡Solucionado! Ahora la descripción manual del mundo llega directamente a la IA durante la creación inicial.
-- ⚙️ **Sistema de Mundos Mejorado:** He independizado el nombre de tu mundo de las reglas técnicas.
-- 📝 **Claridad en Creación:** He mejorado las instrucciones internas para que la IA entienda mejor cuándo debe inventar un trasfondo.
-- 🧠 **Combate por Texto Libre:** Escribe acciones como "lanzar hechizo de curación" o "desenfundar espada". La IA entiende tu intención.
-- 🎨 **¡Nueva Interfaz Épica!** Remodelación completa estilo RPG con menús animados y bordes neón.
-- 🎬 **IA Director de Escena (MEJORADO):** El combate ahora cobra vida con eventos ambientales.
-- ⚔️ **Desenfundar con Palabras:** Escribe "desenfundar espada" en lugar de hacer clic. ¡Cuidado en combate!
-- 📖 **Hechizos Reconocidos:** La IA conoce tu libro de hechizos completo.
-- 🌍 **Narrativa en tu Idioma:** Respeta estrictamente el idioma seleccionado, evitando mezclas.
-- 🛡️ **No Más Turnos Perdidos:** Si el juego no entiende, te pedirá aclaraciones. Tu turno NO se pierde.
-- 🎒 **Inventario Manual:** Interfaz de arrastrar y soltar para mover objetos.
-- 🧪 **Uso de Pociones Fluido:** Arrastra sobre retrato o usa el menú de clic derecho.
-- 🩸 **Corrección de Daño:** Barra de vida corregida. Ya no eres inmortal.
-- 👻 **Adiós a los Items Fantasma:** Reparación automática de objetos que la IA olvida crear.
-- 🐛 **Corrección Crítica NPC:** Decisiones tácticas de NPCs corregidas.
-- 🎒 **Corrección Inventario Inicial:** Personajes ya no empiezan desnudos.
-- 🎲 **Creación de Personaje:** Exploit de puntos infinitos corregido.
-- 🖼️ **Retratos Arreglados:** El sistema encuentra imágenes correctas independientemente del nombre del mundo.
-- 💍 **Iconos Inteligentes:** Objetos y anillos con iconos precisos.
-- 🧪 **Tooltips Mejorados:** Información completa al pasar el ratón.
-- 🎵 **Mejoras de Audio:** Música no se detiene al pulsar botones.
+- What's New (VI):
+  🧪 HIỆN ĐÃ RA MẮT:
+  
+  ⚠️ **THÔNG BÁO QUAN TRỌNG:** TRÒ CHƠI CÓ THỂ DI CHUYỂN CƠ SỞ DỮ LIỆU CŨ SANG CẤU TRÚC MỚI THÔNG QUA CÁC TÙY CHỌN CỦA LAUNCHER. TÔI KHÔNG KHUYẾN KHÍCH ĐIỀU NÀY, MẶC DÙ FILE LƯU CŨ CỦA BẠN CÓ THỂ HOẠT ĐỘNG, NHƯNG NHIỀU THỨ SẼ BỊ LỖI. KHUYẾN NGHỊ CỦA TÔI LÀ XÓA TẤT CẢ CÁC FILE LƯU TRƯỚC ĐÓ. KHÔNG CẦN THIẾT PHẢI XÓA TOÀN BỘ CƠ SỞ DỮ LIỆU TRỪ TRƯỜNG HỢP BẤT KHẢ KHÁNG.
+  
+  Những thay đổi:
+  
+  - 🌍 **Quản lý Thế giới và Nhân vật:** Giờ đây bạn có sự tự do tuyệt đối. Tạo Thế giới của riêng bạn với các quy tắc và bối cảnh riêng, và bên trong mỗi thế giới, tạo bao nhiêu nhân vật tùy thích. **Lưu ý Quan trọng:** Tất cả các nhân vật trong cùng một thế giới chia sẻ cùng một dòng thời gian và các sự kiện đã xảy ra, điều này đặt nền móng cho chế độ nhiều người chơi trong tương lai.
+  - 🧠 **Bộ nhớ Ngữ cảnh (Siêu RAG):** AI giờ đây đã có "giác quan". Khi tìm kiếm thông tin trong Truyền thuyết (Lore) hoặc trong bộ nhớ của nó, nó sẽ tính đến việc bạn đang ở đâu, bạn đang ở cùng ai, bạn có bị thương không và điều gì vừa xảy ra. Nếu bạn đang ở cùng một vị Vua, nó sẽ nhớ những điều về vua chúa. Nếu bạn bị thương, nó sẽ tìm kiếm các quy tắc về chữa trị. Nó trực quan và mạch lạc hơn nhiều!
+  - 🌍 **Cốt truyện ở Nhân vật Đầu tiên:** Bạn đã viết một mô tả sử thi về thế giới của mình và AI lại phớt lờ nó ở nhân vật đầu tiên? Đã giải quyết! Giờ đây, mô tả thế giới thủ công sẽ được chuyển trực tiếp đến AI trong quá trình tạo ban đầu, ngay cả trước khi hệ thống bộ nhớ kích hoạt.
+  - ⚙️ **Hệ thống Thế giới Cải tiến:** Tôi đã tách biệt tên thế giới của bạn khỏi các quy tắc kỹ thuật. Giờ đây bạn có thể đặt tên thế giới theo ý muốn mà không ảnh hưởng đến việc tải các quy tắc Giả tưởng (Fantasy) hay Cyberpunk.
+  - 📝 **Sự rõ ràng trong Tạo nhân vật:** Tôi đã cải thiện các hướng dẫn nội bộ để AI hiểu rõ hơn khi nào nên tự tạo tiểu sử và khi nào nên giới hạn việc trích xuất các chỉ số của bạn.
+  - 🧠 **Chiến đấu bằng Văn bản Tự do:** Giờ đây bạn có thể viết các hành động chiến đấu của mình như thể đang nói chuyện với một nhân vật trong game tabletop: "thi triển phép hồi máu lên bản thân", "rút kiếm", "dùng bình máu". AI hiểu ý định của bạn và dịch nó sang cơ chế trò chơi.
+  - 🎨 **Giao diện Mới Sử thi!** Tôi đã thiết kế lại hoàn toàn trò chơi. Menu phong cách RPG, hình nền động và trải nghiệm hình ảnh hoàn toàn mới. Phong cách tối bán trong suốt, viền neon và bóng đổ mềm mại để tăng sự nhập tâm tuyệt đối.
+  - 🎬 **AI Đạo diễn Cảnh (CẢI TIẾN):** Chiến đấu giờ đây trở nên sống động. AI tạo ra các sự kiện môi trường và phản ứng làm phong phú thêm câu chuyện: đuốc rơi xuống, kẻ thù lùi bước, xà nhà sập xuống. Chiến trường không còn tĩnh lặng nữa!
+  - ⚔️ **Rút vũ khí bằng Lời nói:** Bạn không cần phải nhấp vào ô vũ khí nữa. Chỉ cần viết "rút kiếm" hoặc "lấy rìu ra" và hệ thống sẽ tự động diễn giải (CHÚ Ý!, làm điều này trong chiến đấu có thể dẫn đến thất bại, hớ hênh và mất lượt!... "Đã vào trận là phải chuẩn bị sẵn sàng từ nhà!").
+  - 📖 **Nhận diện Phép thuật:** AI giờ đây biết toàn bộ sách phép của bạn. Hãy nói "bắn quả cầu lửa" và nếu bạn có phép đó, nó sẽ được thi triển.
+  - 🌍 **Dẫn chuyện theo Ngôn ngữ của bạn:** Câu chuyện giờ đây tuân thủ nghiêm ngặt ngôn ngữ đã chọn, tránh sự pha trộn kỳ lạ giữa các ngôn ngữ (hy vọng tôi không bao giờ phải thấy Spanglish nữa!, tôi đã ép AI nhiều đến mức nếu nó tạo ra văn bản bằng ngôn ngữ khác với ngôn ngữ đã chọn, thì đó thực sự là do nó bị nguyền rủa).
+  - 🛡️ **Không còn Mất Lượt:** Nếu trò chơi không hiểu hành động của bạn, nó sẽ yêu cầu bạn diễn đạt lại. Lượt của bạn KHÔNG bị mất.
+  - 🎒 **Túi đồ Thủ công:** Để di chuyển vật phẩm giữa các ô (trang bị từ ba lô, nạp đạn), hãy sử dụng giao diện kéo và thả. Điều này tránh nhầm lẫn và tiết kiệm tài nguyên AI.
+  - 🧪 **Sử dụng Thuốc Mượt mà:** Giờ đây bạn có thể kéo thuốc và thức ăn trực tiếp lên chân dung của mình để sử dụng. Tôi cũng đã thêm tùy chọn "Sử dụng" khi nhấp chuột phải. Trực quan và nhanh hơn!
+  - 🩸 **Sửa lỗi Sát thương:** Bạn không còn bất tử nữa! Chúng tôi đã sửa một vấn đề khiến thanh máu không giảm dù bạn bị đánh. Giờ thì bạn sẽ phải chịu đau đớn như lẽ thường.
+  - 👻 **Tạm biệt Vật phẩm Ma:** Bạn tìm thấy một vật phẩm trong cốt truyện nhưng nó không bao giờ xuất hiện trong ba lô? Vấn đề đã được giải quyết! Giờ đây hệ thống tự động sửa các vật phẩm mà AI "quên" tạo ra.
+  - 🐛 **Sửa lỗi Nghiêm trọng NPC:** Đã khắc phục lỗi ngăn cản các NPC đưa ra quyết định chiến thuật chính xác, khiến chúng luôn "chờ đợi" thay vì tấn công hoặc phòng thủ.
+  - 🎒 **Sửa lỗi Trang bị Khởi đầu:** Các nhân vật mới không còn bắt đầu trong tình trạng trần truồng. Giờ đây họ nhận được trang bị khởi đầu một cách chính xác.
+  - 🎲 **Tạo Nhân vật:** Đã sửa một lỗ hổng (exploit) nơi việc tăng giảm một thuộc tính ở các ngưỡng nhất định tạo ra điểm cộng thêm vô hạn. Đã hết mánh khóe Chỉ số Hấp dẫn!
+  - 🖼️ **Sửa lỗi Chân dung:** Bạn tạo một thế giới với tên riêng và chân dung biến mất? Đã sửa! Giờ đây hệ thống tìm thấy hình ảnh chính xác bất kể bạn đặt tên thế giới là gì.
+  - 💍 **Biểu tượng Thông minh:** Các vật phẩm (bao gồm cả nhẫn) giờ đây hiển thị biểu tượng chính xác và đúng đắn hơn trong giao diện.
+  - 🧪 **Tooltip Cải tiến:** Thuốc, vật phẩm tiêu hao và phép thuật giờ đây hiển thị chính xác toàn bộ thông tin và hiệu ứng khi di chuột qua.
+  - 🎵 **Cải tiến Âm thanh:** Nhạc chiến đấu không còn dừng lại khi nhấn các nút định sẵn.
+  - [I18N] **Sửa lỗi Cấy ghép:** Đã thêm các khóa dịch còn thiếu cho các ô cấy ghép (`slot_implant_*`) và các biểu tượng tương ứng (`icon_implant_*`) trong `es.json`.
+  - [FIX][AUDIO] **Âm thanh Không nhất quán:** Đã điều chỉnh hiệu ứng âm thanh (SFX) khi trang bị vật phẩm và rút vũ khí cho phù hợp với bối cảnh. Giờ đây hệ thống phát hiện `setting_key` và sử dụng âm thanh tương lai/công nghiệp trong Cyberpunk và âm thanh cổ điển trong Fantasy.
+  - [FIX][I18N] **Dọn dẹp es.json:** Đã xóa hơn 20 khóa trùng lặp trong `es.json` và sửa lỗi chính tả trong tên các ô (ví dụ: "Oíidos" -> "Oídos").
+  - ⚙️ **Phát hiện Mô hình Thông minh:** Giờ đây trò chơi đọc trực tiếp "bộ não" của các mô hình mà bạn nhập vào (GGUF). Tự động phát hiện ngữ cảnh tối đa thực tế. (Các mô hình chính thức đã được tối ưu hóa sẽ không bị đụng vào để đảm bảo độ ổn định tối đa).
+  - 📂 **Tiết kiệm Dung lượng:** Khi thêm một mô hình từ máy tính của bạn, trò chơi giờ đây sẽ di chuyển nó trực tiếp vào thư mục thay vì sao chép. Các Gigabyte của bạn sẽ cảm ơn điều này!
+  - ⚖️ **Công bằng trong Chỉ số:** Đã sửa một lỗ hổng cho phép nhận điểm vô hạn khi tăng giảm thuộc tính trong quá trình tạo nhân vật.
+  - 📖 **Hướng dẫn Huấn luyện:** Tôi đã cập nhật Sổ tay (README) với tất cả các chi tiết về cách nhân vật của bạn nhận kinh nghiệm và tăng thuộc tính.
+  - 📜 **Mật mã Thế giới Sử thi:** Đã hết thời của cốt truyện kiểu "tái bút"! Giờ đây trình tạo sẽ tạo ra các thế giới với lịch sử sâu sắc, mô tả tôn giáo, luật pháp, địa lý và các nhân vật nổi tiếng dưới định dạng biên niên sử chi tiết.
+  - 🧙 **Cốt truyện Mạch lạc:** Nhân vật của bạn không còn được sinh ra trong hư vô. Tiểu sử giờ đây tích hợp một cách thông minh với truyền thuyết của thế giới mà bạn vừa tạo hoặc chọn.
+  - ⚡ **Giao diện Mượt mà:** Việc tự động tạo câu chuyện và thế giới giờ đây được thực hiện trong nền. Không còn cảnh chờ đợi với màn hình bị đóng băng!
+  - 🚀 **Bắt đầu Phiêu lưu Tức thì:** Tôi đã loại bỏ thời gian chờ đợi! Giờ đây, sau khi tạo nhân vật, bạn sẽ nhảy trực tiếp vào câu chuyện. Hệ thống sử dụng tiểu sử phong phú của bạn để tạo ra sự khởi đầu hoàn hảo mà không cần bạn phải viết thêm một từ nào nữa.
+  - 🎭 **Tiểu sử có Mục đích:** Nhân vật của bạn không chỉ có quá khứ, mà còn có lý do cấp bách để bắt đầu cuộc phiêu lưu. Hệ thống AI mới tự động tạo ra tia lửa khởi đầu của câu chuyện được tích hợp trong tiểu sử của bạn.
+  - 🧹 **Giao diện Đơn giản hóa:** Tôi đã loại bỏ các nút và màn hình không mang lại giá trị. Nút "Bắt đầu Câu chuyện" giờ đây tập trung toàn bộ quyền năng để bạn bắt đầu chơi sớm nhất có thể.
+  - [FIX][UI] **Lỗi Hiển thị Trùng lặp trong Chọn Thế giới:** Đã sửa lỗi tên thế giới bị trùng lặp dạng "Tên [Tên]". Giờ đây nhãn loại sẽ bị ẩn nếu dư thừa.
+  - [FEAT][UI] **Tải Nhanh (Click Đơn):** Giờ đây có thể tải một nhân vật hoặc bắt đầu tạo mới chỉ với một cú nhấp chuột tại màn hình chọn thế giới. Việc mở rộng thế giới vẫn được giữ nguyên để tránh xung đột.
+  - 🧠 **AI Sáng tạo hơn:** Tôi đã phá vỡ "vòng lặp lặp lại" của AI bằng cách tiêm vào sự biến đổi kỹ thuật trong mỗi yêu cầu. Giờ đây các nhân vật được tạo ngẫu nhiên sẽ độc đáo và nguyên bản hơn nhiều, bỏ qua các ví dụ trong hướng dẫn.
+  
+  🛡️ Gửi đến những kẻ dũng cảm DÁM chiến đấu nơi tiền tuyến: Cuộc phiêu lưu đang chờ đón các bạn, giờ đây bất khuất hơn bao giờ hết!
 
 ****************************************************************************************************
 06/02/2026 02:32 - Hỗ trợ Vulkan (AMD/Intel) và Xử lý Lỗi Mạnh mẽ - Beta_v053

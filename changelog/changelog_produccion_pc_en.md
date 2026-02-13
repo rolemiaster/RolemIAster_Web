@@ -1,51 +1,54 @@
 ****************************************************************************************************
-07/02/2026 20:26 - Combat Semantic Interpretation System - BETA_v054
+13/02/2026 07:56 - Semantic Combat Interpretation System - Beta_v054
 ****************************************************************************************************
-🧪 NOW AVAILABLE:
-
-⚠️ **IMPORTANT NOTICE:** THE GAME CAN MIGRATE THE OLD DATABASE TO THE NEW STRUCTURE THROUGH LAUNCHER OPTIONS. I DO NOT RECOMMEND THIS; EVEN IF YOUR OLD SAVE WORKS, MANY THINGS WILL BE BROKEN. MY RECOMMENDATION IS TO DELETE ALL PREVIOUS SAVES. IT IS NOT NECESSARY TO DELETE THE ENTIRE DATABASE EXCEPT IN EXTREME CASES.
-
-Changes:
-
-- 🌍 **World and Character Manager:** Now you have total freedom. Create your own Worlds with their own rules and setting, and within each one, create as many characters as you want. All characters in the same world share the same timeline and events, laying the foundation for future multiplayer mode.
-- 🧠 **Contextual Memory (Super RAG):** The AI now has 'senses.' It takes into account where you are, who you are with, and what just happened. It's much more intuitive and coherent!
-- 🌍 **Lore in the First Character:** Fixed! Now the manual description of the world reaches the AI directly during initial creation.
-- ⚙️ **Improved World System:** Decoupled world names from technical rules.
-- 📝 **Creation Clarity:** Improved internal instructions for character background generation.
-- 🧠 **Free Text Combat:** Write actions like 'cast healing spell' or 'draw sword'. The AI understands intent and translates it to mechanics.
-- 🎨 **New Epic Interface!** Completely remodeled with RPG-style menus, animated backgrounds, and neon edge immersion.
-- 🎬 **AI Scene Director (IMPROVED):** Combat comes to life with environmental events and reactions.
-- ⚔️ **Draw with Words:** Type 'draw sword' instead of clicking slots. Careful! Doing this in combat can result in failure or losing a turn.
-- 📖 **Recognized Spells:** The AI knows your entire spellbook.
-- 🌍 **Narrative in your Language:** Strictly respects selected language, avoiding mixed translations.
-- 🛡️ **No More Lost Turns:** If the game doesn't understand, it asks for clarification. Your turn is NOT lost.
-- 🎒 **Manual Inventory:** Drag-and-drop interface for moving items between slots.
-- 🧪 **Fluid Potion Use:** Drag items onto portraits or use the right-click menu.
-- 🩸 **Damage Correction:** Fixed health bar issues. You are no longer immortal.
-- 👻 **Goodbye Ghost Items:** Automatically repairs items the AI 'forgets' to create.
-- 🐛 **Critical NPC Fix:** Fixed tactical decision making for NPCs.
-- 🎒 **Initial Inventory Fix:** Fixed starting equipment for new characters.
-- 🎲 **Character Creation:** Fixed an exploit for infinite attribute points.
-- 🖼️ **Fixed Portraits:** System finds correct images regardless of world name.
-- 💍 **Smart Icons:** Objects and rings with precise icons.
-- 🧪 **Improved Tooltips:** Full information on hover.
-- 🎵 **Audio Improvements:** Combat music doesn't stop when pressing buttons.
-- [I18N] **Implant Fix:** Added translations for slots and icons.
-- [FIX][AUDIO] **Inconsistent Audio:** Sounds adapted to the setting.
-- [FIX][I18N] **es.json Cleanup:** Filtered duplicates.
-- ⚙️ **Smart Model Detection:** Reads GGUF models directly. Auto context manager.
-- 📂 **Space Saving:** Moves models instead of copying.
-- ⚖️ **Attribute Justice:** Fixed infinite points exploit.
-- 📖 **Training Guide:** README updated with experience system.
-- 📜 **Epic World Codex:** Deep history generation (religions, laws, geography).
-- 🧙 **Coherent Stories:** Background integrated with world lore.
-- ⚡ **Fluid Interface:** Background generation (no freezing).
-- 🚀 **Instant Adventure Start:** Direct start after creation.
-- 🎭 **Backgrounds with Pretext:** Urgent reason to start the adventure.
-- 🧹 **Simplified Interface:** 'Start Story' button centralized.
-- [FIX][UI] **Visual Duplication:** Fixed world name bug.
-- [FEAT][UI] **Quick Load:** Single click to load/create.
-- 🧠 **More Creative AI:** Technical variability injected to break repeat loops.
+- What's New (EN):
+  🧪 NOW AVAILABLE:
+  
+  ⚠️ **IMPORTANT NOTICE:** THE GAME CAN MIGRATE THE OLD DATABASE TO THE NEW STRUCTURE VIA LAUNCHER OPTIONS. I DO NOT RECOMMEND THIS; EVEN IF YOUR OLD SAVE WORKS, MANY THINGS WILL BE BROKEN. MY RECOMMENDATION IS TO DELETE ALL PREVIOUS SAVES. IT IS NOT NECESSARY TO DELETE THE ENTIRE DATABASE EXCEPT IN EXTREME CASES.
+  
+  Changes:
+  
+  - 🌍 **World and Character Manager:** Now you have total freedom. Create your own Worlds with their own rules and setting, and within each one, create as many characters as you want. **Important Note:** All characters in the same world share the same timeline and events, laying the groundwork for the future multiplayer mode.
+  - 🧠 **Contextual Memory (Super RAG):** The AI now has "senses". When searching for information in Lore or its memory, it takes into account where you are, who you are with, if you are injured, and what just happened. If you are with a King, it will remember things about kings. If you are injured, it will look for healing rules. It's much more intuitive and coherent!
+  - 🌍 **Lore in the First Character:** Were you writing an epic description of your world only for the AI to ignore it on your first character? Solved! Now the manual world description reaches the AI directly during initial creation, even before the memory system activates.
+  - ⚙️ **Improved World System:** I have decoupled your world's name from technical rules. Now you can name your world whatever you want without affecting the loading of Fantasy or Cyberpunk rules.
+  - 📝 **Clarity in Creation:** I've improved internal instructions so the AI better understands when to invent a backstory and when to strictly extract your statistics.
+  - 🧠 **Free Text Combat:** Now you can write your combat actions as if talking to a tabletop GM: "cast healing spell on myself", "unsheathe my sword", "use healing potion". The AI understands your intent and translates it into game mechanics.
+  - 🎨 **New Epic Interface!** I've completely remodeled the game. RPG-style menus, animated backgrounds, and a totally renewed visual experience. Semi-transparent dark style, neon borders, and softened shadows for total immersion.
+  - 🎬 **AI Scene Director (IMPROVED):** Combat now comes to life. The AI generates environmental events and reactions that enrich the narrative: torches falling, enemies retreating, beams collapsing. The battlefield is no longer static!
+  - ⚔️ **Unsheathe with Words:** You no longer need to click on the weapon slot. Simply type "unsheathe sword" or "draw my axe" and the system interprets it automatically (WATCH OUT! doing this in combat can result in failure, fumbles, and lost turns!... "You come to combat prepared!").
+  - 📖 **Recognized Spells:** The AI now knows your full spellbook. Say "cast fireball" and if you have that spell, it will cast it.
+  - 🌍 **Narrative in Your Language:** The story now strictly respects the selected language, avoiding weird mixtures between languages (I hope I never have to see Spanglish again! I've forced the AI so much that I'd say if it generates text in a language other than the selected one again, it's purely because it's truly cursed).
+  - 🛡️ **No More Lost Turns:** If the game doesn't understand your action, it will ask you to rephrase it. Your turn is NOT lost.
+  - 🎒 **Manual Inventory:** To move items between slots (equip from backpack, load ammo), use the drag-and-drop interface. This avoids confusion and saves AI resources.
+  - 🧪 **Fluid Potion Use:** Now you can drag potions and food directly onto your portrait to use them. I've also added the "Use" option on right-click. More intuitive and faster!
+  - 🩸 **Damage Fix:** You are no longer immortal! We fixed an issue where the health bar wouldn't go down even if you were hit. Now you will suffer properly.
+  - 👻 **Goodbye Ghost Items:** Did you find an item in the story but it never appeared in your backpack? Problem solved! Now the system automatically repairs items that the AI "forgets" to create.
+  - 🐛 **Critical NPC Fix:** Fixed a bug that prevented NPCs from making tactical decisions correctly, causing them to always "wait" instead of attacking or defending.
+  - 🎒 **Initial Inventory Fix:** New characters no longer start naked. Now they receive their starting equipment correctly.
+  - 🎲 **Character Creation:** Fixed an exploit where raising and lowering an attribute at certain thresholds generated infinite extra points. The Charisma trick is over!
+  - 🖼️ **Portraits Fixed:** Did you create a custom-named world and the portraits disappeared? Fixed! Now the system finds the correct images regardless of what you christen your world.
+  - 💍 **Smart Icons:** Items (including rings) now show more precise and correct icons in the interface.
+  - 🧪 **Improved Tooltips:** Potions, consumables, and spells now correctly display all their information and effects when hovering the mouse over them.
+  - 🎵 **Audio Improvements:** Combat music no longer stops when pressing predefined buttons.
+  - [I18N] **Implant Fix:** Added missing translation keys for implant slots (`slot_implant_*`) and corresponding icons (`icon_implant_*`) in `es.json`.
+  - [FIX][AUDIO] **Inconsistent Audio:** Adapted sound effects (SFX) for equipping items and unsheathing weapons to the setting. The system now detects the `setting_key` and uses futuristic/industrial sounds in Cyberpunk and classic sounds in Fantasy.
+  - [FIX][I18N] **es.json Cleanup:** Removed over 20 duplicate keys in `es.json` and fixed typos in slot names (e.g., "Oíidos" -> "Oídos").
+  - ⚙️ **Smart Model Detection:** Now the game directly reads the "brain" of the models you import (GGUF). It automatically detects the actual maximum context. (Optimized official models are left untouched for maximum stability).
+  - 📂 **Space Saving:** When adding a model from your computer, the game now moves it directly to its folder instead of copying it. Your Gigabytes will thank you!
+  - ⚖️ **Fairness in Attributes:** Fixed an exploit that allowed getting infinite points by raising and lowering attributes during creation.
+  - 📖 **Training Guide:** I have updated the Manual (README) with all details on how your characters gain experience and raise their attributes.
+  - 📜 **Epic World Codex:** No more "postscript" lore! The generator now creates worlds with deep history, describing their religions, laws, geography, and famous characters in a detailed chronicle format.
+  - 🧙 **Coherent Stories:** Your character is no longer born in a void. Their backstory now intelligently integrates with the lore of the world you just created or chose.
+  - ⚡ **Fluid Interface:** Story and world autogeneration is now performed in the background. No more waiting with a frozen screen!
+  - 🚀 **Instant Adventure Start:** I've eliminated the wait times! Now, after creating your character, you jump straight into the story. The system uses your enriched backstory to create the perfect beginning without you having to write a single word.
+  - 🎭 **Backstories with Pretext:** Your characters no longer just have a past, but also an urgent motive to start the adventure. The new AI system automatically generates the initial spark of the story integrated into your biography.
+  - 🧹 **Simplified Interface:** I've removed buttons and screens that didn't add value. The "Start Story" button now centralizes all power so you can start playing as soon as possible.
+  - [FIX][UI] **Visual Duplication in World Selection:** Fixed a bug where the world name appeared duplicated as "Name [Name]". The type tag is now hidden if redundant.
+  - [FEAT][UI] **Quick Load (Simple Click):** You can now load a character or start creating a new one with a single click on the world selection screen. World expansion is maintained to avoid conflicts.
+  - 🧠 **More Creative AI:** I've broken the AI's "repetition loop" by injecting technical variability into every request. Now randomly generated characters will be much more unique and original, ignoring the guide examples.
+  
+  🛡️ To the brave ones who DARE to fight on the front lines: Adventure awaits you, now more untamable than ever!
 
 ****************************************************************************************************
 06/02/2026 02:32 - Vulkan Support (AMD/Intel) and Robust Error Handling - Beta_v053

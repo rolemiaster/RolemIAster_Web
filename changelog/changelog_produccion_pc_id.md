@@ -1,35 +1,54 @@
 ****************************************************************************************************
-07/02/2026 20:26 - Sistema de Interpretación Semántica de Combate - BETA_v054
+13/02/2026 07:56 - Sistem Interpretasi Pertarungan Semantik - Beta_v054
 ****************************************************************************************************
-🧪 YA DISPONIBLE:
-
-⚠️ **AVISO IMPORTANTE:** EL JUEGO PUEDE MIGRAR LA ANTIGUA BASE DE DATOS PARA LA NUEVA ESTRUCTURA MEDIANTE OPCIONES DEL LAUNCHER. NO RECOMIENDO ESTO, AUNQUE FUNCIONE TU ANTIGUA PARTIDA, MUCHAS COSAS ESTARÁN ROTAS. MI RECOMENDACIÓN ES ELIMINAR TODAS LAS PARTIDAS ANTERIORES GUARDADAS. NO ES NECESARIO BORRAR LA BASE DE DATOS AL COMPLETO SALVO CASO EXTREMO.
-
-Cambios:
-
-- 🌍 **Gestor de Mundos y Personajes:** Ahora tienes total libertad. Crea tus propios Mundos con sus propias reglas y ambientación, y dentro de cada uno, crea tantos personajes como quieras. **Nota Importante:** Todos los personajes de un mismo mundo comparten la misma línea temporal y los eventos sucedidos, lo que sienta las bases para el futuro modo multijugador.
-- 🧠 **Memoria Contextual (Súper RAG):** La IA ahora tiene "sentidos". Al buscar información en el Lore o en su memoria, tiene en cuenta dónde estás, con quién estás, si estás herido y qué acaba de pasar. ¡Es mucho más intuitivo y coherente!
-- 🌍 **Lore en el Primer Personaje:** ¿Escribías una descripción épica de tu mundo y la IA la ignoraba en tu primer personaje? ¡Solucionado! Ahora la descripción manual del mundo llega directamente a la IA durante la creación inicial.
-- ⚙️ **Sistema de Mundos Mejorado:** He independizado el nombre de tu mundo de las reglas técnicas.
-- 📝 **Claridad en Creación:** He mejorado las instrucciones internas para que la IA entienda mejor cuándo debe inventar un trasfondo.
-- 🧠 **Combate por Texto Libre:** Escribe acciones como "lanzar hechizo de curación" o "desenfundar espada". La IA entiende tu intención.
-- 🎨 **¡Nueva Interfaz Épica!** Remodelación completa estilo RPG con menús animados y bordes neón.
-- 🎬 **IA Director de Escena (MEJORADO):** El combate ahora cobra vida con eventos ambientales.
-- ⚔️ **Desenfundar con Palabras:** Escribe "desenfundar espada" en lugar de hacer clic. ¡Cuidado en combate!
-- 📖 **Hechizos Reconocidos:** La IA conoce tu libro de hechizos completo.
-- 🌍 **Narrativa en tu Idioma:** Respeta estrictamente el idioma seleccionado, evitando mezclas.
-- 🛡️ **No Más Turnos Perdidos:** Si el juego no entiende, te pedirá aclaraciones. Tu turno NO se pierde.
-- 🎒 **Inventario Manual:** Interfaz de arrastrar y soltar para mover objetos.
-- 🧪 **Uso de Pociones Fluido:** Arrastra sobre retrato o usa el menú de clic derecho.
-- 🩸 **Corrección de Daño:** Barra de vida corregida. Ya no eres inmortal.
-- 👻 **Adiós a los Items Fantasma:** Reparación automática de objetos que la IA olvida crear.
-- 🐛 **Corrección Crítica NPC:** Decisiones tácticas de NPCs corregidas.
-- 🎒 **Corrección Inventario Inicial:** Personajes ya no empiezan desnudos.
-- 🎲 **Creación de Personaje:** Exploit de puntos infinitos corregido.
-- 🖼️ **Retratos Arreglados:** El sistema encuentra imágenes correctas independientemente del nombre del mundo.
-- 💍 **Iconos Inteligentes:** Objetos y anillos con iconos precisos.
-- 🧪 **Tooltips Mejorados:** Información completa al pasar el ratón.
-- 🎵 **Mejoras de Audio:** Música no se detiene al pulsar botones.
+- What's New (ID):
+  🧪 TERSEDIA SEKARANG:
+  
+  ⚠️ **PEMBERITAHUAN PENTING:** GAME DAPAT MEMIGRASI BASIS DATA LAMA KE STRUKTUR BARU MELALUI OPSI PELUNCUR. SAYA TIDAK MENYARANKAN INI, MESKIPUN SAVE LAMA ANDA BERFUNGSI, BANYAK HAL AKAN RUSAK. REKOMENDASI SAYA ADALAH MENGHAPUS SEMUA SAVE SEBELUMNYA. TIDAK PERLU MENGHAPUS BASIS DATA SECARA KESELURUHAN KECUALI DALAM KASUS EKSTREM.
+  
+  Perubahan:
+  
+  - 🌍 **Pengelola Dunia dan Karakter:** Sekarang Anda memiliki kebebasan penuh. Buat Dunia Anda sendiri dengan aturan dan latar suasananya sendiri, dan di dalam masing-masing dunia, buat karakter sebanyak yang Anda inginkan. **Catatan Penting:** Semua karakter di dunia yang sama berbagi garis waktu dan peristiwa yang sama, yang menjadi dasar untuk mode multipemain di masa depan.
+  - 🧠 **Memori Kontekstual (Super RAG):** AI sekarang memiliki "indra". Saat mencari informasi di Lore atau di memorinya, ia memperhitungkan di mana Anda berada, dengan siapa Anda berada, apakah Anda terluka, dan apa yang baru saja terjadi. Jika Anda bersama seorang Raja, ia akan mengingat hal-hal tentang raja. Jika Anda terluka, ia akan mencari aturan tentang penyembuhan. Jauh lebih intuitif dan koheren!
+  - 🌍 **Lore pada Karakter Pertama:** Apakah Anda menulis deskripsi epik tentang dunia Anda dan AI mengabaikannya pada karakter pertama Anda? Teratasi! Sekarang deskripsi dunia manual langsung sampai ke AI selama pembuatan awal, bahkan sebelum sistem memori aktif.
+  - ⚙️ **Sistem Dunia yang Ditingkatkan:** Saya telah memisahkan nama dunia Anda dari aturan teknis. Sekarang Anda dapat menamai dunia Anda sesuka hati tanpa memengaruhi pemuatan aturan Fantasi atau Cyberpunk.
+  - 📝 **Kejelasan dalam Pembuatan:** Saya telah meningkatkan instruksi internal agar AI lebih memahami kapan harus mengarang latar belakang dan kapan harus membatasi diri untuk mengekstrak statistik Anda.
+  - 🧠 **Pertarungan Teks Bebas:** Sekarang Anda dapat menulis tindakan Anda dalam pertempuran seolah-olah berbicara dengan karakter meja: "rapalkan mantra penyembuhan pada saya", "hunus pedang saya", "gunakan ramuan penyembuhan". AI memahami niat Anda dan menerjemahkannya ke dalam mekanika permainan.
+  - 🎨 **Antarmuka Epik Baru!** Saya telah merombak permainan sepenuhnya. Menu gaya RPG, latar belakang animasi, dan pengalaman visual yang benar-benar baru. Gaya gelap semi-transparan, tepian neon, dan bayangan lembut untuk imersi total.
+  - 🎬 **Sutradara Adegan AI (DITINGKATKAN):** Pertarungan sekarang menjadi hidup. AI menghasilkan peristiwa lingkungan dan reaksi yang memperkaya narasi: obor yang jatuh, musuh yang mundur, balok yang runtuh. Medan perang tidak lagi statis!
+  - ⚔️ **Menghunus dengan Kata-kata:** Anda tidak perlu lagi mengklik slot senjata. Cukup ketik "hunus pedang" atau "keluarkan kapak saya" dan sistem menafsirkannya secara otomatis (HATI-HATI!, melakukannya dalam pertempuran dapat menyebabkan kegagalan, kecerobohan, dan kehilangan giliran!... "Datanglah ke pertempuran dengan persiapan dari rumah!").
+  - 📖 **Mantra Dikenali:** AI sekarang mengetahui buku mantra lengkap Anda. Katakan "lemparkan bola api" dan jika Anda memiliki mantra itu, ia akan melemparkannya.
+  - 🌍 **Narasi dalam Bahasa Anda:** Cerita sekarang sangat menghormati bahasa yang dipilih, menghindari pencampuran bahasa yang aneh (semoga saya tidak perlu melihat Spanglish lagi!, saya telah memaksa AI sedemikian rupa sehingga jika ia menghasilkan teks dalam bahasa lain selain yang dipilih, itu murni karena ia benar-benar terkutuk).
+  - 🛡️ **Tidak Ada Lagi Giliran yang Hilang:** Jika permainan tidak memahami tindakan Anda, ia akan meminta Anda untuk menyusun ulang kalimatnya. Giliran Anda TIDAK hilang.
+  - 🎒 **Inventaris Manual:** Untuk memindahkan barang antar slot (melengkapi dari ransel, memuat amunisi), gunakan antarmuka seret dan lepas. Ini menghindari kebingungan dan menghemat sumber daya AI.
+  - 🧪 **Penggunaan Ramuan yang Lancar:** Sekarang Anda dapat menyeret ramuan dan makanan langsung ke potret Anda untuk menggunakannya. Saya juga telah menambahkan opsi "Gunakan" saat klik kanan. Lebih intuitif dan cepat!
+  - 🩸 **Perbaikan Kerusakan:** Anda tidak lagi abadi! Kami telah memperbaiki masalah di mana bilah kesehatan tidak berkurang meskipun Anda terkena serangan. Sekarang Anda akan menderita sebagaimana mestinya.
+  - 👻 **Selamat Tinggal Item Hantu:** Apakah Anda menemukan objek dalam cerita tetapi tidak pernah muncul di ransel Anda? Masalah terpecahkan! Sekarang sistem secara otomatis memperbaiki objek yang "lupa" dibuat oleh AI.
+  - 🐛 **Perbaikan Kritis NPC:** Memperbaiki bug yang mencegah NPC membuat keputusan taktis dengan benar, menyebabkan mereka selalu "menunggu" alih-alih menyerang atau bertahan.
+  - 🎒 **Perbaikan Inventaris Awal:** Karakter baru tidak lagi mulai dengan telanjang. Sekarang mereka menerima peralatan awal mereka dengan benar.
+  - 🎲 **Pembuatan Karakter:** Memperbaiki eksploitasi di mana menaikkan dan menurunkan atribut pada ambang batas tertentu menghasilkan poin ekstra tak terbatas. Trik Karisma sudah berakhir!
+  - 🖼️ **Potret Diperbaiki:** Apakah Anda membuat dunia dengan nama khusus dan potretnya menghilang? Diperbaiki! Sekarang sistem menemukan gambar yang benar tidak peduli bagaimana Anda menamai dunia Anda.
+  - 💍 **Ikon Cerdas:** Objek (termasuk cincin) sekarang menampilkan ikon yang lebih akurat dan benar di antarmuka.
+  - 🧪 **Tooltip Ditingkatkan:** Ramuan, barang habis pakai, dan mantra sekarang menampilkan semua informasi dan efeknya dengan benar saat mouse diarahkan ke atasnya.
+  - 🎵 **Peningkatan Audio:** Musik pertarungan tidak lagi berhenti saat menekan tombol yang telah ditentukan.
+  - [I18N] **Perbaikan Implan:** Menambahkan kunci terjemahan yang hilang untuk slot implan (`slot_implant_*`) dan ikon yang sesuai (`icon_implant_*`) di `es.json`.
+  - [FIX][AUDIO] **Audio Tidak Konsisten:** Menyesuaikan efek suara (SFX) saat melengkapi item dan menghunus senjata dengan latar suasana. Sekarang sistem mendeteksi `setting_key` dan menggunakan suara futuristik/industrial di Cyberpunk dan suara klasik di Fantasi.
+  - [FIX][I18N] **Pembersihan es.json:** Menghapus lebih dari 20 kunci ganda di `es.json` dan memperbaiki salah ketik pada nama slot (mis. "Oíidos" -> "Oídos").
+  - ⚙️ **Deteksi Model Cerdas:** Sekarang game membaca langsung "otak" model yang Anda impor (GGUF). Mendeteksi konteks maksimum yang sebenarnya secara otomatis. (Model resmi yang dioptimalkan tidak disentuh demi stabilitas maksimal).
+  - 📂 **Hemat Ruang:** Saat menambahkan model dari komputer Anda, game sekarang memindahkannya langsung ke foldernya alih-alih menyalinnya. Gigabyte Anda akan berterima kasih!
+  - ⚖️ **Keadilan dalam Atribut:** Memperbaiki eksploitasi yang memungkinkan mendapatkan poin tak terbatas saat menaikkan dan menurunkan atribut dalam pembuatan.
+  - 📖 **Panduan Pelatihan:** Saya telah memperbarui Manual (README) dengan semua detail tentang bagaimana karakter Anda mendapatkan pengalaman dan meningkatkan atribut mereka.
+  - 📜 **Kodeks Dunia Epik:** Tidak ada lagi lore "catatan kaki"! Sekarang generator menciptakan dunia dengan sejarah yang mendalam, menggambarkan agama, hukum, geografi, dan tokoh terkenal dalam format kronik yang terperinci.
+  - 🧙 **Cerita yang Koheren:** Karakter Anda tidak lagi lahir dalam kehampaan. Latar belakangnya sekarang terintegrasi secara cerdas dengan lore dunia yang baru saja Anda buat atau pilih.
+  - ⚡ **Antarmuka Lancar:** Pembuatan otomatis cerita dan dunia sekarang dilakukan di latar belakang. Tidak ada lagi menunggu dengan layar yang membeku!
+  - 🚀 **Mulai Petualangan Instan:** Saya telah menghilangkan waktu tunggu! Sekarang, setelah membuat karakter, Anda langsung terjun ke dalam cerita. Sistem menggunakan latar belakang Anda yang diperkaya untuk menciptakan permulaan yang sempurna tanpa Anda harus menulis satu kata pun lagi.
+  - 🎭 **Latar Belakang dengan Dalih:** Karakter Anda tidak lagi hanya memiliki masa lalu, tetapi juga motif mendesak untuk memulai petualangan. Sistem AI baru secara otomatis menghasilkan pemicu awal cerita yang terintegrasi ke dalam biografi Anda.
+  - 🧹 **Antarmuka yang Disederhanakan:** Saya telah menghapus tombol dan layar yang tidak memberikan nilai tambah. Tombol "Mulai Cerita" sekarang memusatkan semua kekuatan agar Anda dapat mulai bermain sesegera mungkin.
+  - [FIX][UI] **Duplikasi Visual pada Pemilihan Dunia:** Memperbaiki bug di mana nama dunia muncul ganda sebagai "Nama [Nama]". Sekarang label tipe disembunyikan jika redundan.
+  - [FEAT][UI] **Muat Cepat (Satu Klik):** Sekarang Anda dapat memuat karakter atau memulai pembuatan karakter baru dengan satu klik di layar pemilihan dunia. Ekspansi dunia dipertahankan untuk menghindari konflik.
+  - 🧠 **AI Lebih Kreatif:** Saya telah memutus "perulangan repetisi" AI dengan menyuntikkan variabilitas teknis di setiap permintaan. Sekarang karakter yang dibuat secara acak akan jauh lebih unik dan orisinal, mengabaikan contoh panduan.
+  
+  🛡️ Kepada para pemberani yang BERANI bertarung di garis depan pertempuran: Petualangan menanti Anda, kini lebih tak terkalahkan dari sebelumnya!
 
 ****************************************************************************************************
 06/02/2026 02:32 - Dukungan Vulkan (AMD/Intel) dan Penanganan Error yang Andal - Beta_v053

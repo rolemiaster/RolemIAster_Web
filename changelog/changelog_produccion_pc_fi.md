@@ -1,35 +1,54 @@
 ****************************************************************************************************
-07/02/2026 20:26 - Sistema de Interpretación Semántica de Combate - BETA_v054
+13/02/2026 07:56 - Semanttinen taisteluntulkintajärjestelmä - Beta_v054
 ****************************************************************************************************
-🧪 YA DISPONIBLE:
-
-⚠️ **AVISO IMPORTANTE:** EL JUEGO PUEDE MIGRAR LA ANTIGUA BASE DE DATOS PARA LA NUEVA ESTRUCTURA MEDIANTE OPCIONES DEL LAUNCHER. NO RECOMIENDO ESTO, AUNQUE FUNCIONE TU ANTIGUA PARTIDA, MUCHAS COSAS ESTARÁN ROTAS. MI RECOMENDACIÓN ES ELIMINAR TODAS LAS PARTIDAS ANTERIORES GUARDADAS. NO ES NECESARIO BORRAR LA BASE DE DATOS AL COMPLETO SALVO CASO EXTREMO.
-
-Cambios:
-
-- 🌍 **Gestor de Mundos y Personajes:** Ahora tienes total libertad. Crea tus propios Mundos con sus propias reglas y ambientación, y dentro de cada uno, crea tantos personajes como quieras. **Nota Importante:** Todos los personajes de un mismo mundo comparten la misma línea temporal y los eventos sucedidos, lo que sienta las bases para el futuro modo multijugador.
-- 🧠 **Memoria Contextual (Súper RAG):** La IA ahora tiene "sentidos". Al buscar información en el Lore o en su memoria, tiene en cuenta dónde estás, con quién estás, si estás herido y qué acaba de pasar. ¡Es mucho más intuitivo y coherente!
-- 🌍 **Lore en el Primer Personaje:** ¿Escribías una descripción épica de tu mundo y la IA la ignoraba en tu primer personaje? ¡Solucionado! Ahora la descripción manual del mundo llega directamente a la IA durante la creación inicial.
-- ⚙️ **Sistema de Mundos Mejorado:** He independizado el nombre de tu mundo de las reglas técnicas.
-- 📝 **Claridad en Creación:** He mejorado las instrucciones internas para que la IA entienda mejor cuándo debe inventar un trasfondo.
-- 🧠 **Combate por Texto Libre:** Escribe acciones como "lanzar hechizo de curación" o "desenfundar espada". La IA entiende tu intención.
-- 🎨 **¡Nueva Interfaz Épica!** Remodelación completa estilo RPG con menús animados y bordes neón.
-- 🎬 **IA Director de Escena (MEJORADO):** El combate ahora cobra vida con eventos ambientales.
-- ⚔️ **Desenfundar con Palabras:** Escribe "desenfundar espada" en lugar de hacer clic. ¡Cuidado en combate!
-- 📖 **Hechizos Reconocidos:** La IA conoce tu libro de hechizos completo.
-- 🌍 **Narrativa en tu Idioma:** Respeta estrictamente el idioma seleccionado, evitando mezclas.
-- 🛡️ **No Más Turnos Perdidos:** Si el juego no entiende, te pedirá aclaraciones. Tu turno NO se pierde.
-- 🎒 **Inventario Manual:** Interfaz de arrastrar y soltar para mover objetos.
-- 🧪 **Uso de Pociones Fluido:** Arrastra sobre retrato o usa el menú de clic derecho.
-- 🩸 **Corrección de Daño:** Barra de vida corregida. Ya no eres inmortal.
-- 👻 **Adiós a los Items Fantasma:** Reparación automática de objetos que la IA olvida crear.
-- 🐛 **Corrección Crítica NPC:** Decisiones tácticas de NPCs corregidas.
-- 🎒 **Corrección Inventario Inicial:** Personajes ya no empiezan desnudos.
-- 🎲 **Creación de Personaje:** Exploit de puntos infinitos corregido.
-- 🖼️ **Retratos Arreglados:** El sistema encuentra imágenes correctas independientemente del nombre del mundo.
-- 💍 **Iconos Inteligentes:** Objetos y anillos con iconos precisos.
-- 🧪 **Tooltips Mejorados:** Información completa al pasar el ratón.
-- 🎵 **Mejoras de Audio:** Música no se detiene al pulsar botones.
+- What's New (FI):
+  🧪 NYT SAATAVILLA:
+  
+  ⚠️ **TÄRKEÄ HUOMAUTUS:** PELI VOI SIIRTÄÄ VANHAN TIETOKANNAN UUTEEN RAKENTEESEEN KÄYNNISTYSOHJELMAN ASETUSTEN KAUTTA. EN SUOSITTELE TÄTÄ; VAIKKA VANHA TALLENNUKSESI TOIMISI, MONI ASIA ON RIKKI. SUOSITTELEN POISTAMAAN KAIKKI AIEMMAT TALLENNUKSET. TIETOKANTAA EI TARVITSE POISTAA KOKONAAN PAITSI ÄÄRIMMÄISISSÄ TAPAUKSISSA.
+  
+  Muutokset:
+  
+  - 🌍 **Maailmojen ja hahmojen hallinta:** Sinulla on nyt täysi vapaus. Luo omia maailmoja omine sääntöineen ja asetelmineen, ja luo kuhunkin niin monta hahmoa kuin haluat. **Tärkeä huomio:** Kaikki saman maailman hahmot jakavat saman aikajanan ja tapahtumat, mikä luo pohjan tulevalle moninpelitilalle.
+  - 🧠 **Kontekstuaalinen muisti (Super RAG):** Tekoälyllä on nyt "aistit". Etsiessään tietoa tarinasta (Lore) tai muististaan se ottaa huomioon, missä olet, kenen kanssa olet, oletko haavoittunut ja mitä juuri tapahtui. Jos olet kuninkaan seurassa, se muistaa kuninkaita koskevat asiat. Jos olet haavoittunut, se etsii parannussääntöjä. Se on paljon intuitiivisempi ja johdonmukaisempi!
+  - 🌍 **Ensimmäisen hahmon tarina:** Kirjoititko eeppisen kuvauksen maailmastasi, mutta tekoäly sivuutti sen ensimmäisen hahmosi kohdalla? Korjattu! Nyt manuaalinen maailmankuvaus siirtyy suoraan tekoälylle alkuluonnin aikana, jopa ennen muistijärjestelmän aktivoitumista.
+  - ⚙️ **Parannettu maailmajärjestelmä:** Olen erottanut maailmasi nimen teknisistä säännöistä. Nyt voit nimetä maailmasi miten haluat ilman, että se vaikuttaa Fantasia- tai Kyberpunk-sääntöjen latautumiseen.
+  - 📝 **Selkeyttä luomiseen:** Olen parantanut sisäisiä ohjeita, jotta tekoäly ymmärtää paremmin, milloin sen tulee keksiä taustatarina ja milloin vain poimia tilastosi.
+  - 🧠 **Vapaa tekstitaistelu:** Nyt voit kirjoittaa taistelutoimintosi kuin puhuisit pöytäroolipelin pelinjohtajalle: "langeta parannusloitsu itseeni", "vedä miekka esiin", "käytä parannusjuomaa". Tekoäly ymmärtää aikomuksesi ja kääntää sen pelimekaniikaksi.
+  - 🎨 **Uusi eeppinen käyttöliittymä!** Olen uudistanut pelin täysin. RPG-tyyliset valikot, animoidut taustat ja täysin uudistettu visuaalinen kokemus. Tumma puoliläpinäkyvä tyyli, neonreunukset ja pehmennetyt varjot täydellistä immersiota varten.
+  - 🎬 **Tekoälyohjaaja (PARANNETTU):** Taistelu herää nyt eloon. Tekoäly luo ympäristötapahtumia ja reaktioita, jotka rikastuttavat kerrontaa: putoavia soihtuja, perääntyviä vihollisia, romahtavia palkkeja. Taistelukenttä ei ole enää staattinen!
+  - ⚔️ **Aseen veto sanoilla:** Sinun ei enää tarvitse klikata aseen paikkaa. Kirjoita vain "vedä miekka" tai "ota kirves esiin", ja järjestelmä tulkitsee sen automaattisesti (HUOM! Tämän tekeminen taistelussa voi johtaa epäonnistumiseen, kämmiin ja vuoron menetykseen... "Taisteluihin tullaan valmiina!").
+  - 📖 **Tunnistetut loitsut:** Tekoäly tuntee nyt koko loitsukirjasi. Sano "heitä tulipallo", ja jos sinulla on kyseinen loitsu, se heitetään.
+  - 🌍 **Kerronta omalla kielelläsi:** Tarina kunnioittaa nyt tiukasti valittua kieltä välttäen outoja kielisekoituksia (toivottavasti en joudu näkemään enää spanglishia koskaan! Olen pakottanut tekoälyä niin paljon, että jos se vielä generoi tekstiä muulla kuin valitulla kielellä, se on puhtaasti kirottu).
+  - 🛡️ **Ei enää menetettyjä vuoroja:** Jos peli ei ymmärrä toimintaasi, se pyytää sinua muotoilemaan sen uudelleen. Vuorosi EI mene hukkaan.
+  - 🎒 **Manuaalinen inventaario:** Siirtääksesi esineitä paikkojen välillä (varustaminen repusta, ammusten lataus), käytä vedä ja pudota -käyttöliittymää. Tämä välttää sekaannuksia ja säästää tekoälyn resursseja.
+  - 🧪 **Sujuva juomien käyttö:** Nyt voit vetää juomia ja ruokaa suoraan muotokuvasi päälle käyttääksesi niitä. Olen lisännyt myös "Käytä"-vaihtoehdon hiiren oikealla painikkeella. Intuitiivisempaa ja nopeampaa!
+  - 🩸 **Vahinkokorjaus:** Et ole enää kuolematon! Olemme korjanneet ongelman, jossa terveyspalkki ei laskenut, vaikka sinua lyötiin. Nyt kärsit kuten kuuluukin.
+  - 👻 **Hyvästit haamuesineille:** Löysitkö tarinassa esineen, mutta se ei koskaan ilmestynyt reppuusi? Ongelma ratkaistu! Nyt järjestelmä korjaa automaattisesti esineet, jotka tekoäly "unohtaa" luoda.
+  - 🐛 **Kriittinen NPC-korjaus:** Korjattu virhe, joka esti NPC-hahmoja tekemästä taktisia päätöksiä oikein, minkä vuoksi ne aina "odottivat" hyökkäämisen tai puolustamisen sijaan.
+  - 🎒 **Aloitusinventaarion korjaus:** Uudet hahmot eivät enää aloita alasti. Nyt ne saavat aloitusvarusteensa oikein.
+  - 🎲 **Hahmonluonti:** Korjattu hyväksikäytettävä virhe, jossa ominaisuuden nostaminen ja laskeminen tietyissä rajoissa loi äärettömästi lisäpisteitä. Karisma-huijaus on ohi!
+  - 🖼️ **Korjatut muotokuvat:** Loitko maailman omalla nimellä ja muotokuvat katosivat? Korjattu! Nyt järjestelmä löytää oikeat kuvat riippumatta siitä, miten nimeät maailmasi.
+  - 💍 **Älykkäät ikonit:** Esineet (mukaan lukien sormukset) näyttävät nyt tarkemmat ja oikeat ikonit käyttöliittymässä.
+  - 🧪 **Parannetut työkaluvihjeet:** Juomat, kulutustavarat ja loitsut näyttävät nyt oikein kaikki tietonsa ja vaikutuksensa, kun hiiri viedään niiden päälle.
+  - 🎵 **Ääniparannuksia:** Taistelumusiikki ei enää pysähdy, kun painat esimääritettyjä painikkeita.
+  - [I18N] **Implanttikorjaus:** Lisätty puuttuvat käännösavaimet implanttipaikoille (`slot_implant_*`) ja vastaaville ikoneille (`icon_implant_*`) tiedostoon `es.json`.
+  - [FIX][AUDIO] **Epäjohdonmukainen ääni:** Mukautettu esineiden varustamisen ja aseiden esiin ottamisen äänitehosteet (SFX) ympäristöön. Nyt järjestelmä havaitsee `setting_key`:n ja käyttää futuristisia/teollisia ääniä Kyberpunkissa ja klassisia ääniä Fantasiassa.
+  - [FIX][I18N] **Tiedoston es.json siivous:** Poistettu yli 20 kaksoiskappaletta avaimista tiedostossa `es.json` ja korjattu kirjoitusvirheitä paikkojen nimissä (esim. "Oíidos" -> "Oídos").
+  - ⚙️ **Älykäs mallintunnistus:** Peli lukee nyt suoraan tuomiesi mallien (GGUF) "aivot". Se havaitsee todellisen maksimikontekstin automaattisesti. (Virallisiin optimoituihin malleihin ei kosketa maksimaalisen vakauden takaamiseksi).
+  - 📂 **Tilansäästö:** Kun lisäät mallin tietokoneeltasi, peli siirtää sen nyt suoraan omaan kansioonsa kopioimisen sijaan. Gigatavusi kiittävät sinua!
+  - ⚖️ **Oikeutta ominaisuuksiin:** Korjattu hyväksikäytettävä virhe, joka mahdollisti äärettömät pisteet nostamalla ja laskemalla ominaisuuksia luonnin aikana.
+  - 📖 **Koulutusopas:** Olen päivittänyt ohjekirjan (README) kaikilla yksityiskohdilla siitä, miten hahmosi saavat kokemusta ja nostavat ominaisuuksiaan.
+  - 📜 **Eeppisten maailmojen koodeksi:** Ei enää "yhden jälkikirjoituksen" tarinoita! Nyt generaattori luo maailmoja syvällisellä historialla, kuvaten niiden uskonnot, lait, maantiedon ja kuuluisat henkilöt yksityiskohtaisessa kronikkamuodossa.
+  - 🧙 **Johdonmukaiset tarinat:** Hahmosi ei enää synny tyhjiöön. Sen tausta integroituu nyt älykkäästi juuri luomasi tai valitsemasi maailman tarinaan.
+  - ⚡ **Sujuva käyttöliittymä:** Tarinoiden ja maailmojen automaattinen luonti tapahtuu nyt taustalla. Ei enää odottelua jäätyneen ruudun ääressä!
+  - 🚀 **Välitön seikkailun aloitus:** Olen poistanut odotusajat! Hahmon luomisen jälkeen hyppäät nyt suoraan tarinaan. Järjestelmä käyttää rikastettua taustaasi luodakseen täydellisen alun ilman, että sinun tarvitsee kirjoittaa sanaakaan lisää.
+  - 🎭 **Taustatarinat motiivilla:** Hahmoillasi ei ole enää pelkkä menneisyys, vaan myös kiireellinen syy aloittaa seikkailu. Uusi tekoälyjärjestelmä luo automaattisesti tarinan alkukipinän, joka on integroitu biografiaasi.
+  - 🧹 **Yksinkertaistettu käyttöliittymä:** Olen poistanut painikkeet ja näytöt, jotka eivät tuoneet lisäarvoa. "Aloita tarina" -painike keskittää nyt kaiken voiman, jotta pääset pelaamaan mahdollisimman pian.
+  - [FIX][UI] **Visuaalinen kaksoiskappale maailman valinnassa:** Korjattu virhe, jossa maailman nimi näkyi kahteen kertaan muodossa "Nimi [Nimi]". Nyt tyyppimerkintä piilotetaan, jos se on turha.
+  - [FEAT][UI] **Pikalataus (yksi klikkaus):** Hahmon voi nyt ladata tai uuden luomisen aloittaa yhdellä klikkauksella maailman valintaruudussa. Maailmojen laajennus säilyy ristiriitojen välttämiseksi.
+  - 🧠 **Luovempi tekoäly:** Olen rikkonut tekoälyn "toistosilmukan" syöttämällä teknistä vaihtelua jokaiseen pyyntöön. Nyt satunnaisesti luodut hahmot ovat paljon ainutlaatuisempia ja omaperäisempiä, sivuuttaen oppaan esimerkit.
+  
+  🛡️ Niille rohkeille, jotka USKALTAVAT taistella etulinjassa: Seikkailu odottaa teitä, nyt kesyttömämpänä kuin koskaan!
 
 ****************************************************************************************************
 06/02/2026 02:32 - Vulkan-tuki (AMD/Intel) ja vankka virheiden hallinta - Beta_v053
