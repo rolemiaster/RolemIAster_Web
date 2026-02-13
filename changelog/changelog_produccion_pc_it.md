@@ -19,7 +19,7 @@ Cambiamenti:
 - 📖 **Incantesimi Riconosciuti:** L'IA conosce tutto il tuo grimorio.
 - 🌍 **Narrativa nella tua Lingua:** Rispetta rigorosamente la lingua selezionata, evitando lo 'spanglish'.
 - 🛡️ **Mai più Turni Persi:** Se il gioco non capisce, chiede chiarimenti. Turno NON perso.
-- 🎒 **Inventario Manuale:** Interfaccia drag-and-drop per spostare oggetti.
+- 🎒 **Inventario Manual:** Interfaccia drag-and-drop per spostare oggetti.
 - 🧪 **Uso Pozioni Fluido:** Trascina sul ritratto o tasto destro 'Usa'.
 - 🩸 **Correzione Danni:** La vita scende correttamente. Non sei più immortale.
 - 👻 **Addio agli Item Fantasma:** Ripara automaticamente gli oggetti che l'IA dimentica di creare.
@@ -45,7 +45,7 @@ Cambiamenti:
 - 🧹 **Interfaccia Semplificata:** Tasto 'Inizia Storia' centralizzato.
 - [FIX][UI] **Duplicazione Visiva:** Bug nome mondo risolto.
 - [FEAT][UI] **Caricamento Rapido:** Click singolo per caricare/creare.
-- 🧠 **IA più Creativa:** Variabilità tecnica per rompere i loop.
+- 🧠 **IA più Creativa:** Variabilità técnica para romper los bucles.
 
 ****************************************************************************************************
 06/02/2026 02:32 - Supporto Vulkan (AMD/Intel) e Gestione Errori Robusta - Beta_v053

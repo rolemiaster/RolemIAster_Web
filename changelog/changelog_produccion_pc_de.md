@@ -41,7 +41,7 @@
 - 🧙 **Kohärente Geschichten:** Hintergrund in die Weltgeschichte integriert.
 - ⚡ **Flüssiges Interface:** Hintergrundgenerierung (kein Einfrieren).
 - 🚀 **Sofortiger Abenteuerstart:** Direktstart nach der Erstellung.
-- 🎭 **Hintergründe mit Vorwand:** Dringender Grund für den Start des Abenteuers.
+- 🎭 **Hintergründe con Vorwand:** Dringender Grund für den Start des Abenteuers.
 - 🧹 **Vereinfachtes Interface:** 'Geschichte starten'-Button zentralisiert.
 - [FIX][UI] **Visuelle Verdoppelung:** Bug bei Weltnamen behoben.
 - [FEAT][UI] **Schnellladen:** Einfacher Klick zum Laden/Erstellen.

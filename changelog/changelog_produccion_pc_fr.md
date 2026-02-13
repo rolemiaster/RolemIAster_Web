@@ -21,7 +21,7 @@ Changements :
 - 🛡️ **Plus de Tours Perdus :** Si le jeu ne comprend pas, il demande des précisions. Tour NON perdu.
 - 🎒 **Inventaire Manuel :** Interface glisser-déposer pour déplacer les objets.
 - 🧪 **Utilisation de Potions Fluide :** Glisser sur portrait ou clic droit 'Utiliser'.
-- 🩸 **Correction de Dégâts :** La vie descend correctement. Vous n'êtes plus immortel.
+- 🩸 **Correction de Dégâts :** La vie descend correctamente. Vous n'êtes plus immortel.
 - 👻 **Adieu aux Items Fantômes :** Répare automatiquement les objets que l'IA oublie de créer.
 - 🐛 **Correction Critique PNJ :** Décisions tactiques des PNJ corrigées.
 - 🎒 **Correction Inventaire Initial :** Les personnages ne commencent plus nus.
@@ -41,11 +41,11 @@ Changements :
 - 🧙 **Histoires Cohérentes :** Background intégré au lore du monde.
 - ⚡ **Interface Fluide :** Génération en arrière-plan (pas de gel).
 - 🚀 **Départ d'Aventure Instantané :** Départ direct après création.
-- 🎭 **Backgrounds avec Prétexte :** Raison urgente de commencer l'aventure.
+- 🎭 **Backgrounds con Pretext :** Raison urgente de commencer l'aventure.
 - 🧹 **Interface Simplifiée :** Bouton 'Démarrer l'histoire' centralisé.
 - [FIX][UI] **Doublage Visuel :** Bug de nom de monde corrigé.
 - [FEAT][UI] **Chargement Rapide :** Simple clic pour charger/créer.
-- 🧠 **IA plus Créative :** Variabilité technique pour casser les boucles.
+- 🧠 **IA plus Créative :** Variabilité técnica para romper los bucles.
 
 ****************************************************************************************************
 06/02/2026 02:32 - Support Vulkan (AMD/Intel) et Gestion Robuste des Erreurs - Beta_v053

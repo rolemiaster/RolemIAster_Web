@@ -47,7 +47,6 @@ Changes:
 - [FEAT][UI] **Quick Load:** Single click to load/create.
 - 🧠 **More Creative AI:** Technical variability injected to break repeat loops.
 
-﻿
 ****************************************************************************************************
 06/02/2026 02:32 - Soporte Vulkan (AMD/Intel) y Manejo Robusto de Errores - Beta_v053
 ****************************************************************************************************
