@@ -1,21 +1,51 @@
 ****************************************************************************************************
-07/02/2026 20:26 - Combat Semantic Interpretation System - EXPERIMENTAL_v053
+07/02/2026 20:26 - Combat Semantic Interpretation System - BETA_v054
 ****************************************************************************************************
-- What's New (EN):
-  🧪 NOW AVAILABLE: EXPERIMENTAL VERSION (To access: Right-click on Steam ➡️ Properties ➡️ Betas)
-  
-  🛡️ To the brave souls who DARE to fight on the front lines: Adventure awaits, now more untamable than ever!
-  
-  📝 I await your War Reports (bugs and feedback) from the front. Give 'em hell! ⚔️
-  
-  - 🧠 **Free Text Combat:** You can now write your combat actions as if you were speaking to a tabletop character: "cast healing spell on myself", "draw my sword", "use healing potion". The AI understands your intent and translates it into game mechanics.
-  - ⚔️ **Draw with Words:** You no longer need to click on the weapon slot. Simply type "draw sword" or "take out my axe" and the system interprets it automatically (HEADS UP! Doing this in combat may result in failure, fumbles, and losing a turn!... "You should come prepared to a fight!").
-  - 📖 **Recognized Spells:** The AI now knows your entire spellbook. Say "cast fireball" and if you have that spell, it will cast it.
-  - 🛡️ **No More Lost Turns:** If the game doesn't understand your action, it will ask you to rephrase it. Your turn is NOT lost.
-  - 🎒 **Manual Inventory:** To move items between slots (equip from backpack, load ammo), use the drag-and-drop interface. This prevents confusion and saves AI resources.
-  - 🎬 **AI Scene Director (IMPROVED):** Combat comes to life. The AI generates environmental events and reactions that enrich the narrative: torches falling, enemies retreating, beams collapsing. The battlefield is no longer static!
-  - 🐛 **Critical NPC Fix:** Fixed a bug that prevented NPCs from making tactical decisions correctly, causing them to always "wait" instead of attacking or defending.
-  - 🎵 **Audio Fix:** Combat music no longer stops when pressing predefined buttons (Attack, Block, etc.).
+🧪 NOW AVAILABLE:
+
+⚠️ **IMPORTANT NOTICE:** THE GAME CAN MIGRATE THE OLD DATABASE TO THE NEW STRUCTURE THROUGH LAUNCHER OPTIONS. I DO NOT RECOMMEND THIS; EVEN IF YOUR OLD SAVE WORKS, MANY THINGS WILL BE BROKEN. MY RECOMMENDATION IS TO DELETE ALL PREVIOUS SAVES. IT IS NOT NECESSARY TO DELETE THE ENTIRE DATABASE EXCEPT IN EXTREME CASES.
+
+Changes:
+
+- 🌍 **World and Character Manager:** Now you have total freedom. Create your own Worlds with their own rules and setting, and within each one, create as many characters as you want. All characters in the same world share the same timeline and events, laying the foundation for future multiplayer mode.
+- 🧠 **Contextual Memory (Super RAG):** The AI now has 'senses.' It takes into account where you are, who you are with, and what just happened. It's much more intuitive and coherent!
+- 🌍 **Lore in the First Character:** Fixed! Now the manual description of the world reaches the AI directly during initial creation.
+- ⚙️ **Improved World System:** Decoupled world names from technical rules.
+- 📝 **Creation Clarity:** Improved internal instructions for character background generation.
+- 🧠 **Free Text Combat:** Write actions like 'cast healing spell' or 'draw sword'. The AI understands intent and translates it to mechanics.
+- 🎨 **New Epic Interface!** Completely remodeled with RPG-style menus, animated backgrounds, and neon edge immersion.
+- 🎬 **AI Scene Director (IMPROVED):** Combat comes to life with environmental events and reactions.
+- ⚔️ **Draw with Words:** Type 'draw sword' instead of clicking slots. Careful! Doing this in combat can result in failure or losing a turn.
+- 📖 **Recognized Spells:** The AI knows your entire spellbook.
+- 🌍 **Narrative in your Language:** Strictly respects selected language, avoiding mixed translations.
+- 🛡️ **No More Lost Turns:** If the game doesn't understand, it asks for clarification. Your turn is NOT lost.
+- 🎒 **Manual Inventory:** Drag-and-drop interface for moving items between slots.
+- 🧪 **Fluid Potion Use:** Drag items onto portraits or use the right-click menu.
+- 🩸 **Damage Correction:** Fixed health bar issues. You are no longer immortal.
+- 👻 **Goodbye Ghost Items:** Automatically repairs items the AI 'forgets' to create.
+- 🐛 **Critical NPC Fix:** Fixed tactical decision making for NPCs.
+- 🎒 **Initial Inventory Fix:** Fixed starting equipment for new characters.
+- 🎲 **Character Creation:** Fixed an exploit for infinite attribute points.
+- 🖼️ **Fixed Portraits:** System finds correct images regardless of world name.
+- 💍 **Smart Icons:** Objects and rings with precise icons.
+- 🧪 **Improved Tooltips:** Full information on hover.
+- 🎵 **Audio Improvements:** Combat music doesn't stop when pressing buttons.
+- [I18N] **Implant Fix:** Added translations for slots and icons.
+- [FIX][AUDIO] **Inconsistent Audio:** Sounds adapted to the setting.
+- [FIX][I18N] **es.json Cleanup:** Filtered duplicates.
+- ⚙️ **Smart Model Detection:** Reads GGUF models directly. Auto context manager.
+- 📂 **Space Saving:** Moves models instead of copying.
+- ⚖️ **Attribute Justice:** Fixed infinite points exploit.
+- 📖 **Training Guide:** README updated with experience system.
+- 📜 **Epic World Codex:** Deep history generation (religions, laws, geography).
+- 🧙 **Coherent Stories:** Background integrated with world lore.
+- ⚡ **Fluid Interface:** Background generation (no freezing).
+- 🚀 **Instant Adventure Start:** Direct start after creation.
+- 🎭 **Backgrounds with Pretext:** Urgent reason to start the adventure.
+- 🧹 **Simplified Interface:** 'Start Story' button centralized.
+- [FIX][UI] **Visual Duplication:** Fixed world name bug.
+- [FEAT][UI] **Quick Load:** Single click to load/create.
+- 🧠 **More Creative AI:** Technical variability injected to break repeat loops.
 
 ****************************************************************************************************
 06/02/2026 02:32 - Vulkan Support (AMD/Intel) and Robust Error Handling - Beta_v053

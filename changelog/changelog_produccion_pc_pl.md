@@ -1,21 +1,9 @@
 ****************************************************************************************************
-07/02/2026 20:26 - System Semantycznej Interpretacji Walki - EXPERIMENTAL_v053
+07/02/2026 20:26 - System semantycznej interpretacji walki - BETA_v054
 ****************************************************************************************************
-- What's New (PL):
-  🧪 JUŻ DOSTĘPNE: WERSJA EKSPERYMENTALNA (Aby uzyskać dostęp: Prawy przycisk myszy na Steam ➡️ Właściwości ➡️ Bety)
-  
-  🛡️ Do odważnych, którzy OŚMIELĄ SIĘ walczyć na pierwszej linii frontu: Przygoda czeka, teraz bardziej nieujarzmiona niż kiedykolwiek!
-  
-  📝 Oczekuję waszych Raportów Wojennych (błędy i opinie) na froncie. Dajcie im popalić! ⚔️
-  
-  - 🧠 **Walka Dowolnym Tekstem:** Teraz możesz wpisywać swoje akcje bojowe tak, jakbyś rozmawiał z Mistrzem Gry w papierowym RPG: "rzuć zaklęcie leczenia na mnie", "dobądź miecza", "użyj mikstury leczenia". AI rozumie twoje intencje i tłumaczy je na mechanikę gry.
-  - ⚔️ **Dobieranie Broni Słowami:** Nie musisz już klikać w slot broni. Po prostu napisz "dobądź miecza" lub "wyciągnij mój topór", a system zinterpretuje to automatycznie (UWAGA!, robienie tego w trakcie walki może skutkować porażką, pechem i utratą tury!... "Do walki trzeba przychodzić przygotowanym z domu!").
-  - 📖 **Rozpoznawanie Zaklęć:** AI zna teraz całą twoją księgę zaklęć. Powiedz "rzuć kulę ognia", a jeśli posiadasz to zaklęcie, zostanie ono rzucone.
-  - 🛡️ **Koniec z Utratą Tur:** Jeśli gra nie zrozumie twojej akcji, poprosi cię o jej sformułowanie na nowo. Twoja tura NIE przepada.
-  - 🎒 **Ręczny Ekwipunek:** Aby przenosić przedmioty między slotami (zakładanie z plecaka, ładowanie amunicji), użyj interfejsu przeciągnij i upuść. Pozwala to uniknąć pomyłek i oszczędza zasoby AI.
-  - 🎬 **AI Reżyser Sceny (ULEPSZONY):** Walka nabiera teraz życia. AI generuje zdarzenia środowiskowe i reakcje wzbogacające narrację: spadające pochodnie, cofający się wrogowie, zawalające się belki. Pole bitwy nie jest już statyczne!
-  - 🐛 **Krytyczna Poprawka NPC:** Naprawiono błąd, który uniemożliwiał NPC podejmowanie właściwych decyzji taktycznych, przez co zawsze "czekali" zamiast atakować lub się bronić.
-  - 🎵 **Poprawka Audio:** Muzyka bojowa nie zatrzymuje się już po naciśnięciu predefiniowanych przycisków (Atak, Blok itp.).
+🧪 JUŻ DOSTĘPNE:
+
+⚠️ **WAŻNA UWAGA:** GRA MOŻE ZMIGROWAĆ STARĄ BAZĘ DANYCH...
 
 ****************************************************************************************************
 06/02/2026 02:32 - Wsparcie dla Vulkan (AMD/Intel) i niezawodna obsługa błędów - Beta_v053

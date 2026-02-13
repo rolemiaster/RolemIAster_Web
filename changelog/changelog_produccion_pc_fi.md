@@ -1,21 +1,9 @@
 ****************************************************************************************************
-07/02/2026 20:26 - Taistelun semanttinen tulkintajärjestelmä - EXPERIMENTAL_v053
+07/02/2026 20:26 - Taistelun semanttinen tulkkausjärjestelmä - BETA_v054
 ****************************************************************************************************
-- What's New (FI):
-  🧪 NYT SAATAVILLA: KOKEILUVERSIO (Pääsy: Hiiren oikea painike Steamissä ➡️ Ominaisuudet ➡️ Betat)
-  
-  🛡️ Rohkeille, jotka USKALTAVAT taistella etulinjassa: Seikkailu odottaa teitä, nyt kesyttömämpänä kuin koskaan!
-  
-  📝 Odotan sotaraporttejanne (bugit ja palaute) rintamalta. Antakaa palaa! ⚔️
-  
-  - 🧠 **Vapaatekstitaistelu:** Voit nyt kirjoittaa toimintosi taistelussa kuin puhuisit pelinjohtajalle pöytäroolipelissä: "loihdi parannusloitsu itseeni", "vedä miekka esiin", "käytä parannusjuoma". Tekoäly ymmärtää aikeesi ja kääntää sen pelimekaniikaksi.
-  - ⚔️ **Aseen vetäminen sanoin:** Sinun ei enää tarvitse klikata asepaikkaa. Kirjoita vain "vedä miekka" tai "ota kirves esiin", ja järjestelmä tulkitsee sen automaattisesti (HUOM! Tämän tekeminen taistelussa voi johtaa epäonnistumiseen, kämmiin ja vuoron menetykseen!... "Taisteluihin tullaan valmistautuneina!").
-  - 📖 **Tunnistetut loitsut:** Tekoäly tuntee nyt koko loitsukirjasi. Sano "loihdi tulipallo", ja jos sinulla on kyseinen loitsu, hahmosi loitsii sen.
-  - 🛡️ **Ei enää menetettyjä vuoroja:** Jos peli ei ymmärrä toimintoasi, se pyytää sinua muotoilemaan sen uudelleen. Vuorosi EI mene hukkaan.
-  - 🎒 **Manuaalinen tavaraluettelo:** Siirtääksesi esineitä paikkojen välillä (varusta repusta, lataa ammuksia) käytä vedä ja pudota -käyttöliittymää. Tämä välttää sekaannukset ja säästää tekoälyresursseja.
-  - 🎬 **Tekoälyohjaaja (PARANNETTU):** Taistelu herää nyt eloon. Tekoäly luo ympäristötapahtumia ja reaktioita, jotka rikastuttavat kerrontaa: soihtuja putoilee, viholliset perääntyvät, palkkeja romahtaa. Taistelukenttä ei ole enää staattinen!
-  - 🐛 **Kriittinen NPC-korjaus:** Korjattu virhe, joka esti ei-pelaajahahmoja tekemästä taktisia päätöksiä oikein, minkä vuoksi ne aina "odottivat" hyökkäämisen tai puolustamisen sijaan.
-  - 🎵 **Äänikorjaus:** Taistelumusiikki ei enää pysähdy, kun painetaan esimääritettyjä painikkeita (Hyökkää, Torju jne.).
+🧪 NYT SAATAVILLA:
+
+⚠️ **TÄRKEÄ ILMOITUS:** PELI VOI SIIRTÄÄ VANHAN TIETOKANNAN...
 
 ****************************************************************************************************
 06/02/2026 02:32 - Vulkan-tuki (AMD/Intel) ja vankka virheiden hallinta - Beta_v053

@@ -1,21 +1,9 @@
 ****************************************************************************************************
-07/02/2026 20:26 - System til Semantisk Kampfortolkning - EXPERIMENTAL_v053
+07/02/2026 20:26 - Semantisk kampsfortolkningssystem - BETA_v054
 ****************************************************************************************************
-- What's New (DA):
-  🧪 NU TILGÆNGELIG: EKSPERIMENTEL VERSION (For adgang: Højreklik i Steam ➡️ Egenskaber ➡️ Betaer)
-  
-  🛡️ Til de modige, der TØR kæmpe ved frontlinjen: Eventyret venter jer, nu mere utæmmeligt end nogensinde!
-  
-  📝 Jeg ser frem til jeres Krigsrapporter (fejl og feedback) fra fronten. Giv dem tørt på! ⚔️
-  
-  - 🧠 **Fritekstkamp:** Nu kan du skrive dine handlinger i kamp, som om du talte med en karakter i et bordrollespil: "kast helbredelsesformular på mig", "træk mit sværd", "brug helbredelsesdrik". Den kunstige intelligens forstår din hensigt og oversætter den til spilmekanik.
-  - ⚔️ **Træk våben med ord:** Du behøver ikke længere klikke på våbenpladsen. Skriv blot "træk sværd" eller "tag min økse frem", og systemet fortolker det automatisk (OBS!, gør du det i kamp, kan det resultere i fiasko, en bommert og tab af tur!... "Man kommer forberedt til kamp!").
-  - 📖 **Genkendte formularer:** Den kunstige intelligens kender nu hele din formularbog. Sig "kast ildkugle", og hvis du har den formular, vil den blive kastet.
-  - 🛡️ **Ingen tabte ture:** Hvis spillet ikke forstår din handling, vil det bede dig om at omformulere den. Din tur går IKKE tabt.
-  - 🎒 **Manuelt inventar:** For at flytte genstande mellem pladser (udstyr fra rygsæk, lad ammunition), skal du bruge træk og slip-grænsefladen. Dette forhindrer forvirring og sparer AI-ressourcer.
-  - 🎬 **AI Sceneinstruktør (FORBEDRET):** Kampene kommer nu til live. Den kunstige intelligens genererer miljøhændelser og reaktioner, der beriger fortællingen: fakler der falder, fjender der trækker sig tilbage, bjælker der styrter sammen. Slagmarken er ikke længere statisk!
-  - 🐛 **Kritisk NPC-rettelse:** Løst en fejl, der forhindrede NPC'er i at tage korrekte taktiske beslutninger, hvilket fik dem til altid at "vente" i stedet for at angribe eller forsvare sig.
-  - 🎵 **Lydrettelse:** Kampmusikken stopper ikke længere, når der trykkes på de foruddefinerede knapper (Angrib, Bloker osv.).
+🧪 NU TILGÆNGELIG:
+
+⚠️ **VIGTIG MEDDELELSE:** SPILLET KAN MIGRE DEN GAMLE DATABASE...
 
 ****************************************************************************************************
 06/02/2026 02:32 - Vulkan-understøttelse (AMD/Intel) og robust fejlhåndtering - Beta_v053

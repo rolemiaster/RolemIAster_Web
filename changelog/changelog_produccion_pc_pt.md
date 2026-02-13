@@ -1,21 +1,6 @@
 ****************************************************************************************************
-07/02/2026 20:26 - Sistema de Interpretação Semântica de Combate - EXPERIMENTAL_v053
+07/02/2026 20:26 - Sistema de Interpretación Semántica de Combate - BETA_v054
 ****************************************************************************************************
-- What's New (PT):
-  🧪 JÁ DISPONÍVEL: VERSÃO EXPERIMENTAL (Para acessar: Botão direito na Steam ➡️ Propriedades ➡️ Betas)
-  
-  🛡️ Aos corajosos que OUSAREM lutar na linha de frente: A aventura os aguarda, agora mais indomável do que nunca!
-  
-  📝 Aguardo seus Relatórios de Guerra (bugs e feedback) no front. Mandem ver! ⚔️
-  
-  - 🧠 **Combate por Texto Livre:** Agora você pode escrever suas ações em combate como se falasse com um personagem de RPG de mesa: "lançar feitiço de cura em mim", "sacar minha espada", "usar poção de cura". A IA entende sua intenção e a traduz para a mecânica de jogo.
-  - ⚔️ **Sacar com Palavras:** Você não precisa mais clicar no slot da arma. Simplesmente escreva "sacar espada" ou "pegar meu machado" e o sistema interpreta automaticamente (ATENÇÃO!, fazer isso em combate pode resultar em falha, erro crítico e perda de turno!... "Para os combates, a gente já vem preparado de casa!").
-  - 📖 **Feitiços Reconhecidos:** A IA agora conhece seu livro de feitiços completo. Diga "lançar bola de fogo" e, se você tiver esse feitiço, ela o lançará.
-  - 🛡️ **Chega de Turnos Perdidos:** Se o jogo não entender sua ação, pedirá que você a reformule. Seu turno NÃO é perdido.
-  - 🎒 **Inventário Manual:** Para mover objetos entre slots (equipar da mochila, carregar munição), use a interface de arrastar e soltar. Isso evita confusões e economiza recursos de IA.
-  - 🎬 **IA Diretor de Cena (MELHORADO):** O combate agora ganha vida. A IA gera eventos ambientais e reações que enriquecem a narrativa: tochas que caem, inimigos que recuam, vigas que desabam. O campo de batalha não é mais estático!
-  - 🐛 **Correção Crítica em NPCs:** Solucionado um erro que impedia os NPCs de tomarem decisões táticas corretamente, fazendo com que sempre "esperassem" em vez de atacar ou se defender.
-  - 🎵 **Correção de Áudio:** A música de combate não para mais ao pressionar os botões predefinidos (Atacar, Bloquear, etc.).
 
 ****************************************************************************************************
 06/02/2026 02:32 - Suporte a Vulkan (AMD/Intel) e Tratamento Robusto de Erros - Beta_v053

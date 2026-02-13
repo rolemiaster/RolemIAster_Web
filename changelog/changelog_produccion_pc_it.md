@@ -1,21 +1,51 @@
 ****************************************************************************************************
-07/02/2026 20:26 - Sistema di Interpretazione Semantica del Combattimento - EXPERIMENTAL_v053
+07/02/2026 20:26 - Sistema di Interpretazione Semantica del Combattimento - BETA_v054
 ****************************************************************************************************
-- What's New (IT):
-  🧪 ORA DISPONIBILE: VERSIONE SPERIMENTALE (Per accedere: Tasto destro su Steam ➡️ Proprietà ➡️ Beta)
-  
-  🛡️ Ai coraggiosi che OSANO combattere in prima linea: l'avventura vi attende, ora più indomita che mai!
-  
-  📝 Attendo i vostri Rapporti di Guerra (bug e feedback) dal fronte. Dategli dentro! ⚔️
-  
-  - 🧠 **Combattimento a Testo Libero:** Ora puoi scrivere le tue azioni in combattimento come se parlassi con un PG da tavolo: "lanciare incantesimo di cura su di me", "sfoderare la mia spada", "usare pozione di cura". L'IA capisce la tua intenzione e la traduce in meccaniche di gioco.
-  - ⚔️ **Sfoderare con le Parole:** Non hai più bisogno di cliccare sullo slot dell'arma. Scrivi semplicemente "sfoderare spada" o "estrarre la mia ascia" e il sistema lo interpreterà automaticamente (ATTENZIONE!, farlo in combattimento può risultare in fallimento, errore critico e perdita del turno!... "Ai combattimenti si arriva preparati da casa!").
-  - 📖 **Incantesimi Riconosciuti:** L'IA ora conosce il tuo libro degli incantesimi completo. Di' "lanciare palla di fuoco" e se possiedi quell'incantesimo, lo lancerà.
-  - 🛡️ **Niente Più Turni Persi:** Se il gioco non capisce la tua azione, ti chiederà di riformularla. Il tuo turno NON viene perso.
-  - 🎒 **Inventario Manuale:** Per spostare oggetti tra gli slot (equipaggiare dallo zaino, caricare munizioni), usa l'interfaccia trascina e rilascia. Questo evita confusioni e risparmia risorse dell'IA.
-  - 🎬 **Regista di Scena IA (MIGLIORATO):** Il combattimento ora prende vita. L'IA genera eventi ambientali e reazioni che arricchiscono la narrazione: torce che cadono, nemici che indietreggiano, travi che crollano. Il campo di battaglia non è più statico!
-  - 🐛 **Correzione Critica NPC:** Risolto un problema che impediva agli NPC di prendere decisioni tattiche correttamente, facendo sì che "attendessero" sempre invece di attaccare o difendersi.
-  - 🎵 **Correzione Audio:** La musica di combattimento non si ferma più quando si premono i pulsanti predefiniti (Attacca, Blocca, ecc.).
+🧪 GIÀ DISPONIBILE:
+
+⚠️ **AVVISO IMPORTANTE:** IL GIOCO PUÒ MIGRARE IL VECCHIO DATABASE ALLA NUOVA STRUTTURA TRAMITE LE OPZIONI DEL LAUNCHER. NON RACCOMANDO QUESTA PROCEDURA; ANCHE SE LA VECCHIA PARTITA FUNZIONA, MOLTE COSE SARANNO CORROTTE. IL MIO CONSIGLIO È DI ELIMINARE TUTTI I SALVATAGGI PRECEDENTI. NON È NECESSARIO CANCELLARE L'INTERO DATABASE SE NON IN CASI ESTREMI.
+
+Cambiamenti:
+
+- 🌍 **Gestore di Mondi e Personaggi:** Ora hai totale libertà. Crea i tuoi Mondi con regole e ambientazione proprie. Tutti i personaggi di uno stesso mondo condividono la stessa linea temporale, ponendo le basi per il futuro multigiocatore.
+- 🧠 **Memoria Contestuale (Super RAG):** L'IA ora ha 'sensi'. Tiene conto di dove sei, con chi sei e cosa è appena successo. Più intuitivo e coerente!
+- 🌍 **Lore nel Primo Personaggio:** Risolto! Ora la descrizione manuale del mondo raggiunge l'IA direttamente durante la creazione iniziale.
+- ⚙️ **Sistema di Mondi Migliorato:** Nome del mondo indipendente dalle regole tecniche (Fantasy/Cyberpunk).
+- 📝 **Chiarezza nella Creazione:** Istruzioni interne migliorate per l'invenzione del background.
+- 🧠 **Combattimento a Testo Libero:** Scrivi azioni come 'lancia incantesimo' o 'sguaina spada'. L'IA capisce l'intento.
+- 🎨 **Nuova Interfaccia Epica!** Completamente rimodellata con menu in stile RPG, sfondi animati e immersione neon.
+- 🎬 **IA Regista di Scena (MIGLIORATO):** Il combattimento prende vita con eventi ambientali e reazioni.
+- ⚔️ **Sguainare con le Parole:** Digita 'sguaina spada' invece di cliccare. Attenzione! In combattimento può portare al fallimento o alla perdita del turno.
+- 📖 **Incantesimi Riconosciuti:** L'IA conosce tutto il tuo grimorio.
+- 🌍 **Narrativa nella tua Lingua:** Rispetta rigorosamente la lingua selezionata, evitando lo 'spanglish'.
+- 🛡️ **Mai più Turni Persi:** Se il gioco non capisce, chiede chiarimenti. Turno NON perso.
+- 🎒 **Inventario Manuale:** Interfaccia drag-and-drop per spostare oggetti.
+- 🧪 **Uso Pozioni Fluido:** Trascina sul ritratto o tasto destro 'Usa'.
+- 🩸 **Correzione Danni:** La vita scende correttamente. Non sei più immortale.
+- 👻 **Addio agli Item Fantasma:** Ripara automaticamente gli oggetti che l'IA dimentica di creare.
+- 🐛 **Correzione Critica NPC:** Decisioni tattiche degli NPC corrette.
+- 🎒 **Correzione Inventario Iniziale:** I personaggi non iniziano più nudi.
+- 🎲 **Creazione Personaggio:** Risolto exploit punti infiniti.
+- 🖼️ **Ritratti Sistemati:** Sistema trova immagini corrette indipendentemente dal nome del mondo.
+- 💍 **Icone Intelligenti:** Oggetti e anelli con icone precise.
+- 🧪 **Tooltip Migliorati:** Informazioni complete al passaggio del mouse.
+- 🎵 **Miglioramenti Audio:** Musica non si ferma premendo i tasti.
+- [I18N] **Fix Impianti:** Aggiunte traduzioni per slot e icone.
+- [FIX][AUDIO] **Audio Inconsistente:** Suoni adattati all'ambientazione.
+- [FIX][I18N] **Pulizia es.json:** Rimossi duplicati.
+- ⚙️ **Rilevamento Modelli Intelligente:** Legge i modelli GGUF direttamente. Gestore contesto auto.
+- 📂 **Risparmio Spazio:** Sposta i modelli invece di copiarli.
+- ⚖️ **Giustizia negli Attributi:** Risolto exploit punti infiniti.
+- 📖 **Guida di Allenamento:** README aggiornato con sistema di esperienza.
+- 📜 **Codice dei Mondi Epici:** Generazione storia profonda (religioni, leggi, geografia).
+- 🧙 **Storie Coerenti:** Background integrato con il lore del mondo.
+- ⚡ **Interfaccia Fluida:** Generazione in background (nessun blocco).
+- 🚀 **Inizio Avventura Istantaneo:** Partenza diretta dopo la creazione.
+- 🎭 **Background con Pretesto:** Ragione urgente per iniziare l'avventura.
+- 🧹 **Interfaccia Semplificata:** Tasto 'Inizia Storia' centralizzato.
+- [FIX][UI] **Duplicazione Visiva:** Bug nome mondo risolto.
+- [FEAT][UI] **Caricamento Rapido:** Click singolo per caricare/creare.
+- 🧠 **IA più Creativa:** Variabilità tecnica per rompere i loop.
 
 ****************************************************************************************************
 06/02/2026 02:32 - Supporto Vulkan (AMD/Intel) e Gestione Errori Robusta - Beta_v053

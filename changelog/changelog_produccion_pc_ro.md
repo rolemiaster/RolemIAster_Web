@@ -1,21 +1,9 @@
 ****************************************************************************************************
-07/02/2026 20:26 - Sistem de Interpretare Semantică a Luptei - EXPERIMENTAL_v053
+07/02/2026 20:26 - Sistem de interpretare semantică a luptei - BETA_v054
 ****************************************************************************************************
-- What's New (RO):
-  🧪 DISPONIBIL ACUM: VERSIUNE EXPERIMENTALĂ (Pentru acces: Click dreapta în Steam ➡️ Proprietăți ➡️ Beta)
-  
-  🛡️ Pentru cei curajoși care ÎNDRĂZNESC să lupte în prima linie: Aventura vă așteaptă, acum mai neîmblânzită ca niciodată!
-  
-  📝 Aștept Rapoartele voastre de Război (erori și feedback) pe front. Dați-le tare! ⚔️
-  
-  - 🧠 **Luptă prin Text Liber:** Acum poți scrie acțiunile tale de luptă ca și cum ai vorbi cu un personaj de tip tabletop: "lansează vrajă de vindecare asupra mea", "scoate sabia", "folosește poțiune de vindecare". AI-ul îți înțelege intenția și o traduce în mecanici de joc.
-  - ⚔️ **Scoate Arma prin Cuvinte:** Nu mai trebuie să dai click pe slotul armei. Pur și simplu scrie "scoate sabia" sau "scoate toporul" și sistemul interpretează automat (ATENȚIE!, dacă faci asta în luptă poate rezulta un eșec, o gafă și pierderea turei!... "La luptă vii pregătit de acasă!").
-  - 📖 **Vrăji Recunoscute:** AI-ul cunoaște acum întreaga ta carte de vrăji. Spune "lansează minge de foc", iar dacă ai acea vrajă, o va lansa.
-  - 🛡️ **Fără Ture Pierdute:** Dacă jocul nu îți înțelege acțiunea, îți va cere să o reformulezi. Tura ta NU se pierde.
-  - 🎒 **Inventar Manual:** Pentru a muta obiecte între sloturi (echipare din rucsac, încărcare muniție), folosește interfața de tragere și plasare (drag and drop). Acest lucru evită confuziile și economisește resursele AI.
-  - 🎬 **AI Regizor de Scenă (ÎMBUNĂTĂȚIT):** Lupta prinde acum viață. AI-ul generează evenimente ambientale și reacții care îmbogățesc narațiunea: torțe care cad, inamici care se retrag, grinzi care se prăbușesc. Câmpul de luptă nu mai este static!
-  - 🐛 **Corecție Critică NPC:** S-a remediat o eroare care împiedica NPC-urile să ia decizii tactice corecte, determinându-le să "aștepte" mereu în loc să atace sau să se apere.
-  - 🎵 **Corecție Audio:** Muzica de luptă nu se mai oprește la apăsarea butoanelor predefinite (Atacă, Blochează etc.).
+🧪 ACUM DISPONIBIL:
+
+⚠️ **NOTĂ IMPORTANTĂ:** JOCUL POATE MIGRA VECHEA BAZĂ DE DATE...
 
 ****************************************************************************************************
 06/02/2026 02:32 - Suport Vulkan (AMD/Intel) și Gestionare Robustă a Erorilor - Beta_v053

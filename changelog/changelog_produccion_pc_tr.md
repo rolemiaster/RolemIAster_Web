@@ -1,21 +1,9 @@
 ****************************************************************************************************
-07/02/2026 20:26 - Semantik Savaş Yorumlama Sistemi - EXPERIMENTAL_v053
+07/02/2026 20:26 - Savaş Semantik Yorumlama Sistemi - BETA_v054
 ****************************************************************************************************
-- What's New (TR):
-  🧪 ŞİMDİ MEVCUT: DENEYSEL SÜRÜM (Erişmek için: Steam'de sağ tıkla ➡️ Özellikler ➡️ Betalar)
-  
-  🛡️ Ön saflarda savaşmaya CÜRET EDEN cesurlara: Macera sizi bekliyor, şimdi her zamankinden daha boyun eğmez!
-  
-  📝 Cepheden Savaş Raporlarınızı (hatalar ve geri bildirimler) bekliyorum. Canlarına okuyun! ⚔️
-  
-  - 🧠 **Serbest Metinle Savaş:** Artık savaş eylemlerinizi bir masaüstü RYO karakteriyle konuşur gibi yazabilirsiniz: "kendime iyileştirme büyüsü yap", "kılıcımı çek", "iyileştirme iksiri kullan". YZ niyetinizi anlar ve bunu oyun mekaniğine çevirir.
-  - ⚔️ **Sözcüklerle Silah Çekme:** Artık silah yuvasına tıklamanıza gerek yok. Sadece "kılıcı çek" veya "baltamı çıkar" yazın, sistem bunu otomatik olarak yorumlar (DİKKAT! Bunu savaş sırasında yapmak başarısızlığa, kritik hataya ve tur kaybına yol açabilir!... "Savaşa hazırlıklı gelinir!").
-  - 📖 **Tanınan Büyüler:** YZ artık büyü kitabınızın tamamını biliyor. "Ateş topu fırlat" dediğinizde, eğer o büyüye sahipseniz, büyüyü yapacaktır.
-  - 🛡️ **Boşa Giden Turlara Son:** Eğer oyun eyleminizi anlamazsa, yeniden ifade etmenizi isteyecektir. Turunuz KAYBOLMAZ.
-  - 🎒 **Manuel Envanter:** Eşyaları yuvalar arasında taşımak (çantadan kuşanmak, cephane doldurmak) için sürükle ve bırak arayüzünü kullanın. Bu, karışıklıkları önler ve YZ kaynaklarından tasarruf sağlar.
-  - 🎬 **YZ Sahne Yönetmeni (GELİŞTİRİLDİ):** Savaş artık canlanıyor. YZ, anlatımı zenginleştiren çevresel olaylar ve tepkiler üretir: düşen meşaleler, geri çekilen düşmanlar, çöken kirişler. Savaş alanı artık durağan değil!
-  - 🐛 **Kritik NPC Düzeltmesi:** NPC'lerin taktiksel kararları doğru şekilde almasını engelleyen, saldırmak veya savunmak yerine sürekli "beklemelerine" neden olan bir hata düzeltildi.
-  - 🎵 **Ses Düzeltmesi:** Önceden tanımlanmış düğmelere (Saldır, Blokla vb.) basıldığında savaş müziği artık durmuyor.
+🧪 ŞİMDİ KULLANILABİLİR:
+
+⚠️ **ÖNEMLİ UYARI:** OYUN ESKİ VERİTABANINI...
 
 ****************************************************************************************************
 06/02/2026 02:32 - Vulkan Desteği (AMD/Intel) ve Güçlü Hata Yönetimi - Beta_v053

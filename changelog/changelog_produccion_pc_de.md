@@ -1,21 +1,51 @@
 ****************************************************************************************************
-07/02/2026 20:26 - System zur semantischen Kampfinterpretation - EXPERIMENTAL_v053
+07/02/2026 20:26 - Kampf-Semantik-Interpretationssystem - BETA_v054
 ****************************************************************************************************
-- What's New (DE):
-  🧪 JETZT VERFÜGBAR: EXPERIMENTELLE VERSION (Zugriff: Rechtsklick in Steam ➡️ Eigenschaften ➡️ Betas)
-  
-  🛡️ An die Mutigen, die es WAGEN, an vorderster Front zu kämpfen: Das Abenteuer erwartet euch, jetzt unzähmbarer als je zuvor!
-  
-  📝 Ich erwarte eure Kriegsberichte (Bugs und Feedback) an der Front. Macht sie fertig! ⚔️
-  
-  - 🧠 **Freitext-Kampf:** Du kannst deine Aktionen im Kampf jetzt so schreiben, als würdest du ein Pen-&-Paper-Rollenspiel spielen: "Heilzauber auf mich wirken", "Schwert ziehen", "Heiltrank benutzen". Die KI versteht deine Absicht und übersetzt sie in Spielmechaniken.
-  - ⚔️ **Ziehen mit Worten:** Du musst nicht mehr auf den Waffenslot klicken. Schreibe einfach "Schwert ziehen" oder "meine Axt herausholen" und das System interpretiert es automatisch (ACHTUNG! Dies im Kampf zu tun, kann zu einem Fehlschlag, Patzer und dem Verlust des Zuges führen! ... "Man kommt vorbereitet zum Kampf!").
-  - 📖 **Erkannte Zauber:** Die KI kennt jetzt dein komplettes Zauberbuch. Sage "Feuerball wirken" und wenn du diesen Zauber besitzt, wird er gewirkt.
-  - 🛡️ **Keine verlorenen Züge mehr:** Wenn das Spiel deine Aktion nicht versteht, wirst du gebeten, sie umzuformulieren. Dein Zug geht NICHT verloren.
-  - 🎒 **Manuelles Inventar:** Um Gegenstände zwischen Slots zu bewegen (aus dem Rucksack ausrüsten, Munition laden), nutze die Drag-and-Drop-Oberfläche. Dies vermeidet Verwirrung und spart KI-Ressourcen.
-  - 🎬 **KI-Regisseur (VERBESSERT):** Der Kampf erwacht zum Leben. Die KI generiert Umgebungsereignisse und Reaktionen, die die Erzählung bereichern: herabfallende Fackeln, zurückweichende Feinde, einstürzende Balken. Das Schlachtfeld ist nicht mehr statisch!
-  - 🐛 **Kritischer NPC-Fix:** Ein Fehler wurde behoben, der verhinderte, dass NPCs taktische Entscheidungen korrekt treffen, was dazu führte, dass sie immer "warteten", anstatt anzugreifen oder sich zu verteidigen.
-  - 🎵 **Audio-Korrektur:** Die Kampfmusik stoppt nicht mehr, wenn die vordefinierten Tasten (Angreifen, Blocken usw.) gedrückt werden.
+🧪 JETZT VERFÜGBAR:
+
+⚠️ **WICHTIGER HINWEIS:** DAS SPIEL KANN DIE ALTE DATENBANK ZUR NEUEN STRUKTUR ÜBER DIE LAUNCHER-OPTIONEN MIGRRIEREN. ICH EMPFEHLE DIES NICHT; AUCH WENN IHR ALTER SPIELSTAND FUNKTIONIERT, WERDEN VIELE DINGE DEFEKT SEIN. MEINE EMPFEHLUNG IST, ALLE VORHERIGEN SPEICHERSTÄNDE ZU LÖSCHEN. ES IST NICHT NOTWENDIG, DIE GESAMTE DATENBANK ZU LÖSCHEN, AUSSER IN EXTREMFÄLLEN.
+
+Änderungen:
+
+- 🌍 **Welten- und Charakter-Manager:** Jetzt hast du totale Freiheit. Erstelle deine eigenen Welten mit eigenen Regeln und Settings, und erstelle in jeder so viele Charaktere, wie du möchtest. Alle Charaktere in derselben Welt teilen sich dieselbe Zeitlinie und Ereignisse, was die Grundlage für den zukünftigen Multiplayer-Modus bildet.
+- 🧠 **Kontextuelles Gedächtnis (Super RAG):** Die KI hat jetzt 'Sinne'. Sie berücksichtigt, wo du bist, mit wem du zusammen bist und was gerade passiert ist. Viel intuitiver und kohärenter!
+- 🌍 **Lore beim ersten Charakter:** Behoben! Jetzt erreicht die manuelle Weltbeschreibung die KI direkt während der ersten Erstellung.
+- ⚙️ **Verbessertes Weltensystem:** Weltnamen von technischen Regeln (Fantasy/Cyberpunk) entkoppelt.
+- 📝 **Klarheit bei der Erstellung:** Verbesserte interne Anweisungen für die Hintergrundgenerierung.
+- 🧠 **Freitext-Kampf:** Schreibe Aktionen wie 'Heilzauber wirken' oder 'Schwert ziehen'. Die KI versteht die Absicht und übersetzt sie in Mechaniken.
+- 🎨 **Neue epische Benutzeroberfläche!** Komplett überarbeitet mit RPG-Menüs, animierten Hintergründen und neonfarbenen Details.
+- 🎬 **KI-Szenenregisseur (VERBESSERT):** Kämpfe werden durch Umgebungsereignisse und Reaktionen lebendig.
+- ⚔️ **Ziehen mit Worten:** Tippe 'Schwert ziehen' statt auf Slots zu klicken. Vorsicht! Im Kampf kann dies zum Scheitern oder zum Verlust des Zuges führen.
+- 📖 **Erkannte Zauber:** Die KI kennt dein gesamtes Zauberbuch.
+- 🌍 **Erzählung in deiner Sprache:** Respektiert strikt die gewählte Sprache und vermeidet 'Spanglish'.
+- 🛡️ **Keine verlorenen Züge mehr:** Bei Unklarheiten bittet das Spiel um Klärung. Dein Zug geht NICHT verloren.
+- 🎒 **Manuelles Inventar:** Drag-and-Drop-Interface zum Bewegen von Gegenständen.
+- 🧪 **Flüssige Trankbenutzung:** Auf Porträts ziehen oder Rechtsklick 'Benutzen'.
+- 🩸 **Schadenskorrektur:** Lebensbalken sinkt jetzt korrekt. Du bist nicht mehr unsterblich.
+- 👻 **Abschied von Geister-Items:** Automatische Reparatur von Objekten, die die KI zu erstellen 'vergisst'.
+- 🐛 **Kritischer NPC-Fix:** Taktische Entscheidungsfindung für NPCs korrigiert.
+- 🎒 **Korrektur des Startinventars:** Charaktere starten nicht mehr nackt.
+- 🎲 **Charaktererstellung:** Exploit für unendliche Attributpunkte behoben.
+- 🖼️ **Fixierte Porträts:** Das System findet die richtigen Bilder, unabhängig vom Weltnamen.
+- 💍 **Intelligente Icons:** Objekte und Ringe mit präzisen Icons.
+- 🧪 **Verbesserte Tooltips:** Vollständige Informationen beim Überfahren mit der Maus.
+- 🎵 **Audio-Verbesserungen:** Kampfmusik stoppt nicht mehr beim Drücken von Tasten.
+- [I18N] **Implantat-Fix:** Übersetzungen für Slots und Icons hinzugefügt.
+- [FIX][AUDIO] **Inkonsistentes Audio:** Sounds an das Setting angepasst.
+- [FIX][I18N] **Bereinigung es.json:** Doppelte Schlüssel entfernt.
+- ⚙️ **Intelligente Modellerkennung:** Liest GGUF-Modelle direkt aus. Automatischer Kontext-Manager.
+- 📂 **Platzersparnis:** Verschiebt Modelle direkt statt sie zu kopieren.
+- ⚖️ **Gerechtigkeit bei Attributen:** Infinite-Points-Exploit behoben.
+- 📖 **Trainingshandbuch:** README mit Erfahrungssystem aktualisiert.
+- 📜 **Epischer Welten-Kodex:** Tiefgründige Geschichte (Religionen, Gesetze, Geografie).
+- 🧙 **Kohärente Geschichten:** Hintergrund in die Weltgeschichte integriert.
+- ⚡ **Flüssiges Interface:** Hintergrundgenerierung (kein Einfrieren).
+- 🚀 **Sofortiger Abenteuerstart:** Direktstart nach der Erstellung.
+- 🎭 **Hintergründe mit Vorwand:** Dringender Grund für den Start des Abenteuers.
+- 🧹 **Vereinfachtes Interface:** 'Geschichte starten'-Button zentralisiert.
+- [FIX][UI] **Visuelle Verdoppelung:** Bug bei Weltnamen behoben.
+- [FEAT][UI] **Schnellladen:** Einfacher Klick zum Laden/Erstellen.
+- 🧠 **Kreativere KI:** Technische Variabilität zur Vermeidung von Wiederholungen.
 
 ****************************************************************************************************
 06/02/2026 02:32 - Vulkan-Unterstützung (AMD/Intel) und robuste Fehlerbehandlung - Beta_v053
