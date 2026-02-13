@@ -1,6 +1,6 @@
-# 🐉 Chào mừng đến với RoleMIAster!
+# 🐉 Chào mừng đến với RolemIAster!
 
-Hãy cầm lấy xúc xắc của bạn (hoặc chuột) và sẵn sàng cho những cuộc phiêu lưu mà giới hạn duy nhất là sự điên rồ trong trí tưởng tượng của bạn! **RoleMIAster** là một trò chơi nhập vai vô tận được cung cấp bởi Trí tuệ Nhân tạo, cho phép bạn trở thành anh hùng (hoặc kẻ phản diện) trong những câu chuyện của riêng mình.
+Hãy cầm lấy xúc xắc của bạn (hoặc chuột) và sẵn sàng cho những cuộc phiêu lưu mà giới hạn duy nhất là sự điên rồ trong trí tưởng tượng của bạn! **RolemIAster** là một trò chơi nhập vai vô tận được cung cấp bởi Trí tuệ Nhân tạo, cho phép bạn trở thành anh hùng (hoặc kẻ phản diện) trong những câu chuyện của riêng mình.
 
 ---
 
@@ -8,7 +8,7 @@ Hãy cầm lấy xúc xắc của bạn (hoặc chuột) và sẵn sàng cho nh�
 
 **ĐỌC HOẶC BẠN SẼ GÁNH CHỊU CƠN THỊNH NỘ CỦA XÚC XẮC:**
 
-1.  **🤖 AI Cục bộ Tích hợp:** RoleMIAster tự mang bộ não kỹ thuật số của mình. Nó hoạt động **mà không cần internet** và mà không cần bạn phải đụng vào bất cứ thứ gì kỳ lạ. Cài đặt và chơi!
+1.  **🤖 AI Cục bộ Tích hợp:** RolemIAster tự mang bộ não kỹ thuật số của mình. Nó hoạt động **mà không cần internet** và mà không cần bạn phải đụng vào bất cứ thứ gì kỳ lạ. Cài đặt và chơi!
 2.  **☁️ Đám mây Tùy chọn:** Nếu bạn thích tiêu tiền vào các AI bên ngoài (OpenAI, Gemini...), thì đó là lựa chọn của bạn với thẻ tín dụng. Chi phí là do bạn chịu.
 3.  **🎲 Sự hỗn loạn Tạo sinh:** AI tự bịa ra câu chuyện khi đang diễn ra. Nếu người dẫn chuyện trở nên điên rồ và nói rằng bò đang mưa, đừng nhìn chúng tôi. Nhà phát triển không chịu trách nhiệm cho sự điên rồ mà mô hình tạo ra.
 4.  **🏗️ Truy cập Sớm:** Dự án này vẫn đang trong quá trình thi công. Nếu bạn tìm thấy lỗi, đó không phải là lỗi, đó là một "tính năng" bất ngờ! (Xin hãy gửi phản hồi cho chúng tôi, điều đó giúp ích rất nhiều).
@@ -17,12 +17,12 @@ Hãy cầm lấy xúc xắc của bạn (hoặc chuột) và sẵn sàng cho nh�
 
 ## 🖥️ YÊU CẦU HỆ THỐNG VÀ BỘ NÃO KỸ THUẬT SỐ (AI)
 
-RoleMIAster hoạt động với **Trí tuệ Nhân tạo Cục bộ**. Điều đó có nghĩa là PC của bạn sẽ làm công việc nặng nhọc là suy nghĩ. Bạn không cần internet, nhưng cần một card đồ họa không phải từ thời khủng long. (Lưu ý: Nếu phòng bạn lạnh, trò chơi này hoạt động như một máy sưởi miễn phí).
+RolemIAster hoạt động với **Trí tuệ Nhân tạo Cục bộ**. Điều đó có nghĩa là PC của bạn sẽ làm công việc nặng nhọc là suy nghĩ. Bạn không cần internet, nhưng cần một card đồ họa không phải từ thời khủng long. (Lưu ý: Nếu phòng bạn lạnh, trò chơi này hoạt động như một máy sưởi miễn phí).
 
 ### ⚙️ Khái niệm dành cho người mới bắt đầu
 
 **VRAM (Bộ nhớ Video)** là xăng của AI.
-*   RoleMIAster cần "ghi nhớ" từ **12.000 đến 16.000 từ (token)** để không bị lạc đề câu chuyện.
+*   RolemIAster cần "ghi nhớ" từ **12.000 đến 16.000 từ (token)** để không bị lạc đề câu chuyện.
 *   Nếu GPU của bạn hết bộ nhớ, trò chơi sẽ chạy chậm hơn một con sên bị hen suyễn.
 
 ---
@@ -133,7 +133,7 @@ Khi mở trò chơi, bạn có hai lựa chọn:
 
 ## 📜 LUẬT CHƠI (Vâng, có luật)
 
-RoleMIAster sử dụng hệ thống d100 (xúc xắc một trăm mặt) cổ điển và mạnh mẽ.
+RolemIAster sử dụng hệ thống d100 (xúc xắc một trăm mặt) cổ điển và mạnh mẽ.
 
 ### 1. Các Chỉ số của Bạn (Những gì định nghĩa bạn)
 Chúng được tạo ngẫu nhiên, giống như trong các trò chơi nhập vai trên bàn!
@@ -249,7 +249,7 @@ Trong menu **Cài đặt**, bạn có thể điều chỉnh mọi thứ:
 
 ## 🚧 Cảnh báo: Truy cập Sớm
 
-RoleMIAster đang trong quá trình **phát triển tích cực**, được "nấu" từ từ.
+RolemIAster đang trong quá trình **phát triển tích cực**, được "nấu" từ từ.
 *   Bạn có thể tìm thấy lỗi (hoặc "tính năng bất ngờ").
 *   Tôi thêm những thứ mới mỗi tuần.
 *   Phản hồi của bạn vô giá! Hãy cho tôi biết bạn thích gì và không thích gì.

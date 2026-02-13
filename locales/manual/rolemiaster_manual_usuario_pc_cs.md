@@ -1,6 +1,6 @@
-# 🐉 Vítejte v RoleMIAster!
+# 🐉 Vítejte v RolemIAster!
 
-Popadněte své kostky (nebo myš, k tomu jste si taky mohli dovolit) a připravte se na dobrodružství, kde jediným limitem je, jak pokroucená je vaše představivost! **RoleMIAster** je nekonečná RPG hra poháněná umělou inteligencí, která vám umožní být hrdinou (nebo padouchem) vašich vlastních příběhů.
+Popadněte své kostky (nebo myš, k tomu jste si taky mohli dovolit) a připravte se na dobrodružství, kde jediným limitem je, jak pokroucená je vaše představivost! **RolemIAster** je nekonečná RPG hra poháněná umělou inteligencí, která vám umožní být hrdinou (nebo padouchem) vašich vlastních příběhů.
 
 ---
 
@@ -8,7 +8,7 @@ Popadněte své kostky (nebo myš, k tomu jste si taky mohli dovolit) a připrav
 
 **PŘEČTĚTE SI, NEBO BUDETE TRPĚT HNĚV KOSTEK:**
 
-1.  **🤖 Integrovaná lokální AI:** RoleMIAster přináší svůj vlastní digitální mozek. Funguje **bez internetu** a aniž byste museli cokoli složitě nastavovat. Nainstalujte a hrajte!
+1.  **🤖 Integrovaná lokální AI:** RolemIAster přináší svůj vlastní digitální mozek. Funguje **bez internetu** a aniž byste museli cokoli složitě nastavovat. Nainstalujte a hrajte!
 2.  **☁️ Volitelný Cloud:** Pokud raději utrácíte peníze za externí AI (OpenAI, Gemini...), je to vaše věc a vaše kreditní karta. Náklady jdou plně na vás.
 3.  **🎲 Generativní Chaos:** AI si vymýšlí příběh za pochodu. Pokud se vypravěč pomátne a prohlásí, že prší krávy, nekoukejte na nás. Vývojář nenese odpovědnost za šílenosti, které model vygeneruje.
 4.  **🏗️ Předběžný přístup (Early Access):** Toto je stále ve výstavbě. Pokud najdete chybu, není to chyba, je to překvapivá "funkce"! (Pošlete nám zpětnou vazbu, prosím, moc nám to pomůže).
@@ -17,12 +17,12 @@ Popadněte své kostky (nebo myš, k tomu jste si taky mohli dovolit) a připrav
 
 ## 🖥️ SYSTÉMOVÉ POŽADAVKY A DIGITÁLNÍ MOZKY (AI)
 
-RoleMIAster funguje s **lokální umělou inteligencí**. To znamená, že váš PC bude odvádět těžkou práci při přemýšlení. Nepotřebujete internet, ale potřebujete grafickou kartu, která není z doby dinosaurů. (Poznámka: Pokud je ve vaší místnosti zima, tato hra funguje jako bezplatné topení).
+RolemIAster funguje s **lokální umělou inteligencí**. To znamená, že váš PC bude odvádět těžkou práci při přemýšlení. Nepotřebujete internet, ale potřebujete grafickou kartu, která není z doby dinosaurů. (Poznámka: Pokud je ve vaší místnosti zima, tato hra funguje jako bezplatné topení).
 
 ### ⚙️ Pojmy pro začátečníky
 
 **VRAM (Video RAM)** je benzín pro AI.
-*   RoleMIAster potřebuje "pamatovat si" **12 000 až 16 000 slov (tokenů)**, aby neztratil nit příběhu.
+*   RolemIAster potřebuje "pamatovat si" **12 000 až 16 000 slov (tokenů)**, aby neztratil nit příběhu.
 *   Pokud vaší GPU dojde paměť, hra poběží pomaleji než šnek s astmatem.
 
 ---
@@ -133,7 +133,7 @@ Při otevření hry máte dvě možnosti:
 
 ## 📜 PRAVIDLA HRY (Ano, jsou tu pravidla)
 
-RoleMIAster používá klasický a robustní systém d100 (sto stěnná kostka).
+RolemIAster používá klasický a robustní systém d100 (sto stěnná kostka).
 
 ### 1. Vaše atributy (Co vás definuje)
 Generují se náhodně, jako v klasickém stolním RPG!
@@ -249,7 +249,7 @@ V menu **Nastavení** můžete měnit vše:
 
 ## 🚧 Upozornění: Předběžný přístup (Early Access)
 
-RoleMIAster je ve **vývoji**, pomalu se vaří.
+RolemIAster je ve **vývoji**, pomalu se vaří.
 *   Můžete narazit na chyby (nebo "neočekávané vlastnosti").
 *   Každý týden přidávám nové věci.
 *   Vaše zpětná vazba má cenu zlata! Řekněte mi, co se vám líbí a co se vám líbí hodně.

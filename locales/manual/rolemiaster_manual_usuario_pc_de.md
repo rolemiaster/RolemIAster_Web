@@ -1,6 +1,6 @@
-# 🐉 Willkommen bei RoleMIAster!
+# 🐉 Willkommen bei RolemIAster!
 
-Schnapp dir deine Würfel (oder deine Maus) und mach dich bereit, Abenteuer zu erleben, bei denen deine einzige Grenze die Verdrehtheit deiner Vorstellungskraft ist! **RoleMIAster** ist ein unendlich skalierbares Rollenspiel, das von künstlicher Intelligenz angetrieben wird und es dir ermöglicht, der Held (oder der Schurke) deiner eigenen Geschichten zu sein.
+Schnapp dir deine Würfel (oder deine Maus) und mach dich bereit, Abenteuer zu erleben, bei denen deine einzige Grenze die Verdrehtheit deiner Vorstellungskraft ist! **RolemIAster** ist ein unendlich skalierbares Rollenspiel, das von künstlicher Intelligenz angetrieben wird und es dir ermöglicht, der Held (oder der Schurke) deiner eigenen Geschichten zu sein.
 
 ---
 
@@ -8,7 +8,7 @@ Schnapp dir deine Würfel (oder deine Maus) und mach dich bereit, Abenteuer zu e
 
 **LIES DAS, SONST WIRST DU DEN ZORN DER WÜRFEL ERLEBEN:**
 
-1.  **🤖 Lokale integrierte KI:** RoleMIAster bringt sein eigenes digitales Gehirn mit. Es funktioniert **ohne Internet** und ohne dass du an irgendwelchen seltsamen Dingen herumfummeln musst. Installieren und losspielen!
+1.  **🤖 Lokale integrierte KI:** RolemIAster bringt sein eigenes digitales Gehirn mit. Es funktioniert **ohne Internet** und ohne dass du an irgendwelchen seltsamen Dingen herumfummeln musst. Installieren und losspielen!
 2.  **☁️ Optionale Cloud:** Wenn du lieber Geld für externe KIs (OpenAI, Gemini...) ausgeben möchtest, dann mach das mit deiner Kreditkarte. Die Kosten sind dein eigenes Problem.
 3.  **🎲 Generativer Zufall:** Die KI erfindet die Geschichte im Moment. Wenn der Erzähler verrückt spielt und sagt, dass Kühe regnen, schau nicht uns an. Der Entwickler übernimmt keine Verantwortung für die Verrücktheiten, die das Modell generiert.
 4.  **🏗️ Early Access:** Hier wird noch gebaut. Wenn du einen Bug findest, ist das kein Fehler, sondern ein überraschendes "Feature"! (Bitte schicke uns Feedback, das hilft uns sehr).
@@ -17,12 +17,12 @@ Schnapp dir deine Würfel (oder deine Maus) und mach dich bereit, Abenteuer zu e
 
 ## 🖥️ SYSTEMANFORDERUNGEN UND DIGITALE GEHIRNE (KI)
 
-RoleMIAster funktioniert mit **lokaler künstlicher Intelligenz**. Das bedeutet, dein PC erledigt die harte Denk-Arbeit. Du brauchst kein Internet, aber eine Grafikkarte, die nicht aus der Zeit der Dinosaurier stammt. (Hinweis: Wenn es in deinem Zimmer kalt ist, funktioniert dieses Spiel als kostenlose Heizung).
+RolemIAster funktioniert mit **lokaler künstlicher Intelligenz**. Das bedeutet, dein PC erledigt die harte Denk-Arbeit. Du brauchst kein Internet, aber eine Grafikkarte, die nicht aus der Zeit der Dinosaurier stammt. (Hinweis: Wenn es in deinem Zimmer kalt ist, funktioniert dieses Spiel als kostenlose Heizung).
 
 ### ⚙️ Konzepte für Einsteiger
 
 **VRAM (Grafikspeicher)** ist der Treibstoff der KI.
-*   RoleMIAster muss sich **12.000 bis 16.000 Wörter (Tokens)** "merken", um den Faden der Geschichte nicht zu verlieren.
+*   RolemIAster muss sich **12.000 bis 16.000 Wörter (Tokens)** "merken", um den Faden der Geschichte nicht zu verlieren.
 *   Wenn deiner GPU der Speicher ausgeht, wird das Spiel langsamer sein als eine Schnecke mit Asthma.
 
 ---
@@ -133,7 +133,7 @@ Wenn du das Spiel öffnest, hast du zwei Wege:
 
 ## 📜 SPIELREGELN (Ja, es gibt Regeln)
 
-RoleMIAster verwendet ein klassisches und robustes W100-Würfelsystem (Hundertseitenwürfel).
+RolemIAster verwendet ein klassisches und robustes W100-Würfelsystem (Hundertseitenwürfel).
 
 ### 1. Deine Attribute (Was dich definiert)
 Sie werden zufällig generiert, genau wie beim klassischen Pen-&-Paper-Rollenspiel!
@@ -249,7 +249,7 @@ Im Menü **Einstellungen** kannst du alles anpassen:
 
 ## 🚧 Hinweis: Early Access
 
-RoleMIAster befindet sich in **aktiver Entwicklung**, es köchelt langsam.
+RolemIAster befindet sich in **aktiver Entwicklung**, es köchelt langsam.
 *   Du kannst Bugs (oder "unerwartete Features") finden.
 *   Ich füge jede Woche neue Dinge hinzu.
 *   Dein Feedback ist Gold wert! Sag mir, was dir gefällt und was dir sehr gefällt.

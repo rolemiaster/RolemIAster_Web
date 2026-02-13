@@ -1,6 +1,6 @@
-# 🐉 Welkom bij RoleMIAster!
+# 🐉 Welkom bij RolemIAster!
 
-Pak je dobbelstenen (of je muis) en bereid je voor op avonturen waar de enige limiet is hoe verwrongen je fantasie is! **RoleMIAster** is een oneindig rollenspel gedreven door Kunstmatige Intelligentie waarmee je de held (of de schurk) van je eigen verhalen kunt zijn.
+Pak je dobbelstenen (of je muis) en bereid je voor op avonturen waar de enige limiet is hoe verwrongen je fantasie is! **RolemIAster** is een oneindig rollenspel gedreven door Kunstmatige Intelligentie waarmee je de held (of de schurk) van je eigen verhalen kunt zijn.
 
 ---
 
@@ -8,7 +8,7 @@ Pak je dobbelstenen (of je muis) en bereid je voor op avonturen waar de enige li
 
 **LEES DIT OF LIJD DE WOEDE VAN DE DOBBELSTENEN:**
 
-1.  **🤖 Geïntegreerde Lokale AI:** RoleMIAster brengt zijn eigen digitale brein mee. Het werkt **zonder internet** en zonder dat je iets raars hoeft te doen. Installeren en spelen!
+1.  **🤖 Geïntegreerde Lokale AI:** RolemIAster brengt zijn eigen digitale brein mee. Het werkt **zonder internet** en zonder dat je iets raars hoeft te doen. Installeren en spelen!
 2.  **☁️ Optionele Cloud:** Als je liever geld uitgeeft aan externe AI's (OpenAI, Gemini...), is dat jouw zaak. De kosten zijn voor jou.
 3.  **🎲 Generatieve Chaos:** De AI verzint het verhaal ter plekke. Als de verteller gek wordt en zegt dat het koeien regent, kijk dan niet naar ons. De ontwikkelaar is niet verantwoordelijk voor de waanzin die het model genereert.
 4.  **🏗️ Early Access:** Dit is nog in aanbouw. Als je een bug vindt, is het geen fout, het is een verrassende "feature"! (Stuur ons feedback, alsjeblieft, dat helpt ons enorm.)
@@ -17,12 +17,12 @@ Pak je dobbelstenen (of je muis) en bereid je voor op avonturen waar de enige li
 
 ## 🖥️ SYSTEEMVEREISTEN EN DIGITALE BREINEN (AI)
 
-RoleMIAster werkt met **Lokale Kunstmatige Intelligentie**. Dat betekent dat je pc het zware denkwerk zal doen. Je hebt geen internet nodig, maar wel een grafische kaart die niet uit het dinosauriërtijdperk stamt. (Opmerking: Als het koud is in je kamer, werkt dit spel als gratis verwarming.)
+RolemIAster werkt met **Lokale Kunstmatige Intelligentie**. Dat betekent dat je pc het zware denkwerk zal doen. Je hebt geen internet nodig, maar wel een grafische kaart die niet uit het dinosauriërtijdperk stamt. (Opmerking: Als het koud is in je kamer, werkt dit spel als gratis verwarming.)
 
 ### ⚙️ Concepten voor beginners
 
 **VRAM (Video RAM)** is de benzine van de AI.
-*   RoleMIAster heeft **12.000 tot 16.000 woorden (tokens)** nodig om de draad van het verhaal niet te verliezen.
+*   RolemIAster heeft **12.000 tot 16.000 woorden (tokens)** nodig om de draad van het verhaal niet te verliezen.
 *   Als je GPU zonder geheugen komt te zitten, zal het spel langzamer zijn dan een slak met astma.
 
 ---
@@ -133,7 +133,7 @@ Bij het openen van het spel heb je twee opties:
 
 ## 📜 SPELREGELS (Ja, er zijn regels)
 
-RoleMIAster gebruikt een klassiek en robuust d100 (honderd-zijdige dobbelsteen) systeem.
+RolemIAster gebruikt een klassiek en robuust d100 (honderd-zijdige dobbelsteen) systeem.
 
 ### 1. Je Attributen (Wat jou definieert)
 Ze worden willekeurig gegenereerd, net als in het tafelrollenspel van vroeger!
@@ -249,7 +249,7 @@ In het menu **Configuratie** kun je alles aanpassen:
 
 ## 🚧 Waarschuwing: Early Access
 
-RoleMIAster is in **actieve ontwikkeling**, langzaam aan het koken.
+RolemIAster is in **actieve ontwikkeling**, langzaam aan het koken.
 *   Je kunt bugs (of "onverwachte features") tegenkomen.
 *   Ik voeg elke week nieuwe dingen toe.
 *   Jouw feedback is goud waard! Vertel me wat je leuk vindt en wat je erg leuk vindt.

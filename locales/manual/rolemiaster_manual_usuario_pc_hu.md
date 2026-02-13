@@ -1,6 +1,6 @@
-# 🐉 Üdvözöl a RoleMIAster!
+# 🐉 Üdvözöl a RolemIAster!
 
-Fogd a kockáidat (vagy az egeredet), és készülj fel olyan kalandokra, ahol az egyetlen határ a képzeleted csavarossága! A **RoleMIAster** egy mesterséges intelligencia által vezérelt, végtelen szerepjáték, amely lehetővé teszi, hogy te légy saját történeteid hőse (vagy gonosztevője).
+Fogd a kockáidat (vagy az egeredet), és készülj fel olyan kalandokra, ahol az egyetlen határ a képzeleted csavarossága! A **RolemIAster** egy mesterséges intelligencia által vezérelt, végtelen szerepjáték, amely lehetővé teszi, hogy te légy saját történeteid hőse (vagy gonosztevője).
 
 ---
 
@@ -8,7 +8,7 @@ Fogd a kockáidat (vagy az egeredet), és készülj fel olyan kalandokra, ahol a
 
 **OLVASD EL, KÜLÖNBEN SZENVEDNI FOGSZ A KOCKÁK HARAGJÁTÓL:**
 
-1.  **🤖 Integrált Helyi MI:** A RoleMIAsternek saját digitális agya van. **Internet nélkül** működik, és nem kell semmi furcsát beállítanod. Telepítsd és játssz!
+1.  **🤖 Integrált Helyi MI:** A RolemIAsternek saját digitális agya van. **Internet nélkül** működik, és nem kell semmi furcsát beállítanod. Telepítsd és játssz!
 2.  **☁️ Opcionális Felhő:** Ha inkább pénzt költenél külső MI-kre (OpenAI, Gemini...), akkor a te dolgod a hitelkártyáddal. A költségek a tiéd.
 3.  **🎲 Generatív Káosz:** A MI rögtönözve találja ki a történetet. Ha a narrátor megőrül, és azt mondja, hogy tehéneg, ne minket nézz. A fejlesztő nem vállal felelősséget a modell által generált őrületekért.
 4.  **🏗️ Korai Hozzáférés:** Ez még fejlesztés alatt áll. Ha találsz egy hibát, az nem bug, hanem egy meglepetés "funkció"! (Kérlek, küldj visszajelzést, mert nagyon sokat segít.)
@@ -17,12 +17,12 @@ Fogd a kockáidat (vagy az egeredet), és készülj fel olyan kalandokra, ahol a
 
 ## 🖥️ RENDSZERKÖVETELMÉNYEK ÉS DIGITÁLIS AGYAK (MI)
 
-A RoleMIAster **Helyi Mesterséges Intelligenciával** működik. Ez azt jelenti, hogy a számítógéped végzi a kemény gondolkodási munkát. Nincs szükséged internetre, de egy grafikus kártyára, ami nem a dinoszauruszok korából való. (Megjegyzés: Ha hideg van a szobádban, ez a játék ingyenes fűtésként is működik.)
+A RolemIAster **Helyi Mesterséges Intelligenciával** működik. Ez azt jelenti, hogy a számítógéped végzi a kemény gondolkodási munkát. Nincs szükséged internetre, de egy grafikus kártyára, ami nem a dinoszauruszok korából való. (Megjegyzés: Ha hideg van a szobádban, ez a játék ingyenes fűtésként is működik.)
 
 ### ⚙️ Fogalmak kezdőknek
 
 A **VRAM (Videó memória)** az MI üzemanyaga.
-*   A RoleMIAsternek kb. **12 000–16 000 szóra (tokenre)** van szüksége, hogy ne veszítse el a történet fonalát.
+*   A RolemIAsternek kb. **12 000–16 000 szóra (tokenre)** van szüksége, hogy ne veszítse el a történet fonalát.
 *   Ha a GPU-d kifogy a memóriából, a játék lassabb lesz, mint egy asztmás csiga.
 
 ---
@@ -133,7 +133,7 @@ Amikor elindítod a játékot, két út áll előtted:
 
 ## 📜 JÁTSZÉKI SZABÁLYOK (Igen, vannak szabályok)
 
-A RoleMIAster egy klasszikus és robusztus d100 (százoldalú kocka) rendszert használ.
+A RolemIAster egy klasszikus és robusztus d100 (százoldalú kocka) rendszert használ.
 
 ### 1. Az attribútumaid (Mi határoz meg téged)
 Véletlenszerűen generálódnak, mint az asztali szerepjátékokban régen!
@@ -249,7 +249,7 @@ A **Beállítások** menüben mindent módosíthatsz:
 
 ## 🚧 Figyelmeztetés: Korai Hozzáférés
 
-A RoleMIAster **aktív fejlesztés alatt áll**, lassan fő.
+A RolemIAster **aktív fejlesztés alatt áll**, lassan fő.
 *   Találhatsz hibákat (vagy "váratlan funkciókat").
 *   Minden héten új dolgokat adok hozzá.
 *   A visszajelzésed aranyat ér! Mondd el, mi tetszik, és mi tetszik nagyon.

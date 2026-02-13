@@ -1,6 +1,6 @@
-# 🐉 Witamy w RoleMIAster!
+# 🐉 Witamy w RolemIAster!
 
-Chwyć swoje kości (lub mysz) i przygotuj się na przeżycie przygód, gdzie jedynym ograniczeniem jest to, jak pokręcona jest Twoja wyobraźnia! **RoleMIAster** to nieskończona gra fabularna napędzana sztuczną inteligencją, która pozwala Ci być bohaterem (lub złoczyńcą) własnych historii.
+Chwyć swoje kości (lub mysz) i przygotuj się na przeżycie przygód, gdzie jedynym ograniczeniem jest to, jak pokręcona jest Twoja wyobraźnia! **RolemIAster** to nieskończona gra fabularna napędzana sztuczną inteligencją, która pozwala Ci być bohaterem (lub złoczyńcą) własnych historii.
 
 ---
 
@@ -8,7 +8,7 @@ Chwyć swoje kości (lub mysz) i przygotuj się na przeżycie przygód, gdzie je
 
 **PRZECZYTAJ ALBO UCZYŃ SIĘ GNIEWU KOŚCI:**
 
-1.  **🤖 Zintegrowana Sztuczna Inteligencja Lokalna:** RoleMIAster ma swój własny cyfrowy mózg. Działa **bez internetu** i bez potrzeby grzebania w dziwnych ustawieniach. Zainstaluj i graj!
+1.  **🤖 Zintegrowana Sztuczna Inteligencja Lokalna:** RolemIAster ma swój własny cyfrowy mózg. Działa **bez internetu** i bez potrzeby grzebania w dziwnych ustawieniach. Zainstaluj i graj!
 2.  **☁️ Opcjonalna Chmura:** Jeśli wolisz wydawać pieniądze na zewnętrzne sztuczne inteligencje (OpenAI, Gemini...), to Twoja sprawa i Twoja karta kredytowa. Koszty leżą po Twojej stronie.
 3.  **🎲 Generowany Chaos:** Sztuczna inteligencja wymyśla historię na bieżąco. Jeśli narrator oszaleje i powie, że spadają krowy, nie patrz na nas. Deweloper nie ponosi odpowiedzialności za szaleństwa generowane przez model.
 4.  **🏗️ Wczesny Dostęp:** To jest w budowie. Jeśli znajdziesz błąd, to nie jest to wada, to niespodzianka w postaci "funkcji"! (Prześlij nam swoją opinię, proszę, bardzo nam pomaga).
@@ -17,12 +17,12 @@ Chwyć swoje kości (lub mysz) i przygotuj się na przeżycie przygód, gdzie je
 
 ## 🖥️ WYMAGANIA SYSTEMOWE I CYFROWE MÓZGI (AI)
 
-RoleMIAster działa z **Lokalną Sztuczną Inteligencją**. Oznacza to, że Twój PC wykona ciężką pracę myślową. Nie potrzebujesz internetu, ale przyda się karta graficzna, która nie pochodzi z epoki dinozaurów. (Uwaga: Jeśli w Twoim pokoju jest zimno, ta gra działa jak darmowe ogrzewanie).
+RolemIAster działa z **Lokalną Sztuczną Inteligencją**. Oznacza to, że Twój PC wykona ciężką pracę myślową. Nie potrzebujesz internetu, ale przyda się karta graficzna, która nie pochodzi z epoki dinozaurów. (Uwaga: Jeśli w Twoim pokoju jest zimno, ta gra działa jak darmowe ogrzewanie).
 
 ### ⚙️ Koncepcje dla początkujących
 
 **VRAM (Pamięć Wideo)** to paliwo dla sztucznej inteligencji.
-*   RoleMIAster potrzebuje "zapamiętać" od **12 000 do 16 000 słów (tokenów)**, aby nie zgubić wątku historii.
+*   RolemIAster potrzebuje "zapamiętać" od **12 000 do 16 000 słów (tokenów)**, aby nie zgubić wątku historii.
 *   Jeśli Twoja karta graficzna zabraknie pamięci, gra będzie działać wolniej niż ślimak z astmą.
 
 ---
@@ -133,7 +133,7 @@ Po otwarciu gry masz dwie ścieżki:
 
 ## 📜 ZASADY GRY (Tak, są zasady)
 
-RoleMIAster wykorzystuje klasyczny i solidny system d100 (kość stustronnicza).
+RolemIAster wykorzystuje klasyczny i solidny system d100 (kość stustronnicza).
 
 ### 1. Twoje Atrybuty (Co Cię definiuje)
 Generowane są losowo, jak w tradycyjnym RPG przy stole!
@@ -249,7 +249,7 @@ W menu **Konfiguracja** możesz wszystko dostosować:
 
 ## 🚧 Uwaga: Wczesny Dostęp
 
-RoleMIAster jest w **aktywnym rozwoju**, gotując się na wolnym ogniu.
+RolemIAster jest w **aktywnym rozwoju**, gotując się na wolnym ogniu.
 *   Możesz natknąć się na błędy (lub "nieoczekiwane funkcje").
 *   Dodaję nowe rzeczy co tydzień.
 *   Twoja opinia jest na wagę złota! Powiedz mi, co Ci się podoba, a co bardzo Ci się podoba.

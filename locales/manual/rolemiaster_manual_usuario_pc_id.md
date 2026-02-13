@@ -1,6 +1,6 @@
-# 🐉 Selamat Datang di RoleMIAster!
+# 🐉 Selamat Datang di RolemIAster!
 
-Ambil dadu Anda (atau mouse Anda) dan bersiaplah untuk menjalani petualangan di mana satu-satunya batasan adalah seberapa liar imajinasi Anda! **RoleMIAster** adalah permainan peran tanpa akhir yang didukung oleh Kecerdasan Buatan yang memungkinkan Anda menjadi pahlawan (atau penjahat) dari kisah Anda sendiri.
+Ambil dadu Anda (atau mouse Anda) dan bersiaplah untuk menjalani petualangan di mana satu-satunya batasan adalah seberapa liar imajinasi Anda! **RolemIAster** adalah permainan peran tanpa akhir yang didukung oleh Kecerdasan Buatan yang memungkinkan Anda menjadi pahlawan (atau penjahat) dari kisah Anda sendiri.
 
 ---
 
@@ -8,7 +8,7 @@ Ambil dadu Anda (atau mouse Anda) dan bersiaplah untuk menjalani petualangan di 
 
 **BACA ATAU ANDA AKAN MENDERITA KEMARAHAN DADU:**
 
-1.  **🤖 AI Lokal Terintegrasi:** RoleMIAster membawa otak digitalnya sendiri. Berfungsi **tanpa internet** dan tanpa Anda harus menyentuh apa pun yang aneh. Instal dan mainkan!
+1.  **🤖 AI Lokal Terintegrasi:** RolemIAster membawa otak digitalnya sendiri. Berfungsi **tanpa internet** dan tanpa Anda harus menyentuh apa pun yang aneh. Instal dan mainkan!
 2.  **☁️ Awan Opsional:** Jika Anda lebih suka menghabiskan uang untuk AI eksternal (OpenAI, Gemini...), terserah Anda dengan kartu kredit Anda. Biayanya adalah urusan Anda.
 3.  **🎲 Kekacauan Generatif:** AI menciptakan cerita saat itu juga. Jika narator menjadi gila dan mengatakan sapi turun dari langit, jangan salahkan kami. Pengembang tidak bertanggung jawab atas kegilaan yang dihasilkan model.
 4.  **🏗️ Akses Awal:** Ini sedang dalam pengerjaan. Jika Anda menemukan bug, itu bukan kegagalan, itu "fitur" kejutan! (Kirimkan umpan balik kepada kami, tolong, itu sangat membantu kami).
@@ -17,12 +17,12 @@ Ambil dadu Anda (atau mouse Anda) dan bersiaplah untuk menjalani petualangan di 
 
 ## 🖥️ PERSYARATAN SISTEM DAN OTAK DIGITAL (AI)
 
-RoleMIAster berfungsi dengan **Kecerdasan Buatan Lokal**. Itu berarti PC Anda akan melakukan pekerjaan berat dalam berpikir. Anda tidak memerlukan internet, tetapi Anda memerlukan kartu grafis yang bukan dari zaman dinosaurus. (Catatan: Jika kamar Anda dingin, permainan ini berfungsi sebagai pemanas gratis).
+RolemIAster berfungsi dengan **Kecerdasan Buatan Lokal**. Itu berarti PC Anda akan melakukan pekerjaan berat dalam berpikir. Anda tidak memerlukan internet, tetapi Anda memerlukan kartu grafis yang bukan dari zaman dinosaurus. (Catatan: Jika kamar Anda dingin, permainan ini berfungsi sebagai pemanas gratis).
 
 ### ⚙️ Konsep untuk Pemula
 
 **VRAM (Memori Video)** adalah bensin AI.
-*   RoleMIAster perlu "mengingat" **12.000 hingga 16.000 kata (token)** agar tidak kehilangan alur cerita.
+*   RolemIAster perlu "mengingat" **12.000 hingga 16.000 kata (token)** agar tidak kehilangan alur cerita.
 *   Jika GPU Anda kehabisan memori, permainan akan berjalan lebih lambat daripada siput yang asma.
 
 ---
@@ -133,7 +133,7 @@ Saat membuka permainan, Anda memiliki dua pilihan:
 
 ## 📜 ATURAN PERMAINAN (Ya, ada aturan)
 
-RoleMIAster menggunakan sistem d100 (dadu seratus sisi) klasik dan kuat.
+RolemIAster menggunakan sistem d100 (dadu seratus sisi) klasik dan kuat.
 
 ### 1. Atribut Anda (Yang Mendefinisikan Anda)
 Dihasilkan secara acak, seperti pada permainan meja tradisional!
@@ -249,7 +249,7 @@ Di menu **Pengaturan**, Anda dapat mengubah semuanya:
 
 ## 🚧 Pemberitahuan: Akses Awal
 
-RoleMIAster sedang dalam **pengembangan aktif**, dimasak perlahan.
+RolemIAster sedang dalam **pengembangan aktif**, dimasak perlahan.
 *   Anda mungkin menemukan bug (atau "fitur tak terduga").
 *   Saya menambahkan hal-hal baru setiap minggu.
 *   Umpan balik Anda sangat berharga! Beri tahu saya apa yang Anda sukai dan apa yang sangat Anda sukai.

@@ -1,6 +1,6 @@
-# 🐉 Tervetuloa RoleMIAsteriin!
+# 🐉 Tervetuloa RolemIAsteriin!
 
-Ota noppasi (tai hiiresi) mukaan ja valmistaudu seikkailuihin, joissa ainoa raja on mielikuvituksesi villiyden aste! **RoleMIAster** on tekoälyllä toimiva, loputon roolipeli, joka antaa sinun olla omien tarinoidesi sankari (tai pahis).
+Ota noppasi (tai hiiresi) mukaan ja valmistaudu seikkailuihin, joissa ainoa raja on mielikuvituksesi villiyden aste! **RolemIAster** on tekoälyllä toimiva, loputon roolipeli, joka antaa sinun olla omien tarinoidesi sankari (tai pahis).
 
 ---
 
@@ -8,7 +8,7 @@ Ota noppasi (tai hiiresi) mukaan ja valmistaudu seikkailuihin, joissa ainoa raja
 
 **LUE TAI KÄRSIT NOPPIEN VIHASTA:**
 
-1.  **🤖 Integroitu paikallinen tekoäly:** RoleMIAster tuo oman digitaalisen aivonsa. Se toimii **ilman internetiä** eikä vaadi sinulta mitään erikoisia toimenpiteitä. Asenna ja pelaa!
+1.  **🤖 Integroitu paikallinen tekoäly:** RolemIAster tuo oman digitaalisen aivonsa. Se toimii **ilman internetiä** eikä vaadi sinulta mitään erikoisia toimenpiteitä. Asenna ja pelaa!
 2.  **☁️ Valinnainen pilvi:** Jos haluat tuhlata rahaa ulkoisiin tekoälyihin (OpenAI, Gemini...), se on omalla vastuullasi luottokorttisi kanssa. Kulut ovat sinun.
 3.  **🎲 Generatiivinen kaaos:** Tekoäly keksii tarinan lennossa. Jos pelinjohtaja sekoaa ja ilmoittaa, että taivaalta sataa lehmiä, älä syytä meitä. Kehittäjä ei ole vastuussa mallin tuottamista hulluuksista.
 4.  **🏗️ Varhainen pääsy:** Tämä on vielä työn alla. Jos löydät bugin, se ei ole virhe, vaan yllättävä "ominaisuus"! (Lähetä meille palautetta, se auttaa meitä paljon).
@@ -17,12 +17,12 @@ Ota noppasi (tai hiiresi) mukaan ja valmistaudu seikkailuihin, joissa ainoa raja
 
 ## 🖥️ JÄRJESTELMÄVAATIMUKSET JA DIGITAALISET AIVOT (Tekoäly)
 
-RoleMIAster toimii **paikallisella tekoälyllä**. Tämä tarkoittaa, että tietokoneesi tekee raskaan ajatustyön. Internetiä ei tarvita, mutta tarvitaan näytönohjain, joka ei ole peräisin dinosaurusten ajoilta. (Huomautus: Jos huoneessasi on kylmä, tämä peli toimii ilmaisena lämmittimenä).
+RolemIAster toimii **paikallisella tekoälyllä**. Tämä tarkoittaa, että tietokoneesi tekee raskaan ajatustyön. Internetiä ei tarvita, mutta tarvitaan näytönohjain, joka ei ole peräisin dinosaurusten ajoilta. (Huomautus: Jos huoneessasi on kylmä, tämä peli toimii ilmaisena lämmittimenä).
 
 ### ⚙️ Käsitteitä aloittelijoille
 
 **VRAM (Näyttömuisti)** on tekoälyn polttoainetta.
-*   RoleMIAsterin tarvitsee "muistaa" **12 000–16 000 sanaa (tokenia)**, jotta se ei kadota tarinan lankaa.
+*   RolemIAsterin tarvitsee "muistaa" **12 000–16 000 sanaa (tokenia)**, jotta se ei kadota tarinan lankaa.
 *   Jos näytönohjaimesi muisti loppuu, peli hidastuu enemmän kuin astmaa sairastava etana.
 
 ---
@@ -133,7 +133,7 @@ Kun avaat pelin, sinulla on kaksi polkua:
 
 ## 📜 PELISÄÄNNÖT (Kyllä, on sääntöjä)
 
-RoleMIAster käyttää klassista ja vankkaa d100-järjestelmää (sadansivuisia noppia).
+RolemIAster käyttää klassista ja vankkaa d100-järjestelmää (sadansivuisia noppia).
 
 ### 1. Attribuuttisi (Mikä määrittelee sinut)
 Ne generoidaan satunnaisesti, kuten ikivanhoissa pöytäroolipeleissä!
@@ -249,7 +249,7 @@ Puhu NPC:iden kanssa kauppaa käydäksesi.
 
 ## 🚧 Huomautus: Varhainen pääsy
 
-RoleMIAster on **aktiivisessa kehityksessä**, kypsymässä hitaasti.
+RolemIAster on **aktiivisessa kehityksessä**, kypsymässä hitaasti.
 *   Voit löytää bugeja (tai "yllättäviä ominaisuuksia").
 *   Lisään uusia asioita joka viikko.
 *   Palautteesi on kullanarvoista! Kerro, mistä pidät ja mistä todella pidät.

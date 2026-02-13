@@ -1,6 +1,6 @@
-# 🐉 RoleMIAster'a Hoş Geldiniz!
+# 🐉 RolemIAster'a Hoş Geldiniz!
 
-Zarlarınızı (veya farenizi) kapın ve hayal gücünüzün ne kadar kıvrımlı olduğuyla sınırlanan maceralara atılmaya hazırlanın! **RoleMIAster**, kendi hikayelerinizin kahramanı (veya kötü adamı) olmanızı sağlayan, yapay zeka tarafından desteklenen sonsuz bir rol yapma oyunudur.
+Zarlarınızı (veya farenizi) kapın ve hayal gücünüzün ne kadar kıvrımlı olduğuyla sınırlanan maceralara atılmaya hazırlanın! **RolemIAster**, kendi hikayelerinizin kahramanı (veya kötü adamı) olmanızı sağlayan, yapay zeka tarafından desteklenen sonsuz bir rol yapma oyunudur.
 
 ---
 
@@ -8,7 +8,7 @@ Zarlarınızı (veya farenizi) kapın ve hayal gücünüzün ne kadar kıvrıml�
 
 **OKUYUN YOKSA ZARARIN GAZABINA UĞRAYACAKSINIZ:**
 
-1.  **🤖 Dahili Yerel Yapay Zeka:** RoleMIAster kendi dijital beynini getiriyor. **İnternet olmadan** ve garip bir şeye dokunmanıza gerek kalmadan çalışır. Kurun ve oynayın!
+1.  **🤖 Dahili Yerel Yapay Zeka:** RolemIAster kendi dijital beynini getiriyor. **İnternet olmadan** ve garip bir şeye dokunmanıza gerek kalmadan çalışır. Kurun ve oynayın!
 2.  **☁️ İsteğe Bağlı Bulut:** Dış yapay zekalara (OpenAI, Gemini...) para harcamayı tercih ediyorsanız, kredi kartınızla baş başasınız. Maliyetler size aittir.
 3.  **🎲 Üretken Kaos:** Yapay zeka hikayeyi anında uydurur. Anlatıcı çıldırıp inek yağdığını söylerse, bize bakmayın. Geliştirici, modelin ürettiği çılgınlıklardan sorumlu değildir.
 4.  **🏗️ Erken Erişim:** Burası inşaat halinde. Bir hata bulursanız, bu bir arıza değil, sürpriz bir "özellik"! (Lütfen bize geri bildirim gönderin, çok yardımcı oluyor).
@@ -17,12 +17,12 @@ Zarlarınızı (veya farenizi) kapın ve hayal gücünüzün ne kadar kıvrıml�
 
 ## 🖥️ SİSTEM GEREKSİNİMLERİ VE DİJİTAL BEYİNLER (Yapay Zeka)
 
-RoleMIAster, **Yerel Yapay Zeka** ile çalışır. Bu, bilgisayarınızın düşünme işini yapacağı anlamına gelir. İnternete ihtiyacınız yok, ancak dinozorlardan kalma olmayan bir grafik kartına ihtiyacınız var. (Not: Odada hava soğuksa, bu oyun ücretsiz ısıtma görevi görür).
+RolemIAster, **Yerel Yapay Zeka** ile çalışır. Bu, bilgisayarınızın düşünme işini yapacağı anlamına gelir. İnternete ihtiyacınız yok, ancak dinozorlardan kalma olmayan bir grafik kartına ihtiyacınız var. (Not: Odada hava soğuksa, bu oyun ücretsiz ısıtma görevi görür).
 
 ### ⚙️ Başlangıç Seviyesi İçin Kavramlar
 
 **VRAM (Video Belleği)** yapay zekanın benzini gibidir.
-*   RoleMIAster, hikayenin akışını kaybetmemek için **12.000 ila 16.000 kelimeyi (token)** "hatırlaması" gerekir.
+*   RolemIAster, hikayenin akışını kaybetmemek için **12.000 ila 16.000 kelimeyi (token)** "hatırlaması" gerekir.
 *   GPU'nuzun belleği tükenirse, oyun astımı olan bir salyangozdan daha yavaş çalışacaktır.
 
 ---
@@ -133,7 +133,7 @@ Oyunu açtığınızda iki seçeneğiniz var:
 
 ## 📜 OYUN KURALLARI (Evet, kurallar var)
 
-RoleMIAster, klasik ve sağlam bir d100 (yüzlü zar) sistemi kullanır.
+RolemIAster, klasik ve sağlam bir d100 (yüzlü zar) sistemi kullanır.
 
 ### 1. Nitelikleriniz (Sizi Tanımlayan Şey)
 Masaüstü rol yapma oyunlarındaki gibi rastgele oluşturulur!
@@ -249,7 +249,7 @@ Alışveriş yapmak için NPC'lerle konuşun.
 
 ## 🚧 Uyarı: Erken Erişim
 
-RoleMIAster **aktif geliştirme aşamasındadır**, yavaş pişmektedir.
+RolemIAster **aktif geliştirme aşamasındadır**, yavaş pişmektedir.
 *   Hatalar (veya "beklenmedik özellikler") bulabilirsiniz.
 *   Her hafta yeni şeyler ekliyorum.
 *   Geri bildiriminiz altın değerinde! Neyi sevdiğinizi ve neyi çok sevdiğinizi söyleyin.

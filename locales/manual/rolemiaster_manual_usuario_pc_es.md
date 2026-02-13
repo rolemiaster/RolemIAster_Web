@@ -1,6 +1,6 @@
-# 🐉 ¡Bienvenido a RoleMIAster!
+# 🐉 ¡Bienvenido a RolemIAster!
 
-¡Agarra tus dados (o tu ratón) y prepárate para vivir aventuras donde el único límite es lo retorcida que sea tu imaginación! **RoleMIAster** es un juego de rol infinito impulsado por Inteligencia Artificial que te permite ser el héroe (o el villano) de tus propias historias.
+¡Agarra tus dados (o tu ratón) y prepárate para vivir aventuras donde el único límite es lo retorcida que sea tu imaginación! **RolemIAster** es un juego de rol infinito impulsado por Inteligencia Artificial que te permite ser el héroe (o el villano) de tus propias historias.
 
 ---
 
@@ -8,7 +8,7 @@
 
 **LÉEME O SUFRIRÁS LA IRA DE LOS DADOS:**
 
-1.  **🤖 IA Local Integrada:** RoleMIAster trae su propio cerebro digital. Funciona **sin internet** y sin que tengas que tocar nada raro. ¡Instalar y jugar!
+1.  **🤖 IA Local Integrada:** RolemIAster trae su propio cerebro digital. Funciona **sin internet** y sin que tengas que tocar nada raro. ¡Instalar y jugar!
 2.  **☁️ Nube Opcional:** Si prefieres gastar los dineros en IAs externas (OpenAI, Gemini...), allá tú con tu tarjeta de crédito. Los costes son cosa tuya.
 3.  **🎲 Caos Generativo:** La IA inventa la historia sobre la marcha. Si el narrador se vuelve loco y dice que llueven vacas, no nos mires a nosotros. El desarrollador no se hace responsable de las locuras que genere el modelo.
 4.  **🏗️ Early Access:** Esto está en obras. Si encuentras un bug, no es un fallo, ¡es una "feature" sorpresa! (Mándanos feedback, porfa, que nos ayuda mucho).
@@ -17,12 +17,12 @@
 
 ## 🖥️ REQUISITOS DEL SISTEMA Y CEREBROS DIGITALES (IA)
 
-RoleMIAster funciona con **Inteligencia Artificial Local**. Eso significa que tu PC hará el trabajo duro de pensar. No necesitas internet, pero sí una tarjeta gráfica que no sea de la época de los dinosaurios. (Nota: Si hace frío en tu habitación, este juego funciona como calefacción gratis).
+RolemIAster funciona con **Inteligencia Artificial Local**. Eso significa que tu PC hará el trabajo duro de pensar. No necesitas internet, pero sí una tarjeta gráfica que no sea de la época de los dinosaurios. (Nota: Si hace frío en tu habitación, este juego funciona como calefacción gratis).
 
 ### ⚙️ Conceptos para no iniciados
 
 La **VRAM (Memoria de Vídeo)** es la gasolina de la IA.
-*   RoleMIAster necesita "recordar" de **12,000 a 16,000 palabras (tokens)** para no perder el hilo de la historia.
+*   RolemIAster necesita "recordar" de **12,000 a 16,000 palabras (tokens)** para no perder el hilo de la historia.
 *   Si tu GPU se queda sin memoria, el juego irá más lento que un caracol con asma.
 
 ---
@@ -133,7 +133,7 @@ Al abrir el juego, tienes dos caminos:
 
 ## 📜 REGLAS DEL JUEGO (Sí, hay reglas)
 
-RoleMIAster usa un sistema d100 (dado de cien caras) clásico y robusto.
+RolemIAster usa un sistema d100 (dado de cien caras) clásico y robusto.
 
 ### 1. Tus Atributos (Lo que te define)
 Se generan al azar, ¡como en el rol de mesa de toda la vida!
@@ -259,7 +259,7 @@ En el menú de **Configuración** puedes tocarlo todo:
 
 ## 🚧 Aviso: Early Access
 
-RoleMIAster está en **desarrollo activo**, cocinándose a fuego lento.
+RolemIAster está en **desarrollo activo**, cocinándose a fuego lento.
 *   Puedes encontrar bugs (o "características inesperadas").
 *   Añado cosas nuevas cada semana.
 *   ¡Tu feedback vale oro! Dime qué te gusta y qué te gusta mucho.

@@ -1,6 +1,6 @@
-# 🐉 Bun venit în RoleMIAster!
+# 🐉 Bun venit în RolemIAster!
 
-Prindeți-vă zarurile (sau mouse-ul) și pregătiți-vă să trăiți aventuri unde singura limită este cât de răsucită este imaginația voastră! **RoleMIAster** este un joc de rol infinit, alimentat de Inteligență Artificială, care vă permite să fiți eroul (sau răufăcătorul) propriilor voastre povești.
+Prindeți-vă zarurile (sau mouse-ul) și pregătiți-vă să trăiți aventuri unde singura limită este cât de răsucită este imaginația voastră! **RolemIAster** este un joc de rol infinit, alimentat de Inteligență Artificială, care vă permite să fiți eroul (sau răufăcătorul) propriilor voastre povești.
 
 ---
 
@@ -8,7 +8,7 @@ Prindeți-vă zarurile (sau mouse-ul) și pregătiți-vă să trăiți aventuri 
 
 **CITEȘTE SAU VEI SUFERI IRA ZARURILOR:**
 
-1.  **🤖 IA Locală Integrată:** RoleMIAster își aduce propriul creier digital. Funcționează **fără internet** și fără să fie nevoie să atingeți ceva ciudat. Instalați și jucați!
+1.  **🤖 IA Locală Integrată:** RolemIAster își aduce propriul creier digital. Funcționează **fără internet** și fără să fie nevoie să atingeți ceva ciudat. Instalați și jucați!
 2.  **☁️ Cloud Opțional:** Dacă preferați să cheltuiți bani pe IA externe (OpenAI, Gemini...), e treaba voastră cu cardul vostru de credit. Costurile sunt pe răspunderea voastră.
 3.  **🎲 Haos Generativ:** IA inventează povestea pe parcurs. Dacă naratorul înnebunește și spune că plouă cu vaci, nu ne uitați pe noi. Dezvoltatorul nu este responsabil pentru nebuniile pe care le generează modelul.
 4.  **🏗️ Acces Timpuriu:** Asta este în lucru. Dacă găsiți un bug, nu este un defect, este o "funcționalitate" surpriză! (Trimiteți-ne feedback, vă rugăm, ne ajută mult).
@@ -17,12 +17,12 @@ Prindeți-vă zarurile (sau mouse-ul) și pregătiți-vă să trăiți aventuri 
 
 ## 🖥️ CERINȚE DE SISTEM ȘI CREIERE DIGITALE (IA)
 
-RoleMIAster funcționează cu **Inteligență Artificială Locală**. Asta înseamnă că PC-ul vostru va face munca grea de a gândi. Nu aveți nevoie de internet, dar aveți nevoie de o placă grafică care să nu fie din epoca dinozaurilor. (Notă: Dacă este frig în cameră, acest joc funcționează ca încălzire gratuită).
+RolemIAster funcționează cu **Inteligență Artificială Locală**. Asta înseamnă că PC-ul vostru va face munca grea de a gândi. Nu aveți nevoie de internet, dar aveți nevoie de o placă grafică care să nu fie din epoca dinozaurilor. (Notă: Dacă este frig în cameră, acest joc funcționează ca încălzire gratuită).
 
 ### ⚙️ Concepte pentru începători
 
 **VRAM (Memoria Video)** este benzina IA.
-*   RoleMIAster are nevoie să "țină minte" **de la 12.000 la 16.000 de cuvinte (token-uri)** pentru a nu pierde firul poveștii.
+*   RolemIAster are nevoie să "țină minte" **de la 12.000 la 16.000 de cuvinte (token-uri)** pentru a nu pierde firul poveștii.
 *   Dacă GPU-ul vostru rămâne fără memorie, jocul va merge mai lent decât un melc cu astm.
 
 ---
@@ -133,7 +133,7 @@ La deschiderea jocului, aveți două căi:
 
 ## 📜 REGULILE JOCULUI (Da, există reguli)
 
-RoleMIAster folosește un sistem clasic și robust d100 (zar cu o sută de fețe).
+RolemIAster folosește un sistem clasic și robust d100 (zar cu o sută de fețe).
 
 ### 1. Atributele Tale (Ce te definește)
 Se generează aleatoriu, ca la rolul de masă de-o viață!
@@ -249,7 +249,7 @@ Vorbește cu NPC-uri pentru a face comerț.
 
 ## 🚧 Notă: Acces Timpuriu
 
-RoleMIAster este în **dezvoltare activă**, gătindu-se la foc mic.
+RolemIAster este în **dezvoltare activă**, gătindu-se la foc mic.
 *   Poți găsi bug-uri (sau "caracteristici neașteptate").
 *   Adaug lucruri noi în fiecare săptămână.
 *   Feedback-ul tău valorează aur! Spune-mi ce-ți place și ce-ți place mult.

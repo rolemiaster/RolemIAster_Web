@@ -1,6 +1,6 @@
-# 🐉 Velkommen til RoleMIAster!
+# 🐉 Velkommen til RolemIAster!
 
-Grib dine terninger (eller din mus) og gør dig klar til at opleve eventyr, hvor den eneste grænse er, hvor snoet din fantasi er! **RoleMIAster** er et uendeligt AI-drevet rollespil, der lader dig være helten (eller skurken) i dine egne historier.
+Grib dine terninger (eller din mus) og gør dig klar til at opleve eventyr, hvor den eneste grænse er, hvor snoet din fantasi er! **RolemIAster** er et uendeligt AI-drevet rollespil, der lader dig være helten (eller skurken) i dine egne historier.
 
 ---
 
@@ -8,7 +8,7 @@ Grib dine terninger (eller din mus) og gør dig klar til at opleve eventyr, hvor
 
 **LÆS DENNE ELLER LID UNDER TERNINGERNES VREDEN:**
 
-1.  **🤖 Lokal Integreret AI:** RoleMIAster medbringer sin egen digitale hjerne. Den fungerer **uden internet** og uden at du skal røre ved noget mærkeligt. Installer og spil!
+1.  **🤖 Lokal Integreret AI:** RolemIAster medbringer sin egen digitale hjerne. Den fungerer **uden internet** og uden at du skal røre ved noget mærkeligt. Installer og spil!
 2.  **☁️ Valgfri Cloud:** Hvis du foretrækker at bruge penge på eksterne AI'er (OpenAI, Gemini...), så er det dit eget ansvar med dit kreditkort. Omkostningerne er dine.
 3.  **🎲 Generativt Kaos:** AI'en opfinder historien undervejs. Hvis fortælleren bliver skør og siger, at det regner køer, så se ikke på os. Udvikleren er ikke ansvarlig for de vanvittige ting, som modellen genererer.
 4.  **🏗️ Tidlig Adgang:** Dette er under konstruktion. Hvis du finder en fejl, er det ikke en fejl, det er en overraskende "feature"! (Send os feedback, tak, det hjælper os meget).
@@ -17,12 +17,12 @@ Grib dine terninger (eller din mus) og gør dig klar til at opleve eventyr, hvor
 
 ## 🖥️ SYSTEMKRAV OG DIGITALE HJERNER (AI)
 
-RoleMIAster fungerer med **Lokal Kunstig Intelligens**. Det betyder, at din pc vil udføre det tunge tankearbejde. Du behøver ikke internet, men du har brug for et grafikkort, der ikke er fra dinosaurernes tid. (Bemærk: Hvis der er koldt i dit værelse, fungerer dette spil som gratis opvarmning).
+RolemIAster fungerer med **Lokal Kunstig Intelligens**. Det betyder, at din pc vil udføre det tunge tankearbejde. Du behøver ikke internet, men du har brug for et grafikkort, der ikke er fra dinosaurernes tid. (Bemærk: Hvis der er koldt i dit værelse, fungerer dette spil som gratis opvarmning).
 
 ### ⚙️ Koncepter for ikke-initiater
 
 **VRAM (Video RAM)** er AI'ens benzin.
-*   RoleMIAster skal "huske" mellem **12.000 og 16.000 ord (tokens)** for ikke at miste tråden i historien.
+*   RolemIAster skal "huske" mellem **12.000 og 16.000 ord (tokens)** for ikke at miste tråden i historien.
 *   Hvis din GPU løber tør for hukommelse, vil spillet være langsommere end en snegl med astma.
 
 ---
@@ -133,7 +133,7 @@ Når du åbner spillet, har du to muligheder:
 
 ## 📜 SPILREGLER (Ja, der er regler)
 
-RoleMIAster bruger et klassisk og robust d100 (hundredsidet terning) system.
+RolemIAster bruger et klassisk og robust d100 (hundredsidet terning) system.
 
 ### 1. Dine Attributter (Hvad der definerer dig)
 Genereres tilfældigt, ligesom i det gode gamle bordrollespil!
@@ -249,7 +249,7 @@ I **Indstillinger**-menuen kan du pille ved alt:
 
 ## 🚧 Bemærk: Tidlig Adgang
 
-RoleMIAster er under **aktiv udvikling**, der simrer langsomt.
+RolemIAster er under **aktiv udvikling**, der simrer langsomt.
 *   Du kan finde fejl (eller "uventede funktioner").
 *   Jeg tilføjer nye ting hver uge.
 *   Din feedback er guld værd! Fortæl mig, hvad du kan lide, og hvad du virkelig kan lide.
