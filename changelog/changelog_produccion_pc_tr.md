@@ -1,5 +1,23 @@
 ****************************************************************************************************
-14/02/2026 05:06 - Bütünlük Güçlendirmesi, Karakter Farkındalığı ve Optimizasyon - Beta_v056
+14/02/2026 21:48 - Bağlam Senkronizasyonu ve YZ Yanıt Kontrolü - Beta_v057
+****************************************************************************************************
+- What's New (TR):
+  **Sistemler ve Performans:**
+  - 🧠 **Tam Bağlam Kontrolü:** Artık hem YZ belleğini (`n_ctx`) hem de yanıt uzunluğunu (`Max Tokens`) çok daha sezgisel kaydırıcılarla ayarlayabilirsiniz.
+  - ♾️ **Sınırsız Mod:** Gemini gibi güçlü modellerin tüm kapasitelerini kısıtlama olmaksızın kullanmasına izin vermek için "Sınırsız" modunu etkinleştirmek adına kaydırıcıyı en aza getirin.
+  - ⚡ **Sürücüleri Yeniden Başlatma:** Başlatıcıda, oyundan önce video sürücülerini yeniden başlatmak için yeni bir seçenek (isteğe bağlı, başlatıcıdan yapılandırılabilir). Artık başlangıçta ekran yanıp sönecek; bu sayede VRAM'i kalıntılardan temizleyerek tamamen kullanılabilir olduğundan emin oluyoruz.
+  - 🛠️ **Sağlam Yapılandırma:** Tercih ettiğiniz YZ sağlayıcılarının ayarlarını kaydederken oluşan görsel hatalar ve teknik aksaklıklar düzeltildi.
+  - 🚀 **Daha İyi Hata Tespiti:** Oyun artık harici bir YZ'nin ne zaman yer sıkıntısı çektiğini tespit etme konusunda daha akıllı.
+  
+  **Mekanikler ve Dünya:**
+  - 🎒 **Garantili Envanter:** Bir maceraya başlayıp eşyalarınızı görememe devri bitti. SDIA sistemi artık karakter oluşturmayı da denetliyor, böylece ekipmanınız her zaman orada olacak.
+  - 📜 **Arındırılmış Lore:** Dünya hikayenize "kod" parçacıkları veya garip metinler enjekte eden bir hata düzeltildi. Artık Kodeks daha saf ve okunaklı olacak.
+  - ⚠️ **Uyumluluk Kılavuzu:** Uyumlu modelleri (Instruct/Chat) seçmenize yardımcı olmak için ayarlara uyarılar eklendi.
+  - ⚙️ **Güvenilir İmplantlar:** Karakter oluşturmadaki yuva tanımı ve kural yüklemesi düzeltildi. Artık tüm siber geliştirmeleriniz resmi yuvaları kullanacak ve otomatik olarak doğru şekilde donatılacak.
+  - 🎓 **Çırak Sınırı:** Başlangıç beceri dengesi ayarlandı. YZ, karakterinizin bağlamına göre en önemli becerilere otomatik olarak dağıtılacak bir puan paketi oluşturur. Kahramanlarınız artık gerçek birer çaylak olarak başlayacak ve daha mantıklı bir şekilde ilerleyecek.
+
+****************************************************************************************************
+14/02/2026 05:06 - Bütünlük Güçlendirmesi, Karakter Farkındalığı ve Optimizasyon - Beta_v055
 ****************************************************************************************************
 - What's New (TR):
   - 🧠 **İstediğiniz Gibi YZ Önceliği:** Artık hangi YZ bağlantısının önce kullanılacağına karar vermek için sürükleyip bırakabilirsiniz. Biri başarısız olursa, oyun otomatik olarak öncelik listenizdeki bir sonrakini deneyecektir.

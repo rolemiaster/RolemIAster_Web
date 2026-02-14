@@ -1,5 +1,23 @@
 ****************************************************************************************************
-14/02/2026 05:06 - Integritás megerősítése, Karaktertudatosság és Optimalizálás - Beta_v056
+14/02/2026 21:48 - Kontextus-szinkronizáció és MI-válaszvezérlés - Beta_v057
+****************************************************************************************************
+- What's New (HU):
+  **Rendszerek és teljesítmény:**
+  - 🧠 **Teljes kontextusvezérlés:** Mostantól sokkal intuitívabb csúszkákkal állíthatod be az MI memóriáját (`n_ctx`) és válaszainak hosszát (`Max Tokens`).
+  - ♾️ **Korlátlan mód:** Húzd a minimumra a „Korlátlan” mód aktiválásához, lehetővé téve, hogy az olyan nagy teljesítményű modellek, mint a Gemini, korlátozások nélkül használják teljes kapacitásukat.
+  - ⚡ **Illesztőprogramok újraindítása:** Új opció az indítóban a videó-illesztőprogramok játék előtti újraindítására (opcionális, az indítóból konfigurálható); indításkor a képernyő mostantól villogni fog, ezzel biztosítva, hogy a teljes vram rendelkezésre álljon, megtisztítva a maradványoktól.
+  - 🛠️ **Robusztus konfiguráció:** Javítottuk a vizuális hibákat és technikai problémákat a kedvenc MI-szolgáltatóid beállításainak mentésekor.
+  - 🚀 **Jobb hibafelismerés:** A játék mostantól intelligensebben észleli, ha egy külső MI kifogy a helyből.
+  
+  **Mechanikák és világ:**
+  - 🎒 **Garantált eszköztár:** Vége annak, hogy úgy kezdesz egy kalandot, hogy nem látod a tárgyaidat. Az SDIA rendszer mostantól a karakterkészítést is figyeli, hogy a felszerelésed mindig ott legyen.
+  - 📜 **Megtisztított háttértörténet:** Javítottuk azt a hibát, amely „kódtöredékeket” vagy furcsa szövegeket illesztett a világod történetébe. A Kódex mostantól tisztább és olvashatóbb lesz.
+  - ⚠️ **Kompatibilitási útmutató:** Figyelmeztetéseket helyeztünk el a beállításokban, hogy segítsünk a kompatibilis modellek kiválasztásában (Instruct/Chat).
+  - ⚙️ **Megbízható implantátumok:** Javítottuk a foglalatok definícióját és a szabályok betöltését a karakterkészítés során. Mostantól minden kiberfejlesztésed hivatalos foglalatokat használ, és automatikusan, helyesen szerelődik fel.
+  - 🎓 **Tanonc korlát:** Kiigazítottuk a képességek kezdeti egyensúlyát. Az MI generál egy pontcsomagot, amelyet automatikusan eloszt a legfontosabb képességek között a karaktered kontextusa alapján. Hőseid mostantól valódi újoncként kezdenek, és logikusabb módon fejlődnek.
+
+****************************************************************************************************
+14/02/2026 05:06 - Integritás megerősítése, Karaktertudatosság és Optimalizálás - Beta_v055
 ****************************************************************************************************
 - What's New (HU):
   - 🧠 **Testreszabható MI prioritás:** Mostantól áthúzással rendezheted az MI csatlakozókat a használati sorrend meghatározásához. Ha az egyik meghibásodik, a játék automatikusan megpróbálja a következőt a prioritási listádon.

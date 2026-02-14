@@ -1,5 +1,23 @@
 ****************************************************************************************************
-14/02/2026 05:06 - Rafforzamento dell'Integrità, Consapevolezza dei Personaggi e Ottimizzazione - Beta_v056
+14/02/2026 21:48 - Sincronizzazione del Contesto e Controllo Risposta IA - Beta_v057
+****************************************************************************************************
+- What's New (IT):
+  **Sistemi e Prestazioni:**
+  - 🧠 **Controllo Totale del Contesto:** Ora puoi regolare sia la memoria dell'IA (`n_ctx`) che la lunghezza delle sue risposte (`Max Tokens`) con cursori molto più intuitivi.
+  - ♾️ **Modalità Illimitata:** Scorri al minimo per attivare la modalità "Illimitata", lasciando che modelli potenti come Gemini usino tutta la loro capacità senza restrizioni.
+  - ⚡ **Riavvio dei Driver:** Nuova opzione nel launcher per riavviare i driver video prima di giocare (opzionale, configurabile dal launcher); ora all'avvio lo schermo lampeggerà, assicurando che tutta la vram sia disponibile ed epurandola dai residui.
+  - 🛠️ **Configurazione Robusta:** Corretti errori visivi e problemi tecnici nel salvataggio della configurazione dei tuoi provider IA preferiti.
+  - 🚀 **Miglior Rilevamento Errori:** Il gioco ora è più intelligente nel rilevare quando un'IA esterna esaurisce lo spazio.
+  
+  **Meccaniche e Mondo:**
+  - 🎒 **Inventario Garantito:** Basta iniziare un'avventura senza vedere i tuoi oggetti. Il sistema SDIA ora sorveglia anche la creazione del personaggio affinché il tuo equipaggiamento sia sempre lì.
+  - 📜 **Lore Purificata:** Riparato un errore che iniettava frammenti di "codice" o testo strano nella storia del tuo mondo. Ora il Codice sarà più puro e leggibile.
+  - ⚠️ **Guida alla Compatibilità:** Inclusi avvisi nella configurazione per aiutarti a scegliere modelli compatibili (Instruct/Chat).
+  - ⚙️ **Impianti Affidabili:** Corretta la definizione degli slot e il caricamento delle regole nella creazione dei personaggi. Ora tutti i tuoi cyber-potenziamenti useranno slot ufficiali e si auto-equipaggeranno correttamente.
+  - 🎓 **Limite Apprendista:** Regolato il bilanciamento iniziale delle abilità. L'IA genera un pacchetto di punti da distribuire automaticamente nelle abilità più importanti in base al contesto del tuo personaggio. I tuoi eroi ora inizieranno come veri novellini, progredendo in modo più logico.
+
+****************************************************************************************************
+14/02/2026 05:06 - Rafforzamento dell'Integrità, Consapevolezza dei Personaggi e Ottimizzazione - Beta_v055
 ****************************************************************************************************
 - What's New (IT):
   - 🧠 **Priorità IA a tuo piacimento:** Ora puoi trascinare e rilasciare i tuoi connettori IA per decidere quale utilizzare per primo. Se uno fallisce, il gioco tenterà automaticamente con il successivo nella tua lista di priorità.

@@ -1,5 +1,23 @@
 ****************************************************************************************************
-14/02/2026 05:06 - Integritetsforsterkning, Karakterbevissthet og Optimalisering - Beta_v056
+14/02/2026 21:48 - Kontekstsynkronisering og kontroll av AI-respons - Beta_v057
+****************************************************************************************************
+- What's New (NO):
+  **Systemer og ytelse:**
+  - 🧠 **Total kontekstkontroll:** Nå kan du justere både AI-minnet (`n_ctx`) og lengden på svarene (`Max Tokens`) med mye mer intuitive glidebrytere.
+  - ♾️ **Ubegrenset modus:** Dra til minimum for å aktivere "Ubegrenset"-modus, slik at kraftige modeller som Gemini kan bruke hele kapasiteten sin uten begrensninger.
+  - ⚡ **Omstart av drivere:** Nytt alternativ i oppstarteren for å starte videodrivere på nytt før du spiller (valgfritt, konfigurerbart fra launcher). Skjermen vil nå blinke ved oppstart; dette sikrer at all VRAM er tilgjengelig ved å fjerne restdata.
+  - 🛠️ **Robust konfigurasjon:** Fikset visuelle feil og tekniske problemer ved lagring av oppsettet for dine foretrukne AI-leverandører.
+  - 🚀 **Bedre feilsøking:** Spillet er nå smartere til å oppdage når en ekstern AI går tom for plass.
+  
+  **Mekanikker og verden:**
+  - 🎒 **Garantert inventar:** Det er slutt på å starte et eventyr uten å se gjenstandene dine. SDIA-systemet overvåker nå også karakterskapingen slik at utstyret ditt alltid er der.
+  - 📜 **Renset lore:** Fikset en feil som injiserte fragmenter av "kode" eller merkelig tekst i historien til verdenen din. Kodeksen vil nå være renere og mer lesbar.
+  - ⚠️ **Kompatibilitetsguide:** Inkluderte varsler i innstillingene for å hjelpe deg med å velge kompatible modeller (Instruct/Chat).
+  - ⚙️ **Pålitelige implantater:** Fikset definisjonen av spor og lasting av regler ved karakterskaping. Nå vil alle cyber-forbedringene dine bruke offisielle spor og utstyres automatisk på riktig måte.
+  - 🎓 **Lærlinggrense:** Justert den innledende ferdighetsbalansen. AI-en genererer en pakke med poeng som fordeles automatisk på de viktigste ferdighetene basert på karakterens kontekst. Heltene dine starter nå som ekte nybegynnere og utvikler seg på en mer logisk måte.
+
+****************************************************************************************************
+14/02/2026 05:06 - Integritetsforsterkning, Karakterbevissthet og Optimalisering - Beta_v055
 ****************************************************************************************************
 - What's New (NO):
   - 🧠 **AI-prioritering etter eget ønske:** Nå kan du dra og slippe AI-koblingene dine for å bestemme hvilken som skal brukes først. Hvis en feiler, vil spillet automatisk prøve neste på prioriteringslisten din.

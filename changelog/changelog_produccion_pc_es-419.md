@@ -1,5 +1,23 @@
 ****************************************************************************************************
-14/02/2026 05:06 - Refuerzo de Integridad, Consciencia de Personajes y Optimización - Beta_v056
+14/02/2026 21:48 - Sincronización de Contexto y Control de Respuesta de IA - Beta_v057
+****************************************************************************************************
+- What's New (ES-419):
+  **Sistemas y Rendimiento:**
+  - 🧠 **Control Total de Contexto:** Ahora puedes ajustar tanto la memoria de la IA (`n_ctx`) como la longitud de sus respuestas (`Max Tokens`) con deslizadores mucho más intuitivos.
+  - ♾️ **Modo Ilimitado:** Desliza al mínimo para activar el modo "Ilimitado", permitiendo que modelos potentes como Gemini usen toda su capacidad sin restricciones.
+  - ⚡ **Reinicio de Drivers:** Nueva opción en el lanzador para reiniciar los controladores de video antes de jugar (opcional, configurable desde el launcher). Ahora la pantalla parpadeará al iniciar; con esto nos aseguramos de que toda la VRAM esté disponible, purgándola de residuos.
+  - 🛠️ **Configuración Robusta:** Corregidos errores visuales y fallos técnicos al guardar la configuración de tus proveedores de IA preferidos.
+  - 🚀 **Mejor Detección de Errores:** El juego ahora es más inteligente para detectar cuándo una IA externa se queda sin espacio.
+  
+  **Mecánicas y Mundo:**
+  - 🎒 **Inventario Garantizado:** Se acabó empezar una aventura y no ver tus objetos. El sistema SDIA ahora supervisa también la creación del personaje para que tu equipo siempre esté ahí.
+  - 📜 **Lore Purificado:** Reparado un error que inyectaba fragmentos de "código" o texto extraño en la historia de tu mundo. Ahora el Códice será más limpio y legible.
+  - ⚠️ **Guía de Compatibilidad:** Se incluyen avisos en la configuración para ayudarte a elegir modelos compatibles (Instruct/Chat).
+  - ⚙️ **Implantes Confiables:** Corregida la definición de slots y la carga de reglas en la creación de personajes. Ahora todas tus cibermejoras usarán slots oficiales y se autoequiparán correctamente.
+  - 🎓 **Límite de Aprendiz:** Ajustado el equilibrio inicial de habilidades. La IA genera un paquete de puntos a repartir automáticamente en las habilidades más importantes según el contexto de tu personaje. Tus héroes ahora empezarán como verdaderos novatos, progresando de forma más lógica.
+
+****************************************************************************************************
+14/02/2026 05:06 - Refuerzo de Integridad, Consciencia de Personajes y Optimización - Beta_v055
 ****************************************************************************************************
 - What's New (ES-419):
   - 🧠 **Prioridad de IA a tu gusto:** Ahora puedes arrastrar y soltar tus conectores de IA para decidir cuál usar primero. Si una falla, el juego intentará automáticamente con la siguiente en tu lista de prioridades.

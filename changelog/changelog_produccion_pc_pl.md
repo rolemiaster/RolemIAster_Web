@@ -1,5 +1,23 @@
 ****************************************************************************************************
-14/02/2026 05:06 - Wzmocnienie integralności, Świadomość postaci i Optymalizacja - Beta_v056
+14/02/2026 21:48 - Synchronizacja Kontekstu i Kontrola Odpowiedzi AI - Beta_v057
+****************************************************************************************************
+- What's New (PL):
+  **Systemy i Wydajność:**
+  - 🧠 **Pełna Kontrola Kontekstu:** Teraz możesz dostosować zarówno pamięć AI (`n_ctx`), jak i długość jej odpowiedzi (`Max Tokens`) za pomocą znacznie bardziej intuicyjnych suwaków.
+  - ♾️ **Tryb Bez Ograniczeń:** Przesuń suwak do minimum, aby aktywować tryb „Bez Ograniczeń”, pozwalając potężnym modelom, takim jak Gemini, wykorzystać pełnię swoich możliwości bez restrykcji.
+  - ⚡ **Restart Sterowników:** Nowa opcja w launcherze umożliwiająca restart sterowników wideo przed grą (opcjonalne, konfigurowalne w launcherze); teraz przy uruchomieniu ekran mignie, co gwarantuje pełną dostępność pamięci VRAM poprzez jej oczyszczenie z pozostałości.
+  - 🛠️ **Solidna Konfiguracja:** Naprawiono błędy wizualne i techniczne podczas zapisywania konfiguracji preferowanych dostawców AI.
+  - 🚀 **Lepsze Wykrywanie Błędów:** Gra teraz inteligentniej wykrywa sytuacje, w których zewnętrznemu AI kończy się miejsce.
+  
+  **Mechanika i Świat:**
+  - 🎒 **Gwarantowany Ekwipunek:** Koniec z rozpoczynaniem przygody bez widocznych przedmiotów. System SDIA nadzoruje teraz również tworzenie postaci, aby Twój sprzęt zawsze był na miejscu.
+  - 📜 **Oczyszczone Lore:** Naprawiono błąd, który wstawiał fragmenty „kodu” lub dziwny tekst do historii Twojego świata. Kodeks będzie teraz czystszy i bardziej czytelny.
+  - ⚠️ **Przewodnik Kompatybilności:** Dodano ostrzeżenia w ustawieniach, aby pomóc Ci wybrać kompatybilne modele (Instruct/Chat).
+  - ⚙️ **Niezawodne Wszczepy:** Poprawiono definicję slotów i ładowanie zasad przy tworzeniu postaci. Teraz wszystkie Twoje cyber-ulepszenia będą używać oficjalnych slotów i automatycznie wyposażać się poprawnie.
+  - 🎓 **Limit Ucznia:** Dostosowano początkowy balans umiejętności. AI generuje pakiet punktów do automatycznego rozdania w najważniejsze umiejętności zgodnie z kontekstem Twojej postaci. Twoi bohaterowie będą teraz zaczynać jako prawdziwi nowicjusze, rozwijając się w bardziej logiczny sposób.
+
+****************************************************************************************************
+14/02/2026 05:06 - Wzmocnienie integralności, Świadomość postaci i Optymalizacja - Beta_v055
 ****************************************************************************************************
 - What's New (PL):
   - 🧠 **Priorytet SI według uznania:** Teraz możesz przeciągać i upuszczać złącza SI, aby zdecydować, którego użyć w pierwszej kolejności. Jeśli jedno zawiedzie, gra automatycznie spróbuje użyć następnego z listy priorytetów.

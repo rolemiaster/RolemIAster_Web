@@ -1,5 +1,23 @@
 ****************************************************************************************************
-14/02/2026 05:06 - Củng cố Tính Toàn vẹn, Nhận thức Nhân vật và Tối ưu hóa - Beta_v056
+14/02/2026 21:48 - Đồng bộ hóa Ngữ cảnh và Kiểm soát Phản hồi AI - Beta_v057
+****************************************************************************************************
+- What's New (VI):
+  **Hệ thống và Hiệu suất:**
+  - 🧠 **Kiểm soát Ngữ cảnh Toàn diện:** Giờ đây bạn có thể điều chỉnh cả bộ nhớ của AI (`n_ctx`) và độ dài phản hồi (`Max Tokens`) bằng các thanh trượt trực quan hơn nhiều.
+  - ♾️ **Chế độ Không giới hạn:** Kéo về mức tối thiểu để kích hoạt chế độ "Không giới hạn", cho phép các mô hình mạnh mẽ như Gemini sử dụng toàn bộ khả năng mà không bị hạn chế.
+  - ⚡ **Khởi động lại Driver:** Tùy chọn mới trong trình khởi chạy để khởi động lại driver video trước khi chơi (tùy chọn, có thể cấu hình từ launcher), màn hình sẽ nhấp nháy khi khởi động, điều này đảm bảo toàn bộ VRAM đều sẵn sàng bằng cách xóa sạch các dữ liệu dư thừa.
+  - 🛠️ **Cấu hình Ổn định:** Đã sửa các lỗi hiển thị và sự cố kỹ thuật khi lưu cấu hình của các nhà cung cấp AI ưa thích của bạn.
+  - 🚀 **Phát hiện Lỗi Tốt hơn:** Trò chơi giờ đây thông minh hơn trong việc phát hiện khi một AI bên ngoài bị hết dung lượng.
+  
+  **Cơ chế và Thế giới:**
+  - 🎒 **Hành trang Đảm bảo:** Không còn cảnh bắt đầu cuộc phiêu lưu mà không thấy vật phẩm của bạn. Hệ thống SDIA hiện cũng giám sát quá trình tạo nhân vật để đảm bảo trang bị của bạn luôn ở đó.
+  - 📜 **Cốt truyện Tinh lọc:** Đã sửa lỗi chèn các đoạn "mã" hoặc văn bản lạ vào lịch sử thế giới của bạn. Giờ đây Codex sẽ thuần túy và dễ đọc hơn.
+  - ⚠️ **Hướng dẫn Tương thích:** Đã thêm các cảnh báo trong phần cài đặt để giúp bạn chọn các mô hình tương thích (Instruct/Chat).
+  - ⚙️ **Cấy ghép Đáng tin cậy:** Đã sửa định nghĩa khe cắm và tải quy tắc trong quá trình tạo nhân vật. Giờ đây tất cả các nâng cấp Cyber của bạn sẽ sử dụng các khe cắm chính thức và tự động trang bị chính xác.
+  - 🎓 **Giới hạn Tập sự:** Đã điều chỉnh cân bằng kỹ năng ban đầu. AI sẽ tạo ra một gói điểm để tự động phân phối vào các kỹ năng quan trọng nhất dựa trên bối cảnh nhân vật của bạn. Các anh hùng giờ đây sẽ bắt đầu như những người mới thực sự, tiến bộ theo cách hợp lý hơn.
+
+****************************************************************************************************
+14/02/2026 05:06 - Củng cố Tính Toàn vẹn, Nhận thức Nhân vật và Tối ưu hóa - Beta_v055
 ****************************************************************************************************
 - What's New (VI):
   - 🧠 **Ưu tiên AI theo ý thích:** Bây giờ bạn có thể kéo và thả các trình kết nối AI để quyết định sử dụng cái nào trước. Nếu một cái bị lỗi, trò chơi sẽ tự động thử cái tiếp theo trong danh sách ưu tiên của bạn.

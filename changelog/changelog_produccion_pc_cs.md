@@ -1,5 +1,23 @@
 ****************************************************************************************************
-14/02/2026 05:06 - Posílení integrity, povědomí o postavách a optimalizace - Beta_v056
+14/02/2026 21:48 - Synchronizace kontextu a ovládání odpovědí AI - Beta_v057
+****************************************************************************************************
+- What's New (CS):
+  **Systémy a výkon:**
+  - 🧠 **Úplná kontrola kontextu:** Nyní můžete upravovat jak paměť AI (`n_ctx`), tak délku jejích odpovědí (`Max Tokens`) pomocí mnohem intuitivnějších posuvníků.
+  - ♾️ **Neomezený režim:** Posunutím na minimum aktivujete režim „Neomezeno“, čímž umožníte výkonným modelům, jako je Gemini, využít jejich plnou kapacitu bez omezení.
+  - ⚡ **Restart ovladačů:** Nová možnost ve spouštěči pro restart grafických ovladačů před hraním (volitelné, konfigurovatelné v launcheru). Obrazovka nyní při spuštění problikne, čímž zajistíme dostupnost veškeré VRAM a její vyčištění od zbytků dat.
+  - 🛠️ **Robustní konfigurace:** Opraveny vizuální chyby a technické závady při ukládání nastavení vašich preferovaných poskytovatelů AI.
+  - 🚀 **Lepší detekce chyb:** Hra nyní chytřeji detekuje, když externí AI dojde místo.
+  
+  **Mechanismy a svět:**
+  - 🎒 **Zaručený inventář:** Už žádné začátky dobrodružství bez předmětů. Systém SDIA nyní dohlíží i na tvorbu postavy, aby vaše vybavení bylo vždy k dispozici.
+  - 📜 **Očištěné lore:** Opravena chyba, která vkládala fragmenty „kódu“ nebo podivného textu do historie vašeho světa. Kodex bude nyní čistší a čitelnější.
+  - ⚠️ **Průvodce kompatibilitou:** Do nastavení byla přidána upozornění, která vám pomohou vybrat kompatibilní modely (Instruct/Chat).
+  - ⚙️ **Spolehlivé implantáty:** Opravena definice slotů a načítání pravidel při tvorbě postavy. Všechna vaše kybernetická vylepšení nyní budou využívat oficiální sloty a automaticky se správně vybaví.
+  - 🎓 **Limit učedníka:** Upraveno počáteční vyvážení dovedností. AI generuje balíček bodů, které se automaticky rozdělí do nejdůležitějších dovedností podle kontextu vaší postavy. Vaši hrdinové nyní začnou jako skuteční nováčci a budou postupovat logičtějším způsobem.
+
+****************************************************************************************************
+14/02/2026 05:06 - Posílení integrity, povědomí o postavách a optimalizace - Beta_v055
 ****************************************************************************************************
 - What's New (CS):
   - 🧠 **Priorita AI podle vašeho gusta:** Nyní můžete přetahovat své konektory AI a rozhodnout, který použít jako první. Pokud jeden selže, hra automaticky zkusí další ve vašem seznamu priorit.

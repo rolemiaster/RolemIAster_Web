@@ -1,5 +1,23 @@
 ****************************************************************************************************
-14/02/2026 05:06 - Penguatan Integritas, Kesadaran Karakter, dan Optimasi - Beta_v056
+14/02/2026 21:48 - Sinkronisasi Konteks dan Kontrol Respons AI - Beta_v057
+****************************************************************************************************
+- What's New (ID):
+  **Sistem dan Performa:**
+  - 🧠 **Kontrol Konteks Total:** Sekarang kamu bisa menyesuaikan memori AI (`n_ctx`) dan panjang responsnya (`Max Tokens`) dengan slider yang jauh lebih intuitif.
+  - ♾️ **Mode Tak Terbatas:** Geser ke minimum untuk mengaktifkan mode "Tak Terbatas", membiarkan model canggih seperti Gemini menggunakan kapasitas penuhnya tanpa batasan.
+  - ⚡ **Reset Driver:** Opsi baru di launcher untuk mereset driver video sebelum bermain (opsional, dapat dikonfigurasi dari launcher), layar akan berkedip saat mulai, ini memastikan seluruh VRAM tersedia dengan membersihkannya dari sisa-sisa.
+  - 🛠️ **Konfigurasi Stabil:** Memperbaiki bug visual dan kesalahan teknis saat menyimpan konfigurasi penyedia AI favoritmu.
+  - 🚀 **Deteksi Error Lebih Baik:** Game kini lebih pintar mendeteksi saat AI eksternal kehabisan ruang.
+  
+  **Mekanisme dan Dunia:**
+  - 🎒 **Inventaris Terjamin:** Tidak ada lagi memulai petualangan tanpa melihat item-mu. Sistem SDIA kini juga memantau pembuatan karakter agar perlengkapanmu selalu ada.
+  - 📜 **Lore yang Dimurnikan:** Memperbaiki bug yang menyisipkan fragmen "kode" atau teks aneh ke dalam sejarah duniamu. Codex kini akan lebih murni dan mudah dibaca.
+  - ⚠️ **Panduan Kompatibilitas:** Menyertakan peringatan di pengaturan untuk membantumu memilih model yang kompatibel (Instruct/Chat).
+  - ⚙️ **Implan Andal:** Memperbaiki definisi slot dan pemuatan aturan dalam pembuatan karakter. Sekarang semua peningkatan sibermu akan menggunakan slot resmi dan terpasang otomatis dengan benar.
+  - 🎓 **Batas Pemula:** Menyesuaikan keseimbangan awal skill. AI menghasilkan paket poin untuk didistribusikan secara otomatis ke skill terpenting berdasarkan konteks karaktermu. Pahlawanmu kini akan mulai sebagai pemula sejati, berkembang dengan cara yang lebih logis.
+
+****************************************************************************************************
+14/02/2026 05:06 - Penguatan Integritas, Kesadaran Karakter, dan Optimasi - Beta_v055
 ****************************************************************************************************
 - What's New (ID):
   - 🧠 **Prioritas AI Sesukamu:** Sekarang kamu bisa seret dan lepas konektor AI untuk menentukan mana yang digunakan lebih dulu. Jika satu gagal, game akan otomatis mencoba yang berikutnya dalam daftar prioritasmu.

@@ -1,5 +1,23 @@
 ****************************************************************************************************
-14/02/2026 05:06 - Integritetsförstärkning, Karaktärsmedvetenhet och Optimering - Beta_v056
+14/02/2026 21:48 - Kontextsynkronisering och AI-svarskontroll - Beta_v057
+****************************************************************************************************
+- What's New (SV):
+  **System och prestanda:**
+  - 🧠 **Fullständig kontextkontroll:** Nu kan du justera både AI-minnet (`n_ctx`) och längden på dess svar (`Max Tokens`) med mycket mer intuitiva reglage.
+  - ♾️ **Obegränsat läge:** Dra till minimum för att aktivera läget "Obegränsat", vilket låter kraftfulla modeller som Gemini använda sin fulla kapacitet utan begränsningar.
+  - ⚡ **Omstart av drivrutiner:** Nytt alternativ i startprogrammet för att starta om videodrivrutiner innan spel (valfritt, konfigurerbart från startprogrammet). Skärmen kommer nu att blinka vid start; detta säkerställer att all VRAM är tillgänglig genom att rensa den från rester.
+  - 🛠️ **Robust konfiguration:** Åtgärdade visuella fel och tekniska problem vid sparande av inställningar för dina föredragna AI-leverantörer.
+  - 🚀 **Bättre feldetektering:** Spelet är nu smartare på att upptäcka när en extern AI får slut på utrymme.
+  
+  **Mekanik och värld:**
+  - 🎒 **Garanterat inventarium:** Slut på att börja ett äventyr utan att se dina föremål. SDIA-systemet övervakar nu även karaktärsskapandet så att din utrustning alltid finns där.
+  - 📜 **Renad lore:** Åtgärdade ett fel som injicerade fragment av "kod" eller konstig text i din världs historia. Nu kommer Codex att vara renare och mer läsbart.
+  - ⚠️ **Kompatibilitetsguide:** Inkluderade varningar i inställningarna för att hjälpa dig välja kompatibla modeller (Instruct/Chat).
+  - ⚙️ **Pålitliga implantat:** Korrigerad definition av platser och inläsning av regler vid karaktärsskapande. Nu kommer alla dina cyberförbättringar att använda officiella platser och utrustas automatiskt på rätt sätt.
+  - 🎓 **Lärlingsgräns:** Justerad initial balans för färdigheter. AI:n genererar ett paket med poäng som automatiskt fördelas på de viktigaste färdigheterna baserat på din karaktärs kontext. Dina hjältar börjar nu som sanna noviser och utvecklas på ett mer logiskt sätt.
+
+****************************************************************************************************
+14/02/2026 05:06 - Integritetsförstärkning, Karaktärsmedvetenhet och Optimering - Beta_v055
 ****************************************************************************************************
 - What's New (SV):
   - 🧠 **AI-prioritet som du vill:** Nu kan du dra och släppa dina AI-kopplingar för att bestämma vilken som ska användas först. Om en misslyckas försöker spelet automatiskt med nästa på din prioriteringslista.

@@ -1,5 +1,23 @@
 ****************************************************************************************************
-14/02/2026 05:06 - Integriteitsversterking, Personagebewustzijn en Optimalisatie - Beta_v056
+14/02/2026 21:48 - Contextsynchronisatie en AI-reactiebeheer - Beta_v057
+****************************************************************************************************
+- What's New (NL):
+  **Systemen en Prestaties:**
+  - 🧠 **Volledige Contextcontrole:** Je kunt nu zowel het AI-geheugen (`n_ctx`) als de lengte van de reacties (`Max Tokens`) aanpassen met veel intuïtievere schuifregelaars.
+  - ♾️ **Onbeperkte Modus:** Schuif naar het minimum om de modus "Onbeperkt" te activeren, waardoor krachtige modellen zoals Gemini hun volledige capaciteit zonder beperkingen kunnen gebruiken.
+  - ⚡ **Drivers Herstarten:** Nieuwe optie in de launcher om videostuurprogramma's te herstarten voor het spelen (optioneel, configureerbaar vanuit launcher). Het scherm zal nu knipperen bij het starten; hiermee zorgen we ervoor dat alle VRAM beschikbaar is door restanten te verwijderen.
+  - 🛠️ **Robuuste Configuratie:** Visuele fouten en technische storingen bij het opslaan van de instellingen van je favoriete AI-providers zijn verholpen.
+  - 🚀 **Betere Foutdetectie:** Het spel is nu slimmer in het detecteren wanneer een externe AI geen ruimte meer heeft.
+  
+  **Mechanieken en Wereld:**
+  - 🎒 **Gegarandeerde Inventaris:** Geen avonturen meer starten zonder je items te zien. Het SDIA-systeem bewaakt nu ook de creatie van personages, zodat je uitrusting er altijd is.
+  - 📜 **Gezuiverde Lore:** Een fout hersteld die fragmenten van "code" of vreemde tekst in het verhaal van je wereld injecteerde. De Codex is nu zuiverder en leesbaarder.
+  - ⚠️ **Compatibiliteitsgids:** Waarschuwingen toegevoegd in de instellingen om je te helpen compatibele modellen te kiezen (Instruct/Chat).
+  - ⚙️ **Betrouwbare Implantaten:** De definitie van slots en het laden van regels bij het maken van personages is gecorrigeerd. Nu gebruiken al je cyber-verbeteringen officiële slots en rusten ze zichzelf correct uit.
+  - 🎓 **Leerlinglimiet:** De initiële balans van vaardigheden is aangepast. De AI genereert een pakket punten dat automatisch wordt verdeeld over de belangrijkste vaardigheden op basis van de context van je personage. Je helden beginnen nu als echte nieuwelingen en maken op een logischere manier progressie.
+
+****************************************************************************************************
+14/02/2026 05:06 - Integriteitsversterking, Personagebewustzijn en Optimalisatie - Beta_v055
 ****************************************************************************************************
 - What's New (NL):
   - 🧠 **AI-prioriteit naar wens:** Je kunt nu je AI-connectors slepen en neerzetten om te bepalen welke eerst wordt gebruikt. Als er een faalt, probeert het spel automatisch de volgende in je prioriteitenlijst.

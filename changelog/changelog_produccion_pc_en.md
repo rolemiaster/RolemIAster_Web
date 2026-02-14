@@ -1,5 +1,23 @@
 ****************************************************************************************************
-14/02/2026 05:06 - Integrity Reinforcement, Character Awareness, and Optimization - Beta_v056
+14/02/2026 21:48 - Context Synchronization and AI Response Control - Beta_v057
+****************************************************************************************************
+- What's New (EN):
+  **Systems and Performance:**
+  - 🧠 **Total Context Control:** You can now adjust both the AI's memory (`n_ctx`) and its response length (`Max Tokens`) with much more intuitive sliders.
+  - ♾️ **Unlimited Mode:** Slide to the minimum to activate "Unlimited" mode, allowing powerful models like Gemini to use their full capacity without restrictions.
+  - ⚡ **Driver Restart:** New option in the launcher to restart video drivers before playing (optional, configurable from the launcher); the screen will now flicker upon startup, ensuring all VRAM is available by purging it of residue.
+  - 🛠️ **Robust Configuration:** Fixed visual bugs and technical glitches when saving the configuration of your preferred AI providers.
+  - 🚀 **Better Error Detection:** The game is now smarter at detecting when an external AI runs out of space.
+  
+  **Mechanics and World:**
+  - 🎒 **Guaranteed Inventory:** No more starting an adventure and not seeing your items. The SDIA system now also monitors character creation to ensure your gear is always there.
+  - 📜 **Purified Lore:** Fixed a bug that injected fragments of "code" or strange text into your world's history. Now the Codex will be purer and more readable.
+  - ⚠️ **Compatibility Guide:** Included warnings in the settings to help you choose compatible models (Instruct/Chat).
+  - ⚙️ **Reliable Implants:** Corrected slot definition and rule loading during character creation. Now all your cyber-enhancements will use official slots and auto-equip correctly.
+  - 🎓 **Apprentice Limit:** Adjusted initial skill balance. The AI generates a package of points to automatically distribute into the most important skills based on your character's context. Your heroes will now start as true novices, progressing in a more logical way.
+
+****************************************************************************************************
+14/02/2026 05:06 - Integrity Reinforcement, Character Awareness, and Optimization - Beta_v055
 ****************************************************************************************************
 - What's New (EN):
   - 🧠 **Custom AI Priority:** You can now drag and drop your AI connectors to decide which one to use first. If one fails, the game will automatically try the next one in your priority list.

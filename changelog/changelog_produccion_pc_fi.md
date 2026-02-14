@@ -1,5 +1,23 @@
 ****************************************************************************************************
-14/02/2026 05:06 - Eheyden vahvistus, hahmojen tietoisuus ja optimointi - Beta_v056
+14/02/2026 21:48 - Kontekstin synkronointi ja tekoälyn vastausten hallinta - Beta_v057
+****************************************************************************************************
+- What's New (FI):
+  **Järjestelmät ja suorituskyky:**
+  - 🧠 **Täydellinen kontekstin hallinta:** Voit nyt säätää sekä tekoälyn muistia (`n_ctx`) että vastausten pituutta (`Max Tokens`) paljon intuitiivisemmilla liukusäätimillä.
+  - ♾️ **Rajoittamaton tila:** Aktivoi "Rajoittamaton"-tila vetämällä liukusäädin minimiin, jolloin tehokkaat mallit, kuten Gemini, voivat käyttää koko kapasiteettiaan ilman rajoituksia.
+  - ⚡ **Ajurien uudelleenkäynnistys:** Uusi valinta käynnistysohjelmassa näytönohjaimen ajurien uudelleenkäynnistämiseksi ennen pelaamista (valinnainen, säädettävissä käynnistysohjelmasta). Näyttö välkkyy nyt käynnistyksen yhteydessä; tällä varmistamme, että kaikki VRAM on käytettävissä puhdistamalla jäämät.
+  - 🛠️ **Vankka konfiguraatio:** Korjattu visuaaliset virheet ja tekniset ongelmat suosikkitekoälytarjoajiesi asetusten tallentamisessa.
+  - 🚀 **Parempi virheentunnistus:** Peli tunnistaa nyt älykkäämmin, milloin ulkoiselta tekoälyltä loppuu tila.
+  
+  **Mekaniikat ja maailma:**
+  - 🎒 **Taattu tavaraluettelo:** Ei enää seikkailun aloittamista ilman tavaroita. SDIA-järjestelmä valvoo nyt myös hahmonluontia, jotta varusteesi ovat aina mukana.
+  - 📜 **Puhdistettu taustatarina:** Korjattu virhe, joka lisäsi "koodinpätkiä" tai outoa tekstiä maailmasi historiaan. Codex on nyt puhtaampi ja luettavampi.
+  - ⚠️ **Yhteensopivuusopas:** Asetuksiin on lisätty varoituksia, jotka auttavat valitsemaan yhteensopivia malleja (Instruct/Chat).
+  - ⚙️ **Luotettavat implantit:** Korjattu paikkojen määrittely ja sääntöjen lataus hahmonluonnissa. Nyt kaikki kyberparannuksesi käyttävät virallisia paikkoja ja varustautuvat automaattisesti oikein.
+  - 🎓 **Oppilasraja:** Säädetty taitojen alkutasapainoa. Tekoäly luo pistepaketin, joka jaetaan automaattisesti tärkeimpiin taitoihin hahmosi kontekstin perusteella. Sankarisi aloittavat nyt todellisina noviiseina ja kehittyvät loogisemmin.
+
+****************************************************************************************************
+14/02/2026 05:06 - Eheyden vahvistus, hahmojen tietoisuus ja optimointi - Beta_v055
 ****************************************************************************************************
 - What's New (FI):
   - 🧠 **Tekoälyn priorisointi mieltymystesi mukaan:** Nyt voit vetää ja pudottaa tekoälyliittymiäsi päättääksesi, mitä käytetään ensin. Jos yksi epäonnistuu, peli yrittää automaattisesti seuraavaa prioriteettilistallasi.

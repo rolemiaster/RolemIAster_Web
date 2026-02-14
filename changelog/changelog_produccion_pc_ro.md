@@ -1,5 +1,23 @@
 ****************************************************************************************************
-14/02/2026 05:06 - Consolidarea Integrității, Conștientizarea Personajelor și Optimizare - Beta_v056
+14/02/2026 21:48 - Sincronizarea Contextului și Controlul Răspunsului IA - Beta_v057
+****************************************************************************************************
+- What's New (RO):
+  **Sisteme și Performanță:**
+  - 🧠 **Control Total al Contextului:** Acum poți ajusta atât memoria IA (`n_ctx`), cât și lungimea răspunsurilor sale (`Max Tokens`) cu glisoare mult mai intuitive.
+  - ♾️ **Mod Nelimitat:** Glisează la minim pentru a activa modul "Nelimitat", lăsând modele puternice precum Gemini să-și folosească întreaga capacitate fără restricții.
+  - ⚡ **Repornire Drivere:** O nouă opțiune în lansator pentru a reporni driverele video înainte de a juca (opțional, configurabil din launcher); acum, la pornire, ecranul va clipi, asigurându-ne astfel că toată memoria VRAM este disponibilă, curățând-o de reziduuri.
+  - 🛠️ **Configurare Robustă:** Au fost corectate erorile vizuale și defecțiunile tehnice la salvarea configurației furnizorilor tăi preferați de IA.
+  - 🚀 **Detectare Mai Bună a Erorilor:** Jocul este acum mai inteligent în detectarea momentului în care o IA externă rămâne fără spațiu.
+  
+  **Mecanici și Lume:**
+  - 🎒 **Inventar Garantat:** S-a terminat cu începutul unei aventuri fără a-ți vedea obiectele. Sistemul SDIA supraveghează acum și crearea personajului, astfel încât echipamentul tău să fie mereu acolo.
+  - 📜 **Lore Purificat:** S-a reparat o eroare care injecta fragmente de "cod" sau text ciudat în istoria lumii tale. Acum Codexul va fi mai pur și mai lizibil.
+  - ⚠️ **Ghid de Compatibilitate:** Au fost incluse avertismente în configurare pentru a te ajuta să alegi modele compatibile (Instruct/Chat).
+  - ⚙️ **Implanturi Fiabile:** S-a corectat definiția sloturilor și încărcarea regulilor la crearea personajelor. Acum, toate îmbunătățirile tale cibernetice vor folosi sloturi oficiale și se vor echipa automat în mod corect.
+  - 🎓 **Limită de Ucenic:** S-a ajustat echilibrul inițial al abilităților. IA generează un pachet de puncte de distribuit automat în cele mai importante abilități, în funcție de contextul personajului tău. Eroii tăi vor începe acum ca adevărați novici, progresând într-un mod mai logic.
+
+****************************************************************************************************
+14/02/2026 05:06 - Consolidarea Integrității, Conștientizarea Personajelor și Optimizare - Beta_v055
 ****************************************************************************************************
 - What's New (RO):
   - 🧠 **Prioritate IA după preferințe:** Acum poți trage și plasa conectorii IA pentru a decide pe care să-l folosești primul. Dacă unul eșuează, jocul va încerca automat cu următorul din lista ta de priorități.

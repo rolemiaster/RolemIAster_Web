@@ -1,5 +1,23 @@
 ****************************************************************************************************
-14/02/2026 05:06 - Integritätsstärkung, Charakterbewusstsein und Optimierung - Beta_v056
+14/02/2026 21:48 - Kontext-Synchronisierung und KI-Antwortsteuerung - Beta_v057
+****************************************************************************************************
+- What's New (DE):
+  **Systeme und Leistung:**
+  - 🧠 **Volle Kontextkontrolle:** Du kannst jetzt sowohl das Gedächtnis der KI (`n_ctx`) als auch die Länge ihrer Antworten (`Max Tokens`) mit viel intuitiveren Schiebereglern anpassen.
+  - ♾️ **Unbegrenzter Modus:** Schiebe den Regler auf das Minimum, um den Modus "Unbegrenzt" zu aktivieren, damit leistungsstarke Modelle wie Gemini ihre volle Kapazität ohne Einschränkungen nutzen können.
+  - ⚡ **Treiber-Neustart:** Neue Option im Launcher, um die Grafiktreiber vor dem Spielen neu zu starten (optional, im Launcher konfigurierbar). Der Bildschirm flackert beim Start kurz auf; so stellen wir sicher, dass der gesamte VRAM verfügbar ist und von Rückständen bereinigt wird.
+  - 🛠️ **Robuste Konfiguration:** Visuelle Fehler und technische Probleme beim Speichern der Einstellungen deiner bevorzugten KI-Anbieter wurden behoben.
+  - 🚀 **Bessere Fehlererkennung:** Das Spiel erkennt nun intelligenter, wenn einer externen KI der Speicherplatz ausgeht.
+  
+  **Mechaniken und Welt:**
+  - 🎒 **Garantiertes Inventar:** Keine Abenteuer mehr ohne deine Gegenstände. Das SDIA-System überwacht jetzt auch die Charaktererstellung, damit deine Ausrüstung immer vorhanden ist.
+  - 📜 **Bereinigte Lore:** Ein Fehler wurde behoben, der "Code"-Fragmente oder seltsamen Text in die Geschichte deiner Welt einfügte. Der Kodex ist nun reiner und besser lesbar.
+  - ⚠️ **Kompatibilitäts-Guide:** Hinweise in den Einstellungen hinzugefügt, um dir bei der Auswahl kompatibler Modelle (Instruct/Chat) zu helfen.
+  - ⚙️ **Zuverlässige Implantate:** Die Definition von Slots und das Laden von Regeln bei der Charaktererstellung wurden korrigiert. Alle deine Cyber-Verbesserungen nutzen nun offizielle Slots und rüsten sich korrekt automatisch aus.
+  - 🎓 **Lehrlings-Limit:** Die anfängliche Fertigkeitsbalance wurde angepasst. Die KI generiert ein Punktepaket, das automatisch auf die wichtigsten Fertigkeiten basierend auf dem Kontext deines Charakters verteilt wird. Deine Helden beginnen nun als echte Anfänger und machen logischere Fortschritte.
+
+****************************************************************************************************
+14/02/2026 05:06 - Integritätsstärkung, Charakterbewusstsein und Optimierung - Beta_v055
 ****************************************************************************************************
 - What's New (DE):
   - 🧠 **KI-Priorität nach Wunsch:** Du kannst deine KI-Verbindungen jetzt per Drag & Drop verschieben, um festzulegen, welche zuerst genutzt wird. Falls eine ausfällt, versucht das Spiel es automatisch mit der nächsten auf deiner Prioritätenliste.
