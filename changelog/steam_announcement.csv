@@ -1,51 +1,349 @@
 language,Description,Title
-spanish,"🧪 YA DISPONIBLE:
-
-⚠️ **AVISO IMPORTANTE:** EL JUEGO PUEDE MIGRAR LA ANTIGUA BASE DE DATOS PARA LA NUEVA ESTRUCTURA MEDIANTE OPCIONES DEL LAUNCHER. NO RECOMIENDO ESTO, AUNQUE FUNCIONE TU ANTIGUA PARTIDA, MUCHAS COSAS ESTARÁN ROTAS. MI RECOMENDACIÓN ES ELIMINAR TODAS LAS PARTIDAS ANTERIORES GUARDADAS. NO ES NECESARIO BORRAR LA BASE DE DATOS AL COMPLETO SALVO CASO EXTREMO.
-
-Cambios:
-
-- 🌍 **Gestor de Mundos y Personajes:** Ahora tienes total libertad. Crea tus propios Mundos con sus propias reglas y ambientación, y dentro de cada uno, crea tantos personajes como quieras. **Nota Importante:** Todos los personajes de un mismo mundo comparten la misma línea temporal y los eventos sucedidos, lo que sienta las bases para el futuro modo multijugador.
-- 🧠 **Memoria Contextual (Súper RAG):** La IA ahora tiene ""sentidos"". Al buscar información en el Lore o en su memoria, tiene en cuenta dónde estás, con quién estás, si estás herido y qué acaba de pasar. Si estás con un Rey, recordará cosas sobre reyes. Si estás herido, buscará reglas sobre curación. ¡Es como si tuviera intuición!
-- 🧠 **Memoria Contextual (Súper RAG):** La IA ahora tiene ""sentidos"". Al buscar información en el Lore o en su memoria, tiene en cuenta dónde estás, con quién estás, si estás herido y qué acaba de pasar. ¡Es mucho más intuitivo y coherente!
-- 🌍 **Lore en el Primer Personaje:** ¿Escribías una descripción épica de tu mundo y la IA la ignoraba en tu primer personaje? ¡Solucionado! Ahora la descripción manual del mundo llega directamente a la IA durante la creación inicial, antes incluso de que el sistema de memoria se active.
-- ⚙️ **Sistema de Mundos Mejorado:** He independizado el nombre de tu mundo de las reglas técnicas. Ahora puedes llamar a tu mundo como quieras sin que eso afecte a la carga de reglas de Fantasía o Cyberpunk.
-- 📝 **Claridad en Creación:** He mejorado las instrucciones internas para que la IA entienda mejor cuándo debe inventar un trasfondo y cuándo debe limitarse a extraer tus estadísticas.
- herido y qué acaba de pasar. Si estás con un Rey, recordará cosas sobre reyes. Si estás herido, buscará reglas sobre curación. ¡Es como si tuviera intuición!
-- 🧠 **Combate por Texto Libre:** Ahora puedes escribir tus acciones en combate como si hablaras con un pj de mesa: ""lanzar hechizo de curación sobre mí"", ""desenfundar mi espada"", ""usar poción de curación"". La IA entiende tu intención y la traduce a mecánica de juego.
-- 🎨 **¡Nueva Interfaz Épica!** He remodelado el juego por completo. Menús estilo RPG, fondos animados y una experiencia visual totalmente renovada. Estilo oscuro semitransparente, bordes neón y sombras suavizadas para una inmersión total.
-- 🎬 **IA Director de Escena (MEJORADO):** El combate ahora cobra vida. La IA genera eventos ambientales y reacciones que enriquecen la narrativa: antorchas que caen, enemigos que retroceden, vigas que se derrumban. ¡El campo de batalla ya no es estático!
-- ⚔️ **Desenfundar con Palabras:** Ya no necesitas hacer clic en el slot del arma. Simplemente escribe ""desenfundar espada"" o ""sacar mi hacha"" y el sistema lo interpreta automáticamente (OJO!, hacerlo en combate puede resultar en fracaso, pifia y perdida de turno!... ""A los combates se viene preparado de casa!"").
-- 📖 **Hechizos Reconocidos:** La IA ahora conoce tu libro de hechizos completo. Di ""lanzar bola de fuego"" y si tienes ese hechizo, lo lanzará.
-- 🌍 **Narrativa en tu Idioma:** La historia ahora respeta estrictamente el idioma seleccionado, evitando mezclas raras entre idiomas (ojalá no vuelva a tener que ver más spanglish nunca más!, he forzado tanto a la ia que diría que si vuelve a generar textos en otro idioma diferente al seleccionado, será puramente porque realmnete está maldita).
-- 🛡️ **No Más Turnos Perdidos:** Si el juego no entiende tu acción, te pedirá que la reformules. Tu turno NO se pierde.
-- 🎒 **Inventario Manual:** Para mover objetos entre slots (equipar desde mochila, cargar munición), usa la interfaz de arrastrar y soltar. Esto evita confusiones y ahorra recursos de IA.
-- 🧪 **Uso de Pociones Fluido:** Ahora puedes arrastrar pociones y comida directamente sobre tu retrato para usarlas. He añadido también la opción ""Usar"" al hacer clic derecho. ¡Más intuitivo y rápido!
-- 🩸 **Corrección de Daño:** ¡Ya no eres inmortal! Hemos arreglado un problema donde la barra de vida no bajaba aunque te golpearan. Ahora sufrirás como es debido.
-- 👻 **Adiós a los Items Fantasma:** ¿Encontrabas un objeto en la historia pero nunca aparecía en tu mochila? ¡Problema resuelto! Ahora el sistema repara automáticamente los objetos que la IA ""olvida"" crear.
-- 🐛 **Corrección Crítica NPC:** Solucionado un fallo que impedía que los NPCs tomaran decisiones tácticas correctamente, causando que siempre ""esperaran"" en lugar de atacar o defenderse.
-- 🎒 **Corrección Inventario Inicial:** Los nuevos personajes ya no comienzan desnudos. Ahora reciben su equipo inicial correctamente.
-- 🎲 **Creación de Personaje:** Corregido un exploit donde subir y bajar un atributo en ciertos umbrales generaba puntos extra infinitos. ¡Se acabó el truco del Carisma!
-- 🖼️ **Retratos Arreglados:** ¿Creabas un mundo con nombre propio y los retratos desaparecían? ¡Arreglado! Ahora el sistema encuentra las imágenes correctas sin importar cómo bautices a tu mundo.
-- � **Iconos Inteligentes:** Los objetos (incluidos anillos) ahora muestran iconos más precisos y correctos en la interfaz.
-- 🧪 **Tooltips Mejorados:** Las pociones, consumibles y hechizos ahora muestran correctamente toda su información y efectos al pasar el ratón por encima.
-- 🎵 **Mejoras de Audio:** La música de combate ya no se detiene al pulsar los botones predefinidos.
-- [I18N] **Fix Implantes:** Añadidas claves de traducción faltantes para slots de implantes (`slot_implant_*`) e iconos correspondientes (`icon_implant_*`) en `es.json`.
-- [FIX][AUDIO] **Audio Inconsistente:** Adaptados los efectos de sonido (SFX) de equipar items y desenfundar armas a la ambientación. Ahora el sistema detecta el `setting_key` y usa sonidos futuristas/industriales en Cyberpunk y sonidos clásicos en Fantasía.
-- [FIX][I18N] **Limpieza es.json:** Eliminadas más de 20 claves duplicadas en `es.json` y corregidas erratas en nombres de slots (ej. ""Oíidos"" -> ""Oídos"").
-- ⚙️ **Detección de Modelos Inteligente:** Ahora el juego lee directamente el ""cerebro"" de los modelos que importes (GGUF). Detecta el contexto máximo real de forma automática. (Modelos oficiales optimizados ni se tocan para máxima estabilidad).
-- 📂 **Ahorro de Espacio:** Al añadir un modelo desde tu ordenador, ahora el juego lo mueve directamente a su carpeta en lugar de copiarlo. ¡Tus Gigabytes te lo agradecerán!
-- ⚖️ **Justicia en los Atributos:** Corregido un exploit que permitía conseguir puntos infinitos al subir y bajar atributos en la creación.
-- 📖 **Guía de Entrenamiento:** He actualizado el Manual (README) con todos los detalles sobre cómo tus personajes ganan experiencia y suben sus atributos.
-- 📜 **Códice de Mundos Épicos:** ¡Se acabó el lore de ""una posdata""! Ahora el generador crea mundos con historia profunda, describiendo sus religiones, leyes, geografía y personajes famosos en un formato de crónica detallada.
-- 🧙 **Historias Coherentes:** Tu personaje ya no nace en el vacío. Su trasfondo ahora se integra inteligentemente con el lore del mundo que acabas de crear o elegir.
-- ⚡ **Interfaz Fluida:** La autogeneración de historias y mundos ahora se realiza en segundo plano. ¡Se acabaron las esperas con la pantalla congelada!
-- 🚀 **Inicio de Aventura Instantáneo:** ¡He eliminado las esperas! Ahora, tras crear tu personaje, saltas directamente a la historia. El sistema usa tu trasfondo enriquecido para crear el comienzo perfecto sin que tengas que escribir ni una sola palabra más.
-- 🎭 **Trasfondos con Pretexto:** Tus personajes ya no solo tienen un pasado, sino también un motivo urgente para empezar la aventura. El nuevo sistema de IA genera automáticamente la chispa inicial de la historia integrada en tu biografía.
-- 🧹 **Interfaz Simplificada:** He quitado los botones y pantallas que no aportaban valor. El botón ""Iniciar Historia"" centraliza ahora todo el poder para que empieces a jugar cuanto antes.
-- [FIX][UI] **Duplicación Visual en Selección de Mundo:** Corregido bug donde el nombre del mundo aparecía duplicado como ""Nombre [Nombre]"". Ahora se oculta la etiqueta de tipo si es redundante.
-- [FEAT][UI] **Carga Rápida (Click Simple):** Ahora se puede cargar un personaje o iniciar la creación de uno nuevo con un solo click en la pantalla de selección de mundos. Se mantiene la expansión de mundos para evitar conflictos.
-- 🧠 **IA más Creativa:** He roto el ""bucle de repetición"" de la IA inyectando variabilidad técnica en cada petición. Ahora los personajes generados aleatoriamente serán mucho más únicos y originales, ignorando los ejemplos de la guía.
-
-🛡️ A los valientes que se ATREVAN a luchar en la primera línea de batalla: ¡La aventura os espera, ahora más indomable que nunca!",Sistema de Interpretación Semántica de Combate
-english,Sistema de Interpretación Semántica de Combate (English translation pending),Sistema de Interpretación Semántica de Combate
+arabic,"- 🧠 **أولوية الذكاء الاصطناعي حسب رغبتك:** يمكنك الآن سحب وإفلات موصلات الذكاء الاصطناعي لتحديد أيها يُستخدم أولاً. إذا فشل أحدها، ستحاول اللعبة تلقائيًا مع التالي في قائمة الأولويات.
+- ⚙️ **التحكم في التحميل المسبق:** تمت إضافة خيار في المشغل لتحديد ما إذا كنت تريد تحميل نموذج الذكاء الاصطناعي المحلي مسبقًا أو تحميله فقط عند الحاجة (لتوفير الموارد عند بدء التشغيل).
+- 🛡️ **حذف آمن ونظيف:** عند حذف عالم ما، يتكفل النظام الآن بتنظيف جميع البيانات المتعلقة به تمامًا (الشخصيات والقصة)، مما يحافظ على قاعدة بياناتك خالية من الشوائب.
+- 🚀 **تحسين الذاكرة:** يتم الآن تحميل ""عقل"" الذكاء الاصطناعي مرة واحدة ومشاركته بين جميع الوظائف، مما يوفر الكثير من ذاكرة الرسوميات (VRAM).
+- 🎨 **واجهة ذكية:** تتكيف لوحة اختيار العوالم الآن بشكل مثالي مع الشاشة والنص، دون أزرار مقطوعة أو مساحات غير مستغلة.
+- 🔄 **تدوير ذكي مُحسّن:** تم إصلاح نظام التدوير بحيث لا يتخلى عن الذكاء الاصطناعي المحلي من المحاولة الأولى؛ فهو الآن يمنحه فرصة لتصحيح نفسه قبل البحث عن مساعدة خارجية.
+- 🌍 **ذكاء اصطناعي متعدد اللغات وقوي:** أصبح اكتشاف الأشياء والسرد القصصي الآن أكثر دقة في 10 لغات، مع حماية خاصة لضمان عدم توقف القصة أبدًا.
+- 🛠️ **ثبات الذكاء الاصطناعي مضمون:** تم إصلاح الخطأ الذي كان يجعل Gemini ""ينسى"" أو يتحول إلى Ollama. يتم الآن حفظ أولويات استخدام الذكاء الاصطناعي الخاصة بك بشكل آمن ودقيق.
+- ⚡ **استعادة Gemini:** تم إصلاح الوصول إلى نموذج Gemini من خلال استعادة مفاتيحه وعنوان URL الصحيح الخاص به.
+- 🎨 **واجهة ذات سمات مُصَححة:** تستعيد أزرار اتخاذ القرار الآن لون عالمك فورًا (مثلاً: الذهبي للفانتازيا) عند تحميل اللعبة.
+- 👥 **الوعي بين الشخصيات:** أصبح الذكاء الاصطناعي الآن مدركًا لجميع شخصياتك! إذا كان لديك عدة أبطال في نفس العالم، سيتعرف عليهم الذكاء الاصطناعي كسكان وسيتمكن من تذكر ما فعله كل واحد منهم بشكل فردي.
+- 🧠 **ذاكرة مع إسناد الأفعال:** يميز نظام الذكريات الآن من قام بكل فعل، مما يمنع الذكاء الاصطناعي من الخلط بين مآثرك السابقة ومآثر الشخصيات الأخرى.",تعزيز سلامة البيانات، وعي الشخصيات، والتحسينات
+bulgarian,"- 🧠 **ИИ приоритет по ваш вкус:** Вече можете да плъзгате и пускате вашите ИИ конектори, за да определите кой да се използва първи. Ако някой се провали, играта автоматично ще опита със следващия във вашия списък с приоритети.
+- ⚙️ **Контрол на предварителното зареждане:** Добавена е опция в стартовия панел, с която да решите дали да заредите предварително локалния ИИ модел или само когато е необходимо (пестене на ресурси при стартиране).
+- 🛡️ **Сигурно и чисто изтриване:** При изтриване на свят, системата вече се грижи да изчисти абсолютно всички свързани данни (герои и история), поддържайки базата ви данни безупречна.
+- 🚀 **Оптимизация на паметта:** „Мозъкът“ на ИИ вече се зарежда само веднъж и се споделя между всички функции, спестявайки много видео памет (VRAM).
+- 🎨 **Интелигентен интерфейс:** Панелът за избор на светове вече се напасва перфектно към екрана и текста, без изрязани бутони или лошо използвано пространство.
+- 🔄 **Подобрена интелигентна ротация:** Поправих системата за ротация, така че да не се отказва от локалния ви ИИ при първия опит; сега му дава шанс да се коригира, преди да потърси външна помощ.
+- 🌍 **Полиглотски и надежден ИИ:** Откриването на обекти и разказването вече са по-точни на 10 езика, със специална защита, така че историята никога да не липсва.
+- 🛠️ **Гарантирана устойчивост на ИИ:** Поправена е грешката, която караше Gemini да „забравя“ или да се трансформира в Ollama. Вашите приоритети за използване на ИИ вече се запазват сигурно и хирургически точно.
+- ⚡ **Възстановен Gemini:** Поправен е достъпът до модела Gemini чрез възстановяване на правилните му ключове и URL адреси.
+- 🎨 **Поправен тематичен интерфейс:** Бутоните за решение вече възстановяват моментално цвета на вашия свят (напр. златен за фентъзи) при зареждане на играта.
+- 👥 **Осъзнаване между героите:** ИИ вече е наясно с всички ваши герои! Ако имате няколко герои в един и същи свят, ИИ ще ги разпознае като жители и ще помни какво е направил всеки от тях индивидуално.
+- 🧠 **Памет с атрибуция:** Системата за спомени вече разграничава кой е извършил всяко действие, предотвратявайки объркването на миналите ви подвизи с тези на други герои от страна на ИИ.","Подсилване на целостта, Осъзнаване на героите и Оптимизация"
+czech,"- 🧠 **Priorita AI podle vašeho gusta:** Nyní můžete přetahovat své konektory AI a rozhodnout, který použít jako první. Pokud jeden selže, hra automaticky zkusí další ve vašem seznamu priorit.
+- ⚙️ **Ovládání přednačítání:** Do spouštěče byla přidána možnost rozhodnout, zda chcete přednačíst lokální model AI, nebo jej načíst pouze v případě potřeby (úspora zdrojů při spuštění).
+- 🛡️ **Bezpečné a čisté mazání:** Při odstranění světa se systém nyní postará o vyčištění naprosto všech souvisejících dat (postavy a příběh), čímž udrží vaši databázi bezchybnou.
+- 🚀 **Optimalizace paměti:** „Mozek“ AI se nyní načítá pouze jednou a je sdílen mezi všemi funkcemi, což šetří spoustu grafické paměti (VRAM).
+- 🎨 **Inteligentní rozhraní:** Panel pro výběr světů se nyní dokonale přizpůsobí obrazovce a textu, bez oříznutých tlačítek nebo špatně využitých mezer.
+- 🔄 **Vylepšená inteligentní rotace:** Opravil jsem systém rotace, aby to s vaší lokální AI nevzdal hned napoprvé; nyní jí dá šanci se opravit, než začne hledat externí pomoc.
+- 🌍 **Polyglotní a robustní AI:** Detekce objektů a vyprávění jsou nyní přesnější v 10 jazycích, se speciálním jištěním, aby vám nikdy nechyběl příběh.
+- 🛠️ **Zaručená perzistence AI:** Opravena chyba, kvůli které Gemini „zapomínal“ nebo se měnil na Ollama. Vaše priority používání AI se nyní ukládají bezpečně a chirurgicky přesně.
+- ⚡ **Gemini obnoven:** Opraven přístup k modelu Gemini obnovením jeho správných klíčů a URL.
+- 🎨 **Opravené tematické rozhraní:** Rozhodovací tlačítka nyní při načtení hry okamžitě získají barvu vašeho světa (např. zlatá pro fantasy) při načítání hry.
+- 👥 **Povědomí mezi postavami:** AI si je nyní vědoma všech vašich postav! Pokud máte v jednom světě více hrdinů, AI je rozpozná jako obyvatele a bude si pamatovat, co každý z nich udělal jednotlivě.
+- 🧠 **Paměť s přisuzováním:** Systém vzpomínek nyní rozlišuje, kdo kterou akci provedl, čímž zabraňuje tomu, aby si AI pletla vaše minulé činy s činy jiných postav.","Posílení integrity, povědomí o postavách a optimalizace"
+danish,"- 🧠 **AI-prioritering efter dit ønske:** Du kan nu trække og slippe dine AI-forbindelser for at beslutte, hvilken der skal bruges først. Hvis en fejler, vil spillet automatisk prøve den næste på din prioriteringsliste.
+- ⚙️ **Kontrol over forudindlæsning:** Tilføjet en mulighed i launcheren til at beslutte, om du vil forudindlæse den lokale AI-model eller kun indlæse den, når det er nødvendigt (sparer ressourcer ved opstart).
+- 🛡️ **Sikker og ren sletning:** Når du sletter en verden, sørger systemet nu for at rydde absolut alle relaterede data (karakterer og historie) og holder din database pletfri.
+- 🚀 **Hukommelsesoptimering:** AI'ens ""hjerne"" indlæses nu kun én gang og deles mellem alle funktioner, hvilket sparer meget grafisk hukommelse (VRAM).
+- 🎨 **Intelligent interface:** Panelet til valg af verden tilpasser sig nu perfekt til skærmen og teksten uden afskårne knapper eller spildt plads.
+- 🔄 **Forbedret intelligent rotation:** Jeg har rettet rotationssystemet, så det ikke giver op over for din lokale AI ved første forsøg; det får nu en chance for at rette sig selv, før der søges ekstern hjælp.
+- 🌍 **Flersproget og robust AI:** Objektregistrering og historiefortælling er nu mere præcise på 10 sprog, med særlig sikring så du aldrig løber tør for indhold.
+- 🛠️ **Garanteret AI-persistens:** Rettet fejlen, der fik Gemini til at ""glemme"" eller forvandle sig til Ollama. Dine prioriteter for AI-brug gemmes nu sikkert og kirurgisk præcist.
+- ⚡ **Gemini gendannet:** Repareret adgangen til Gemini-modellen ved at gendanne dens korrekte nøgler og URL'er.
+- 🎨 **Rettet tematisk interface:** Beslutningsknapper henter nu øjeblikkeligt din verdens farve (f.eks. Guld til fantasy), når spillet indlæses.
+- 👥 **Bevidsthed mellem karakterer:** AI'en er nu opmærksom på alle dine karakterer! Hvis du har flere helte i samme verden, vil AI'en genkende dem som indbyggere og kan huske, hvad hver enkelt gjorde individuelt.
+- 🧠 **Hukommelse med tilskrivning:** Hukommelsessystemet skelner nu mellem, hvem der udførte hver handling, hvilket forhindrer AI'en i at forveksle dine tidligere bedrifter med andre karakterers.","Integritetsforstærkning, karakterbevidsthed og optimering"
+german,"- 🧠 **KI-Priorität nach Wunsch:** Du kannst deine KI-Verbindungen jetzt per Drag & Drop verschieben, um festzulegen, welche zuerst genutzt wird. Falls eine ausfällt, versucht das Spiel es automatisch mit der nächsten auf deiner Prioritätenliste.
+- ⚙️ **Vorlade-Steuerung:** Option im Launcher hinzugefügt, um zu entscheiden, ob das lokale KI-Modell vorgeladen oder erst bei Bedarf geladen werden soll (spart Ressourcen beim Start).
+- 🛡️ **Sicheres und sauberes Löschen:** Wenn du eine Welt löschst, kümmert sich das System nun darum, absolut alle zugehörigen Daten (Charaktere und Geschichte) zu bereinigen und deine Datenbank makellos zu halten.
+- 🚀 **Speicheroptimierung:** Das „Gehirn“ der KI wird jetzt nur einmal geladen und von allen Funktionen geteilt, was viel Grafikspeicher (VRAM) spart.
+- 🎨 **Intelligentes Interface:** Das Weltauswahl-Panel passt sich jetzt perfekt an den Bildschirm und den Text an, ohne abgeschnittene Schaltflächen oder schlecht genutzten Platz.
+- 🔄 **Verbesserte intelligente Rotation:** Ich habe das Rotationssystem repariert, damit es bei deiner lokalen KI nicht sofort aufgibt; es gibt ihr jetzt eine Chance zur Korrektur, bevor externe Hilfe gesucht wird.
+- 🌍 **Mehrsprachige und robuste KI:** Objekterkennung und Erzählung sind jetzt in 10 Sprachen präziser, mit speziellem Schutz, damit dir nie die Geschichte ausgeht.
+- 🛠️ **Garantierte KI-Persistenz:** Der Fehler wurde behoben, durch den Gemini „vergessen“ oder in Ollama verwandelt wurde. Deine KI-Prioritäten werden jetzt sicher und präzise gespeichert.
+- ⚡ **Gemini wiederhergestellt:** Zugriff auf das Gemini-Modell repariert, indem die korrekten Schlüssel und URLs wiederhergestellt wurden.
+- 🎨 **Themen-Interface korrigiert:** Entscheidungsschaltflächen nehmen beim Laden des Spiels jetzt sofort wieder die Farbe deiner Welt an (z. B. Gold für Fantasy).
+- 👥 **Bewusstsein zwischen Charakteren:** Die KI ist sich jetzt all deiner Charaktere bewusst! Wenn du mehrere Helden in derselben Welt hast, erkennt die KI sie als Bewohner und kann sich individuell daran erinnern, was jeder getan hat.
+- 🧠 **Gedächtnis mit Zuordnung:** Das Erinnerungssystem unterscheidet jetzt, wer welche Handlung ausgeführt hat, und verhindert, dass die KI deine vergangenen Taten mit denen anderer Charaktere verwechselt.","Integritätsstärkung, Charakterbewusstsein und Optimierung"
+greek,"- 🧠 **Προτεραιότητα AI στα μέτρα σας:** Τώρα μπορείτε να σύρετε και να αποθέσετε τους συνδέσμους AI για να αποφασίσετε ποιον θα χρησιμοποιήσετε πρώτα. Αν κάποιος αποτύχει, το παιχνίδι θα δοκιμάσει αυτόματα τον επόμενο στη λίστα προτεραιοτήτων σας.
+- ⚙️ **Έλεγχος Προφόρτωσης:** Προστέθηκε επιλογή στον εκκινητή (launcher) για να αποφασίσετε αν θέλετε να προφορτώσετε το τοπικό μοντέλο AI ή να το φορτώσετε μόνο όταν χρειάζεται (εξοικονόμηση πόρων κατά την εκκίνηση).
+- 🛡️ **Ασφαλής και Καθαρή Διαγραφή:** Κατά τη διαγραφή ενός κόσμου, το σύστημα φροντίζει πλέον να καθαρίζει απολύτως όλα τα σχετικά δεδομένα (χαρακτήρες και ιστορία), διατηρώντας τη βάση δεδομένων σας άψογη.
+- 🚀 **Βελτιστοποίηση Μνήμης:** Ο ""εγκέφαλος"" της AI φορτώνεται πλέον μία μόνο φορά και διαμοιράζεται σε όλες τις λειτουργίες, εξοικονομώντας πολλή μνήμη γραφικών (VRAM).
+- 🎨 **Έξυπνη Διεπαφή:** Ο πίνακας επιλογής κόσμων προσαρμόζεται πλέον τέλεια στην οθόνη και το κείμενο, χωρίς κομμένα κουμπιά ή ανεκμετάλλευτους χώρους.
+- 🔄 **Βελτιωμένη Έξυπνη Εναλλαγή:** Διόρθωσα το σύστημα εναλλαγής ώστε να μην εγκαταλείπει την τοπική σας AI με την πρώτη· τώρα της δίνει μια ευκαιρία να διορθωθεί πριν αναζητήσει εξωτερική βοήθεια.
+- 🌍 **Πολύγλωσση και Στιβαρή AI:** Η ανίχνευση αντικειμένων και η αφήγηση είναι πλέον πιο ακριβείς σε 10 γλώσσες, με ειδική θωράκιση ώστε να μη σας λείψει ποτέ η ιστορία.
+- 🛠️ **Εγγυημένη Διατήρηση AI:** Διορθώθηκε το σφάλμα που έκανε το Gemini να ""ξεχνιέται"" ή να μετατρέπεται σε Ollama. Οι προτεραιότητες χρήσης AI αποθηκεύονται πλέον με ασφάλεια και χειρουργική ακρίβεια.
+- ⚡ **Αποκατάσταση Gemini:** Επιδιορθώθηκε η πρόσβαση στο μοντέλο Gemini ανακτώντας τα σωστά κλειδιά και URL του.
+- 🎨 **Διορθωμένη Θεματική Διεπαφή:** Τα κουμπιά αποφάσεων ανακτούν πλέον ακαριαία το χρώμα του κόσμου σας (π.χ. Χρυσό για φαντασία) κατά τη φόρτωση του παιχνιδιού.
+- 👥 **Επίγνωση Μεταξύ Χαρακτήρων:** Η AI έχει πλέον επίγνωση όλων των χαρακτήρων σας! Αν έχετε πολλούς ήρωες στον ίδιο κόσμο, η AI θα τους αναγνωρίζει ως κατοίκους και θα μπορεί να θυμάται τι έκανε ο καθένας ξεχωριστά.
+- 🧠 **Μνήμη με Απόδοση:** Το σύστημα αναμνήσεων διακρίνει πλέον ποιος εκτέλεσε κάθε ενέργεια, αποτρέποντας την AI από το να συγχέει τα παρελθοντικά σας κατορθώματα με αυτά άλλων χαρακτήρων.","Ενίσχυση Ακεραιότητας, Επίγνωση Χαρακτήρων και Βελτιστοποίηση"
+english,"- 🧠 **Custom AI Priority:** You can now drag and drop your AI connectors to decide which one to use first. If one fails, the game will automatically try the next one in your priority list.
+- ⚙️ **Preload Control:** Added an option in the launcher to decide whether to preload the local AI model or load it only when necessary (saving resources on startup).
+- 🛡️ **Safe and Clean Wipe:** When deleting a world, the system now takes care of cleaning absolutely all related data (characters and story), keeping your database spotless.
+- 🚀 **Memory Optimization:** The AI ""brain"" is now loaded only once and shared among all functions, saving a lot of video memory (VRAM).
+- 🎨 **Smart Interface:** The world selection panel now fits the screen and text perfectly, with no cut-off buttons or poorly used spaces.
+- 🔄 **Improved Smart Rotation:** I've fixed the rotation system so it doesn't give up on your local AI immediately; it now gives it a chance to correct itself before seeking external help.
+- 🌍 **Robust Polyglot AI:** Object detection and narrative are now more accurate in 10 languages, with special shielding so you never run out of story.
+- 🛠️ **Guaranteed AI Persistence:** Fixed the bug that caused Gemini to ""forget"" or transform into Ollama. Your AI usage priorities are now saved securely and surgically.
+- ⚡ **Gemini Restored:** Repaired access to the Gemini model by recovering its correct keys and URLs.
+- 🎨 **Themed Interface Fixed:** Decision buttons now instantly retrieve your world's color (e.g., Gold for fantasy) when loading the game.
+- 👥 **Cross-Character Awareness:** The AI is now aware of all your characters! If you have multiple heroes in the same world, the AI will recognize them as inhabitants and will be able to remember what each one did individually.
+- 🧠 **Attributed Memory:** The memory system now distinguishes who performed each action, preventing the AI from confusing your past feats with those of other characters.","Integrity Reinforcement, Character Awareness, and Optimization"
+spanish,"- 🧠 **Prioridad IA a tu gusto:** Ahora puedes arrastrar y soltar tus conectores de IA para decidir cuál usar primero. Si una falla, el juego intentará automáticamente con la siguiente en tu lista de prioridades.
+- ⚙️ **Control de Precarga:** Añadida opción en el lanzador para decidir si quieres precargar el modelo de IA local o cargarlo solo cuando sea necesario (ahorro de recursos al arrancar).
+- 🛡️ **Borrado Seguro y Limpio:** Al eliminar un mundo, el sistema ahora se encarga de limpiar absolutamente todos los datos relacionados (personajes e historia), manteniendo tu base de datos impecable.
+- 🚀 **Optimización de Memoria:** El ""cerebro"" de la IA ahora se carga una sola vez y se comparte entre todas las funciones, ahorrando mucha memoria gráfica (VRAM).
+- 🎨 **Interfaz Inteligente:** El panel de selección de mundos ahora se ajusta perfectamente a la pantalla y al texto, sin botones cortados ni espacios mal aprovechados.
+- 🔄 **Rotación Inteligente Mejorada:** He arreglado el sistema de rotación para que no se rinda con tu IA local a la primera; ahora le da una oportunidad de corregirse antes de buscar ayuda externa.
+- 🌍 **IA Políglota y Robusta:** La detección de objetos y la narrativa ahora son más precisas en 10 idiomas, con blindaje especial para que nunca te falte historia.
+- 🛠️ **Persistencia de IA Garantizada:** Corregido el error que hacía que Gemini se ""olvidara"" o se transformara en Ollama. Tus prioridades de uso de IA ahora se guardan de forma segura y quirúrgica.
+- ⚡ **Gemini Restaurado:** Reparado el acceso al modelo Gemini recuperando sus claves y URL correctas.
+- 🎨 **Interfaz Temática Corregida:** Los botones de decisión ahora recuperan instantáneamente el color de tu mundo (ej. Oro para fantasía) al cargar la partida.
+- 👥 **Consciencia entre Personajes:** ¡La IA ahora es consciente de todos tus personajes! Si tienes varios héroes en un mismo mundo, la IA los reconocerá como habitantes y podrá recordar qué hizo cada uno de forma individual.
+- 🧠 **Memoria con Atribución:** El sistema de recuerdos ahora distingue quién realizó cada acción, evitando que la IA confunda tus hazañas pasadas con las de otros personajes.","Refuerzo de Integridad, Consciencia de Personajes y Optimiza"
+latam,"- 🧠 **Prioridad de IA a tu gusto:** Ahora puedes arrastrar y soltar tus conectores de IA para decidir cuál usar primero. Si una falla, el juego intentará automáticamente con la siguiente en tu lista de prioridades.
+- ⚙️ **Control de Precarga:** Se añadió una opción en el lanzador para decidir si quieres precargar el modelo de IA local o cargarlo solo cuando sea necesario (ahorro de recursos al iniciar).
+- 🛡️ **Borrado Seguro y Limpio:** Al eliminar un mundo, el sistema ahora se encarga de limpiar absolutamente todos los datos relacionados (personajes e historia), manteniendo tu base de datos impecable.
+- 🚀 **Optimización de Memoria:** El ""cerebro"" de la IA ahora se carga una sola vez y se comparte entre todas las funciones, ahorrando mucha memoria gráfica (VRAM).
+- 🎨 **Interfaz Inteligente:** El panel de selección de mundos ahora se ajusta perfectamente a la pantalla y al texto, sin botones cortados ni espacios mal aprovechados.
+- 🔄 **Rotación Inteligente Mejorada:** Se arregló el sistema de rotación para que no se rinda con tu IA local a la primera; ahora le da una oportunidad de corregirse antes de buscar ayuda externa.
+- 🌍 **IA Políglota y Robusta:** La detección de objetos y la narrativa ahora son más precisas en 10 idiomas, con blindaje especial para que nunca te falte historia.
+- 🛠️ **Persistencia de IA Garantizada:** Corregido el error que hacía que Gemini se ""olvidara"" o se transformara en Ollama. Tus prioridades de uso de IA ahora se guardan de forma segura y quirúrgica.
+- ⚡ **Gemini Restaurado:** Reparado el acceso al modelo Gemini recuperando sus claves y URL correctas.
+- 🎨 **Interfaz Temática Corregida:** Los botones de decisión ahora recuperan instantáneamente el color de tu mundo (ej. Oro para fantasía) al cargar la partida.
+- 👥 **Consciencia entre Personajes:** ¡La IA ahora es consciente de todos tus personajes! Si tienes varios héroes en un mismo mundo, la IA los reconocerá como habitantes y podrá recordar qué hizo cada uno de forma individual.
+- 🧠 **Memoria con Atribución:** El sistema de recuerdos ahora distingue quién realizó cada acción, evitando que la IA confunda tus hazañas pasadas con las de otros personajes.","Refuerzo de Integridad, Consciencia de Personajes y Optimización"
+finnish,"- 🧠 **Tekoälyn priorisointi mieltymystesi mukaan:** Nyt voit vetää ja pudottaa tekoälyliittymiäsi päättääksesi, mitä käytetään ensin. Jos yksi epäonnistuu, peli yrittää automaattisesti seuraavaa prioriteettilistallasi.
+- ⚙️ **Esilatauksen hallinta:** Käynnistysohjelmaan on lisätty vaihtoehto, jolla voit päättää, haluatko esiladata paikallisen tekoälymallin vai ladata sen vasta tarvittaessa (säästää resursseja käynnistyksessä).
+- 🛡️ **Turvallinen ja puhdas poisto:** Kun poistat maailman, järjestelmä huolehtii nyt kaikkien siihen liittyvien tietojen (hahmot ja tarina) täydellisestä siivoamisesta, pitäen tietokantasi virheettömänä.
+- 🚀 **Muistin optimointi:** Tekoälyn ""aivot"" ladataan nyt vain kerran ja jaetaan kaikkien toimintojen kesken, mikä säästää runsaasti näyttömuistia (VRAM).
+- 🎨 **Älykäs käyttöliittymä:** Maailman valintapaneeli mukautuu nyt täydellisesti näyttöön ja tekstiin ilman leikkautuvia painikkeita tai huonosti käytettyä tilaa.
+- 🔄 **Parannettu älykäs kierto:** Olen korjannut kiertojärjestelmän, jotta se ei luovuta paikallisen tekoälyn suhteen heti; nyt se antaa sille mahdollisuuden korjata itsensä ennen ulkoisen avun hakemista.
+- 🌍 **Monikielinen ja vankka tekoäly:** Esineiden tunnistus ja kerronta ovat nyt tarkempia 10 kielellä, ja ne on suojattu erityisesti, jotta tarina ei lopu koskaan kesken.
+- 🛠️ **Taattu tekoälyn pysyvyys:** Korjattu virhe, joka sai Geminin ""unohtamaan"" tai muuttumaan Ollamaksi. Tekoälyn käyttöprioriteettisi tallennetaan nyt turvallisesti ja tarkasti.
+- ⚡ **Gemini palautettu:** Pääsy Gemini-malliin on korjattu palauttamalla sen oikeat avaimet ja URL-osoitteet.
+- 🎨 **Teemoitettu käyttöliittymä korjattu:** Päätöspainikkeet palauttavat nyt välittömästi maailmasi värin (esim. kulta fantasiaa varten) peliä ladattaessa.
+- 👥 **Hahmojen välinen tietoisuus:** Tekoäly on nyt tietoinen kaikista hahmoistasi! Jos sinulla on useita sankareita samassa maailmassa, tekoäly tunnistaa heidät asukkaiksi ja muistaa kunkin tekemiset yksilöllisesti.
+- 🧠 **Tekijäkohtainen muisti:** Muistijärjestelmä erottaa nyt, kuka teki minkäkin toiminnon, estäen tekoälyä sekoittamasta menneitä urotekojasi muiden hahmojen tekoihin.","Eheyden vahvistus, hahmojen tietoisuus ja optimointi"
+french,"- 🧠 **Priorité de l'IA personnalisée :** Vous pouvez désormais glisser-déposer vos connecteurs d'IA pour décider lequel utiliser en premier. Si l'un échoue, le jeu tentera automatiquement avec le suivant dans votre liste de priorités.
+- ⚙️ **Contrôle du préchargement :** Ajout d'une option dans le lanceur pour décider si vous souhaitez précharger le modèle d'IA local ou le charger uniquement lorsque nécessaire (économie de ressources au démarrage).
+- 🛡️ **Suppression sûre et propre :** Lors de la suppression d'un monde, le système se charge désormais de nettoyer absolument toutes les données liées (personnages et histoire), gardant votre base de données impeccable.
+- 🚀 **Optimisation de la mémoire :** Le ""cerveau"" de l'IA ne se charge désormais qu'une seule fois et est partagé entre toutes les fonctionnalités, économisant beaucoup de mémoire vidéo (VRAM).
+- 🎨 **Interface intelligente :** Le panneau de sélection des mondes s'ajuste désormais parfaitement à l'écran et au texte, sans boutons coupés ni espaces mal utilisés.
+- 🔄 **Rotation intelligente améliorée :** J'ai corrigé le système de rotation pour qu'il n'abandonne pas votre IA locale du premier coup ; il lui donne maintenant une chance de se corriger avant de chercher une aide externe.
+- 🌍 **IA polyglotte et robuste :** La détection d'objets et la narration sont désormais plus précises dans 10 langues, avec une protection spéciale pour que vous ne manquiez jamais d'histoire.
+- 🛠️ **Persistance de l'IA garantie :** Correction de l'erreur qui faisait que Gemini ""s'oubliait"" ou se transformait en Ollama. Vos priorités d'utilisation de l'IA sont désormais sauvegardées de manière sûre et chirurgicale.
+- ⚡ **Gemini restauré :** Réparation de l'accès au modèle Gemini en récupérant ses clés et URL correctes.
+- 🎨 **Interface thématique corrigée :** Les boutons de décision récupèrent désormais instantanément la couleur de votre monde (ex. Or pour la fantaisie) lors du chargement de la partie.
+- 👥 **Conscience entre les personnages :** L'IA est désormais consciente de tous vos personnages ! Si vous avez plusieurs héros dans un même monde, l'IA les reconnaîtra comme habitants et pourra se souvenir de ce que chacun a fait individuellement.
+- 🧠 **Mémoire avec attribution :** Le système de souvenirs distingue désormais qui a effectué chaque action, évitant que l'IA ne confonde vos exploits passés avec ceux d'autres personnages.","Renforcement de l'intégrité, Conscience des personnages et Optimisation"
+hungarian,"- 🧠 **Testreszabható MI prioritás:** Mostantól áthúzással rendezheted az MI csatlakozókat a használati sorrend meghatározásához. Ha az egyik meghibásodik, a játék automatikusan megpróbálja a következőt a prioritási listádon.
+- ⚙️ **Előtöltés vezérlése:** Új opció a rendszerindítóban, amellyel eldöntheted, hogy előtöltöd-e a helyi MI modellt, vagy csak szükség esetén töltöd be (erőforrás-megtakarítás indításkor).
+- 🛡️ **Biztonságos és tiszta törlés:** Egy világ törlésekor a rendszer mostantól gondoskodik az összes kapcsolódó adat (karakterek és történet) teljes körű törléséről, makulátlanul tartva az adatbázisodat.
+- 🚀 **Memória-optimalizálás:** Az MI ""agya"" mostantól csak egyszer töltődik be, és megosztásra kerül az összes funkció között, jelentős grafikus memóriát (VRAM) takarítva meg.
+- 🎨 **Intelligens kezelőfelület:** A világválasztó panel mostantól tökéletesen igazodik a képernyőhöz és a szöveghez, levágott gombok és rosszul kihasznált helyek nélkül.
+- 🔄 **Javított intelligens rotáció:** Javítottam a rotációs rendszert, hogy ne adja fel rögtön a helyi MI-vel; mostantól ad neki egy esélyt a javításra, mielőtt külső segítséget keresne.
+- 🌍 **Többnyelvű és robusztus MI:** A tárgyfelismerés és a narratíva mostantól pontosabb 10 nyelven, speciális védelemmel ellátva, hogy soha ne maradj történet nélkül.
+- 🛠️ **Garantált MI perzisztencia:** Javítva a hiba, amely miatt a Gemini ""elfelejtette"" beállításait vagy Ollamává változott. Az MI használati prioritásaid mostantól biztonságosan és precízen kerülnek mentésre.
+- ⚡ **Gemini helyreállítva:** Javítva a hozzáférés a Gemini modellhez a helyes kulcsok és URL-ek visszaállításával.
+- 🎨 **Javított tematikus felület:** A döntési gombok mostantól azonnal átveszik a világod színét (pl. Arany a fantasy-hez) a játék betöltésekor.
+- 👥 **Karakterek közötti tudatosság:** Az MI mostantól tudatában van az összes karakterednek! Ha több hősöd van ugyanabban a világban, az MI lakókként ismeri fel őket, és képes lesz emlékezni arra, mit tett mindegyikük egyénileg.
+- 🧠 **Memória hozzárendeléssel:** Az emlékrendszer mostantól megkülönbözteti, ki hajtotta végre az egyes cselekvéseket, megakadályozva, hogy az MI összekeverje a te múltbeli tetteidet más karakterekével.","Integritás megerősítése, Karaktertudatosság és Optimalizálás"
+indonesian,"- 🧠 **Prioritas AI Sesukamu:** Sekarang kamu bisa seret dan lepas konektor AI untuk menentukan mana yang digunakan lebih dulu. Jika satu gagal, game akan otomatis mencoba yang berikutnya dalam daftar prioritasmu.
+- ⚙️ **Kontrol Preload:** Menambahkan opsi di peluncur untuk memutuskan apakah ingin melakukan preload model AI lokal atau memuatnya hanya saat diperlukan (hemat sumber daya saat mulai).
+- 🛡️ **Penghapusan Aman dan Bersih:** Saat menghapus dunia, sistem kini menangani pembersihan semua data terkait (karakter dan cerita) secara menyeluruh, menjaga basis datamu tetap bersih sempurna.
+- 🚀 **Optimasi Memori:** ""Otak"" AI kini hanya dimuat satu kali dan dibagikan ke semua fungsi, menghemat banyak memori grafis (VRAM).
+- 🎨 **Antarmuka Cerdas:** Panel pemilihan dunia kini menyesuaikan layar dan teks dengan sempurna, tanpa tombol terpotong atau ruang yang terbuang.
+- 🔄 **Rotasi Cerdas yang Ditingkatkan:** Saya telah memperbaiki sistem rotasi agar tidak langsung menyerah pada AI lokalmu; kini sistem memberinya kesempatan untuk memperbaiki diri sebelum mencari bantuan eksternal.
+- 🌍 **AI Poliglot dan Tangguh:** Deteksi objek dan narasi kini lebih akurat dalam 10 bahasa, dengan perlindungan khusus agar kamu tidak pernah kehabisan cerita.
+- 🛠️ **Persistensi AI Terjamin:** Memperbaiki bug yang membuat Gemini ""lupa"" atau berubah menjadi Ollama. Prioritas penggunaan AI kini disimpan dengan aman dan presisi.
+- ⚡ **Gemini Dipulihkan:** Memperbaiki akses ke model Gemini dengan memulihkan kunci dan URL yang benar.
+- 🎨 **Antarmuka Tematik Diperbaiki:** Tombol keputusan kini langsung memulihkan warna duniamu (misal Emas untuk fantasi) saat memuat permainan.
+- 👥 **Kesadaran Antar Karakter:** AI kini sadar akan semua karaktermu! Jika kamu memiliki beberapa pahlawan di dunia yang sama, AI akan mengenali mereka sebagai penghuni dan dapat mengingat apa yang dilakukan masing-masing secara individual.
+- 🧠 **Ingatan dengan Atribusi:** Sistem ingatan kini membedakan siapa yang melakukan setiap tindakan, mencegah AI menukar pencapaian masa lalumu dengan karakter lain.","Penguatan Integritas, Kesadaran Karakter, dan Optimasi"
+italian,"- 🧠 **Priorità IA a tuo piacimento:** Ora puoi trascinare e rilasciare i tuoi connettori IA per decidere quale utilizzare per primo. Se uno fallisce, il gioco tenterà automaticamente con il successivo nella tua lista di priorità.
+- ⚙️ **Controllo del Precaricamento:** Aggiunta un'opzione nel launcher per decidere se precaricare il modello IA locale o caricarlo solo quando necessario (risparmio di risorse all'avvio).
+- 🛡️ **Cancellazione Sicura e Pulita:** Quando elimini un mondo, il sistema ora si occupa di ripulire assolutamente tutti i dati correlati (personaggi e storia), mantenendo il tuo database impeccabile.
+- 🚀 **Ottimizzazione della Memoria:** Il ""cervello"" dell'IA ora viene caricato una sola volta e condiviso tra tutte le funzioni, risparmiando molta memoria video (VRAM).
+- 🎨 **Interfaccia Intelligente:** Il pannello di selezione dei mondi ora si adatta perfettamente allo schermo e al testo, senza pulsanti tagliati o spazi mal sfruttati.
+- 🔄 **Rotazione Intelligente Migliorata:** Ho sistemato il sistema di rotazione affinché non rinunci alla tua IA locale al primo tentativo; ora le dà un'opportunità di correggersi prima di cercare aiuto esterno.
+- 🌍 **IA Poliglotta e Robusta:** Il rilevamento degli oggetti e la narrativa sono ora più precisi in 10 lingue, con una protezione speciale per assicurarti che non manchi mai la storia.
+- 🛠️ **Persistenza IA Garantita:** Corretto l'errore che faceva sì che Gemini si ""dimenticasse"" o si trasformasse in Ollama. Le tue priorità di utilizzo dell'IA vengono ora salvate in modo sicuro e chirurgico.
+- ⚡ **Gemini Ripristinato:** Riparato l'accesso al modello Gemini recuperando le sue chiavi e URL corretti.
+- 🎨 **Interfaccia Tematica Corretta:** I pulsanti di scelta ora recuperano istantaneamente il colore del tuo mondo (es. Oro per il fantasy) al caricamento della partita.
+- 👥 **Consapevolezza tra Personaggi:** L'IA è ora consapevole di tutti i tuoi personaggi! Se hai più eroi nello stesso mondo, l'IA li riconoscerà come abitanti e potrà ricordare cosa ha fatto ognuno individualmente.
+- 🧠 **Memoria con Attribuzione:** Il sistema dei ricordi ora distingue chi ha compiuto ogni azione, evitando che l'IA confonda le tue gesta passate con quelle di altri personaggi.","Rafforzamento dell'Integrità, Consapevolezza dei Personaggi e Ottimizzazione"
+japanese,"- 🧠 **好みのAI優先度:** AIコネクターをドラッグ＆ドロップして、どれを最初に使用するかを決められるようになりました。もし失敗しても、優先順位リストの次のAIを自動的に試行します。
+- ⚙️ **プリロード制御:** ローカルAIモデルをプリロードするか、必要な時だけロードするか（起動時のリソース節約）をランチャーのオプションで選択できるようになりました。
+- 🛡️ **安全でクリーンな削除:** ワールドを削除する際、システムが関連データ（キャラクターやストーリー）をすべて完全に消去し、データベースを完璧な状態に保つようになりました。
+- 🚀 **メモリの最適化:** AIの「頭脳」が一度だけロードされ、全機能で共有されるようになりました。これによりVRAM（ビデオメモリ）を大幅に節約できます。
+- 🎨 **スマートなインターフェース:** ワールド選択パネルが画面やテキストに合わせて完璧に調整され、ボタンが見切れたり無駄なスペースができたりすることがなくなりました。
+- 🔄 **スマートローテーションの改善:** ローカルAIが一度失敗してもすぐには諦めないよう修正しました。外部の助けを求める前に、自己修正の機会が与えられます。
+- 🌍 **多言語対応の堅牢なAI:** 10言語での物体検出とナラティブの精度が向上し、ストーリーが途切れないよう特別な保護が強化されました。
+- 🛠️ **AI設定の保存を保証:** Geminiが設定を「忘れたり」、Ollamaに変わってしまうエラーを修正しました。AIの使用優先順位が正確かつ安全に保存されます。
+- ⚡ **Geminiの復旧:** 正しいキーとURLを回復し、Geminiモデルへのアクセスを修復しました。
+- 🎨 **テーマ別UIの修正:** ゲームロード時、決定ボタンがワールドの色（例：ファンタジーならゴールド）を即座に反映するようになりました。
+- 👥 **キャラクター間の認識:** AIがあなたの全キャラクターを認識するようになりました！同じワールドに複数のヒーローがいる場合、AIは彼らを住人として認識し、それぞれの行動を個別に記憶できます。
+- 🧠 **帰属付きメモリ:** 記憶システムが「誰がその行動をしたか」を区別するようになりました。AIが過去の偉業を他のキャラクターのものと混同するのを防ぎます。",整合性の強化、キャラクター認識、最適化
+korean,"- 🧠 **원하는 대로 설정하는 AI 우선순위:** 이제 AI 커넥터를 드래그 앤 드롭하여 어떤 것을 먼저 사용할지 결정할 수 있습니다. 하나가 실패하면 게임은 자동으로 우선순위 목록의 다음 커넥터를 시도합니다.
+- ⚙️ **사전 로드 제어:** 런처에 로컬 AI 모델을 미리 로드할지, 아니면 필요할 때만 로드할지 결정할 수 있는 옵션이 추가되었습니다 (시작 시 리소스 절약).
+- 🛡️ **안전하고 깔끔한 삭제:** 월드를 삭제할 때, 시스템이 관련된 모든 데이터(캐릭터 및 스토리)를 완전히 정리하여 데이터베이스를 깨끗하게 유지합니다.
+- 🚀 **메모리 최적화:** AI의 ""뇌""는 이제 한 번만 로드되어 모든 기능 간에 공유되므로, 그래픽 메모리(VRAM)를 크게 절약할 수 있습니다.
+- 🎨 **스마트 인터페이스:** 월드 선택 패널이 이제 화면과 텍스트에 완벽하게 맞춰지며, 버튼이 잘리거나 공간이 낭비되지 않습니다.
+- 🔄 **향상된 스마트 로테이션:** 로컬 AI가 처음에 실패하더라도 바로 포기하지 않도록 순환 시스템을 수정했습니다. 이제 외부 도움을 찾기 전에 스스로 수정할 기회를 부여합니다.
+- 🌍 **다국어 및 강력한 AI:** 사물 인식과 내러티브가 이제 10개 언어에서 더욱 정확해졌으며, 스토리가 끊기지 않도록 특별한 보호 기능이 적용되었습니다.
+- 🛠️ **AI 지속성 보장:** Gemini가 ""잊어버리거나"" Ollama로 변하던 오류를 수정했습니다. 이제 AI 사용 우선순위가 안전하고 정밀하게 저장됩니다.
+- ⚡ **Gemini 복구:** 올바른 키와 URL을 복구하여 Gemini 모델에 대한 액세스를 수정했습니다.
+- 🎨 **테마 인터페이스 수정:** 이제 게임을 로드할 때 결정 버튼이 월드의 색상(예: 판타지의 경우 금색)을 즉시 복원합니다.
+- 👥 **캐릭터 간 인식:** 이제 AI가 모든 캐릭터를 인식합니다! 한 월드에 여러 영웅이 있다면, AI는 그들을 거주자로 인식하고 각자가 무엇을 했는지 개별적으로 기억할 수 있습니다.
+- 🧠 **속성 메모리:** 기억 시스템이 이제 누가 각 행동을 수행했는지 구별하여, AI가 과거의 업적을 다른 캐릭터의 것과 혼동하지 않도록 합니다.","무결성 강화, 캐릭터 인식 및 최적화"
+dutch,"- 🧠 **AI-prioriteit naar wens:** Je kunt nu je AI-connectors slepen en neerzetten om te bepalen welke eerst wordt gebruikt. Als er een faalt, probeert het spel automatisch de volgende in je prioriteitenlijst.
+- ⚙️ **Beheer voor vooraf laden:** Optie toegevoegd aan de launcher om te kiezen of je het lokale AI-model vooraf wilt laden of pas wanneer nodig (bespaart systeembronnen bij het opstarten).
+- 🛡️ **Veilig en schoon verwijderen:** Bij het verwijderen van een wereld zorgt het systeem er nu voor dat absoluut alle gerelateerde gegevens (personages en verhaal) worden opgeruimd, waardoor je database onberispelijk blijft.
+- 🚀 **Geheugenoptimalisatie:** Het ""brein"" van de AI wordt nu slechts één keer geladen en gedeeld tussen alle functies, wat veel videogeheugen (VRAM) bespaart.
+- 🎨 **Slimme interface:** Het wereldselectiepaneel past zich nu perfect aan het scherm en de tekst aan, zonder afgesneden knoppen of slecht benutte ruimte.
+- 🔄 **Verbeterde slimme rotatie:** Het rotatiesysteem is gerepareerd zodat het je lokale AI niet meteen opgeeft; het krijgt nu een kans om zichzelf te corrigeren voordat er externe hulp wordt gezocht.
+- 🌍 **Veeltalige en robuuste AI:** Objectdetectie en het verhaal zijn nu nauwkeuriger in 10 talen, met speciale bescherming zodat je nooit zonder verhaal komt te zitten.
+- 🛠️ **Gegarandeerde AI-persistentie:** Fout opgelost waardoor Gemini werd ""vergeten"" of veranderde in Ollama. Je AI-gebruiksprioriteiten worden nu veilig en nauwkeurig opgeslagen.
+- ⚡ **Gemini hersteld:** Toegang tot het Gemini-model gerepareerd door de juiste sleutels en URL te herstellen.
+- 🎨 **Thematische interface gecorrigeerd:** Beslissingsknoppen nemen nu direct de kleur van je wereld aan (bijv. goud voor fantasy) bij het laden van het spel.
+- 👥 **Bewustzijn tussen personages:** De AI is zich nu bewust van al je personages! Als je meerdere helden in dezelfde wereld hebt, herkent de AI ze als inwoners en kan onthouden wat elk individu heeft gedaan.
+- 🧠 **Geheugen met toeschrijving:** Het herinneringssysteem onderscheidt nu wie welke actie heeft uitgevoerd, waardoor wordt voorkomen dat de AI jouw eerdere daden verwart met die van andere personages.","Integriteitsversterking, Personagebewustzijn en Optimalisatie"
+norwegian,"- 🧠 **AI-prioritering etter eget ønske:** Nå kan du dra og slippe AI-koblingene dine for å bestemme hvilken som skal brukes først. Hvis en feiler, vil spillet automatisk prøve neste på prioriteringslisten din.
+- ⚙️ **Forhåndslastingskontroll:** Lagt til et valg i oppstarteren for å bestemme om du vil forhåndslaste den lokale AI-modellen eller laste den kun ved behov (sparer ressurser ved oppstart).
+- 🛡️ **Sikker og ren sletting:** Når du sletter en verden, sørger systemet nå for å fjerne absolutt alle relaterte data (karakterer og historie), slik at databasen holdes plettfri.
+- 🚀 **Minneoptimalisering:** AI-ens ""hjerne"" lastes nå bare én gang og deles mellom alle funksjoner, noe som sparer mye grafikkminne (VRAM).
+- 🎨 **Smart grensesnitt:** Panelet for verdensvalg tilpasser seg nå perfekt til skjermen og teksten, uten avkuttede knapper eller dårlig utnyttet plass.
+- 🔄 **Forbedret smart rotasjon:** Jeg har fikset rotasjonssystemet slik at det ikke gir opp din lokale AI med en gang; nå får den en sjanse til å korrigere seg selv før det søkes etter ekstern hjelp.
+- 🌍 **Flerspråklig og robust AI:** Objektdeteksjon og historiefortelling er nå mer presis på 10 språk, med spesiell sikring slik at du aldri går tom for historie.
+- 🛠️ **Garantert AI-persistens:** Fikset feilen som gjorde at Gemini ""glemte"" eller forvandlet seg til Ollama. Dine prioriteringer for AI-bruk lagres nå på en sikker og nøyaktig måte.
+- ⚡ **Gemini gjenopprettet:** Reparert tilgangen til Gemini-modellen ved å gjenopprette riktige nøkler og URL-er.
+- 🎨 **Tematisk grensesnitt fikset:** Valgknappene henter nå umiddelbart fargen fra din verden (f.eks. gull for fantasy) når spillet lastes.
+- 👥 **Bevissthet mellom karakterer:** AI-en er nå klar over alle karakterene dine! Hvis du har flere helter i samme verden, vil AI-en gjenkjenne dem som innbyggere og kunne huske hva hver enkelt gjorde individuelt.
+- 🧠 **Minne med attribusjon:** Minnesystemet skiller nå mellom hvem som utførte hver handling, for å unngå at AI-en blander dine tidligere bragder med andre karakterers.","Integritetsforsterkning, Karakterbevissthet og Optimalisering"
+polish,"- 🧠 **Priorytet SI według uznania:** Teraz możesz przeciągać i upuszczać złącza SI, aby zdecydować, którego użyć w pierwszej kolejności. Jeśli jedno zawiedzie, gra automatycznie spróbuje użyć następnego z listy priorytetów.
+- ⚙️ **Kontrola wstępnego ładowania:** Dodano opcję w launcherze, pozwalającą zdecydować, czy chcesz wstępnie załadować lokalny model SI, czy ładować go tylko wtedy, gdy jest potrzebny (oszczędność zasobów przy uruchamianiu).
+- 🛡️ **Bezpieczne i czyste usuwanie:** Podczas usuwania świata system dba teraz o wyczyszczenie absolutnie wszystkich powiązanych danych (postaci i historii), utrzymując twoją bazę danych w nienagannym stanie.
+- 🚀 **Optymalizacja pamięci:** ""Mózg"" SI jest teraz ładowany tylko raz i współdzielony przez wszystkie funkcje, co pozwala zaoszczędzić dużo pamięci graficznej (VRAM).
+- 🎨 **Inteligentny interfejs:** Panel wyboru świata dopasowuje się teraz idealnie do ekranu i tekstu, bez przyciętych przycisków czy źle wykorzystanej przestrzeni.
+- 🔄 **Ulepszona inteligentna rotacja:** Naprawiono system rotacji, aby nie rezygnował z lokalnej SI przy pierwszej próbie; teraz daje jej szansę na poprawę przed szukaniem pomocy zewnętrznej.
+- 🌍 **Poliglota i solidna SI:** Wykrywanie obiektów i narracja są teraz bardziej precyzyjne w 10 językach, ze specjalnym zabezpieczeniem, dzięki któremu nigdy nie zabraknie ci historii.
+- 🛠️ **Gwarantowana trwałość SI:** Naprawiono błąd, który powodował, że Gemini ""zapominał"" lub zmieniał się w Ollama. Twoje priorytety korzystania z SI są teraz zapisywane w bezpieczny i precyzyjny sposób.
+- ⚡ **Przywrócono Gemini:** Naprawiono dostęp do modelu Gemini, przywracając poprawne klucze i adres URL.
+- 🎨 **Poprawiony interfejs tematyczny:** Przyciski decyzyjne teraz natychmiast przywracają kolor twojego świata (np. złoty dla fantasy) podczas wczytywania gry.
+- 👥 **Świadomość między postaciami:** SI jest teraz świadoma wszystkich twoich postaci! Jeśli masz kilku bohaterów w jednym świecie, SI rozpozna ich jako mieszkańców i będzie pamiętać, co każdy z nich zrobił indywidualnie.
+- 🧠 **Pamięć z atrybucją:** System wspomnień rozróżnia teraz, kto wykonał daną czynność, zapobiegając myleniu przez SI twoich przeszłych czynów z czynami innych postaci.","Wzmocnienie integralności, Świadomość postaci i Optymalizacja"
+portuguese,"- 🧠 **Prioridade de IA do seu jeito:** Agora você pode arrastar e soltar seus conectores de IA para decidir qual usar primeiro. Se uma falhar, o jogo tentará automaticamente a próxima na sua lista de prioridades.
+- ⚙️ **Controle de Pré-carregamento:** Adicionada opção no inicializador para decidir se você quer pré-carregar o modelo de IA local ou carregá-lo apenas quando necessário (economia de recursos ao iniciar).
+- 🛡️ **Exclusão Segura e Limpa:** Ao excluir um mundo, o sistema agora cuida de limpar absolutamente todos os dados relacionados (personagens e história), mantendo seu banco de dados impecável.
+- 🚀 **Otimização de Memória:** O ""cérebro"" da IA agora é carregado apenas uma vez e compartilhado entre todas as funções, economizando muita memória de vídeo (VRAM).
+- 🎨 **Interface Inteligente:** O painel de seleção de mundos agora se ajusta perfeitamente à tela e ao texto, sem botões cortados ou espaços mal aproveitados.
+- 🔄 **Rotação Inteligente Melhorada:** Consertei o sistema de rotação para que não desista da sua IA local logo de cara; agora ele dá uma chance para ela se corrigir antes de buscar ajuda externa.
+- 🌍 **IA Poliglota e Robusta:** A detecção de objetos e a narrativa agora são mais precisas em 10 idiomas, com blindagem especial para que nunca falte história.
+- 🛠️ **Persistência de IA Garantida:** Corrigido o erro que fazia o Gemini ""esquecer"" ou se transformar no Ollama. Suas prioridades de uso de IA agora são salvas de forma segura e cirúrgica.
+- ⚡ **Gemini Restaurado:** Reparado o acesso ao modelo Gemini recuperando suas chaves e URLs corretas.
+- 🎨 **Interface Temática Corrigida:** Os botões de decisão agora recuperam instantaneamente a cor do seu mundo (ex: Dourado para fantasia) ao carregar o jogo.
+- 👥 **Consciência entre Personagens:** A IA agora está ciente de todos os seus personagens! Se você tiver vários heróis em um mesmo mundo, a IA os reconhecerá como habitantes e poderá lembrar o que cada um fez individualmente.
+- 🧠 **Memória com Atribuição:** O sistema de memórias agora distingue quem realizou cada ação, evitando que a IA confunda seus feitos passados com os de outros personagens.","Reforço de Integridade, Consciência de Personagens e Otimizações"
+romanian,"- 🧠 **Prioritate IA după preferințe:** Acum poți trage și plasa conectorii IA pentru a decide pe care să-l folosești primul. Dacă unul eșuează, jocul va încerca automat cu următorul din lista ta de priorități.
+- ⚙️ **Control Preîncărcare:** Adăugată o opțiune în lansator pentru a decide dacă dorești să preîncarci modelul IA local sau să-l încarci doar la nevoie (economie de resurse la pornire).
+- 🛡️ **Ștergere Sigură și Curată:** La ștergerea unei lumi, sistemul se ocupă acum de curățarea absolută a tuturor datelor aferente (personaje și poveste), păstrând baza de date impecabilă.
+- 🚀 **Optimizare Memorie:** „Creierul” IA se încarcă acum o singură dată și este partajat între toate funcțiile, economisind multă memorie video (VRAM).
+- 🎨 **Interfață Inteligentă:** Panoul de selecție a lumilor se ajustează acum perfect la ecran și la text, fără butoane tăiate sau spații nefolosite.
+- 🔄 **Rotație Inteligentă Îmbunătățită:** Am reparat sistemul de rotație pentru a nu renunța la IA locală din prima; acum îi oferă o șansă de corectare înainte de a căuta ajutor extern.
+- 🌍 **IA Poliglotă și Robustă:** Detectarea obiectelor și narațiunea sunt acum mai precise în 10 limbi, cu protecție specială pentru a nu rămâne niciodată fără poveste.
+- 🛠️ **Persistență IA Garantată:** Corectată eroarea care făcea ca Gemini să „uite” sau să se transforme în Ollama. Prioritățile tale de utilizare a IA sunt acum salvate sigur și chirurgical.
+- ⚡ **Gemini Restaurat:** Reparat accesul la modelul Gemini, recuperând cheile și URL-ul corecte.
+- 🎨 **Interfață Tematică Corectată:** Butoanele de decizie recuperează acum instantaneu culoarea lumii tale (ex. Auriu pentru fantezie) la încărcarea jocului.
+- 👥 **Conștientizare între Personaje:** IA este acum conștientă de toate personajele tale! Dacă ai mai mulți eroi în aceeași lume, IA îi va recunoaște ca locuitori și își va putea aminti ce a făcut fiecare în parte.
+- 🧠 **Memorie cu Atribuire:** Sistemul de amintiri distinge acum cine a efectuat fiecare acțiune, evitând ca IA să confunde faptele tale trecute cu cele ale altor personaje.","Consolidarea Integrității, Conștientizarea Personajelor și Optimizare"
+russian,"- 🧠 **Приоритет ИИ на ваш вкус:** Теперь вы можете перетаскивать коннекторы ИИ, чтобы решить, какой использовать первым. Если один из них даст сбой, игра автоматически попробует следующий из вашего списка приоритетов.
+- ⚙️ **Управление предзагрузкой:** В лаунчер добавлена опция, позволяющая решить, хотите ли вы предварительно загружать локальную модель ИИ или загружать её только при необходимости (экономия ресурсов при запуске).
+- 🛡️ **Безопасное и чистое удаление:** При удалении мира система теперь полностью очищает все связанные данные (персонажей и историю), сохраняя вашу базу данных в идеальном порядке.
+- 🚀 **Оптимизация памяти:** «Мозг» ИИ теперь загружается только один раз и используется всеми функциями совместно, что значительно экономит видеопамять (VRAM).
+- 🎨 **Умный интерфейс:** Панель выбора миров теперь идеально подстраивается под экран и текст: никаких обрезанных кнопок или нерационально использованного пространства.
+- 🔄 **Улучшенная умная ротация:** Исправлена система ротации, чтобы она не сдавалась при первой же ошибке локального ИИ; теперь ему дается шанс исправиться, прежде чем система обратится к внешней помощи.
+- 🌍 **ИИ-полиглот и надежность:** Распознавание объектов и повествование стали точнее на 10 языках, со специальной защитой, гарантирующей, что история никогда не прервется.
+- 🛠️ **Гарантированное сохранение настроек ИИ:** Исправлена ошибка, из-за которой Gemini «забывался» или превращался в Ollama. Ваши приоритеты использования ИИ теперь сохраняются надежно и точно.
+- ⚡ **Восстановление Gemini:** Исправлен доступ к модели Gemini путем восстановления правильных ключей и URL.
+- 🎨 **Исправление тематического интерфейса:** Кнопки принятия решений теперь мгновенно окрашиваются в цвет вашего мира (например, золотой для фэнтези) при загрузке игры.
+- 👥 **Осознанность взаимодействия персонажей:** Теперь ИИ знает обо всех ваших персонажах! Если в одном мире у вас несколько героев, ИИ распознает их как жителей и сможет помнить действия каждого из них по отдельности.
+- 🧠 **Память с атрибуцией:** Система воспоминаний теперь различает, кто совершил то или иное действие, не позволяя ИИ спутать ваши прошлые подвиги с действиями других персонажей.","Улучшение целостности, восприятие персонажей и оптимизация"
+swedish,"- 🧠 **AI-prioritet som du vill:** Nu kan du dra och släppa dina AI-kopplingar för att bestämma vilken som ska användas först. Om en misslyckas försöker spelet automatiskt med nästa på din prioriteringslista.
+- ⚙️ **Kontroll över förladdning:** Alternativ tillagt i startprogrammet för att bestämma om du vill förladda den lokala AI-modellen eller bara ladda den när det behövs (sparar resurser vid uppstart).
+- 🛡️ **Säker och ren radering:** Vid borttagning av en värld ser systemet nu till att rensa absolut all relaterad data (karaktärer och berättelse), vilket håller din databas fläckfri.
+- 🚀 **Minnesoptimering:** AI:ns ""hjärna"" laddas nu bara en gång och delas mellan alla funktioner, vilket sparar mycket grafikminne (VRAM).
+- 🎨 **Smart gränssnitt:** Världsurvalspanelen anpassar sig nu perfekt till skärmen och texten, utan avskurna knappar eller dåligt utnyttjat utrymme.
+- 🔄 **Förbättrad smart rotation:** Jag har fixat rotationssystemet så att det inte ger upp med din lokala AI direkt; nu ges den en chans att korrigera sig själv innan extern hjälp söks.
+- 🌍 **Flerspråkig och robust AI:** Objektsdetektering och berättande är nu mer exakt på 10 språk, med speciella skyddsåtgärder så att du aldrig står utan historia.
+- 🛠️ **Garanterad AI-persistens:** Fixade felet som gjorde att Gemini ""glömde"" eller förvandlades till Ollama. Dina prioriteringar för AI-användning sparas nu säkert och exakt.
+- ⚡ **Gemini återställd:** Reparerade åtkomsten till Gemini-modellen genom att återställa dess korrekta nycklar och URL.
+- 🎨 **Fixat tematiskt gränssnitt:** Beslutsknappar återfår nu omedelbart din världs färg (t.ex. Guld för fantasy) när spelet laddas.
+- 👥 **Medvetenhet mellan karaktärer:** AI:n är nu medveten om alla dina karaktärer! Om du har flera hjältar i samma värld kommer AI:n att känna igen dem som invånare och kan komma ihåg vad var och en gjorde individuellt.
+- 🧠 **Minne med attribuering:** Minnessystemet skiljer nu på vem som utförde varje handling, vilket förhindrar att AI:n blandar ihop dina tidigare bedrifter med andra karaktärers.","Integritetsförstärkning, Karaktärsmedvetenhet och Optimering"
+thai,"- 🧠 **ลำดับความสำคัญ AI ตามใจคุณ:** ตอนนี้คุณสามารถลากและวางตัวเชื่อมต่อ AI เพื่อตัดสินใจว่าจะใช้อันไหนก่อน หากมีตัวใดล้มเหลว เกมจะลองใช้ตัวถัดไปในรายการลำดับความสำคัญของคุณโดยอัตโนมัติ
+- ⚙️ **การควบคุมการโหลดล่วงหน้า:** เพิ่มตัวเลือกในตัวเปิดเกมเพื่อตัดสินใจว่าต้องการโหลดโมเดล AI ในเครื่องล่วงหน้าหรือโหลดเฉพาะเมื่อจำเป็น (ประหยัดทรัพยากรตอนเริ่มเกม)
+- 🛡️ **การลบที่ปลอดภัยและหมดจด:** เมื่อลบโลก ระบบจะจัดการล้างข้อมูลที่เกี่ยวข้องทั้งหมด (ตัวละครและเนื้อเรื่อง) อย่างสมบูรณ์ เพื่อรักษาฐานข้อมูลของคุณให้สะอาดเรียบร้อย
+- 🚀 **การเพิ่มประสิทธิภาพหน่วยความจำ:** ตอนนี้ ""สมอง"" ของ AI จะถูกโหลดเพียงครั้งเดียวและแชร์ร่วมกันในทุกฟังก์ชัน ช่วยประหยัดหน่วยความจำกราฟิก (VRAM) ได้มาก
+- 🎨 **อินเทอร์เฟซอัจฉริยะ:** แผงเลือกโลกปรับให้เข้ากับหน้าจอและข้อความได้อย่างลงตัว ไม่มีปุ่มขาดหรือพื้นที่ที่ใช้ประโยชน์ได้ไม่ดี
+- 🔄 **การหมุนเวียนอัจฉริยะที่ปรับปรุงแล้ว:** แก้ไขระบบหมุนเวียนให้ไม่ยอมแพ้กับ AI ในเครื่องของคุณตั้งแต่ครั้งแรก ตอนนี้มันจะให้โอกาสแก้ไขตัวเองก่อนที่จะขอความช่วยเหลือจากภายนอก
+- 🌍 **AI หลากภาษาที่แข็งแกร่ง:** การตรวจจับวัตถุและการเล่าเรื่องแม่นยำยิ่งขึ้นใน 10 ภาษา พร้อมเกราะป้องกันพิเศษเพื่อให้คุณไม่ขาดตอนเรื่องราว
+- 🛠️ **รับประกันความคงอยู่ของ AI:** แก้ไขข้อผิดพลาดที่ทำให้ Gemini ""ลืม"" หรือเปลี่ยนเป็น Ollama ตอนนี้ลำดับความสำคัญการใช้ AI ของคุณถูกบันทึกไว้อย่างปลอดภัยและแม่นยำ
+- ⚡ **กู้คืน Gemini:** ซ่อมแซมการเข้าถึงโมเดล Gemini โดยกู้คืนคีย์และ URL ที่ถูกต้อง
+- 🎨 **แก้ไขอินเทอร์เฟซตามธีม:** ปุ่มตัดสินใจจะดึงสีของโลกคุณกลับมาทันที (เช่น สีทองสำหรับแฟนตาซี) เมื่อโหลดเกม
+- 👥 **การรับรู้ระหว่างตัวละคร:** ตอนนี้ AI รับรู้ตัวละครทั้งหมดของคุณแล้ว! หากคุณมีฮีโร่หลายคนในโลกเดียวกัน AI จะจดจำพวกเขาในฐานะผู้อยู่อาศัยและสามารถจำสิ่งที่แต่ละคนทำได้เป็นรายบุคคล
+- 🧠 **ความทรงจำพร้อมการระบุเจ้าของ:** ระบบความทรงจำแยกแยะได้ว่าใครเป็นผู้กระทำในแต่ละเหตุการณ์ ป้องกันไม่ให้ AI สับสนวีรกรรมในอดีตของคุณกับของตัวละครอื่น","การเสริมความสมบูรณ์, การรับรู้ของตัวละคร และการเพิ่มประสิทธิภาพ"
+turkish,"- 🧠 **İstediğiniz Gibi YZ Önceliği:** Artık hangi YZ bağlantısının önce kullanılacağına karar vermek için sürükleyip bırakabilirsiniz. Biri başarısız olursa, oyun otomatik olarak öncelik listenizdeki bir sonrakini deneyecektir.
+- ⚙️ **Ön Yükleme Kontrolü:** Başlatıcıya, yerel YZ modelini önceden yüklemek mi yoksa yalnızca gerektiğinde mi yüklemek (başlangıçta kaynak tasarrufu) istediğinize karar vermeniz için bir seçenek eklendi.
+- 🛡️ **Güvenli ve Temiz Silme:** Bir dünyayı silerken, sistem artık ilgili tüm verileri (karakterler ve geçmiş) temizleyerek veritabanınızı kusursuz tutuyor.
+- 🚀 **Bellek Optimizasyonu:** YZ'nin ""beyni"" artık sadece bir kez yükleniyor ve tüm fonksiyonlar arasında paylaşılıyor, bu da büyük miktarda grafik belleği (VRAM) tasarrufu sağlıyor.
+- 🎨 **Akıllı Arayüz:** Dünya seçim paneli artık ekrana ve metne mükemmel bir şekilde uyum sağlıyor; kesik düğmeler veya boşa harcanan alanlar yok.
+- 🔄 **Geliştirilmiş Akıllı Rotasyon:** Rotasyon sistemini düzelttim, böylece yerel YZ'nizden ilk denemede vazgeçmiyor; artık dışarıdan yardım aramadan önce kendini düzeltmesi için ona bir şans veriyor.
+- 🌍 **Çok Dilli ve Sağlam YZ:** Nesne algılama ve anlatım artık 10 dilde daha hassas, hikayesiz kalmamanız için özel korumaya sahip.
+- 🛠️ **Garantili YZ Kalıcılığı:** Gemini'nin ""unutmasına"" veya Ollama'ya dönüşmesine neden olan hata düzeltildi. YZ kullanım öncelikleriniz artık güvenli ve hassas bir şekilde kaydediliyor.
+- ⚡ **Gemini Geri Yüklendi:** Doğru anahtarlar ve URL geri yüklenerek Gemini modeline erişim onarıldı.
+- 🎨 **Düzeltilmiş Tematik Arayüz:** Karar düğmeleri artık oyunu yüklerken dünyanızın rengini (örneğin fantezi için Altın) anında geri yüklüyor.
+- 👥 **Karakterler Arası Farkındalık:** YZ artık tüm karakterlerinizin farkında! Aynı dünyada birden fazla kahramanınız varsa, YZ onları sakinler olarak tanıyacak ve her birinin ne yaptığını ayrı ayrı hatırlayabilecek.
+- 🧠 **İsnatlı Hafıza:** Hatıra sistemi artık her eylemi kimin gerçekleştirdiğini ayırt ediyor, böylece YZ'nin geçmişteki başarılarınızı diğer karakterlerinkilerle karıştırmasını önlüyor.","Bütünlük Güçlendirmesi, Karakter Farkındalığı ve Optimizasyon"
+ukrainian,"- 🧠 **Пріоритет ШІ на ваш смак:** Тепер ви можете перетягувати конектори ШІ, щоб вирішити, який використовувати першим. Якщо один не спрацює, гра автоматично спробує наступний у вашому списку пріоритетів.
+- ⚙️ **Контроль попереднього завантаження:** У лаунчер додано опцію, яка дозволяє вирішити, чи потрібно попередньо завантажувати локальну модель ШІ, чи завантажувати її лише за потреби (економія ресурсів під час запуску).
+- 🛡️ **Безпечне та чисте видалення:** Під час видалення світу система тепер очищає абсолютно всі пов'язані дані (персонажів та історію), підтримуючи вашу базу даних в ідеальному стані.
+- 🚀 **Оптимізація пам'яті:** «Мозок» ШІ тепер завантажується лише один раз і використовується всіма функціями спільно, що значно економить відеопам'ять (VRAM).
+- 🎨 **Розумний інтерфейс:** Панель вибору світів тепер ідеально підлаштовується під екран і текст, без обрізаних кнопок чи погано використаного простору.
+- 🔄 **Покращена розумна ротація:** Виправлено систему ротації, щоб вона не відмовлялася від локального ШІ з першої спроби; тепер йому надається шанс виправитися перед пошуком зовнішньої допомоги.
+- 🌍 **Поліглотичний та надійний ШІ:** Розпізнавання об'єктів та розповідь тепер точніші на 10 мовах, зі спеціальним захистом, щоб історія ніколи не переривалася.
+- 🛠️ **Гарантована стабільність ШІ:** Виправлено помилку, через яку Gemini «забував» налаштування або перетворювався на Ollama. Ваші пріоритети використання ШІ тепер зберігаються надійно і точно.
+- ⚡ **Gemini відновлено:** Відновлено доступ до моделі Gemini шляхом повернення правильних ключів та URL-адрес.
+- 🎨 **Виправлено тематичний інтерфейс:** Кнопки рішень тепер миттєво відновлюють колір вашого світу (наприклад, золотий для фентезі) під час завантаження гри.
+- 👥 **Усвідомлення персонажів:** ШІ тепер знає про всіх ваших персонажів! Якщо у вас кілька героїв в одному світі, ШІ розпізнаватиме їх як мешканців і зможе пам'ятати, що робив кожен з них окремо.
+- 🧠 **Пам'ять з атрибуцією:** Система спогадів тепер розрізняє, хто виконав кожну дію, запобігаючи плутанині ШІ між вашими минулими подвигами та діями інших персонажів.","Покращення цілісності, усвідомлення персонажів та оптимізація"
+vietnamese,"- 🧠 **Ưu tiên AI theo ý thích:** Bây giờ bạn có thể kéo và thả các trình kết nối AI để quyết định sử dụng cái nào trước. Nếu một cái bị lỗi, trò chơi sẽ tự động thử cái tiếp theo trong danh sách ưu tiên của bạn.
+- ⚙️ **Kiểm soát Tải trước:** Đã thêm tùy chọn trong trình khởi chạy để quyết định xem bạn muốn tải trước mô hình AI cục bộ hay chỉ tải khi cần thiết (tiết kiệm tài nguyên khi khởi động).
+- 🛡️ **Xóa An toàn và Sạch sẽ:** Khi xóa một thế giới, hệ thống hiện sẽ đảm nhận việc dọn dẹp hoàn toàn mọi dữ liệu liên quan (nhân vật và cốt truyện), giữ cho cơ sở dữ liệu của bạn hoàn hảo.
+- 🚀 **Tối ưu hóa Bộ nhớ:** ""Bộ não"" của AI giờ chỉ được tải một lần và chia sẻ giữa tất cả các chức năng, giúp tiết kiệm rất nhiều bộ nhớ đồ họa (VRAM).
+- 🎨 **Giao diện Thông minh:** Bảng chọn thế giới giờ đây điều chỉnh hoàn hảo với màn hình và văn bản, không còn các nút bị cắt hay khoảng trống lãng phí.
+- 🔄 **Cải thiện Xoay vòng Thông minh:** Tôi đã sửa hệ thống xoay vòng để nó không từ bỏ AI cục bộ của bạn ngay lần đầu; giờ đây nó sẽ cho AI một cơ hội để tự sửa lỗi trước khi tìm kiếm sự trợ giúp bên ngoài.
+- 🌍 **AI Đa ngôn ngữ và Mạnh mẽ:** Khả năng phát hiện vật thể và dẫn chuyện giờ đây chính xác hơn trong 10 ngôn ngữ, với cơ chế bảo vệ đặc biệt để bạn không bao giờ thiếu cốt truyện.
+- 🛠️ **Đảm bảo Tính Nhất quán AI:** Đã sửa lỗi khiến Gemini bị ""quên"" hoặc biến thành Ollama. Các ưu tiên sử dụng AI của bạn giờ được lưu trữ an toàn và chính xác.
+- ⚡ **Khôi phục Gemini:** Đã sửa quyền truy cập vào mô hình Gemini bằng cách khôi phục các khóa và URL chính xác.
+- 🎨 **Sửa lỗi Giao diện Theo chủ đề:** Các nút quyết định giờ đây khôi phục ngay lập tức màu sắc thế giới của bạn (ví dụ: Vàng cho giả tưởng) khi tải trò chơi.
+- 👥 **Nhận thức giữa các Nhân vật:** AI hiện đã nhận thức được tất cả các nhân vật của bạn! Nếu bạn có nhiều anh hùng trong cùng một thế giới, AI sẽ nhận ra họ là cư dân và có thể nhớ những gì mỗi người đã làm một cách riêng biệt.
+- 🧠 **Ký ức có Định danh:** Hệ thống ký ức giờ phân biệt được ai đã thực hiện hành động nào, tránh việc AI nhầm lẫn chiến công trong quá khứ của bạn với của các nhân vật khác.","Củng cố Tính Toàn vẹn, Nhận thức Nhân vật và Tối ưu hóa"
+schinese,"- 🧠 **自定义 AI 优先级：** 现在你可以拖放 AI 连接器来决定优先使用哪一个。如果一个失败，游戏会自动尝试优先级列表中的下一个。
+- ⚙️ **预加载控制：** 启动器中新增选项，可决定是预加载本地 AI 模型，还是仅在需要时加载（节省启动资源）。
+- 🛡️ **安全彻底删除：** 删除世界时，系统现在会负责彻底清理所有相关数据（角色和故事），保持数据库整洁无暇。
+- 🚀 **内存优化：** AI 的“大脑”现在只需加载一次，并在所有功能间共享，从而节省大量显存 (VRAM)。
+- 🎨 **智能界面：** 世界选择面板现在能完美适应屏幕和文本，不再有被切断的按钮或未充分利用的空间。
+- 🔄 **改进的智能轮替：** 修复了轮替系统，使其不会立刻放弃本地 AI；现在在寻求外部帮助之前，会给它一次自我修正的机会。
+- 🌍 **多语言与稳健的 AI：** 物体检测和叙事现在支持 10 种语言且更加精准，并带有特殊保障，确保故事永不中断。
+- 🛠️ **AI 持久性保证：** 修复了导致 Gemini “遗忘”或变成 Ollama 的错误。你的 AI 使用优先级现在会被安全且精准地保存。
+- ⚡ **Gemini 修复：** 修复了 Gemini 模型的访问问题，恢复了正确的密钥和 URL。
+- 🎨 **主题界面修复：** 加载游戏时，决策按钮现在会立即恢复为世界的主题色（例如奇幻世界的金色）。
+- 👥 **角色间意识：** AI 现在能感知到你的所有角色！如果你在同一个世界中有多个英雄，AI 会将他们识别为居民，并能分别记住每个人做了什么。
+- 🧠 **归属记忆：** 记忆系统现在能区分谁执行了每个动作，防止 AI 将你过去的功绩与其他角色混淆。",完整性强化、角色意识与优化
+tchinese,"- 🧠 **AI 優先順序隨你定：** 現在你可以拖放 AI 連接器來決定優先使用哪一個。如果其中一個失敗，遊戲會自動嘗試優先順序列表中的下一個。
+- ⚙️ **預先載入控制：** 啟動器中新增選項，可決定是否要預先載入本地 AI 模型，或僅在需要時才載入（啟動時節省資源）。
+- 🛡️ **安全徹底的刪除：** 刪除世界時，系統現在會負責清理所有相關數據（角色和故事），保持資料庫乾淨無瑕。
+- 🚀 **記憶體最佳化：** AI 的「大腦」現在只需載入一次並在所有功能間共享，大幅節省視訊記憶體 (VRAM)。
+- 🎨 **智慧介面：** 世界選擇面板現在能完美適應螢幕和文字，不再有按鈕被切斷或空間浪費的問題。
+- 🔄 **改進的智慧輪替：** 修復了輪替系統，使其不會在第一次嘗試本地 AI 失敗後就放棄；現在它會在尋求外部幫助前給予自我修正的機會。
+- 🌍 **強大的多語言 AI：** 物件偵測和敘事現在在 10 種語言中更加精確，並設有特殊防護機制，確保你的劇情絕不中斷。
+- 🛠️ **AI 持久性保證：** 修復了導致 Gemini「忘記」設定或變成 Ollama 的錯誤。你的 AI 使用優先順序現在能安全且精確地保存。
+- ⚡ **Gemini 修復：** 修復了 Gemini 模型的存取權限，恢復了正確的金鑰和網址。
+- 🎨 **主題介面修正：** 決策按鈕現在會在載入遊戲時立即恢復你世界的顏色（例如奇幻世界的金色）。
+- 👥 **角色間的意識：** AI 現在能感知你所有的角色！如果你在同一個世界中有多位英雄，AI 會將他們視為居民，並能單獨記住每個人做了什麼。
+- 🧠 **記憶歸屬：** 記憶系統現在能區分是誰執行了每個動作，避免 AI 將你過去的事蹟與其他角色混淆。",完整性強化、角色意識與最佳化

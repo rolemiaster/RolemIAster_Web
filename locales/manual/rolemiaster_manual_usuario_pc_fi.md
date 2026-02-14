@@ -1,259 +1,295 @@
 # 🐉 Tervetuloa RolemIAsteriin!
 
-Ota noppasi (tai hiiresi) mukaan ja valmistaudu seikkailuihin, joissa ainoa raja on mielikuvituksesi villiyden aste! **RolemIAster** on tekoälyllä toimiva, loputon roolipeli, joka antaa sinun olla omien tarinoidesi sankari (tai pahis).
+Nappaa noppasi (tai hiiresi) ja valmistaudu seikkailuihin, joissa ainoana rajana on mielikuvituksesi kierous! **RolemIAster** on tekoälyllä toimiva loputon roolipeli, joka antaa sinun olla omien tarinoidesi sankari (tai roisto).
 
 ---
 
-## ⚠️ OIKEUDELLINEN HUOMAUTUS (Tylsä, mutta välttämätön osa)
+## ⚠️ VASTUUVAPAUSLAUSEKE (Tylsä mutta pakollinen osuus)
 
-**LUE TAI KÄRSIT NOPPIEN VIHASTA:**
+**LUE TÄMÄ TAI KOE NOPPIEN VIHA:**
 
-1.  **🤖 Integroitu paikallinen tekoäly:** RolemIAster tuo oman digitaalisen aivonsa. Se toimii **ilman internetiä** eikä vaadi sinulta mitään erikoisia toimenpiteitä. Asenna ja pelaa!
-2.  **☁️ Valinnainen pilvi:** Jos haluat tuhlata rahaa ulkoisiin tekoälyihin (OpenAI, Gemini...), se on omalla vastuullasi luottokorttisi kanssa. Kulut ovat sinun.
-3.  **🎲 Generatiivinen kaaos:** Tekoäly keksii tarinan lennossa. Jos pelinjohtaja sekoaa ja ilmoittaa, että taivaalta sataa lehmiä, älä syytä meitä. Kehittäjä ei ole vastuussa mallin tuottamista hulluuksista.
-4.  **🏗️ Varhainen pääsy:** Tämä on vielä työn alla. Jos löydät bugin, se ei ole virhe, vaan yllättävä "ominaisuus"! (Lähetä meille palautetta, se auttaa meitä paljon).
-
----
-
-## 🖥️ JÄRJESTELMÄVAATIMUKSET JA DIGITAALISET AIVOT (Tekoäly)
-
-RolemIAster toimii **paikallisella tekoälyllä**. Tämä tarkoittaa, että tietokoneesi tekee raskaan ajatustyön. Internetiä ei tarvita, mutta tarvitaan näytönohjain, joka ei ole peräisin dinosaurusten ajoilta. (Huomautus: Jos huoneessasi on kylmä, tämä peli toimii ilmaisena lämmittimenä).
-
-### ⚙️ Käsitteitä aloittelijoille
-
-**VRAM (Näyttömuisti)** on tekoälyn polttoainetta.
-*   RolemIAsterin tarvitsee "muistaa" **12 000–16 000 sanaa (tokenia)**, jotta se ei kadota tarinan lankaa.
-*   Jos näytönohjaimesi muisti loppuu, peli hidastuu enemmän kuin astmaa sairastava etana.
+1.  **🤖 Integroitu paikallinen tekoäly:** RolemIAster tuo mukanaan omat digitaaliset aivonsa. Se toimii **ilman internetiä** eikä sinun tarvitse säätää mitään outoa. Asenna ja pelaa!
+2.  **☁️ Valinnainen pilvi:** Jos haluat mieluummin tuhlata rahasi ulkoisiin tekoälyihin (OpenAI, Gemini...), luottokorttisi on omalla vastuullasi. Kulut ovat sinun huolesi.
+3.  **🎲 Generatiivinen kaaos:** Tekoäly keksii tarinan lennosta. Jos kertoja sekoaa ja väittää lehmiä satavan taivaalta, älä katso meihin. Kehittäjä ei ole vastuussa mallin generoimista hulluuksista.
+4.  **🏗️ Early Access:** Tämä on työmaa. Jos löydät bugin, se ei ole virhe, vaan yllätysominaisuus! (Lähetä palautetta, kiitos, se auttaa meitä paljon).
 
 ---
 
-### 📊 MALLIKATALOGI (Valitse myrkkyynne)
+## 🖥️ JÄRJESTELMÄVAATIMUKSET JA DIGITAALISET AIVOT (TEKOÄLY)
+
+RolemIAster toimii **paikallisella tekoälyllä**. Se tarkoittaa, että tietokoneesi tekee raskaan ajatustyön. Et tarvitse internetiä, mutta tarvitset näytönohjaimen, joka ei ole dinosaurusajalta. (Huom: Jos huoneessasi on kylmä, tämä peli toimii ilmaisena lämmityksenä).
+
+### ⚙️ Käsitteitä vasta-alkajille
+
+**VRAM (Video Random Access Memory)** on tekoälyn polttoainetta.
+*   RolemIAsterin täytyy "muistaa" **12 000 – 16 000 sanaa (tokenia)**, jotta se ei kadota tarinan lankaa.
+*   Jos GPU:stasi loppuu muisti, peli toimii hitaammin kuin etana, jolla on astma.
+
+---
+
+### 📊 MALLIKUVASTO (Valitse myrkkysi)
 
 Hallitse tekoälyjäsi kohdassa **Asetukset → Integroitu paikallinen tekoäly → Hallitse malleja**.
 
-#### 🏆 Qwen 2.5 -perhe (Kerman kerma)
+#### 🏆 Qwen 2.5 -perhe (Parhaista parhaat)
 
-| Malli | Koko | Vähimmäis-VRAM | Taso | Tuomio |
+| Malli | Koko | Minimi VRAM | Taso | Tuomio |
 |--------|--------|-------------|------|-----------|
-| **Qwen2.5-3B** | ~2.5GB | **8GB** | B | 👶 **Harjoittelija.** Selviytyy, mutta älä pyydä sitä kirjoittamaan Shakespearea. Menee välillä sekaisin. |
-| **Qwen2.5-7B** | ~5.5GB | **12GB** | A | ✅ **VALITTU.** Tasapainoinen, fiksu ja nopea. Tämä on oletuksena suositeltu malli. |
-| **Qwen2.5-14B** | ~10GB | **16GB** | S | 🧐 **Professori.** Rikas, syvällinen kerronta ja erittäin luonnolliset dialogit. |
-| **Qwen2.5-32B** | ~22GB | **32GB** | S+ | 👑 **Jumalataso.** Tarvitset avaruusaluksen (RTX 3090/4090) pyörittääksesi tätä. |
+| **Qwen2.5-3B** | ~2.5 Gt | **8 Gt** | B | 👶 **Harjoittelija.** Suoriutuu, mutta älä pyydä sitä kirjoittamaan Shakespearea. Menee välillä sekaisin. |
+| **Qwen2.5-7B** | ~5.5 Gt | **12 Gt** | A | ✅ **VALITTU.** Tasapainoinen, fiksu ja nopea. Tämä on suositeltu oletusmalli. |
+| **Qwen2.5-14B** | ~10 Gt | **16 Gt** | S | 🧐 **Professori.** Rikas, syvällinen kerronta ja hyvin luonnollinen dialogi. |
+| **Qwen2.5-32B** | ~22 Gt | **32 Gt** | S+ | 👑 **Jumala-taso.** Tarvitset avaruusaluksen (RTX 3090/4090) pyörittääksesi tätä. |
 
 ---
 
-### 🎮 NOPEA VALINTAOPAS
+### 🎮 PIKAVALINTAOPAS
 
 | Näytönohjaimesi | VRAM | Suositeltu malli | Tulos |
 |------------|------|--------------------|-----------|
-| GTX 1050/1060 | 4GB | Qwen2.5-3B | 🆗 Juuri ja juuri pelattava (matala konteksti) |
-| GTX 1070/1660 | 6GB | Qwen2.5-3B | 🆗 Toimii hyvin |
-| RTX 2060/3060 | 8GB | Qwen2.5-3B | 🚀 Lentää |
-| RTX 3070/4060Ti | 12GB | **Qwen2.5-7B** | ✅ Ihanteellinen kokemus |
-| RTX 3090/4080 | 16-24GB | Qwen2.5-14B | 🌟 Luksusta |
-| RTX 4090 | 24GB | Qwen2.5-32B | 👑 Maksimilaatu |
+| GTX 1050/1060 | 4 Gt | Qwen2.5-3B | 🆗 Just ja just pelattava (Alhainen konteksti) |
+| GTX 1070/1660 | 6 Gt | Qwen2.5-3B | 🆗 Toimii hyvin |
+| RTX 2060/3060 | 8 Gt | Qwen2.5-3B | 🚀 Lentää |
+| RTX 3070/4060Ti | 12 Gt | **Qwen2.5-7B** | ✅ Ihanteellinen kokemus |
+| RTX 3090/4080 | 16-24 Gt | Qwen2.5-14B | 🌟 Luksusta |
+| RTX 4090 | 24 Gt | Qwen2.5-32B | 👑 Maksimaalinen laatu |
 
-**💡 Vinkki:** Jätä aina noin **2GB VRAMia vapaaksi** käyttöjärjestelmälle, muuten Windows alkaa itkeä ja sulkea ohjelmia.
+**💡 Pro-vinkki:** Jätä aina noin **2 Gt VRAMia vapaaksi** käyttöjärjestelmälle, tai Windows alkaa itkeä ja sulkea asioita.
 
 ---
 
-### 🚨 APUA! PC:NI ON HIDAS! (VRAM-ongelmat)
+### 🚨 APUA! TIETOKONEENI ON HIDAS! (VRAM-ongelmat)
 
-Jos pelin vastaaminen kestää kauemmin kuin ihastuksesi vastaaminen WhatsAppissa, olet todennäköisesti loppunut VRAMista.
+Jos peli vastaa hitaammin kuin ihastuksesi WhatsAppissa, VRAM on luultavasti loppu.
 
-**Oireita, että olet ollut liian optimistinen:**
-1.  **Malli siirtyy RAMiin:** Tietokone käyttää normaalia muistia näytönohjaimen sijaan. Tulos: EXTREEMINEN HIDASTUMINEN.
-2.  **Vähäinen ylivuoto (1-2GB):** Vastaus kestää 30-60 sekuntia.
-3.  **Kohtalainen ylivuoto (3-5GB):** 2–5 minuuttia. Voit käydä hakemassa kahvia.
-4.  **Vakava ylivuoto:** 10–30 minuuttia. Pelaamiskelvoton.
+**Oireita siitä, että olet yliarvioinut koneesi:**
+1.  **Malli siirtyy RAM-muistiin:** PC käyttää tavallista muistia näytönohjaimen sijaan. Tulos: ÄÄRIMMÄINEN HITAUS.
+2.  **Lievä ylivuoto (1-2 Gt):** Vastaus kestää 30-60 sekuntia.
+3.  **Kohtalainen ylivuoto (3-5 Gt):** 2-5 minuuttia. Voit hakea kahvia.
+4.  **Vakava ylivuoto:** 10-30 minuuttia. Pelikelvoton.
 
-#### 🛡️ HÄTÄPROTOKOLLA
-Jos tilanne menee huonoksi, noudata näitä ohjeita järjestyksessä:
+#### 🛡️ Hätäprotokolla
+Jos asiat menevät pieleen, seuraa näitä vaiheita järjestyksessä:
 
-1.  **📉 Laske VRAM-%:** Mene Asetuksiin ja laske se **85%:iin**. Käynnistä uudelleen ja kokeile.
+1.  **📉 Laske VRAM %:** Mene asetuksiin ja laske se **85 %:iin**. Käynnistä uudelleen ja kokeile.
 2.  **🧹 Siivous:** Sulje se selain, jossa on 40 välilehteä auki. Ne syövät muistiasi.
-3.  **🛑 70% raja:** Älä koskaan laske allokoitua VRAMia alle **70%:iin**.
-    *   *Miksi?* Koska tekoäly tarvitsee tilaa "ajatella" (KV-välimuisti). Jos annat sille alle 70%, se menee tyhjäksi ja antaa virheen.
-4.  **🔙 Taktinen vetäytyminen:** Jos mikään muu ei auta, vaihda pienempään malliin (7B -> 3B).
+3.  **🛑 70 %:n raja:** Älä koskaan alita **70 %** varattua VRAMia.
+    *   *Miksi?* Koska tekoäly tarvitsee tilaa "ajatella" (KV-välimuisti). Jos annat sille alle 70 %, se menee lukkoon ja antaa virheen.
+4.  **🔙 Taktinen perääntyminen:** Jos mikään ei toimi, vaihda pienempään malliin (siirry 7B:stä 3B:hen).
 
 ---
 
-### ⚙️ MALLIN LAAJENNUSASSETUKSET
+### ⚙️ MALLIN LISÄASETUKSET ("Maksiminörtteily")
 
-Niille, jotka tykkäävät säätää nappeja kohdassa **Asetukset → Integroitu paikallinen tekoäly**:
+> **ASIANTUNTIJATILA:** Jos olet pro ja haluat päästä käsiksi edistyneisiin malliasetuksiin (lisätä omia GGUF-malleja HuggingFacesta, säätää tasoja jne.), sinun on käynnistettävä peli komennolla: `--advanced`.
 
-| Vaihtoehto | Toiminto | Suositus |
+Niille, jotka tykkäävät painella nappuloita kohdassa **Asetukset → Integroitu paikallinen tekoäly**:
+
+| Asetus | Toiminto | Suositus |
 |--------|---------|---------------|
-| **GPU Layers** | Kuinka suuri osa mallista ladataan näytönohjaimelle | **-1** (Tarkoittaa "KAIKKI". Älä koske, ellei tiedä mitä tekee) |
-| **Maksimi konteksti** | Tekoälyn "lyhytkestoinen muisti" | **16384 - 32768** (Alle sen ja tekoäly kärsii muistinmenetyksestä) |
-| **Lämpötila** | Luovuus vs. hulluus | **0.7 - 0.8** (Korkeampi = hullumpi; Alempi = robottimaisempi) |
-| **Historiallinen RAG** | Muistaa asioita kaukaa | **Kyllä** (Välttämätön pitkille kampanjoille) |
-| **Välimuistita upotukset** | Nopeuttaa muistojen hakua | **Kyllä** (Tekee siitä nopeamman) |
+| **GPU Layers** | Kuinka suuri osa mallista ladataan näytönohjaimelle | **-1** (Tarkoittaa "KAIKKI". Älä koske, ellet tiedä mitä teet) |
+| **Contexto Máximo** | Tekoälyn "lyhytkestoinen muisti" | **16384 - 32768** (Tätä vähemmän ja tekoäly kärsii muistinmenetyksestä) |
+| **Temperatura** | Luovuus vs. Hulluus | **0.7 - 0.8** (Korkeampi = hullumpi; Matalampi = robottimaisempi) |
+| **RAG de Historial** | Muistaa asioita kaukaa menneisyydestä | **Kyllä** (Välttämätön pitkissä kampanjoissa) |
+| **Cachear Embeddings** | Nopeuttaa muistojen hakua | **Kyllä** (Tekee toiminnasta nopeampaa) |
 
 ---
 
-### 🔧 ONGELMANRATKAISU (Troubleshooting)
+### 🔧 VIANMÄÄRITYS (Troubleshooting)
 
-| Vika | Korjaus |
+| Moka | Korjaus |
 |-------|---------|
-| **Tekoäly hidas / Lagia** | Tarkista, että `GPU Layers` on -1. Sulje Chrome. Laske `Maksimi konteksti`. |
-| **Muistivirhe (OOM)** | Vähennä `Maksimi konteksti` tai valitse pienempi malli (3B). |
-| **Tekoäly sekoilee / Hallusinoi** | Laske `Lämpötila` 0.6:een. Jos se edelleen sekoilee, käynnistä sovellus uudelleen. |
+| **Hidas tekoäly / Lag** | Tarkista, että `GPU Layers` on -1. Sulje Chrome. Laske `Contexto Máximo`. |
+| **Muistivirhe (OOM)** | Pienennä `Contexto Máximo` tai valitse pienempi malli (3B). |
+| **Tekoäly hourailee / Hallusinoi** | Laske `Temperatura` arvoon 0.6. Jos se on edelleen hullu, käynnistä sovellus uudelleen. |
 
 ---
 
-### 🌐 VAIHTOEHTOISISET TOIMITTAJAT (Vain asiantuntijat)
+### 🌐 VAIHTOEHTOISET TARJOAJAT (Vain asiantuntijoille)
 
-> **Huomautus:** Pelin mukana tuleva paikallinen tekoäly riittää hyvin. Tämä on vain edistyneille tai rohkeille käyttäjille.
+> **Huom:** Pelin mukana tuleva paikallinen tekoäly riittää mainiosti. Tämä on vain edistyneille käyttäjille tai rohkeille.
 
 *   **Ulkoiset paikalliset moottorit:**
-    *   **Ollama / LM Studio:** Jos sinulla on jo omia nörttimallejasi, voit käyttää niitä.
-*   **Pilvipalvelut (maksullisia):**
-    *   **OpenAI (GPT), Gemini, Claude, DeepSeek:** Vaatii internetin ja rahaa.
-    *   Määritä kohdassa: **Asetukset → Tekoäly → Lisää uusi toimittaja**.
+    *   **Ollama / LM Studio:** Jos sinulla on jo omat nörttimallisi, voit käyttää niitä.
+*   **Pilvi-API:t (Maksulliset):**
+    *   **OpenAI (GPT), Gemini, Claude, DeepSeek:** Vaatii internetin ja rahan menettämistä.
+    *   Konfiguroi kohdassa: **Asetukset → Tekoäly → Lisää uusi tarjoaja**.
 
 ---
 
-## 🎲 MITEN PELATA?
+### 🌍 KUINKA PELATAAN? (Multiversumi ja sinä)
 
 Kun avaat pelin, sinulla on kaksi polkua:
 
-1.  **🆕 Uusi seikkailu**: Luo legendasi tyhjästä. Peli ohjaa sinua valitsemaan rodun, luokan, maailman ja lähtökohdan. (Jos elämä antaa sinulle sitruunoita... tai 3 voimaa, ryhdy bardiksi).
-2.  **💾 Lataa peli**: Jatka siitä, mihin jäit ennen sitä nöyryyttävää kuolemaa. (Tai korjataksesi sen "pienen laskuvirheen" lohikäärmeen kanssa).
+1.  **🆕 Uusi seikkailu**: Luo legendasi tyhjästä. Peli kysyy **Nimeä, Ammattia, Fyysistä kuvausta, Psykologista kuvausta ja Taustaa/Veruketta** tarinallesi. Lisäksi valitset **Vaikeustason** ja **Huumorin sävyn**, jotka ohjaavat kampanjaa.
+2.  **💾 Jatka peliä**: RolemIAster **tallentaa reaaliajassa**. Tässä ei ole "lataa ennen kuolemaa" -toimintoa eikä paluuta. Jokainen päätös, jokainen moka ja jokainen haava tallentuu pysyvästi tarinaan. Se on **HAASTE**: tehty mikä tehty. Elä seurausten kanssa... tai kuole niiden mukana.
 
-### Käyttöliittymä (Ohjaamosi)
+RolemIAster ei ole yksittäinen peli; se on **Pysyvä Multiversumi**.
+*   **Loputtomat maailmat:** Luo omat universumisi (**Keskiaikainen fantasia** tai **Cyberpunk**) omalla Lorellaan.
+*   **Loputtomat hahmot:** Kunkin maailman sisällä voit pitää niin monta sankaria kuin haluat.
+*   **Jaettu aikajana:** Huomio! Se mitä yksi hahmo tekee, vaikuttaa muiden maailmaan. Tekoäly on tietoinen muista sankareistasi ja tunnistaa heidät maailman asukkaiksi.
+*   **Tekoäly "aisteilla" (Super RAG):** RAG-järjestelmä (Retrieval-Augmented Generation) toimii tekoälyn "kielikellona", antaen sille muistoja maailmasta, seuralaisistasi, sijainnistasi ja siitä mitä juuri tapahtui, jotta tarina on 100 % johdonmukainen.
 
-*   **Vasemmanpuoleinen paneeli (SINÄ):** Hahmolomakkeesi. Elämä, manaa, taidot ja kuinka komea olet (Karismasi).
+### Käyttöliittymä (Sinun ohjaamosi)
+
+*   **Vasen paneeli (SINÄ):** Hahmolomakkeesi. Terveys, mana, taidot ja kuinka hyvännäköinen olet (Karisma).
 *   **Keskipaneeli (TARINA):**
-    *   **Ylhäällä:** Mistä pelinjohtaja kertoo, mitä tapahtuu.
-    *   **Alhaalla:** Päätöspainikkeesi ja tekstilaatikko kirjoittaa mitä haluat tehdä.
-*   **Oikeanpuoleinen paneeli (OMAT TAVARASI):** Inventaario ja varusteet. Digitaalisen hamstraajan paratiisi.
+    *   **Ylhäällä:** Missä kertoja kertoo tapahtumat.
+    *   **Alhaalla:** Päätöspainikkeet ja tekstikenttä vapaata kirjoittamista varten.
+*   **Oikea paneeli (TAVARASI):** Inventaario ja varusteet. Digitaalisen hamstraajan paratiisi.
 
 ---
 
-## 📜 PELISÄÄNNÖT (Kyllä, on sääntöjä)
+## 📜 PELISÄÄNNÖT (Kyllä, sääntöjä on)
 
-RolemIAster käyttää klassista ja vankkaa d100-järjestelmää (sadansivuisia noppia).
+RolemIAster käyttää klassista ja vankkaa d100 (satasivuinen noppa) -järjestelmää.
 
-### 1. Attribuuttisi (Mikä määrittelee sinut)
-Ne generoidaan satunnaisesti, kuten ikivanhoissa pöytäroolipeleissä!
+### 1. Ominaisuutesi (Se mikä määrittelee sinut)
+Tekoäly generoi ominaisuutesi kontekstin, ammatin ja kuvauksen perusteella. Kun ne on generoitu, sinulla on **10 LISÄPISTETTÄ** jaettavaksi mielesi mukaan.
+*   **Porrastetut kustannukset:** Ominaisuuden nostaminen arvoon 14 maksaa 1 pisteen. 15:stä 16:een maksaa 2 pistettä. 17:stä eteenpäin maksaa 3 pistettä! Mieti tarkkaan, mihin laitat lihakset.
 
-*   💪 **Voima (VUO):** Lyödä kovaa ja nostaa kiviä.
-*   ❤️ **Kestävyys (KES):** Kestää iskuja, tauteja ja myrkkyjä.
-*   🐘 **Koko (KOK):** Suuri ja painava, tai pieni ja vikkelä.
-*   🏃 **Ketteryys (KET):** Nopeus, tarkkuus ja ettei kompastu omiin jalkoihin.
-*   🧠 **Älykkyys (ÄLY):** Oppia, muistaa ja ratkaista pulmia.
-*   🔮 **Voima (VOI):** Sielusi, onnesi, tahdonvoimasi ja taikuutesi.
-*   😎 **Karismasi (KAR):** Johtajuus, viehätysvoima ja kyky huijata ihmisiä.
+*   💪 **Voima (FUE):** Puhdas fyysinen voimasi. Vaikuttaa lähitaisteluvaurioon ja kantokykyyn.
+*   ❤️ **Ruumiinrakenne (CON):** Kestävyytesi. Iskujen, sairauksien ja myrkkyjen sietämiseen.
+*   🐘 **Koko (TAM):** Ulottuvuutesi. Suuri ja raskas tai pieni ja liukas.
+*   🏃 **Ketteryys (DES):** Notkeus, tarkkuus ja omiin jalkoihin kompastumisen välttäminen.
+*   🧠 **Älykkyys (INT):** Oppiminen, muistaminen ja pulmien ratkaisu.
+*   🔮 **Mahti (POD):** Sielusi, onnesi, tahdonvoimasi ja taikavarantosi.
+*   😎 **Karisma (CAR):** Johtajuus, viehätysvoima ja kyky huijata (tai vietellä) ihmisiä.
 
-### 2. Nopeat laskelmat (Johdetut ominaisuudet)
-*   **Elämäpisteet (EP):** `(KES + KOK) / 2`. Jos ne laskevat nollaan... no, tiedät kyllä. F.
-*   **Mana Pisteet (MP):** Yhtä suuri kuin VOI. Ilman manaa ei temppuja. (Mies ilman manaa on vain kaapuun pukeutunut tyyppi cosplayaamassa).
-*   **Toimintopisteet (TP):** `(ÄLY + KET) / 2`. Määrittää aloitteesi. Se, joka lyö ensin, lyö kahdesti.
+### 2. Nopeaa matematiikkaa (Johdetut ominaisuudet)
+Moottori laskee nämä luvut automaattisesti ominaisuuksiesi perusteella:
+
+*   🩸 **Terveys (PV):** `CON * 10`. Jos se menee nollaan... noh, tiedät kyllä. F.
+*   ✨ **Mana (PM):** `(POD * 10) + INT`. Polttoaine taikatempuillesi. Ilman manaa ei ole temppuja. (Velho ilman manaa on vain kaapuun pukeutunut tyyppi cossaamassa).
+*   ⚡ **Kunto (STA):** `((CON+FUE+DES)/3)*10 + POD`. Energiasi taisteluun ja liikkumiseen kuolematta yrittäessäsi.
+*   🧠 **Ihmisyys (HUM):** `(CON+POD) * 5`. (Vain Cyberpunkissa: Mittaa kuinka paljon sinusta on ihmistä jäljellä ennen kuin kaapelit tekevät sinut hulluksi).
+*   ⚔️ **Toimintapisteet (PA):** `(INT + DES) / 2`. Määrittää aloitekykysi. Se joka lyö ensin, lyö kahdesti.
 
 ### 3. Taitosi
-Ne alkavat perusarvolla (esim. Hiiviskely = KET + ÄLY) ja paranevat käyttämällä niitä. Ne ovat prosentteja (%).
+Alkaa perusarvosta (esim. Hiiviskely = DES + INT) ja kehittyy käyttämällä. Se on prosenttiosuus (%).
 
 ### 4. Toimintojen ratkaisu (Noppa)
-Kun yrität tehdä jotain riskialtista (kiivetä, valehdella, hyökätä...), tekoäly pyytää sinua heittämään.
-Peli heittää näkymättömän **d100**:n. **(Muista: Nopat vihaavat sinua. Se on henkilökohtaista).**
+Kun yrität jotain riskialtista (kiivetä, valehdella, hyökätä...), tekoäly pyytää heittoa. Peli heittää näkymätöntä **d100**-noppaa. **(Muista: Nopat vihaavat sinua. Se on henkilökohtaista).**
 
-*   **Tavoitteesi:** Heittää **ALLE TAI TASA** taitosi arvon.
-    *   *Esimerkki:* Sinulla on 45% kiipeämistaitoa.
-    *   Heität 30: ✅ **Onnistuminen**. Kiipeät kuin apina.
-    *   Heität 80: ❌ **Epäonnistuminen**. Kaadut päin pläsiä.
-    *   Heität 01-05: ✨ **KRIIITTINEN!** Teet eeppisen parkourin kärrynpyörällä.
-    *   Heität 99-100: 💀 **PUUSKA!** Housusi tippuvat kesken matkan ja kaadut naama edellä.
+*   **Tavoitteesi:** Saada luku, joka on **PIENEMPI TAI YHTÄ SUURI** kuin taitotasosi.
+    *   *Esimerkki:* Sinulla on 45 % Kiipeilyssä.
+    *   Saat 30: ✅ **Onnistuminen**. Kiipeät kuin apina.
+    *   Saat 80: ❌ **Epäonnistuminen**. Putuat perseellesi.
+    *   **Kriittinen:** Tulos on pienempi tai yhtä suuri kuin **1/5 taidostasi** (tai 01). Eeppistä! Teet uskomattoman parkour-liikkeen voltilla.
+    *   **Moka:** **99 tai 100**. Nopat ovat päättäneet, ettei tänään ole sinun päiväsi. Housusi putoavat puolimatkassa ja putoat naamallesi.
 
 ---
 
-## 💡 VINKKEJÄ (EI NOPEASTI KUOLEMISEEN)
+## 💡 VINKKEJÄ KUOLEMAN VÄLTTÄMISEEN (NOPEASTI)
 
-*   **✍️ Ole kuvaileva:** Älä kirjoita vain "hyökkään". Kirjoita: *"Yritän väistää hänen kirvestään pyörimällä maassa ja isken tikarillani hänen nilkkaansa."* Tekoäly palkitsee sinut.
-*   **🧪 Kokeile:** Et ole rajoittunut painikkeisiin. Kirjoita hulluja juttuja! Tekoäly improvisoi.
-*   **🎭 Roolipelaa:** Uppoudu rooliin. Lue kuvaukset ja toimi hahmosi tavoin, älä niin kuin itse tekisit pyjamassa.
+*   **✍️ Ole kuvaileva:** Älä kirjoita vain "hyökkään". Kirjoita: *"Yritän väistää hänen kirveensä kierimällä maassa ja isken tikarini hänen nilkkaansa"*. Tekoäly palkitsee sinut.
+*   **🧪 Kokeile:** Et ole rajoitettu painikkeisiin. Kirjoita hulluuksia! Tekoäly improvisoi.
+*   **🎭 Roolipelaa:** Eläydy rooliin. Lue kuvaukset ja toimi kuten hahmosi toimisi, ei kuten sinä pyjamassasi toimisit.
 
 ---
 
 ## ⚔️ TAISTELU (Aseisiin!)
 
-Kun sanat loppuvat, on aika lyödä turpaan. Taistelu on **taktista** ja toimii **kierroksina** (aika).
+Kun sanat eivät riitä, on aika mätkiä. Taistelu on **taktista** ja toimii **Tikeillä** (aika).
 
 ### 🕹️ Miten se toimii:
-*   **Kierrokset:** Jokainen toimi maksaa aikaa. Raskaat aseet ovat hitaita (kuluttavat paljon kierroksia). Tikarit ovat nopeita.
-*   **Oma nopeutesi:** Riippuu Toimintopisteistäsi (TP).
+*   **Tikit:** Jokainen toiminto maksaa aikaa. Raskaat aseet ovat hitaita (kuluttavat paljon tikkejä). Tikarit ovat nopeita.
+*   **Nopeutesi:** Riippuu Toimintapisteistäsi (PA).
 
-### Perustoimet:
-*   **🗡️ Hyökkää:** Anna isku sillä, mikä on riisuttu.
-*   **🛡️ Torju:** Menet puolustuskannalle. Vähentää vahinkoa, mutta kuluttaa kestävyyttä.
-*   **🏃 Pakene:** Pelkurien (tai viisaiden, jotka haluavat elää) keino.
-*   **🏳️ Antautuminen:** Jos näet, ettet voita, voit anoa armoa.
-*   **✨ Taikuus / Kybernetiikka:** Tuli, lasersäteet, hakkeroinnit...
+### Perustoiminnot:
+*   **🗡️ Hyökkää:** Iske sillä, mikä on esillä.
+*   **🛡️ Torju:** Asetut puolustuskannalle. Vähentää vahinkoa mutta kuluttaa Kuntoa.
+*   **🏃 Pakene:** Pelkureille (tai viisaille, jotka haluavat elää).
+*   **🏳️ Antaudu:** Jos näet ettet voita, voit anoa armoa.
+*   **✨ Taikuus / Kyberware:** Tulta, lasersäteitä, hakkerointia...
 
-### ⚠️ SELVIYTYMISEN KULTAINEN SÄÄNTÖ
-**RIISU ASE ENNEN TAISTELUA!**
-Aseen esiin vetäminen taistelun keskellä kuluttaa aikaa (kierroksia). Jos sinut yllätetään miekka tupessa, sinut lyödään niin, että nahkasi irtoaa, samalla kun yrität kömpelösti vetää sitä esiin. TAI PAREMPI VIELÄ!, JOS KANNAT ASEITA SELKÄREPUSSISSASI VARUSTELOTASKUN SIJAAN (Anteeksi hetki, minun täytyy kaivaa suurmiekan repusta, tiedän että se oli täällä jossain... jossain?) 🤦‍♂️
-👉 Klikkaa varustetun aseen tunnusta (oikea paneeli) vetääksesi sen esiin. Se syttyy vihreäksi.
+### 💬 Vapaamuotoiset toiminnot (UUTTA!)
+Etkö tykkää painikkeista? Kirjoita mitä haluat tehdä, aivan kuin puhuisit lihasta ja verestä olevalle Pelinjohtajalle!
+*   **Esimerkkejä:** *"Heitä tulipallo hiiden päälle"*, *"Vedä riimumiekka esiin"*, *"Käytä taikajuomaa itseeni"*.
+*   **Kohtausohjaaja:** Taistelu herää nyt eloon. Tekoäly luo ympäristötapahtumia ja reaktioita, jotka rikastuttavat kerrontaa: palkkeja putoaa, viholliset perääntyvät, soihtuja kaatuu. Taistelukenttä ei ole enää staattinen!
+*   **Jos tekoäly ei ymmärrä:** Se pyytää sinua muotoilemaan uudelleen. Vuoroasi EI menetetä!
+*   **⚠️ Rajoitus:** Esineiden siirtäminen paikkojen välillä (varustaminen repusta, ammusten lataus) tehdään **Raahaa ja pudota** -toiminnolla käyttöliittymässä, ei tekstillä.
 
-Aseiden siirtäminen taistelun aikana kuluttaa aikaa (kierroksia) ja voi johtaa yllätyshyökkäykseen, lisäksi on hyvin todennäköistä, että menetät vuorosi, epäonnistut hermostuksissasi lähestyvästä kirveeniskusta kulmakarvoihisi tai että se putoaa maahan. (Ehkä ei ollut hyvä idea luoda hahmoa ADHD:lla)
+### ⚠️ KULTAINEN SELVIYTYMISSÄÄNTÖ
+**VEDÄ ASEESI ENNEN TAISTELUA!**
+Aseen vetäminen kesken taistelun vie aikaa (Tikkejä). Jos sinut yllätetään miekka tupessa, sinua mätkitään henkkareihin asti samalla kun yrität kömpelösti vetää sitä esiin. TAI VIELÄ PAHEMPAA, JOS ASEESI OVAT REPUSSA EIKÄ VARUSTEPAIKASSA (Anteeksi hetki, minun täytyy kaivaa kahden käden miekka repusta, tiedän että se oli täällä... jossain...) 🤦‍♂️
+👉 Klikkaa **varustetun aseen tunnistetta** (oikea paneeli) vetääksesi sen esiin. Se syttyy vihreänä.
+
+Aseiden siirtely taistelussa vie aikaa (Tikkejä) ja voi johtaa yllätyshyökkäykseen, lisäksi on hyvin todennäköistä, että menetät vuoron, epäonnistut hermostuksissasi kirveen lähestyessä silmien väliä tai pudotat aseen maahan. (Ehkä ei ollut hyvä idea luoda hahmoa, jolla on ADHD).
 
 ---
 
-## ✨ MAGIA JA KYBERNETIIKKA
+## ✨ TAIKUUS JA KYBERNETIIKKA
 
-Riippuen siitä, onko maailmasi "Keskiaikainen fantasia" vai "Cyberpunk":
+Riippuen siitä, onko maailmasi "Keskiaikaista fantasiaa" vai "Cyberpunkia":
 
-### 🧙‍♂️ Fantasia: Lumoukset
-Oletko velho? Voit lumota varusteesi.
-1.  **Opi:** Tarvitset loitsun grimuaarissasi.
-2.  **Heitä (Raahaa ja pudota):** Raahaa loitsu listaltasi esineen päälle inventaariossasi.
-3.  **Kustannus:** Lumouksen pitäminen aktiivisena **kuluttaa manaa vuorossa**.
-4.  **Varoitus:** Jos manasi loppuu taistelun keskellä, tulimiekka muuttuu taas ruosteiseksi rautakangiksi.
+### 🧙‍♂️ Fantasia: Efsunnoinnit (Lumoaminen)
+Oletko loitsija? Voit efsunnoida varusteitasi.
+1.  **Opi:** Tarvitset loitsun loitsukirjaasi.
+2.  **Heitä (Raahaa ja pudota):** Raahaa loitsu listastasi inventaariossa olevan esineen päälle.
+3.  **Hinta:** Lumouksen ylläpito **kuluttaa Manaa per vuoro**.
+4.  **Varoitus:** Jos manasi loppuu kesken taistelun, tulimiekka muuttuu takaisin ruosteiseksi raudanpalaksi.
 
 ### 🦾 Cyberpunk: Implantit
-Haluatko zoom-silmät tai apinan kädet?
-1.  Etsi **Teknokirurgi** (palvelun tarjoaja NPC).
+Haluatko zoom-silmät tai gorillakädet?
+1.  Etsi **Teknokirurgi** (Palvelu-NPC).
 2.  Maksa krediitit (mikään ei ole ilmaista tulevaisuudessa).
-3.  **Ihmisyyden kustannus:** Jokainen implantti vie palan sielustasi (**Ihmisyys**).
-    *   Jos laitat liikaa, sinusta tulee **Kyberpsyko** (tappajaksi muuttunut kulmalevy jaloilla) ja menetät hahmosi hallinnan.
+3.  **Ihmisyyskustannus:** Jokainen implantti vie palan sieluasi (**Ihmisyys**).
+    *   Jos asennat liikaa, sinusta tulee **Kyberpsykoosi** (tappava leivänpaahdin jaloilla) ja menetät hahmosi hallinnan.
 
 ---
 
 ## 🛒 KAUPAT JA PALVELUT
 
-Puhu NPC:iden kanssa kauppaa käydäksesi.
-*   **Tinkiminen:** **Kauppa**-taitosi (perustuu Karismaan) määrittää hinnat. Jos olet ruma tai epäystävällinen, sinua huijataan.
-*   **Myyminen:** Klikkaa **Oikealla painikkeella** inventaariosi esinettä myydäksesi sen kauppiaalle.
+Puhu NPC:ille käydäksesi kauppaa.
+*   **Tekoäly ehdottaa, sinä päätät:** Kun puhut kauppiaalle tai parantajalle, tekoäly ehdottaa heidän palveluitaan (korjaa, myy, paranna), mutta näkyviin tulee painike **"Näytä palvelut"**, jotta voit päättää milloin siirryt kaupankäyntitilaan.
+*   **Tinkiminen:** **Kaupankäynti**-taitosi (perustuu Karismaan) määrää hinnat. Jos olet ruma tai epämiellyttävä, sinua huijataan.
+*   **Myyminen:** Klikkaa **hiiren oikealla painikkeella** esinettä inventaariossasi myydäksesi sen kauppiaalle tai raahaa se hänen päälleen.
 
 ---
 
 ## 🎒 INVENTAARION HALLINTA (Tetris)
 
-*   **Paino:** Sinulla on kantorajoitus (Voima + Koko). Jos kannat liikaa romua, liikut hitaasti ja saat rangaistuksia (Hamstraaminen ei ole ystäväsi).
+*   **Paino:** Sinulla on kantoraja (Voima + Koko). Jos kannat liikaa romua, liikut hitaasti ja saat rangaistuksia (Hamstraus ei ole ystäväsi).
 *   **Paneelit:**
     *   **Varusteet:** Mitä sinulla on päälläsi.
-    *   **Vyö:** Nopea pääsy taistelussa (juomien käyttö tästä kuluttaa vähemmän aikaa).
-    *   **Repussa:** Säkin pohja.
-*   **Nopea käyttö:** Raahaa juoma tai ruoka suoraan **kasvoillesi** (muotokuvaan) kuluttaaksesi sen välittömästi.
+    *   **Vyö:** Nopea käyttö taistelussa (täältä otettujen taikajuomien käyttö vie vähemmän aikaa).
+    *   **Reppu:** Säkin pohja.
+*   **Sujuva käyttö:** Raahaa taikajuoma tai ruoka suoraan **naamasi** (muotokuvan) päälle kuluttaaksesi sen heti. Voit myös käyttää kontekstivalikkoa (oikea klikkaus -> Käytä).
 
 ---
 
-## 🛠️ LOPPUASETUKSET
+## 🛠️ VIIMEISTELYT
 
-**Asetus**-valikosta voit säätää kaikkea:
-*   **🌍 Kieli:** Tekoäly kääntää koko pelin ja vastaukset lennossa.
-*   **👁️ Ulkoasu:** Fonttikoko ja värit, ettei sokeudu.
-*   **🧠 Tekoälyn asetukset:** Vaihda mallia, lämpötilaa jne.
+Asetusvalikossa voit säätää kaikkea:
+*   **🌍 Kieli:** Tekoäly kääntää koko pelin ja vastaukset lennosta. Polyglotti-tila päällä.
+*   **👁️ Ulkoasu:** Fonttikoko ja värit, ettet sokeudu. Neonreunat ja pehmennetyt varjot täydellistä immersiota varten.
+*   **🧠 Tekoälyasetukset:** Vaihda mallia, lämpötilaa jne. (Muista mitä näimme oppaan alussa lipusta `--advanced`, jos olet niitä, jotka haluavat säätää kaikkea).
 
 ---
 
-## 🚧 Huomautus: Varhainen pääsy
+## 🎭 VAIKEUSASTE JA HUUMORI (Räätälöi kärsimyksesi)
 
-RolemIAster on **aktiivisessa kehityksessä**, kypsymässä hitaasti.
-*   Voit löytää bugeja (tai "yllättäviä ominaisuuksia").
-*   Lisään uusia asioita joka viikko.
-*   Palautteesi on kullanarvoista! Kerro, mistä pidät ja mistä todella pidät.
+Ennen kuin aloitat, muista että tekoäly ei vain kerro, vaan **mukauttaa maailmaa** mieltymystesi mukaan. Nämä parametrit valitaan maailmaa luotaessa ja ne ovat pysyviä kyseiselle maailmalle:
 
-Mene nyt, heitä aloite ja luo legendasi!
+*   **🎮 Vaikeusaste (Tekoälyn hallinnoima):** Se ei ole pelkkä vauriokerroin. Peli sanoo tekoälylle: "Hei, vaikeusaste on tämä, toimi sen mukaan".
+    *   **Helppo:** Et kuole koskaan (tai se on lähes mahdotonta), tilanteet ovat yksinkertaisempia, hinnat halvempia ja viholliset kömpelömpiä. Tekoäly järkeilee jokaisen kohtauksen niin, että polkusi on ruusuinen.
+    *   **Normaali:** Vakiotasapaino.
+    *   **Haaste:** Tekoäly on armoton, hinnat kohtuuttomia ja mikä tahansa virhe voi olla viimeinen.
 
-<!-- source_hash: 2511f352 -->
+*   **🃏 Huumorin sävy:** Määrittelee miten tekoäly puhuu sinulle ja millaisia tapahtumia sattuu. Vaikka jokaisella mallilla on oma tapansa tulkita käsite "huumori", tekoäly yrittää sopeutua valintaasi... tai sitten ei:
+    *   **Vakava:** Eeppinen, synkkä ja muodollinen kerronta.
+    *   **Sarkastinen:** Tekoäly nauraa virheillesi, heittää jatkuvasti piikkejä ja käyttää ironista sävyä.
+    *   **Harhainen:** Valmistaudu absurdiin. Lentäviä lehmiä, surrealistisia tilanteita ja täydellistä kaaosta tekoälyn kieroutuneimman logiikan hallinnoimana.
+
+---
+
+## 🚧 Huomautus: Early Access
+
+RolemIAster on **aktiivisessa kehityksessä**, hautumassa hiljalleen.
+*   Voit löytää bugeja (tai "odottamattomia ominaisuuksia").
+*   Lisään uusia juttuja joka viikko.
+*   Palautteesi on kullanarvoista! Kerro mistä tykkäät ja mistä tykkäät tosi paljon. (Jos et tykkää jostain, kerro sekin, mutta hellästi).
+
+Nyt mene, heitä aloite ja luo legendasi!
+
+<!-- source_hash: f3494f05 -->

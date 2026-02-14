@@ -78,7 +78,9 @@ Si la cosa va mal, sigue estos pasos en orden:
 
 ---
 
-### ⚙️ CONFIGURACIÓN AVANZADA DEL MODELO
+### ⚙️ CONFIGURACIÓN AVANZADA DEL MODELO ("Frikeo Máximo")
+
+> **MODO EXPERTO:** Si eres un pro y quieres acceder a la configuración de modelos avanzados (añadir tus propios modelos GGUF descargados desde HuggingFace, tocar capas, etc.), debes iniciar el juego con el comando: `--advanced`.
 
 Para los que les gusta tocar botones en **Configuración → IA Local Integrada**:
 
@@ -114,12 +116,18 @@ Para los que les gusta tocar botones en **Configuración → IA Local Integrada*
 
 ---
 
-## 🎲 ¿CÓMO JUGAR?
+### 🌍 ¿CÓMO JUGAR? (El Multiverso y Tú)
 
 Al abrir el juego, tienes dos caminos:
 
-1.  **🆕 Nueva Aventura**: Crea tu leyenda desde cero. El juego te guiará para elegir raza, clase, mundo y premisa. (Si la vida te da limones... o un 3 en Fuerza, hazte Bardo).
-2.  **💾 Cargar Partida**: Continúa justo donde lo dejaste antes de esa muerte humillante. (O para corregir ese "pequeño error de cálculo" con el dragón).
+1.  **🆕 Nueva Aventura**: Crea tu leyenda desde cero. El juego te pedirá **Nombre, Oficio (Profesión), Descripción Física, Descripción Psicológica y el Trasfondo/Pretexto** de tu historia. Además, elegirás el **Nivel de Dificultad** y el **Tono de Humor** que guiarán la campaña.
+2.  **💾 Continuar Partida**: RolemIAster **guarda en tiempo real**. Aquí no hay "cargar antes de morir" ni vuelta atrás. Cada decisión, cada pifia y cada herida queda grabada a fuego en la historia. Es un **DESAFÍO**: lo que hagas, hecho queda. Vive con las consecuencias... o muere con ellas.
+
+RolemIAster no es una partida aislada; es un **Multiverso Persistente**.
+*   **Mundos Infinitos:** Crea tus propios universos (**Fantasía Medieval** o **Cyberpunk**) con su propio Lore.
+*   **Personajes Infinitos:** Dentro de cada mundo, puedes tener todos los héroes que quieras.
+*   **Línea Temporal Compartida:** ¡Ojo! Lo que hace un personaje afecta al mundo de los demás. La IA es consciente de tus otros héroes y los reconocerá como habitantes del mundo.
+*   **IA con "Sentidos" (Súper RAG):** El sistema RAG (Retrieval-Augmented Generation) actúa como el "chivato" de la IA, dándole recuerdos sobre el mundo, quién te acompaña, dónde estás y qué acaba de pasar para que la historia sea 100% coherente.
 
 ### La Interfaz (Tu cabina de mando)
 
@@ -136,34 +144,38 @@ Al abrir el juego, tienes dos caminos:
 RolemIAster usa un sistema d100 (dado de cien caras) clásico y robusto.
 
 ### 1. Tus Atributos (Lo que te define)
-Se generan al azar, ¡como en el rol de mesa de toda la vida!
+La IA genera tus atributos basándose en el contexto, profesión y descripción que hayas introducido. Una vez generados, tienes **10 PUNTOS EXTRA** para repartir a tu gusto.
+*   **Costes Escalonados:** Subir un atributo hasta 14 cuesta 1 punto. De 15 a 16 cuesta 2 puntos. ¡A partir de 17 cuesta 3 puntos! Piensa bien dónde pones el músculo.
 
-*   💪 **Fuerza (FUE):** Para pegar fuerte y levantar piedras.
-*   ❤️ **Constitución (CON):** Para aguantar golpes, enfermedades y venenos.
-*   🐘 **Tamaño (TAM):** Grande y pesado, o pequeño y escurridizo.
+*   💪 **Fuerza (FUE):** Tu potencia física pura. Influye en el daño cuerpo a cuerpo y tu capacidad de carga.
+*   ❤️ **Constitución (CON):** Tu resistencia. Para aguantar golpes, enfermedades y venenos.
+*   🐘 **Tamaño (TAM):** Tu envergadura. Grande y pesado, o pequeño y escurridizo.
 *   🏃 **Destreza (DES):** Agilidad, puntería y no tropezarte con tus propios pies.
 *   🧠 **Inteligencia (INT):** Aprender, recordar y resolver puzles.
-*   🔮 **Poder (POD):** Tu alma, tu suerte, fuerza de voluntad y magia.
-*   😎 **Carisma (CAR):** Liderazgo, atractivo y capacidad de engañar a la gente.
+*   🔮 **Poder (POD):** Tu alma, tu suerte, fuerza de voluntad y tu reserva mágica.
+*   😎 **Carisma (CAR):** Liderazgo, atractivo y capacidad de engañar (o seducir) a la gente.
 
 ### 2. Matemáticas Rápidas (Características Derivadas)
-*   **Vida (PV):** `(CON + TAM) / 2`. Si llega a 0... bueno, ya sabes. F.
-*   **Maná (PM):** Igual a tu POD. Sin maná, no hay trucos. (Un mago sin maná es solo un tipo con bata haciendo cosplay).
-*   **Puntos de Acción (PA):** `(INT + DES) / 2`. Determina tu Iniciativa. Quién pega primero, pega dos veces.
+El motor calcula estas cifras automáticamente basándose en tus atributos:
+
+*   🩸 **Vida (PV):** `CON * 10`. Si llega a 0... bueno, ya sabes. F.
+*   ✨ **Maná (PM):** `(POD * 10) + INT`. El combustible para tus trucos de magia. Sin maná, no hay trucos. (Un mago sin maná es solo un tipo con bata haciendo cosplay).
+*   ⚡ **Stamina (STA):** `((CON+FUE+DES)/3)*10 + POD`. Tu energía para combatir y moverte sin morir en el intento.
+*   🧠 **Humanidad (HUM):** `(CON+POD) * 5`. (Solo en Cyberpunk: Mide cuánto te queda de humano antes de que los cables te vuelvan loco).
+*   ⚔️ **Puntos de Acción (PA):** `(INT + DES) / 2`. Determina tu Iniciativa. Quién pega primero, pega dos veces.
 
 ### 3. Tus Habilidades
 Empiezan con un valor base (ej: Sigilo = DES + INT) y mejoran usándolas. Es un porcentaje (%).
 
 ### 4. Resolución de Acciones (El Dado)
-Cuando intentas hacer algo arriesgado (escalar, mentir, atacar...), la IA te pedirá una tirada.
-El juego lanza un **d100** invisible. **(Recuerda: Los dados te odian. Es personal).**
+Cuando intentas hacer algo arriesgado (escalar, mentir, atacar...), la IA te pedirá una tirada. El juego lanza un **d100** invisible. **(Recuerda: Los dados te odian. Es personal).**
 
-*   **Tu Objetivo:** Sacar **MENOS O IGUAL** que tu habilidad.
+*   **Tu Objetivo:** Sacar un número **MENOR O IGUAL** a tu nivel de habilidad.
     *   *Ejemplo:* Tienes 45% en Trepar.
     *   Sacas un 30: ✅ **Éxito**. Subes como un mono.
     *   Sacas un 80: ❌ **Fallo**. Te das un costalazo.
-    *   Sacas un 01-05: ✨ **¡CRÍTICO!** Haces un parkour épico con voltereta.
-    *   Sacas un 99-100: 💀 **¡PIFIA!** Se te caen los pantalones a mitad de camino y te caes de boca.
+    *   **Crítico:** Sacar menos o igual a **1/5 de tu habilidad** (o un 01). ¡Épico! Haces un parkour extraordinario con voltereta.
+    *   **Pifia:** Un **99 o 100**. Los dados han decidido que hoy no es tu día. Se te caen los pantalones a mitad de camino y te caes de boca.
 
 ---
 
@@ -191,12 +203,9 @@ Cuando las palabras fallan, llega la hora de las tortas. El combate es **táctic
 *   **✨ Magia / Cyberware:** Fuego, rayos láser, hackeos...
 
 ### 💬 Acciones por Texto Libre (¡NUEVO!)
-¿No te gustan los botones? ¡Escribe lo que quieras hacer!
-*   **Ejemplos válidos:**
-    *   *"Lanzar bola de fuego al goblin"* → La IA busca en tu grimorio y lanza el hechizo.
-    *   *"Desenfundar mi espada"* → Se desenfunda automáticamente.
-    *   *"Usar poción de curación sobre mí"* → La poción se consume y te cura.
-    *   *"Atacar al guardia con mi hacha"* → Ataque dirigido.
+¿No te gustan los botones? ¡Escribe lo que quieras hacer como si hablaras con un Máster de carne y hueso!
+*   **Ejemplos:** *"Lanzar bola de fuego al goblin"*, *"Desenfundar mi espada rúnica"*, *"Usar poción sobre mí"*.
+*   **Director de Escena:** El combate ahora cobra vida. La IA genera eventos ambientales y reacciones que enriquecen la narrativa: vigas que caen, enemigos que retroceden, antorchas que caen. ¡El campo de batalla ya no es estático!
 *   **Si la IA no entiende:** Te pedirá que reformules. ¡Tu turno NO se pierde!
 *   **⚠️ Limitación:** Mover objetos entre slots (equipar desde mochila, cargar munición) se hace con **Drag & Drop** en la interfaz, no por texto.
 
@@ -205,13 +214,13 @@ Cuando las palabras fallan, llega la hora de las tortas. El combate es **táctic
 Sacar el arma en medio del combate consume tiempo (Ticks). Si te pillan con la espada en la vaina, te van a dar hasta en el carnet de identidad mientras intentas sacarla torpemente. O PEOR AÚN!, SI VAS CON TUS ARMAS EN LA MOCHILA EN LUGAR DE EN SU SLOT DE EQUIPAMIENTO (Escuse un segundo, tengo que sacar el mandoble de la mochila, sé que lo tenía por aquí... en alguna parte...) 🤦‍♂️
 👉 Haz **Click en la etiqueta del arma equipada** (panel derecho) para desenfundarla. Se iluminará en verde.
 
-Intentar mover armas en combate consume tiempo (Ticks) y puede resultar en un ataque de sorpresa, además es muy probable que pierdas el turno, que falles por los nervios del hacha que se te aproxima al entrecejo  o que se te caiga al suelo. (Quizá no fue buena idea crearte un personaje con TDAH) 
+Intentar mover armas en combate consume tiempo (Ticks) y puede resultar en un ataque de sorpresa, además es muy probable que pierdas el turno, que falles por los nervios del hacha que se te aproxima al entrecejo o que se te caiga al suelo. (Quizá no fue buena idea crearte un personaje con TDAH)
 
 ---
 
 ## ✨ MAGIA Y CIBERNÉTICA
 
-Dependiendo de si tu mundo es de "Fantasía medieval" o "Cyberpunk":
+Dependiendo de si tu mundo es de "Fantasía Medieval" o "Cyberpunk":
 
 ### 🧙‍♂️ Fantasía: Encantamientos
 ¿Eres hechicero? Puedes encantar tu equipo.
@@ -229,11 +238,12 @@ Dependiendo de si tu mundo es de "Fantasía medieval" o "Cyberpunk":
 
 ---
 
-## 🛒 TIENDAS Y SERVICIOS
+## 🛒 TIENDAS Y SERVICIOS (SIS)
 
 Habla con NPCs para comerciar.
+*   **IA Sugiere, Tú Mandas:** Cuando hables con un mercader o sanador, la IA te sugerirá sus servicios (reparar, vender, sanar), pero aparecerá un botón de **"Ver Servicios"** para que tú decidas cuándo entrar en el modo transaccional.
 *   **Regateo:** Tu habilidad de **Comercio** (basada en Carisma) decide los precios. Si eres feo o antipático, te timarán.
-*   **Vender:** Haz **Click Derecho** en un objeto de tu inventario para venderlo al tendero.
+*   **Vender:** Haz **Click Derecho** en un objeto de tu inventario para venderlo al tendero o arrástralo sobre él.
 
 ---
 
@@ -244,16 +254,32 @@ Habla con NPCs para comerciar.
     *   **Equipo:** Lo que llevas puesto.
     *   **Cinturón:** Acceso rápido en combate (gasta menos tiempo usar pociones de aquí).
     *   **Mochila:** El fondo del saco.
-*   **Uso Rápido:** Arrastra una poción o comida directamente sobre **tu cara** (el retrato) para consumirla al instante.
+*   **Uso Fluido:** Arrastra una poción o comida directamente sobre **tu cara** (el retrato) para consumirla al instante. También puedes usar el menú contextual (clic derecho -> Usar).
 
 ---
 
 ## 🛠️ AJUSTES FINALES
 
 En el menú de **Configuración** puedes tocarlo todo:
-*   **🌍 Idioma:** La IA te traducirá todo el juego y las respuestas al vuelo.
-*   **👁️ Apariencia:** Tamaño de letra y colores, para no quedarte ciego.
-*   **🧠 Ajustes IA:** Cambia de modelo, temperatura, etc.
+*   **🌍 Idioma:** La IA te traducirá todo el juego y las respuestas al vuelo. Modo políglota activado.
+*   **👁️ Apariencia:** Tamaño de letra y colores, para no quedarte ciego. Bordes neón y sombras suavizadas para una inmersión total.
+*   **🧠 Ajustes IA:** Cambia de modelo, temperatura, etc. (Recuerda lo que hemos visto al principio del manual sobre el flag `--advanced` si eres de los que quieren tocarlo todo).
+
+---
+
+## 🎭 DIFICULTAD Y HUMOR (Personaliza tu sufrimiento)
+
+Antes de empezar, recuerda que la IA no solo narra, sino que **ajusta el mundo** según tus preferencias. Estos parámetros se eligen al crear el mundo y son permanentes para dicho mundo:
+
+*   **🎮 Dificultad (Gestionada por IA):** No es un simple multiplicador de daño. El juego le dice a la IA: "Oye, la dificultad es esta, actúa en consecuencia".
+    *   **Fácil:** Nunca morirás (o será casi imposible), las situaciones son más sencillas, los precios son más baratos y los enemigos son más torpes. La IA razonará cada escena para que tu camino sea de rosas.
+    *   **Normal:** El equilibrio estándar.
+    *   **Desafío:** La IA será implacable, los precios prohibitivos y cualquier error puede ser el último.
+
+*   **🃏 Tono de Humor:** Define cómo te habla la IA y qué tipo de eventos ocurren. Aunque cada modelo tiene su forma de interpretar el concepto "humor", la IA intentará adaptarse a lo que elijas... o no:
+    *   **Serio:** Una narrativa épica, oscura y formal.
+    *   **Sarcástico:** La IA se reirá de tus fallos, te lanzará pullas constantes y usará un tono irónico.
+    *   **Delirante:** Prepárate para lo absurdo. Vacas volantes, situaciones surrealistas y caos total gestionado por la lógica más retorcida de la IA.
 
 ---
 
@@ -262,6 +288,6 @@ En el menú de **Configuración** puedes tocarlo todo:
 RolemIAster está en **desarrollo activo**, cocinándose a fuego lento.
 *   Puedes encontrar bugs (o "características inesperadas").
 *   Añado cosas nuevas cada semana.
-*   ¡Tu feedback vale oro! Dime qué te gusta y qué te gusta mucho.
+*   ¡Tu feedback vale oro! Dime qué te gusta y qué te gusta mucho. (Si no te gusta algo, dímelo también, pero con cariño).
 
 ¡Ahora ve, tira iniciativa y crea tu leyenda!

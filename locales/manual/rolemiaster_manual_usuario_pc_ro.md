@@ -1,259 +1,295 @@
-# 🐉 Bun venit în RolemIAster!
+# 🐉 Bine ați venit la RolemIAster!
 
-Prindeți-vă zarurile (sau mouse-ul) și pregătiți-vă să trăiți aventuri unde singura limită este cât de răsucită este imaginația voastră! **RolemIAster** este un joc de rol infinit, alimentat de Inteligență Artificială, care vă permite să fiți eroul (sau răufăcătorul) propriilor voastre povești.
+Luați zarurile (sau mouse-ul) și pregătiți-vă pentru aventuri în care singura limită este cât de întortocheată vă este imaginația! **RolemIAster** este un joc de rol infinit propulsat de Inteligența Artificială, care vă permite să fiți eroul (sau răufăcătorul) propriilor povești.
 
 ---
 
-## ⚠️ AVERTISMENT LEGAL (Partea plictisitoare, dar necesară)
+## ⚠️ DISCLAIMER (Partea plictisitoare, dar necesară)
 
-**CITEȘTE SAU VEI SUFERI IRA ZARURILOR:**
+**CITEȘTE-MĂ SAU VEI SUFERI FURIA ZARURILOR:**
 
-1.  **🤖 IA Locală Integrată:** RolemIAster își aduce propriul creier digital. Funcționează **fără internet** și fără să fie nevoie să atingeți ceva ciudat. Instalați și jucați!
-2.  **☁️ Cloud Opțional:** Dacă preferați să cheltuiți bani pe IA externe (OpenAI, Gemini...), e treaba voastră cu cardul vostru de credit. Costurile sunt pe răspunderea voastră.
-3.  **🎲 Haos Generativ:** IA inventează povestea pe parcurs. Dacă naratorul înnebunește și spune că plouă cu vaci, nu ne uitați pe noi. Dezvoltatorul nu este responsabil pentru nebuniile pe care le generează modelul.
-4.  **🏗️ Acces Timpuriu:** Asta este în lucru. Dacă găsiți un bug, nu este un defect, este o "funcționalitate" surpriză! (Trimiteți-ne feedback, vă rugăm, ne ajută mult).
+1.  **🤖 IA Locală Integrată:** RolemIAster vine cu propriul creier digital. Funcționează **fără internet** și fără să fie nevoie să atingi nimic ciudat. Instalează și joacă!
+2.  **☁️ Cloud Opțional:** Dacă preferi să cheltui banii pe IA externe (OpenAI, Gemini...), e treaba ta și a cardului tău de credit. Costurile te privesc.
+3.  **🎲 Haos Generativ:** IA inventează povestea din mers. Dacă naratorul o ia razna și spune că plouă cu vaci, nu te uita la noi. Dezvoltatorul nu este responsabil pentru nebuniile pe care le generează modelul.
+4.  **🏗️ Acces Timpuriu (Early Access):** Aici încă se lucrează. Dacă găsești un bug, nu e o eroare, e o "funcționalitate" surpriză! (Trimite-ne feedback, te rugăm, ne ajută mult).
 
 ---
 
 ## 🖥️ CERINȚE DE SISTEM ȘI CREIERE DIGITALE (IA)
 
-RolemIAster funcționează cu **Inteligență Artificială Locală**. Asta înseamnă că PC-ul vostru va face munca grea de a gândi. Nu aveți nevoie de internet, dar aveți nevoie de o placă grafică care să nu fie din epoca dinozaurilor. (Notă: Dacă este frig în cameră, acest joc funcționează ca încălzire gratuită).
+RolemIAster funcționează cu **Inteligență Artificială Locală**. Asta înseamnă că PC-ul tău va face munca grea de gândire. Nu ai nevoie de internet, dar ai nevoie de o placă video care să nu fie din epoca dinozaurilor. (Notă: Dacă e frig în camera ta, acest joc funcționează ca încălzire gratuită).
 
-### ⚙️ Concepte pentru începători
+### ⚙️ Concepte pentru neinițiați
 
 **VRAM (Memoria Video)** este benzina IA.
-*   RolemIAster are nevoie să "țină minte" **de la 12.000 la 16.000 de cuvinte (token-uri)** pentru a nu pierde firul poveștii.
-*   Dacă GPU-ul vostru rămâne fără memorie, jocul va merge mai lent decât un melc cu astm.
+*   RolemIAster trebuie să "țină minte" între **12.000 și 16.000 de cuvinte (tokeni)** pentru a nu pierde firul poveștii.
+*   Dacă GPU-ul tău rămâne fără memorie, jocul va merge mai încet decât un melc cu astm.
 
 ---
 
 ### 📊 CATALOG DE MODELE (Alege-ți otrava)
 
-Gestionați-vă IA-urile în **Configurare → IA Locală Integrată → Gestionare Modele**.
+Gestionează-ți IA-urile în **Configurare → IA Locală Integrată → Gestionare Modele**.
 
-#### 🏆 Familia Qwen 2.5 (Crema de pe prăjitură)
+#### 🏆 Familia Qwen 2.5 (La crème de la crème)
 
-| Model         | Mărime | VRAM Minimă | Nivel | Verdict                                                              |
-|---------------|--------|-------------|-------|----------------------------------------------------------------------|
-| **Qwen2.5-3B** | ~2.5GB | **8GB**     | B     | 👶 **Stagiarul.** Se descurcă, dar nu-i cere să scrie Shakespeare. Uneori se încurcă. |
-| **Qwen2.5-7B** | ~5.5GB | **12GB**    | A     | ✅ **CEL ALES.** Echilibrat, inteligent și rapid. Este modelul implicit recomandat. |
-| **Qwen2.5-14B** | ~10GB  | **16GB**    | S     | 🧐 **Profesorul.** Narativă bogată, profundă și dialoguri foarte naturale. |
-| **Qwen2.5-32B** | ~22GB  | **32GB**    | S+    | 👑 **Nivel Divin.** Ai nevoie de o navă spațială (RTX 3090/4090) pentru a mișca asta. |
-
----
-
-### 🎮 GHID RAPID DE ALEGERE
-
-| Grafica Ta   | VRAM | Model Recomandat | Rezultat                                 |
-|--------------|------|-----------------|------------------------------------------|
-| GTX 1050/1060 | 4GB  | Qwen2.5-3B      | 🆗 Suficient, dar jucabil (Context redus) |
-| GTX 1070/1660 | 6GB  | Qwen2.5-3B      | 🆗 Merge bine                           |
-| RTX 2060/3060 | 8GB  | Qwen2.5-3B      | 🚀 Zboară                                |
-| RTX 3070/4060Ti | 12GB | **Qwen2.5-7B**  | ✅ Experiența ideală                     |
-| RTX 3090/4080 | 16-24GB | Qwen2.5-14B     | 🌟 Lux                                   |
-| RTX 4090     | 24GB | Qwen2.5-32B     | 👑 Calitate maximă                       |
-
-**💡 Sfat Pro:** Lasă întotdeauna cam **2GB de VRAM liberi** pentru sistemul de operare, altfel Windows va începe să plângă și să închidă lucruri.
+| Model | Dimensiune | VRAM Minimă | Tier | Verdict |
+|--------|--------|-------------|------|-----------|
+| **Qwen2.5-3B** | ~2.5GB | **8GB** | B | 👶 **Stagiarul.** Își face treaba, dar nu-i cere să scrie Shakespeare. Uneori se încurcă. |
+| **Qwen2.5-7B** | ~5.5GB | **12GB** | A | ✅ **ALESUL.** Echilibrat, isteț și rapid. Este modelul recomandat implicit. |
+| **Qwen2.5-14B** | ~10GB | **16GB** | S | 🧐 **Profesorul Universitar.** Narațiune bogată, profundă și dialoguri foarte naturale. |
+| **Qwen2.5-32B** | ~22GB | **32GB** | S+ | 👑 **Nivel Zeu.** Ai nevoie de o navă spațială (RTX 3090/4090) pentru a rula asta. |
 
 ---
 
-### 🚨 SOC! PC-UL MEU MERGE ÎNCET! (Probleme de VRAM)
+### 🎮 GHID DE ALEGERE RAPIDĂ
 
-Dacă jocul durează mai mult să răspundă decât iubitul/iubita ta pe WhatsApp, probabil că ai rămas fără VRAM.
+| Placa ta Grafică | VRAM | Model Recomandat | Rezultat |
+|------------|------|--------------------|-----------|
+| GTX 1050/1060 | 4GB | Qwen2.5-3B | 🆗 La limită, dar se poate juca (Context scăzut) |
+| GTX 1070/1660 | 6GB | Qwen2.5-3B | 🆗 Merge bine |
+| RTX 2060/3060 | 8GB | Qwen2.5-3B | 🚀 Zboară |
+| RTX 3070/4060Ti | 12GB | **Qwen2.5-7B** | ✅ Experiența ideală |
+| RTX 3090/4080 | 16-24GB | Qwen2.5-14B | 🌟 Lux total |
+| RTX 4090 | 24GB | Qwen2.5-32B | 👑 Calitate maximă |
+
+**💡 Pro Tip:** Lasă întotdeauna vreo **2GB de VRAM liberi** pentru sistemul de operare, altfel Windows va începe să plângă și să închidă chestii.
+
+---
+
+### 🚨 AJUTOR! PC-UL MEU SE MIȘCĂ GREU! (Probleme de VRAM)
+
+Dacă jocul răspunde mai greu decât crush-ul tău pe WhatsApp, probabil ai rămas fără VRAM.
 
 **Simptome că te-ai crezut prea deștept:**
-1.  **Modelul se descarcă în RAM:** PC-ul folosește memoria normală în loc de cea grafică. Rezultat: LENTOARE EXTREMĂ.
-2.  **Depășire ușoară (1-2GB):** Va dura 30-60 de secunde pe răspuns.
-3.  **Depășire moderată (3-5GB):** 2-5 minute. Poți să-ți iei o cafea.
-4.  **Depășire severă:** 10-30 minute. Injucabil.
+1.  **Modelul se revarsă în RAM:** PC-ul folosește memoria normală în loc de cea grafică. Rezultat: LENTOARE EXTREMĂ.
+2.  **Depășire ușoară (1-2GB):** Va dura 30-60 secunde per răspuns.
+3.  **Depășire moderată (3-5GB):** 2-5 minute. Poți să te duci după o cafea.
+4.  **Depășire severă:** 10-30 minute. De nejucat.
 
 #### 🛡️ Protocol de Urgență
 Dacă lucrurile merg prost, urmează acești pași în ordine:
 
-1.  **📉 Scade % VRAM:** Mergi la Configurare și scade la **85%**. Repornește și încearcă.
-2.  **🧹 Curățenie:** Închide acel browser cu 40 de tab-uri deschise. Îți mănâncă memoria.
-3.  **🛑 Limita de 70%:** Nu coborî niciodată sub **70%** din VRAM alocat.
-    *   *De ce?* Pentru că IA are nevoie de spațiu să "gândească" (cache-ul KV). Dacă îi dai mai puțin de 70%, va rămâne în alb și va da eroare.
-4.  **🔙 Retragere Tactică:** Dacă nimic nu funcționează, coboară la un model mai mic (treci de la 7B la 3B).
+1.  **📉 Scade % de VRAM:** Du-te la Configurare și scade-l la **85%**. Repornește și încearcă.
+2.  **🧹 Curățenie:** Închide browserul ăla cu 40 de tab-uri deschise. Îți mănâncă memoria.
+3.  **🛑 Limita de 70%:** Nu coborî niciodată sub **70%** VRAM alocat.
+    *   *De ce?* Pentru că IA are nevoie de spațiu pentru a "gândi" (cache-ul KV). Dacă îi dai mai puțin de 70%, se va bloca și va da eroare.
+4.  **🔙 Retragere Tactică:** Dacă nimic nu funcționează, treci la un model mai mic (treci de la 7B la 3B).
 
 ---
 
-### ⚙️ CONFIGURARE AVANSATĂ A MODELULUI
+### ⚙️ CONFIGURARE AVANSATĂ A MODELULUI ("Geek Suprem")
+
+> **MOD EXPERT:** Dacă ești un pro și vrei să accesezi configurarea modelelor avansate (să adaugi propriile modele GGUF descărcate de pe HuggingFace, să modifici layere etc.), trebuie să pornești jocul cu comanda: `--advanced`.
 
 Pentru cei cărora le place să apese butoane în **Configurare → IA Locală Integrată**:
 
-| Opțiune         | Funcție                                  | Recomandare                                         |
-|-----------------|------------------------------------------|-----------------------------------------------------|
-| **GPU Layers**  | Cât din model se încarcă pe grafică       | **-1** (Înseamnă "TOT". Nu atinge dacă nu știi ce faci) |
-| **Context Maxim** | "Memoria pe termen scurt" a IA           | **16384 - 32768** (Mai puțin de atât și IA va avea amnezie) |
-| **Temperatură** | Creativitate vs. Nebunie                 | **0.7 - 0.8** (Mai mare = mai nebun; Mai mic = mai robotic) |
-| **RAG Istoric** | Să-și amintească lucruri vechi          | **Da** (Indispensabil pentru campanii lungi)         |
-| **Cache Embeddings** | Accelerează căutarea amintirilor     | **Da** (Îl face să meargă mai repede)               |
+| Opțiune | Funcție | Recomandare |
+|--------|---------|---------------|
+| **GPU Layers** | Cât din model se încarcă în placa grafică | **-1** (Înseamnă "TOT". Nu atinge decât dacă știi ce faci) |
+| **Context Maxim** | "Memoria pe termen scurt" a IA | **16384 - 32768** (Mai puțin de atât și IA va avea amnezie) |
+| **Temperatură** | Creativitate vs Nebunie | **0.7 - 0.8** (Mai mare = mai nebună; Mai mică = mai robotică) |
+| **RAG de Istoric** | Reamintirea lucrurilor de mult timp | **Da** (Esențial pentru campanii lungi) |
+| **Cache Embeddings** | Accelerează căutarea amintirilor | **Da** (Face să meargă mai repede) |
 
 ---
 
-### 🔧 SOLUȚIONARE PROBLEME (Troubleshooting)
+### 🔧 DEPANARE (Troubleshooting)
 
-| Problemă         | Soluție                                                                           |
-|-----------------|------------------------------------------------------------------------------------|
-| **IA Lentă / Lag** | Verifică dacă `GPU Layers` este -1. Închide Chrome. Scade `Context Maxim`.           |
-| **Eroare Memorie (OOM)** | Reduce `Context Maxim` sau alege un model mai mic (3B).                       |
-| **IA Delirează / Alucinează** | Scade `Temperatură` la 0.6. Dacă tot e nebună, repornește aplicația.     |
+| Gafă | Soluție |
+|-------|---------|
+| **IA Lentă / Lag** | Verifică dacă `GPU Layers` este -1. Închide Chrome. Scade `Contexto Máximo`. |
+| **Eroare de Memorie (OOM)** | Redu `Contexto Máximo` sau alege un model mai mic (3B). |
+| **IA delirează / Alucinează** | Scade `Temperatura` la 0.6. Dacă tot e nebună, repornește aplicația. |
 
 ---
 
-### 🌐 FURNIZORII ALTERNATIVI (Doar Experți)
+### 🌐 FURNIZORI ALTERNATIVI (Doar Experți)
 
-> **Notă:** IA locală pe care o aduce jocul este suficientă. Asta este doar pentru utilizatori avansați sau curajoși.
+> **Notă:** IA locală cu care vine jocul este mai mult decât suficientă. Această secțiune este doar pentru utilizatori avansați sau curajoși.
 
 *   **Motoare Locale Externe:**
-    *   **Ollama / LM Studio:** Dacă aveți deja propriile modele "friki", le puteți folosi.
-*   **API-uri în Cloud (Contra cost):**
+    *   **Ollama / LM Studio:** Dacă ai deja propriile modele geek, le poți folosi.
+*   **API-uri în Cloud (Cu plată):**
     *   **OpenAI (GPT), Gemini, Claude, DeepSeek:** Necesită internet și să scoți bani din buzunar.
-    *   Configurați-le în: **Configurare → IA → Adaugă Furnizor Nou**.
+    *   Configurează în: **Configurare → IA → Adaugă Furnizor Nou**.
 
 ---
 
-## 🎲 CUM SE JOACĂ?
+### 🌍 CUM SE JOACĂ? (Multiversul și Tu)
 
-La deschiderea jocului, aveți două căi:
+La deschiderea jocului, ai două căi:
 
-1.  **🆕 Aventură Nouă**: Creați-vă legenda de la zero. Jocul vă va ghida să alegeți rasă, clasă, lume și premisa. (Dacă viața îți dă lămâi... sau un 3 la Forță, devino Bard).
-2.  **💾 Încarcă Salvare**: Continuați exact de unde ați rămas înainte de acea moarte umilitoare. (Sau pentru a corecta acel "mic calcul greșit" cu dragonul).
+1.  **🆕 Aventură Nouă**: Creează-ți legenda de la zero. Jocul îți va cere **Nume, Meserie (Profesie), Descriere Fizică, Descriere Psihologică și Fundalul/Pretextul** poveștii tale. În plus, vei alege **Nivelul de Dificultate** și **Tonul Umorului** care vor ghida campania.
+2.  **💾 Continuă Partida**: RolemIAster **salvează în timp real**. Aici nu există "încarcă înainte de a muri" sau cale de întoarcere. Fiecare decizie, fiecare gafă și fiecare rană este întipărită adânc în poveste. Este o **PROVOCARE**: ce ai făcut, bun făcut rămâne. Trăiește cu consecințele... sau mori cu ele.
 
-### Interfața (Cabina ta de comandă)
+RolemIAster nu este o partidă izolată; este un **Multivers Persistent**.
+*   **Lumi Infinite:** Creează-ți propriile universuri (**Fantezie Medievală** sau **Cyberpunk**) cu propriul Lore.
+*   **Personaje Infinite:** În cadrul fiecărei lumi, poți avea oricâți eroi dorești.
+*   **Linie Temporală Partajată:** Atenție! Ceea ce face un personaj afectează lumea celorlalți. IA este conștientă de ceilalți eroi ai tăi și îi va recunoaște ca locuitori ai lumii.
+*   **IA cu "Simțuri" (Super RAG):** Sistemul RAG (Retrieval-Augmented Generation) acționează ca "informatorul" IA-ului, oferindu-i amintiri despre lume, cine te însoțește, unde ești și ce tocmai s-a întâmplat, pentru ca povestea să fie 100% coerentă.
 
-*   **Panoul Stâng (TU):** Fisa Personajului Tău. Viață, mană, abilități și cât de arătos ești (Carismă).
+### Interfața (Cabina ta de pilotaj)
+
+*   **Panoul Stâng (TU):** Fișa ta de Personaj. Viață, mana, abilități și cât ești de frumos (Carisma).
 *   **Panoul Central (POVESTEA):**
     *   **Sus:** Unde naratorul povestește ce se întâmplă.
     *   **Jos:** Butoanele tale de decizie și caseta de text pentru a scrie ce vrei să faci.
-*   **Panoul Drept (CELE ALE TALE):** Inventar și echipament. Paradisul lui Diogene digital.
+*   **Panoul Drept (LUCRURILE TALE):** Inventar și echipament. Paradisul pentru un Diogene digital.
 
 ---
 
 ## 📜 REGULILE JOCULUI (Da, există reguli)
 
-RolemIAster folosește un sistem clasic și robust d100 (zar cu o sută de fețe).
+RolemIAster folosește un sistem d100 (zar cu o sută de fețe) clasic și robust.
 
-### 1. Atributele Tale (Ce te definește)
-Se generează aleatoriu, ca la rolul de masă de-o viață!
+### 1. Atributele Tale (Ceea ce te definește)
+IA îți generează atributele bazându-se pe context, profesie și descrierea pe care ai introdus-o. Odată generate, ai **10 PUNCTE EXTRA** de împărțit după bunul plac.
+*   **Costuri Etapizate:** Creșterea unui atribut până la 14 costă 1 punct. De la 15 la 16 costă 2 puncte. De la 17 în sus costă 3 puncte! Gândește-te bine unde pui mușchii.
 
-*   💪 **Forță (FOR):** Pentru a lovi puternic și a ridica pietre.
-*   ❤️ **Constituție (CON):** Pentru a rezista loviturilor, bolilor și otravurilor.
-*   🐘 **Dimensiune (DIM):** Mare și greu, sau mic și evaziv.
-*   🏃 **Dexteritate (DEX):** Agilitate, precizie și să nu te împiedici de propriile picioare.
-*   🧠 **Inteligență (INT):** A învăța, a-ți aminti și a rezolva puzzle-uri.
-*   🔮 **Putere (POT):** Sufletul tău, norocul, forța de voință și magia.
-*   😎 **Carismă (CAR):** Leadership, atracție și capacitatea de a înșela oamenii.
+*   💪 **Forță (FOR):** Puterea ta fizică pură. Influențează daunele corp la corp și capacitatea de încărcare.
+*   ❤️ **Constituție (CON):** Rezistența ta. Pentru a suporta lovituri, boli și otrăvuri.
+*   🐘 **Mărime (MAR):** Anvergura ta. Mare și greu, sau mic și alunecos.
+*   🏃 **Dexteritate (DEX):** Agilitate, țintire și capacitatea de a nu te împiedica de propriile picioare.
+*   🧠 **Inteligență (INT):** Învățare, memorie și rezolvarea puzzle-urilor.
+*   🔮 **Putere (PUT):** Sufletul tău, norocul tău, forța de voință și rezerva ta magică.
+*   😎 **Charismă (CAR):** Lidership, atractivitate și capacitatea de a păcăli (sau seduce) oamenii.
 
-### 2. Matematica Rapidă (Caracteristici Derivate)
-*   **Viață (PV):** `(CON + DIM) / 2`. Dacă ajunge la 0... ei bine, știi deja. F.
-*   **Mană (PM):** Egal cu POT-ul tău. Fără mană, fără trucuri. (Un magician fără mană este doar un tip cu halat care face cosplay).
-*   **Puncte de Acțiune (PA):** `(INT + DEX) / 2`. Determină Inițiativa ta. Cine lovește primul, lovește de două ori.
+### 2. Matematică Rapidă (Caracteristici Derivate)
+Motorul calculează aceste cifre automat pe baza atributelor tale:
+
+*   🩸 **Viață (PV):** `CON * 10`. Dacă ajunge la 0... ei bine, știi tu. F.
+*   ✨ **Mana (PM):** `(POD * 10) + INT`. Combustibilul pentru trucurile tale de magie. Fără mana, nu există trucuri. (Un magician fără mana e doar un tip în halat care face cosplay).
+*   ⚡ **Stamina (STA):** `((CON+FUE+DES)/3)*10 + POD`. Energia ta pentru a lupta și a te mișca fără să mori încercând.
+*   🧠 **Umanitate (UMA):** `(CON+POD) * 5`. (Doar în Cyberpunk: Măsoară cât ți-a mai rămas din umanitate înainte ca cablurile să te înnebunească).
+*   ⚔️ **Puncte de Acțiune (PA):** `(INT + DES) / 2`. Îți determină Inițiativa. Cine lovește primul, lovește de două ori.
 
 ### 3. Abilitățile Tale
 Încep cu o valoare de bază (ex: Furișare = DEX + INT) și se îmbunătățesc folosindu-le. Este un procent (%).
 
 ### 4. Rezolvarea Acțiunilor (Zarul)
-Când încerci să faci ceva riscant (a escalada, a minți, a ataca...), IA îți va cere o aruncare.
-Jocul aruncă un **d100** invizibil. **(Amintește-ți: Zarurile te urăsc. E personal).**
+Când încerci să faci ceva riscant (escaladare, mințit, atac...), IA îți va cere o aruncare. Jocul aruncă un **d100** invizibil. **(Ține minte: Zarurile te urăsc. E personal).**
 
-*   **Obiectivul Tău:** Să obții **MAI MIC SAU EGAL** cu abilitatea ta.
+*   **Obiectivul Tău:** Să scoți un număr **MAI MIC SAU EGAL** cu nivelul abilității tale.
     *   *Exemplu:* Ai 45% la Cățărare.
-    *   Obții un 30: ✅ **Succes**. Urcă precum o maimuță.
-    *   Obții un 80: ❌ **Eșec**. Te prăbușești urât.
-    *   Obții un 01-05: ✨ **CRITIC!** Faci un salt acrobatic epic cu piruetă.
-    *   Obții un 99-100: 💀 **PIF!** Îți cad pantalonii pe drum și te prăbușești cu fața în jos.
+    *   Scoți un 30: ✅ **Succes**. Urci ca o maimuță.
+    *   Scoți un 80: ❌ **Eșec**. Tragi o căzătură zdravănă.
+    *   **Critic:** Scoți mai puțin sau egal cu **1/5 din abilitatea ta** (sau un 01). Epic! Faci un parkour extraordinar cu salt mortal.
+    *   **Gafă (Pifia):** Un **99 sau 100**. Zarurile au decis că azi nu e ziua ta. Îți cad pantalonii la jumătatea drumului și cazi în bot.
 
 ---
 
-## 💡 SFATURI PENTRU A NU MURI (REPede)
+## 💡 SFATURI PENTRU A NU MURI (REPEDE)
 
-*   **✍️ Fii Descriptiv:** Nu scrie doar "atac". Scrie: *"Încerc să-i eschivez toporul rostogolindu-mă pe jos și îi înfig pumnalul în gleznă"*. IA te va recompensa.
+*   **✍️ Fii Descriptiv:** Nu scrie doar "atac". Scrie: *"Încerc să eschivez securea rostogolindu-mă pe podea și îi înfig pumnalul în gleznă"*. IA te va recompensa.
 *   **🧪 Experimentează:** Nu ești limitat la butoane. Scrie nebunii! IA va improviza.
-*   **🎭 Joacă Rolul:** Intră în pielea personajului. Citește descrierile și acționează cum ar face personajul tău, nu cum ai face tu în pijamale.
+*   **🎭 Roleplay:** Intră în rol. Citește descrierile și acționează cum ar face personajul tău, nu cum ai face tu în pijamale.
 
 ---
 
-## ⚔️ COMBATUL (La arme!)
+## ⚔️ LUPTA (La arme!)
 
-Când cuvintele eșuează, vine ora ciocnirii. Combatul este **tactic** și funcționează pe **Tichete** (timp).
+Când cuvintele eșuează, vine vremea pumnilor. Lupta este **tactică** și funcționează pe **Ticks** (timp).
 
 ### 🕹️ Cum funcționează:
-*   **Tichete:** Fiecare acțiune costă timp. Armele grele sunt lente (consumă multe tichete). Pumnalele sunt rapide.
-*   **Viteza Ta:** Depinde de Punctele Tale de Acțiune (PA).
+*   **Ticks:** Fiecare acțiune costă timp. Armele grele sunt lente (consumă mulți ticks). Pumnalele sunt rapide.
+*   **Viteza Ta:** Depinde de Punctele de Acțiune (PA).
 
-### Acțiuni de Bază:
-*   **🗡️ Atac:** Lovește cu ce ai scos.
-*   **🛡️ Blocaj:** Te pui în defensivă. Reduce daunele, dar consumă Stamina.
-*   **🏃 Fugă:** De lași (sau de la înțelepți care vor să trăiască).
-*   **🏳️ Predare:** Dacă vezi că nu câștigi, poți cere milă.
-*   **✨ Magie / Cyberware:** Foc, raze laser, hacking...
+### Acțiuni De Bază:
+*   **🗡️ Atacă:** Dă-i cu ce ai scos din teacă.
+*   **🛡️ Blochează:** Te pui în defensivă. Reduce daunele dar consumă Stamina.
+*   **🏃 Fugi:** Pentru lași (sau înțelepți care vor să trăiască).
+*   **🏳️ Predă-te:** Dacă vezi că nu câștigi, poți implora milă.
+*   **✨ Magie / Cyberware:** Foc, raze laser, hack-uri...
 
-### ⚠️ REGULA DE AUR DE SUPRAVIEȚUIRE
-**SCOATE ARMA ÎNAINTE SĂ TE BATE!**
-A scoate arma în mijlocul luptei consumă timp (Tichete). Dacă ești prins cu sabia în teacă, vei fi lovit până și în permisul de identitate în timp ce încerci să o scoți stângaci. SAU MAI RĂU!, DACĂ PORȚI ARMELE ÎN RUCSAC ÎN LOC DE SLOTUL DE ECHIPAMENT (Scuzați-mă o secundă, trebuie să scot sabia mare din rucsac, știu că o aveam pe aici... pe undeva...) 🤦‍♂️
-👉 Dă **Click pe eticheta armei echipate** (panoul drept) pentru a o scoate. Se va ilumina verde.
+### 💬 Acțiuni prin Text Liber (NOU!)
+Nu-ți plac butoanele? Scrie ce vrei să faci ca și cum ai vorbi cu un Maestru de Joc în carne și oase!
+*   **Exemple:** *"Arunc bilă de foc spre goblin"*, *"Scot sabia runică din teacă"*, *"Folosesc poțiune pe mine"*.
+*   **Regizor de Scenă:** Lupta prinde acum viață. IA generează evenimente ambientale și reacții care îmbogățesc narațiunea: grinzi care cad, inamici care se retrag, torțe care cad. Câmpul de luptă nu mai este static!
+*   **Dacă IA nu înțelege:** Îți va cere să reformulezi. Tura ta NU se pierde!
+*   **⚠️ Limitare:** Mutarea obiectelor între sloturi (echipare din rucsac, încărcare muniție) se face cu **Drag & Drop** în interfață, nu prin text.
 
-Încercarea de a muta arme în luptă consumă timp (Tichete) și poate duce la un atac surpriză, în plus este foarte probabil să pierzi rândul, să ratezi din cauza nervilor toporului care se apropie de sprânceana ta sau să-ți cadă pe jos. (Poate nu a fost o idee bună să-ți creezi un personaj cu TDAH)
+### ⚠️ REGULA DE AUR A SUPRAVIEȚUIRII
+**SCOATE ARMA ÎNAINTE DE A LUPTA!**
+Scoaterea armei în mijlocul luptei consumă timp (Ticks). Dacă te prind cu sabia în teacă, o să te bată până îți schimbă buletinul în timp ce tu încerci să o scoți stângaci. SAU MAI RĂU, DACĂ AI ARMELE ÎN RUCSAC ÎN LOC SĂ FIE ÎN SLOTUL DE ECHIPAMENT (Scuzați o secundă, trebuie să scot spada de două mâini din rucsac, știu că o aveam pe aici... pe undeva...) 🤦‍♂️
+👉 Fă **Click pe eticheta armei echipate** (panoul drept) pentru a o scoate din teacă. Se va lumina în verde.
+
+Încercarea de a muta arme în luptă consumă timp (Ticks) și poate rezulta într-un atac surpriză, plus că e foarte probabil să pierzi tura, să ratezi din cauza nervilor toporului care se apropie de tine sau să-ți cadă arma pe jos. (Poate nu a fost o idee bună să-ți faci un personaj cu ADHD).
 
 ---
 
 ## ✨ MAGIE ȘI CIBERNETICĂ
 
-În funcție de dacă lumea ta este de "Fantezie Medievală" sau "Cyberpunk":
+În funcție de lumea ta, dacă e "Fantezie Medievală" sau "Cyberpunk":
 
-### 🧙‍♂️ Fantezie: Incantații
-Ești vrăjitor? Poți să-ți încarci echipamentul.
-1.  **Învață:** Ai nevoie de vrajă în grimoarul tău.
-2.  **Aruncă (Drag & Drop):** Trage vraja din lista ta peste obiectul din inventarul tău.
-3.  **Cost:** Menținerea unei vrăji active **consumă Mană pe tur**.
-4.  **Avertisment:** Dacă rămâi fără mană în mijlocul luptei, sabia de foc redevine o bucată de fier ruginit.
+### 🧙‍♂️ Fantezie: Încântări
+Ești vrăjitor? Poți să-ți încânți echipamentul.
+1.  **Învață:** Ai nevoie de vrajă în grimor.
+2.  **Lansează (Drag & Drop):** Trage vraja din lista ta peste obiectul din inventar.
+3.  **Cost:** Menținerea unei încântări active **consumă Mana pe tură**.
+4.  **Avertisment:** Dacă rămâi fără mana în mijlocul luptei, sabia de foc redevine o bucată de fier ruginit.
 
-### 🦾 Cyberpunk: Implante
+### 🦾 Cyberpunk: Implanturi
 Vrei ochi cu zoom sau brațe de gorilă?
-1.  Caută un **Tehnician Chirurg** (NPC de serviciu).
-2.  Plătește creditele (nimic nu este gratuit în viitor).
-3.  **Cost de Umanitate:** Fiecare implant îți ia o bucățică din suflet (**Umanitate**).
-    *   Dacă pui prea multe, te vei transforma într-o **Cyberpsihoză** (un prăjitor cu picioare criminal) și vei pierde controlul asupra personajului tău.
+1.  Caută un **Tehno-chirurg** (NPC de serviciu).
+2.  Plătește creditele (nimic nu e gratis în viitor).
+3.  **Cost de Umanitate:** Fiecare implant îți ia o bucată de suflet (**Umanitate**).
+    *   Dacă îți pui prea multe, te vei transforma într-o **Cyberpsihoză** (un prăjitor de pâine cu picioare asasin) și vei pierde controlul personajului.
 
 ---
 
-## 🛒 MAGAZINE ȘI SERVICII
+## 🛒 MAGAZINE ȘI SERVICII (SIS)
 
 Vorbește cu NPC-uri pentru a face comerț.
-*   **Negociere:** Abilitatea ta de **Comerț** (bazată pe Carismă) decide prețurile. Dacă ești urât sau antipatic, vei fi înșelat.
-*   **Vinde:** Dă **Click Dreapta** pe un obiect din inventarul tău pentru a-l vinde negustorului.
+*   **IA Sugerează, Tu Comanzi:** Când vorbești cu un negustor sau vindecător, IA îți va sugera serviciile lor (reparații, vânzare, vindecare), dar va apărea un buton de **"Vezi Servicii"** pentru ca tu să decizi când intri în modul tranzacțional.
+*   **Negociere:** Abilitatea ta de **Comerț** (bazată pe Carismă) decide prețurile. Dacă ești urât sau antipatic, te vor păcăli.
+*   **Vânzare:** Fă **Click Dreapta** pe un obiect din inventar pentru a-l vinde negustorului sau trage-l peste el.
 
 ---
 
 ## 🎒 GESTIONAREA INVENTARULUI (Tetris)
 
-*   **Greutate:** Ai o limită de încărcare (Forță + Dimensiune). Dacă cari prea mult fier vechi, vei merge lent și penalizat (Diogene nu este prietenul tău).
+*   **Greutate:** Ai o limită de încărcare (Forță + Mărime). Dacă cari prea multe vechituri, vei merge încet și vei fi penalizat (Diogene nu îți este prieten).
 *   **Panouri:**
-    *   **Echipament:** Ce porți.
-    *   **Centura:** Acces rapid în luptă (consumă mai puțin timp să folosești poțiuni de aici).
+    *   **Echipament:** Ce porți pe tine.
+    *   **Curea:** Acces rapid în luptă (consumă mai puțin timp să folosești poțiuni de aici).
     *   **Rucsac:** Fundul sacului.
-*   **Utilizare Rapidă:** Trage o poțiune sau mâncare direct pe **fața ta** (portretul) pentru a o consuma instantaneu.
+*   **Utilizare Fluidă:** Trage o poțiune sau mâncare direct peste **fața ta** (portretul) pentru a o consuma instantaneu. De asemenea, poți folosi meniul contextual (click dreapta -> Utilizează).
 
 ---
 
 ## 🛠️ SETĂRI FINALE
 
-În meniul de **Configurare** poți ajusta totul:
-*   **🌍 Limbă:** IA îți va traduce tot jocul și răspunsurile pe loc.
-*   **👁️ Aspect:** Mărimea fontului și culorile, pentru a nu orbi.
-*   **🧠 Setări IA:** Schimbă modelul, temperatura, etc.
+În meniul de **Configurare** poți butona totul:
+*   **🌍 Limbă:** IA îți va traduce tot jocul și răspunsurile din zbor. Mod poliglot activat.
+*   **👁️ Aspect:** Mărimea fontului și culori, ca să nu orbești. Margini neon și umbre netezite pentru o imersiune totală.
+*   **🧠 Setări IA:** Schimbă modelul, temperatura etc. (Amintește-ți ce am văzut la începutul manualului despre flag-ul `--advanced` dacă ești dintre cei care vor să atingă totul).
 
 ---
 
-## 🚧 Notă: Acces Timpuriu
+## 🎭 DIFICULTATE ȘI UMOR (Personalizează-ți suferința)
+
+Înainte de a începe, amintește-ți că IA nu doar narează, ci **ajustează lumea** în funcție de preferințele tale. Acești parametri sunt aleși la crearea lumii și sunt permanenți pentru acea lume:
+
+*   **🎮 Dificultate (Gestionată de IA):** Nu este un simplu multiplicator de daune. Jocul îi spune IA-ului: "Hei, dificultatea e asta, acționează în consecință".
+    *   **Ușor:** Nu vei muri niciodată (sau va fi aproape imposibil), situațiile sunt mai simple, prețurile sunt mai mici și inamicii sunt mai neîndemânatici. IA va raționa fiecare scenă astfel încât drumul tău să fie presărat cu trandafiri.
+    *   **Normal:** Echilibrul standard.
+    *   **Provocare:** IA va fi implacabilă, prețurile prohibitive și orice greșeală poate fi ultima.
+
+*   **🃏 Tonul Umorului:** Definește cum îți vorbește IA și ce tip de evenimente au loc. Deși fiecare model are propriul mod de a interpreta conceptul de "umor", IA va încerca să se adapteze la ce alegi... sau nu:
+    *   **Serios:** O narațiune epică, întunecată și formală.
+    *   **Sarcastic:** IA va râde de eșecurile tale, îți va arunca constant ironii și va folosi un ton zeflemitor.
+    *   **Delirant:** Pregătește-te pentru absurd. Vaci zburătoare, situații suprarealiste și haos total gestionat de logica cea mai întortocheată a IA.
+
+---
+
+## 🚧 Avertisment: Acces Timpuriu (Early Access)
 
 RolemIAster este în **dezvoltare activă**, gătindu-se la foc mic.
 *   Poți găsi bug-uri (sau "caracteristici neașteptate").
 *   Adaug lucruri noi în fiecare săptămână.
-*   Feedback-ul tău valorează aur! Spune-mi ce-ți place și ce-ți place mult.
+*   Feedback-ul tău valorează aur! Spune-mi ce îți place și ce îți place mult. (Dacă nu îți place ceva, spune-mi și asta, dar cu blândețe).
 
-Acum mergi, aruncă inițiativa și creează-ți legenda!
+Acum du-te, dă cu zarul pentru inițiativă și creează-ți legenda!
 
-<!-- source_hash: 2511f352 -->
+<!-- source_hash: f3494f05 -->
