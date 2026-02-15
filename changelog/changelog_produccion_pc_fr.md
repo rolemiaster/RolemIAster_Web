@@ -1,5 +1,19 @@
 ****************************************************************************************************
-14/02/2026 21:48 - Synchronisation du contexte et contrôle de réponse IA - Beta_v057
+15/02/2026 02:57 - Saisie Directe, Correctifs de Stabilité et Détection d - Beta_v058
+****************************************************************************************************
+- What's New (FR):
+  **Stabilité :**
+  - 🛠️ **Adieu les Plantages de Configuration :** Correction de plusieurs bugs survenant sous certaines conditions qui empêchaient d'ouvrir ou de modifier la configuration de l'IA lors du changement de modèle ou de la réinitialisation des valeurs.
+  - 🗃️ **Base de Données Silencieuse :** L'avertissement gênant "Base de Données Incompatible" au lancement du jeu n'apparaîtra plus si votre base de données est saine. Il ne s'affichera qu'en cas de changement structurel réel nécessitant une migration.
+  
+  **Expérience de Jeu :**
+  - 🎯 **Contrôle de Précision de l'IA :** Vous pouvez désormais saisir manuellement les valeurs de Contexte, Tokens, Température ou Couches GPU directement dans un champ numérique à côté du curseur. Vous ne dépendez plus uniquement des "curseurs" ! Les deux commandes sont synchronisées : déplacez le curseur et le nombre se met à jour, ou écrivez le nombre et le curseur se déplace.
+  - ⌨️ **Saisie Directe :** Plus besoin de cliquer dans la zone de texte pour écrire votre action ! Vous pouvez maintenant commencer à taper directement lorsque vous êtes sur l'écran de jeu. Si vous interagissez avec l'inventaire ou un autre panneau et que vous voulez ensuite écrire, commencez simplement à taper sans rien sélectionner. Le système redirige automatiquement vos frappes vers le champ d'action. Cela n'interfère pas avec les menus, les dialogues ni les raccourcis système.
+  
+  Quelques autres changements mineurs...
+
+****************************************************************************************************
+14/02/2026 21:48 - Synchronisation du contexte et contrôle de réponse IA - Beta_v056
 ****************************************************************************************************
 - What's New (FR):
   **Systèmes et Performance :**

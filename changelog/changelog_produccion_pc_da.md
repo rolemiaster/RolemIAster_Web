@@ -1,5 +1,19 @@
 ****************************************************************************************************
-14/02/2026 21:48 - Synkronisering af kontekst og AI-svarkontrol - Beta_v057
+15/02/2026 02:57 - Direkte skrivning, stabilitetsrettelser og detektion - Beta_v058
+****************************************************************************************************
+- What's New (DA):
+  **Stabilitet:**
+  - 🛠️ **Farvel til konfigurationsnedbrud:** Rettet adskillige fejl, der opstod under visse forhold, og som forhindrede åbning eller ændring af AI-konfigurationen ved modelskift eller nulstilling af værdier.
+  - 🗃️ **Stille database:** Den irriterende advarsel om "Inkompatibel database" ved spilstart vises ikke længere, hvis din database er i orden. Den vises kun, når der er en reel strukturel ændring, der kræver migrering.
+  
+  **Spiloplevelse:**
+  - 🎯 **Præcisionskontrol i AI:** Nu kan du manuelt skrive værdierne for Kontekst, Tokens, Temperatur eller GPU-lag direkte i et talfelt ved siden af skyderen. Du er ikke længere kun afhængig af "skyderne"! Begge kontroller er synkroniserede: flyt skyderen, og tallet opdateres, eller skriv tallet, og skyderen flytter sig.
+  - ⌨️ **Direkte skrivning:** Du behøver ikke længere klikke i tekstfeltet for at skrive din handling! Nu kan du begynde at taste direkte, mens du er på spilskærmen. Hvis du interagerer med inventaret eller et andet panel og derefter vil skrive, skal du blot begynde at taste uden at skulle vælge noget. Systemet omdirigerer automatisk dine tastetryk til handlingsfeltet. Det forstyrrer ikke menuer, dialoger eller systemgenveje.
+  
+  Nogle flere mindre ændringer...
+
+****************************************************************************************************
+14/02/2026 21:48 - Synkronisering af kontekst og AI-svarkontrol - Beta_v056
 ****************************************************************************************************
 - What's New (DA):
   **Systemer og Ydeevne:**

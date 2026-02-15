@@ -1,5 +1,19 @@
 ****************************************************************************************************
-14/02/2026 21:48 - Kontekstin synkronointi ja tekoälyn vastausten hallinta - Beta_v057
+15/02/2026 02:57 - Suorakirjoitus, vakauskorjauksia ja tunnistus - Beta_v058
+****************************************************************************************************
+- What's New (FI):
+  **Vakaus:**
+  - 🛠️ **Hyvästit asetuskaatumisille:** Korjattu useita kaatumisia, jotka tapahtuivat tietyissä olosuhteissa ja estivät tekoälyasetusten avaamisen tai muokkaamisen mallia vaihdettaessa tai arvoja nollattaessa.
+  - 🗃️ **Hiljainen tietokanta:** Ärsyttävä "Yhteensopimaton tietokanta" -ilmoitus peliä käynnistettäessä ei enää ilmesty, jos tietokantasi on kunnossa. Se näytetään vain, kun tapahtuu todellinen rakenteellinen muutos, joka vaatii migraatiota.
+  
+  **Pelikokemus:**
+  - 🎯 **Tekoälyn tarkkuussäätö:** Voit nyt kirjoittaa kontekstin, tokenien, lämpötilan tai GPU-kerrosten arvot manuaalisesti suoraan numerokenttään liukusäätimen vieressä. Et ole enää pelkkien liukusäädinten varassa! Molemmat säätimet on synkronoitu: liikuta säädintä ja numero päivittyy, tai kirjoita numero ja säädin liikkuu.
+  - ⌨️ **Suorakirjoitus:** Sinun ei enää tarvitse napsauttaa tekstikenttää kirjoittaaksesi toimintosi! Nyt voit alkaa kirjoittaa suoraan peliruudulla ollessasi. Jos olet vuorovaikutuksessa inventaarion tai muun paneelin kanssa ja haluat sitten kirjoittaa, ala vain kirjoittaa valitsematta mitään. Järjestelmä ohjaa painalluksesi automaattisesti toimintokenttään. Se ei häiritse valikoita, dialogeja eikä järjestelmän pikanäppäimiä.
+  
+  Lisäksi joitakin pienempiä muutoksia...
+
+****************************************************************************************************
+14/02/2026 21:48 - Kontekstin synkronointi ja tekoälyn vastausten hallinta - Beta_v056
 ****************************************************************************************************
 - What's New (FI):
   **Järjestelmät ja suorituskyky:**

@@ -1,5 +1,19 @@
 ****************************************************************************************************
-14/02/2026 21:48 - Bağlam Senkronizasyonu ve YZ Yanıt Kontrolü - Beta_v057
+15/02/2026 02:57 - Doğrudan Yazma, Kararlılık Düzeltmeleri ve Algılama - Beta_v058
+****************************************************************************************************
+- What's New (TR):
+  **Kararlılık:**
+  - 🛠️ **Yapılandırma Çökmelerine Elveda:** Belirli koşullar altında meydana gelen ve model değiştirirken veya değerleri sıfırlarken YZ ayarlarının açılmasını ya da değiştirilmesini engelleyen çeşitli hatalar giderildi.
+  - 🗃️ **Sessiz Veritabanı:** Oyun başlatılırken çıkan o can sıkıcı "Uyumsuz Veritabanı" uyarısı, veritabanınız sağlamsa artık görünmeyecek. Yalnızca geçiş gerektiren gerçek bir yapısal değişiklik olduğunda gösterilecek.
+  
+  **Oyun Deneyimi:**
+  - 🎯 **YZ Hassas Kontrolü:** Artık Bağlam, Tokenlar, Sıcaklık veya GPU Katmanları değerlerini kaydırıcının yanındaki sayısal alana doğrudan manuel olarak yazabilirsiniz. Artık sadece "kaydırıcılara" bağlı değilsiniz! Her iki kontrol de senkronizedir: kaydırıcıyı hareket ettirirseniz sayı güncellenir, sayıyı yazarsanız kaydırıcı hareket eder.
+  - ⌨️ **Doğrudan Yazma:** Eyleminizi yazmak için artık metin kutusuna tıklamanıza gerek yok! Artık oyun ekranındayken doğrudan yazmaya başlayabilirsiniz. Envanterle veya başka bir panelle etkileşime girip ardından yazmak isterseniz, hiçbir şeyi seçmenize gerek kalmadan yazmaya başlamanız yeterli. Sistem, tuş vuruşlarınızı otomatik olarak eylem alanına yönlendirir. Menüler, diyaloglar veya sistem kısayolları ile çakışmaz.
+  
+  Diğer bazı küçük değişiklikler...
+
+****************************************************************************************************
+14/02/2026 21:48 - Bağlam Senkronizasyonu ve YZ Yanıt Kontrolü - Beta_v056
 ****************************************************************************************************
 - What's New (TR):
   **Sistemler ve Performans:**

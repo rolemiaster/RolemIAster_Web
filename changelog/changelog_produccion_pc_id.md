@@ -1,5 +1,19 @@
 ****************************************************************************************************
-14/02/2026 21:48 - Sinkronisasi Konteks dan Kontrol Respons AI - Beta_v057
+15/02/2026 02:57 - Pengetikan Langsung, Perbaikan Stabilitas dan Deteksi - Beta_v058
+****************************************************************************************************
+- What's New (ID):
+  **Stabilitas:**
+  - 🛠️ **Selamat Tinggal Crash Konfigurasi:** Memperbaiki beberapa bug yang terjadi dalam kondisi tertentu yang mencegah pembukaan atau pengubahan pengaturan AI saat mengganti model atau mereset nilai.
+  - 🗃️ **Database Senyap:** Peringatan mengganggu "Database Tidak Kompatibel" saat memulai game tidak akan muncul lagi jika database Anda baik-baik saja. Peringatan ini hanya akan muncul ketika ada perubahan struktural nyata yang memerlukan migrasi.
+  
+  **Pengalaman Bermain:**
+  - 🎯 **Kontrol Presisi AI:** Sekarang Anda dapat mengetik nilai untuk Konteks, Token, Temperatur, atau Layer GPU secara manual langsung di kolom angka di sebelah slider. Anda tidak lagi hanya bergantung pada "slider"! Kedua kontrol disinkronkan: gerakkan slider dan angkanya diperbarui, atau ketik angkanya dan slider akan bergerak.
+  - ⌨️ **Pengetikan Langsung:** Anda tidak perlu lagi mengeklik kotak teks untuk menulis tindakan Anda! Sekarang Anda dapat mulai mengetik langsung saat berada di layar permainan. Jika Anda berinteraksi dengan inventaris atau panel lain dan kemudian ingin menulis, cukup mulai mengetik tanpa perlu memilih apa pun. Sistem secara otomatis mengalihkan ketikan Anda ke kolom tindakan. Ini tidak mengganggu menu, dialog, atau pintasan sistem.
+  
+  Beberapa perubahan kecil lainnya...
+
+****************************************************************************************************
+14/02/2026 21:48 - Sinkronisasi Konteks dan Kontrol Respons AI - Beta_v056
 ****************************************************************************************************
 - What's New (ID):
   **Sistem dan Performa:**

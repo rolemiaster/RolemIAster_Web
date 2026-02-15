@@ -1,5 +1,19 @@
 ****************************************************************************************************
-14/02/2026 21:48 - Synchronizacja Kontekstu i Kontrola Odpowiedzi AI - Beta_v057
+15/02/2026 02:57 - Bezpośrednie wpisywanie, poprawki stabilności i wykrywanie bazy - Beta_v058
+****************************************************************************************************
+- What's New (PL):
+  **Stabilność:**
+  - 🛠️ **Koniec z awariami konfiguracji:** Naprawiono kilka błędów, które występowały w określonych warunkach i uniemożliwiały otwarcie lub modyfikację ustawień AI podczas zmiany modelu lub resetowania wartości.
+  - 🗃️ **Dyskretna baza danych:** Irytujące powiadomienie o "Niezgodnej bazie danych" przy uruchamianiu gry nie będzie się już pojawiać, jeśli twoja baza danych jest w porządku. Wyświetli się tylko wtedy, gdy nastąpi rzeczywista zmiana strukturalna wymagająca migracji.
+  
+  **Rozgrywka:**
+  - 🎯 **Precyzyjna kontrola AI:** Teraz możesz ręcznie wpisywać wartości Kontekstu, Tokenów, Temperatury lub Warstw GPU bezpośrednio w polu liczbowym obok suwaka. Nie musisz już polegać tylko na "suwakach"! Oba elementy sterujące są zsynchronizowane: przesuń suwak, a liczba się zaktualizuje, lub wpisz liczbę, a suwak się przesunie.
+  - ⌨️ **Bezpośrednie wpisywanie:** Nie musisz już klikać w pole tekstowe, aby wpisać swoją akcję! Teraz możesz zacząć pisać bezpośrednio na ekranie gry. Jeśli wchodzisz w interakcję z ekwipunkiem lub innym panelem, a następnie chcesz pisać, po prostu zacznij pisać bez konieczności zaznaczania czegokolwiek. System automatycznie przekieruje naciśnięcia klawiszy do pola akcji. Nie koliduje to z menu, oknami dialogowymi ani skrótami systemowymi.
+  
+  I kilka mniejszych zmian...
+
+****************************************************************************************************
+14/02/2026 21:48 - Synchronizacja Kontekstu i Kontrola Odpowiedzi AI - Beta_v056
 ****************************************************************************************************
 - What's New (PL):
   **Systemy i Wydajność:**

@@ -1,5 +1,19 @@
 ****************************************************************************************************
-14/02/2026 21:48 - Sincronizarea Contextului și Controlul Răspunsului IA - Beta_v057
+15/02/2026 02:57 - Scriere Directă, Corecții de Stabilitate și Detectare d - Beta_v058
+****************************************************************************************************
+- What's New (RO):
+  **Stabilitate:**
+  - 🛠️ **Adio Blocaje de Configurare:** Au fost corectate mai multe erori care apăreau în anumite condiții și împiedicau deschiderea sau modificarea configurației IA la schimbarea modelului sau resetarea valorilor.
+  - 🗃️ **Bază de Date Silențioasă:** Avertismentul enervant de "Bază de Date Incompatibilă" la pornirea jocului nu va mai apărea dacă baza ta de date este în regulă. Se va afișa doar atunci când există o modificare structurală reală care necesită migrare.
+  
+  **Experiență de Joc:**
+  - 🎯 **Control de Precizie IA:** Acum poți scrie manual valorile pentru Context, Token-uri, Temperatură sau Straturi GPU direct într-un câmp numeric de lângă glisor. Nu mai depinzi doar de "glisoare"! Ambele controale sunt sincronizate: mișcă glisorul și numărul se actualizează, sau scrie numărul și glisorul se mișcă.
+  - ⌨️ **Scriere Directă:** Nu mai este nevoie să dai clic în caseta de text pentru a scrie acțiunea! Acum poți începe să tastezi direct în timp ce te afli pe ecranul de joc. Dacă interacționezi cu inventarul sau cu alt panou și apoi vrei să scrii, pur și simplu începe să tastezi fără a fi nevoie să selectezi nimic. Sistemul redirecționează automat apăsările de taste către câmpul de acțiune. Nu interferează cu meniurile, dialogurile sau scurtăturile de sistem.
+  
+  Câteva modificări minore în plus...
+
+****************************************************************************************************
+14/02/2026 21:48 - Sincronizarea Contextului și Controlul Răspunsului IA - Beta_v056
 ****************************************************************************************************
 - What's New (RO):
   **Sisteme și Performanță:**

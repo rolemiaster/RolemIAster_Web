@@ -1,5 +1,19 @@
 ****************************************************************************************************
-14/02/2026 21:48 - Sincronização de Contexto e Controle de Resposta de IA - Beta_v057
+15/02/2026 02:57 - Escrita Direta, Correções de Estabilidade e Detecção d - Beta_v058
+****************************************************************************************************
+- What's New (PT):
+  **Estabilidade:**
+  - 🛠️ **Adeus aos Travamentos na Configuração:** Corrigidas várias falhas que ocorriam sob certas condições e impediam a abertura ou modificação da configuração da IA ao trocar de modelo ou redefinir valores.
+  - 🗃️ **Banco de Dados Silencioso:** O aviso irritante de "Banco de Dados Incompatível" ao iniciar o jogo não aparecerá mais se o seu banco de dados estiver correto. Ele só será exibido quando houver uma mudança estrutural real que exija migração.
+  
+  **Experiência de Jogo:**
+  - 🎯 **Controle de Precisão na IA:** Agora você pode digitar manualmente os valores de Contexto, Tokens, Temperatura ou Camadas da GPU diretamente em um campo numérico ao lado do slider. Você não depende mais apenas das "barras deslizantes"! Ambos os controles estão sincronizados: mova o slider e o número atualiza, ou digite o número e o slider se move.
+  - ⌨️ **Escrita Direta:** Você não precisa mais clicar na caixa de texto para escrever sua ação! Agora você pode começar a digitar diretamente enquanto estiver na tela de jogo. Se você interagir com o inventário ou outro painel e depois quiser escrever, basta começar a digitar sem precisar selecionar nada. O sistema redireciona o que você digita automaticamente para o campo de ação. Não interfere com menus, diálogos nem atalhos do sistema.
+  
+  Mais algumas pequenas mudanças...
+
+****************************************************************************************************
+14/02/2026 21:48 - Sincronização de Contexto e Controle de Resposta de IA - Beta_v056
 ****************************************************************************************************
 - What's New (PT):
   **Sistemas e Desempenho:**

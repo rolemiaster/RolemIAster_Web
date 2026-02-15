@@ -1,5 +1,19 @@
 ****************************************************************************************************
-14/02/2026 21:48 - Kontextsynkronisering och AI-svarskontroll - Beta_v057
+15/02/2026 02:57 - Direktskrift, Stabilitetsfixar och Detektering - Beta_v058
+****************************************************************************************************
+- What's New (SV):
+  **Stabilitet:**
+  - 🛠️ **Inga fler inställningskrascher:** Åtgärdade flera fel som uppstod under vissa förhållanden och förhindrade öppning eller ändring av AI-inställningar vid byte av modell eller återställning av värden.
+  - 🗃️ **Tyst databas:** Den irriterande varningen "Inkompatibel databas" vid spelstart visas inte längre om din databas är okej. Den visas bara när det sker en faktisk strukturell förändring som kräver migrering.
+  
+  **Spelupplevelse:**
+  - 🎯 **Precisionskontroll för AI:** Nu kan du manuellt skriva in värden för Kontext, Tokens, Temperatur eller GPU-lager direkt i ett nummerfält bredvid reglaget. Du är inte längre begränsad till bara reglagen! Båda kontrollerna är synkroniserade: dra i reglaget så uppdateras siffran, eller skriv siffran så flyttas reglaget.
+  - ⌨️ **Direktskrift:** Du behöver inte längre klicka i textrutan för att skriva din handling! Nu kan du börja skriva direkt när du befinner dig på spelskärmen. Om du interagerar med inventariet eller en annan panel och sedan vill skriva, börja bara skriva utan att behöva markera något. Systemet omdirigerar automatiskt dina knapptryckningar till handlingsfältet. Det stör inte menyer, dialoger eller systemgenvägar.
+  
+  Några fler mindre ändringar...
+
+****************************************************************************************************
+14/02/2026 21:48 - Kontextsynkronisering och AI-svarskontroll - Beta_v056
 ****************************************************************************************************
 - What's New (SV):
   **System och prestanda:**

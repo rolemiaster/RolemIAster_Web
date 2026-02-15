@@ -1,5 +1,19 @@
 ****************************************************************************************************
-14/02/2026 21:48 - Sincronización de Contexto y Control de Respuesta IA - Beta_v057
+15/02/2026 02:57 - Escritura Directa, Correcciones de Estabilidad y Detección d - Beta_v058
+****************************************************************************************************
+- Novedades (ES):
+  **Estabilidad:**
+  - 🛠️ **Adiós a los Crashes de Configuración:** Corregidos varios fallos que ocurrían bajo ciertas condiciones y que impedían abrir o modificar la configuración de IA al cambiar de modelo o reiniciar valores.
+  - 🗃️ **Base de Datos Silenciosa:** El molesto aviso de "Base de Datos Incompatible" al iniciar el juego ya no aparecerá si tu base de datos está bien. Solo se mostrará cuando haya un cambio estructural real que requiera migración.
+  
+  **Experiencia de Juego:**
+  - 🎯 **Control de Precisión en IA:** Ahora puedes escribir manualmente los valores de Contexto, Tokens, Temperatura o Capas GPU directamente en un campo numérico junto al slider. ¡Ya no dependes solo de las "cremalleras"! Ambos controles están sincronizados: mueve el slider y el número se actualiza, o escribe el número y el slider se mueve.
+  - ⌨️ **Escritura Directa:** ¡Ya no necesitas hacer clic en el recuadro de texto para escribir tu acción! Ahora puedes empezar a teclear directamente mientras estés en la pantalla de juego. Si interactúas con el inventario u otro panel y luego quieres escribir, simplemente empieza a teclear sin necesidad de seleccionar nada. El sistema redirige tus pulsaciones automáticamente al campo de acción. No interfiere con menús, diálogos ni atajos del sistema.
+  
+  Algunos cambios menores más...
+
+****************************************************************************************************
+14/02/2026 21:48 - Sincronización de Contexto y Control de Respuesta IA - Beta_v056
 ****************************************************************************************************
 - Novedades (ES):
   **Sistemas y Rendimiento:**

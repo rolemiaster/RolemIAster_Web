@@ -1,5 +1,19 @@
 ****************************************************************************************************
-14/02/2026 21:48 - Kontext-Synchronisierung und KI-Antwortsteuerung - Beta_v057
+15/02/2026 02:57 - Direkte Eingabe, Stabilitätskorrekturen und Erkennung - Beta_v058
+****************************************************************************************************
+- What's New (DE):
+  **Stabilität:**
+  - 🛠️ **Keine Konfigurations-Abstürze mehr:** Mehrere Fehler wurden behoben, die unter bestimmten Bedingungen auftraten und das Öffnen oder Ändern der KI-Konfiguration beim Modellwechsel oder Zurücksetzen der Werte verhinderten.
+  - 🗃️ **Stille Datenbank:** Die nervige Meldung „Inkompatible Datenbank“ beim Spielstart erscheint nicht mehr, wenn deine Datenbank in Ordnung ist. Sie wird nur angezeigt, wenn eine echte strukturelle Änderung vorliegt, die eine Migration erfordert.
+  
+  **Spielerlebnis:**
+  - 🎯 **KI-Präzisionssteuerung:** Du kannst jetzt Werte für Kontext, Token, Temperatur oder GPU-Layer manuell in ein Zahlenfeld direkt neben dem Schieberegler eingeben. Du bist nicht mehr nur auf die Schieberegler angewiesen! Beide Steuerungen sind synchronisiert: Bewege den Regler und die Zahl aktualisiert sich, oder gib die Zahl ein und der Regler bewegt sich.
+  - ⌨️ **Direkte Eingabe:** Du musst nicht mehr in das Textfeld klicken, um deine Aktion zu schreiben! Du kannst jetzt direkt anfangen zu tippen, während du im Spielbildschirm bist. Wenn du mit dem Inventar oder einem anderen Panel interagierst und dann schreiben möchtest, fang einfach an zu tippen, ohne etwas auswählen zu müssen. Das System leitet deine Tastenanschläge automatisch an das Aktionsfeld weiter. Es stört weder Menüs, Dialoge noch System-Shortcuts.
+  
+  Einige weitere kleinere Änderungen...
+
+****************************************************************************************************
+14/02/2026 21:48 - Kontext-Synchronisierung und KI-Antwortsteuerung - Beta_v056
 ****************************************************************************************************
 - What's New (DE):
   **Systeme und Leistung:**

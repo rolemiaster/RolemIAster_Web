@@ -1,5 +1,19 @@
 ****************************************************************************************************
-14/02/2026 21:48 - Kontekstsynkronisering og kontroll av AI-respons - Beta_v057
+15/02/2026 02:57 - Direkte skriving, stabilitetsfikser og deteksjon - Beta_v058
+****************************************************************************************************
+- What's New (NO):
+  **Stabilitet:**
+  - 🛠️ **Farvel til krasj i innstillinger:** Fikset flere feil som oppsto under visse forhold, og som hindret åpning eller endring av KI-innstillinger ved bytte av modell eller tilbakestilling av verdier.
+  - 🗃️ **Stille database:** Den irriterende advarselen "Ukompatibel database" ved oppstart vil ikke lenger vises hvis databasen din er i orden. Den vises kun når det er en faktisk strukturell endring som krever migrering.
+  
+  **Spillopplevelse:**
+  - 🎯 **Presisjonskontroll for KI:** Nå kan du skrive inn verdier for kontekst, tokens, temperatur eller GPU-lag manuelt i et tallfelt ved siden av glidebryteren. Du er ikke lenger avhengig av bare "spakene"! Begge kontrollene er synkronisert: flytt glidebryteren og tallet oppdateres, eller skriv inn tallet og glidebryteren flytter seg.
+  - ⌨️ **Direkte skriving:** Du trenger ikke lenger å klikke i tekstfeltet for å skrive handlingen din! Nå kan du begynne å skrive direkte mens du er i spillskjermen. Hvis du samhandler med inventaret eller et annet panel og deretter vil skrive, er det bare å begynne å skrive uten å måtte velge noe. Systemet omdirigerer tastetrykkene dine automatisk til handlingsfeltet. Det forstyrrer ikke menyer, dialoger eller systemsnarveier.
+  
+  Noen flere mindre endringer...
+
+****************************************************************************************************
+14/02/2026 21:48 - Kontekstsynkronisering og kontroll av AI-respons - Beta_v056
 ****************************************************************************************************
 - What's New (NO):
   **Systemer og ytelse:**

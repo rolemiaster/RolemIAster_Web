@@ -1,5 +1,19 @@
 ****************************************************************************************************
-14/02/2026 21:48 - Kontextus-szinkronizáció és MI-válaszvezérlés - Beta_v057
+15/02/2026 02:57 - Közvetlen írás, stabilitási javítások és észlelés - Beta_v058
+****************************************************************************************************
+- What's New (HU):
+  **Stabilitás:**
+  - 🛠️ **Viszlát, konfigurációs összeomlások:** Különböző hibák javítva, amelyek bizonyos körülmények között előfordultak, és megakadályozták az MI-beállítások megnyitását vagy módosítását modellváltáskor vagy az értékek alaphelyzetbe állításakor.
+  - 🗃️ **Csendes adatbázis:** A játék indításakor megjelenő zavaró „Inkompatibilis adatbázis” figyelmeztetés többé nem jelenik meg, ha az adatbázisod rendben van. Csak akkor jelenik meg, ha valódi szerkezeti változás történt, amely migrációt igényel.
+  
+  **Játékélmény:**
+  - 🎯 **Precíziós MI-vezérlés:** Mostantól manuálisan is beírhatod a Kontextus, Tokenek, Hőmérséklet vagy GPU-rétegek értékeit közvetlenül a csúszka melletti numerikus mezőbe. Többé nem függsz kizárólag a csúszkáktól! A két vezérlő szinkronban van: mozgasd a csúszkát, és a szám frissül, vagy írd be a számot, és a csúszka mozog.
+  - ⌨️ **Közvetlen írás:** Többé nem kell a szövegdobozra kattintanod a cselekvésed beírásához! Mostantól közvetlenül elkezdhetsz gépelni, amíg a játék képernyőjén vagy. Ha az eszköztárral vagy más panellel lépsz interakcióba, majd írni szeretnél, egyszerűen kezdj el gépelni anélkül, hogy bármit is ki kellene jelölnöd. A rendszer a billentyűleütéseidet automatikusan a cselekvés mezőbe irányítja. Nem zavarja a menüket, párbeszédpaneleket és a rendszer gyorsbillentyűit.
+  
+  További kisebb változtatások...
+
+****************************************************************************************************
+14/02/2026 21:48 - Kontextus-szinkronizáció és MI-válaszvezérlés - Beta_v056
 ****************************************************************************************************
 - What's New (HU):
   **Rendszerek és teljesítmény:**

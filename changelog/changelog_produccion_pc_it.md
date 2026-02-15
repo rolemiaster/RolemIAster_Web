@@ -1,5 +1,19 @@
 ****************************************************************************************************
-14/02/2026 21:48 - Sincronizzazione del Contesto e Controllo Risposta IA - Beta_v057
+15/02/2026 02:57 - Scrittura diretta, correzioni di stabilità e rilevamento d - Beta_v058
+****************************************************************************************************
+- What's New (IT):
+  **Stabilità:**
+  - 🛠️ **Addio ai crash di configurazione:** Corretti diversi bug che si verificavano in determinate condizioni e che impedivano di aprire o modificare le impostazioni dell'IA quando si cambiava modello o si ripristinavano i valori.
+  - 🗃️ **Database silenzioso:** Il fastidioso avviso di "Database incompatibile" all'avvio del gioco non apparirà più se il tuo database è corretto. Verrà mostrato solo in caso di una reale modifica strutturale che richiede una migrazione.
+  
+  **Esperienza di gioco:**
+  - 🎯 **Controllo di precisione IA:** Ora puoi inserire manualmente i valori di Contesto, Token, Temperatura o Livelli GPU direttamente in un campo numerico accanto al cursore. Non dipendi più solo dalle "barre di scorrimento"! Entrambi i controlli sono sincronizzati: sposta il cursore e il numero si aggiorna, oppure scrivi il numero e il cursore si muove.
+  - ⌨️ **Scrittura diretta:** Non è più necessario cliccare sulla casella di testo per scrivere la tua azione! Ora puoi iniziare a digitare direttamente mentre sei nella schermata di gioco. Se interagisci con l'inventario o un altro pannello e poi vuoi scrivere, inizia semplicemente a digitare senza dover selezionare nulla. Il sistema reindirizza automaticamente i tasti premuti al campo di azione. Non interferisce con menu, finestre di dialogo o scorciatoie di sistema.
+  
+  Altre modifiche minori...
+
+****************************************************************************************************
+14/02/2026 21:48 - Sincronizzazione del Contesto e Controllo Risposta IA - Beta_v056
 ****************************************************************************************************
 - What's New (IT):
   **Sistemi e Prestazioni:**

@@ -1,5 +1,19 @@
 ****************************************************************************************************
-14/02/2026 21:48 - Đồng bộ hóa Ngữ cảnh và Kiểm soát Phản hồi AI - Beta_v057
+15/02/2026 02:57 - Nhập liệu Trực tiếp, Sửa lỗi Ổn định và Phát hiện - Beta_v058
+****************************************************************************************************
+- What's New (VI):
+  **Tính ổn định:**
+  - 🛠️ **Tạm biệt Treo Cấu hình:** Đã sửa nhiều lỗi xảy ra trong các điều kiện nhất định, gây cản trở việc mở hoặc sửa đổi cấu hình AI khi thay đổi mô hình hoặc đặt lại giá trị.
+  - 🗃️ **Cơ sở dữ liệu Yên lặng:** Cảnh báo phiền toái "Cơ sở dữ liệu không tương thích" khi khởi động trò chơi sẽ không còn xuất hiện nếu cơ sở dữ liệu của bạn vẫn ổn. Nó sẽ chỉ hiển thị khi có thay đổi cấu trúc thực sự cần di chuyển dữ liệu.
+  
+  **Trải nghiệm Trò chơi:**
+  - 🎯 **Kiểm soát Chính xác AI:** Giờ đây bạn có thể nhập thủ công các giá trị Ngữ cảnh, Token, Nhiệt độ hoặc Lớp GPU trực tiếp vào trường số bên cạnh thanh trượt. Không còn phải phụ thuộc hoàn toàn vào các "thanh trượt" nữa! Cả hai điều khiển đều được đồng bộ hóa: di chuyển thanh trượt thì số sẽ cập nhật, hoặc nhập số thì thanh trượt sẽ di chuyển.
+  - ⌨️ **Nhập liệu Trực tiếp:** Bạn không cần phải nhấp vào hộp văn bản để nhập hành động nữa! Giờ đây, bạn có thể bắt đầu gõ phím trực tiếp khi đang ở màn hình trò chơi. Nếu bạn tương tác với kho đồ hoặc bảng điều khiển khác và sau đó muốn viết, chỉ cần bắt đầu gõ mà không cần chọn bất cứ thứ gì. Hệ thống tự động chuyển hướng các phím bấm của bạn vào trường hành động. Nó không can thiệp vào menu, hộp thoại hay phím tắt hệ thống.
+  
+  Một vài thay đổi nhỏ khác...
+
+****************************************************************************************************
+14/02/2026 21:48 - Đồng bộ hóa Ngữ cảnh và Kiểm soát Phản hồi AI - Beta_v056
 ****************************************************************************************************
 - What's New (VI):
   **Hệ thống và Hiệu suất:**

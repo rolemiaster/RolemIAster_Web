@@ -1,5 +1,19 @@
 ****************************************************************************************************
-14/02/2026 21:48 - Synchronizace kontextu a ovládání odpovědí AI - Beta_v057
+15/02/2026 02:57 - Přímé psaní, opravy stability a detekce - Beta_v058
+****************************************************************************************************
+- What's New (CS):
+  **Stabilita:**
+  - 🛠️ **Sbohem pádům v nastavení:** Opraveno několik chyb, ke kterým docházelo za určitých podmínek a které bránily otevření nebo úpravě nastavení AI při změně modelu nebo resetování hodnot.
+  - 🗃️ **Tichá databáze:** Otravné upozornění na „Nekompatibilní databázi“ při spuštění hry se již nebude zobrazovat, pokud je vaše databáze v pořádku. Zobrazí se pouze v případě, že dojde ke skutečné strukturální změně vyžadující migraci.
+  
+  **Herní zážitek:**
+  - 🎯 **Přesné ovládání AI:** Nyní můžete ručně zadávat hodnoty kontextu, tokenů, teploty nebo vrstev GPU přímo do číselného pole vedle posuvníku. Už nejste odkázáni jen na posuvníky! Oba ovládací prvky jsou synchronizované: pohněte posuvníkem a číslo se aktualizuje, nebo napište číslo a posuvník se posune.
+  - ⌨️ **Přímé psaní:** Pro napsání akce už nemusíte klikat do textového pole! Nyní můžete začít psát rovnou, jakmile jste na herní obrazovce. Pokud pracujete s inventářem nebo jiným panelem a pak chcete psát, prostě začněte psát bez nutnosti cokoli vybírat. Systém automaticky přesměruje vaše stisky kláves do pole pro akci. Nekoliduje s menu, dialogy ani systémovými zkratkami.
+  
+  A několik dalších menších změn...
+
+****************************************************************************************************
+14/02/2026 21:48 - Synchronizace kontextu a ovládání odpovědí AI - Beta_v056
 ****************************************************************************************************
 - What's New (CS):
   **Systémy a výkon:**

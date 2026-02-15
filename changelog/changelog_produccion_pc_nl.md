@@ -1,5 +1,19 @@
 ****************************************************************************************************
-14/02/2026 21:48 - Contextsynchronisatie en AI-reactiebeheer - Beta_v057
+15/02/2026 02:57 - Direct typen, stabiliteitsfixes en detectie v - Beta_v058
+****************************************************************************************************
+- What's New (NL):
+  **Stabiliteit:**
+  - 🛠️ **Vaarwel configuratiecrashes:** Diverse fouten verholpen die onder bepaalde omstandigheden optraden en het openen of wijzigen van AI-instellingen verhinderden bij het wisselen van model of het resetten van waarden.
+  - 🗃️ **Stille database:** De vervelende melding "Niet-compatibele database" bij het opstarten van het spel verschijnt niet meer als je database in orde is. Deze wordt alleen getoond wanneer er een echte structurele wijziging is die migratie vereist.
+  
+  **Spelervaring:**
+  - 🎯 **Precisiecontrole in AI:** Je kunt nu handmatig de waarden voor Context, Tokens, Temperatuur of GPU-lagen direct invoeren in een numeriek veld naast de schuifregelaar. Je bent niet langer alleen afhankelijk van de schuifregelaars! Beide bedieningselementen zijn gesynchroniseerd: beweeg de schuifregelaar en het getal wordt bijgewerkt, of typ het getal en de schuifregelaar beweegt.
+  - ⌨️ **Direct typen:** Je hoeft niet langer op het tekstvak te klikken om je actie te schrijven! Je kunt nu direct beginnen met typen terwijl je in het spelscherm bent. Als je interactie hebt met de inventaris of een ander paneel en vervolgens wilt schrijven, begin dan gewoon met typen zonder iets te selecteren. Het systeem stuurt je toetsaanslagen automatisch door naar het actieveld. Het interfereert niet met menu's, dialogen of systeemsneltoetsen.
+  
+  En nog enkele kleine wijzigingen...
+
+****************************************************************************************************
+14/02/2026 21:48 - Contextsynchronisatie en AI-reactiebeheer - Beta_v056
 ****************************************************************************************************
 - What's New (NL):
   **Systemen en Prestaties:**

@@ -1,5 +1,19 @@
 ****************************************************************************************************
-14/02/2026 21:48 - Context Synchronization and AI Response Control - Beta_v057
+15/02/2026 02:57 - Direct Typing, Stability Fixes, and Detection - Beta_v058
+****************************************************************************************************
+- What's New (EN):
+  **Stability:**
+  - 🛠️ **Goodbye Config Crashes:** Fixed several crashes that occurred under certain conditions and prevented opening or modifying AI settings when changing models or resetting values.
+  - 🗃️ **Silent Database:** The annoying "Incompatible Database" warning upon starting the game will no longer appear if your database is fine. It will only show when there is an actual structural change requiring migration.
+  
+  **Gameplay Experience:**
+  - 🎯 **AI Precision Control:** You can now manually enter Context, Tokens, Temperature, or GPU Layer values directly into a numeric field next to the slider. You no longer rely solely on the sliders! Both controls are synchronized: move the slider and the number updates, or type the number and the slider moves.
+  - ⌨️ **Direct Typing:** You no longer need to click on the text box to type your action! You can now start typing directly while on the game screen. If you interact with the inventory or another panel and then want to write, simply start typing without needing to select anything. The system automatically redirects your keystrokes to the action field. It does not interfere with menus, dialogues, or system shortcuts.
+  
+  Plus a few more minor changes...
+
+****************************************************************************************************
+14/02/2026 21:48 - Context Synchronization and AI Response Control - Beta_v056
 ****************************************************************************************************
 - What's New (EN):
   **Systems and Performance:**
