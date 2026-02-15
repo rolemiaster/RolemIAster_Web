@@ -1,5 +1,5 @@
 ****************************************************************************************************
-15/02/2026 02:57 - Bezpośrednie wpisywanie, poprawki stabilności i wykrywanie bazy - Beta_v058
+15/02/2026 02:57 - Bezpośrednie wpisywanie, poprawki stabilności i wykrywanie bazy - Beta_v057
 ****************************************************************************************************
 - What's New (PL):
   **Stabilność:**

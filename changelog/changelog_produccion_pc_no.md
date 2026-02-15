@@ -1,5 +1,5 @@
 ****************************************************************************************************
-15/02/2026 02:57 - Direkte skriving, stabilitetsfikser og deteksjon - Beta_v058
+15/02/2026 02:57 - Direkte skriving, stabilitetsfikser og deteksjon - Beta_v057
 ****************************************************************************************************
 - What's New (NO):
   **Stabilitet:**

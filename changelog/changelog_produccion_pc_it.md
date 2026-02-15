@@ -1,5 +1,5 @@
 ****************************************************************************************************
-15/02/2026 02:57 - Scrittura diretta, correzioni di stabilità e rilevamento d - Beta_v058
+15/02/2026 02:57 - Scrittura diretta, correzioni di stabilità e rilevamento d - Beta_v057
 ****************************************************************************************************
 - What's New (IT):
   **Stabilità:**

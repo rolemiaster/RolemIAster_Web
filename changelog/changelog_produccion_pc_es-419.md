@@ -1,5 +1,5 @@
 ****************************************************************************************************
-15/02/2026 02:57 - Escritura Directa, Correcciones de Estabilidad y Detección d - Beta_v058
+15/02/2026 02:57 - Escritura Directa, Correcciones de Estabilidad y Detección d - Beta_v057
 ****************************************************************************************************
 - What's New (ES-419):
   **Estabilidad:**

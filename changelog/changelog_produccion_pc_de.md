@@ -1,5 +1,5 @@
 ****************************************************************************************************
-15/02/2026 02:57 - Direkte Eingabe, Stabilitätskorrekturen und Erkennung - Beta_v058
+15/02/2026 02:57 - Direkte Eingabe, Stabilitätskorrekturen und Erkennung - Beta_v057
 ****************************************************************************************************
 - What's New (DE):
   **Stabilität:**
