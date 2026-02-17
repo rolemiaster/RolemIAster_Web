@@ -1,4 +1,34 @@
 ****************************************************************************************************
+17/02/2026 06:58 - AI-bildgenerering, berättelseförbättringar och kontroll - EXPERIMENTAL_v057
+****************************************************************************************************
+- What's New (SV):
+  **⚠️ EXPERIMENTELL GREN (STEAM BETA)**
+  Denna version är för närvarande endast tillgänglig i den **Experimentella grenen** på Steam. För att aktivera den:
+  1. Högerklicka på **RolemIAster** i ditt Steam-bibliotek.
+  2. Välj **Egenskaper...**
+  3. Gå till fliken **Betas**.
+  4. Under "Betadeltagande", välj **experimental** i rullgardinsmenyn.
+  
+  **Nyhet: Första fasen av AI-bildgenerering**
+  - 🎨 **Din värld i bilder:** Jag har integrerat ett initialt system för bildgenerering med Artificiell Intelligens. När du spelar försöker systemet generera porträtt och landskap som matchar atmosfären i ditt spel.
+  - 🖼️ **Dynamiska bakgrunder:** Bilderna genereras i bakgrunden utan att stoppa ditt spel. Du kommer att se dem dyka upp successivt i bakgrunden, på karaktärskort och i Codex.
+  - ⚡ **Hastighet som passar dig:** Ny sektion i Visuella inställningar. Välj mellan "Snabb" (1 steg), "Medel" (2 steg) eller "Hög" (4 steg) för att justera genereringstiden efter din dators prestanda.
+  - 🛠️ **Teknisk optimering:** AI-modellen för bilder laddas i **RAM (minne)** och bearbetas via **CPU**, utan att ta upp videominne (VRAM). Detta garanterar att den inte stör prestandan hos spelets huvud-AI (LLM). Det krävs cirka 5 GB extra RAM, vilket håller sig inom de officiella minimikraven för Steam.
+  - 📤 **Dela dina äventyr:** Alla genererade bilder sparas automatiskt. Du hittar dem i mappen: `%APPDATA%/RolemIAster/custom_assets/images`
+  
+  **Berättande och AI-hjärna:**
+  - 🧠 **Slut på loopar:** En ny "Minnesdoktrin" har implementerats i AI:n. Den skiljer nu bättre på "minnen" (det som redan har hänt) och "nuet" (det som händer). Detta hjälper till att minska fallen där AI:n upprepade sig eller fastnade.
+  - 📜 **Historiska arkiv:** Systemet presenterar dina minnen för AI:n som ett "Stängt historiskt arkiv", vilket gör det lättare för den att använda informationen som referens för att föra berättelsen framåt.
+  - ⚡ **Optimerade instruktioner:** Sättet spelet begär berättande på ditt språk har förbättrats, vilket frigör kapacitet för modellen att fokusera på kreativitet.
+  - 👁️ **Narrativt fokus:** AI:ns perception har skrivits om. Den förstår nu bättre vilka element som är "statisk bakgrund" och inte bör upprepas i onödan i varje stycke.
+  - 🔀 **Tydligare beslut:** AI:n erbjuder nu mer definierade vägar. Dess förslag (knappar) är uppdelade mellan att undersöka omgivningen (Fördjupa) eller byta riktning (Divergera).
+  - 🫵 **Direkt tilltal:** Grundinstruktionen har justerats för att säkerställa att AI:n tilltalar dig med "Du", vilket förbättrar den personliga inlevelsen.
+  
+  **Karaktärsskapande:**
+  - 🖼️ **Karaktärsporträtt:** När du skapar en karaktär med AI försöker systemet skapa ett porträtt baserat på ålder, yrke och beskrivning. Tänk på att detta är en tidig version och att troheten (särskilt gällande ålder) kan variera beroende på vilken modell som används. (jag fortsätter att testa men starten är god)
+  - 🎲 **Pålitlig slumpmässig generering:** Fixat ett fel där knappen "Generera med AI" kunde misslyckas vid första försöket och lämna fälten tomma. Nu säkerställer det intelligenta korrigeringssystemet att svaret alltid är giltigt.
+
+****************************************************************************************************
 15/02/2026 02:57 - Direktskrift, Stabilitetsfixar och Detektering - Beta_v057
 ****************************************************************************************************
 - What's New (SV):
