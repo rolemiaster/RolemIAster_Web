@@ -1,4 +1,32 @@
 ****************************************************************************************************
+17/02/2026 18:22 - AI-billedgenerering, narrative forbedringer og kontrol - v058
+****************************************************************************************************
+- What's New (DA):
+  **⚠️ EKSPERIMENTEL GREN (STEAM BETA)**
+  Denne version er i øjeblikket kun tilgængelig i Steams **Eksperimentelle gren**. Sådan aktiveres den:
+  1. Højreklik på **RolemIAster** i dit Steam-bibliotek.
+  2. Vælg **Egenskaber...**
+  3. Gå til fanen **Betaer**.
+  4. Under "Betadeltagelse" vælger du **experimental** i rullemenuen.
+  **Nyhed: Første fase af AI-billedgenerering**
+  - 🎨 **Din verden i billeder:** Jeg har integreret et indledende system til generering af billeder via kunstig intelligens. Mens du spiller, forsøger systemet at generere portrætter og landskaber, der ledsager stemningen i dit spil.
+  - 🖼️ **Dynamiske baggrunde:** Billederne genereres i baggrunden uden at stoppe dit spil. Du vil se dem dukke gradvist op i baggrunden, på karakterkort og i Codexet.
+  - ⚡ **Hastighed efter dit behov:** Ny sektion i Visuelle indstillinger. Vælg mellem "Hurtig" (1 trin), "Mellem" (2 trin) eller "Høj" (4 trin) for at justere genereringstiden til din computers ydeevne.
+  - 🛠️ **Teknisk optimering:** AI-modellen til billeder indlæses i **RAM (hukommelse)** og behandles via **CPU**, uden at optage videohukommelse (VRAM). Dette sikrer, at det ikke forstyrrer ydeevnen af spillets primære AI (LLM). Det kræver omkring 5GB ekstra RAM, hvilket holder sig inden for Steams officielle minimumskrav.
+  - 📤 **Del dine eventyr:** Alle genererede billeder gemmes automatisk. Du finder dem i mappen: `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Modelvælger (Avanceret):** Hvis du starter spillet med parameteren `--advanced`, kan du nu vælge, hvilken AI-model der skal bruges til billederne fra panelet Udseende. Dette giver entusiaster mulighed for at teste forskellige versioner af Stable Diffusion optimeret til OpenVINO (.xml/.bin-filer).
+  **Narrativ og AI-hjerne:**
+  - 🧠 **Slut med loops:** Der er implementeret en ny "Hukommelsesdoktrin" i AI'en. Den skelner nu bedre mellem "minder" (hvad der allerede er sket) og "nutiden" (hvad der sker nu). Dette hjælper med at reducere tilfælde, hvor AI'en gentog sig selv eller gik i stå.
+  - 📜 **Historiske arkiver:** Systemet præsenterer dine minder for AI'en som et "Lukket historisk arkiv", hvilket gør det lettere for den at bruge disse oplysninger som reference til at drive historien fremad.
+  - ⚡ **Optimerede instruktioner:** Måden spillet anmoder om fortælling på dit sprog er blevet forbedret, hvilket frigør kapacitet i modellen til at fokusere på kreativitet.
+  - 👁️ **Narrativt fokus:** AI'ens perception er blevet omskrivet. Den forstår nu bedre, hvilke elementer der er "statisk baggrund" og ikke bør gentages unødigt i hvert afsnit.
+  - 🔀 **Klarere beslutninger:** AI'en tilbyder nu mere definerede udveje. Dens forslag (knapper) er opdelt mellem at undersøge miljøet (Fordybe) eller ændre kurs (Divergere).
+  - 🫵 **Direkte tiltale:** Grundinstruktionen er justeret for at sikre, at AI'en tiltaler dig med "Du", hvilket forbedrer den personlige indlevelse.
+  **Karakterskabelse:**
+  - 🖼️ **Karakterportrætter:** Når du genererer en karakter med AI, forsøger systemet at skabe et portræt baseret på alder, erhverv og beskrivelse. Bemærk, at dette er en tidlig version, og nøjagtigheden (især med hensyn til alder) kan variere afhængigt af den anvendte model. (jeg tester stadig, men starten er god)
+  - 🎲 **Pålidelig tilfældig generering:** Rettede en fejl, hvor knappen "Generer med AI" kunne fejle i første forsøg og efterlade felterne tomme. Nu sikrer det intelligente korrektionssystem, at svaret altid er gyldigt.
+
+****************************************************************************************************
 15/02/2026 02:57 - Direkte skrivning, stabilitetsrettelser og detektion - Beta_v057
 ****************************************************************************************************
 - What's New (DA):

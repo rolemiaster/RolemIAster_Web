@@ -1,4 +1,32 @@
 ****************************************************************************************************
+17/02/2026 18:25 - Tekoälykuvien luonti, kerronnalliset parannukset ja hallinta - v058
+****************************************************************************************************
+- What's New (FI):
+  **⚠️ KOKEILUHAARA (STEAM BETA)**
+  Tämä versio on tällä hetkellä saatavilla vain Steamin **Kokeiluhaarassa** (Experimental Branch). Ottaaksesi sen käyttöön:
+  1. Napsauta **RolemIAster**-peliä hiiren kakkospainikkeella Steam-kirjastossasi.
+  2. Valitse **Ominaisuudet...**
+  3. Siirry **Betat**-välilehdelle.
+  4. Valitse "Betaosallistuminen"-kohdan pudotusvalikosta **experimental**.
+  **Uutta: Tekoälykuvien luonnin ensimmäinen vaihe**
+  - 🎨 **Maailmasi kuvina:** Olen integroinut alustavan tekoälypohjaisen kuvien luontijärjestelmän. Pelatessasi järjestelmä yrittää luoda muotokuvia ja maisemia, jotka tukevat pelisi tunnelmaa.
+  - 🖼️ **Dynaamiset taustat:** Kuvat luodaan taustalla pysäyttämättä peliäsi. Näet niiden ilmestyvän vähitellen taustalle, hahmokortteihin ja Koodeksiin.
+  - ⚡ **Nopeus sinun ehdoillasi:** Uusi osio Visuaalisissa asetuksissa. Valitse "Nopea" (1 vaihe), "Keskitaso" (2 vaihetta) tai "Korkea" (4 vaihetta) säätääksesi luontiajan laitteistosi tehon mukaiseksi.
+  - 🛠️ **Tekninen optimointi:** Kuvien tekoälymalli ladataan **keskusmuistiin (RAM)** ja prosessoidaan **prosessorilla (CPU)** varaamatta videomuistia (VRAM). Tämä takaa, ettei se häiritse pelin päätekoälyn (LLM) suorituskykyä. Se vaatii noin 5 Gt lisää keskusmuistia, mikä pysyy Steamin virallisten vähimmäisvaatimusten rajoissa.
+  - 📤 **Jaa seikkailusi:** Kaikki luodut kuvat tallennetaan automaattisesti. Löydät ne kansiosta: `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Mallivalitsin (Edistynyt):** Jos käynnistät pelin parametrilla `--advanced`, voit nyt valita Ulkoasu-paneelista, mitä tekoälymallia käytetään kuville. Tämä antaa harrastajille mahdollisuuden kokeilla eri versioita Stable Diffusionista, jotka on optimoitu OpenVINOlle (.xml/.bin -tiedostot).
+  **Kerronta ja tekoälyaivot:**
+  - 🧠 **Silmukoiden loppu:** Tekoälyyn on istutettu uusi "Muistioppi". Se erottaa nyt paremmin "muistot" (mitä on jo tapahtunut) ja "nykyhetken" (mitä tapahtuu juuri nyt). Tämä auttaa vähentämään tapauksia, joissa tekoäly toisti itseään tai jäi jumiin.
+  - 📜 **Historialliset arkistot:** Järjestelmä esittää muistosi tekoälylle "Suljettuna historiallisena arkistona", mikä helpottaa kyseisten tietojen käyttöä viitteenä tarinan edistämisessä.
+  - ⚡ **Optimoidut ohjeet:** Pelin tapaa pyytää kerrontaa kielelläsi on parannettu, mikä vapauttaa mallin kapasiteettia luovuuteen keskittymiseen.
+  - 👁️ **Kerronnallinen fokus:** Tekoälyn havaintokyky on kirjoitettu uudelleen. Nyt se ymmärtää paremmin, mitkä elementit ovat "staattista taustaa", eikä sen tulisi toistaa niitä tarpeettomasti joka kappaleessa.
+  - 🔀 **Selkeämmät päätökset:** Tekoäly tarjoaa nyt selkeämpiä etenemisreittejä. Sen ehdotukset (painikkeet) on jaettu ympäristön tutkimiseen (Syvenny) tai suunnan muuttamiseen (Erkane).
+  - 🫵 **Suora puhuttelu:** Perusohjeistusta on säädetty sen varmistamiseksi, että tekoäly sinuttelee sinua, mikä parantaa henkilökohtaista immersiota.
+  **Hahmonluonti:**
+  - 🖼️ **Hahmomuotokuvat:** Kun luot hahmon tekoälyllä, järjestelmä yrittää luoda muotokuvan iän, ammatin ja kuvauksen perusteella. Huomaa, että kyseessä on alustava versio, ja uskollisuus (erityisesti iän suhteen) voi vaihdella käytetyn mallin mukaan. (jatkan testaamista, mutta alku on lupaava)
+  - 🎲 **Luotettava satunnainen luonti:** Korjattu virhe, jossa "Luo tekoälyllä" -painike saattoi epäonnistua ensimmäisellä yrityksellä jättäen kentät tyhjiksi. Nyt älykäs korjausjärjestelmä varmistaa, että vastaus on aina kelvollinen.
+
+****************************************************************************************************
 15/02/2026 02:57 - Suorakirjoitus, vakauskorjauksia ja tunnistus - Beta_v057
 ****************************************************************************************************
 - What's New (FI):

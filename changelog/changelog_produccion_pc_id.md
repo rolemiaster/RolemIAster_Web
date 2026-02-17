@@ -1,4 +1,32 @@
 ****************************************************************************************************
+17/02/2026 18:26 - Pembuatan Gambar AI, Peningkatan Narasi, dan Kontrol - v058
+****************************************************************************************************
+- What's New (ID):
+  **⚠️ CABANG EKSPERIMENTAL (STEAM BETA)**
+  Versi ini saat ini hanya tersedia di **Cabang Eksperimental** Steam. Untuk mengaktifkannya:
+  1. Klik kanan **RolemIAster** di Perpustakaan Steam Anda.
+  2. Pilih **Properti...**
+  3. Buka tab **Beta**.
+  4. Di "Partisipasi beta", pilih **experimental** dari menu dropdown.
+  **Baru: Fase Pertama Pembuatan Gambar AI**
+  - 🎨 **Dunia Anda dalam Gambar:** Saya telah mengintegrasikan sistem awal pembuatan gambar dengan Kecerdasan Buatan. Saat Anda bermain, sistem mencoba membuat potret dan pemandangan yang menyertai suasana permainan Anda.
+  - 🖼️ **Latar Belakang Dinamis:** Gambar dibuat di latar belakang tanpa menghentikan permainan Anda. Anda akan melihat bagaimana gambar muncul secara bertahap di latar belakang, pada kartu karakter, dan di Codex.
+  - ⚡ **Kecepatan Sesuai Keinginan:** Bagian baru di Pengaturan Visual. Pilih antara "Cepat" (1 langkah), "Sedang" (2 langkah), atau "Tinggi" (4 langkah) untuk menyesuaikan waktu pembuatan dengan kekuatan komputer Anda.
+  - 🛠️ **Optimasi Teknis:** Model AI untuk gambar dimuat di **RAM (Memori)** dan diproses via **CPU**, tanpa memakan memori video (VRAM). Ini menjamin agar tidak mengganggu kinerja AI utama game (LLM). Membutuhkan sekitar 5GB RAM tambahan, tetap berada dalam persyaratan minimum resmi Steam.
+  - 📤 **Bagikan Petualangan Anda:** Semua gambar yang dibuat disimpan secara otomatis. Anda akan menemukannya di folder: `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Pemilih Model (Lanjutan):** Jika Anda memulai game dengan parameter `--advanced`, sekarang Anda dapat memilih model AI mana yang akan digunakan untuk gambar dari panel Tampilan. Ini memungkinkan para penggemar untuk mencoba versi Stable Diffusion berbeda yang dioptimalkan untuk OpenVINO (file .xml/.bin).
+  **Narasi dan Otak AI:**
+  - 🧠 **Akhir dari Loop:** "Doktrin Memori" baru telah ditanamkan pada AI. Sekarang AI membedakan lebih baik antara "kenangan" (apa yang sudah terjadi) dan "masa kini" (apa yang sedang terjadi). Ini membantu mengurangi kasus di mana AI mengulang-ulang atau macet.
+  - 📜 **Arsip Sejarah:** Sistem menyajikan kenangan Anda kepada AI sebagai "Arsip Sejarah Tertutup", memudahkannya menggunakan informasi tersebut sebagai referensi untuk memajukan cerita.
+  - ⚡ **Instruksi yang Dioptimalkan:** Cara game meminta narasi dalam bahasa Anda telah ditingkatkan, membebaskan kapasitas model untuk berkonsentrasi pada kreativitas.
+  - 👁️ **Fokus Naratif:** Persepsi AI telah ditulis ulang. Sekarang ia lebih memahami elemen mana yang merupakan "latar statis" dan tidak perlu mengulanginya secara tidak perlu di setiap paragraf.
+  - 🔀 **Keputusan Lebih Jelas:** AI sekarang menawarkan jalur keluar yang lebih pasti. Sarannya (tombol) dibagi antara menyelidiki lingkungan (Memperdalam) atau mengubah arah (Menyimpang).
+  - 🫵 **Sapaan Langsung:** Instruksi dasar telah disesuaikan untuk memastikan AI menyapa Anda dengan sebutan "Anda", meningkatkan imersi personal.
+  **Pembuatan Karakter:**
+  - 🖼️ **Potret Karakter:** Saat membuat karakter dengan AI, sistem mencoba membuat potret berdasarkan usia, profesi, dan deskripsinya. Harap diingat bahwa ini adalah versi awal dan kesetiaannya (terutama pada usia) dapat bervariasi tergantung pada model yang digunakan. (saya masih melakukan pengujian tetapi permulaannya sudah bagus)
+  - 🎲 **Pembuatan Acak yang Andal:** Memperbaiki bug di mana tombol "Buat dengan AI" bisa gagal pada percobaan pertama, membiarkan kolom kosong. Sekarang sistem koreksi cerdas memastikan bahwa jawabannya selalu valid.
+
+****************************************************************************************************
 15/02/2026 02:57 - Pengetikan Langsung, Perbaikan Stabilitas dan Deteksi - Beta_v057
 ****************************************************************************************************
 - What's New (ID):

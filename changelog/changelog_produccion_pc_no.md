@@ -1,4 +1,32 @@
 ****************************************************************************************************
+17/02/2026 19:10 - AI-bildegenerering, narrative forbedringer og kontroll - v058
+****************************************************************************************************
+- What's New (NO):
+  **⚠️ EKSPERIMENTELL GREN (STEAM BETA)**
+  Denne versjonen er for øyeblikket kun tilgjengelig i den **Eksperimentelle grenen** på Steam. For å aktivere den:
+  1. Høyreklikk på **RolemIAster** i Steam-biblioteket ditt.
+  2. Velg **Egenskaper...**
+  3. Gå til fanen **Betaer**.
+  4. Under "Betadeltakelse", velg **experimental** i rullegardinmenyen.
+  **Nyhet: Første fase av AI-bildegenerering**
+  - 🎨 **Din verden i bilder:** Jeg har integrert et innledende system for bildegenerering ved hjelp av kunstig intelligens. Mens du spiller, forsøker systemet å generere portretter og landskap som passer til stemningen i spillet ditt.
+  - 🖼️ **Dynamiske bakgrunner:** Bildene genereres i bakgrunnen uten å stoppe spillet ditt. Du vil se dem dukke opp gradvis i bakgrunnen, på karakterkort og i Kodeksen.
+  - ⚡ **Hastighet tilpasset deg:** Ny seksjon i visuelle innstillinger. Velg mellom "Rask" (1 steg), "Middels" (2 steg) eller "Høy" (4 steg) for å tilpasse genereringstiden til utstyrets ytelse.
+  - 🛠️ **Teknisk optimalisering:** AI-modellen for bilder lastes i **RAM (minne)** og behandles via **CPU**, uten å bruke videominne (VRAM). Dette sikrer at den ikke forstyrrer ytelsen til spillets hoved-AI (LLM). Krever ca. 5 GB ekstra RAM, men holder seg innenfor de offisielle minimumskravene på Steam.
+  - 📤 **Del dine eventyr:** Alle genererte bilder lagres automatisk. Du finner dem i mappen: `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Modellvelger (Avansert):** Hvis du starter spillet med parameteren `--advanced`, kan du nå velge hvilken AI-modell som skal brukes for bilder fra Utseende-panelet. Dette lar entusiaster teste ulike versjoner av Stable Diffusion optimalisert for OpenVINO (.xml/.bin-filer).
+  **Narrativ og AI-hjerne:**
+  - 🧠 **Slutt på løkker:** En ny "Minnedoktrine" er implementert i AI-en. Den skiller nå bedre mellom "minner" (det som har skjedd) og "nåtid" (det som skjer nå). Dette bidrar til å redusere tilfeller der AI-en gjentok seg selv eller satte seg fast.
+  - 📜 **Historiske arkiver:** Systemet presenterer minnene dine for AI-en som et "Lukket historisk arkiv", noe som gjør det lettere for den å bruke den informasjonen som referanse for å drive historien fremover.
+  - ⚡ **Optimaliserte instruksjoner:** Måten spillet ber om fortelling på ditt språk er forbedret, noe som frigjør kapasitet i modellen til å fokusere på kreativitet.
+  - 👁️ **Narrativt fokus:** AI-ens oppfatning er skrevet om. Den forstår nå bedre hvilke elementer som er "statisk bakgrunn" og ikke bør gjentas unødvendig i hvert avsnitt.
+  - 🔀 **Tydeligere valg:** AI-en tilbyr nå mer definerte fluktveier. Forslagene (knappene) er delt inn i å undersøke omgivelsene (Fordype) eller endre kurs (Avvike).
+  - 🫵 **Direkte tiltale:** Basisinstruksjonen er justert for å sikre at AI-en tiltaler deg som "Du", noe som forbedrer den personlige innlevelsen.
+  **Karakterskaping:**
+  - 🖼️ **Karakterportretter:** Når du genererer en karakter med AI, forsøker systemet å lage et portrett basert på alder, yrke og beskrivelse. Vær oppmerksom på at dette er en tidlig versjon, og nøyaktigheten (spesielt angående alder) kan variere avhengig av modellen som brukes. (jeg fortsetter å teste, men starten er god)
+  - 🎲 **Pålitelig tilfeldig generering:** Rettet en feil der knappen "Generer med AI" kunne feile ved første forsøk og etterlate feltene tomme. Det intelligente korrigeringssystemet sikrer nå at svaret alltid er gyldig.
+
+****************************************************************************************************
 15/02/2026 02:57 - Direkte skriving, stabilitetsfikser og deteksjon - Beta_v057
 ****************************************************************************************************
 - What's New (NO):

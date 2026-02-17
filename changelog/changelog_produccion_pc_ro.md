@@ -1,4 +1,32 @@
 ****************************************************************************************************
+17/02/2026 19:13 - Generarea de Imagini prin AI, Îmbunătățiri Narative și Control - v058
+****************************************************************************************************
+- What's New (RO):
+  **⚠️ RAMURA EXPERIMENTALĂ (STEAM BETA)**
+  Această versiune este disponibilă momentan doar în **Ramura Experimentală** de pe Steam. Pentru a o activa:
+  1. Dă clic dreapta pe **RolemIAster** în Biblioteca ta Steam.
+  2. Selectează **Proprietăți...**
+  3. Mergi la fila **Betas**.
+  4. La „Participare la beta”, selectează **experimental** din meniul derulant.
+  **Noutate: Prima fază a Generării de Imagini prin AI**
+  - 🎨 **Lumea Ta în Imagini:** Am integrat un sistem inițial de generare a imaginilor prin Inteligență Artificială. Pe măsură ce joci, sistemul încearcă să genereze portrete și peisaje care să însoțească atmosfera jocului tău.
+  - 🖼️ **Fundaluri Dinamice:** Imaginile sunt generate în fundal fără a opri jocul. Vei vedea cum apar progresiv pe fundal, pe cardurile personajelor și în Codex.
+  - ⚡ **Viteză pe Măsura Ta:** Secțiune nouă în Setări Vizuale. Alege între „Rapidă” (1 pas), „Medie” (2 pași) sau „Înaltă” (4 pași) pentru a ajusta timpul de generare la puterea echipamentului tău.
+  - 🛠️ **Optimizare Tehnică:** Modelul AI pentru imagini se încarcă în **RAM (Memorie)** și este procesat via **CPU**, fără a ocupa memoria video (VRAM). Acest lucru garantează că nu interferează cu performanța AI-ului principal al jocului (LLM). Necesită aproximativ 5GB de RAM suplimentari, rămânând în limitele cerințelor minime oficiale Steam.
+  - 📤 **Împărtășește-ți Aventurile:** Toate imaginile generate sunt salvate automat. Le vei găsi în dosarul: `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Selector de Modele (Avansat):** Dacă pornești jocul cu parametrul `--advanced`, acum poți alege ce model AI să folosești pentru imagini din panoul Aspect. Acest lucru permite entuziaștilor să testeze diferite versiuni de Stable Diffusion optimizate pentru OpenVINO (fișiere .xml/.bin).
+  **Narativă și Creier AI:**
+  - 🧠 **Sfârșitul Buclelor:** A fost implementată o nouă „Doctrină a Memoriei” în AI. Acum distinge mai bine între „amintiri” (ceea ce s-a întâmplat deja) și „prezent” (ceea ce se întâmplă acum). Acest lucru ajută la reducerea cazurilor în care AI-ul se repeta sau se bloca.
+  - 📜 **Arhive Istorice:** Sistemul prezintă amintirile tale AI-ului ca o „Arhivă Istorică Închisă”, facilitând utilizarea acelei informații ca referință pentru a avansa povestea.
+  - ⚡ **Instrucțiuni Optimizate:** S-a îmbunătățit modul în care jocul solicită narațiunea în limba ta, eliberând capacitatea modelului pentru a se concentra pe creativitate.
+  - 👁️ **Focus Narativ:** S-a rescris percepția AI-ului. Acum înțelege mai bine ce elemente sunt „fundal static” și nu ar trebui să le repete inutil în fiecare paragraf.
+  - 🔀 **Decizii Mai Clare:** AI-ul oferă acum căi de scăpare mai definite. Sugestiile sale (butoanele) sunt împărțite între investigarea mediului (Aprofundare) sau schimbarea direcției (Divergență).
+  - 🫵 **Adresare Directă:** S-a ajustat instrucțiunea de bază pentru a asigura că AI-ul ți se adresează cu „Tu”, îmbunătățind imersiunea personală.
+  **Crearea Personajului:**
+  - 🖼️ **Portrete de Personaj:** La generarea unui personaj cu AI, sistemul încearcă să creeze un portret bazat pe vârstă, profesie și descriere. Ține cont că este o versiune inițială și fidelitatea (în special la vârstă) poate varia în funcție de modelul utilizat. (continui testele, dar începutul este promițător)
+  - 🎲 **Generare Aleatorie Fiabilă:** S-a corectat o eroare prin care butonul „Generează cu AI” putea eșua la prima încercare, lăsând câmpurile goale. Acum, sistemul de corecție inteligentă se asigură că răspunsul este întotdeauna valid.
+
+****************************************************************************************************
 15/02/2026 02:57 - Scriere Directă, Corecții de Stabilitate și Detectare d - Beta_v057
 ****************************************************************************************************
 - What's New (RO):

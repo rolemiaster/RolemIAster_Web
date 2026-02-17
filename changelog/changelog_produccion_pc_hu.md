@@ -1,4 +1,32 @@
 ****************************************************************************************************
+17/02/2026 18:26 - MI Képalkotás, Narratív Javítások és Irányítás - v058
+****************************************************************************************************
+- What's New (HU):
+  **⚠️ KÍSÉRLETI ÁG (STEAM BÉTA)**
+  Ez a verzió jelenleg csak a Steam **Kísérleti Ágán** érhető el. Az aktiváláshoz:
+  1. Kattints jobb gombbal a **RolemIAster**-re a Steam Könyvtáradban.
+  2. Válaszd a **Tulajdonságok...** opciót.
+  3. Menj a **Béták** fülre.
+  4. A „Béta részvétel” alatt válaszd ki az **experimental** lehetőséget a legördülő menüből.
+  **Újdonság: MI Képalkotás Első Fázisa**
+  - 🎨 **A Világod Képekben:** Integráltam egy kezdeti Mesterséges Intelligencia alapú képalkotó rendszert. Játék közben a rendszer megpróbál portrékat és tájképeket generálni, amelyek illeszkednek a játék hangulatához.
+  - 🖼️ **Dinamikus Hátterek:** A képek a háttérben generálódnak anélkül, hogy megállítanák a játékot. Látni fogod, ahogy fokozatosan megjelennek a háttérben, a karakterkártyákon és a Kódexben.
+  - ⚡ **Sebesség az Igényeid Szerint:** Új rész a Vizuális Beállításokban. Válassz a „Gyors” (1 lépés), „Közepes” (2 lépés) vagy „Magas” (4 lépés) közül, hogy a generálási időt a géped teljesítményéhez igazítsd.
+  - 🛠️ **Technikai Optimalizálás:** A képekhez használt MI modell a **RAM-ba (Memória)** töltődik be és a **CPU-n** keresztül kerül feldolgozásra, így nem foglal videómemóriát (VRAM). Ez biztosítja, hogy ne zavarja a játék fő MI-jének (LLM) teljesítményét. Körülbelül 5 GB plusz RAM-ot igényel, ami a hivatalos Steam minimális követelményeken belül marad.
+  - 📤 **Oszd meg a Kalandjaidat:** Minden generált kép automatikusan mentésre kerül. A következő mappában találod őket: `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Modellválasztó (Haladó):** Ha a `--advanced` paraméterrel indítod a játékot, mostantól kiválaszthatod a Megjelenés panelen, hogy melyik MI modellt használja a képekhez. Ez lehetővé teszi a rajongók számára, hogy különböző, OpenVINO-ra optimalizált Stable Diffusion verziókat (.xml/.bin fájlok) próbáljanak ki.
+  **Narratíva és MI Agy:**
+  - 🧠 **A Hurkok Vége:** Egy új „Memória Doktrína” került bevezetésre az MI-be. Most már jobban megkülönbözteti az „emlékeket” (ami már megtörtént) és a „jelent” (ami éppen történik). Ez segít csökkenteni azokat az eseteket, amikor az MI ismételte önmagát vagy elakadt.
+  - 📜 **Történelmi Archívumok:** A rendszer „Lezárt Történelmi Archívumként” mutatja be emlékeidet az MI-nek, megkönnyítve számára, hogy ezt az információt referenciaként használja a történet előremozdításához.
+  - ⚡ **Optimalizált Utasítások:** Javult a mód, ahogyan a játék a narrációt kéri a te nyelveden, felszabadítva a modell kapacitását, hogy a kreativitásra koncentrálhasson.
+  - 👁️ **Narratív Fókusz:** Az MI észlelési rendszere újra lett írva. Most már jobban érti, mely elemek számítanak „statikus háttérnek”, és nem kellene feleslegesen ismételnie őket minden bekezdésben.
+  - 🔀 **Világosabb Döntések:** Az MI most határozottabb menekülőutakat kínál. Javaslatai (gombok) megoszlanak a környezet megvizsgálása (Elmélyülés) és az irányváltás (Eltérés) között.
+  - 🫵 **Közvetlen Megszólítás:** Az alaputasítás módosítva lett, hogy az MI biztosan tegezzen („Te”), javítva a személyes beleélést.
+  **Karakterkészítés:**
+  - 🖼️ **Karakterportrék:** Amikor MI-vel generálsz karaktert, a rendszer megpróbál egy portrét készíteni a kora, foglalkozása és leírása alapján. Vedd figyelembe, hogy ez egy kezdeti verzió, és a hűség (különösen az életkor tekintetében) a használt modelltől függően változhat. (továbbra is tesztelem, de a kezdet biztató)
+  - 🎲 **Megbízható Véletlenszerű Generálás:** Javítva egy hiba, ahol a „Generálás MI-vel” gomb elsőre meghibásodhatott, üresen hagyva a mezőket. Most az intelligens javítórendszer biztosítja, hogy a válasz mindig érvényes legyen.
+
+****************************************************************************************************
 15/02/2026 02:57 - Közvetlen írás, stabilitási javítások és észlelés - Beta_v057
 ****************************************************************************************************
 - What's New (HU):

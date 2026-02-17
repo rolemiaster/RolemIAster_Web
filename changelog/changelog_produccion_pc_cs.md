@@ -1,4 +1,32 @@
 ****************************************************************************************************
+17/02/2026 18:21 - Generování obrázků pomocí AI, vylepšení vyprávění a ovládání - v058
+****************************************************************************************************
+- What's New (CS):
+  **⚠️ EXPERIMENTÁLNÍ VĚTEV (BETA VE STEAMU)**
+  Tato verze je aktuálně dostupná pouze v **Experimentální větvi** ve službě Steam. Pro její aktivaci:
+  1. Klikněte pravým tlačítkem na **RolemIAster** ve své knihovně Steam.
+  2. Vyberte **Vlastnosti...**
+  3. Přejděte na záložku **Betas**.
+  4. V sekci "Účast na beta verzi" vyberte z rozbalovací nabídky **experimental**.
+  **Novinka: První fáze generování obrázků pomocí AI**
+  - 🎨 **Váš svět v obrazech:** Integroval jsem počáteční systém generování obrázků pomocí umělé inteligence. Během hraní se systém snaží generovat portréty a krajiny, které doplňují atmosféru vaší hry.
+  - 🖼️ **Dynamická pozadí:** Obrázky se generují na pozadí, aniž by zastavily vaši hru. Uvidíte, jak se postupně objevují na pozadí, na kartách postav a v Kodexu.
+  - ⚡ **Rychlost na míru:** Nová sekce ve Vizuálním nastavení. Vyberte si mezi "Rychlá" (1 krok), "Střední" (2 kroky) nebo "Vysoká" (4 kroky) pro přizpůsobení času generování výkonu vašeho počítače.
+  - 🛠️ **Technická optimalizace:** AI model pro obrázky se načítá do **RAM (paměti)** a zpracovává se přes **CPU**, aniž by zabíral video paměť (VRAM). To zaručuje, že nebude narušovat výkon hlavní herní AI (LLM). Vyžaduje přibližně 5 GB dodatečné RAM, což se stále vejde do oficiálních minimálních požadavků Steamu.
+  - 📤 **Sdílejte svá dobrodružství:** Všechny vygenerované obrázky se automaticky ukládají. Najdete je ve složce: `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Výběr modelů (Pokročilé):** Pokud hru spustíte s parametrem `--advanced`, můžete nyní v panelu Vzhled vybrat, jaký AI model se má použít pro obrázky. To umožňuje nadšencům zkoušet různé verze Stable Diffusion optimalizované pro OpenVINO (soubory .xml/.bin).
+  **Vyprávění a mozek AI:**
+  - 🧠 **Konec smyček:** Byla zavedena nová "Paměťová doktrína" do AI. Nyní lépe rozlišuje mezi "vzpomínkami" (co se již stalo) a "přítomností" (co se právě děje). To pomáhá snížit případy, kdy se AI opakovala nebo se zasekla.
+  - 📜 **Historické archivy:** Systém prezentuje vaše vzpomínky AI jako "Uzavřený historický archiv", což jí usnadňuje využití těchto informací jako reference pro posun příběhu.
+  - ⚡ **Optimalizované instrukce:** Byl vylepšen způsob, jakým hra žádá o vyprávění ve vašem jazyce, čímž se uvolnila kapacita modelu, aby se mohl soustředit na kreativitu.
+  - 👁️ **Narativní zaměření:** Bylo přepsáno vnímání AI. Nyní lépe chápe, které prvky jsou "statické pozadí" a neměla by je zbytečně opakovat v každém odstavci.
+  - 🔀 **Jasnější rozhodnutí:** AI nyní nabízí jasnější únikové cesty. Její návrhy (tlačítka) se dělí na zkoumání prostředí (Prohloubit) nebo změnu směru (Odchýlit se).
+  - 🫵 **Přímé oslovení:** Základní instrukce byla upravena tak, aby vám AI tykala, což zlepšuje osobní vtažení do děje.
+  **Tvorba postavy:**
+  - 🖼️ **Portréty postav:** Při generování postavy pomocí AI se systém pokusí vytvořit portrét na základě věku, profese a popisu. Mějte na paměti, že se jedná o prvotní verzi a věrnost (zejména u věku) se může lišit v závislosti na použitém modelu. (Stále provádím testy, ale začátek je dobrý).
+  - 🎲 **Spolehlivé náhodné generování:** Opravena chyba, kdy tlačítko "Generovat pomocí AI" mohlo na první pokus selhat a ponechat pole prázdná. Nyní systém inteligentní opravy zajišťuje, že odpověď je vždy platná.
+
+****************************************************************************************************
 15/02/2026 02:57 - Přímé psaní, opravy stability a detekce - Beta_v057
 ****************************************************************************************************
 - What's New (CS):
