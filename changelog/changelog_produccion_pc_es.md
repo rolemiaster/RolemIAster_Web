@@ -1,17 +1,33 @@
 ****************************************************************************************************
-15/02/2026 02:57 - Escritura Directa, Correcciones de Estabilidad y Detección d - Beta_v057
-
+17/02/2026 17:07 - Generación de Imágenes por IA, Mejoras Narrativas y Control - Beta_v057
 ****************************************************************************************************
 - Novedades (ES):
-  **Estabilidad:**
-  - 🛠️ **Adiós a los Crashes de Configuración:** Corregidos varios fallos que ocurrían bajo ciertas condiciones y que impedían abrir o modificar la configuración de IA al cambiar de modelo o reiniciar valores.
-  - 🗃️ **Base de Datos Silenciosa:** El molesto aviso de "Base de Datos Incompatible" al iniciar el juego ya no aparecerá si tu base de datos está bien. Solo se mostrará cuando haya un cambio estructural real que requiera migración.
+  **⚠️ RAMA EXPERIMENTAL (BETA DE STEAM)**
+  Esta versión está disponible actualmente solo en la **Rama Experimental** de Steam. Para activarla:
+  1. Haz clic derecho sobre **RolemIAster** en tu Biblioteca de Steam.
+  2. Selecciona **Propiedades...**
+  3. Ve a la pestaña **Betas**.
+  4. En "Participación en la beta", selecciona **experimental** en el desplegable.
   
-  **Experiencia de Juego:**
-  - 🎯 **Control de Precisión en IA:** Ahora puedes escribir manualmente los valores de Contexto, Tokens, Temperatura o Capas GPU directamente en un campo numérico junto al slider. ¡Ya no dependes solo de las "cremalleras"! Ambos controles están sincronizados: mueve el slider y el número se actualiza, o escribe el número y el slider se mueve.
-  - ⌨️ **Escritura Directa:** ¡Ya no necesitas hacer clic en el recuadro de texto para escribir tu acción! Ahora puedes empezar a teclear directamente mientras estés en la pantalla de juego. Si interactúas con el inventario u otro panel y luego quieres escribir, simplemente empieza a teclear sin necesidad de seleccionar nada. El sistema redirige tus pulsaciones automáticamente al campo de acción. No interfiere con menús, diálogos ni atajos del sistema.
+  **Novedad: Primera fase de Generación de Imágenes por IA**
+  - 🎨 **Tu Mundo en Imágenes:** He integrado un sistema inicial de generación de imágenes por Inteligencia Artificial. A medida que juegas, el sistema intenta generar retratos y paisajes que acompañen la ambientación de tu partida.
+  - 🖼️ **Fondos Dinámicos:** Las imágenes se generan en segundo plano sin detener tu partida. Verás cómo aparecen progresivamente en el fondo, en las tarjetas de personajes y en el Códice.
+  - ⚡ **Velocidad a tu Medida:** Nueva sección en Configuración Visual. Elige entre "Rápida" (1 paso), "Media" (2 pasos) o "Alta" (4 pasos) para ajustar el tiempo de generación a la potencia de tu equipo.
+  - 🛠️ **Optimización Técnica:** El modelo de IA para imágenes se carga en la **RAM (Memory)** y se procesa vía **CPU**, sin ocupar memoria de vídeo (VRAM). Esto garantiza que no interfiera con el rendimiento de la IA principal del juego (LLM). Requiere unos 5GB de RAM adicionales, manteniéndose dentro de los requisitos mínimos oficiales de Steam.
+  - 📤 **Comparte tus Aventuras:** Todas las imágenes generadas se guardan automáticamente. Las encontrarás en la carpeta: `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Selector de Modelos (Avanzado):** Si inicias el juego con el parámetro `--advanced`, ahora puedes elegir qué modelo de IA usar para las imágenes desde el panel de Apariencia. Esto permite a los entusiastas probar diferentes versiones de Stable Diffusion optimizadas para OpenVINO (archivos .xml/.bin).
   
-  Algunos cambios menores más...
+  **Narrativa y Cerebro IA:**
+  - 🧠 **Fin de los Bucles:** Se ha implantado una nueva "Doctrina de Memoria" en la IA. Ahora distingue mejor entre "recuerdos" (lo que ya pasó) y el "presente" (lo que está pasando). Esto ayuda a reducir los casos donde la IA se repetía o quedaba atascada.
+  - 📜 **Archivos Históricos:** El sistema presenta tus recuerdos a la IA como un "Archivo Histórico Cerrado", facilitando que use esa información como referencia para avanzar la historia.
+  - ⚡ **Instrucciones Optimizadas:** Se ha mejorado la forma en que el juego solicita la narración en tu idioma, liberando capacidad del modelo para concentrarse en la creatividad.
+  - 👁️ **Foco Narrativo:** Se ha reescrito la percepción de la IA. Ahora entiende mejor qué elementos son "fondo estático" y no debería repetirlos innecesariamente en cada párrafo.
+  - 🔀 **Decisiones Más Claras:** La IA ahora ofrece vías de escape más definidas. Sus sugerencias (botones) se dividen entre investigar el entorno (Profundizar) o cambiar de rumbo (Divergir).
+  - 🫵 **Tratamiento Directo:** Se ha ajustado la instrucción base para asegurar que la IA te trate de "Tú", mejorando la inmersión personal.
+  
+  **Creación de Personaje:**
+  - 🖼️ **Retratos de Personaje:** Al generar un personaje con IA, el sistema intenta crear un retrato basado en su edad, profesión y descripción. Ten en cuenta que es una versión inicial y la fidelidad (especialmente en la edad) puede variar según el modelo utilizado. (sigo  haciendo pruebas pero el inicio es bueno)
+  - 🎲 **Generación Aleatoria Fiable:** Corregido un fallo donde el botón "Generar con IA" podía fallar en el primer intento, dejando los campos vacíos. Ahora el sistema de corrección inteligente se asegura de que la respuesta sea siempre válida.
 
 ****************************************************************************************************
 14/02/2026 21:48 - Sincronización de Contexto y Control de Respuesta IA - Beta_v056
