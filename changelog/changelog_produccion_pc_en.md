@@ -1,8 +1,30 @@
 ****************************************************************************************************
-17/02/2026 17:53 - Generación de Imágenes por IA, Mejoras Narrativas y Control - EXPERIMENTAL_v058
+17/02/2026 19:56 - AI Image Generation, Narrative Improvements, and Control - v058
 ****************************************************************************************************
 - What's New (EN):
-  Generación de Imágenes por IA, Mejoras Narrativas y Control (English translation pending)
+  **⚠️ EXPERIMENTAL BRANCH (STEAM BETA)**
+  This version is currently available only on the Steam **Experimental Branch**. To activate it:
+  1. Right-click on **RolemIAster** in your Steam Library.
+  2. Select **Properties...**
+  3. Go to the **Betas** tab.
+  4. Under "Beta Participation", select **experimental** from the dropdown.
+  **New: First Phase of AI Image Generation**
+  - 🎨 **Your World in Images:** I have integrated an initial Artificial Intelligence image generation system. As you play, the system attempts to generate portraits and landscapes that accompany your game's setting.
+  - 🖼️ **Dynamic Backgrounds:** Images are generated in the background without pausing your game. You will see them appear progressively in the background, on character cards, and in the Codex.
+  - ⚡ **Customizable Speed:** New section in Visual Settings. Choose between "Fast" (1 step), "Medium" (2 steps), or "High" (4 steps) to adjust the generation time to your computer's power.
+  - 🛠️ **Technical Optimization:** The AI image model loads into **RAM (Memory)** and processes via **CPU**, without taking up video memory (VRAM). This ensures it does not interfere with the performance of the game's main AI (LLM). It requires about 5GB of additional RAM, staying within Steam's official minimum requirements.
+  - 📤 **Share Your Adventures:** All generated images are saved automatically. You will find them in the folder: `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Model Selector (Advanced):** If you launch the game with the `--advanced` parameter, you can now choose which AI model to use for images from the Appearance panel. This allows enthusiasts to test different Stable Diffusion versions optimized for OpenVINO (.xml/.bin files).
+  **Narrative and AI Brain:**
+  - 🧠 **End of Loops:** A new "Memory Doctrine" has been implanted in the AI. It now better distinguishes between "memories" (what already happened) and the "present" (what is happening). This helps reduce cases where the AI repeated itself or got stuck.
+  - 📜 **Historical Archives:** The system presents your memories to the AI as a "Closed Historical Archive", making it easier for it to use that information as a reference to advance the story.
+  - ⚡ **Optimized Instructions:** The way the game requests narration in your language has been improved, freeing up model capacity to focus on creativity.
+  - 👁️ **Narrative Focus:** The AI's perception has been rewritten. It now better understands which elements are "static background" and shouldn't repeat them unnecessarily in every paragraph.
+  - 🔀 **Clearer Decisions:** The AI now offers more defined escape routes. Its suggestions (buttons) are divided between investigating the environment (Deepen) or changing course (Diverge).
+  - 🫵 **Direct Address:** The base instruction has been adjusted to ensure the AI addresses you as "You", improving personal immersion.
+  **Character Creation:**
+  - 🖼️ **Character Portraits:** When generating a character with AI, the system attempts to create a portrait based on their age, profession, and description. Keep in mind this is an initial version and fidelity (especially regarding age) may vary depending on the model used. (I'm still running tests, but it's a good start)
+  - 🎲 **Reliable Random Generation:** Fixed a bug where the "Generate with AI" button could fail on the first attempt, leaving fields empty. Now the smart correction system ensures the response is always valid.
 
 ****************************************************************************************************
 15/02/2026 02:57 - Direct Typing, Stability Fixes, and Detection - Beta_v057
