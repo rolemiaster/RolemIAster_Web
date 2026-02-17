@@ -1,262 +1,28 @@
 language,Description,Title
-arabic,"**الاستقرار:**
-- 🛠️ **وداعاً لأعطال الإعدادات:** تم إصلاح العديد من الأخطاء التي كانت تحدث في ظل ظروف معينة وتمنع فتح أو تعديل إعدادات الذكاء الاصطناعي عند تغيير النموذج أو إعادة تعيين القيم.
-- 🗃️ **قاعدة بيانات صامتة:** لن يظهر التحذير المزعج ""قاعدة بيانات غير متوافقة"" عند بدء اللعبة بعد الآن إذا كانت قاعدة بياناتك سليمة. سيظهر فقط عند وجود تغيير هيكلي حقيقي يتطلب الترحيل.
+spanish,"**⚠️ RAMA EXPERIMENTAL (BETA DE STEAM)**
+Esta versión está disponible actualmente solo en la **Rama Experimental** de Steam. Para activarla:
+1. Haz clic derecho sobre **RolemIAster** en tu Biblioteca de Steam.
+2. Selecciona **Propiedades...**
+3. Ve a la pestaña **Betas**.
+4. En ""Participación en la beta"", selecciona **experimental** en el desplegable.
 
-**تجربة اللعب:**
-- 🎯 **تحكم دقيق في الذكاء الاصطناعي:** يمكنك الآن كتابة قيم السياق (Context)، أو الرموز (Tokens)، أو الحرارة (Temperature)، أو طبقات GPU يدوياً مباشرة في حقل رقمي بجوار شريط التمرير. لم تعد تعتمد على ""أشرطة التمرير"" فقط! كلا عنصري التحكم متزامنان: حرك الشريط وسيتم تحديث الرقم، أو اكتب الرقم وسيتحرك الشريط.
-- ⌨️ **الكتابة المباشرة:** لم تعد بحاجة للنقر داخل مربع النص لكتابة إجراءك! يمكنك الآن البدء في الكتابة مباشرة أثناء وجودك في شاشة اللعبة. إذا تفاعلت مع المخزون أو أي لوحة أخرى ثم أردت الكتابة، فقط ابدأ في الكتابة دون الحاجة لتحديد أي شيء. يقوم النظام بتوجيه نقرات المفاتيح تلقائياً إلى حقل الإجراء. لا يتعارض ذلك مع القوائم أو الحوارات أو اختصارات النظام.
+**Novedad: Primera fase de Generación de Imágenes por IA**
+- 🎨 **Tu Mundo en Imágenes:** He integrado un sistema inicial de generación de imágenes por Inteligencia Artificial. A medida que juegas, el sistema intenta generar retratos y paisajes que acompañen la ambientación de tu partida.
+- 🖼️ **Fondos Dinámicos:** Las imágenes se generan en segundo plano sin detener tu partida. Verás cómo aparecen progresivamente en el fondo, en las tarjetas de personajes y en el Códice.
+- ⚡ **Velocidad a tu Medida:** Nueva sección en Configuración Visual. Elige entre ""Rápida"" (1 paso), ""Media"" (2 pasos) o ""Alta"" (4 pasos) para ajustar el tiempo de generación a la potencia de tu equipo.
+- 🛠️ **Optimización Técnica:** El modelo de IA para imágenes se carga en la **RAM (Memory)** y se procesa vía **CPU**, sin ocupar memoria de vídeo (VRAM). Esto garantiza que no interfiera con el rendimiento de la IA principal del juego (LLM). Requiere unos 5GB de RAM adicionales, manteniéndose dentro de los requisitos mínimos oficiales de Steam.
+- 📤 **Comparte tus Aventuras:** Todas las imágenes generadas se guardan automáticamente. Las encontrarás en la carpeta: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Selector de Modelos (Avanzado):** Si inicias el juego con el parámetro `--advanced`, ahora puedes elegir qué modelo de IA usar para las imágenes desde el panel de Apariencia. Esto permite a los entusiastas probar diferentes versiones de Stable Diffusion optimizadas para OpenVINO (archivos .xml/.bin).
 
-بعض التغييرات الطفيفة الأخرى...",الكتابة المباشرة، إصلاحات الاستقرار واكتشاف...
-bulgarian,"**Стабилност:**
-- 🛠️ **Сбогом на сривовете в настройките:** Поправени са различни грешки, възникващи при определени условия, които пречеха на отварянето или промяната на настройките на ИИ при смяна на модела или нулиране на стойностите.
-- 🗃️ **Тиха база данни:** Досадното предупреждение „Несъвместима база данни“ при стартиране на играта вече няма да се появява, ако базата данни е изправна. Ще се показва само когато има реална структурна промяна, изискваща миграция.
+**Narrativa y Cerebro IA:**
+- 🧠 **Fin de los Bucles:** Se ha implantado una nueva ""Doctrina de Memoria"" en la IA. Ahora distingue mejor entre ""recuerdos"" (lo que ya pasó) y el ""presente"" (lo que está pasando). Esto ayuda a reducir los casos donde la IA se repetía o quedaba atascada.
+- 📜 **Archivos Históricos:** El sistema presenta tus recuerdos a la IA como un ""Archivo Histórico Cerrado"", facilitando que use esa información como referencia para avanzar la historia.
+- ⚡ **Instrucciones Optimizadas:** Se ha mejorado la forma en que el juego solicita la narración en tu idioma, liberando capacidad del modelo para concentrarse en la creatividad.
+- 👁️ **Foco Narrativo:** Se ha reescrito la percepción de la IA. Ahora entiende mejor qué elementos son ""fondo estático"" y no debería repetirlos innecesariamente en cada párrafo.
+- 🔀 **Decisiones Más Claras:** La IA ahora ofrece vías de escape más definidas. Sus sugerencias (botones) se dividen entre investigar el entorno (Profundizar) o cambiar de rumbo (Divergir).
+- 🫵 **Tratamiento Directo:** Se ha ajustado la instrucción base para asegurar que la IA te trate de ""Tú"", mejorando la inmersión personal.
 
-**Игрово изживяване:**
-- 🎯 **Прецизен контрол на ИИ:** Вече можете да въвеждате ръчно стойностите за Контекст, Токени, Температура или GPU слоеве директно в цифрово поле до плъзгача. Вече не зависите само от „плъзгачите“! Двата контрола са синхронизирани: преместете плъзгача и числото се актуализира, или напишете числото и плъзгачът се премества.
-- ⌨️ **Директно писане:** Вече не е нужно да кликвате върху текстовото поле, за да напишете действието си! Сега можете да започнете да пишете директно, докато сте на екрана на играта. Ако взаимодействате с инвентара или друг панел и след това искате да пишете, просто започнете да пишете, без да е нужно да избирате нищо. Системата автоматично пренасочва натисканията на клавишите към полето за действие. Не пречи на менюта, диалози или системни клавишни комбинации.
-
-Още някои дребни промени...","Директно писане, поправки за стабилност и откриване"
-czech,"**Stabilita:**
-- 🛠️ **Sbohem pádům v nastavení:** Opraveno několik chyb, ke kterým docházelo za určitých podmínek a které bránily otevření nebo úpravě nastavení AI při změně modelu nebo resetování hodnot.
-- 🗃️ **Tichá databáze:** Otravné upozornění na „Nekompatibilní databázi“ při spuštění hry se již nebude zobrazovat, pokud je vaše databáze v pořádku. Zobrazí se pouze v případě, že dojde ke skutečné strukturální změně vyžadující migraci.
-
-**Herní zážitek:**
-- 🎯 **Přesné ovládání AI:** Nyní můžete ručně zadávat hodnoty kontextu, tokenů, teploty nebo vrstev GPU přímo do číselného pole vedle posuvníku. Už nejste odkázáni jen na posuvníky! Oba ovládací prvky jsou synchronizované: pohněte posuvníkem a číslo se aktualizuje, nebo napište číslo a posuvník se posune.
-- ⌨️ **Přímé psaní:** Pro napsání akce už nemusíte klikat do textového pole! Nyní můžete začít psát rovnou, jakmile jste na herní obrazovce. Pokud pracujete s inventářem nebo jiným panelem a pak chcete psát, prostě začněte psát bez nutnosti cokoli vybírat. Systém automaticky přesměruje vaše stisky kláves do pole pro akci. Nekoliduje s menu, dialogy ani systémovými zkratkami.
-
-A několik dalších menších změn...","Přímé psaní, opravy stability a detekce"
-danish,"**Stabilitet:**
-- 🛠️ **Farvel til konfigurationsnedbrud:** Rettet adskillige fejl, der opstod under visse forhold, og som forhindrede åbning eller ændring af AI-konfigurationen ved modelskift eller nulstilling af værdier.
-- 🗃️ **Stille database:** Den irriterende advarsel om ""Inkompatibel database"" ved spilstart vises ikke længere, hvis din database er i orden. Den vises kun, når der er en reel strukturel ændring, der kræver migrering.
-
-**Spiloplevelse:**
-- 🎯 **Præcisionskontrol i AI:** Nu kan du manuelt skrive værdierne for Kontekst, Tokens, Temperatur eller GPU-lag direkte i et talfelt ved siden af skyderen. Du er ikke længere kun afhængig af ""skyderne""! Begge kontroller er synkroniserede: flyt skyderen, og tallet opdateres, eller skriv tallet, og skyderen flytter sig.
-- ⌨️ **Direkte skrivning:** Du behøver ikke længere klikke i tekstfeltet for at skrive din handling! Nu kan du begynde at taste direkte, mens du er på spilskærmen. Hvis du interagerer med inventaret eller et andet panel og derefter vil skrive, skal du blot begynde at taste uden at skulle vælge noget. Systemet omdirigerer automatisk dine tastetryk til handlingsfeltet. Det forstyrrer ikke menuer, dialoger eller systemgenveje.
-
-Nogle flere mindre ændringer...","Direkte skrivning, stabilitetsrettelser og detektion"
-german,"**Stabilität:**
-- 🛠️ **Keine Konfigurations-Abstürze mehr:** Mehrere Fehler wurden behoben, die unter bestimmten Bedingungen auftraten und das Öffnen oder Ändern der KI-Konfiguration beim Modellwechsel oder Zurücksetzen der Werte verhinderten.
-- 🗃️ **Stille Datenbank:** Die nervige Meldung „Inkompatible Datenbank“ beim Spielstart erscheint nicht mehr, wenn deine Datenbank in Ordnung ist. Sie wird nur angezeigt, wenn eine echte strukturelle Änderung vorliegt, die eine Migration erfordert.
-
-**Spielerlebnis:**
-- 🎯 **KI-Präzisionssteuerung:** Du kannst jetzt Werte für Kontext, Token, Temperatur oder GPU-Layer manuell in ein Zahlenfeld direkt neben dem Schieberegler eingeben. Du bist nicht mehr nur auf die Schieberegler angewiesen! Beide Steuerungen sind synchronisiert: Bewege den Regler und die Zahl aktualisiert sich, oder gib die Zahl ein und der Regler bewegt sich.
-- ⌨️ **Direkte Eingabe:** Du musst nicht mehr in das Textfeld klicken, um deine Aktion zu schreiben! Du kannst jetzt direkt anfangen zu tippen, während du im Spielbildschirm bist. Wenn du mit dem Inventar oder einem anderen Panel interagierst und dann schreiben möchtest, fang einfach an zu tippen, ohne etwas auswählen zu müssen. Das System leitet deine Tastenanschläge automatisch an das Aktionsfeld weiter. Es stört weder Menüs, Dialoge noch System-Shortcuts.
-
-Einige weitere kleinere Änderungen...","Direkte Eingabe, Stabilitätskorrekturen und Erkennung"
-greek,"**Σταθερότητα:**
-- 🛠️ **Αντίο στις Καταρρεύσεις Ρυθμίσεων:** Διορθώθηκαν διάφορα σφάλματα που συνέβαιναν υπό συγκεκριμένες συνθήκες και εμπόδιζαν το άνοιγμα ή την τροποποίηση των ρυθμίσεων AI κατά την αλλαγή μοντέλου ή την επαναφορά τιμών.
-- 🗃️ **Αθόρυβη Βάση Δεδομένων:** Η ενοχλητική προειδοποίηση ""Μη Συμβατή Βάση Δεδομένων"" κατά την εκκίνηση του παιχνιδιού δεν θα εμφανίζεται πλέον εάν η βάση δεδομένων σας είναι εντάξει. Θα εμφανίζεται μόνο όταν υπάρχει πραγματική δομική αλλαγή που απαιτεί μεταφορά.
-
-**Εμπειρία Παιχνιδιού:**
-- 🎯 **Έλεγχος Ακρίβειας AI:** Τώρα μπορείτε να εισάγετε χειροκίνητα τις τιμές για Πλαίσιο, Tokens, Θερμοκρασία ή Επίπεδα GPU απευθείας σε ένα αριθμητικό πεδίο δίπλα στο ρυθμιστικό. Δεν εξαρτάστε πλέον μόνο από τους ""ολισθητήρες""! Και τα δύο χειριστήρια είναι συγχρονισμένα: μετακινήστε το ρυθμιστικό και ο αριθμός ενημερώνεται, ή γράψτε τον αριθμό και το ρυθμιστικό μετακινείται.
-- ⌨️ **Άμεση Πληκτρολόγηση:** Δεν χρειάζεται πλέον να κάνετε κλικ στο πλαίσιο κειμένου για να γράψετε την ενέργειά σας! Τώρα μπορείτε να αρχίσετε να πληκτρολογείτε απευθείας ενώ βρίσκεστε στην οθόνη του παιχνιδιού. Αν αλληλεπιδράσετε με το απόθεμα ή κάποιο άλλο πάνελ και μετά θελήσετε να γράψετε, απλά αρχίστε να πληκτρολογείτε χωρίς να χρειάζεται να επιλέξετε τίποτα. Το σύστημα ανακατευθύνει αυτόματα τα πατήματα των πλήκτρων σας στο πεδίο ενεργειών. Δεν παρεμβαίνει σε μενού, διαλόγους ή συντομεύσεις συστήματος.
-
-Μερικές ακόμη μικρές αλλαγές...","Άμεση Πληκτρολόγηση, Διορθώσεις Σταθερότητας και Ανίχνευση"
-english,"**Stability:**
-- 🛠️ **Goodbye Config Crashes:** Fixed several crashes that occurred under certain conditions and prevented opening or modifying AI settings when changing models or resetting values.
-- 🗃️ **Silent Database:** The annoying ""Incompatible Database"" warning upon starting the game will no longer appear if your database is fine. It will only show when there is an actual structural change requiring migration.
-
-**Gameplay Experience:**
-- 🎯 **AI Precision Control:** You can now manually enter Context, Tokens, Temperature, or GPU Layer values directly into a numeric field next to the slider. You no longer rely solely on the sliders! Both controls are synchronized: move the slider and the number updates, or type the number and the slider moves.
-- ⌨️ **Direct Typing:** You no longer need to click on the text box to type your action! You can now start typing directly while on the game screen. If you interact with the inventory or another panel and then want to write, simply start typing without needing to select anything. The system automatically redirects your keystrokes to the action field. It does not interfere with menus, dialogues, or system shortcuts.
-
-Plus a few more minor changes...","Direct Typing, Stability Fixes, and Detection"
-spanish,"**Estabilidad:**
-- 🛠️ **Adiós a los Crashes de Configuración:** Corregidos varios fallos que ocurrían bajo ciertas condiciones y que impedían abrir o modificar la configuración de IA al cambiar de modelo o reiniciar valores.
-- 🗃️ **Base de Datos Silenciosa:** El molesto aviso de ""Base de Datos Incompatible"" al iniciar el juego ya no aparecerá si tu base de datos está bien. Solo se mostrará cuando haya un cambio estructural real que requiera migración.
-
-**Experiencia de Juego:**
-- 🎯 **Control de Precisión en IA:** Ahora puedes escribir manualmente los valores de Contexto, Tokens, Temperatura o Capas GPU directamente en un campo numérico junto al slider. ¡Ya no dependes solo de las ""cremalleras""! Ambos controles están sincronizados: mueve el slider y el número se actualiza, o escribe el número y el slider se mueve.
-- ⌨️ **Escritura Directa:** ¡Ya no necesitas hacer clic en el recuadro de texto para escribir tu acción! Ahora puedes empezar a teclear directamente mientras estés en la pantalla de juego. Si interactúas con el inventario u otro panel y luego quieres escribir, simplemente empieza a teclear sin necesidad de seleccionar nada. El sistema redirige tus pulsaciones automáticamente al campo de acción. No interfiere con menús, diálogos ni atajos del sistema.
-
-Algunos cambios menores más...","Escritura Directa, Correcciones de Estabilidad y Detección d"
-latam,"**Estabilidad:**
-- 🛠️ **Adiós a los Crashes de Configuración:** Se han corregido varios errores que ocurrían bajo ciertas condiciones y que impedían abrir o modificar la configuración de IA al cambiar de modelo o restablecer valores.
-- 🗃️ **Base de Datos Silenciosa:** El molesto aviso de ""Base de Datos Incompatible"" al iniciar el juego ya no aparecerá si tu base de datos está bien. Solo se mostrará cuando haya un cambio estructural real que requiera migración.
-
-**Experiencia de Juego:**
-- 🎯 **Control de Precisión en IA:** Ahora puedes escribir manualmente los valores de Contexto, Tokens, Temperatura o Capas de GPU directamente en un campo numérico junto al deslizador. ¡Ya no dependes solo de los ""deslizadores""! Ambos controles están sincronizados: mueve el deslizador y el número se actualiza, o escribe el número y el deslizador se mueve.
-- ⌨️ **Escritura Directa:** ¡Ya no necesitas hacer clic en el cuadro de texto para escribir tu acción! Ahora puedes empezar a teclear directamente mientras estés en la pantalla de juego. Si interactúas con el inventario u otro panel y luego quieres escribir, simplemente empieza a teclear sin necesidad de seleccionar nada. El sistema redirige tus teclas automáticamente al campo de acción. No interfiere con menús, diálogos ni atajos del sistema.
-
-Algunos cambios menores más...","Escritura Directa, Correcciones de Estabilidad y Detección d"
-finnish,"**Vakaus:**
-- 🛠️ **Hyvästit asetuskaatumisille:** Korjattu useita kaatumisia, jotka tapahtuivat tietyissä olosuhteissa ja estivät tekoälyasetusten avaamisen tai muokkaamisen mallia vaihdettaessa tai arvoja nollattaessa.
-- 🗃️ **Hiljainen tietokanta:** Ärsyttävä ""Yhteensopimaton tietokanta"" -ilmoitus peliä käynnistettäessä ei enää ilmesty, jos tietokantasi on kunnossa. Se näytetään vain, kun tapahtuu todellinen rakenteellinen muutos, joka vaatii migraatiota.
-
-**Pelikokemus:**
-- 🎯 **Tekoälyn tarkkuussäätö:** Voit nyt kirjoittaa kontekstin, tokenien, lämpötilan tai GPU-kerrosten arvot manuaalisesti suoraan numerokenttään liukusäätimen vieressä. Et ole enää pelkkien liukusäädinten varassa! Molemmat säätimet on synkronoitu: liikuta säädintä ja numero päivittyy, tai kirjoita numero ja säädin liikkuu.
-- ⌨️ **Suorakirjoitus:** Sinun ei enää tarvitse napsauttaa tekstikenttää kirjoittaaksesi toimintosi! Nyt voit alkaa kirjoittaa suoraan peliruudulla ollessasi. Jos olet vuorovaikutuksessa inventaarion tai muun paneelin kanssa ja haluat sitten kirjoittaa, ala vain kirjoittaa valitsematta mitään. Järjestelmä ohjaa painalluksesi automaattisesti toimintokenttään. Se ei häiritse valikoita, dialogeja eikä järjestelmän pikanäppäimiä.
-
-Lisäksi joitakin pienempiä muutoksia...","Suorakirjoitus, vakauskorjauksia ja tunnistus"
-french,"**Stabilité :**
-- 🛠️ **Adieu les Plantages de Configuration :** Correction de plusieurs bugs survenant sous certaines conditions qui empêchaient d'ouvrir ou de modifier la configuration de l'IA lors du changement de modèle ou de la réinitialisation des valeurs.
-- 🗃️ **Base de Données Silencieuse :** L'avertissement gênant ""Base de Données Incompatible"" au lancement du jeu n'apparaîtra plus si votre base de données est saine. Il ne s'affichera qu'en cas de changement structurel réel nécessitant une migration.
-
-**Expérience de Jeu :**
-- 🎯 **Contrôle de Précision de l'IA :** Vous pouvez désormais saisir manuellement les valeurs de Contexte, Tokens, Température ou Couches GPU directement dans un champ numérique à côté du curseur. Vous ne dépendez plus uniquement des ""curseurs"" ! Les deux commandes sont synchronisées : déplacez le curseur et le nombre se met à jour, ou écrivez le nombre et le curseur se déplace.
-- ⌨️ **Saisie Directe :** Plus besoin de cliquer dans la zone de texte pour écrire votre action ! Vous pouvez maintenant commencer à taper directement lorsque vous êtes sur l'écran de jeu. Si vous interagissez avec l'inventaire ou un autre panneau et que vous voulez ensuite écrire, commencez simplement à taper sans rien sélectionner. Le système redirige automatiquement vos frappes vers le champ d'action. Cela n'interfère pas avec les menus, les dialogues ni les raccourcis système.
-
-Quelques autres changements mineurs...","Saisie Directe, Correctifs de Stabilité et Détection d"
-hungarian,"**Stabilitás:**
-- 🛠️ **Viszlát, konfigurációs összeomlások:** Különböző hibák javítva, amelyek bizonyos körülmények között előfordultak, és megakadályozták az MI-beállítások megnyitását vagy módosítását modellváltáskor vagy az értékek alaphelyzetbe állításakor.
-- 🗃️ **Csendes adatbázis:** A játék indításakor megjelenő zavaró „Inkompatibilis adatbázis” figyelmeztetés többé nem jelenik meg, ha az adatbázisod rendben van. Csak akkor jelenik meg, ha valódi szerkezeti változás történt, amely migrációt igényel.
-
-**Játékélmény:**
-- 🎯 **Precíziós MI-vezérlés:** Mostantól manuálisan is beírhatod a Kontextus, Tokenek, Hőmérséklet vagy GPU-rétegek értékeit közvetlenül a csúszka melletti numerikus mezőbe. Többé nem függsz kizárólag a csúszkáktól! A két vezérlő szinkronban van: mozgasd a csúszkát, és a szám frissül, vagy írd be a számot, és a csúszka mozog.
-- ⌨️ **Közvetlen írás:** Többé nem kell a szövegdobozra kattintanod a cselekvésed beírásához! Mostantól közvetlenül elkezdhetsz gépelni, amíg a játék képernyőjén vagy. Ha az eszköztárral vagy más panellel lépsz interakcióba, majd írni szeretnél, egyszerűen kezdj el gépelni anélkül, hogy bármit is ki kellene jelölnöd. A rendszer a billentyűleütéseidet automatikusan a cselekvés mezőbe irányítja. Nem zavarja a menüket, párbeszédpaneleket és a rendszer gyorsbillentyűit.
-
-További kisebb változtatások...","Közvetlen írás, stabilitási javítások és észlelés"
-indonesian,"**Stabilitas:**
-- 🛠️ **Selamat Tinggal Crash Konfigurasi:** Memperbaiki beberapa bug yang terjadi dalam kondisi tertentu yang mencegah pembukaan atau pengubahan pengaturan AI saat mengganti model atau mereset nilai.
-- 🗃️ **Database Senyap:** Peringatan mengganggu ""Database Tidak Kompatibel"" saat memulai game tidak akan muncul lagi jika database Anda baik-baik saja. Peringatan ini hanya akan muncul ketika ada perubahan struktural nyata yang memerlukan migrasi.
-
-**Pengalaman Bermain:**
-- 🎯 **Kontrol Presisi AI:** Sekarang Anda dapat mengetik nilai untuk Konteks, Token, Temperatur, atau Layer GPU secara manual langsung di kolom angka di sebelah slider. Anda tidak lagi hanya bergantung pada ""slider""! Kedua kontrol disinkronkan: gerakkan slider dan angkanya diperbarui, atau ketik angkanya dan slider akan bergerak.
-- ⌨️ **Pengetikan Langsung:** Anda tidak perlu lagi mengeklik kotak teks untuk menulis tindakan Anda! Sekarang Anda dapat mulai mengetik langsung saat berada di layar permainan. Jika Anda berinteraksi dengan inventaris atau panel lain dan kemudian ingin menulis, cukup mulai mengetik tanpa perlu memilih apa pun. Sistem secara otomatis mengalihkan ketikan Anda ke kolom tindakan. Ini tidak mengganggu menu, dialog, atau pintasan sistem.
-
-Beberapa perubahan kecil lainnya...","Pengetikan Langsung, Perbaikan Stabilitas dan Deteksi"
-italian,"**Stabilità:**
-- 🛠️ **Addio ai crash di configurazione:** Corretti diversi bug che si verificavano in determinate condizioni e che impedivano di aprire o modificare le impostazioni dell'IA quando si cambiava modello o si ripristinavano i valori.
-- 🗃️ **Database silenzioso:** Il fastidioso avviso di ""Database incompatibile"" all'avvio del gioco non apparirà più se il tuo database è corretto. Verrà mostrato solo in caso di una reale modifica strutturale che richiede una migrazione.
-
-**Esperienza di gioco:**
-- 🎯 **Controllo di precisione IA:** Ora puoi inserire manualmente i valori di Contesto, Token, Temperatura o Livelli GPU direttamente in un campo numerico accanto al cursore. Non dipendi più solo dalle ""barre di scorrimento""! Entrambi i controlli sono sincronizzati: sposta il cursore e il numero si aggiorna, oppure scrivi il numero e il cursore si muove.
-- ⌨️ **Scrittura diretta:** Non è più necessario cliccare sulla casella di testo per scrivere la tua azione! Ora puoi iniziare a digitare direttamente mentre sei nella schermata di gioco. Se interagisci con l'inventario o un altro pannello e poi vuoi scrivere, inizia semplicemente a digitare senza dover selezionare nulla. Il sistema reindirizza automaticamente i tasti premuti al campo di azione. Non interferisce con menu, finestre di dialogo o scorciatoie di sistema.
-
-Altre modifiche minori...","Scrittura diretta, correzioni di stabilità e rilevamento d"
-japanese,"**安定性:**
-- 🛠️ **設定時のクラッシュを解消:** 特定の条件下で、モデルの変更や値のリセット時にAI設定を開いたり変更できなくなる複数の不具合を修正しました。
-- 🗃️ **データベース通知の改善:** ゲーム起動時に表示される煩わしい「互換性のないデータベース」という警告は、データベースが正常であれば表示されなくなりました。移行が必要な構造的な変更がある場合にのみ表示されます。
-
-**プレイ体験:**
-- 🎯 **AI設定の精密制御:** コンテキスト、トークン、温度、GPUレイヤーの値を、スライダー横の数値フィールドに直接入力できるようになりました。もうスライダーの微調整だけに頼る必要はありません！両方の操作は同期しており、スライダーを動かせば数値が変わり、数値を入力すればスライダーが動きます。
-- ⌨️ **直接入力:** アクションを入力するためにテキストボックスをクリックする必要はもうありません！ゲーム画面にいる間は、直接タイピングを開始できます。インベントリや他のパネルを操作した後でも、何も選択せずにキーを叩くだけで入力可能です。システムが自動的にキー入力をアクションフィールドに転送します。メニュー、ダイアログ、システムショートカットと干渉することはありません。
-
-その他、いくつかの細かな変更...",直接入力、安定性の修正、検出機能の改善
-korean,"**안정성:**
-- 🛠️ **설정 크래시 해결:** 특정 조건에서 모델을 변경하거나 값을 초기화할 때 AI 설정을 열거나 수정할 수 없던 여러 오류를 수정했습니다.
-- 🗃️ **조용한 데이터베이스:** 데이터베이스에 문제가 없다면 게임 시작 시 더 이상 성가신 ""호환되지 않는 데이터베이스"" 경고가 나타나지 않습니다. 마이그레이션이 필요한 실제 구조적 변경이 있을 때만 표시됩니다.
-
-**게임 경험:**
-- 🎯 **AI 정밀 제어:** 이제 슬라이더 옆의 숫자 필드에 컨텍스트, 토큰, 온도 또는 GPU 레이어 값을 직접 입력할 수 있습니다. 더 이상 슬라이더 조절에만 의존할 필요가 없습니다! 두 컨트롤은 동기화되어 있어, 슬라이더를 움직이면 숫자가 업데이트되고 숫자를 입력하면 슬라이더가 움직입니다.
-- ⌨️ **직접 입력:** 이제 행동을 입력하기 위해 텍스트 상자를 클릭할 필요가 없습니다! 게임 화면에 있는 동안 바로 타이핑을 시작할 수 있습니다. 인벤토리나 다른 패널을 사용한 후 글을 쓰고 싶다면, 별도 선택 없이 타이핑을 시작하세요. 시스템이 자동으로 키 입력을 행동 필드로 전달합니다. 메뉴, 대화 또는 시스템 단축키를 방해하지 않습니다.
-
-기타 사소한 변경 사항들...","직접 입력, 안정성 수정 및 감지"
-dutch,"**Stabiliteit:**
-- 🛠️ **Vaarwel configuratiecrashes:** Diverse fouten verholpen die onder bepaalde omstandigheden optraden en het openen of wijzigen van AI-instellingen verhinderden bij het wisselen van model of het resetten van waarden.
-- 🗃️ **Stille database:** De vervelende melding ""Niet-compatibele database"" bij het opstarten van het spel verschijnt niet meer als je database in orde is. Deze wordt alleen getoond wanneer er een echte structurele wijziging is die migratie vereist.
-
-**Spelervaring:**
-- 🎯 **Precisiecontrole in AI:** Je kunt nu handmatig de waarden voor Context, Tokens, Temperatuur of GPU-lagen direct invoeren in een numeriek veld naast de schuifregelaar. Je bent niet langer alleen afhankelijk van de schuifregelaars! Beide bedieningselementen zijn gesynchroniseerd: beweeg de schuifregelaar en het getal wordt bijgewerkt, of typ het getal en de schuifregelaar beweegt.
-- ⌨️ **Direct typen:** Je hoeft niet langer op het tekstvak te klikken om je actie te schrijven! Je kunt nu direct beginnen met typen terwijl je in het spelscherm bent. Als je interactie hebt met de inventaris of een ander paneel en vervolgens wilt schrijven, begin dan gewoon met typen zonder iets te selecteren. Het systeem stuurt je toetsaanslagen automatisch door naar het actieveld. Het interfereert niet met menu's, dialogen of systeemsneltoetsen.
-
-En nog enkele kleine wijzigingen...","Direct typen, stabiliteitsfixes en detectie v"
-norwegian,"**Stabilitet:**
-- 🛠️ **Farvel til krasj i innstillinger:** Fikset flere feil som oppsto under visse forhold, og som hindret åpning eller endring av KI-innstillinger ved bytte av modell eller tilbakestilling av verdier.
-- 🗃️ **Stille database:** Den irriterende advarselen ""Ukompatibel database"" ved oppstart vil ikke lenger vises hvis databasen din er i orden. Den vises kun når det er en faktisk strukturell endring som krever migrering.
-
-**Spillopplevelse:**
-- 🎯 **Presisjonskontroll for KI:** Nå kan du skrive inn verdier for kontekst, tokens, temperatur eller GPU-lag manuelt i et tallfelt ved siden av glidebryteren. Du er ikke lenger avhengig av bare ""spakene""! Begge kontrollene er synkronisert: flytt glidebryteren og tallet oppdateres, eller skriv inn tallet og glidebryteren flytter seg.
-- ⌨️ **Direkte skriving:** Du trenger ikke lenger å klikke i tekstfeltet for å skrive handlingen din! Nå kan du begynne å skrive direkte mens du er i spillskjermen. Hvis du samhandler med inventaret eller et annet panel og deretter vil skrive, er det bare å begynne å skrive uten å måtte velge noe. Systemet omdirigerer tastetrykkene dine automatisk til handlingsfeltet. Det forstyrrer ikke menyer, dialoger eller systemsnarveier.
-
-Noen flere mindre endringer...","Direkte skriving, stabilitetsfikser og deteksjon"
-polish,"**Stabilność:**
-- 🛠️ **Koniec z awariami konfiguracji:** Naprawiono kilka błędów, które występowały w określonych warunkach i uniemożliwiały otwarcie lub modyfikację ustawień AI podczas zmiany modelu lub resetowania wartości.
-- 🗃️ **Dyskretna baza danych:** Irytujące powiadomienie o ""Niezgodnej bazie danych"" przy uruchamianiu gry nie będzie się już pojawiać, jeśli twoja baza danych jest w porządku. Wyświetli się tylko wtedy, gdy nastąpi rzeczywista zmiana strukturalna wymagająca migracji.
-
-**Rozgrywka:**
-- 🎯 **Precyzyjna kontrola AI:** Teraz możesz ręcznie wpisywać wartości Kontekstu, Tokenów, Temperatury lub Warstw GPU bezpośrednio w polu liczbowym obok suwaka. Nie musisz już polegać tylko na ""suwakach""! Oba elementy sterujące są zsynchronizowane: przesuń suwak, a liczba się zaktualizuje, lub wpisz liczbę, a suwak się przesunie.
-- ⌨️ **Bezpośrednie wpisywanie:** Nie musisz już klikać w pole tekstowe, aby wpisać swoją akcję! Teraz możesz zacząć pisać bezpośrednio na ekranie gry. Jeśli wchodzisz w interakcję z ekwipunkiem lub innym panelem, a następnie chcesz pisać, po prostu zacznij pisać bez konieczności zaznaczania czegokolwiek. System automatycznie przekieruje naciśnięcia klawiszy do pola akcji. Nie koliduje to z menu, oknami dialogowymi ani skrótami systemowymi.
-
-I kilka mniejszych zmian...","Bezpośrednie wpisywanie, poprawki stabilności i wykrywanie bazy"
-portuguese,"**Estabilidade:**
-- 🛠️ **Adeus aos Travamentos na Configuração:** Corrigidas várias falhas que ocorriam sob certas condições e impediam a abertura ou modificação da configuração da IA ao trocar de modelo ou redefinir valores.
-- 🗃️ **Banco de Dados Silencioso:** O aviso irritante de ""Banco de Dados Incompatível"" ao iniciar o jogo não aparecerá mais se o seu banco de dados estiver correto. Ele só será exibido quando houver uma mudança estrutural real que exija migração.
-
-**Experiência de Jogo:**
-- 🎯 **Controle de Precisão na IA:** Agora você pode digitar manualmente os valores de Contexto, Tokens, Temperatura ou Camadas da GPU diretamente em um campo numérico ao lado do slider. Você não depende mais apenas das ""barras deslizantes""! Ambos os controles estão sincronizados: mova o slider e o número atualiza, ou digite o número e o slider se move.
-- ⌨️ **Escrita Direta:** Você não precisa mais clicar na caixa de texto para escrever sua ação! Agora você pode começar a digitar diretamente enquanto estiver na tela de jogo. Se você interagir com o inventário ou outro painel e depois quiser escrever, basta começar a digitar sem precisar selecionar nada. O sistema redireciona o que você digita automaticamente para o campo de ação. Não interfere com menus, diálogos nem atalhos do sistema.
-
-Mais algumas pequenas mudanças...","Escrita Direta, Correções de Estabilidade e Detecção d"
-romanian,"**Stabilitate:**
-- 🛠️ **Adio Blocaje de Configurare:** Au fost corectate mai multe erori care apăreau în anumite condiții și împiedicau deschiderea sau modificarea configurației IA la schimbarea modelului sau resetarea valorilor.
-- 🗃️ **Bază de Date Silențioasă:** Avertismentul enervant de ""Bază de Date Incompatibilă"" la pornirea jocului nu va mai apărea dacă baza ta de date este în regulă. Se va afișa doar atunci când există o modificare structurală reală care necesită migrare.
-
-**Experiență de Joc:**
-- 🎯 **Control de Precizie IA:** Acum poți scrie manual valorile pentru Context, Token-uri, Temperatură sau Straturi GPU direct într-un câmp numeric de lângă glisor. Nu mai depinzi doar de ""glisoare""! Ambele controale sunt sincronizate: mișcă glisorul și numărul se actualizează, sau scrie numărul și glisorul se mișcă.
-- ⌨️ **Scriere Directă:** Nu mai este nevoie să dai clic în caseta de text pentru a scrie acțiunea! Acum poți începe să tastezi direct în timp ce te afli pe ecranul de joc. Dacă interacționezi cu inventarul sau cu alt panou și apoi vrei să scrii, pur și simplu începe să tastezi fără a fi nevoie să selectezi nimic. Sistemul redirecționează automat apăsările de taste către câmpul de acțiune. Nu interferează cu meniurile, dialogurile sau scurtăturile de sistem.
-
-Câteva modificări minore în plus...","Scriere Directă, Corecții de Stabilitate și Detectare d"
-russian,"**Стабильность:**
-- 🛠️ **Прощайте, сбои конфигурации:** Исправлено несколько ошибок, возникавших при определенных условиях и мешавших открытию или изменению настроек ИИ при смене модели или сбросе значений.
-- 🗃️ **Тихая база данных:** Надоедливое предупреждение ""Несовместимая база данных"" при запуске игры больше не будет появляться, если с вашей базой данных всё в порядке. Оно отобразится только при наличии реальных структурных изменений, требующих миграции.
-
-**Игровой процесс:**
-- 🎯 **Точный контроль ИИ:** Теперь вы можете вручную вводить значения контекста, токенов, температуры или слоёв GPU прямо в числовое поле рядом с ползунком. Вы больше не зависите только от ползунков! Оба элемента управления синхронизированы: сдвиньте ползунок, и число обновится, или введите число, и ползунок сдвинется.
-- ⌨️ **Прямой ввод:** Вам больше не нужно нажимать на текстовое поле, чтобы ввести своё действие! Теперь можно начинать печатать прямо на игровом экране. Если вы взаимодействуете с инвентарём или другой панелью, а затем хотите написать текст, просто начните печатать, ничего не выбирая. Система автоматически перенаправляет нажатия клавиш в поле действий. Это не мешает работе меню, диалогов и системных сочетаний клавиш.
-
-И некоторые другие мелкие изменения...","Прямой ввод, исправление стабильности и обнаружение"
-swedish,"**Stabilitet:**
-- 🛠️ **Inga fler inställningskrascher:** Åtgärdade flera fel som uppstod under vissa förhållanden och förhindrade öppning eller ändring av AI-inställningar vid byte av modell eller återställning av värden.
-- 🗃️ **Tyst databas:** Den irriterande varningen ""Inkompatibel databas"" vid spelstart visas inte längre om din databas är okej. Den visas bara när det sker en faktisk strukturell förändring som kräver migrering.
-
-**Spelupplevelse:**
-- 🎯 **Precisionskontroll för AI:** Nu kan du manuellt skriva in värden för Kontext, Tokens, Temperatur eller GPU-lager direkt i ett nummerfält bredvid reglaget. Du är inte längre begränsad till bara reglagen! Båda kontrollerna är synkroniserade: dra i reglaget så uppdateras siffran, eller skriv siffran så flyttas reglaget.
-- ⌨️ **Direktskrift:** Du behöver inte längre klicka i textrutan för att skriva din handling! Nu kan du börja skriva direkt när du befinner dig på spelskärmen. Om du interagerar med inventariet eller en annan panel och sedan vill skriva, börja bara skriva utan att behöva markera något. Systemet omdirigerar automatiskt dina knapptryckningar till handlingsfältet. Det stör inte menyer, dialoger eller systemgenvägar.
-
-Några fler mindre ändringar...","Direktskrift, Stabilitetsfixar och Detektering"
-thai,"**ความเสถียร:**
-- 🛠️ **บอกลาปัญหาการตั้งค่าขัดข้อง:** แก้ไขข้อผิดพลาดหลายประการที่เกิดขึ้นภายใต้เงื่อนไขบางอย่าง ซึ่งขัดขวางการเปิดหรือแก้ไขการตั้งค่า AI เมื่อมีการเปลี่ยนโมเดลหรือรีเซ็ตค่า
-- 🗃️ **ฐานข้อมูลแบบเงียบ:** การแจ้งเตือน ""ฐานข้อมูลไม่เข้ากัน"" ที่น่ารำคาญเมื่อเริ่มเกมจะไม่ปรากฏอีกต่อไปหากฐานข้อมูลของคุณปกติดี จะแสดงเฉพาะเมื่อมีการเปลี่ยนแปลงโครงสร้างจริงที่ต้องมีการย้ายข้อมูลเท่านั้น
-
-**ประสบการณ์การเล่น:**
-- 🎯 **การควบคุม AI ที่แม่นยำ:** ตอนนี้คุณสามารถระบุค่า Context, Tokens, Temperature หรือ GPU Layers ลงในช่องตัวเลขข้างแถบเลื่อนได้โดยตรง ไม่ต้องพึ่งแค่ ""แถบเลื่อน"" อีกต่อไป! ทั้งสองส่วนควบคุมทำงานร่วมกัน: เลื่อนแถบแล้วตัวเลขจะอัปเดต หรือพิมพ์ตัวเลขแล้วแถบจะเลื่อนตาม
-- ⌨️ **การพิมพ์โดยตรง:** ไม่ต้องคลิกที่กล่องข้อความเพื่อพิมพ์คำสั่งอีกต่อไป! ตอนนี้คุณสามารถเริ่มพิมพ์ได้ทันทีขณะอยู่ในหน้าจอเกม หากคุณกำลังดูช่องเก็บของหรือแผงอื่นแล้วต้องการพิมพ์ เพียงแค่เริ่มพิมพ์โดยไม่ต้องเลือกอะไรเลย ระบบจะส่งการกดแป้นพิมพ์ของคุณไปยังช่องคำสั่งโดยอัตโนมัติ โดยไม่รบกวนเมนู บทสนทนา หรือปุ่มลัดของระบบ
-
-และการเปลี่ยนแปลงเล็กน้อยอื่นๆ...","การพิมพ์โดยตรง, การแก้ไขความเสถียร และการตรวจจับ"
-turkish,"**Kararlılık:**
-- 🛠️ **Yapılandırma Çökmelerine Elveda:** Belirli koşullar altında meydana gelen ve model değiştirirken veya değerleri sıfırlarken YZ ayarlarının açılmasını ya da değiştirilmesini engelleyen çeşitli hatalar giderildi.
-- 🗃️ **Sessiz Veritabanı:** Oyun başlatılırken çıkan o can sıkıcı ""Uyumsuz Veritabanı"" uyarısı, veritabanınız sağlamsa artık görünmeyecek. Yalnızca geçiş gerektiren gerçek bir yapısal değişiklik olduğunda gösterilecek.
-
-**Oyun Deneyimi:**
-- 🎯 **YZ Hassas Kontrolü:** Artık Bağlam, Tokenlar, Sıcaklık veya GPU Katmanları değerlerini kaydırıcının yanındaki sayısal alana doğrudan manuel olarak yazabilirsiniz. Artık sadece ""kaydırıcılara"" bağlı değilsiniz! Her iki kontrol de senkronizedir: kaydırıcıyı hareket ettirirseniz sayı güncellenir, sayıyı yazarsanız kaydırıcı hareket eder.
-- ⌨️ **Doğrudan Yazma:** Eyleminizi yazmak için artık metin kutusuna tıklamanıza gerek yok! Artık oyun ekranındayken doğrudan yazmaya başlayabilirsiniz. Envanterle veya başka bir panelle etkileşime girip ardından yazmak isterseniz, hiçbir şeyi seçmenize gerek kalmadan yazmaya başlamanız yeterli. Sistem, tuş vuruşlarınızı otomatik olarak eylem alanına yönlendirir. Menüler, diyaloglar veya sistem kısayolları ile çakışmaz.
-
-Diğer bazı küçük değişiklikler...","Doğrudan Yazma, Kararlılık Düzeltmeleri ve Algılama"
-ukrainian,"**Стабільність:**
-- 🛠️ **Прощавайте, збої налаштувань:** Виправлено різні помилки, що виникали за певних умов і перешкоджали відкриттю або зміні налаштувань ШІ під час зміни моделі або скидання значень.
-- 🗃️ **Тиха база даних:** Настирливе попередження ""Несумісна база даних"" під час запуску гри більше не з'являтиметься, якщо з вашою базою даних усе гаразд. Воно відображатиметься лише тоді, коли відбудуться реальні структурні зміни, що вимагають міграції.
-
-**Ігровий досвід:**
-- 🎯 **Точний контроль ШІ:** Тепер ви можете вручну вводити значення контексту, токенів, температури або шарів графічного процесора (GPU) безпосередньо в числове поле поруч із повзунком. Ви більше не залежите лише від повзунків! Обидва елементи керування синхронізовані: перемістіть повзунок, і число оновиться, або введіть число, і повзунок переміститься.
-- ⌨️ **Пряме введення:** Вам більше не потрібно клацати по текстовому полю, щоб написати свою дію! Тепер ви можете починати друкувати безпосередньо перебуваючи на ігровому екрані. Якщо ви взаємодієте з інвентарем або іншою панеллю, а потім хочете написати, просто почніть друкувати, нічого не вибираючи. Система автоматично перенаправляє натискання клавіш у поле дії. Це не заважає меню, діалогам або системним клавішам.
-
-Та деякі інші незначні зміни...","Пряме введення, виправлення стабільності та виявлення"
-vietnamese,"**Tính ổn định:**
-- 🛠️ **Tạm biệt Treo Cấu hình:** Đã sửa nhiều lỗi xảy ra trong các điều kiện nhất định, gây cản trở việc mở hoặc sửa đổi cấu hình AI khi thay đổi mô hình hoặc đặt lại giá trị.
-- 🗃️ **Cơ sở dữ liệu Yên lặng:** Cảnh báo phiền toái ""Cơ sở dữ liệu không tương thích"" khi khởi động trò chơi sẽ không còn xuất hiện nếu cơ sở dữ liệu của bạn vẫn ổn. Nó sẽ chỉ hiển thị khi có thay đổi cấu trúc thực sự cần di chuyển dữ liệu.
-
-**Trải nghiệm Trò chơi:**
-- 🎯 **Kiểm soát Chính xác AI:** Giờ đây bạn có thể nhập thủ công các giá trị Ngữ cảnh, Token, Nhiệt độ hoặc Lớp GPU trực tiếp vào trường số bên cạnh thanh trượt. Không còn phải phụ thuộc hoàn toàn vào các ""thanh trượt"" nữa! Cả hai điều khiển đều được đồng bộ hóa: di chuyển thanh trượt thì số sẽ cập nhật, hoặc nhập số thì thanh trượt sẽ di chuyển.
-- ⌨️ **Nhập liệu Trực tiếp:** Bạn không cần phải nhấp vào hộp văn bản để nhập hành động nữa! Giờ đây, bạn có thể bắt đầu gõ phím trực tiếp khi đang ở màn hình trò chơi. Nếu bạn tương tác với kho đồ hoặc bảng điều khiển khác và sau đó muốn viết, chỉ cần bắt đầu gõ mà không cần chọn bất cứ thứ gì. Hệ thống tự động chuyển hướng các phím bấm của bạn vào trường hành động. Nó không can thiệp vào menu, hộp thoại hay phím tắt hệ thống.
-
-Một vài thay đổi nhỏ khác...","Nhập liệu Trực tiếp, Sửa lỗi Ổn định và Phát hiện"
-schinese,"**稳定性：**
-- 🛠️ **告别配置崩溃：** 修复了在特定条件下切换模型或重置数值时，导致无法打开或修改 AI 设置的多个崩溃问题。
-- 🗃️ **静默数据库：** 如果您的数据库没有问题，启动游戏时将不再弹出恼人的“数据库不兼容”警告。只有在发生需要迁移的实际结构性变更时，才会显示该提示。
-
-**游戏体验：**
-- 🎯 **AI 精确控制：** 现在，您可以直接在滑块旁的数字输入框中手动填写上下文、Token、温度或 GPU 层数的数值。不再只能靠拖动“滑块”了！这两个控件是同步的：拖动滑块数值会变，输入数值滑块会动。
-- ⌨️ **直接输入：** 填写行动时无需再点击文本框！现在，只要处于游戏界面，就可以直接开始打字。即使在操作了库存或其他面板后，想输入文字时也只需直接敲击键盘，无需选中任何区域。系统会自动将您的按键输入重定向至行动字段。此功能不会干扰菜单、对话框或系统快捷键。
-
-还有一些其他的细微改动……",直接输入、稳定性修复和检测
-tchinese,"**穩定性：**
-- 🛠️ **告別設定崩潰：** 修正了在特定條件下，切換模型或重置數值時導致無法開啟或修改 AI 設定的多項錯誤。
-- 🗃️ **安靜的資料庫：** 如果您的資料庫正常，啟動遊戲時將不再出現煩人的「資料庫不相容」警告。只有在發生需要遷移的實際結構變更時，才會顯示該提示。
-
-**遊戲體驗：**
-- 🎯 **AI 精準控制：** 現在您可以直接在滑桿旁的數值欄位中手動輸入 Context、Token、Temperature 或 GPU Layers 的數值。不再只能依賴滑桿調整！兩種控制方式已同步：移動滑桿數值會更新，輸入數值滑桿也會跟著移動。
-- ⌨️ **直接輸入：** 不再需要點擊文字框來輸入動作！現在您可以在遊戲畫面中直接開始打字。如果您剛與物品欄或其他面板互動完想要輸入，只需直接打字，無需選取任何東西。系統會自動將您的按鍵輸入導向至動作欄位。這不會干擾選單、對話框或系統快捷鍵。
-
-其他一些細微變更...",直接輸入、穩定性修正與偵測優化
+**Creación de Personaje:**
+- 🖼️ **Retratos de Personaje:** Al generar un personaje con IA, el sistema intenta crear un retrato basado en su edad, profesión y descripción. Ten en cuenta que es una versión inicial y la fidelidad (especialmente en la edad) puede variar según el modelo utilizado. (sigo  haciendo pruebas pero el inicio es bueno)
+- 🎲 **Generación Aleatoria Fiable:** Corregido un fallo donde el botón ""Generar con IA"" podía fallar en el primer intento, dejando los campos vacíos. Ahora el sistema de corrección inteligente se asegura de que la respuesta sea siempre válida.","Generación de Imágenes por IA, Mejoras Narrativas y Control"
+english,"Generación de Imágenes por IA, Mejoras Narrativas y Control (English translation pending)","Generación de Imágenes por IA, Mejoras Narrativas y Control"
