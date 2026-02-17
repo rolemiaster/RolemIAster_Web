@@ -1,5 +1,5 @@
 ****************************************************************************************************
-17/02/2026 17:07 - Generación de Imágenes por IA, Mejoras Narrativas y Control - Beta_v057
+17/02/2026 17:53 - Generación de Imágenes por IA, Mejoras Narrativas y Control - EXPERIMENTAL_v058
 ****************************************************************************************************
 - Novedades (ES):
   **⚠️ RAMA EXPERIMENTAL (BETA DE STEAM)**
@@ -28,6 +28,21 @@
   **Creación de Personaje:**
   - 🖼️ **Retratos de Personaje:** Al generar un personaje con IA, el sistema intenta crear un retrato basado en su edad, profesión y descripción. Ten en cuenta que es una versión inicial y la fidelidad (especialmente en la edad) puede variar según el modelo utilizado. (sigo  haciendo pruebas pero el inicio es bueno)
   - 🎲 **Generación Aleatoria Fiable:** Corregido un fallo donde el botón "Generar con IA" podía fallar en el primer intento, dejando los campos vacíos. Ahora el sistema de corrección inteligente se asegura de que la respuesta sea siempre válida.
+
+****************************************************************************************************
+15/02/2026 02:57 - Escritura Directa, Correcciones de Estabilidad y Detección d - Beta_v057
+
+****************************************************************************************************
+- Novedades (ES):
+  **Estabilidad:**
+  - 🛠️ **Adiós a los Crashes de Configuración:** Corregidos varios fallos que ocurrían bajo ciertas condiciones y que impedían abrir o modificar la configuración de IA al cambiar de modelo o reiniciar valores.
+  - 🗃️ **Base de Datos Silenciosa:** El molesto aviso de "Base de Datos Incompatible" al iniciar el juego ya no aparecerá si tu base de datos está bien. Solo se mostrará cuando haya un cambio estructural real que requiera migración.
+  
+  **Experiencia de Juego:**
+  - 🎯 **Control de Precisión en IA:** Ahora puedes escribir manualmente los valores de Contexto, Tokens, Temperatura o Capas GPU directamente en un campo numérico junto al slider. ¡Ya no dependes solo de las "cremalleras"! Ambos controles están sincronizados: mueve el slider y el número se actualiza, o escribe el número y el slider se mueve.
+  - ⌨️ **Escritura Directa:** ¡Ya no necesitas hacer clic en el recuadro de texto para escribir tu acción! Ahora puedes empezar a teclear directamente mientras estés en la pantalla de juego. Si interactúas con el inventario u otro panel y luego quieres escribir, simplemente empieza a teclear sin necesidad de seleccionar nada. El sistema redirige tus pulsaciones automáticamente al campo de acción. No interfiere con menús, diálogos ni atajos del sistema.
+  
+  Algunos cambios menores más...
 
 ****************************************************************************************************
 14/02/2026 21:48 - Sincronización de Contexto y Control de Respuesta IA - Beta_v056
