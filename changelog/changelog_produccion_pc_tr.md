@@ -1,4 +1,34 @@
 ****************************************************************************************************
+17/02/2026 07:20 - YZ Görüntü Oluşturma, Anlatı İyileştirmeleri ve Kontrol - EXPERIMENTAL_v057
+****************************************************************************************************
+- What's New (TR):
+  **⚠️ DENEYSEL DAL (STEAM BETA)**
+  Bu sürüm şu anda sadece Steam'in **Deneysel Dalı**nda mevcuttur. Etkinleştirmek için:
+  1. Steam Kütüphanenizdeki **RolemIAster** üzerine sağ tıklayın.
+  2. **Özellikler...** seçeneğini seçin.
+  3. **Betalar** sekmesine gidin.
+  4. "Beta Katılımı" kısmındaki açılır menüden **experimental** seçeneğini seçin.
+  
+  **Yenilik: YZ Görüntü Oluşturmanın İlk Aşaması**
+  - 🎨 **Görüntülerle Dünyanız:** Yapay Zeka ile bir başlangıç görüntü oluşturma sistemi entegre ettim. Siz oynadıkça sistem, oyununuzun atmosferine eşlik edecek portreler ve manzaralar oluşturmaya çalışır.
+  - 🖼️ **Dinamik Arka Planlar:** Görüntüler oyununuzu durdurmadan arka planda oluşturulur. Arka planda, karakter kartlarında ve Kodeks'te aşamalı olarak belirdiklerini göreceksiniz.
+  - ⚡ **Size Özel Hız:** Görsel Ayarlarda yeni bölüm. Oluşturma süresini donanımınızın gücüne göre ayarlamak için "Hızlı" (1 adım), "Orta" (2 adım) veya "Yüksek" (4 adım) arasından seçim yapın.
+  - 🛠️ **Teknik Optimizasyon:** Görüntü YZ modeli **RAM (Bellek)** üzerine yüklenir ve video belleğini (VRAM) işgal etmeden **CPU** üzerinden işlenir. Bu, oyunun ana YZ'sinin (LLM) performansına müdahale etmemesini sağlar. Resmi Steam minimum gereksinimleri dahilinde kalarak yaklaşık 5GB ek RAM gerektirir.
+  - 📤 **Maceralarınızı Paylaşın:** Oluşturulan tüm görüntüler otomatik olarak kaydedilir. Bunları şu klasörde bulabilirsiniz: `%APPDATA%/RolemIAster/custom_assets/images`
+  
+  **Anlatı ve YZ Beyni:**
+  - 🧠 **Döngülerin Sonu:** YZ'ye yeni bir "Hafıza Doktrini" yerleştirildi. Artık "anılar" (geçmişte olanlar) ile "şimdiki zaman" (şu anda olanlar) arasını daha iyi ayırt ediyor. Bu, YZ'nin kendini tekrarladığı veya takılı kaldığı durumları azaltmaya yardımcı olur.
+  - 📜 **Tarihi Arşivler:** Sistem, anılarınızı YZ'ye "Kapalı Tarihi Arşiv" olarak sunar, bu da hikayeyi ilerletmek için bu bilgiyi referans olarak kullanmasını kolaylaştırır.
+  - ⚡ **Optimize Edilmiş Talimatlar:** Oyunun sizin dilinizde anlatı talep etme şekli iyileştirildi, böylece modelin kapasitesi yaratıcılığa odaklanmak için serbest bırakıldı.
+  - 👁️ **Anlatı Odağı:** YZ'nin algısı yeniden yazıldı. Artık hangi öğelerin "statik arka plan" olduğunu ve bunları her paragrafta gereksiz yere tekrarlamaması gerektiğini daha iyi anlıyor.
+  - 🔀 **Daha Net Kararlar:** YZ artık daha belirgin kaçış yolları sunuyor. Önerileri (butonlar), ortamı araştırmak (Derinleşmek) veya rotayı değiştirmek (Sapmak) arasında bölünmüştür.
+  - 🫵 **Doğrudan Hitap:** YZ'nin size "Sen" diye hitap etmesini sağlamak için temel talimat ayarlandı, bu da kişisel sürükleyiciliği artırıyor.
+  
+  **Karakter Oluşturma:**
+  - 🖼️ **Karakter Portreleri:** YZ ile bir karakter oluştururken sistem yaşına, mesleğine ve tanımına göre bir portre oluşturmaya çalışır. Bunun bir başlangıç sürümü olduğunu ve doğruluğun (özellikle yaş konusunda) kullanılan modele göre değişebileceğini unutmayın. (Testlere devam ediyorum ancak başlangıç iyi)
+  - 🎲 **Güvenilir Rastgele Oluşturma:** "YZ ile Oluştur" butonunun ilk denemede başarısız olup alanları boş bırakabildiği bir hata düzeltildi. Artık akıllı düzeltme sistemi yanıtın her zaman geçerli olmasını sağlıyor.
+
+****************************************************************************************************
 17/02/2026 07:04 - YZ Görüntü Oluşturma, Anlatı İyileştirmeleri ve Kontrol - Beta_v058
 ****************************************************************************************************
 - What's New (TR):

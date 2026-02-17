@@ -1,4 +1,34 @@
 ****************************************************************************************************
+17/02/2026 07:20 - AI-billedgenerering, Fortælleforbedringer og Kontrol - EXPERIMENTAL_v057
+****************************************************************************************************
+- What's New (DA):
+  **⚠️ EKSPERIMENTEL GREN (STEAM BETA)**
+  Denne version er i øjeblikket kun tilgængelig i Steams **Eksperimentelle Gren**. Sådan aktiverer du den:
+  1. Højreklik på **RolemIAster** i dit Steam-bibliotek.
+  2. Vælg **Egenskaber...**
+  3. Gå til fanen **Betaer**.
+  4. Under "Betadeltagelse" vælger du **experimental** i rullemenuen.
+  
+  **Nyhed: Første fase af AI-billedgenerering**
+  - 🎨 **Din Verden i Billeder:** Jeg har integreret et indledende system til generering af billeder via kunstig intelligens. Mens du spiller, forsøger systemet at generere portrætter og landskaber, der passer til stemningen i dit spil.
+  - 🖼️ **Dynamiske Baggrunde:** Billederne genereres i baggrunden uden at stoppe dit spil. Du vil se dem dukke gradvist op i baggrunden, på karakterkort og i Codexet.
+  - ⚡ **Hastighed efter dit Behov:** Ny sektion i Visuelle Indstillinger. Vælg mellem "Hurtig" (1 trin), "Mellem" (2 trin) eller "Høj" (4 trin) for at justere genereringstiden til din computers ydeevne.
+  - 🛠️ **Teknisk Optimering:** AI-modellen til billeder indlæses i **RAM (Hukommelse)** og behandles via **CPU**, uden at optage videohukommelse (VRAM). Dette sikrer, at det ikke forstyrrer ydeevnen af spillets primære AI (LLM). Det kræver ca. 5 GB ekstra RAM, men holder sig inden for Steams officielle minimumskrav.
+  - 📤 **Del dine Eventyr:** Alle genererede billeder gemmes automatisk. Du finder dem i mappen: `%APPDATA%/RolemIAster/custom_assets/images`
+  
+  **Fortælling og AI-hjerne:**
+  - 🧠 **Slut med Sløjfer:** En ny "Hukommelsesdoktrin" er blevet implementeret i AI'en. Den skelner nu bedre mellem "minder" (hvad der allerede er sket) og "nutiden" (hvad der sker nu). Dette hjælper med at reducere tilfælde, hvor AI'en gentog sig selv eller gik i stå.
+  - 📜 **Historiske Arkiver:** Systemet præsenterer dine minder for AI'en som et "Lukket Historisk Arkiv", hvilket gør det lettere for den at bruge den information som reference til at drive historien fremad.
+  - ⚡ **Optimerede Instruktioner:** Måden, hvorpå spillet anmoder om fortællingen på dit sprog, er blevet forbedret, hvilket frigør kapacitet til, at modellen kan fokusere på kreativitet.
+  - 👁️ **Fortællingsfokus:** AI'ens opfattelse er blevet omskrevet. Den forstår nu bedre, hvilke elementer der er "statisk baggrund", og bør ikke gentage dem unødvendigt i hvert afsnit.
+  - 🔀 **Klarere Beslutninger:** AI'en tilbyder nu mere definerede flugtveje. Dens forslag (knapper) er opdelt mellem at undersøge omgivelserne (Fordybelse) eller ændre kurs (Afvigelse).
+  - 🫵 **Direkte Tiltale:** Grundinstruktionen er blevet justeret for at sikre, at AI'en tiltaler dig med "Du", hvilket forbedrer den personlige indlevelse.
+  
+  **Karakterskabelse:**
+  - 🖼️ **Karakterportrætter:** Når du genererer en karakter med AI, forsøger systemet at skabe et portræt baseret på alder, erhverv og beskrivelse. Bemærk, at det er en tidlig version, og nøjagtigheden (især med hensyn til alder) kan variere afhængigt af den anvendte model. (Jeg udfører stadig tests, men starten er god)
+  - 🎲 **Pålidelig Tilfældig Generering:** Rettede en fejl, hvor knappen "Generer med AI" kunne fejle i første forsøg og efterlade felterne tomme. Nu sikrer det intelligente korrektionssystem, at svaret altid er gyldigt.
+
+****************************************************************************************************
 17/02/2026 07:04 - AI-billedgenerering, Fortælleforbedringer og Kontrol - Beta_v058
 ****************************************************************************************************
 - What's New (DA):
