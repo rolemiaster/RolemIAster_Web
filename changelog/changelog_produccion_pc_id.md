@@ -1,30 +1,39 @@
 ****************************************************************************************************
-17/02/2026 18:26 - Pembuatan Gambar AI, Peningkatan Narasi, dan Kontrol - v058
+20/02/2026 23:18 - Generasi Gambar AI, Peningkatan Narasi, dan Kontrol - EXPERIMENTAL_v058
 ****************************************************************************************************
 - What's New (ID):
-  **⚠️ CABANG EKSPERIMENTAL (STEAM BETA)**
+  **⚠️ CABANG EKSPERIMENTAL (BETA STEAM)**
   Versi ini saat ini hanya tersedia di **Cabang Eksperimental** Steam. Untuk mengaktifkannya:
-  1. Klik kanan **RolemIAster** di Perpustakaan Steam Anda.
+  1. Klik kanan pada **RolemIAster** di Perpustakaan Steam Anda.
   2. Pilih **Properti...**
   3. Buka tab **Beta**.
-  4. Di "Partisipasi beta", pilih **experimental** dari menu dropdown.
-  **Baru: Fase Pertama Pembuatan Gambar AI**
-  - 🎨 **Dunia Anda dalam Gambar:** Saya telah mengintegrasikan sistem awal pembuatan gambar dengan Kecerdasan Buatan. Saat Anda bermain, sistem mencoba membuat potret dan pemandangan yang menyertai suasana permainan Anda.
-  - 🖼️ **Latar Belakang Dinamis:** Gambar dibuat di latar belakang tanpa menghentikan permainan Anda. Anda akan melihat bagaimana gambar muncul secara bertahap di latar belakang, pada kartu karakter, dan di Codex.
-  - ⚡ **Kecepatan Sesuai Keinginan:** Bagian baru di Pengaturan Visual. Pilih antara "Cepat" (1 langkah), "Sedang" (2 langkah), atau "Tinggi" (4 langkah) untuk menyesuaikan waktu pembuatan dengan kekuatan komputer Anda.
-  - 🛠️ **Optimasi Teknis:** Model AI untuk gambar dimuat di **RAM (Memori)** dan diproses via **CPU**, tanpa memakan memori video (VRAM). Ini menjamin agar tidak mengganggu kinerja AI utama game (LLM). Membutuhkan sekitar 5GB RAM tambahan, tetap berada dalam persyaratan minimum resmi Steam.
-  - 📤 **Bagikan Petualangan Anda:** Semua gambar yang dibuat disimpan secara otomatis. Anda akan menemukannya di folder: `%APPDATA%/RolemIAster/custom_assets/images`
-  - 🔬 **Pemilih Model (Lanjutan):** Jika Anda memulai game dengan parameter `--advanced`, sekarang Anda dapat memilih model AI mana yang akan digunakan untuk gambar dari panel Tampilan. Ini memungkinkan para penggemar untuk mencoba versi Stable Diffusion berbeda yang dioptimalkan untuk OpenVINO (file .xml/.bin).
+  4. Di bawah "Partisipasi beta", pilih **experimental** di menu dropdown.
+  
+  **Baru: Fase Pertama Generasi Gambar AI**
+  - 🎨 **Dunia Anda dalam Gambar:** Saya telah mengintegrasikan sistem awal generasi gambar oleh Kecerdasan Buatan. Saat Anda bermain, sistem mencoba membuat potret dan pemandangan yang menyertai latar permainan Anda.
+  - 🖼️ **Latar Belakang Dinamis:** Gambar dihasilkan di latar belakang tanpa menghentikan permainan Anda. Anda akan melihat gambar muncul secara progresif di latar belakang, pada kartu karakter, dan di Codex.
+  - ⚡ **Kecepatan Sesuai Keinginan:** Bagian baru di Pengaturan Visual. Pilih antara "Cepat" (1 langkah), "Sedang" (2 langkah), atau "Tinggi" (4 langkah) untuk menyesuaikan waktu pembuatan dengan kekuatan perangkat Anda.
+  - 🛠️ **Optimalisasi Teknis:** Model AI untuk gambar dimuat dalam **RAM (Memori)** dan diproses melalui **CPU**, tanpa memakan memori video (VRAM). Ini menjamin tidak mengganggu performa AI utama game (LLM). Membutuhkan sekitar 5GB RAM tambahan, tetap berada dalam persyaratan minimum resmi Steam.
+  - 📤 **Bagikan Petualangan Anda:** Semua gambar yang dihasilkan disimpan secara otomatis. Anda dapat menemukannya di folder: `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Pemilih Model (Lanjutan):** Jika Anda memulai game dengan parameter `--advanced`, sekarang Anda dapat memilih model AI mana yang akan digunakan untuk gambar dari panel Tampilan. Ini memungkinkan para antusias untuk mencoba versi Stable Diffusion berbeda yang dioptimalkan untuk OpenVINO (file .xml/.bin).
+  
   **Narasi dan Otak AI:**
-  - 🧠 **Akhir dari Loop:** "Doktrin Memori" baru telah ditanamkan pada AI. Sekarang AI membedakan lebih baik antara "kenangan" (apa yang sudah terjadi) dan "masa kini" (apa yang sedang terjadi). Ini membantu mengurangi kasus di mana AI mengulang-ulang atau macet.
-  - 📜 **Arsip Sejarah:** Sistem menyajikan kenangan Anda kepada AI sebagai "Arsip Sejarah Tertutup", memudahkannya menggunakan informasi tersebut sebagai referensi untuk memajukan cerita.
+  - 🧠 **Akhir dari Pengulangan:** "Doktrin Memori" baru telah ditanamkan ke dalam AI. Sekarang AI membedakan lebih baik antara "ingatan" (apa yang sudah terjadi) dan "masa kini" (apa yang sedang terjadi). Ini membantu mengurangi kasus di mana AI mengulang diri sendiri atau macet.
+  - 📜 **Arsip Sejarah:** Sistem menyajikan ingatan Anda kepada AI sebagai "Arsip Sejarah Tertutup", memudahkannya menggunakan informasi tersebut sebagai referensi untuk memajukan cerita.
   - ⚡ **Instruksi yang Dioptimalkan:** Cara game meminta narasi dalam bahasa Anda telah ditingkatkan, membebaskan kapasitas model untuk berkonsentrasi pada kreativitas.
-  - 👁️ **Fokus Naratif:** Persepsi AI telah ditulis ulang. Sekarang ia lebih memahami elemen mana yang merupakan "latar statis" dan tidak perlu mengulanginya secara tidak perlu di setiap paragraf.
-  - 🔀 **Keputusan Lebih Jelas:** AI sekarang menawarkan jalur keluar yang lebih pasti. Sarannya (tombol) dibagi antara menyelidiki lingkungan (Memperdalam) atau mengubah arah (Menyimpang).
-  - 🫵 **Sapaan Langsung:** Instruksi dasar telah disesuaikan untuk memastikan AI menyapa Anda dengan sebutan "Anda", meningkatkan imersi personal.
+  - 👁️ **Fokus Naratif:** Persepsi AI telah ditulis ulang. Sekarang AI lebih memahami elemen mana yang merupakan "latar belakang statis" dan tidak perlu mengulangnya secara tidak perlu di setiap paragraf.
+  - 🔀 **Keputusan Lebih Jelas:** AI kini menawarkan jalur keluar yang lebih pasti. Sarannya (tombol) dibagi antara menyelidiki lingkungan (Memperdalam) atau mengubah arah (Menyimpang).
+  - 🫵 **Perlakuan Langsung:** Instruksi dasar telah disesuaikan untuk memastikan AI menyapa Anda sebagai "Kamu", meningkatkan imersi personal.
+  
   **Pembuatan Karakter:**
-  - 🖼️ **Potret Karakter:** Saat membuat karakter dengan AI, sistem mencoba membuat potret berdasarkan usia, profesi, dan deskripsinya. Harap diingat bahwa ini adalah versi awal dan kesetiaannya (terutama pada usia) dapat bervariasi tergantung pada model yang digunakan. (saya masih melakukan pengujian tetapi permulaannya sudah bagus)
-  - 🎲 **Pembuatan Acak yang Andal:** Memperbaiki bug di mana tombol "Buat dengan AI" bisa gagal pada percobaan pertama, membiarkan kolom kosong. Sekarang sistem koreksi cerdas memastikan bahwa jawabannya selalu valid.
+  - 🖼️ **Potret Karakter:** Saat membuat karakter dengan AI, sistem mencoba membuat potret berdasarkan usia, profesi, dan deskripsi. Harap dicatat bahwa ini adalah versi awal dan ketepatannya (terutama pada usia) dapat bervariasi tergantung model yang digunakan. (saya masih melakukan pengujian tetapi permulaannya bagus)
+  - 🎲 **Generasi Acak yang Andal:** Memperbaiki bug di mana tombol "Buat dengan AI" bisa gagal pada percobaan pertama, membiarkan kolom kosong. Sekarang sistem koreksi cerdas memastikan jawabannya selalu valid.
+  
+  **Performa pada Pengaturan Rendah (Penting untuk GPU dengan VRAM kecil):**
+  - 🧠 **PSR - Tata Kelola Hibrida:** Sistem baru yang membagi pekerjaan AI menjadi dua fase: Perencanaan (Koki) dan Eksekusi (Juru Masak). Ini memungkinkan model lokal dengan VRAM 8 GB bekerja menghindari kemacetan karena kelebihan konteks (+12K token), dengan biaya latensi yang lebih tinggi, interaksi dengan AI berubah dari satu prompt tunggal menjadi serangkaian prompt (semakin kecil VRAM, semakin banyak prompt yang dihasilkan dan semakin lama waktu respons).
+  - ⚡ **Eksekusi Cerdas:** Sistem memutuskan secara otomatis apakah akan memproses semuanya sekaligus (monolitik) atau membagi menjadi beberapa bagian (iteratif) sesuai VRAM Anda yang tersedia. GPU dengan VRAM lebih sedikit mengaktifkan mode bertahap hanya jika diperlukan.
+  - 📊 **Optimalisasi Dinamis:** PSR mengurangi beban token selama pembuatan, memungkinkan pengguna dengan kartu grafis 4GB menyelesaikan pembuatan karakter dan pembuatan cerita yang sebelumnya terblokir.
+  - 🔄 **Koherensi Terjaga:** Meskipun membagi pekerjaan, sistem menyuntikkan "niat utama" agar AI tidak kehilangan alur dari apa yang sedang dilakukannya.
 
 ****************************************************************************************************
 15/02/2026 02:57 - Pengetikan Langsung, Perbaikan Stabilitas dan Deteksi - Beta_v057

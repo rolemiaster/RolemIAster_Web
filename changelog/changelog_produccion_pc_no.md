@@ -1,30 +1,39 @@
 ****************************************************************************************************
-17/02/2026 19:10 - AI-bildegenerering, narrative forbedringer og kontroll - v058
+20/02/2026 23:18 - AI-bildegenerering, narrative forbedringer og kontroll - EXPERIMENTAL_v058
 ****************************************************************************************************
 - What's New (NO):
   **⚠️ EKSPERIMENTELL GREN (STEAM BETA)**
-  Denne versjonen er for øyeblikket kun tilgjengelig i den **Eksperimentelle grenen** på Steam. For å aktivere den:
+  Denne versjonen er foreløpig bare tilgjengelig på Steams **Eksperimentelle gren**. Slik aktiverer du den:
   1. Høyreklikk på **RolemIAster** i Steam-biblioteket ditt.
   2. Velg **Egenskaper...**
   3. Gå til fanen **Betaer**.
-  4. Under "Betadeltakelse", velg **experimental** i rullegardinmenyen.
+  4. Under «Betadeltakelse» velger du **experimental** i rullegardinmenyen.
+  
   **Nyhet: Første fase av AI-bildegenerering**
-  - 🎨 **Din verden i bilder:** Jeg har integrert et innledende system for bildegenerering ved hjelp av kunstig intelligens. Mens du spiller, forsøker systemet å generere portretter og landskap som passer til stemningen i spillet ditt.
-  - 🖼️ **Dynamiske bakgrunner:** Bildene genereres i bakgrunnen uten å stoppe spillet ditt. Du vil se dem dukke opp gradvis i bakgrunnen, på karakterkort og i Kodeksen.
-  - ⚡ **Hastighet tilpasset deg:** Ny seksjon i visuelle innstillinger. Velg mellom "Rask" (1 steg), "Middels" (2 steg) eller "Høy" (4 steg) for å tilpasse genereringstiden til utstyrets ytelse.
-  - 🛠️ **Teknisk optimalisering:** AI-modellen for bilder lastes i **RAM (minne)** og behandles via **CPU**, uten å bruke videominne (VRAM). Dette sikrer at den ikke forstyrrer ytelsen til spillets hoved-AI (LLM). Krever ca. 5 GB ekstra RAM, men holder seg innenfor de offisielle minimumskravene på Steam.
+  - 🎨 **Din verden i bilder:** Jeg har integrert et tidlig system for bildegenerering via kunstig intelligens. Mens du spiller, prøver systemet å generere portretter og landskap som passer til stemningen i spillet.
+  - 🖼️ **Dynamiske bakgrunner:** Bildene genereres i bakgrunnen uten å stoppe spillet. Du vil se dem dukke opp gradvis i bakgrunnen, på karakterkort og i Kodeksen.
+  - ⚡ **Hastighet etter behov:** Ny seksjon i Visuelle innstillinger. Velg mellom «Rask» (1 trinn), «Middels» (2 trinn) eller «Høy» (4 trinn) for å tilpasse genereringstiden til ytelsen på utstyret ditt.
+  - 🛠️ **Teknisk optimalisering:** AI-modellen for bilder lastes i **RAM (minne)** og behandles via **CPU**, uten å bruke videominne (VRAM). Dette sikrer at det ikke forstyrrer ytelsen til spillets hoved-AI (LLM). Krever ca. 5 GB ekstra RAM, men holder seg innenfor de offisielle minimumskravene på Steam.
   - 📤 **Del dine eventyr:** Alle genererte bilder lagres automatisk. Du finner dem i mappen: `%APPDATA%/RolemIAster/custom_assets/images`
-  - 🔬 **Modellvelger (Avansert):** Hvis du starter spillet med parameteren `--advanced`, kan du nå velge hvilken AI-modell som skal brukes for bilder fra Utseende-panelet. Dette lar entusiaster teste ulike versjoner av Stable Diffusion optimalisert for OpenVINO (.xml/.bin-filer).
+  - 🔬 **Modellvelger (Avansert):** Hvis du starter spillet med parameteren `--advanced`, kan du nå velge hvilken AI-modell som skal brukes for bildene fra Utseende-panelet. Dette lar entusiaster teste ulike versjoner av Stable Diffusion optimalisert for OpenVINO (.xml/.bin-filer).
+  
   **Narrativ og AI-hjerne:**
-  - 🧠 **Slutt på løkker:** En ny "Minnedoktrine" er implementert i AI-en. Den skiller nå bedre mellom "minner" (det som har skjedd) og "nåtid" (det som skjer nå). Dette bidrar til å redusere tilfeller der AI-en gjentok seg selv eller satte seg fast.
-  - 📜 **Historiske arkiver:** Systemet presenterer minnene dine for AI-en som et "Lukket historisk arkiv", noe som gjør det lettere for den å bruke den informasjonen som referanse for å drive historien fremover.
-  - ⚡ **Optimaliserte instruksjoner:** Måten spillet ber om fortelling på ditt språk er forbedret, noe som frigjør kapasitet i modellen til å fokusere på kreativitet.
-  - 👁️ **Narrativt fokus:** AI-ens oppfatning er skrevet om. Den forstår nå bedre hvilke elementer som er "statisk bakgrunn" og ikke bør gjentas unødvendig i hvert avsnitt.
-  - 🔀 **Tydeligere valg:** AI-en tilbyr nå mer definerte fluktveier. Forslagene (knappene) er delt inn i å undersøke omgivelsene (Fordype) eller endre kurs (Avvike).
-  - 🫵 **Direkte tiltale:** Basisinstruksjonen er justert for å sikre at AI-en tiltaler deg som "Du", noe som forbedrer den personlige innlevelsen.
+  - 🧠 **Slutt på løkker:** En ny «Minne-doktrine» er innført i AI-en. Nå skiller den bedre mellom «minner» (det som allerede har skjedd) og «nåtid» (det som skjer). Dette bidrar til å redusere tilfeller der AI-en gjentok seg selv eller satt fast.
+  - 📜 **Historiske arkiver:** Systemet presenterer minnene dine for AI-en som et «Lukket historisk arkiv», noe som gjør det lettere å bruke informasjonen som referanse for å drive historien fremover.
+  - ⚡ **Optimaliserte instruksjoner:** Måten spillet ber om fortellingen på ditt språk er forbedret, noe som frigjør kapasitet for modellen til å fokusere på kreativitet.
+  - 👁️ **Narrativt fokus:** AI-ens oppfatning er skrevet om. Den forstår nå bedre hvilke elementer som er «statisk bakgrunn» og ikke bør gjentas unødvendig i hvert avsnitt.
+  - 🔀 **Tydeligere valg:** AI-en tilbyr nå mer definerte fluktveier. Forslagene (knappene) er delt mellom å undersøke omgivelsene (Fordype) eller endre kurs (Divergere).
+  - 🫵 **Direkte tiltale:** Basisinstruksjonen er justert for å sikre at AI-en tiltaler deg som «Du», noe som forbedrer den personlige innlevelsen.
+  
   **Karakterskaping:**
-  - 🖼️ **Karakterportretter:** Når du genererer en karakter med AI, forsøker systemet å lage et portrett basert på alder, yrke og beskrivelse. Vær oppmerksom på at dette er en tidlig versjon, og nøyaktigheten (spesielt angående alder) kan variere avhengig av modellen som brukes. (jeg fortsetter å teste, men starten er god)
-  - 🎲 **Pålitelig tilfeldig generering:** Rettet en feil der knappen "Generer med AI" kunne feile ved første forsøk og etterlate feltene tomme. Det intelligente korrigeringssystemet sikrer nå at svaret alltid er gyldig.
+  - 🖼️ **Karakterportretter:** Når du genererer en karakter med AI, prøver systemet å lage et portrett basert på alder, yrke og beskrivelse. Vær oppmerksom på at dette er en tidlig versjon, og nøyaktigheten (spesielt vedrørende alder) kan variere avhengig av modellen som brukes. (jeg fortsetter å teste, men starten er god)
+  - 🎲 **Pålitelig tilfeldig generering:** Rettet en feil der knappen «Generer med AI» kunne feile ved første forsøk og etterlate feltene tomme. Nå sørger det intelligente korrigeringssystemet for at svaret alltid er gyldig.
+  
+  **Ytelse på lave konfigurasjoner (Viktig for GPU med lite VRAM):**
+  - 🧠 **PSR - Hybrid styring:** Nytt system som deler AI-arbeidet i to faser: Planlegging (Kokk) og Utførelse (Kokker). Dette gjør at lokale modeller med 8 GB VRAM kan fungere og unngå kollaps på grunn av for mye kontekst (+12K tokens), på bekostning av høyere forsinkelse; interaksjonen med AI-en går fra å være en enkelt prompt til en serie prompts (jo mindre VRAM, desto flere prompts genereres, og desto lengre responstid).
+  - ⚡ **Intelligent utførelse:** Systemet bestemmer automatisk om alt skal behandles på én gang (monolittisk) eller deles opp (iterativt) basert på tilgjengelig VRAM. GPU-er med mindre VRAM aktiverer modusen for oppdeling kun når det er nødvendig.
+  - 📊 **Dynamisk optimalisering:** PSR reduserer belastningen av tokens under generering, noe som gjør at brukere med grafikkort på 4 GB kan fullføre karakterskaping og historiegenerering som tidligere låste seg.
+  - 🔄 **Opprettholdt sammenheng:** Til tross for arbeidsdelingen injiserer systemet en «master-intensjon» slik at AI-en ikke mister tråden i det den holdt på med.
 
 ****************************************************************************************************
 15/02/2026 02:57 - Direkte skriving, stabilitetsfikser og deteksjon - Beta_v057

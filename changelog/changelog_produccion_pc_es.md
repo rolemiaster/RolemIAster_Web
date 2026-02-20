@@ -1,5 +1,5 @@
 ****************************************************************************************************
-17/02/2026 17:53 - Generación de Imágenes por IA, Mejoras Narrativas y Control - EXPERIMENTAL_v058
+20/02/2026 23:18 - Generación de Imágenes por IA, Mejoras Narrativas y Control - EXPERIMENTAL_v058
 ****************************************************************************************************
 - Novedades (ES):
   **⚠️ RAMA EXPERIMENTAL (BETA DE STEAM)**
@@ -28,6 +28,12 @@
   **Creación de Personaje:**
   - 🖼️ **Retratos de Personaje:** Al generar un personaje con IA, el sistema intenta crear un retrato basado en su edad, profesión y descripción. Ten en cuenta que es una versión inicial y la fidelidad (especialmente en la edad) puede variar según el modelo utilizado. (sigo  haciendo pruebas pero el inicio es bueno)
   - 🎲 **Generación Aleatoria Fiable:** Corregido un fallo donde el botón "Generar con IA" podía fallar en el primer intento, dejando los campos vacíos. Ahora el sistema de corrección inteligente se asegura de que la respuesta sea siempre válida.
+  
+  **Rendimiento en Configuraciones Bajas (Importante para GPU con paca VRAM):**
+  - 🧠 **PSR - Gobernanza Híbrida:** Nuevo sistema que divide el trabajo de la IA en dos fases: Planificación (Chef) y Ejecución (Cocineros). Esto permite que modelos locales con 8 GB de VRAM funcionen evitando colapsos por exceso de contexto (+12K tokens), a costa de una latencia mayor, el trato con la ia pasa de ser un único prompt a una serie de prompts (cuanto menor sea la VRAM mayor cantidad de prompts se generarán y mayor tiempo de respuesta).
+  - ⚡ **Ejecución Inteligente:** El sistema decide automáticamente si procesar todo de una vez (monolítico) o dividir en partes (iterativo) según tu VRAM disponible. GPUs con menos VRAM activan el modo por partes solo cuando es necesario.
+  - 📊 **Optimización Dinámica:** PSR reduce la carga de tokens durante la generación, permitiendo que usuarios con tarjetas gráficas de 4GB puedan completar la creación de personajes y generación de historia que antes se bloqueaban.
+  - 🔄 **Coherencia Mantenida:** A pesar de dividir el trabajo, el sistema inyecta una "intención maestra" para que la IA no pierda el hilo de lo que estaba haciendo.
 
 ****************************************************************************************************
 15/02/2026 02:57 - Escritura Directa, Correcciones de Estabilidad y Detección d - Beta_v057

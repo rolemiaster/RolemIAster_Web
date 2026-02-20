@@ -1,30 +1,39 @@
 ****************************************************************************************************
-17/02/2026 18:25 - Génération d'Images par IA, Améliorations Narratives et Contrôle - v058
+20/02/2026 23:18 - Génération d'images par IA, améliorations narratives et contrôle - EXPERIMENTAL_v058
 ****************************************************************************************************
 - What's New (FR):
   **⚠️ BRANCHE EXPÉRIMENTALE (BÊTA STEAM)**
-  Cette version est actuellement disponible uniquement sur la **Branche Expérimentale** de Steam. Pour l'activer :
-  1. Faites un clic droit sur **RolemIAster** dans votre Bibliothèque Steam.
+  Cette version n'est actuellement disponible que dans la **Branche Expérimentale** de Steam. Pour l'activer :
+  1. Faites un clic droit sur **RolemIAster** dans votre bibliothèque Steam.
   2. Sélectionnez **Propriétés...**
   3. Allez dans l'onglet **Bêtas**.
-  4. Dans "Participation à la bêta", sélectionnez **experimental** dans le menu déroulant.
-  **Nouveauté : Première phase de Génération d'Images par IA**
-  - 🎨 **Votre Monde en Images :** J'ai intégré un système initial de génération d'images par Intelligence Artificielle. Au fur et à mesure que vous jouez, le système tente de générer des portraits et des paysages pour accompagner l'ambiance de votre partie.
-  - 🖼️ **Arrière-plans Dynamiques :** Les images sont générées en arrière-plan sans interrompre votre partie. Vous verrez comment elles apparaissent progressivement en fond, sur les cartes de personnages et dans le Codex.
-  - ⚡ **Vitesse sur Mesure :** Nouvelle section dans la Configuration Visuelle. Choisissez entre "Rapide" (1 étape), "Moyenne" (2 étapes) ou "Élevée" (4 étapes) pour ajuster le temps de génération à la puissance de votre équipement.
-  - 🛠️ **Optimisation Technique :** Le modèle d'IA pour les images est chargé dans la **RAM (Mémoire)** et traité via le **CPU**, sans occuper de mémoire vidéo (VRAM). Cela garantit qu'il n'interfère pas avec les performances de l'IA principale du jeu (LLM). Nécessite environ 5 Go de RAM supplémentaires, restant dans les limites de la configuration minimale officielle de Steam.
-  - 📤 **Partagez vos Aventures :** Toutes les images générées sont sauvegardées automatiquement. Vous les trouverez dans le dossier : `%APPDATA%/RolemIAster/custom_assets/images`
-  - 🔬 **Sélecteur de Modèles (Avancé) :** Si vous lancez le jeu avec le paramètre `--advanced`, vous pouvez désormais choisir quel modèle d'IA utiliser pour les images depuis le panneau Apparence. Cela permet aux passionnés de tester différentes versions de Stable Diffusion optimisées pour OpenVINO (fichiers .xml/.bin).
+  4. Dans « Participation à la bêta », sélectionnez **experimental** dans le menu déroulant.
+  
+  **Nouveauté : Première phase de génération d'images par IA**
+  - 🎨 **Votre monde en images :** J'ai intégré un système initial de génération d'images par Intelligence Artificielle. Au fur et à mesure que vous jouez, le système tente de générer des portraits et des paysages pour accompagner l'ambiance de votre partie.
+  - 🖼️ **Arrière-plans dynamiques :** Les images sont générées en arrière-plan sans interrompre votre partie. Vous les verrez apparaître progressivement en fond d'écran, sur les fiches de personnages et dans le Codex.
+  - ⚡ **Vitesse sur mesure :** Nouvelle section dans la Configuration Visuelle. Choisissez entre « Rapide » (1 étape), « Moyenne » (2 étapes) ou « Élevée » (4 étapes) pour ajuster le temps de génération à la puissance de votre machine.
+  - 🛠️ **Optimisation technique :** Le modèle d'IA pour les images se charge dans la **RAM (Mémoire)** et est traité via le **CPU**, sans occuper de mémoire vidéo (VRAM). Cela garantit qu'il n'interfère pas avec les performances de l'IA principale du jeu (LLM). Cela nécessite environ 5 Go de RAM supplémentaires, tout en restant dans les limites des configurations minimales officielles de Steam.
+  - 📤 **Partagez vos aventures :** Toutes les images générées sont sauvegardées automatiquement. Vous les trouverez dans le dossier : `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Sélecteur de modèles (Avancé) :** Si vous lancez le jeu avec le paramètre `--advanced`, vous pouvez désormais choisir quel modèle d'IA utiliser pour les images depuis le panneau Apparence. Cela permet aux passionnés de tester différentes versions de Stable Diffusion optimisées pour OpenVINO (fichiers .xml/.bin).
+  
   **Narration et Cerveau IA :**
-  - 🧠 **Fin des Boucles :** Une nouvelle "Doctrine de Mémoire" a été implantée dans l'IA. Elle distingue désormais mieux les "souvenirs" (ce qui s'est déjà passé) et le "présent" (ce qui se passe actuellement). Cela aide à réduire les cas où l'IA se répétait ou restait bloquée.
-  - 📜 **Archives Historiques :** Le système présente vos souvenirs à l'IA comme une "Archive Historique Fermée", ce qui l'aide à utiliser ces informations comme référence pour faire avancer l'histoire.
-  - ⚡ **Instructions Optimisées :** La manière dont le jeu demande la narration dans votre langue a été améliorée, libérant ainsi la capacité du modèle pour se concentrer sur la créativité.
-  - 👁️ **Focus Narratif :** La perception de l'IA a été réécrite. Elle comprend mieux quels éléments constituent un "fond statique" et ne devrait pas les répéter inutilement à chaque paragraphe.
-  - 🔀 **Décisions Plus Claires :** L'IA offre désormais des voies d'échappatoire plus définies. Ses suggestions (boutons) se divisent entre enquêter sur l'environnement (Approfondir) ou changer de cap (Diverger).
-  - 🫵 **Traitement Direct :** L'instruction de base a été ajustée pour s'assurer que l'IA vous tutoie ("Tu"), améliorant ainsi l'immersion personnelle.
-  **Création de Personnage :**
-  - 🖼️ **Portraits de Personnage :** Lors de la génération d'un personnage avec l'IA, le système tente de créer un portrait basé sur son âge, sa profession et sa description. Notez qu'il s'agit d'une version initiale et que la fidélité (notamment concernant l'âge) peut varier selon le modèle utilisé (je continue les tests mais le début est prometteur).
-  - 🎲 **Génération Aléatoire Fiable :** Correction d'un bug où le bouton "Générer avec l'IA" pouvait échouer lors de la première tentative, laissant les champs vides. Le système de correction intelligent s'assure désormais que la réponse soit toujours valide.
+  - 🧠 **Fin des boucles :** Une nouvelle « Doctrine de Mémoire » a été implantée dans l'IA. Elle distingue désormais mieux les « souvenirs » (ce qui s'est déjà passé) du « présent » (ce qui se passe actuellement). Cela permet de réduire les cas où l'IA se répétait ou restait bloquée.
+  - 📜 **Archives historiques :** Le système présente vos souvenirs à l'IA comme une « Archive Historique Fermée », facilitant l'utilisation de ces informations comme référence pour faire avancer l'histoire.
+  - ⚡ **Instructions optimisées :** La manière dont le jeu demande la narration dans votre langue a été améliorée, libérant ainsi la capacité du modèle pour se concentrer sur la créativité.
+  - 👁️ **Focus narratif :** La perception de l'IA a été réécrite. Elle comprend mieux quels éléments sont un « décor statique » et ne devrait pas les répéter inutilement à chaque paragraphe.
+  - 🔀 **Décisions plus claires :** L'IA offre désormais des voies plus définies. Ses suggestions (boutons) se divisent entre l'investigation de l'environnement (Approfondir) ou le changement de cap (Diverger).
+  - 🫵 **Traitement direct :** L'instruction de base a été ajustée pour garantir que l'IA vous tutoie, améliorant ainsi l'immersion personnelle.
+  
+  **Création de personnage :**
+  - 🖼️ **Portraits de personnage :** Lors de la génération d'un personnage avec l'IA, le système tente de créer un portrait basé sur son âge, sa profession et sa description. Notez qu'il s'agit d'une version initiale et que la fidélité (notamment concernant l'âge) peut varier selon le modèle utilisé. (Je continue les tests, mais le début est prometteur).
+  - 🎲 **Génération aléatoire fiable :** Correction d'un bug où le bouton « Générer avec l'IA » pouvait échouer lors de la première tentative, laissant les champs vides. Le système de correction intelligente s'assure désormais que la réponse soit toujours valide.
+  
+  **Performance sur configurations modestes (Important pour les GPU à faible VRAM) :**
+  - 🧠 **PSR - Gouvernance hybride :** Nouveau système qui divise le travail de l'IA en deux phases : Planification (Chef) et Exécution (Cuisiniers). Cela permet aux modèles locaux avec 8 Go de VRAM de fonctionner en évitant les plantages dus à un excès de contexte (+12K tokens), au prix d'une latence plus élevée. L'interaction avec l'IA passe d'un prompt unique à une série de prompts (moins il y a de VRAM, plus il y aura de prompts générés et plus le temps de réponse sera long).
+  - ⚡ **Exécution intelligente :** Le système décide automatiquement de tout traiter en une seule fois (monolithique) ou de diviser en parties (itératif) selon votre VRAM disponible. Les GPU avec moins de VRAM n'activent le mode par parties que lorsque c'est nécessaire.
+  - 📊 **Optimisation dynamique :** Le PSR réduit la charge de tokens pendant la génération, permettant aux utilisateurs avec des cartes graphiques de 4 Go de terminer la création de personnages et la génération d'histoire qui bloquaient auparavant.
+  - 🔄 **Cohérence maintenue :** Malgré la division du travail, le système injecte une « intention maîtresse » pour que l'IA ne perde pas le fil de ce qu'elle faisait.
 
 ****************************************************************************************************
 15/02/2026 02:57 - Saisie Directe, Correctifs de Stabilité et Détection d - Beta_v057

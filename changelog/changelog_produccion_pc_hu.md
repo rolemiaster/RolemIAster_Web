@@ -1,30 +1,39 @@
 ****************************************************************************************************
-17/02/2026 18:26 - MI Képalkotás, Narratív Javítások és Irányítás - v058
+20/02/2026 23:18 - MI Általi Képalkotás, Narratív Javítások és Irányítás - EXPERIMENTAL_v058
 ****************************************************************************************************
 - What's New (HU):
   **⚠️ KÍSÉRLETI ÁG (STEAM BÉTA)**
   Ez a verzió jelenleg csak a Steam **Kísérleti Ágán** érhető el. Az aktiváláshoz:
   1. Kattints jobb gombbal a **RolemIAster**-re a Steam Könyvtáradban.
-  2. Válaszd a **Tulajdonságok...** opciót.
+  2. Válaszd a **Tulajdonságok...** menüpontot.
   3. Menj a **Béták** fülre.
-  4. A „Béta részvétel” alatt válaszd ki az **experimental** lehetőséget a legördülő menüből.
-  **Újdonság: MI Képalkotás Első Fázisa**
-  - 🎨 **A Világod Képekben:** Integráltam egy kezdeti Mesterséges Intelligencia alapú képalkotó rendszert. Játék közben a rendszer megpróbál portrékat és tájképeket generálni, amelyek illeszkednek a játék hangulatához.
+  4. A "Részvétel a bétában" résznél válaszd ki az **experimental** lehetőséget a legördülő menüből.
+  
+  **Újdonság: Az MI Általi Képalkotás Első Fázisa**
+  - 🎨 **A Világod Képekben:** Integráltam egy kezdeti rendszert a Mesterséges Intelligencia általi képalkotáshoz. Játék közben a rendszer megpróbál portrékat és tájakat generálni, amelyek kísérik a játékod hangulatát.
   - 🖼️ **Dinamikus Hátterek:** A képek a háttérben generálódnak anélkül, hogy megállítanák a játékot. Látni fogod, ahogy fokozatosan megjelennek a háttérben, a karakterkártyákon és a Kódexben.
-  - ⚡ **Sebesség az Igényeid Szerint:** Új rész a Vizuális Beállításokban. Válassz a „Gyors” (1 lépés), „Közepes” (2 lépés) vagy „Magas” (4 lépés) közül, hogy a generálási időt a géped teljesítményéhez igazítsd.
-  - 🛠️ **Technikai Optimalizálás:** A képekhez használt MI modell a **RAM-ba (Memória)** töltődik be és a **CPU-n** keresztül kerül feldolgozásra, így nem foglal videómemóriát (VRAM). Ez biztosítja, hogy ne zavarja a játék fő MI-jének (LLM) teljesítményét. Körülbelül 5 GB plusz RAM-ot igényel, ami a hivatalos Steam minimális követelményeken belül marad.
+  - ⚡ **Testreszabott Sebesség:** Új rész a Vizuális Beállításokban. Válassz a "Gyors" (1 lépés), "Közepes" (2 lépés) vagy "Magas" (4 lépés) közül, hogy a generálási időt a géped teljesítményéhez igazítsd.
+  - 🛠️ **Technikai Optimalizálás:** A képgeneráló MI modell a **RAM-ba (Memória)** töltődik be, és a **CPU** dolgozza fel, anélkül, hogy videómemóriát (VRAM) foglalna. Ez garantálja, hogy nem zavarja a játék fő MI-jének (LLM) teljesítményét. Körülbelül 5 GB plusz RAM-ot igényel, ami még mindig a hivatalos Steam minimumkövetelményeken belül marad.
   - 📤 **Oszd meg a Kalandjaidat:** Minden generált kép automatikusan mentésre kerül. A következő mappában találod őket: `%APPDATA%/RolemIAster/custom_assets/images`
-  - 🔬 **Modellválasztó (Haladó):** Ha a `--advanced` paraméterrel indítod a játékot, mostantól kiválaszthatod a Megjelenés panelen, hogy melyik MI modellt használja a képekhez. Ez lehetővé teszi a rajongók számára, hogy különböző, OpenVINO-ra optimalizált Stable Diffusion verziókat (.xml/.bin fájlok) próbáljanak ki.
+  - 🔬 **Modellválasztó (Haladó):** Ha a játékot az `--advanced` paraméterrel indítod, mostantól kiválaszthatod a Megjelenés panelen, hogy melyik MI modellt használd a képekhez. Ez lehetővé teszi a rajongók számára, hogy kipróbálják a Stable Diffusion különböző, OpenVINO-ra optimalizált verzióit (.xml/.bin fájlok).
+  
   **Narratíva és MI Agy:**
-  - 🧠 **A Hurkok Vége:** Egy új „Memória Doktrína” került bevezetésre az MI-be. Most már jobban megkülönbözteti az „emlékeket” (ami már megtörtént) és a „jelent” (ami éppen történik). Ez segít csökkenteni azokat az eseteket, amikor az MI ismételte önmagát vagy elakadt.
-  - 📜 **Történelmi Archívumok:** A rendszer „Lezárt Történelmi Archívumként” mutatja be emlékeidet az MI-nek, megkönnyítve számára, hogy ezt az információt referenciaként használja a történet előremozdításához.
-  - ⚡ **Optimalizált Utasítások:** Javult a mód, ahogyan a játék a narrációt kéri a te nyelveden, felszabadítva a modell kapacitását, hogy a kreativitásra koncentrálhasson.
-  - 👁️ **Narratív Fókusz:** Az MI észlelési rendszere újra lett írva. Most már jobban érti, mely elemek számítanak „statikus háttérnek”, és nem kellene feleslegesen ismételnie őket minden bekezdésben.
-  - 🔀 **Világosabb Döntések:** Az MI most határozottabb menekülőutakat kínál. Javaslatai (gombok) megoszlanak a környezet megvizsgálása (Elmélyülés) és az irányváltás (Eltérés) között.
-  - 🫵 **Közvetlen Megszólítás:** Az alaputasítás módosítva lett, hogy az MI biztosan tegezzen („Te”), javítva a személyes beleélést.
+  - 🧠 **A Hurkok Vége:** Egy új "Memória Doktrína" került bevezetésre az MI-ben. Most már jobban megkülönbözteti az "emlékeket" (ami már megtörtént) és a "jelent" (ami éppen történik). Ez segít csökkenteni azokat az eseteket, amikor az MI ismételte önmagát vagy elakadt.
+  - 📜 **Történelmi Archívumok:** A rendszer "Lezárt Történelmi Archívumként" mutatja be az emlékeidet az MI-nek, megkönnyítve számára az információk referenciaként való használatát a történet előremozdításához.
+  - ⚡ **Optimalizált Utasítások:** Javult a módja annak, ahogy a játék a narrációt kéri a nyelveden, felszabadítva a modell kapacitását, hogy a kreativitásra koncentrálhasson.
+  - 👁️ **Narratív Fókusz:** Az MI érzékelése újra lett írva. Most már jobban érti, mely elemek számítanak "statikus háttérnek", és nem kellene feleslegesen ismételnie őket minden bekezdésben.
+  - 🔀 **Világosabb Döntések:** Az MI mostantól határozottabb menekülési utakat kínál. Javaslatai (gombok) megoszlanak a környezet megvizsgálása (Elmélyülés) és az irányváltás (Eltérés) között.
+  - 🫵 **Közvetlen Megszólítás:** Az alaputasítás módosítva lett, hogy az MI biztosan tegezzen ("Te"), javítva a személyes beleélést.
+  
   **Karakterkészítés:**
-  - 🖼️ **Karakterportrék:** Amikor MI-vel generálsz karaktert, a rendszer megpróbál egy portrét készíteni a kora, foglalkozása és leírása alapján. Vedd figyelembe, hogy ez egy kezdeti verzió, és a hűség (különösen az életkor tekintetében) a használt modelltől függően változhat. (továbbra is tesztelem, de a kezdet biztató)
-  - 🎲 **Megbízható Véletlenszerű Generálás:** Javítva egy hiba, ahol a „Generálás MI-vel” gomb elsőre meghibásodhatott, üresen hagyva a mezőket. Most az intelligens javítórendszer biztosítja, hogy a válasz mindig érvényes legyen.
+  - 🖼️ **Karakterportrék:** Amikor MI-vel generálsz karaktert, a rendszer megpróbál egy portrét készíteni a kora, foglalkozása és leírása alapján. Vedd figyelembe, hogy ez egy kezdeti verzió, és a hűség (különösen a kor tekintetében) a használt modelltől függően változhat. (folytatom a teszteket, de a kezdet biztató)
+  - 🎲 **Megbízható Véletlenszerű Generálás:** Javítva egy hiba, ahol a "Generálás MI-vel" gomb az első próbálkozásra hibázhatott, üresen hagyva a mezőket. Most az intelligens javítórendszer gondoskodik róla, hogy a válasz mindig érvényes legyen.
+  
+  **Teljesítmény Alacsony Konfigurációkon (Fontos kevés VRAM-mal rendelkező GPU-khoz):**
+  - 🧠 **PSR - Hibrid Irányítás:** Új rendszer, amely két fázisra osztja az MI munkáját: Tervezés (Séf) és Végrehajtás (Szakácsok). Ez lehetővé teszi, hogy a 8 GB VRAM-mal rendelkező helyi modellek működjenek, elkerülve az összeomlást a túl sok kontextus miatt (+12K token), nagyobb késleltetés árán; az MI-vel való interakció egyetlen prompt helyett promptok sorozatává válik (minél kevesebb a VRAM, annál több prompt generálódik, és annál hosszabb a válaszidő).
+  - ⚡ **Intelligens Végrehajtás:** A rendszer automatikusan eldönti, hogy mindent egyszerre dolgozzon fel (monolitikus), vagy részekre ossza (iteratív) a rendelkezésre álló VRAM alapján. A kevesebb VRAM-mal rendelkező GPU-k csak szükség esetén kapcsolják be a részekre osztott módot.
+  - 📊 **Dinamikus Optimalizálás:** A PSR csökkenti a token-terhelést a generálás során, lehetővé téve, hogy a 4 GB-os videókártyával rendelkező felhasználók is befejezhessék a karakterkészítést és a történetgenerálást, ami korábban elakadt.
+  - 🔄 **Megőrzött Koherencia:** A munka felosztása ellenére a rendszer egy "mester szándékot" injektál, hogy az MI ne veszítse el a fonalat, hogy mit is csinált éppen.
 
 ****************************************************************************************************
 15/02/2026 02:57 - Közvetlen írás, stabilitási javítások és észlelés - Beta_v057

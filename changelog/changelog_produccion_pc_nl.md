@@ -1,30 +1,39 @@
 ****************************************************************************************************
-17/02/2026 18:30 - AI-beeldgeneratie, verhalende verbeteringen en controle - v058
+20/02/2026 23:18 - AI-beeldgeneratie, Verhaalverbeteringen en Controle - EXPERIMENTAL_v058
 ****************************************************************************************************
 - What's New (NL):
-  **⚠️ EXPERIMENTELE TAK (STEAM BETA)**
+  **⚠️ EXPERIMENTELE TAK (STEAM-BETA)**
   Deze versie is momenteel alleen beschikbaar in de **Experimentele Tak** van Steam. Om deze te activeren:
   1. Klik met de rechtermuisknop op **RolemIAster** in je Steam-bibliotheek.
   2. Selecteer **Eigenschappen...**
   3. Ga naar het tabblad **Beta's**.
-  4. Selecteer bij "Deelname aan de beta" **experimental** in het dropdownmenu.
+  4. Selecteer bij "Deelname aan beta" de optie **experimental** in het dropdownmenu.
+  
   **Nieuw: Eerste fase van AI-beeldgeneratie**
-  - 🎨 **Je wereld in beelden:** Ik heb een initieel systeem voor beeldgeneratie via kunstmatige intelligentie geïntegreerd. Terwijl je speelt, probeert het systeem portretten en landschappen te genereren die de sfeer van je spel ondersteunen.
-  - 🖼️ **Dynamische achtergronden:** De afbeeldingen worden op de achtergrond gegenereerd zonder je spel te onderbreken. Je zult zien hoe ze geleidelijk verschijnen op de achtergrond, op karakterkaarten en in de Codex.
-  - ⚡ **Snelheid op maat:** Nieuwe sectie in Visuele instellingen. Kies uit "Snel" (1 stap), "Gemiddeld" (2 stappen) of "Hoog" (4 stappen) om de generatietijd aan te passen aan de kracht van je systeem.
-  - 🛠️ **Technische optimalisatie:** Het AI-model voor afbeeldingen wordt geladen in het **RAM-geheugen** en verwerkt via de **CPU**, zonder videogeheugen (VRAM) in beslag te nemen. Dit garandeert dat het de prestaties van de hoofd-AI van het spel (LLM) niet verstoort. Het vereist ongeveer 5 GB extra RAM, wat binnen de officiële minimale systeemvereisten van Steam blijft.
-  - 📤 **Deel je avonturen:** Alle gegenereerde afbeeldingen worden automatisch opgeslagen. Je vindt ze in de map: `%APPDATA%/RolemIAster/custom_assets/images`
-  - 🔬 **Modellenselector (Geavanceerd):** Als je het spel start met de parameter `--advanced`, kun je nu kiezen welk AI-model je voor de afbeeldingen wilt gebruiken vanuit het paneel Uiterlijk. Dit stelt enthousiastelingen in staat om verschillende versies van Stable Diffusion te testen die zijn geoptimaliseerd voor OpenVINO (.xml/.bin bestanden).
-  **Verhaal en AI-brein:**
-  - 🧠 **Einde aan loops:** Er is een nieuwe "Geheugendoctrine" geïmplementeerd in de AI. Deze maakt nu beter onderscheid tussen "herinneringen" (wat al is gebeurd) en het "heden" (wat er nu gebeurt). Dit helpt gevallen te verminderen waarin de AI zichzelf herhaalde of vastliep.
-  - 📜 **Historische archieven:** Het systeem presenteert je herinneringen aan de AI als een "Gesloten historisch archief", waardoor het deze informatie gemakkelijker kan gebruiken als referentie om het verhaal verder te helpen.
-  - ⚡ **Geoptimaliseerde instructies:** De manier waarop het spel om verhalen in jouw taal vraagt is verbeterd, waardoor capaciteit van het model vrijkomt om zich te concentreren op creativiteit.
-  - 👁️ **Verhalende focus:** De perceptie van de AI is herschreven. Deze begrijpt nu beter welke elementen "statische achtergrond" zijn en niet onnodig in elke paragraaf herhaald moeten worden.
-  - 🔀 **Duidelijkere beslissingen:** De AI biedt nu meer gedefinieerde uitwegen. De suggesties (knoppen) zijn verdeeld tussen de omgeving onderzoeken (Verdiepen) of van koers veranderen (Afwijken).
-  - 🫵 **Directe benadering:** De basisinstructie is aangepast om ervoor te zorgen dat de AI je met "Je/Jij" aanspreekt, wat de persoonlijke immersie verbetert.
+  - 🎨 **Je Wereld in Beeld:** Ik heb een initieel systeem geïntegreerd voor het genereren van afbeeldingen met Kunstmatige Intelligentie. Terwijl je speelt, probeert het systeem portretten en landschappen te genereren die passen bij de sfeer van je spel.
+  - 🖼️ **Dynamische Achtergronden:** De afbeeldingen worden op de achtergrond gegenereerd zonder je spel te onderbreken. Je zult zien hoe ze geleidelijk verschijnen op de achtergrond, op personagekaarten en in de Codex.
+  - ⚡ **Snelheid op Maat:** Nieuwe sectie in Visuele Instellingen. Kies uit "Snel" (1 stap), "Gemiddeld" (2 stappen) of "Hoog" (4 stappen) om de generatietijd aan te passen aan de kracht van je systeem.
+  - 🛠️ **Technische Optimalisatie:** Het AI-model voor afbeeldingen wordt geladen in het **RAM (Geheugen)** en verwerkt via de **CPU**, zonder videogeheugen (VRAM) in beslag te nemen. Dit garandeert dat het niet interfereert met de prestaties van de hoofd-AI van het spel (LLM). Vereist ongeveer 5GB extra RAM, wat binnen de officiële minimale systeemeisen van Steam blijft.
+  - 📤 **Deel je Avonturen:** Alle gegenereerde afbeeldingen worden automatisch opgeslagen. Je vindt ze in de map: `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Modelselector (Geavanceerd):** Als je het spel start met de parameter `--advanced`, kun je nu vanuit het paneel Uiterlijk kiezen welk AI-model je wilt gebruiken voor afbeeldingen. Hiermee kunnen enthousiastelingen verschillende versies van Stable Diffusion proberen die geoptimaliseerd zijn voor OpenVINO (.xml/.bin bestanden).
+  
+  **Verhaallijn en AI-brein:**
+  - 🧠 **Einde aan Herhalingen:** Er is een nieuwe "Geheugendoctrine" geïmplementeerd in de AI. Het onderscheidt nu beter tussen "herinneringen" (wat al gebeurd is) en het "heden" (wat er nu gebeurt). Dit helpt gevallen te verminderen waarin de AI zichzelf herhaalde of vastliep.
+  - 📜 **Historische Archieven:** Het systeem presenteert je herinneringen aan de AI als een "Gesloten Historisch Archief", waardoor het die informatie makkelijker als referentie kan gebruiken om het verhaal voort te stuwen.
+  - ⚡ **Geoptimaliseerde Instructies:** De manier waarop het spel om het verhaal in jouw taal vraagt is verbeterd, waardoor capaciteit van het model vrijkomt om zich te concentreren op creativiteit.
+  - 👁️ **Verhalende Focus:** De perceptie van de AI is herschreven. Het begrijpt nu beter welke elementen "statische achtergrond" zijn en niet onnodig in elke paragraaf herhaald hoeven te worden.
+  - 🔀 **Duidelijkere Beslissingen:** De AI biedt nu meer gedefinieerde ontsnappingsroutes. De suggesties (knoppen) zijn verdeeld tussen de omgeving onderzoeken (Verdiepen) of van koers veranderen (Afwijken).
+  - 🫵 **Directe Aanspreekvorm:** De basisinstructie is aangepast om ervoor te zorgen dat de AI je met "Jij" aanspreekt, wat de persoonlijke immersie verbetert.
+  
   **Personagecreatie:**
-  - 🖼️ **Karakterportretten:** Bij het genereren van een personage met AI probeert het systeem een portret te maken op basis van leeftijd, beroep en beschrijving. Houd er rekening mee dat dit een vroege versie is en dat de getrouwheid (vooral qua leeftijd) kan variëren afhankelijk van het gebruikte model. (ik ben nog steeds aan het testen, maar het begin is goed)
-  - 🎲 **Betrouwbare willekeurige generatie:** Een fout opgelost waarbij de knop "Genereren met AI" bij de eerste poging kon mislukken, waardoor velden leeg bleven. Het intelligente correctiesysteem zorgt er nu voor dat het antwoord altijd geldig is.
+  - 🖼️ **Personageportretten:** Bij het genereren van een personage met AI, probeert het systeem een portret te maken op basis van leeftijd, beroep en beschrijving. Houd er rekening mee dat dit een vroege versie is en de getrouwheid (vooral qua leeftijd) kan variëren afhankelijk van het gebruikte model. (Ik blijf testen, maar het begin is goed)
+  - 🎲 **Betrouwbare Willekeurige Generatie:** Een fout opgelost waarbij de knop "Genereren met AI" bij de eerste poging kon falen, waardoor de velden leeg bleven. Het slimme correctiesysteem zorgt er nu voor dat het antwoord altijd geldig is.
+  
+  **Prestaties op Lage Configuraties (Belangrijk voor GPU's met weinig VRAM):**
+  - 🧠 **PSR - Hybride Beheer:** Nieuw systeem dat het werk van de AI in twee fasen verdeelt: Planning (Chef) en Uitvoering (Koks). Hierdoor kunnen lokale modellen met 8 GB VRAM werken zonder vast te lopen door een teveel aan context (+12K tokens), ten koste van een hogere latentie. De interactie met de AI verandert van een enkele prompt naar een reeks prompts (hoe minder VRAM, hoe meer prompts er worden gegenereerd en hoe langer de reactietijd).
+  - ⚡ **Slimme Uitvoering:** Het systeem beslist automatisch of alles in één keer (monolithisch) wordt verwerkt of in delen (iteratief), afhankelijk van je beschikbare VRAM. GPU's met minder VRAM activeren de modus 'in delen' alleen wanneer dat nodig is.
+  - 📊 **Dynamische Optimalisatie:** PSR vermindert de tokenbelasting tijdens het genereren, waardoor gebruikers met grafische kaarten van 4GB de personagecreatie en verhaalgeneratie kunnen voltooien die voorheen vastliepen.
+  - 🔄 **Behouden Coherentie:** Ondanks de verdeling van het werk, injecteert het systeem een "meester-intentie" zodat de AI de draad van waar hij mee bezig was niet kwijtraakt.
 
 ****************************************************************************************************
 15/02/2026 02:57 - Direct typen, stabiliteitsfixes en detectie v - Beta_v057

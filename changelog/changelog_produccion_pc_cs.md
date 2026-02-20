@@ -1,30 +1,39 @@
 ****************************************************************************************************
-17/02/2026 18:21 - Generování obrázků pomocí AI, vylepšení vyprávění a ovládání - v058
+20/02/2026 23:18 - Generování obrázků pomocí AI, vylepšení vyprávění a ovládání - EXPERIMENTAL_v058
 ****************************************************************************************************
 - What's New (CS):
-  **⚠️ EXPERIMENTÁLNÍ VĚTEV (BETA VE STEAMU)**
-  Tato verze je aktuálně dostupná pouze v **Experimentální větvi** ve službě Steam. Pro její aktivaci:
+  **⚠️ EXPERIMENTÁLNÍ VĚTEV (STEAM BETA)**
+  Tato verze je momentálně dostupná pouze v **Experimentální větvi** na Steamu. Pro aktivaci:
   1. Klikněte pravým tlačítkem na **RolemIAster** ve své knihovně Steam.
   2. Vyberte **Vlastnosti...**
-  3. Přejděte na záložku **Betas**.
-  4. V sekci "Účast na beta verzi" vyberte z rozbalovací nabídky **experimental**.
+  3. Přejděte na záložku **Verze beta**.
+  4. V části „Účast na verzi beta“ vyberte v rozbalovací nabídce **experimental**.
+  
   **Novinka: První fáze generování obrázků pomocí AI**
   - 🎨 **Váš svět v obrazech:** Integroval jsem počáteční systém generování obrázků pomocí umělé inteligence. Během hraní se systém snaží generovat portréty a krajiny, které doplňují atmosféru vaší hry.
   - 🖼️ **Dynamická pozadí:** Obrázky se generují na pozadí, aniž by zastavily vaši hru. Uvidíte, jak se postupně objevují na pozadí, na kartách postav a v Kodexu.
-  - ⚡ **Rychlost na míru:** Nová sekce ve Vizuálním nastavení. Vyberte si mezi "Rychlá" (1 krok), "Střední" (2 kroky) nebo "Vysoká" (4 kroky) pro přizpůsobení času generování výkonu vašeho počítače.
-  - 🛠️ **Technická optimalizace:** AI model pro obrázky se načítá do **RAM (paměti)** a zpracovává se přes **CPU**, aniž by zabíral video paměť (VRAM). To zaručuje, že nebude narušovat výkon hlavní herní AI (LLM). Vyžaduje přibližně 5 GB dodatečné RAM, což se stále vejde do oficiálních minimálních požadavků Steamu.
+  - ⚡ **Rychlost na míru:** Nová sekce ve Vizuálním nastavení. Vyberte si mezi „Rychlá“ (1 krok), „Střední“ (2 kroky) nebo „Vysoká“ (4 kroky) pro přizpůsobení času generování výkonu vašeho počítače.
+  - 🛠️ **Technická optimalizace:** AI model pro obrázky se načítá do **RAM (paměti)** a zpracovává se přes **CPU**, aniž by zabíral videopaměť (VRAM). To zaručuje, že nebude zasahovat do výkonu hlavní AI hry (LLM). Vyžaduje přibližně 5 GB dodatečné RAM, čímž se drží v rámci oficiálních minimálních požadavků Steamu.
   - 📤 **Sdílejte svá dobrodružství:** Všechny vygenerované obrázky se automaticky ukládají. Najdete je ve složce: `%APPDATA%/RolemIAster/custom_assets/images`
-  - 🔬 **Výběr modelů (Pokročilé):** Pokud hru spustíte s parametrem `--advanced`, můžete nyní v panelu Vzhled vybrat, jaký AI model se má použít pro obrázky. To umožňuje nadšencům zkoušet různé verze Stable Diffusion optimalizované pro OpenVINO (soubory .xml/.bin).
-  **Vyprávění a mozek AI:**
-  - 🧠 **Konec smyček:** Byla zavedena nová "Paměťová doktrína" do AI. Nyní lépe rozlišuje mezi "vzpomínkami" (co se již stalo) a "přítomností" (co se právě děje). To pomáhá snížit případy, kdy se AI opakovala nebo se zasekla.
-  - 📜 **Historické archivy:** Systém prezentuje vaše vzpomínky AI jako "Uzavřený historický archiv", což jí usnadňuje využití těchto informací jako reference pro posun příběhu.
+  - 🔬 **Výběr modelů (Pokročilé):** Pokud spustíte hru s parametrem `--advanced`, můžete nyní v panelu Vzhled vybrat, který model AI pro obrázky použít. To umožňuje nadšencům zkoušet různé verze Stable Diffusion optimalizované pro OpenVINO (soubory .xml/.bin).
+  
+  **Vyprávění a AI mozek:**
+  - 🧠 **Konec smyček:** Do AI byla implementována nová „Doktrína paměti“. Nyní lépe rozlišuje mezi „vzpomínkami“ (co se již stalo) a „přítomností“ (co se děje právě teď). To pomáhá omezit případy, kdy se AI opakovala nebo uvízla.
+  - 📜 **Historické archivy:** Systém prezentuje vaše vzpomínky AI jako „Uzavřený historický archiv“, což usnadňuje použití těchto informací jako reference pro posun v příběhu.
   - ⚡ **Optimalizované instrukce:** Byl vylepšen způsob, jakým hra žádá o vyprávění ve vašem jazyce, čímž se uvolnila kapacita modelu, aby se mohl soustředit na kreativitu.
-  - 👁️ **Narativní zaměření:** Bylo přepsáno vnímání AI. Nyní lépe chápe, které prvky jsou "statické pozadí" a neměla by je zbytečně opakovat v každém odstavci.
-  - 🔀 **Jasnější rozhodnutí:** AI nyní nabízí jasnější únikové cesty. Její návrhy (tlačítka) se dělí na zkoumání prostředí (Prohloubit) nebo změnu směru (Odchýlit se).
-  - 🫵 **Přímé oslovení:** Základní instrukce byla upravena tak, aby vám AI tykala, což zlepšuje osobní vtažení do děje.
+  - 👁️ **Narativní zaměření:** Vnímání AI bylo přepsáno. Nyní lépe chápe, které prvky jsou „statické pozadí“ a neměla by je zbytečně opakovat v každém odstavci.
+  - 🔀 **Jasnější rozhodnutí:** AI nyní nabízí jasněji definované únikové cesty. Její návrhy (tlačítka) jsou rozděleny na zkoumání prostředí (Prohloubit) nebo změnu směru (Odbočit).
+  - 🫵 **Přímé oslovení:** Základní instrukce byla upravena tak, aby vám AI tykala („Ty“), což zlepšuje osobní imerzi.
+  
   **Tvorba postavy:**
-  - 🖼️ **Portréty postav:** Při generování postavy pomocí AI se systém pokusí vytvořit portrét na základě věku, profese a popisu. Mějte na paměti, že se jedná o prvotní verzi a věrnost (zejména u věku) se může lišit v závislosti na použitém modelu. (Stále provádím testy, ale začátek je dobrý).
-  - 🎲 **Spolehlivé náhodné generování:** Opravena chyba, kdy tlačítko "Generovat pomocí AI" mohlo na první pokus selhat a ponechat pole prázdná. Nyní systém inteligentní opravy zajišťuje, že odpověď je vždy platná.
+  - 🖼️ **Portréty postav:** Při generování postavy pomocí AI se systém pokusí vytvořit portrét na základě věku, povolání a popisu. Mějte na paměti, že jde o počáteční verzi a věrnost (zejména u věku) se může lišit v závislosti na použitém modelu. (Stále provádím testy, ale začátek je dobrý).
+  - 🎲 **Spolehlivé náhodné generování:** Opravena chyba, kdy tlačítko „Generovat pomocí AI“ mohlo na první pokus selhat a ponechat pole prázdná. Nyní systém inteligentní korekce zajišťuje, že odpověď je vždy platná.
+  
+  **Výkon na nižších konfiguracích (Důležité pro GPU s malou VRAM):**
+  - 🧠 **PSR - Hybridní řízení:** Nový systém, který rozděluje práci AI do dvou fází: Plánování (Šéfkuchař) a Provádění (Kuchaři). To umožňuje lokálním modelům s 8 GB VRAM fungovat a vyhnout se kolapsům z přemíry kontextu (+12K tokenů) za cenu vyšší latence; interakce s AI se mění z jediného promptu na sérii promptů (čím menší VRAM, tím více promptů se vygeneruje a tím delší bude doba odezvy).
+  - ⚡ **Inteligentní provádění:** Systém automaticky rozhodne, zda zpracovat vše najednou (monoliticky) nebo rozdělit na části (iterativně) podle vaší dostupné VRAM. GPU s menší VRAM aktivují režim po částech pouze tehdy, když je to nutné.
+  - 📊 **Dynamická optimalizace:** PSR snižuje zátěž tokenů během generování, což umožňuje uživatelům s grafickými kartami se 4 GB dokončit tvorbu postav a generování příběhu, které se dříve zasekávaly.
+  - 🔄 **Zachovaná koherence:** I přes rozdělení práce systém vkládá „hlavní záměr“, aby AI neztratila nit toho, co dělala.
 
 ****************************************************************************************************
 15/02/2026 02:57 - Přímé psaní, opravy stability a detekce - Beta_v057

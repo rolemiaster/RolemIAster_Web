@@ -1,30 +1,39 @@
 ****************************************************************************************************
-17/02/2026 18:23 - KI-Bildgenerierung, Narrative Verbesserungen und Steuerung - v058
+20/02/2026 23:18 - KI-Bildgenerierung, narrative Verbesserungen und Steuerung - EXPERIMENTAL_v058
 ****************************************************************************************************
 - What's New (DE):
   **⚠️ EXPERIMENTELLER ZWEIG (STEAM-BETA)**
   Diese Version ist derzeit nur im **Experimentellen Zweig** auf Steam verfügbar. So aktivierst du sie:
-  1. Mache einen Rechtsklick auf **RolemIAster** in deiner Steam-Bibliothek.
+  1. Rechtsklicke auf **RolemIAster** in deiner Steam-Bibliothek.
   2. Wähle **Eigenschaften...**
   3. Gehe zum Reiter **Betas**.
-  4. Wähle unter "Beta-Teilnahme" im Dropdown-Menü **experimental** aus.
+  4. Wähle unter „Beta-Teilnahme“ im Dropdown-Menü **experimental** aus.
+  
   **Neuheit: Erste Phase der KI-Bildgenerierung**
-  - 🎨 **Deine Welt in Bildern:** Ich habe ein erstes System zur KI-Bildgenerierung integriert. Während du spielst, versucht das System, Porträts und Landschaften zu generieren, die zur Atmosphäre deines Spiels passen.
+  - 🎨 **Deine Welt in Bildern:** Ich habe ein erstes System zur Bildgenerierung durch künstliche Intelligenz integriert. Während du spielst, versucht das System, Porträts und Landschaften zu generieren, die zur Atmosphäre deines Spiels passen.
   - 🖼️ **Dynamische Hintergründe:** Die Bilder werden im Hintergrund generiert, ohne dein Spiel zu unterbrechen. Du wirst sehen, wie sie nach und nach im Hintergrund, auf den Charakterkarten und im Kodex erscheinen.
-  - ⚡ **Geschwindigkeit nach Maß:** Neuer Bereich in den visuellen Einstellungen. Wähle zwischen "Schnell" (1 Schritt), "Mittel" (2 Schritte) oder "Hoch" (4 Schritte), um die Generierungszeit an die Leistung deines Computers anzupassen.
-  - 🛠️ **Technische Optimierung:** Das KI-Modell für Bilder wird in den **Arbeitsspeicher (RAM)** geladen und über die **CPU** verarbeitet, ohne Videospeicher (VRAM) zu belegen. Dies garantiert, dass die Leistung der Haupt-KI des Spiels (LLM) nicht beeinträchtigt wird. Es werden etwa 5 GB zusätzlicher RAM benötigt, was innerhalb der offiziellen Mindestanforderungen von Steam liegt.
+  - ⚡ **Geschwindigkeit nach Maß:** Neuer Bereich in den visuellen Einstellungen. Wähle zwischen „Schnell“ (1 Schritt), „Mittel“ (2 Schritte) oder „Hoch“ (4 Schritte), um die Generierungszeit an die Leistung deines Computers anzupassen.
+  - 🛠️ **Technische Optimierung:** Das KI-Modell für Bilder wird in den **RAM (Arbeitsspeicher)** geladen und über die **CPU** verarbeitet, ohne Videospeicher (VRAM) zu belegen. Dies garantiert, dass die Leistung der Haupt-KI des Spiels (LLM) nicht beeinträchtigt wird. Es werden ca. 5 GB zusätzlicher RAM benötigt, was innerhalb der offiziellen Mindestanforderungen von Steam liegt.
   - 📤 **Teile deine Abenteuer:** Alle generierten Bilder werden automatisch gespeichert. Du findest sie im Ordner: `%APPDATA%/RolemIAster/custom_assets/images`
-  - 🔬 **Modellauswahl (Erweitert):** Wenn du das Spiel mit dem Parameter `--advanced` startest, kannst du jetzt im Erscheinungsbild-Panel wählen, welches KI-Modell für die Bilder verwendet werden soll. Dies ermöglicht Enthusiasten, verschiedene, für OpenVINO optimierte Versionen von Stable Diffusion (.xml/.bin-Dateien) zu testen.
-  **Erzählung und KI-Gehirn:**
-  - 🧠 **Ende der Schleifen:** Eine neue "Gedächtnis-Doktrin" wurde in die KI implementiert. Sie unterscheidet nun besser zwischen "Erinnerungen" (was bereits geschehen ist) und der "Gegenwart" (was gerade passiert). Dies hilft, Fälle zu reduzieren, in denen sich die KI wiederholte oder stecken blieb.
-  - 📜 **Historische Archive:** Das System präsentiert deine Erinnerungen der KI als "Geschlossenes historisches Archiv", was es ihr erleichtert, diese Informationen als Referenz zu nutzen, um die Geschichte voranzutreiben.
+  - 🔬 **Modell-Auswahl (Fortgeschritten):** Wenn du das Spiel mit dem Parameter `--advanced` startest, kannst du nun im Aussehen-Menü auswählen, welches KI-Modell für die Bilder verwendet werden soll. Dies ermöglicht Enthusiasten, verschiedene für OpenVINO optimierte Versionen von Stable Diffusion (.xml/.bin-Dateien) zu testen.
+  
+  **Narrative und KI-Gehirn:**
+  - 🧠 **Ende der Schleifen:** Eine neue „Gedächtnis-Doktrin“ wurde in die KI implementiert. Sie unterscheidet nun besser zwischen „Erinnerungen“ (was bereits geschehen ist) und der „Gegenwart“ (was gerade geschieht). Dies hilft, Fälle zu reduzieren, in denen die KI sich wiederholte oder stecken blieb.
+  - 📜 **Historische Archive:** Das System präsentiert der KI deine Erinnerungen als „Abgeschlossenes Historisches Archiv“, was es ihr erleichtert, diese Informationen als Referenz zu nutzen, um die Geschichte voranzutreiben.
   - ⚡ **Optimierte Anweisungen:** Die Art und Weise, wie das Spiel die Erzählung in deiner Sprache anfordert, wurde verbessert, wodurch Kapazitäten des Modells freigegeben werden, um sich auf die Kreativität zu konzentrieren.
-  - 👁️ **Erzählerischer Fokus:** Die Wahrnehmung der KI wurde überarbeitet. Sie versteht nun besser, welche Elemente "statischer Hintergrund" sind und nicht unnötigerweise in jedem Absatz wiederholt werden sollten.
-  - 🔀 **Klarere Entscheidungen:** Die KI bietet nun definiertere Auswege an. Ihre Vorschläge (Buttons) unterscheiden sich zwischen der Untersuchung der Umgebung (Vertiefen) oder einer Richtungsänderung (Abweichen).
-  - 🫵 **Direkte Ansprache:** Die Basisanweisung wurde angepasst, um sicherzustellen, dass die KI dich mit "Du" anspricht, was die persönliche Immersion verbessert.
+  - 👁️ **Narrativer Fokus:** Die Wahrnehmung der KI wurde neu geschrieben. Sie versteht nun besser, welche Elemente „statischer Hintergrund“ sind und nicht unnötigerweise in jedem Absatz wiederholt werden sollten.
+  - 🔀 **Klarere Entscheidungen:** Die KI bietet nun definiertere Auswege an. Ihre Vorschläge (Buttons) unterteilen sich in das Untersuchen der Umgebung (Vertiefen) oder das Ändern des Kurses (Abweichen).
+  - 🫵 **Direkte Ansprache:** Die Basisanweisung wurde angepasst, um sicherzustellen, dass die KI dich mit „Du“ anspricht, was die persönliche Immersion verbessert.
+  
   **Charaktererstellung:**
-  - 🖼️ **Charakterporträts:** Beim Generieren eines Charakters mit KI versucht das System, ein Porträt basierend auf Alter, Beruf und Beschreibung zu erstellen. Bitte beachte, dass dies eine erste Version ist und die Genauigkeit (insbesondere beim Alter) je nach verwendetem Modell variieren kann. (Ich führe weiterhin Tests durch, aber der Anfang ist vielversprechend.)
-  - 🎲 **Zuverlässige Zufallsgenerierung:** Ein Fehler wurde behoben, durch den der Button "Mit KI generieren" beim ersten Versuch fehlschlagen konnte und die Felder leer blieben. Das intelligente Korrektursystem stellt nun sicher, dass die Antwort immer gültig ist.
+  - 🖼️ **Charakterporträts:** Wenn du einen Charakter mit KI generierst, versucht das System, ein Porträt basierend auf Alter, Beruf und Beschreibung zu erstellen. Beachte, dass es sich um eine frühe Version handelt und die Genauigkeit (insbesondere beim Alter) je nach verwendetem Modell variieren kann. (Ich teste noch weiter, aber der Anfang ist vielversprechend)
+  - 🎲 **Zuverlässige Zufallsgenerierung:** Ein Fehler wurde behoben, durch den der Button „Mit KI generieren“ beim ersten Versuch fehlschlagen konnte, was zu leeren Feldern führte. Das intelligente Korrektursystem stellt nun sicher, dass die Antwort immer gültig ist.
+  
+  **Leistung bei niedrigen Konfigurationen (Wichtig für GPUs mit wenig VRAM):**
+  - 🧠 **PSR – Hybride Steuerung:** Ein neues System, das die Arbeit der KI in zwei Phasen unterteilt: Planung (Chefkoch) und Ausführung (Köche). Dies ermöglicht es lokalen Modellen mit 8 GB VRAM zu funktionieren und Abstürze durch übermäßigen Kontext (+12K Token) zu vermeiden, allerdings auf Kosten einer höheren Latenz. Die Interaktion mit der KI wechselt von einem einzigen Prompt zu einer Serie von Prompts (je weniger VRAM, desto mehr Prompts werden generiert und desto länger ist die Antwortzeit).
+  - ⚡ **Intelligente Ausführung:** Das System entscheidet automatisch basierend auf deinem verfügbaren VRAM, ob alles auf einmal (monolithisch) oder in Teilen (iterativ) verarbeitet wird. GPUs mit weniger VRAM aktivieren den stückweisen Modus nur bei Bedarf.
+  - 📊 **Dynamische Optimierung:** PSR reduziert die Token-Last während der Generierung, sodass Nutzer mit 4-GB-Grafikkarten die Charaktererstellung und Story-Generierung abschließen können, die zuvor blockiert wurden.
+  - 🔄 **Beibehaltene Kohärenz:** Trotz der Aufteilung der Arbeit injiziert das System eine „Master-Intention“, damit die KI den Faden dessen, was sie tat, nicht verliert.
 
 ****************************************************************************************************
 15/02/2026 02:57 - Direkte Eingabe, Stabilitätskorrekturen und Erkennung - Beta_v057

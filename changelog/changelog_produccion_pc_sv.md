@@ -1,30 +1,39 @@
 ****************************************************************************************************
-17/02/2026 19:15 - AI-bildgenerering, berättelseförbättringar och kontroll - v058
+20/02/2026 23:18 - AI-bildgenerering, berättelseförbättringar och kontroll - EXPERIMENTAL_v058
 ****************************************************************************************************
 - What's New (SV):
   **⚠️ EXPERIMENTELL GREN (STEAM BETA)**
-  Denna version är för närvarande endast tillgänglig på Steams **Experimentella gren**. För att aktivera den:
+  Denna version är för närvarande endast tillgänglig i Steams **Experimentella gren**. För att aktivera den:
   1. Högerklicka på **RolemIAster** i ditt Steam-bibliotek.
   2. Välj **Egenskaper...**
-  3. Gå till fliken **Betas**.
-  4. Under "Betadeltagande", välj **experimental** i rullgardinsmenyn.
+  3. Gå till fliken **Betaversioner**.
+  4. Under "Deltagande i beta", välj **experimental** i rullgardinsmenyn.
+  
   **Nyhet: Första fasen av AI-bildgenerering**
-  - 🎨 **Din värld i bilder:** Jag har integrerat ett inledande system för bildgenerering med artificiell intelligens. När du spelar försöker systemet generera porträtt och landskap som matchar atmosfären i din spelomgång.
+  - 🎨 **Din värld i bilder:** Jag har integrerat ett inledande system för bildgenerering med artificiell intelligens. Medan du spelar försöker systemet generera porträtt och landskap som matchar atmosfären i din spelomgång.
   - 🖼️ **Dynamiska bakgrunder:** Bilderna genereras i bakgrunden utan att stoppa ditt spel. Du kommer att se dem dyka upp successivt i bakgrunden, på karaktärskort och i Codex.
-  - ⚡ **Hastighet efter dina behov:** Ny sektion i Visuella inställningar. Välj mellan "Snabb" (1 steg), "Medel" (2 steg) eller "Hög" (4 steg) för att justera genereringstiden efter din dators prestanda.
-  - 🛠️ **Teknisk optimering:** AI-modellen för bilder laddas i **RAM (minne)** och bearbetas via **CPU**, utan att ta upp videominne (VRAM). Detta garanterar att det inte stör prestandan hos spelets huvud-AI (LLM). Det kräver cirka 5GB extra RAM, men håller sig inom de officiella minimikraven för Steam.
+  - ⚡ **Hastighet som passar dig:** Ny sektion i Visuella inställningar. Välj mellan "Snabb" (1 steg), "Medel" (2 steg) eller "Hög" (4 steg) för att anpassa genereringstiden efter din dators prestanda.
+  - 🛠️ **Teknisk optimering:** AI-modellen för bilder laddas i **RAM (Minne)** och bearbetas via **CPU**, utan att ta upp videominne (VRAM). Detta garanterar att den inte stör prestandan hos spelets huvudsakliga AI (LLM). Kräver cirka 5GB extra RAM, men håller sig inom de officiella minimikraven för Steam.
   - 📤 **Dela dina äventyr:** Alla genererade bilder sparas automatiskt. Du hittar dem i mappen: `%APPDATA%/RolemIAster/custom_assets/images`
-  - 🔬 **Modellväljare (Avancerat):** Om du startar spelet med parametern `--advanced`, kan du nu välja vilken AI-modell som ska användas för bilderna från panelen Utseende. Detta låter entusiaster testa olika versioner av Stable Diffusion optimerade för OpenVINO (.xml/.bin-filer).
-  **Berättelse och AI-hjärna:**
+  - 🔬 **Modellväljare (Avancerat):** Om du startar spelet med parametern `--advanced`, kan du nu välja vilken AI-modell som ska användas för bilder från Utseende-panelen. Detta låter entusiaster testa olika versioner av Stable Diffusion optimerade för OpenVINO (.xml/.bin-filer).
+  
+  **Berättande och AI-hjärna:**
   - 🧠 **Slut på loopar:** En ny "Minnesdoktrin" har implementerats i AI:n. Den skiljer nu bättre mellan "minnen" (det som redan hänt) och "nuet" (det som händer). Detta hjälper till att minska fall där AI:n upprepade sig eller fastnade.
-  - 📜 **Historiska arkiv:** Systemet presenterar dina minnen för AI:n som ett "Stängt historiskt arkiv", vilket gör det lättare för den att använda informationen som referens för att driva berättelsen framåt.
+  - 📜 **Historiska arkiv:** Systemet presenterar dina minnen för AI:n som ett "Stängt historiskt arkiv", vilket gör det lättare för den att använda informationen som referens för att föra berättelsen framåt.
   - ⚡ **Optimerade instruktioner:** Sättet spelet begär berättandet på ditt språk har förbättrats, vilket frigör kapacitet för modellen att fokusera på kreativitet.
-  - 👁️ **Berättelsefokus:** AI:ns uppfattning har skrivits om. Den förstår nu bättre vilka element som är "statisk bakgrund" och bör inte upprepa dem i onödan i varje stycke.
-  - 🔀 **Tydligare beslut:** AI:n erbjuder nu mer definierade vägar framåt. Dess förslag (knappar) är uppdelade mellan att undersöka omgivningen (Fördjupa) eller byta riktning (Avvika).
+  - 👁️ **Berättarfokus:** AI:ns perception har skrivits om. Den förstår nu bättre vilka element som är "statisk bakgrund" och bör inte upprepa dem i onödan i varje stycke.
+  - 🔀 **Tydligare beslut:** AI:n erbjuder nu mer definierade flyktvägar. Dess förslag (knappar) är uppdelade mellan att undersöka omgivningen (Fördjupa) eller byta riktning (Avvika).
   - 🫵 **Direkt tilltal:** Basinstruktionen har justerats för att säkerställa att AI:n tilltalar dig med "Du", vilket förbättrar den personliga inlevelsen.
+  
   **Karaktärsskapande:**
-  - 🖼️ **Karaktärsporträtt:** När en karaktär genereras med AI försöker systemet skapa ett porträtt baserat på ålder, yrke och beskrivning. Tänk på att detta är en tidig version och att exaktheten (särskilt gällande ålder) kan variera beroende på vilken modell som används. (jag fortsätter att testa men starten är bra)
-  - 🎲 **Pålitlig slumpmässig generering:** Åtgärdat ett fel där knappen "Generera med AI" kunde misslyckas vid första försöket och lämna fälten tomma. Nu ser det intelligenta korrigeringssystemet till att svaret alltid är giltigt.
+  - 🖼️ **Karaktärsporträtt:** När en karaktär genereras med AI försöker systemet skapa ett porträtt baserat på ålder, yrke och beskrivning. Tänk på att detta är en tidig version och att trohetsgraden (särskilt gällande ålder) kan variera beroende på vilken modell som används. (jag fortsätter att testa men starten är bra)
+  - 🎲 **Pålitlig slumpmässig generering:** Fixat ett fel där knappen "Generera med AI" kunde misslyckas vid första försöket och lämna fälten tomma. Nu säkerställer det smarta korrigeringssystemet att svaret alltid är giltigt.
+  
+  **Prestanda på låga konfigurationer (Viktigt för GPU med lite VRAM):**
+  - 🧠 **PSR - Hybridstyrning:** Ett nytt system som delar upp AI:ns arbete i två faser: Planering (Köksmästare) och Utförande (Kockar). Detta gör att lokala modeller med 8 GB VRAM kan fungera och undvika krascher på grund av för mycket kontext (+12K tokens), på bekostnad av högre latens. Interaktionen med AI:n går från att vara en enda prompt till en serie prompts (ju mindre VRAM, desto fler prompts genereras och desto längre svarstid).
+  - ⚡ **Smart utförande:** Systemet bestämmer automatiskt om allt ska bearbetas på en gång (monolitiskt) eller delas upp i delar (iterativt) beroende på ditt tillgängliga VRAM. GPU:er med mindre VRAM aktiverar läget med uppdelning endast när det är nödvändigt.
+  - 📊 **Dynamisk optimering:** PSR minskar token-belastningen under genereringen, vilket gör att användare med grafikkort på 4GB kan slutföra karaktärsskapande och historiegenerering som tidigare blockerades.
+  - 🔄 **Bibehållen koherens:** Trots att arbetet delas upp injicerar systemet en "mästarintention" så att AI:n inte tappar tråden i vad den höll på med.
 
 ****************************************************************************************************
 15/02/2026 02:57 - Direktskrift, Stabilitetsfixar och Detektering - Beta_v057
