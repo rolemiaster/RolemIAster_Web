@@ -2,11 +2,14 @@
 24/02/2026 12:32 - KI-Bildgenerierung, narrative Verbesserungen und Kontrolle - Beta_v058
 ****************************************************************************************************
 - What's New (DE):
+  **🧠 Entwicklung des Gehirns: Hallo, Qwen 3**
+  Ich habe die Engine des Spiels migriert, um das Maximum aus der neuen Generation der Qwen3-Modelle herauszuholen. Die alten Modelle der 2.5-Serie haben RolemIAster auf seine Reise geschickt, aber es ist Zeit, sich von alten Glorien zu verabschieden. Dieser quantitative Sprung in der Story-Generierung bedeutet immersivere Prosa, deutlich strengere Regeln und konsistentere Charaktere. Macht eure Grafikkarten bereit - der Spielleiter ist gerade ein Level aufgestiegen.
+
   **Neu: Zweite Phase der KI-Bildgenerierung**
   - 🎨 **Deine Welt in Bildern:** Ich habe ein erstes System zur Bildgenerierung mittels Künstlicher Intelligenz integriert. Während du spielst, versucht das System, Porträts und Landschaften zu erstellen, die zur Atmosphäre deiner Partie passen.
   - 🖼️ **Dynamische Hintergründe:** Die Bilder werden im Hintergrund generiert, ohne dein Spiel zu unterbrechen. Du wirst sehen, wie sie nach und nach im Hintergrund, auf den Charakterkarten und im Kodex erscheinen.
   - 🧹 **Bildverwaltung:** Neues Panel zum Anzeigen und Löschen generierter Bilder, die dir nicht gefallen.
-  
+
   **Verbesserungen bei der Charaktererstellung:**
   - ⚙️ **Robustere Zufallsgenerierung:** Ich habe die Regel-Engine vereinheitlicht und verbessert, die von der KI zur Erstellung von Charakteren von Grund auf verwendet wird. Dies garantiert logischere Inventare (5 bis 10 stimmige Gegenstände) und ausgewogenere Charakterbögen.
   - 🧠 **Geteiltes Gehirn:** Die KI versteht jetzt besser, wann sie einen Charakter von Grund auf „erfinden“ soll und wann sie sich darauf beschränken muss, Daten aus der von dir geschriebenen Biografie zu extrahieren.

@@ -2,7 +2,10 @@
 24/02/2026 12:32 - Generarea imaginilor prin IA, Îmbunătățiri narative și Control - Beta_v058
 ****************************************************************************************************
 - What's New (RO):
-  **Noutate: A doua fază a Generării de Imagini prin IA**
+  **🧠 Evoluția Creierului: Salut, Qwen 3**
+  Am migrat motorul jocului pentru a valorifica la maximum noua generație de modele Qwen3. Vechile modele din seria 2.5 au însoțit începutul drumului RolemIAster, dar a venit momentul să lăsăm în urmă vechile glorii. Acest salt cantitativ în generarea poveștilor se traduce printr-o proză mai captivantă, reguli mult mai stricte și personaje mai coerente. Pregătiți-vă plăcile grafice, pentru că Maestrul Jocului tocmai a urcat un nivel.
+
+  **Noutate: A doua fază a generării imaginilor AI**
   - 🎨 **Lumea ta în imagini:** Am integrat un sistem inițial de generare a imaginilor prin Inteligență Artificială. Pe măsură ce joci, sistemul încearcă să genereze portrete și peisaje care să însoțească atmosfera partidei tale.
   - 🖼️ **Fundaluri dinamice:** Imaginile sunt generate în fundal fără a opri jocul. Vei vedea cum apar progresiv în fundal, pe cardurile personajelor și în Codex.
   - 🧹 **Gestionarea imaginilor:** Panou nou pentru a vizualiza și șterge imaginile generate care nu îți plac.

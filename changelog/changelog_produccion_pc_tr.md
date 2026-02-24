@@ -2,6 +2,9 @@
 24/02/2026 12:32 - Yapay Zeka Görsel Oluşturma, Anlatı İyileştirmeleri ve Kontrol - Beta_v058
 ****************************************************************************************************
 - What's New (TR):
+  **🧠 Beynin Evrimi: Merhaba, Qwen 3**
+  Oyunun motorunu, yeni nesil Qwen3 modellerinden en yüksek verimi almak için taşıdım. 2.5 serisinin eski modelleri RolemIAster'ın yolculuğunu başlattı, ancak artık eski ihtişamları geride bırakma zamanı geldi. Hikaye üretimindeki bu nicel sıçrama, daha sürükleyici bir anlatım, çok daha katı kurallar ve daha tutarlı karakterler anlamına geliyor. Ekran kartlarınızı hazırlayın, çünkü Oyun Yöneticisi az önce seviye atladı.
+
   **Yenilik: Yapay Zeka Görsel Oluşturma - İkinci Aşama**
   - 🎨 **Resimlerle Senin Dünyan:** Başlangıç düzeyinde bir Yapay Zeka görsel oluşturma sistemi entegre ettim. Oynadıkça sistem, oyununun atmosferine eşlik edecek portreler ve manzaralar oluşturmaya çalışır.
   - 🖼️ **Dinamik Arka Planlar:** Görseller, oyununu durdurmadan arka planda oluşturulur. Arka planda, karakter kartlarında ve Kodeks'te aşamalı olarak belirdiklerini göreceksin.

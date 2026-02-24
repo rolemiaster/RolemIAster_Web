@@ -2,6 +2,9 @@
 24/02/2026 12:32 - Tạo Ảnh Bằng AI, Cải Thiện Dẫn Chuyện và Kiểm Soát - Beta_v058
 ****************************************************************************************************
 - What's New (VI):
+  **🧠 Tiến Hóa Bộ Não: Xin chào, Qwen 3**
+  Tôi đã chuyển đổi bộ máy của trò chơi để tận dụng tối đa thế hệ mô hình Qwen3 mới. Các mô hình cũ thuộc dòng 2.5 đã đồng hành cùng RolemIAster khi bắt đầu hành trình, nhưng đã đến lúc rời xa những vinh quang cũ. Bước nhảy định lượng này trong việc tạo truyện mang lại văn phong nhập vai hơn, các quy tắc chặt chẽ hơn nhiều và nhân vật nhất quán hơn. Hãy chuẩn bị GPU của bạn, vì Quản Trò vừa lên cấp.
+
   **Mới: Giai đoạn 2 của Tính năng Tạo Ảnh Bằng AI**
   - 🎨 **Thế giới của bạn qua hình ảnh:** Tôi đã tích hợp hệ thống tạo ảnh ban đầu bằng Trí tuệ Nhân tạo. Khi bạn chơi, hệ thống sẽ cố gắng tạo ra các chân dung và phong cảnh phù hợp với bối cảnh ván game của bạn.
   - 🖼️ **Hình nền động:** Hình ảnh được tạo trong nền mà không làm gián đoạn trò chơi. Bạn sẽ thấy chúng dần xuất hiện ở phông nền, trên thẻ nhân vật và trong Códice.

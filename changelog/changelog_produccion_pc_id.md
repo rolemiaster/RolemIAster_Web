@@ -2,6 +2,9 @@
 24/02/2026 12:32 - Generasi Gambar AI, Peningkatan Naratif, dan Kontrol - Beta_v058
 ****************************************************************************************************
 - What's New (ID):
+  **🧠 Evolusi Otak: Halo, Qwen 3**
+  Saya memigrasikan mesin game agar bisa memaksimalkan generasi baru model Qwen3. Model lama seri 2.5 ikut mengawali perjalanan RolemIAster, tetapi kini saatnya meninggalkan kejayaan lama. Lompatan kuantitatif dalam generasi cerita ini menghasilkan prosa yang lebih imersif, aturan yang jauh lebih ketat, dan karakter yang lebih konsisten. Siapkan kartu grafis kalian, karena Sang Game Master baru saja naik level.
+
   **Baru: Fase kedua Generasi Gambar AI**
   - 🎨 **Duniamu dalam Gambar:** Saya telah mengintegrasikan sistem awal generasi gambar berbasis Kecerdasan Buatan. Saat Anda bermain, sistem akan mencoba menghasilkan potret dan pemandangan yang menyertai suasana permainan Anda.
   - 🖼️ **Latar Belakang Dinamis:** Gambar dihasilkan di latar belakang tanpa menghentikan permainan. Anda akan melihat gambar muncul secara bertahap di latar belakang, pada kartu karakter, dan di Codex.
@@ -14,7 +17,7 @@
   - 🛠️ **Optimalisasi Teknis:** Model AI untuk gambar dimuat ke dalam **RAM (Memory)** dan diproses melalui **CPU**, tanpa memakan memori video (VRAM). Ini menjamin tidak akan mengganggu performa AI utama game (LLM). Membutuhkan sekitar 5GB RAM tambahan, tetap berada dalam persyaratan minimum resmi Steam.
   - 📤 **Bagikan Petualanganmu:** Semua gambar yang dihasilkan disimpan secara otomatis. Anda dapat menemukannya di folder: `%APPDATA%/RolemIAster/custom_assets/images`
   - 🔬 **Pemilih Model (Lanjutan):** Jika Anda memulai game dengan parameter `--advanced`, kini Anda dapat memilih model AI mana yang akan digunakan untuk gambar dari panel Tampilan. Ini memungkinkan para antusias untuk mencoba berbagai versi Stable Diffusion yang dioptimalkan untuk OpenVINO (file .xml/.bin).
-  
+
   **Narasi dan Otak AI:**
   - 🧠 **Akhir dari Perulangan:** "Doktrin Memori" baru telah diimplementasikan pada AI. Sekarang AI lebih baik dalam membedakan antara "kenangan" (apa yang sudah terjadi) dan "masa kini" (apa yang sedang terjadi). Ini membantu mengurangi kasus di mana AI mengulang-ulang atau macet.
   - 📜 **Arsip Historis:** Sistem menyajikan kenangan Anda kepada AI sebagai "Arsip Historis Tertutup", memudahkan AI untuk menggunakan informasi tersebut sebagai referensi untuk memajukan cerita.

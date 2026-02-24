@@ -2,6 +2,9 @@
 24/02/2026 12:32 - AI-beeldgeneratie, narratieve verbeteringen en controle - Beta_v058
 ****************************************************************************************************
 - What's New (NL):
+  **🧠 Evolutie van het Brein: Hallo, Qwen 3**
+  Ik heb de game-engine gemigreerd om het maximale uit de nieuwe generatie Qwen3-modellen te halen. De oude modellen uit de 2.5-serie hebben RolemIAster op weg geholpen, maar het is tijd om oude glorie achter ons te laten. Deze kwantitatieve sprong in verhaalgeneratie levert meeslependere proza, veel strengere regels en coherenter personages op. Maak je grafische kaarten gereed, want de Game Master is net een level gestegen.
+
   **Nieuw: Tweede fase van AI-beeldgeneratie**
   - 🎨 **Jouw wereld in beelden:** Ik heb een initieel systeem voor beeldgeneratie via kunstmatige intelligentie geïntegreerd. Terwijl je speelt, probeert het systeem portretten en landschappen te genereren die passen bij de sfeer van je sessie.
   - 🖼️ **Dynamische achtergronden:** Beelden worden op de achtergrond gegenereerd zonder je spel te onderbreken. Je ziet ze geleidelijk verschijnen in de achtergrond, op personagekaarten en in de Codex.
@@ -14,7 +17,7 @@
   - 🛠️ **Technische optimalisatie:** Het AI-beeldmodel wordt in het **RAM (geheugen)** geladen en via de **CPU** verwerkt, zonder videogeheugen (VRAM) in beslag te nemen. Dit zorgt ervoor dat het de prestaties van de hoofd-AI van het spel (LLM) niet verstoort. Vereist ongeveer 5 GB extra RAM, wat binnen de officiële minimale systeemvereisten van Steam blijft.
   - 📤 **Deel je avonturen:** Alle gegenereerde afbeeldingen worden automatisch opgeslagen. Je vindt ze in de map: `%APPDATA%/RolemIAster/custom_assets/images`
   - 🔬 **Model-selector (Geavanceerd):** Als je het spel opstart met de parameter `--advanced`, kun je nu via het uiterlijk-paneel kiezen welk AI-model je voor beelden wilt gebruiken. Dit stelt enthousiastelingen in staat om verschillende versies van Stable Diffusion te testen die geoptimaliseerd zijn voor OpenVINO (.xml/.bin-bestanden).
-  
+
   **Narratief en AI-brein:**
   - 🧠 **Einde aan loops:** Er is een nieuwe "geheugendoctrine" in de AI geïmplementeerd. Deze maakt nu een beter onderscheid tussen "herinneringen" (wat al is gebeurd) en het "heden" (wat er nu gebeurt). Dit helpt situaties te verminderen waarin de AI zichzelf herhaalt of vastloopt.
   - 📜 **Historische archieven:** Het systeem presenteert je herinneringen aan de AI als een "gesloten historisch archief", waardoor het makkelijker is om die informatie als referentie te gebruiken om het verhaal voort te zetten.

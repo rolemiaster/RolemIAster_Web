@@ -2,6 +2,9 @@
 24/02/2026 12:32 - AI Image Generation, Narrative Improvements, and Control - Beta_v058
 ****************************************************************************************************
 - What's New (EN):
+  **🧠 Brain Evolution: Hello, Qwen 3**
+  I migrated the game engine to get the most out of the new generation of Qwen3 models. The old 2.5-series models were there when RolemIAster began its journey, but the time has come to leave old glories behind. This quantitative leap in story generation means more immersive prose, much stricter rules, and more coherent characters. Prepare your GPUs, because the Game Master just leveled up.
+
   **New: AI Image Generation Phase Two**
   - 🎨 **Your World in Images:** I have integrated an initial AI image generation system. As you play, the system attempts to generate portraits and landscapes to accompany your game's atmosphere.
   - 🖼️ **Dynamic Backgrounds:** Images are generated in the background without stopping your game. You will see them appear progressively in the background, on character cards, and in the Codex.

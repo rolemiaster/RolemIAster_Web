@@ -2,19 +2,22 @@
 24/02/2026 12:32 - Tekoälykuvien generointi, kerronnalliset parannukset ja hallinta - Beta_v058
 ****************************************************************************************************
 - What's New (FI):
+  **🧠 Aivojen Evoluutio: Hei, Qwen 3**
+  Migrasin pelin moottorin, jotta uusi Qwen3-mallien sukupolvi saadaan hyödynnettyä täysillä. Vanhat 2.5-sarjan mallit käynnistivät RolemIAsterin matkan, mutta nyt on aika jättää vanhat legendat taakse. Tämä määrällinen harppaus tarinageneroinnissa tarkoittaa immersiivisempää proosaa, paljon tiukempia sääntöjä ja johdonmukaisempia hahmoja. Valmistelkaa näytönohjaimenne, sillä Pelinjohtaja nousi juuri tasoa.
+
   **Uutta: Tekoälykuvien generoinnin toinen vaihe**
   - 🎨 **Maailmasi kuvina:** Olen integroinut alustavan tekoälypohjaisen kuvien generointijärjestelmän. Pelatessasi järjestelmä pyrkii luomaan muotokuvia ja maisemia, jotka tukevat pelisi tunnelmaa.
   - 🖼️ **Dynaamiset taustat:** Kuvat luodaan taustalla peliä keskeyttämättä. Näet niiden ilmestyvän vähitellen taustalle, hahmokortteihin ja Codexiin.
   - 🧹 **Kuvien hallinta:** Uusi paneeli generoitujen kuvien tarkasteluun ja poistamiseen, jos ne eivät miellytä.
   
   **Hahmonluonnin parannukset:**
-  - ⚙️ **Vankempi satunnaisluonti:** Olen yhtenäistänyt ja parantanut sääntömoottoria, jota tekoäly käyttää hahmojen luomiseen tyhjästä. Tämä takaa loogisemmat varusteet (5–10 johdonmukaista esinettä) ja tasapainoisemmat hahmolomakkeet.
+  - ⚙️ **Vankempi satunnaisluonti:** Olen yhtenäistänyt ja parantanut sääntömoottoria, jota tekoäly käyttää hahmojen luomiseen tyhjästä. Tämä takaa loogisemmat varusteet (5–10 johdonmukaiset esineet) ja tasapainoisemmat hahmolomakkeet.
   - 🧠 **Jaetut aivot:** Tekoäly ymmärtää nyt paremmin, milloin sen on "keksittävä" hahmo tyhjästä ja milloin sen on rajoituttava poimimaan tietoja itse kirjoittamastasi elämäkerrasta.
   - ⚡ **Nopeus tarpeesi mukaan:** Uusi osio visuaalisissa asetuksissa. Valitse "Nopea" (1 vaihe), "Keskitaso" (2 vaihetta) tai "Korkea" (4 vaihetta) säätääksesi generointiajan laitteistosi tehon mukaan.
   - 🛠️ **Tekninen optimointi:** Kuvien AI-malli ladataan **RAM-muistiin (Memory)** ja käsitellään **suorittimella (CPU)** viemättä videomuistia (VRAM). Tämä varmistaa, ettei se häiritse pelin pääasiallisen tekoälyn (LLM) suorituskykyä. Vaatii noin 5 Gt lisä-RAM-muistia, pysyen Steamin virallisten vähimmäisvaatimusten rajoissa.
   - 📤 **Jaa seikkailusi:** Kaikki generoidut kuvat tallennetaan automaattisesti. Löydät ne kansiosta: `%APPDATA%/RolemIAster/custom_assets/images`
   - 🔬 **Mallivalitsin (Edistynyt):** Jos käynnistät pelin `--advanced`-parametrilla, voit nyt valita kuvissa käytettävän AI-mallin Ulkoasu-paneelista. Tämän avulla harrastajat voivat kokeilla eri Stable Diffusion -versioita, jotka on optimoitu OpenVINOlle (.xml/.bin-tiedostot).
-  
+
   **Kerronta ja tekoälyaivot:**
   - 🧠 **Silmukoiden loppu:** Tekoälyyn on otettu käyttöön uusi "muistioppi". Se erottaa nyt paremmin "muistot" (mitä on jo tapahtunut) ja "nykyhetken" (mitä on tapahtumassa). Tämä auttaa vähentämään tilanteita, joissa tekoäly toistaa itseään tai jää jumiin.
   - 📜 **Historialliset arkistot:** Järjestelmä esittää muistosi tekoälylle "suljettuna historiallisena arkistona", mikä helpottaa tiedon käyttämistä viitteenä tarinan edistämisessä.

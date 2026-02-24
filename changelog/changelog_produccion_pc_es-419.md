@@ -2,6 +2,9 @@
 24/02/2026 12:32 - Generación de imágenes por IA, mejoras narrativas y control - Beta_v058
 ****************************************************************************************************
 - What's New (ES-419):
+  **🧠 Evolución del Cerebro: Hola, Qwen 3**
+  He migrado el motor del juego para sacar el máximo partido de la nueva generación de modelos Qwen3. Los antiguos modelos de la serie 2.5 fueron clave al inicio del viaje de RolemIAster, pero llegó el momento de dejar atrás las viejas glorias. Este salto cuantitativo en la generación de historias se traduce en una prosa más inmersiva, reglas mucho más estrictas y personajes más coherentes. Preparen sus tarjetas gráficas, porque el Director de Juego acaba de subir de nivel.
+
   **Novedad: Segunda fase de generación de imágenes por IA**
   - 🎨 **Tu mundo en imágenes:** He integrado un sistema inicial de generación de imágenes por Inteligencia Artificial. A medida que juegas, el sistema intenta generar retratos y paisajes que acompañen la ambientación de tu partida.
   - 🖼️ **Fondos dinámicos:** Las imágenes se generan en segundo plano sin detener tu partida. Verás cómo aparecen progresivamente al fondo, en las tarjetas de personajes y en el Códice.

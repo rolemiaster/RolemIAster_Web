@@ -2,6 +2,9 @@
 24/02/2026 12:32 - AI-bildgenerering, berättarmässiga förbättringar och kontroll - Beta_v058
 ****************************************************************************************************
 - What's New (SV):
+  **🧠 Hjärnans evolution: Hej, Qwen 3**
+  Jag har migrerat spelmotorn för att få ut maximal prestanda av den nya generationen Qwen3-modeller. De gamla modellerna i 2.5-serien följde med när RolemIAster började sin resa, men nu är det dags att lämna gamla storheter bakom oss. Detta kvantitativa hopp i berättelsegenereringen ger mer uppslukande prosa, mycket striktare regler och mer sammanhängande karaktärer. Förbered era grafikkort, för spelledaren har precis gått upp en nivå.
+
   **Nyhet: Andra fasen av AI-bildgenerering**
   - 🎨 **Din värld i bilder:** Jag har integrerat ett initialt system för bildgenerering via artificiell intelligens. Medan du spelar försöker systemet generera porträtt och landskap som matchar stämningen i ditt äventyr.
   - 🖼️ **Dynamiska bakgrunder:** Bilderna genereras i bakgrunden utan att pausa ditt spel. Du kommer att se dem dyka upp successivt i bakgrunden, på karaktärskort och i Codex.

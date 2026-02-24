@@ -2,6 +2,9 @@
 24/02/2026 12:32 - AI-alapú képalkotás, narratív fejlesztések és irányítás - Beta_v058
 ****************************************************************************************************
 - What's New (HU):
+  **🧠 Az Agy Fejlődése: Helló, Qwen 3**
+  A játék motorját migráltam, hogy a legtöbbet hozza ki a Qwen3 modellek új generációjából. A 2.5-ös széria régi modelljei indították útjára a RolemIAstert, de eljött az idő, hogy búcsút mondjunk a régi dicsőségnek. Ez a mennyiségi ugrás a történetgenerálásban magával ragadóbb prózát, sokkal szigorúbb szabályokat és koherensebb karaktereket jelent. Készítsétek a videokártyákat, mert a Játékmester most lépett szintet.
+
   **Újdonság: AI-képalkotás második fázisa**
   - 🎨 **A világod képekben:** Integráltam egy kezdeti AI-alapú képalkotó rendszert. Játék közben a rendszer megpróbál portrékat és tájképeket generálni, amelyek illeszkednek a játék hangulatához.
   - 🖼️ **Dinamikus hátterek:** A képek a háttérben készülnek, anélkül, hogy megakasztanák a játékot. Látni fogod, ahogy fokozatosan megjelennek a háttérben, a karakterkártyákon és a Kódexben.

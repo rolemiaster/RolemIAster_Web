@@ -2,11 +2,14 @@
 24/02/2026 12:32 - Génération d'images par IA, améliorations narratives et contrôle - Beta_v058
 ****************************************************************************************************
 - What's New (FR):
-  **Nouveauté : Deuxième phase de Génération d'images par IA**
+  **🧠 Évolution du Cerveau : Bonjour, Qwen 3**
+  J'ai migré le moteur du jeu pour tirer le maximum de la nouvelle génération de modèles Qwen3. Les anciens modèles de la série 2.5 ont accompagné les débuts de RolemIAster, mais il est temps de laisser les vieilles gloires derrière nous. Ce saut quantitatif dans la génération d'histoires se traduit par une prose plus immersive, des règles bien plus strictes et des personnages plus cohérents. Préparez vos cartes graphiques, car le Maître du Jeu vient de gagner un niveau.
+
+  **Nouveau : Deuxième phase de génération d'images par IA**
   - 🎨 **Votre monde en images :** J'ai intégré un système initial de génération d'images par Intelligence Artificielle. Pendant que vous jouez, le système tente de générer des portraits et des paysages pour accompagner l'ambiance de votre partie.
   - 🖼️ **Arrière-plans dynamiques :** Les images sont générées en arrière-plan sans interrompre votre partie. Vous les verrez apparaître progressivement en fond, sur les cartes de personnages et dans le Codex.
   - 🧹 **Gestion des images :** Nouveau panneau pour visualiser et supprimer les images générées qui ne vous plaisent pas.
-  
+
   **Améliorations de la génération de personnages :**
   - ⚙️ **Création aléatoire plus robuste :** J'ai unifié et amélioré le moteur de règles que l'IA utilise pour créer des personnages à partir de zéro, garantissant des inventaires plus logiques (5 à 10 objets cohérents) et des fiches plus équilibrées.
   - 🧠 **Cerveau divisé :** L'IA comprend désormais mieux quand elle doit « inventer » un personnage de toutes pièces et quand elle doit se limiter à extraire les données de la biographie que vous avez vous-même écrite.

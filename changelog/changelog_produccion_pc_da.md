@@ -2,6 +2,9 @@
 24/02/2026 12:32 - AI-billedgenerering, narrative forbedringer og kontrol - Beta_v058
 ****************************************************************************************************
 - What's New (DA):
+  **🧠 Hjernens Udvikling: Hej, Qwen 3**
+  Jeg har migreret spillets motor for at få det maksimale ud af den nye generation af Qwen3-modeller. De gamle modeller i 2.5-serien var med til at starte RolemIAsters rejse, men tiden er kommet til at lægge de gamle glorier bag os. Dette kvantitative spring i historiegenereringen giver mere medrivende prosa, langt strengere regler og mere sammenhængende karakterer. Gør jeres grafikkort klar, for Spillederen er lige steget i niveau.
+
   **Nyhed: Anden fase af AI-billedgenerering**
   - 🎨 **Din verden i billeder:** Jeg har integreret et indledende system til billedgenerering via kunstig intelligens. Mens du spiller, forsøger systemet at generere portrætter og landskaber, der ledsager stemningen i dit spil.
   - 🖼️ **Dynamiske baggrunde:** Billederne genereres i baggrunden uden at afbryde dit spil. Du vil se dem dukke op løbende i baggrunden, på karakterkort og i dit Codex.

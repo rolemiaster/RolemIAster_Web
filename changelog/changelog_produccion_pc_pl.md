@@ -2,7 +2,10 @@
 24/02/2026 12:32 - Generowanie obrazów przez AI, ulepszenia narracji i kontrola - Beta_v058
 ****************************************************************************************************
 - What's New (PL):
-  **Nowość: Druga faza generowania obrazów przez AI**
+  **🧠 Ewolucja Mózgu: Cześć, Qwen 3**
+  Zmigrowałem silnik gry, aby wycisnąć maksimum z nowej generacji modeli Qwen3. Stare modele z serii 2.5 towarzyszyły początkom podróży RolemIAster, ale nadszedł czas, by pożegnać dawne chwały. Ten skok ilościowy w generowaniu historii przekłada się na bardziej immersyjną prozę, dużo surowsze zasady i spójniejsze postacie. Przygotujcie swoje karty graficzne, bo Mistrz Gry właśnie awansował na wyższy poziom.
+
+  **Nowość: Druga faza Generowania Obrazów przez AI**
   - 🎨 **Twój świat w obrazach:** Zintegrowałem początkowy system generowania obrazów przez Sztuczną Inteligencję. Podczas gry system stara się generować portrety i krajobrazy, które towarzyszą atmosferze Twojej rozgrywki.
   - 🖼️ **Dynamiczne tła:** Obrazy są generowane w tle, nie przerywając rozgrywki. Zobaczysz, jak pojawiają się stopniowo w tle, na kartach postaci oraz w Kodeksie.
   - 🧹 **Zarządzanie obrazami:** Nowy panel do przeglądania i usuwania wygenerowanych obrazów, które Ci się nie podobają.

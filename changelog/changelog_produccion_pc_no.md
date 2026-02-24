@@ -2,6 +2,9 @@
 24/02/2026 12:32 - KI-bildegenerering, narrative forbedringer og kontroll - Beta_v058
 ****************************************************************************************************
 - What's New (NO):
+  **🧠 Evolusjon av hjernen: Hei, Qwen 3**
+  Jeg har migrert spillmotoren for å få maksimalt ut av den nye generasjonen Qwen3-modeller. De gamle 2.5-seriemodellene var med da RolemIAster startet sin reise, men tiden har kommet for å legge gamle storheter bak oss. Dette kvantitative spranget i historiegenerering gir mer oppslukende prosa, langt strengere regler og mer sammenhengende karakterer. Gjør grafikkortene klare, for Spillmesteren har nettopp gått opp et nivå.
+
   **Nyhet: Andre fase av KI-bildegenerering**
   - 🎨 **Din verden i bilder:** Jeg har integrert et system for bildegenerering med kunstig intelligens. Mens du spiller, forsøker systemet å generere portretter og landskap som passer til stemningen i spillet ditt.
   - 🖼️ **Dynamiske bakgrunner:** Bilder genereres i bakgrunnen uten å stoppe spillet. Du vil se dem dukke opp gradvis i bakgrunnen, på karakterkortene og i kodesen (Códice).
@@ -14,7 +17,7 @@
   - 🛠️ **Teknisk optimalisering:** KI-modellen for bilder lastes inn i **RAM (minne)** og behandles via **CPU**, uten å bruke videominne (VRAM). Dette sikrer at den ikke forstyrrer ytelsen til spillets hoved-KI (LLM). Krever ca. 5 GB ekstra RAM, noe som holder seg innenfor de offisielle minstekravene på Steam.
   - 📤 **Del dine eventyr:** Alle genererte bilder lagres automatisk. Du finner dem i mappen: `%APPDATA%/RolemIAster/custom_assets/images`
   - 🔬 **Modellvelger (Avansert):** Hvis du starter spillet med parameteren `--advanced`, kan du nå velge hvilken KI-modell som skal brukes for bilder fra utseendepanelet. Dette lar entusiaster prøve forskjellige versjoner av Stable Diffusion optimalisert for OpenVINO (.xml/.bin-filer).
-  
+
   **Narrativ og KI-hjerne:**
   - 🧠 **Slutt på løkker:** En ny «minnedoktrine» er implementert i KI-en. Den skiller nå bedre mellom «minner» (det som allerede har skjedd) og «nåtid» (det som skjer nå). Dette bidrar til å redusere tilfeller der KI-en gjentar seg selv eller setter seg fast.
   - 📜 **Historiske arkiver:** Systemet presenterer minnene dine for KI-en som et «lukket historisk arkiv», noe som gjør det lettere for den å bruke informasjonen som referanse for å drive historien fremover.

@@ -2,6 +2,9 @@
 24/02/2026 12:32 - Generování obrázků pomocí UI, vylepšení vyprávění a ovládání - Beta_v058
 ****************************************************************************************************
 - What's New (CS):
+  **🧠 Evoluce Mozku: Ahoj, Qwen 3**
+  Migroval jsem herní engine, aby naplno využil novou generaci modelů Qwen3. Staré modely řady 2.5 stály u zrodu cesty RolemIAsteru, ale nastal čas opustit staré legendy. Tento kvantitativní skok v generování příběhů znamená pohlcující prózu, mnohem přísnější pravidla a konzistentnější postavy. Připravte své grafické karty, protože Vypravěč právě postoupil na vyšší úroveň.
+
   **Novinka: Druhá fáze generování obrázků pomocí UI**
   - 🎨 **Váš svět v obrazech:** Integroval jsem počáteční systém generování obrázků pomocí umělé inteligence. Jak hrajete, systém se pokouší generovat portréty a krajiny, které doprovázejí atmosféru vaší hry.
   - 🖼️ **Dynamická pozadí:** Obrázky se generují na pozadí, aniž by přerušovaly hru. Uvidíte, jak se postupně objevují na pozadí, na kartách postav a v Kodexu.
