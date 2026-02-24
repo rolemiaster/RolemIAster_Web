@@ -1,4 +1,375 @@
 language,Description,Title
+arabic,"**⚠️ الفرع التجريبي (نسخة بيتا على Steam)**
+هذا الإصدار متاح حاليًا فقط في **الفرع التجريبي** على Steam. لتفعيله:
+1. انقر بزر الماوس الأيمن على **RolemIAster** في مكتبة Steam الخاصة بك.
+2. حدد **خصائص...**
+3. اذهب إلى علامة التبويب **Betas**.
+4. في ""المشاركة في النسخة التجريبية""، حدد **experimental** من القائمة المنسدلة.
+
+**جديد: المرحلة الأولى من توليد الصور بالذكاء الاصطناعي**
+- 🎨 **عالمك في صور:** قمت بدمج نظام أولي لتوليد الصور باستخدام الذكاء الاصطناعي. أثناء اللعب، يحاول النظام إنشاء صور شخصية ومناظر طبيعية تتناسب مع أجواء لعبتك.
+- 🖼️ **خلفيات ديناميكية:** يتم إنشاء الصور في الخلفية دون إيقاف لعبتك. سترى كيف تظهر تدريجيًا في الخلفية، وعلى بطاقات الشخصيات، وفي المخطوطة.
+- 🧹 **إدارة الصور:** لوحة جديدة لعرض وحذف الصور المولدة التي لا تعجبك.
+
+**تحسينات في إنشاء الشخصيات:**
+- ⚙️ **إنشاء عشوائي أكثر متانة:** قمت بتوحيد وتحسين محرك القواعد الذي يستخدمه الذكاء الاصطناعي لإنشاء الشخصيات من الصفر، مما يضمن مخزونات أكثر منطقية (من 5 إلى 10 عناصر متناسقة) وبطاقات شخصيات أكثر توازناً.
+- 🧠 **الدماغ المنقسم:** أصبح الذكاء الاصطناعي يفهم بشكل أفضل متى يجب عليه ""ابتكار"" شخصية من الصفر، ومتى يجب عليه الاكتفاء باستخراج البيانات من السيرة الذاتية التي كتبتها بنفسك.
+- ⚡ **سرعة مصممة لك:** قسم جديد في الإعدادات المرئية. اختر بين ""سريعة"" (خطوة واحدة)، ""متوسطة"" (خطوتين) أو ""عالية"" (4 خطوات) لضبط وقت التوليد حسب قوة جهازك.
+- 🛠️ **تحسينات تقنية:** يتم تحميل نموذج الذكاء الاصطناعي للصور في **ذاكرة الوصول العشوائي (Memory)** ومعالجتها عبر **وحدة المعالجة المركزية (CPU)**، دون شغل ذاكرة الفيديو (VRAM). يضمن هذا عدم تداخله مع أداء الذكاء الاصطناعي الرئيسي للعبة (LLM). يتطلب ذلك حوالي 5 جيجابايت إضافية من ذاكرة الوصول العشوائي (RAM)، مع البقاء ضمن الحد الأدنى من المتطلبات الرسمية على Steam.
+- 📤 **شارك مغامراتك:** يتم حفظ جميع الصور المولدة تلقائيًا. ستجدها في المجلد: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **أداة اختيار النماذج (متقدم):** إذا قمت ببدء اللعبة باستخدام المعلمة `--advanced`، يمكنك الآن اختيار نموذج الذكاء الاصطناعي الذي ترغب في استخدامه للصور من لوحة المظهر. يسمح هذا للمتحمسين بتجربة إصدارات مختلفة من Stable Diffusion المُحسّنة لـ OpenVINO (ملفات .xml/.bin).
+
+**السرد وعقل الذكاء الاصطناعي:**
+- 🧠 **نهاية الحلقات التكرارية:** تم تنفيذ ""عقيدة ذاكرة"" جديدة في الذكاء الاصطناعي. أصبح الآن يميز بشكل أفضل بين ""الذكريات"" (ما حدث بالفعل) و""الحاضر"" (ما يحدث الآن). يساعد هذا في تقليل الحالات التي كان الذكاء الاصطناعي يكرر فيها نفسه أو يعلق.
+- 📜 **أرشيفات تاريخية:** يقدم النظام ذكرياتك للذكاء الاصطناعي كـ ""أرشيف تاريخي مغلق""، مما يسهل عليه استخدام هذه المعلومات كمرجع لدفع القصة للأمام.
+- ⚡ **تعليمات مُحسّنة:** تم تحسين الطريقة التي تطلب بها اللعبة السرد بلغتك، مما يحرر قدرة النموذج للتركيز على الإبداع.
+- 👁️ **تركيز سردي:** تمت إعادة كتابة إدراك الذكاء الاصطناعي. أصبح الآن يفهم بشكل أفضل ما هي العناصر التي تُعد ""خلفية ثابتة"" والتي لا ينبغي تكرارها بشكل غير ضروري في كل فقرة.
+- 🔀 **قرارات أكثر وضوحًا:** يقدم الذكاء الاصطناعي الآن طرق هروب أكثر تحديدًا. تنقسم اقتراحاته (الأزرار) بين استكشاف البيئة (التعمق) أو تغيير المسار (التشعب).
+- 🫵 **مخاطبة مباشرة:** تم ضبط التعليمات الأساسية لضمان أن يخاطبك الذكاء الاصطناعي بصيغة ""أنت""، مما يحسن من الانغماس الشخصي.
+
+**إنشاء الشخصيات:**
+- 🖼️ **صور الشخصيات:** عند إنشاء شخصية بالذكاء الاصطناعي، يحاول النظام إنشاء صورة شخصية بناءً على عمرها ومهنتها ووصفها. ضع في اعتبارك أن هذه نسخة أولية وأن الدقة (خاصة في العمر) قد تختلف وفقًا للنموذج المستخدم. (ما زلت أجري الاختبارات ولكن البداية جيدة)
+- 🎲 **توليد عشوائي موثوق:** تم إصلاح خطأ حيث يمكن أن يفشل زر ""إنشاء بالذكاء الاصطناعي"" في المحاولة الأولى، مما يترك الحقول فارغة. الآن يضمن نظام التصحيح الذكي أن تكون الاستجابة صالحة دائمًا.
+
+**إدارة الصور المولدة:**
+- 🖼️ **معرض صور الذكاء الاصطناعي:** لوحة جديدة في قائمة ملف تعرض جميع الصور التي ولّدها الذكاء الاصطناعي خلال جلسات اللعب (صور شخصية، خلفيات). يمكنك التصفية حسب نوع الصورة أو حسب العالم.
+- 🗑️ **حذف انتقائي:** حدد صورة واحدة أو عدة صور واحذفها إذا لم تقنعك (ربما تلك التي قرر فيها الذكاء الاصطناعي أن إيقاف حافلة في إسطبل القلعة كان فكرة جيدة). يقوم النظام بمسح كل من الملف وسجله الداخلي.
+- 📂 **وصول مباشر:** انقر نقرًا مزدوجًا على أي صورة مصغرة لفتح المجلد الذي يوجد به الملف. إذا كان المجلد مفتوحًا بالفعل، سيتم إعادة استخدام نفس النافذة.
+- 💾 **تذكر مساحتك:** يتم حفظ حجم نافذة المعرض تلقائيًا بين الجلسات.
+
+**الأداء في الإعدادات المنخفضة (مهم لوحدات معالجة الرسومات ذات VRAM المنخفضة):**
+- 🧠 **PSR - الإدارة الهجينة:** نظام جديد يقسم عمل الذكاء الاصطناعي إلى مرحلتين: التخطيط (الطاهي) والتنفيذ (الطهاة). يسمح هذا للنماذج المحلية بذاكرة 8 جيجابايت VRAM بالعمل مع تجنب الانهيارات بسبب السياق الزائد (+12 ألف توكن)، على حساب زيادة وقت الاستجابة، حيث يتحول التعامل مع الذكاء الاصطناعي من مطالبة واحدة إلى سلسلة من المطالبات (كلما قلّت ذاكرة VRAM زاد عدد المطالبات التي سيتم إنشاؤها وزاد وقت الاستجابة).
+- ⚡ **تنفيذ ذكي:** يقرر النظام تلقائيًا ما إذا كان سيعالج كل شيء دفعة واحدة (متجانس) أو يقسمه إلى أجزاء (تكراري) بناءً على ذاكرة VRAM المتاحة لديك. تُفعل وحدات معالجة الرسومات ذات VRAM الأقل الوضع المجزأ فقط عند الضرورة.
+- 📊 **تحسين ديناميكي:** يقلل نظام PSR من حمل التوكنز أثناء التوليد، مما يسمح للمستخدمين الذين يمتلكون بطاقات رسومية بذاكرة 4 جيجابايت بإكمال إنشاء الشخصيات وتوليد القصة التي كانت تتعطل في السابق.
+- 🔄 **الحفاظ على التناسق:** على الرغم من تقسيم العمل، يقوم النظام بحقن ""نية رئيسية"" حتى لا يفقد الذكاء الاصطناعي مسار ما كان يفعله.
+
+**أصوات الذكاء الاصطناعي (تحسين تدريجي):**
+توليد الأصوات في الوقت الفعلي بجميع اللغات (بعض اللغات محدودة أكثر من غيرها، والأكثر تنوعًا في أنواع الأصوات هي اللغة الإنجليزية)
+- 🗣️ **صرخات قتالية صوتية:** عند بدء القتال ضد أعداء عدائيين، يتم الآن إطلاق عبارة صوتية سياقية للبدء.
+- 🎭 **عبارات ديناميكية حسب السياق:** يمكن للمحرك إنشاء خطوط صوتية قصيرة لأحداث محددة (خدمات/قتال) بناءً على اللغة والأجواء وملف الشخصية.
+- 🧠 **قوالب صوتية داخلية:** تم فصل القوالب الصوتية التقنية عن النظام السردي لتجنب التداخل مع القصة.
+- 🔊 **وضوح أكبر عند الاستماع:** تم تحسين الوضوح وعلم العروض (التنغيم) في التوليف الصوتي لإعطاء الأولوية للنطق المفهوم.
+
+**⚠️ إشعار التوافق (المباريات السابقة):**
+- 🔄 نظرًا للكم الهائل من التغييرات الداخلية في محرك القواعد ونظام الأجواء، **ستظل الألعاب والعوالم المحفوظة سابقًا قابلة للعب (على الأرجح)**، ولكن من المحتمل جدًا أن تظهر بها أخطاء أو سلوكيات غير متوقعة. **يُوصى بإنشاء عالم جديد بالكامل** للاستمتاع بجميع التحسينات بشكل صحيح.",توليد الصور بالذكاء الاصطناعي، تحسينات سردية وتحكم
+bulgarian,"**⚠️ ЕКСПЕРИМЕНТАЛЕН КЛОН (STEAM BETA)**
+Тази версия в момента е достъпна само в **Експерименталния клон** (Experimental Branch) на Steam. За да я активирате:
+1. Кликнете с десния бутон върху **RolemIAster** във вашата библиотека в Steam.
+2. Изберете **Свойства...** (Properties)
+3. Отидете на раздел **Бета версии** (Betas).
+4. В „Участие в бета“, изберете **experimental** от падащото меню.
+
+**Ново: Първа фаза на генериране на изображения с ИИ**
+- 🎨 **Твоят свят в изображения:** Интегрирах начална система за генериране на изображения чрез изкуствен интелект. Докато играете, системата се опитва да генерира портрети и пейзажи, които да съпътстват атмосферата на вашата игра.
+- 🖼️ **Динамични фонове:** Изображенията се генерират във фонов режим, без да спират играта ви. Ще видите как се появяват постепенно във фона, в картите на героите и в Кодекса.
+- 🧹 **Управление на изображения:** Нов панел за преглед и изтриване на генерираните изображения, които не ви харесват.
+
+**Подобрения в създаването на герои:**
+- ⚙️ **По-надеждно случайно създаване:** Унифицирах и подобрих системата от правила, която ИИ използва за създаване на герои от нулата, гарантирайки по-логични инвентари (5 до 10 съгласувани предмета) и по-балансирани статистики.
+- 🧠 **Разделен мозък:** ИИ сега разбира по-добре кога трябва да „измисли“ герой от нулата и кога трябва да се ограничи до извличане на данни от биографията, която вие сами сте написали.
+- ⚡ **Скорост по мярка:** Нова секция във Визуални настройки. Изберете между „Бърза“ (1 стъпка), „Средна“ (2 стъпки) или „Висока“ (4 стъпки), за да настроите времето за генериране според мощността на вашия компютър.
+- 🛠️ **Техническа оптимизация:** ИИ моделът за изображения се зарежда в **RAM (Памет)** и се обработва чрез **CPU**, без да заема видео памет (VRAM). Това гарантира, че няма да пречи на работата на основния ИИ на играта (LLM). Изисква около 5GB допълнителна RAM, оставайки в рамките на официалните минимални изисквания на Steam.
+- 📤 **Сподели приключенията си:** Всички генерирани изображения се запазват автоматично. Ще ги намерите в папка: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Селектор на модели (Разширено):** Ако стартирате играта с параметър `--advanced`, вече можете да избирате кой ИИ модел да използвате за изображенията от панела за Външен вид. Това позволява на ентусиастите да тестват различни версии на Stable Diffusion, оптимизирани за OpenVINO (файлове .xml/.bin).
+
+**Наратив и ИИ мозък:**
+- 🧠 **Край на циклите:** Внедрена е нова „Доктрина на паметта“ в ИИ. Сега той по-добре различава „спомени“ (това, което вече се е случило) от „настояще“ (това, което се случва в момента). Това помага да се намалят случаите, в които ИИ се повтаряше или зацикляше.
+- 📜 **Исторически архиви:** Системата представя вашите спомени на ИИ като „Затворен исторически архив“, улеснявайки използването на тази информация като справка за развитие на историята.
+- ⚡ **Оптимизирани инструкции:** Подобрен е начинът, по който играта изисква разказването на вашия език, освобождавайки капацитет на модела да се съсредоточи върху творчеството.
+- 👁️ **Наративен фокус:** Пренаписано е възприятието на ИИ. Сега той разбира по-добре кои елементи са „статичен фон“ и не трябва да ги повтаря ненужно във всеки параграф.
+- 🔀 **По-ясни решения:** ИИ вече предлага по-дефинирани пътища за изход. Неговите предложения (бутони) са разделени на изследване на средата (Задълбочаване) или промяна на курса (Отклоняване).
+- 🫵 **Директно обръщение:** Базовата инструкция е коригирана, за да се гарантира, че ИИ се обръща към вас на „Ти“, подобрявайки личното потапяне в играта.
+
+**Създаване на герой:**
+- 🖼️ **Портрети на героя:** При генериране на герой с ИИ, системата се опитва да създаде портрет въз основа на неговата възраст, професия и описание. Имайте предвид, че това е начална версия и точността (особено във възрастта) може да варира според използвания модел. (продължавам да правя тестове, но началото е добро)
+- 🎲 **Надеждно случайно генериране:** Поправен е бъг, при който бутонът „Генерирай с ИИ“ можеше да се провали при първия опит, оставяйки полетата празни. Сега системата за интелигентна корекция гарантира, че отговорът винаги е валиден.
+
+**Управление на генерирани изображения:**
+- 🖼️ **Галерия с ИИ изображения:** Нов панел в меню Файл, който показва всички изображения, които ИИ е генерирал по време на вашите игри (портрети, фонове). Можете да филтрирате по тип изображение или по свят.
+- 🗑️ **Избирателно изтриване:** Изберете едно или няколко изображения и ги изтрийте, ако не ви допадат (може би онази, в която ИИ реши, че е добра идея да паркира автобус в конюшнята на замъка). Системата изчиства както файла, така и вътрешния си регистър.
+- 📂 **Директен достъп:** Кликнете два пъти върху всяка миниатюра, за да отворите папката, където се намира файлът. Ако вече имате отворена папка, се използва същият прозорец.
+- 💾 **Запомня твоето място:** Размерът на прозореца на галерията се запазва автоматично между сесиите.
+
+**Производителност при ниски конфигурации (Важно за GPU с малко VRAM):**
+- 🧠 **PSR - Хибридно управление:** Нова система, която разделя работата на ИИ на две фази: Планиране (Шеф-готвач) и Изпълнение (Готвачи). Това позволява локални модели с 8 GB VRAM да работят, избягвайки сривове поради прекомерен контекст (+12K токена), за сметка на по-голяма латентност; взаимодействието с ИИ преминава от единичен промпт към поредица от промптове (колкото по-малко е VRAM, толкова повече промптове ще се генерират и времето за реакция ще е по-голямо).
+- ⚡ **Интелигентно изпълнение:** Системата решава автоматично дали да обработи всичко наведнъж (монолитно) или да го раздели на части (итеративно) според наличната ви VRAM. Графичните процесори с по-малко VRAM активират режима на части само когато е необходимо.
+- 📊 **Динамична оптимизация:** PSR намалява натоварването на токени по време на генериране, позволявайки на потребители с графични карти от 4GB да завършат създаването на герои и генерирането на история, които преди това блокираха.
+- 🔄 **Запазена съгласуваност:** Въпреки разделянето на работата, системата вмъква „главно намерение“, така че ИИ да не губи нишката на това, което прави.
+
+**ИИ Гласове (постепенно подобрение):**
+Генериране в реално време на гласове на всички езици (някои езици са по-ограничени от други, най-разнообразен по видове гласове е английският)
+- 🗣️ **Бойни викове с глас:** При започване на битка срещу враждебни противници, сега се задейства контекстуална гласова фраза за встъпление.
+- 🎭 **Динамични фрази според контекста:** Двигателят може да генерира кратки гласови реплики за конкретни събития (услуги/битка) според езика, обстановката и профила на героя.
+- 🧠 **Вътрешни гласови шаблони:** Техническите шаблони за глас са отделени от наративната система, за да се избегнат смущения в историята.
+- 🔊 **По-голяма яснота при слушане:** Подобрена е разбираемостта и прозодията на синтеза, за да се приоритизира ясната дикция.
+
+**⚠️ Предупреждение за съвместимост (Предишни игри):**
+- 🔄 Поради количеството вътрешни промени в системата от правила и системата за околна среда, **предишните запазени игри и светове ще продължат да бъдат годни за игра (вероятно)**, но е много вероятно да проявяват грешки или неочаквано поведение. **Препоръчва се създаването на нов чист свят**, за да се насладите на всички подобрения правилно.","Генериране на изображения с ИИ, подобрения в разказа и контрол"
+czech,"**⚠️ EXPERIMENTÁLNÍ VĚTEV (BETA NA STEAMU)**
+Tato verze je aktuálně dostupná pouze v **Experimentální větvi** na Steamu. Pro její aktivaci:
+1. Klikněte pravým tlačítkem na **RolemIAster** ve vaší knihovně na Steamu.
+2. Vyberte **Vlastnosti...**
+3. Přejděte na záložku **Beta verze**.
+4. V části ""Účast v beta verzi"" vyberte z rozbalovací nabídky **experimental**.
+
+**Novinka: První fáze generování obrázků pomocí AI**
+- 🎨 **Váš svět v obrazech:** Integroval jsem počáteční systém generování obrázků pomocí umělé inteligence. Jak hrajete, systém se snaží generovat portréty a krajiny, které dokreslují atmosféru vaší hry.
+- 🖼️ **Dynamická pozadí:** Obrázky se generují na pozadí bez přerušení vaší hry. Uvidíte, jak se postupně objevují na pozadí, na kartách postav a v Kodexu.
+- 🧹 **Správa obrázků:** Nový panel pro zobrazení a odstranění vygenerovaných obrázků, které se vám nelíbí.
+
+**Vylepšení v generování postav:**
+- ⚙️ **Solidnější náhodné generování:** Sjednotil a vylepšil jsem pravidlový engine, který AI používá k tvorbě postav od nuly, což zaručuje logičtější inventáře (5 až 10 smysluplných předmětů) a vyváženější deníky postav.
+- 🧠 **Rozdělený mozek:** AI nyní lépe chápe, kdy má postavu ""vymyslet"" od nuly a kdy by se měla omezit na extrakci dat z biografie, kterou jste sami napsali.
+- ⚡ **Rychlost na míru:** Nová sekce ve Vizuálním nastavení. Vyberte si mezi ""Rychlá"" (1 krok), ""Střední"" (2 kroky) nebo ""Vysoká"" (4 kroky), abyste přizpůsobili dobu generování výkonu vašeho počítače.
+- 🛠️ **Technická optimalizace:** AI model pro obrázky se načítá do **RAM (paměti)** a zpracovává se přes **procesor (CPU)**, aniž by zabíral video paměť (VRAM). To zajišťuje, že nezasahuje do výkonu hlavní AI hry (LLM). Vyžaduje přibližně 5 GB dodatečné RAM, přičemž se stále drží v rámci oficiálních minimálních požadavků na Steamu.
+- 📤 **Sdílejte svá dobrodružství:** Všechny vygenerované obrázky se automaticky ukládají. Najdete je ve složce: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Výběr modelů (Pokročilé):** Pokud spustíte hru s parametrem `--advanced`, můžete nyní v panelu Vzhled vybrat, který AI model se má pro obrázky použít. To umožňuje nadšencům zkoušet různé verze Stable Diffusion optimalizované pro OpenVINO (soubory .xml/.bin).
+
+**Vyprávění a AI mozek:**
+- 🧠 **Konec smyček:** Do AI byla implementována nová ""Doktrína paměti"". Nyní lépe rozlišuje mezi ""vzpomínkami"" (co už se stalo) a ""přítomností"" (co se právě děje). To pomáhá redukovat případy, kdy se AI opakovala nebo se zasekla.
+- 📜 **Historické archivy:** Systém prezentuje vaše vzpomínky AI jako ""Uzavřený historický archiv"", což jí usnadňuje využívat tyto informace jako referenci pro posun v příběhu.
+- ⚡ **Optimalizované instrukce:** Byl vylepšen způsob, jakým hra vyžaduje vyprávění ve vašem jazyce, což uvolňuje kapacitu modelu, aby se mohl soustředit na kreativitu.
+- 👁️ **Fokus na vyprávění:** Vnímání AI bylo přepsáno. Nyní lépe chápe, které prvky jsou ""statickým pozadím"", a nebude je zbytečně opakovat v každém odstavci.
+- 🔀 **Jasnější rozhodnutí:** AI nyní nabízí lépe definované únikové cesty. Její návrhy (tlačítka) se dělí na průzkum okolí (Prohloubit) nebo změnu směru (Odklonit se).
+- 🫵 **Přímé oslovování:** Základní instrukce byla upravena tak, aby bylo zajištěno, že vám AI tyká (""Ty""), což zlepšuje osobní ponoření do hry.
+
+**Tvorba postavy:**
+- 🖼️ **Portréty postav:** Při generování postavy pomocí AI se systém pokusí vytvořit portrét na základě jejího věku, profese a popisu. Mějte na paměti, že se jedná o počáteční verzi a věrnost (zejména u věku) se může lišit v závislosti na použitém modelu. (Stále provádím testy, ale začátek je dobrý)
+- 🎲 **Spolehlivé náhodné generování:** Byla opravena chyba, kdy mohlo tlačítko ""Generovat pomocí AI"" při prvním pokusu selhat a ponechat pole prázdná. Nyní inteligentní systém oprav zajišťuje, že je odpověď vždy platná.
+
+**Správa vygenerovaných obrázků:**
+- 🖼️ **Galerie AI obrázků:** Nový panel v nabídce Soubor, který zobrazuje všechny obrázky vygenerované AI během vašich her (portréty, pozadí). Můžete je filtrovat podle typu obrázku nebo podle světa.
+- 🗑️ **Selektivní mazání:** Vyberte jeden nebo více obrázků a smažte je, pokud se vám nelíbí (možná ten, kde se AI rozhodla, že je dobrý nápad zaparkovat autobus ve stájích hradu). Systém vyčistí jak samotný soubor, tak i jeho interní záznam.
+- 📂 **Rychlý přístup:** Dvojitým kliknutím na jakoukoliv miniaturu otevřete složku, kde se soubor nachází. Pokud už máte složku otevřenou, použije se stejné okno.
+- 💾 **Zapamatování prostoru:** Velikost okna galerie se automaticky ukládá mezi jednotlivými sezeními.
+
+**Výkon na slabších sestavách (Důležité pro GPU s malou VRAM):**
+- 🧠 **PSR - Hybridní řízení:** Nový systém, který rozděluje práci AI do dvou fází: Plánování (Šéfkuchař) a Provedení (Kuchaři). To umožňuje, aby lokální modely s 8 GB VRAM fungovaly bez pádů z důvodu přetížení kontextu (+12K tokenů), a to za cenu vyšší latence. Interakce s AI přechází z jediného promptu na sérii promptů (čím menší je VRAM, tím více promptů se vygeneruje a tím delší bude doba odezvy).
+- ⚡ **Inteligentní provádění:** Systém se automaticky rozhodne, zda zpracuje vše najednou (monoliticky) nebo to rozdělí na části (iterativně) podle vaší dostupné VRAM. Grafické karty s menší VRAM aktivují režim po částech jen v případě potřeby.
+- 📊 **Dynamická optimalizace:** PSR snižuje zátěž tokenů během generování, což umožňuje uživatelům s 4GB grafickými kartami dokončit tvorbu postavy a generování příběhu, u kterých dříve docházelo k zamrznutí.
+- 🔄 **Zachování soudržnosti:** I přes rozdělení práce systém injektuje ""hlavní záměr"", aby AI neztratila nit toho, co zrovna dělala.
+
+**AI hlasy (postupné vylepšování):**
+Generování hlasů v reálném čase ve všech jazycích (některé jazyky jsou omezenější než jiné, nejpestřejší nabídka typů hlasů je v angličtině)
+- 🗣️ **Namluvené bojové pokřiky:** Při zahájení boje proti nepřátelům se nyní přehraje kontextová úvodní hlasová hláška.
+- 🎭 **Dynamické fráze podle kontextu:** Engine dokáže generovat krátké hlasové repliky pro konkrétní události (služby/boj) v závislosti na jazyce, prostředí a profilu postavy.
+- 🧠 **Interní hlasové šablony:** Technické hlasové šablony byly odděleny od narativního systému, aby nedocházelo k narušování příběhu.
+- 🔊 **Větší srozumitelnost při poslechu:** Byla zlepšena srozumitelnost a prozódie syntézy, aby měla přednost srozumitelná dikce.
+
+**⚠️ Upozornění na kompatibilitu (Předchozí rozehrané hry):**
+- 🔄 Kvůli množství interních změn v pravidlovém enginu a systému prostředí budou **dříve uložené hry a světy pravděpodobně i nadále hratelné**, ale je velmi pravděpodobné, že se u nich projeví chyby nebo neočekávané chování. **Doporučuje se vytvořit nový čistý svět**, abyste si mohli správně užít všechna vylepšení.","Generování obrázků pomocí AI, narativní vylepšení a ovládání"
+danish,"**⚠️ EKSPERIMENTEL GREN (STEAM BETA)**
+Denne version er i øjeblikket kun tilgængelig i Steams **Eksperimentel Gren**. Sådan aktiverer du den:
+1. Højreklik på **RolemIAster** i dit Steam-bibliotek.
+2. Vælg **Egenskaber...**
+3. Gå til fanen **Betaer**.
+4. Under ""Betadeltagelse"" vælger du **experimental** i rullemenuen.
+
+**Nyhed: Første fase af AI-billedgenerering**
+- 🎨 **Din verden i billeder:** Jeg har integreret et indledende system til generering af billeder via kunstig intelligens. Mens du spiller, forsøger systemet at generere portrætter og landskaber, der passer til stemningen i dit spil.
+- 🖼️ **Dynamiske baggrunde:** Billederne genereres i baggrunden uden at stoppe dit spil. Du vil se dem dukke gradvist op i baggrunden, på karakterkort og i Codexet.
+- 🧹 **Billedstyring:** Nyt panel til at se og slette genererede billeder, du ikke kan lide.
+
+**Forbedringer i karaktergenerering:**
+- ⚙️ **Mere solid tilfældig oprettelse:** Jeg har samlet og forbedret den regelmotor, som AI'en bruger til at skabe karakterer fra bunden, hvilket sikrer mere logiske inventarer (5 til 10 sammenhængende genstande) og mere afbalancerede ark.
+- 🧠 **Opdelt hjerne:** AI'en forstår nu bedre, hvornår den skal ""opfinde"" en karakter fra bunden, og hvornår den skal nøjes med at udtrække data fra den biografi, du selv har skrevet.
+- ⚡ **Hastighed efter dit behov:** Ny sektion i Visuelle indstillinger. Vælg mellem ""Hurtig"" (1 trin), ""Mellem"" (2 trin) eller ""Høj"" (4 trin) for at justere genereringstiden efter din computers ydeevne.
+- 🛠️ **Teknisk optimering:** AI-modellen til billeder indlæses i **RAM (Memory)** og behandles via **CPU**, uden at optage videohukommelse (VRAM). Dette sikrer, at det ikke forstyrrer spillets primære AI (LLM). Kræver ca. 5 GB ekstra RAM, hvilket holder sig inden for de officielle minimumskrav på Steam.
+- 📤 **Del dine eventyr:** Alle genererede billeder gemmes automatisk. Du finder dem i mappen: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Modelvælger (Avanceret):** Hvis du starter spillet med parameteren `--advanced`, kan du nu vælge, hvilken AI-model der skal bruges til billeder fra panelet Udseende. Dette giver entusiaster mulighed for at prøve forskellige versioner af Stable Diffusion optimeret til OpenVINO (.xml/.bin-filer).
+
+**Narrativ og AI-hjerne:**
+- 🧠 **Slut med loops:** Der er implementeret en ny ""Hukommelsesdoktrin"" i AI'en. Den skelner nu bedre mellem ""minder"" (det der er sket) og ""nutiden"" (det der sker nu). Dette hjælper med at reducere tilfælde, hvor AI'en gentog sig selv eller gik i stå.
+- 📜 **Historiske arkiver:** Systemet præsenterer dine minder for AI'en som et ""Lukket historisk arkiv"", hvilket gør det lettere for den at bruge den information som reference til at drive historien fremad.
+- ⚡ **Optimerede instruktioner:** Måden spillet beder om fortællingen på dit sprog er blevet forbedret, hvilket frigør kapacitet i modellen til at fokusere på kreativitet.
+- 👁️ **Narrativt fokus:** AI'ens opfattelse er blevet omskrevet. Den forstår nu bedre, hvilke elementer der er ""statisk baggrund"" og ikke bør gentages unødigt i hvert afsnit.
+- 🔀 **Klarere beslutninger:** AI'en tilbyder nu mere definerede flugtveje. Dens forslag (knapper) er opdelt i at undersøge omgivelserne (Fordybelse) eller ændre kurs (Afvigelse).
+- 🫵 **Direkte tiltale:** Basisinstruktionen er justeret for at sikre, at AI'en tiltaler dig med ""Du"", hvilket forbedrer den personlige indlevelse.
+
+**Karakteroprettelse:**
+- 🖼️ **Karakterportrætter:** Når du genererer en karakter med AI, forsøger systemet at skabe et portræt baseret på alder, erhverv og beskrivelse. Bemærk, at dette er en tidlig version, og nøjagtigheden (især med hensyn til alder) kan variere afhængigt af den anvendte model. (Jeg udfører stadig tests, men starten er god).
+- 🎲 **Pålidelig tilfældig generering:** Rettet en fejl, hvor knappen ""Generer med AI"" kunne fejle i første forsøg og efterlade felterne tomme. Det intelligente korrektionssystem sikrer nu, at svaret altid er gyldigt.
+
+**Styring af genererede billeder:**
+- 🖼️ **AI-billedgalleri:** Nyt panel i menuen Arkiv, der viser alle de billeder, AI'en har genereret under dine spil (portrætter, baggrunde). Du kan filtrere efter billedtype eller verden.
+- 🗑️ **Selektiv sletning:** Vælg et eller flere billeder og slet dem, hvis de ikke overbeviser dig (måske det, hvor AI'en besluttede, at det var en god idé at parkere en bus i borgens stald). Systemet renser både filen og dens interne registrering.
+- 📂 **Direkte adgang:** Dobbeltklik på enhver miniature for at åbne mappen, hvor filen befinder sig. Hvis du allerede har mappen åben, genbruges det samme vindue.
+- 💾 **Husk din plads:** Størrelsen på gallerivinduet gemmes automatisk mellem sessioner.
+
+**Ydeevne på lave konfigurationer (Vigtigt for GPU med lidt VRAM):**
+- 🧠 **PSR - Hybrid styring:** Nyt system, der opdeler AI'ens arbejde i to faser: Planlægning (Chef) og Udførelse (Kokke). Dette gør det muligt for lokale modeller med 8 GB VRAM at fungere uden at bryde sammen på grund af for meget kontekst (+12K tokens), på bekostning af højere latenstid. Interaktionen med AI'en går fra at være en enkelt prompt til en række prompts (jo mindre VRAM, desto flere prompts genereres der, og desto længere svartid).
+- ⚡ **Intelligent udførelse:** Systemet beslutter automatisk, om alt skal behandles på én gang (monolitisk) eller opdeles i dele (iterativt) afhængigt af din tilgængelige VRAM. GPU'er med mindre VRAM aktiverer kun den opdelte tilstand, når det er nødvendigt.
+- 📊 **Dynamisk optimering:** PSR reducerer belastningen af tokens under genereringen, hvilket gør det muligt for brugere med grafikkort på 4 GB at fuldføre karakteroprettelse og historiegenerering, som førhen blokerede.
+- 🔄 **Fastholdt sammenhæng:** På trods af arbejdsdelingen indsprøjter systemet en ""hovedintention"", så AI'en ikke mister tråden i det, den var i gang med.
+
+**AI-stemmer (inkrementel forbedring):**
+Realtidsgenerering af stemmer på alle sprog (nogle sprog er mere begrænsede end andre; engelsk har den største variation af stemmetyper)
+- 🗣️ **Kampraab med stemme:** Når du starter kamp mod fjendtlige fjender, afspilles der nu en kontekstuel stemmefrase ved indgangen.
+- 🎭 **Dynamiske fraser efter kontekst:** Motoren kan generere korte stemmelinjer til specifikke hændelser (tjenester/kamp) afhængigt af sprog, indstilling og karakterprofil.
+- 🧠 **Interne stemmeskabeloner:** De tekniske stemmeskabeloner er blevet adskilt fra det narrative system for at undgå interferens med historien.
+- 🔊 **Større klarhed ved lytning:** Forståeligheden og prosodien i syntesen er forbedret for at prioritere tydelig udtale.
+
+**⚠️ Advarsel om kompatibilitet (Tidligere spil):**
+- 🔄 På grund af mængden af interne ændringer i regelmotoren og systemet for omgivelser, vil **tidligere gemte spil og verdener stadig kunne spilles (muligvis)**, men det er meget sandsynligt, at de vil udvise fejl eller uventet adfærd. **Det anbefales at oprette en ny, ren verden** for at nyde alle forbedringerne korrekt.","AI-billedgenerering, narrative forbedringer og kontrol"
+german,"**⚠️ EXPERIMENTELLER ZWEIG (STEAM BETA)**
+Diese Version ist derzeit nur im **experimentellen Zweig** auf Steam verfügbar. Um sie zu aktivieren:
+1. Mache einen Rechtsklick auf **RolemIAster** in deiner Steam-Bibliothek.
+2. Wähle **Eigenschaften...** aus.
+3. Gehe zum Reiter **Betas**.
+4. Wähle unter ""Betateilnahme"" im Dropdown-Menü **experimental** aus.
+
+**Neu: Erste Phase der KI-Bildgenerierung**
+- 🎨 **Deine Welt in Bildern:** Ich habe ein erstes System zur Bildgenerierung durch Künstliche Intelligenz integriert. Während du spielst, versucht das System, Porträts und Landschaften zu generieren, die die Atmosphäre deines Spiels untermalen.
+- 🖼️ **Dynamische Hintergründe:** Die Bilder werden im Hintergrund generiert, ohne dein Spiel zu unterbrechen. Du wirst sehen, wie sie nach und nach im Hintergrund, auf den Charakterkarten und im Kodex erscheinen.
+- 🧹 **Bildverwaltung:** Neues Panel zum Anzeigen und Löschen von generierten Bildern, die dir nicht gefallen.
+
+**Verbesserungen bei der Charaktererstellung:**
+- ⚙️ **Solidere Zufallserstellung:** Ich habe die Regel-Engine, die die KI nutzt, um Charaktere von Grund auf neu zu erstellen, vereinheitlicht und verbessert. Dies garantiert logischere Inventare (5 bis 10 zusammenhängende Gegenstände) und ausgewogenere Charakterbögen.
+- 🧠 **Geteiltes Gehirn:** Die KI versteht nun besser, wann sie einen Charakter komplett ""erfinden"" soll und wann sie sich darauf beschränken muss, Daten aus der von dir geschriebenen Biografie zu extrahieren.
+- ⚡ **Geschwindigkeit nach Maß:** Neuer Bereich in den visuellen Einstellungen. Wähle zwischen ""Schnell"" (1 Schritt), ""Mittel"" (2 Schritte) oder ""Hoch"" (4 Schritte), um die Generierungszeit an die Leistung deines Systems anzupassen.
+- 🛠️ **Technische Optimierung:** Das KI-Modell für Bilder wird in den **Arbeitsspeicher (RAM)** geladen und über die **CPU** verarbeitet, ohne Videospeicher (VRAM) zu belegen. Das stellt sicher, dass es die Leistung der Haupt-KI des Spiels (LLM) nicht beeinträchtigt. Benötigt etwa 5 GB zusätzlichen RAM und bleibt damit innerhalb der offiziellen Mindestanforderungen auf Steam.
+- 📤 **Teile deine Abenteuer:** Alle generierten Bilder werden automatisch gespeichert. Du findest sie im Ordner: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Modell-Auswahl (Erweitert):** Wenn du das Spiel mit dem Parameter `--advanced` startest, kannst du nun im Erscheinungsbild-Panel wählen, welches KI-Modell für die Bilder verwendet werden soll. Dies ermöglicht es Enthusiasten, verschiedene für OpenVINO optimierte Versionen von Stable Diffusion (.xml/.bin-Dateien) auszuprobieren.
+
+**Narrative und KI-Gehirn:**
+- 🧠 **Ende der Schleifen:** Eine neue ""Erinnerungsdoktrin"" wurde in die KI implementiert. Sie unterscheidet nun besser zwischen ""Erinnerungen"" (was bereits passiert ist) und der ""Gegenwart"" (was gerade passiert). Dies hilft, Fälle zu reduzieren, in denen sich die KI wiederholte oder feststeckte.
+- 📜 **Historische Archive:** Das System präsentiert der KI deine Erinnerungen als ""Geschlossenes historisches Archiv"", was es ihr erleichtert, diese Informationen als Referenz zu nutzen, um die Geschichte voranzutreiben.
+- ⚡ **Optimierte Anweisungen:** Die Art und Weise, wie das Spiel die Erzählung in deiner Sprache anfordert, wurde verbessert. Dadurch wird Modellkapazität freigegeben, um sich auf Kreativität zu konzentrieren.
+- 👁️ **Narrativer Fokus:** Die Wahrnehmung der KI wurde neu geschrieben. Sie versteht nun besser, welche Elemente ""statischer Hintergrund"" sind, und sollte diese nicht in jedem Absatz unnötig wiederholen.
+- 🔀 **Klarere Entscheidungen:** Die KI bietet nun definiertere Ausweichmöglichkeiten. Ihre Vorschläge (Schaltflächen) unterteilen sich in das Untersuchen der Umgebung (Vertiefen) oder das Ändern der Richtung (Abweichen).
+- 🫵 **Direkte Ansprache:** Die Grundanweisung wurde angepasst, um sicherzustellen, dass die KI dich mit ""Du"" anspricht, was die persönliche Immersion verbessert.
+
+**Charaktererstellung:**
+- 🖼️ **Charakterporträts:** Wenn ein Charakter mit KI generiert wird, versucht das System, ein Porträt basierend auf Alter, Beruf und Beschreibung zu erstellen. Bitte beachte, dass dies eine erste Version ist und die Genauigkeit (insbesondere beim Alter) je nach verwendetem Modell variieren kann. (Ich teste noch weiter, aber der Anfang ist gut)
+- 🎲 **Zuverlässige Zufallsgenerierung:** Ein Fehler wurde behoben, bei dem die Schaltfläche ""Mit KI generieren"" beim ersten Versuch fehlschlagen konnte, wodurch die Felder leer blieben. Das intelligente Korrektursystem stellt nun sicher, dass die Antwort immer gültig ist.
+
+**Verwaltung generierter Bilder:**
+- 🖼️ **KI-Bildergalerie:** Neues Panel im Datei-Menü, das alle Bilder anzeigt, die die KI während deiner Spiele generiert hat (Porträts, Hintergründe). Du kannst nach Bildtyp oder nach Welt filtern.
+- 🗑️ **Selektives Löschen:** Wähle ein oder mehrere Bilder aus und lösche sie, wenn sie dir nicht gefallen (vielleicht das, wo die KI dachte, es sei eine gute Idee, einen Bus im Schlossstall zu parken). Das System löscht sowohl die Datei als auch den internen Eintrag.
+- 📂 **Direktzugriff:** Mache einen Doppelklick auf eine beliebige Miniaturansicht, um den Ordner zu öffnen, in dem sich die Datei befindet. Wenn du den Ordner bereits geöffnet hast, wird dasselbe Fenster wiederverwendet.
+- 💾 **Speichert deinen Platz:** Die Größe des Galerie-Fensters wird automatisch zwischen den Sitzungen gespeichert.
+
+**Leistung bei niedrigen Systemanforderungen (Wichtig für GPUs mit wenig VRAM):**
+- 🧠 **PSR - Hybride Steuerung:** Ein neues System, das die KI-Arbeit in zwei Phasen unterteilt: Planung (Chefkoch) und Ausführung (Köche). Dies ermöglicht es lokalen Modellen mit 8 GB VRAM zu funktionieren und Abstürze durch Kontextüberschreitung (+12K Tokens) zu vermeiden. Auf Kosten einer höheren Latenz wechselt die Interaktion mit der KI von einem einzigen Prompt zu einer Reihe von Prompts (je weniger VRAM, desto mehr Prompts werden generiert und desto höher ist die Reaktionszeit).
+- ⚡ **Intelligente Ausführung:** Das System entscheidet basierend auf deinem verfügbaren VRAM automatisch, ob alles auf einmal (monolithisch) oder in Teilen (iterativ) verarbeitet wird. GPUs mit weniger VRAM aktivieren den stückweisen Modus nur, wenn es nötig ist.
+- 📊 **Dynamische Optimierung:** PSR reduziert die Token-Belastung während der Generierung, sodass Benutzer mit 4-GB-Grafikkarten die Charaktererstellung und Story-Generierung abschließen können, die zuvor blockiert wurden.
+- 🔄 **Erhaltene Kohärenz:** Obwohl die Arbeit aufgeteilt wird, fügt das System eine ""Meister-Intention"" ein, damit die KI nicht den Faden verliert, bei dem, was sie gerade tat.
+
+**KI-Stimmen (schrittweise Verbesserung):**
+Echtzeit-Stimmgenerierung in allen Sprachen (einige Sprachen sind eingeschränkter als andere, die größte Vielfalt an Stimmtypen bietet Englisch)
+- 🗣️ **Vertonte Kampfschreie:** Zu Beginn eines Kampfes gegen feindliche Gegner wird nun ein kontextbezogener Voice-Spruch ausgelöst.
+- 🎭 **Dynamische Sätze nach Kontext:** Die Engine kann kurze Sprachzeilen für bestimmte Ereignisse (Dienste/Kampf) je nach Sprache, Setting und Charakterprofil generieren.
+- 🧠 **Interne Stimmvorlagen:** Die technischen Stimmvorlagen wurden vom narrativen System getrennt, um Interferenzen mit der Geschichte zu vermeiden.
+- 🔊 **Mehr Klarheit beim Hören:** Die Verständlichkeit und Prosodie der Synthese wurden verbessert, um eine nachvollziehbare Diktion zu priorisieren.
+
+**⚠️ Kompatibilitätshinweis (Bisherige Spielstände):**
+- 🔄 Aufgrund der vielen internen Änderungen an der Regel-Engine und dem Setting-System bleiben **zuvor gespeicherte Spiele und Welten weiterhin spielbar (möglicherweise)**, aber es ist sehr wahrscheinlich, dass sie Fehler oder unerwartetes Verhalten aufweisen. **Es wird empfohlen, eine komplett neue Welt zu erstellen**, um alle Verbesserungen ordnungsgemäß zu genießen.","KI-Bildgenerierung, Narrative Verbesserungen und Steuerung"
+greek,"**⚠️ ΠΕΙΡΑΜΑΤΙΚΟΣ ΚΛΑΔΟΣ (STEAM BETA)**
+Αυτή η έκδοση είναι προς το παρόν διαθέσιμη μόνο στον **Πειραματικό Κλάδο** του Steam. Για να την ενεργοποιήσετε:
+1. Κάντε δεξί κλικ στο **RolemIAster** στη Συλλογή Steam σας.
+2. Επιλέξτε **Ιδιότητες...**
+3. Μεταβείτε στην καρτέλα **Betas**.
+4. Στο ""Συμμετοχή σε beta"", επιλέξτε **experimental** από το αναπτυσσόμενο μενού.
+
+**Νέο: Πρώτη φάση Παραγωγής Εικόνων με AI**
+- 🎨 **Ο Κόσμος σας σε Εικόνες:** Έχω ενσωματώσει ένα αρχικό σύστημα παραγωγής εικόνων μέσω Τεχνητής Νοημοσύνης. Καθώς παίζετε, το σύστημα προσπαθεί να δημιουργήσει πορτρέτα και τοπία που συνοδεύουν την ατμόσφαιρα του παιχνιδιού σας.
+- 🖼️ **Δυναμικά Φόντα:** Οι εικόνες δημιουργούνται στο παρασκήνιο χωρίς να διακόπτεται το παιχνίδι σας. Θα δείτε πώς εμφανίζονται σταδιακά στο φόντο, στις κάρτες χαρακτήρων και στον Κώδικα.
+- 🧹 **Διαχείριση Εικόνων:** Νέος πίνακας για προβολή και διαγραφή των εικόνων που δημιουργήθηκαν και δεν σας αρέσουν.
+
+**Βελτιώσεις στη Δημιουργία Χαρακτήρων:**
+- ⚙️ **Πιο Σταθερή Τυχαία Δημιουργία:** Ενοποίησα και βελτίωσα τη μηχανή κανόνων που χρησιμοποιεί το AI για τη δημιουργία χαρακτήρων από το μηδέν, διασφαλίζοντας πιο λογικά αποθέματα (5 έως 10 συνεκτικά αντικείμενα) και πιο ισορροπημένα φύλλα χαρακτήρα.
+- 🧠 **Διαιρεμένος Εγκέφαλος:** Το AI καταλαβαίνει πλέον καλύτερα πότε πρέπει να ""επινοήσει"" έναν χαρακτήρα από το μηδέν και πότε πρέπει απλώς να εξάγει δεδομένα από το βιογραφικό που γράψατε εσείς οι ίδιοι.
+- ⚡ **Ταχύτητα στα Μέτρα σας:** Νέα ενότητα στις Ρυθμίσεις Εμφάνισης. Επιλέξτε μεταξύ ""Γρήγορη"" (1 βήμα), ""Μεσαία"" (2 βήματα) ή ""Υψηλή"" (4 βήματα) για να προσαρμόσετε τον χρόνο παραγωγής στην ισχύ του υπολογιστή σας.
+- 🛠️ **Τεχνική Βελτιστοποίηση:** Το μοντέλο AI για εικόνες φορτώνεται στη **RAM (Μνήμη)** και επεξεργάζεται μέσω **CPU**, χωρίς να καταλαμβάνει μνήμη βίντεο (VRAM). Αυτό διασφαλίζει ότι δεν παρεμβαίνει στην απόδοση του κύριου AI του παιχνιδιού (LLM). Απαιτεί περίπου 5GB επιπλέον RAM, παραμένοντας εντός των επίσημων ελάχιστων απαιτήσεων του Steam.
+- 📤 **Μοιραστείτε τις Περιπέτειές σας:** Όλες οι παραγόμενες εικόνες αποθηκεύονται αυτόματα. Θα τις βρείτε στον φάκελο: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Επιλογέας Μοντέλων (Για Προχωρημένους):** Εάν ξεκινήσετε το παιχνίδι με την παράμετρο `--advanced`, μπορείτε πλέον να επιλέξετε ποιο μοντέλο AI θα χρησιμοποιηθεί για τις εικόνες από τον πίνακα Εμφάνισης. Αυτό επιτρέπει στους λάτρεις να δοκιμάσουν διαφορετικές εκδόσεις του Stable Diffusion βελτιστοποιημένες για OpenVINO (αρχεία .xml/.bin).
+
+**Αφήγηση και Εγκέφαλος AI:**
+- 🧠 **Τέλος στους Βρόχους:** Εφαρμόστηκε ένα νέο ""Δόγμα Μνήμης"" στο AI. Τώρα διακρίνει καλύτερα μεταξύ ""αναμνήσεων"" (τι έχει συμβεί) και ""παρόντος"" (τι συμβαίνει τώρα). Αυτό βοηθά στη μείωση των περιπτώσεων όπου το AI επαναλαμβανόταν ή κολλούσε.
+- 📜 **Ιστορικά Αρχεία:** Το σύστημα παρουσιάζει τις αναμνήσεις σας στο AI ως ένα ""Κλειστό Ιστορικό Αρχείο"", διευκολύνοντας τη χρήση αυτών των πληροφοριών ως αναφορά για την εξέλιξη της ιστορίας.
+- ⚡ **Βελτιστοποιημένες Οδηγίες:** Βελτιώθηκε ο τρόπος με τον οποίο το παιχνίδι ζητά την αφήγηση στη γλώσσα σας, απελευθερώνοντας χωρητικότητα του μοντέλου για να επικεντρωθεί στη δημιουργικότητα.
+- 👁️ **Αφηγηματική Εστίαση:** Η αντίληψη του AI έχει ξαναγραφτεί. Τώρα καταλαβαίνει καλύτερα ποια στοιχεία είναι ""στατικό φόντο"" και δεν πρέπει να τα επαναλαμβάνει άσκοπα σε κάθε παράγραφο.
+- 🔀 **Πιο Ξεκάθαρες Αποφάσεις:** Το AI προσφέρει πλέον πιο καθορισμένες οδούς διαφυγής. Οι προτάσεις του (κουμπιά) χωρίζονται μεταξύ διερεύνησης του περιβάλλοντος (Εμβάθυνση) ή αλλαγής πορείας (Απόκλιση).
+- 🫵 **Άμεση Προσφώνηση:** Η βασική οδηγία προσαρμόστηκε για να διασφαλιστεί ότι το AI σάς απευθύνεται στον ενικό (""Εσύ""), βελτιώνοντας την προσωπική εμβύθιση.
+
+**Δημιουργία Χαρακτήρα:**
+- 🖼️ **Πορτρέτα Χαρακτήρα:** Κατά τη δημιουργία ενός χαρακτήρα με AI, το σύστημα προσπαθεί να δημιουργήσει ένα πορτρέτο με βάση την ηλικία, το επάγγελμα και την περιγραφή του. Λάβετε υπόψη ότι πρόκειται για μια αρχική έκδοση και η πιστότητα (ειδικά στην ηλικία) μπορεί να διαφέρει ανάλογα με το μοντέλο που χρησιμοποιείται. (συνεχίζω τις δοκιμές αλλά η αρχή είναι καλή)
+- 🎲 **Αξιόπιστη Τυχαία Παραγωγή:** Διορθώθηκε ένα σφάλμα όπου το κουμπί ""Δημιουργία με AI"" μπορούσε να αποτύχει στην πρώτη προσπάθεια, αφήνοντας τα πεδία κενά. Τώρα το σύστημα έξυπνης διόρθωσης διασφαλίζει ότι η απάντηση είναι πάντα έγκυρη.
+
+**Διαχείριση Παραγόμενων Εικόνων:**
+- 🖼️ **Συλλογή Εικόνων AI:** Νέος πίνακας στο μενού Αρχείο που δείχνει όλες τις εικόνες που έχει δημιουργήσει το AI κατά τη διάρκεια των παιχνιδιών σας (πορτρέτα, φόντα). Μπορείτε να φιλτράρετε ανά τύπο εικόνας ή ανά κόσμο.
+- 🗑️ **Επιλεκτική Διαγραφή:** Επιλέξτε μία ή περισσότερες εικόνες και διαγράψτε τις αν δεν σας πείθουν (ίσως εκείνη όπου το AI αποφάσισε ότι ήταν καλή ιδέα να παρκάρει ένα λεωφορείο στον στάβλο του κάστρου). Το σύστημα καθαρίζει τόσο το αρχείο όσο και την εσωτερική του καταχώριση.
+- 📂 **Άμεση Πρόσβαση:** Κάντε διπλό κλικ σε οποιαδήποτε μικρογραφία για να ανοίξετε τον φάκελο όπου βρίσκεται το αρχείο. Εάν έχετε ήδη ανοιχτό τον φάκελο, επαναχρησιμοποιείται το ίδιο παράθυρο.
+- 💾 **Απομνημόνευση Χώρου:** Το μέγεθος του παραθύρου της συλλογής αποθηκεύεται αυτόματα μεταξύ των συνεδριών.
+
+**Απόδοση σε Χαμηλές Διαμορφώσεις (Σημαντικό για GPU με λίγη VRAM):**
+- 🧠 **PSR - Υβριδική Διακυβέρνηση:** Νέο σύστημα που χωρίζει την εργασία του AI σε δύο φάσεις: Σχεδιασμός (Σεφ) και Εκτέλεση (Μάγειρες). Αυτό επιτρέπει στα τοπικά μοντέλα με 8 GB VRAM να λειτουργούν αποφεύγοντας καταρρεύσεις λόγω υπερβολικού context (+12K tokens), με κόστος μεγαλύτερη καθυστέρηση, η αλληλεπίδραση με το AI μετατρέπεται από ένα ενιαίο prompt σε μια σειρά από prompts (όσο χαμηλότερη η VRAM, τόσο περισσότερα prompts θα δημιουργηθούν και τόσο μεγαλύτερος ο χρόνος απόκρισης).
+- ⚡ **Έξυπνη Εκτέλεση:** Το σύστημα αποφασίζει αυτόματα αν θα επεξεργαστεί τα πάντα μονομιάς (μονολιθικά) ή θα τα χωρίσει σε μέρη (επαναληπτικά) ανάλογα με τη διαθέσιμη VRAM σας. Οι GPU με λιγότερη VRAM ενεργοποιούν τη λειτουργία κατά τμήματα μόνο όταν είναι απαραίτητο.
+- 📊 **Δυναμική Βελτιστοποίηση:** Το PSR μειώνει τον φόρτο των tokens κατά την παραγωγή, επιτρέποντας σε χρήστες με κάρτες γραφικών 4GB να ολοκληρώνουν τη δημιουργία χαρακτήρων και την παραγωγή ιστορίας που προηγουμένως μπλόκαραν.
+- 🔄 **Διατήρηση Συνοχής:** Παρά τη διαίρεση της εργασίας, το σύστημα εισάγει μια ""κύρια πρόθεση"" ώστε το AI να μην χάνει τον ειρμό του τι έκανε.
+
+**Φωνές AI (σταδιακή βελτίωση):**
+Παραγωγή φωνών σε πραγματικό χρόνο σε όλες τις γλώσσες (ορισμένες γλώσσες είναι πιο περιορισμένες από άλλες, η πιο ποικίλη σε τύπους φωνών είναι η αγγλική)
+- 🗣️ **Κραυγές Μάχης με Φωνή:** Κατά την έναρξη μάχης εναντίον εχθρικών αντιπάλων, τώρα πυροδοτείται μια φωνητική φράση πλαισίου ως εισαγωγή.
+- 🎭 **Δυναμικές Φράσεις ανά Πλαίσιο:** Η μηχανή μπορεί να δημιουργήσει σύντομες φωνητικές γραμμές για συγκεκριμένα γεγονότα (υπηρεσίες/μάχη) ανάλογα με τη γλώσσα, την ατμόσφαιρα και το προφίλ του χαρακτήρα.
+- 🧠 **Εσωτερικά Πρότυπα Φωνής:** Τα τεχνικά πρότυπα φωνής διαχωρίστηκαν από το αφηγηματικό σύστημα για την αποφυγή παρεμβολών στην ιστορία.
+- 🔊 **Μεγαλύτερη Καθαρότητα στην Ακρόαση:** Βελτιώνεται η ευκρίνεια και η προσωδία της σύνθεσης για να δοθεί προτεραιότητα στην κατανοητή άρθρωση.
+
+**⚠️ Ειδοποίηση Συμβατότητας (Προηγούμενα Παιχνίδια):**
+- 🔄 Λόγω του πλήθους των εσωτερικών αλλαγών στη μηχανή κανόνων και στο σύστημα ατμόσφαιρας, τα **προηγουμένως αποθηκευμένα παιχνίδια και κόσμοι θα παραμείνουν playable (πιθανώς)**, αλλά είναι πολύ πιθανό να παρουσιάσουν σφάλματα ή απροσδόκητες συμπεριφορές. **Συνιστάται η δημιουργία ενός νέου, καθαρού κόσμου** για να απολαύσετε σωστά όλες τις βελτιώσεις.","Παραγωγή Εικόνων με AI, Αφηγηματικές Βελτιώσεις και Έλεγχος"
+english,"**⚠️ EXPERIMENTAL BRANCH (STEAM BETA)**
+This version is currently available only on the Steam **Experimental Branch**. To activate it:
+1. Right-click on **RolemIAster** in your Steam Library.
+2. Select **Properties...**
+3. Go to the **Betas** tab.
+4. Under ""Beta Participation"", select **experimental** from the dropdown menu.
+
+**New: First Phase of AI Image Generation**
+- 🎨 **Your World in Images:** I have integrated an initial Artificial Intelligence image generation system. As you play, the system will attempt to generate portraits and landscapes that match the atmosphere of your game.
+- 🖼️ **Dynamic Backgrounds:** Images are generated in the background without pausing your game. You will see them appear progressively in the background, on character cards, and in the Codex.
+- 🧹 **Image Management:** New panel to view and delete generated images you don't like.
+
+**Character Generation Improvements:**
+- ⚙️ **More Solid Random Creation:** I have unified and improved the rule engine the AI uses to create characters from scratch, ensuring more logical inventories (5 to 10 coherent items) and more balanced character sheets.
+- 🧠 **Split Brain:** The AI now better understands when it should ""invent"" a character from scratch and when it should limit itself to extracting data from the biography you have written yourself.
+- ⚡ **Tailored Speed:** New section in Visual Settings. Choose between ""Fast"" (1 step), ""Medium"" (2 steps), or ""High"" (4 steps) to adjust the generation time to your PC's performance.
+- 🛠️ **Technical Optimization:** The AI model for images is loaded into **RAM (Memory)** and processed via **CPU**, without taking up video memory (VRAM). This ensures it doesn't interfere with the performance of the game's main AI (LLM). It requires about 5GB of additional RAM, staying within the official Steam minimum requirements.
+- 📤 **Share Your Adventures:** All generated images are saved automatically. You will find them in the folder: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Model Selector (Advanced):** If you launch the game with the `--advanced` parameter, you can now choose which AI model to use for images from the Appearance panel. This allows enthusiasts to test different versions of Stable Diffusion optimized for OpenVINO (.xml/.bin files).
+
+**Narrative and AI Brain:**
+- 🧠 **End of Loops:** A new ""Memory Doctrine"" has been implemented into the AI. It now better distinguishes between ""memories"" (what already happened) and the ""present"" (what is happening right now). This helps reduce cases where the AI repeated itself or got stuck.
+- 📜 **Historical Archives:** The system presents your memories to the AI as a ""Closed Historical Archive"", making it easier for it to use that information as a reference to advance the story.
+- ⚡ **Optimized Instructions:** The way the game requests narration in your language has been improved, freeing up the model's capacity to focus on creativity.
+- 👁️ **Narrative Focus:** The AI's perception has been rewritten. It now better understands which elements are ""static background"" and shouldn't be repeated unnecessarily in every paragraph.
+- 🔀 **Clearer Decisions:** The AI now offers more defined escape routes. Its suggestions (buttons) are divided between investigating the surroundings (Delve) or changing course (Diverge).
+- 🫵 **Direct Address:** The base instruction has been adjusted to ensure the AI addresses you as ""You"", improving personal immersion.
+
+**Character Creation:**
+- 🖼️ **Character Portraits:** When generating a character with AI, the system attempts to create a portrait based on their age, profession, and description. Keep in mind that this is an initial version and fidelity (especially regarding age) may vary depending on the model used. (I am still testing, but it's a good start)
+- 🎲 **Reliable Random Generation:** Fixed a bug where the ""Generate with AI"" button could fail on the first attempt, leaving fields empty. Now the smart correction system ensures the response is always valid.
+
+**Generated Image Management:**
+- 🖼️ **AI Image Gallery:** New panel in the File menu showing all the images the AI has generated during your games (portraits, backgrounds). You can filter by image type or by world.
+- 🗑️ **Selective Deletion:** Select one or more images and delete them if you are not convinced (maybe that one where the AI decided it was a good idea to park a bus in the castle stable). The system cleans both the file and its internal registry.
+- 📂 **Direct Access:** Double-click on any thumbnail to open the folder where the file is located. If you already have the folder open, the same window is reused.
+- 💾 **Remember Your Workspace:** The gallery window size is saved automatically between sessions.
+
+**Performance on Low-End Specs (Important for GPUs with low VRAM):**
+- 🧠 **PSR - Hybrid Governance:** New system that divides the AI's workload into two phases: Planning (Chef) and Execution (Cooks). This allows local models with 8GB of VRAM to run while avoiding crashes due to context overflow (+12K tokens), at the cost of higher latency. Interaction with the AI goes from a single prompt to a series of prompts (the lower the VRAM, the more prompts will be generated and the longer the response time).
+- ⚡ **Smart Execution:** The system automatically decides whether to process everything at once (monolithic) or divide it into parts (iterative) based on your available VRAM. GPUs with less VRAM will activate the split mode only when necessary.
+- 📊 **Dynamic Optimization:** PSR reduces token load during generation, allowing users with 4GB graphics cards to complete character creation and story generation that previously got stuck.
+- 🔄 **Maintained Coherence:** Despite splitting the workload, the system injects a ""master intent"" so the AI doesn't lose track of what it was doing.
+
+**AI Voices (incremental improvement):**
+Real-time voice generation in all languages (some languages are more limited than others; English has the most varied voice types).
+- 🗣️ **Voiced Battle Cries:** When initiating combat against hostile enemies, a contextual introductory voice phrase is now triggered.
+- 🎭 **Dynamic Contextual Phrases:** The engine can generate short voice lines for specific events (services/combat) depending on the language, setting, and character profile.
+- 🧠 **Internal Voice Templates:** Technical voice templates have been separated from the narrative system to avoid interfering with the story.
+- 🔊 **Greater Listening Clarity:** The intelligibility and prosody of the synthesis have been improved to prioritize clear diction.
+
+**⚠️ Compatibility Warning (Previous Save Games):**
+- 🔄 Due to the massive amount of internal changes in the rules engine and the setting system, **previously saved games and worlds will (possibly) still be playable**, but it is highly likely they will present errors or unexpected behaviors. **It is recommended to create a clean new world** to properly enjoy all the improvements.","AI Image Generation, Narrative Improvements, and Control"
 spanish,"**⚠️ RAMA EXPERIMENTAL (BETA DE STEAM)**
 Esta versión está disponible actualmente solo en la **Rama Experimental** de Steam. Para activarla:
 1. Haz clic derecho sobre **RolemIAster** en tu Biblioteca de Steam.
@@ -9,6 +380,11 @@ Esta versión está disponible actualmente solo en la **Rama Experimental** de S
 **Novedad: Primera fase de Generación de Imágenes por IA**
 - 🎨 **Tu Mundo en Imágenes:** He integrado un sistema inicial de generación de imágenes por Inteligencia Artificial. A medida que juegas, el sistema intenta generar retratos y paisajes que acompañen la ambientación de tu partida.
 - 🖼️ **Fondos Dinámicos:** Las imágenes se generan en segundo plano sin detener tu partida. Verás cómo aparecen progresivamente en el fondo, en las tarjetas de personajes y en el Códice.
+- 🧹 **Gestión de Imágenes:** Nuevo panel para ver y eliminar las imágenes generadas que no te gusten.
+
+**Mejoras en la Generación de Personajes:**
+- ⚙️ **Creación Aleatoria más Sólida:** He unificado y mejorado el motor de reglas que la IA usa para crear personajes desde cero, garantizando inventarios más lógicos (5 a 10 objetos coherentes) y fichas más equilibradas.
+- 🧠 **Cerebro Dividido:** La IA ahora entiende mejor cuándo debe ""inventar"" un personaje desde cero y cuándo debe limitarse a extraer los datos de la biografía que tú mismo has escrito.
 - ⚡ **Velocidad a tu Medida:** Nueva sección en Configuración Visual. Elige entre ""Rápida"" (1 paso), ""Media"" (2 pasos) o ""Alta"" (4 pasos) para ajustar el tiempo de generación a la potencia de tu equipo.
 - 🛠️ **Optimización Técnica:** El modelo de IA para imágenes se carga en la **RAM (Memory)** y se procesa vía **CPU**, sin ocupar memoria de vídeo (VRAM). Esto garantiza que no interfiera con el rendimiento de la IA principal del juego (LLM). Requiere unos 5GB de RAM adicionales, manteniéndose dentro de los requisitos mínimos oficiales de Steam.
 - 📤 **Comparte tus Aventuras:** Todas las imágenes generadas se guardan automáticamente. Las encontrarás en la carpeta: `%APPDATA%/RolemIAster/custom_assets/images`
@@ -24,5 +400,1139 @@ Esta versión está disponible actualmente solo en la **Rama Experimental** de S
 
 **Creación de Personaje:**
 - 🖼️ **Retratos de Personaje:** Al generar un personaje con IA, el sistema intenta crear un retrato basado en su edad, profesión y descripción. Ten en cuenta que es una versión inicial y la fidelidad (especialmente en la edad) puede variar según el modelo utilizado. (sigo  haciendo pruebas pero el inicio es bueno)
-- 🎲 **Generación Aleatoria Fiable:** Corregido un fallo donde el botón ""Generar con IA"" podía fallar en el primer intento, dejando los campos vacíos. Ahora el sistema de corrección inteligente se asegura de que la respuesta sea siempre válida.","Generación de Imágenes por IA, Mejoras Narrativas y Control"
-english,"Generación de Imágenes por IA, Mejoras Narrativas y Control (English translation pending)","Generación de Imágenes por IA, Mejoras Narrativas y Control"
+- 🎲 **Generación Aleatoria Fiable:** Corregido un fallo donde el botón ""Generar con IA"" podía fallar en el primer intento, dejando los campos vacíos. Ahora el sistema de corrección inteligente se asegura de que la respuesta sea siempre válida.
+
+**Gestión de Imágenes Generadas:**
+- 🖼️ **Galería de Imágenes IA:** Nuevo panel en el menú Archivo que muestra todas las imágenes que la IA ha generado durante tus partidas (retratos, fondos). Puedes filtrar por tipo de imagen o por mundo.
+- 🗑️ **Borrado Selectivo:** Selecciona una o varias imágenes y elimínalas si no te convencen (quizá esa en la que la IA decidió que era buena idea aparcar un autobús en el establo del castillo). El sistema limpia tanto el archivo como su registro interno.
+- 📂 **Acceso Directo:** Haz doble clic sobre cualquier miniatura para abrir la carpeta donde se encuentra el archivo. Si ya tienes la carpeta abierta, se reutiliza la misma ventana.
+- 💾 **Recuerda tu Espacio:** El tamaño de la ventana de la galería se guarda automáticamente entre sesiones.
+
+**Rendimiento en Configuraciones Bajas (Importante para GPU con paca VRAM):**
+- 🧠 **PSR - Gobernanza Híbrida:** Nuevo sistema que divide el trabajo de la IA en dos fases: Planificación (Chef) y Ejecución (Cocineros). Esto permite que modelos locales con 8 GB de VRAM funcionen evitando colapsos por exceso de contexto (+12K tokens), a costa de una latencia mayor, el trato con la ia pasa de ser un único prompt a una serie de prompts (cuanto menor sea la VRAM mayor cantidad de prompts se generarán y mayor tiempo de respuesta).
+- ⚡ **Ejecución Inteligente:** El sistema decide automáticamente si procesar todo de una vez (monolítico) o dividir en partes (iterativo) según tu VRAM disponible. GPUs con menos VRAM activan el modo por partes solo cuando es necesario.
+- 📊 **Optimización Dinámica:** PSR reduce la carga de tokens durante la generación, permitiendo que usuarios con tarjetas gráficas de 4GB puedan completar la creación de personajes y generación de historia que antes se bloqueaban.
+- 🔄 **Coherencia Mantenida:** A pesar de dividir el trabajo, el sistema inyecta una ""intención maestra"" para que la IA no pierda el hilo de lo que estaba haciendo.
+
+**Voces IA (mejora incremental):**
+Generacion a tiempo real de voces en todos los idiomas (algunos idiomas están más limitados que otros, el más variado en tipos de voces es el inglés)
+- 🗣️ **Gritos de Combate con Voz:** Al iniciar combate contra enemigos hostiles, ahora se dispara una frase de voz contextual de entrada.
+- 🎭 **Frases Dinámicas por Contexto:** El motor puede generar líneas cortas de voz para eventos concretos (servicios/combate) según idioma, ambientación y perfil del personaje.
+- 🧠 **Plantillas de Voz Internas:** Se han separado las plantillas técnicas de voz del sistema narrativo para evitar interferencias con la historia.
+- 🔊 **Mayor Claridad al Escuchar:** Se mejora la inteligibilidad y la prosodia de la síntesis para priorizar dicción comprensible.
+
+**⚠️ Aviso de Compatibilidad (Partidas Anteriores):**
+- 🔄 Debido a la cantidad de cambios internos en el motor de reglas y el sistema de ambientación, las **partidas y mundos guardados anteriormente seguirán siendo jugables (posiblemente)**, pero es muy probable que presenten errores o comportamientos inesperados. **Se recomienda crear un mundo nuevo limpio** para disfrutar de todas las mejoras correctamente.","Generación de Imágenes por IA, Mejoras Narrativas y Control"
+latam,"**⚠️ RAMA EXPERIMENTAL (BETA DE STEAM)**
+Esta versión está disponible actualmente solo en la **Rama Experimental** de Steam. Para activarla:
+1. Haz clic derecho sobre **RolemIAster** en tu Biblioteca de Steam.
+2. Selecciona **Propiedades...**
+3. Ve a la pestaña **Betas**.
+4. En ""Participación en la beta"", selecciona **experimental** en el menú desplegable.
+
+**Novedad: Primera fase de Generación de Imágenes por IA**
+- 🎨 **Tu Mundo en Imágenes:** He integrado un sistema inicial de generación de imágenes por Inteligencia Artificial. A medida que juegas, el sistema intenta generar retratos y paisajes que acompañen la ambientación de tu partida.
+- 🖼️ **Fondos Dinámicos:** Las imágenes se generan en segundo plano sin detener tu partida. Verás cómo aparecen progresivamente en el fondo, en las tarjetas de personajes y en el Códice.
+- 🧹 **Gestión de Imágenes:** Nuevo panel para ver y eliminar las imágenes generadas que no te gusten.
+
+**Mejoras en la Generación de Personajes:**
+- ⚙️ **Creación Aleatoria más Sólida:** He unificado y mejorado el motor de reglas que la IA usa para crear personajes desde cero, garantizando inventarios más lógicos (5 a 10 objetos coherentes) y fichas más equilibradas.
+- 🧠 **Cerebro Dividido:** La IA ahora entiende mejor cuándo debe ""inventar"" un personaje desde cero y cuándo debe limitarse a extraer los datos de la biografía que tú mismo has escrito.
+- ⚡ **Velocidad a tu Medida:** Nueva sección en Configuración Visual. Elige entre ""Rápida"" (1 paso), ""Media"" (2 pasos) o ""Alta"" (4 pasos) para ajustar el tiempo de generación a la potencia de tu equipo.
+- 🛠️ **Optimización Técnica:** El modelo de IA para imágenes se carga en la **RAM (Memoria)** y se procesa vía **CPU**, sin ocupar memoria de video (VRAM). Esto garantiza que no interfiera con el rendimiento de la IA principal del juego (LLM). Requiere unos 5GB de RAM adicionales, manteniéndose dentro de los requisitos mínimos oficiales de Steam.
+- 📤 **Comparte tus Aventuras:** Todas las imágenes generadas se guardan automáticamente. Las encontrarás en la carpeta: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Selector de Modelos (Avanzado):** Si inicias el juego con el parámetro `--advanced`, ahora puedes elegir qué modelo de IA usar para las imágenes desde el panel de Apariencia. Esto permite a los entusiastas probar diferentes versiones de Stable Diffusion optimizadas para OpenVINO (archivos .xml/.bin).
+
+**Narrativa y Cerebro IA:**
+- 🧠 **Fin de los Bucles:** Se ha implantado una nueva ""Doctrina de Memoria"" en la IA. Ahora distingue mejor entre ""recuerdos"" (lo que ya pasó) y el ""presente"" (lo que está pasando). Esto ayuda a reducir los casos donde la IA se repetía o quedaba atascada.
+- 📜 **Archivos Históricos:** El sistema presenta tus recuerdos a la IA como un ""Archivo Histórico Cerrado"", facilitando que use esa información como referencia para avanzar la historia.
+- ⚡ **Instrucciones Optimizadas:** Se ha mejorado la forma en que el juego solicita la narración en tu idioma, liberando capacidad del modelo para concentrarse en la creatividad.
+- 👁️ **Foco Narrativo:** Se ha reescrito la percepción de la IA. Ahora entiende mejor qué elementos son ""fondo estático"" y no debería repetirlos innecesariamente en cada párrafo.
+- 🔀 **Decisiones Más Claras:** La IA ahora ofrece vías de escape más definidas. Sus sugerencias (botones) se dividen entre investigar el entorno (Profundizar) o cambiar de rumbo (Divergir).
+- 🫵 **Tratamiento Directo:** Se ha ajustado la instrucción base para asegurar que la IA te trate de ""Tú"", mejorando la inmersión personal.
+
+**Creación de Personaje:**
+- 🖼️ **Retratos de Personaje:** Al generar un personaje con IA, el sistema intenta crear un retrato basado en su edad, profesión y descripción. Ten en cuenta que es una versión inicial y la fidelidad (especialmente en la edad) puede variar según el modelo utilizado. (sigo haciendo pruebas pero el inicio es bueno)
+- 🎲 **Generación Aleatoria Confiable:** Corregido un fallo donde el botón ""Generar con IA"" podía fallar en el primer intento, dejando los campos vacíos. Ahora el sistema de corrección inteligente se asegura de que la respuesta sea siempre válida.
+
+**Gestión de Imágenes Generadas:**
+- 🖼️ **Galería de Imágenes IA:** Nuevo panel en el menú Archivo que muestra todas las imágenes que la IA ha generado durante tus partidas (retratos, fondos). Puedes filtrar por tipo de imagen o por mundo.
+- 🗑️ **Borrado Selectivo:** Selecciona una o varias imágenes y elimínalas si no te convencen (quizás esa en la que la IA decidió que era buena idea estacionar un autobús en el establo del castillo). El sistema limpia tanto el archivo como su registro interno.
+- 📂 **Acceso Directo:** Haz doble clic sobre cualquier miniatura para abrir la carpeta donde se encuentra el archivo. Si ya tienes la carpeta abierta, se reutiliza la misma ventana.
+- 💾 **Recuerda tu Espacio:** El tamaño de la ventana de la galería se guarda automáticamente entre sesiones.
+
+**Rendimiento en Configuraciones Bajas (Importante para GPU con poca VRAM):**
+- 🧠 **PSR - Gobernanza Híbrida:** Nuevo sistema que divide el trabajo de la IA en dos fases: Planificación (Chef) y Ejecución (Cocineros). Esto permite que modelos locales con 8 GB de VRAM funcionen evitando colapsos por exceso de contexto (+12K tokens), a costa de una latencia mayor; la interacción con la IA pasa de ser un único prompt a una serie de prompts (cuanto menor sea la VRAM mayor cantidad de prompts se generarán y mayor tiempo de respuesta).
+- ⚡ **Ejecución Inteligente:** El sistema decide automáticamente si procesar todo de una vez (monolítico) o dividir en partes (iterativo) según tu VRAM disponible. GPUs con menos VRAM activan el modo por partes solo cuando es necesario.
+- 📊 **Optimización Dinámica:** PSR reduce la carga de tokens durante la generación, permitiendo que usuarios con tarjetas gráficas de 4GB puedan completar la creación de personajes y generación de historia que antes se bloqueaban.
+- 🔄 **Coherencia Mantenida:** A pesar de dividir el trabajo, el sistema inyecta una ""intención maestra"" para que la IA no pierda el hilo de lo que estaba haciendo.
+
+**Voces IA (mejora incremental):**
+Generación en tiempo real de voces en todos los idiomas (algunos idiomas están más limitados que otros, el más variado en tipos de voces es el inglés)
+- 🗣️ **Gritos de Combate con Voz:** Al iniciar combate contra enemigos hostiles, ahora se dispara una frase de voz contextual de entrada.
+- 🎭 **Frases Dinámicas por Contexto:** El motor puede generar líneas cortas de voz para eventos concretos (servicios/combate) según idioma, ambientación y perfil del personaje.
+- 🧠 **Plantillas de Voz Internas:** Se han separado las plantillas técnicas de voz del sistema narrativo para evitar interferencias con la historia.
+- 🔊 **Mayor Claridad al Escuchar:** Se mejora la inteligibilidad y la prosodia de la síntesis para priorizar una dicción comprensible.
+
+**⚠️ Aviso de Compatibilidad (Partidas Anteriores):**
+- 🔄 Debido a la cantidad de cambios internos en el motor de reglas y el sistema de ambientación, las **partidas y mundos guardados anteriormente seguirán siendo jugables (posiblemente)**, pero es muy probable que presenten errores o comportamientos inesperados. **Se recomienda crear un mundo nuevo limpio** para disfrutar de todas las mejoras correctamente.","Generación de Imágenes por IA, Mejoras Narrativas y Control"
+finnish,"**⚠️ KOKEILUHAARA (STEAM BETA)**
+Tämä versio on tällä hetkellä saatavilla vain Steamissä **Kokeiluhaarassa** (Experimental Branch). Ota se käyttöön näin:
+1. Napsauta hiiren kakkospainikkeella **RolemIAster**-peliä Steam-kirjastossasi.
+2. Valitse **Ominaisuudet...**
+3. Siirry **Betat**-välilehdelle.
+4. Valitse ""Betaan osallistuminen"" -kohdan pudotusvalikosta **experimental**.
+
+**Uutta: Tekoälykuvien luonnin ensimmäinen vaihe**
+- 🎨 **Maailmasi kuvina:** Olen integroinut alustavan järjestelmän tekoälypohjaiseen kuvien luontiin. Pelaamisen aikana järjestelmä yrittää luoda muotokuvia ja maisemia, jotka sopivat pelisi tunnelmaan.
+- 🖼️ **Dynaamiset taustat:** Kuvat luodaan taustalla keskeyttämättä peliäsi. Näet niiden ilmestyvän vähitellen taustalle, hahmokortteihin ja koodeksiin.
+- 🧹 **Kuvien hallinta:** Uusi paneeli, jossa voit tarkastella ja poistaa luotuja kuvia, joista et pidä.
+
+**Parannuksia hahmojen luontiin:**
+- ⚙️ **Vankempi satunnaisluonti:** Olen yhtenäistänyt ja parantanut sääntömoottoria, jota tekoäly käyttää hahmojen luomiseen tyhjästä. Tämä takaa loogisemmat tavaraluettelot (5–10 johdonmukaista esinettä) ja tasapainoisemmat hahmolomakkeet.
+- 🧠 **Jaetut aivot:** Tekoäly ymmärtää nyt paremmin, milloin sen tulee ""keksiä"" hahmo tyhjästä ja milloin sen tulee vain poimia tiedot kirjoittamastasi biografiasta.
+- ⚡ **Nopeus tarpeidesi mukaan:** Uusi osio visuaalisissa asetuksissa. Valitse ""Nopea"" (1 vaihe), ""Keskitaso"" (2 vaihetta) tai ""Korkea"" (4 vaihetta) säätääksesi luontiaikaa laitteistosi tehon mukaan.
+- 🛠️ **Tekninen optimointi:** Kuvien tekoälymalli ladataan **RAM-muistiin** ja prosessoidaan **CPU:n** kautta viemättä videomuistia (VRAM). Tämä takaa, ettei se häiritse pelin päätekoälyn (LLM) suorituskykyä. Se vaatii noin 5 Gt lisä-RAM-muistia, mutta pysyy silti Steam-vähimmäisvaatimusten rajoissa.
+- 📤 **Jaa seikkailusi:** Kaikki luodut kuvat tallennetaan automaattisesti. Löydät ne kansiosta: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Mallin valitsin (Edistynyt):** Jos käynnistät pelin parametrilla `--advanced`, voit nyt valita Ulkoasu-paneelista, mitä tekoälymallia käytetään kuviin. Tämän ansiosta harrastajat voivat testata eri Stable Diffusion -versioita, jotka on optimoitu OpenVINO:lle (.xml/.bin-tiedostot).
+
+**Kerronta ja tekoälyaivot:**
+- 🧠 **Loppu silmukoille:** Tekoälyyn on istutettu uusi ""Muistioppi"". Se erottaa nyt paremmin ""muistot"" (mitä on jo tapahtunut) ja ""nykyhetken"" (mitä tapahtuu nyt). Tämä auttaa vähentämään tapauksia, joissa tekoäly toisti itseään tai jäi jumiin.
+- 📜 **Historialliset arkistot:** Järjestelmä esittää muistosi tekoälylle ""Suljettuna historiallisena arkistona"", mikä helpottaa kyseisten tietojen käyttöä viitteenä tarinan edistämiseksi.
+- ⚡ **Optimoidut ohjeet:** Tapaa, jolla peli pyytää kerrontaa kielelläsi, on parannettu, mikä vapauttaa mallin kapasiteettia keskittymään luovuuteen.
+- 👁️ **Kerronnallinen fokus:** Tekoälyn havaintokyky on kirjoitettu uudelleen. Se ymmärtää nyt paremmin, mitkä elementit ovat ""staattista taustaa"", eikä sen tulisi toistaa niitä tarpeettomasti jokaisessa kappaleessa.
+- 🔀 **Selkeämmät päätökset:** Tekoäly tarjoaa nyt selkeämpiä etenemisreittejä. Sen ehdotukset (painikkeet) on jaettu ympäristön tutkimiseen (Syvenny) tai suunnan muuttamiseen (Erkane).
+- 🫵 **Suora puhuttelu:** Perusohjeistusta on säädetty sen varmistamiseksi, että tekoäly puhuttelee sinua muodossa ""Sinä"", mikä parantaa immersiota.
+
+**Hahmonluonti:**
+- 🖼️ **Hahmojen muotokuvat:** Kun luot hahmon tekoälyllä, järjestelmä yrittää luoda muotokuvan iän, ammatin ja kuvauksen perusteella. Huomaa, että tämä on varhainen versio, ja uskollisuus (erityisesti iän suhteen) voi vaihdella käytetyn mallin mukaan. (Jatkan testausta, mutta alku näyttää lupaavalta.)
+- 🎲 **Luotettava satunnaisluonti:** Korjattu virhe, jossa ""Luo tekoälyllä"" -painike saattoi epäonnistua ensimmäisellä yrityksellä jättäen kentät tyhjiksi. Nyt älykäs korjausjärjestelmä varmistaa, että vastaus on aina kelvollinen.
+
+**Luotujen kuvien hallinta:**
+- 🖼️ **Tekoälykuvagalleria:** Tiedosto-valikossa on uusi paneeli, joka näyttää kaikki tekoälyn peliesi aikana luomat kuvat (muotokuvat, taustat). Voit suodattaa kuvatyypin tai maailman mukaan.
+- 🗑️ **Valikoiva poisto:** Valitse yksi tai useampi kuva ja poista ne, jos ne eivät miellytä (ehkä se kuva, jossa tekoäly päätti, että linnan talliin on hyvä idea pysäköidä bussi). Järjestelmä siivoaa sekä tiedoston että sisäisen rekisterinsä.
+- 📂 **Suora pääsy:** Kaksoisnapsauta pikkukuvaa avataksesi kansion, jossa tiedosto sijaitsee. Jos kansio on jo auki, käytetään samaa ikkunaa.
+- 💾 **Ikkunan koon muistaminen:** Gallerian ikkunan koko tallennetaan automaattisesti istuntojen välillä.
+
+**Suorituskyky matalilla asetuksilla (Tärkeää GPU:ille, joissa on vähän VRAM-muistia):**
+- 🧠 **PSR - Hybridihallinta:** Uusi järjestelmä, joka jakaa tekoälyn työn kahteen vaiheeseen: Suunnittelu (Keittiömestari) ja Toteutus (Kokit). Tämä mahdollistaa paikallisten mallien toiminnan 8 Gt VRAM-muistilla välttäen kontekstin ylikuormituksesta johtuvat kaatumiset (+12K tokenia), mutta viive kasvaa. Tekoälyn käsittely muuttuu yhdestä kehotteesta kehotteiden sarjaksi (mitä vähemmän VRAM-muistia, sitä enemmän kehotteita luodaan ja sitä pidempi vastausaika).
+- ⚡ **Älykäs suoritus:** Järjestelmä päättää automaattisesti käytettävissä olevan VRAM-muistin perusteella, käsitelläänkö kaikki kerralla (monoliittinen) vai jaetaanko se osiin (iteratiivinen). GPU:t, joissa on vähemmän VRAM-muistia, aktivoivat ositetun tilan vain tarvittaessa.
+- 📊 **Dynaaminen optimointi:** PSR vähentää token-kuormitusta luonnin aikana, mikä mahdollistaa sen, että käyttäjät, joilla on 4 Gt:n näytönohjain, voivat suorittaa hahmonluonnin ja tarinan luonnin, jotka aiemmin jumiutuivat.
+- 🔄 **Johdonmukaisuuden ylläpito:** Vaikka työ jaetaan, järjestelmä syöttää ""pääaikeen"", jotta tekoäly ei menetä punaista lankaa tekemisistään.
+
+**Tekoälyäänet (inkrementaalinen parannus):**
+Reaaliaikainen äänten luonti kaikilla kielillä (jotkut kielet ovat rajoitetumpia kuin toiset; englannin kielessä on monipuolisin äänivalikoima)
+- 🗣️ **Äänelliset taisteluhuudot:** Kun taistelu vihollisia vastaan alkaa, peli toistaa nyt kontekstisidonnaisen aloituslauseen ääneen.
+- 🎭 **Dynaamiset lauseet kontekstin mukaan:** Moottori voi luoda lyhyitä äänirepliikkejä tiettyihin tapahtumiin (palvelut/taistelu) kielen, tunnelman ja hahmoprofiilin mukaan.
+- 🧠 **Sisäiset äänimallit:** Tekniset äänimallit on erotettu kerrontajärjestelmästä, jotta ne eivät häiritse tarinaa.
+- 🔊 **Parempi selkeys:** Synteesin ymmärrettävyyttä ja prosodiaa on parannettu, jotta selkeä ääntäminen on etusijalla.
+
+**⚠️ Yhteensopivuusilmoitus (Aiemmat tallennukset):**
+- 🔄 Sääntömoottoriin ja ympäristöjärjestelmään tehtyjen lukuisten sisäisten muutosten vuoksi **aiemmin tallennetut pelit ja maailmat ovat edelleen pelattavissa (mahdollisesti)**, mutta on hyvin todennäköistä, että niissä esiintyy virheitä tai odottamattomia toimintoja. **Suosittelemme luomaan uuden puhtaan maailman**, jotta voit nauttia kaikista parannuksista kunnolla.","Tekoälykuvien luonti, kerronnalliset parannukset ja hallinta"
+french,"**⚠️ BRANCHE EXPÉRIMENTALE (BÊTA DE STEAM)**
+Cette version est actuellement disponible uniquement sur la **Branche Expérimentale** de Steam. Pour l'activer :
+1. Faites un clic droit sur **RolemIAster** dans votre Bibliothèque Steam.
+2. Sélectionnez **Propriétés...**
+3. Allez dans l'onglet **Bêtas**.
+4. Dans ""Participation à la version bêta"", sélectionnez **experimental** dans le menu déroulant.
+
+**Nouveauté : Première phase de la Génération d'images par IA**
+- 🎨 **Votre Monde en Images :** J'ai intégré un système initial de génération d'images par Intelligence Artificielle. Au fur et à mesure que vous jouez, le système tente de générer des portraits et des paysages qui accompagnent l'ambiance de votre partie.
+- 🖼️ **Arrière-plans Dynamiques :** Les images sont générées en arrière-plan sans interrompre votre partie. Vous verrez comment elles apparaissent progressivement en fond, sur les cartes de personnages et dans le Codex.
+- 🧹 **Gestion des Images :** Nouveau panneau pour voir et supprimer les images générées qui ne vous plaisent pas.
+
+**Améliorations de la Génération de Personnages :**
+- ⚙️ **Création Aléatoire plus Solide :** J'ai unifié et amélioré le moteur de règles que l'IA utilise pour créer des personnages à partir de zéro, garantissant des inventaires plus logiques (5 à 10 objets cohérents) et des fiches plus équilibrées.
+- 🧠 **Cerveau Divisé :** L'IA comprend désormais mieux quand elle doit ""inventer"" un personnage à partir de zéro et quand elle doit se limiter à extraire les données de la biographie que vous avez vous-même écrite.
+- ⚡ **Vitesse sur Mesure :** Nouvelle section dans la Configuration Visuelle. Choisissez entre ""Rapide"" (1 étape), ""Moyenne"" (2 étapes) ou ""Élevée"" (4 étapes) pour ajuster le temps de génération à la puissance de votre équipement.
+- 🛠️ **Optimisation Technique :** Le modèle d'IA pour les images est chargé dans la **RAM (Mémoire)** et traité via le **CPU**, sans occuper la mémoire vidéo (VRAM). Cela garantit qu'il n'interfère pas avec les performances de l'IA principale du jeu (LLM). Nécessite environ 5 Go de RAM supplémentaires, tout en restant dans les prérequis minimaux officiels de Steam.
+- 📤 **Partagez vos Aventures :** Toutes les images générées sont sauvegardées automatiquement. Vous les trouverez dans le dossier : `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Sélecteur de Modèles (Avancé) :** Si vous lancez le jeu avec le paramètre `--advanced`, vous pouvez désormais choisir quel modèle d'IA utiliser pour les images depuis le panneau Apparence. Cela permet aux passionnés de tester différentes versions de Stable Diffusion optimisées pour OpenVINO (fichiers .xml/.bin).
+
+**Narration et Cerveau IA :**
+- 🧠 **Fin des Boucles :** Une nouvelle ""Doctrine de Mémoire"" a été implantée dans l'IA. Elle distingue désormais mieux les ""souvenirs"" (ce qui s'est déjà passé) du ""présent"" (ce qui est en train de se passer). Cela aide à réduire les cas où l'IA se répétait ou restait bloquée.
+- 📜 **Archives Historiques :** Le système présente vos souvenirs à l'IA comme une ""Archive Historique Fermée"", facilitant l'utilisation de ces informations comme référence pour faire avancer l'histoire.
+- ⚡ **Instructions Optimisées :** La manière dont le jeu demande la narration dans votre langue a été améliorée, libérant de la capacité du modèle pour se concentrer sur la créativité.
+- 👁️ **Focus Narratif :** La perception de l'IA a été réécrite. Elle comprend désormais mieux quels éléments sont un ""fond statique"" et ne devrait pas les répéter inutilement à chaque paragraphe.
+- 🔀 **Décisions Plus Claires :** L'IA offre désormais des voies d'évasion plus définies. Ses suggestions (boutons) sont divisées entre enquêter sur l'environnement (Approfondir) ou changer de cap (Diverger).
+- 🫵 **Traitement Direct :** L'instruction de base a été ajustée pour s'assurer que l'IA vous tutoie, améliorant l'immersion personnelle.
+
+**Création de Personnage :**
+- 🖼️ **Portraits de Personnage :** Lors de la génération d'un personnage avec l'IA, le système tente de créer un portrait basé sur son âge, sa profession et sa description. Gardez à l'esprit qu'il s'agit d'une version initiale et que la fidélité (surtout pour l'âge) peut varier selon le modèle utilisé (je continue à faire des tests mais le début est prometteur).
+- 🎲 **Génération Aléatoire Fiable :** Correction d'un bug où le bouton ""Générer avec IA"" pouvait échouer à la première tentative, laissant les champs vides. Désormais, le système de correction intelligent s'assure que la réponse soit toujours valide.
+
+**Gestion des Images Générées :**
+- 🖼️ **Galerie d'Images IA :** Nouveau panneau dans le menu Fichier qui affiche toutes les images que l'IA a générées pendant vos parties (portraits, fonds). Vous pouvez filtrer par type d'image ou par monde.
+- 🗑️ **Suppression Sélective :** Sélectionnez une ou plusieurs images et supprimez-les si elles ne vous conviennent pas (peut-être celle où l'IA a décidé qu'il était judicieux de garer un bus dans l'écurie du château). Le système nettoie à la fois le fichier et son registre interne.
+- 📂 **Accès Direct :** Double-cliquez sur n'importe quelle miniature pour ouvrir le dossier où se trouve le fichier. Si vous avez déjà le dossier ouvert, la même fenêtre est réutilisée.
+- 💾 **Mémorisation de l'Espace :** La taille de la fenêtre de la galerie est sauvegardée automatiquement entre les sessions.
+
+**Performance sur Configurations Basses (Important pour GPU avec peu de VRAM) :**
+- 🧠 **PSR - Gouvernance Hybride :** Nouveau système qui divise le travail de l'IA en deux phases : Planification (Chef) et Exécution (Cuisiniers). Cela permet aux modèles locaux avec 8 Go de VRAM de fonctionner en évitant les plantages dus à un excès de contexte (+12K tokens), au prix d'une latence plus élevée. L'interaction avec l'IA passe d'un prompt unique à une série de prompts (moins il y a de VRAM, plus il y aura de prompts générés et plus le temps de réponse sera long).
+- ⚡ **Exécution Intelligente :** Le système décide automatiquement s'il faut tout traiter en une seule fois (monolithique) ou diviser en parties (itératif) selon votre VRAM disponible. Les GPU avec moins de VRAM activent le mode par parties uniquement lorsque c'est nécessaire.
+- 📊 **Optimisation Dynamique :** Le PSR réduit la charge de tokens pendant la génération, permettant aux utilisateurs avec des cartes graphiques de 4 Go de compléter la création de personnages et la génération d'histoire qui se bloquaient auparavant.
+- 🔄 **Cohérence Maintenue :** Malgré la division du travail, le système injecte une ""intention maîtresse"" pour que l'IA ne perde pas le fil de ce qu'elle faisait.
+
+**Voix IA (amélioration incrémentale) :**
+Génération en temps réel de voix dans toutes les langues (certaines langues sont plus limitées que d'autres, l'anglais étant le plus varié en types de voix)
+- 🗣️ **Cris de Combat Vocaux :** En engageant le combat contre des ennemis hostiles, une phrase vocale contextuelle d'entrée est désormais déclenchée.
+- 🎭 **Phrases Dynamiques par Contexte :** Le moteur peut générer de courtes lignes vocales pour des événements concrets (services/combat) selon la langue, l'ambiance et le profil du personnage.
+- 🧠 **Modèles de Voix Internes :** Les modèles techniques de voix ont été séparés du système narratif pour éviter les interférences avec l'histoire.
+- 🔊 **Meilleure Clarté d'Écoute :** L'intelligibilité et la prosodie de la synthèse sont améliorées pour prioriser une diction compréhensible.
+
+**⚠️ Avis de Compatibilité (Parties Précédentes) :**
+- 🔄 En raison de la quantité de changements internes dans le moteur de règles et le système d'ambiance, les **parties et mondes sauvegardés précédemment resteront jouables (possiblement)**, mais il est très probable qu'ils présentent des erreurs ou des comportements inattendus. **Il est recommandé de créer un nouveau monde propre** pour profiter correctement de toutes les améliorations.","Génération d'images par IA, Améliorations Narratives et Contrôle"
+hungarian,"**⚠️ KÍSÉRLETI ÁG (STEAM BÉTA)**
+Ez a verzió jelenleg csak a Steam **Kísérleti Ágán** (Experimental) érhető el. Az aktiváláshoz:
+1. Kattints jobb gombbal a **RolemIAster**-re a Steam Könyvtáradban.
+2. Válaszd a **Tulajdonságok...** menüpontot.
+3. Lépj a **Béták** fülre.
+4. A ""Bétarészvétel"" legördülő menüben válaszd az **experimental** lehetőséget.
+
+**Újdonság: A MI Képgenerálás első fázisa**
+- 🎨 **A Világod Képekben:** Integráltam egy kezdeti Mesterséges Intelligencia képgeneráló rendszert. Ahogy játszol, a rendszer megpróbál portrékat és tájképeket generálni, amelyek illeszkednek a játékod hangulatához.
+- 🖼️ **Dinamikus Hátterek:** A képek a háttérben generálódnak anélkül, hogy megállítanák a játékot. Látni fogod, ahogy fokozatosan megjelennek a háttérben, a karakterlapokon és a Kódexben.
+- 🧹 **Képkezelés:** Új panel a generált képek megtekintésére és a nem tetszők törlésére.
+
+**Fejlesztések a Karaktergenerálásban:**
+- ⚙️ **Stabilabb Véletlenszerű Alkotás:** Egyesítettem és továbbfejlesztettem a szabálymotort, amelyet a MI a karakterek nulláról történő létrehozásához használ, garantálva a logikusabb felszereléseket (5-10 koherens tárgy) és a kiegyensúlyozottabb adatlapokat.
+- 🧠 **Osztott Agy:** A MI most már jobban megérti, mikor kell egy karaktert nulláról ""kitalálnia"", és mikor kell csak a te általad írt életrajzból kinyernie az adatokat.
+- ⚡ **Személyre Szabott Sebesség:** Új rész a Vizuális Beállításokban. Válassz a ""Gyors"" (1 lépés), ""Közepes"" (2 lépés) vagy ""Magas"" (4 lépés) közül, hogy a generálási időt a géped teljesítményéhez igazítsd.
+- 🛠️ **Technikai Optimizáció:** A képgeneráló MI modell a **RAM-ba (Memória)** töltődik, és a **CPU**-n keresztül dolgozódik fel, anélkül, hogy videomemóriát (VRAM) foglalna. Ez garantálja, hogy ne zavarja a játék fő MI-jének (LLM) teljesítményét. Körülbelül 5GB extra RAM-ot igényel, ezzel a hivatalos Steam minimum gépigényen belül marad.
+- 📤 **Oszd meg a Kalandjaidat:** Minden generált kép automatikusan mentésre kerül. Ezeket ebben a mappában találod: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Modellválasztó (Haladó):** Ha az `--advanced` paraméterrel indítod a játékot, mostantól kiválaszthatod a Megjelenés panelen, hogy melyik MI modellt használd a képekhez. Ez lehetővé teszi a rajongók számára, hogy kipróbálják az OpenVINO-ra optimalizált Stable Diffusion különböző verzióit (.xml/.bin fájlok).
+
+**Narratíva és MI Agy:**
+- 🧠 **Vége a Ciklusoknak:** Új ""Memória Doktrínát"" ültettünk a MI-be. Most már jobban különbséget tesz az ""emlékek"" (ami már megtörtént) és a ""jelen"" (ami éppen történik) között. Ez segít csökkenteni azokat az eseteket, amikor a MI ismételte önmagát vagy elakadt.
+- 📜 **Történelmi Archívumok:** A rendszer az emlékeidet ""Lezárt Történelmi Archívumként"" mutatja be a MI-nek, megkönnyítve számára, hogy referenciaként használja az információkat a történet előmozdításához.
+- ⚡ **Optimalizált Utasítások:** Továbbfejlesztettük azt a módot, ahogy a játék a te nyelveden kéri a narrációt, kapacitást szabadítva fel a modell számára, hogy a kreativitásra fókuszálhasson.
+- 👁️ **Narratív Fókusz:** Újraírtuk a MI érzékelését. Most már jobban megérti, mely elemek számítanak ""statikus háttérnek"", és ezeket nem ismétli feleslegesen minden bekezdésben.
+- 🔀 **Tisztább Döntések:** A MI most határozottabb kiutakat kínál. A javaslatai (gombok) fel vannak osztva a környezet vizsgálata (Elmélyülés) vagy az irányváltoztatás (Eltérés) között.
+- 🫵 **Közvetlen Megszólítás:** Módosítottuk az alaputasítást, hogy biztosítsuk, a MI tegezni fog (""Te""), növelve a személyes beleélést.
+
+**Karakteralkotás:**
+- 🖼️ **Karakterportrék:** Amikor egy karaktert a MI-vel generálsz, a rendszer megpróbál egy portrét készíteni a kora, hivatása és leírása alapján. Vedd figyelembe, hogy ez egy korai verzió, és a pontosság (különösen a kor esetében) a használt modelltől függően változhat. (Még tesztelem, de a kezdet biztató)
+- 🎲 **Megbízható Véletlenszerű Generálás:** Kijavítottunk egy hibát, ahol a ""Generálás MI-vel"" gomb az első próbálkozásnál sikertelen lehetett, üresen hagyva a mezőket. Mostantól az intelligens javítórendszer gondoskodik róla, hogy a válasz mindig érvényes legyen.
+
+**Generált Képek Kezelése:**
+- 🖼️ **MI Képgaléria:** Új panel a Fájl menüben, amely megjeleníti a MI által a játékaid során generált összes képet (portrékat, háttereket). Szűrhetsz a kép típusa vagy világ szerint.
+- 🗑️ **Szelektív Törlés:** Válassz ki egy vagy több képet, és töröld őket, ha nem tetszenek (talán azt, amelyiknél a MI jó ötletnek tartotta egy busz leparkolását a kastély istállójában). A rendszer megtisztítja a fájlt és a belső nyilvántartását is.
+- 📂 **Közvetlen Hozzáférés:** Kattints duplán bármelyik bélyegképre, hogy megnyisd a mappát, ahol a fájl található. Ha a mappa már nyitva van, a rendszer ugyanazt az ablakot használja újra.
+- 💾 **Megjegyzi a Helyet:** A galériaablak mérete a munkamenetek között automatikusan mentésre kerül.
+
+**Teljesítmény Alacsony Specifikációkon (Fontos a kevés VRAM-mal rendelkező GPU-khoz):**
+- 🧠 **PSR - Hibrid Irányítás:** Új rendszer, amely a MI munkáját két fázisra osztja: Tervezés (Séf) és Végrehajtás (Szakácsok). Ez lehetővé teszi a 8 GB VRAM-mal rendelkező helyi modellek működését, elkerülve az összeomlásokat a túlzott kontextus miatt (+12K token), cserébe magasabb késleltetésért; a MI-vel való interakció egyetlen promptból (utasításból) álló sorozattá válik (minél kevesebb a VRAM, annál több prompt generálódik, és annál hosszabb a válaszidő).
+- ⚡ **Intelligens Végrehajtás:** A rendszer a rendelkezésre álló VRAM alapján automatikusan eldönti, hogy mindent egyszerre dolgozzon fel (monolitikus) vagy részekre ossza (iteratív). A kevesebb VRAM-mal rendelkező GPU-k csak szükség esetén aktiválják a részleges módot.
+- 📊 **Dinamikus Optimizáció:** A PSR csökkenti a token-terhelést a generálás során, így a 4GB videokártyával rendelkező felhasználók befejezhetik a karakteralkotást és a történetgenerálást, amelyek korábban lefagytak.
+- 🔄 **Fenntartott Koherencia:** Annak ellenére, hogy megosztja a munkát, a rendszer ""mesteri szándékot"" fecskendez be, hogy a MI ne veszítse el a fonalat abban, amit csinált.
+
+**MI Hangok (fokozatos fejlesztés):**
+Valós idejű hanggenerálás minden nyelven (egyes nyelvek korlátozottabbak, mint mások, a legváltozatosabb hangtípusokkal az angol rendelkezik)
+- 🗣️ **Küzdelmi Csatakiáltások Hanggal:** Ha ellenségekkel kezdesz harcot, most egy kontextuális, belépő hangmondat is elhangzik.
+- 🎭 **Dinamikus Mondatok Kontextus Alapján:** A motor képes rövid hangmondatokat generálni konkrét eseményekhez (szolgáltatások/harc), a nyelv, a környezet és a karakterprofil alapján.
+- 🧠 **Belső Hangsablonok:** A technikai hangsablonokat elválasztottuk a narratív rendszertől, hogy elkerüljük az interferenciát a történettel.
+- 🔊 **Nagyobb Tisztaság Hallgatáskor:** Javítottunk a szintézis érthetőségén és prozódiáján, az érthető kiejtést előnyben részesítve.
+
+**⚠️ Kompatibilitási Figyelmeztetés (Korábbi Mentések):**
+- 🔄 A szabálymotorban és a környezeti rendszerben történt rengeteg belső változtatás miatt a **korábban mentett játékok és világok (valószínűleg) továbbra is játszhatóak maradnak**, de nagyon valószínű, hogy hibákat vagy váratlan viselkedést fognak mutatni. **Javasoljuk, hogy hozz létre egy teljesen új világot**, hogy minden fejlesztést megfelelően élvezhess.","MI Képgenerálás, Narratív Fejlesztések és Irányítás"
+indonesian,"**⚠️ CABANG EKSPERIMENTAL (STEAM BETA)**
+Versi ini saat ini hanya tersedia di **Cabang Eksperimental** Steam. Untuk mengaktifkannya:
+1. Klik kanan pada **RolemIAster** di Perpustakaan Steam Anda.
+2. Pilih **Properti...**
+3. Pergi ke tab **Beta**.
+4. Di ""Partisipasi beta"", pilih **experimental** di menu dropdown.
+
+**Baru: Fase Pertama Generasi Gambar AI**
+- 🎨 **Duniamu dalam Gambar:** Saya telah mengintegrasikan sistem awal pembuatan gambar dengan Kecerdasan Buatan. Saat Anda bermain, sistem mencoba menghasilkan potret dan lanskap yang menyertai suasana permainan Anda.
+- 🖼️ **Latar Belakang Dinamis:** Gambar dibuat di latar belakang tanpa menghentikan permainan Anda. Anda akan melihatnya muncul secara bertahap di latar belakang, pada kartu karakter, dan di Codex.
+- 🧹 **Manajemen Gambar:** Panel baru untuk melihat dan menghapus gambar yang dibuat yang tidak Anda sukai.
+
+**Peningkatan pada Pembuatan Karakter:**
+- ⚙️ **Pembuatan Acak yang Lebih Solid:** Saya telah menyatukan dan meningkatkan mesin aturan yang digunakan AI untuk membuat karakter dari nol, menjamin inventaris yang lebih logis (5 hingga 10 item yang koheren) dan lembar data yang lebih seimbang.
+- 🧠 **Otak Terbagi:** AI sekarang lebih mengerti kapan harus ""menciptakan"" karakter dari nol dan kapan harus membatasi diri untuk mengambil data dari biografi yang Anda tulis sendiri.
+- ⚡ **Kecepatan Sesuai Keinginan:** Bagian baru di Pengaturan Visual. Pilih antara ""Cepat"" (1 langkah), ""Sedang"" (2 langkah), atau ""Tinggi"" (4 langkah) untuk menyesuaikan waktu pembuatan dengan kemampuan perangkat Anda.
+- 🛠️ **Optimalisasi Teknis:** Model AI untuk gambar dimuat di **RAM (Memori)** dan diproses via **CPU**, tanpa menggunakan memori video (VRAM). Ini menjamin agar tidak mengganggu kinerja AI utama game (LLM). Membutuhkan sekitar 5GB RAM tambahan, masih dalam persyaratan minimum resmi Steam.
+- 📤 **Bagikan Petualangan Anda:** Semua gambar yang dibuat disimpan secara otomatis. Anda akan menemukannya di folder: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Pemilih Model (Lanjutan):** Jika Anda memulai game dengan parameter `--advanced`, sekarang Anda dapat memilih model AI mana yang akan digunakan untuk gambar dari panel Tampilan. Ini memungkinkan para antusias untuk mencoba versi Stable Diffusion yang berbeda yang dioptimalkan untuk OpenVINO (file .xml/.bin).
+
+**Narasi dan Otak AI:**
+- 🧠 **Akhir dari Pengulangan:** Sebuah ""Doktrin Memori"" baru telah ditanamkan pada AI. Sekarang AI membedakan lebih baik antara ""ingatan"" (apa yang sudah terjadi) dan ""masa kini"" (apa yang sedang terjadi). Ini membantu mengurangi kasus di mana AI mengulang sendiri atau macet.
+- 📜 **Arsip Sejarah:** Sistem menyajikan ingatan Anda kepada AI sebagai ""Arsip Sejarah Tertutup"", memudahkannya menggunakan informasi tersebut sebagai referensi untuk memajukan cerita.
+- ⚡ **Instruksi yang Dioptimalkan:** Cara game meminta narasi dalam bahasa Anda telah ditingkatkan, membebaskan kapasitas model untuk berkonsentrasi pada kreativitas.
+- 👁️ **Fokus Naratif:** Persepsi AI telah ditulis ulang. Sekarang ia lebih memahami elemen mana yang merupakan ""latar belakang statis"" dan tidak perlu mengulanginya secara tidak perlu di setiap paragraf.
+- 🔀 **Keputusan yang Lebih Jelas:** AI sekarang menawarkan jalan keluar yang lebih pasti. Sarannya (tombol) dibagi antara menyelidiki lingkungan (Mendalami) atau mengubah arah (Menyimpang).
+- 🫵 **Sapaan Langsung:** Instruksi dasar telah disesuaikan untuk memastikan AI menyapa Anda dengan ""Kamu/Anda"", meningkatkan imersi personal.
+
+**Pembuatan Karakter:**
+- 🖼️ **Potret Karakter:** Saat membuat karakter dengan AI, sistem mencoba membuat potret berdasarkan usia, profesi, dan deskripsi. Perlu diingat bahwa ini adalah versi awal dan kesetiaan (terutama pada usia) dapat bervariasi tergantung model yang digunakan. (saya masih melakukan pengujian tetapi permulaannya bagus)
+- 🎲 **Pembuatan Acak yang Andal:** Memperbaiki masalah di mana tombol ""Buat dengan AI"" bisa gagal pada percobaan pertama, membiarkan kolom kosong. Sekarang sistem koreksi cerdas memastikan bahwa respons selalu valid.
+
+**Manajemen Gambar yang Dibuat:**
+- 🖼️ **Galeri Gambar AI:** Panel baru di menu File yang menampilkan semua gambar yang telah dibuat AI selama permainan Anda (potret, latar belakang). Anda dapat memfilter berdasarkan jenis gambar atau dunia.
+- 🗑️ **Penghapusan Selektif:** Pilih satu atau beberapa gambar dan hapus jika tidak meyakinkan Anda (mungkin gambar di mana AI memutuskan ide bagus untuk memarkir bus di kandang kuda kastil). Sistem membersihkan file dan catatan internalnya.
+- 📂 **Akses Cepat:** Klik ganda pada thumbnail apa pun untuk membuka folder tempat file berada. Jika folder sudah terbuka, jendela yang sama akan digunakan kembali.
+- 💾 **Ingat Ruang Anda:** Ukuran jendela galeri disimpan secara otomatis antar sesi.
+
+**Performa pada Konfigurasi Rendah (Penting untuk GPU dengan VRAM kecil):**
+- 🧠 **PSR - Tata Kelola Hibrida:** Sistem baru yang membagi pekerjaan AI menjadi dua fase: Perencanaan (Koki) dan Eksekusi (Juru Masak). Ini memungkinkan model lokal dengan VRAM 8 GB bekerja menghindari kemacetan karena konteks berlebih (+12K token), dengan mengorbankan latensi yang lebih tinggi, interaksi dengan AI berubah dari satu prompt tunggal menjadi serangkaian prompt (semakin kecil VRAM, semakin banyak prompt yang dihasilkan dan semakin lama waktu respons).
+- ⚡ **Eksekusi Cerdas:** Sistem memutuskan secara otomatis apakah akan memproses semuanya sekaligus (monolitik) atau membagi menjadi beberapa bagian (iteratif) berdasarkan VRAM Anda yang tersedia. GPU dengan VRAM lebih sedikit mengaktifkan mode bagian hanya jika diperlukan.
+- 📊 **Optimalisasi Dinamis:** PSR mengurangi beban token selama pembuatan, memungkinkan pengguna dengan kartu grafis 4GB dapat menyelesaikan pembuatan karakter dan pembuatan cerita yang sebelumnya terblokir.
+- 🔄 **Koherensi Terjaga:** Meskipun membagi pekerjaan, sistem menyuntikkan ""niat utama"" agar AI tidak kehilangan alur dari apa yang sedang dilakukannya.
+
+**Suara AI (peningkatan bertahap):**
+Pembuatan suara real-time dalam semua bahasa (beberapa bahasa lebih terbatas daripada yang lain, yang paling bervariasi jenis suaranya adalah bahasa Inggris)
+- 🗣️ **Teriakan Tempur dengan Suara:** Saat memulai pertempuran melawan musuh yang bermusuhan, frasa suara kontekstual pembuka kini dipicu.
+- 🎭 **Frasa Dinamis Berdasarkan Konteks:** Mesin dapat menghasilkan baris suara pendek untuk acara tertentu (layanan/pertempuran) berdasarkan bahasa, suasana, dan profil karakter.
+- 🧠 **Templat Suara Internal:** Templat suara teknis telah dipisahkan dari sistem naratif untuk menghindari gangguan pada cerita.
+- 🔊 **Kejelasan Lebih Saat Mendengar:** Kejelasan dan prosodi sintesis ditingkatkan untuk memprioritaskan diksi yang dapat dimengerti.
+
+**⚠️ Pemberitahuan Kompatibilitas (Simpanan Sebelumnya):**
+- 🔄 Karena banyaknya perubahan internal pada mesin aturan dan sistem suasana, **permainan dan dunia yang disimpan sebelumnya akan tetap dapat dimainkan (kemungkinan besar)**, tetapi sangat mungkin akan mengalami kesalahan atau perilaku yang tidak terduga. **Disarankan untuk membuat dunia baru yang bersih** untuk menikmati semua peningkatan dengan benar.","Generasi Gambar AI, Peningkatan Narasi, dan Kontrol"
+italian,"**⚠️ RAMO SPERIMENTALE (BETA DI STEAM)**
+Questa versione è attualmente disponibile solo nel **Ramo Sperimentale** di Steam. Per attivarla:
+1. Clicca col tasto destro su **RolemIAster** nella tua Libreria di Steam.
+2. Seleziona **Proprietà...**
+3. Vai alla scheda **Beta**.
+4. In ""Partecipazione alla beta"", seleziona **experimental** dal menu a tendina.
+
+**Novità: Prima fase di Generazione Immagini IA**
+- 🎨 **Il Tuo Mondo in Immagini:** Ho integrato un sistema iniziale di generazione immagini tramite Intelligenza Artificiale. Mentre giochi, il sistema tenta di generare ritratti e paesaggi che accompagnino l'ambientazione della tua partita.
+- 🖼️ **Sfondi Dinamici:** Le immagini vengono generate in background senza fermare la tua partita. Le vedrai apparire progressivamente sullo sfondo, nelle schede dei personaggi e nel Codice.
+- 🧹 **Gestione Immagini:** Nuovo pannello per visualizzare ed eliminare le immagini generate che non ti piacciono.
+
+**Miglioramenti nella Generazione dei Personaggi:**
+- ⚙️ **Creazione Casuale più Solida:** Ho unificato e migliorato il motore delle regole che l'IA usa per creare personaggi da zero, garantendo inventari più logici (da 5 a 10 oggetti coerenti) e schede più bilanciate.
+- 🧠 **Cervello Diviso:** L'IA ora capisce meglio quando deve ""inventare"" un personaggio da zero e quando deve limitarsi a estrarre i dati dalla biografia che tu stesso hai scritto.
+- ⚡ **Velocità su Misura:** Nuova sezione in Impostazioni Visive. Scegli tra ""Rapida"" (1 passaggio), ""Media"" (2 passaggi) o ""Alta"" (4 passaggi) per adattare il tempo di generazione alla potenza del tuo computer.
+- 🛠️ **Ottimizzazione Tecnica:** Il modello IA per le immagini viene caricato nella **RAM (Memoria)** ed elaborato via **CPU**, senza occupare memoria video (VRAM). Questo garantisce che non interferisca con le prestazioni dell'IA principale del gioco (LLM). Richiede circa 5GB di RAM aggiuntiva, rimanendo entro i requisiti minimi ufficiali di Steam.
+- 📤 **Condividi le tue Avventure:** Tutte le immagini generate vengono salvate automaticamente. Le troverai nella cartella: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Selettore Modelli (Avanzato):** Se avvii il gioco con il parametro `--advanced`, ora puoi scegliere quale modello IA usare per le immagini dal pannello Aspetto. Questo permette agli appassionati di provare diverse versioni di Stable Diffusion ottimizzate per OpenVINO (file .xml/.bin).
+
+**Narrativa e Cervello IA:**
+- 🧠 **Fine dei Loop:** È stata implementata una nuova ""Dottrina della Memoria"" nell'IA. Ora distingue meglio tra ""ricordi"" (ciò che è già accaduto) e il ""presente"" (ciò che sta accadendo). Questo aiuta a ridurre i casi in cui l'IA si ripeteva o rimaneva bloccata.
+- 📜 **Archivi Storici:** Il sistema presenta i tuoi ricordi all'IA come un ""Archivio Storico Chiuso"", facilitando l'uso di quelle informazioni come riferimento per far avanzare la storia.
+- ⚡ **Istruzioni Ottimizzate:** È stato migliorato il modo in cui il gioco richiede la narrazione nella tua lingua, liberando capacità del modello per concentrarsi sulla creatività.
+- 👁️ **Focus Narrativo:** È stata riscritta la percezione dell'IA. Ora capisce meglio quali elementi sono ""sfondo statico"" e non dovrebbe ripeterli inutilmente in ogni paragrafo.
+- 🔀 **Decisioni Più Chiare:** L'IA ora offre vie di fuga più definite. I suoi suggerimenti (pulsanti) si dividono tra indagare l'ambiente (Approfondire) o cambiare rotta (Divergere).
+- 🫵 **Trattamento Diretto:** È stata regolata l'istruzione di base per assicurare che l'IA ti dia del ""Tu"", migliorando l'immersione personale.
+
+**Creazione Personaggio:**
+- 🖼️ **Ritratti Personaggio:** Quando generi un personaggio con l'IA, il sistema tenta di creare un ritratto basato su età, professione e descrizione. Tieni presente che è una versione iniziale e la fedeltà (specialmente nell'età) può variare a seconda del modello utilizzato. (continuo a fare test ma l'inizio è buono)
+- 🎲 **Generazione Casuale Affidabile:** Corretto un bug dove il pulsante ""Genera con IA"" poteva fallire al primo tentativo, lasciando i campi vuoti. Ora il sistema di correzione intelligente si assicura che la risposta sia sempre valida.
+
+**Gestione Immagini Generate:**
+- 🖼️ **Galleria Immagini IA:** Nuovo pannello nel menu Archivio che mostra tutte le immagini che l'IA ha generato durante le tue partite (ritratti, sfondi). Puoi filtrare per tipo di immagine o per mondo.
+- 🗑️ **Cancellazione Selettiva:** Seleziona una o più immagini ed eliminale se non ti convincono (magari quella in cui l'IA ha deciso che fosse una buona idea parcheggiare un autobus nella stalla del castello). Il sistema pulisce sia il file che il suo registro interno.
+- 📂 **Accesso Diretto:** Fai doppio clic su qualsiasi miniatura per aprire la cartella in cui si trova il file. Se hai già la cartella aperta, verrà riutilizzata la stessa finestra.
+- 💾 **Ricorda il tuo Spazio:** La dimensione della finestra della galleria viene salvata automaticamente tra le sessioni.
+
+**Prestazioni su Configurazioni Basse (Importante per GPU con poca VRAM):**
+- 🧠 **PSR - Governance Ibrida:** Nuovo sistema che divide il lavoro dell'IA in due fasi: Pianificazione (Chef) ed Esecuzione (Cuochi). Questo permette ai modelli locali con 8 GB di VRAM di funzionare evitando crash per eccesso di contesto (+12K token), a costo di una latenza maggiore; l'interazione con l'IA passa dall'essere un singolo prompt a una serie di prompt (minore è la VRAM, maggiore sarà la quantità di prompt generati e maggiore il tempo di risposta).
+- ⚡ **Esecuzione Intelligente:** Il sistema decide automaticamente se elaborare tutto in una volta (monolitico) o dividere in parti (iterativo) in base alla tua VRAM disponibile. Le GPU con meno VRAM attivano la modalità a parti solo quando necessario.
+- 📊 **Ottimizzazione Dinamica:** PSR riduce il carico di token durante la generazione, permettendo agli utenti con schede grafiche da 4GB di completare la creazione dei personaggi e la generazione della storia che prima si bloccavano.
+- 🔄 **Coerenza Mantenuta:** Nonostante la divisione del lavoro, il sistema inietta un'""intenzione maestra"" affinché l'IA non perda il filo di ciò che stava facendo.
+
+**Voci IA (miglioramento incrementale):**
+Generazione in tempo reale di voci in tutte le lingue (alcune lingue sono più limitate di altre, la più varia nei tipi di voci è l'inglese)
+- 🗣️ **Grida di Combattimento Vocali:** All'inizio del combattimento contro nemici ostili, ora viene attivata una frase vocale contestuale d'ingresso.
+- 🎭 **Frasi Dinamiche per Contesto:** Il motore può generare brevi linee vocali per eventi specifici (servizi/combattimento) in base a lingua, ambientazione e profilo del personaggio.
+- 🧠 **Modelli Vocali Interni:** I template vocali tecnici sono stati separati dal sistema narrativo per evitare interferenze con la storia.
+- 🔊 **Maggiore Chiarezza all'Ascolto:** Migliorata l'intelligibilità e la prosodia della sintesi per dare priorità a una dizione comprensibile.
+
+**⚠️ Avviso di Compatibilità (Partite Precedenti):**
+- 🔄 A causa della quantità di modifiche interne al motore delle regole e al sistema di ambientazione, le **partite e i mondi salvati in precedenza continueranno ad essere giocabili (possibilmente)**, ma è molto probabile che presentino errori o comportamenti imprevisti. **Si consiglia di creare un nuovo mondo pulito** per godere correttamente di tutti i miglioramenti.","Generazione di Immagini IA, Miglioramenti Narrativi e Controllo"
+japanese,"**⚠️ 実験的ブランチ (Steamベータ)**
+このバージョンは現在、Steamの**実験的ブランチ**でのみ利用可能です。有効化する方法：
+1. Steamライブラリで**RolemIAster**を右クリックします。
+2. **プロパティ...**を選択します。
+3. **ベータ**タブへ移動します。
+4. 「ベータへの参加」のドロップダウンから**experimental**を選択します。
+
+**新機能：AI画像生成の第一フェーズ**
+- 🎨 **画像で描かれるあなたの世界:** 人工知能による初期の画像生成システムを統合しました。プレイ中、システムはその場の雰囲気に合わせたポートレートや風景画の生成を試みます。
+- 🖼️ **ダイナミックな背景:** 画像はゲームを中断することなくバックグラウンドで生成されます。背景、キャラクターカード、コーデックス（写本）に徐々に表示されていく様子が見られます。
+- 🧹 **画像管理:** 気に入らない生成画像を閲覧・削除するための新しいパネルを追加しました。
+
+**キャラクター生成の改善:**
+- ⚙️ **より強固なランダム生成:** AIがキャラクターをゼロから作成する際に使用するルールエンジンを統一・改善しました。より論理的なインベントリ（5〜10個の一貫したアイテム）と、バランスの取れたステータスシートを保証します。
+- 🧠 **分割された頭脳:** AIは、キャラクターをゼロから「発明」すべき時と、プレイヤーが書いた伝記からデータを抽出するだけの時を、より正確に理解するようになりました。
+- ⚡ **好みに合わせた速度:** ビジュアル設定に新しいセクションを追加しました。「高速」（1ステップ）、「中」（2ステップ）、「高」（4ステップ）から選択し、マシンスペックに合わせて生成時間を調整できます。
+- 🛠️ **技術的な最適化:** 画像用AIモデルは**RAM (メモリ)**にロードされ、**CPU**経由で処理されます。ビデオメモリ (VRAM) は使用しません。これにより、ゲームの主要AI (LLM) のパフォーマンスへの干渉を防ぎます。追加で約5GBのRAMが必要ですが、Steamの公式最小要件内です。
+- 📤 **冒険を共有しよう:** 生成された画像はすべて自動保存されます。保存先フォルダ：`%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **モデルセレクター（上級者向け）:** 起動パラメータ `--advanced` を使用してゲームを開始すると、外観パネルから画像用AIモデルを選択できるようになりました。これにより、愛好家の方はOpenVINO用に最適化されたStable Diffusionの異なるバージョン（.xml/.binファイル）を試すことができます。
+
+**ナラティブとAIの頭脳:**
+- 🧠 **ループの解消:** AIに新しい「記憶ドクトリン」を導入しました。「記憶」（過去に起きたこと）と「現在」（今起きていること）をより明確に区別し、AIが話を繰り返したりスタックしたりするケースを減らします。
+- 📜 **歴史アーカイブ:** システムは記憶を「閉じた歴史アーカイブ」としてAIに提示し、物語を進める際の参照情報として使いやすくしました。
+- ⚡ **指示の最適化:** ゲームがあなたの言語でナレーションを要求する方法を改善し、モデルの能力を創造性に集中させました。
+- 👁️ **物語の焦点:** AIの知覚を書き直しました。どの要素が「静的な背景」であるかをより良く理解し、段落ごとに不必要に繰り返さないようになります。
+- 🔀 **より明確な決断:** AIはより明確な逃げ道を提示するようになりました。提案（ボタン）は、環境を調査する（深掘り）か、方針を変える（分岐）かに分かれています。
+- 🫵 **直接的な呼びかけ:** 基本的な指示を調整し、AIがあなたを「君（あなた）」と扱うようにして、個人的な没入感を高めました。
+
+**キャラクター作成:**
+- 🖼️ **キャラクターポートレート:** AIでキャラクターを生成する際、システムは年齢、職業、説明に基づいてポートレートの作成を試みます。これは初期バージョンのため、忠実度（特に年齢）は使用するモデルによって異なる場合があることに留意してください（テスト中ですが、滑り出しは良好です）。
+- 🎲 **信頼できるランダム生成:** 「AIで生成」ボタンが初回で失敗し、フィールドが空のままになるバグを修正しました。インテリジェントな修正システムにより、常に有効な応答が保証されます。
+
+**生成画像の管理:**
+- 🖼️ **AI画像ギャラリー:** 「ファイル」メニューに新しいパネルを追加し、プレイ中にAIが生成したすべての画像（ポートレート、背景）を表示します。画像タイプやワールドでフィルタリング可能です。
+- 🗑️ **選択削除:** 気に入らない画像（城の厩舎にバスを停めるのが名案だとAIが判断した画像など）を1つまたは複数選択して削除できます。システムはファイルと内部記録の両方をクリーンアップします。
+- 📂 **直接アクセス:** サムネイルをダブルクリックすると、ファイルがあるフォルダを開きます。既にフォルダを開いている場合は、同じウィンドウが再利用されます。
+- 💾 **スペースの記憶:** ギャラリーウィンドウのサイズはセッション間で自動的に保存されます。
+
+**低スペック構成でのパフォーマンス（VRAMが少ないGPU向け重要事項）:**
+- 🧠 **PSR - ハイブリッド・ガバナンス:** AIの作業を「計画（シェフ）」と「実行（料理人）」の2段階に分割する新システムです。これにより、8GB VRAMのローカルモデルでもコンテキスト超過（12Kトークン以上）によるクラッシュを回避して動作しますが、レイテンシは長くなります。AIとのやり取りは単一のプロンプトから一連のプロンプトに変わります（VRAMが少ないほど生成されるプロンプト数が増え、応答時間が長くなります）。
+- ⚡ **インテリジェントな実行:** 利用可能なVRAMに応じて、すべてを一度に処理（モノリシック）するか、分割して処理（反復的）するかをシステムが自動的に決定します。VRAMが少ないGPUでは、必要な場合のみ分割モードが有効になります。
+- 📊 **動的最適化:** PSRは生成中のトークン負荷を軽減し、以前はブロックされていた4GBグラフィックカードのユーザーでも、キャラクター作成やストーリー生成を完了できるようにします。
+- 🔄 **一貫性の維持:** 作業を分割しても、システムは「マスターの意図」を注入し、AIが文脈を見失わないようにします。
+
+**AIボイス（段階的な改善）:**
+全言語でのリアルタイム音声生成（言語によって制限があり、英語が最も声の種類が豊富です）
+- 🗣️ **音声付きの戦闘の叫び:** 敵対的な敵との戦闘開始時、状況に応じた音声フレーズが再生されるようになりました。
+- 🎭 **コンテキストによるダイナミックフレーズ:** エンジンは、言語、設定、キャラクターのプロフィールに基づき、特定のイベント（サービス/戦闘）に対して短い音声セリフを生成できます。
+- 🧠 **内部音声テンプレート:** 技術的な音声テンプレートを物語システムから分離し、ストーリーへの干渉を防ぎました。
+- 🔊 **聞き取りやすさの向上:** 合成音声の明瞭度と韻律（プロソディ）を改善し、理解しやすい発音を優先しました。
+
+**⚠️ 互換性に関する注意（以前のセーブデータ）:**
+- 🔄 ルールエンジンと設定システムに多数の内部変更があったため、**以前に保存されたセーブデータやワールドは引き続きプレイ可能（な可能性が高い）ですが**、エラーや予期せぬ動作が発生する可能性が非常に高いです。すべての改善を正しく楽しむために、**新しいワールドをクリーンな状態で作成することを推奨します**。",AI画像生成、ナラティブの強化、およびコントロール
+korean,"**⚠️ 실험 단계 (스팀 베타)**
+이 버전은 현재 스팀의 **실험 단계(Rama Experimental)**에서만 사용할 수 있습니다. 활성화 방법:
+1. 스팀 라이브러리에서 **RolemIAster**를 우클릭합니다.
+2. **속성...**을 선택합니다.
+3. **베타** 탭으로 이동합니다.
+4. ""베타 참여"" 드롭다운 메뉴에서 **experimental**을 선택합니다.
+
+**새로운 기능: AI 이미지 생성 1단계**
+- 🎨 **이미지로 보는 당신의 세계:** 초기 인공지능 이미지 생성 시스템을 통합했습니다. 플레이하는 동안 시스템이 게임의 분위기에 맞는 초상화와 풍경을 생성하려고 시도합니다.
+- 🖼️ **동적 배경:** 이미지는 게임을 멈추지 않고 백그라운드에서 생성됩니다. 배경, 캐릭터 카드 및 코덱스에 점진적으로 나타나는 것을 볼 수 있습니다.
+- 🧹 **이미지 관리:** 마음에 들지 않는 생성된 이미지를 확인하고 삭제할 수 있는 새로운 패널이 추가되었습니다.
+
+**캐릭터 생성 개선 사항:**
+- ⚙️ **더욱 견고해진 무작위 생성:** AI가 처음부터 캐릭터를 생성할 때 사용하는 규칙 엔진을 통합하고 개선하여, 더 논리적인 인벤토리(5~10개의 일관성 있는 아이템)와 균형 잡힌 캐릭터 시트를 보장합니다.
+- 🧠 **분할된 뇌:** 이제 AI는 처음부터 캐릭터를 ""창조""해야 할 때와 플레이어가 직접 작성한 배경 이야기에서 데이터를 추출하는 데 그쳐야 할 때를 더 잘 이해합니다.
+- ⚡ **맞춤형 속도 조절:** 시각 설정에 새로운 섹션이 추가되었습니다. 기기의 성능에 맞춰 생성 시간을 조절하기 위해 ""빠름""(1단계), ""보통""(2단계) 또는 ""높음""(4단계) 중에서 선택하세요.
+- 🛠️ **기술적 최적화:** 이미지용 AI 모델은 비디오 메모리(VRAM)를 차지하지 않고 **RAM(메모리)**에 로드되어 **CPU**를 통해 처리됩니다. 이를 통해 게임의 메인 AI(LLM) 성능에 간섭하지 않도록 보장합니다. 약 5GB의 추가 RAM이 필요하며, 이는 스팀의 공식 최소 요구 사항 내에 포함됩니다.
+- 📤 **모험 공유하기:** 생성된 모든 이미지는 자동으로 저장됩니다. 다음 폴더에서 찾을 수 있습니다: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **모델 선택기 (고급):** 게임을 `--advanced` 매개변수로 시작하면, 이제 외형 패널에서 이미지에 사용할 AI 모델을 선택할 수 있습니다. 이를 통해 열성적인 사용자는 OpenVINO에 최적화된 다양한 버전의 Stable Diffusion(.xml/.bin 파일)을 테스트해 볼 수 있습니다.
+
+**내러티브 및 AI 두뇌:**
+- 🧠 **루프 종료:** AI에 새로운 ""기억 원칙""이 도입되었습니다. 이제 ""기억""(이미 일어난 일)과 ""현재""(지금 일어나고 있는 일)를 더 잘 구분합니다. 이는 AI가 반복되거나 멈추는 경우를 줄이는 데 도움이 됩니다.
+- 📜 **역사 보관소:** 시스템이 플레이어의 기억을 ""닫힌 역사 보관소""로 AI에게 제공하여, AI가 그 정보를 바탕으로 이야기를 진행하는 데 더 쉽게 참조할 수 있도록 합니다.
+- ⚡ **프롬프트 최적화:** 게임이 플레이어의 언어로 내러티브를 요청하는 방식을 개선하여, 모델의 성능을 창의성에 집중할 수 있도록 해방시켰습니다.
+- 👁️ **내러티브 초점:** AI의 인식 방식이 재작성되었습니다. 이제 어떤 요소가 ""정적인 배경""인지 더 잘 이해하며, 매 단락마다 불필요하게 반복하지 않습니다.
+- 🔀 **명확해진 선택지:** 이제 AI가 더 명확한 탈출구를 제공합니다. 제안(버튼)은 환경 조사하기(심층 탐구) 또는 방향 바꾸기(우회)로 나뉩니다.
+- 🫵 **직접적인 호칭:** 기본 지침이 조정되어 AI가 플레이어를 ""당신""이라고 직접적으로 대하도록 하여 개인적인 몰입감을 높였습니다.
+
+**캐릭터 생성:**
+- 🖼️ **캐릭터 초상화:** AI로 캐릭터를 생성할 때 시스템이 나이, 직업, 설명을 바탕으로 초상화를 생성하려고 시도합니다. 이는 초기 버전이므로 사용된 모델에 따라 정확도(특히 나이 부분)가 다를 수 있습니다. (계속 테스트 중이지만 시작은 꽤 좋습니다)
+- 🎲 **신뢰할 수 있는 무작위 생성:** ""AI로 생성"" 버튼이 첫 번째 시도에서 실패하여 필드가 비워지던 버그를 수정했습니다. 이제 스마트 보정 시스템이 응답이 항상 유효한지 확인합니다.
+
+**생성된 이미지 관리:**
+- 🖼️ **AI 이미지 갤러리:** 파일 메뉴에 게임 플레이 중 AI가 생성한 모든 이미지(초상화, 배경)를 보여주는 새로운 패널이 추가되었습니다. 이미지 유형이나 세계별로 필터링할 수 있습니다.
+- 🗑️ **선택 삭제:** 마음에 들지 않는 이미지를 하나 또는 여러 개 선택하여 삭제하세요 (어쩌면 AI가 성의 마구간에 버스를 주차하는 것이 좋은 아이디어라고 생각했던 이미지일지도 모릅니다). 시스템은 파일과 내부 레지스트리를 모두 정리합니다.
+- 📂 **빠른 액세스:** 썸네일을 더블 클릭하면 해당 파일이 있는 폴더가 열립니다. 이미 폴더가 열려 있는 경우 동일한 창을 재사용합니다.
+- 💾 **공간 기억:** 갤러리 창의 크기는 세션 간에 자동으로 저장됩니다.
+
+**저사양 환경 성능 (VRAM이 부족한 GPU에 중요):**
+- 🧠 **PSR - 하이브리드 거버넌스:** AI의 작업을 계획(셰프)과 실행(요리사)의 두 단계로 나누는 새로운 시스템입니다. 이를 통해 8GB VRAM을 가진 로컬 모델이 과도한 컨텍스트(12K+ 토큰)로 인해 다운되는 것을 방지할 수 있습니다. 단, 지연 시간이 길어지며 AI와의 상호작용이 단일 프롬프트에서 일련의 프롬프트로 변경됩니다(VRAM이 적을수록 더 많은 프롬프트가 생성되고 응답 시간이 늘어납니다).
+- ⚡ **스마트 실행:** 사용 가능한 VRAM에 따라 한 번에 모두 처리할지(단일형), 여러 부분으로 나눌지(반복형) 시스템이 자동으로 결정합니다. VRAM이 적은 GPU는 필요할 때만 분할 모드를 활성화합니다.
+- 📊 **동적 최적화:** PSR은 생성 중 토큰 부하를 줄여, 이전에는 진행이 멈췄던 4GB 그래픽 카드 사용자들도 캐릭터 생성 및 스토리 생성을 완료할 수 있게 해줍니다.
+- 🔄 **일관성 유지:** 작업을 나누더라도 시스템이 ""핵심 의도""를 주입하여 AI가 하던 작업의 흐름을 잃지 않도록 합니다.
+
+**AI 음성 (점진적 개선):**
+모든 언어로 실시간 음성 생성 (일부 언어는 다른 언어보다 제한적이며, 음성 종류가 가장 다양한 것은 영어입니다)
+- 🗣️ **음성이 포함된 전투 함성:** 적대적인 적과 전투를 시작할 때, 이제 진입 상황에 맞는 음성 대사가 재생됩니다.
+- 🎭 **상황별 동적 대사:** 엔진이 언어, 배경, 캐릭터 프로필에 따라 특정 이벤트(서비스/전투)에 대한 짧은 음성 대사를 생성할 수 있습니다.
+- 🧠 **내부 음성 템플릿:** 이야기와의 간섭을 피하기 위해 기술적인 음성 템플릿을 내러티브 시스템에서 분리했습니다.
+- 🔊 **듣기 명확성 향상:** 합성의 명료도와 운율을 개선하여 알아듣기 쉬운 발음을 우선시합니다.
+
+**⚠️ 호환성 안내 (이전 저장 데이터):**
+- 🔄 규칙 엔진 및 배경 시스템의 내부 변경 사항이 많아 **이전에 저장한 게임과 세계는 계속 플레이할 수 있을지 몰라도**, 오류나 예상치 못한 동작이 발생할 가능성이 높습니다. 모든 개선 사항을 제대로 즐기기 위해 **완전히 새로운 세계를 생성하는 것을 권장합니다**.","AI 이미지 생성, 내러티브 및 컨트롤 개선"
+dutch,"**⚠️ EXPERIMENTELE TAK (STEAM-BÈTA)**
+Deze versie is momenteel alleen beschikbaar in de **Experimentele Tak** van Steam. Om deze te activeren:
+1. Klik met de rechtermuisknop op **RolemIAster** in je Steam-bibliotheek.
+2. Selecteer **Eigenschappen...**
+3. Ga naar het tabblad **Bèta's**.
+4. Selecteer onder ""Bètadeelname"" **experimental** in het vervolgkeuzemenu.
+
+**Nieuw: Eerste fase van AI-beeldgeneratie**
+- 🎨 **Je Wereld in Beeld:** Ik heb een initieel systeem voor het genereren van afbeeldingen via Kunstmatige Intelligentie (AI) geïntegreerd. Terwijl je speelt, probeert het systeem portretten en landschappen te genereren die passen bij de sfeer van je game.
+- 🖼️ **Dynamische Achtergronden:** De afbeeldingen worden op de achtergrond gegenereerd zonder je game te onderbreken. Je zult ze geleidelijk zien verschijnen in de achtergrond, op personagekaarten en in de Codex.
+- 🧹 **Afbeeldingsbeheer:** Nieuw paneel om gegenereerde afbeeldingen te bekijken en te verwijderen als ze niet naar wens zijn.
+
+**Verbeteringen in Personagegeneratie:**
+- ⚙️ **Solide Willekeurige Creatie:** Ik heb de regel-engine die de AI gebruikt om personages vanaf nul te creëren verenigd en verbeterd, wat zorgt voor logischere inventarissen (5 tot 10 coherente voorwerpen) en meer gebalanceerde karakterbladen.
+- 🧠 **Gedeeld Brein:** De AI begrijpt nu beter wanneer het een personage vanaf nul moet ""verzinnen"" en wanneer het zich moet beperken tot het extraheren van gegevens uit de biografie die je zelf hebt geschreven.
+- ⚡ **Snelheid op Maat:** Nieuwe sectie in Visuele Instellingen. Kies tussen ""Snel"" (1 stap), ""Gemiddeld"" (2 stappen) of ""Hoog"" (4 stappen) om de generatietijd aan te passen aan de kracht van je pc.
+- 🛠️ **Technische Optimalisatie:** Het AI-model voor afbeeldingen wordt geladen in het **RAM (Geheugen)** en verwerkt via de **CPU**, zonder videogeheugen (VRAM) in beslag te nemen. Dit zorgt ervoor dat het niet interfereert met de prestaties van de hoofd-AI van de game (LLM). Het vereist ongeveer 5GB extra RAM, wat ruim binnen de officiële minimale systeemvereisten van Steam blijft.
+- 📤 **Deel je Avonturen:** Alle gegenereerde afbeeldingen worden automatisch opgeslagen. Je vindt ze in de map: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Modelselector (Geavanceerd):** Als je de game start met de parameter `--advanced`, kun je nu in het Uiterlijk-paneel kiezen welk AI-model je voor afbeeldingen wilt gebruiken. Hierdoor kunnen liefhebbers verschillende versies van Stable Diffusion proberen die geoptimaliseerd zijn voor OpenVINO (.xml/.bin bestanden).
+
+**Verhaallijn en AI-Brein:**
+- 🧠 **Einde aan Loops:** Er is een nieuwe ""Geheugendoctrine"" in de AI geïmplementeerd. Het maakt nu een beter onderscheid tussen ""herinneringen"" (wat al is gebeurd) en het ""heden"" (wat er nu gebeurt). Dit helpt situaties te verminderen waarin de AI in herhaling viel of vastliep.
+- 📜 **Historische Archieven:** Het systeem presenteert je herinneringen aan de AI als een ""Gesloten Historisch Archief"", waardoor de AI deze informatie gemakkelijker als referentie kan gebruiken om het verhaal vooruit te helpen.
+- ⚡ **Geoptimaliseerde Instructies:** De manier waarop het spel vertelling in jouw taal aanvraagt is verbeterd, waardoor er modelcapaciteit vrijkomt om zich te concentreren op creativiteit.
+- 👁️ **Verhalende Focus:** De perceptie van de AI is herschreven. Het begrijpt nu beter welke elementen een ""statische achtergrond"" zijn en deze niet onnodig in elke paragraaf moeten worden herhaald.
+- 🔀 **Duidelijkere Beslissingen:** De AI biedt nu meer gedefinieerde ontsnappingsroutes. De suggesties (knoppen) zijn verdeeld in het onderzoeken van de omgeving (Verdiepen) of het wijzigen van koers (Afwijken).
+- 🫵 **Directe Aanspreekvorm:** De basisinstructie is aangepast om ervoor te zorgen dat de AI je met ""Jij"" aanspreekt, wat de persoonlijke immersie verbetert.
+
+**Personagecreatie:**
+- 🖼️ **Personageportretten:** Bij het genereren van een personage met AI, probeert het systeem een portret te maken op basis van hun leeftijd, beroep en beschrijving. Houd er rekening mee dat dit een initiële versie is en de nauwkeurigheid (vooral de leeftijd) kan variëren afhankelijk van het gebruikte model. (ik ben nog steeds aan het testen, maar het begin is goed)
+- 🎲 **Betrouwbare Willekeurige Generatie:** Een bug verholpen waarbij de knop ""Genereren met AI"" bij de eerste poging kon falen, waardoor de velden leeg bleven. Nu zorgt het intelligente correctiesysteem ervoor dat het antwoord altijd geldig is.
+
+**Beheer van Gegenereerde Afbeeldingen:**
+- 🖼️ **AI-afbeeldingengalerij:** Nieuw paneel in het Bestand-menu dat alle afbeeldingen toont die de AI tijdens je games heeft gegenereerd (portretten, achtergronden). Je kunt filteren op afbeeldingstype of op wereld.
+- 🗑️ **Selectief Verwijderen:** Selecteer één of meerdere afbeeldingen en verwijder ze als ze je niet overtuigen (misschien degene waar de AI het een goed idee vond om een bus in de kasteelstal te parkeren). Het systeem wist zowel het bestand als het interne register ervan.
+- 📂 **Directe Toegang:** Dubbelklik op een willekeurige miniatuur om de map te openen waarin het bestand zich bevindt. Als de map al geopend is, wordt hetzelfde venster hergebruikt.
+- 💾 **Onthoudt je Ruimte:** De venstergrootte van de galerij wordt automatisch opgeslagen tussen sessies.
+
+**Prestaties op Lage Configuraties (Belangrijk voor GPU's met weinig VRAM):**
+- 🧠 **PSR - Hybride Governance:** Nieuw systeem dat het werk van de AI in twee fasen verdeelt: Planning (Chef) en Uitvoering (Koks). Hierdoor kunnen lokale modellen met 8 GB VRAM functioneren zonder te crashen door een teveel aan context (+12K tokens). Ten koste van een hogere latentie verandert de interactie met de AI van een enkele prompt naar een reeks prompts (hoe minder VRAM, hoe meer prompts er gegenereerd worden en hoe langer de reactietijd).
+- ⚡ **Intelligente Uitvoering:** Het systeem beslist automatisch of alles in één keer wordt verwerkt (monolitisch) of in delen wordt opgesplitst (iteratief) op basis van je beschikbare VRAM. GPU's met minder VRAM activeren de stapsgewijze modus alleen wanneer dat nodig is.
+- 📊 **Dynamische Optimalisatie:** PSR vermindert de belasting van tokens tijdens de generatie, waardoor gebruikers met 4GB grafische kaarten de creatie van personages en verhaallijngeneratie kunnen voltooien die voorheen vastliepen.
+- 🔄 **Behouden Coherentie:** Ondanks het opsplitsen van het werk, injecteert het systeem een ""meesterintentie"" zodat de AI de draad niet kwijtraakt van waar het mee bezig was.
+
+**AI-stemmen (incrementele verbetering):**
+Realtime generatie van stemmen in alle talen (sommige talen zijn beperkter dan andere, het meest gevarieerd qua stemtypes is Engels)
+- 🗣️ **Strijdkreten met Stem:** Bij het starten van een gevecht tegen vijandelijke tegenstanders wordt nu een contextuele introductiezin met stem geactiveerd.
+- 🎭 **Dynamische Zinnen per Context:** De engine kan korte spraaklijnen genereren voor specifieke evenementen (diensten/gevechten) op basis van taal, sfeer en personageprofiel.
+- 🧠 **Interne Stemsjablonen:** De technische stemsjablonen zijn gescheiden van het verhalende systeem om interferentie met het verhaal te voorkomen.
+- 🔊 **Meer Helderheid bij het Luisteren:** De verstaanbaarheid en prosodie van de synthese zijn verbeterd om prioriteit te geven aan een begrijpelijke dictie.
+
+**⚠️ Compatibiliteitswaarschuwing (Oude Opgeslagen Spellen):**
+- 🔄 Vanwege de vele interne wijzigingen in de regel-engine en het sfeersysteem zullen **eerder opgeslagen spellen en werelden (waarschijnlijk) speelbaar blijven**, maar de kans is groot dat ze bugs of onverwacht gedrag vertonen. **Het wordt aanbevolen om een schone, nieuwe wereld te creëren** om optimaal van alle verbeteringen te kunnen genieten.","AI-beeldgeneratie, Verhalende Verbeteringen en Besturing"
+norwegian,"**⚠️ EKSPERIMENTELL GREN (STEAM BETA)**
+Denne versjonen er foreløpig kun tilgjengelig i Steams **Eksperimentelle gren**. For å aktivere den:
+1. Høyreklikk på **RolemIAster** i Steam-biblioteket ditt.
+2. Velg **Egenskaper...**
+3. Gå til fanen **Betaer**.
+4. Under «Betadeltakelse», velg **experimental** i nedtrekksmenyen.
+
+**Nyhet: Første fase av AI-bildegenerering**
+- 🎨 **Din verden i bilder:** Jeg har integrert et innledende system for bildegenerering med kunstig intelligens. Mens du spiller, prøver systemet å generere portretter og landskap som passer til stemningen i spillet ditt.
+- 🖼️ **Dynamiske bakgrunner:** Bildene genereres i bakgrunnen uten å stoppe spillet. Du vil se dem dukke opp gradvis i bakgrunnen, på karakterkort og i Kodeksen.
+- 🧹 **Bildeadministrasjon:** Nytt panel for å se og slette genererte bilder du ikke liker.
+
+**Forbedringer i karakterskaping:**
+- ⚙️ **Mer solid tilfeldig skaping:** Jeg har forent og forbedret regelmotoren som AI-en bruker til å skape karakterer fra bunnen av, noe som garanterer mer logiske inventarer (5 til 10 sammenhengende gjenstander) og mer balanserte karakterark.
+- 🧠 **Delt hjerne:** AI-en forstår nå bedre når den skal «finne opp» en karakter fra bunnen av, og når den skal begrense seg til å hente ut data fra biografien du selv har skrevet.
+- ⚡ **Hastighet etter dine behov:** Ny seksjon i visuelle innstillinger. Velg mellom «Rask» (1 trinn), «Middels» (2 trinn) eller «Høy» (4 trinn) for å tilpasse genereringstiden til utstyret ditt.
+- 🛠️ **Teknisk optimalisering:** AI-modellen for bilder lastes inn i **RAM (minne)** og behandles via **CPU**, uten å bruke videominne (VRAM). Dette sikrer at den ikke forstyrrer spillets hoved-AI (LLM). Krever omtrent 5 GB ekstra RAM, men holder seg innenfor de offisielle minimumskravene på Steam.
+- 📤 **Del eventyrene dine:** Alle genererte bilder lagres automatisk. Du finner dem i mappen: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Modellvelger (Avansert):** Hvis du starter spillet med parameteren `--advanced`, kan du nå velge hvilken AI-modell som skal brukes for bilder fra Utseende-panelet. Dette lar entusiaster teste ulike versjoner av Stable Diffusion optimalisert for OpenVINO (.xml/.bin-filer).
+
+**Narrativ og AI-hjerne:**
+- 🧠 **Slutt på løkker:** En ny «minnedoktrine» er implementert i AI-en. Den skiller nå bedre mellom «minner» (det som har skjedd) og «nåtid» (det som skjer). Dette bidrar til å redusere tilfeller der AI-en gjentok seg selv eller satte seg fast.
+- 📜 **Historiske arkiver:** Systemet presenterer minnene dine for AI-en som et «Lukket historisk arkiv», noe som gjør det enklere å bruke den informasjonen som referanse for å drive historien fremover.
+- ⚡ **Optimaliserte instruksjoner:** Måten spillet ber om fortelling på ditt språk er forbedret, noe som frigjør kapasitet for modellen til å fokusere på kreativitet.
+- 👁️ **Narrativt fokus:** AI-ens oppfatning er omskrevet. Den forstår nå bedre hvilke elementer som er «statisk bakgrunn» og ikke bør gjentas unødvendig i hvert avsnitt.
+- 🔀 **Tydeligere valg:** AI-en tilbyr nå mer definerte utveier. Forslagene (knappene) er delt inn i å undersøke omgivelsene (Fordype) eller endre kurs (Avvike).
+- 🫵 **Direkte tiltale:** Grunninstruksen er justert for å sikre at AI-en tiltaler deg som «Du», noe som forbedrer den personlige innlevelsen.
+
+**Karakterskaping:**
+- 🖼️ **Karakterportretter:** Når du genererer en karakter med AI, prøver systemet å lage et portrett basert på alder, yrke og beskrivelse. Vær oppmerksom på at dette er en tidlig versjon, og nøyaktigheten (spesielt på alder) kan variere avhengig av modellen som brukes. (Jeg tester fortsatt, men starten er god).
+- 🎲 **Pålitelig tilfeldig generering:** Rettet en feil der knappen «Generer med AI» kunne feile ved første forsøk og etterlate feltene tomme. Nå sørger det smarte korreksjonssystemet for at svaret alltid er gyldig.
+
+**Håndtering av genererte bilder:**
+- 🖼️ **AI-bildegalleri:** Nytt panel i Fil-menyen som viser alle bildene AI-en har generert i løpet av spillene dine (portretter, bakgrunner). Du kan filtrere etter bildetype eller verden.
+- 🗑️ **Selektiv sletting:** Velg ett eller flere bilder og slett dem hvis du ikke er fornøyd (kanskje det der AI-en bestemte at det var en god idé å parkere en buss i stallen på slottet). Systemet rydder både i filen og i det interne registeret.
+- 📂 **Direkte tilgang:** Dobbeltklikk på et miniatyrbilde for å åpne mappen der filen ligger. Hvis du allerede har mappen åpen, gjenbrukes samme vindu.
+- 💾 **Husker plassen din:** Størrelsen på gallerivinduet lagres automatisk mellom øktene.
+
+**Ytelse på lave konfigurasjoner (Viktig for GPU med lite VRAM):**
+- 🧠 **PSR - Hybrid styring:** Nytt system som deler AI-arbeidet i to faser: Planlegging (Kokk) og Utførelse (Kokker). Dette lar lokale modeller med 8 GB VRAM fungere uten å kollapse på grunn av for mye kontekst (+12K tokens), på bekostning av høyere forsinkelse. Behandlingen med AI-en går fra å være en enkelt ledetekst (prompt) til en serie ledetekster (jo mindre VRAM, desto flere ledetekster genereres, og desto lengre responstid).
+- ⚡ **Smart utførelse:** Systemet bestemmer automatisk om alt skal behandles på én gang (monolittisk) eller deles opp i deler (iterativt) basert på tilgjengelig VRAM. GPU-er med mindre VRAM aktiverer oppdelt modus kun når det er nødvendig.
+- 📊 **Dynamisk optimalisering:** PSR reduserer token-belastningen under generering, slik at brukere med grafikkort på 4 GB kan fullføre karakterskaping og historiegenerering som tidligere låste seg.
+- 🔄 **Opprettholdt sammenheng:** Til tross for arbeidsdelingen, injiserer systemet en «overordnet intensjon» slik at AI-en ikke mister tråden i det den holdt på med.
+
+**AI-stemmer (inkrementell forbedring):**
+Sanntidsgenerering av stemmer på alle språk (noen språk er mer begrensede enn andre; engelsk har størst variasjon i stemmethyper).
+- 🗣️ **Kamprop med stemme:** Når du starter kamp mot fiendtlige motstandere, utløses nå en kontekstuell stemmefrase ved start.
+- 🎭 **Dynamiske fraser etter kontekst:** Motoren kan generere korte stemmelinjer for konkrete hendelser (tjenester/kamp) avhengig av språk, omgivelser og karakterprofil.
+- 🧠 **Interne stemmemaler:** Tekniske stemmemaler er skilt fra det narrative systemet for å unngå forstyrrelser i historien.
+- 🔊 **Bedre klarhet:** Forståelighet og prosodi i syntesen er forbedret for å prioritere tydelig uttale.
+
+**⚠️ Advarsel om kompatibilitet (Tidligere spill):**
+- 🔄 På grunn av mengden interne endringer i regelmotoren og systemet for omgivelser, vil **tidligere lagrede spill og verdener fortsatt være spillbare (muligens)**, men det er svært sannsynlig at det vil oppstå feil eller uventet oppførsel. **Det anbefales å opprette en ny, ren verden** for å nyte alle forbedringene på riktig måte.","AI-bildegenerering, narrative forbedringer og kontroll"
+polish,"**⚠️ GAŁĄŹ EKSPERYMENTALNA (BETA STEAM)**
+Ta wersja jest obecnie dostępna tylko w **Gałęzi Eksperymentalnej** na Steam. Aby ją aktywować:
+1. Kliknij prawym przyciskiem myszy na **RolemIAster** w swojej Bibliotece Steam.
+2. Wybierz **Właściwości...**
+3. Przejdź do zakładki **Bety**.
+4. W sekcji ""Udział w testach beta"", wybierz **experimental** z listy rozwijanej.
+
+**Nowość: Pierwsza faza generowania obrazów przez AI**
+- 🎨 **Twój świat w obrazach:** Zintegrowałem początkowy system generowania obrazów przez Sztuczną Inteligencję. W miarę jak grasz, system próbuje generować portrety i krajobrazy towarzyszące klimatowi twojej rozgrywki.
+- 🖼️ **Dynamiczne tła:** Obrazy generują się w tle bez przerywania gry. Zobaczysz, jak stopniowo pojawiają się w tle, na kartach postaci oraz w Kodeksie.
+- 🧹 **Zarządzanie obrazami:** Nowy panel do przeglądania i usuwania wygenerowanych obrazów, które ci się nie podobają.
+
+**Ulepszenia w generowaniu postaci:**
+- ⚙️ **Solidniejsze losowe tworzenie:** Ujednoliciłem i ulepszyłem silnik reguł używany przez AI do tworzenia postaci od podstaw, gwarantując bardziej logiczny ekwipunek (od 5 do 10 spójnych przedmiotów) i bardziej zbalansowane karty postaci.
+- 🧠 **Podzielony mózg:** AI teraz lepiej rozumie, kiedy ma ""wymyślić"" postać od podstaw, a kiedy powinna ograniczyć się do wyodrębnienia danych z napisanej przez ciebie biografii.
+- ⚡ **Prędkość na miarę:** Nowa sekcja w Ustawieniach Wizualnych. Wybierz między ""Szybką"" (1 krok), ""Średnią"" (2 kroki) lub ""Wysoką"" (4 kroki), aby dostosować czas generowania do mocy twojego sprzętu.
+- 🛠️ **Optymalizacja techniczna:** Model AI dla obrazów ładuje się do pamięci **RAM (Memory)** i jest przetwarzany przez **CPU**, nie zajmując pamięci wideo (VRAM). Gwarantuje to brak zakłóceń w wydajności głównej AI gry (LLM). Wymaga to około 5 GB dodatkowej pamięci RAM, mieszcząc się w oficjalnych minimalnych wymaganiach na Steam.
+- 📤 **Dziel się swoimi przygodami:** Wszystkie wygenerowane obrazy są zapisywane automatycznie. Znajdziesz je w folderze: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Wybór modeli (Zaawansowane):** Jeśli uruchomisz grę z parametrem `--advanced`, możesz teraz wybrać model AI do generowania obrazów z panelu Wyglądu. Pozwala to entuzjastom na testowanie różnych wersji Stable Diffusion zoptymalizowanych pod kątem OpenVINO (pliki .xml/.bin).
+
+**Narracja i Mózg AI:**
+- 🧠 **Koniec pętli:** Zaimplementowano nową ""Doktrynę Pamięci"" w AI. Teraz lepiej odróżnia ""wspomnienia"" (to, co już się wydarzyło) od ""teraźniejszości"" (to, co dzieje się teraz). Pomaga to zmniejszyć liczbę przypadków, w których AI się powtarzało lub blokowało.
+- 📜 **Archiwa historyczne:** System prezentuje twoje wspomnienia AI jako ""Zamknięte Archiwum Historyczne"", ułatwiając użycie tych informacji jako punktu odniesienia do rozwijania fabuły.
+- ⚡ **Zoptymalizowane instrukcje:** Poprawiono sposób, w jaki gra żąda narracji w twoim języku, zwalniając moce przerobowe modelu, aby mógł skupić się na kreatywności.
+- 👁️ **Skupienie narracyjne:** Przepisano percepcję AI. Teraz lepiej rozumie, które elementy stanowią ""statyczne tło"" i nie powinny być niepotrzebnie powtarzane w każdym akapicie.
+- 🔀 **Jaśniejsze decyzje:** AI oferuje teraz wyraźniejsze drogi wyjścia. Jej sugestie (przyciski) dzielą się na zbadanie otoczenia (Zagłębienie się) lub zmianę kursu (Rozwidlenie).
+- 🫵 **Bezpośredni zwrot:** Dostosowano podstawową instrukcję, aby upewnić się, że AI zwraca się do ciebie na ""Ty"", poprawiając osobistą immersję.
+
+**Tworzenie postaci:**
+- 🖼️ **Portrety postaci:** Podczas generowania postaci za pomocą AI, system próbuje stworzyć portret oparty na jej wieku, profesji i opisie. Pamiętaj, że jest to wersja początkowa i wierność (szczególnie w kwestii wieku) może się różnić w zależności od użytego modelu. (Nadal przeprowadzam testy, ale początek jest obiecujący)
+- 🎲 **Niezawodne losowe generowanie:** Naprawiono błąd, w którym przycisk ""Generuj za pomocą AI"" mógł zawieść przy pierwszej próbie, pozostawiając puste pola. Teraz inteligentny system korekty upewnia się, że odpowiedź jest zawsze prawidłowa.
+
+**Zarządzanie wygenerowanymi obrazami:**
+- 🖼️ **Galeria obrazów AI:** Nowy panel w menu Plik, który pokazuje wszystkie obrazy wygenerowane przez AI podczas twoich rozgrywek (portrety, tła). Możesz filtrować według typu obrazu lub świata.
+- 🗑️ **Selektywne usuwanie:** Wybierz jeden lub więcej obrazów i usuń je, jeśli cię nie przekonują (może ten, w którym AI uznało za dobry pomysł zaparkowanie autobusu w zamkowej stajni). System czyści zarówno plik, jak i jego wewnętrzny rejestr.
+- 📂 **Bezpośredni dostęp:** Kliknij dwukrotnie dowolną miniaturę, aby otworzyć folder, w którym znajduje się plik. Jeśli masz już otwarty folder, zostanie użyte to samo okno.
+- 💾 **Zapamiętanie przestrzeni:** Rozmiar okna galerii jest zapisywany automatycznie między sesjami.
+
+**Wydajność na słabszych konfiguracjach (Ważne dla GPU z małą ilością VRAM):**
+- 🧠 **PSR - Hybrydowe zarządzanie:** Nowy system, który dzieli pracę AI na dwie fazy: Planowanie (Szef kuchni) i Wykonanie (Kucharze). Pozwala to lokalnym modelom z 8 GB VRAM na działanie bez awarii z powodu nadmiaru kontekstu (+12K tokenów), kosztem większego opóźnienia. Interakcja z AI przechodzi od pojedynczego promptu do serii promptów (im mniejszy VRAM, tym więcej promptów zostanie wygenerowanych i tym dłuższy będzie czas odpowiedzi).
+- ⚡ **Inteligentne wykonanie:** System automatycznie decyduje, czy przetwarzać wszystko od razu (monolitycznie), czy podzielić na części (iteracyjnie), w zależności od dostępnego VRAM-u. Karty graficzne z mniejszą ilością VRAM aktywują tryb częściowy tylko wtedy, gdy jest to konieczne.
+- 📊 **Dynamiczna optymalizacja:** PSR redukuje obciążenie tokenami podczas generowania, co pozwala użytkownikom z kartami graficznymi 4 GB na ukończenie tworzenia postaci i generowania historii, które wcześniej się blokowały.
+- 🔄 **Zachowana spójność:** Mimo podziału pracy, system wstrzykuje ""główną intencję"", aby AI nie zgubiło wątku tego, co robiło.
+
+**Głosy AI (ulepszenie przyrostowe):**
+Generowanie głosów w czasie rzeczywistym we wszystkich językach (niektóre języki są bardziej ograniczone niż inne, najbardziej zróżnicowany pod względem typów głosów jest angielski)
+- 🗣️ **Głosowe okrzyki bojowe:** Przy rozpoczynaniu walki z wrogami odtwarzana jest teraz początkowa, kontekstowa kwestia głosowa.
+- 🎭 **Dynamiczne frazy według kontekstu:** Silnik potrafi generować krótkie kwestie głosowe dla konkretnych wydarzeń (usługi/walka) w zależności od języka, klimatu i profilu postaci.
+- 🧠 **Wewnętrzne szablony głosowe:** Techniczne szablony głosowe zostały oddzielone od systemu narracyjnego, aby uniknąć zakłóceń w fabule.
+- 🔊 **Większa czystość odsłuchu:** Poprawiono zrozumiałość i prozodię syntezy, traktując jako priorytet wyraźną dykcję.
+
+**⚠️ Uwaga dotycząca kompatybilności (poprzednie zapisy):**
+- 🔄 Ze względu na ilość wewnętrznych zmian w silniku reguł i systemie klimatu, **poprzednio zapisane gry i światy będą (prawdopodobnie) nadal grywalne**, ale jest bardzo prawdopodobne, że wystąpią w nich błędy lub nieoczekiwane zachowania. **Zaleca się stworzenie nowego, czystego świata**, aby w pełni i poprawnie cieszyć się wszystkimi ulepszeniami.","Generowanie Obrazów przez AI, Ulepszenia Narracyjne i Kontrola"
+portuguese,"**⚠️ RAMO EXPERIMENTAL (BETA DO STEAM)**
+Esta versão está disponível atualmente apenas no **Ramo Experimental** do Steam. Para ativá-la:
+1. Clique com o botão direito em **RolemIAster** na sua Biblioteca do Steam.
+2. Selecione **Propriedades...**
+3. Vá para a aba **Betas**.
+4. Em ""Participação na versão beta"", selecione **experimental** no menu suspenso.
+
+**Novidade: Primeira fase da Geração de Imagens por IA**
+- 🎨 **Seu Mundo em Imagens:** Integrei um sistema inicial de geração de imagens por Inteligência Artificial. À medida que você joga, o sistema tenta gerar retratos e paisagens que acompanhem a ambientação da sua partida.
+- 🖼️ **Planos de Fundo Dinâmicos:** As imagens são geradas em segundo plano sem pausar seu jogo. Você verá como elas aparecem progressivamente no fundo, nos cartões de personagens e no Códice.
+- 🧹 **Gerenciamento de Imagens:** Novo painel para visualizar e excluir as imagens geradas que você não gostar.
+
+**Melhorias na Geração de Personagens:**
+- ⚙️ **Criação Aleatória mais Sólida:** Unifiquei e melhorei o motor de regras que a IA usa para criar personagens do zero, garantindo inventários mais lógicos (5 a 10 objetos coerentes) e fichas mais equilibradas.
+- 🧠 **Cérebro Dividido:** A IA agora entende melhor quando deve ""inventar"" um personagem do zero e quando deve se limitar a extrair os dados da biografia que você mesmo escreveu.
+- ⚡ **Velocidade sob Medida:** Nova seção na Configuração Visual. Escolha entre ""Rápida"" (1 passo), ""Média"" (2 passos) ou ""Alta"" (4 passos) para ajustar o tempo de geração à potência do seu equipamento.
+- 🛠️ **Otimização Técnica:** O modelo de IA para imagens é carregado na **RAM (Memória)** e processado via **CPU**, sem ocupar memória de vídeo (VRAM). Isso garante que não interfira no desempenho da IA principal do jogo (LLM). Requer cerca de 5GB de RAM adicionais, mantendo-se dentro dos requisitos mínimos oficiais do Steam.
+- 📤 **Compartilhe suas Aventuras:** Todas as imagens geradas são salvas automaticamente. Você as encontrará na pasta: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Seletor de Modelos (Avançado):** Se iniciar o jogo com o parâmetro `--advanced`, agora você pode escolher qual modelo de IA usar para as imagens no painel de Aparência. Isso permite que entusiastas testem diferentes versões do Stable Diffusion otimizadas para OpenVINO (arquivos .xml/.bin).
+
+**Narrativa e Cérebro IA:**
+- 🧠 **Fim dos Loops:** Foi implantada uma nova ""Doutrina de Memória"" na IA. Agora ela distingue melhor entre ""memórias"" (o que já aconteceu) e o ""presente"" (o que está acontecendo). Isso ajuda a reduzir os casos onde a IA se repetia ou ficava presa.
+- 📜 **Arquivos Históricos:** O sistema apresenta suas memórias à IA como um ""Arquivo Histórico Fechado"", facilitando o uso dessa informação como referência para avançar a história.
+- ⚡ **Instruções Otimizadas:** A forma como o jogo solicita a narração em seu idioma foi melhorada, liberando capacidade do modelo para se concentrar na criatividade.
+- 👁️ **Foco Narrativo:** A percepção da IA foi reescrita. Agora ela entende melhor quais elementos são ""fundo estático"" e não deve repeti-los desnecessariamente em cada parágrafo.
+- 🔀 **Decisões Mais Claras:** A IA agora oferece vias de escape mais definidas. Suas sugestões (botões) são divididas entre investigar o ambiente (Aprofundar) ou mudar de rumo (Divergir).
+- 🫵 **Tratamento Direto:** A instrução base foi ajustada para garantir que a IA te trate por ""Você"", melhorando a imersão pessoal.
+
+**Criação de Personagem:**
+- 🖼️ **Retratos de Personagem:** Ao gerar um personagem com IA, o sistema tenta criar um retrato baseado na idade, profissão e descrição. Tenha em mente que é uma versão inicial e a fidelidade (especialmente na idade) pode variar segundo o modelo utilizado. (sigo fazendo testes, mas o início é bom)
+- 🎲 **Geração Aleatória Confiável:** Corrigida uma falha onde o botão ""Gerar com IA"" podia falhar na primeira tentativa, deixando os campos vazios. Agora o sistema de correção inteligente garante que a resposta seja sempre válida.
+
+**Gerenciamento de Imagens Geradas:**
+- 🖼️ **Galeria de Imagens IA:** Novo painel no menu Arquivo que mostra todas as imagens que a IA gerou durante suas partidas (retratos, fundos). Você pode filtrar por tipo de imagem ou por mundo.
+- 🗑️ **Exclusão Seletiva:** Selecione uma ou várias imagens e exclua-as se não te convencerem (talvez aquela em que a IA decidiu que era uma boa ideia estacionar um ônibus no estábulo do castelo). O sistema limpa tanto o arquivo quanto seu registro interno.
+- 📂 **Acesso Direto:** Dê um clique duplo em qualquer miniatura para abrir a pasta onde o arquivo se encontra. Se já tiver a pasta aberta, a mesma janela será reutilizada.
+- 💾 **Lembra do seu Espaço:** O tamanho da janela da galeria é salvo automaticamente entre as sessões.
+
+**Desempenho em Configurações Baixas (Importante para GPU com pouca VRAM):**
+- 🧠 **PSR - Governança Híbrida:** Novo sistema que divide o trabalho da IA em duas fases: Planejamento (Chef) e Execução (Cozinheiros). Isso permite que modelos locais com 8 GB de VRAM funcionem evitando colapsos por excesso de contexto (+12K tokens), ao custo de uma latência maior; a interação com a IA passa de ser um único prompt para uma série de prompts (quanto menor a VRAM, maior a quantidade de prompts gerados e maior o tempo de resposta).
+- ⚡ **Execução Inteligente:** O sistema decide automaticamente se processa tudo de uma vez (monolítico) ou divide em partes (iterativo) conforme sua VRAM disponível. GPUs com menos VRAM ativam o modo por partes apenas quando necessário.
+- 📊 **Otimização Dinâmica:** O PSR reduz a carga de tokens durante a geração, permitindo que usuários com placas de vídeo de 4GB possam completar a criação de personagens e geração de história que antes travavam.
+- 🔄 **Coerência Mantida:** Apesar de dividir o trabalho, o sistema injeta uma ""intenção mestra"" para que a IA não perca o fio da meada do que estava fazendo.
+
+**Vozes IA (melhoria incremental):**
+Geração em tempo real de vozes em todos os idiomas (alguns idiomas são mais limitados que outros, o inglês é o mais variado em tipos de vozes)
+- 🗣️ **Gritos de Combate com Voz:** Ao iniciar combate contra inimigos hostis, agora é disparada uma frase de voz contextual de entrada.
+- 🎭 **Frases Dinâmicas por Contexto:** O motor pode gerar linhas curtas de voz para eventos concretos (serviços/combate) conforme idioma, ambientação e perfil do personagem.
+- 🧠 **Modelos de Voz Internos:** Os modelos técnicos de voz foram separados do sistema narrativo para evitar interferências com a história.
+- 🔊 **Maior Clareza ao Ouvir:** Melhorou-se a inteligibilidade e a prosódia da síntese para priorizar uma dicção compreensível.
+
+**⚠️ Aviso de Compatibilidade (Partidas Anteriores):**
+- 🔄 Devido à quantidade de mudanças internas no motor de regras e no sistema de ambientação, as **partidas e mundos salvos anteriormente continuarão sendo jogáveis (possivelmente)**, mas é muito provável que apresentem erros ou comportamentos inesperados. **Recomenda-se criar um novo mundo limpo** para aproveitar todas as melhorias corretamente.","Geração de Imagens por IA, Melhorias Narrativas e Controle"
+romanian,"**⚠️ RAMURA EXPERIMENTALĂ (STEAM BETA)**
+Această versiune este disponibilă momentan doar în **Ramura Experimentală** Steam. Pentru a o activa:
+1. Dă click dreapta pe **RolemIAster** în Biblioteca ta Steam.
+2. Selectează **Proprietăți...**
+3. Mergi la fila **Betas**.
+4. La ""Participare la versiunea beta"", selectează **experimental** din meniul derulant.
+
+**Noutate: Prima fază a Generării de Imagini AI**
+- 🎨 **Lumea Ta în Imagini:** Am integrat un sistem inițial de generare a imaginilor prin Inteligență Artificială. Pe măsură ce joci, sistemul încearcă să genereze portrete și peisaje care să însoțească atmosfera jocului tău.
+- 🖼️ **Fundaluri Dinamice:** Imaginile sunt generate în fundal fără a opri jocul. Vei vedea cum apar progresiv pe fundal, pe cărțile personajelor și în Codex.
+- 🧹 **Gestionare Imagini:** Un nou panou pentru a vizualiza și șterge imaginile generate care nu îți plac.
+
+**Îmbunătățiri la Generarea Personajelor:**
+- ⚙️ **Creare Aleatorie mai Solidă:** Am unificat și îmbunătățit motorul de reguli folosit de IA pentru a crea personaje de la zero, garantând inventare mai logice (5-10 obiecte coerente) și fișe mai echilibrate.
+- 🧠 **Creier Divizat:** IA înțelege acum mai bine când trebuie să „inventeze” un personaj de la zero și când trebuie doar să extragă datele din biografia scrisă chiar de tine.
+- ⚡ **Viteză pe Măsura Ta:** Secțiune nouă în Setări Vizuale. Alege între „Rapidă” (1 pas), „Medie” (2 pași) sau „Înaltă” (4 pași) pentru a ajusta timpul de generare în funcție de puterea echipamentului tău.
+- 🛠️ **Optimizare Tehnică:** Modelul IA pentru imagini se încarcă în **RAM (Memorie)** și este procesat via **CPU**, fără a ocupa memoria video (VRAM). Asta garantează că nu interferează cu performanța IA principale a jocului (LLM). Necesită aproximativ 5GB de RAM suplimentari, menținându-se în limitele cerințelor minime oficiale Steam.
+- 📤 **Împărtășește Aventurile:** Toate imaginile generate sunt salvate automat. Le vei găsi în dosarul: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Selector de Modele (Avansat):** Dacă pornești jocul cu parametrul `--advanced`, acum poți alege ce model IA să folosești pentru imagini din panoul Aspect. Acest lucru permite entuziaștilor să testeze diferite versiuni de Stable Diffusion optimizate pentru OpenVINO (fișiere .xml/.bin).
+
+**Narațiune și Creier IA:**
+- 🧠 **Sfârșitul Buclelor:** A fost implementată o nouă „Doctrină a Memoriei” în IA. Acum distinge mai bine între „amintiri” (ce s-a întâmplat deja) și „prezent” (ce se întâmplă acum). Asta ajută la reducerea cazurilor în care IA se repeta sau se bloca.
+- 📜 **Arhive Istorice:** Sistemul prezintă amintirile tale către IA ca o „Arhivă Istorică Închisă”, facilitând utilizarea acelor informații ca referință pentru a avansa povestea.
+- ⚡ **Instrucțiuni Optimizate:** S-a îmbunătățit modul în care jocul solicită narațiunea în limba ta, eliberând capacitatea modelului pentru a se concentra pe creativitate.
+- 👁️ **Focus Narativ:** S-a rescris percepția IA. Acum înțelege mai bine ce elemente sunt „fundal static” și nu ar trebui să le repete inutil în fiecare paragraf.
+- 🔀 **Decizii Mai Clare:** IA oferă acum căi de scăpare mai definite. Sugestiile sale (butoane) sunt împărțite între a investiga mediul (Aprofundare) sau a schimba direcția (Divergență).
+- 🫵 **Adresare Directă:** S-a ajustat instrucțiunea de bază pentru a asigura că IA ți se adresează cu „Tu”, îmbunătățind imersiunea personală.
+
+**Crearea Personajului:**
+- 🖼️ **Portrete de Personaje:** La generarea unui personaj cu IA, sistemul încearcă să creeze un portret bazat pe vârstă, profesie și descriere. Ține cont că este o versiune inițială și fidelitatea (în special la vârstă) poate varia în funcție de modelul utilizat. (încă fac teste, dar începutul e bun)
+- 🎲 **Generare Aleatorie Fiabilă:** S-a corectat o eroare unde butonul „Generare cu IA” putea eșua la prima încercare, lăsând câmpurile goale. Acum sistemul de corecție inteligentă se asigură că răspunsul este întotdeauna valid.
+
+**Gestionarea Imaginilor Generate:**
+- 🖼️ **Galerie Imagini IA:** Panou nou în meniul Fișier care afișează toate imaginile pe care IA le-a generat în timpul partidelor tale (portrete, fundaluri). Poți filtra după tipul imaginii sau după lume.
+- 🗑️ **Ștergere Selectivă:** Selectează una sau mai multe imagini și șterge-le dacă nu te conving (poate aceea în care IA a decis că e o idee bună să parcheze un autobuz în grajdul castelului). Sistemul curăță atât fișierul, cât și registrul intern.
+- 📂 **Acces Rapid:** Dă dublu click pe orice miniatură pentru a deschide dosarul unde se află fișierul. Dacă ai deja dosarul deschis, se reutilizează aceeași fereastră.
+- 💾 **Ține Minte Spațiul Tău:** Dimensiunea ferestrei galeriei se salvează automat între sesiuni.
+
+**Performanță în Configurații Slabe (Important pentru GPU cu VRAM puțină):**
+- 🧠 **PSR - Guvernare Hibridă:** Un nou sistem care împarte munca IA în două faze: Planificare (Chef) și Execuție (Bucătari). Acest lucru permite modelelor locale cu 8 GB VRAM să funcționeze evitând blocajele cauzate de excesul de context (+12K tokens), cu prețul unei latențe mai mari; interacțiunea cu IA trece de la un singur prompt la o serie de prompturi (cu cât VRAM-ul este mai mic, cu atât se vor genera mai multe prompturi și timpul de răspuns va fi mai mare).
+- ⚡ **Execuție Inteligentă:** Sistemul decide automat dacă procesează totul odată (monolitic) sau împarte pe bucăți (iterativ) în funcție de VRAM-ul disponibil. GPU-urile cu mai puțin VRAM activează modul pe bucăți doar când este necesar.
+- 📊 **Optimizare Dinamică:** PSR reduce încărcarea token-urilor în timpul generării, permițând utilizatorilor cu plăci grafice de 4GB să finalizeze crearea personajelor și generarea poveștii care înainte se blocau.
+- 🔄 **Coerență Menținută:** În ciuda divizării muncii, sistemul injectează o „intenție maestră” pentru ca IA să nu piardă firul a ceea ce făcea.
+
+**Voci IA (îmbunătățire incrementală):**
+Generare în timp real a vocilor în toate limbile (unele limbi sunt mai limitate decât altele, cea mai variată în tipuri de voci este engleza)
+- 🗣️ **Strigăte de Luptă cu Voce:** La începerea luptei împotriva inamicilor ostili, acum se declanșează o frază vocală contextuală de intrare.
+- 🎭 **Fraze Dinamice după Context:** Motorul poate genera linii scurte de voce pentru evenimente concrete (servicii/luptă) în funcție de limbă, atmosferă și profilul personajului.
+- 🧠 **Șabloane de Voce Interne:** S-au separat șabloanele tehnice de voce de sistemul narativ pentru a evita interferențele cu povestea.
+- 🔊 **Claritate Mai Mare la Ascultare:** Se îmbunătățește inteligibilitatea și prozodia sintezei pentru a prioritiza o dicție inteligibilă.
+
+**⚠️ Notificare de Compatibilitate (Salvări Anterioare):**
+- 🔄 Din cauza numărului mare de modificări interne în motorul de reguli și sistemul de atmosferă, **partidele și lumile salvate anterior vor rămâne jucabile (posibil)**, dar este foarte probabil să prezinte erori sau comportamente neașteptate. **Se recomandă crearea unei lumi noi, curate**, pentru a te bucura corect de toate îmbunătățirile.","Generare Imagini AI, Îmbunătățiri Narative și Control"
+russian,"**⚠️ ЭКСПЕРИМЕНТАЛЬНАЯ ВЕТКА (STEAM BETA)**
+Эта версия в настоящее время доступна только в **Экспериментальной ветке** Steam. Чтобы активировать её:
+1. Щелкните правой кнопкой мыши по **RolemIAster** в вашей библиотеке Steam.
+2. Выберите **Свойства...**
+3. Перейдите на вкладку **Бета-версии**.
+4. В разделе ""Бета-тестирование"" выберите **experimental** в выпадающем списке.
+
+**Нововведение: Первая фаза генерации изображений с помощью ИИ**
+- 🎨 **Ваш мир в картинках:** Я интегрировал начальную систему генерации изображений с помощью искусственного интеллекта. По мере игры система пытается генерировать портреты и пейзажи, соответствующие атмосфере вашей партии.
+- 🖼️ **Динамические фоны:** Изображения генерируются в фоновом режиме, не останавливая вашу игру. Вы увидите, как они постепенно появляются на фоне, в карточках персонажей и в Кодексе.
+- 🧹 **Управление изображениями:** Новая панель для просмотра и удаления сгенерированных изображений, которые вам не понравились.
+
+**Улучшения генерации персонажей:**
+- ⚙️ **Более надежное случайное создание:** Я объединил и улучшил механизм правил, который ИИ использует для создания персонажей с нуля, гарантируя более логичный инвентарь (от 5 до 10 связных предметов) и более сбалансированные листы персонажей.
+- 🧠 **Разделенный мозг:** Теперь ИИ лучше понимает, когда он должен ""изобрести"" персонажа с нуля, а когда ему следует ограничиться извлечением данных из биографии, которую вы написали сами.
+- ⚡ **Скорость под ваши нужды:** Новый раздел в визуальных настройках. Выберите ""Быстрая"" (1 шаг), ""Средняя"" (2 шага) или ""Высокая"" (4 шага), чтобы настроить время генерации под мощность вашего компьютера.
+- 🛠️ **Техническая оптимизация:** ИИ-модель для изображений загружается в **ОЗУ (RAM)** и обрабатывается через **ЦП (CPU)**, не занимая видеопамять (VRAM). Это гарантирует, что она не будет мешать производительности основного ИИ игры (LLM). Требуется около 5 ГБ дополнительной оперативной памяти, что остается в пределах официальных минимальных системных требований Steam.
+- 📤 **Делитесь своими приключениями:** Все сгенерированные изображения сохраняются автоматически. Вы найдете их в папке: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Выбор моделей (Для продвинутых):** Если вы запустите игру с параметром `--advanced`, теперь вы можете выбрать, какую модель ИИ использовать для изображений, на панели «Внешний вид». Это позволяет энтузиастам пробовать различные версии Stable Diffusion, оптимизированные для OpenVINO (файлы .xml/.bin).
+
+**Повествование и мозг ИИ:**
+- 🧠 **Конец зацикливаниям:** В ИИ внедрена новая ""Доктрина памяти"". Теперь он лучше различает ""воспоминания"" (то, что уже произошло) и ""настоящее"" (то, что происходит сейчас). Это помогает сократить случаи, когда ИИ повторялся или застревал.
+- 📜 **Исторические архивы:** Система представляет ваши воспоминания ИИ как ""Закрытый исторический архив"", что облегчает ему использование этой информации в качестве ориентира для продвижения сюжета.
+- ⚡ **Оптимизированные инструкции:** Улучшен способ, которым игра запрашивает повествование на вашем языке, высвобождая ресурсы модели для концентрации на творчестве.
+- 👁️ **Нарративный фокус:** Переписано восприятие ИИ. Теперь он лучше понимает, какие элементы являются ""статичным фоном"", и не будет без необходимости повторять их в каждом абзаце.
+- 🔀 **Более четкие решения:** Теперь ИИ предлагает более определенные пути выхода. Его предложения (кнопки) делятся на исследование окружения (Углубление) или смену направления (Ответвление).
+- 🫵 **Прямое обращение:** Базовая инструкция была скорректирована так, чтобы ИИ обращался к вам на ""Ты"", что улучшает личное погружение.
+
+**Создание персонажа:**
+- 🖼️ **Портреты персонажей:** При генерации персонажа с помощью ИИ система пытается создать портрет на основе его возраста, профессии и описания. Учтите, что это ранняя версия, и точность (особенно в отношении возраста) может варьироваться в зависимости от используемой модели. (я продолжаю тестирование, но начало хорошее)
+- 🎲 **Надежная случайная генерация:** Исправлена ошибка, из-за которой кнопка ""Сгенерировать с помощью ИИ"" могла не сработать с первой попытки, оставляя поля пустыми. Теперь система интеллектуальной коррекции гарантирует, что ответ всегда будет действительным.
+
+**Управление сгенерированными изображениями:**
+- 🖼️ **Галерея ИИ-изображений:** Новая панель в меню ""Файл"", где отображаются все изображения, сгенерированные ИИ во время ваших игр (портреты, фоны). Вы можете фильтровать их по типу изображения или по миру.
+- 🗑️ **Выборочное удаление:** Выберите одно или несколько изображений и удалите их, если они вам не нравятся (возможно, то, где ИИ решил, что припарковать автобус в конюшне замка — хорошая идея). Система очищает как сам файл, так и его внутренний реестр.
+- 📂 **Прямой доступ:** Дважды щелкните по любой миниатюре, чтобы открыть папку, в которой находится файл. Если папка уже открыта, будет использоваться то же окно.
+- 💾 **Запоминание пространства:** Размер окна галереи автоматически сохраняется между сеансами.
+
+**Производительность на слабых конфигурациях (Важно для видеокарт с малым объемом VRAM):**
+- 🧠 **PSR - Гибридное управление:** Новая система, которая делит работу ИИ на два этапа: Планирование (Шеф-повар) и Выполнение (Повара). Это позволяет локальным моделям с 8 ГБ видеопамяти (VRAM) работать без сбоев из-за переполнения контекста (+12K токенов). Ценой этого является повышенная задержка: взаимодействие с ИИ переходит от одного промпта к серии промптов (чем меньше VRAM, тем больше промптов будет сгенерировано и тем больше будет время отклика).
+- ⚡ **Интеллектуальное выполнение:** Система автоматически решает, обрабатывать ли всё сразу (монолитно) или делить на части (итеративно), в зависимости от доступной VRAM. Видеокарты с меньшим объемом памяти активируют частичный режим только при необходимости.
+- 📊 **Динамическая оптимизация:** PSR снижает нагрузку по токенам во время генерации, позволяя пользователям с видеокартами на 4 ГБ завершать создание персонажей и генерацию истории, которые раньше зависали.
+- 🔄 **Сохранение связности:** Несмотря на разделение работы, система внедряет ""главное намерение"", чтобы ИИ не терял нить того, что он делал.
+
+**ИИ-голоса (постепенное улучшение):**
+Генерация голосов в реальном времени на всех языках (некоторые языки более ограничены, чем другие; самый разнообразный по типам голосов — английский)
+- 🗣️ **Озвученные боевые кличи:** При начале боя с враждебными противниками теперь воспроизводится контекстная голосовая фраза для вступления.
+- 🎭 **Динамические фразы по контексту:** Движок может генерировать короткие голосовые реплики для конкретных событий (услуги/бой) в зависимости от языка, сеттинга и профиля персонажа.
+- 🧠 **Внутренние голосовые шаблоны:** Технические шаблоны голоса были отделены от повествовательной системы, чтобы избежать вмешательства в историю.
+- 🔊 **Повышенная четкость звучания:** Улучшена разборчивость и просодия синтеза для обеспечения более понятной дикции.
+
+**⚠️ Предупреждение о совместимости (предыдущие сохранения):**
+- 🔄 Из-за большого количества внутренних изменений в механизме правил и системе сеттинга, **сохраненные ранее игры и миры (возможно) останутся играбельными**, но с высокой вероятностью в них будут возникать ошибки или непредвиденное поведение. **Рекомендуется создать новый, чистый мир**, чтобы корректно насладиться всеми улучшениями.","Генерация изображений с помощью ИИ, улучшения повествования и управления"
+swedish,"**⚠️ EXPERIMENTELL GREN (STEAM BETA)**
+Denna version är för närvarande endast tillgänglig i Steams **Experimentella gren**. För att aktivera den:
+1. Högerklicka på **RolemIAster** i ditt Steam-bibliotek.
+2. Välj **Egenskaper...**
+3. Gå till fliken **Betaversioner**.
+4. Under ""Deltagande i beta"", välj **experimental** i rullgardinsmenyn.
+
+**Nyhet: Första fasen av AI-bildgenerering**
+- 🎨 **Din värld i bilder:** Jag har integrerat ett inledande system för bildgenerering via artificiell intelligens. Allteftersom du spelar försöker systemet generera porträtt och landskap som passar stämningen i ditt spel.
+- 🖼️ **Dynamiska bakgrunder:** Bilderna genereras i bakgrunden utan att stoppa ditt spel. Du kommer att se dem dyka upp successivt i bakgrunden, på karaktärskort och i Codexen.
+- 🧹 **Bildhantering:** Ny panel för att visa och radera genererade bilder du inte gillar.
+
+**Förbättringar i karaktärsskapande:**
+- ⚙️ **Mer robust slumpmässigt skapande:** Jag har förenhetligat och förbättrat regelmotorn som AI:n använder för att skapa karaktärer från grunden, vilket garanterar mer logiska inventarier (5 till 10 sammanhängande föremål) och mer balanserade karaktärsblad.
+- 🧠 **Delad hjärna:** AI:n förstår nu bättre när den ska ""hitta på"" en karaktär från grunden och när den ska begränsa sig till att extrahera data från den biografi du själv har skrivit.
+- ⚡ **Hastighet som passar dig:** Ny sektion i Visuella inställningar. Välj mellan ""Snabb"" (1 steg), ""Medium"" (2 steg) eller ""Hög"" (4 steg) för att justera genereringstiden efter din dators prestanda.
+- 🛠️ **Teknisk optimering:** AI-modellen för bilder laddas i **RAM (minne)** och bearbetas via **CPU**, utan att ta upp videominne (VRAM). Detta säkerställer att den inte stör spelets huvudsakliga AI (LLM). Det kräver cirka 5 GB extra RAM, men håller sig inom de officiella minimikraven för Steam.
+- 📤 **Dela dina äventyr:** Alla genererade bilder sparas automatiskt. Du hittar dem i mappen: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Modellväljare (Avancerat):** Om du startar spelet med parametern `--advanced`, kan du nu välja vilken AI-modell som ska användas för bilder från Utseende-panelen. Detta låter entusiaster testa olika versioner av Stable Diffusion optimerade för OpenVINO (.xml/.bin-filer).
+
+**Berättelse och AI-hjärna:**
+- 🧠 **Slut på loopar:** En ny ""Minnesdoktrin"" har implementerats i AI:n. Nu skiljer den bättre på ""minnen"" (det som redan har hänt) och ""nuet"" (det som händer nu). Detta hjälper till att minska fallen där AI:n upprepade sig eller fastnade.
+- 📜 **Historiska arkiv:** Systemet presenterar dina minnen för AI:n som ett ""Stängt historiskt arkiv"", vilket gör det lättare för den att använda den informationen som referens för att driva berättelsen framåt.
+- ⚡ **Optimerade instruktioner:** Sättet spelet begär berättande på ditt språk har förbättrats, vilket frigör kapacitet för modellen att fokusera på kreativitet.
+- 👁️ **Berättelsefokus:** AI:ns perception har skrivits om. Den förstår nu bättre vilka element som är ""statisk bakgrund"" och bör inte upprepa dem i onödan i varje stycke.
+- 🔀 **Tydligare beslut:** AI:n erbjuder nu mer definierade flyktvägar. Dess förslag (knappar) är uppdelade mellan att undersöka omgivningen (Fördjupa) eller byta riktning (Divergera/Avvika).
+- 🫵 **Direkt tilltal:** Basinstruktionen har justerats för att säkerställa att AI:n tilltalar dig med ""Du"", vilket förbättrar den personliga inlevelsen.
+
+**Karaktärsskapande:**
+- 🖼️ **Karaktärsporträtt:** När en karaktär genereras med AI försöker systemet skapa ett porträtt baserat på ålder, yrke och beskrivning. Tänk på att detta är en tidig version och att troheten (särskilt gällande ålder) kan variera beroende på vilken modell som används. (jag fortsätter att göra tester men början är lovande)
+- 🎲 **Pålitlig slumpmässig generering:** Fixat ett fel där knappen ""Generera med AI"" kunde misslyckas vid första försöket och lämna fälten tomma. Nu ser det intelligenta korrigeringssystemet till att svaret alltid är giltigt.
+
+**Hantering av genererade bilder:**
+- 🖼️ **AI-bildgalleri:** Ny panel i Arkiv-menyn som visar alla bilder som AI:n har genererat under dina spelomgångar (porträtt, bakgrunder). Du kan filtrera efter bildtyp eller värld.
+- 🗑️ **Selektiv radering:** Välj en eller flera bilder och ta bort dem om du inte är nöjd (kanske den där AI:n tyckte det var en bra idé att parkera en buss i slottstallet). Systemet rensar både filen och dess interna register.
+- 📂 **Direktåtkomst:** Dubbelklicka på valfri miniatyrbild för att öppna mappen där filen finns. Om du redan har mappen öppen återanvänds samma fönster.
+- 💾 **Kommer ihåg ditt utrymme:** Gallerifönstrets storlek sparas automatiskt mellan sessioner.
+
+**Prestanda vid låga inställningar (Viktigt för GPU med lite VRAM):**
+- 🧠 **PSR - Hybridstyrning:** Nytt system som delar upp AI-arbetet i två faser: Planering (Köksmästare) och Utförande (Kockar). Detta gör att lokala modeller med 8 GB VRAM kan fungera och undvika krascher på grund av för mycket kontext (+12K tokens), på bekostnad av högre latens. Hanteringen av AI:n går från att vara en enda prompt till en serie av prompter (ju mindre VRAM, desto fler prompter genereras och desto längre svarstid).
+- ⚡ **Intelligent utförande:** Systemet bestämmer automatiskt om allt ska bearbetas på en gång (monolitiskt) eller delas upp i delar (iterativt) beroende på ditt tillgängliga VRAM. GPU:er med mindre VRAM aktiverar läget ""delar"" endast när det är nödvändigt.
+- 📊 **Dynamisk optimering:** PSR minskar tokenbelastningen under generering, vilket gör att användare med grafikkort på 4GB kan slutföra karaktärsskapande och historiegenerering som tidigare blockerades.
+- 🔄 **Bibehållen sammanhållning:** Trots arbetsuppdelningen injicerar systemet en ""mästarintention"" så att AI:n inte tappar tråden i vad den höll på med.
+
+**AI-röster (inkrementell förbättring):**
+Realtidsgenerering av röster på alla språk (vissa språk är mer begränsade än andra, engelska har störst variation av rösttyper)
+- 🗣️ **Stridsrop med röst:** När strid inleds mot fientliga fiender spelas nu en kontextuell röstfras upp vid start.
+- 🎭 **Dynamiska fraser efter kontext:** Motorn kan generera korta röstfraser för specifika händelser (tjänster/strid) beroende på språk, miljö och karaktärsprofil.
+- 🧠 **Interna röstmallar:** De tekniska röstmallarna har separerats från berättelsesystemet för att undvika störningar i historien.
+- 🔊 **Bättre tydlighet vid lyssning:** Uppfattbarheten och prosodin i syntesen har förbättrats för att prioritera förståelig diktion.
+
+**⚠️ Varning om kompatibilitet (Tidigare sparade spel):**
+- 🔄 På grund av mängden interna ändringar i regelmotorn och miljösystemet kommer **tidigare sparade spel och världar fortfarande att vara spelbara (möjligen)**, men det är mycket troligt att de uppvisar fel eller oväntade beteenden. **Det rekommenderas att skapa en ny ren värld** för att kunna njuta av alla förbättringar på rätt sätt.","AI-bildgenerering, berättelseförbättringar och kontroll"
+thai,"**⚠️ สาขาทดลอง (STEAM BETA)**
+ปัจจุบันเวอร์ชันนี้เปิดให้ใช้งานเฉพาะใน **สาขาทดลอง (Experimental Branch)** ของ Steam เท่านั้น วิธีเปิดใช้งาน:
+1. คลิกขวาที่ **RolemIAster** ในคลัง Steam ของคุณ
+2. เลือก **คุณสมบัติ... (Properties...)**
+3. ไปที่แท็บ **เบต้า (Betas)**
+4. ในส่วน ""การเข้าร่วมเบต้า (Beta Participation)"" ให้เลือก **experimental** จากเมนูแบบเลื่อนลง
+
+**ใหม่: การสร้างรูปภาพด้วย AI เฟสแรก**
+- 🎨 **โลกของคุณในรูปแบบรูปภาพ:** ฉันได้ผสานระบบเริ่มต้นสำหรับการสร้างรูปภาพด้วยปัญญาประดิษฐ์ ในขณะที่คุณเล่น ระบบจะพยายามสร้างภาพบุคคลและทิวทัศน์ที่เข้ากับบรรยากาศในเกมของคุณ
+- 🖼️ **พื้นหลังแบบไดนามิก:** รูปภาพจะถูกสร้างอยู่เบื้องหลังโดยไม่ขัดจังหวะการเล่นของคุณ คุณจะเห็นภาพค่อยๆ ปรากฏขึ้นเป็นพื้นหลัง บนการ์ดตัวละคร และใน Codex
+- 🧹 **การจัดการรูปภาพ:** แผงควบคุมใหม่สำหรับดูและลบรูปภาพที่สร้างขึ้นที่คุณไม่ถูกใจ
+
+**การปรับปรุงการสร้างตัวละคร:**
+- ⚙️ **การสุ่มสร้างที่เสถียรยิ่งขึ้น:** ฉันได้รวมและปรับปรุงกลไกกฎที่ AI ใช้ในการสร้างตัวละครจากศูนย์ เพื่อให้แน่ใจว่าช่องเก็บของมีความสมเหตุสมผลมากขึ้น (ไอเทมที่สอดคล้องกัน 5 ถึง 10 ชิ้น) และมีสเตตัสที่สมดุลมากขึ้น
+- 🧠 **สมองแบ่งส่วน:** ตอนนี้ AI เข้าใจดีขึ้นว่าเมื่อใดควร ""คิดค้น"" ตัวละครขึ้นมาใหม่ตั้งแต่ต้น และเมื่อใดควรดึงข้อมูลมาจากประวัติที่คุณเป็นคนเขียนเองเท่านั้น
+- ⚡ **ความเร็วที่คุณกำหนดได้:** ส่วนใหม่ในการตั้งค่าภาพ (Visual Configuration) เลือกได้ระหว่าง ""เร็ว (Fast)"" (1 ขั้นตอน), ""ปานกลาง (Medium)"" (2 ขั้นตอน) หรือ ""สูง (High)"" (4 ขั้นตอน) เพื่อปรับเวลาการสร้างภาพให้เข้ากับประสิทธิภาพของเครื่องคุณ
+- 🛠️ **การปรับให้เหมาะสมทางเทคนิค:** โมเดล AI สำหรับรูปภาพจะโหลดเข้าสู่ **RAM (หน่วยความจำ)** และประมวลผลผ่าน **CPU** โดยไม่ดึงหน่วยความจำวิดีโอ (VRAM) ไปใช้ เพื่อให้แน่ใจว่าจะไม่รบกวนประสิทธิภาพของ AI หลักในเกม (LLM) โดยจะใช้ RAM เพิ่มเติมประมาณ 5GB ซึ่งยังคงอยู่ภายในความต้องการขั้นต่ำอย่างเป็นทางการของ Steam
+- 📤 **แบ่งปันการผจญภัยของคุณ:** รูปภาพที่สร้างขึ้นทั้งหมดจะถูกบันทึกโดยอัตโนมัติ คุณสามารถค้นหาได้ในโฟลเดอร์: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **ตัวเลือกโมเดล (ขั้นสูง):** หากคุณเริ่มเกมด้วยพารามิเตอร์ `--advanced` ตอนนี้คุณสามารถเลือกโมเดล AI ที่จะใช้สร้างรูปภาพได้จากแผงลักษณะที่ปรากฏ (Appearance) สิ่งนี้เปิดโอกาสให้ผู้ชื่นชอบสามารถทดลองใช้ Stable Diffusion เวอร์ชันต่างๆ ที่ปรับให้เหมาะสมกับ OpenVINO (ไฟล์ .xml/.bin) ได้
+
+**การเล่าเรื่องและสมอง AI:**
+- 🧠 **จุดจบของการวนลูป:** มีการใช้ ""หลักการความจำ (Memory Doctrine)"" แบบใหม่ใน AI ตอนนี้มันสามารถแยกแยะระหว่าง ""ความทรงจำ"" (สิ่งที่เกิดขึ้นไปแล้ว) และ ""ปัจจุบัน"" (สิ่งที่กำลังเกิดขึ้น) ได้ดีขึ้น ซึ่งช่วยลดกรณีที่ AI พูดซ้ำไปซ้ำมาหรือติดขัด
+- 📜 **เอกสารประวัติศาสตร์:** ระบบจะนำเสนอความทรงจำของคุณต่อ AI ในรูปแบบ ""เอกสารประวัติศาสตร์แบบปิด"" ทำให้ง่ายต่อการใช้ข้อมูลนั้นเป็นจุดอ้างอิงเพื่อดำเนินเรื่องราวต่อไป
+- ⚡ **คำสั่งที่ปรับแต่งมาอย่างดี:** ปรับปรุงวิธีการที่เกมขอให้มีการบรรยายในภาษาของคุณ ซึ่งช่วยเพิ่มขีดความสามารถของโมเดลให้มีสมาธิกับความคิดสร้างสรรค์ได้มากขึ้น
+- 👁️ **จุดโฟกัสการเล่าเรื่อง:** เขียนระบบการรับรู้ของ AI ใหม่ ตอนนี้มันเข้าใจได้ดีขึ้นว่าองค์ประกอบใดเป็น ""พื้นหลังแบบคงที่"" และไม่ควรนำมากล่าวซ้ำโดยไม่จำเป็นในทุกย่อหน้า
+- 🔀 **การตัดสินใจที่ชัดเจนยิ่งขึ้น:** ตอนนี้ AI เสนอทางเลือกที่ชัดเจนยิ่งขึ้น คำแนะนำ (ปุ่ม) ของมันจะถูกแบ่งออกเป็นการสำรวจสภาพแวดล้อม (เจาะลึก) หรือการเปลี่ยนทิศทาง (แยกย้าย)
+- 🫵 **การสื่อสารโดยตรง:** มีการปรับปรุงคำสั่งพื้นฐานเพื่อให้แน่ใจว่า AI จะเรียกคุณว่า ""คุณ"" ซึ่งช่วยยกระดับความอินกับเกมให้ดียิ่งขึ้น
+
+**การสร้างตัวละคร:**
+- 🖼️ **ภาพบุคคลของตัวละคร:** เมื่อสร้างตัวละครด้วย AI ระบบจะพยายามสร้างภาพบุคคลตามอายุ อาชีพ และคำอธิบาย โปรดทราบว่านี่คือเวอร์ชันแรกเริ่ม และความสมจริง (โดยเฉพาะเรื่องอายุ) อาจแตกต่างกันไปขึ้นอยู่กับโมเดลที่ใช้ (ฉันยังคงทดสอบอยู่ แต่จุดเริ่มต้นถือว่าดีมาก)
+- 🎲 **การสุ่มที่เชื่อถือได้:** แก้ไขบั๊กที่ปุ่ม ""สร้างด้วย AI"" อาจล้มเหลวในการพยายามครั้งแรกและทำให้ช่องว่างเปล่า ตอนนี้ระบบการแก้ไขอย่างชาญฉลาดจะทำให้มั่นใจได้ว่าการตอบสนองนั้นถูกต้องเสมอ
+
+**การจัดการรูปภาพที่สร้างขึ้น:**
+- 🖼️ **แกลเลอรีภาพ AI:** แผงควบคุมใหม่ในเมนูไฟล์ (File) ที่จะแสดงภาพทั้งหมดที่ AI ได้สร้างขึ้นระหว่างการเล่นเกมของคุณ (ภาพบุคคล, พื้นหลัง) คุณสามารถกรองตามประเภทของรูปภาพหรือตามโลกได้
+- 🗑️ **เลือกลบได้:** เลือกรูปภาพหนึ่งภาพหรือหลายภาพแล้วลบออกหากคุณไม่ชอบ (เช่น ภาพที่ AI ตัดสินใจว่าการจอดรถบัสในคอกม้าของปราสาทเป็นความคิดที่ดี) ระบบจะล้างทั้งไฟล์และบันทึกภายใน
+- 📂 **การเข้าถึงโดยตรง:** ดับเบิลคลิกที่ภาพขนาดย่อใดก็ได้เพื่อเปิดโฟลเดอร์ที่เก็บไฟล์นั้น หากคุณเปิดโฟลเดอร์นั้นไว้แล้ว หน้าต่างเดิมจะถูกนำมาใช้ซ้ำ
+- 💾 **จดจำพื้นที่ของคุณ:** ขนาดของหน้าต่างแกลเลอรีจะถูกบันทึกโดยอัตโนมัติสำหรับการเล่นในครั้งต่อไป
+
+**ประสิทธิภาพสำหรับการตั้งค่าต่ำ (สำคัญสำหรับ GPU ที่มี VRAM น้อย):**
+- 🧠 **PSR - การกำกับดูแลแบบไฮบริด (Hybrid Governance):** ระบบใหม่ที่แบ่งการทำงานของ AI ออกเป็นสองขั้นตอน: การวางแผน (เชฟ) และการดำเนินการ (พ่อครัว) สิ่งนี้ช่วยให้โมเดลแบบโลคัลที่มี VRAM 8 GB สามารถทำงานได้โดยหลีกเลี่ยงการพังทลายเนื่องจากบริบทที่มากเกินไป (มากกว่า 12K โทเคน) แลกมากับความล่าช้าที่สูงขึ้น การจัดการกับ AI จะเปลี่ยนจากพรอมต์ (Prompt) เดียวไปเป็นชุดของพรอมต์ (ยิ่ง VRAM ต่ำ พรอมต์ก็จะยิ่งถูกสร้างมากขึ้น และใช้เวลาตอบสนองนานขึ้น)
+- ⚡ **การดำเนินการที่ชาญฉลาด:** ระบบจะตัดสินใจโดยอัตโนมัติว่าจะประมวลผลทั้งหมดในครั้งเดียว (Monolithic) หรือแบ่งเป็นส่วนๆ (Iterative) ตาม VRAM ที่คุณมี GPU ที่มี VRAM น้อยกว่าจะเปิดใช้งานโหมดแบ่งส่วนเฉพาะเมื่อจำเป็นเท่านั้น
+- 📊 **การปรับให้เหมาะสมแบบไดนามิก:** PSR จะลดภาระของโทเคนในระหว่างการสร้างภาพ ช่วยให้ผู้ใช้ที่มีการ์ดจอ 4GB สามารถสร้างตัวละครและสร้างเรื่องราวให้เสร็จสมบูรณ์ได้ ซึ่งก่อนหน้านี้อาจเกิดการค้าง
+- 🔄 **รักษาความสอดคล้อง:** แม้จะมีการแบ่งงาน แต่ระบบก็มีการแทรก ""ความตั้งใจหลัก (Master Intention)"" เข้าไป เพื่อไม่ให้ AI หลุดประเด็นจากสิ่งที่กำลังทำอยู่
+
+**เสียง AI (การปรับปรุงแบบเพิ่มพูน):**
+การสร้างเสียงแบบเรียลไทม์ในทุกภาษา (บางภาษามีข้อจำกัดมากกว่าภาษาอื่น โดยภาษาอังกฤษจะมีความหลากหลายของชนิดเสียงมากที่สุด)
+- 🗣️ **เสียงตะโกนตอนต่อสู้:** เมื่อเริ่มการต่อสู้กับศัตรู ตอนนี้จะมีประโยคเสียงตามบริบทดังขึ้นมาตอนเริ่มต้น
+- 🎭 **ประโยคไดนามิกตามบริบท:** เอนจิ้นสามารถสร้างเสียงพูดสั้นๆ สำหรับเหตุการณ์เฉพาะ (บริการ/การต่อสู้) ตามภาษา บรรยากาศ และโปรไฟล์ของตัวละคร
+- 🧠 **เทมเพลตเสียงภายใน:** มีการแยกเทมเพลตเทคนิคสำหรับเสียงออกจากระบบการเล่าเรื่องเพื่อหลีกเลี่ยงการรบกวนเนื้อเรื่อง
+- 🔊 **ความชัดเจนในการฟังที่มากขึ้น:** ปรับปรุงความสามารถในการทำความเข้าใจและจังหวะการพูดในการสังเคราะห์เสียง เพื่อให้ความสำคัญกับการออกเสียงที่เข้าใจง่าย
+
+**⚠️ ประกาศเกี่ยวกับความเข้ากันได้ (เซฟเกมเก่า):**
+- 🔄 เนื่องจากมีการเปลี่ยนแปลงภายในมากมายในกลไกกฎและระบบสภาพแวดล้อม **เซฟเกมและโลกที่บันทึกไว้ก่อนหน้านี้จะยังคงเล่นได้ (อาจจะ)** แต่ก็มีความเป็นไปได้สูงที่จะพบข้อผิดพลาดหรือพฤติกรรมที่ไม่คาดคิด **แนะนำให้สร้างโลกใหม่ที่หมดจด** เพื่อให้สามารถเพลิดเพลินกับการปรับปรุงทั้งหมดได้อย่างสมบูรณ์","การสร้างรูปภาพด้วย AI, การปรับปรุงการเล่าเรื่อง และการควบคุม"
+turkish,"**⚠️ DENEYSEL DAL (STEAM BETA)**
+Bu sürüm şu anda yalnızca Steam'in **Deneysel Dalında** mevcuttur. Etkinleştirmek için:
+1. Steam Kütüphanenizdeki **RolemIAster** üzerine sağ tıklayın.
+2. **Özellikler...** seçeneğini seçin.
+3. **Betalar** sekmesine gidin.
+4. ""Beta Katılımı"" kısmındaki açılır menüden **experimental** seçeneğini seçin.
+
+**Yenilik: Yapay Zeka Görüntü Oluşturmanın İlk Aşaması**
+- 🎨 **Görüntülerle Dünyanız:** Yapay Zeka ile görüntü oluşturma sisteminin ilk sürümünü entegre ettim. Siz oynadıkça sistem, oyununuzun atmosferine eşlik edecek portreler ve manzaralar oluşturmaya çalışır.
+- 🖼️ **Dinamik Arka Planlar:** Görüntüler oyununuzu durdurmadan arka planda oluşturulur. Arka planda, karakter kartlarında ve Kodeks'te aşamalı olarak belirdiklerini göreceksiniz.
+- 🧹 **Görüntü Yönetimi:** Oluşturulan ve beğenmediğiniz görüntüleri görüntülemek ve silmek için yeni panel.
+
+**Karakter Oluşturma İyileştirmeleri:**
+- ⚙️ **Daha Sağlam Rastgele Oluşturma:** YZ'nin karakterleri sıfırdan oluşturmak için kullandığı kural motorunu birleştirdim ve geliştirdim; böylece daha mantıklı envanterler (5 ila 10 tutarlı eşya) ve daha dengeli karakter sayfaları garanti ediliyor.
+- 🧠 **Bölünmüş Beyin:** YZ artık ne zaman sıfırdan bir karakter ""uydurması"" gerektiğini ve ne zaman sadece sizin yazdığınız biyografideki verileri çıkarması gerektiğini daha iyi anlıyor.
+- ⚡ **Size Göre Hız:** Görsel Ayarlarda yeni bölüm. Oluşturma süresini bilgisayarınızın gücüne göre ayarlamak için ""Hızlı"" (1 adım), ""Orta"" (2 adım) veya ""Yüksek"" (4 adım) arasından seçim yapın.
+- 🛠️ **Teknik Optimizasyon:** Görüntüler için YZ modeli **RAM'e (Bellek)** yüklenir ve video belleğini (VRAM) işgal etmeden **CPU** üzerinden işlenir. Bu, oyunun ana YZ'sinin (LLM) performansına müdahale etmemesini sağlar. Ek olarak yaklaşık 5GB RAM gerektirir ancak Steam'deki resmi minimum gereksinimler dahilinde kalır.
+- 📤 **Maceralarınızı Paylaşın:** Oluşturulan tüm görüntüler otomatik olarak kaydedilir. Bunları şu klasörde bulabilirsiniz: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Model Seçici (Gelişmiş):** Oyunu `--advanced` parametresiyle başlatırsanız, artık Görünüm panelinden görüntüler için hangi YZ modelini kullanacağınızı seçebilirsiniz. Bu, meraklıların OpenVINO için optimize edilmiş farklı Stable Diffusion sürümlerini (.xml/.bin dosyaları) denemelerine olanak tanır.
+
+**Anlatım ve YZ Beyni:**
+- 🧠 **Döngülerin Sonu:** YZ'ye yeni bir ""Hafıza Doktrini"" uygulandı. Artık ""hatıralar"" (geçmişte olanlar) ile ""şimdi"" (şu anda olanlar) arasındaki ayrımı daha iyi yapıyor. Bu, YZ'nin kendini tekrar ettiği veya takılıp kaldığı durumları azaltmaya yardımcı olur.
+- 📜 **Tarihi Arşivler:** Sistem hatıralarınızı YZ'ye ""Kapalı Tarihi Arşiv"" olarak sunar, bu da hikayeyi ilerletmek için bu bilgiyi referans olarak kullanmasını kolaylaştırır.
+- ⚡ **Optimize Edilmiş Talimatlar:** Oyunun sizin dilinizde anlatım talep etme şekli geliştirildi, böylece modelin kapasitesi yaratıcılığa odaklanmak üzere serbest bırakıldı.
+- 👁️ **Anlatı Odağı:** YZ'nin algısı yeniden yazıldı. Artık hangi unsurların ""statik arka plan"" olduğunu ve bunları her paragrafta gereksiz yere tekrarlamaması gerektiğini daha iyi anlıyor.
+- 🔀 **Daha Net Kararlar:** YZ artık daha belirgin kaçış yolları sunuyor. Önerileri (düğmeler), çevreyi araştırmaya (Derinleş) veya yön değiştirmeye (Ayrıl) odaklanacak şekilde ayrıldı.
+- 🫵 **Doğrudan Hitap:** YZ'nin size ""Sen"" diye hitap etmesini sağlamak için temel talimat ayarlandı, böylece kişisel atmosfer iyileştirildi.
+
+**Karakter Oluşturma:**
+- 🖼️ **Karakter Portreleri:** YZ ile bir karakter oluştururken sistem yaşına, mesleğine ve açıklamasına dayalı bir portre oluşturmaya çalışır. Bunun bir ilk sürüm olduğunu ve sadakatin (özellikle yaş konusunda) kullanılan modele göre değişebileceğini unutmayın. (Testlere devam ediyorum ama başlangıç iyi)
+- 🎲 **Güvenilir Rastgele Oluşturma:** ""YZ ile Oluştur"" düğmesinin ilk denemede başarısız olup alanları boş bırakmasına neden olan bir hata düzeltildi. Artık akıllı düzeltme sistemi, yanıtın her zaman geçerli olmasını sağlıyor.
+
+**Oluşturulan Görüntülerin Yönetimi:**
+- 🖼️ **YZ Görüntü Galerisi:** Dosya menüsünde, oyunlarınız sırasında YZ'nin oluşturduğu tüm görüntüleri (portreler, arka planlar) gösteren yeni panel. Görüntü türüne veya dünyaya göre filtreleme yapabilirsiniz.
+- 🗑️ **Seçmeli Silme:** Bir veya daha fazla görüntüyü seçin ve içinize sinmezse silin (belki de YZ'nin kale ahırına otobüs park etmenin iyi bir fikir olduğuna karar verdiği o görüntüyü). Sistem hem dosyayı hem de dahili kaydını temizler.
+- 📂 **Doğrudan Erişim:** Dosyanın bulunduğu klasörü açmak için herhangi bir küçük resme çift tıklayın. Klasör zaten açıksa aynı pencere tekrar kullanılır.
+- 💾 **Alanınızı Hatırlar:** Galeri penceresinin boyutu oturumlar arasında otomatik olarak kaydedilir.
+
+**Düşük Yapılandırmalarda Performans (Düşük VRAM'li GPU'lar için Önemli):**
+- 🧠 **PSR - Hibrit Yönetim:** YZ işini iki aşamaya bölen yeni sistem: Planlama (Şef) ve Yürütme (Aşçılar). Bu, 8 GB VRAM'e sahip yerel modellerin aşırı bağlam (+12K token) nedeniyle çökmesini önleyerek çalışmasını sağlar; ancak gecikme süresi artar. YZ ile etkileşim tek bir istemden (prompt) bir dizi isteme dönüşür (VRAM ne kadar düşükse o kadar çok istem oluşturulur ve yanıt süresi o kadar uzar).
+- ⚡ **Akıllı Yürütme:** Sistem, mevcut VRAM'inize göre her şeyi tek seferde (monolitik) mi yoksa parçalara ayırarak (yinelemeli) mı işleyeceğine otomatik olarak karar verir. Daha az VRAM'e sahip GPU'lar, parçalı modu yalnızca gerektiğinde etkinleştirir.
+- 📊 **Dinamik Optimizasyon:** PSR, oluşturma sırasında token yükünü azaltarak 4GB grafik kartına sahip kullanıcıların daha önce kilitlenen karakter oluşturma ve hikaye üretme işlemlerini tamamlamasına olanak tanır.
+- 🔄 **Korunan Tutarlılık:** İş bölünmesine rağmen sistem, YZ'nin ne yaptığının takibini kaybetmemesi için bir ""ana niyet"" enjekte eder.
+
+**YZ Sesleri (kademeli iyileştirme):**
+Tüm dillerde gerçek zamanlı ses oluşturma (bazı diller diğerlerinden daha sınırlıdır, ses türlerinde en çeşitli olan İngilizcedir)
+- 🗣️ **Sesli Savaş Çığlıkları:** Düşmanlara karşı savaş başlatıldığında artık bağlamsal bir giriş sesli cümlesi tetikleniyor.
+- 🎭 **Bağlama Göre Dinamik İfadeler:** Motor; dile, ortama ve karakter profiline göre belirli olaylar (hizmetler/savaş) için kısa ses satırları oluşturabilir.
+- 🧠 **Dahili Ses Şablonları:** Teknik ses şablonları, hikaye ile çakışmayı önlemek için anlatı sisteminden ayrıldı.
+- 🔊 **Duyumda Daha Yüksek Netlik:** Anlaşılır diksiyona öncelik vermek için sentezin anlaşılabilirliği ve vurgusu iyileştirildi.
+
+**⚠️ Uyumluluk Uyarısı (Önceki Kayıtlar):**
+- 🔄 Kural motoru ve ortam sistemindeki dahili değişikliklerin miktarı nedeniyle, **daha önce kaydedilen oyunlar ve dünyalar oynanabilir olmaya devam edecektir (muhtemelen)**, ancak hatalar veya beklenmedik davranışlar sergilemeleri çok muhtemeldir. Tüm iyileştirmelerin keyfini düzgün bir şekilde çıkarmak için **yeni ve temiz bir dünya yaratmanız önerilir**.","Yapay Zeka Görüntü Oluşturma, Anlatım İyileştirmeleri ve Kontrol"
+ukrainian,"**⚠️ ЕКСПЕРИМЕНТАЛЬНА ГІЛКА (БЕТА-ВЕРСІЯ STEAM)**
+Ця версія наразі доступна лише в **експериментальній гілці** Steam. Щоб активувати її:
+1. Натисніть правою кнопкою миші на **RolemIAster** у вашій бібліотеці Steam.
+2. Виберіть **Властивості...**
+3. Перейдіть на вкладку **Бета-версії**.
+4. У розділі ""Участь у бета-тестуванні"" виберіть **experimental** у випадному списку.
+
+**Нововведення: Перший етап генерації зображень ШІ**
+- 🎨 **Ваш світ у зображеннях:** Я інтегрував початкову систему генерації зображень за допомогою штучного інтелекту. Під час гри система намагається генерувати портрети та пейзажі, які відповідають атмосфері вашого проходження.
+- 🖼️ **Динамічні фони:** Зображення генеруються у фоновому режимі, не зупиняючи гру. Ви побачите, як вони поступово з'являються на фоні, на картках персонажів та в Кодексі.
+- 🧹 **Керування зображеннями:** Нова панель для перегляду та видалення згенерованих зображень, які вам не сподобалися.
+
+**Покращення в генерації персонажів:**
+- ⚙️ **Надійніша випадкова генерація:** Я об'єднав та вдосконалив рушій правил, який ШІ використовує для створення персонажів з нуля, гарантуючи логічніший інвентар (від 5 до 10 узгоджених предметів) та збалансованіші картки персонажів.
+- 🧠 **Розділений мозок:** ШІ тепер краще розуміє, коли йому слід ""вигадати"" персонажа з нуля, а коли обмежитися вилученням даних з біографії, яку ви написали.
+- ⚡ **Швидкість на ваш вибір:** Новий розділ у візуальних налаштуваннях. Вибирайте між ""Швидка"" (1 крок), ""Середня"" (2 кроки) або ""Висока"" (4 кроки), щоб адаптувати час генерації до потужності вашого комп'ютера.
+- 🛠️ **Технічна оптимізація:** Модель ШІ для зображень завантажується в **ОЗП (RAM)** та обробляється через **процесор (CPU)**, не займаючи відеопам'ять (VRAM). Це гарантує, що вона не перешкоджатиме продуктивності основного ШІ гри (LLM). Потребує близько 5 ГБ додаткової оперативної пам'яті, залишаючись у межах офіційних мінімальних системних вимог Steam.
+- 📤 **Діліться своїми пригодами:** Усі згенеровані зображення зберігаються автоматично. Ви знайдете їх у папці: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Вибір моделей (для досвідчених):** Якщо ви запустите гру з параметром `--advanced`, тепер ви зможете вибрати, яку модель ШІ використовувати для зображень, з панелі зовнішнього вигляду. Це дозволяє ентузіастам тестувати різні версії Stable Diffusion, оптимізовані для OpenVINO (файли .xml/.bin).
+
+**Оповідь та мозок ШІ:**
+- 🧠 **Кінець циклам:** У ШІ впроваджено нову ""Доктрину пам'яті"". Тепер він краще розрізняє ""спогади"" (те, що вже сталося) і ""теперішнє"" (те, що відбувається зараз). Це допомагає зменшити кількість випадків, коли ШІ повторювався або застрягав.
+- 📜 **Історичні архіви:** Система подає ваші спогади ШІ як ""Закритий історичний архів"", що полегшує використання цієї інформації як орієнтиру для розвитку сюжету.
+- ⚡ **Оптимізовані інструкції:** Покращено спосіб, у який гра запитує оповідь вашою мовою, вивільняючи ресурси моделі для зосередження на креативності.
+- 👁️ **Наративний фокус:** Переписано сприйняття ШІ. Тепер він краще розуміє, які елементи є ""статичним фоном"", і не повинен без потреби повторювати їх у кожному абзаці.
+- 🔀 **Чіткіші рішення:** Тепер ШІ пропонує більш визначені шляхи виходу. Його підказки (кнопки) поділяються на дослідження оточення (Заглибитися) або зміну курсу (Відхилитися).
+- 🫵 **Пряме звернення:** Базову інструкцію було скориговано, щоб гарантувати, що ШІ звертатиметься до вас на ""Ти"", покращуючи особисте занурення.
+
+**Створення персонажа:**
+- 🖼️ **Портрети персонажів:** Під час генерації персонажа за допомогою ШІ система намагається створити портрет на основі його віку, професії та опису. Зверніть увагу, що це початкова версія, і точність (особливо щодо віку) може відрізнятися залежно від використовуваної моделі. (я продовжую тестувати, але початок хороший)
+- 🎲 **Надійна випадкова генерація:** Виправлено помилку, через яку кнопка ""Згенерувати за допомогою ШІ"" могла не спрацювати з першої спроби, залишаючи поля порожніми. Тепер система інтелектуального виправлення гарантує, що відповідь завжди буде коректною.
+
+**Керування згенерованими зображеннями:**
+- 🖼️ **Галерея зображень ШІ:** Нова панель у меню ""Файл"", яка показує всі зображення, згенеровані ШІ під час ваших ігор (портрети, фони). Ви можете фільтрувати їх за типом зображення або за світом.
+- 🗑️ **Вибіркове видалення:** Виберіть одне або кілька зображень і видаліть їх, якщо вони вас не влаштовують (можливо, те, де ШІ вирішив, що припаркувати автобус у стайні замку — хороша ідея). Система очищає як файл, так і свій внутрішній реєстр.
+- 📂 **Швидкий доступ:** Двічі клацніть на будь-яку мініатюру, щоб відкрити папку, де знаходиться файл. Якщо папка вже відкрита, буде використано те саме вікно.
+- 💾 **Запам'ятовування простору:** Розмір вікна галереї автоматично зберігається між сесіями.
+
+**Продуктивність на слабких конфігураціях (Важливо для відеокарт з малим обсягом VRAM):**
+- 🧠 **PSR - Гібридне керування:** Нова система, яка поділяє роботу ШІ на два етапи: Планування (Шеф) та Виконання (Кухарі). Це дозволяє локальним моделям з 8 ГБ VRAM працювати, уникаючи збоїв через переповнення контексту (+12K токенів), ціною більшої затримки. Спілкування з ШІ переходить від єдиного запиту до серії запитів (чим менше VRAM, тим більше запитів буде згенеровано і тим довшим буде час відповіді).
+- ⚡ **Розумне виконання:** Система автоматично вирішує, чи обробляти все відразу (монолітно), чи ділити на частини (ітеративно), залежно від доступного обсягу VRAM. Відеокарти з меншим обсягом VRAM активують покроковий режим лише за необхідності.
+- 📊 **Динамічна оптимізація:** PSR зменшує навантаження токенів під час генерації, дозволяючи користувачам із відеокартами на 4 ГБ завершувати створення персонажів і генерування історії, які раніше зависали.
+- 🔄 **Збереження узгодженості:** Незважаючи на поділ роботи, система впроваджує ""головний намір"", щоб ШІ не втратив суть того, що він робив.
+
+**Голоси ШІ (поступове вдосконалення):**
+Генерація голосів у реальному часі всіма мовами (деякі мови більш обмежені, ніж інші, найрізноманітнішою за типами голосів є англійська)
+- 🗣️ **Озвучені бойові кличі:** Під час початку бою з ворогами тепер запускається контекстна голосова фраза.
+- 🎭 **Динамічні фрази за контекстом:** Рушій може генерувати короткі голосові репліки для конкретних подій (послуги/бій) залежно від мови, атмосфери та профілю персонажа.
+- 🧠 **Внутрішні голосові шаблони:** Технічні шаблони голосу були відокремлені від наративної системи, щоб уникнути втручання в історію.
+- 🔊 **Більша чіткість під час прослуховування:** Покращено розбірливість і просодію синтезу, щоб надати пріоритет зрозумілій дикції.
+
+**⚠️ Попередження про сумісність (попередні збереження):**
+- 🔄 Через велику кількість внутрішніх змін у рушії правил та системі атмосфери, **раніше збережені ігри та світи залишаться придатними для гри (ймовірно)**, але дуже ймовірно, що в них виникнуть помилки або несподівана поведінка. **Рекомендується створити новий чистий світ**, щоб належним чином насолодитися всіма покращеннями.","Генерація зображень ШІ, покращення оповіді та керування"
+vietnamese,"**⚠️ NHÁNH THỬ NGHIỆM (BETA TRÊN STEAM)**
+Phiên bản này hiện chỉ có sẵn trên **Nhánh Thử nghiệm** của Steam. Để kích hoạt:
+1. Nhấp chuột phải vào **RolemIAster** trong Thư viện Steam của bạn.
+2. Chọn **Properties...** (Thuộc tính)
+3. Đi đến tab **Betas**.
+4. Tại mục ""Beta Participation"" (Tham gia beta), chọn **experimental** trong danh sách thả xuống.
+
+**Mới: Giai đoạn đầu của Tạo ảnh bằng AI**
+- 🎨 **Thế giới của bạn qua Hình ảnh:** Tôi đã tích hợp hệ thống tạo ảnh ban đầu bằng Trí tuệ Nhân tạo. Khi bạn chơi, hệ thống cố gắng tạo ra chân dung và phong cảnh phù hợp với bối cảnh ván chơi của bạn.
+- 🖼️ **Hình nền Động:** Hình ảnh được tạo trong nền mà không làm gián đoạn trò chơi. Bạn sẽ thấy chúng dần xuất hiện ở hình nền, trên thẻ nhân vật và trong Codex.
+- 🧹 **Quản lý Hình ảnh:** Bảng điều khiển mới để xem và xóa những hình ảnh đã tạo mà bạn không thích.
+
+**Cải tiến trong Tạo Nhân vật:**
+- ⚙️ **Tạo Ngẫu nhiên Chắc chắn hơn:** Tôi đã thống nhất và cải thiện công cụ quy tắc mà AI sử dụng để tạo nhân vật từ đầu, đảm bảo kho đồ hợp lý hơn (5 đến 10 vật phẩm mạch lạc) và bảng chỉ số cân bằng hơn.
+- 🧠 **Bộ não Phân tách:** AI giờ đây hiểu rõ hơn khi nào cần ""bịa"" một nhân vật từ đầu và khi nào nên giới hạn việc trích xuất dữ liệu từ tiểu sử mà chính bạn đã viết.
+- ⚡ **Tốc độ Tùy chỉnh:** Phần mới trong Cấu hình Hình ảnh. Chọn giữa ""Nhanh"" (1 bước), ""Trung bình"" (2 bước) hoặc ""Cao"" (4 bước) để điều chỉnh thời gian tạo phù hợp với sức mạnh thiết bị của bạn.
+- 🛠️ **Tối ưu hóa Kỹ thuật:** Mô hình AI cho hình ảnh được tải vào **RAM (Memory)** và xử lý qua **CPU**, không chiếm bộ nhớ video (VRAM). Điều này đảm bảo nó không can thiệp vào hiệu suất của AI chính trong trò chơi (LLM). Cần thêm khoảng 5GB RAM, vẫn nằm trong yêu cầu tối thiểu chính thức của Steam.
+- 📤 **Chia sẻ Cuộc phiêu lưu của bạn:** Tất cả hình ảnh đã tạo được lưu tự động. Bạn sẽ tìm thấy chúng trong thư mục: `%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **Bộ chọn Mô hình (Nâng cao):** Nếu bạn khởi động trò chơi với tham số `--advanced`, giờ đây bạn có thể chọn mô hình AI nào để sử dụng cho hình ảnh từ bảng Giao diện. Điều này cho phép những người đam mê thử nghiệm các phiên bản Stable Diffusion khác nhau được tối ưu hóa cho OpenVINO (tệp .xml/.bin).
+
+**Cốt truyện và Bộ não AI:**
+- 🧠 **Chấm dứt Vòng lặp:** Một ""Học thuyết Trí nhớ"" mới đã được cấy vào AI. Giờ đây nó phân biệt tốt hơn giữa ""ký ức"" (những gì đã xảy ra) và ""hiện tại"" (những gì đang xảy ra). Điều này giúp giảm các trường hợp AI lặp lại hoặc bị kẹt.
+- 📜 **Hồ sơ Lịch sử:** Hệ thống trình bày ký ức của bạn cho AI dưới dạng ""Hồ sơ Lịch sử Đóng"", giúp AI dễ dàng sử dụng thông tin đó làm tài liệu tham khảo để phát triển câu chuyện.
+- ⚡ **Chỉ dẫn Tối ưu hóa:** Cách trò chơi yêu cầu kể chuyện bằng ngôn ngữ của bạn đã được cải thiện, giải phóng năng lực của mô hình để tập trung vào sự sáng tạo.
+- 👁️ **Tiêu điểm Cốt truyện:** Nhận thức của AI đã được viết lại. Giờ đây nó hiểu rõ hơn yếu tố nào là ""nền tĩnh"" và không nên lặp lại chúng một cách không cần thiết trong mỗi đoạn văn.
+- 🔀 **Quyết định Rõ ràng hơn:** AI giờ đây cung cấp các lối thoát rõ ràng hơn. Các gợi ý (nút bấm) được chia thành điều tra môi trường (Đi sâu) hoặc thay đổi hướng đi (Phân tách).
+- 🫵 **Xưng hô Trực tiếp:** Chỉ dẫn cơ bản đã được điều chỉnh để đảm bảo AI xưng hô với bạn là ""Bạn"", cải thiện sự nhập tâm cá nhân.
+
+**Tạo Nhân vật:**
+- 🖼️ **Chân dung Nhân vật:** Khi tạo một nhân vật bằng AI, hệ thống cố gắng tạo một chân dung dựa trên tuổi, nghề nghiệp và mô tả. Lưu ý rằng đây là phiên bản ban đầu và độ trung thực (đặc biệt là về tuổi tác) có thể thay đổi tùy theo mô hình được sử dụng. (tôi vẫn đang thử nghiệm nhưng khởi đầu khá tốt)
+- 🎲 **Tạo Ngẫu nhiên Đáng tin cậy:** Đã sửa lỗi nút ""Tạo bằng AI"" có thể bị lỗi trong lần thử đầu tiên, để trống các trường. Giờ đây hệ thống sửa lỗi thông minh đảm bảo phản hồi luôn hợp lệ.
+
+**Quản lý Hình ảnh Đã tạo:**
+- 🖼️ **Thư viện Ảnh AI:** Bảng mới trong menu Tệp (File) hiển thị tất cả hình ảnh mà AI đã tạo trong các ván chơi của bạn (chân dung, hình nền). Bạn có thể lọc theo loại ảnh hoặc theo thế giới.
+- 🗑️ **Xóa Có chọn lọc:** Chọn một hoặc nhiều hình ảnh và xóa chúng nếu bạn không ưng ý (có thể là tấm mà AI quyết định đỗ xe buýt trong chuồng ngựa lâu đài là ý hay). Hệ thống sẽ dọn dẹp cả tệp tin và nhật ký nội bộ của nó.
+- 📂 **Truy cập Trực tiếp:** Nhấp đúp vào bất kỳ hình thu nhỏ nào để mở thư mục chứa tệp. Nếu bạn đã mở thư mục đó, cửa sổ cũ sẽ được sử dụng lại.
+- 💾 **Ghi nhớ Không gian của bạn:** Kích thước cửa sổ thư viện được lưu tự động giữa các phiên làm việc.
+
+**Hiệu suất trên Cấu hình Thấp (Quan trọng cho GPU ít VRAM):**
+- 🧠 **PSR - Quản trị Lai:** Hệ thống mới chia công việc của AI thành hai giai đoạn: Lập kế hoạch (Bếp trưởng) và Thực thi (Đầu bếp). Điều này cho phép các mô hình cục bộ với 8 GB VRAM hoạt động, tránh sự cố sập do quá tải ngữ cảnh (+12K token), đổi lại độ trễ sẽ cao hơn, việc tương tác với AI chuyển từ một câu lệnh đơn lẻ sang một chuỗi các câu lệnh (VRAM càng thấp thì càng tạo ra nhiều câu lệnh và thời gian phản hồi càng lâu).
+- ⚡ **Thực thi Thông minh:** Hệ thống tự động quyết định xử lý tất cả cùng một lúc (nguyên khối) hay chia nhỏ thành các phần (lặp lại) tùy thuộc vào VRAM khả dụng của bạn. GPU có ít VRAM hơn chỉ kích hoạt chế độ chia nhỏ khi cần thiết.
+- 📊 **Tối ưu hóa Động:** PSR giảm tải token trong quá trình tạo, cho phép người dùng có card đồ họa 4GB hoàn thành việc tạo nhân vật và tạo cốt truyện mà trước đây bị chặn.
+- 🔄 **Duy trì Sự mạch lạc:** Mặc dù chia nhỏ công việc, hệ thống vẫn tiêm vào một ""ý định chủ đạo"" để AI không bị mất mạch những gì nó đang làm.
+
+**Giọng nói AI (cải tiến gia tăng):**
+Tạo giọng nói thời gian thực bằng mọi ngôn ngữ (một số ngôn ngữ bị hạn chế hơn so với những ngôn ngữ khác, đa dạng nhất về loại giọng là tiếng Anh)
+- 🗣️ **Tiếng thét Chiến đấu có Giọng nói:** Khi bắt đầu chiến đấu chống lại kẻ thù thù địch, một câu thoại ngữ cảnh giờ đây sẽ được kích hoạt khi vào trận.
+- 🎭 **Câu thoại Động theo Ngữ cảnh:** Công cụ có thể tạo ra các dòng thoại ngắn cho các sự kiện cụ thể (dịch vụ/chiến đấu) tùy theo ngôn ngữ, bối cảnh và hồ sơ nhân vật.
+- 🧠 **Mẫu Giọng nói Nội bộ:** Các mẫu kỹ thuật giọng nói đã được tách khỏi hệ thống cốt truyện để tránh can thiệp vào câu chuyện.
+- 🔊 **Nghe Rõ ràng hơn:** Cải thiện độ dễ hiểu và ngữ điệu của quá trình tổng hợp để ưu tiên phát âm dễ hiểu.
+
+**⚠️ Cảnh báo Tương thích (Các ván chơi trước):**
+- 🔄 Do số lượng thay đổi nội bộ trong công cụ quy tắc và hệ thống bối cảnh, các **thế giới và ván chơi đã lưu trước đây vẫn có thể chơi được (có khả năng)**, nhưng rất có thể sẽ xuất hiện lỗi hoặc hành vi không mong muốn. **Khuyên dùng tạo một thế giới mới sạch sẽ** để tận hưởng tất cả các cải tiến một cách chính xác.","Tạo ảnh bằng AI, Cải thiện Cốt truyện và Kiểm soát"
+schinese,"**⚠️ 实验分支（Steam测试版）**
+此版本目前仅在Steam的**实验分支**（Experimental）提供。要激活它：
+1. 在你的Steam游戏库中右键点击**RolemIAster**。
+2. 选择**属性...**
+3. 进入**测试版**选项卡。
+4. 在“参与测试”下拉菜单中，选择**experimental**。
+
+**新功能：AI图像生成第一阶段**
+- 🎨 **图绘你的世界：** 我整合了初始的AI图像生成系统。在游玩时，系统会尝试生成与你游戏背景相符的肖像和风景。
+- 🖼️ **动态背景：** 图像在后台生成，不会打断你的游戏。你将看到它们逐渐出现在背景、角色卡和法典中。
+- 🧹 **图像管理：** 新增面板，用于查看和删除你不喜欢的生成图像。
+
+**角色生成优化：**
+- ⚙️ **更可靠的随机创建：** 我统一并改进了AI用于从零开始创建角色的规则引擎，确保更符合逻辑的物品栏（5到10个连贯的物品）以及更平衡的角色卡。
+- 🧠 **分离式大脑：** AI现在能更好地理解何时应该从零“虚构”一个角色，何时应该仅仅提取你自己编写的背景故事数据。
+- ⚡ **量身定制的速度：** “视觉设置”中新增区块。可在“快速”（1步）、“中等”（2步）或“高级”（4步）之间选择，以根据你的电脑配置调整生成时间。
+- 🛠️ **技术优化：** 图像AI模型加载到**系统内存（RAM）**中并通过**CPU**处理，不占用显存（VRAM）。这确保了它不会干扰游戏主AI（LLM）的性能。需要大约额外的5GB内存，仍保持在Steam官方最低配置要求内。
+- 📤 **分享你的冒险：** 所有生成的图像都会自动保存。你可以在此文件夹中找到它们：`%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **模型选择器（高级）：** 如果使用 `--advanced` 启动参数运行游戏，现在可以从“外观”面板中选择用于图像的AI模型。这允许发烧友测试为OpenVINO优化的不同版本的Stable Diffusion（.xml/.bin 文件）。
+
+**叙事与AI大脑：**
+- 🧠 **终结死循环：** 为AI引入了新的“记忆法则”。它现在能更好地区分“回忆”（过去发生的事）和“现在”（正在发生的事）。这有助于减少AI重复或卡住的情况。
+- 📜 **历史档案：** 系统将你的记忆作为“封闭历史档案”呈现给AI，使其更容易使用这些信息作为推进剧情的参考。
+- ⚡ **指令优化：** 改进了游戏请求以你的语言进行叙事的方式，释放模型算力以专注于创造力。
+- 👁️ **叙事焦点：** 重写了AI的感知机制。它现在能更好地理解哪些元素是“静态背景”，并且不应在每个段落中进行不必要的重复。
+- 🔀 **更清晰的决策：** AI现在提供更明确的推进路线。它的建议（按钮）分为调查环境（深入）或改变方向（发散）。
+- 🫵 **直接称呼：** 调整了基础指令，以确保AI用“你”来称呼玩家，提升个人沉浸感。
+
+**角色创建：**
+- 🖼️ **角色肖像：** 使用AI生成角色时，系统会尝试根据其年龄、职业和描述创建肖像。请注意这是初始版本，保真度（尤其是年龄）可能会因所使用的模型而异。（我仍在进行测试，但起步表现不错）
+- 🎲 **可靠的随机生成：** 修复了“使用AI生成”按钮在第一次尝试时可能失败并留下空白字段的错误。现在智能纠错系统可确保返回的结果始终有效。
+
+**生成图像管理：**
+- 🖼️ **AI图像库：** 在文件菜单中新增面板，显示AI在你游戏过程中生成的所有图像（肖像、背景）。你可以按图像类型或世界进行筛选。
+- 🗑️ **选择性删除：** 如果你不满意，可以选择一张或多张图像并将其删除（也许是那张AI觉得把公交车停在城堡马厩里是个好主意的图）。系统会同时清除文件及其内部记录。
+- 📂 **快捷访问：** 双击任何缩略图即可打开文件所在的文件夹。如果文件夹已打开，将重复使用同一个窗口。
+- 💾 **记住你的空间：** 图像库窗口的尺寸现在会在会话之间自动保存。
+
+**低配置性能（对低显存GPU很重要）：**
+- 🧠 **PSR - 混合治理：** 全新系统，将AI的工作分为两个阶段：规划（主厨）和执行（厨师）。这使得8GB显存的本地模型能够运行，避免因上下文过多（+12K tokens）而崩溃，代价是延迟会更高。与AI的交互从单个提示词转变为一系列提示词（显存越低，生成的提示词越多，响应时间越长）。
+- ⚡ **智能执行：** 系统会根据你的可用显存自动决定是一次性处理所有内容（单体模式），还是分段处理（迭代模式）。显存较少的GPU仅在必要时激活分段模式。
+- 📊 **动态优化：** PSR降低了生成过程中的token负载，让使用4GB显卡的玩家能够顺利完成以前会卡死的角色创建和剧情生成。
+- 🔄 **保持连贯性：** 尽管拆分了工作，系统会注入一个“主意图”，让AI不会丢失它正在进行的主线。
+
+**AI语音（增量改进）：**
+所有语言的实时语音生成（某些语言的限制比其他语言大，语音类型最丰富的是英语）
+- 🗣️ **语音战吼：** 在与敌对目标开始战斗时，现在会触发一句根据上下文生成的开场语音。
+- 🎭 **基于上下文的动态语音：** 引擎可以根据语言、环境和角色设定，为特定事件（服务/战斗）生成简短的语音台词。
+- 🧠 **内部语音模板：** 已将语音的技术模板与叙事系统分离，以避免干扰剧情。
+- 🔊 **聆听更清晰：** 提高了语音合成的清晰度和韵律，优先确保发音容易理解。
+
+**⚠️ 兼容性警告（以前的存档）：**
+- 🔄 由于规则引擎和环境系统进行了大量内部更改，**以前保存的存档和世界仍可继续游玩（可能）**，但极有可能出现错误或意外行为。**强烈建议创建一个干净的新世界**，以便正确体验所有优化与改进。",AI图像生成、叙事改进与控制
+tchinese,"**⚠️ 實驗性分支（STEAM BETA）**
+此版本目前僅在 Steam 的 **實驗性分支（Experimental Branch）** 中提供。啟用方法：
+1. 在 Steam 收藏庫中右鍵點擊 **RolemIAster**。
+2. 選擇 **內容...（Properties...）**
+3. 前往 **測試版（Betas）** 頁籤。
+4. 在「測試版參與」的下拉選單中選擇 **experimental**。
+
+**新功能：AI 圖像生成第一階段**
+- 🎨 **圖像化的世界：** 我整合了初始的人工智慧圖像生成系統。在你遊玩時，系統會嘗試生成與遊戲氛圍相符的肖像和風景。
+- 🖼️ **動態背景：** 圖像會在背景生成，不會中斷遊戲。你會看到它們逐漸出現在背景、角色卡和聖典（Codex）中。
+- 🧹 **圖像管理：** 新增面板，用於查看並刪除你不喜歡的生成圖像。
+
+**角色生成改進：**
+- ⚙️ **更穩健的隨機生成：** 我統一並改進了 AI 從零創建角色時使用的規則引擎，確保物品欄更合邏輯（5 到 10 個連貫的物品）且數值更平衡。
+- 🧠 **大腦分工：** AI 現在更能理解何時該從零「發明」一個角色，何時該僅限於提取你所寫的傳記資料。
+- ⚡ **自訂速度：** 視覺設定中的新區塊。選擇「快速」（1 步）、「中等」（2 步）或「高」（4 步），根據你的配備效能調整生成時間。
+- 🛠️ **技術優化：** 圖像 AI 模型加載到 **RAM（記憶體）** 並通過 **CPU** 處理，不佔用視訊記憶體（VRAM）。這保證了它不會干擾遊戲主 AI（LLM）的效能。需要額外約 5GB 的 RAM，仍保持在 Steam 官方最低需求內。
+- 📤 **分享你的冒險：** 所有生成的圖像都會自動儲存。路徑位於：`%APPDATA%/RolemIAster/custom_assets/images`
+- 🔬 **模型選擇器（進階）：** 如果使用 `--advanced` 參數啟動遊戲，現在可以從外觀面板選擇用於圖像的 AI 模型。這讓愛好者可以測試針對 OpenVINO 優化的不同 Stable Diffusion 版本（.xml/.bin 檔案）。
+
+**敘事與 AI 大腦：**
+- 🧠 **終結循環：** 在 AI 中植入了新的「記憶原則」。現在它能更好地區分「記憶」（過去發生的事）和「現在」（正在發生的事）。這有助於減少 AI 重複或卡住的情況。
+- 📜 **歷史檔案：** 系統將你的記憶作為「封閉歷史檔案」呈現給 AI，使其更容易引用該資訊來推進故事。
+- ⚡ **指令優化：** 改進了遊戲請求目標語言敘述的方式，釋放模型容量以專注於創造力。
+- 👁️ **敘事焦點：** 重寫了 AI 的感知能力。現在它更理解哪些元素是「靜態背景」，不應在每個段落中不必要地重複。
+- 🔀 **更明確的決策：** AI 現在提供更明確的行動路徑。它的建議（按鈕）分為調查環境（深入）或改變方向（分歧）。
+- 🫵 **直接稱呼：** 調整了基礎指令，確保 AI 用「你」來稱呼玩家，提升個人沉浸感。
+
+**角色創建：**
+- 🖼️ **角色肖像：** 使用 AI 生成角色時，系統會嘗試根據年齡、職業和描述創建肖像。請注意這是初始版本，真實度（特別是年齡）可能會因使用的模型而異。（我仍在測試，但開端不錯）
+- 🎲 **可靠的隨機生成：** 修正了「使用 AI 生成」按鈕在第一次嘗試時可能失敗並留空欄位的錯誤。現在智慧修正系統確保回應始終有效。
+
+**生成圖像管理：**
+- 🖼️ **AI 圖像庫：** 檔案選單中的新面板，顯示 AI 在遊戲過程中生成的所有圖像（肖像、背景）。你可以按圖像類型或世界進行篩選。
+- 🗑️ **選擇性刪除：** 選擇一張或多張圖像，如果不滿意就刪除它們（也許是 AI 決定把公車停在城堡馬廄的那張）。系統會同時清除檔案及其內部記錄。
+- 📂 **直接存取：** 雙擊任何縮圖以打開檔案所在的資料夾。如果你已經打開了該資料夾，將重複使用同一個視窗。
+- 💾 **記住視窗位置：** 圖庫視窗的大小會在不同次遊玩之間自動儲存。
+
+**低配置效能（對於 VRAM 較少的 GPU 很重要）：**
+- 🧠 **PSR - 混合治理：** 將 AI 工作分為兩個階段的新系統：規劃（主廚）和執行（廚師）。這允許擁有 8GB VRAM 的本地模型運作並避免因上下文過多（+12K token）而崩潰，代價是延遲較高。與 AI 的互動從單一提示詞變為一系列提示詞（VRAM 越少，生成的提示詞數量越多，回應時間越長）。
+- ⚡ **智慧執行：** 系統會根據你的可用 VRAM 自動決定是一次性處理（單體式）還是分部分處理（迭代式）。VRAM 較少的 GPU 僅在必要時啟用分部模式。
+- 📊 **動態優化：** PSR 降低了生成過程中的 token 負載，允許擁有 4GB 顯示卡的用戶完成以前會卡住的角色創建和故事生成。
+- 🔄 **保持連貫性：** 儘管分工處理，系統會注入「主導意圖」，以免 AI 忘記原本正在做什麼。
+
+**AI 語音（增量改進）：**
+所有語言的即時語音生成（某些語言比其他語言受限，語音類型最豐富的是英語）
+- 🗣️ **語音戰吼：** 當開始與敵對敵人戰鬥時，現在會觸發一句上下文相關的語音。
+- 🎭 **上下文動態短語：** 引擎可以根據語言、背景和角色檔案，為特定事件（服務/戰鬥）生成簡短語音。
+- 🧠 **內部語音模板：** 技術語音模板已與敘事系統分離，以避免干擾故事。
+- 🔊 **聽覺清晰度提升：** 改進了合成的可懂度和韻律，優先考慮清晰的咬字。
+
+**⚠️ 相容性警告（舊存檔）：**
+- 🔄 由於規則引擎和環境系統進行了大量內部更改，**先前儲存的遊戲和世界仍可遊玩（可能）**，但極有可能出現錯誤或意想不到的行為。**建議創建一個乾淨的新世界**，以正確體驗所有改進。",AI 圖像生成、敘事改進與控制
