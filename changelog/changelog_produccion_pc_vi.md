@@ -1,271 +1,123 @@
 ****************************************************************************************************
-24/02/2026 03:02 - Tạo ảnh bằng AI, Cải thiện Cốt truyện và Kiểm soát - Beta_v058
+24/02/2026 12:32 - Tạo Ảnh Bằng AI, Cải Thiện Dẫn Chuyện và Kiểm Soát - Beta_v058
+****************************************************************************************************
+- What's New (VI):
+  **Mới: Giai đoạn 2 của Tính năng Tạo Ảnh Bằng AI**
+  - 🎨 **Thế giới của bạn qua hình ảnh:** Tôi đã tích hợp hệ thống tạo ảnh ban đầu bằng Trí tuệ Nhân tạo. Khi bạn chơi, hệ thống sẽ cố gắng tạo ra các chân dung và phong cảnh phù hợp với bối cảnh ván game của bạn.
+  - 🖼️ **Hình nền động:** Hình ảnh được tạo trong nền mà không làm gián đoạn trò chơi. Bạn sẽ thấy chúng dần xuất hiện ở phông nền, trên thẻ nhân vật và trong Códice.
+  - 🧹 **Quản lý hình ảnh:** Bảng điều khiển mới để xem và xóa các hình ảnh đã tạo mà bạn không thích.
+  
+  **Cải thiện Tạo Nhân vật:**
+  - ⚙️ **Tạo ngẫu nhiên ổn định hơn:** Tôi đã thống nhất và cải thiện bộ quy tắc mà AI sử dụng để tạo nhân vật từ con số không, đảm bảo kho đồ hợp lý hơn (5 đến 10 vật phẩm gắn kết) và chỉ số cân bằng hơn.
+  - 🧠 **Bộ não phân tách:** AI giờ đây hiểu rõ hơn khi nào cần "sáng tạo" một nhân vật mới hoàn toàn và khi nào chỉ cần trích xuất dữ liệu từ tiểu sử do chính bạn viết.
+  - ⚡ **Tốc độ theo ý muốn:** Mục mới trong Cài đặt Hình ảnh. Chọn giữa "Nhanh" (1 bước), "Trung bình" (2 bước) hoặc "Cao" (4 bước) để điều chỉnh thời gian tạo ảnh phù hợp với cấu hình máy tính của bạn.
+  - 🛠️ **Tối ưu hóa kỹ thuật:** Mô hình AI tạo ảnh được nạp vào **RAM (Bộ nhớ)** và xử lý qua **CPU**, không chiếm dụng bộ nhớ đồ họa (VRAM). Điều này đảm bảo không ảnh hưởng đến hiệu suất của AI chính trong game (LLM). Yêu cầu thêm khoảng 5GB RAM, vẫn nằm trong cấu hình tối thiểu chính thức trên Steam.
+  - 📤 **Chia sẻ cuộc phiêu lưu:** Tất cả hình ảnh đã tạo được lưu tự động. Bạn có thể tìm thấy chúng tại thư mục: `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Trình chọn mô hình (Nâng cao):** Nếu bạn khởi động trò chơi với tham số `--advanced`, giờ đây bạn có thể chọn mô hình AI nào sẽ được sử dụng để tạo ảnh từ bảng Giao diện. Điều này cho phép những người đam mê thử nghiệm các phiên bản Stable Diffusion khác nhau được tối ưu hóa cho OpenVINO (tệp .xml/.bin).
+  
+  **Dẫn chuyện và Bộ não AI:**
+  - 🧠 **Chấm dứt vòng lặp:** Một "Học thuyết Trí nhớ" mới đã được triển khai cho AI. Giờ đây nó phân biệt tốt hơn giữa "ký ức" (những gì đã xảy ra) và "hiện tại" (những gì đang diễn ra). Điều này giúp giảm thiểu các trường hợp AI bị lặp lại hoặc bị kẹt.
+  - 📜 **Tài liệu lịch sử:** Hệ thống trình bày ký ức của bạn cho AI dưới dạng một "Tài liệu Lịch sử Đóng", giúp AI dễ dàng sử dụng thông tin đó làm tài liệu tham khảo để phát triển câu chuyện.
+  - ⚡ **Chỉ dẫn tối ưu:** Cải thiện cách trò chơi yêu cầu AI dẫn chuyện bằng ngôn ngữ của bạn, giải phóng năng lực của mô hình để tập trung vào sự sáng tạo.
+  - 👁️ **Tiêu điểm dẫn chuyện:** Viết lại cách nhận thức của AI. Giờ đây nó hiểu rõ hơn yếu tố nào là "nền tĩnh" và không nên lặp lại chúng một cách không cần thiết trong mỗi đoạn văn.
+  - 🔀 **Quyết định rõ ràng hơn:** AI hiện cung cấp các hướng đi rõ rệt hơn. Các gợi ý của nó (nút bấm) được chia thành tìm hiểu môi trường (Tìm hiểu sâu) hoặc đổi hướng hành động (Chuyển hướng).
+  - 🫵 **Xưng hô trực tiếp:** Điều chỉnh chỉ dẫn cơ bản để đảm bảo AI xưng hô với bạn là "Bạn", tăng cường sự nhập vai cá nhân.
+  
+  **Tạo Nhân vật:**
+  - 🖼️ **Chân dung nhân vật:** Khi tạo nhân vật bằng AI, hệ thống sẽ cố gắng tạo chân dung dựa trên tuổi tác, nghề nghiệp và mô tả. Lưu ý rằng đây là phiên bản thử nghiệm và độ chính xác (đặc biệt là tuổi tác) có thể thay đổi tùy theo mô hình được sử dụng. (Tôi vẫn đang tiếp tục thử nghiệm nhưng khởi đầu rất khả quan)
+  - 🎲 **Tạo ngẫu nhiên đáng tin cậy:** Khắc phục lỗi nút "Tạo bằng AI" có thể thất bại trong lần thử đầu tiên khiến các trường thông tin bị trống. Giờ đây hệ thống sửa lỗi thông minh sẽ đảm bảo câu trả lời luôn hợp lệ.
+  
+  **Quản lý hình ảnh đã tạo:**
+  - 🖼️ **Thư viện ảnh AI:** Bảng mới trong menu Hồ sơ hiển thị tất cả hình ảnh mà AI đã tạo trong các ván game của bạn (chân dung, phông nền). Bạn có thể lọc theo loại ảnh hoặc theo thế giới.
+  - 🗑️ **Xóa có chọn lọc:** Chọn một hoặc nhiều ảnh và xóa chúng nếu bạn không ưng ý (ví dụ như tấm ảnh mà AI quyết định đỗ một chiếc xe buýt trong chuồng ngựa lâu đài). Hệ thống sẽ xóa cả tệp tin lẫn bản ghi nội bộ.
+  - 📂 **Truy cập nhanh:** Nhấp đúp vào bất kỳ ảnh thu nhỏ nào để mở thư mục chứa tệp tin đó. Nếu bạn đã mở thư mục rồi, nó sẽ sử dụng lại cùng một cửa sổ.
+  - 💾 **Ghi nhớ không gian:** Kích thước cửa sổ thư viện được lưu tự động giữa các phiên làm việc.
+  
+  **Hiệu suất trên cấu hình thấp (Quan trọng cho GPU ít VRAM):**
+  - 🧠 **PSR - Quản trị lai:** Hệ thống mới chia công việc của AI thành hai giai đoạn: Lập kế hoạch (Đầu bếp) và Thực thi (Phụ bếp). Điều này cho phép các mô hình cục bộ với 8GB VRAM hoạt động mà không bị sập do quá tải ngữ cảnh (+12K token), bù lại độ trễ sẽ cao hơn; việc tương tác với AI chuyển từ một câu lệnh (prompt) duy nhất sang một chuỗi các câu lệnh (VRAM càng thấp thì số lượng câu lệnh càng nhiều và thời gian phản hồi càng lâu).
+  - ⚡ **Thực thi thông minh:** Hệ thống tự động quyết định xử lý tất cả cùng lúc (nguyên khối) hoặc chia thành từng phần (lặp lại) tùy thuộc vào VRAM khả dụng của bạn. GPU có ít VRAM sẽ chỉ kích hoạt chế độ chia nhỏ khi cần thiết.
+  - 📊 **Tối ưu hóa động:** PSR giảm tải lượng token trong quá trình tạo, cho phép người dùng có card đồ họa 4GB có thể hoàn tất việc tạo nhân vật và dẫn chuyện vốn trước đây thường bị chặn.
+  - 🔄 **Duy trì sự mạch lạc:** Mặc dù chia nhỏ công việc, hệ thống vẫn nạp một "ý định chủ đạo" để AI không bị mất dấu những gì nó đang thực hiện.
+  
+  **Giọng nói AI (cải tiến dần):**
+  Tạo giọng nói thời gian thực cho tất cả các ngôn ngữ (một số ngôn ngữ hạn chế hơn những ngôn ngữ khác, đa dạng nhất là tiếng Anh)
+  - 🗣️ **Tiếng hét chiến đấu:** Khi bắt đầu chiến đấu với kẻ thù, một câu thoại bằng giọng nói theo ngữ cảnh sẽ được kích hoạt.
+  - 🎭 **Câu thoại động theo ngữ cảnh:** Công cụ có thể tạo các dòng thoại ngắn cho các sự kiện cụ thể (dịch vụ/chiến đấu) tùy theo ngôn ngữ, bối cảnh và hồ sơ nhân vật.
+  - 🧠 **Mẫu giọng nói nội bộ:** Tách biệt các mẫu kỹ thuật của giọng nói khỏi hệ thống dẫn chuyện để tránh gây nhiễu cho câu chuyện.
+  - 🔊 **Rõ ràng hơn khi nghe:** Cải thiện khả năng hiểu và ngữ điệu của quá trình tổng hợp để ưu tiên phát âm dễ hiểu.
+  
+  **⚠️ Thông báo tương thích (Các bản lưu cũ):**
+  - 🔄 Do số lượng lớn các thay đổi nội bộ trong bộ quy tắc và hệ thống bối cảnh, các **ván game và thế giới đã lưu trước đó (có thể) vẫn chơi được**, nhưng rất có khả năng sẽ phát sinh lỗi hoặc hành vi không mong muốn. **Khuyến khích tạo một thế giới mới hoàn toàn** để tận hưởng tất cả các cải tiến một cách chính xác nhất.
+
+****************************************************************************************************
+17/02/2026 07:20 - Tạo hình ảnh bằng AI, Cải thiện Cốt truyện và Kiểm soát - EXPERIMENTAL_v057
 ****************************************************************************************************
 - What's New (VI):
   **⚠️ NHÁNH THỬ NGHIỆM (BETA TRÊN STEAM)**
   Phiên bản này hiện chỉ có sẵn trên **Nhánh Thử nghiệm** của Steam. Để kích hoạt:
   1. Nhấp chuột phải vào **RolemIAster** trong Thư viện Steam của bạn.
-  2. Chọn **Properties...** (Thuộc tính)
+  2. Chọn **Thuộc tính...** (Properties)
   3. Đi đến tab **Betas**.
-  4. Tại mục "Beta Participation" (Tham gia beta), chọn **experimental** trong danh sách thả xuống.
+  4. Tại mục "Tham gia beta", chọn **experimental** trong menu thả xuống.
   
-  **Mới: Giai đoạn đầu của Tạo ảnh bằng AI**
-  - 🎨 **Thế giới của bạn qua Hình ảnh:** Tôi đã tích hợp hệ thống tạo ảnh ban đầu bằng Trí tuệ Nhân tạo. Khi bạn chơi, hệ thống cố gắng tạo ra chân dung và phong cảnh phù hợp với bối cảnh ván chơi của bạn.
+  **Tính năng mới: Giai đoạn đầu của Tạo hình ảnh bằng AI**
+  - 🎨 **Thế giới của bạn qua Hình ảnh:** Tôi đã tích hợp một hệ thống tạo hình ảnh ban đầu bằng Trí tuệ Nhân tạo. Khi bạn chơi, hệ thống sẽ cố gắng tạo ra các bức chân dung và phong cảnh phù hợp với bối cảnh ván chơi của bạn.
   - 🖼️ **Hình nền Động:** Hình ảnh được tạo trong nền mà không làm gián đoạn trò chơi. Bạn sẽ thấy chúng dần xuất hiện ở hình nền, trên thẻ nhân vật và trong Codex.
-  - 🧹 **Quản lý Hình ảnh:** Bảng điều khiển mới để xem và xóa những hình ảnh đã tạo mà bạn không thích.
-  
-  **Cải tiến trong Tạo Nhân vật:**
-  - ⚙️ **Tạo Ngẫu nhiên Chắc chắn hơn:** Tôi đã thống nhất và cải thiện công cụ quy tắc mà AI sử dụng để tạo nhân vật từ đầu, đảm bảo kho đồ hợp lý hơn (5 đến 10 vật phẩm mạch lạc) và bảng chỉ số cân bằng hơn.
-  - 🧠 **Bộ não Phân tách:** AI giờ đây hiểu rõ hơn khi nào cần "bịa" một nhân vật từ đầu và khi nào nên giới hạn việc trích xuất dữ liệu từ tiểu sử mà chính bạn đã viết.
-  - ⚡ **Tốc độ Tùy chỉnh:** Phần mới trong Cấu hình Hình ảnh. Chọn giữa "Nhanh" (1 bước), "Trung bình" (2 bước) hoặc "Cao" (4 bước) để điều chỉnh thời gian tạo phù hợp với sức mạnh thiết bị của bạn.
-  - 🛠️ **Tối ưu hóa Kỹ thuật:** Mô hình AI cho hình ảnh được tải vào **RAM (Memory)** và xử lý qua **CPU**, không chiếm bộ nhớ video (VRAM). Điều này đảm bảo nó không can thiệp vào hiệu suất của AI chính trong trò chơi (LLM). Cần thêm khoảng 5GB RAM, vẫn nằm trong yêu cầu tối thiểu chính thức của Steam.
-  - 📤 **Chia sẻ Cuộc phiêu lưu của bạn:** Tất cả hình ảnh đã tạo được lưu tự động. Bạn sẽ tìm thấy chúng trong thư mục: `%APPDATA%/RolemIAster/custom_assets/images`
-  - 🔬 **Bộ chọn Mô hình (Nâng cao):** Nếu bạn khởi động trò chơi với tham số `--advanced`, giờ đây bạn có thể chọn mô hình AI nào để sử dụng cho hình ảnh từ bảng Giao diện. Điều này cho phép những người đam mê thử nghiệm các phiên bản Stable Diffusion khác nhau được tối ưu hóa cho OpenVINO (tệp .xml/.bin).
+  - ⚡ **Tốc độ Tùy chỉnh:** Mục mới trong Cấu hình Hình ảnh. Chọn giữa "Nhanh" (1 bước), "Trung bình" (2 bước) hoặc "Cao" (4 bước) để điều chỉnh thời gian tạo hình phù hợp với sức mạnh máy tính của bạn.
+  - 🛠️ **Tối ưu hóa Kỹ thuật:** Mô hình AI cho hình ảnh được tải vào **RAM (Bộ nhớ)** và xử lý qua **CPU**, không chiếm bộ nhớ video (VRAM). Điều này đảm bảo không ảnh hưởng đến hiệu suất của AI chính trong game (LLM). Yêu cầu thêm khoảng 5GB RAM, vẫn nằm trong yêu cầu tối thiểu chính thức của Steam.
+  - 📤 **Chia sẻ Cuộc phiêu lưu:** Tất cả hình ảnh được tạo sẽ tự động được lưu lại. Bạn sẽ tìm thấy chúng trong thư mục: `%APPDATA%/RolemIAster/custom_assets/images`
   
   **Cốt truyện và Bộ não AI:**
-  - 🧠 **Chấm dứt Vòng lặp:** Một "Học thuyết Trí nhớ" mới đã được cấy vào AI. Giờ đây nó phân biệt tốt hơn giữa "ký ức" (những gì đã xảy ra) và "hiện tại" (những gì đang xảy ra). Điều này giúp giảm các trường hợp AI lặp lại hoặc bị kẹt.
-  - 📜 **Hồ sơ Lịch sử:** Hệ thống trình bày ký ức của bạn cho AI dưới dạng "Hồ sơ Lịch sử Đóng", giúp AI dễ dàng sử dụng thông tin đó làm tài liệu tham khảo để phát triển câu chuyện.
-  - ⚡ **Chỉ dẫn Tối ưu hóa:** Cách trò chơi yêu cầu kể chuyện bằng ngôn ngữ của bạn đã được cải thiện, giải phóng năng lực của mô hình để tập trung vào sự sáng tạo.
-  - 👁️ **Tiêu điểm Cốt truyện:** Nhận thức của AI đã được viết lại. Giờ đây nó hiểu rõ hơn yếu tố nào là "nền tĩnh" và không nên lặp lại chúng một cách không cần thiết trong mỗi đoạn văn.
-  - 🔀 **Quyết định Rõ ràng hơn:** AI giờ đây cung cấp các lối thoát rõ ràng hơn. Các gợi ý (nút bấm) được chia thành điều tra môi trường (Đi sâu) hoặc thay đổi hướng đi (Phân tách).
-  - 🫵 **Xưng hô Trực tiếp:** Chỉ dẫn cơ bản đã được điều chỉnh để đảm bảo AI xưng hô với bạn là "Bạn", cải thiện sự nhập tâm cá nhân.
+  - 🧠 **Chấm dứt Vòng lặp:** Một "Học thuyết Ký ức" mới đã được cấy vào AI. Giờ đây nó phân biệt tốt hơn giữa "ký ức" (những gì đã xảy ra) và "hiện tại" (những gì đang xảy ra). Điều này giúp giảm thiểu các trường hợp AI lặp lại hoặc bị kẹt.
+  - 📜 **Hồ sơ Lịch sử:** Hệ thống trình bày ký ức của bạn cho AI dưới dạng một "Hồ sơ Lịch sử Đã đóng", giúp AI dễ dàng sử dụng thông tin đó làm tài liệu tham khảo để phát triển câu chuyện.
+  - ⚡ **Chỉ dẫn Tối ưu hóa:** Cách trò chơi yêu cầu kể chuyện bằng ngôn ngữ của bạn đã được cải thiện, giải phóng khả năng của mô hình để tập trung vào sự sáng tạo.
+  - 👁️ **Trọng tâm Cốt truyện:** Nhận thức của AI đã được viết lại. Giờ đây nó hiểu rõ hơn yếu tố nào là "nền tĩnh" và không nên lặp lại chúng một cách không cần thiết trong mỗi đoạn văn.
+  - 🔀 **Quyết định Rõ ràng hơn:** AI hiện cung cấp các lối thoát xác định hơn. Các gợi ý (nút bấm) được chia thành tìm hiểu môi trường (Đi sâu) hoặc thay đổi hướng đi (Phân nhánh).
+  - 🫵 **Xưng hô Trực tiếp:** Chỉ dẫn cơ bản đã được điều chỉnh để đảm bảo AI xưng hô với bạn là "Bạn", cải thiện tính nhập tâm cá nhân.
   
   **Tạo Nhân vật:**
-  - 🖼️ **Chân dung Nhân vật:** Khi tạo một nhân vật bằng AI, hệ thống cố gắng tạo một chân dung dựa trên tuổi, nghề nghiệp và mô tả. Lưu ý rằng đây là phiên bản ban đầu và độ trung thực (đặc biệt là về tuổi tác) có thể thay đổi tùy theo mô hình được sử dụng. (tôi vẫn đang thử nghiệm nhưng khởi đầu khá tốt)
-  - 🎲 **Tạo Ngẫu nhiên Đáng tin cậy:** Đã sửa lỗi nút "Tạo bằng AI" có thể bị lỗi trong lần thử đầu tiên, để trống các trường. Giờ đây hệ thống sửa lỗi thông minh đảm bảo phản hồi luôn hợp lệ.
-  
-  **Quản lý Hình ảnh Đã tạo:**
-  - 🖼️ **Thư viện Ảnh AI:** Bảng mới trong menu Tệp (File) hiển thị tất cả hình ảnh mà AI đã tạo trong các ván chơi của bạn (chân dung, hình nền). Bạn có thể lọc theo loại ảnh hoặc theo thế giới.
-  - 🗑️ **Xóa Có chọn lọc:** Chọn một hoặc nhiều hình ảnh và xóa chúng nếu bạn không ưng ý (có thể là tấm mà AI quyết định đỗ xe buýt trong chuồng ngựa lâu đài là ý hay). Hệ thống sẽ dọn dẹp cả tệp tin và nhật ký nội bộ của nó.
-  - 📂 **Truy cập Trực tiếp:** Nhấp đúp vào bất kỳ hình thu nhỏ nào để mở thư mục chứa tệp. Nếu bạn đã mở thư mục đó, cửa sổ cũ sẽ được sử dụng lại.
-  - 💾 **Ghi nhớ Không gian của bạn:** Kích thước cửa sổ thư viện được lưu tự động giữa các phiên làm việc.
-  
-  **Hiệu suất trên Cấu hình Thấp (Quan trọng cho GPU ít VRAM):**
-  - 🧠 **PSR - Quản trị Lai:** Hệ thống mới chia công việc của AI thành hai giai đoạn: Lập kế hoạch (Bếp trưởng) và Thực thi (Đầu bếp). Điều này cho phép các mô hình cục bộ với 8 GB VRAM hoạt động, tránh sự cố sập do quá tải ngữ cảnh (+12K token), đổi lại độ trễ sẽ cao hơn, việc tương tác với AI chuyển từ một câu lệnh đơn lẻ sang một chuỗi các câu lệnh (VRAM càng thấp thì càng tạo ra nhiều câu lệnh và thời gian phản hồi càng lâu).
-  - ⚡ **Thực thi Thông minh:** Hệ thống tự động quyết định xử lý tất cả cùng một lúc (nguyên khối) hay chia nhỏ thành các phần (lặp lại) tùy thuộc vào VRAM khả dụng của bạn. GPU có ít VRAM hơn chỉ kích hoạt chế độ chia nhỏ khi cần thiết.
-  - 📊 **Tối ưu hóa Động:** PSR giảm tải token trong quá trình tạo, cho phép người dùng có card đồ họa 4GB hoàn thành việc tạo nhân vật và tạo cốt truyện mà trước đây bị chặn.
-  - 🔄 **Duy trì Sự mạch lạc:** Mặc dù chia nhỏ công việc, hệ thống vẫn tiêm vào một "ý định chủ đạo" để AI không bị mất mạch những gì nó đang làm.
-  
-  **Giọng nói AI (cải tiến gia tăng):**
-  Tạo giọng nói thời gian thực bằng mọi ngôn ngữ (một số ngôn ngữ bị hạn chế hơn so với những ngôn ngữ khác, đa dạng nhất về loại giọng là tiếng Anh)
-  - 🗣️ **Tiếng thét Chiến đấu có Giọng nói:** Khi bắt đầu chiến đấu chống lại kẻ thù thù địch, một câu thoại ngữ cảnh giờ đây sẽ được kích hoạt khi vào trận.
-  - 🎭 **Câu thoại Động theo Ngữ cảnh:** Công cụ có thể tạo ra các dòng thoại ngắn cho các sự kiện cụ thể (dịch vụ/chiến đấu) tùy theo ngôn ngữ, bối cảnh và hồ sơ nhân vật.
-  - 🧠 **Mẫu Giọng nói Nội bộ:** Các mẫu kỹ thuật giọng nói đã được tách khỏi hệ thống cốt truyện để tránh can thiệp vào câu chuyện.
-  - 🔊 **Nghe Rõ ràng hơn:** Cải thiện độ dễ hiểu và ngữ điệu của quá trình tổng hợp để ưu tiên phát âm dễ hiểu.
-  
-  **⚠️ Cảnh báo Tương thích (Các ván chơi trước):**
-  - 🔄 Do số lượng thay đổi nội bộ trong công cụ quy tắc và hệ thống bối cảnh, các **thế giới và ván chơi đã lưu trước đây vẫn có thể chơi được (có khả năng)**, nhưng rất có thể sẽ xuất hiện lỗi hoặc hành vi không mong muốn. **Khuyên dùng tạo một thế giới mới sạch sẽ** để tận hưởng tất cả các cải tiến một cách chính xác.
+  - 🖼️ **Chân dung Nhân vật:** Khi tạo nhân vật bằng AI, hệ thống sẽ cố gắng tạo chân dung dựa trên độ tuổi, nghề nghiệp và mô tả. Lưu ý rằng đây là phiên bản ban đầu và độ trung thực (đặc biệt là về độ tuổi) có thể thay đổi tùy theo mô hình được sử dụng. (tôi vẫn đang tiếp tục thử nghiệm nhưng khởi đầu khá tốt)
+  - 🎲 **Tạo Ngẫu nhiên Đáng tin cậy:** Đã sửa lỗi nút "Tạo bằng AI" có thể bị lỗi trong lần thử đầu tiên, để trống các trường. Giờ đây, hệ thống sửa lỗi thông minh đảm bảo phản hồi luôn hợp lệ.
 
 ****************************************************************************************************
-15/02/2026 02:57 - Nhập liệu Trực tiếp, Sửa lỗi Ổn định và Phát hiện - Beta_v057
+17/02/2026 07:04 - Tạo hình ảnh bằng AI, Cải thiện Cốt truyện và Kiểm soát - Beta_v058
 ****************************************************************************************************
 - What's New (VI):
-  **Tính ổn định:**
-  - 🛠️ **Tạm biệt Treo Cấu hình:** Đã sửa nhiều lỗi xảy ra trong các điều kiện nhất định, gây cản trở việc mở hoặc sửa đổi cấu hình AI khi thay đổi mô hình hoặc đặt lại giá trị.
-  - 🗃️ **Cơ sở dữ liệu Yên lặng:** Cảnh báo phiền toái "Cơ sở dữ liệu không tương thích" khi khởi động trò chơi sẽ không còn xuất hiện nếu cơ sở dữ liệu của bạn vẫn ổn. Nó sẽ chỉ hiển thị khi có thay đổi cấu trúc thực sự cần di chuyển dữ liệu.
+  **⚠️ NHÁNH THỬ NGHIỆM (BETA TRÊN STEAM)**
+  Phiên bản này hiện chỉ có sẵn trên **Nhánh Thử nghiệm** của Steam. Để kích hoạt:
+  1. Nhấp chuột phải vào **RolemIAster** trong Thư viện Steam của bạn.
+  2. Chọn **Thuộc tính...** (Properties)
+  3. Đi đến tab **Betas**.
+  4. Tại mục "Tham gia beta", chọn **experimental** trong menu thả xuống.
   
-  **Trải nghiệm Trò chơi:**
-  - 🎯 **Kiểm soát Chính xác AI:** Giờ đây bạn có thể nhập thủ công các giá trị Ngữ cảnh, Token, Nhiệt độ hoặc Lớp GPU trực tiếp vào trường số bên cạnh thanh trượt. Không còn phải phụ thuộc hoàn toàn vào các "thanh trượt" nữa! Cả hai điều khiển đều được đồng bộ hóa: di chuyển thanh trượt thì số sẽ cập nhật, hoặc nhập số thì thanh trượt sẽ di chuyển.
-  - ⌨️ **Nhập liệu Trực tiếp:** Bạn không cần phải nhấp vào hộp văn bản để nhập hành động nữa! Giờ đây, bạn có thể bắt đầu gõ phím trực tiếp khi đang ở màn hình trò chơi. Nếu bạn tương tác với kho đồ hoặc bảng điều khiển khác và sau đó muốn viết, chỉ cần bắt đầu gõ mà không cần chọn bất cứ thứ gì. Hệ thống tự động chuyển hướng các phím bấm của bạn vào trường hành động. Nó không can thiệp vào menu, hộp thoại hay phím tắt hệ thống.
+  **Tính năng mới: Giai đoạn đầu của Tạo hình ảnh bằng AI**
+  - 🎨 **Thế giới của bạn qua Hình ảnh:** Tôi đã tích hợp một hệ thống tạo hình ảnh ban đầu bằng Trí tuệ Nhân tạo. Khi bạn chơi, hệ thống sẽ cố gắng tạo ra các bức chân dung và phong cảnh phù hợp với bối cảnh ván chơi của bạn.
+  - 🖼️ **Hình nền Động:** Hình ảnh được tạo trong nền mà không làm gián đoạn trò chơi. Bạn sẽ thấy chúng dần xuất hiện ở hình nền, trên thẻ nhân vật và trong Codex.
+  - ⚡ **Tốc độ Tùy chỉnh:** Mục mới trong Cấu hình Hình ảnh. Chọn giữa "Nhanh" (1 bước), "Trung bình" (2 bước) hoặc "Cao" (4 bước) để điều chỉnh thời gian tạo hình phù hợp với sức mạnh máy tính của bạn.
+  - 🛠️ **Tối ưu hóa Kỹ thuật:** Mô hình AI cho hình ảnh được tải vào **RAM (Bộ nhớ)** và xử lý qua **CPU**, không chiếm bộ nhớ video (VRAM). Điều này đảm bảo không ảnh hưởng đến hiệu suất của AI chính trong game (LLM). Yêu cầu thêm khoảng 5GB RAM, vẫn nằm trong yêu cầu tối thiểu chính thức của Steam.
+  - 📤 **Chia sẻ Cuộc phiêu lưu:** Tất cả hình ảnh được tạo sẽ tự động được lưu lại. Bạn sẽ tìm thấy chúng trong thư mục: `%APPDATA%/RolemIAster/custom_assets/images`
   
-  Một vài thay đổi nhỏ khác...
+  **Cốt truyện và Bộ não AI:**
+  - 🧠 **Chấm dứt Vòng lặp:** Một "Học thuyết Ký ức" mới đã được cấy vào AI. Giờ đây nó phân biệt tốt hơn giữa "ký ức" (những gì đã xảy ra) và "hiện tại" (những gì đang xảy ra). Điều này giúp giảm thiểu các trường hợp AI lặp lại hoặc bị kẹt.
+  - 📜 **Hồ sơ Lịch sử:** Hệ thống trình bày ký ức của bạn cho AI dưới dạng một "Hồ sơ Lịch sử Đã đóng", giúp AI dễ dàng sử dụng thông tin đó làm tài liệu tham khảo để phát triển câu chuyện.
+  - ⚡ **Chỉ dẫn Tối ưu hóa:** Cách trò chơi yêu cầu kể chuyện bằng ngôn ngữ của bạn đã được cải thiện, giải phóng khả năng của mô hình để tập trung vào sự sáng tạo.
+  - 👁️ **Trọng tâm Cốt truyện:** Nhận thức của AI đã được viết lại. Giờ đây nó hiểu rõ hơn yếu tố nào là "nền tĩnh" và không nên lặp lại chúng một cách không cần thiết trong mỗi đoạn văn.
+  - 🔀 **Quyết định Rõ ràng hơn:** AI hiện cung cấp các lối thoát xác định hơn. Các gợi ý (nút bấm) được chia thành tìm hiểu môi trường (Đi sâu) hoặc thay đổi hướng đi (Phân nhánh).
+  - 🫵 **Xưng hô Trực tiếp:** Chỉ dẫn cơ bản đã được điều chỉnh để đảm bảo AI xưng hô với bạn là "Bạn", cải thiện tính nhập tâm cá nhân.
+  
+  **Tạo Nhân vật:**
+  - 🖼️ **Chân dung Nhân vật:** Khi tạo nhân vật bằng AI, hệ thống sẽ cố gắng tạo chân dung dựa trên độ tuổi, nghề nghiệp và mô tả. Lưu ý rằng đây là phiên bản ban đầu và độ trung thực (đặc biệt là về độ tuổi) có thể thay đổi tùy theo mô hình được sử dụng. (tôi vẫn đang tiếp tục thử nghiệm nhưng khởi đầu khá tốt)
+  - 🎲 **Tạo Ngẫu nhiên Đáng tin cậy:** Đã sửa lỗi nút "Tạo bằng AI" có thể bị lỗi trong lần thử đầu tiên, để trống các trường. Giờ đây, hệ thống sửa lỗi thông minh đảm bảo phản hồi luôn hợp lệ.
 
 ****************************************************************************************************
-14/02/2026 21:48 - Đồng bộ hóa Ngữ cảnh và Kiểm soát Phản hồi AI - Beta_v056
+13/02/2026 21:47 - Tối ưu hóa Cấu hình AI và Tăng cường i18n - Beta_v055
 ****************************************************************************************************
 - What's New (VI):
-  **Hệ thống và Hiệu suất:**
-  - 🧠 **Kiểm soát Ngữ cảnh Toàn diện:** Giờ đây bạn có thể điều chỉnh cả bộ nhớ của AI (`n_ctx`) và độ dài phản hồi (`Max Tokens`) bằng các thanh trượt trực quan hơn nhiều.
-  - ♾️ **Chế độ Không giới hạn:** Kéo về mức tối thiểu để kích hoạt chế độ "Không giới hạn", cho phép các mô hình mạnh mẽ như Gemini sử dụng toàn bộ khả năng mà không bị hạn chế.
-  - ⚡ **Khởi động lại Driver:** Tùy chọn mới trong trình khởi chạy để khởi động lại driver video trước khi chơi (tùy chọn, có thể cấu hình từ launcher), màn hình sẽ nhấp nháy khi khởi động, điều này đảm bảo toàn bộ VRAM đều sẵn sàng bằng cách xóa sạch các dữ liệu dư thừa.
-  - 🛠️ **Cấu hình Ổn định:** Đã sửa các lỗi hiển thị và sự cố kỹ thuật khi lưu cấu hình của các nhà cung cấp AI ưa thích của bạn.
-  - 🚀 **Phát hiện Lỗi Tốt hơn:** Trò chơi giờ đây thông minh hơn trong việc phát hiện khi một AI bên ngoài bị hết dung lượng.
-  
-  **Cơ chế và Thế giới:**
-  - 🎒 **Hành trang Đảm bảo:** Không còn cảnh bắt đầu cuộc phiêu lưu mà không thấy vật phẩm của bạn. Hệ thống SDIA hiện cũng giám sát quá trình tạo nhân vật để đảm bảo trang bị của bạn luôn ở đó.
-  - 📜 **Cốt truyện Tinh lọc:** Đã sửa lỗi chèn các đoạn "mã" hoặc văn bản lạ vào lịch sử thế giới của bạn. Giờ đây Codex sẽ thuần túy và dễ đọc hơn.
-  - ⚠️ **Hướng dẫn Tương thích:** Đã thêm các cảnh báo trong phần cài đặt để giúp bạn chọn các mô hình tương thích (Instruct/Chat).
-  - ⚙️ **Cấy ghép Đáng tin cậy:** Đã sửa định nghĩa khe cắm và tải quy tắc trong quá trình tạo nhân vật. Giờ đây tất cả các nâng cấp Cyber của bạn sẽ sử dụng các khe cắm chính thức và tự động trang bị chính xác.
-  - 🎓 **Giới hạn Tập sự:** Đã điều chỉnh cân bằng kỹ năng ban đầu. AI sẽ tạo ra một gói điểm để tự động phân phối vào các kỹ năng quan trọng nhất dựa trên bối cảnh nhân vật của bạn. Các anh hùng giờ đây sẽ bắt đầu như những người mới thực sự, tiến bộ theo cách hợp lý hơn.
+  - ⚙️ **Kiểm soát Ưu tiên Cục bộ:** Giờ đây bạn có thể điều chỉnh thủ công độ ưu tiên của các card đồ họa ngay cả khi hệ thống đang ở chế độ tự động.
+  - 🧠 **Thông tin Xoay vòng AI:** Tôi đã thêm các bảng thông tin trong cài đặt nhà cung cấp bên ngoài để giải thích cách xoay vòng tự động hoạt động khi gặp lỗi hoặc vượt quá hạn mức.
+  - 🌍 **Mở rộng Hỗ trợ GPU:** Thông báo thông tin i18n giờ đây phản ánh chính xác hỗ trợ cho NVIDIA CUDA và Vulkan (AMD/Intel). Đã cập nhật bản dịch cho tất cả các ngôn ngữ!
+  - ⚙️ **Cải thiện Kết nối:** Đã sửa lỗi kết nối cho Ollama và các máy chủ tương thích OpenAI khác.
+  - 🧠 **AI Đa ngôn ngữ và Mạnh mẽ:** Việc phát hiện vật phẩm nhận được trong câu chuyện hiện hoạt động trên 10 ngôn ngữ. Ngoài ra, tôi đã gia cố hệ thống để bạn không bao giờ thiếu câu chuyện khởi đầu, ngay cả khi AI gặp trục trặc kỹ thuật.
+  - 🔄 **Xoay vòng Thông minh:** Tôi đã sửa hệ thống xoay vòng để nó không từ bỏ AI cục bộ của bạn ngay lần thử đầu tiên. Hệ thống giờ sẽ cho phép nó tự sửa lỗi trước khi tìm kiếm sự trợ giúp bên ngoài.
+  - 🧹 **Dọn dẹp Nền tảng:** Tôi đã loại bỏ các quy tắc cũ và gây nhầm lẫn để "bộ não" của AI sắc bén và chính xác hơn khi xử lý vật phẩm của bạn.
 
-****************************************************************************************************
-14/02/2026 05:06 - Củng cố Tính Toàn vẹn, Nhận thức Nhân vật và Tối ưu hóa - Beta_v055
-****************************************************************************************************
-- What's New (VI):
-  - 🧠 **Ưu tiên AI theo ý thích:** Bây giờ bạn có thể kéo và thả các trình kết nối AI để quyết định sử dụng cái nào trước. Nếu một cái bị lỗi, trò chơi sẽ tự động thử cái tiếp theo trong danh sách ưu tiên của bạn.
-  - ⚙️ **Kiểm soát Tải trước:** Đã thêm tùy chọn trong trình khởi chạy để quyết định xem bạn muốn tải trước mô hình AI cục bộ hay chỉ tải khi cần thiết (tiết kiệm tài nguyên khi khởi động).
-  - 🛡️ **Xóa An toàn và Sạch sẽ:** Khi xóa một thế giới, hệ thống hiện sẽ đảm nhận việc dọn dẹp hoàn toàn mọi dữ liệu liên quan (nhân vật và cốt truyện), giữ cho cơ sở dữ liệu của bạn hoàn hảo.
-  - 🚀 **Tối ưu hóa Bộ nhớ:** "Bộ não" của AI giờ chỉ được tải một lần và chia sẻ giữa tất cả các chức năng, giúp tiết kiệm rất nhiều bộ nhớ đồ họa (VRAM).
-  - 🎨 **Giao diện Thông minh:** Bảng chọn thế giới giờ đây điều chỉnh hoàn hảo với màn hình và văn bản, không còn các nút bị cắt hay khoảng trống lãng phí.
-  - 🔄 **Cải thiện Xoay vòng Thông minh:** Tôi đã sửa hệ thống xoay vòng để nó không từ bỏ AI cục bộ của bạn ngay lần đầu; giờ đây nó sẽ cho AI một cơ hội để tự sửa lỗi trước khi tìm kiếm sự trợ giúp bên ngoài.
-  - 🌍 **AI Đa ngôn ngữ và Mạnh mẽ:** Khả năng phát hiện vật thể và dẫn chuyện giờ đây chính xác hơn trong 10 ngôn ngữ, với cơ chế bảo vệ đặc biệt để bạn không bao giờ thiếu cốt truyện.
-  - 🛠️ **Đảm bảo Tính Nhất quán AI:** Đã sửa lỗi khiến Gemini bị "quên" hoặc biến thành Ollama. Các ưu tiên sử dụng AI của bạn giờ được lưu trữ an toàn và chính xác.
-  - ⚡ **Khôi phục Gemini:** Đã sửa quyền truy cập vào mô hình Gemini bằng cách khôi phục các khóa và URL chính xác.
-  - 🎨 **Sửa lỗi Giao diện Theo chủ đề:** Các nút quyết định giờ đây khôi phục ngay lập tức màu sắc thế giới của bạn (ví dụ: Vàng cho giả tưởng) khi tải trò chơi.
-  - 👥 **Nhận thức giữa các Nhân vật:** AI hiện đã nhận thức được tất cả các nhân vật của bạn! Nếu bạn có nhiều anh hùng trong cùng một thế giới, AI sẽ nhận ra họ là cư dân và có thể nhớ những gì mỗi người đã làm một cách riêng biệt.
-  - 🧠 **Ký ức có Định danh:** Hệ thống ký ức giờ phân biệt được ai đã thực hiện hành động nào, tránh việc AI nhầm lẫn chiến công trong quá khứ của bạn với của các nhân vật khác.
-
-****************************************************************************************************
-13/02/2026 07:56 - Hệ thống Diễn giải Chiến đấu theo Ngữ nghĩa - Beta_v054
-****************************************************************************************************
-- What's New (VI):
-  🧪 HIỆN ĐÃ RA MẮT:
-  
-  ⚠️ **THÔNG BÁO QUAN TRỌNG:** TRÒ CHƠI CÓ THỂ DI CHUYỂN CƠ SỞ DỮ LIỆU CŨ SANG CẤU TRÚC MỚI THÔNG QUA CÁC TÙY CHỌN CỦA LAUNCHER. TÔI KHÔNG KHUYẾN KHÍCH ĐIỀU NÀY, MẶC DÙ FILE LƯU CŨ CỦA BẠN CÓ THỂ HOẠT ĐỘNG, NHƯNG NHIỀU THỨ SẼ BỊ LỖI. KHUYẾN NGHỊ CỦA TÔI LÀ XÓA TẤT CẢ CÁC FILE LƯU TRƯỚC ĐÓ. KHÔNG CẦN THIẾT PHẢI XÓA TOÀN BỘ CƠ SỞ DỮ LIỆU TRỪ TRƯỜNG HỢP BẤT KHẢ KHÁNG.
-  
-  Những thay đổi:
-  
-  - 🌍 **Quản lý Thế giới và Nhân vật:** Giờ đây bạn có sự tự do tuyệt đối. Tạo Thế giới của riêng bạn với các quy tắc và bối cảnh riêng, và bên trong mỗi thế giới, tạo bao nhiêu nhân vật tùy thích. **Lưu ý Quan trọng:** Tất cả các nhân vật trong cùng một thế giới chia sẻ cùng một dòng thời gian và các sự kiện đã xảy ra, điều này đặt nền móng cho chế độ nhiều người chơi trong tương lai.
-  - 🧠 **Bộ nhớ Ngữ cảnh (Siêu RAG):** AI giờ đây đã có "giác quan". Khi tìm kiếm thông tin trong Truyền thuyết (Lore) hoặc trong bộ nhớ của nó, nó sẽ tính đến việc bạn đang ở đâu, bạn đang ở cùng ai, bạn có bị thương không và điều gì vừa xảy ra. Nếu bạn đang ở cùng một vị Vua, nó sẽ nhớ những điều về vua chúa. Nếu bạn bị thương, nó sẽ tìm kiếm các quy tắc về chữa trị. Nó trực quan và mạch lạc hơn nhiều!
-  - 🌍 **Cốt truyện ở Nhân vật Đầu tiên:** Bạn đã viết một mô tả sử thi về thế giới của mình và AI lại phớt lờ nó ở nhân vật đầu tiên? Đã giải quyết! Giờ đây, mô tả thế giới thủ công sẽ được chuyển trực tiếp đến AI trong quá trình tạo ban đầu, ngay cả trước khi hệ thống bộ nhớ kích hoạt.
-  - ⚙️ **Hệ thống Thế giới Cải tiến:** Tôi đã tách biệt tên thế giới của bạn khỏi các quy tắc kỹ thuật. Giờ đây bạn có thể đặt tên thế giới theo ý muốn mà không ảnh hưởng đến việc tải các quy tắc Giả tưởng (Fantasy) hay Cyberpunk.
-  - 📝 **Sự rõ ràng trong Tạo nhân vật:** Tôi đã cải thiện các hướng dẫn nội bộ để AI hiểu rõ hơn khi nào nên tự tạo tiểu sử và khi nào nên giới hạn việc trích xuất các chỉ số của bạn.
-  - 🧠 **Chiến đấu bằng Văn bản Tự do:** Giờ đây bạn có thể viết các hành động chiến đấu của mình như thể đang nói chuyện với một nhân vật trong game tabletop: "thi triển phép hồi máu lên bản thân", "rút kiếm", "dùng bình máu". AI hiểu ý định của bạn và dịch nó sang cơ chế trò chơi.
-  - 🎨 **Giao diện Mới Sử thi!** Tôi đã thiết kế lại hoàn toàn trò chơi. Menu phong cách RPG, hình nền động và trải nghiệm hình ảnh hoàn toàn mới. Phong cách tối bán trong suốt, viền neon và bóng đổ mềm mại để tăng sự nhập tâm tuyệt đối.
-  - 🎬 **AI Đạo diễn Cảnh (CẢI TIẾN):** Chiến đấu giờ đây trở nên sống động. AI tạo ra các sự kiện môi trường và phản ứng làm phong phú thêm câu chuyện: đuốc rơi xuống, kẻ thù lùi bước, xà nhà sập xuống. Chiến trường không còn tĩnh lặng nữa!
-  - ⚔️ **Rút vũ khí bằng Lời nói:** Bạn không cần phải nhấp vào ô vũ khí nữa. Chỉ cần viết "rút kiếm" hoặc "lấy rìu ra" và hệ thống sẽ tự động diễn giải (CHÚ Ý!, làm điều này trong chiến đấu có thể dẫn đến thất bại, hớ hênh và mất lượt!... "Đã vào trận là phải chuẩn bị sẵn sàng từ nhà!").
-  - 📖 **Nhận diện Phép thuật:** AI giờ đây biết toàn bộ sách phép của bạn. Hãy nói "bắn quả cầu lửa" và nếu bạn có phép đó, nó sẽ được thi triển.
-  - 🌍 **Dẫn chuyện theo Ngôn ngữ của bạn:** Câu chuyện giờ đây tuân thủ nghiêm ngặt ngôn ngữ đã chọn, tránh sự pha trộn kỳ lạ giữa các ngôn ngữ (hy vọng tôi không bao giờ phải thấy Spanglish nữa!, tôi đã ép AI nhiều đến mức nếu nó tạo ra văn bản bằng ngôn ngữ khác với ngôn ngữ đã chọn, thì đó thực sự là do nó bị nguyền rủa).
-  - 🛡️ **Không còn Mất Lượt:** Nếu trò chơi không hiểu hành động của bạn, nó sẽ yêu cầu bạn diễn đạt lại. Lượt của bạn KHÔNG bị mất.
-  - 🎒 **Túi đồ Thủ công:** Để di chuyển vật phẩm giữa các ô (trang bị từ ba lô, nạp đạn), hãy sử dụng giao diện kéo và thả. Điều này tránh nhầm lẫn và tiết kiệm tài nguyên AI.
-  - 🧪 **Sử dụng Thuốc Mượt mà:** Giờ đây bạn có thể kéo thuốc và thức ăn trực tiếp lên chân dung của mình để sử dụng. Tôi cũng đã thêm tùy chọn "Sử dụng" khi nhấp chuột phải. Trực quan và nhanh hơn!
-  - 🩸 **Sửa lỗi Sát thương:** Bạn không còn bất tử nữa! Chúng tôi đã sửa một vấn đề khiến thanh máu không giảm dù bạn bị đánh. Giờ thì bạn sẽ phải chịu đau đớn như lẽ thường.
-  - 👻 **Tạm biệt Vật phẩm Ma:** Bạn tìm thấy một vật phẩm trong cốt truyện nhưng nó không bao giờ xuất hiện trong ba lô? Vấn đề đã được giải quyết! Giờ đây hệ thống tự động sửa các vật phẩm mà AI "quên" tạo ra.
-  - 🐛 **Sửa lỗi Nghiêm trọng NPC:** Đã khắc phục lỗi ngăn cản các NPC đưa ra quyết định chiến thuật chính xác, khiến chúng luôn "chờ đợi" thay vì tấn công hoặc phòng thủ.
-  - 🎒 **Sửa lỗi Trang bị Khởi đầu:** Các nhân vật mới không còn bắt đầu trong tình trạng trần truồng. Giờ đây họ nhận được trang bị khởi đầu một cách chính xác.
-  - 🎲 **Tạo Nhân vật:** Đã sửa một lỗ hổng (exploit) nơi việc tăng giảm một thuộc tính ở các ngưỡng nhất định tạo ra điểm cộng thêm vô hạn. Đã hết mánh khóe Chỉ số Hấp dẫn!
-  - 🖼️ **Sửa lỗi Chân dung:** Bạn tạo một thế giới với tên riêng và chân dung biến mất? Đã sửa! Giờ đây hệ thống tìm thấy hình ảnh chính xác bất kể bạn đặt tên thế giới là gì.
-  - 💍 **Biểu tượng Thông minh:** Các vật phẩm (bao gồm cả nhẫn) giờ đây hiển thị biểu tượng chính xác và đúng đắn hơn trong giao diện.
-  - 🧪 **Tooltip Cải tiến:** Thuốc, vật phẩm tiêu hao và phép thuật giờ đây hiển thị chính xác toàn bộ thông tin và hiệu ứng khi di chuột qua.
-  - 🎵 **Cải tiến Âm thanh:** Nhạc chiến đấu không còn dừng lại khi nhấn các nút định sẵn.
-  - [I18N] **Sửa lỗi Cấy ghép:** Đã thêm các khóa dịch còn thiếu cho các ô cấy ghép (`slot_implant_*`) và các biểu tượng tương ứng (`icon_implant_*`) trong `es.json`.
-  - [FIX][AUDIO] **Âm thanh Không nhất quán:** Đã điều chỉnh hiệu ứng âm thanh (SFX) khi trang bị vật phẩm và rút vũ khí cho phù hợp với bối cảnh. Giờ đây hệ thống phát hiện `setting_key` và sử dụng âm thanh tương lai/công nghiệp trong Cyberpunk và âm thanh cổ điển trong Fantasy.
-  - [FIX][I18N] **Dọn dẹp es.json:** Đã xóa hơn 20 khóa trùng lặp trong `es.json` và sửa lỗi chính tả trong tên các ô (ví dụ: "Oíidos" -> "Oídos").
-  - ⚙️ **Phát hiện Mô hình Thông minh:** Giờ đây trò chơi đọc trực tiếp "bộ não" của các mô hình mà bạn nhập vào (GGUF). Tự động phát hiện ngữ cảnh tối đa thực tế. (Các mô hình chính thức đã được tối ưu hóa sẽ không bị đụng vào để đảm bảo độ ổn định tối đa).
-  - 📂 **Tiết kiệm Dung lượng:** Khi thêm một mô hình từ máy tính của bạn, trò chơi giờ đây sẽ di chuyển nó trực tiếp vào thư mục thay vì sao chép. Các Gigabyte của bạn sẽ cảm ơn điều này!
-  - ⚖️ **Công bằng trong Chỉ số:** Đã sửa một lỗ hổng cho phép nhận điểm vô hạn khi tăng giảm thuộc tính trong quá trình tạo nhân vật.
-  - 📖 **Hướng dẫn Huấn luyện:** Tôi đã cập nhật Sổ tay (README) với tất cả các chi tiết về cách nhân vật của bạn nhận kinh nghiệm và tăng thuộc tính.
-  - 📜 **Mật mã Thế giới Sử thi:** Đã hết thời của cốt truyện kiểu "tái bút"! Giờ đây trình tạo sẽ tạo ra các thế giới với lịch sử sâu sắc, mô tả tôn giáo, luật pháp, địa lý và các nhân vật nổi tiếng dưới định dạng biên niên sử chi tiết.
-  - 🧙 **Cốt truyện Mạch lạc:** Nhân vật của bạn không còn được sinh ra trong hư vô. Tiểu sử giờ đây tích hợp một cách thông minh với truyền thuyết của thế giới mà bạn vừa tạo hoặc chọn.
-  - ⚡ **Giao diện Mượt mà:** Việc tự động tạo câu chuyện và thế giới giờ đây được thực hiện trong nền. Không còn cảnh chờ đợi với màn hình bị đóng băng!
-  - 🚀 **Bắt đầu Phiêu lưu Tức thì:** Tôi đã loại bỏ thời gian chờ đợi! Giờ đây, sau khi tạo nhân vật, bạn sẽ nhảy trực tiếp vào câu chuyện. Hệ thống sử dụng tiểu sử phong phú của bạn để tạo ra sự khởi đầu hoàn hảo mà không cần bạn phải viết thêm một từ nào nữa.
-  - 🎭 **Tiểu sử có Mục đích:** Nhân vật của bạn không chỉ có quá khứ, mà còn có lý do cấp bách để bắt đầu cuộc phiêu lưu. Hệ thống AI mới tự động tạo ra tia lửa khởi đầu của câu chuyện được tích hợp trong tiểu sử của bạn.
-  - 🧹 **Giao diện Đơn giản hóa:** Tôi đã loại bỏ các nút và màn hình không mang lại giá trị. Nút "Bắt đầu Câu chuyện" giờ đây tập trung toàn bộ quyền năng để bạn bắt đầu chơi sớm nhất có thể.
-  - [FIX][UI] **Lỗi Hiển thị Trùng lặp trong Chọn Thế giới:** Đã sửa lỗi tên thế giới bị trùng lặp dạng "Tên [Tên]". Giờ đây nhãn loại sẽ bị ẩn nếu dư thừa.
-  - [FEAT][UI] **Tải Nhanh (Click Đơn):** Giờ đây có thể tải một nhân vật hoặc bắt đầu tạo mới chỉ với một cú nhấp chuột tại màn hình chọn thế giới. Việc mở rộng thế giới vẫn được giữ nguyên để tránh xung đột.
-  - 🧠 **AI Sáng tạo hơn:** Tôi đã phá vỡ "vòng lặp lặp lại" của AI bằng cách tiêm vào sự biến đổi kỹ thuật trong mỗi yêu cầu. Giờ đây các nhân vật được tạo ngẫu nhiên sẽ độc đáo và nguyên bản hơn nhiều, bỏ qua các ví dụ trong hướng dẫn.
-  
-  🛡️ Gửi đến những kẻ dũng cảm DÁM chiến đấu nơi tiền tuyến: Cuộc phiêu lưu đang chờ đón các bạn, giờ đây bất khuất hơn bao giờ hết!
-
-****************************************************************************************************
-06/02/2026 02:32 - Hỗ trợ Vulkan (AMD/Intel) và Xử lý Lỗi Mạnh mẽ - Beta_v053
-****************************************************************************************************
-- What's New (VI):
-  - 🚀 **Engine Vulkan Lai:** Hỗ trợ chính thức cho card đồ họa AMD và Intel! Giờ đây, trò chơi tích hợp một engine Vulkan chuyên dụng, tự động kích hoạt (hoặc thủ công) để tăng tốc AI trên các thiết bị không sử dụng NVIDIA.
-  - ⚙️ **Kiểm soát Hoàn toàn Engine:** Chúng tôi đã thêm tùy chọn "Buộc dùng Vulkan" vào cả Trình khởi chạy và Cài đặt. Nếu bạn gặp sự cố với CUDA hoặc muốn thử nghiệm hiệu suất Vulkan (thứ chạy cực nhanh trên nhiều cấu hình), quyền kiểm soát thuộc về bạn.
-  - 🚦 **Trạng thái Hệ thống:** Giờ đây bạn có thể thấy chính xác engine nào đang hoạt động (🟢 XANH cho CUDA, 🔴 ĐỎ cho Vulkan) trong bảng trạng thái.
-  - 🛡️ **Tín hiệu AI:** Nếu Trí tuệ Nhân tạo bị "đuối" (vượt quá hạn mức) hoặc mất kết nối internet, trò chơi sẽ cảnh báo bạn bằng một cửa sổ rõ ràng và hữu ích thay vì để bạn chờ đợi trong im lặng.
-  - 🔄 **Bảo vệ Chống Treo:** Nếu xảy ra lỗi kết nối, trò chơi sẽ không còn làm "vỡ" cuộc trò chuyện. Các lựa chọn đối thoại của bạn sẽ xuất hiện lại để bạn có thể thử lại mà không bị mất tiến trình.
-  - ☁️ **Bộ nhớ Đám mây:** Menu cài đặt giờ đây ghi nhớ chính xác các tùy chọn nhà cung cấp đám mây của bạn giữa các phiên chơi.
-
-****************************************************************************************************
-03/02/2026 20:23 - Tối ưu hóa Bộ nhớ VRAM và Độ ổn định Tải game - Beta_v052
-****************************************************************************************************
-- What's New (VI):
-  - 🧠 **Bộ não Tối ưu:** Chúng tôi đã khắc phục một lỗi nghiêm trọng khiến AI cố gắng "suy nghĩ hai lần" cùng một lúc, làm nhân đôi lượng bộ nhớ card đồ họa sử dụng và gây ra tình trạng chậm cực độ hoặc treo máy. VRAM của bạn sẽ cảm ơn điều này!
-  - 💾 **Tải An toàn:** Cải thiện độ ổn định chung khi tải các bản lưu game để đảm bảo việc tiếp tục cuộc phiêu lưu của bạn luôn là một trải nghiệm mượt mà.
-
-****************************************************************************************************
-02/02/2026 00:18 - Hotfix Quan trọng: Ổn định, Đa GPU và Cải thiện Bản địa hóa - Beta_v051
-****************************************************************************************************
-- What's New (VI):
-  - 🚑 **Sửa lỗi Quan trọng:** Đã khắc phục sự cố ngăn chặn việc khởi động trò chơi trong một số trường hợp hiếm gặp ("Hỏng Hoàn toàn") do hỏng cơ sở dữ liệu mà Launcher không thể dọn dẹp. Giờ đây, tùy chọn "Xóa Cơ sở Dữ liệu" đã hiệu quả hơn nhiều.
-  - ⚡ **Cải thiện Phần cứng:** Đã sửa lỗi khiến chế độ "Cấu hình Tự động" bỏ qua sức mạnh của các hệ thống dùng nhiều card đồ họa trong một số cấu hình có các GPU không đồng nhất.
-  - 🛠️ **Tiện ích:** Đã thêm một tùy chọn mới trong Launcher để dễ dàng mở nhật ký (log) của phiên trước đó nhằm hỗ trợ việc giải quyết sự cố.
-  - 🌍 **Bản địa hóa:** Đã sửa một số nút hiển thị bằng tiếng Anh (Yes/No) trong trình khởi chạy. Hiện tại chúng đã hiển thị đúng theo ngôn ngữ được chọn.
-  - 📖 **Giao diện:** Đã cải thiện định dạng văn bản thông tin phiên bản để dễ đọc hơn.
-  
-  - **Sắp ra mắt:** Đang trong quá trình triển khai: khả năng tương thích với GPU AMD, NVIDIA và Intel thông qua Vulkan.
-
-****************************************************************************************************
-30/01/2026 02:09 - Đa GPU, Sửa lỗi Hướng dẫn & Ổn định - Beta_v050
-****************************************************************************************************
-- Tính năng mới:
-  **Sức mạnh Đa GPU và Các bản sửa lỗi nghiêm trọng!**
-  
-  * **🚀 Hỗ trợ Đa GPU:** Đã triển khai khả năng chia nhỏ các mô hình AI lớn giữa nhiều card đồ họa. *Giờ đây bạn có thể sử dụng toàn bộ kho vũ khí phần cứng của mình; Sức mạnh Vô hạn!*
-  * **🛡️ Ổn định:** Đã thêm tất cả các thư viện DLL còn thiếu để tránh việc đóng ứng dụng đột ngột. *Tôi đã bọc giáp cho engine, nếu nó bị lỗi bây giờ thì đó là do tung xúc xắc thất bại thôi.*
-  * **📖 Sách hướng dẫn Web Động:**
-    * **Trình chọn Thực:** Menu ngôn ngữ giờ đây xác minh xem tệp nào thực sự tồn tại trước khi hiển thị chúng. *Không còn các tùy chọn ma không làm gì cả; phép thuật tiên tri cấp 5.*
-    * **Sửa lỗi 403:** Đã khắc phục lỗi quyền hạn ngăn cản việc xem Nhật ký thay đổi (Changelog) trong trò chơi. *Tôi đã dạy ứng dụng cách xin phép đúng cách ("Vừng ơi mở ra!").*
-  * **🌍 Ngôn ngữ:** Rà soát văn bản và bản dịch. *Chế độ Đa ngôn ngữ đã kích hoạt.*
-
-****************************************************************************************************
-28/01/2026 22:49 - Ổn định hóa và Cải tiến AI - Beta_v049
-****************************************************************************************************
-- Tính năng mới:
-  Chúng tôi đã trau chuốt trải nghiệm trò chơi với các sửa lỗi quan trọng và một công cụ trực quan mới:
-
-  * **Kho đồ Sạch sẽ và Đáng tin cậy:** Không còn tình trạng tìm thấy "vật phẩm ma" hoặc vật phẩm có tên lạ trong ba lô của bạn. Chúng tôi đã triển khai hệ thống xác thực cốt truyện để đảm bảo mọi thứ bạn nhặt hoặc mua thực sự tồn tại trong thế giới trò chơi.
-  * **Hội thoại Mượt mà:** Chúng tôi đã sửa những nút khó chịu đôi khi hiển thị là "Unknown" hoặc không phản hồi. Giờ đây, các tùy chọn đối thoại với NPC sẽ luôn hiển thị văn bản chính xác.
-  * **Tạo Nhân vật Mạnh mẽ:** Tạo anh hùng của bạn giờ là một quy trình vững chắc. Chúng tôi đã giải quyết các xung đột đôi khi khiến bảng nhân vật không hoàn chỉnh hoặc có chỉ số sai khi kết hợp tiểu sử và chỉ số (stats).
-  * **Thanh Trạng thái AI Mới:** Bây giờ bạn có thể thấy bộ não của máy đang hoạt động! Chúng tôi đã thêm một thanh ở phía trên hiển thị tốc độ phản hồi và mức sử dụng bộ nhớ theo thời gian thực. Như vậy bạn sẽ luôn biết liệu AI có đang "suy nghĩ" về cuộc phiêu lưu tiếp theo của bạn hay không.
-
-****************************************************************************************************
-28/01/2026 03:50 - Sửa lỗi Biên dịch Nghiêm trọng - Beta_v048
-****************************************************************************************************
-- Tính năng mới:
-  Đã khắc phục một lỗi nghiêm trọng ngăn cản việc khởi động trò chơi trên các cài đặt mới. Cải thiện độ ổn định và khả năng tương thích với các thiết bị khác nhau.
-
-****************************************************************************************************
-26/01/2026 19:38 - Trình khởi chạy Web & Hỗ trợ RTX 50 - Beta_v047
-****************************************************************************************************
-- Tính năng mới:
-
-  > [!QUAN TRỌNG]
-  > **VÌ LÝ DO TƯƠNG THÍCH, CẦN PHẢI XÓA CƠ SỞ DỮ LIỆU CŨ NẾU KHÔNG RẤT CÓ THỂ SẼ GẶP LỖI TRONG CẤU HÌNH AI**
-  > **(Giải pháp: Nhấp vào biểu tượng bánh răng ⚙️ trên Trình khởi chạy -> Xóa Cơ sở dữ liệu)**
-
-  *Hỗ trợ Quan trọng cho RTX Series 50: Đã khắc phục lỗi nghiêm trọng gây ra việc đóng ứng dụng đột ngột khi cố gắng tạo nhân vật trên các card đồ họa NVIDIA mới (RTX 5070, 5080, 5090).
-  (Vì tôi không có card RTX dòng 5000 nên tôi chưa thể trực tiếp kiểm thử xem giải pháp có hiệu quả 100% hay không, nhưng về lý thuyết thì lẽ ra đã được giải quyết. Tôi mong chờ những bài ca chiến thắng của các bạn tại đây!)
-  
-  *Cập nhật Engine AI: Chúng tôi đã cập nhật bộ não cục bộ của trò chơi để tương thích với công nghệ phần cứng mới nhất, đảm bảo mọi người đều có thể tận hưởng trải nghiệm ngoại tuyến, bất kể thiết bị của họ hiện đại đến mức nào.
-  
-  *Trình khởi chạy Mới: Cập nhật và tin tức theo thời gian thực từ trang web chính thức.
-
-
-****************************************************************************************************
-26/01/2026 06:49 - Tích hợp Tài liệu Web - Beta_v045
-****************************************************************************************************
-- Tính năng mới:
-  *Giờ đây Sách hướng dẫn người dùng và Nhật ký thay đổi được tải trực tiếp từ trang web chính thức của chúng tôi, đảm bảo bạn luôn có thông tin cập nhật nhất mà không cần tải xuống các bản vá. Bao gồm chế độ ngoại tuyến thông minh.
-
-  *Chúng tôi đã củng cố độ ổn định của trò chơi để nó không bao giờ bị treo khi khởi động. Ngoài ra, những người bán hàng đã trở lại sau kỳ nghỉ ở cõi hư vô: giờ đây họ xuất hiện chính xác, có hàng hóa trên kệ và tôn trọng bối cảnh của thế giới (không có thuốc phép thuật trong tương lai).
-
-  *Đã sửa lỗi không cho phép sửa đổi các tham số AI và việc chọn mô hình AI, khiến một số người dùng có VRAM hạn chế không thể chơi được.
-  **Trong trường hợp cần sửa đổi các tham số AI, tôi thực sự khuyên bạn nên thử giảm % VRAM xuống 85% trước, khởi động lại và thử; nếu vẫn chưa đủ, tôi khuyên bạn nên kiểm tra xem VRAM của GPU có đang bị sử dụng bởi các quy trình khác không phải của trò chơi hay không (khởi động lại PC nếu cần, đóng các ứng dụng có thể chiếm VRAM). Nếu sau khi giảm lượng VRAM thậm chí xuống còn 70% mà vẫn không hoạt động, tôi không khuyên bạn tiếp tục giảm vì trò chơi sẽ không thể quản lý các prompt (lời nhắc) được gửi đến AI, do đó, mặc dù có thể tránh được tràn VRAM, trò chơi sẽ không thể hoạt động vì không có gì để thực hiện điều đó; trong trường hợp đó, lựa chọn duy nhất còn lại là hạ cấp xuống mô hình thấp hơn, đặt lại các tham số AI về tự động và khởi động lại.
-
-****************************************************************************************************
-26/01/2026 04:00 - Ổn định Core và Chẩn đoán Dịch vụ - Beta_v044
-****************************************************************************************************
-- Tính năng mới:
-  Ổn định Core và Chẩn đoán Dịch vụ" "Các sửa lỗi nghiêm trọng trong việc tạo nhân vật, UI (MainWindow) và tối ưu hóa tìm kiếm ngữ nghĩa. Bắt đầu chẩn đoán sâu chế độ dịch vụ.
-
-****************************************************************************************************
-25/01/2026 19:28 - Hotfix: Logs và Ổn định - Beta_v043
-****************************************************************************************************
-- Mô tả:
-  Bản vá sửa lỗi tập trung vào chẩn đoán và sửa lỗi vòng lặp UI.
-
-- Thay đổi:
-  Đã sửa lỗi hiển thị của hộp thoại khởi động lại
-  Hệ thống log mới trong %LOCALAPPDATA% để chẩn đoán
-  Tối ưu hóa hiệu suất nội bộ
-
-****************************************************************************************************
-24/01/2026 06:30 - Hỗ trợ Backend Tiểu sử - Beta_v042
-****************************************************************************************************
-- Mô tả:
-  Hiển thị dữ liệu tiểu sử cho UI và các điều chỉnh i18n.
-
-<!-- source_hash: 5f218fc5 -->

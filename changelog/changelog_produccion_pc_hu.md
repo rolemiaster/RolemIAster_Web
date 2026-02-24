@@ -1,271 +1,123 @@
 ****************************************************************************************************
-24/02/2026 03:02 - MI Képgenerálás, Narratív Fejlesztések és Irányítás - Beta_v058
+24/02/2026 12:32 - AI-alapú képalkotás, narratív fejlesztések és irányítás - Beta_v058
+****************************************************************************************************
+- What's New (HU):
+  **Újdonság: AI-képalkotás második fázisa**
+  - 🎨 **A világod képekben:** Integráltam egy kezdeti AI-alapú képalkotó rendszert. Játék közben a rendszer megpróbál portrékat és tájképeket generálni, amelyek illeszkednek a játék hangulatához.
+  - 🖼️ **Dinamikus hátterek:** A képek a háttérben készülnek, anélkül, hogy megakasztanák a játékot. Látni fogod, ahogy fokozatosan megjelennek a háttérben, a karakterkártyákon és a Kódexben.
+  - 🧹 **Képkezelés:** Új panel a generált képek megtekintéséhez és a nem tetszők törléséhez.
+  
+  **Fejlesztések a karakteralkotásban:**
+  - ⚙️ **Stabilabb véletlenszerű generálás:** Egységesítettem és továbbfejlesztettem a szabályrendszert, amelyet az AI a karakterek alapoktól való felépítéséhez használ, biztosítva a logikusabb felszerelést (5-10 összefüggő tárgy) és a kiegyensúlyozottabb karakterlapokat.
+  - 🧠 **Osztott agy:** Az AI mostantól jobban felismeri, mikor kell „kitalálnia” egy karaktert a semmiből, és mikor kell az általad írt életrajzból kinyernie az adatokat.
+  - ⚡ **Testreszabott sebesség:** Új szakasz a Vizuális beállításoknál. Válassz a „Gyors” (1 lépés), „Közepes” (2 lépés) vagy „Magas” (4 lépés) opciók közül, hogy a generálási időt a géped teljesítményéhez igazítsd.
+  - 🛠️ **Technikai optimalizálás:** Az AI képmódell a **RAM-ba (memória)** töltődik be és a **CPU** dolgozza fel, nem foglal videómemóriát (VRAM). Ez biztosítja, hogy ne zavarja a játék fő AI-jának (LLM) teljesítményét. Körülbelül 5 GB extra RAM-ot igényel, ami a hivatalos Steam minimumkövetelményeken belül marad.
+  - 📤 **Oszd meg a kalandjaidat:** Minden generált kép automatikusan mentésre kerül. Itt találod őket: `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Modellválasztó (Haladó):** Ha a játékot az `--advanced` paraméterrel indítod, a Megjelenés panelen kiválaszthatod, melyik AI-modellt használd a képekhez. Ez lehetővé teszi a rajongók számára, hogy kipróbálják a Stable Diffusion különböző, OpenVINO-ra optimalizált (.xml/.bin fájlok) verzióit.
+  
+  **Narratíva és AI-agy:**
+  - 🧠 **Ismétlődések vége:** Új „Memóriadoktrína” került az AI-ba. Mostantól jobban megkülönbözteti az „emlékeket” (ami már megtörtént) a „jelentől” (ami éppen történik). Ez segít csökkenteni azokat az eseteket, amikor az AI ismétli magát vagy elakad.
+  - 📜 **Történelmi Archívum:** A rendszer az emlékeidet egy „Lezárt Történelmi Archívumként” mutatja be az AI-nak, megkönnyítve számára az információk referenciaként való használatát a történet előrelendítéséhez.
+  - ⚡ **Optimalizált utasítások:** Fejlesztettük a módot, ahogyan a játék a saját nyelveden kéri a narrációt, felszabadítva a modell kapacitását, hogy a kreativitásra koncentrálhasson.
+  - 👁️ **Narratív fókusz:** Újraírtuk az AI észlelését. Mostantól jobban megérti, mely elemek alkotják a „statikus hátteret”, így nem ismétli meg azokat feleslegesen minden bekezdésben.
+  - 🔀 **Egyértelműbb döntések:** Az AI mostantól világosabb utakat kínál. A javaslatai (gombok) különválnak a környezet felfedezése (Mélyítés) és az irányváltás (Eltérés) között.
+  - 🫵 **Közvetlen megszólítás:** Módosítottuk az alapvető utasítást, hogy az AI közvetlenül tegezzen („Tú”), javítva a személyes élményt.
+  
+  **Karakteralkotás:**
+  - 🖼️ **Karakterportrék:** Amikor AI-val generálsz karaktert, a rendszer megpróbál létrehozni egy portrét a kora, foglalkozása és leírása alapján. Vedd figyelembe, hogy ez egy kezdeti verzió, és a hűség (különösen az életkor tekintetében) a használt modelltől függően változhat. (Még folynak a tesztek, de a kezdet biztató)
+  - 🎲 **Megbízható véletlenszerű generálás:** Javítottunk egy hibát, ahol a „Generálás AI-val” gomb elsőre sikertelen lehetett, üresen hagyva a mezőket. Az intelligens javítórendszer mostantól biztosítja, hogy a válasz mindig érvényes legyen.
+  
+  **Generált képek kezelése:**
+  - 🖼️ **AI-képgaléria:** Új panel a Fájl menüben, amely megjeleníti az összes képet, amelyet az AI a játékaid során generált (portrék, hátterek). Szűrhetsz képtípus vagy világ szerint.
+  - 🗑️ **Szelektív törlés:** Válassz ki egy vagy több képet, és töröld őket, ha nem tetszenek (például azt, ahol az AI úgy döntött, jó ötlet egy buszt parkolni a vár istállójába). A rendszer törli a fájlt és a belső bejegyzést is.
+  - 📂 **Közvetlen hozzáférés:** Kattints duplán bármelyik bélyegképre a fájlt tartalmazó mappa megnyitásához. Ha a mappa már nyitva van, ugyanazt az ablakot használja újra.
+  - 💾 **Méret megjegyzése:** A galériaablak mérete automatikusan mentésre kerül a munkamenetek között.
+  
+  **Teljesítmény alacsony konfigurációkon (Fontos kevés VRAM-mal rendelkező GPU-khoz):**
+  - 🧠 **PSR - Hibrid irányítás:** Új rendszer, amely két fázisra osztja az AI munkáját: Tervezés (Séf) és Végrehajtás (Szakácsok). Ez lehetővé teszi, hogy a 8 GB VRAM-mal rendelkező helyi modellek működjenek, elkerülve a túl nagy kontextus (+12K token) miatti összeomlást, nagyobb késleltetés árán; az AI-val való interakció egyetlen prompt helyett promptek sorozatává válik (minél kevesebb a VRAM, annál több prompt generálódik és annál hosszabb a válaszidő).
+  - ⚡ **Intelligens végrehajtás:** A rendszer automatikusan eldönti, hogy mindent egyszerre (monolitikus) vagy részekre bontva (iteratív) dolgozzon fel a rendelkezésre álló VRAM alapján. A kevesebb VRAM-mal rendelkező GPU-k csak szükség esetén aktiválják a részenkénti módot.
+  - 📊 **Dinamikus optimalizálás:** A PSR csökkenti a token-terhelést a generálás során, lehetővé téve a 4 GB-os videokártyával rendelkező felhasználók számára a karakteralkotást és a történetgenerálást, ami korábban elakadt.
+  - 🔄 **Megőrzött koherencia:** A munka felosztása ellenére a rendszer egy „mester-szándékot” injektál, hogy az AI ne veszítse el a fonalat.
+  
+  **AI-hangok (folyamatos fejlesztés):**
+  Valós idejű hanggenerálás minden nyelven (egyes nyelvek korlátozottabbak, a legváltozatosabb hangtípusokkal az angol rendelkezik).
+  - 🗣️ **Szinkronizált harci kiáltások:** Ellenséges célpontok elleni harc indításakor mostantól egy kontextusba illő bevezető mondat hangzik el.
+  - 🎭 **Kontextusfüggő dinamikus mondatok:** A motor rövid hangsorokat generálhat konkrét eseményekhez (szolgáltatások/harc) a nyelv, a környezet és a karakterprofil alapján.
+  - 🧠 **Belső hangsablonok:** Elválasztottuk a technikai hangsablonokat a narratív rendszertől a történettel való ütközések elkerülése érdekében.
+  - 🔊 **Tisztább hangzás:** Javítottuk az érthetőséget és a prozódiát a szintézisnél, az érthető kiejtést helyezve előtérbe.
+  
+  **⚠️ Kompatibilitási közlemény (Korábbi mentések):**
+  - 🔄 A szabályrendszerben és a környezeti rendszerben végrehajtott számos belső változtatás miatt a **korábban mentett játékok és világok továbbra is játszhatóak maradnak (valószínűleg)**, de nagy a valószínűsége annak, hogy hibák vagy váratlan viselkedések lépnek fel. **Javasoljuk egy tiszta, új világ létrehozását**, hogy minden fejlesztést megfelelően élvezhess.
+
+****************************************************************************************************
+17/02/2026 07:20 - MI-alapú Képkészítés, Narratív Fejlesztések és Irányítás - EXPERIMENTAL_v057
 ****************************************************************************************************
 - What's New (HU):
   **⚠️ KÍSÉRLETI ÁG (STEAM BÉTA)**
-  Ez a verzió jelenleg csak a Steam **Kísérleti Ágán** (Experimental) érhető el. Az aktiváláshoz:
+  Ez a verzió jelenleg csak a Steam **Kísérleti Ágában** (Experimental Branch) érhető el. Az aktiváláshoz:
   1. Kattints jobb gombbal a **RolemIAster**-re a Steam Könyvtáradban.
-  2. Válaszd a **Tulajdonságok...** menüpontot.
-  3. Lépj a **Béták** fülre.
-  4. A "Bétarészvétel" legördülő menüben válaszd az **experimental** lehetőséget.
+  2. Válaszd a **Tulajdonságok...** (Properties) lehetőséget.
+  3. Menj a **Béták** (Betas) fülre.
+  4. A "Bétában való részvétel" (Beta Participation) alatt válaszd ki az **experimental** lehetőséget a legördülő menüből.
   
-  **Újdonság: A MI Képgenerálás első fázisa**
-  - 🎨 **A Világod Képekben:** Integráltam egy kezdeti Mesterséges Intelligencia képgeneráló rendszert. Ahogy játszol, a rendszer megpróbál portrékat és tájképeket generálni, amelyek illeszkednek a játékod hangulatához.
-  - 🖼️ **Dinamikus Hátterek:** A képek a háttérben generálódnak anélkül, hogy megállítanák a játékot. Látni fogod, ahogy fokozatosan megjelennek a háttérben, a karakterlapokon és a Kódexben.
-  - 🧹 **Képkezelés:** Új panel a generált képek megtekintésére és a nem tetszők törlésére.
-  
-  **Fejlesztések a Karaktergenerálásban:**
-  - ⚙️ **Stabilabb Véletlenszerű Alkotás:** Egyesítettem és továbbfejlesztettem a szabálymotort, amelyet a MI a karakterek nulláról történő létrehozásához használ, garantálva a logikusabb felszereléseket (5-10 koherens tárgy) és a kiegyensúlyozottabb adatlapokat.
-  - 🧠 **Osztott Agy:** A MI most már jobban megérti, mikor kell egy karaktert nulláról "kitalálnia", és mikor kell csak a te általad írt életrajzból kinyernie az adatokat.
-  - ⚡ **Személyre Szabott Sebesség:** Új rész a Vizuális Beállításokban. Válassz a "Gyors" (1 lépés), "Közepes" (2 lépés) vagy "Magas" (4 lépés) közül, hogy a generálási időt a géped teljesítményéhez igazítsd.
-  - 🛠️ **Technikai Optimizáció:** A képgeneráló MI modell a **RAM-ba (Memória)** töltődik, és a **CPU**-n keresztül dolgozódik fel, anélkül, hogy videomemóriát (VRAM) foglalna. Ez garantálja, hogy ne zavarja a játék fő MI-jének (LLM) teljesítményét. Körülbelül 5GB extra RAM-ot igényel, ezzel a hivatalos Steam minimum gépigényen belül marad.
-  - 📤 **Oszd meg a Kalandjaidat:** Minden generált kép automatikusan mentésre kerül. Ezeket ebben a mappában találod: `%APPDATA%/RolemIAster/custom_assets/images`
-  - 🔬 **Modellválasztó (Haladó):** Ha az `--advanced` paraméterrel indítod a játékot, mostantól kiválaszthatod a Megjelenés panelen, hogy melyik MI modellt használd a képekhez. Ez lehetővé teszi a rajongók számára, hogy kipróbálják az OpenVINO-ra optimalizált Stable Diffusion különböző verzióit (.xml/.bin fájlok).
+  **Újdonság: MI Képalkotás Első Fázis**
+  - 🎨 **A Világod Képekben:** Integráltam egy kezdeti Mesterséges Intelligencia alapú képkészítő rendszert. Játék közben a rendszer megpróbál a játék hangulatához illeszkedő portrékat és tájakat generálni.
+  - 🖼️ **Dinamikus Hátterek:** A képek a háttérben generálódnak anélkül, hogy megállítanák a játékot. Látni fogod, ahogy fokozatosan megjelennek a háttérben, a karakterkártyákon és a Kódexben.
+  - ⚡ **Testreszabható Sebesség:** Új rész a Vizuális Beállításokban. Válassz a "Gyors" (1 lépés), "Közepes" (2 lépés) vagy "Magas" (4 lépés) közül, hogy a generálási időt a géped teljesítményéhez igazítsd.
+  - 🛠️ **Technikai Optimalizálás:** A képalkotó MI modell a **RAM-ba (Memória)** töltődik be és a **CPU** dolgozza fel, anélkül, hogy videómemóriát (VRAM) foglalna. Ez biztosítja, hogy ne zavarja a játék fő MI-jének (LLM) teljesítményét. Körülbelül 5 GB plusz RAM-ot igényel, ami még mindig a hivatalos Steam minimum követelményeken belül marad.
+  - 📤 **Oszd Meg Kalandjaidat:** Minden generált kép automatikusan mentésre kerül. Itt találod őket: `%APPDATA%/RolemIAster/custom_assets/images`
   
   **Narratíva és MI Agy:**
-  - 🧠 **Vége a Ciklusoknak:** Új "Memória Doktrínát" ültettünk a MI-be. Most már jobban különbséget tesz az "emlékek" (ami már megtörtént) és a "jelen" (ami éppen történik) között. Ez segít csökkenteni azokat az eseteket, amikor a MI ismételte önmagát vagy elakadt.
-  - 📜 **Történelmi Archívumok:** A rendszer az emlékeidet "Lezárt Történelmi Archívumként" mutatja be a MI-nek, megkönnyítve számára, hogy referenciaként használja az információkat a történet előmozdításához.
-  - ⚡ **Optimalizált Utasítások:** Továbbfejlesztettük azt a módot, ahogy a játék a te nyelveden kéri a narrációt, kapacitást szabadítva fel a modell számára, hogy a kreativitásra fókuszálhasson.
-  - 👁️ **Narratív Fókusz:** Újraírtuk a MI érzékelését. Most már jobban megérti, mely elemek számítanak "statikus háttérnek", és ezeket nem ismétli feleslegesen minden bekezdésben.
-  - 🔀 **Tisztább Döntések:** A MI most határozottabb kiutakat kínál. A javaslatai (gombok) fel vannak osztva a környezet vizsgálata (Elmélyülés) vagy az irányváltoztatás (Eltérés) között.
-  - 🫵 **Közvetlen Megszólítás:** Módosítottuk az alaputasítást, hogy biztosítsuk, a MI tegezni fog ("Te"), növelve a személyes beleélést.
+  - 🧠 **A Hurkok Vége:** Új "Memória Doktrínát" vezettünk be az MI-nél. Mostantól jobban megkülönbözteti az "emlékeket" (ami már megtörtént) és a "jelent" (ami éppen történik). Ez segít csökkenteni azokat az eseteket, amikor az MI ismételte önmagát vagy elakadt.
+  - 📜 **Történeti Archívumok:** A rendszer az emlékeidet "Lezárt Történeti Archívumként" mutatja be az MI-nek, megkönnyítve számára, hogy ezt az információt referenciaként használja a történet előremozdításához.
+  - ⚡ **Optimalizált Utasítások:** Javítottuk a módot, ahogyan a játék a narrációt kéri a nyelveden, felszabadítva a modell kapacitását, hogy a kreativitásra koncentrálhasson.
+  - 👁️ **Narratív Fókusz:** Újraírtuk az MI észlelését. Mostantól jobban érti, mely elemek számítanak "statikus háttérnek", és nem kellene feleslegesen ismételnie őket minden bekezdésben.
+  - 🔀 **Világosabb Döntések:** Az MI mostantól határozottabb menekülőutakat kínál. Javaslatai (gombok) a környezet kivizsgálása (Elmélyülés) vagy az irányváltás (Eltérés) között oszlanak meg.
+  - 🫵 **Közvetlen Megszólítás:** Módosítottuk az alap utasítást annak érdekében, hogy az MI tegeződjön veled, javítva a személyes beleélést.
   
-  **Karakteralkotás:**
-  - 🖼️ **Karakterportrék:** Amikor egy karaktert a MI-vel generálsz, a rendszer megpróbál egy portrét készíteni a kora, hivatása és leírása alapján. Vedd figyelembe, hogy ez egy korai verzió, és a pontosság (különösen a kor esetében) a használt modelltől függően változhat. (Még tesztelem, de a kezdet biztató)
-  - 🎲 **Megbízható Véletlenszerű Generálás:** Kijavítottunk egy hibát, ahol a "Generálás MI-vel" gomb az első próbálkozásnál sikertelen lehetett, üresen hagyva a mezőket. Mostantól az intelligens javítórendszer gondoskodik róla, hogy a válasz mindig érvényes legyen.
-  
-  **Generált Képek Kezelése:**
-  - 🖼️ **MI Képgaléria:** Új panel a Fájl menüben, amely megjeleníti a MI által a játékaid során generált összes képet (portrékat, háttereket). Szűrhetsz a kép típusa vagy világ szerint.
-  - 🗑️ **Szelektív Törlés:** Válassz ki egy vagy több képet, és töröld őket, ha nem tetszenek (talán azt, amelyiknél a MI jó ötletnek tartotta egy busz leparkolását a kastély istállójában). A rendszer megtisztítja a fájlt és a belső nyilvántartását is.
-  - 📂 **Közvetlen Hozzáférés:** Kattints duplán bármelyik bélyegképre, hogy megnyisd a mappát, ahol a fájl található. Ha a mappa már nyitva van, a rendszer ugyanazt az ablakot használja újra.
-  - 💾 **Megjegyzi a Helyet:** A galériaablak mérete a munkamenetek között automatikusan mentésre kerül.
-  
-  **Teljesítmény Alacsony Specifikációkon (Fontos a kevés VRAM-mal rendelkező GPU-khoz):**
-  - 🧠 **PSR - Hibrid Irányítás:** Új rendszer, amely a MI munkáját két fázisra osztja: Tervezés (Séf) és Végrehajtás (Szakácsok). Ez lehetővé teszi a 8 GB VRAM-mal rendelkező helyi modellek működését, elkerülve az összeomlásokat a túlzott kontextus miatt (+12K token), cserébe magasabb késleltetésért; a MI-vel való interakció egyetlen promptból (utasításból) álló sorozattá válik (minél kevesebb a VRAM, annál több prompt generálódik, és annál hosszabb a válaszidő).
-  - ⚡ **Intelligens Végrehajtás:** A rendszer a rendelkezésre álló VRAM alapján automatikusan eldönti, hogy mindent egyszerre dolgozzon fel (monolitikus) vagy részekre ossza (iteratív). A kevesebb VRAM-mal rendelkező GPU-k csak szükség esetén aktiválják a részleges módot.
-  - 📊 **Dinamikus Optimizáció:** A PSR csökkenti a token-terhelést a generálás során, így a 4GB videokártyával rendelkező felhasználók befejezhetik a karakteralkotást és a történetgenerálást, amelyek korábban lefagytak.
-  - 🔄 **Fenntartott Koherencia:** Annak ellenére, hogy megosztja a munkát, a rendszer "mesteri szándékot" fecskendez be, hogy a MI ne veszítse el a fonalat abban, amit csinált.
-  
-  **MI Hangok (fokozatos fejlesztés):**
-  Valós idejű hanggenerálás minden nyelven (egyes nyelvek korlátozottabbak, mint mások, a legváltozatosabb hangtípusokkal az angol rendelkezik)
-  - 🗣️ **Küzdelmi Csatakiáltások Hanggal:** Ha ellenségekkel kezdesz harcot, most egy kontextuális, belépő hangmondat is elhangzik.
-  - 🎭 **Dinamikus Mondatok Kontextus Alapján:** A motor képes rövid hangmondatokat generálni konkrét eseményekhez (szolgáltatások/harc), a nyelv, a környezet és a karakterprofil alapján.
-  - 🧠 **Belső Hangsablonok:** A technikai hangsablonokat elválasztottuk a narratív rendszertől, hogy elkerüljük az interferenciát a történettel.
-  - 🔊 **Nagyobb Tisztaság Hallgatáskor:** Javítottunk a szintézis érthetőségén és prozódiáján, az érthető kiejtést előnyben részesítve.
-  
-  **⚠️ Kompatibilitási Figyelmeztetés (Korábbi Mentések):**
-  - 🔄 A szabálymotorban és a környezeti rendszerben történt rengeteg belső változtatás miatt a **korábban mentett játékok és világok (valószínűleg) továbbra is játszhatóak maradnak**, de nagyon valószínű, hogy hibákat vagy váratlan viselkedést fognak mutatni. **Javasoljuk, hogy hozz létre egy teljesen új világot**, hogy minden fejlesztést megfelelően élvezhess.
+  **Karakterkészítés:**
+  - 🖼️ **Karakterportrék:** Amikor MI-vel generálsz egy karaktert, a rendszer megpróbál egy portrét készíteni a kora, hivatása és leírása alapján. Vedd figyelembe, hogy ez egy kezdeti verzió, és a hűség (különösen az életkor tekintetében) a használt modelltől függően változhat. (továbbra is tesztelek, de a kezdet biztató)
+  - 🎲 **Megbízható Véletlenszerű Generálás:** Javításra került egy hiba, ahol a "Generálás MI-vel" gomb az első próbálkozásra kudarcot vallhatott, üresen hagyva a mezőket. Mostantól az intelligens javítórendszer biztosítja, hogy a válasz mindig érvényes legyen.
 
 ****************************************************************************************************
-15/02/2026 02:57 - Közvetlen írás, stabilitási javítások és észlelés - Beta_v057
+17/02/2026 07:04 - MI-alapú Képkészítés, Narratív Fejlesztések és Irányítás - Beta_v058
 ****************************************************************************************************
 - What's New (HU):
-  **Stabilitás:**
-  - 🛠️ **Viszlát, konfigurációs összeomlások:** Különböző hibák javítva, amelyek bizonyos körülmények között előfordultak, és megakadályozták az MI-beállítások megnyitását vagy módosítását modellváltáskor vagy az értékek alaphelyzetbe állításakor.
-  - 🗃️ **Csendes adatbázis:** A játék indításakor megjelenő zavaró „Inkompatibilis adatbázis” figyelmeztetés többé nem jelenik meg, ha az adatbázisod rendben van. Csak akkor jelenik meg, ha valódi szerkezeti változás történt, amely migrációt igényel.
+  **⚠️ KÍSÉRLETI ÁG (STEAM BÉTA)**
+  Ez a verzió jelenleg csak a Steam **Kísérleti Ágában** (Experimental Branch) érhető el. Az aktiváláshoz:
+  1. Kattints jobb gombbal a **RolemIAster**-re a Steam Könyvtáradban.
+  2. Válaszd a **Tulajdonságok...** (Properties) lehetőséget.
+  3. Menj a **Béták** (Betas) fülre.
+  4. A "Bétában való részvétel" (Beta Participation) alatt válaszd ki az **experimental** lehetőséget a legördülő menüből.
   
-  **Játékélmény:**
-  - 🎯 **Precíziós MI-vezérlés:** Mostantól manuálisan is beírhatod a Kontextus, Tokenek, Hőmérséklet vagy GPU-rétegek értékeit közvetlenül a csúszka melletti numerikus mezőbe. Többé nem függsz kizárólag a csúszkáktól! A két vezérlő szinkronban van: mozgasd a csúszkát, és a szám frissül, vagy írd be a számot, és a csúszka mozog.
-  - ⌨️ **Közvetlen írás:** Többé nem kell a szövegdobozra kattintanod a cselekvésed beírásához! Mostantól közvetlenül elkezdhetsz gépelni, amíg a játék képernyőjén vagy. Ha az eszköztárral vagy más panellel lépsz interakcióba, majd írni szeretnél, egyszerűen kezdj el gépelni anélkül, hogy bármit is ki kellene jelölnöd. A rendszer a billentyűleütéseidet automatikusan a cselekvés mezőbe irányítja. Nem zavarja a menüket, párbeszédpaneleket és a rendszer gyorsbillentyűit.
+  **Újdonság: MI Képalkotás Első Fázis**
+  - 🎨 **A Világod Képekben:** Integráltam egy kezdeti Mesterséges Intelligencia alapú képkészítő rendszert. Játék közben a rendszer megpróbál a játék hangulatához illeszkedő portrékat és tájakat generálni.
+  - 🖼️ **Dinamikus Hátterek:** A képek a háttérben generálódnak anélkül, hogy megállítanák a játékot. Látni fogod, ahogy fokozatosan megjelennek a háttérben, a karakterkártyákon és a Kódexben.
+  - ⚡ **Testreszabható Sebesség:** Új rész a Vizuális Beállításokban. Válassz a "Gyors" (1 lépés), "Közepes" (2 lépés) vagy "Magas" (4 lépés) közül, hogy a generálási időt a géped teljesítményéhez igazítsd.
+  - 🛠️ **Technikai Optimalizálás:** A képalkotó MI modell a **RAM-ba (Memória)** töltődik be és a **CPU** dolgozza fel, anélkül, hogy videómemóriát (VRAM) foglalna. Ez biztosítja, hogy ne zavarja a játék fő MI-jének (LLM) teljesítményét. Körülbelül 5 GB plusz RAM-ot igényel, ami még mindig a hivatalos Steam minimum követelményeken belül marad.
+  - 📤 **Oszd Meg Kalandjaidat:** Minden generált kép automatikusan mentésre kerül. Itt találod őket: `%APPDATA%/RolemIAster/custom_assets/images`
   
-  További kisebb változtatások...
+  **Narratíva és MI Agy:**
+  - 🧠 **A Hurkok Vége:** Új "Memória Doktrínát" vezettünk be az MI-nél. Mostantól jobban megkülönbözteti az "emlékeket" (ami már megtörtént) és a "jelent" (ami éppen történik). Ez segít csökkenteni azokat az eseteket, amikor az MI ismételte önmagát vagy elakadt.
+  - 📜 **Történeti Archívumok:** A rendszer az emlékeidet "Lezárt Történeti Archívumként" mutatja be az MI-nek, megkönnyítve számára, hogy ezt az információt referenciaként használja a történet előremozdításához.
+  - ⚡ **Optimalizált Utasítások:** Javítottuk a módot, ahogyan a játék a narrációt kéri a nyelveden, felszabadítva a modell kapacitását, hogy a kreativitásra koncentrálhasson.
+  - 👁️ **Narratív Fókusz:** Újraírtuk az MI észlelését. Mostantól jobban érti, mely elemek számítanak "statikus háttérnek", és nem kellene feleslegesen ismételnie őket minden bekezdésben.
+  - 🔀 **Világosabb Döntések:** Az MI mostantól határozottabb menekülőutakat kínál. Javaslatai (gombok) a környezet kivizsgálása (Elmélyülés) vagy az irányváltás (Eltérés) között oszlanak meg.
+  - 🫵 **Közvetlen Megszólítás:** Módosítottuk az alap utasítást annak érdekében, hogy az MI tegeződjön veled, javítva a személyes beleélést.
+  
+  **Karakterkészítés:**
+  - 🖼️ **Karakterportrék:** Amikor MI-vel generálsz egy karaktert, a rendszer megpróbál egy portrét készíteni a kora, hivatása és leírása alapján. Vedd figyelembe, hogy ez egy kezdeti verzió, és a hűség (különösen az életkor tekintetében) a használt modelltől függően változhat. (továbbra is tesztelek, de a kezdet biztató)
+  - 🎲 **Megbízható Véletlenszerű Generálás:** Javításra került egy hiba, ahol a "Generálás MI-vel" gomb az első próbálkozásra kudarcot vallhatott, üresen hagyva a mezőket. Mostantól az intelligens javítórendszer biztosítja, hogy a válasz mindig érvényes legyen.
 
 ****************************************************************************************************
-14/02/2026 21:48 - Kontextus-szinkronizáció és MI-válaszvezérlés - Beta_v056
+13/02/2026 21:47 - MI-beállítások optimalizálása és i18n megerősítése - Beta_v055
 ****************************************************************************************************
 - What's New (HU):
-  **Rendszerek és teljesítmény:**
-  - 🧠 **Teljes kontextusvezérlés:** Mostantól sokkal intuitívabb csúszkákkal állíthatod be az MI memóriáját (`n_ctx`) és válaszainak hosszát (`Max Tokens`).
-  - ♾️ **Korlátlan mód:** Húzd a minimumra a „Korlátlan” mód aktiválásához, lehetővé téve, hogy az olyan nagy teljesítményű modellek, mint a Gemini, korlátozások nélkül használják teljes kapacitásukat.
-  - ⚡ **Illesztőprogramok újraindítása:** Új opció az indítóban a videó-illesztőprogramok játék előtti újraindítására (opcionális, az indítóból konfigurálható); indításkor a képernyő mostantól villogni fog, ezzel biztosítva, hogy a teljes vram rendelkezésre álljon, megtisztítva a maradványoktól.
-  - 🛠️ **Robusztus konfiguráció:** Javítottuk a vizuális hibákat és technikai problémákat a kedvenc MI-szolgáltatóid beállításainak mentésekor.
-  - 🚀 **Jobb hibafelismerés:** A játék mostantól intelligensebben észleli, ha egy külső MI kifogy a helyből.
-  
-  **Mechanikák és világ:**
-  - 🎒 **Garantált eszköztár:** Vége annak, hogy úgy kezdesz egy kalandot, hogy nem látod a tárgyaidat. Az SDIA rendszer mostantól a karakterkészítést is figyeli, hogy a felszerelésed mindig ott legyen.
-  - 📜 **Megtisztított háttértörténet:** Javítottuk azt a hibát, amely „kódtöredékeket” vagy furcsa szövegeket illesztett a világod történetébe. A Kódex mostantól tisztább és olvashatóbb lesz.
-  - ⚠️ **Kompatibilitási útmutató:** Figyelmeztetéseket helyeztünk el a beállításokban, hogy segítsünk a kompatibilis modellek kiválasztásában (Instruct/Chat).
-  - ⚙️ **Megbízható implantátumok:** Javítottuk a foglalatok definícióját és a szabályok betöltését a karakterkészítés során. Mostantól minden kiberfejlesztésed hivatalos foglalatokat használ, és automatikusan, helyesen szerelődik fel.
-  - 🎓 **Tanonc korlát:** Kiigazítottuk a képességek kezdeti egyensúlyát. Az MI generál egy pontcsomagot, amelyet automatikusan eloszt a legfontosabb képességek között a karaktered kontextusa alapján. Hőseid mostantól valódi újoncként kezdenek, és logikusabb módon fejlődnek.
+  - ⚙️ **Helyi prioritásvezérlés:** Mostantól manuálisan is beállíthatod a videókártyáid prioritását, még akkor is, ha a rendszer automatikus módban van.
+  - 🧠 **MI-rotációs információk:** Információs paneleket adtam hozzá a külső szolgáltatók beállításaihoz, hogy elmagyarázzam, hogyan működik az automatikus rotáció hiba vagy kvótatúllépés esetén.
+  - 🌍 **Kibővített GPU-támogatás:** Az i18n információs üzenet mostantól helyesen tükrözi az NVIDIA CUDA és a Vulkan (AMD/Intel) támogatását. Frissített fordítások minden nyelven!
+  - ⚙️ **Javított kapcsolat:** Javításra kerültek az Ollama és más OpenAI-kompatibilis szerverek csatlakozói.
+  - 🧠 **Soknyelvű és robusztus MI:** A történetben szerzett tárgyak észlelése mostantól 10 nyelven működik. Emellett megerősítettem a rendszert, hogy soha ne maradj kezdőtörténet nélkül, még akkor sem, ha az MI technikai akadályba ütközik.
+  - 🔄 **Intelligens rotáció:** Javítottam a rotációs rendszert, hogy ne adja fel azonnal a helyi MI-vel. A rendszer most ad neki egy esélyt a javításra, mielőtt külső segítséget keresne.
+  - 🧹 **Alapok tisztítása:** Eltávolítottam a régi és zavaros szabályokat, hogy az MI „agya” élesebb és pontosabb legyen a tárgyaid kezelésekor.
 
-****************************************************************************************************
-14/02/2026 05:06 - Integritás megerősítése, Karaktertudatosság és Optimalizálás - Beta_v055
-****************************************************************************************************
-- What's New (HU):
-  - 🧠 **Testreszabható MI prioritás:** Mostantól áthúzással rendezheted az MI csatlakozókat a használati sorrend meghatározásához. Ha az egyik meghibásodik, a játék automatikusan megpróbálja a következőt a prioritási listádon.
-  - ⚙️ **Előtöltés vezérlése:** Új opció a rendszerindítóban, amellyel eldöntheted, hogy előtöltöd-e a helyi MI modellt, vagy csak szükség esetén töltöd be (erőforrás-megtakarítás indításkor).
-  - 🛡️ **Biztonságos és tiszta törlés:** Egy világ törlésekor a rendszer mostantól gondoskodik az összes kapcsolódó adat (karakterek és történet) teljes körű törléséről, makulátlanul tartva az adatbázisodat.
-  - 🚀 **Memória-optimalizálás:** Az MI "agya" mostantól csak egyszer töltődik be, és megosztásra kerül az összes funkció között, jelentős grafikus memóriát (VRAM) takarítva meg.
-  - 🎨 **Intelligens kezelőfelület:** A világválasztó panel mostantól tökéletesen igazodik a képernyőhöz és a szöveghez, levágott gombok és rosszul kihasznált helyek nélkül.
-  - 🔄 **Javított intelligens rotáció:** Javítottam a rotációs rendszert, hogy ne adja fel rögtön a helyi MI-vel; mostantól ad neki egy esélyt a javításra, mielőtt külső segítséget keresne.
-  - 🌍 **Többnyelvű és robusztus MI:** A tárgyfelismerés és a narratíva mostantól pontosabb 10 nyelven, speciális védelemmel ellátva, hogy soha ne maradj történet nélkül.
-  - 🛠️ **Garantált MI perzisztencia:** Javítva a hiba, amely miatt a Gemini "elfelejtette" beállításait vagy Ollamává változott. Az MI használati prioritásaid mostantól biztonságosan és precízen kerülnek mentésre.
-  - ⚡ **Gemini helyreállítva:** Javítva a hozzáférés a Gemini modellhez a helyes kulcsok és URL-ek visszaállításával.
-  - 🎨 **Javított tematikus felület:** A döntési gombok mostantól azonnal átveszik a világod színét (pl. Arany a fantasy-hez) a játék betöltésekor.
-  - 👥 **Karakterek közötti tudatosság:** Az MI mostantól tudatában van az összes karakterednek! Ha több hősöd van ugyanabban a világban, az MI lakókként ismeri fel őket, és képes lesz emlékezni arra, mit tett mindegyikük egyénileg.
-  - 🧠 **Memória hozzárendeléssel:** Az emlékrendszer mostantól megkülönbözteti, ki hajtotta végre az egyes cselekvéseket, megakadályozva, hogy az MI összekeverje a te múltbeli tetteidet más karakterekével.
-
-****************************************************************************************************
-13/02/2026 07:56 - Szemantikus Harci Értelmező Rendszer - Beta_v054
-****************************************************************************************************
-- What's New (HU):
-  🧪 MÁR ELÉRHETŐ:
-  
-  ⚠️ **FONTOS FIGYELMEZTETÉS:** A JÁTÉK ÁT TUDJA MIGRÁLNI A RÉGI ADATBÁZIST AZ ÚJ STRUKTÚRÁBA A LAUNCHER OPCIÓIN KERESZTÜL. EZT NEM JAVASLOM, MÉG HA A RÉGI MENTÉSED MŰKÖDIK IS, SOK DOLOG HIBÁS LESZ. AZT JAVASLOM, HOGY TÖRÖLD AZ ÖSSZES KORÁBBI MENTÉST. NEM SZÜKSÉGES A TELJES ADATBÁZIST TÖRÖLNI, KIVÉVE EXTRÉM ESETBEN.
-  
-  Változások:
-  
-  - 🌍 **Világ- és Karakterkezelő:** Most már teljes szabadságot élvezel. Hozz létre saját világokat egyedi szabályokkal és környezettel, és alkoss bennük annyi karaktert, amennyit csak szeretnél. **Fontos megjegyzés:** Egy adott világ karakterei ugyanazon az idővonalon és eseményeken osztoznak, ami megteremti a jövőbeli többjátékos mód alapjait.
-  - 🧠 **Kontextuális Memória (Szuper RAG):** A MI most már rendelkezik „érzékekkel”. Amikor a háttértörténetben (Lore) vagy a memóriájában keres információt, figyelembe veszi, hol vagy, kivel vagy, sérült vagy-e, és mi történt éppen. Ha egy Királlyal vagy, királyokkal kapcsolatos dolgokra fog emlékezni. Ha sérült vagy, a gyógyítás szabályait keresi. Sokkal intuitívabb és koherensebb!
-  - 🌍 **Lore az Első Karakternél:** Írtál egy epikus leírást a világodról, és a MI figyelmen kívül hagyta az első karakterednél? Megoldva! A világ manuális leírása most közvetlenül eljut a MI-hez a kezdeti létrehozás során, még mielőtt a memóriarendszer aktiválódna.
-  - ⚙️ **Továbbfejlesztett Világrendszer:** Függetlenítettem a világod nevét a technikai szabályoktól. Mostantól úgy nevezheted el a világodat, ahogy akarod, anélkül, hogy ez befolyásolná a Fantasy vagy Cyberpunk szabályok betöltését.
-  - 📝 **Egyértelműség a Létrehozásnál:** Javítottam a belső utasításokon, hogy a MI jobban értse, mikor kell háttértörténetet kitalálnia, és mikor kell csupán a statisztikáidat kinyernie.
-  - 🧠 **Szabad Szöveges Harc:** Mostantól úgy írhatod le a harci cselekedeteidet, mintha egy asztali szerepjátékon beszélnél: „gyógyító varázslat használata magamon”, „kard előhúzása”, „gyógyital használata”. A MI megérti a szándékodat, és lefordítja játékmechanikára.
-  - 🎨 **Új Epikus Kezelőfelület!** Teljesen átalakítottam a játékot. RPG stílusú menük, animált hátterek és teljesen megújult vizuális élmény. Sötét, félig átlátszó stílus, neon szegélyek és lágyított árnyékok a teljes immerzióért.
-  - 🎬 **MI Jelenetrendező (JAVÍTVA):** A harc most életre kel. A MI környezeti eseményeket és reakciókat generál, amelyek gazdagítják a narratívát: leeső fáklyák, hátráló ellenségek, összeomló gerendák. A csatamező többé nem statikus!
-  - ⚔️ **Fegyverrántás Szavakkal:** Nem kell többé a fegyverhelyre kattintanod. Egyszerűen írd be, hogy „kard előhúzása” vagy „bárd elővétele”, és a rendszer automatikusan értelmezi (VIGYÁZAT! Ha ezt harc közben teszed, az kudarcot, balsikert és körveszteséget okozhat!... „A harcba felkészülten érkezünk!”).
-  - 📖 **Felismert Varázslatok:** A MI most már ismeri a teljes varázskönyvedet. Mondd, hogy „tűzgolyó varázslása”, és ha rendelkezel ezzel a varázslattal, végrehajtja.
-  - 🌍 **Narratíva a Te Nyelveden:** A történet most szigorúan tiszteletben tartja a kiválasztott nyelvet, elkerülve a furcsa nyelvi keveredéseket (remélhetőleg soha többé nem látok „spanglish”-t! Annyira kényszerítettem a MI-t, hogy ha mégis más nyelven generál szöveget, mint a kiválasztott, az tisztán azért lesz, mert tényleg el van átkozva).
-  - 🛡️ **Nincs Több Elveszett Kör:** Ha a játék nem érti a cselekvésedet, megkér, hogy fogalmazd át. A köröd NEM vész el.
-  - 🎒 **Manuális Tárgylista:** Tárgyak mozgatásához a slotok között (felszerelés a hátizsákból, lőszer betöltése) használd a „fogd és vidd” felületet. Ez elkerüli a félreértéseket és MI-erőforrást takarít meg.
-  - 🧪 **Folyékony Bájitalhasználat:** Most már közvetlenül a portrédra húzhatod a bájitalokat és az ételt a használathoz. Hozzáadtam a „Használat” opciót is a jobb egérgombos menübe. Intuitívabb és gyorsabb!
-  - 🩸 **Sebzés Javítása:** Már nem vagy halhatatlan! Javítottunk egy problémát, ahol az életerőcsík nem csökkent, hiába találtak el. Most úgy fogsz szenvedni, ahogy illik.
-  - 👻 **Viszlát, Szellemtárgyak:** Találtál egy tárgyat a történetben, de soha nem jelent meg a hátizsákodban? Probléma megoldva! A rendszer most automatikusan javítja azokat a tárgyakat, amelyeket a MI „elfelejt” létrehozni.
-  - 🐛 **Kritikus NPC Javítás:** Javítva egy hiba, amely megakadályozta, hogy az NPC-k helyes taktikai döntéseket hozzanak, ami miatt mindig csak „várakoztak” támadás vagy védekezés helyett.
-  - 🎒 **Kezdő Felszerelés Javítása:** Az új karakterek többé nem meztelenül kezdenek. Mostantól megfelelően megkapják a kezdő felszerelésüket.
-  - 🎲 **Karakterkészítés:** Javítva egy exploit, ahol egy tulajdonság növelése és csökkentése bizonyos küszöbértékeknél végtelen extra pontokat generált. Vége a Karizma trükknek!
-  - 🖼️ **Javított Portrék:** Egyedi nevet adtál a világnak, és eltűntek a portrék? Javítva! A rendszer most megtalálja a megfelelő képeket, függetlenül attól, hogyan nevezed el a világodat.
-  - 💍 **Intelligens Ikonok:** A tárgyak (beleértve a gyűrűket is) most pontosabb és helyesebb ikonokat jelenítenek meg a felületen.
-  - 🧪 **Javított Elemleírások:** A bájitalok, fogyóeszközök és varázslatok most helyesen jelenítik meg az összes információt és hatást, ha rájuk viszed az egeret.
-  - 🎵 **Audio Javítások:** A harci zene többé nem áll le az előre beállított gombok megnyomásakor.
-  - [I18N] **Implantátum Javítás:** Hozzáadva a hiányzó fordítási kulcsok az implantátum helyekhez (`slot_implant_*`) és a megfelelő ikonokhoz (`icon_implant_*`) az `es.json` fájlban.
-  - [FIX][AUDIO] **Inkonzisztens Hang:** A tárgyak felszerelésének és a fegyverek előhúzásának hangeffektjeit (SFX) a környezethez igazítottuk. A rendszer most érzékeli a `setting_key`-t, és futurisztikus/ipari hangokat használ Cyberpunk, illetve klasszikus hangokat Fantasy környezetben.
-  - [FIX][I18N] **es.json Tisztítás:** Eltávolítva több mint 20 duplikált kulcs az `es.json`-ból, és javítva a helyesírási hibák a slotok neveiben (pl. „Oíidos” -> „Oídos”).
-  - ⚙️ **Intelligens Modellérzékelés:** A játék most közvetlenül olvassa az importált modellek (GGUF) „agyát”. Automatikusan észleli a valós maximális kontextust. (A hivatalos optimalizált modelleket a maximális stabilitás érdekében nem módosítja).
-  - 📂 **Helytakarékosság:** Amikor modellt adsz hozzá a számítógépedről, a játék most áthelyezi azt a saját mappájába a másolás helyett. A Gigabájtjaid hálásak lesznek!
-  - ⚖️ **Igazságosság a Tulajdonságoknál:** Javítva egy exploit, amely lehetővé tette végtelen pontok szerzését a tulajdonságok növelésével és csökkentésével a létrehozás során.
-  - 📖 **Képzési Útmutató:** Frissítettem a Kézikönyvet (README) minden részlettel arról, hogyan szereznek tapasztalatot a karaktereid és hogyan nőnek a tulajdonságaik.
-  - 📜 **Epikus Világok Kódexe:** Vége az „utóirat” jellegű háttértörténeteknek! A generátor most mély történelemmel rendelkező világokat hoz létre, részletes krónika formátumban leírva a vallásokat, törvényeket, földrajzot és híres személyeket.
-  - 🧙 **Koherens Történetek:** A karaktered többé nem a semmiben születik. A háttértörténete most intelligensen integrálódik az éppen létrehozott vagy kiválasztott világ történetébe.
-  - ⚡ **Folyamatos Kezelőfelület:** A történetek és világok automatikus generálása most a háttérben zajlik. Nincs több várakozás lefagyott képernyővel!
-  - 🚀 **Azonnali Kalandkezdés:** Megszüntettem a várakozást! Most, a karakter létrehozása után azonnal belecsöppensz a történetbe. A rendszer a gazdagított háttértörténetedet használja a tökéletes kezdés megteremtéséhez anélkül, hogy egyetlen szót is írnod kellene.
-  - 🎭 **Háttértörténetek Indítékkal:** A karaktereidnek már nemcsak múltja van, hanem sürgető indítéka is a kaland megkezdésére. Az új MI-rendszer automatikusan generálja a történet kezdeti szikráját, integrálva az életrajzodba.
-  - 🧹 **Egyszerűsített Kezelőfelület:** Eltávolítottam azokat a gombokat és képernyőket, amelyek nem adtak hozzá értéket. A „Történet Indítása” gomb most mindent központosít, hogy minél hamarabb elkezdhess játszani.
-  - [FIX][UI] **Vizuális Duplikáció a Világválasztásnál:** Javítva a hiba, ahol a világ neve duplán jelent meg, mint „Név [Név]”. Most elrejti a típuscímkét, ha az redundáns.
-  - [FEAT][UI] **Gyors Betöltés (Egyszerű Kattintás):** Mostantól egyetlen kattintással betölthetsz egy karaktert, vagy újat hozhatsz létre a világválasztó képernyőn. A világok kibontása megmaradt a konfliktusok elkerülése érdekében.
-  - 🧠 **Kreatívabb MI:** Megtörtem a MI „ismétlődési hurkát” technikai variabilitás beillesztésével minden kérésbe. A véletlenszerűen generált karakterek most sokkal egyedibbek és eredetibbek lesznek, figyelmen kívül hagyva az útmutató példáit.
-  
-  🛡️ A bátraknak, akik MERNEK harcolni a csatamező első vonalában: A kaland vár rátok, most fékezhetetlenebb, mint valaha!
-
-****************************************************************************************************
-06/02/2026 02:32 - Vulkan támogatás (AMD/Intel) és robusztus hibakezelés - Beta_v053
-****************************************************************************************************
-- What's New (HU):
-  - 🚀 **Hibrid Vulkan motor:** Hivatalos támogatás AMD és Intel videókártyákhoz! A játék mostantól tartalmaz egy dedikált Vulkan motort, amely automatikusan (vagy manuálisan) aktiválódik, hogy felgyorsítsa az MI-t a nem NVIDIA rendszereken.
-  - ⚙️ **Teljes motorvezérlés:** Hozzáadtuk a „Vulkan kényszerítése” opciót az indítóhoz és a beállításokhoz is. Ha problémád van a CUDA-val, vagy tesztelni szeretnéd a Vulkan teljesítményét (ami sok konfiguráción száguld), a döntés a te kezedben van.
-  - 🚦 **Rendszerállapot:** Az állapotjelző panelen mostantól pontosan láthatod, melyik motor dübörög a motorháztető alatt (🟢 ZÖLD a CUDA, 🔴 PIROS a Vulkan esetében).
-  - 🛡️ **MI állapotjelző:** Ha a Mesterséges Intelligencia „elfárad” (túllépi a kvótát) vagy megszakad az internet, a játék egy egyértelmű és hasznos ablakban figyelmeztet ahelyett, hogy csendben várakoztatna.
-  - 🔄 **Elakadás elleni védelem:** Csatlakozási hiba esetén a játék többé nem „töri meg” a beszélgetést. A válaszlehetőségek újra megjelennek, így újra próbálkozhatsz anélkül, hogy elveszítenéd az előrehaladást.
-  - ☁️ **Felhő memória:** A beállítások menü mostantól megfelelően megjegyzi a felhőszolgáltatókkal kapcsolatos preferenciáidat a munkamenetek között.
-
-****************************************************************************************************
-03/02/2026 20:23 - VRAM-optimalizálás és betöltési stabilitás - Beta_v052
-****************************************************************************************************
-- What's New (HU):
-  - 🧠 **Optimalizált agy:** Javítottunk egy súlyos hibát, amely miatt az MI egyszerre próbált „kétszer gondolkodni”, megduplázva a videokártya memóriahasználatát, ami extrém lassulást vagy fagyást okozott. A VRAM-od hálás lesz érte!
-  - 💾 **Biztonságos betöltés:** Javult az általános stabilitás a mentések betöltésekor, hogy a kaland folytatása mindig zökkenőmentes élmény legyen.
-
-****************************************************************************************************
-02/02/2026 00:18 - Kritikus gyorsjavítás: Stabilitás, Multi-GPU és honosítási fejlesztések - Beta_v051
-****************************************************************************************************
-- What's New (HU):
-  - 🚑 **Kritikus javítás:** Megoldódott egy probléma, amely ritka esetekben, adatbázis-sérülés miatt megakadályozta a játék indítását („Teljes hiba”), amit a Launcher nem tudott megtisztítani. Az „Adatbázis törlése” opció mostantól sokkal hatékonyabb.
-  - ⚡ **Hardveres javítás:** Kijavítottunk egy hibát, amely miatt az „Automatikus beállítás” mód figyelmen kívül hagyta a teljesítményt olyan többkártyás rendszereknél, ahol a GPU-k nem voltak azonosak.
-  - 🛠️ **Eszköz:** Új opció került a Launcherbe az előző munkamenet naplójának (log) egyszerű megnyitásához, megkönnyítve ezzel a terméktámogatást.
-  - 🌍 **Honosítás:** Javításra került több gomb a Launcherben, amelyek eddig angolul (Yes/No) jelentek meg. Mostantól megfelelnek a kiválasztott nyelvnek.
-  - 📖 **Kezelőfelület:** Javult a verzióinformációs szöveg formázása, így az olvashatóbbá vált.
-  
-  - **Hamarosan:** A következő megvalósítás alatt álló funkció: AMD, NVIDIA és Intel GPU kompatibilitás Vulkan segítségével.
-
-****************************************************************************************************
-30/01/2026 02:09 - Multi-GPU, Kézikönyv javítások & Stabilitás - Beta_v050
-****************************************************************************************************
-- Újdonságok:
-  **Multi-GPU erő és kritikus javítások!**
-  
-  * **🚀 Multi-GPU támogatás:** Implementálva a képesség a nagy MI-modellek felosztására több grafikus kártya között. *Most már a teljes hardverarzenálodat használhatod; Korlátlan Hatalom!*
-  * **🛡️ Stabilitás:** Hozzáadva az összes hiányzó DLL könyvtár a váratlan leállások elkerülése érdekében. *Megerősítettem a motort, ha most meghibásodik, az egy balszerencsés kockadobás miatt lesz.*
-  * **📖 Dinamikus webes kézikönyvek:**
-    * **Valós választó:** A nyelv menü most ellenőrzi, mely fájlok léteznek valójában, mielőtt megjelenítené őket. *Vége a fantom opcióknak, amelyek nem csináltak semmit; 5. szintű jósló mágia.*
-    * **403-as hiba javítása:** Megoldva a jogosultsági hiba, amely megakadályozta a változásnapló (Changelog) megtekintését a játékon belül. *Megtanítottam az alkalmazást, hogyan kérjen engedélyt helyesen ("Szezám tárulj!").*
-  * **🌍 Nyelvek:** Szövegek és fordítások felülvizsgálata. *Poliglott mód bekapcsolva.*
-
-****************************************************************************************************
-28/01/2026 22:49 - Stabilizálás és MI fejlesztések - Beta_v049
-****************************************************************************************************
-- Újdonságok:
-  Csiszoltuk a játékélményt fontos javításokkal és egy új vizuális eszközzel:
-
-  * **Tiszta és megbízható eszköztár:** Vége a "fantomtárgyak" vagy furcsa nevű elemek megtalálásának a hátizsákban. Implementáltunk egy narratív ellenőrző rendszert, amely biztosítja, hogy minden, amit felveszel vagy vásárolsz, valójában létezzen a játékvilágban.
-  * **Gördülékeny párbeszédek:** Javítottuk azokat a zavaró gombokat, amelyek néha "Unknown"-ként jelentek meg vagy nem reagáltak. Most az NPC-kkel folytatott párbeszédopciók mindig a helyes szöveget mutatják.
-  * **Robusztus karaktergenerálás:** A hősöd létrehozása most már szilárd folyamat. Megoldottuk az ütközéseket, amelyek néha hiányos karakterlapot vagy hibás statisztikákat eredményeztek az életrajz és a statisztikák kombinálásakor.
-  * **Új MI állapotsor:** Most láthatod a gép agyát működés közben! Hozzáadtunk egy sávot a felső részhez, amely valós időben mutatja a válaszadási sebességet és a memóriahasználatot. Így mindig tudni fogod, hogy az MI éppen "gondolkodik-e" a következő kalandodon.
-
-****************************************************************************************************
-28/01/2026 03:50 - Kritikus fordítási javítás - Beta_v048
-****************************************************************************************************
-- Újdonságok:
-  Megoldva egy kritikus hiba, amely megakadályozta a játék indítását új telepítéseknél. Javított stabilitás és kompatibilitás a különböző gépekkel.
-
-****************************************************************************************************
-26/01/2026 19:38 - Webes indító & RTX 50 támogatás - Beta_v047
-****************************************************************************************************
-- Újdonságok:
-
-  > [!FONTOS]
-  > **KOMPATIBILITÁSI OKOKBÓL SZÜKSÉGES TÖRÖLNI AZ ELŐZŐ ADATBÁZIST (DB), KÜLÖNBEN NAGYON VALÓSZÍNŰ, HOGY HIBÁK LÉPNEK FEL AZ MI KONFIGURÁCIÓBAN**
-  > **(Megoldás: Kattints a fogaskerék ikonra ⚙️ az Indítóban -> Adatbázis törlése)**
-
-  *Kritikus támogatás az RTX 50-es szériához: Megoldva egy súlyos hiba, amely váratlan leállást okozott a karakterek generálásakor az új NVIDIA grafikus kártyákon (RTX 5070, 5080, 5090).
-  (Mivel nem rendelkezem 5000-es szériájú RTX-szel, nem tudtam közvetlenül tesztelni, hogy a megoldás 100%-os-e, de az elmélet szerint meg kell oldódnia. Várom a győzelmi énekeiteket itt!)
-  
-  *MI motor frissítése: Frissítettük a játék helyi agyát, hogy kompatibilis legyen a legújabb hardvertechnológiával, biztosítva, hogy mindenki élvezhesse az offline élményt, függetlenül attól, mennyire modern a gépe.
-  
-  *Új indító (Launcher): Frissítések és hírek valós időben a hivatalos weboldalról.
-
-
-****************************************************************************************************
-26/01/2026 06:49 - Webes dokumentáció integráció - Beta_v045
-****************************************************************************************************
-- Újdonságok:
-  *Mostantól a Felhasználói kézikönyv és a Változásnapló közvetlenül a hivatalos weboldalunkról töltődik be, garantálva, hogy mindig a legfrissebb információval rendelkezz javítások letöltése nélkül. Tartalmaz intelligens offline módot.
-
-  *Megerősítettük a játék stabilitását, hogy soha ne fagyjon le indításkor. Ezenkívül a kereskedők visszatértek a limbóban töltött vakációjukról: most már helyesen jelennek meg, van áru a polcokon, és tiszteletben tartják a világ hangulatát (nincsenek varázsitalok a jövőben).
-
-  *Javítva a hiba, amely nem engedte módosítani az MI paramétereket és az MI-modell kiválasztását, ami miatt néhány korlátozott VRAM-mal rendelkező felhasználó nem tudott játszani.
-  **Amennyiben szükség van az MI paraméterek módosítására, erősen ajánlom, hogy először próbáld meg 85%-ra csökkenteni a VRAM %-ot, indítsd újra és próbáld ki. Ha ez még mindig nem elegendő, javaslom annak ellenőrzését, hogy a GPU VRAM-ját nem használják-e más folyamatok, amelyek nem a játékhoz tartoznak (PC újraindítása, ha szükséges, VRAM-ot foglaló alkalmazások bezárása). Ha a VRAM mennyiségének csökkentése után (akár 70%-ig) sem működik, nem javaslom a további csökkentést, mert a játék nem tudja majd kezelni az MI-nek küldött promptokat. Így bár elkerülhető a VRAM túlcsordulás, a játék nem fog működni, mert nincs mivel dolgoznia. Ebben az esetben az egyetlen fennmaradó lehetőség egy alacsonyabb modellre váltani, visszaállítani az MI paramétereket automatikusra, és újraindítani.
-
-****************************************************************************************************
-26/01/2026 04:00 - Mag stabilizálás és Szolgáltatás diagnosztika - Beta_v044
-****************************************************************************************************
-- Újdonságok:
-  Mag stabilizálás és Szolgáltatás diagnosztika" "Kritikus javítások a karaktergenerálásban, a kezelőfelületen (MainWindow) és a szemantikus keresés optimalizálásában. A szolgáltatások mód mélyreható diagnosztikájának indítása.
-
-****************************************************************************************************
-25/01/2026 19:28 - Gyorsjavítás: Naplók és Stabilitás - Beta_v043
-****************************************************************************************************
-- Description:
-  Javítócsomag, amely a diagnosztikára és a felhasználói felület (UI) hurok javítására összpontosít.
-
-- Changes:
-  Javítva az újraindítási párbeszédablak vizuális hibája
-  Új naplózási rendszer a %LOCALAPPDATA% könyvtárban diagnosztikai célokra
-  Belső teljesítményoptimalizálások
-
-****************************************************************************************************
-24/01/2026 06:30 - Életrajz háttérrendszer támogatás - Beta_v042
-****************************************************************************************************
-- Description:
-  Életrajzi adatok közzététele a felhasználói felület (UI) számára és i18n beállítások.
-
-<!-- source_hash: 5f218fc5 -->
