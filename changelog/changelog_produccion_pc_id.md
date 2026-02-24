@@ -1,39 +1,60 @@
 ****************************************************************************************************
-20/02/2026 23:18 - Generasi Gambar AI, Peningkatan Narasi, dan Kontrol - EXPERIMENTAL_v058
+24/02/2026 03:02 - Generasi Gambar AI, Peningkatan Narasi, dan Kontrol - Beta_v058
 ****************************************************************************************************
 - What's New (ID):
-  **⚠️ CABANG EKSPERIMENTAL (BETA STEAM)**
+  **⚠️ CABANG EKSPERIMENTAL (STEAM BETA)**
   Versi ini saat ini hanya tersedia di **Cabang Eksperimental** Steam. Untuk mengaktifkannya:
   1. Klik kanan pada **RolemIAster** di Perpustakaan Steam Anda.
   2. Pilih **Properti...**
-  3. Buka tab **Beta**.
-  4. Di bawah "Partisipasi beta", pilih **experimental** di menu dropdown.
+  3. Pergi ke tab **Beta**.
+  4. Di "Partisipasi beta", pilih **experimental** di menu dropdown.
   
   **Baru: Fase Pertama Generasi Gambar AI**
-  - 🎨 **Dunia Anda dalam Gambar:** Saya telah mengintegrasikan sistem awal generasi gambar oleh Kecerdasan Buatan. Saat Anda bermain, sistem mencoba membuat potret dan pemandangan yang menyertai latar permainan Anda.
-  - 🖼️ **Latar Belakang Dinamis:** Gambar dihasilkan di latar belakang tanpa menghentikan permainan Anda. Anda akan melihat gambar muncul secara progresif di latar belakang, pada kartu karakter, dan di Codex.
-  - ⚡ **Kecepatan Sesuai Keinginan:** Bagian baru di Pengaturan Visual. Pilih antara "Cepat" (1 langkah), "Sedang" (2 langkah), atau "Tinggi" (4 langkah) untuk menyesuaikan waktu pembuatan dengan kekuatan perangkat Anda.
-  - 🛠️ **Optimalisasi Teknis:** Model AI untuk gambar dimuat dalam **RAM (Memori)** dan diproses melalui **CPU**, tanpa memakan memori video (VRAM). Ini menjamin tidak mengganggu performa AI utama game (LLM). Membutuhkan sekitar 5GB RAM tambahan, tetap berada dalam persyaratan minimum resmi Steam.
-  - 📤 **Bagikan Petualangan Anda:** Semua gambar yang dihasilkan disimpan secara otomatis. Anda dapat menemukannya di folder: `%APPDATA%/RolemIAster/custom_assets/images`
-  - 🔬 **Pemilih Model (Lanjutan):** Jika Anda memulai game dengan parameter `--advanced`, sekarang Anda dapat memilih model AI mana yang akan digunakan untuk gambar dari panel Tampilan. Ini memungkinkan para antusias untuk mencoba versi Stable Diffusion berbeda yang dioptimalkan untuk OpenVINO (file .xml/.bin).
+  - 🎨 **Duniamu dalam Gambar:** Saya telah mengintegrasikan sistem awal pembuatan gambar dengan Kecerdasan Buatan. Saat Anda bermain, sistem mencoba menghasilkan potret dan lanskap yang menyertai suasana permainan Anda.
+  - 🖼️ **Latar Belakang Dinamis:** Gambar dibuat di latar belakang tanpa menghentikan permainan Anda. Anda akan melihatnya muncul secara bertahap di latar belakang, pada kartu karakter, dan di Codex.
+  - 🧹 **Manajemen Gambar:** Panel baru untuk melihat dan menghapus gambar yang dibuat yang tidak Anda sukai.
+  
+  **Peningkatan pada Pembuatan Karakter:**
+  - ⚙️ **Pembuatan Acak yang Lebih Solid:** Saya telah menyatukan dan meningkatkan mesin aturan yang digunakan AI untuk membuat karakter dari nol, menjamin inventaris yang lebih logis (5 hingga 10 item yang koheren) dan lembar data yang lebih seimbang.
+  - 🧠 **Otak Terbagi:** AI sekarang lebih mengerti kapan harus "menciptakan" karakter dari nol dan kapan harus membatasi diri untuk mengambil data dari biografi yang Anda tulis sendiri.
+  - ⚡ **Kecepatan Sesuai Keinginan:** Bagian baru di Pengaturan Visual. Pilih antara "Cepat" (1 langkah), "Sedang" (2 langkah), atau "Tinggi" (4 langkah) untuk menyesuaikan waktu pembuatan dengan kemampuan perangkat Anda.
+  - 🛠️ **Optimalisasi Teknis:** Model AI untuk gambar dimuat di **RAM (Memori)** dan diproses via **CPU**, tanpa menggunakan memori video (VRAM). Ini menjamin agar tidak mengganggu kinerja AI utama game (LLM). Membutuhkan sekitar 5GB RAM tambahan, masih dalam persyaratan minimum resmi Steam.
+  - 📤 **Bagikan Petualangan Anda:** Semua gambar yang dibuat disimpan secara otomatis. Anda akan menemukannya di folder: `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Pemilih Model (Lanjutan):** Jika Anda memulai game dengan parameter `--advanced`, sekarang Anda dapat memilih model AI mana yang akan digunakan untuk gambar dari panel Tampilan. Ini memungkinkan para antusias untuk mencoba versi Stable Diffusion yang berbeda yang dioptimalkan untuk OpenVINO (file .xml/.bin).
   
   **Narasi dan Otak AI:**
-  - 🧠 **Akhir dari Pengulangan:** "Doktrin Memori" baru telah ditanamkan ke dalam AI. Sekarang AI membedakan lebih baik antara "ingatan" (apa yang sudah terjadi) dan "masa kini" (apa yang sedang terjadi). Ini membantu mengurangi kasus di mana AI mengulang diri sendiri atau macet.
+  - 🧠 **Akhir dari Pengulangan:** Sebuah "Doktrin Memori" baru telah ditanamkan pada AI. Sekarang AI membedakan lebih baik antara "ingatan" (apa yang sudah terjadi) dan "masa kini" (apa yang sedang terjadi). Ini membantu mengurangi kasus di mana AI mengulang sendiri atau macet.
   - 📜 **Arsip Sejarah:** Sistem menyajikan ingatan Anda kepada AI sebagai "Arsip Sejarah Tertutup", memudahkannya menggunakan informasi tersebut sebagai referensi untuk memajukan cerita.
   - ⚡ **Instruksi yang Dioptimalkan:** Cara game meminta narasi dalam bahasa Anda telah ditingkatkan, membebaskan kapasitas model untuk berkonsentrasi pada kreativitas.
-  - 👁️ **Fokus Naratif:** Persepsi AI telah ditulis ulang. Sekarang AI lebih memahami elemen mana yang merupakan "latar belakang statis" dan tidak perlu mengulangnya secara tidak perlu di setiap paragraf.
-  - 🔀 **Keputusan Lebih Jelas:** AI kini menawarkan jalur keluar yang lebih pasti. Sarannya (tombol) dibagi antara menyelidiki lingkungan (Memperdalam) atau mengubah arah (Menyimpang).
-  - 🫵 **Perlakuan Langsung:** Instruksi dasar telah disesuaikan untuk memastikan AI menyapa Anda sebagai "Kamu", meningkatkan imersi personal.
+  - 👁️ **Fokus Naratif:** Persepsi AI telah ditulis ulang. Sekarang ia lebih memahami elemen mana yang merupakan "latar belakang statis" dan tidak perlu mengulanginya secara tidak perlu di setiap paragraf.
+  - 🔀 **Keputusan yang Lebih Jelas:** AI sekarang menawarkan jalan keluar yang lebih pasti. Sarannya (tombol) dibagi antara menyelidiki lingkungan (Mendalami) atau mengubah arah (Menyimpang).
+  - 🫵 **Sapaan Langsung:** Instruksi dasar telah disesuaikan untuk memastikan AI menyapa Anda dengan "Kamu/Anda", meningkatkan imersi personal.
   
   **Pembuatan Karakter:**
-  - 🖼️ **Potret Karakter:** Saat membuat karakter dengan AI, sistem mencoba membuat potret berdasarkan usia, profesi, dan deskripsi. Harap dicatat bahwa ini adalah versi awal dan ketepatannya (terutama pada usia) dapat bervariasi tergantung model yang digunakan. (saya masih melakukan pengujian tetapi permulaannya bagus)
-  - 🎲 **Generasi Acak yang Andal:** Memperbaiki bug di mana tombol "Buat dengan AI" bisa gagal pada percobaan pertama, membiarkan kolom kosong. Sekarang sistem koreksi cerdas memastikan jawabannya selalu valid.
+  - 🖼️ **Potret Karakter:** Saat membuat karakter dengan AI, sistem mencoba membuat potret berdasarkan usia, profesi, dan deskripsi. Perlu diingat bahwa ini adalah versi awal dan kesetiaan (terutama pada usia) dapat bervariasi tergantung model yang digunakan. (saya masih melakukan pengujian tetapi permulaannya bagus)
+  - 🎲 **Pembuatan Acak yang Andal:** Memperbaiki masalah di mana tombol "Buat dengan AI" bisa gagal pada percobaan pertama, membiarkan kolom kosong. Sekarang sistem koreksi cerdas memastikan bahwa respons selalu valid.
   
-  **Performa pada Pengaturan Rendah (Penting untuk GPU dengan VRAM kecil):**
-  - 🧠 **PSR - Tata Kelola Hibrida:** Sistem baru yang membagi pekerjaan AI menjadi dua fase: Perencanaan (Koki) dan Eksekusi (Juru Masak). Ini memungkinkan model lokal dengan VRAM 8 GB bekerja menghindari kemacetan karena kelebihan konteks (+12K token), dengan biaya latensi yang lebih tinggi, interaksi dengan AI berubah dari satu prompt tunggal menjadi serangkaian prompt (semakin kecil VRAM, semakin banyak prompt yang dihasilkan dan semakin lama waktu respons).
-  - ⚡ **Eksekusi Cerdas:** Sistem memutuskan secara otomatis apakah akan memproses semuanya sekaligus (monolitik) atau membagi menjadi beberapa bagian (iteratif) sesuai VRAM Anda yang tersedia. GPU dengan VRAM lebih sedikit mengaktifkan mode bertahap hanya jika diperlukan.
-  - 📊 **Optimalisasi Dinamis:** PSR mengurangi beban token selama pembuatan, memungkinkan pengguna dengan kartu grafis 4GB menyelesaikan pembuatan karakter dan pembuatan cerita yang sebelumnya terblokir.
+  **Manajemen Gambar yang Dibuat:**
+  - 🖼️ **Galeri Gambar AI:** Panel baru di menu File yang menampilkan semua gambar yang telah dibuat AI selama permainan Anda (potret, latar belakang). Anda dapat memfilter berdasarkan jenis gambar atau dunia.
+  - 🗑️ **Penghapusan Selektif:** Pilih satu atau beberapa gambar dan hapus jika tidak meyakinkan Anda (mungkin gambar di mana AI memutuskan ide bagus untuk memarkir bus di kandang kuda kastil). Sistem membersihkan file dan catatan internalnya.
+  - 📂 **Akses Cepat:** Klik ganda pada thumbnail apa pun untuk membuka folder tempat file berada. Jika folder sudah terbuka, jendela yang sama akan digunakan kembali.
+  - 💾 **Ingat Ruang Anda:** Ukuran jendela galeri disimpan secara otomatis antar sesi.
+  
+  **Performa pada Konfigurasi Rendah (Penting untuk GPU dengan VRAM kecil):**
+  - 🧠 **PSR - Tata Kelola Hibrida:** Sistem baru yang membagi pekerjaan AI menjadi dua fase: Perencanaan (Koki) dan Eksekusi (Juru Masak). Ini memungkinkan model lokal dengan VRAM 8 GB bekerja menghindari kemacetan karena konteks berlebih (+12K token), dengan mengorbankan latensi yang lebih tinggi, interaksi dengan AI berubah dari satu prompt tunggal menjadi serangkaian prompt (semakin kecil VRAM, semakin banyak prompt yang dihasilkan dan semakin lama waktu respons).
+  - ⚡ **Eksekusi Cerdas:** Sistem memutuskan secara otomatis apakah akan memproses semuanya sekaligus (monolitik) atau membagi menjadi beberapa bagian (iteratif) berdasarkan VRAM Anda yang tersedia. GPU dengan VRAM lebih sedikit mengaktifkan mode bagian hanya jika diperlukan.
+  - 📊 **Optimalisasi Dinamis:** PSR mengurangi beban token selama pembuatan, memungkinkan pengguna dengan kartu grafis 4GB dapat menyelesaikan pembuatan karakter dan pembuatan cerita yang sebelumnya terblokir.
   - 🔄 **Koherensi Terjaga:** Meskipun membagi pekerjaan, sistem menyuntikkan "niat utama" agar AI tidak kehilangan alur dari apa yang sedang dilakukannya.
+  
+  **Suara AI (peningkatan bertahap):**
+  Pembuatan suara real-time dalam semua bahasa (beberapa bahasa lebih terbatas daripada yang lain, yang paling bervariasi jenis suaranya adalah bahasa Inggris)
+  - 🗣️ **Teriakan Tempur dengan Suara:** Saat memulai pertempuran melawan musuh yang bermusuhan, frasa suara kontekstual pembuka kini dipicu.
+  - 🎭 **Frasa Dinamis Berdasarkan Konteks:** Mesin dapat menghasilkan baris suara pendek untuk acara tertentu (layanan/pertempuran) berdasarkan bahasa, suasana, dan profil karakter.
+  - 🧠 **Templat Suara Internal:** Templat suara teknis telah dipisahkan dari sistem naratif untuk menghindari gangguan pada cerita.
+  - 🔊 **Kejelasan Lebih Saat Mendengar:** Kejelasan dan prosodi sintesis ditingkatkan untuk memprioritaskan diksi yang dapat dimengerti.
+  
+  **⚠️ Pemberitahuan Kompatibilitas (Simpanan Sebelumnya):**
+  - 🔄 Karena banyaknya perubahan internal pada mesin aturan dan sistem suasana, **permainan dan dunia yang disimpan sebelumnya akan tetap dapat dimainkan (kemungkinan besar)**, tetapi sangat mungkin akan mengalami kesalahan atau perilaku yang tidak terduga. **Disarankan untuk membuat dunia baru yang bersih** untuk menikmati semua peningkatan dengan benar.
 
 ****************************************************************************************************
 15/02/2026 02:57 - Pengetikan Langsung, Perbaikan Stabilitas dan Deteksi - Beta_v057

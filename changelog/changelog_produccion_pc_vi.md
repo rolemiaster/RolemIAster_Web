@@ -1,39 +1,60 @@
 ****************************************************************************************************
-20/02/2026 23:18 - Tạo Hình ảnh bằng AI, Cải thiện Cốt truyện và Kiểm soát - EXPERIMENTAL_v058
+24/02/2026 03:02 - Tạo ảnh bằng AI, Cải thiện Cốt truyện và Kiểm soát - Beta_v058
 ****************************************************************************************************
 - What's New (VI):
-  **⚠️ NHÁNH THỬ NGHIỆM (STEAM BETA)**
+  **⚠️ NHÁNH THỬ NGHIỆM (BETA TRÊN STEAM)**
   Phiên bản này hiện chỉ có sẵn trên **Nhánh Thử nghiệm** của Steam. Để kích hoạt:
   1. Nhấp chuột phải vào **RolemIAster** trong Thư viện Steam của bạn.
   2. Chọn **Properties...** (Thuộc tính)
-  3. Đi tới tab **Betas**.
-  4. Trong phần "Beta Participation" (Tham gia beta), chọn **experimental** từ menu thả xuống.
+  3. Đi đến tab **Betas**.
+  4. Tại mục "Beta Participation" (Tham gia beta), chọn **experimental** trong danh sách thả xuống.
   
-  **Mới: Giai đoạn đầu của Tính năng Tạo Hình ảnh bằng AI**
-  - 🎨 **Thế giới của bạn qua Hình ảnh:** Tôi đã tích hợp hệ thống tạo ảnh bằng Trí tuệ Nhân tạo ban đầu. Khi bạn chơi, hệ thống sẽ cố gắng tạo ra các bức chân dung và phong cảnh phù hợp với bối cảnh ván chơi của bạn.
+  **Mới: Giai đoạn đầu của Tạo ảnh bằng AI**
+  - 🎨 **Thế giới của bạn qua Hình ảnh:** Tôi đã tích hợp hệ thống tạo ảnh ban đầu bằng Trí tuệ Nhân tạo. Khi bạn chơi, hệ thống cố gắng tạo ra chân dung và phong cảnh phù hợp với bối cảnh ván chơi của bạn.
   - 🖼️ **Hình nền Động:** Hình ảnh được tạo trong nền mà không làm gián đoạn trò chơi. Bạn sẽ thấy chúng dần xuất hiện ở hình nền, trên thẻ nhân vật và trong Codex.
-  - ⚡ **Tốc độ Tùy chỉnh:** Mục mới trong Cài đặt Hình ảnh. Chọn giữa "Nhanh" (1 bước), "Trung bình" (2 bước) hoặc "Cao" (4 bước) để điều chỉnh thời gian tạo ảnh phù hợp với sức mạnh thiết bị của bạn.
-  - 🛠️ **Tối ưu hóa Kỹ thuật:** Mô hình AI tạo ảnh được tải vào **RAM (Bộ nhớ)** và xử lý qua **CPU**, không chiếm dụng bộ nhớ video (VRAM). Điều này đảm bảo không ảnh hưởng đến hiệu suất của AI chính trong game (LLM). Yêu cầu thêm khoảng 5GB RAM, vẫn nằm trong mức cấu hình tối thiểu chính thức của Steam.
-  - 📤 **Chia sẻ Cuộc phiêu lưu:** Tất cả hình ảnh được tạo sẽ tự động lưu lại. Bạn có thể tìm thấy chúng trong thư mục: `%APPDATA%/RolemIAster/custom_assets/images`
-  - 🔬 **Bộ chọn Mô hình (Nâng cao):** Nếu bạn khởi động trò chơi với tham số `--advanced`, giờ đây bạn có thể chọn mô hình AI để tạo ảnh từ bảng Giao diện. Điều này cho phép những người đam mê thử nghiệm các phiên bản Stable Diffusion khác nhau đã được tối ưu hóa cho OpenVINO (tệp .xml/.bin).
+  - 🧹 **Quản lý Hình ảnh:** Bảng điều khiển mới để xem và xóa những hình ảnh đã tạo mà bạn không thích.
   
-  **Cốt truyện và Trí não AI:**
-  - 🧠 **Chấm dứt Vòng lặp:** Một "Học thuyết Bộ nhớ" mới đã được áp dụng cho AI. Giờ đây nó phân biệt tốt hơn giữa "ký ức" (những gì đã xảy ra) và "hiện tại" (những gì đang diễn ra). Điều này giúp giảm thiểu các trường hợp AI tự lặp lại hoặc bị kẹt.
-  - 📜 **Tập tin Lịch sử:** Hệ thống trình bày ký ức của bạn cho AI dưới dạng "Tập tin Lịch sử Đóng", giúp AI dễ dàng sử dụng thông tin đó làm tài liệu tham khảo để phát triển câu chuyện.
-  - ⚡ **Tối ưu hóa Chỉ dẫn:** Cách trò chơi yêu cầu kể chuyện bằng ngôn ngữ của bạn đã được cải thiện, giải phóng năng lực của mô hình để tập trung vào sự sáng tạo.
-  - 👁️ **Tiêu điểm Tường thuật:** Nhận thức của AI đã được viết lại. Giờ nó hiểu rõ hơn yếu tố nào là "nền tĩnh" và không nên lặp lại chúng một cách không cần thiết trong mỗi đoạn văn.
-  - 🔀 **Quyết định Rõ ràng hơn:** AI hiện đưa ra các lối thoát xác định hơn. Các đề xuất (nút bấm) được chia thành điều tra môi trường (Đi sâu) hoặc thay đổi hướng đi (Rẽ hướng).
-  - 🫵 **Xưng hô Trực tiếp:** Chỉ dẫn cơ bản đã được điều chỉnh để đảm bảo AI xưng hô với bạn là "Bạn", giúp tăng cường sự nhập tâm.
+  **Cải tiến trong Tạo Nhân vật:**
+  - ⚙️ **Tạo Ngẫu nhiên Chắc chắn hơn:** Tôi đã thống nhất và cải thiện công cụ quy tắc mà AI sử dụng để tạo nhân vật từ đầu, đảm bảo kho đồ hợp lý hơn (5 đến 10 vật phẩm mạch lạc) và bảng chỉ số cân bằng hơn.
+  - 🧠 **Bộ não Phân tách:** AI giờ đây hiểu rõ hơn khi nào cần "bịa" một nhân vật từ đầu và khi nào nên giới hạn việc trích xuất dữ liệu từ tiểu sử mà chính bạn đã viết.
+  - ⚡ **Tốc độ Tùy chỉnh:** Phần mới trong Cấu hình Hình ảnh. Chọn giữa "Nhanh" (1 bước), "Trung bình" (2 bước) hoặc "Cao" (4 bước) để điều chỉnh thời gian tạo phù hợp với sức mạnh thiết bị của bạn.
+  - 🛠️ **Tối ưu hóa Kỹ thuật:** Mô hình AI cho hình ảnh được tải vào **RAM (Memory)** và xử lý qua **CPU**, không chiếm bộ nhớ video (VRAM). Điều này đảm bảo nó không can thiệp vào hiệu suất của AI chính trong trò chơi (LLM). Cần thêm khoảng 5GB RAM, vẫn nằm trong yêu cầu tối thiểu chính thức của Steam.
+  - 📤 **Chia sẻ Cuộc phiêu lưu của bạn:** Tất cả hình ảnh đã tạo được lưu tự động. Bạn sẽ tìm thấy chúng trong thư mục: `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Bộ chọn Mô hình (Nâng cao):** Nếu bạn khởi động trò chơi với tham số `--advanced`, giờ đây bạn có thể chọn mô hình AI nào để sử dụng cho hình ảnh từ bảng Giao diện. Điều này cho phép những người đam mê thử nghiệm các phiên bản Stable Diffusion khác nhau được tối ưu hóa cho OpenVINO (tệp .xml/.bin).
+  
+  **Cốt truyện và Bộ não AI:**
+  - 🧠 **Chấm dứt Vòng lặp:** Một "Học thuyết Trí nhớ" mới đã được cấy vào AI. Giờ đây nó phân biệt tốt hơn giữa "ký ức" (những gì đã xảy ra) và "hiện tại" (những gì đang xảy ra). Điều này giúp giảm các trường hợp AI lặp lại hoặc bị kẹt.
+  - 📜 **Hồ sơ Lịch sử:** Hệ thống trình bày ký ức của bạn cho AI dưới dạng "Hồ sơ Lịch sử Đóng", giúp AI dễ dàng sử dụng thông tin đó làm tài liệu tham khảo để phát triển câu chuyện.
+  - ⚡ **Chỉ dẫn Tối ưu hóa:** Cách trò chơi yêu cầu kể chuyện bằng ngôn ngữ của bạn đã được cải thiện, giải phóng năng lực của mô hình để tập trung vào sự sáng tạo.
+  - 👁️ **Tiêu điểm Cốt truyện:** Nhận thức của AI đã được viết lại. Giờ đây nó hiểu rõ hơn yếu tố nào là "nền tĩnh" và không nên lặp lại chúng một cách không cần thiết trong mỗi đoạn văn.
+  - 🔀 **Quyết định Rõ ràng hơn:** AI giờ đây cung cấp các lối thoát rõ ràng hơn. Các gợi ý (nút bấm) được chia thành điều tra môi trường (Đi sâu) hoặc thay đổi hướng đi (Phân tách).
+  - 🫵 **Xưng hô Trực tiếp:** Chỉ dẫn cơ bản đã được điều chỉnh để đảm bảo AI xưng hô với bạn là "Bạn", cải thiện sự nhập tâm cá nhân.
   
   **Tạo Nhân vật:**
-  - 🖼️ **Chân dung Nhân vật:** Khi tạo nhân vật bằng AI, hệ thống sẽ cố gắng tạo chân dung dựa trên tuổi, nghề nghiệp và mô tả. Lưu ý rằng đây là phiên bản ban đầu và độ trung thực (đặc biệt là về tuổi tác) có thể thay đổi tùy theo mô hình được sử dụng. (tôi vẫn đang thử nghiệm nhưng khởi đầu khá tốt)
-  - 🎲 **Tạo Ngẫu nhiên Đáng tin cậy:** Đã sửa lỗi khiến nút "Tạo bằng AI" có thể bị lỗi trong lần thử đầu tiên, để trống các trường. Giờ đây hệ thống sửa lỗi thông minh sẽ đảm bảo phản hồi luôn hợp lệ.
+  - 🖼️ **Chân dung Nhân vật:** Khi tạo một nhân vật bằng AI, hệ thống cố gắng tạo một chân dung dựa trên tuổi, nghề nghiệp và mô tả. Lưu ý rằng đây là phiên bản ban đầu và độ trung thực (đặc biệt là về tuổi tác) có thể thay đổi tùy theo mô hình được sử dụng. (tôi vẫn đang thử nghiệm nhưng khởi đầu khá tốt)
+  - 🎲 **Tạo Ngẫu nhiên Đáng tin cậy:** Đã sửa lỗi nút "Tạo bằng AI" có thể bị lỗi trong lần thử đầu tiên, để trống các trường. Giờ đây hệ thống sửa lỗi thông minh đảm bảo phản hồi luôn hợp lệ.
+  
+  **Quản lý Hình ảnh Đã tạo:**
+  - 🖼️ **Thư viện Ảnh AI:** Bảng mới trong menu Tệp (File) hiển thị tất cả hình ảnh mà AI đã tạo trong các ván chơi của bạn (chân dung, hình nền). Bạn có thể lọc theo loại ảnh hoặc theo thế giới.
+  - 🗑️ **Xóa Có chọn lọc:** Chọn một hoặc nhiều hình ảnh và xóa chúng nếu bạn không ưng ý (có thể là tấm mà AI quyết định đỗ xe buýt trong chuồng ngựa lâu đài là ý hay). Hệ thống sẽ dọn dẹp cả tệp tin và nhật ký nội bộ của nó.
+  - 📂 **Truy cập Trực tiếp:** Nhấp đúp vào bất kỳ hình thu nhỏ nào để mở thư mục chứa tệp. Nếu bạn đã mở thư mục đó, cửa sổ cũ sẽ được sử dụng lại.
+  - 💾 **Ghi nhớ Không gian của bạn:** Kích thước cửa sổ thư viện được lưu tự động giữa các phiên làm việc.
   
   **Hiệu suất trên Cấu hình Thấp (Quan trọng cho GPU ít VRAM):**
-  - 🧠 **PSR - Quản trị Lai:** Hệ thống mới chia công việc của AI thành hai giai đoạn: Lập kế hoạch (Bếp trưởng) và Thực thi (Đầu bếp). Điều này cho phép các mô hình cục bộ với 8 GB VRAM hoạt động mà tránh được sự cố do quá tải ngữ cảnh (+12K token), nhưng độ trễ sẽ cao hơn; tương tác với AI chuyển từ một lệnh nhắc (prompt) duy nhất sang một chuỗi lệnh nhắc (VRAM càng thấp thì càng tạo ra nhiều lệnh nhắc và thời gian phản hồi càng lâu).
-  - ⚡ **Thực thi Thông minh:** Hệ thống tự động quyết định xử lý tất cả cùng lúc (nguyên khối) hay chia thành các phần (lặp lại) tùy thuộc vào VRAM khả dụng của bạn. GPU có ít VRAM chỉ kích hoạt chế độ chia nhỏ khi cần thiết.
-  - 📊 **Tối ưu hóa Động:** PSR giảm tải token trong quá trình tạo, cho phép người dùng có card đồ họa 4GB hoàn thành việc tạo nhân vật và tạo cốt truyện mà trước đây thường bị treo.
-  - 🔄 **Duy trì Sự mạch lạc:** Mặc dù chia nhỏ công việc, hệ thống vẫn đưa vào một "ý định chủ đạo" để AI không bị mất mạch những gì nó đang làm.
+  - 🧠 **PSR - Quản trị Lai:** Hệ thống mới chia công việc của AI thành hai giai đoạn: Lập kế hoạch (Bếp trưởng) và Thực thi (Đầu bếp). Điều này cho phép các mô hình cục bộ với 8 GB VRAM hoạt động, tránh sự cố sập do quá tải ngữ cảnh (+12K token), đổi lại độ trễ sẽ cao hơn, việc tương tác với AI chuyển từ một câu lệnh đơn lẻ sang một chuỗi các câu lệnh (VRAM càng thấp thì càng tạo ra nhiều câu lệnh và thời gian phản hồi càng lâu).
+  - ⚡ **Thực thi Thông minh:** Hệ thống tự động quyết định xử lý tất cả cùng một lúc (nguyên khối) hay chia nhỏ thành các phần (lặp lại) tùy thuộc vào VRAM khả dụng của bạn. GPU có ít VRAM hơn chỉ kích hoạt chế độ chia nhỏ khi cần thiết.
+  - 📊 **Tối ưu hóa Động:** PSR giảm tải token trong quá trình tạo, cho phép người dùng có card đồ họa 4GB hoàn thành việc tạo nhân vật và tạo cốt truyện mà trước đây bị chặn.
+  - 🔄 **Duy trì Sự mạch lạc:** Mặc dù chia nhỏ công việc, hệ thống vẫn tiêm vào một "ý định chủ đạo" để AI không bị mất mạch những gì nó đang làm.
+  
+  **Giọng nói AI (cải tiến gia tăng):**
+  Tạo giọng nói thời gian thực bằng mọi ngôn ngữ (một số ngôn ngữ bị hạn chế hơn so với những ngôn ngữ khác, đa dạng nhất về loại giọng là tiếng Anh)
+  - 🗣️ **Tiếng thét Chiến đấu có Giọng nói:** Khi bắt đầu chiến đấu chống lại kẻ thù thù địch, một câu thoại ngữ cảnh giờ đây sẽ được kích hoạt khi vào trận.
+  - 🎭 **Câu thoại Động theo Ngữ cảnh:** Công cụ có thể tạo ra các dòng thoại ngắn cho các sự kiện cụ thể (dịch vụ/chiến đấu) tùy theo ngôn ngữ, bối cảnh và hồ sơ nhân vật.
+  - 🧠 **Mẫu Giọng nói Nội bộ:** Các mẫu kỹ thuật giọng nói đã được tách khỏi hệ thống cốt truyện để tránh can thiệp vào câu chuyện.
+  - 🔊 **Nghe Rõ ràng hơn:** Cải thiện độ dễ hiểu và ngữ điệu của quá trình tổng hợp để ưu tiên phát âm dễ hiểu.
+  
+  **⚠️ Cảnh báo Tương thích (Các ván chơi trước):**
+  - 🔄 Do số lượng thay đổi nội bộ trong công cụ quy tắc và hệ thống bối cảnh, các **thế giới và ván chơi đã lưu trước đây vẫn có thể chơi được (có khả năng)**, nhưng rất có thể sẽ xuất hiện lỗi hoặc hành vi không mong muốn. **Khuyên dùng tạo một thế giới mới sạch sẽ** để tận hưởng tất cả các cải tiến một cách chính xác.
 
 ****************************************************************************************************
 15/02/2026 02:57 - Nhập liệu Trực tiếp, Sửa lỗi Ổn định và Phát hiện - Beta_v057

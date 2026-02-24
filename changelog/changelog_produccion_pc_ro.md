@@ -1,39 +1,60 @@
 ****************************************************************************************************
-20/02/2026 23:18 - Generare de Imagini prin AI, Îmbunătățiri Narative și Control - EXPERIMENTAL_v058
+24/02/2026 03:02 - Generare Imagini AI, Îmbunătățiri Narative și Control - Beta_v058
 ****************************************************************************************************
 - What's New (RO):
   **⚠️ RAMURA EXPERIMENTALĂ (STEAM BETA)**
-  Această versiune este disponibilă momentan doar în **Ramura Experimentală** pe Steam. Pentru a o activa:
-  1. Click dreapta pe **RolemIAster** în Biblioteca Steam.
+  Această versiune este disponibilă momentan doar în **Ramura Experimentală** Steam. Pentru a o activa:
+  1. Dă click dreapta pe **RolemIAster** în Biblioteca ta Steam.
   2. Selectează **Proprietăți...**
-  3. Mergi la fila **Versiuni beta**.
-  4. La "Participare la beta", selectează **experimental** din meniul derulant.
+  3. Mergi la fila **Betas**.
+  4. La "Participare la versiunea beta", selectează **experimental** din meniul derulant.
   
-  **Noutate: Prima fază a Generării de Imagini prin AI**
-  - 🎨 **Lumea ta în Imagini:** Am integrat un sistem inițial de generare a imaginilor prin Inteligență Artificială. Pe măsură ce joci, sistemul încearcă să genereze portrete și peisaje care însoțesc atmosfera jocului tău.
+  **Noutate: Prima fază a Generării de Imagini AI**
+  - 🎨 **Lumea Ta în Imagini:** Am integrat un sistem inițial de generare a imaginilor prin Inteligență Artificială. Pe măsură ce joci, sistemul încearcă să genereze portrete și peisaje care să însoțească atmosfera jocului tău.
   - 🖼️ **Fundaluri Dinamice:** Imaginile sunt generate în fundal fără a opri jocul. Vei vedea cum apar progresiv pe fundal, pe cărțile personajelor și în Codex.
-  - ⚡ **Viteză pe Măsura ta:** Secțiune nouă în Configurare Vizuală. Alege între "Rapidă" (1 pas), "Medie" (2 pași) sau "Înaltă" (4 pași) pentru a ajusta timpul de generare în funcție de puterea echipamentului tău.
-  - 🛠️ **Optimizare Tehnică:** Modelul AI pentru imagini se încarcă în **RAM (Memorie)** și este procesat via **CPU**, fără a ocupa memorie video (VRAM). Acest lucru garantează că nu interferează cu performanța AI-ului principal al jocului (LLM). Necesită aproximativ 5GB de RAM suplimentari, rămânând în limitele cerințelor minime oficiale Steam.
-  - 📤 **Împărtășește-ți Aventurile:** Toate imaginile generate sunt salvate automat. Le vei găsi în dosarul: `%APPDATA%/RolemIAster/custom_assets/images`
-  - 🔬 **Selector de Modele (Avansat):** Dacă pornești jocul cu parametrul `--advanced`, acum poți alege ce model AI să folosești pentru imagini din panoul Aspect. Acest lucru permite entuziaștilor să testeze diferite versiuni de Stable Diffusion optimizate pentru OpenVINO (fișiere .xml/.bin).
+  - 🧹 **Gestionare Imagini:** Un nou panou pentru a vizualiza și șterge imaginile generate care nu îți plac.
   
-  **Narațiune și Creier AI:**
-  - 🧠 **Sfârșitul Buclelor:** S-a implementat o nouă "Doctrină a Memoriei" în AI. Acum distinge mai bine între "amintiri" (ceea ce s-a întâmplat deja) și "prezent" (ceea ce se întâmplă acum). Acest lucru ajută la reducerea cazurilor în care AI-ul se repeta sau rămânea blocat.
-  - 📜 **Arhive Istorice:** Sistemul prezintă amintirile tale AI-ului ca o "Arhivă Istorică Închisă", facilitând utilizarea acelor informații ca referință pentru a avansa povestea.
+  **Îmbunătățiri la Generarea Personajelor:**
+  - ⚙️ **Creare Aleatorie mai Solidă:** Am unificat și îmbunătățit motorul de reguli folosit de IA pentru a crea personaje de la zero, garantând inventare mai logice (5-10 obiecte coerente) și fișe mai echilibrate.
+  - 🧠 **Creier Divizat:** IA înțelege acum mai bine când trebuie să „inventeze” un personaj de la zero și când trebuie doar să extragă datele din biografia scrisă chiar de tine.
+  - ⚡ **Viteză pe Măsura Ta:** Secțiune nouă în Setări Vizuale. Alege între „Rapidă” (1 pas), „Medie” (2 pași) sau „Înaltă” (4 pași) pentru a ajusta timpul de generare în funcție de puterea echipamentului tău.
+  - 🛠️ **Optimizare Tehnică:** Modelul IA pentru imagini se încarcă în **RAM (Memorie)** și este procesat via **CPU**, fără a ocupa memoria video (VRAM). Asta garantează că nu interferează cu performanța IA principale a jocului (LLM). Necesită aproximativ 5GB de RAM suplimentari, menținându-se în limitele cerințelor minime oficiale Steam.
+  - 📤 **Împărtășește Aventurile:** Toate imaginile generate sunt salvate automat. Le vei găsi în dosarul: `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Selector de Modele (Avansat):** Dacă pornești jocul cu parametrul `--advanced`, acum poți alege ce model IA să folosești pentru imagini din panoul Aspect. Acest lucru permite entuziaștilor să testeze diferite versiuni de Stable Diffusion optimizate pentru OpenVINO (fișiere .xml/.bin).
+  
+  **Narațiune și Creier IA:**
+  - 🧠 **Sfârșitul Buclelor:** A fost implementată o nouă „Doctrină a Memoriei” în IA. Acum distinge mai bine între „amintiri” (ce s-a întâmplat deja) și „prezent” (ce se întâmplă acum). Asta ajută la reducerea cazurilor în care IA se repeta sau se bloca.
+  - 📜 **Arhive Istorice:** Sistemul prezintă amintirile tale către IA ca o „Arhivă Istorică Închisă”, facilitând utilizarea acelor informații ca referință pentru a avansa povestea.
   - ⚡ **Instrucțiuni Optimizate:** S-a îmbunătățit modul în care jocul solicită narațiunea în limba ta, eliberând capacitatea modelului pentru a se concentra pe creativitate.
-  - 👁️ **Focus Narativ:** S-a rescris percepția AI-ului. Acum înțelege mai bine ce elemente sunt "fundal static" și nu ar trebui să le repete inutil în fiecare paragraf.
-  - 🔀 **Decizii Mai Clare:** AI-ul oferă acum căi de ieșire mai definite. Sugestiile sale (butoanele) sunt împărțite între a investiga mediul (Aprofundare) sau a schimba cursul (Divergență).
-  - 🫵 **Adresare Directă:** S-a ajustat instrucțiunea de bază pentru a asigura că AI-ul ți se adresează cu "Tu", îmbunătățind imersiunea personală.
+  - 👁️ **Focus Narativ:** S-a rescris percepția IA. Acum înțelege mai bine ce elemente sunt „fundal static” și nu ar trebui să le repete inutil în fiecare paragraf.
+  - 🔀 **Decizii Mai Clare:** IA oferă acum căi de scăpare mai definite. Sugestiile sale (butoane) sunt împărțite între a investiga mediul (Aprofundare) sau a schimba direcția (Divergență).
+  - 🫵 **Adresare Directă:** S-a ajustat instrucțiunea de bază pentru a asigura că IA ți se adresează cu „Tu”, îmbunătățind imersiunea personală.
   
   **Crearea Personajului:**
-  - 🖼️ **Portrete de Personaj:** La generarea unui personaj cu AI, sistemul încearcă să creeze un portret bazat pe vârstă, profesie și descriere. Ține cont că este o versiune inițială și fidelitatea (în special în ceea ce privește vârsta) poate varia în funcție de modelul utilizat. (încă fac teste, dar începutul este bun)
-  - 🎲 **Generare Aleatorie Fiabilă:** S-a corectat o eroare unde butonul "Generare cu AI" putea eșua la prima încercare, lăsând câmpurile goale. Acum sistemul de corecție inteligentă se asigură că răspunsul este întotdeauna valid.
+  - 🖼️ **Portrete de Personaje:** La generarea unui personaj cu IA, sistemul încearcă să creeze un portret bazat pe vârstă, profesie și descriere. Ține cont că este o versiune inițială și fidelitatea (în special la vârstă) poate varia în funcție de modelul utilizat. (încă fac teste, dar începutul e bun)
+  - 🎲 **Generare Aleatorie Fiabilă:** S-a corectat o eroare unde butonul „Generare cu IA” putea eșua la prima încercare, lăsând câmpurile goale. Acum sistemul de corecție inteligentă se asigură că răspunsul este întotdeauna valid.
   
-  **Performanță pe Configurații Slabe (Important pentru GPU cu puțin VRAM):**
-  - 🧠 **PSR - Guvernare Hibridă:** Sistem nou care împarte munca AI-ului în două faze: Planificare (Chef) și Execuție (Bucătari). Acest lucru permite modelelor locale cu 8 GB VRAM să funcționeze evitând blocajele din cauza contextului excesiv (+12K tokeni), cu prețul unei latențe mai mari; interacțiunea cu AI-ul trece de la un singur prompt la o serie de prompt-uri (cu cât VRAM-ul este mai mic, cu atât se vor genera mai multe prompt-uri și timpul de răspuns va fi mai mare).
-  - ⚡ **Execuție Inteligentă:** Sistemul decide automat dacă procesează totul o dată (monolitic) sau împarte în părți (iterativ) în funcție de VRAM-ul disponibil. GPU-urile cu mai puțin VRAM activează modul pe părți doar când este necesar.
-  - 📊 **Optimizare Dinamică:** PSR reduce încărcarea de tokeni în timpul generării, permițând utilizatorilor cu plăci grafice de 4GB să finalizeze crearea personajelor și generarea poveștii care înainte se blocau.
-  - 🔄 **Coerență Menținută:** În ciuda divizării muncii, sistemul injectează o "intenție maestră" pentru ca AI-ul să nu piardă firul a ceea ce făcea.
+  **Gestionarea Imaginilor Generate:**
+  - 🖼️ **Galerie Imagini IA:** Panou nou în meniul Fișier care afișează toate imaginile pe care IA le-a generat în timpul partidelor tale (portrete, fundaluri). Poți filtra după tipul imaginii sau după lume.
+  - 🗑️ **Ștergere Selectivă:** Selectează una sau mai multe imagini și șterge-le dacă nu te conving (poate aceea în care IA a decis că e o idee bună să parcheze un autobuz în grajdul castelului). Sistemul curăță atât fișierul, cât și registrul intern.
+  - 📂 **Acces Rapid:** Dă dublu click pe orice miniatură pentru a deschide dosarul unde se află fișierul. Dacă ai deja dosarul deschis, se reutilizează aceeași fereastră.
+  - 💾 **Ține Minte Spațiul Tău:** Dimensiunea ferestrei galeriei se salvează automat între sesiuni.
+  
+  **Performanță în Configurații Slabe (Important pentru GPU cu VRAM puțină):**
+  - 🧠 **PSR - Guvernare Hibridă:** Un nou sistem care împarte munca IA în două faze: Planificare (Chef) și Execuție (Bucătari). Acest lucru permite modelelor locale cu 8 GB VRAM să funcționeze evitând blocajele cauzate de excesul de context (+12K tokens), cu prețul unei latențe mai mari; interacțiunea cu IA trece de la un singur prompt la o serie de prompturi (cu cât VRAM-ul este mai mic, cu atât se vor genera mai multe prompturi și timpul de răspuns va fi mai mare).
+  - ⚡ **Execuție Inteligentă:** Sistemul decide automat dacă procesează totul odată (monolitic) sau împarte pe bucăți (iterativ) în funcție de VRAM-ul disponibil. GPU-urile cu mai puțin VRAM activează modul pe bucăți doar când este necesar.
+  - 📊 **Optimizare Dinamică:** PSR reduce încărcarea token-urilor în timpul generării, permițând utilizatorilor cu plăci grafice de 4GB să finalizeze crearea personajelor și generarea poveștii care înainte se blocau.
+  - 🔄 **Coerență Menținută:** În ciuda divizării muncii, sistemul injectează o „intenție maestră” pentru ca IA să nu piardă firul a ceea ce făcea.
+  
+  **Voci IA (îmbunătățire incrementală):**
+  Generare în timp real a vocilor în toate limbile (unele limbi sunt mai limitate decât altele, cea mai variată în tipuri de voci este engleza)
+  - 🗣️ **Strigăte de Luptă cu Voce:** La începerea luptei împotriva inamicilor ostili, acum se declanșează o frază vocală contextuală de intrare.
+  - 🎭 **Fraze Dinamice după Context:** Motorul poate genera linii scurte de voce pentru evenimente concrete (servicii/luptă) în funcție de limbă, atmosferă și profilul personajului.
+  - 🧠 **Șabloane de Voce Interne:** S-au separat șabloanele tehnice de voce de sistemul narativ pentru a evita interferențele cu povestea.
+  - 🔊 **Claritate Mai Mare la Ascultare:** Se îmbunătățește inteligibilitatea și prozodia sintezei pentru a prioritiza o dicție inteligibilă.
+  
+  **⚠️ Notificare de Compatibilitate (Salvări Anterioare):**
+  - 🔄 Din cauza numărului mare de modificări interne în motorul de reguli și sistemul de atmosferă, **partidele și lumile salvate anterior vor rămâne jucabile (posibil)**, dar este foarte probabil să prezinte erori sau comportamente neașteptate. **Se recomandă crearea unei lumi noi, curate**, pentru a te bucura corect de toate îmbunătățirile.
 
 ****************************************************************************************************
 15/02/2026 02:57 - Scriere Directă, Corecții de Stabilitate și Detectare d - Beta_v057

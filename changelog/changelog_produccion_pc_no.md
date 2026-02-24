@@ -1,39 +1,60 @@
 ****************************************************************************************************
-20/02/2026 23:18 - AI-bildegenerering, narrative forbedringer og kontroll - EXPERIMENTAL_v058
+24/02/2026 03:02 - AI-bildegenerering, narrative forbedringer og kontroll - Beta_v058
 ****************************************************************************************************
 - What's New (NO):
   **⚠️ EKSPERIMENTELL GREN (STEAM BETA)**
-  Denne versjonen er foreløpig bare tilgjengelig på Steams **Eksperimentelle gren**. Slik aktiverer du den:
+  Denne versjonen er foreløpig kun tilgjengelig i Steams **Eksperimentelle gren**. For å aktivere den:
   1. Høyreklikk på **RolemIAster** i Steam-biblioteket ditt.
   2. Velg **Egenskaper...**
   3. Gå til fanen **Betaer**.
-  4. Under «Betadeltakelse» velger du **experimental** i rullegardinmenyen.
+  4. Under «Betadeltakelse», velg **experimental** i nedtrekksmenyen.
   
   **Nyhet: Første fase av AI-bildegenerering**
-  - 🎨 **Din verden i bilder:** Jeg har integrert et tidlig system for bildegenerering via kunstig intelligens. Mens du spiller, prøver systemet å generere portretter og landskap som passer til stemningen i spillet.
+  - 🎨 **Din verden i bilder:** Jeg har integrert et innledende system for bildegenerering med kunstig intelligens. Mens du spiller, prøver systemet å generere portretter og landskap som passer til stemningen i spillet ditt.
   - 🖼️ **Dynamiske bakgrunner:** Bildene genereres i bakgrunnen uten å stoppe spillet. Du vil se dem dukke opp gradvis i bakgrunnen, på karakterkort og i Kodeksen.
-  - ⚡ **Hastighet etter behov:** Ny seksjon i Visuelle innstillinger. Velg mellom «Rask» (1 trinn), «Middels» (2 trinn) eller «Høy» (4 trinn) for å tilpasse genereringstiden til ytelsen på utstyret ditt.
-  - 🛠️ **Teknisk optimalisering:** AI-modellen for bilder lastes i **RAM (minne)** og behandles via **CPU**, uten å bruke videominne (VRAM). Dette sikrer at det ikke forstyrrer ytelsen til spillets hoved-AI (LLM). Krever ca. 5 GB ekstra RAM, men holder seg innenfor de offisielle minimumskravene på Steam.
-  - 📤 **Del dine eventyr:** Alle genererte bilder lagres automatisk. Du finner dem i mappen: `%APPDATA%/RolemIAster/custom_assets/images`
-  - 🔬 **Modellvelger (Avansert):** Hvis du starter spillet med parameteren `--advanced`, kan du nå velge hvilken AI-modell som skal brukes for bildene fra Utseende-panelet. Dette lar entusiaster teste ulike versjoner av Stable Diffusion optimalisert for OpenVINO (.xml/.bin-filer).
+  - 🧹 **Bildeadministrasjon:** Nytt panel for å se og slette genererte bilder du ikke liker.
+  
+  **Forbedringer i karakterskaping:**
+  - ⚙️ **Mer solid tilfeldig skaping:** Jeg har forent og forbedret regelmotoren som AI-en bruker til å skape karakterer fra bunnen av, noe som garanterer mer logiske inventarer (5 til 10 sammenhengende gjenstander) og mer balanserte karakterark.
+  - 🧠 **Delt hjerne:** AI-en forstår nå bedre når den skal «finne opp» en karakter fra bunnen av, og når den skal begrense seg til å hente ut data fra biografien du selv har skrevet.
+  - ⚡ **Hastighet etter dine behov:** Ny seksjon i visuelle innstillinger. Velg mellom «Rask» (1 trinn), «Middels» (2 trinn) eller «Høy» (4 trinn) for å tilpasse genereringstiden til utstyret ditt.
+  - 🛠️ **Teknisk optimalisering:** AI-modellen for bilder lastes inn i **RAM (minne)** og behandles via **CPU**, uten å bruke videominne (VRAM). Dette sikrer at den ikke forstyrrer spillets hoved-AI (LLM). Krever omtrent 5 GB ekstra RAM, men holder seg innenfor de offisielle minimumskravene på Steam.
+  - 📤 **Del eventyrene dine:** Alle genererte bilder lagres automatisk. Du finner dem i mappen: `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Modellvelger (Avansert):** Hvis du starter spillet med parameteren `--advanced`, kan du nå velge hvilken AI-modell som skal brukes for bilder fra Utseende-panelet. Dette lar entusiaster teste ulike versjoner av Stable Diffusion optimalisert for OpenVINO (.xml/.bin-filer).
   
   **Narrativ og AI-hjerne:**
-  - 🧠 **Slutt på løkker:** En ny «Minne-doktrine» er innført i AI-en. Nå skiller den bedre mellom «minner» (det som allerede har skjedd) og «nåtid» (det som skjer). Dette bidrar til å redusere tilfeller der AI-en gjentok seg selv eller satt fast.
-  - 📜 **Historiske arkiver:** Systemet presenterer minnene dine for AI-en som et «Lukket historisk arkiv», noe som gjør det lettere å bruke informasjonen som referanse for å drive historien fremover.
-  - ⚡ **Optimaliserte instruksjoner:** Måten spillet ber om fortellingen på ditt språk er forbedret, noe som frigjør kapasitet for modellen til å fokusere på kreativitet.
-  - 👁️ **Narrativt fokus:** AI-ens oppfatning er skrevet om. Den forstår nå bedre hvilke elementer som er «statisk bakgrunn» og ikke bør gjentas unødvendig i hvert avsnitt.
-  - 🔀 **Tydeligere valg:** AI-en tilbyr nå mer definerte fluktveier. Forslagene (knappene) er delt mellom å undersøke omgivelsene (Fordype) eller endre kurs (Divergere).
-  - 🫵 **Direkte tiltale:** Basisinstruksjonen er justert for å sikre at AI-en tiltaler deg som «Du», noe som forbedrer den personlige innlevelsen.
+  - 🧠 **Slutt på løkker:** En ny «minnedoktrine» er implementert i AI-en. Den skiller nå bedre mellom «minner» (det som har skjedd) og «nåtid» (det som skjer). Dette bidrar til å redusere tilfeller der AI-en gjentok seg selv eller satte seg fast.
+  - 📜 **Historiske arkiver:** Systemet presenterer minnene dine for AI-en som et «Lukket historisk arkiv», noe som gjør det enklere å bruke den informasjonen som referanse for å drive historien fremover.
+  - ⚡ **Optimaliserte instruksjoner:** Måten spillet ber om fortelling på ditt språk er forbedret, noe som frigjør kapasitet for modellen til å fokusere på kreativitet.
+  - 👁️ **Narrativt fokus:** AI-ens oppfatning er omskrevet. Den forstår nå bedre hvilke elementer som er «statisk bakgrunn» og ikke bør gjentas unødvendig i hvert avsnitt.
+  - 🔀 **Tydeligere valg:** AI-en tilbyr nå mer definerte utveier. Forslagene (knappene) er delt inn i å undersøke omgivelsene (Fordype) eller endre kurs (Avvike).
+  - 🫵 **Direkte tiltale:** Grunninstruksen er justert for å sikre at AI-en tiltaler deg som «Du», noe som forbedrer den personlige innlevelsen.
   
   **Karakterskaping:**
-  - 🖼️ **Karakterportretter:** Når du genererer en karakter med AI, prøver systemet å lage et portrett basert på alder, yrke og beskrivelse. Vær oppmerksom på at dette er en tidlig versjon, og nøyaktigheten (spesielt vedrørende alder) kan variere avhengig av modellen som brukes. (jeg fortsetter å teste, men starten er god)
-  - 🎲 **Pålitelig tilfeldig generering:** Rettet en feil der knappen «Generer med AI» kunne feile ved første forsøk og etterlate feltene tomme. Nå sørger det intelligente korrigeringssystemet for at svaret alltid er gyldig.
+  - 🖼️ **Karakterportretter:** Når du genererer en karakter med AI, prøver systemet å lage et portrett basert på alder, yrke og beskrivelse. Vær oppmerksom på at dette er en tidlig versjon, og nøyaktigheten (spesielt på alder) kan variere avhengig av modellen som brukes. (Jeg tester fortsatt, men starten er god).
+  - 🎲 **Pålitelig tilfeldig generering:** Rettet en feil der knappen «Generer med AI» kunne feile ved første forsøk og etterlate feltene tomme. Nå sørger det smarte korreksjonssystemet for at svaret alltid er gyldig.
+  
+  **Håndtering av genererte bilder:**
+  - 🖼️ **AI-bildegalleri:** Nytt panel i Fil-menyen som viser alle bildene AI-en har generert i løpet av spillene dine (portretter, bakgrunner). Du kan filtrere etter bildetype eller verden.
+  - 🗑️ **Selektiv sletting:** Velg ett eller flere bilder og slett dem hvis du ikke er fornøyd (kanskje det der AI-en bestemte at det var en god idé å parkere en buss i stallen på slottet). Systemet rydder både i filen og i det interne registeret.
+  - 📂 **Direkte tilgang:** Dobbeltklikk på et miniatyrbilde for å åpne mappen der filen ligger. Hvis du allerede har mappen åpen, gjenbrukes samme vindu.
+  - 💾 **Husker plassen din:** Størrelsen på gallerivinduet lagres automatisk mellom øktene.
   
   **Ytelse på lave konfigurasjoner (Viktig for GPU med lite VRAM):**
-  - 🧠 **PSR - Hybrid styring:** Nytt system som deler AI-arbeidet i to faser: Planlegging (Kokk) og Utførelse (Kokker). Dette gjør at lokale modeller med 8 GB VRAM kan fungere og unngå kollaps på grunn av for mye kontekst (+12K tokens), på bekostning av høyere forsinkelse; interaksjonen med AI-en går fra å være en enkelt prompt til en serie prompts (jo mindre VRAM, desto flere prompts genereres, og desto lengre responstid).
-  - ⚡ **Intelligent utførelse:** Systemet bestemmer automatisk om alt skal behandles på én gang (monolittisk) eller deles opp (iterativt) basert på tilgjengelig VRAM. GPU-er med mindre VRAM aktiverer modusen for oppdeling kun når det er nødvendig.
-  - 📊 **Dynamisk optimalisering:** PSR reduserer belastningen av tokens under generering, noe som gjør at brukere med grafikkort på 4 GB kan fullføre karakterskaping og historiegenerering som tidligere låste seg.
-  - 🔄 **Opprettholdt sammenheng:** Til tross for arbeidsdelingen injiserer systemet en «master-intensjon» slik at AI-en ikke mister tråden i det den holdt på med.
+  - 🧠 **PSR - Hybrid styring:** Nytt system som deler AI-arbeidet i to faser: Planlegging (Kokk) og Utførelse (Kokker). Dette lar lokale modeller med 8 GB VRAM fungere uten å kollapse på grunn av for mye kontekst (+12K tokens), på bekostning av høyere forsinkelse. Behandlingen med AI-en går fra å være en enkelt ledetekst (prompt) til en serie ledetekster (jo mindre VRAM, desto flere ledetekster genereres, og desto lengre responstid).
+  - ⚡ **Smart utførelse:** Systemet bestemmer automatisk om alt skal behandles på én gang (monolittisk) eller deles opp i deler (iterativt) basert på tilgjengelig VRAM. GPU-er med mindre VRAM aktiverer oppdelt modus kun når det er nødvendig.
+  - 📊 **Dynamisk optimalisering:** PSR reduserer token-belastningen under generering, slik at brukere med grafikkort på 4 GB kan fullføre karakterskaping og historiegenerering som tidligere låste seg.
+  - 🔄 **Opprettholdt sammenheng:** Til tross for arbeidsdelingen, injiserer systemet en «overordnet intensjon» slik at AI-en ikke mister tråden i det den holdt på med.
+  
+  **AI-stemmer (inkrementell forbedring):**
+  Sanntidsgenerering av stemmer på alle språk (noen språk er mer begrensede enn andre; engelsk har størst variasjon i stemmethyper).
+  - 🗣️ **Kamprop med stemme:** Når du starter kamp mot fiendtlige motstandere, utløses nå en kontekstuell stemmefrase ved start.
+  - 🎭 **Dynamiske fraser etter kontekst:** Motoren kan generere korte stemmelinjer for konkrete hendelser (tjenester/kamp) avhengig av språk, omgivelser og karakterprofil.
+  - 🧠 **Interne stemmemaler:** Tekniske stemmemaler er skilt fra det narrative systemet for å unngå forstyrrelser i historien.
+  - 🔊 **Bedre klarhet:** Forståelighet og prosodi i syntesen er forbedret for å prioritere tydelig uttale.
+  
+  **⚠️ Advarsel om kompatibilitet (Tidligere spill):**
+  - 🔄 På grunn av mengden interne endringer i regelmotoren og systemet for omgivelser, vil **tidligere lagrede spill og verdener fortsatt være spillbare (muligens)**, men det er svært sannsynlig at det vil oppstå feil eller uventet oppførsel. **Det anbefales å opprette en ny, ren verden** for å nyte alle forbedringene på riktig måte.
 
 ****************************************************************************************************
 15/02/2026 02:57 - Direkte skriving, stabilitetsfikser og deteksjon - Beta_v057

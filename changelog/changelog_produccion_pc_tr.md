@@ -1,39 +1,60 @@
 ****************************************************************************************************
-20/02/2026 23:18 - YZ ile Görüntü Oluşturma, Hikaye Anlatımı İyileştirmeleri ve Kontrol - EXPERIMENTAL_v058
+24/02/2026 03:02 - Yapay Zeka Görüntü Oluşturma, Anlatım İyileştirmeleri ve Kontrol - Beta_v058
 ****************************************************************************************************
 - What's New (TR):
   **⚠️ DENEYSEL DAL (STEAM BETA)**
-  Bu sürüm şu anda yalnızca Steam'in **Deneysel Dalı** (Experimental Branch) üzerinden erişilebilir. Etkinleştirmek için:
-  1. Steam Kütüphanenizde **RolemIAster** üzerine sağ tıklayın.
+  Bu sürüm şu anda yalnızca Steam'in **Deneysel Dalında** mevcuttur. Etkinleştirmek için:
+  1. Steam Kütüphanenizdeki **RolemIAster** üzerine sağ tıklayın.
   2. **Özellikler...** seçeneğini seçin.
   3. **Betalar** sekmesine gidin.
   4. "Beta Katılımı" kısmındaki açılır menüden **experimental** seçeneğini seçin.
   
-  **Yeni: YZ ile Görüntü Oluşturmanın İlk Aşaması**
-  - 🎨 **Görüntülerle Dünyanız:** Başlangıç seviyesinde bir Yapay Zeka görüntü oluşturma sistemi entegre ettim. Siz oynadıkça sistem, oyununuzun atmosferine eşlik edecek portreler ve manzaralar oluşturmaya çalışır.
+  **Yenilik: Yapay Zeka Görüntü Oluşturmanın İlk Aşaması**
+  - 🎨 **Görüntülerle Dünyanız:** Yapay Zeka ile görüntü oluşturma sisteminin ilk sürümünü entegre ettim. Siz oynadıkça sistem, oyununuzun atmosferine eşlik edecek portreler ve manzaralar oluşturmaya çalışır.
   - 🖼️ **Dinamik Arka Planlar:** Görüntüler oyununuzu durdurmadan arka planda oluşturulur. Arka planda, karakter kartlarında ve Kodeks'te aşamalı olarak belirdiklerini göreceksiniz.
-  - ⚡ **Size Özel Hız:** Görsel Ayarlar'da yeni bölüm. Oluşturma süresini bilgisayarınızın gücüne göre ayarlamak için "Hızlı" (1 adım), "Orta" (2 adım) veya "Yüksek" (4 adım) arasından seçim yapın.
-  - 🛠️ **Teknik Optimizasyon:** Görüntüler için YZ modeli **RAM (Bellek)** üzerine yüklenir ve video belleğini (VRAM) işgal etmeden **CPU** üzerinden işlenir. Bu, oyunun ana YZ'sinin (LLM) performansıyla çakışmamasını garanti eder. Yaklaşık 5GB ek RAM gerektirir ve Steam'in resmi minimum gereksinimleri dahilinde kalır.
-  - 📤 **Maceralarınızı Paylaşın:** Oluşturulan tüm görüntüler otomatik olarak kaydedilir. Bunları şu klasörde bulabilirsiniz: `%APPDATA%/RolemIAster/custom_assets/images`
-  - 🔬 **Model Seçici (Gelişmiş):** Oyunu `--advanced` parametresiyle başlatırsanız, artık Görünüm panelinden görüntüler için hangi YZ modelinin kullanılacağını seçebilirsiniz. Bu, meraklıların OpenVINO için optimize edilmiş farklı Stable Diffusion sürümlerini (.xml/.bin dosyaları) denemelerine olanak tanır.
+  - 🧹 **Görüntü Yönetimi:** Oluşturulan ve beğenmediğiniz görüntüleri görüntülemek ve silmek için yeni panel.
   
-  **Hikaye Anlatımı ve YZ Beyni:**
-  - 🧠 **Döngülerin Sonu:** YZ'ye yeni bir "Bellek Doktrini" uygulandı. Artık "anılar" (yaşanmış olanlar) ile "şimdiki zaman" (şu an yaşananlar) arasındaki ayrımı daha iyi yapıyor. Bu, YZ'nin kendini tekrar ettiği veya takılıp kaldığı durumları azaltmaya yardımcı olur.
-  - 📜 **Tarihsel Arşivler:** Sistem, anılarınızı YZ'ye "Kapalı Tarihsel Arşiv" olarak sunar, bu da hikayeyi ilerletmek için bu bilgileri referans olarak kullanmasını kolaylaştırır.
-  - ⚡ **Optimize Edilmiş Talimatlar:** Oyunun sizin dilinizde anlatım talep etme şekli iyileştirildi, böylece modelin kapasitesi yaratıcılığa odaklanmak üzere serbest bırakıldı.
-  - 👁️ **Hikaye Odağı:** YZ'nin algısı yeniden yazıldı. Artık hangi öğelerin "statik arka plan" olduğunu ve her paragrafta gereksiz yere tekrarlanmaması gerektiğini daha iyi anlıyor.
-  - 🔀 **Daha Net Kararlar:** YZ artık daha belirgin kaçış yolları sunuyor. Önerileri (düğmeler), ortamı araştırmaya (Derinleşme) veya yön değiştirmeye (Sapma) göre ayrılıyor.
-  - 🫵 **Doğrudan Hitap:** YZ'nin size "Sen" diye hitap etmesini sağlamak için temel talimat ayarlandı, bu da kişisel sürükleyiciliği artırıyor.
+  **Karakter Oluşturma İyileştirmeleri:**
+  - ⚙️ **Daha Sağlam Rastgele Oluşturma:** YZ'nin karakterleri sıfırdan oluşturmak için kullandığı kural motorunu birleştirdim ve geliştirdim; böylece daha mantıklı envanterler (5 ila 10 tutarlı eşya) ve daha dengeli karakter sayfaları garanti ediliyor.
+  - 🧠 **Bölünmüş Beyin:** YZ artık ne zaman sıfırdan bir karakter "uydurması" gerektiğini ve ne zaman sadece sizin yazdığınız biyografideki verileri çıkarması gerektiğini daha iyi anlıyor.
+  - ⚡ **Size Göre Hız:** Görsel Ayarlarda yeni bölüm. Oluşturma süresini bilgisayarınızın gücüne göre ayarlamak için "Hızlı" (1 adım), "Orta" (2 adım) veya "Yüksek" (4 adım) arasından seçim yapın.
+  - 🛠️ **Teknik Optimizasyon:** Görüntüler için YZ modeli **RAM'e (Bellek)** yüklenir ve video belleğini (VRAM) işgal etmeden **CPU** üzerinden işlenir. Bu, oyunun ana YZ'sinin (LLM) performansına müdahale etmemesini sağlar. Ek olarak yaklaşık 5GB RAM gerektirir ancak Steam'deki resmi minimum gereksinimler dahilinde kalır.
+  - 📤 **Maceralarınızı Paylaşın:** Oluşturulan tüm görüntüler otomatik olarak kaydedilir. Bunları şu klasörde bulabilirsiniz: `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Model Seçici (Gelişmiş):** Oyunu `--advanced` parametresiyle başlatırsanız, artık Görünüm panelinden görüntüler için hangi YZ modelini kullanacağınızı seçebilirsiniz. Bu, meraklıların OpenVINO için optimize edilmiş farklı Stable Diffusion sürümlerini (.xml/.bin dosyaları) denemelerine olanak tanır.
+  
+  **Anlatım ve YZ Beyni:**
+  - 🧠 **Döngülerin Sonu:** YZ'ye yeni bir "Hafıza Doktrini" uygulandı. Artık "hatıralar" (geçmişte olanlar) ile "şimdi" (şu anda olanlar) arasındaki ayrımı daha iyi yapıyor. Bu, YZ'nin kendini tekrar ettiği veya takılıp kaldığı durumları azaltmaya yardımcı olur.
+  - 📜 **Tarihi Arşivler:** Sistem hatıralarınızı YZ'ye "Kapalı Tarihi Arşiv" olarak sunar, bu da hikayeyi ilerletmek için bu bilgiyi referans olarak kullanmasını kolaylaştırır.
+  - ⚡ **Optimize Edilmiş Talimatlar:** Oyunun sizin dilinizde anlatım talep etme şekli geliştirildi, böylece modelin kapasitesi yaratıcılığa odaklanmak üzere serbest bırakıldı.
+  - 👁️ **Anlatı Odağı:** YZ'nin algısı yeniden yazıldı. Artık hangi unsurların "statik arka plan" olduğunu ve bunları her paragrafta gereksiz yere tekrarlamaması gerektiğini daha iyi anlıyor.
+  - 🔀 **Daha Net Kararlar:** YZ artık daha belirgin kaçış yolları sunuyor. Önerileri (düğmeler), çevreyi araştırmaya (Derinleş) veya yön değiştirmeye (Ayrıl) odaklanacak şekilde ayrıldı.
+  - 🫵 **Doğrudan Hitap:** YZ'nin size "Sen" diye hitap etmesini sağlamak için temel talimat ayarlandı, böylece kişisel atmosfer iyileştirildi.
   
   **Karakter Oluşturma:**
-  - 🖼️ **Karakter Portreleri:** YZ ile bir karakter oluştururken, sistem yaşına, mesleğine ve açıklamasına dayalı bir portre oluşturmaya çalışır. Bunun bir başlangıç sürümü olduğunu ve doğruluğun (özellikle yaş konusunda) kullanılan modele göre değişebileceğini unutmayın. (testlere devam ediyorum ancak başlangıç iyi)
-  - 🎲 **Güvenilir Rastgele Oluşturma:** "YZ ile Oluştur" düğmesinin ilk denemede başarısız olup alanları boş bıraktığı hata düzeltildi. Akıllı düzeltme sistemi artık yanıtın her zaman geçerli olmasını sağlıyor.
+  - 🖼️ **Karakter Portreleri:** YZ ile bir karakter oluştururken sistem yaşına, mesleğine ve açıklamasına dayalı bir portre oluşturmaya çalışır. Bunun bir ilk sürüm olduğunu ve sadakatin (özellikle yaş konusunda) kullanılan modele göre değişebileceğini unutmayın. (Testlere devam ediyorum ama başlangıç iyi)
+  - 🎲 **Güvenilir Rastgele Oluşturma:** "YZ ile Oluştur" düğmesinin ilk denemede başarısız olup alanları boş bırakmasına neden olan bir hata düzeltildi. Artık akıllı düzeltme sistemi, yanıtın her zaman geçerli olmasını sağlıyor.
+  
+  **Oluşturulan Görüntülerin Yönetimi:**
+  - 🖼️ **YZ Görüntü Galerisi:** Dosya menüsünde, oyunlarınız sırasında YZ'nin oluşturduğu tüm görüntüleri (portreler, arka planlar) gösteren yeni panel. Görüntü türüne veya dünyaya göre filtreleme yapabilirsiniz.
+  - 🗑️ **Seçmeli Silme:** Bir veya daha fazla görüntüyü seçin ve içinize sinmezse silin (belki de YZ'nin kale ahırına otobüs park etmenin iyi bir fikir olduğuna karar verdiği o görüntüyü). Sistem hem dosyayı hem de dahili kaydını temizler.
+  - 📂 **Doğrudan Erişim:** Dosyanın bulunduğu klasörü açmak için herhangi bir küçük resme çift tıklayın. Klasör zaten açıksa aynı pencere tekrar kullanılır.
+  - 💾 **Alanınızı Hatırlar:** Galeri penceresinin boyutu oturumlar arasında otomatik olarak kaydedilir.
   
   **Düşük Yapılandırmalarda Performans (Düşük VRAM'li GPU'lar için Önemli):**
-  - 🧠 **PSR - Hibrit Yönetim:** YZ işini iki aşamaya ayıran yeni sistem: Planlama (Şef) ve Yürütme (Aşçılar). Bu, 8 GB VRAM'e sahip yerel modellerin aşırı bağlam (+12K token) nedeniyle çökmesini önleyerek çalışmasını sağlar, ancak daha yüksek gecikme süresi olur; YZ ile etkileşim tek bir istemden bir dizi isteme dönüşür (VRAM ne kadar düşükse, o kadar çok istem oluşturulur ve yanıt süresi o kadar uzar).
-  - ⚡ **Akıllı Yürütme:** Sistem, mevcut VRAM'inize göre her şeyi tek seferde (monolitik) mi yoksa parçalara bölerek (yinelemeli) mi işleyeceğine otomatik olarak karar verir. Daha az VRAM'e sahip GPU'lar, parçalı modu yalnızca gerektiğinde etkinleştirir.
-  - 📊 **Dinamik Optimizasyon:** PSR, oluşturma sırasında token yükünü azaltarak 4GB ekran kartına sahip kullanıcıların daha önce kilitlenen karakter oluşturma ve hikaye oluşturma işlemlerini tamamlamasına olanak tanır.
-  - 🔄 **Korunan Tutarlılık:** İşin bölünmesine rağmen sistem, YZ'nin ne yaptığının ipini kaçırmaması için bir "ana niyet" enjekte eder.
+  - 🧠 **PSR - Hibrit Yönetim:** YZ işini iki aşamaya bölen yeni sistem: Planlama (Şef) ve Yürütme (Aşçılar). Bu, 8 GB VRAM'e sahip yerel modellerin aşırı bağlam (+12K token) nedeniyle çökmesini önleyerek çalışmasını sağlar; ancak gecikme süresi artar. YZ ile etkileşim tek bir istemden (prompt) bir dizi isteme dönüşür (VRAM ne kadar düşükse o kadar çok istem oluşturulur ve yanıt süresi o kadar uzar).
+  - ⚡ **Akıllı Yürütme:** Sistem, mevcut VRAM'inize göre her şeyi tek seferde (monolitik) mi yoksa parçalara ayırarak (yinelemeli) mı işleyeceğine otomatik olarak karar verir. Daha az VRAM'e sahip GPU'lar, parçalı modu yalnızca gerektiğinde etkinleştirir.
+  - 📊 **Dinamik Optimizasyon:** PSR, oluşturma sırasında token yükünü azaltarak 4GB grafik kartına sahip kullanıcıların daha önce kilitlenen karakter oluşturma ve hikaye üretme işlemlerini tamamlamasına olanak tanır.
+  - 🔄 **Korunan Tutarlılık:** İş bölünmesine rağmen sistem, YZ'nin ne yaptığının takibini kaybetmemesi için bir "ana niyet" enjekte eder.
+  
+  **YZ Sesleri (kademeli iyileştirme):**
+  Tüm dillerde gerçek zamanlı ses oluşturma (bazı diller diğerlerinden daha sınırlıdır, ses türlerinde en çeşitli olan İngilizcedir)
+  - 🗣️ **Sesli Savaş Çığlıkları:** Düşmanlara karşı savaş başlatıldığında artık bağlamsal bir giriş sesli cümlesi tetikleniyor.
+  - 🎭 **Bağlama Göre Dinamik İfadeler:** Motor; dile, ortama ve karakter profiline göre belirli olaylar (hizmetler/savaş) için kısa ses satırları oluşturabilir.
+  - 🧠 **Dahili Ses Şablonları:** Teknik ses şablonları, hikaye ile çakışmayı önlemek için anlatı sisteminden ayrıldı.
+  - 🔊 **Duyumda Daha Yüksek Netlik:** Anlaşılır diksiyona öncelik vermek için sentezin anlaşılabilirliği ve vurgusu iyileştirildi.
+  
+  **⚠️ Uyumluluk Uyarısı (Önceki Kayıtlar):**
+  - 🔄 Kural motoru ve ortam sistemindeki dahili değişikliklerin miktarı nedeniyle, **daha önce kaydedilen oyunlar ve dünyalar oynanabilir olmaya devam edecektir (muhtemelen)**, ancak hatalar veya beklenmedik davranışlar sergilemeleri çok muhtemeldir. Tüm iyileştirmelerin keyfini düzgün bir şekilde çıkarmak için **yeni ve temiz bir dünya yaratmanız önerilir**.
 
 ****************************************************************************************************
 15/02/2026 02:57 - Doğrudan Yazma, Kararlılık Düzeltmeleri ve Algılama - Beta_v057

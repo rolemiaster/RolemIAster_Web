@@ -1,39 +1,60 @@
 ****************************************************************************************************
-20/02/2026 23:18 - Tekoälykuvien luonti, tarinankerronnan parannukset ja hallinta - EXPERIMENTAL_v058
+24/02/2026 03:02 - Tekoälykuvien luonti, kerronnalliset parannukset ja hallinta - Beta_v058
 ****************************************************************************************************
 - What's New (FI):
-  **⚠️ KOKEILUVERSIO (STEAM BETA)**
-  Tämä versio on tällä hetkellä saatavilla vain Steam-kirjaston **Kokeiluversiossa** (Experimental Branch). Näin aktivoit sen:
-  1. Klikkaa hiiren oikealla painikkeella **RolemIAster**-peliä Steam-kirjastossasi.
+  **⚠️ KOKEILUHAARA (STEAM BETA)**
+  Tämä versio on tällä hetkellä saatavilla vain Steamissä **Kokeiluhaarassa** (Experimental Branch). Ota se käyttöön näin:
+  1. Napsauta hiiren kakkospainikkeella **RolemIAster**-peliä Steam-kirjastossasi.
   2. Valitse **Ominaisuudet...**
   3. Siirry **Betat**-välilehdelle.
-  4. Valitse "Beta-osallistuminen"-kohdan pudotusvalikosta **experimental**.
+  4. Valitse "Betaan osallistuminen" -kohdan pudotusvalikosta **experimental**.
   
   **Uutta: Tekoälykuvien luonnin ensimmäinen vaihe**
-  - 🎨 **Maailmasi kuvina:** Olen integroinut alustavan järjestelmän kuvien luomiseen tekoälyllä. Pelatessasi järjestelmä yrittää luoda muotokuvia ja maisemia, jotka tukevat pelisi tunnelmaa.
-  - 🖼️ **Dynaamiset taustat:** Kuvat luodaan taustalla keskeyttämättä peliäsi. Näet niiden ilmestyvän vähitellen taustalle, hahmokortteihin ja Koodeksiin.
-  - ⚡ **Nopeus tarpeidesi mukaan:** Uusi osio visuaalisissa asetuksissa. Valitse "Nopea" (1 vaihe), "Keskitaso" (2 vaihetta) tai "Korkea" (4 vaihetta) säätääksesi luontiajan laitteistosi tehon mukaiseksi.
-  - 🛠️ **Tekninen optimointi:** Kuvien tekoälymalli ladataan **RAM-muistiin** ja käsitellään **prosessorilla (CPU)** viemättä näytönohjaimen muistia (VRAM). Tämä varmistaa, ettei se häiritse pelin päätekoälyn (LLM) suorituskykyä. Se vaatii noin 5 Gt lisä-RAM-muistia, pysyen Steamin virallisten vähimmäisvaatimusten rajoissa.
-  - 📤 **Jaa seikkailusi:** Kaikki luodut kuvat tallennetaan automaattisesti. Löydät ne kansiosta: `%APPDATA%/RolemIAster/custom_assets/images`
-  - 🔬 **Mallin valitsin (Edistynyt):** Jos käynnistät pelin parametrilla `--advanced`, voit nyt valita ulkoasuvalikosta, mitä tekoälymallia käytetään kuville. Tämä mahdollistaa harrastajille OpenVINO-optimoitujen Stable Diffusion -versioiden (.xml/.bin-tiedostot) kokeilemisen.
+  - 🎨 **Maailmasi kuvina:** Olen integroinut alustavan järjestelmän tekoälypohjaiseen kuvien luontiin. Pelaamisen aikana järjestelmä yrittää luoda muotokuvia ja maisemia, jotka sopivat pelisi tunnelmaan.
+  - 🖼️ **Dynaamiset taustat:** Kuvat luodaan taustalla keskeyttämättä peliäsi. Näet niiden ilmestyvän vähitellen taustalle, hahmokortteihin ja koodeksiin.
+  - 🧹 **Kuvien hallinta:** Uusi paneeli, jossa voit tarkastella ja poistaa luotuja kuvia, joista et pidä.
   
-  **Tarinankerronta ja tekoälyaivot:**
-  - 🧠 **Loppu silmukoille:** Tekoälyyn on istutettu uusi "muistioppi". Se erottaa nyt paremmin "muistot" (mitä on jo tapahtunut) ja "nykyhetken" (mitä tapahtuu nyt). Tämä auttaa vähentämään tapauksia, joissa tekoäly toisti itseään tai jäi jumiin.
-  - 📜 **Historialliset arkistot:** Järjestelmä esittää muistosi tekoälylle "suljettuna historiallisena arkistona", mikä helpottaa näiden tietojen käyttöä viitteenä tarinan edistämiseksi.
-  - ⚡ **Optimoidut ohjeet:** Pelin tapaa pyytää kerrontaa kielelläsi on parannettu, mikä vapauttaa mallin kapasiteettia keskittymään luovuuteen.
-  - 👁️ **Kerronnallinen fokus:** Tekoälyn havaintokyky on kirjoitettu uudelleen. Nyt se ymmärtää paremmin, mitkä elementit ovat "staattista taustaa", eikä sen tulisi toistaa niitä tarpeettomasti jokaisessa kappaleessa.
+  **Parannuksia hahmojen luontiin:**
+  - ⚙️ **Vankempi satunnaisluonti:** Olen yhtenäistänyt ja parantanut sääntömoottoria, jota tekoäly käyttää hahmojen luomiseen tyhjästä. Tämä takaa loogisemmat tavaraluettelot (5–10 johdonmukaista esinettä) ja tasapainoisemmat hahmolomakkeet.
+  - 🧠 **Jaetut aivot:** Tekoäly ymmärtää nyt paremmin, milloin sen tulee "keksiä" hahmo tyhjästä ja milloin sen tulee vain poimia tiedot kirjoittamastasi biografiasta.
+  - ⚡ **Nopeus tarpeidesi mukaan:** Uusi osio visuaalisissa asetuksissa. Valitse "Nopea" (1 vaihe), "Keskitaso" (2 vaihetta) tai "Korkea" (4 vaihetta) säätääksesi luontiaikaa laitteistosi tehon mukaan.
+  - 🛠️ **Tekninen optimointi:** Kuvien tekoälymalli ladataan **RAM-muistiin** ja prosessoidaan **CPU:n** kautta viemättä videomuistia (VRAM). Tämä takaa, ettei se häiritse pelin päätekoälyn (LLM) suorituskykyä. Se vaatii noin 5 Gt lisä-RAM-muistia, mutta pysyy silti Steam-vähimmäisvaatimusten rajoissa.
+  - 📤 **Jaa seikkailusi:** Kaikki luodut kuvat tallennetaan automaattisesti. Löydät ne kansiosta: `%APPDATA%/RolemIAster/custom_assets/images`
+  - 🔬 **Mallin valitsin (Edistynyt):** Jos käynnistät pelin parametrilla `--advanced`, voit nyt valita Ulkoasu-paneelista, mitä tekoälymallia käytetään kuviin. Tämän ansiosta harrastajat voivat testata eri Stable Diffusion -versioita, jotka on optimoitu OpenVINO:lle (.xml/.bin-tiedostot).
+  
+  **Kerronta ja tekoälyaivot:**
+  - 🧠 **Loppu silmukoille:** Tekoälyyn on istutettu uusi "Muistioppi". Se erottaa nyt paremmin "muistot" (mitä on jo tapahtunut) ja "nykyhetken" (mitä tapahtuu nyt). Tämä auttaa vähentämään tapauksia, joissa tekoäly toisti itseään tai jäi jumiin.
+  - 📜 **Historialliset arkistot:** Järjestelmä esittää muistosi tekoälylle "Suljettuna historiallisena arkistona", mikä helpottaa kyseisten tietojen käyttöä viitteenä tarinan edistämiseksi.
+  - ⚡ **Optimoidut ohjeet:** Tapaa, jolla peli pyytää kerrontaa kielelläsi, on parannettu, mikä vapauttaa mallin kapasiteettia keskittymään luovuuteen.
+  - 👁️ **Kerronnallinen fokus:** Tekoälyn havaintokyky on kirjoitettu uudelleen. Se ymmärtää nyt paremmin, mitkä elementit ovat "staattista taustaa", eikä sen tulisi toistaa niitä tarpeettomasti jokaisessa kappaleessa.
   - 🔀 **Selkeämmät päätökset:** Tekoäly tarjoaa nyt selkeämpiä etenemisreittejä. Sen ehdotukset (painikkeet) on jaettu ympäristön tutkimiseen (Syvenny) tai suunnan muuttamiseen (Erkane).
-  - 🫵 **Suora puhuttelu:** Perusohjeistusta on säädetty sen varmistamiseksi, että tekoäly sinuttelee sinua, mikä parantaa henkilökohtaista immersiota.
+  - 🫵 **Suora puhuttelu:** Perusohjeistusta on säädetty sen varmistamiseksi, että tekoäly puhuttelee sinua muodossa "Sinä", mikä parantaa immersiota.
   
   **Hahmonluonti:**
-  - 🖼️ **Hahmojen muotokuvat:** Kun luot hahmon tekoälyllä, järjestelmä yrittää luoda muotokuvan iän, ammatin ja kuvauksen perusteella. Huomaa, että tämä on alkuversio, ja tarkkuus (erityisesti iän suhteen) voi vaihdella käytetyn mallin mukaan. (Teen edelleen testejä, mutta alku on lupaava.)
-  - 🎲 **Luotettava satunnaisgenerointi:** Korjattu virhe, jossa "Luo tekoälyllä" -painike saattoi epäonnistua ensimmäisellä yrityksellä jättäen kentät tyhjiksi. Nyt älykäs korjausjärjestelmä varmistaa, että vastaus on aina kelvollinen.
+  - 🖼️ **Hahmojen muotokuvat:** Kun luot hahmon tekoälyllä, järjestelmä yrittää luoda muotokuvan iän, ammatin ja kuvauksen perusteella. Huomaa, että tämä on varhainen versio, ja uskollisuus (erityisesti iän suhteen) voi vaihdella käytetyn mallin mukaan. (Jatkan testausta, mutta alku näyttää lupaavalta.)
+  - 🎲 **Luotettava satunnaisluonti:** Korjattu virhe, jossa "Luo tekoälyllä" -painike saattoi epäonnistua ensimmäisellä yrityksellä jättäen kentät tyhjiksi. Nyt älykäs korjausjärjestelmä varmistaa, että vastaus on aina kelvollinen.
+  
+  **Luotujen kuvien hallinta:**
+  - 🖼️ **Tekoälykuvagalleria:** Tiedosto-valikossa on uusi paneeli, joka näyttää kaikki tekoälyn peliesi aikana luomat kuvat (muotokuvat, taustat). Voit suodattaa kuvatyypin tai maailman mukaan.
+  - 🗑️ **Valikoiva poisto:** Valitse yksi tai useampi kuva ja poista ne, jos ne eivät miellytä (ehkä se kuva, jossa tekoäly päätti, että linnan talliin on hyvä idea pysäköidä bussi). Järjestelmä siivoaa sekä tiedoston että sisäisen rekisterinsä.
+  - 📂 **Suora pääsy:** Kaksoisnapsauta pikkukuvaa avataksesi kansion, jossa tiedosto sijaitsee. Jos kansio on jo auki, käytetään samaa ikkunaa.
+  - 💾 **Ikkunan koon muistaminen:** Gallerian ikkunan koko tallennetaan automaattisesti istuntojen välillä.
   
   **Suorituskyky matalilla asetuksilla (Tärkeää GPU:ille, joissa on vähän VRAM-muistia):**
-  - 🧠 **PSR - Hybridihallinta:** Uusi järjestelmä, joka jakaa tekoälyn työn kahteen vaiheeseen: Suunnittelu (Pääkokki) ja Toteutus (Kokit). Tämä mahdollistaa paikallisten mallien toiminnan 8 Gt:n VRAM-muistilla välttäen kontekstin ylikuormittumisesta johtuvat kaatumiset (+12K tokenia), mutta viive kasvaa. Tekoälyn käsittely muuttuu yhdestä kehotteesta sarjaksi kehotteita (mitä vähemmän VRAM-muistia, sitä enemmän kehotteita luodaan ja sitä pidempi vasteaika).
-  - ⚡ **Älykäs suoritus:** Järjestelmä päättää automaattisesti, käsitelläänkö kaikki kerralla (monoliittinen) vai osissa (iteratiivinen) käytettävissä olevan VRAM-muistin perusteella. GPU:t, joissa on vähemmän VRAM-muistia, aktivoivat ositetun tilan vain tarvittaessa.
-  - 📊 **Dynaaminen optimointi:** PSR vähentää token-kuormitusta generoinnin aikana, mikä mahdollistaa hahmonluonnin ja tarinan generoinnin loppuunsaattamisen käyttäjille, joilla on 4 Gt:n näytönohjain, kun aiemmin nämä olisivat jumittuneet.
-  - 🔄 **Johdonmukaisuuden ylläpito:** Työn jakamisesta huolimatta järjestelmä syöttää "pääaikeen", jotta tekoäly ei kadota punaista lankaa tekemisistään.
+  - 🧠 **PSR - Hybridihallinta:** Uusi järjestelmä, joka jakaa tekoälyn työn kahteen vaiheeseen: Suunnittelu (Keittiömestari) ja Toteutus (Kokit). Tämä mahdollistaa paikallisten mallien toiminnan 8 Gt VRAM-muistilla välttäen kontekstin ylikuormituksesta johtuvat kaatumiset (+12K tokenia), mutta viive kasvaa. Tekoälyn käsittely muuttuu yhdestä kehotteesta kehotteiden sarjaksi (mitä vähemmän VRAM-muistia, sitä enemmän kehotteita luodaan ja sitä pidempi vastausaika).
+  - ⚡ **Älykäs suoritus:** Järjestelmä päättää automaattisesti käytettävissä olevan VRAM-muistin perusteella, käsitelläänkö kaikki kerralla (monoliittinen) vai jaetaanko se osiin (iteratiivinen). GPU:t, joissa on vähemmän VRAM-muistia, aktivoivat ositetun tilan vain tarvittaessa.
+  - 📊 **Dynaaminen optimointi:** PSR vähentää token-kuormitusta luonnin aikana, mikä mahdollistaa sen, että käyttäjät, joilla on 4 Gt:n näytönohjain, voivat suorittaa hahmonluonnin ja tarinan luonnin, jotka aiemmin jumiutuivat.
+  - 🔄 **Johdonmukaisuuden ylläpito:** Vaikka työ jaetaan, järjestelmä syöttää "pääaikeen", jotta tekoäly ei menetä punaista lankaa tekemisistään.
+  
+  **Tekoälyäänet (inkrementaalinen parannus):**
+  Reaaliaikainen äänten luonti kaikilla kielillä (jotkut kielet ovat rajoitetumpia kuin toiset; englannin kielessä on monipuolisin äänivalikoima)
+  - 🗣️ **Äänelliset taisteluhuudot:** Kun taistelu vihollisia vastaan alkaa, peli toistaa nyt kontekstisidonnaisen aloituslauseen ääneen.
+  - 🎭 **Dynaamiset lauseet kontekstin mukaan:** Moottori voi luoda lyhyitä äänirepliikkejä tiettyihin tapahtumiin (palvelut/taistelu) kielen, tunnelman ja hahmoprofiilin mukaan.
+  - 🧠 **Sisäiset äänimallit:** Tekniset äänimallit on erotettu kerrontajärjestelmästä, jotta ne eivät häiritse tarinaa.
+  - 🔊 **Parempi selkeys:** Synteesin ymmärrettävyyttä ja prosodiaa on parannettu, jotta selkeä ääntäminen on etusijalla.
+  
+  **⚠️ Yhteensopivuusilmoitus (Aiemmat tallennukset):**
+  - 🔄 Sääntömoottoriin ja ympäristöjärjestelmään tehtyjen lukuisten sisäisten muutosten vuoksi **aiemmin tallennetut pelit ja maailmat ovat edelleen pelattavissa (mahdollisesti)**, mutta on hyvin todennäköistä, että niissä esiintyy virheitä tai odottamattomia toimintoja. **Suosittelemme luomaan uuden puhtaan maailman**, jotta voit nauttia kaikista parannuksista kunnolla.
 
 ****************************************************************************************************
 15/02/2026 02:57 - Suorakirjoitus, vakauskorjauksia ja tunnistus - Beta_v057

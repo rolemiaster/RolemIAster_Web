@@ -1,39 +1,60 @@
 ****************************************************************************************************
-20/02/2026 23:18 - Generazione di Immagini IA, Miglioramenti Narrativi e Controllo - EXPERIMENTAL_v058
+24/02/2026 03:02 - Generazione di Immagini IA, Miglioramenti Narrativi e Controllo - Beta_v058
 ****************************************************************************************************
 - What's New (IT):
   **⚠️ RAMO SPERIMENTALE (BETA DI STEAM)**
   Questa versione è attualmente disponibile solo nel **Ramo Sperimentale** di Steam. Per attivarla:
-  1. Fai clic con il tasto destro su **RolemIAster** nella tua Libreria di Steam.
+  1. Clicca col tasto destro su **RolemIAster** nella tua Libreria di Steam.
   2. Seleziona **Proprietà...**
   3. Vai alla scheda **Beta**.
   4. In "Partecipazione alla beta", seleziona **experimental** dal menu a tendina.
   
-  **Novità: Prima fase della Generazione Immagini tramite IA**
-  - 🎨 **Il Tuo Mondo in Immagini:** Ho integrato un sistema iniziale di generazione immagini tramite Intelligenza Artificiale. Mentre giochi, il sistema tenta di generare ritratti e paesaggi che accompagnano l'ambientazione della tua partita.
+  **Novità: Prima fase di Generazione Immagini IA**
+  - 🎨 **Il Tuo Mondo in Immagini:** Ho integrato un sistema iniziale di generazione immagini tramite Intelligenza Artificiale. Mentre giochi, il sistema tenta di generare ritratti e paesaggi che accompagnino l'ambientazione della tua partita.
   - 🖼️ **Sfondi Dinamici:** Le immagini vengono generate in background senza fermare la tua partita. Le vedrai apparire progressivamente sullo sfondo, nelle schede dei personaggi e nel Codice.
-  - ⚡ **Velocità su Misura:** Nuova sezione nella Configurazione Visiva. Scegli tra "Rapida" (1 passaggio), "Media" (2 passaggi) o "Alta" (4 passaggi) per adattare il tempo di generazione alla potenza del tuo computer.
-  - 🛠️ **Ottimizzazione Tecnica:** Il modello IA per le immagini viene caricato nella **RAM (Memoria)** ed elaborato via **CPU**, senza occupare memoria video (VRAM). Questo garantisce che non interferisca con le prestazioni dell'IA principale del gioco (LLM). Richiede circa 5GB di RAM aggiuntivi, rimanendo entro i requisiti minimi ufficiali di Steam.
+  - 🧹 **Gestione Immagini:** Nuovo pannello per visualizzare ed eliminare le immagini generate che non ti piacciono.
+  
+  **Miglioramenti nella Generazione dei Personaggi:**
+  - ⚙️ **Creazione Casuale più Solida:** Ho unificato e migliorato il motore delle regole che l'IA usa per creare personaggi da zero, garantendo inventari più logici (da 5 a 10 oggetti coerenti) e schede più bilanciate.
+  - 🧠 **Cervello Diviso:** L'IA ora capisce meglio quando deve "inventare" un personaggio da zero e quando deve limitarsi a estrarre i dati dalla biografia che tu stesso hai scritto.
+  - ⚡ **Velocità su Misura:** Nuova sezione in Impostazioni Visive. Scegli tra "Rapida" (1 passaggio), "Media" (2 passaggi) o "Alta" (4 passaggi) per adattare il tempo di generazione alla potenza del tuo computer.
+  - 🛠️ **Ottimizzazione Tecnica:** Il modello IA per le immagini viene caricato nella **RAM (Memoria)** ed elaborato via **CPU**, senza occupare memoria video (VRAM). Questo garantisce che non interferisca con le prestazioni dell'IA principale del gioco (LLM). Richiede circa 5GB di RAM aggiuntiva, rimanendo entro i requisiti minimi ufficiali di Steam.
   - 📤 **Condividi le tue Avventure:** Tutte le immagini generate vengono salvate automaticamente. Le troverai nella cartella: `%APPDATA%/RolemIAster/custom_assets/images`
-  - 🔬 **Selettore Modelli (Avanzato):** Se avvii il gioco con il parametro `--advanced`, ora puoi scegliere quale modello IA utilizzare per le immagini dal pannello Aspetto. Questo permette agli appassionati di provare diverse versioni di Stable Diffusion ottimizzate per OpenVINO (file .xml/.bin).
+  - 🔬 **Selettore Modelli (Avanzato):** Se avvii il gioco con il parametro `--advanced`, ora puoi scegliere quale modello IA usare per le immagini dal pannello Aspetto. Questo permette agli appassionati di provare diverse versioni di Stable Diffusion ottimizzate per OpenVINO (file .xml/.bin).
   
   **Narrativa e Cervello IA:**
   - 🧠 **Fine dei Loop:** È stata implementata una nuova "Dottrina della Memoria" nell'IA. Ora distingue meglio tra "ricordi" (ciò che è già accaduto) e il "presente" (ciò che sta accadendo). Questo aiuta a ridurre i casi in cui l'IA si ripeteva o rimaneva bloccata.
-  - 📜 **Archivi Storici:** Il sistema presenta i tuoi ricordi all'IA come un "Archivio Storico Chiuso", facilitando l'uso di tali informazioni come riferimento per far avanzare la storia.
+  - 📜 **Archivi Storici:** Il sistema presenta i tuoi ricordi all'IA come un "Archivio Storico Chiuso", facilitando l'uso di quelle informazioni come riferimento per far avanzare la storia.
   - ⚡ **Istruzioni Ottimizzate:** È stato migliorato il modo in cui il gioco richiede la narrazione nella tua lingua, liberando capacità del modello per concentrarsi sulla creatività.
   - 👁️ **Focus Narrativo:** È stata riscritta la percezione dell'IA. Ora capisce meglio quali elementi sono "sfondo statico" e non dovrebbe ripeterli inutilmente in ogni paragrafo.
-  - 🔀 **Decisioni Più Chiare:** L'IA ora offre vie di fuga più definite. I suoi suggerimenti (pulsanti) si dividono tra investigare l'ambiente (Approfondire) o cambiare rotta (Divergere).
-  - 🫵 **Trattamento Diretto:** L'istruzione base è stata regolata per assicurare che l'IA ti dia del "Tu", migliorando l'immersione personale.
+  - 🔀 **Decisioni Più Chiare:** L'IA ora offre vie di fuga più definite. I suoi suggerimenti (pulsanti) si dividono tra indagare l'ambiente (Approfondire) o cambiare rotta (Divergere).
+  - 🫵 **Trattamento Diretto:** È stata regolata l'istruzione di base per assicurare che l'IA ti dia del "Tu", migliorando l'immersione personale.
   
-  **Creazione del Personaggio:**
-  - 🖼️ **Ritratti del Personaggio:** Quando generi un personaggio con l'IA, il sistema tenta di creare un ritratto basato sulla sua età, professione e descrizione. Tieni presente che è una versione iniziale e la fedeltà (specialmente nell'età) può variare a seconda del modello utilizzato. (sto ancora facendo test ma l'inizio è buono)
-  - 🎲 **Generazione Casuale Affidabile:** Corretto un bug per cui il pulsante "Genera con IA" poteva fallire al primo tentativo, lasciando i campi vuoti. Ora il sistema di correzione intelligente si assicura che la risposta sia sempre valida.
+  **Creazione Personaggio:**
+  - 🖼️ **Ritratti Personaggio:** Quando generi un personaggio con l'IA, il sistema tenta di creare un ritratto basato su età, professione e descrizione. Tieni presente che è una versione iniziale e la fedeltà (specialmente nell'età) può variare a seconda del modello utilizzato. (continuo a fare test ma l'inizio è buono)
+  - 🎲 **Generazione Casuale Affidabile:** Corretto un bug dove il pulsante "Genera con IA" poteva fallire al primo tentativo, lasciando i campi vuoti. Ora il sistema di correzione intelligente si assicura che la risposta sia sempre valida.
+  
+  **Gestione Immagini Generate:**
+  - 🖼️ **Galleria Immagini IA:** Nuovo pannello nel menu Archivio che mostra tutte le immagini che l'IA ha generato durante le tue partite (ritratti, sfondi). Puoi filtrare per tipo di immagine o per mondo.
+  - 🗑️ **Cancellazione Selettiva:** Seleziona una o più immagini ed eliminale se non ti convincono (magari quella in cui l'IA ha deciso che fosse una buona idea parcheggiare un autobus nella stalla del castello). Il sistema pulisce sia il file che il suo registro interno.
+  - 📂 **Accesso Diretto:** Fai doppio clic su qualsiasi miniatura per aprire la cartella in cui si trova il file. Se hai già la cartella aperta, verrà riutilizzata la stessa finestra.
+  - 💾 **Ricorda il tuo Spazio:** La dimensione della finestra della galleria viene salvata automaticamente tra le sessioni.
   
   **Prestazioni su Configurazioni Basse (Importante per GPU con poca VRAM):**
-  - 🧠 **PSR - Governance Ibrida:** Nuovo sistema che divide il lavoro dell'IA in due fasi: Pianificazione (Chef) ed Esecuzione (Cuochi). Questo permette ai modelli locali con 8 GB di VRAM di funzionare evitando crash per eccesso di contesto (+12K token), al costo di una latenza maggiore; l'interazione con l'IA passa dall'essere un singolo prompt a una serie di prompt (minore è la VRAM, maggiore sarà la quantità di prompt generati e il tempo di risposta).
-  - ⚡ **Esecuzione Intelligente:** Il sistema decide automaticamente se elaborare tutto in una volta (monolitico) o dividere in parti (iterativo) in base alla VRAM disponibile. Le GPU con meno VRAM attivano la modalità a parti solo quando è necessario.
-  - 📊 **Ottimizzazione Dinamica:** Il PSR riduce il carico di token durante la generazione, permettendo agli utenti con schede grafiche da 4GB di completare la creazione dei personaggi e la generazione della storia che prima si bloccavano.
+  - 🧠 **PSR - Governance Ibrida:** Nuovo sistema che divide il lavoro dell'IA in due fasi: Pianificazione (Chef) ed Esecuzione (Cuochi). Questo permette ai modelli locali con 8 GB di VRAM di funzionare evitando crash per eccesso di contesto (+12K token), a costo di una latenza maggiore; l'interazione con l'IA passa dall'essere un singolo prompt a una serie di prompt (minore è la VRAM, maggiore sarà la quantità di prompt generati e maggiore il tempo di risposta).
+  - ⚡ **Esecuzione Intelligente:** Il sistema decide automaticamente se elaborare tutto in una volta (monolitico) o dividere in parti (iterativo) in base alla tua VRAM disponibile. Le GPU con meno VRAM attivano la modalità a parti solo quando necessario.
+  - 📊 **Ottimizzazione Dinamica:** PSR riduce il carico di token durante la generazione, permettendo agli utenti con schede grafiche da 4GB di completare la creazione dei personaggi e la generazione della storia che prima si bloccavano.
   - 🔄 **Coerenza Mantenuta:** Nonostante la divisione del lavoro, il sistema inietta un'"intenzione maestra" affinché l'IA non perda il filo di ciò che stava facendo.
+  
+  **Voci IA (miglioramento incrementale):**
+  Generazione in tempo reale di voci in tutte le lingue (alcune lingue sono più limitate di altre, la più varia nei tipi di voci è l'inglese)
+  - 🗣️ **Grida di Combattimento Vocali:** All'inizio del combattimento contro nemici ostili, ora viene attivata una frase vocale contestuale d'ingresso.
+  - 🎭 **Frasi Dinamiche per Contesto:** Il motore può generare brevi linee vocali per eventi specifici (servizi/combattimento) in base a lingua, ambientazione e profilo del personaggio.
+  - 🧠 **Modelli Vocali Interni:** I template vocali tecnici sono stati separati dal sistema narrativo per evitare interferenze con la storia.
+  - 🔊 **Maggiore Chiarezza all'Ascolto:** Migliorata l'intelligibilità e la prosodia della sintesi per dare priorità a una dizione comprensibile.
+  
+  **⚠️ Avviso di Compatibilità (Partite Precedenti):**
+  - 🔄 A causa della quantità di modifiche interne al motore delle regole e al sistema di ambientazione, le **partite e i mondi salvati in precedenza continueranno ad essere giocabili (possibilmente)**, ma è molto probabile che presentino errori o comportamenti imprevisti. **Si consiglia di creare un nuovo mondo pulito** per godere correttamente di tutti i miglioramenti.
 
 ****************************************************************************************************
 15/02/2026 02:57 - Scrittura diretta, correzioni di stabilità e rilevamento d - Beta_v057
