@@ -1,17 +1,26 @@
-📢 Mensaje del Desarrollador (Acceso Anticipado)
+# 📢 Mensaje del Desarrollador (Acceso Anticipado)
+
 Bienvenido a RolemIAster. Antes de que te sumerjas en tu próxima gran aventura, quiero robarte un minuto para dejar un par de cosas claras (prometo ser breve, que los dados te esperan).
 
-Este juego está en fase de Acceso Anticipado (Early Access).
-Soy un desarrollador solitario —sí, solo yo, mi teclado y litros de café—, lo que significa que hago todo lo que puedo, pero a veces no llego a tiempo a todo. Me disculpo de antemano si tardo en arreglar algún bug escurridizo, implementar esa función que tanto deseas, o responder de inmediato en Discord y los foros de Steam. Hago malabares, pero todavía no me han salido tentáculos extra.
+Este juego está en fase de **Acceso Anticipado (Early Access)**.
+Soy un desarrollador solitario —sí, solo yo, mi teclado y litros de café—, lo que significa que hago todo lo que puedo, pero a veces no llego a tiempo a todo. Me disculpo de antemano si tardo en arreglar algún bug escurridizo, implementar esa función que tanto deseas, o responder de inmediato en Discord. Hago malabares, pero todavía no me han salido tentáculos extra.
 
-Si has venido esperando una superproducción AAA sin fisuras, me temo que estás en el lugar equivocado (por el momento). El juego se encuentra en una etapa muy temprana de desarrollo, y sinceramente, solo los valientes que entienden y apoyan este tipo de proyectos independientes tienen las espaldas (y la paciencia) para soportarlo.
+## ⚠️ Aviso Importante sobre Hardware (Local vs Cloud)
+Aquí hay dos formas de jugar, y tu experiencia depende de cuál elijas:
 
-Si sientes que el juego aún está demasiado verde para ti, nadie se enfadará si pides una devolución. Al contrario, estaré encantado de recibirte de vuelta en el futuro —y de que pagues 40 o 60 USD cuando el juego esté pulido y terminado 😉—. El precio actual es tan bajo precisamente por coherencia con su estado actual de desarrollo. Si esto no te convence, no hay más que hablar, tan amigos.
+*   **Modo Local (Gratis, Privado):** Si quieres ejecutar la IA en tu propio PC, los requisitos de la tienda (Mínimo 12GB VRAM) son sagrados. Menos de eso y la IA se arrastrará o bloqueará tu equipo. Es pura matemática, no magia.
+*   **Modo Cloud (API de Gemini, GPT, etc. solo si inicias con comando `--advanced`):** ¡Aquí cambia la película! Si configuras el juego para usar servicios en la nube (como Google Gemini o OpenAI), el trabajo pesado se hace en sus servidores, no en el tuyo. En este modo, el juego funciona fluido en prácticamente cualquier equipo, ya que tu tarjeta gráfica descansa.
 
-Dada la naturaleza de esta locura de proyecto, mi agradecimiento es infinito para todo aquel que, a pesar de las dificultades y contrariedades del proceso, decide quedarse y aportar. Simplemente informando de bugs o sugiriendo mejoras, habéis logrado que el juego mejore una brutalidad en las pocas semanas que lleva fuera.
+## Gestión de Expectativas
+Si has venido esperando una superproducción AAA sin fisuras, me temo que estás en el lugar equivocado (por el momento). El juego se encuentra en una etapa temprana, y sinceramente, solo los valientes que entienden y apoyan este tipo de proyectos experimentales tienen la paciencia para disfrutarlo ahora mismo.
 
-Ese es el motor que seguirá funcionando para que RolemIAster se convierta en un juego hecho a medida, especialmente para los que habéis estado ahí, confiando en el proyecto desde el primer día.
+## Garantía de Satisfacción
+Si sientes que el juego está demasiado verde para ti o tu hardware sufre demasiado, nadie se enfadará si pides una devolución. Al contrario, estaré encantado de recibirte de vuelta en el futuro —y de que pagues 40 o 60 USD cuando el juego esté pulido y terminado 😉—. El precio actual es un regalo por confiar en mí en esta etapa.
 
-¡Gracias por tu paciencia, tu apoyo y que los críticos estén de tu lado!
+Dicho esto, mi agradecimiento es infinito para los que decidís quedaros. Vuestros reportes y sugerencias son el motor real de este proyecto. Gracias a vosotros, el juego ha mejorado una brutalidad en pocas semanas.
 
-<!-- source_hash: 302ab989 -->
+**RolemIAster se está construyendo a medida para vosotros.**
+
+*¡Gracias por la paciencia, el apoyo y que los críticos estén de vuestro lado!*
+
+<!-- source_hash: f67e0e53 -->

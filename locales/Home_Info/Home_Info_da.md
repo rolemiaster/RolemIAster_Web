@@ -1,17 +1,26 @@
-📢 Besked fra Udvikleren (Early Access)
-Velkommen til RolemIAster. Før du kaster dig ud i dit næste store eventyr, vil jeg gerne stjæle et minut af din tid til at få et par ting på det rene (jeg lover at være kortfattet, terningerne venter på dig).
+# 📢 Udviklermeddelelse (Tidlig Adgang)
 
-Dette spil er i Early Access-fasen.
-Jeg er en enlig udvikler – ja, kun mig, mit tastatur og liter af kaffe – hvilket betyder, at jeg gør alt, hvad jeg kan, men nogle gange når jeg ikke alt i tide. Jeg undskylder på forhånd, hvis det tager tid at fikse en snedig fejl, implementere den funktion, du så meget ønsker, eller svare med det samme på Discord og Steam-foraene. Jeg jonglerer, men har endnu ikke fået ekstra tentakler.
+Velkommen til RolemIAster. Før du kaster dig ud i dit næste store eventyr, vil jeg gerne stjæle et minut for at præcisere et par ting (jeg lover at være kort, terningerne venter).
 
-Hvis du er kommet hertil og forventer en poleret AAA-produktion uden fejl, frygter jeg, at du er på det forkerte sted (for nu). Spillet er i en meget tidlig fase af udviklingen, og ærligt talt, kun de modige, der forstår og støtter denne type indieprojekter, har ryggen (og tålmodigheden) til at holde til det.
+Dette spil er i **Tidlig Adgang (Early Access)**.
+Jeg er en enlig udvikler – ja, kun mig, mit tastatur og litervis af kaffe – hvilket betyder, at jeg gør alt, hvad jeg kan, men nogle gange når jeg ikke alt til tiden. Jeg undskylder på forhånd, hvis det tager tid at rette en lumsk fejl, implementere den funktion, du har ønsket dig så meget, eller svare med det samme på Discord. Jeg jonglerer, men jeg har endnu ikke fået ekstra tentakler.
 
-Hvis du føler, at spillet stadig er for grønt for dig, vil ingen blive sure, hvis du anmoder om en refundering. Tværtimod vil jeg være glad for at byde dig velkommen tilbage i fremtiden – og at du betaler 40 eller 60 USD, når spillet er poleret og færdigt 😉. Den nuværende pris er netop så lav af hensyn til dets nuværende udviklingsstatus. Hvis dette ikke overbeviser dig, er der intet mere at sige, vi forbliver venner.
+## ⚠️ Vigtig Bemærkning om Hardware (Lokal vs. Cloud)
+Der er to måder at spille på, og din oplevelse afhænger af dit valg:
 
-På grund af projektets vanvittige natur er min taknemmelighed uendelig for alle, der på trods af processens vanskeligheder og modgang vælger at blive og bidrage. Blot ved at rapportere fejl eller foreslå forbedringer, har I formået at forbedre spillet voldsomt i de få uger, det har været ude.
+*   **Lokal Tilstand (Gratis, Privat):** Hvis du vil køre AI'en på din egen PC, er kravene fra butikken (minimum 12 GB VRAM) hellige. Mindre end det, og AI'en vil køre langsomt eller fryse din computer. Det er ren matematik, ikke magi.
+*   **Cloud Tilstand (Gemini API, GPT osv. kun hvis du starter med kommandoen `--advanced`):** Her ændrer scenariet sig! Hvis du konfigurerer spillet til at bruge cloud-tjenester (som Google Gemini eller OpenAI), udføres det tunge arbejde på deres servere, ikke på dine. I denne tilstand kører spillet flydende på stort set enhver enhed, da dit grafikkort hviler.
 
-Det er den motor, der vil fortsætte med at køre, så RolemIAster kan blive et spil skræddersyet, især til dem af jer, der har været der og stolet på projektet fra dag ét.
+## Håndtering af Forventninger
+Hvis du er kommet og forventer en fejlfrit AAA-superproduktion, er jeg bange for, at du er kommet til det forkerte sted (i øjeblikket). Spillet er i en tidlig fase, og ærligt talt, kun de modige, der forstår og støtter denne type eksperimentelle projekter, har tålmodighed til at nyde det lige nu.
 
-Tak for din tålmodighed, din støtte, og måtte kritikerne være på din side!
+## Tilfredshedsgaranti
+Hvis du føler, at spillet er for grønt for dig, eller at din hardware lider for meget, vil ingen blive sure, hvis du anmoder om en refusion. Tværtimod vil jeg være glad for at se dig igen i fremtiden – og at du betaler 40 eller 60 USD, når spillet er poleret og færdigt 😉. Den nuværende pris er en gave for at have tillid til mig i denne fase.
 
-<!-- source_hash: 302ab989 -->
+Når det er sagt, er min taknemmelighed uendelig for dem, der beslutter sig for at blive. Jeres rapporter og forslag er det reelle drivhjul i dette projekt. Takket være jer er spillet blevet forbedret dramatisk på få uger.
+
+**RolemIAster bygges skræddersyet til jer.**
+
+*Tak for tålmodigheden, støtten og må anmelderne være på jeres side!*
+
+<!-- source_hash: f67e0e53 -->

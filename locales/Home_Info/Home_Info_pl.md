@@ -1,17 +1,26 @@
-📢 Wiadomość od Dewelopera (Wczesny Dostęp)
-Witamy w RolemIAster. Zanim zanurzysz się w swoją następną wielką przygodę, chciałbym zająć Ci minutę, aby wyjaśnić kilka spraw (obiecuję krótko, bo kości już na Ciebie czekają).
+# 📢 Wiadomość od Dewelopera (Wczesny Dostęp)
 
-Ta gra jest we wczesnym dostępie (Early Access).
-Jestem jednoosobowym deweloperem – tak, tylko ja, mój klawiatura i litry kawy – co oznacza, że robię wszystko, co mogę, ale czasami nie zdążam ze wszystkim. Z góry przepraszam, jeśli zajmie mi to chwilę, aby naprawić jakiegoś trudnego buga, zaimplementować funkcję, której tak bardzo pragniesz, lub natychmiast odpowiedzieć na Discordzie i forach Steam. Wykonuję wiele zadań jednocześnie, ale jeszcze nie wyrosłem na dodatkowe macki.
+Witamy w RolemIAster. Zanim zanurzysz się w swoją kolejną wielką przygodę, chcę Cię chwilę zatrzymać, aby wyjaśnić kilka rzeczy (obiecuję być zwięzły, kości czekają).
 
-Jeśli oczekiwałeś bezbłędnej, wysokobudżetowej produkcji AAA, obawiam się, że jesteś w złym miejscu (na razie). Gra jest na bardzo wczesnym etapie rozwoju i szczerze mówiąc, tylko odważni, którzy rozumieją i wspierają tego typu niezależne projekty, mają odpowiednią postawę (i cierpliwość), aby to wytrzymać.
+Ta gra jest w fazie **Wczesnego Dostępu (Early Access)**.
+Jestem samodzielnym deweloperem — tak, tylko ja, mój laptop i litry kawy — co oznacza, że robię wszystko, co mogę, ale czasami nie nadążam ze wszystkim. Z góry przepraszam, jeśli naprawa jakiegoś podstępnego błędu, wdrożenie funkcji, na którą czekasz, czy natychmiastowa odpowiedź na Discordzie zajmie mi trochę czasu. Robię co mogę, ale nadal nie wyhodowałem sobie dodatkowych macek.
 
-Jeśli uważasz, że gra jest jeszcze dla Ciebie zbyt niedopracowana, nikt się nie obrazi, jeśli poprosisz o zwrot. Wręcz przeciwnie, będę zachwycony, mogąc Cię powitać z powrotem w przyszłości – i że zapłacisz 40 lub 60 USD, gdy gra będzie dopracowana i ukończona 😉. Obecna cena jest tak niska właśnie ze względu na jej aktualny stan rozwoju. Jeśli to Cię nie przekonuje, nie ma o czym rozmawiać, pozostajemy przyjaciółmi.
+## ⚠️ Ważne Ostrzeżenie dotyczące Sprzętu (Lokalny vs Chmura)
+Istnieją dwa sposoby gry, a Twoje wrażenia zależą od tego, który wybierzesz:
 
-Biorąc pod uwagę naturę tego szalonego projektu, moja wdzięczność jest nieskończona dla każdego, kto pomimo trudności i przeciwności losu procesu, decyduje się pozostać i wnieść swój wkład. Po prostu zgłaszając błędy lub sugerując ulepszenia, sprawiliście, że gra znacznie się poprawiła w ciągu zaledwie kilku tygodni od premiery.
+*   **Tryb Lokalny (Darmowy, Prywatny):** Jeśli chcesz uruchomić AI na swoim własnym komputerze, wymagania systemowe (Minimum 12 GB VRAM) są święte. Mniej niż tego, a AI będzie się wlec lub zablokuje Twój sprzęt. To czysta matematyka, nie magia.
+*   **Tryb Chmury (API Gemini, GPT, itp. tylko jeśli uruchomisz z poleceniem `--advanced`):** Tutaj sytuacja się zmienia! Jeśli skonfigurujesz grę tak, aby korzystała z usług w chmurze (takich jak Google Gemini lub OpenAI), ciężka praca zostanie wykonana na ich serwerach, a nie na Twoim. W tym trybie gra działa płynnie na praktycznie każdym sprzęcie, ponieważ Twoja karta graficzna odpoczywa.
 
-To jest silnik, który będzie nadal działał, aby RolemIAster stał się grą stworzoną na miarę, szczególnie dla tych, którzy byli przy nas, ufając projektowi od pierwszego dnia.
+## Zarządzanie Oczekiwaniami
+Jeśli oczekiwałeś(aś) nieskazitelnej superprodukcji AAA, obawiam się, że trafiłeś(aś) w złe miejsce (na razie). Gra jest na wczesnym etapie, a szczerze mówiąc, tylko odważni, którzy rozumieją i wspierają tego typu eksperymentalne projekty, mają cierpliwość, aby cieszyć się nią teraz.
 
-Dziękuję za Twoją cierpliwość, Twoje wsparcie i niech krytycy będą po Twojej stronie!
+## Gwarancja Satysfakcji
+Jeśli uważasz, że gra jest dla Ciebie zbyt niedopracowana lub Twój sprzęt cierpi zbyt mocno, nikt się nie obrazi, jeśli poprosisz o zwrot. Wręcz przeciwnie, będę szczęśliwy, mogąc Cię powitać z powrotem w przyszłości — i abyś zapłacił(a) 40 lub 60 USD, gdy gra będzie dopracowana i ukończona 😉. Obecna cena to prezent za zaufanie mi na tym etapie.
 
-<!-- source_hash: 302ab989 -->
+Mając to na uwadze, moja wdzięczność jest nieskończona dla tych z Was, którzy zdecydujecie się zostać. Wasze raporty i sugestie są prawdziwym motorem tego projektu. Dzięki Wam gra znacząco się poprawiła w ciągu kilku tygodni.
+
+**RolemIAster jest tworzony specjalnie dla Was.**
+
+*Dziękuję za cierpliwość, wsparcie i niech krytycy będą po Waszej stronie!*
+
+<!-- source_hash: f67e0e53 -->

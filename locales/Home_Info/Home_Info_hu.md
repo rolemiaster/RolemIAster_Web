@@ -1,17 +1,26 @@
-📢 Fejlesztői üzenet (Korai Hozzáférés)
-Üdvözöllek a RolemIAster világában. Mielőtt belemerülnél a következő nagy kalandodba, szeretnék egy percet ellopni tőled, hogy tisztázzak néhány dolgot (ígérem, rövid leszek, a kockák már várnak).
+# 📢 Fejlesztői üzenet (Korai hozzáférés)
 
-Ez a játék Korai Hozzáférés (Early Access) fázisban van.
-Egyedüli fejlesztő vagyok – igen, csak én, a billentyűzetem és literes kávéspoharak –, ami azt jelenti, hogy mindent megteszek, amit csak tudok, de néha nem érek oda mindenhová időben. Előre is elnézést kérek, ha sokáig tart egy-egy makacs bug kijavítása, az általad nagyon várt funkció implementálása, vagy ha nem tudok azonnal válaszolni a Discordon és a Steam fórumokon. Zsonglőrködöm, de még nincsenek extra csápjaim.
+Üdvözlünk a RolemIAsterben. Mielőtt belevetnéd magad a következő nagy kalandodba, szeretnék ellopni egy percet, hogy tisztázzak pár dolgot (ígérem, rövid leszek, a kockák várnak rád).
 
-Ha hibátlan, AAA minőségű szuperprodukcióra számítottál, attól tartok, rossz helyen jársz (egyelőre). A játék még nagyon korai fejlesztési szakaszban van, és őszintén szólva, csak a bátorok, akik megértik és támogatják az ilyen független projekteket, rendelkeznek a háttérrel (és a türelemmel), hogy kibírják ezt.
+Ez a játék **Korai hozzáférés (Early Access)** szakaszban van.
+Egyedül fejlesztő vagyok – igen, csak én, a billentyűzetem és rengeteg kávé –, ami azt jelenti, hogy mindent megteszek, amit tudok, de néha nem érek időben mindent utol. Elnézést kérek előre is, ha lassan javítom ki az apró hibákat, implementálom azt a funkciót, amit annyira szeretnél, vagy azonnal válaszolok a Discordon. Zsonglőrködöm, de még nincs extra csápom.
 
-Ha úgy érzed, hogy a játék még túl zöld neked, senki sem fog megsértődni, ha visszatérítést kérsz. Éppen ellenkezőleg, örömmel látnálak vissza a jövőben – és hogy 40 vagy 60 USD-t fizess, amikor a játék csiszolt és kész 😉—. A jelenlegi ár éppen azért ilyen alacsony, mert összhangban van a jelenlegi fejlesztési állapotával. Ha ez nem győz meg, akkor ennyi, barátok vagyunk.
+## ⚠️ Fontos figyelmeztetés a hardverről (Helyi vs. Felhő)
+Kétféleképpen játszhatsz, és a tapasztalatod attól függ, melyiket választod:
 
-A projekt őrültségének természete miatt végtelenül hálás vagyok mindenkinek, aki a folyamat nehézségei és viszontagságai ellenére is úgy dönt, hogy marad és hozzájárul. Egyszerűen csak a bughibák jelentésével vagy fejlesztési javaslatokkal brutálisan sokat segítettetek a játék fejlődésében az elmúlt néhány hétben, amióta megjelent.
+*   **Helyi mód (Ingyenes, Privát):** Ha az AI-t a saját számítógépeden szeretnéd futtatni, a bolti követelmények (Minimum 12GB VRAM) szentek. Ennél kevesebbel az AI lelassul vagy lefagyasztja a gépedet. Ez tiszta matematika, nem mágia.
+*   **Felhő mód (Gemini, GPT API stb. csak ha `--advanced` paranccsal indítasz):** Itt változik a helyzet! Ha a játékot úgy konfigurálod, hogy felhőszolgáltatásokat használjon (mint a Google Gemini vagy az OpenAI), akkor a nehéz munka az ő szervereiken történik, nem a tiéden. Ebben a módban a játék gyakorlatilag bármilyen számítógépen simán fut, mivel a grafikus kártyád pihen.
 
-Ez az a motor, ami tovább fog működni, hogy a RolemIAster egyedi igényekre szabott játékká váljon, különösen azok számára, akik ott voltak, és az első naptól kezdve bíztak a projektben.
+## Elvárások kezelése
+Ha azt vártad, hogy egy hibátlan, AAA kategóriás szuperprodukciót találsz, attól tartok, rossz helyen jársz (egyelőre). A játék egy korai szakaszban van, és őszintén szólva, csak a bátrak, akik megértik és támogatják az ilyen kísérleti projekteket, rendelkeznek a türelemmel, hogy most élvezzék.
 
-Köszönöm a türelmedet, a támogatásodat, és hogy a kritikusok az oldaladon állnak!
+## Elégedettségi garancia
+Ha úgy érzed, hogy a játék túl zöld még neked, vagy a hardvered túl szenved, senki sem fog haragudni, ha visszakéred a pénzed. Éppen ellenkezőleg, örömmel látnálak majd újra a jövőben – és hogy fizess 40 vagy 60 USD-t, amikor a játék csiszolt és kész lesz 😉—. A jelenlegi ár ajándék, amiért megbíztál bennem ebben a szakaszban.
 
-<!-- source_hash: 302ab989 -->
+Mindezzel együtt, végtelenül hálás vagyok azoknak, akik úgy döntenek, hogy maradnak. A jelentéseitek és javaslataitok a projekt igazi motorjai. Nektek köszönhetően a játék brutálisan fejlődött néhány hét alatt.
+
+**A RolemIAster nektek, méretre szabva épül.**
+
+*Köszönöm a türelmet, a támogatást, és hogy a kritikusok az oldaladon állnak!*
+
+<!-- source_hash: f67e0e53 -->

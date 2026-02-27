@@ -1,17 +1,26 @@
-📢 Kehittäjän viesti (Ennakkojulkaisu)
-Tervetuloa RolemIAsteriin. Ennen kuin syöksyt seuraavaan suurenmoiseen seikkailuusi, haluan varastaa minuutin selventääkseni muutaman asian (lupaan olla lyhyt, noppasi odottavat).
+# 📢 Kehittäjän viesti (Ennakkoversio)
 
-Tämä peli on ennakkojulkaisuvaiheessa (Early Access).
-Olen yhden miehen kehittäjä – kyllä, vain minä, näppäimistöni ja litrat kahvia –, mikä tarkoittaa, että teen kaikkeni, mutta en aina ehdi kaiken kanssa. Pahoittelen etukäteen, jos kestää korjata jokin hankala bugi, toteuttaa kaipaamasi ominaisuus tai vastata välittömästi Discordissa ja Steam-foorumeilla. Ponnistelen, mutta en ole vielä saanut ylimääräisiä lonkeroita.
+Tervetuloa RolemIAsteriin. Ennen kuin sukellat seuraavaan suureen seikkailuusi, haluan varastaa minuutin selventääkseni pari asiaa (lupaan olla lyhyt, noppasi odottavat).
 
-Jos odotit saumattomasti toimivaa AAA-tuotantoa, pelkään, että olet väärässä paikassa (ainakin toistaiseksi). Peli on kehityksensä hyvin alkuvaiheessa, ja rehellisesti sanottuna vain rohkeimmilla, jotka ymmärtävät ja tukevat tällaisia indie-projekteja, on selkä (ja kärsivällisyys) kestää se.
+Tämä peli on **Ennakkoversiossa (Early Access)**.
+Olen yhden miehen kehittäjä – kyllä, vain minä, näppäimistöni ja litrat kahvia – mikä tarkoittaa, että teen kaikkeni, mutta en aina ehdi kaiken pariin ajoissa. Pahoittelen etukäteen, jos kestää korjata jokin piilevä bugi, toteuttaa kauan toivomasi ominaisuus tai vastata välittömästi Discordissa. Teen jongleerausta, mutta en ole vielä saanut ylimääräisiä lonkeroita.
 
-Jos sinusta tuntuu, että peli on vielä liian raaka sinulle, kukaan ei suutu, jos pyydät hyvitystä. Päinvastoin, otan sinut ilolla takaisin tulevaisuudessa – ja haluan sinun maksavan 40 tai 60 USD, kun peli on hiottu ja valmis 😉. Nykyinen hinta on niin alhainen juuri sen johdonmukaisuuden vuoksi sen nykyiseen kehitystilanteeseen nähden. Jos tämä ei vakuuta sinua, ei ole muuta sanottavaa, ystäviä ollaan.
+## ⚠️ Tärkeä huomautus laitteistosta (Paikallinen vs. Pilvi)
+Tässä on kaksi tapaa pelata, ja kokemuksesi riippuu valinnastasi:
 
-Ottaen huomioon tämän hullun projektin luonteen, kiitollisuuteni on ääretön kaikille, jotka vaikeuksista ja vastoinkäymisistä huolimatta päättävät pysyä ja osallistua. Pelkkä bugien ilmoittaminen tai parannusehdotusten tekeminen on parantanut peliä valtavasti muutamassa viikossa julkaisun jälkeen.
+*   **Paikallinen tila (Ilmainen, Yksityinen):** Jos haluat suorittaa tekoälyn omalla tietokoneellasi, kaupan vaatimukset (Vähintään 12 Gt VRAM) ovat pyhiä. Vähemmällä tekoäly raahautuu tai jumiuttaa laitteesi. Se on puhdasta matematiikkaa, ei taikuutta.
+*   **Pilvitila (Gemini-, GPT-jne. API vain, jos käynnistät komennolla `--advanced`):** Tässä elokuva muuttuu! Jos konfiguroit pelin käyttämään pilvipalveluita (kuten Google Gemini tai OpenAI), raskas työ tehdään heidän palvelimillaan, ei sinun. Tässä tilassa peli toimii sulavasti käytännössä millä tahansa laitteella, koska näytönohjaimesi lepää.
 
-Tämä on moottori, joka jatkaa toimintaansa, jotta RolemIAsterista tulee räätälöity peli, erityisesti niille teistä, jotka ovat olleet mukana ja luottaneet projektiin alusta alkaen.
+## Odotusten hallinta
+Jos olet tullut odottaen saumatonta AAA-tuotantoa, pelkäänpä, että olet väärässä paikassa (toistaiseksi). Peli on alkuvaiheessa, ja rehellisesti sanottuna vain rohkeat, jotka ymmärtävät ja tukevat tällaisia kokeellisia projekteja, jaksavat nauttia siitä juuri nyt.
 
-Kiitos kärsivällisyydestäsi, tuestasi ja että kriitikot ovat puolellasi!
+## Tyytyväisyystakuu
+Jos koet, että peli on liian raaka sinulle tai laitteistosi kärsii liikaa, kukaan ei suutu, jos pyydät palautusta. Päinvastoin, otan sinut ilomielin takaisin tulevaisuudessa – ja että maksat 40 tai 60 USD, kun peli on hiottu ja valmis 😉. Nykyinen hinta on lahja luottamuksestasi minua kohtaan tässä vaiheessa.
 
-<!-- source_hash: 302ab989 -->
+Tästä huolimatta kiitollisuuteni on loputon niille, jotka päättävät jäädä. Raporttinne ja ehdotuksenne ovat tämän projektin todellinen moottori. Teidän ansiostanne peli on parantunut valtavasti muutamassa viikossa.
+
+**RolemIAster rakennetaan räätälöidysti teitä varten.**
+
+*Kiitos kärsivällisyydestä, tuesta ja että kriitikot ovat puolellanne!*
+
+<!-- source_hash: f67e0e53 -->

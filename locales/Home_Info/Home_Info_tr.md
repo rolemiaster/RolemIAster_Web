@@ -1,17 +1,26 @@
-📢 Geliştiriciden Mesaj (Erken Erişim)
-RolemIAster'a hoş geldiniz. Bir sonraki büyük maceranıza dalmadan önce, birkaç şeyi açıklığa kavuşturmak için bir dakikanızı almak istiyorum (söz veriyorum kısa tutacağım, zarlar sizi bekliyor).
+# 📢 Geliştirici Mesajı (Erken Erişim)
 
-Bu oyun Erken Erişim aşamasındadır.
-Ben yalnız bir geliştiriciyim —evet, sadece ben, klavyem ve litrelerce kahve— bu da elimden geleni yaptığım anlamına geliyor, ancak bazen her şeye yetişemiyorum. Nadir bulunan bir hatayı düzeltmekte, çok istediğiniz bir özelliği uygulamakta veya Discord ve Steam forumlarında anında yanıt vermekte gecikirsem şimdiden özür dilerim. Akrobatik hareketler yapıyorum ama henüz ekstra dokunaçlarım çıkmadı.
+RolemIAster'a hoş geldiniz. Bir sonraki büyük maceranıza dalmadan önce, birkaç şeyi açıklığa kavuşturmak için bir dakikanızı ayırmak istiyorum (kısa olacağıma söz veriyorum, zarlar sizi bekliyor).
 
-Sorunsuz bir AAA yapımı bekliyorsanız, korkarım ki şu an için yanlış yerdesiniz. Oyun geliştirmenin çok erken bir aşamasındadır ve dürüst olmak gerekirse, bu tür bağımsız projeleri anlayan ve destekleyen sadece cesurlar, bu yüke (ve sabra) sahip olanlardır.
+Bu oyun **Erken Erişim (Early Access)** aşamasındadır.
+Ben yalnız bir geliştiriciyim —evet, sadece ben, klavyem ve litrelerce kahve— bu da elimden gelenin en iyisini yaptığım anlamına gelir, ancak bazen her şeye zamanında yetişemem. Kaygan bir hatayı düzeltmekte gecikme yaşarsam, çok istediğiniz bir özelliği uygulamakta zorlanırsam veya Discord'da hemen yanıt veremezsem şimdiden özür dilerim. El çabukluğum var ama henüz ekstra kollarım çıkmadı.
 
-Eğer oyunun sizin için hala çok ham olduğunu düşünüyorsanız, para iadesi istemenizden kimse gocunmaz. Tam tersine, gelecekte sizi tekrar aramızda görmekten —ve oyun cilalanıp bittiğinde 40 veya 60 USD ödemenizden memnuniyet duyarım 😉—. Mevcut fiyat, geliştirme durumuna uygunluk açısından bilerek bu kadar düşük tutulmuştur. Bu sizi ikna etmezse, söylenecek başka bir şey yok, dost kalalım.
+## ⚠️ Donanım Hakkında Önemli Uyarı (Yerel vs Bulut)
+Oyunun iki yolu var ve deneyiminiz hangisini seçeceğinize bağlıdır:
 
-Bu çılgın projenin doğası gereği, tüm zorluklara ve süreçteki aksaklıklara rağmen kalan ve katkıda bulunan herkese minnettarlığım sonsuzdur. Sadece hata bildirerek veya iyileştirme önererek, oyunun piyasaya çıkalı kısa haftalar olmasına rağmen inanılmaz derecede gelişmesini sağladınız.
+*   **Yerel Mod (Ücretsiz, Özel):** Yapay zekayı kendi bilgisayarınızda çalıştırmak istiyorsanız, mağaza gereksinimleri (Minimum 12GB VRAM) kutsaldır. Bundan azı, yapay zekanın sürünmesine veya bilgisayarınızın kilitlenmesine neden olur. Bu saf matematiktir, sihir değil.
+*   **Bulut Modu (Gemini, GPT vb. API'ler yalnızca `--advanced` komutuyla başlatırsanız):** İşte burada işler değişiyor! Oyunu bulut hizmetlerini (Google Gemini veya OpenAI gibi) kullanacak şekilde ayarlarsanız, ağır işler sizin sunucunuzda değil, onların sunucularında yapılır. Bu modda, oyun neredeyse tüm bilgisayarlarda akıcı bir şekilde çalışır, çünkü grafik kartınız dinlenir.
 
-İşte RolemIAster'ın, özellikle de ilk günden beri projeye güvenenler için özel olarak tasarlanmış bir oyuna dönüşmesini sağlayacak motor bu.
+## Beklenti Yönetimi
+Eğer pürüzsüz bir AAA yapımı bekleyerek geldiyseniz, korkarım yanlış yerdesiniz (şimdilik). Oyun erken bir aşamada ve dürüst olmak gerekirse, bu tür deneysel projeleri anlayan ve destekleyen cesur olanların şu anda tadını çıkaracak sabrı var.
 
-Sabrınız, desteğiniz ve eleştirmenlerin yanınızda olması için teşekkürler!
+## Memnuniyet Garantisi
+Oyunun sizin için çok ham olduğunu veya donanımınızın çok zorlandığını hissediyorsanız, para iadesi istemeniz durumunda kimse kızmayacaktır. Aksine, gelecekte sizi tekrar görmekten —ve oyun cilalanıp bittiğinde 40 veya 60 USD ödemenizden— memnuniyet duyarım 😉. Mevcut fiyat, bu aşamada bana güvendiğiniz için bir hediyedir.
 
-<!-- source_hash: 302ab989 -->
+Bununla birlikte, kalmaya karar verenlere minnettarım. Raporlarınız ve önerileriniz bu projenin gerçek motorudur. Sizin sayenizde oyun birkaç hafta içinde inanılmaz derecede gelişti.
+
+**RolemIAster sizin için özel olarak inşa ediliyor.**
+
+*Sabrınız, desteğiniz ve eleştirmenlerin yanınızda olması için teşekkürler!*
+
+<!-- source_hash: f67e0e53 -->

@@ -1,17 +1,26 @@
-📢 Zpráva od vývojáře (předběžný přístup)
-Vítejte v RolemIAster. Než se ponoříte do svého dalšího velkého dobrodružství, chci vám ukrást minutu, abych objasnil pár věcí (slibuji, že budu stručný, kostky čekají).
+# 📢 Zpráva od vývojáře (Přístup v předstihu)
 
-Tato hra je ve fázi předběžného přístupu (Early Access).
-Jsem osamělý vývojář – ano, jen já, moje klávesnice a litry kávy – což znamená, že dělám, co můžu, ale někdy nestíhám všechno. Předem se omlouvám, pokud mi bude trvat, než opravím nějakého záludného buga, implementuji funkci, po které toužíte, nebo okamžitě odpovím na Discordu a na fórech Steamu. Žongluji, ale ještě mi nenarostly žádné další chapadla.
+Vítejte v RolemIAster. Než se ponoříte do dalšího velkého dobrodružství, chci vám ukrást minutu, abych vyjasnil pár věcí (slibuji, že budu stručný, kostky na vás čekají).
 
-Pokud jste čekali bezchybnou AAA produkci, obávám se, že jste na špatném místě (prozatím). Hra je ve velmi rané fázi vývoje a upřímně řečeno, jen ti odvážní, kteří rozumí a podporují tento typ nezávislých projektů, mají záda (a trpělivost) to vydržet.
+Tato hra je ve fázi **přístupu v předstihu (Early Access)**.
+Jsem sólo vývojář – ano, jen já, moje klávesnice a litry kávy – což znamená, že dělám vše, co můžu, ale někdy nestíhám všechno včas. Předem se omlouvám, pokud mi bude oprava nějaké zákeřné chyby, implementace funkce, po které toužíte, nebo okamžitá odpověď na Discordu trvat déle. Žongluji, ale ještě mi nenarostla extra chapadla.
 
-Pokud máte pocit, že je hra pro vás ještě příliš nedokončená, nikdo se nebude zlobit, pokud požádáte o vrácení peněz. Naopak, budu rád, když se v budoucnu vrátíte – a zaplatíte 40 nebo 60 USD, až bude hra vyleštěná a dokončená 😉. Současná cena je tak nízká právě z důvodu jejího současného stavu vývoje. Pokud vás to nepřesvědčí, není o čem mluvit, zůstaneme přáteli.
+## ⚠️ Důležité upozornění ohledně hardwaru (lokálně vs. cloud)
+Existují dva způsoby, jak hrát, a vaše zkušenost závisí na tom, který si vyberete:
 
-Vzhledem k povaze tohoto bláznivého projektu je moje vděčnost nekonečná všem, kteří se navzdory obtížím a nepřízním procesu rozhodnou zůstat a přispět. Jen hlášením bugů nebo navrhováním vylepšení jste dosáhli toho, že se hra za několik týdnů, co je venku, brutálně zlepšila.
+*   **Lokální režim (zdarma, soukromý):** Pokud chcete spustit AI na svém vlastním PC, požadavky obchodu (minimálně 12 GB VRAM) jsou svaté. Méně než to a AI se bude vléct nebo váš počítač zablokuje. Je to čistá matematika, ne magie.
+*   **Režim cloudu (API Gemini, GPT atd. pouze pokud spustíte s příkazem `--advanced`):** Tady se film mění! Pokud hru nastavíte tak, aby využívala cloudové služby (jako Google Gemini nebo OpenAI), těžká práce se dělá na jejich serverech, ne na vašem. V tomto režimu hra funguje plynule prakticky na jakémkoli zařízení, protože vaše grafická karta odpočívá.
 
-To je motor, který bude i nadále pohánět RolemIAster, aby se stal hrou na míru, zejména pro ty z vás, kteří tu byli a věřili projektu od prvního dne.
+## Řízení očekávání
+Pokud jste přišli s očekáváním bezchybného AAA titulu, obávám se, že jste na špatném místě (prozatím). Hra je v rané fázi a upřímně, jen ti odvážní, kteří rozumí a podporují tento typ experimentálních projektů, mají nyní trpělivost si ji užít.
 
-Děkuji za vaši trpělivost, vaši podporu a ať jsou kritici na vaší straně!
+## Záruka spokojenosti
+Pokud máte pocit, že je hra pro vás příliš zelená nebo váš hardware příliš trpí, nikdo se nebude zlobit, pokud požádáte o vrácení peněz. Naopak, budu rád, když se v budoucnu vrátíte – a zaplatíte 40 nebo 60 USD, až bude hra vyleštěná a dokončená 😉. Aktuální cena je dárek za vaši důvěru v této fázi.
 
-<!-- source_hash: 302ab989 -->
+To vše řečeno, moje vděčnost je nekonečná pro ty, kteří se rozhodnou zůstat. Vaše hlášení a návrhy jsou skutečným motorem tohoto projektu. Díky vám se hra během několika týdnů brutálně zlepšila.
+
+**RolemIAster se staví na míru pro vás.**
+
+*Děkuji za trpělivost, podporu a ať jsou kritici na vaší straně!*
+
+<!-- source_hash: f67e0e53 -->

@@ -1,17 +1,26 @@
-📢 Mesaje de la Dezvoltator (Acces Anticipat)
-Bun venit în RolemIAster. Înainte de a te scufunda în următoarea ta mare aventură, vreau să îți fur un minut pentru a clarifica câteva lucruri (promit să fiu scurt, căci zarurile te așteaptă).
+# 📢 Mesaje de la Dezvoltator (Acces Anticipat)
 
-Acest joc este în faza de Acces Anticipat (Early Access).
-Sunt un dezvoltator singuratic — da, doar eu, tastatura mea și litri de cafea — ceea ce înseamnă că fac tot ce pot, dar uneori nu reușesc să ajung la timp la toate. Îmi cer scuze dinainte dacă îmi ia mult timp să repar vreun bug evaziv, să implementez acea funcție pe care ți-o dorești atât de mult, sau să răspund imediat pe Discord și pe forumurile Steam. Fac jonglerii, dar încă nu mi-au crescut tentacule suplimentare.
+Bun venit la RolemIAster. Înainte de a te scufunda în următoarea ta mare aventură, vreau să-ți fur un minut pentru a clarifica câteva lucruri (promit să fiu scurt, zarurile te așteaptă).
 
-Dacă ai venit așteptând o superproducție AAA fără cusur, mi-e teamă că ești în locul greșit (deocamdată). Jocul se află într-o etapă foarte timpurie de dezvoltare și, sincer, doar cei curajoși care înțeleg și susțin acest tip de proiecte independente au spatele (și răbdarea) necesare pentru a-l suporta.
+Acest joc este în stadiul de **Acces Anticipat (Early Access)**.
+Sunt un dezvoltator solo —da, doar eu, tastatura mea și litri de cafea—, ceea ce înseamnă că fac tot ce pot, dar uneori nu reușesc să termin totul la timp. Mă scuz de pe acum dacă durează să repar un bug evaziv, să implementez funcția pe care ți-o dorești atât de mult sau să răspund imediat pe Discord. Mă descurc cum pot, dar încă nu mi-au crescut tentacule suplimentare.
 
-Dacă simți că jocul este încă prea neșlefuit pentru tine, nimeni nu se va supăra dacă vei cere o rambursare. Dimpotrivă, voi fi încântat să te primesc din nou în viitor — și să plătești 40 sau 60 USD când jocul va fi finisat și completat 😉—. Prețul actual este atât de scăzut tocmai din coerență cu stadiul său actual de dezvoltare. Dacă asta nu te convinge, nu mai este nimic de discutat, rămânem prieteni.
+## ⚠️ Notificare Importantă despre Hardware (Local vs Cloud)
+Există două moduri de a juca, iar experiența ta depinde de cel pe care îl alegi:
 
-Având în vedere natura acestui proiect nebunesc, recunoștința mea este infinită pentru toți cei care, în ciuda dificultăților și contrarietăților procesului, decid să rămână și să contribuie. Doar prin raportarea de bug-uri sau prin sugestii de îmbunătățiri, ați reușit să faceți jocul să se îmbunătățească enorm în puținele săptămâni de la lansare.
+*   **Mod Local (Gratuit, Privat):** Dacă vrei să rulezi IA pe propriul tău PC, cerințele magazinului (Mínimo 12GB VRAM) sunt sacrosancte. Mai puțin de atât și IA va merge greu sau îți va bloca sistemul. E pură matematică, nu magie.
+*   **Mod Cloud (API Gemini, GPT etc. doar dacă pornești cu comanda `--advanced`):** Aici se schimbă situația! Dacă configurezi jocul să folosească servicii cloud (precum Google Gemini sau OpenAI), munca grea se face pe serverele lor, nu pe al tău. În acest mod, jocul rulează fluid pe practic orice sistem, deoarece placa ta grafică se odihnește.
 
-Acesta este motorul care va continua să funcționeze pentru ca RolemIAster să devină un joc creat la comandă, în special pentru cei care au fost acolo, având încredere în proiect încă din prima zi.
+## Gestionarea Așteptărilor
+Dacă ai venit așteptând o producție AAA impecabilă, mă tem că ai nimerit unde nu trebuie (deocamdată). Jocul se află într-o etapă incipientă și, sincer, doar cei curajoși care înțeleg și susțin astfel de proiecte experimentale au răbdarea necesară pentru a se bucura de el acum.
 
-Mulțumesc pentru răbdarea ta, pentru sprijinul tău și ca criticii să fie de partea ta!
+## Garanția Satisfacției
+Dacă simți că jocul este prea "verde" pentru tine sau hardware-ul tău suferă prea mult, nimeni nu se va supăra dacă soliciți o rambursare. Dimpotrivă, voi fi încântat să te primesc înapoi în viitor —și să plătești 40 sau 60 USD când jocul va fi finisat și complet 😉—. Prețul actual este un cadou pentru că ai avut încredere în mine în această etapă.
 
-<!-- source_hash: 302ab989 -->
+Acestea fiind spuse, recunoștința mea este infinită pentru cei care decid să rămână. Rapoartele și sugestiile voastre sunt motorul real al acestui proiect. Datorită vouă, jocul a evoluat enorm în câteva săptămâni.
+
+**RolemIAster este construit la comandă pentru voi.**
+
+*Mulțumesc pentru răbdare, sprijin și fie criticii de partea voastră!*
+
+<!-- source_hash: f67e0e53 -->
