@@ -1,4 +1,33 @@
 ****************************************************************************************************
+27/02/2026 16:46 - Sinkronisasi Muat di Pertarungan dan Alur Giliran - Beta_v059
+****************************************************************************************************
+- What's New (ID):
+  - **Pertarungan dan alur permainan**
+    - ⚔️ **Serangan lebih mulus:** tidak ada lagi jeda kosong saat aksi Anda sedang menunggu giliran, dan pemuatan permainan mengembalikan keputusan nyata, bukan tombol hantu.
+    - 🧭 **Adegan tersinkronisasi:** apa yang Anda lihat di layar mencerminkan status pertarungan saat ini dan hanya menampilkan musuh yang ada di lokasi Anda.
+    - 🚫 **Lebih sedikit birokrasi internal:** kami membersihkan pengecekan yang tidak perlu agar permainan berjalan lancar tanpa hambatan administratif.
+  
+  - **Mesin visual dan panel lanjutan**
+    - 🧹 **Pemilih yang rapi:** folder teknis disembunyikan dan pemfilteran dinormalisasi untuk memilih model tanpa kebisingan.
+    - ️ **Latar belakang stabil:** jika sebuah gambar sedang berjalan, itu tidak akan mengganggu yang berikutnya; selain itu, pemuatan dalam pertarungan menghindari regenerasi yang mengejutkan.
+    - 🎛️ **Panel gambar yang ditingkatkan:** strategi rendering, kekuatan perubahan, dan langkah-langkah minimal kini dikontrol dari antarmuka lanjutan dengan bantuan kontekstual.
+  
+  - **Pembuatan karakter dan potret**
+    - 🧍 **Jenis Kelamin terlihat:** Anda memilih Pria/Wanita pada formulir dasar dan seluruh alur (potret, data internal) menghormati pilihan tersebut.
+    - 👶➡️🧓 **Usia yang dapat dipahami:** kami menggunakan rentang naratif agar AI dapat menggambar tahap kehidupan dengan lebih baik.
+    - 🧼 **Prompt yang dibersihkan:** kami membersihkan kebisingan teknis sebelum mengirim permintaan gambar, dan itu terlihat pada stabilitas potret.
+    -  **Kartu yang andal:** AI tidak dapat "melupakan" atribut wajib atau menggembungkan inventaris awal.
+  
+  - **Narasi, aturan, dan RAG**
+    - 🚀 **Kedatangan PJ lebih langsung:** adegan awal menggunakan kontrak JSON yang ketat dan menghindari campuran konteks yang aneh.
+    -  **RAG terfokus:** hanya akar yang diizinkan yang diindeks, dan kartu yang dikirim ke prompt membawa ringkasan efek untuk menghemat token.
+  
+  - **Pengaturan AI dan PSR**
+    - 🎛️ **Kontrol PSR Fase 1 baru:** putuskan apakah Anda ingin mode bedah selalu aktif saat eksplorasi atau hanya saat prompt memburuk.
+    - 📏 **Ambang batas yang dapat disesuaikan (default 95%):** sesuaikan margin yang Anda berikan sebelum memicu PSR otomatis berdasarkan perangkat keras Anda.
+    - 🧠 **Prompt lebih ringan dan tanpa perulangan:** kami meringkas status dan AI dilengkapi dengan alat untuk tidak kelebihan beban saat cerita menjadi rumit.
+
+****************************************************************************************************
 24/02/2026 12:32 - Generasi Gambar AI, Peningkatan Naratif, dan Kontrol - Beta_v058
 ****************************************************************************************************
 - What's New (ID):

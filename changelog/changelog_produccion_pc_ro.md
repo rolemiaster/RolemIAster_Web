@@ -1,4 +1,33 @@
 ****************************************************************************************************
+27/02/2026 16:46 - Sincronizarea Încărcării în Luptă și Fluxul de Tururi - Beta_v059
+****************************************************************************************************
+- What's New (RO):
+  - **Luptă și ritm de joc**
+    - ⚔️ **Asalturi mai fluide:** nu mai există apăsări în gol atunci când acțiunea ta era în coadă, iar încărcarea jocurilor returnează decizii reale, nu butoane fantomă.
+    - 🧭 **Scenă sincronizată:** ceea ce vezi pe ecran reflectă starea actuală a luptei și apar doar inamicii prezenți în locația ta.
+    - 🚫 **Mai puțină birocrație internă:** am eliminat verificări inutile pentru ca jocul să avanseze fără blocaje administrative.
+  
+  - **Motor vizual și panou avansat**
+    - 🧹 **Selector curat:** folderele tehnice sunt ascunse, iar filtrarea este normalizată pentru a alege modele fără zgomot.
+    - ️ **Fundaluri stabile:** dacă o imagine este în curs, aceasta nu o va împinge pe următoarea; de asemenea, încărcarea în luptă evită regenerările surpriză.
+    - 🎛️ **Panou de imagine îmbunătățit:** strategia de randare, forța de schimbare și pașii minimi sunt acum controlați din interfața avansată, cu ajutor contextual.
+  
+  - **Creare personaj și portrete**
+    - 🧍 **Sex la vedere:** alegi Masculin/Feminin în formularul de bază, iar întregul flux (portrete, date interne) respectă acea alegere.
+    - 👶➡️🧓 **Vârstă clară:** folosim intervale narative pentru ca IA să deseneze mai bine etapa de viață.
+    - 🧼 **Prompturi igienizate:** am curățat zgomotul tehnic înainte de a trimite cererile de imagine, iar acest lucru se reflectă în stabilitatea portretelor.
+    -  **Fișe fiabile:** IA nu poate „uita” atribute obligatorii sau umfla inventarul inițial.
+  
+  - **Narativ, reguli și RAG**
+    - 🚀 **Aducerea personajelor mai directă:** scena inițială folosește contracte JSON stricte și evită amestecurile ciudate de context.
+    -  **RAG concentrat:** sunt indexate doar rădăcinile permise, iar fișa trimisă promptului conține rezumate ale efectelor pentru a economisi tokeni.
+  
+  - **Configurare IA și PSR**
+    - 🎛️ **Nou control PSR Faza 1:** decizi dacă vrei modul chirurgical întotdeauna în explorare sau doar când promptul devine tensionat.
+    - 📏 **Prag ajustabil (implicit 95%):** ajustezi câtă marjă acorzi înainte de a declanșa PSR automat, în funcție de hardware-ul tău.
+    - 🧠 **Prompturi mai ușoare și fără bucle:** rezumăm stările, iar IA dispune de instrumente pentru a nu se supraîncărca atunci când povestea devine complicată.
+
+****************************************************************************************************
 24/02/2026 12:32 - Generarea imaginilor prin IA, Îmbunătățiri narative și Control - Beta_v058
 ****************************************************************************************************
 - What's New (RO):

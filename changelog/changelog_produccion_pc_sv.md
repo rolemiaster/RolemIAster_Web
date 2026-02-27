@@ -1,4 +1,33 @@
 ****************************************************************************************************
+27/02/2026 16:46 - Synkronisering av laddning i strid och turflöde - Beta_v059
+****************************************************************************************************
+- What's New (SV):
+  - **Strider och spelupplägg**
+    - ⚔️ **Smidigare anfall:** inga fler "tomma" knapptryckningar när din handling var i kö, och laddning av sparfiler återger verkliga beslut, inte "spökknappar".
+    - 🧭 **Synkroniserad scen:** det du ser på skärmen återspeglar stridens aktuella status och endast fiender som befinner sig på din plats visas.
+    - 🚫 **Mindre internt pappersarbete:** vi har rensat bort onödiga kontroller så att spelet flyter på utan administrativa flaskhalsar.
+  
+  - **Visuell motor och avancerad panel**
+    - 🧹 **Ren väljare:** tekniska mappar döljs och filtreringen normaliseras för att välja modeller utan brus.
+    - ️ **Stabila bakgrunder:** om en bild laddas, "kör" den inte över de efterföljande bilderna; dessutom undviker laddning i strid överraskande regenereringar.
+    - 🎛️ **Förbättrad bildpanel:** renderstrategi, ändringsstyrka och minsta steg kontrolleras nu från den avancerade gränssnittet med kontextuell hjälp.
+  
+  - **Karaktärsskapande och porträtt**
+    - 🧍 **Synligt kön:** du väljer Man/Kvinna i grundformuläret och hela flödet (porträtt, interna data) respekterar detta val.
+    - 👶➡️🧓 **Begriplig ålder:** vi använder berättande tidsramar så att AI:n bättre kan rita livsstadier.
+    - 🧼 **Rensade prompts:** vi rensar bort tekniskt brus innan bildförfrågningar skickas, vilket märks i porträttens stabilitet.
+    -  **Tillförlitliga karaktärsblad:** AI:n kan inte "glömma bort" obligatoriska attribut eller blåsa upp initialt inventarium.
+  
+  - **Berättelse, regler och RAG**
+    - 🚀 **Mer direkt ankomst för spelarkaraktärer:** startscenen använder strikta JSON-kontrakt och undviker konstiga kontextblandningar.
+    -  **Fokuserad RAG:** endast tillåtna rötter indexeras och karaktärsbladet som skickas till prompten innehåller sammanfattningar av effekter för att spara tokens.
+  
+  - **AI-inställningar och PSR**
+    - 🎛️ **Ny PSR-kontroll Fas 1:** bestäm om du vill ha det kirurgiska läget alltid under utforskning eller bara när prompten sätter press.
+    - 📏 **Justerbar tröskel (95% standard):** finjustera hur mycket marginal du ger innan automatisk PSR utlöses, beroende på din hårdvara.
+    - 🧠 **Lättare prompts utan loopar:** vi sammanfattar tillstånd och AI:n har verktyg för att inte överbelastas när historien blir komplicerad.
+
+****************************************************************************************************
 24/02/2026 12:32 - AI-bildgenerering, berättarmässiga förbättringar och kontroll - Beta_v058
 ****************************************************************************************************
 - What's New (SV):

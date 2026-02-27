@@ -1,4 +1,33 @@
 ****************************************************************************************************
+27/02/2026 16:46 - Synchronizacja ładowania w walce i przepływ turowy - Beta_v059
+****************************************************************************************************
+- What's New (PL):
+  - **Walka i tempo gry**
+    - ⚔️ **Płynniejsze ataki:** koniec z pustymi wciśnięciami klawiszy, gdy akcja była w kolejce, a ładowanie gry zwraca rzeczywiste decyzje, a nie widmowe przyciski.
+    - 🧭 **Zsynchronizowana scena:** to, co widzisz na ekranie, odzwierciedla aktualny stan walki, a wrogowie pojawiają się tylko w twojej lokalizacji.
+    - 🚫 **Mniej wewnętrznych formalności:** oczyściliśmy zbędne kontrole, aby gra postępowała bez biurokratycznych zacięć.
+  
+  - **Silnik wizualny i zaawansowany panel**
+    - 🧹 **Czysty selektor:** ukrywamy foldery techniczne i normalizujemy filtrowanie, aby wybierać modele bez szumu.
+    - ️ **Stabilne tła:** jeśli obraz jest w trakcie ładowania, nie przeszkadza kolejnym; ponadto ładowanie w walce zapobiega niespodziewanym regeneracjom.
+    - 🎛️ **Wzmocniony panel obrazu:** strategia renderowania, siła zmiany i minimalne kroki są teraz kontrolowane z zaawansowanego interfejsu z pomocą kontekstową.
+  
+  - **Tworzenie postaci i portrety**
+    - 🧍 **Płeć widoczna:** wybierasz mężczyznę/kobietę w podstawowym formularzu, a cały przepływ (portrety, dane wewnętrzne) szanuje ten wybór.
+    - 👶➡️🧓 **Zrozumiały wiek:** używamy przedziałów narracyjnych, aby SI lepiej rysowała etap życia.
+    - 🧼 **Wyczyczone prompty:** usuwamy szum techniczny przed wysłaniem żądań obrazu, co przekłada się na stabilność portretów.
+    -  **Niezawodne karty postaci:** SI nie może „zapomnieć” o obowiązkowych atrybutach ani zawyżyć początkowego ekwipunku.
+  
+  - **Narracja, zasady i RAG**
+    - 🚀 **Bardziej bezpośrednie przybycie postaci:** scena początkowa wykorzystuje ścisłe kontrakty JSON i unika dziwnych mieszanek kontekstu.
+    -  **Skoncentrowane RAG:** indeksujemy tylko dozwolone korzenie, a wysłana do promptu karta postaci zawiera podsumowania efektów, aby oszczędzić tokeny.
+  
+  - **Konfiguracja SI i PSR**
+    - 🎛️ **Nowa kontrola PSR Faza 1:** zdecyduj, czy chcesz tryb chirurgiczny zawsze podczas eksploracji, czy tylko wtedy, gdy prompt jest wymagający.
+    - 📏 **Regulowany próg (domyślnie 95%):** dostosuj margines przed uruchomieniem automatycznego PSR w zależności od twojego sprzętu.
+    - 🧠 **Lżejsze prompty i bez pętli:** podsumowujemy stany, a SI ma narzędzia, aby nie przeciążać się, gdy historia staje się skomplikowana.
+
+****************************************************************************************************
 24/02/2026 12:32 - Generowanie obrazów przez AI, ulepszenia narracji i kontrola - Beta_v058
 ****************************************************************************************************
 - What's New (PL):

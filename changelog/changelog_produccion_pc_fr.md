@@ -1,4 +1,33 @@
 ****************************************************************************************************
+27/02/2026 16:46 - Synchronisation de la Charge en Combat et Flux de Tours - Beta_v059
+****************************************************************************************************
+- What's New (FR):
+  - **Combat et Rythme de Jeu**
+    - ⚔️ **Assauts plus fluides :** Fini les clics dans le vide lorsque votre action était en file d'attente, et la charge des parties renvoie de vraies décisions, pas des boutons fantômes.
+    - 🧭 **Scène synchronisée :** Ce que vous voyez à l'écran reflète l'état actuel du combat et n'affiche que les ennemis présents dans votre position.
+    - 🚫 **Moins de paperasse interne :** Nous avons purgé les vérifications inutiles pour que le jeu progresse sans blocages administratifs.
+  
+  - **Moteur Visuel et Panneau Avancé**
+    - 🧹 **Sélecteur propre :** Les dossiers techniques sont masqués et le filtrage est normalisé pour choisir des modèles sans bruit.
+    - ️ **Arrières-plans stables :** Si une image est en cours, elle n'écrase pas les suivantes ; de plus, le chargement en combat évite les régénérations surprises.
+    - 🎛️ **Panneau d'image vitaminé :** La stratégie de rendu, la force du changement et les étapes minimales se contrôlent désormais depuis l'interface avancée avec aide contextuelle.
+  
+  - **Création de Personnage et Portraits**
+    - 🧍 **Sexe visible :** Vous choisissez Masculin/Féminin dans le formulaire de base et tout le flux (portraits, données internes) respecte ce choix.
+    - 👶➡️🧓 **Âge compréhensible :** Nous utilisons des tranches narratives pour que l'IA dessine mieux l'étape de vie.
+    - 🧼 **Prompts hygiénisés :** Nous nettoyons le bruit technique avant d'envoyer les requêtes d'image, ce qui se reflète dans la stabilité des portraits.
+    -  **Fiches fiables :** L'IA ne peut pas "oublier" d'attributs obligatoires ni gonfler l'inventaire initial.
+  
+  - **Narrative, Règles et RAG**
+    - 🚀 **Arrivée de PJ plus directe :** La scène initiale utilise des contrats JSON stricts et évite les mélanges de contexte inhabituels.
+    -  **RAG ciblé :** Seules les racines autorisées sont indexées, et la fiche envoyée au prompt contient des résumés d'effets pour économiser des tokens.
+  
+  - **Configuration IA et PSR**
+    - 🎛️ **Nouveau contrôle PSR Phase 1 :** Décidez si vous voulez le mode chirurgical toujours en exploration ou seulement lorsque le prompt est intense.
+    - 📏 **Seuil ajustable (95% par défaut) :** Affinez la marge que vous accordez avant de déclencher le PSR automatique en fonction de votre matériel.
+    - 🧠 **Prompts plus légers et sans boucles :** Nous résumons les états et l'IA dispose d'outils pour ne pas se saturer lorsque l'histoire se complique.
+
+****************************************************************************************************
 24/02/2026 12:32 - Génération d'images par IA, améliorations narratives et contrôle - Beta_v058
 ****************************************************************************************************
 - What's New (FR):

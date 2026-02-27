@@ -1,4 +1,33 @@
 ****************************************************************************************************
+27/02/2026 16:46 - Synchronisatie van Gevechtssaving en Beurtstroom - Beta_v059
+****************************************************************************************************
+- What's New (NL):
+  - **Gevechten en spelritme**
+    - ⚔️ **Vloeiendere aanvallen:** geen lege pulsen meer wanneer je actie in de wachtrij stond en het laden van gevechten retourneert echte beslissingen, geen spookknoppen.
+    - 🧭 **Gesynchroniseerde scène:** wat je op het scherm ziet, weerspiegelt de huidige gevechtsstatus en er verschijnen alleen vijanden die zich op jouw locatie bevinden.
+    - 🚫 **Minder interne rompslomp:** we hebben nutteloze controles opgeschoond, zodat het spel zonder administratieve haperingen verdergaat.
+  
+  - **Visuele motor en geavanceerd paneel**
+    - 🧹 **Schone selectie:** technische mappen worden verborgen en filteren wordt genormaliseerd om modellen zonder ruis te kiezen.
+    - ️ **Stabiele achtergronden:** als een afbeelding bezig is, overschrijft deze niet de volgende; bovendien voorkomt laden in gevechten verrassende regeneraties.
+    - 🎛️ **Versterkt afbeeldingspaneel:** renderstrategie, wijzigingskracht en minimale stappen worden nu vanuit de geavanceerde interface met contextuele hulp bediend.
+  
+  - **Karaktercreatie en portretten**
+    - 🧍 **Geslacht zichtbaar:** je kiest Mannelijk/Vrouwelijk in het basisformulier en de hele stroom (portretten, interne gegevens) respecteert die keuze.
+    - 👶➡️🧓 **Begrijpelijke leeftijd:** we gebruiken narratieve segmenten, zodat de AI de levensfase beter kan weergeven.
+    - 🧼 **Gezuiverde prompts:** we hebben technische ruis schoongemaakt voordat we afbeeldingsverzoeken versturen, en dat merk je aan de stabiliteit van de portretten.
+    -  **Betrouwbare kaarten:** de AI kan geen verplichte attributen "vergeten" of de initiële inventaris opblazen.
+  
+  - **Narratief, regels en RAG**
+    - 🚀 **Directere aankomst van PJ:** de initiële scène gebruikt strikte JSON-contracten en vermijdt rare contextmengelingen.
+    -  **Gerichte RAG:** alleen toegestane roots worden geïndexeerd en de kaart die naar de prompt wordt gestuurd, bevat samenvattingen van effecten om tokens te besparen.
+  
+  - **AI-configuratie en PSR**
+    - 🎛️ **Nieuwe PSR-controle Fase 1:** bepaal of je de chirurgische modus altijd wilt in exploratie of alleen wanneer de prompt aandringt.
+    - 📏 **Instelbare drempel (standaard 95%):** bepaal hoeveel marge je geeft voordat automatische PSR wordt geactiveerd, afhankelijk van je hardware.
+    - 🧠 **Lichtere prompts en zonder lussen:** we vatten staten samen en de AI beschikt over tools om niet verzadigd te raken wanneer het verhaal ingewikkeld wordt.
+
+****************************************************************************************************
 24/02/2026 12:32 - AI-beeldgeneratie, narratieve verbeteringen en controle - Beta_v058
 ****************************************************************************************************
 - What's New (NL):

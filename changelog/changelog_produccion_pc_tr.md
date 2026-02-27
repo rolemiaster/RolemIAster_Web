@@ -1,4 +1,33 @@
 ****************************************************************************************************
+27/02/2026 16:46 - Savaşta Yükleme Senkronizasyonu ve Tur Akışı - Beta_v059
+****************************************************************************************************
+- What's New (TR):
+  - **Savaş ve Oyun Ritmi**
+    - ⚔️ **Daha Akıcı Çatışmalar:** Eyleminiz kuyrukta beklerken artık boş tıklamalar yok, yüklemeler hayali düğmeler yerine gerçek kararlar döndürüyor.
+    - 🧭 **Senkronize Sahne:** Ekranda gördükleriniz savaşın mevcut durumunu yansıtıyor ve sadece bulunduğunuz konumdaki düşmanlar beliriyor.
+    - 🚫 **Daha Az Dahili Bürokrasi:** Oyunun idari tıkanıklıklar olmadan ilerlemesi için gereksiz kontrolleri ayıklıyoruz.
+  
+  - **Görsel Motor ve Gelişmiş Panel**
+    - 🧹 **Temiz Seçici:** Teknik klasörler gizleniyor ve gürültüsüz model seçimi için filtreleme standartlaştırılıyor.
+    - ️ **Stabil Arka Planlar:** Bir görsel yükleniyorsa, bir sonrakini ezmiyor; ayrıca, savaş yüklemesi sürpriz yeniden oluşturmaları önlüyor.
+    - 🎛️ **Güçlendirilmiş Görsel Panel:** Render stratejisi, değişim gücü ve minimum adımlar artık bağlamsal yardımla gelişmiş arayüzden kontrol ediliyor.
+  
+  - **Karakter Oluşturma ve Portreler**
+    - 🧍 **Cinsiyet Görünür:** Temel formda Erkek/Kadın seçiyorsunuz ve tüm akış (portreler, dahili veriler) bu seçime saygı duyuyor.
+    - 👶➡️🧓 **Anlaşılır Yaş:** Yapay zekanın yaşam evresini daha iyi çizmesi için anlatısal dilimler kullanıyoruz.
+    - 🧼 **Temizlenmiş Komutlar:** Görsel istekler göndermeden önce teknik gürültüyü temizliyoruz ve bu portrelerin kararlılığında kendini gösteriyor.
+    -  **Güvenilir Kartlar:** Yapay zeka zorunlu özellikleri "unutamaz" veya başlangıç envanterini şişiremez.
+  
+  - **Anlatı, Kurallar ve RAG**
+    - 🚀 **Daha Doğrudan PJ Varışı:** Başlangıç sahnesi katı JSON sözleşmeleri kullanıyor ve tuhaf bağlam karışımlarından kaçınıyor.
+    -  **Odaklanmış RAG:** Yalnızca izin verilen kökler indeksleniyor ve komuta gönderilen kart, token tasarrufu için efektlerin özetlerini içeriyor.
+  
+  - **Yapay Zeka Yapılandırması ve PSR**
+    - 🎛️ **Yeni PSR Kontrolü Aşama 1:** Cerrahi modu her zaman keşifte mi yoksa yalnızca komut zorladığında mı istediğinize karar verin.
+    - 📏 **Ayarlanabilir Eşik (%95 varsayılan):** Donanımınıza göre otomatik PSR'yi tetiklemeden önce ne kadar marj tanıdığınızı ince ayarla.
+    - 🧠 **Daha Hafif ve Döngüsüz Komutlar:** Durumları özetliyoruz ve yapay zeka, hikaye karmaşıklaştığında aşırı yüklenmemesi için araçlara sahip.
+
+****************************************************************************************************
 24/02/2026 12:32 - Yapay Zeka Görsel Oluşturma, Anlatı İyileştirmeleri ve Kontrol - Beta_v058
 ****************************************************************************************************
 - What's New (TR):

@@ -1,4 +1,33 @@
 ****************************************************************************************************
+27/02/2026 16:46 - Synkronisering af Kampindlæsning og Turflow - Beta_v059
+****************************************************************************************************
+- What's New (DA):
+  - **Kamp og spilflow**
+    - ⚔️ **Mere flydende overfald:** ikke flere tomme tryk, når din handling var i kø, og indlæsning af spil returnerer faktiske beslutninger, ikke spøgelsesknapper.
+    - 🧭 **Synkroniseret scene:** hvad du ser på skærmen afspejler kampens aktuelle tilstand, og kun fjender, der er til stede på din placering, vises.
+    - 🚫 **Mindre intern papirarbejde:** vi har fjernet unødvendige kontroller, så spillet kan fortsætte uden administrative blokeringer.
+  
+  - **Visuel motor og avanceret panel**
+    - 🧹 **Rent valg:** tekniske mapper er skjult, og filtrering er normaliseret for at vælge modeller uden støj.
+    - ️ **Stabile baggrunde:** hvis et billede er i gang, vil det ikke overskrive de efterfølgende; desuden undgår kampindlæsning overraskende regenereringer.
+    - 🎛️ **Forbedret billedpanel:** gengivelsesstrategi, skiftefunktion og minimale trin styres nu fra den avancerede grænseflade med kontekstuel hjælp.
+  
+  - **Karakterskabelse og portrætter**
+    - 🧍 **Synligt køn:** du vælger Mand/Kvinde i grundformularen, og hele flowet (portrætter, interne data) respekterer dette valg.
+    - 👶➡️🧓 **Forståelig alder:** vi bruger narrative intervaller, så AI'en bedre kan tegne livsstadiet.
+    - 🧼 **Rengjorte prompts:** vi fjerner teknisk støj, før vi sender billedanmodninger, og det mærkes på portrætternes stabilitet.
+    -  **Pålidelige ark:** AI'en kan ikke "glemme" obligatoriske attributter eller oppuste det indledende inventar.
+  
+  - **Narrativ, regler og RAG**
+    - 🚀 **Mere direkte ankomst af PC'er:** den indledende scene bruger strenge JSON-kontrakter og undgår mærkelige kontekstblandinger.
+    -  **Fokuseret RAG:** kun tilladte rødder indekseres, og det ark, der sendes til prompten, indeholder effektsammendrag for at spare tokens.
+  
+  - **AI-konfiguration og PSR**
+    - 🎛️ **Ny PSR-kontrol Fase 1:** beslut, om du vil have kirurgisk tilstand altid under udforskning, eller kun når prompten presser.
+    - 📏 **Justerbar tærskel (95% standard):** finjuster, hvor meget margen du giver, før automatisk PSR udløses baseret på din hardware.
+    - 🧠 **Lettere prompts uden løkker:** vi opsummerer tilstande, og AI'en har værktøjer til ikke at blive overvældet, når historien bliver kompleks.
+
+****************************************************************************************************
 24/02/2026 12:32 - AI-billedgenerering, narrative forbedringer og kontrol - Beta_v058
 ****************************************************************************************************
 - What's New (DA):

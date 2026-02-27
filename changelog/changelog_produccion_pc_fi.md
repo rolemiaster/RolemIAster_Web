@@ -1,4 +1,33 @@
 ****************************************************************************************************
+27/02/2026 16:46 - Synkronisoi lataus taistelussa ja vuorojen sujuvuus - Beta_v059
+****************************************************************************************************
+- What's New (FI):
+  - **Taistelu ja pelin rytmitys**
+    - ⚔️ **Sujuvammat hyökkäykset:** Tyhjiä painalluksia ei enää tapahdu, kun toimintosi oli jonossa ja lataukset palauttavat todellisia päätöksiä, eivät kummitusnappeja.
+    - 🧭 **Synkronisoitu kohtaus:** Näyttösi heijastaa taistelun nykytilaa ja vain sijainnissasi olevat viholliset ilmestyvät.
+    - 🚫 **Vähemmän sisäistä byrokratiaa:** Poistimme turhat tarkistukset, jotta peli etenee ilman hallinnollisia jumituksia.
+  
+  - **Visuaalinen moottori ja edistynyt paneeli**
+    - 🧹 **Siisti valitsin:** Tekniset kansiot piilotetaan ja suodatus normalisoidaan mallien valitsemiseksi ilman hälyä.
+    - ️ **Vakaat taustat:** Jos kuva on käynnissä, se ei ylikirjoita seuraavia; lisäksi lataus taistelussa välttää yllättäviä uudelleengenerointeja.
+    - 🎛️ **Tehostettu kuvapaneeli:** Renderöintistrategia, muutosvoima ja minimaaliset askeleet ohjataan nyt edistyneestä käyttöliittymästä kontekstuaalisen avun kera.
+  
+  - **Hahmonluonti ja muotokuvat**
+    - 🧍 **Sukupuoli näkyvissä:** Valitset Miessukupuolen/Naissukupuolen perustelomakkeessa, ja koko prosessi (muotokuvat, sisäiset tiedot) kunnioittaa tätä valintaa.
+    - 👶➡️🧓 **Ymmärrettävä ikä:** Käytämme kerronnallisia jaksoja, jotta tekoäly piirtää paremmin elämänvaiheen.
+    - 🧼 **Puhdistetut kehotteet:** Siivoamme teknisen kohinan ennen kuvapyyntöjen lähettämistä, ja se näkyy muotokuvien vakaudessa.
+    -  **Luotettavat lomakkeet:** Tekoäly ei voi "unohtaa" pakollisia attribuutteja tai paisuttaa aloitusvarastoa.
+  
+  - **Kerronta, säännöt ja RAG**
+    - 🚀 **PJ:n suorempi saapuminen:** Aloituskohtaus käyttää tiukkoja JSON-sopimuksia ja välttää outoja kontekstin sekoituksia.
+    -  **Fokusoitu RAG:** Vain sallitut juuret indeksoidaan, ja kehotteeseen lähetetty lomake sisältää efektien tiivistelmiä tokenien säästämiseksi.
+  
+  - **Tekoälyasetukset ja PSR**
+    - 🎛️ **Uusi PSR-ohjaus Vaihe 1:** Päätä, haluatko kirurgisen tilan aina tutkimiseen vai vain kun kehote painaa.
+    - 📏 **Säädettävä kynnysarvo (oletuksena 95 %):** Hienosäädä, kuinka paljon liikkumavaraa annat ennen automaattisen PSR:n käynnistämistä laitteistosi mukaan.
+    - 🧠 **Kevyemmät ja silmukoimattomat kehotteet:** Tiivistämme tilat, ja tekoälyllä on käytössään työkaluja, jotta se ei ylikuormitu, kun tarina monimutkaistuu.
+
+****************************************************************************************************
 24/02/2026 12:32 - Tekoälykuvien generointi, kerronnalliset parannukset ja hallinta - Beta_v058
 ****************************************************************************************************
 - What's New (FI):

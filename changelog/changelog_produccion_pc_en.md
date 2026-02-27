@@ -1,4 +1,33 @@
 ****************************************************************************************************
+27/02/2026 16:46 - Combat Load Synchronization and Turn Flow - Beta_v059
+****************************************************************************************************
+- What's New (EN):
+  - **Combat and Game Pace**
+    - ⚔️ **Smoother Raids:** no more empty clicks when your action was queued, and game loading now returns real decisions, not phantom buttons.
+    - 🧭 **Synchronized Scene:** what you see on screen reflects the current combat state, and only enemies present in your location appear.
+    - 🚫 **Less Internal Paperwork:** we've removed useless checks so the game progresses without administrative bottlenecks.
+  
+  - **Visual Engine and Advanced Panel**
+    - 🧹 **Clean Selector:** technical folders are hidden and filtering is normalized to choose models without clutter.
+    - ️ **Stable Backgrounds:** if an image is loading, it won't override the next ones; additionally, loading during combat avoids surprise regenerations.
+    - 🎛️ **Enhanced Image Panel:** render strategy, change strength, and minimum steps are now controlled from the advanced interface with contextual help.
+  
+  - **Character Creation and Portraits**
+    - 🧍 **Gender at a Glance:** choose Male/Female in the base form, and the entire flow (portraits, internal data) respects that choice.
+    - 👶➡️🧓 **Understandable Age:** we use narrative stages to help the AI better depict life stages.
+    - 🧼 **Sanitized Prompts:** we clean technical noise before sending image requests, which results in more stable portraits.
+    -  **Reliable Sheets:** the AI cannot "forget" mandatory attributes or inflate the starting inventory.
+  
+  - **Narrative, Rules, and RAG**
+    - 🚀 **More Direct PC Arrival:** the initial scene uses strict JSON contracts and avoids strange context mixtures.
+    -  **Focused RAG:** only allowed roots are indexed, and the sheet sent to the prompt includes effect summaries to save tokens.
+  
+  - **AI Configuration and PSR**
+    - 🎛️ **New PSR Control Phase 1:** decide if you want surgical mode always in exploration or only when the prompt demands it.
+    - 📏 **Adjustable Threshold (95% default):** fine-tune how much leeway you give before triggering automatic PSR based on your hardware.
+    - 🧠 **Lighter Prompts and No Loops:** we summarize states, and the AI has tools to avoid saturation when the story gets complicated.
+
+****************************************************************************************************
 24/02/2026 12:32 - AI Image Generation, Narrative Improvements, and Control - Beta_v058
 ****************************************************************************************************
 - What's New (EN):

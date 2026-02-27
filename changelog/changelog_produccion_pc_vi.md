@@ -1,4 +1,33 @@
 ****************************************************************************************************
+27/02/2026 16:46 - Đồng bộ hóa Tải trận đấu và Luồng lượt đi - Beta_v059
+****************************************************************************************************
+- What's New (VI):
+  - **Trận đấu và nhịp độ trò chơi**
+    - ⚔️ **Các cuộc tấn công mượt mà hơn:** không còn các lần nhấn chờ vô ích khi hành động của bạn đang được xếp hàng và việc tải các trận đấu trả về các quyết định thực tế, không phải các nút ảo.
+    - 🧭 **Cảnh được đồng bộ hóa:** những gì bạn thấy trên màn hình phản ánh trạng thái hiện tại của trận đấu và chỉ hiển thị những kẻ thù có mặt tại vị trí của bạn.
+    - 🚫 **Ít thủ tục nội bộ hơn:** chúng tôi đã loại bỏ các kiểm tra vô dụng để trò chơi tiến triển mà không bị tắc nghẽn hành chính.
+  
+  - **Công cụ hình ảnh và bảng điều khiển nâng cao**
+    - 🧹 **Bộ chọn gọn gàng:** các thư mục kỹ thuật bị ẩn và bộ lọc được chuẩn hóa để chọn mô hình mà không bị nhiễu.
+    - ️ **Nền ổn định:** nếu một hình ảnh đang chạy thì nó sẽ không ghi đè lên các hình ảnh tiếp theo; hơn nữa, việc tải trong trận đấu tránh việc tái tạo bất ngờ.
+    - 🎛️ **Bảng điều khiển hình ảnh được tăng cường:** chiến lược hiển thị, cường độ thay đổi và các bước tối thiểu giờ đây có thể được điều khiển từ giao diện nâng cao với trợ giúp ngữ cảnh.
+  
+  - **Tạo nhân vật và chân dung**
+    - 🧍 **Giới tính hiển thị:** bạn chọn Nam/Nữ trong biểu mẫu cơ bản và toàn bộ luồng (chân dung, dữ liệu nội bộ) sẽ tôn trọng lựa chọn đó.
+    - 👶➡️🧓 **Tuổi tác dễ hiểu:** chúng tôi sử dụng các giai đoạn câu chuyện để AI vẽ tốt hơn giai đoạn sống.
+    - 🧼 **Lời nhắc được làm sạch:** chúng tôi đã loại bỏ nhiễu kỹ thuật trước khi gửi yêu cầu hình ảnh và điều đó thể hiện ở sự ổn định của chân dung.
+    -  **Bảng dữ liệu đáng tin cậy:** AI không thể "quên" các thuộc tính bắt buộc hoặc thổi phồng kho đồ ban đầu.
+  
+  - **Tường thuật, quy tắc và RAG**
+    - 🚀 **Nhân vật đến trực tiếp hơn:** cảnh mở đầu sử dụng các hợp đồng JSON nghiêm ngặt và tránh trộn lẫn ngữ cảnh kỳ lạ.
+    -  **RAG tập trung:** chỉ các gốc được cho phép mới được lập chỉ mục và bảng dữ liệu được gửi đến lời nhắc chứa tóm tắt hiệu ứng để tiết kiệm token.
+  
+  - **Cấu hình AI và PSR**
+    - 🎛️ **Kiểm soát PSR mới Giai đoạn 1:** quyết định xem bạn muốn chế độ phẫu thuật luôn ở chế độ khám phá hay chỉ khi lời nhắc gây áp lực.
+    - 📏 **Ngưỡng có thể điều chỉnh (mặc định 95%):** tinh chỉnh mức độ cho phép trước khi kích hoạt PSR tự động dựa trên phần cứng của bạn.
+    - 🧠 **Lời nhắc nhẹ hơn và không bị lặp lại:** chúng tôi tóm tắt các trạng thái và AI có các công cụ để không bị quá tải khi câu chuyện trở nên phức tạp.
+
+****************************************************************************************************
 24/02/2026 12:32 - Tạo Ảnh Bằng AI, Cải Thiện Dẫn Chuyện và Kiểm Soát - Beta_v058
 ****************************************************************************************************
 - What's New (VI):

@@ -1,4 +1,33 @@
 ****************************************************************************************************
+27/02/2026 16:46 - Synchronizace načítání v boji a tok tahů - Beta_v059
+****************************************************************************************************
+- What's New (CS):
+  - **Boj a tempo hry**
+    - ⚔️ **Plynulejší nájezdy:** Už žádné zbytečné stisknutí, když vaše akce byla ve frontě a načítání her vrací skutečná rozhodnutí, ne falešná tlačítka.
+    - 🧭 **Synchronizovaná scéna:** To, co vidíte na obrazovce, odráží aktuální stav boje a zobrazují se pouze nepřátelé, kteří se nacházejí na vašem místě.
+    - 🚫 **Méně interního papírování:** Odstranili jsme zbytečné kontroly, aby hra postupovala bez administrativních zádrhelů.
+  
+  - **Vizuální engine a pokročilý panel**
+    - 🧹 **Čistší výběr:** Technické složky jsou skryty a filtrování je normalizováno pro bezproblémový výběr modelů.
+    - ️ **Stabilní pozadí:** Pokud se obrázek načítá, nepřekrývá další; navíc načítání v boji zabraňuje neočekávaným regeneracím.
+    - 🎛️ **Vylepšený panel obrázků:** Strategie vykreslování, síla změn a minimální kroky se nyní ovládají z pokročilého rozhraní s kontextovou pomocí.
+  
+  - **Tvorba postavy a portréty**
+    - 🧍 **Pohlaví na první pohled:** V základním formuláři zvolíte Muž/Žena a celý proces (portréty, interní data) tuto volbu respektuje.
+    - 👶➡️🧓 **Srozumitelný věk:** Používáme narativní rozmezí, aby AI lépe vykreslila životní etapu.
+    - 🧼 **Vyčištěné prompty:** Před odesláním požadavků na obrázky odstraňujeme technický šum, což se projevuje ve stabilitě portrétů.
+    -  **Spolehlivé karty:** AI nemůže „zapomenout“ povinné atributy ani nafouknout počáteční inventář.
+  
+  - **Narace, pravidla a RAG**
+    - 🚀 **Přímější příchod PJ:** Počáteční scéna používá přísné JSON kontrakty a zabraňuje podivným směsicím kontextu.
+    -  **Zaměřený RAG:** Indexují se pouze povolené kořeny a karta odeslaná do promptu obsahuje souhrny efektů pro úsporu tokenů.
+  
+  - **Nastavení AI a PSR**
+    - 🎛️ **Nová kontrola PSR Fáze 1:** Rozhodněte se, zda chcete chirurgický režim vždy v průzkumu, nebo jen když prompt tlačí.
+    - 📏 **Nastavitelný práh (defaultně 95 %):** Upravte, kolik rezervy dáváte, než se spustí automatické PSR podle vašeho hardwaru.
+    - 🧠 ** Lehčí prompty bez smyček:** Shrňujeme stavy a AI má nástroje, aby se nezahltila, když se příběh zkomplikuje.
+
+****************************************************************************************************
 24/02/2026 12:32 - Generování obrázků pomocí UI, vylepšení vyprávění a ovládání - Beta_v058
 ****************************************************************************************************
 - What's New (CS):

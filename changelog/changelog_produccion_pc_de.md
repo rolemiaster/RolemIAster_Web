@@ -1,4 +1,33 @@
 ****************************************************************************************************
+27/02/2026 16:46 - Kampf- und Zugsynchronisation - Beta_v059
+****************************************************************************************************
+- What's New (DE):
+  - **Kampf und Spieltempo**
+    - ⚔️ **Flüssigere Angriffe:** Keine leeren Tastendrücke mehr, wenn deine Aktion in der Warteschlange war, und das Laden von Spielständen gibt echte Entscheidungen zurück, keine Phantomknöpfe.
+    - 🧭 **Synchronisierte Szene:** Was du auf dem Bildschirm siehst, spiegelt den aktuellen Kampfzustand wider, und nur Gegner, die sich an deinem Standort befinden, werden angezeigt.
+    - 🚫 **Weniger interner Papierkram:** Wir haben nutzlose Prüfungen aussortiert, damit das Spiel ohne administrative Engpässe vorankommt.
+  
+  - **Visuelle Engine und erweiterte Konsole**
+    - 🧹 **Sauberer Selektor:** Technische Ordner werden ausgeblendet und die Filterung normalisiert, um Modelle ohne Rauschen auszuwählen.
+    - ️ **Stabile Hintergründe:** Wenn ein Bild läuft, überrennt es nicht die nächsten; außerdem vermeidet das Laden im Kampf überraschende Neugenerierungen.
+    - 🎛️ **Aufgemotzte Bildkonsole:** Rendering-Strategie, Wechselstärke und minimale Schritte werden jetzt über die erweiterte Benutzeroberfläche mit kontextbezogener Hilfe gesteuert.
+  
+  - **Charaktererstellung und Porträts**
+    - 🧍 **Geschlecht sichtbar:** Wähle Männlich/Weiblich im Basisformular, und der gesamte Ablauf (Porträts, interne Daten) respektiert diese Wahl.
+    - 👶➡️🧓 **Verständliches Alter:** Wir verwenden narrative Zeitspannen, damit die KI die Lebensphase besser zeichnen kann.
+    - 🧼 **Bereinigte Prompts:** Wir säubern technischen Lärm, bevor wir Bildanfragen senden, und das macht sich in der Stabilität der Porträts bemerkbar.
+    -  **Zuverlässige Charakterbögen:** Die KI kann keine obligatorischen Attribute „vergessen“ oder den Anfangsbestand aufblähen.
+  
+  - **Erzählung, Regeln und RAG**
+    - 🚀 **Direkterer PJ-Start:** Die Anfangsszene verwendet strenge JSON-Verträge und vermeidet seltsame Kontextmischungen.
+    -  **Fokussierter RAG:** Nur erlaubte Wurzeln werden indiziert, und der an den Prompt gesendete Charakterbogen enthält Zusammenfassungen von Effekten, um Token zu sparen.
+  
+  - **KI- und PSR-Konfiguration**
+    - 🎛️ **Neue PSR-Steuerung Phase 1:** Entscheide, ob du den chirurgischen Modus immer in der Erkundung oder nur dann möchtest, wenn der Prompt drängt.
+    - 📏 **Einstellbarer Schwellenwert (Standard 95 %):** Feineinstellung, wie viel Spielraum du vor dem Auslösen von PSR automatisch gibst, abhängig von deiner Hardware.
+    - 🧠 **Leichtere Prompts ohne Schleifen:** Wir fassen Zustände zusammen, und die KI verfügt über Werkzeuge, um nicht überlastet zu werden, wenn die Geschichte kompliziert wird.
+
+****************************************************************************************************
 24/02/2026 12:32 - KI-Bildgenerierung, narrative Verbesserungen und Kontrolle - Beta_v058
 ****************************************************************************************************
 - What's New (DE):

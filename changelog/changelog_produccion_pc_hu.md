@@ -1,4 +1,33 @@
 ****************************************************************************************************
+27/02/2026 16:46 - Szinkronizált Harci Töltés és Körfolyamat - Beta_v059
+****************************************************************************************************
+- What's New (HU):
+  - **Harc és Játékmenet Sebessége**
+    - ⚔️ **Sima Harci Lépések:** Nincsenek többé üres kattintások, amikor a lépésed már sorban volt, és a töltődés most valós döntéseket hoz vissza, nem pedig fantomgombokat.
+    - 🧭 **Szinkronizált Jelenetek:** Amit a képernyőn látsz, az a harc aktuális állapotát tükrözi, és csak az ott jelenlévő ellenségek jelennek meg.
+    - 🚫 **Kevesebb Belső Papírmunka:** Kigyomláltuk a felesleges ellenőrzéseket, hogy a játék elakadások nélkül haladhasson.
+  
+  - **Vizuális Motor és Fejlett Panel**
+    - 🧹 **Tisztább Választó:** A technikai mappák elrejtésre kerülnek, és normalizált szűrés segít zajmentesen kiválasztani a modelleket.
+    - ️ **Stabil Háttér:** Ha egy kép már betöltődött, nem ütközik a következővel; továbbá a harci betöltés elkerüli a meglepetésszerű újraalkotásokat.
+    - 🎛️ **Felturbózott Kép Panel:** A renderelési stratégia, a változtatás erőssége és a minimális lépések most már az interfészről vezérelhetők, kontextuális segítséggel.
+  
+  - **Karakteralkotás és Portrék**
+    - 🧍 **Nem Látható:** A Nő/Férfi választás az alapűrlapon történik, és a teljes folyamat (portrék, belső adatok) tiszteletben tartja ezt a választást.
+    - 👶➡️🧓 **Érthető Életkor:** Narratív szakaszokat használunk, hogy az AI jobban lerajzolja az életkort.
+    - 🧼 **Tisztított Prompts-ok:** Technikai zajokat távolítunk el a képpromptok küldése előtt, ami a portrék stabilitásán látszik.
+    -  **Megbízható Karakterlapok:** Az AI nem tudja "elfelejteni" a kötelező attribútumokat, sem pedig a kezdő leltárt túlzottá tenni.
+  
+  - **Narratíva, Szabályok és RAG**
+    - 🚀 **Közvetlenebb PJ Érkezés:** A kezdő jelenet szigorú JSON szerződéseket használ, és elkerüli a furcsa kontextus keveredéseket.
+    -  **Fókuszált RAG:** Csak az engedélyezett gyökerek kerülnek indexelésre, és a promptba küldött karakterlap tartalmazza a hatások összefoglalóit a tokenek megtakarítása érdekében.
+  
+  - **AI és PSR Konfiguráció**
+    - 🎛️ **Új PSR Vezérlés 1. Fázis:** Döntsd el, hogy a sebészeti módot mindig fedezetnél szeretnéd-e, vagy csak akkor, amikor a prompt nyomja.
+    - 📏 **Állítható Küszöbérték (alapértelmezett 95%):** Finomhangold, mennyi mozgásteret adsz, mielőtt a hardveredtől függően automatikusan elindítanád a PSR-t.
+    - 🧠 **Könnyebb és Hurokmentes Prompts-ok:** Összefoglaljuk az állapotokat, és az AI rendelkezik eszközökkel, hogy ne telítődjön túl, amikor a történet bonyolulttá válik.
+
+****************************************************************************************************
 24/02/2026 12:32 - AI-alapú képalkotás, narratív fejlesztések és irányítás - Beta_v058
 ****************************************************************************************************
 - What's New (HU):

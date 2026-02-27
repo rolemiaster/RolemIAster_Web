@@ -1,4 +1,33 @@
 ****************************************************************************************************
+27/02/2026 16:46 - Synkronisering av kampinnlasting og turflyt - Beta_v059
+****************************************************************************************************
+- What's New (NO):
+  - **Kamp og spillflyt**
+    - ⚔️ **Smidigere angrep:** ikke mer venting på tomgang når handlingen din var i kø, og spillinnlasting gjenoppretter faktiske beslutninger, ikke spøkelsesknapper.
+    - 🧭 **Synkronisert scene:** det du ser på skjermen gjenspeiler kampens nåværende tilstand, og kun fiender som er til stede på din posisjon vises.
+    - 🚫 **Mindre intern byråkrati:** vi har ryddet bort unødvendige sjekker slik at spillet kan fortsette uten administrative flaskehalser.
+  
+  - **Visuell motor og avansert panel**
+    - 🧹 **Ren velger:** tekniske mapper er skjult og filtrering er normalisert for å velge modeller uten støy.
+    - ️ **Stabile bakgrunner:** hvis et bilde er under lasting, forstyrrer det ikke de neste; i tillegg unngår kampinnlasting overraskende regenereringer.
+    - 🎛️ **Forbedret bildekontrollpanel:** gjengivelsesstrategi, endringskraft og minimale trinn kontrolleres nå fra det avanserte grensesnittet med kontekstuell hjelp.
+  
+  - **Karakterskaping og portretter**
+    - 🧍 **Kjønn synlig:** du velger Mann/Kvinne i grunnleggende skjema, og hele flyten (portretter, interne data) respekterer dette valget.
+    - 👶➡️🧓 **Forståelig alder:** vi bruker narrative trinn slik at AI-en tegner livsstadiet bedre.
+    - 🧼 **Rensede prompter:** vi fjerner teknisk støy før vi sender bildeforespørsler, og dette merkes på stabiliteten til portrettene.
+    -  **Pålitelige karakterkort:** AI-en kan ikke "glemme" obligatoriske attributter eller pumpe opp startinventaret.
+  
+  - **Narrativ, regler og RAG**
+    - 🚀 **Mer direkte ankomst av spillere:** startscenen bruker strenge JSON-kontrakter og unngår rare kontekstblandinger.
+    -  **Fokusert RAG:** kun tillatte røtter indekseres, og karakterkortet som sendes til prompten inneholder sammendrag av effekter for å spare tokens.
+  
+  - **AI-konfigurasjon og PSR**
+    - 🎛️ **Ny PSR-kontroll Fase 1:** bestem om du vil ha kirurgisk modus alltid i utforskning eller kun når prompten presser.
+    - 📏 **Justerbar terskel (95% standard):** juster hvor mye slingringsmonn du gir før du utløser automatisk PSR basert på maskinvaren din.
+    - 🧠 **Lettere prompter uten looper:** vi oppsummerer tilstander, og AI-en har verktøy for ikke å bli overbelastet når historien blir kompleks.
+
+****************************************************************************************************
 24/02/2026 12:32 - KI-bildegenerering, narrative forbedringer og kontroll - Beta_v058
 ****************************************************************************************************
 - What's New (NO):

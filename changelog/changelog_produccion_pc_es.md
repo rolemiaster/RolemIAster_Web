@@ -1,4 +1,33 @@
 ****************************************************************************************************
+27/02/2026 16:46 - Sincronización de Carga en Combate y Flujo de Turnos - Beta_v059
+****************************************************************************************************
+- Novedades (ES):
+  - **Combate y ritmo de partida**
+    - ⚔️ **Asaltos más fluidos:** ya no hay pulsaciones en vacío cuando tu acción estaba en cola y la carga de partidas devuelve decisiones reales, no botones fantasma.
+    - 🧭 **Escena sincronizada:** lo que ves en pantalla refleja el estado actual del combate y solo aparecen enemigos presentes en tu ubicación.
+    - 🚫 **Menos papeleo interno:** depuramos comprobaciones inútiles para que la partida avance sin atascos administrativos.
+  
+  - **Motor visual y panel avanzado**
+    - 🧹 **Selector limpio:** se ocultan carpetas técnicas y se normaliza el filtrado para elegir modelos sin ruido.
+    - �️ **Fondos estables:** si una imagen está en marcha no atropella a las siguientes; además, la carga en combate evita regeneraciones sorpresa.
+    - 🎛️ **Panel de imagen vitaminado:** estrategia de render, fuerza de cambio y pasos mínimos ahora se controlan desde la interfaz avanzada con ayuda contextual.
+  
+  - **Creación de personaje y retratos**
+    - 🧍 **Sexo a la vista:** eliges Masculino/Femenino en el formulario base y todo el flujo (retratos, datos internos) respeta esa elección.
+    - 👶➡️🧓 **Edad entendible:** usamos tramos narrativos para que la IA dibuje mejor la etapa vital.
+    - 🧼 **Prompts higienizados:** limpiamos ruido técnico antes de enviar peticiones de imagen y eso se nota en la estabilidad de los retratos.
+    - � **Fichas fiables:** la IA no puede “olvidar” atributos obligatorios ni inflar el inventario inicial.
+  
+  - **Narrativa, reglas y RAG**
+    - 🚀 **Llegada de PJ más directa:** la escena inicial usa contratos JSON estrictos y evita mezclas raras de contexto.
+    - � **RAG enfocado:** solo se indexan las raíces permitidas y la ficha enviada al prompt lleva resúmenes de efectos para ahorrar tokens.
+  
+  - **Configuración IA y PSR**
+    - 🎛️ **Nuevo control PSR Fase 1:** decide si quieres el modo quirúrgico siempre en exploración o solo cuando el prompt aprieta.
+    - 📏 **Umbral ajustable (95% default):** afina cuánto margen das antes de disparar PSR automático según tu hardware.
+    - 🧠 **Prompts más ligeros y sin bucles:** resumimos estados y la IA dispone de herramientas para no saturarse cuando la historia se complica.
+
+****************************************************************************************************
 24/02/2026 12:32 - Generación de Imágenes por IA, Mejoras Narrativas y Control - Beta_v058
 ****************************************************************************************************
 - Novedades (ES):
