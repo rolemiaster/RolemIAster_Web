@@ -1,18 +1,17 @@
-# 📢 Zpráva od vývojáře (Early Access)
+📢 Zpráva od vývojáře (předběžný přístup)
+Vítejte v RolemIAster. Než se ponoříte do svého dalšího velkého dobrodružství, chci vám ukrást minutu, abych objasnil pár věcí (slibuji, že budu stručný, kostky čekají).
 
-Vítejte v **RolemIAster**. Než se ponoříte do svého dalšího velkého dobrodružství, chci vás na chvilku zdržet, abych si ujasnil pár věcí (slibuji, že to bude stručné, kostky na vás čekají).
+Tato hra je ve fázi předběžného přístupu (Early Access).
+Jsem osamělý vývojář – ano, jen já, moje klávesnice a litry kávy – což znamená, že dělám, co můžu, ale někdy nestíhám všechno. Předem se omlouvám, pokud mi bude trvat, než opravím nějakého záludného buga, implementuji funkci, po které toužíte, nebo okamžitě odpovím na Discordu a na fórech Steamu. Žongluji, ale ještě mi nenarostly žádné další chapadla.
 
-**Tato hra je ve fázi předběžného přístupu (Early Access).**
-Jsem sólový vývojář — ano, jen já, moje klávesnice a litry kávy — což znamená, že dělám, co můžu, ale někdy nestíhám všechno včas. Předem se omlouvám, pokud mi bude trvat oprava nějakého záludného *bugu*, implementace funkce, kterou si přejete, nebo okamžitá odpověď na Discordu a fórech na Steamu. Dělám žonglérské kousky, ale zatím mi nenrostly žádné extra chapadla.
+Pokud jste čekali bezchybnou AAA produkci, obávám se, že jste na špatném místě (prozatím). Hra je ve velmi rané fázi vývoje a upřímně řečeno, jen ti odvážní, kteří rozumí a podporují tento typ nezávislých projektů, mají záda (a trpělivost) to vydržet.
 
-Pokud jste čekali bezchybnou AAA produkci, obávám se, že **jste na špatném místě** (prozatím). Hra je ve velmi rané fázi vývoje, a upřímně řečeno, jen ti nejodvážnější, kteří chápou a podporují tento typ nezávislých projektů, mají záda (a trpělivost) na to, aby to ustáli.
+Pokud máte pocit, že je hra pro vás ještě příliš nedokončená, nikdo se nebude zlobit, pokud požádáte o vrácení peněz. Naopak, budu rád, když se v budoucnu vrátíte – a zaplatíte 40 nebo 60 USD, až bude hra vyleštěná a dokončená 😉. Současná cena je tak nízká právě z důvodu jejího současného stavu vývoje. Pokud vás to nepřesvědčí, není o čem mluvit, zůstaneme přáteli.
 
-Pokud máte pocit, že je hra pro vás stále příliš nedokončená, **nikdo se nebude zlobit, pokud požádáte o vrácení peněz**. Naopak, budu rád, když se k nám v budoucnu vrátíte — a zaplatíte 40 nebo 60 USD, až bude hra vyleštěná a hotová 😉. Aktuální cena je tak nízká právě z důvodu jejího současného stavu vývoje. Pokud vás to nepřesvědčí, není o čem mluvit, zůstaneme přáteli.
+Vzhledem k povaze tohoto bláznivého projektu je moje vděčnost nekonečná všem, kteří se navzdory obtížím a nepřízním procesu rozhodnou zůstat a přispět. Jen hlášením bugů nebo navrhováním vylepšení jste dosáhli toho, že se hra za několik týdnů, co je venku, brutálně zlepšila.
 
-Ale vzhledem k povaze tohoto šíleného projektu, **mé poděkování je nesmírné** pro každého, kdo se i přes potíže a nepříjemnosti procesu rozhodne zůstat a přispět. Pouhým hlášením *bugů* nebo navrhováním vylepšení jste pomohli hru za několik týdnů od vydání brutálně vylepšit.
+To je motor, který bude i nadále pohánět RolemIAster, aby se stal hrou na míru, zejména pro ty z vás, kteří tu byli a věřili projektu od prvního dne.
 
-To je motor, který bude i nadále pohánět, aby se z **RolemIAster** stala hra na míru, zejména pro ty z vás, kteří tu byli a věřili v projekt od prvního dne.
+Děkuji za vaši trpělivost, vaši podporu a ať jsou kritici na vaší straně!
 
-Děkuji za vaši trpělivost, podporu a ať jsou kritici na vaší straně!
-
-<!-- source_hash: cd43eab5 -->
+<!-- source_hash: 302ab989 -->

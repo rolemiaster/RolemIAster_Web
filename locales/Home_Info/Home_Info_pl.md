@@ -1,18 +1,17 @@
-# 📢 Wiadomość od Dewelopera (Wczesny Dostęp)
+📢 Wiadomość od Dewelopera (Wczesny Dostęp)
+Witamy w RolemIAster. Zanim zanurzysz się w swoją następną wielką przygodę, chciałbym zająć Ci minutę, aby wyjaśnić kilka spraw (obiecuję krótko, bo kości już na Ciebie czekają).
 
-Witaj w **RolemIAster**. Zanim zanurzysz się w swoją kolejną wielką przygodę, chcę poświęcić Ci minutę, aby kilka rzeczy wyjaśnić (obiecuję być zwięzły, niech kości czekają).
+Ta gra jest we wczesnym dostępie (Early Access).
+Jestem jednoosobowym deweloperem – tak, tylko ja, mój klawiatura i litry kawy – co oznacza, że robię wszystko, co mogę, ale czasami nie zdążam ze wszystkim. Z góry przepraszam, jeśli zajmie mi to chwilę, aby naprawić jakiegoś trudnego buga, zaimplementować funkcję, której tak bardzo pragniesz, lub natychmiast odpowiedzieć na Discordzie i forach Steam. Wykonuję wiele zadań jednocześnie, ale jeszcze nie wyrosłem na dodatkowe macki.
 
-**Ta gra znajduje się w fazie Wczesnego Dostępu (Early Access).**
-Jestem samotnym deweloperem — tak, tylko ja, mój klawiatura i litry kawy — co oznacza, że robię, co mogę, ale czasami nie nadążam ze wszystkim. Z góry przepraszam, jeśli naprawa jakiegoś nieuchwytnego *buga*, implementacja funkcji, której tak bardzo pragniesz, lub natychmiastowa odpowiedź na Discordzie i forach Steam zajmą mi trochę czasu. Robię co w mojej mocy, ale jeszcze nie wyrosły mi dodatkowe macki.
+Jeśli oczekiwałeś bezbłędnej, wysokobudżetowej produkcji AAA, obawiam się, że jesteś w złym miejscu (na razie). Gra jest na bardzo wczesnym etapie rozwoju i szczerze mówiąc, tylko odważni, którzy rozumieją i wspierają tego typu niezależne projekty, mają odpowiednią postawę (i cierpliwość), aby to wytrzymać.
 
-Jeśli spodziewałeś się dopracowanej produkcji AAA bez skazy, obawiam się, że **jesteś w złym miejscu** (przynajmniej na razie). Gra jest we wczesnym stadium rozwoju i szczerze mówiąc, tylko odważni, którzy rozumieją i wspierają tego typu niezależne projekty, mają plecy (i cierpliwość), aby to znieść.
+Jeśli uważasz, że gra jest jeszcze dla Ciebie zbyt niedopracowana, nikt się nie obrazi, jeśli poprosisz o zwrot. Wręcz przeciwnie, będę zachwycony, mogąc Cię powitać z powrotem w przyszłości – i że zapłacisz 40 lub 60 USD, gdy gra będzie dopracowana i ukończona 😉. Obecna cena jest tak niska właśnie ze względu na jej aktualny stan rozwoju. Jeśli to Cię nie przekonuje, nie ma o czym rozmawiać, pozostajemy przyjaciółmi.
 
-Jeśli uważasz, że gra jest dla Ciebie jeszcze zbyt niedopracowana, **nikt się nie obrazi, jeśli poprosisz o zwrot pieniędzy**. Wręcz przeciwnie, chętnie powitam Cię ponownie w przyszłości — i będziesz mógł zapłacić 40 lub 60 USD, gdy gra będzie dopracowana i ukończona 😉. Obecna cena jest tak niska właśnie ze względu na spójność z obecnym stanem rozwoju. Jeśli to Cię nie przekonuje, nie ma o czym więcej rozmawiać, zostańmy przyjaciółmi.
+Biorąc pod uwagę naturę tego szalonego projektu, moja wdzięczność jest nieskończona dla każdego, kto pomimo trudności i przeciwności losu procesu, decyduje się pozostać i wnieść swój wkład. Po prostu zgłaszając błędy lub sugerując ulepszenia, sprawiliście, że gra znacznie się poprawiła w ciągu zaledwie kilku tygodni od premiery.
 
-Jednakże, biorąc pod uwagę naturę tego szalonego projektu, **moja wdzięczność jest ogromna** dla każdego, kto pomimo trudności i przeciwności procesu decyduje się zostać i pomóc. Już samo zgłaszanie *bugów* lub sugerowanie usprawnień sprawiło, że gra znacznie się poprawiła w ciągu kilku tygodni od premiery.
+To jest silnik, który będzie nadal działał, aby RolemIAster stał się grą stworzoną na miarę, szczególnie dla tych, którzy byli przy nas, ufając projektowi od pierwszego dnia.
 
-To jest silnik, który będzie nadal działał, aby **RolemIAster** stał się grą stworzoną na miarę, szczególnie dla tych, którzy byli tam, ufając projektowi od pierwszego dnia.
+Dziękuję za Twoją cierpliwość, Twoje wsparcie i niech krytycy będą po Twojej stronie!
 
-Dziękuję za cierpliwość, wsparcie i niech krytycy będą po Twojej stronie!
-
-<!-- source_hash: cd43eab5 -->
+<!-- source_hash: 302ab989 -->
