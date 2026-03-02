@@ -1,4 +1,26 @@
 ****************************************************************************************************
+02/03/2026 12:54 - Grondige Herziening van de AI-Kern - Beta_v060
+****************************************************************************************************
+- What's New (NL):
+  - **🧠 Grondige Herziening van de AI-Kern**
+    - ⚡ **Snellere antwoorden:** Ik heb de motor van het spel herschreven zodat de AI beter onthoudt wat het al heeft verwerkt. Praktisch gezien: minder tijd staren naar het laadscherm tussen beurten. De motor hergebruikt nu eerdere berekeningen in plaats van helemaal opnieuw te beginnen telkens als je een actie onderneemt. (Ja, dat deed het eerst. Nee, ik ben er niet trots op.)
+    - 🧹 **Schonere geheugen:** De spelgeschiedenis wordt nu opgeslagen zonder technische ruis vanaf het moment dat het wordt geschreven, niet pas bij het lezen. Resultaat: de AI heeft meer ruimte om je verhaal te onthouden en minder tokens verspild aan interne gegevens die het nooit had hoeven zien.
+    - 🎯 **Regels waar ze horen:** Aanvullende regels die de AI raadpleegt om zijn antwoorden te verrijken, zijn verplaatst zodat ze het cachine-systeem niet verstoren. Het effect is voor jou onzichtbaar, maar de motor is er bij elke beurt blij mee (een beetje extra snelheid kan geen kwaad).
+  
+  - ** Qwen3 ontketend: volledig redeneren ingeschakeld**
+    - 🚀 **Diepgaande reflectie:** Modellen met redeneervermogen (Qwen3, DeepSeek-R1...) hebben nu hun volledige potentieel ontsloten. In plaats van "blind" te gaan, redeneert de AI intern vóór elk antwoord: het plant personagekaarten, beoordeelt de narratieve consistentie met jouw verhaal, en vermijdt fouten zoals dubbele inventarissen of onvolledige attributen. Het resultaat is een merkbaar intelligentere en consistentere AI.
+    - 🧹 **Transparant voor jou:** Al dat redeneren gebeurt achter de schermen. De motor ruimt automatisch de "interne monoloog" van de AI op voordat het antwoord wordt weergegeven. Jij ziet alleen het eindresultaat, gepolijster.
+  
+  - **⚡ Betrouwbaarder spel starten**
+    - 🛡️ **Vaarwel vastlopers bij de eerste beurt:** We hebben een oorzaak van eeuwig wachten bij het starten van een nieuw spel weggenomen. Vroeger, als de AI een handelspersonage genereerde zonder de handelsregels te kennen (omdat die er in de eerste beurt niet zijn), probeerde de motor dit 3 keer te corrigeren voordat hij opgaf, wat leidde tot meer dan een minuut nutteloos wachten. Nu lost het dit onmiddellijk op.
+    - 📖 **Lore bestand tegen creatieve AI:** Als de AI enthousiast raakt en de achtergrond van de wereld in technisch formaat genereert in plaats van narratieve tekst, detecteert de motor dit en extraheert automatisch de schone geschiedenis. Jouw lore komt altijd zoals het hoort.
+    - 🧹 **Onberispelijke interface:** Ik heb de AI geleerd om niet "in code te praten". Vroeger toonden beslissingsknoppen of opmerkingen van de meester soms vreemde interne variabelen (zoals *Vluchten (move to loc_cripta)*). Nu is alles schoon en is het model gedwongen om met je te communiceren in de humoristische toon die je hebt gekozen (of de AI deze parameter respecteert, hangt af van zijn humeur).
+  
+  - **🌍 Taalcorrecties**
+    - 🗣️ **Locaties in jouw taal:** Locaties gegenereerd door de AI respecteren nu de ingestelde speltaal. Als je in het Engels speelt, zie je niet langer "Distrito de la Costa Oeste" maar de Engelse naam. (Oops.)
+    - 🔘 **Gelokaliseerde knoppen:** De noodknop "Doorgaan" spreekt nu jouw taal in plaats van altijd in het Spaans te verschijnen.
+
+****************************************************************************************************
 27/02/2026 16:46 - Synchronisatie van Gevechtssaving en Beurtstroom - Beta_v059
 ****************************************************************************************************
 - What's New (NL):

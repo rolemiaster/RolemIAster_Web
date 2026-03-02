@@ -1,4 +1,26 @@
 ****************************************************************************************************
+02/03/2026 12:54 - Yapay Zeka Çekirdeğinde Kapsamlı Yeniden Yapılandırma - Beta_v060
+****************************************************************************************************
+- What's New (TR):
+  - **🧠 Yapay Zeka Çekirdeği Yeniden Yapılandırması**
+    - ⚡ **Daha Hızlı Yanıtlar:** Yapay zekanın daha önce işlediği şeyleri daha iyi hatırlamasını sağlamak için oyunun beynini yeniden yazdım. Pratik terimlerle: sıra geçişleri arasındaki yükleme ekranına bakma süresi azaldı. Motor artık her hamlenizde sıfırdan başlamak yerine önceki çalışmaları yeniden kullanıyor. (Evet, eskiden böyle yapıyordu. Hayır, bununla gurur duymuyorum.)
+    - 🧹 **Daha Temiz Bellek:** Oyun geçmişi, yazıldığı andan itibaren teknik çöp olmadan saklanıyor, okunduğu zaman değil. Sonuç: yapay zekanın hikayenizi hatırlaması için daha fazla alanı var ve hiç görmesi gerekmeyen dahili verilerle boşa harcanan daha az token var.
+    - 🎯 **Kurallar Yerli Yerinde:** Yapay zekanın yanıtlarını zenginleştirmek için başvurduğu ek kurallar, önbellek sistemine müdahale etmemeleri için yeniden düzenlendi. Etkisi sizden gizli, ancak motor her turda bunu takdir ediyor (biraz daha hız fena olmaz).
+  
+  - ** Qwen3 Serbest Bırakıldı: Tam Akıl Yürütme Etkinleştirildi**
+    - 🚀 **Derin Düşünme:** Akıl yürütme yeteneğine sahip modeller (Qwen3, DeepSeek-R1...) artık potansiyellerini tam olarak ortaya çıkarıyor. Yapay zeka "körlemesine" gitmek yerine, her yanıttan önce dahili olarak akıl yürütüyor: karakter kartlarını planlıyor, hikayenizle anlatısal tutarlılığı değerlendiriyor ve yinelenen envanterler veya eksik özellikler gibi hatalardan kaçınıyor. Sonuç, dikkate değer ölçüde daha akıllı ve tutarlı bir yapay zeka.
+    - 🧹 **Sizin İçin Şeffaf:** Tüm bu akıl yürütme perde arkasında gerçekleşiyor. Motor, yanıtı size göstermeden önce yapay zekanın "iç monologunu" otomatik olarak temizliyor. Siz sadece daha cilalı olan nihai sonucu görüyorsunuz.
+  
+  - **⚡ Daha Güvenilir Oyun Başlangıcı**
+    - 🛡️ **İlk Tur Kilitlenmelerine Elveda:** Yeni bir oyuna başlarken yaşanan sonsuz beklemelerin bir nedenini ortadan kaldırdık. Eskiden, yapay zeka ticaret kurallarını bilmeden (çünkü ilk turda yok) bir tüccar karakteri oluşturursa, motor pes etmeden önce bunu 3 kez düzeltmeye çalışır, bu da faydasız bir dakikadan fazla beklemeye neden olurdu. Şimdi anında çözüyor.
+    - 📖 **Yaratıcı Yapay Zekaya Karşı Dayanıklı Lore:** Yapay zeka heyecanlanıp dünya arka planını anlatısal metin yerine teknik formatta oluşturursa, motor bunu tespit eder ve temiz hikayeyi otomatik olarak çıkarır. Lore'unuz her zaman olması gerektiği gibi geliyor.
+    - 🧹 **Kusursuz Arayüz:** Yapay zekaya "kodla konuşmamayı" öğrettim. Eskiden, karar düğmeleri veya oyun yöneticisi yorumları bazen tuhaf dahili değişkenler gösteriyordu (örneğin *Kaç (move to loc_cripta)*). Şimdi her şey temiz ve modelin sizinle seçtiğiniz mizah tonunu kullanarak iletişim kurması zorlandı (bu parametreyi dikkate alması, yapay zekanın ruh haline bağlıdır).
+  
+  - **🌍 Dil Düzeltmeleri**
+    - 🗣️ **Yereller Dilinizde:** Yapay zeka tarafından oluşturulan konumlar artık oyunda yapılandırılan dile saygı duyuyor. İngilizce oynuyorsanız, artık "West Coast District" yerine İngilizce adı göreceksiniz. (Ups.)
+    - 🔘 **Yerelleştirilmiş Düğmeler:** "Devam Et" acil durum düğmesi artık her zaman İspanyolca görünmek yerine sizin dilinizde konuşuyor.
+
+****************************************************************************************************
 27/02/2026 16:46 - Savaşta Yükleme Senkronizasyonu ve Tur Akışı - Beta_v059
 ****************************************************************************************************
 - What's New (TR):

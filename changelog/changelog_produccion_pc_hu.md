@@ -1,4 +1,26 @@
 ****************************************************************************************************
+02/03/2026 12:54 - AI Mag Alapvető Újraépítése - Beta_v060
+****************************************************************************************************
+- What's New (HU):
+  - **🧠 AI Mag Alapvető Újraépítése**
+    - ⚡ **Gyorsabb válaszok:** Újjáépítettem a játék agyát, hogy az AI jobban emlékezzen arra, amit már feldolgozott. Gyakorlatiasan: kevesebb időt töltesz a töltőképernyő előtt ülve körök között. A motor most már újra felhasználja a korábbi munkát, ahelyett, hogy nulláról indulna minden egyes lépésnél. (Igen, korábban ezt tette. Nem, nem vagyok büszke rá.)
+    - 🧹 **Tisztább memória:** A játéktörténet mostantól a technikai "szemét" nélkül tárolódik el, attól a pillanattól kezdve, ahogy megíródik, nem pedig olvasáskor. Eredmény: az AI-nak több helye marad a történeted megjegyzésére, és kevesebb "token" vész kárba belső adatokon, amelyeket soha nem kellett volna látnia.
+    - 🎯 **Szabályok a helyükön:** Az AI által használt kiegészítő szabályok, amelyek gazdagítják a válaszait, áthelyezésre kerültek, hogy ne zavarják a gyorsítótár rendszert. A hatás láthatatlan az Ön számára, de a motor minden körben hálás érte (egy kis plusz sebesség sosem árt).
+  
+  - ** Qwen3 szabadon: teljes érvelés aktiválva**
+    - 🚀 **Mély gondolkodás:** Az érvelési képességgel rendelkező modellek (Qwen3, DeepSeek-R1...) mostantól teljes potenciáljukat ki tudják aknázni. A "vakon" haladás helyett az AI minden válasz előtt belsőleg érvel: megtervezi a karakterkártyákat, értékeli a narratív koherenciát a történeteddel, és elkerüli az olyan hibákat, mint az ismétlődő leltárak vagy a hiányos attribútumok. Az eredmény egy észrevehetően intelligensebb és következetesebb AI.
+    - 🧹 **Átlátszó az Ön számára:** Ez az érvelés mind a színfalak mögött történik. A motor automatikusan megtisztítja az AI "belső monológját", mielőtt megmutatná Önnek a választ. Ön csak a végeredményt látja, amely csiszoltabb.
+  
+  - **⚡ Megbízhatóbb játékindítás**
+    - 🛡️ **Búcsú az első körös lefagyásoktól:** Elhárítottunk egy okot az örök várakozásokra egy új játék megkezdésekor. Korábban, ha az AI generált egy kereskedő karaktert anélkül, hogy ismerte volna a kereskedelmi szabályokat (mivel az első körben nincsenek meg), a motor 3-szor próbálta meg kijavítani, mielőtt feladta volna, ami több mint egy percnyi haszontalan várakozást eredményezett. Most azonnal megoldja.
+    - 📖 **AI által generált lore próbára téve:** Ha az AI túlságosan belemelegszik, és a világ hátterét technikai formátumban generálja a narratív szöveg helyett, a motor ezt érzékeli, és automatikusan kinyeri a tiszta történetet. A lore mindig úgy érkezik, ahogy kell.
+    - 🧹 **Hibátlan felület:** Megtanítottam az AI-t, hogy ne "beszéljen kódul". Korábban néha a döntési gombok vagy a mester kommentjei furcsa belső változókat jelenítettek meg (pl. *Elmenekülni (move to loc_cripta)*). Most minden tiszta, és a modellt arra kényszerítettük, hogy az Ön által választott humoros hangnemben kommunikáljon Önnel (ennek a paraméternek a tiszteletben tartása az AI hangulatától függ).
+  
+  - **🌍 Nyelvi javítások**
+    - 🗣️ **Helyszínek a nyelvén:** Az AI által generált helyszínek mostantól tiszteletben tartják a játékban beállított nyelvet. Ha angolul játszik, már nem fogja látni a "Nyugati Parti Parti Kerület" helyett az angol nevét. (Upsz.)
+    - 🔘 **Lokalizált gombok:** Az "Folytatás" vészhelyzeti gomb mostantól az Ön nyelvén beszél ahelyett, hogy mindig spanyolul jelenne meg.
+
+****************************************************************************************************
 27/02/2026 16:46 - Szinkronizált Harci Töltés és Körfolyamat - Beta_v059
 ****************************************************************************************************
 - What's New (HU):

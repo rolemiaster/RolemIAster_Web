@@ -1,4 +1,26 @@
 ****************************************************************************************************
+02/03/2026 12:54 - Perombakan Total Inti AI - Beta_v060
+****************************************************************************************************
+- What's New (ID):
+  - **🧠 Perombakan Inti AI**
+    - ⚡ **Respons Lebih Cepat:** Saya telah menulis ulang otak game agar AI lebih mengingat apa yang telah diproses sebelumnya. Dalam praktiknya: lebih sedikit waktu menunggu layar pemuatan antar giliran. Mesin sekarang menggunakan kembali pekerjaan sebelumnya alih-alih memulai dari nol setiap kali Anda bertindak. (Ya, sebelumnya memang begitu. Tidak, saya tidak bangga karenanya.)
+    - 🧹 **Memori Lebih Bersih:** Riwayat permainan sekarang disimpan tanpa sampah teknis sejak ditulis, bukan saat dibaca. Hasilnya: AI memiliki lebih banyak ruang untuk mengingat cerita Anda dan lebih sedikit token terbuang untuk data internal yang tidak pernah perlu dilihatnya.
+    - 🎯 **Aturan yang Tepat:** Aturan pelengkap yang dikonsultasikan AI untuk memperkaya responsnya telah dipindahkan agar tidak mengganggu sistem cache. Efeknya tidak terlihat oleh Anda, tetapi mesin berterima kasih setiap giliran (sedikit lebih cepat tidak ada salahnya).
+  
+  - ** Qwen3 Dibebaskan: Penalaran Penuh Diaktifkan**
+    - 🚀 **Pemikiran Mendalam:** Model yang mampu bernalar (Qwen3, DeepSeek-R1...) kini potensinya telah sepenuhnya terbuka. Alih-alih bertindak "buta", AI bernalar secara internal sebelum setiap respons: merencanakan lembar karakter, mengevaluasi koherensi naratif dengan cerita Anda, dan menghindari kesalahan seperti inventaris ganda atau atribut yang tidak lengkap. Hasilnya adalah AI yang secara signifikan lebih cerdas dan konsisten.
+    - 🧹 **Transparan Bagi Anda:** Semua penalaran itu terjadi di balik layar. Mesin secara otomatis membersihkan "monolog internal" AI sebelum menampilkan respons kepada Anda. Anda hanya melihat hasil akhir yang lebih halus.
+  
+  - **⚡ Memulai Permainan Lebih Andal**
+    - 🛡️ **Selamat Tinggal Freeze Giliran Pertama:** Kami telah menghilangkan penyebab penantian yang tak berujung saat memulai permainan baru. Sebelumnya, jika AI menghasilkan karakter pedagang tanpa mengetahui aturan perdagangan (karena tidak memilikinya di giliran pertama), mesin akan mencoba memperbaikinya 3 kali sebelum menyerah, menyebabkan lebih dari satu menit penantian yang sia-sia. Sekarang terselesaikan secara instan.
+    - 📖 **Lore Kebal AI Kreatif:** Jika AI terlalu bersemangat dan menghasilkan latar belakang dunia dalam format teknis alih-alih teks naratif, mesin akan mendeteksinya dan secara otomatis mengekstrak cerita yang bersih. Lore Anda selalu tersaji sebagaimana mestinya.
+    - 🧹 **Antarmuka Sempurna:** Saya telah mengajari AI untuk tidak "berbicara dalam kode". Sebelumnya, terkadang tombol keputusan atau komentar master menampilkan variabel internal yang aneh (seperti *Melarikan diri (move to loc_cripta)*). Sekarang semuanya bersih dan model dipaksa untuk berkomunikasi dengan Anda menggunakan nada humor yang Anda pilih (menghormati parameter ini tergantung pada suasana hati AI).
+  
+  - **🌍 Perbaikan Bahasa**
+    - 🗣️ **Lokasi dalam Bahasa Anda:** Lokasi yang dihasilkan AI sekarang menghormati bahasa yang diatur dalam game. Jika Anda bermain dalam bahasa Inggris, Anda tidak akan lagi melihat "Distrito de la Costa Oeste" tetapi nama dalam bahasa Inggris. (Ups.)
+    - 🔘 **Tombol Terlokalisasi:** Tombol darurat "Lanjutkan" sekarang berbicara dalam bahasa Anda alih-alih selalu muncul dalam bahasa Spanyol.
+
+****************************************************************************************************
 27/02/2026 16:46 - Sinkronisasi Muat di Pertarungan dan Alur Giliran - Beta_v059
 ****************************************************************************************************
 - What's New (ID):

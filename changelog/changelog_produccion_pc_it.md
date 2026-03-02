@@ -1,4 +1,26 @@
 ****************************************************************************************************
+02/03/2026 12:54 - Ristrutturazione Completa del Nucleo IA - Beta_v060
+****************************************************************************************************
+- What's New (IT):
+  - **🧠 Ristrutturazione del Nucleo IA**
+    - ⚡ **Risposte più veloci:** Ho riscritto il "cervello" del gioco affinché l'IA ricordi meglio ciò che ha già elaborato. In termini pratici: meno tempo a fissare la schermata di caricamento tra un turno e l'altro. Il motore ora riutilizza il lavoro precedente invece di ricominciare da zero ogni volta che agisci. (Sì, prima lo faceva. No, non ne sono orgoglioso.)
+    - 🧹 **Memoria più pulita:** La cronologia della partita viene ora memorizzata senza "spazzatura" tecnica dal momento in cui viene scritta, non quando viene letta. Risultato: l'IA ha più spazio per ricordare la tua storia e meno "token" sprecati in dati interni che non aveva mai bisogno di vedere.
+    - 🎯 **Regole al loro posto:** Le regole supplementari consultate dall'IA per arricchire le sue risposte sono state ricollocate per non interferire con il sistema di cache. L'effetto è invisibile per te, ma il motore lo apprezza ad ogni turno (un po' più di velocità non guasta).
+  
+  - ** Qwen3 scatenato: ragionamento completo attivato**
+    - 🚀 **Pensiero profondo:** I modelli con capacità di ragionamento (Qwen3, DeepSeek-R1...) ora hanno il loro potenziale completamente sbloccato. Invece di procedere "alla cieca", l'IA ragiona internamente prima di ogni risposta: pianifica le schede dei personaggi, valuta la coerenza narrativa con la tua storia ed evita errori come inventari duplicati o attributi incompleti. Il risultato è un'IA notevolmente più intelligente e coerente.
+    - 🧹 **Trasparente per te:** Tutto questo ragionamento avviene "dietro le quinte". Il motore pulisce automaticamente il "monologo interiore" dell'IA prima di mostrarti la risposta. Tu vedi solo il risultato finale, più rifinito.
+  
+  - **⚡ Avvio di partita più affidabile**
+    - 🛡️ **Addio ai blocchi del primo turno:** Abbiamo eliminato una causa di attese infinite all'inizio di una nuova partita. Prima, se l'IA generava un personaggio mercante senza conoscere le regole del commercio (perché non le ha nel primo turno), il motore tentava di correggerlo 3 volte prima di arrendersi, causando più di un minuto di attesa inutile. Ora lo risolve all'istante.
+    - 📖 **Lore a prova di IA creativa:** Se l'IA si emoziona e genera il background del mondo in formato tecnico invece che in testo narrativo, il motore lo rileva ed estrae automaticamente la storia pulita. Il tuo lore arriva sempre come dovrebbe.
+    - 🧹 **Interfaccia impeccabile:** Ho insegnato all'IA a non "parlare in codice". Prima, a volte i pulsanti di decisione o i commenti del master mostravano strane variabili interne (come *Fuggire (move to loc_cripta)*). Ora tutto è pulito e il modello è stato forzato a comunicare con te usando il tono umoristico che hai scelto (il rispetto di questo parametro dipende dall'umore dell'IA).
+  
+  - **🌍 Correzioni linguistiche**
+    - 🗣️ **Luoghi nella tua lingua:** Le località generate dall'IA ora rispettano la lingua impostata nel gioco. Se giochi in inglese, non vedrai più "Distretto della Costa Ovest" ma il nome in inglese. (Ops.)
+    - 🔘 **Pulsanti localizzati:** Il pulsante di emergenza "Continua" ora parla la tua lingua invece di apparire sempre in castigliano.
+
+****************************************************************************************************
 27/02/2026 16:46 - Sincronizzazione del Caricamento in Combattimento e Flusso dei Turni - Beta_v059
 ****************************************************************************************************
 - What's New (IT):

@@ -1,4 +1,26 @@
 ****************************************************************************************************
+02/03/2026 12:54 - Grundig renovering af AI-kernen - Beta_v060
+****************************************************************************************************
+- What's New (DA):
+  - **🧠 Renovering af AI-kernen**
+    - ⚡ **Hurtigere svar:** Jeg har omskrevet spillets hjerne, så AI'en bedre husker, hvad den allerede har behandlet. Praktisk talt: mindre tid med at kigge på indlæsningsskærmen mellem ture. Motoren genbruger nu tidligere arbejde i stedet for at starte fra bunden hver gang du handler. (Ja, det gjorde den før. Nej, jeg er ikke stolt af det.)
+    - 🧹 **Renere hukommelse:** Spillets historik gemmes nu uden teknisk "skrammel" fra det øjeblik, den skrives, ikke når den læses. Resultat: AI'en har mere plads til at huske din historie og færre "tokens" spildt på interne data, den aldrig behøvede at se.
+    - 🎯 **Regler, hvor de hører hjemme:** Komplementære regler, som AI'en konsulterer for at berige sine svar, er blevet flyttet, så de ikke forstyrrer cachesystemet. Effekten er usynlig for dig, men motoren sætter pris på det i hver tur (en lille smule ekstra hastighed skader aldrig).
+  
+  - ** Qwen3 sluppet løs: fuld ræsonnering aktiveret**
+    - 🚀 **Dybere tænkning:** Modeller med ræsonneringsevner (Qwen3, DeepSeek-R1...) har nu deres potentiale fuldt udløst. I stedet for at gå "i blinde", ræsonnerer AI'en internt før hvert svar: den planlægger karakterark, evaluerer narrativ sammenhæng med din historie og undgår fejl som duplikerede inventarer eller ufuldstændige attributter. Resultatet er en markant klogere og mere konsistent AI.
+    - 🧹 **Gennemsigtig for dig:** Al denne ræsonnering sker "bag kulisserne". Motoren renser automatisk AI'ens "indre monolog", før den viser dig svaret. Du ser kun det endelige resultat, mere poleret.
+  
+  - **⚡ Mere pålidelig spilstart**
+    - 🛡️ **Farvel til "frys" ved første tur:** Vi har fjernet en årsag til evige ventetider, når man starter et nyt spil. Før, hvis AI'en genererede en handelskarakter uden at kende handelsreglerne (fordi den ikke har dem ved første tur), forsøgte motoren at rette det 3 gange, før den opgav, hvilket forårsagede mere end et minuts unødvendig ventetid. Nu løser den det øjeblikkeligt.
+    - 📖 **Lore immun over for kreativ AI:** Hvis AI'en bliver for entusiastisk og genererer verdens baggrundshistorie i teknisk format i stedet for narrativ tekst, registrerer motoren det og trækker den rene historie ud automatisk. Din lore kommer altid, som den skal.
+    - 🧹 **Fejlfri brugerflade:** Jeg har lært AI'en ikke at "tale kode". Før viste beslutningsknapper eller GM'ens kommentarer sommetider mærkelige interne variabler (som *Flygt (move to loc_scripture)*). Nu er alt rent, og modellen er blevet tvunget til at kommunikere med dig ved hjælp af den humor-tone, du har valgt (om denne parameter respekteres afhænger af AI'ens humør).
+  
+  - **🌍 Sprogkorrektioner**
+    - 🗣️ **Steder på dit sprog:** Steder genereret af AI'en respekterer nu det sprog, der er indstillet i spillet. Hvis du spiller på engelsk, vil du ikke længere se "Distrito de la Costa Oeste", men navnet på engelsk. (Ups.)
+    - 🔘 **Lokaliserede knapper:** Nødknappen "Fortsæt" taler nu dit sprog i stedet for altid at dukke op på spansk.
+
+****************************************************************************************************
 27/02/2026 16:46 - Synkronisering af Kampindlæsning og Turflow - Beta_v059
 ****************************************************************************************************
 - What's New (DA):

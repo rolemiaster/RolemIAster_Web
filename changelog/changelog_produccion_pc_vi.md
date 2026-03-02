@@ -1,4 +1,26 @@
 ****************************************************************************************************
+02/03/2026 12:54 - Đại tu cốt lõi AI - Beta_v060
+****************************************************************************************************
+- What's New (VI):
+  - **🧠 Đại tu Cốt lõi AI**
+    - ⚡ **Phản hồi nhanh hơn:** Tôi đã viết lại bộ não của trò chơi để AI ghi nhớ tốt hơn những gì đã xử lý. Nói một cách thực tế: ít thời gian chờ màn hình tải hơn giữa các lượt. Bộ máy giờ tái sử dụng công việc trước đó thay vì bắt đầu lại từ đầu mỗi khi bạn hành động. (Vâng, trước đây nó đã làm vậy. Không, tôi không tự hào về điều đó.)
+    - 🧹 **Bộ nhớ sạch hơn:** Lịch sử trò chơi giờ được lưu trữ không có rác kỹ thuật ngay từ thời điểm nó được ghi, chứ không phải khi nó được đọc. Kết quả: AI có nhiều không gian hơn để ghi nhớ lịch sử của bạn và ít token bị lãng phí vào dữ liệu nội bộ mà nó chưa bao giờ cần xem.
+    - 🎯 **Quy tắc đúng chỗ:** Các quy tắc bổ sung mà AI tham khảo để làm phong phú thêm phản hồi của nó đã được di chuyển để không can thiệp vào hệ thống bộ nhớ đệm. Hiệu ứng này là vô hình đối với bạn, nhưng bộ máy sẽ cảm ơn bạn trong mỗi lượt (thêm một chút tốc độ cũng không hại gì).
+  
+  - ** Qwen3 được giải phóng: kích hoạt suy luận toàn diện**
+    - 🚀 **Suy nghĩ sâu sắc:** Các mô hình có khả năng suy luận (Qwen3, DeepSeek-R1...) giờ đây đã được mở khóa hoàn toàn tiềm năng. Thay vì đi "mù quáng", AI suy luận nội bộ trước mỗi phản hồi: lên kế hoạch cho các thẻ nhân vật, đánh giá sự mạch lạc của cốt truyện với câu chuyện của bạn, và tránh các lỗi như trùng lặp kho hoặc thuộc tính không đầy đủ. Kết quả là một AI thông minh và nhất quán hơn đáng kể.
+    - 🧹 **Minh bạch với bạn:** Tất cả quá trình suy luận đó diễn ra hậu trường. Bộ máy tự động làm sạch "độc thoại nội tâm" của AI trước khi hiển thị phản hồi cho bạn. Bạn chỉ thấy kết quả cuối cùng, được trau chuốt hơn.
+  
+  - **⚡ Khởi động trò chơi đáng tin cậy hơn**
+    - 🛡️ **Tạm biệt tình trạng treo lượt đầu:** Chúng tôi đã loại bỏ một nguyên nhân gây ra thời gian chờ đợi vĩnh viễn khi bắt đầu một trò chơi mới. Trước đây, nếu AI tạo ra một nhân vật thương nhân mà không biết quy tắc giao dịch (vì nó không có chúng ở lượt đầu), bộ máy sẽ cố gắng sửa nó 3 lần trước khi bỏ cuộc, gây ra hơn một phút chờ đợi vô ích. Giờ đây, nó giải quyết ngay lập tức.
+    - 📖 **Lore chống lại AI sáng tạo:** Nếu AI quá hứng thú và tạo ra bối cảnh thế giới ở định dạng kỹ thuật thay vì văn bản tường thuật, bộ máy sẽ phát hiện và tự động trích xuất câu chuyện sạch sẽ. Lore của bạn luôn được truyền tải đúng cách.
+    - 🧹 **Giao diện hoàn hảo:** Tôi đã dạy AI không "nói chuyện bằng mã". Trước đây, đôi khi các nút quyết định hoặc bình luận của người dẫn chuyện hiển thị các biến nội bộ kỳ lạ (như *Bỏ chạy (move to loc_crypta)*). Giờ đây, mọi thứ đều sạch sẽ và mô hình đã bị buộc phải giao tiếp với bạn bằng giọng điệu hài hước mà bạn đã chọn (việc tôn trọng tham số này phụ thuộc vào tâm trạng của AI).
+  
+  - **🌍 Sửa lỗi ngôn ngữ**
+    - 🗣️ **Địa điểm bằng ngôn ngữ của bạn:** Các địa điểm do AI tạo ra giờ đây sẽ tôn trọng ngôn ngữ đã được cài đặt trong trò chơi. Nếu bạn chơi bằng tiếng Anh, bạn sẽ không còn thấy "Distrito de la Costa Oeste" mà sẽ là tên tiếng Anh. (Ối.)
+    - 🔘 **Nút đã được bản địa hóa:** Nút khẩn cấp "Tiếp tục" giờ đây sẽ nói ngôn ngữ của bạn thay vì luôn hiển thị bằng tiếng Tây Ban Nha.
+
+****************************************************************************************************
 27/02/2026 16:46 - Đồng bộ hóa Tải trận đấu và Luồng lượt đi - Beta_v059
 ****************************************************************************************************
 - What's New (VI):

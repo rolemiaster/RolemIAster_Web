@@ -1,4 +1,26 @@
 ****************************************************************************************************
+02/03/2026 12:54 - Refacerea Completă a Nucleului AI - Beta_v060
+****************************************************************************************************
+- What's New (RO):
+  - **🧠 Refacerea Nucleului AI**
+    - ⚡ **Răspunsuri mai rapide:** Am rescris creierul jocului pentru ca AI-ul să își amintească mai bine ce a procesat deja. În termeni practici: mai puțin timp petrecut în fața ecranului de încărcare între ture. Motorul reutilizează acum munca anterioară în loc să înceapă de la zero de fiecare dată când acționezi. (Da, înainte făcea asta. Nu, nu mă mândresc cu asta.)
+    - 🧹 **Memorie mai curată:** Istoricul jocului este acum stocat fără „gunoi” tehnic din momentul scrierii, nu din momentul citirii. Rezultat: AI-ul are mai mult spațiu pentru a-și aminti istoricul tău și mai puține token-uri irosite pe date interne pe care nu a trebuit niciodată să le vadă.
+    - 🎯 **Reguli la locul lor:** Regulile complementare pe care AI-ul le consultă pentru a-și îmbogăți răspunsurile au fost relocate pentru a nu interfera cu sistemul de caching. Efectul este invizibil pentru tine, dar motorul îl apreciază la fiecare tură (un pic de viteză în plus nu strică niciodată).
+  
+  - ** Qwen3 dezlănțuit: raționamentul complet activat**
+    - 🚀 **Gândire profundă:** Modelele cu capacitate de raționament (Qwen3, DeepSeek-R1...) își au acum potențialul complet deblocat. În loc să meargă „orb”, AI-ul raționează intern înainte de fiecare răspuns: planifică fișele personajelor, evaluează coerența narativă cu istoria ta și evită erori precum inventare duplicate sau atribute incomplete. Rezultatul este un AI remarcabil de mai inteligent și mai consistent.
+    - 🧹 **Transparent pentru tine:** Tot acest raționament se întâmplă în culise. Motorul curăță automat „monologul intern” al AI-ului înainte de a-ți afișa răspunsul. Tu vezi doar rezultatul final, mai șlefuit.
+  
+  - **⚡ Pornire de joc mai fiabilă**
+    - 🛡️ **Adio blocajelor din prima tură:** Am eliminat o cauză a așteptărilor eterne la începutul unui joc nou. Înainte, dacă AI-ul genera un personaj comerciant fără să știe regulile de comerț (deoarece nu le are în prima tură), motorul încerca să corecteze de 3 ori înainte de a renunța, provocând mai mult de un minut de așteptare inutilă. Acum se rezolvă instantaneu.
+    - 📖 **Lore la testul AI-ului creativ:** Dacă AI-ul se entuziasmează și generează fundalul lumii în format tehnic în loc de text narativ, motorul îl detectează și extrage automat povestea curată. Lore-ul tău ajunge întotdeauna așa cum trebuie.
+    - 🧹 **Interfață impecabilă:** L-am învățat pe AI să nu „vorbească în cod”. Înainte, uneori butoanele de decizie sau comentariile maestrului de joc afișau variabile interne ciudate (precum *Fugi (move to loc_cripta)*). Acum totul este curat și modelul a fost forțat să comunice cu tine folosind tonul de umor pe care l-ai ales (respectarea acestui parametru depinde de starea de spirit a AI-ului).
+  
+  - **🌍 Corectări de limbaj**
+    - 🗣️ **Locații în limba ta:** Locațiile generate de AI respectă acum limba configurată în joc. Dacă joci în engleză, nu vei mai vedea „Distrito de la Costa Oeste” ci numele în engleză. (Ups.)
+    - 🔘 **Butoane localizate:** Butonul de urgență „Continuare” acum vorbește limba ta în loc să apară mereu în castiliană.
+
+****************************************************************************************************
 27/02/2026 16:46 - Sincronizarea Încărcării în Luptă și Fluxul de Tururi - Beta_v059
 ****************************************************************************************************
 - What's New (RO):

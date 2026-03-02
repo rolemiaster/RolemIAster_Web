@@ -1,4 +1,26 @@
 ****************************************************************************************************
+02/03/2026 12:54 - Tekoäly-ytimen täysi uudistus - Beta_v060
+****************************************************************************************************
+- What's New (FI):
+  - **🧠 Tekoäly-ytimen uudistus**
+    - ⚡ **Nopeammat vastaukset:** Pelin aivot on kirjoitettu uusiksi niin, että tekoäly muistaa paremmin jo käsitellyn tiedon. Käytännössä tämä tarkoittaa: vähemmän odottelua latausnäytöllä vuoron välissä. Moottori hyödyntää nyt aiempaa työtä sen sijaan, että aloittaisi alusta joka kerta kun toimit. (Kyllä, se teki niin ennen. Ei, en ole siitä ylpeä.)
+    - 🧹 **Puhtaampi muisti:** Pelin historia tallennetaan nyt teknisestä "roskasta" vapaana kirjoitushetkellä, ei lukemishetkellä. Tuloksena: tekoälyllä on enemmän tilaa muistaa tarinasi ja vähemmän tokeneita menee hukkaan sisäisiin tietoihin, joita se ei koskaan tarvinnut. 
+    - 🎯 **Säännöt paikallaan:** Tekoälyn käyttämät täydentävät säännöt, joilla se rikastuttaa vastauksiaan, on siirretty niin, etteivät ne häiritse välimuistijärjestelmää. Vaikutus on sinulle näkymätön, mutta moottori arvostaa sitä joka vuorolla (pieni nopeuslisä ei haittaa).
+  
+  - ** Qwen3 valloilleen: täysi päättelykyky käyttöön**
+    - 🚀 **Syvällinen ajattelu:** Päättelykykyiset mallit (Qwen3, DeepSeek-R1...) saavat nyt täyden potentiaalinsa käyttöön. Sen sijaan, että tekoäly toimisi "sokeasti", se syventyy päättelyyn ennen jokaista vastausta: suunnittelee hahmokortteja, arvioi tarinan johdonmukaisuutta kanssasi ja välttää virheitä, kuten kaksoiskappaleita inventaariossa tai puutteellisia ominaisuuksia. Tuloksena on huomattavasti älykkäämpi ja johdonmukaisempi tekoäly.
+    - 🧹 **Sinulle läpinäkyvää:** Kaikki tämä päättely tapahtuu kulissien takana. Moottori puhdistaa automaattisesti tekoälyn "sisäisen monologin" ennen vastauksen näyttämistä. Näet vain hiotun lopputuloksen.
+  
+  - **⚡ Luotettavampi pelin aloitus**
+    - 🛡️ **Hyvästit ensimmäisen vuoron jumituksille:** Olemme poistaneet yhden syyn loputtomiin odotuksiin uuden pelin alussa. Aiemmin, jos tekoäly loi kauppiaan tietämättä kauppasääntöjä (koska niitä ei ole ensimmäisellä vuorolla), moottori yritti korjata sitä 3 kertaa ennen luovuttamista, aiheuttaen yli minuutin turhan odotuksen. Nyt se ratkaistaan hetkessä.
+    - 📖 **Luova tekoäly-kestävä taustatarina:** Jos tekoäly innostuu ja luo maailman taustatiedot teknisessä muodossa pelkän kertomuksen sijaan, moottori havaitsee sen ja poimii puhtaan tarinan automaattisesti. Taustatarinasi toimitetaan aina asianmukaisesti.
+    - 🧹 **Virheetön käyttöliittymä:** Olen opettanut tekoälylle, ettei se "puhua koodia". Aiemmin päätöspainikkeet tai mestarin kommentit saattoivat näyttää outoja sisäisiä muuttujia (kuten *Pakeneminen (move to loc_cripta)*). Nyt kaikki on puhdasta, ja malli on pakotettu kommunikoimaan kanssasi valitsemallasi huumorisävyllä (tämän parametrin kunnioittaminen riippuu tekoälyn omasta huumorintajusta).
+  
+  - **🌍 Kielikorjaukset**
+    - 🗣️ **Paikat omalla kielelläsi:** Tekoälyn luomat sijainnit noudattavat nyt pelin asetettua kieltä. Jos pelaat englanniksi, et enää näe "Distrito de la Costa Oeste" vaan englanninkielisen nimen. (Hups.)
+    - 🔘 **Paikannetut painikkeet:** Hätäpainike "Jatka" puhuu nyt kieltäsi sen sijaan, että se ilmestyisi aina espanjaksi.
+
+****************************************************************************************************
 27/02/2026 16:46 - Synkronisoi lataus taistelussa ja vuorojen sujuvuus - Beta_v059
 ****************************************************************************************************
 - What's New (FI):

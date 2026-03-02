@@ -1,4 +1,26 @@
 ****************************************************************************************************
+02/03/2026 12:54 - Kompleksowa przebudowa rdzenia SI - Beta_v060
+****************************************************************************************************
+- What's New (PL):
+  - **🧠 Kompleksowa przebudowa rdzenia SI**
+    - ⚡ **Szybsze odpowiedzi:** Przepisałem "mózg" gry, aby SI lepiej pamiętała to, co już przetworzyła. W praktyce oznacza to mniej czasu spędzonego na ekranie ładowania między turami. Silnik teraz ponownie wykorzystuje poprzednie obliczenia, zamiast zaczynać od zera przy każdym ruchu. (Tak, wcześniej tak robił. Nie, nie jestem z tego dumny.)
+    - 🧹 **Czysta pamięć:** Historia gry jest teraz zapisywana bez technicznych "śmieci" od momentu jej utworzenia, a nie dopiero w momencie odczytu. Efekt: SI ma więcej miejsca na zapamiętanie Twojej historii i mniej "tokenów" marnowanych na wewnętrzne dane, których nigdy nie potrzebowała widzieć.
+    - 🎯 **Reguły na swoim miejscu:** Dodatkowe reguły, z których SI korzysta, aby wzbogacić swoje odpowiedzi, zostały przeniesione, aby nie zakłócały systemu buforowania. Efekt jest dla Ciebie niewidoczny, ale silnik docenia go w każdej turze (nieco więcej prędkości zawsze się przyda).
+  
+  - ** Qwen3 odblokowany: pełne rozumowanie aktywowane**
+    - 🚀 **Głębokie myślenie:** Modele z możliwością rozumowania (Qwen3, DeepSeek-R1...) mają teraz w pełni odblokowany potencjał. Zamiast działać "na ślepo", SI rozumuje wewnętrznie przed każdą odpowiedzią: planuje karty postaci, ocenia spójność narracyjną z Twoją historią i unika błędów, takich jak zduplikowane ekwipunki czy niekompletne atrybuty. Rezultat: znacznie inteligentniejsza i spójniejsza SI.
+    - 🧹 **Dla Ciebie przejrzyste:** Całe to rozumowanie odbywa się "za kulisami". Silnik automatycznie czyści "wewnętrzny monolog" SI przed pokazaniem Ci odpowiedzi. Ty widzisz tylko dopracowany efekt końcowy.
+  
+  - **⚡ Niezawodniejsze rozpoczynanie gry**
+    - 🛡️ **Koniec z zawieszaniem się w pierwszej turze:** Wyeliminowaliśmy przyczynę wiecznego czekania na początku nowej gry. Wcześniej, jeśli SI wygenerowała postać kupca, nie znając zasad handlu (ponieważ nie miała ich w pierwszej turze), silnik próbował to naprawić 3 razy, zanim się poddał, powodując ponad minutę niepotrzebnego czekania. Teraz rozwiązuje to natychmiast.
+    - 📖 **Lore odporne na kreatywną SI:** Jeśli SI się "rozpędzi" i wygeneruje tło świata w formacie technicznym zamiast narracyjnego tekstu, silnik to wykryje i automatycznie wyodrębni czystą historię. Twoje lore zawsze dociera w odpowiedniej formie.
+    - 🧹 **Nieskazitelny interfejs:** Nauczyłem SI, aby nie "mówiła kodem". Wcześniej przyciski decyzyjne lub komentarze Mistrza Gry czasami wyświetlały dziwne zmienne wewnętrzne (jak *Ucieknij (move to loc_cripta)*). Teraz wszystko jest czyste, a model został zmuszony do komunikowania się z Tobą w wybranym przez Ciebie tonie humoru (respektowanie tego parametru zależy od nastroju SI).
+  
+  - **🌍 Poprawki językowe**
+    - 🗣️ **Miejsca w Twoim języku:** Lokalizacje generowane przez SI teraz respektują język ustawiony w grze. Jeśli grasz po angielsku, nie zobaczysz już "Dzielnica Zachodniego Wybrzeża", ale angielską nazwę. (Ups.)
+    - 🔘 **Zlokalizowane przyciski:** Przycisk awaryjny "Kontynuuj" teraz mówi Twoim językiem, zamiast pojawiać się zawsze po hiszpańsku.
+
+****************************************************************************************************
 27/02/2026 16:46 - Synchronizacja ładowania w walce i przepływ turowy - Beta_v059
 ****************************************************************************************************
 - What's New (PL):

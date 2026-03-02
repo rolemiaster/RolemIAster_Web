@@ -1,4 +1,26 @@
 ****************************************************************************************************
+02/03/2026 12:54 - Omfattende omarbeiding av AI-kjernen - Beta_v060
+****************************************************************************************************
+- What's New (NO):
+  - **🧠 Omarbeiding av AI-kjernen**
+    - ⚡ **Raskere svar:** Jeg har omskrevet spillets hjerne slik at KI-en husker bedre hva den allerede har behandlet. I praksis betyr dette: mindre tid brukt på å se på lasteskjermen mellom trekkene. Motoren gjenbruker nå tidligere arbeid i stedet for å starte fra bunnen av hver gang du handler. (Ja, den gjorde det før. Nei, jeg er ikke stolt av det.)
+    - 🧹 **Renere minne:** Spillets historikk lagres nå uten teknisk søppel fra det øyeblikket den skrives, ikke når den leses. Resultatet er at KI-en har mer plass til å huske historien din, og færre tokens blir sløst bort på interne data den aldri trengte å se.
+    - 🎯 **Regler der de hører hjemme:** Supplerende regler som KI-en konsulterer for å berike svarene sine, har blitt flyttet slik at de ikke forstyrrer hurtigbufferen. Effekten er usynlig for deg, men motoren setter pris på det for hvert trekk (litt mer hastighet skader aldri).
+  
+  - ** Qwen3 løs: full resonnering aktivert**
+    - 🚀 **Dyp tenkning:** Modeller med resonneringsevne (Qwen3, DeepSeek-R1...) har nå sitt fulle potensial ulåst. I stedet for å gå "blindt", resonnerer KI-en internt før hvert svar: den planlegger karakterkortene, vurderer narrativ konsistens med historien din, og unngår feil som dupliserte inventarer eller ufullstendige attributter. Resultatet er en merkbart smartere og mer konsistent KI.
+    - 🧹 **Gjennomsiktig for deg:** All denne resonneringen skjer bak kulissene. Motoren rydder automatisk opp i KI-ens "indre monolog" før den viser deg svaret. Du ser bare sluttresultatet, mer polert.
+  
+  - **⚡ Mer pålitelig spillstart**
+    - 🛡️ **Farvel til krasj ved første trekk:** Vi har fjernet en årsak til evig venting ved starten av et nytt spill. Før, hvis KI-en genererte en handelskarakter uten å kjenne til handelsreglene (fordi den ikke har dem ved første trekk), prøvde motoren å rette det 3 ganger før den ga opp, noe som forårsaket over et minutt med unødvendig venting. Nå løses det umiddelbart.
+    - 📖 **Lore som tåler kreativ KI:** Hvis KI-en blir ivrig og genererer verdens bakgrunn i teknisk format i stedet for narrativ tekst, oppdager motoren dette og trekker ut den rene historien automatisk. Lore-en din kommer alltid som den skal.
+    - 🧹 **Feilfri grensesnitt:** Jeg har lært KI-en å ikke "snakke i kode". Før viste beslutningsknapper eller GM-kommentarer noen ganger rare interne variabler (som *Flykt (move to loc_scripture)*). Nå er alt rent, og modellen er tvunget til å kommunisere med deg i den humortonen du har valgt (om denne parameteren respekteres avhenger av KI-ens humør).
+  
+  - **🌍 Språklige korreksjoner**
+    - 🗣️ **Steder på ditt språk:** Lokasjoner generert av KI-en respekterer nå språket som er konfigurert i spillet. Hvis du spiller på engelsk, vil du ikke lenger se "Distrito de la Costa Oeste" men navnet på engelsk. (Ups.)
+    - 🔘 **Lokaliserte knapper:** Nødknappen "Fortsett" snakker nå ditt språk i stedet for å alltid vises på kastiljansk.
+
+****************************************************************************************************
 27/02/2026 16:46 - Synkronisering av kampinnlasting og turflyt - Beta_v059
 ****************************************************************************************************
 - What's New (NO):

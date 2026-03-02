@@ -1,4 +1,26 @@
 ****************************************************************************************************
+02/03/2026 12:54 - Umfassende KI-Kernüberholung - Beta_v060
+****************************************************************************************************
+- What's New (DE):
+  - **🧠 KI-Kernüberholung**
+    - ⚡ **Schnellere Antworten:** Ich habe das Spielgehirn umgeschrieben, damit die KI besser weiß, was sie bereits verarbeitet hat. In der Praxis bedeutet das: weniger Wartezeit auf dem Ladebildschirm zwischen den Zügen. Die Engine nutzt jetzt vorherige Arbeit wieder, anstatt jedes Mal bei Null anzufangen, wenn du handelst. (Ja, das hat sie vorher getan. Nein, darauf bin ich nicht stolz.)
+    - 🧹 **Saubererer Speicher:** Der Spielverlauf wird jetzt ohne technischen Müll gespeichert, sobald er geschrieben wird, nicht erst beim Lesen. Ergebnis: Die KI hat mehr Platz, um sich an deine Geschichte zu erinnern und verschwendet weniger Tokens für interne Daten, die sie nie hätte sehen müssen.
+    - 🎯 **Regeln an ihrem Platz:** Zusätzliche Regeln, auf die die KI für ihre Antworten zugreift, wurden neu positioniert, um das Caching-System nicht zu stören. Der Effekt ist für dich unsichtbar, aber die Engine dankt es bei jedem Zug (ein bisschen mehr Geschwindigkeit schadet nie).
+  
+  - ** Qwen3 entfesselt: Vollständiges Reasoning aktiviert**
+    - 🚀 **Tiefes Denken:** Modelle mit Reasoning-Fähigkeiten (Qwen3, DeepSeek-R1...) haben jetzt ihr volles Potenzial freigeschaltet. Anstatt "blindlings" vorzugehen, denkt die KI intern nach, bevor sie antwortet: Sie plant Charakterkarten, bewertet die erzählerische Konsistenz mit deiner Geschichte und vermeidet Fehler wie doppelte Inventare oder unvollständige Attribute. Das Ergebnis ist eine bemerkenswert intelligentere und konsistentere KI.
+    - 🧹 **Transparent für dich:** All dieses Reasoning geschieht hinter den Kulissen. Die Engine bereinigt automatisch den "internen Monolog" der KI, bevor sie dir die Antwort zeigt. Du siehst nur das finale, poliertere Ergebnis.
+  
+  - **⚡ Zuverlässigerer Spielstart**
+    - 🛡️ **Keine Blockaden mehr im ersten Zug:** Wir haben eine Ursache für ewige Wartezeiten beim Start eines neuen Spiels beseitigt. Zuvor versuchte die KI, wenn sie einen Händlercharakter generierte, ohne die Handelsregeln zu kennen (weil sie diese im ersten Zug nicht hat), 3 Mal, dies zu korrigieren, bevor sie aufgab, was zu über einer Minute nutzloser Wartezeit führte. Jetzt löst sie es sofort.
+    - 📖 **Kreatives KI-sicheres Lore:** Wenn die KI überhitzt und den Hintergrund der Welt im technischen Format anstelle von erzählerischem Text generiert, erkennt die Engine dies und extrahiert automatisch die saubere Geschichte. Dein Lore kommt immer so an, wie es sollte.
+    - 🧹 **Makellose Oberfläche:** Ich habe der KI beigebracht, nicht "in Code zu sprechen". Zuvor zeigten Entscheidungsbuttons oder Kommentare des Meisters manchmal seltsame interne Variablen (wie *Fliehen (move to loc_cripta)*). Jetzt ist alles sauber und das Modell wurde gezwungen, mit dem von dir gewählten Humor-Ton mit dir zu kommunizieren (ob dieser Parameter eingehalten wird, hängt vom Humor der KI ab).
+  
+  - **🌍 Sprachkorrekturen**
+    - 🗣️ **Orte in deiner Sprache:** Von der KI generierte Orte respektieren jetzt die im Spiel eingestellte Sprache. Wenn du auf Englisch spielst, siehst du nicht mehr "Distrito de la Costa Oeste", sondern den Namen auf Englisch. (Ups.)
+    - 🔘 **Lokalisierte Buttons:** Der Notfallknopf "Weiter" spricht jetzt deine Sprache, anstatt immer auf Spanisch zu erscheinen.
+
+****************************************************************************************************
 27/02/2026 16:46 - Kampf- und Zugsynchronisation - Beta_v059
 ****************************************************************************************************
 - What's New (DE):
