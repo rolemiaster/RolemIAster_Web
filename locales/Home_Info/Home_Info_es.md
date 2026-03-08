@@ -23,4 +23,29 @@ Dicho esto, mi agradecimiento es infinito para los que decidís quedaros. Vuestr
 
 *¡Gracias por la paciencia, el apoyo y que los críticos estén de vuestro lado!*
 
-<!-- source_hash: f67e0e53 -->
+
+*********************************************************************************
+🚧 ZONA DE OBRAS: ESTOY "LOBOTOMIZANDO" A LA IA (PARA BIEN) 🧠🔧
+¿En qué ando metido?
+Estoy cambiando el motor del juego, y no es moco de pavo.
+Hasta ahora, cada vez que juegas un turno, el sistema le lanza a la IA un "tocho" de reglas de 15.000 a 20.000 tokens. Básicamente, es como obligar al máster a leerse el manual entero antes de cada frase. 📚🥵
+
+El problema:
+Con tanto dato de golpe, la IA a veces se "emborracha" de contexto. Se lía, inventa idiomas, rompe objetos o directamente alucina (los famosos delirios). Es el equivalente digital a un "pantallazo azul" pero narrativo.
+
+La Solución: ¡A dieta estricta! 🥗
+Estoy reentrenando al modelo personalmente (Fine-Tuning casero) para que se aprenda las reglas de memoria.
+
+El plan: Que la IA ya sepa jugar sin tener que leerse el manual cada vez.
+
+El objetivo: Bajar el consumo de 20k a solo 5k tokens por turno.
+
+El resultado: Una velocidad brutalmente superior y una IA mucho más centrada (y sobria). 🚀
+
+Nota de Realidad (Disclaimer 🧐):
+Esto es un trabajo de ingeniería triple mortal: entrenar, probar y blindar. Y seamos honestos: si hasta los gigantes de Silicon Valley (Gemini, ChatGPT...) a veces ven elefantes rosas, mi modelo local no va a ser perfecto el 100% de las veces. Pero el objetivo es que pase de ser el "tío borracho de la boda" a un Máster de Rol competente.
+
+¡Gracias por la paciencia mientras ajusto las tuercas! 🛠️✨
+*********************************************************************************
+
+<!-- source_hash: 5c341f4e -->
