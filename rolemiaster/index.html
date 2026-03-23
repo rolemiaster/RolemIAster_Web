@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <base target="_top">
+    <title>RolemIAster - Web Oficial</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00d2ff;
+            /* Cyberpunk Blue */
+            --secondary: #ff0055;
+            /* Cyberpunk Pink */
+            --discord: #5865F2;
+            --bg-dark: #0a0a12;
+            --bg-panel: #161622;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --border: #2a2a35;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Rajdhani', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(10, 10, 18, 0.95);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+        }
+
+        .nav-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            cursor: pointer;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary);
+        }
+
+        .discord-btn {
+            background: var(--discord);
+            color: #fff !important;
+            padding: 5px 15px;
+            border-radius: 4px;
+            transition: transform 0.2s;
+            display: flex;
+            /* Para alinear icono si hubiese */
+            align-items: center;
+            gap: 5px;
+        }
+
+        .discord-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 10px var(--discord);
+            text-shadow: none;
+        }
+
+        .lang-selector {
+            margin-left: 1rem;
+            padding: 5px 10px;
+            background: var(--bg-panel);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        /* Main Content */
+        main {
+            margin-top: 80px;
+            min-height: calc(100vh - 160px);
+        }
+
+        section {
+            display: none;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            animation: fadeIn 0.5s ease;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Home Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            /* Full screen height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background: #000;
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 2rem;
+        }
+
+        .hero-video-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            /* Keep it behind! */
+            opacity: 0.6;
+            object-fit: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            /* Foreground content */
+            max-width: 900px;
+            text-align: center;
+            padding: 3rem;
+            border-radius: 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary);
+            color: #000;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 4px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background: #fff;
+            box-shadow: 0 0 15px var(--primary);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(0, 210, 255, 0.1);
+            color: #fff;
+        }
+
+        /* Features Grid */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .feature-card {
+            background: var(--bg-panel);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .feature-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-panel);
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            margin-top: 4rem;
+            color: var(--text-muted);
+        }
+
+        /* Versions Section */
+        .versions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .version-card {
+            background: var(--bg-panel);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .version-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-pc {
+            border-top: 4px solid var(--primary);
+        }
+
+        .card-pc:hover {
+            border-color: var(--primary);
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
+        }
+
+        .card-android {
+            border-top: 4px solid #4285f4;
+            /* Google Blue */
+            background: linear-gradient(180deg, rgba(66, 133, 244, 0.05) 0%, var(--bg-panel) 100%);
+        }
+
+        .card-android:hover {
+            border-color: #4285f4;
+            box-shadow: 0 0 20px rgba(66, 133, 244, 0.3);
+        }
+
+        .version-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .version-title {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .version-sub {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+
+        .pc-sub {
+            color: var(--primary);
+        }
+
+        .android-sub {
+            background: linear-gradient(45deg, #4285f4, #34a853, #fbbc05, #ea4335);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .version-desc {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            flex-grow: 1;
+        }
+
+        .version-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .version-features li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            color: #ccc;
+        }
+
+        .version-features li::before {
+            content: "✓";
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .card-pc .version-features li::before {
+            color: var(--primary);
+        }
+
+        .card-android .version-features li::before {
+            color: #4285f4;
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: var(--bg-panel);
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+
+        .dropdown-content a {
+            color: var(--text-main);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: var(--primary);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover>a {
+            color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="../" class="logo" style="margin-right: 0.5rem;" title="Portal">
+            <span style="font-size: 0.9rem; opacity: 0.6;">&larr;</span>
+        </a>
+        <a href="#" class="logo" onclick="window.location.reload(); return false;">
+            <img src="https://lh3.googleusercontent.com/d/1v1KGBnV6JTR2wVSUWwRN07nMLgg98WBZ" alt="RolemIAster Logo">
+            <span>RolemIAster</span>
+        </a>
+        <div class="nav-links">
+            <a onclick="navigate('home')" class="active" data-i18n="nav_home">Inicio</a>
+
+            <div class="dropdown">
+                <a style="cursor: pointer;" data-i18n="nav_docs">Documentación ▼</a>
+                <div class="dropdown-content">
+                    <a href="manual.html" data-i18n="nav_manual">Manual de Usuario</a>
+                    <a href="changelog.html" data-i18n="nav_changelog">Changelog</a>
+                </div>
+            </div>
+
+            <a onclick="scrollToFooter()" style="cursor: pointer;" data-i18n="nav_more">Más</a>
+
+            <a href="https://discord.gg/k8gpfhZ7" target="_blank" class="discord-btn">Discord</a>
+
+            <!-- Unified Language Selector -->
+            <div class="lang-selector-group">
+                <button id="btn-es" class="btn-lang active" onclick="changeLanguage('es')">ES</button>
+                <button id="btn-en" class="btn-lang" onclick="changeLanguage('en')">EN</button>
+            </div>
+
+            <a onclick="navigate('survey')"
+                style="margin-left: 2rem; color: var(--primary); font-weight: bold; border: 1px solid var(--primary); padding: 5px 10px; border-radius: 4px; cursor: pointer;"
+                data-i18n="nav_survey">Votación</a>
+        </div>
+    </nav>
+
+    <style>
+        .lang-selector-group {
+            display: flex;
+            gap: 0;
+            margin-left: 1rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .btn-lang {
+            background: rgba(0, 0, 0, 0.3);
+            border: none;
+            border-right: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 5px 12px;
+            cursor: pointer;
+            font-family: 'Rajdhani', sans-serif;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .btn-lang:last-child {
+            border-right: none;
+        }
+
+        .btn-lang:hover {
+            color: var(--primary);
+            background: rgba(0, 210, 255, 0.1);
+        }
+
+        .btn-lang.active {
+            background: var(--primary);
+            color: #000;
+            font-weight: bold;
+        }
+    </style>
+
+    <main>
+        <!-- HOME SECTION -->
+        <!-- HOME SECTION WITH VIDEO HERO -->
+        <section id="home" class="active" style="padding: 0; max-width: none;">
+            <div class="hero">
+                <!-- VIDEO BACKGROUND: Replace src with your PUBLIC Google Drive or Host Link -->
+                <video class="hero-video-bg" autoplay muted loop playsinline
+                    poster="https://lh3.googleusercontent.com/d/1agus9Rqxrq2v6738m0Xl5P31o2LH164C">
+                    <source src="https://drive.google.com/uc?export=download&id=1pioXpzyAY4Y67rq02MIovkVebQuZRY9z"
+                        type="video/mp4">
+                </video>
+
+                <div class="hero-content glass">
+                    <h1 style="font-size: 3.5rem; margin-bottom: 0.5rem; text-shadow: 0 0 20px rgba(255,255,255,0.2);">
+                        EL JUEGO DE
+                        ROL INFINITO</h1>
+                    <p data-i18n="hero_subtitle" style="font-size: 1.4rem; color: #eee; margin-bottom: 2rem;">
+                        potenciado por Inteligencia Artificial
+                    </p>
+
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="https://store.steampowered.com/app/4210600/RolemIAster/" target="_blank" class="btn"
+                            data-i18n="btn_steam">Jugar en Steam</a>
+                        <button class="btn btn-secondary"
+                            style="border-color: #00d2ff; color: #00d2ff; cursor: not-allowed;" disabled
+                            data-i18n="btn_play">Ver en Play Store (Próximamente)</button>
+                        <a onclick="scrollToId('about')" class="btn btn-secondary" data-i18n="btn_discover">Descubrir
+                            Secretos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTAINER FOR CENTERED CONTENT -->
+            <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+
+                <!-- ORIGINAL FEATURES (Restored) -->
+                <div class="features" style="margin-top: 4rem; margin-bottom: 6rem;">
+                    <div class="feature-card">
+                        <h3 data-i18n="feat_1_title">Narrativa Infinita</h3>
+                        <p data-i18n="feat_1_desc">Un Game Master IA que crea historias únicas, personajes profundos y
+                            mundos vivos
+                            que reaccionan a cada una de tus decisiones.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 data-i18n="feat_2_title">Multiverso</h3>
+                        <p data-i18n="feat_2_desc">Explora mundos de Fantasía Medieval con sistemas de magia complejos o
+                            distopías
+                            Cyberpunk con implantes y hacking.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 data-i18n="feat_3_title">Libertad Total</h3>
+                        <p data-i18n="feat_3_desc">Haz lo que quieras. El motor de IA interpreta tus acciones y genera
+                            consecuencias
+                            lógicas y narrativas en tiempo real.</p>
+                    </div>
+                </div>
+
+
+                <!-- INFINITE CONTEXT DEMO -->
+                <!-- INFINITE CONTEXT DEMO (RAG CARD) -->
+                <div id="features-demo"
+                    style="padding: 2.5rem; background: var(--bg-panel); border: 2px solid var(--primary); border-radius: 12px; margin-bottom: 4rem; box-shadow: 0 0 20px rgba(0, 210, 255, 0.1);">
+                    <h2
+                        style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem; text-shadow: 0 0 10px rgba(0,210,255,0.3);">
+                        RAG Semántico Nativo</h2>
+                    <p
+                        style="text-align: center; color: var(--text-muted); margin-bottom: 2rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                        No es una ventana de contexto infinita, es <strong>Memoria Quirúrgica</strong>. El sistema
+                        recupera vectores
+                        de hace 500 turnos solo cuando son relevantes, además de orquestar <strong>imágenes y paisajes
+                            sonoros</strong> que reaccionan dinámicamente al contexto actual.
+                    </p>
+
+                    <div class="chat-sim glass">
+                        <div class="chat-msg msg-user" style="animation-delay: 0.5s;">
+                            <p>Hola posadero. ¿Recuerdas esa espada oxidada que te vendí hace 3 semanas?</p>
+                        </div>
+                        <div class="chat-msg msg-ai" style="animation-delay: 2.5s;">
+                            <p><strong>[Memoria Activada: Día 4, Turno 152]</strong></p>
+                            <p>¡Vaya si me acuerdo! Esa chatarra casi me da el tétanos. Se la vendí al herrero del Valle
+                                Bajo por 5
+                                monedas de cobre. ¿Por qué?, ¿acaso tenía valor sentimental?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INGENIERÍA NARRATIVA (Now at the top, before Versions) -->
+                <div id="about" style="padding-top: 2rem;">
+                    <h2 data-i18n="about_title">Ingeniería Narrativa</h2>
+
+                    <p style="margin-top: 1rem; margin-bottom: 2rem;" data-i18n="about_desc">RolemIAster no es una
+                        simple capa
+                        sobre
+                        ChatGPT. Es un motor de simulación profundo donde múltiples sistemas cooperan para crear una
+                        experiencia
+                        coherente.</p>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem;">
+
+                        <!-- Architecture -->
+                        <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 8px;">
+                            <h3 style="color: var(--primary); margin-bottom: 0.5rem;" data-i18n="ab_arch_title">
+                                Arquitectura de
+                                Especialistas</h3>
+                            <p style="font-size: 0.95rem; color: var(--text-muted);" data-i18n="ab_arch_desc">Un
+                                'Orquestador' central
+                                dirige a agentes especializados en cada faceta del juego (Combate, Historia, NPCs),
+                                garantizando que
+                                cada
+                                aspecto tenga profundidad experta.</p>
+                        </div>
+
+                        <!-- Matrioshka -->
+                        <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 8px;">
+                            <h3 style="color: var(--primary); margin-bottom: 0.5rem;" data-i18n="ab_matr_title">
+                                Persistencia
+                                "Matrioska"
+                            </h3>
+                            <p style="font-size: 0.95rem; color: var(--text-muted);" data-i18n="ab_matr_desc">Jerarquía
+                                física real en
+                                base de datos. Los objetos están dentro de cofres, que están en habitaciones, que están
+                                en posadas. Si
+                                robas una poción a un NPC, su inventario se vacía. El mundo es sólido.</p>
+                        </div>
+
+                        <!-- SDIA -->
+                        <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 8px;">
+                            <h3 style="color: var(--primary); margin-bottom: 0.5rem;" data-i18n="ab_sdia_title">Sheriff
+                                de Realidad
+                                (SDIA)</h3>
+                            <p style="font-size: 0.95rem; color: var(--text-muted);" data-i18n="ab_sdia_desc">Caos
+                                Narrativo, Orden
+                                Mecánico. Un sistema de 4 capas valida cada respuesta de la IA. Si dice que te ha dado
+                                una espada, el
+                                Sheriff verifica tu "Capacity Load" y actualiza la base de datos.</p>
+                        </div>
+
+                        <!-- Combat -->
+                        <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 8px;">
+                            <h3 style="color: var(--primary); margin-bottom: 0.5rem;" data-i18n="ab_comb_title">
+                                Mecánicas Hardcore
+                            </h3>
+                            <p style="font-size: 0.95rem; color: var(--text-muted);" data-i18n="ab_comb_desc">RPG real,
+                                no "novela
+                                interactiva". Coste de Humanidad por implantes Cyberpunk, degradación de equipo, peso de
+                                inventario y
+                                sistema de magia híbrido (ofensivo/defensivo/encantamiento). Y MUCHO MÁS.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- VERSIONS SECTION -->
+                <div id="versions-content"
+                    style="display: block; margin-top: 6rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+                    <h2 style="text-align: center; margin-bottom: 3rem;" data-i18n="versions_title">Elige tu Plataforma
+                    </h2>
+
+                    <div class="versions-grid">
+                        <!-- PC Card -->
+                        <div class="version-card card-pc">
+                            <span class="version-icon">🖥️</span>
+                            <h3 class="version-title" data-i18n="ver_pc_title">PC (Steam Edition)</h3>
+                            <div class="version-sub pc-sub" data-i18n="ver_pc_sub">Tu Hardware, Tu Reino</div>
+                            <p class="version-desc" data-i18n="ver_pc_desc">Control total y privacidad. Ejecuta modelos
+                                de IA potentes
+                                (Qwen 2.5) directamente en tu GPU. Sin suscripciones, sin depender de la nube.</p>
+                            <ul class="version-features">
+                                <li data-i18n="ver_pc_feat_1">IA Local Offline</li>
+                                <li data-i18n="ver_pc_feat_2">Privacidad Absoluta</li>
+                                <li data-i18n="ver_pc_feat_3">Pago Único</li>
+                            </ul>
+                            <a href="https://store.steampowered.com/app/4210600/RolemIAster/" target="_blank"
+                                class="btn" data-i18n="btn_steam">Ver en Steam</a>
+                        </div>
+
+                        <!-- Android Card -->
+                        <div class="version-card card-android">
+                            <div
+                                style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem;">
+                                <span class="version-icon" style="margin-bottom: 0;">📱</span>
+                                <img src="https://lh3.googleusercontent.com/d/1g4JFmmWon1ahZnVIjB4U1yZYvzLGhWuf"
+                                    alt="Powered by Gemini" style="height: 110px; width: auto; object-fit: contain;">
+                            </div>
+                            <h3 class="version-title" data-i18n="ver_android_title">Android (Gemini Edition)</h3>
+                            <div class="version-sub android-sub" data-i18n="ver_android_sub">Inteligencia Infinita</div>
+                            <p class="version-desc" data-i18n="ver_android_desc">La potencia de Google en tu bolsillo.
+                                Disfruta de la
+                                IA
+                                más avanzada (Gemini) sin necesidad de hardware costoso. Usa tu propia cuota gratuita de
+                                Google.</p>
+                            <ul class="version-features">
+                                <li data-i18n="ver_android_feat_1">Motor Gemini Exclusivo</li>
+                                <li data-i18n="ver_android_feat_2">Nube (Sin consumo de batería IA)</li>
+                                <li data-i18n="ver_android_feat_3">Bring Your Own Quota</li>
+                            </ul>
+                            <button class="btn btn-secondary"
+                                style="border-color: #4285f4; color: #4285f4; cursor: not-allowed;"
+                                disabled>Próximamente</button>
+
+                            <div
+                                style="margin-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+                                <p style="color: #a0a0a0; font-size: 0.9rem; margin-bottom: 1rem;">
+                                    <strong data-i18n="ver_android_beta_title">Acceso Beta:</strong> <br>
+                                    <span data-i18n="ver_android_beta_desc">Únete al <a
+                                            href="https://groups.google.com/u/2/g/rolemiaster-beta-testers"
+                                            target="_blank" style="color: #4285f4;">grupo de Google RolemIAster Beta
+                                            Testers</a>. Una vez dentro, descarga la app en <a
+                                            href="https://play.google.com/store/apps/details?id=com.rolemiaster"
+                                            target="_blank" style="color: #4285f4;">Google Play</a> o vía <a
+                                            href="https://play.google.com/apps/testing/com.rolemiaster" target="_blank"
+                                            style="color: #4285f4;">web de testing</a>.</span>
+                                </p>
+                                <a href="https://play.google.com/apps/testing/com.rolemiaster" target="_blank"
+                                    class="btn"
+                                    style="background: #4285f4; color: white; width: 100%; text-align: center; display: block;"
+                                    data-i18n="ver_android_btn_join">Unirse a la Alpha</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- END CONTAINER -->
+
+            <!-- FULL-WIDTH YOUTUBE VIDEO BANNER (Bottom) -->
+            <div
+                style="margin-top: 6rem; position: relative; width: 100%; padding-bottom: 40%; overflow: hidden; background: #000;">
+                <iframe
+                    src="https://www.youtube.com/embed/KV_Ij0FY7qU?autoplay=1&mute=1&loop=1&playlist=KV_Ij0FY7qU&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+                    style="position: absolute; top: 50%; left: 50%; width: 120%; height: 120%; transform: translate(-50%, -50%); border: none; pointer-events: none;"
+                    allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- SURVEY SECTION -->
+        <section id="survey">
+            <h2 data-i18n="survey_title">Elige el Futuro</h2>
+            <p data-i18n="survey_desc"
+                style="text-align: center; color: var(--text-muted); margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Tu opinión moldea RolemIAster. Dinos qué sistema multijugador prefieres que desarrollemos primero.
+            </p>
+
+            <div
+                style="background: var(--bg-panel); padding: 1rem; border-radius: 8px; margin-top: 1rem; display: flex; justify-content: center;">
+                <iframe id="survey-frame"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSduFLC5xaa7WMPSY2FOeqKqJ4a3tJHFAln4w7kG-UhseNsBsg/viewform"
+                    width="640" height="2000" frameborder="0" marginheight="0" marginwidth="0"
+                    style="max-width: 100%;">Cargando…</iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <img src="https://lh3.googleusercontent.com/d/1ond7kmLqOptYMcjQJtAoEIOoD45NgtIv" alt="RolemIAster"
+            style="height: 150px; margin-bottom: 1rem;">
+
+        <div style="margin-bottom: 1rem;">
+            <a href="https://www.youtube.com/@RolemIAster" target="_blank"
+                style="margin: 0 10px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                <img src="https://www.youtube.com/favicon.ico" alt="YouTube Logo" style="height: 1.2rem;"> YouTube
+            </a>
+            <a href="https://x.com/RolemIAster" target="_blank"
+                style="margin: 0 10px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                <img src="https://x.com/favicon.ico" alt="X Logo" style="height: 1.2rem; border-radius: 50%;"> X (antes
+                Twitter)
+            </a>
+        </div>
+
+        <!-- CLEANED FOOTER WITHOUT ADMIN LINKS -->
+        <p>&copy; 2025 RolemIAster. <span data-i18n="footer_rights">Todos los derechos reservados.</span> | <a href="privacy.html" data-i18n="footer_privacy">Política de Privacidad</a></p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: #666;">Powered by Google Apps Script & Gemini</p>
+    </footer>
+
+    <script>
+        // Translations
+        const translations = {
+            es: {
+                nav_home: "Inicio",
+                nav_docs: "Documentación",
+                nav_manual: "Manual de Usuario",
+                nav_changelog: "Changelog",
+                nav_about: "Características",
+                nav_bugs: "Reportar Bug",
+                nav_admin: "Admin",
+                nav_more: "Más",
+                nav_survey: "Votación",
+                survey_title: "Zona de Votación",
+                survey_desc: "Participa en las decisiones de desarrollo de RolemIAster. Tu voto cuenta.",
+                hero_subtitle: "potenciado por Inteligencia Artificial",
+                btn_steam: "Ver en Steam",
+                btn_play: "Ver en Play Store (Próximamente)",
+                btn_discover: "Descubrir Más",
+                feat_1_title: "Narrativa Infinita",
+                feat_1_desc: "Un Game Master IA que crea historias únicas, personajes profundos y mundos vivos que reaccionan a cada una de tus decisiones.",
+                feat_2_title: "Multiverso",
+                feat_2_desc: "Explora mundos de Fantasía Medieval con sistemas de magia complejos o distopías Cyberpunk con implantes y hacking.",
+                feat_3_title: "Libertad Total",
+                feat_3_desc: "Haz lo que quieras. El motor de IA interpreta tus acciones y genera consecuencias lógicas y narrativas en tiempo real.",
+                about_title: "Ingeniería Narrativa",
+                about_desc: "RolemIAster no es una simple capa sobre ChatGPT. Es un motor de simulación profundo donde múltiples sistemas cooperan para crear una experiencia coherente.",
+                ab_arch_title: "Arquitectura de Especialistas",
+                ab_arch_desc: "Un 'Orquestador' central dirige a agentes especializados en cada faceta del juego (Combate, Historia, NPCs), garantizando que cada aspecto tenga profundidad experta.",
+                ab_matr_title: "Persistencia 'Matrioska'",
+                ab_matr_desc: "Jerarquía física real en base de datos. Los objetos están dentro de cofres, que están en habitaciones, que están en posadas. Si robas una poción a un NPC, su inventario se vacía. El mundo es sólido.",
+                ab_sdia_title: "Sheriff de Realidad (SDIA)",
+                ab_sdia_desc: "Caos Narrativo, Orden Mecánico. Un sistema de 4 capas valida cada respuesta de la IA. Si dice que te ha dado una espada, el Sheriff verifica tu 'Capacity Load' y actualiza la base de datos.",
+                ab_comb_title: "Mecánicas Hardcore",
+                ab_comb_desc: "RPG real, no 'novela interactiva'. Coste de Humanidad por implantes Cyberpunk, degradación de equipo, peso de inventario y sistema de magia híbrido (ofensivo/defensivo/encantamiento). Y MUCHO MÁS.",
+                versions_title: "Elige tu Plataforma",
+                ver_pc_title: "PC (Steam Edition)",
+                ver_pc_sub: "Tu Hardware, Tu Reino",
+                ver_pc_desc: "Control total y privacidad. Ejecuta modelos de IA potentes (Qwen 2.5) directamente en tu GPU. Sin suscripciones, sin depender de la nube.",
+                ver_pc_feat_1: "IA Local Offline",
+                ver_pc_feat_2: "Privacidad Absoluta",
+                ver_pc_feat_3: "Pago Único",
+                ver_android_title: "Android (Gemini Edition)",
+                ver_android_sub: "Inteligencia Infinita",
+                ver_android_desc: "La potencia de Google en tu bolsillo. Disfruta de la IA más avanzada (Gemini) sin necesidad de hardware costoso. Usa tu propia cuota gratuita de Google.",
+                ver_android_feat_1: "Motor Gemini Exclusivo",
+                ver_android_feat_2: "Nube (Sin consumo de batería IA)",
+                ver_android_feat_3: "Bring Your Own Quota",
+                ver_android_beta_title: "Acceso Beta:",
+                ver_android_beta_desc: "Únete al <a href='https://groups.google.com/u/2/g/rolemiaster-beta-testers' target='_blank' style='color: #4285f4;'>grupo de Google RolemIAster Beta Testers</a>. Una vez dentro, descarga la app en <a href='https://play.google.com/store/apps/details?id=com.rolemiaster' target='_blank' style='color: #4285f4;'>Google Play</a> o vía <a href='https://play.google.com/apps/testing/com.rolemiaster' target='_blank' style='color: #4285f4;'>web de testing</a>.",
+                ver_android_btn_join: "Unirse a la Alpha",
+                footer_rights: "Todos los derechos reservados.",
+                footer_privacy: "Política de Privacidad",
+                loading: "Procesando..."
+            },
+            en: {
+                nav_home: "Home",
+                nav_docs: "Documentation",
+                nav_manual: "User Manual",
+                nav_changelog: "Changelog",
+                nav_about: "Features",
+                nav_bugs: "Report Bug",
+                nav_admin: "Admin",
+                nav_more: "More",
+                nav_survey: "Vote",
+                survey_title: "Voting Zone",
+                survey_desc: "Participate in RolemIAster development decisions. Your vote counts.",
+                hero_subtitle: "powered by Artificial Intelligence",
+                versions_title: "Choose Your Platform",
+                ver_pc_title: "PC (Steam Edition)",
+                ver_pc_sub: "Your Hardware, Your Realm",
+                ver_pc_desc: "Total control and privacy. Run powerful AI models (Qwen 2.5) directly on your GPU. No subscriptions, no cloud dependency.",
+                ver_pc_feat_1: "Local Offline AI",
+                ver_pc_feat_2: "Absolute Privacy",
+                ver_pc_feat_3: "One-time Purchase",
+                ver_android_title: "Android (Gemini Edition)",
+                ver_android_sub: "Infinite Intelligence",
+                ver_android_desc: "Google's power in your pocket. Enjoy the most advanced AI (Gemini) without expensive hardware. Use your own free Google quota.",
+                ver_android_feat_1: "Exclusive Gemini Engine",
+                ver_android_feat_2: "Cloud (No AI battery drain)",
+                ver_android_feat_3: "Bring Your Own Quota",
+                ver_android_beta_title: "Beta Access:",
+                ver_android_beta_desc: "Join the <a href='https://groups.google.com/u/2/g/rolemiaster-beta-testers' target='_blank' style='color: #4285f4;'>RolemIAster Beta Testers Google Group</a>. Once inside, download the app on <a href='https://play.google.com/store/apps/details?id=com.rolemiaster' target='_blank' style='color: #4285f4;'>Google Play</a> or via the <a href='https://play.google.com/apps/testing/com.rolemiaster' target='_blank' style='color: #4285f4;'>testing web page</a>.",
+                ver_android_btn_join: "Join the Alpha",
+                btn_steam: "View on Steam",
+                btn_play: "View on Play Store (Coming Soon)",
+                btn_discover: "Discover More",
+                feat_1_title: "Infinite Narrative",
+                feat_1_desc: "An AI Game Master creating unique stories, deep characters, and living worlds reacting to your every decision.",
+                feat_2_title: "Multiverse",
+                feat_2_desc: "Explore Medieval Fantasy worlds with complex magic systems or Cyberpunk dystopias with implants and hacking.",
+                feat_3_title: "Total Freedom",
+                feat_3_desc: "Do whatever you want. The AI engine interprets your actions and generates logical and narrative consequences in real-time.",
+                about_title: "Narrative Engineering",
+                about_desc: "RolemIAster is not a simple wrapper over ChatGPT. It's a deep simulation engine where multiple systems cooperate to create a coherent experience.",
+                ab_arch_title: "Specialist Architecture",
+                ab_arch_desc: "A central 'Orchestrator' delegates to specialized agents for each game facet (Combat, Story, NPCs), ensuring expert depth in every aspect.",
+                ab_matr_title: "'Matryoshka' Persistence",
+                ab_matr_desc: "Real physical hierarchy. Items exist inside containers, rooms, and buildings. The world maintains its logical state regardless of the narrative.",
+                ab_sdia_title: "Defensive System (SDIA)",
+                ab_sdia_desc: "A 4-layer logical firewall that intercepts AI 'hallucinations'. If the AI breaks the rules, SDIA corrects it on the fly, protecting your game integrity.",
+                ab_comb_title: "Real Tactical Combat",
+                ab_comb_desc: "Hard-Core RPG mechanics. Speed tick system, d100 rolls, cover management, and ammo tracking. The AI narrates, but the engine decides.",
+                footer_rights: "All rights reserved.",
+                footer_privacy: "Privacy Policy",
+                loading: "Processing..."
+            }
+        };
+
+        let currentLang = localStorage.getItem('rolemiaster_lang') || 'es';
+
+        function changeLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('rolemiaster_lang', lang);
+
+            // Update Buttons UI
+            document.querySelectorAll('.btn-lang').forEach(b => b.classList.remove('active'));
+            let activeBtn = document.getElementById('btn-' + lang);
+            if (activeBtn) activeBtn.classList.add('active');
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+
+        }
+
+        // Navigation Logic
+        function navigate(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+
+            // Show target section
+            document.getElementById(sectionId).classList.add('active');
+
+            // Update nav active state
+            const navLink = document.querySelector(`.nav-links a[onclick="navigate('${sectionId}')"]`);
+            if (navLink) navLink.classList.add('active');
+
+            window.scrollTo(0, 0);
+        }
+
+        function scrollToFooter() {
+            document.querySelector('footer').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollToId(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Init
+        document.addEventListener('DOMContentLoaded', () => {
+            changeLanguage(currentLang); // Iniciar textos
+
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('page') === 'privacy') {
+                window.location.href = 'privacy.html';
+            }
+            if (urlParams.get('page') === 'survey') {
+                navigate('survey');
+            }
+        });
+    </script>
+</body>
+
+</html>

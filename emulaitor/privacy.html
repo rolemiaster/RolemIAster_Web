@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmulAItor - Politica de Privacidad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --green: #39ff14;
+            --amber: #ffbf00;
+            --green-dim: rgba(57, 255, 20, 0.1);
+            --bg-dark: #0a0a0a;
+            --bg-panel: #111;
+            --text-main: #c0c0c0;
+            --text-muted: #707070;
+            --border: #222;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .btn-back {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.7rem;
+            color: var(--green);
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid rgba(57, 255, 20, 0.3);
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .btn-back:hover {
+            background: var(--green-dim);
+            border-color: var(--green);
+            box-shadow: 0 0 15px rgba(57, 255, 20, 0.2);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo img { height: 38px; width: auto; }
+
+        .logo-text {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.9rem;
+            color: var(--green);
+            text-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 0;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .btn-lang {
+            background: transparent;
+            border: none;
+            border-right: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 6px 14px;
+            cursor: pointer;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.6rem;
+            transition: all 0.3s;
+        }
+
+        .btn-lang:last-child { border-right: none; }
+
+        .btn-lang.active {
+            background: var(--green-dim);
+            color: var(--green);
+        }
+
+        .btn-lang:hover:not(.active) { color: var(--amber); }
+
+        .privacy-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 7rem 2rem 4rem;
+        }
+
+        .privacy-container h1 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: clamp(0.7rem, 2vw, 1rem);
+            margin-bottom: 2rem;
+            color: var(--green);
+            text-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+        }
+
+        .privacy-container h2 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.75rem;
+            color: var(--amber);
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .privacy-container p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .privacy-container ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .privacy-container li {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 0.3rem;
+        }
+
+        .privacy-container a {
+            color: var(--green);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .privacy-container a:hover { color: var(--amber); }
+
+        .privacy-container strong { color: var(--text-main); }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        footer p {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.55rem;
+            color: var(--text-muted);
+            line-height: 2;
+        }
+
+        footer a {
+            color: var(--green);
+            text-decoration: none;
+        }
+
+        footer a:hover { color: var(--amber); }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 0.8rem;
+                padding: 0.8rem 1rem;
+            }
+            .privacy-container { padding-top: 9rem; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a href="./" class="btn-back" data-i18n="btn_back">&larr; EmulAItor</a>
+            <a href="./" class="logo">
+                <img src="assets/imagenes/Logo.png" alt="EmulAItor">
+                <span class="logo-text">EmulAItor</span>
+            </a>
+        </div>
+        <div class="nav-right">
+            <button id="btn-es" class="btn-lang active" onclick="changeLang('es')">ES</button>
+            <button id="btn-en" class="btn-lang" onclick="changeLang('en')">EN</button>
+        </div>
+    </nav>
+
+    <div class="privacy-container">
+        <h1 data-i18n="priv_title">Politica de Privacidad y Condiciones de Uso</h1>
+
+        <h2 data-i18n="priv_s1_title">1. Resumen</h2>
+        <p data-i18n="priv_s1_text">EmulAItor respeta profundamente su privacidad. Nuestra filosofia es simple: Sus datos son suyos. No recopilamos, almacenamos ni vendemos su informacion personal.</p>
+
+        <h2 data-i18n="priv_s2_title">2. Recopilacion de Datos</h2>
+        <p data-i18n="priv_s2_text">EmulAItor NO recopila ninguna informacion personal identificable (PII).</p>
+        <ul>
+            <li data-i18n="priv_s2_li1">No tenemos servidores de cuentas de usuario.</li>
+            <li data-i18n="priv_s2_li2">No usamos cookies de rastreo ni analiticas de terceros.</li>
+            <li data-i18n="priv_s2_li3">No hay anuncios de ninguna clase.</li>
+        </ul>
+
+        <h2 data-i18n="priv_s3_title">3. Permisos del Dispositivo</h2>
+        <ul>
+            <li data-i18n="priv_s3_li1"><strong>Almacenamiento local:</strong> Para escanear y cargar archivos ROM proporcionados por el usuario. EmulAItor no incluye juegos ni archivos BIOS.</li>
+            <li data-i18n="priv_s3_li2"><strong>Red local (NAS/SMB):</strong> Conexion opcional a servidores del usuario en su red WiFi. Sin conexiones externas.</li>
+            <li data-i18n="priv_s3_li3"><strong>Mandos/Gamepads:</strong> Acceso a controladores Bluetooth y USB para la experiencia de juego.</li>
+        </ul>
+
+        <h2 data-i18n="priv_s4_title">4. Almacenamiento en la Nube</h2>
+        <p data-i18n="priv_s4_text">La sincronizacion de partidas guardadas (Cloud Save) utiliza exclusivamente la carpeta de datos de aplicacion de SU cuenta personal de Google Drive (auth/drive.appdata). Nosotros no tenemos acceso a sus archivos, no gestionamos servidores de datos ni podemos ver su contenido.</p>
+
+        <h2 data-i18n="priv_s5_title">5. Codigo Abierto y Contacto</h2>
+        <p data-i18n="priv_s5_text">EmulAItor es software de codigo abierto bajo licencia GPLv3. El codigo fuente es auditable publicamente.</p>
+        <p data-i18n="priv_s5_contact">Para dudas: <span id="contact-link"></span></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024-2026 EmulAItor &mdash; <a href="../">RolemIAster Universe</a></p>
+    </footer>
+
+    <script>
+        const translations = {
+            es: {
+                btn_back: "\u2190 EmulAItor",
+                priv_title: "Politica de Privacidad y Condiciones de Uso",
+                priv_s1_title: "1. Resumen",
+                priv_s1_text: "EmulAItor respeta profundamente su privacidad. Nuestra filosofia es simple: <strong>Sus datos son suyos.</strong> No recopilamos, almacenamos ni vendemos su informacion personal.",
+                priv_s2_title: "2. Recopilacion de Datos",
+                priv_s2_text: "EmulAItor <strong>NO recopila</strong> ninguna informacion personal identificable (PII).",
+                priv_s2_li1: "No tenemos servidores de cuentas de usuario.",
+                priv_s2_li2: "No usamos cookies de rastreo ni analiticas de terceros.",
+                priv_s2_li3: "No hay anuncios de ninguna clase.",
+                priv_s3_title: "3. Permisos del Dispositivo",
+                priv_s3_li1: "<strong>Almacenamiento local:</strong> Para escanear y cargar archivos ROM proporcionados por el usuario. EmulAItor no incluye juegos ni archivos BIOS.",
+                priv_s3_li2: "<strong>Red local (NAS/SMB):</strong> Conexion opcional a servidores del usuario en su red WiFi. Sin conexiones externas.",
+                priv_s3_li3: "<strong>Mandos/Gamepads:</strong> Acceso a controladores Bluetooth y USB para la experiencia de juego.",
+                priv_s4_title: "4. Almacenamiento en la Nube",
+                priv_s4_text: "La sincronizacion de partidas guardadas (Cloud Save) utiliza exclusivamente la carpeta de datos de aplicacion de <strong>SU cuenta personal</strong> de Google Drive (auth/drive.appdata). Nosotros no tenemos acceso a sus archivos, no gestionamos servidores de datos ni podemos ver su contenido.",
+                priv_s5_title: "5. Codigo Abierto y Contacto",
+                priv_s5_text: "EmulAItor es software de codigo abierto bajo licencia GPLv3. El codigo fuente es auditable publicamente.",
+                priv_s5_contact: "Para dudas: <span id='contact-link-es'></span>"
+            },
+            en: {
+                btn_back: "\u2190 EmulAItor",
+                priv_title: "Privacy Policy and Terms of Use",
+                priv_s1_title: "1. Summary",
+                priv_s1_text: "EmulAItor deeply respects your privacy. Our philosophy is simple: <strong>Your data is yours.</strong> We do not collect, store, or sell your personal information.",
+                priv_s2_title: "2. Data Collection",
+                priv_s2_text: "EmulAItor <strong>DOES NOT collect</strong> any personally identifiable information (PII).",
+                priv_s2_li1: "We do not have user account servers.",
+                priv_s2_li2: "We do not use tracking cookies or third-party analytics.",
+                priv_s2_li3: "There are no ads of any kind.",
+                priv_s3_title: "3. Device Permissions",
+                priv_s3_li1: "<strong>Local storage:</strong> To scan and load ROM files provided by the user. EmulAItor does not include games or BIOS files.",
+                priv_s3_li2: "<strong>Local network (NAS/SMB):</strong> Optional connection to user servers on their WiFi network. No external connections.",
+                priv_s3_li3: "<strong>Gamepads:</strong> Access to Bluetooth and USB controllers for the gaming experience.",
+                priv_s4_title: "4. Cloud Storage",
+                priv_s4_text: "Cloud Save synchronization exclusively uses the application data folder of <strong>YOUR personal</strong> Google Drive account (auth/drive.appdata). We do not have access to your files, we do not manage data servers, and we cannot see your content.",
+                priv_s5_title: "5. Open Source & Contact",
+                priv_s5_text: "EmulAItor is open-source software under the GPLv3 license. The source code is publicly auditable.",
+                priv_s5_contact: "Questions: <span id='contact-link-en'></span>"
+            }
+        };
+
+        let currentLang = localStorage.getItem('rolemiaster_lang') || 'es';
+
+        function changeLang(lang) {
+            currentLang = lang;
+            localStorage.setItem('rolemiaster_lang', lang);
+            document.querySelectorAll('.btn-lang').forEach(b => b.classList.remove('active'));
+            document.getElementById('btn-' + lang).classList.add('active');
+            var u = "emulaitor", d = "rolemiaster.com";
+            var emailLink = '<a href="mailto:' + u + '@' + d + '">' + u + '@' + d + '</a>';
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                    if (key === 'priv_s5_contact') {
+                        const span = el.querySelector('#contact-link-es') || el.querySelector('#contact-link-en');
+                        if (span) span.innerHTML = emailLink;
+                    }
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            changeLang(currentLang);
+        });
+    </script>
+
+</body>
+
+</html>

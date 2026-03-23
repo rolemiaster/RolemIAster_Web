@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyncronIA - Politica de Privacidad</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Roboto:wght@300;400;500&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --magenta: #e040fb;
+            --cyan: #00e5ff;
+            --magenta-dim: rgba(224, 64, 251, 0.15);
+            --cyan-dim: rgba(0, 229, 255, 0.15);
+            --bg-void: #050510;
+            --bg-dark: #0a0a18;
+            --bg-panel: #0f0f20;
+            --text-main: #d0d0e0;
+            --text-muted: #606080;
+            --border: #1a1a30;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: var(--bg-void);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(5, 5, 16, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .btn-back {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--magenta);
+            text-decoration: none;
+            padding: 6px 16px;
+            border: 1px solid rgba(224, 64, 251, 0.3);
+            border-radius: 6px;
+            transition: all 0.3s;
+            letter-spacing: 1px;
+        }
+
+        .btn-back:hover {
+            background: var(--magenta-dim);
+            border-color: var(--magenta);
+            box-shadow: 0 0 15px rgba(224, 64, 251, 0.2);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo img { height: 38px; width: auto; }
+
+        .logo-text {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--magenta), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 2px;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 0;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .btn-lang {
+            background: transparent;
+            border: none;
+            border-right: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 6px 14px;
+            cursor: pointer;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: all 0.3s;
+            letter-spacing: 1px;
+        }
+
+        .btn-lang:last-child { border-right: none; }
+
+        .btn-lang.active {
+            background: linear-gradient(135deg, var(--magenta-dim), var(--cyan-dim));
+            color: #fff;
+        }
+
+        .btn-lang:hover:not(.active) { color: var(--magenta); }
+
+        .privacy-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 7rem 2rem 4rem;
+        }
+
+        .privacy-container h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            margin-bottom: 2rem;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, var(--magenta), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .privacy-container h2 {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.2rem;
+            color: var(--magenta);
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        .privacy-container p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .privacy-container ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .privacy-container li {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 0.3rem;
+        }
+
+        .privacy-container a {
+            color: var(--magenta);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .privacy-container a:hover { color: var(--cyan); }
+
+        .privacy-container strong { color: var(--text-main); }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        footer p {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+        }
+
+        footer a {
+            color: var(--magenta);
+            text-decoration: none;
+        }
+
+        footer a:hover { color: var(--cyan); }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 0.8rem;
+                padding: 0.8rem 1rem;
+            }
+            .privacy-container { padding-top: 9rem; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a href="./" class="btn-back" data-i18n="btn_back">&larr; SyncronIA</a>
+            <a href="./" class="logo">
+                <img src="assets/logo_sin_fondo_peque.png" alt="SyncronIA">
+                <span class="logo-text">SyncronIA</span>
+            </a>
+        </div>
+        <div class="nav-right">
+            <button id="btn-es" class="btn-lang active" onclick="changeLang('es')">ES</button>
+            <button id="btn-en" class="btn-lang" onclick="changeLang('en')">EN</button>
+        </div>
+    </nav>
+
+    <div class="privacy-container">
+        <h1 data-i18n="priv_title">Politica de Privacidad y Condiciones de Uso</h1>
+
+        <h2 data-i18n="priv_s1_title">1. Resumen</h2>
+        <p data-i18n="priv_s1_text">SyncronIA respeta profundamente su privacidad. Nuestra filosofia es simple: Sus datos son suyos. No recopilamos, almacenamos ni vendemos su informacion personal.</p>
+
+        <h2 data-i18n="priv_s2_title">2. Recopilacion de Datos</h2>
+        <p data-i18n="priv_s2_text">SyncronIA NO recopila ninguna informacion personal identificable (PII).</p>
+        <ul>
+            <li data-i18n="priv_s2_li1">No tenemos servidores de cuentas de usuario ni telemetria.</li>
+            <li data-i18n="priv_s2_li2">No usamos cookies de rastreo ni analiticas de terceros.</li>
+            <li data-i18n="priv_s2_li3">No hay anuncios de ninguna clase.</li>
+        </ul>
+
+        <h2 data-i18n="priv_s3_title">3. Sincronizacion y Cifrado</h2>
+        <p data-i18n="priv_s3_text">SyncronIA sincroniza archivos directamente entre su equipo y los proveedores de nube que usted configure (Google Drive, OneDrive, Dropbox, etc.). La conexion es directa; no existen servidores intermediarios operados por nosotros.</p>
+        <ul>
+            <li data-i18n="priv_s3_li1">El cifrado de extremo a extremo se aplica localmente antes de subir. Es zero-knowledge: ni el proveedor de nube puede leer sus archivos.</li>
+            <li data-i18n="priv_s3_li2">Las credenciales de nube se almacenan unicamente en su equipo local.</li>
+        </ul>
+
+        <h2 data-i18n="priv_s4_title">4. Asistente IA</h2>
+        <p data-i18n="priv_s4_text">El asistente integrado ejecuta modelos de IA 100% en local. Ningun dato, consulta ni archivo sale de su ordenador. Los modelos se descargan una vez y se ejecutan sin conexion.</p>
+
+        <h2 data-i18n="priv_s5_title">5. Contacto</h2>
+        <p data-i18n="priv_s5_contact">Para dudas: <span id="contact-link"></span></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 SyncronIA &mdash; <a href="../">RolemIAster Universe</a></p>
+    </footer>
+
+    <script>
+        const translations = {
+            es: {
+                btn_back: "\u2190 SyncronIA",
+                priv_title: "Politica de Privacidad y Condiciones de Uso",
+                priv_s1_title: "1. Resumen",
+                priv_s1_text: "SyncronIA respeta profundamente su privacidad. Nuestra filosofia es simple: <strong>Sus datos son suyos.</strong> No recopilamos, almacenamos ni vendemos su informacion personal.",
+                priv_s2_title: "2. Recopilacion de Datos",
+                priv_s2_text: "SyncronIA <strong>NO recopila</strong> ninguna informacion personal identificable (PII).",
+                priv_s2_li1: "No tenemos servidores de cuentas de usuario ni telemetria.",
+                priv_s2_li2: "No usamos cookies de rastreo ni analiticas de terceros.",
+                priv_s2_li3: "No hay anuncios de ninguna clase.",
+                priv_s3_title: "3. Sincronizacion y Cifrado",
+                priv_s3_text: "SyncronIA sincroniza archivos directamente entre su equipo y los proveedores de nube que usted configure (Google Drive, OneDrive, Dropbox, etc.). La conexion es directa; no existen servidores intermediarios operados por nosotros.",
+                priv_s3_li1: "El cifrado de extremo a extremo se aplica localmente antes de subir. Es zero-knowledge: ni el proveedor de nube puede leer sus archivos.",
+                priv_s3_li2: "Las credenciales de nube se almacenan unicamente en su equipo local.",
+                priv_s4_title: "4. Asistente IA",
+                priv_s4_text: "El asistente integrado ejecuta modelos de IA 100% en local. Ningun dato, consulta ni archivo sale de su ordenador. Los modelos se descargan una vez y se ejecutan sin conexion.",
+                priv_s5_title: "5. Contacto",
+                priv_s5_contact: "Para dudas: <span id='contact-link-es'></span>"
+            },
+            en: {
+                btn_back: "\u2190 SyncronIA",
+                priv_title: "Privacy Policy and Terms of Use",
+                priv_s1_title: "1. Summary",
+                priv_s1_text: "SyncronIA deeply respects your privacy. Our philosophy is simple: <strong>Your data is yours.</strong> We do not collect, store, or sell your personal information.",
+                priv_s2_title: "2. Data Collection",
+                priv_s2_text: "SyncronIA <strong>DOES NOT collect</strong> any personally identifiable information (PII).",
+                priv_s2_li1: "We do not have user account servers or telemetry.",
+                priv_s2_li2: "We do not use tracking cookies or third-party analytics.",
+                priv_s2_li3: "There are no ads of any kind.",
+                priv_s3_title: "3. Synchronization & Encryption",
+                priv_s3_text: "SyncronIA syncs files directly between your computer and the cloud providers you configure (Google Drive, OneDrive, Dropbox, etc.). The connection is direct; there are no intermediary servers operated by us.",
+                priv_s3_li1: "End-to-end encryption is applied locally before upload. It is zero-knowledge: not even the cloud provider can read your files.",
+                priv_s3_li2: "Cloud credentials are stored only on your local computer.",
+                priv_s4_title: "4. AI Assistant",
+                priv_s4_text: "The built-in assistant runs AI models 100% locally. No data, queries or files leave your computer. Models are downloaded once and run offline.",
+                priv_s5_title: "5. Contact",
+                priv_s5_contact: "Questions: <span id='contact-link-en'></span>"
+            }
+        };
+
+        let currentLang = localStorage.getItem('rolemiaster_lang') || 'es';
+
+        function changeLang(lang) {
+            currentLang = lang;
+            localStorage.setItem('rolemiaster_lang', lang);
+            document.querySelectorAll('.btn-lang').forEach(b => b.classList.remove('active'));
+            document.getElementById('btn-' + lang).classList.add('active');
+            var u = "syncronia", d = "rolemiaster.com";
+            var emailLink = '<a href="mailto:' + u + '@' + d + '">' + u + '@' + d + '</a>';
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                    if (key === 'priv_s5_contact') {
+                        const span = el.querySelector('#contact-link-es') || el.querySelector('#contact-link-en');
+                        if (span) span.innerHTML = emailLink;
+                    }
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            changeLang(currentLang);
+        });
+    </script>
+
+</body>
+
+</html>

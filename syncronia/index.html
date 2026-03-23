@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyncronIA - Sincronizacion Inteligente</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Roboto:wght@300;400;500&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --magenta: #e040fb;
+            --cyan: #00e5ff;
+            --magenta-dim: rgba(224, 64, 251, 0.15);
+            --cyan-dim: rgba(0, 229, 255, 0.15);
+            --bg-void: #050510;
+            --bg-dark: #0a0a18;
+            --bg-panel: #0f0f20;
+            --text-main: #d0d0e0;
+            --text-muted: #606080;
+            --border: #1a1a30;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: var(--bg-void);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ===== CIRCUIT PATTERN BACKGROUND ===== */
+        .circuit-bg {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0.03;
+            background:
+                linear-gradient(var(--magenta) 1px, transparent 1px),
+                linear-gradient(90deg, var(--cyan) 1px, transparent 1px),
+                linear-gradient(var(--magenta) 0.5px, transparent 0.5px),
+                linear-gradient(90deg, var(--cyan) 0.5px, transparent 0.5px);
+            background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+        }
+
+        /* ===== NAV ===== */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(5, 5, 16, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .btn-back {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--magenta);
+            text-decoration: none;
+            padding: 6px 16px;
+            border: 1px solid rgba(224, 64, 251, 0.3);
+            border-radius: 6px;
+            transition: all 0.3s;
+            letter-spacing: 1px;
+        }
+
+        .btn-back:hover {
+            background: var(--magenta-dim);
+            border-color: var(--magenta);
+            box-shadow: 0 0 15px rgba(224, 64, 251, 0.2);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 38px;
+            width: auto;
+        }
+
+        .logo-text {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--magenta), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 2px;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 0;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .btn-lang {
+            background: transparent;
+            border: none;
+            border-right: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 6px 14px;
+            cursor: pointer;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: all 0.3s;
+            letter-spacing: 1px;
+        }
+
+        .btn-lang:last-child {
+            border-right: none;
+        }
+
+        .btn-lang.active {
+            background: linear-gradient(135deg, var(--magenta-dim), var(--cyan-dim));
+            color: #fff;
+        }
+
+        .btn-lang:hover:not(.active) {
+            color: var(--magenta);
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 6rem 2rem 4rem;
+        }
+
+        .hero-glow {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.15;
+            pointer-events: none;
+        }
+
+        .hero-glow-magenta {
+            background: var(--magenta);
+            top: 10%;
+            left: 20%;
+        }
+
+        .hero-glow-cyan {
+            background: var(--cyan);
+            bottom: 10%;
+            right: 20%;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+        }
+
+        .hero-logo {
+            width: 200px;
+            margin: 0 auto 2.5rem;
+            animation: logoPulse 4s ease-in-out infinite;
+        }
+
+        .hero-logo img {
+            width: 100%;
+            filter: drop-shadow(0 0 30px rgba(224, 64, 251, 0.3)) drop-shadow(0 0 60px rgba(0, 229, 255, 0.15));
+        }
+
+        @keyframes logoPulse {
+            0%, 100% {
+                filter: drop-shadow(0 0 20px rgba(224, 64, 251, 0.2)) drop-shadow(0 0 40px rgba(0, 229, 255, 0.1));
+                transform: scale(1);
+            }
+
+            50% {
+                filter: drop-shadow(0 0 40px rgba(224, 64, 251, 0.4)) drop-shadow(0 0 80px rgba(0, 229, 255, 0.2));
+                transform: scale(1.03);
+            }
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            letter-spacing: 4px;
+            background: linear-gradient(135deg, var(--magenta), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        .hero-tagline {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.3rem;
+            color: var(--text-muted);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+
+        .hero-desc {
+            font-size: 1.1rem;
+            color: #a0a0b8;
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-sync {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 14px 36px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .btn-sync-primary {
+            background: linear-gradient(135deg, var(--magenta), var(--cyan));
+            color: #000;
+            border: none;
+        }
+
+        .btn-sync-primary:hover {
+            box-shadow: 0 0 30px rgba(224, 64, 251, 0.3), 0 0 60px rgba(0, 229, 255, 0.15);
+            transform: translateY(-3px);
+        }
+
+        .btn-sync-secondary {
+            background: transparent;
+            border: 2px solid;
+            border-image: linear-gradient(135deg, var(--magenta), var(--cyan)) 1;
+            color: var(--magenta);
+        }
+
+        .btn-sync-secondary:hover {
+            background: linear-gradient(135deg, var(--magenta-dim), var(--cyan-dim));
+            box-shadow: 0 0 20px rgba(224, 64, 251, 0.15);
+            transform: translateY(-3px);
+        }
+
+        /* ===== HOW IT WORKS ===== */
+        .how-it-works {
+            position: relative;
+            z-index: 1;
+            padding: 5rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .how-it-works h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            text-align: center;
+            margin-bottom: 3rem;
+            letter-spacing: 3px;
+            background: linear-gradient(135deg, var(--magenta), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .step {
+            background: var(--bg-panel);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            transition: all 0.4s;
+            overflow: hidden;
+        }
+
+        .step::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--magenta), var(--cyan));
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .step:hover {
+            border-color: rgba(224, 64, 251, 0.3);
+            box-shadow: 0 10px 40px rgba(224, 64, 251, 0.08);
+            transform: translateY(-5px);
+        }
+
+        .step:hover::before {
+            opacity: 1;
+        }
+
+        .step-number {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--magenta), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        .step-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .step h3 {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.2rem;
+            color: #fff;
+            margin-bottom: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .step p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        /* ===== KEY FEATURES ===== */
+        .key-features {
+            position: relative;
+            z-index: 1;
+            padding: 4rem 2rem;
+            background: var(--bg-dark);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .key-features h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            text-align: center;
+            margin-bottom: 3rem;
+            letter-spacing: 3px;
+            background: linear-gradient(135deg, var(--magenta), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .kf-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .kf-item {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .kf-item .kf-icon {
+            font-size: 2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .kf-item h3 {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.05rem;
+            color: var(--magenta);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .kf-item p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* ===== PRIVACY ===== */
+        .privacy-section {
+            position: relative;
+            z-index: 1;
+            padding: 4rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .privacy-section h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(0.9rem, 2vw, 1.2rem);
+            margin-bottom: 1.5rem;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, var(--magenta), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .privacy-section p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .privacy-section a {
+            color: var(--magenta);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .privacy-section a:hover {
+            color: var(--cyan);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        footer p {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+        }
+
+        footer a {
+            color: var(--magenta);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--cyan);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 0.8rem;
+                padding: 0.8rem 1rem;
+            }
+
+            .hero {
+                padding-top: 8rem;
+            }
+
+            .hero-logo {
+                width: 140px;
+            }
+
+            .steps {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== ENTRANCE ANIMATIONS ===== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: opacity 0.7s, transform 0.7s;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hero-content {
+            opacity: 0;
+            animation: heroEntrance 1s ease forwards 0.3s;
+        }
+
+        @keyframes heroEntrance {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CIRCUIT BG -->
+    <div class="circuit-bg"></div>
+
+    <!-- NAV -->
+    <nav>
+        <div class="nav-left">
+            <a href="../" class="btn-back" data-i18n="btn_portal">&larr; Portal</a>
+            <a href="./" class="logo">
+                <img src="assets/logo_sin_fondo_peque.png" alt="SyncronIA">
+                <span class="logo-text">SyncronIA</span>
+            </a>
+        </div>
+        <div class="nav-right">
+            <button id="btn-es" class="btn-lang active" onclick="changeLang('es')">ES</button>
+            <button id="btn-en" class="btn-lang" onclick="changeLang('en')">EN</button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-glow hero-glow-magenta"></div>
+        <div class="hero-glow hero-glow-cyan"></div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="assets/logo_sin_fondo_grande.png" alt="SyncronIA Logo">
+            </div>
+            <h1>SyncronIA</h1>
+            <p class="hero-tagline" data-i18n="hero_tagline">Todos tus archivos. Todas tus nubes. Un solo lugar.</p>
+            <p class="hero-desc" data-i18n="hero_desc">Deja de hacer malabarismos entre Dropbox, Google Drive y OneDrive. SyncronIA sincroniza tus carpetas con todas tus nubes a la vez, las cifra automaticamente y te deja organizarlo todo con un asistente IA que funciona sin internet. Sin anuncios, sin suscripciones, sin complicaciones.</p>
+            <div class="hero-buttons">
+                <button class="btn-sync btn-sync-primary" style="cursor: not-allowed; opacity: 0.7;" disabled
+                    data-i18n="btn_soon">Proximamente</button>
+                <a href="privacy.html" class="btn-sync btn-sync-secondary"
+                    data-i18n="btn_privacy">Privacidad</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT YOU CAN DO -->
+    <section class="how-it-works fade-in">
+        <h2 data-i18n="benefits_title">Que puedes hacer con SyncronIA</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">01</div>
+                <div class="step-icon">&#x2601;&#xFE0F;</div>
+                <h3 data-i18n="ben1_title">Sincroniza con todas tus nubes</h3>
+                <p data-i18n="ben1_desc">Elige una carpeta y SyncronIA la mantiene actualizada en Google Drive, OneDrive, Dropbox, tu NAS o cualquier servicio que uses. Todo a la vez.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">02</div>
+                <div class="step-icon">&#x1F4BE;</div>
+                <h3 data-i18n="ben2_title">Multiplica tu espacio gratis</h3>
+                <p data-i18n="ben2_desc">Tienes 15 GB en Drive y 5 GB en OneDrive? SyncronIA los une como si fuese un solo disco de 20 GB. Anade cuentas y sigue sumando.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">03</div>
+                <div class="step-icon">&#x1F512;</div>
+                <h3 data-i18n="ben3_title">Tus archivos, cifrados</h3>
+                <p data-i18n="ben3_desc">Todos tus archivos se cifran antes de salir de tu ordenador. Ni siquiera tu proveedor de nube puede leerlos. Tu privacidad, garantizada.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">04</div>
+                <div class="step-icon">&#x1F916;</div>
+                <h3 data-i18n="ben4_title">Un asistente que organiza por ti</h3>
+                <p data-i18n="ben4_desc">Pidele que busque archivos, los clasifique o los mueva. Funciona por chat, sin conexion a internet y sin enviar nada a ningun servidor.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MORE FEATURES -->
+    <section class="key-features fade-in">
+        <h2 data-i18n="kf_title">Mas razones para usarla</h2>
+        <div class="kf-grid">
+            <div class="kf-item">
+                <div class="kf-icon">&#x23F1;&#xFE0F;</div>
+                <h3 data-i18n="kf1_title">Tu decides cuando</h3>
+                <p data-i18n="kf1_desc">Sincroniza al instante, cada cierto tiempo, a una hora fija del dia o solo cuando tu quieras. 4 modos que se adaptan a tu ritmo.</p>
+            </div>
+            <div class="kf-item">
+                <div class="kf-icon">&#x1F4F1;</div>
+                <h3 data-i18n="kf2_title">Envia desde el movil</h3>
+                <p data-i18n="kf2_desc">Manda archivos desde Telegram a tu PC y se sincronizan al instante. La IA los ordena en la carpeta correcta.</p>
+            </div>
+            <div class="kf-item">
+                <div class="kf-icon">&#x1F4C2;</div>
+                <h3 data-i18n="kf3_title">Filtra lo que importa</h3>
+                <p data-i18n="kf3_desc">Perfiles listos para oficina, fotografia, desarrollo o estudios. O crea tus propias reglas de lo que quieres sincronizar.</p>
+            </div>
+            <div class="kf-item">
+                <div class="kf-icon">&#x1F504;</div>
+                <h3 data-i18n="kf4_title">Nunca pierdas un archivo</h3>
+                <p data-i18n="kf4_desc">Historial de versiones automatico. Si algo sale mal, recupera versiones anteriores de cualquier archivo.</p>
+            </div>
+            <div class="kf-item">
+                <div class="kf-icon">&#x1F6E1;&#xFE0F;</div>
+                <h3 data-i18n="kf5_title">A prueba de fallos</h3>
+                <p data-i18n="kf5_desc">Si una nube se cae, las demas siguen funcionando. Si apagas el PC a mitad de sync, retoma donde lo dejo al encender.</p>
+            </div>
+            <div class="kf-item">
+                <div class="kf-icon">&#x1F3AF;</div>
+                <h3 data-i18n="kf6_title">Configura una vez</h3>
+                <p data-i18n="kf6_desc">Arranca con el sistema y trabaja en silencio desde la bandeja. Asistente de configuracion guiado para empezar en minutos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 SyncronIA &mdash; <a href="../">RolemIAster Universe</a></p>
+        <p style="margin-top: 0.5rem;" data-i18n="footer_status">En desarrollo activo</p>
+        <p style="margin-top: 0.3rem;"><a href="privacy.html" data-i18n="footer_privacy">Politica de Privacidad</a></p>
+    </footer>
+
+    <script>
+        // ===== I18N =====
+        const translations = {
+            es: {
+                btn_portal: "\u2190 Portal",
+                hero_tagline: "Todos tus archivos. Todas tus nubes. Un solo lugar.",
+                hero_desc: "Deja de hacer malabarismos entre Dropbox, Google Drive y OneDrive. SyncronIA sincroniza tus carpetas con todas tus nubes a la vez, las cifra automaticamente y te deja organizarlo todo con un asistente IA que funciona sin internet. Sin anuncios, sin suscripciones, sin complicaciones.",
+                btn_soon: "Proximamente",
+                btn_privacy: "Privacidad",
+                benefits_title: "Que puedes hacer con SyncronIA",
+                ben1_title: "Sincroniza con todas tus nubes",
+                ben1_desc: "Elige una carpeta y SyncronIA la mantiene actualizada en Google Drive, OneDrive, Dropbox, tu NAS o cualquier servicio que uses. Todo a la vez.",
+                ben2_title: "Multiplica tu espacio gratis",
+                ben2_desc: "Tienes 15 GB en Drive y 5 GB en OneDrive? SyncronIA los une como si fuese un solo disco de 20 GB. Anade cuentas y sigue sumando.",
+                ben3_title: "Tus archivos, cifrados",
+                ben3_desc: "Todos tus archivos se cifran antes de salir de tu ordenador. Ni siquiera tu proveedor de nube puede leerlos. Tu privacidad, garantizada.",
+                ben4_title: "Un asistente que organiza por ti",
+                ben4_desc: "Pidele que busque archivos, los clasifique o los mueva. Funciona por chat, sin conexion a internet y sin enviar nada a ningun servidor.",
+                kf_title: "Mas razones para usarla",
+                kf1_title: "Tu decides cuando",
+                kf1_desc: "Sincroniza al instante, cada cierto tiempo, a una hora fija del dia o solo cuando tu quieras. 4 modos que se adaptan a tu ritmo.",
+                kf2_title: "Envia desde el movil",
+                kf2_desc: "Manda archivos desde Telegram a tu PC y se sincronizan al instante. La IA los ordena en la carpeta correcta.",
+                kf3_title: "Filtra lo que importa",
+                kf3_desc: "Perfiles listos para oficina, fotografia, desarrollo o estudios. O crea tus propias reglas de lo que quieres sincronizar.",
+                kf4_title: "Nunca pierdas un archivo",
+                kf4_desc: "Historial de versiones automatico. Si algo sale mal, recupera versiones anteriores de cualquier archivo.",
+                kf5_title: "A prueba de fallos",
+                kf5_desc: "Si una nube se cae, las demas siguen funcionando. Si apagas el PC a mitad de sync, retoma donde lo dejo al encender.",
+                kf6_title: "Configura una vez",
+                kf6_desc: "Arranca con el sistema y trabaja en silencio desde la bandeja. Asistente de configuracion guiado para empezar en minutos.",
+                footer_status: "En desarrollo activo",
+                footer_privacy: "Politica de Privacidad"
+            },
+            en: {
+                btn_portal: "\u2190 Portal",
+                hero_tagline: "All your files. All your clouds. One place.",
+                hero_desc: "Stop juggling between Dropbox, Google Drive and OneDrive. SyncronIA syncs your folders with all your clouds at once, encrypts them automatically and lets you organize everything with an AI assistant that works offline. No ads, no subscriptions, no hassle.",
+                btn_soon: "Coming Soon",
+                btn_privacy: "Privacy",
+                benefits_title: "What you can do with SyncronIA",
+                ben1_title: "Sync with all your clouds",
+                ben1_desc: "Pick a folder and SyncronIA keeps it updated on Google Drive, OneDrive, Dropbox, your NAS or any service you use. All at once.",
+                ben2_title: "Multiply your free space",
+                ben2_desc: "Got 15 GB on Drive and 5 GB on OneDrive? SyncronIA merges them into a single 20 GB drive. Add accounts and keep growing.",
+                ben3_title: "Your files, encrypted",
+                ben3_desc: "All your files are encrypted before leaving your computer. Not even your cloud provider can read them. Your privacy, guaranteed.",
+                ben4_title: "An assistant that organizes for you",
+                ben4_desc: "Ask it to find files, classify them or move them. Works via chat, without internet and without sending anything to any server.",
+                kf_title: "More reasons to use it",
+                kf1_title: "You decide when",
+                kf1_desc: "Sync instantly, at intervals, at a fixed daily time or only when you want. 4 modes that adapt to your pace.",
+                kf2_title: "Send from your phone",
+                kf2_desc: "Send files from Telegram to your PC and they sync instantly. The AI sorts them into the right folder.",
+                kf3_title: "Filter what matters",
+                kf3_desc: "Ready-made profiles for office, photography, development or studies. Or create your own rules for what to sync.",
+                kf4_title: "Never lose a file",
+                kf4_desc: "Automatic version history. If something goes wrong, restore previous versions of any file.",
+                kf5_title: "Failure-proof",
+                kf5_desc: "If one cloud goes down, the rest keep working. If you shut down mid-sync, it picks up where it left off.",
+                kf6_title: "Set up once",
+                kf6_desc: "Starts with your system and works silently from the tray. Guided setup wizard to get started in minutes.",
+                footer_status: "In active development",
+                footer_privacy: "Privacy Policy"
+            }
+        };
+
+        let currentLang = localStorage.getItem('rolemiaster_lang') || 'es';
+
+        function changeLang(lang) {
+            currentLang = lang;
+            localStorage.setItem('rolemiaster_lang', lang);
+            document.querySelectorAll('.btn-lang').forEach(b => b.classList.remove('active'));
+            document.getElementById('btn-' + lang).classList.add('active');
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+        }
+
+        // ===== SCROLL ANIMATIONS =====
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            changeLang(currentLang);
+            document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        });
+    </script>
+
+</body>
+
+</html>

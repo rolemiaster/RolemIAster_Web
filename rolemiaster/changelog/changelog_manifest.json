@@ -1,0 +1,149 @@
+{
+    "languages": [
+        {
+            "code": "ar",
+            "name": "العربية (Arabic)",
+            "file": "changelog/changelog_produccion_pc_ar.md"
+        },
+        {
+            "code": "bg",
+            "name": "Български (Bulgarian)",
+            "file": "changelog/changelog_produccion_pc_bg.md"
+        },
+        {
+            "code": "cs",
+            "name": "Čeština (Czech)",
+            "file": "changelog/changelog_produccion_pc_cs.md"
+        },
+        {
+            "code": "da",
+            "name": "Dansk (Danish)",
+            "file": "changelog/changelog_produccion_pc_da.md"
+        },
+        {
+            "code": "de",
+            "name": "Deutsch (German)",
+            "file": "changelog/changelog_produccion_pc_de.md"
+        },
+        {
+            "code": "el",
+            "name": "Ελληνικά (Greek)",
+            "file": "changelog/changelog_produccion_pc_el.md"
+        },
+        {
+            "code": "en",
+            "name": "English",
+            "file": "changelog/changelog_produccion_pc_en.md"
+        },
+        {
+            "code": "es",
+            "name": "Español (Spanish)",
+            "file": "changelog/changelog_produccion_pc_es.md"
+        },
+        {
+            "code": "es-419",
+            "name": "Español (Latinoamérica)",
+            "file": "changelog/changelog_produccion_pc_es-419.md"
+        },
+        {
+            "code": "fi",
+            "name": "Suomi (Finnish)",
+            "file": "changelog/changelog_produccion_pc_fi.md"
+        },
+        {
+            "code": "fr",
+            "name": "Français (French)",
+            "file": "changelog/changelog_produccion_pc_fr.md"
+        },
+        {
+            "code": "hu",
+            "name": "Magyar (Hungarian)",
+            "file": "changelog/changelog_produccion_pc_hu.md"
+        },
+        {
+            "code": "id",
+            "name": "Bahasa Indonesia (Indonesian)",
+            "file": "changelog/changelog_produccion_pc_id.md"
+        },
+        {
+            "code": "it",
+            "name": "Italiano (Italian)",
+            "file": "changelog/changelog_produccion_pc_it.md"
+        },
+        {
+            "code": "ja",
+            "name": "日本語 (Japanese)",
+            "file": "changelog/changelog_produccion_pc_ja.md"
+        },
+        {
+            "code": "ko",
+            "name": "한국어 (Korean)",
+            "file": "changelog/changelog_produccion_pc_ko.md"
+        },
+        {
+            "code": "nl",
+            "name": "Nederlands (Dutch)",
+            "file": "changelog/changelog_produccion_pc_nl.md"
+        },
+        {
+            "code": "no",
+            "name": "Norsk (Norwegian)",
+            "file": "changelog/changelog_produccion_pc_no.md"
+        },
+        {
+            "code": "pl",
+            "name": "Polski (Polish)",
+            "file": "changelog/changelog_produccion_pc_pl.md"
+        },
+        {
+            "code": "pt",
+            "name": "Português (Portuguese)",
+            "file": "changelog/changelog_produccion_pc_pt.md"
+        },
+        {
+            "code": "ro",
+            "name": "Română (Romanian)",
+            "file": "changelog/changelog_produccion_pc_ro.md"
+        },
+        {
+            "code": "ru",
+            "name": "Русский (Russian)",
+            "file": "changelog/changelog_produccion_pc_ru.md"
+        },
+        {
+            "code": "sv",
+            "name": "Svenska (Swedish)",
+            "file": "changelog/changelog_produccion_pc_sv.md"
+        },
+        {
+            "code": "th",
+            "name": "ไทย (Thai)",
+            "file": "changelog/changelog_produccion_pc_th.md"
+        },
+        {
+            "code": "tr",
+            "name": "Türkçe (Turkish)",
+            "file": "changelog/changelog_produccion_pc_tr.md"
+        },
+        {
+            "code": "uk",
+            "name": "Українська (Ukrainian)",
+            "file": "changelog/changelog_produccion_pc_uk.md"
+        },
+        {
+            "code": "vi",
+            "name": "Tiếng Việt (Vietnamese)",
+            "file": "changelog/changelog_produccion_pc_vi.md"
+        },
+        {
+            "code": "zh",
+            "name": "简体中文 (Simplified Chinese)",
+            "file": "changelog/changelog_produccion_pc_zh.md"
+        },
+        {
+            "code": "zh-tw",
+            "name": "繁體中文 (Traditional Chinese)",
+            "file": "changelog/changelog_produccion_pc_zh-tw.md"
+        }
+    ]
+}

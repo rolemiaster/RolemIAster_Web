@@ -1,0 +1,494 @@
+language,Description,Title
+arabic,"- **🧠 تجديد شامل للنواة الذكية**
+  - ⚡ **استجابات أسرع:** لقد أعدت كتابة دماغ اللعبة بحيث تتذكر الذكاء الاصطناعي بشكل أفضل ما عالجه بالفعل. عمليًا: وقت أقل في النظر إلى شاشة التحميل بين الأدوار. المحرك الآن يعيد استخدام العمل السابق بدلاً من البدء من الصفر في كل مرة تتصرف فيها. (نعم، لقد فعل ذلك من قبل. لا، أنا لست فخوراً بذلك.)
+  - 🧹 **ذاكرة أنظف:** يتم تخزين سجل اللعبة الآن بدون نفايات تقنية من لحظة كتابتها، وليس عند قراءتها. النتيجة: لدى الذكاء الاصطناعي مساحة أكبر لتذكر قصتك، وأقل رمزًا مهدرًا في بيانات داخلية لم يكن بحاجة لرؤيتها أبدًا.
+  - 🎯 **قواعد في مكانها:** تم نقل القواعد التكميلية التي يستشيرها الذكاء الاصطناعي لإثراء استجاباته بحيث لا تتداخل مع نظام التخزين المؤقت. التأثير غير مرئي لك، لكن المحرك يقدر ذلك في كل دور (قليل من السرعة الإضافية لن يضر).
+
+- ** Qwen3 مطلق العنان: تمكين التفكير الكامل**
+  - 🚀 **تفكير عميق:** النماذج ذات القدرة على التفكير (Qwen3, DeepSeek-R1...) لديها الآن إمكانياتها غير مقيدة بالكامل. بدلاً من الذهاب ""بشكل أعمى""، يفكر الذكاء الاصطناعي داخليًا قبل كل استجابة: يخطط لبطاقات الشخصيات، ويقيم التناسق السردي مع قصتك، ويتجنب الأخطاء مثل المخزونات المكررة أو السمات غير المكتملة. النتيجة هي ذكاء اصطناعي أكثر ذكاءً واتساقًا بشكل ملحوظ.
+  - 🧹 **شفاف لك:** كل هذا التفكير يحدث خلف الكواليس. ينظف المحرك تلقائيًا ""الحديث الداخلي"" للذكاء الاصطناعي قبل أن يعرض عليك الاستجابة. أنت ترى فقط النتيجة النهائية، الأكثر صقلًا.
+
+- **⚡ بداية لعب أكثر موثوقية**
+  - 🛡️ **وداعًا لتوقفات الدور الأول:** لقد قمنا بإزالة سبب للتأخير الأبدي عند بدء لعبة جديدة. من قبل، إذا أنشأ الذكاء الاصطناعي شخصية تاجر دون معرفة قواعد التجارة (لأنها غير موجودة في الدور الأول)، كان المحرك يحاول تصحيحها 3 مرات قبل الاستسلام، مما تسبب في انتظار غير مجدٍ لأكثر من دقيقة. الآن يتم حلها على الفور.
+  - 📖 **خلفية قصة لا تتأثر بإبداع الذكاء الاصطناعي:** إذا أصبح الذكاء الاصطناعي متحمسًا وأنشأ خلفية العالم بتنسيق تقني بدلاً من نص سردي، يكتشف المحرك ذلك ويستخرج القصة النظيفة تلقائيًا. قصتك تصل دائمًا كما ينبغي.
+  - 🧹 **واجهة مثالية:** لقد علمت الذكاء الاصطناعي عدم ""التحدث بالرموز"". من قبل، كانت أزرار القرار أو تعليقات السيد أحيانًا تعرض متغيرات داخلية غريبة (مثل *الفرار (move to loc_cripta)*). الآن كل شيء نظيف وتم إجبار النموذج على التواصل معك باستخدام نبرة الفكاهة التي اخترتها (يعتمد احترام هذا المعلم على مزاج الذكاء الاصطناعي).
+
+- **🌍 تصحيحات لغوية**
+  - 🗣️ **أماكن بلغتك:** المواقع التي ينشئها الذكاء الاصطناعي تحترم الآن اللغة المضبوطة في اللعبة. إذا كنت تلعب باللغة الإنجليزية، فلن ترى بعد الآن ""حي الساحل الغربي"" ولكن الاسم باللغة الإنجليزية. (عفوًا.)
+  - 🔘 **أزرار مترجمة:** زر الطوارئ ""متابعة"" يتحدث الآن بلغتك بدلاً من الظهور دائمًا بالإسبانية.",تجديد شامل للنواة الذكية
+bulgarian,"- **🧠 Цялостна реформа на AI ядрото**
+  - ⚡ **По-бързи отговори:** Пренаписах мозъка на играта, така че AI да помни по-добре какво вече е обработил. На практика: по-малко време пред екрана за зареждане между ходовете. Двигателят сега използва повторно предишната работа, вместо да започва от нулата всеки път, когато действате. (Да, преди го правеше. Не, не се гордея с това.)
+  - 🧹 **По-чиста памет:** Историята на играта вече се съхранява без технически боклук от момента на записването, а не при четенето. Резултат: AI има повече място да помни вашата история и по-малко токени се губят за вътрешни данни, които никога не е трябвало да вижда. 
+  - 🎯 **Правила където им е мястото:** Допълнителните правила, които AI ползва, за да обогати отговорите си, са преместени, така че да не пречат на кеширащата система. Ефектът е невидим за вас, но двигателят го оценява при всеки ход (не боли малко повече скорост).
+
+- ** Qwen3 е освободен: пълно разсъждение активирано**
+  - 🚀 **Дълбоко мислене:** Моделите със способност за разсъждение (Qwen3, DeepSeek-R1...) сега имат напълно отключен потенциал. Вместо да действа ""на сляпо"", AI разсъждава вътрешно преди всеки отговор: планира картите на героите, оценява наративното съответствие с вашата история и избягва грешки като дублирани инвентари или непълни атрибути. Резултатът е забележимо по-интелигентно и последователно AI.
+  - 🧹 **Прозрачно за вас:** Цялото това разсъждение се случва ""зад кулисите"". Двигателят автоматично почиства ""вътрешния монолог"" на AI, преди да ви покаже отговора. Вие виждате само крайния, по-изпипан резултат.
+
+- **⚡ По-надеждно стартиране на играта**
+  - 🛡️ **Край на безкрайните чакания в първия ход:** Премахнахме причина за вечно чакане при започване на нова игра. Преди, ако AI генерираше търговски герой, без да знае правилата за търговия (защото ги няма в първия ход), двигателят се опитваше да ги поправи 3 пъти, преди да се откаже, причинявайки повече от минута безполезна загуба на време. Сега се решава моментално.
+  - 📖 **Lore, защитено от креативно AI:** Ако AI се разгорещи и генерира предисторията на света в технически формат, вместо наративен текст, двигателят го засича и автоматично извлича чистата история. Вашата история винаги пристига както трябва.
+  - 🧹 **Безупречен интерфейс:** Научих AI да не ""говори на код"". Преди понякога бутоните за избор или коментарите на майстора показваха странни вътрешни променливи (като *Бягство (move to loc_scriptorium)*). Сега всичко е чисто и моделът е принуден да комуникира с вас, използвайки избрания от вас хумористичен тон (спазването на този параметър зависи от настроението на AI).
+
+- **🌍 Корекции на езика**
+  - 🗣️ **Места на вашия език:** Генерираните от AI локации вече спазват езика, зададен в играта. Ако играете на английски, вече няма да виждате ""District of the West Coast"", а английското име. (Опс.)
+  - 🔘 **Локализирани бутони:** Бутонът за спешно ""Продължаване"" вече говори на вашия език, вместо винаги да се показва на испански.",Цялостна реформа на AI ядрото
+czech,"- **🧠 Reforma del Núcleo de IA**
+  - ⚡ **Respuestas más rápidas:** He reescrito el cerebro del juego para que la IA recuerde mejor lo que ya ha procesado. En términos prácticos: menos tiempo mirando la pantalla de carga entre turno y turno. El motor ahora reutiliza trabajo previo en vez de empezar de cero cada vez que actúas. (Sí, antes lo hacía. No, no me enorgullezco de ello.)
+  - 🧹 **Memoria más limpia:** El historial de la partida ahora se almacena sin basura técnica desde el momento en que se escribe, no cuando se lee. Resultado: la IA tiene más espacio para recordar tu historia y menos tokens desperdiciados en datos internos que nunca necesitó ver.
+  - 🎯 **Reglas donde tocan:** Las reglas complementarias que la IA consulta para enriquecer sus respuestas se han reubicado para no interferir con el sistema de caché. El efecto es invisible para ti, pero el motor lo agradece en cada turno (un poquito más de velocidad no viene mal).
+
+- ** Qwen3 desatado: razonamiento completo activado**
+  - 🚀 **Pensamiento profundo:** Los modelos con capacidad de razonamiento (Qwen3, DeepSeek-R1...) ahora tienen su potencial completamente desbloqueado. En vez de ir ""a ciegas"", la IA razona internamente antes de cada respuesta: planifica las fichas de personaje, evalúa la coherencia narrativa con tu historia, y evita errores como inventarios duplicados o atributos incompletos. El resultado es una IA notablemente más inteligente y consistente.
+  - 🧹 **Transparente para ti:** Todo ese razonamiento ocurre entre bastidores. El motor limpia automáticamente el ""monólogo interno"" de la IA antes de mostrarte la respuesta. Tú solo ves el resultado final, más pulido.
+
+- **⚡ Arranque de partida más fiable**
+  - 🛡️ **Adiós a los bloqueos del primer turno:** Hemos eliminado una causa de esperas eternas al comenzar una partida nueva. Antes, si la IA generaba un personaje comerciante sin saber las reglas de comercio (porque no las tiene en el primer turno), el motor intentaba corregirlo 3 veces antes de rendirse, causando más de un minuto de espera inútil. Ahora lo resuelve al instante.
+  - 📖 **Lore a prueba de IA creativa:** Si la IA se emociona y genera el trasfondo del mundo en formato técnico en vez de texto narrativo, el motor lo detecta y extrae la historia limpia automáticamente. Tu lore siempre llega como debe.
+  - 🧹 **Interfaz impecable:** He enseñado a la IA a no ""hablar en código"". Antes, a veces los botones de decisión o los comentarios del máster mostraban variables internas raras (como *Huir (move to loc_cripta)*). Ahora todo está limpio y se ha forzado al modelo a comunicarse contigo usando el tono de humor que hayas elegido (lo de respetar este parámetro depende del humor que tenga la IA).
+
+- **🌍 Correcciones de idioma**
+  - 🗣️ **Lugares en tu idioma:** Las ubicaciones generadas por la IA ahora respetan el idioma configurado en el juego. Si juegas en inglés, ya no verás ""Distrito de la Costa Oeste"" sino el nombre en inglés. (Ups.)
+  - 🔘 **Botones localizados:** El botón de emergencia ""Continuar"" ahora habla tu idioma en vez de aparecer siempre en castellano.",Reforma integral del núcleo de IA
+danish,"- **🧠 Renovering af AI-kernen**
+  - ⚡ **Hurtigere svar:** Jeg har omskrevet spillets hjerne, så AI'en bedre husker, hvad den allerede har behandlet. Praktisk talt: mindre tid med at kigge på indlæsningsskærmen mellem ture. Motoren genbruger nu tidligere arbejde i stedet for at starte fra bunden hver gang du handler. (Ja, det gjorde den før. Nej, jeg er ikke stolt af det.)
+  - 🧹 **Renere hukommelse:** Spillets historik gemmes nu uden teknisk ""skrammel"" fra det øjeblik, den skrives, ikke når den læses. Resultat: AI'en har mere plads til at huske din historie og færre ""tokens"" spildt på interne data, den aldrig behøvede at se.
+  - 🎯 **Regler, hvor de hører hjemme:** Komplementære regler, som AI'en konsulterer for at berige sine svar, er blevet flyttet, så de ikke forstyrrer cachesystemet. Effekten er usynlig for dig, men motoren sætter pris på det i hver tur (en lille smule ekstra hastighed skader aldrig).
+
+- ** Qwen3 sluppet løs: fuld ræsonnering aktiveret**
+  - 🚀 **Dybere tænkning:** Modeller med ræsonneringsevner (Qwen3, DeepSeek-R1...) har nu deres potentiale fuldt udløst. I stedet for at gå ""i blinde"", ræsonnerer AI'en internt før hvert svar: den planlægger karakterark, evaluerer narrativ sammenhæng med din historie og undgår fejl som duplikerede inventarer eller ufuldstændige attributter. Resultatet er en markant klogere og mere konsistent AI.
+  - 🧹 **Gennemsigtig for dig:** Al denne ræsonnering sker ""bag kulisserne"". Motoren renser automatisk AI'ens ""indre monolog"", før den viser dig svaret. Du ser kun det endelige resultat, mere poleret.
+
+- **⚡ Mere pålidelig spilstart**
+  - 🛡️ **Farvel til ""frys"" ved første tur:** Vi har fjernet en årsag til evige ventetider, når man starter et nyt spil. Før, hvis AI'en genererede en handelskarakter uden at kende handelsreglerne (fordi den ikke har dem ved første tur), forsøgte motoren at rette det 3 gange, før den opgav, hvilket forårsagede mere end et minuts unødvendig ventetid. Nu løser den det øjeblikkeligt.
+  - 📖 **Lore immun over for kreativ AI:** Hvis AI'en bliver for entusiastisk og genererer verdens baggrundshistorie i teknisk format i stedet for narrativ tekst, registrerer motoren det og trækker den rene historie ud automatisk. Din lore kommer altid, som den skal.
+  - 🧹 **Fejlfri brugerflade:** Jeg har lært AI'en ikke at ""tale kode"". Før viste beslutningsknapper eller GM'ens kommentarer sommetider mærkelige interne variabler (som *Flygt (move to loc_scripture)*). Nu er alt rent, og modellen er blevet tvunget til at kommunikere med dig ved hjælp af den humor-tone, du har valgt (om denne parameter respekteres afhænger af AI'ens humør).
+
+- **🌍 Sprogkorrektioner**
+  - 🗣️ **Steder på dit sprog:** Steder genereret af AI'en respekterer nu det sprog, der er indstillet i spillet. Hvis du spiller på engelsk, vil du ikke længere se ""Distrito de la Costa Oeste"", men navnet på engelsk. (Ups.)
+  - 🔘 **Lokaliserede knapper:** Nødknappen ""Fortsæt"" taler nu dit sprog i stedet for altid at dukke op på spansk.",Grundig renovering af AI-kernen
+german,"- **🧠 KI-Kernüberholung**
+  - ⚡ **Schnellere Antworten:** Ich habe das Spielgehirn umgeschrieben, damit die KI besser weiß, was sie bereits verarbeitet hat. In der Praxis bedeutet das: weniger Wartezeit auf dem Ladebildschirm zwischen den Zügen. Die Engine nutzt jetzt vorherige Arbeit wieder, anstatt jedes Mal bei Null anzufangen, wenn du handelst. (Ja, das hat sie vorher getan. Nein, darauf bin ich nicht stolz.)
+  - 🧹 **Saubererer Speicher:** Der Spielverlauf wird jetzt ohne technischen Müll gespeichert, sobald er geschrieben wird, nicht erst beim Lesen. Ergebnis: Die KI hat mehr Platz, um sich an deine Geschichte zu erinnern und verschwendet weniger Tokens für interne Daten, die sie nie hätte sehen müssen.
+  - 🎯 **Regeln an ihrem Platz:** Zusätzliche Regeln, auf die die KI für ihre Antworten zugreift, wurden neu positioniert, um das Caching-System nicht zu stören. Der Effekt ist für dich unsichtbar, aber die Engine dankt es bei jedem Zug (ein bisschen mehr Geschwindigkeit schadet nie).
+
+- ** Qwen3 entfesselt: Vollständiges Reasoning aktiviert**
+  - 🚀 **Tiefes Denken:** Modelle mit Reasoning-Fähigkeiten (Qwen3, DeepSeek-R1...) haben jetzt ihr volles Potenzial freigeschaltet. Anstatt ""blindlings"" vorzugehen, denkt die KI intern nach, bevor sie antwortet: Sie plant Charakterkarten, bewertet die erzählerische Konsistenz mit deiner Geschichte und vermeidet Fehler wie doppelte Inventare oder unvollständige Attribute. Das Ergebnis ist eine bemerkenswert intelligentere und konsistentere KI.
+  - 🧹 **Transparent für dich:** All dieses Reasoning geschieht hinter den Kulissen. Die Engine bereinigt automatisch den ""internen Monolog"" der KI, bevor sie dir die Antwort zeigt. Du siehst nur das finale, poliertere Ergebnis.
+
+- **⚡ Zuverlässigerer Spielstart**
+  - 🛡️ **Keine Blockaden mehr im ersten Zug:** Wir haben eine Ursache für ewige Wartezeiten beim Start eines neuen Spiels beseitigt. Zuvor versuchte die KI, wenn sie einen Händlercharakter generierte, ohne die Handelsregeln zu kennen (weil sie diese im ersten Zug nicht hat), 3 Mal, dies zu korrigieren, bevor sie aufgab, was zu über einer Minute nutzloser Wartezeit führte. Jetzt löst sie es sofort.
+  - 📖 **Kreatives KI-sicheres Lore:** Wenn die KI überhitzt und den Hintergrund der Welt im technischen Format anstelle von erzählerischem Text generiert, erkennt die Engine dies und extrahiert automatisch die saubere Geschichte. Dein Lore kommt immer so an, wie es sollte.
+  - 🧹 **Makellose Oberfläche:** Ich habe der KI beigebracht, nicht ""in Code zu sprechen"". Zuvor zeigten Entscheidungsbuttons oder Kommentare des Meisters manchmal seltsame interne Variablen (wie *Fliehen (move to loc_cripta)*). Jetzt ist alles sauber und das Modell wurde gezwungen, mit dem von dir gewählten Humor-Ton mit dir zu kommunizieren (ob dieser Parameter eingehalten wird, hängt vom Humor der KI ab).
+
+- **🌍 Sprachkorrekturen**
+  - 🗣️ **Orte in deiner Sprache:** Von der KI generierte Orte respektieren jetzt die im Spiel eingestellte Sprache. Wenn du auf Englisch spielst, siehst du nicht mehr ""Distrito de la Costa Oeste"", sondern den Namen auf Englisch. (Ups.)
+  - 🔘 **Lokalisierte Buttons:** Der Notfallknopf ""Weiter"" spricht jetzt deine Sprache, anstatt immer auf Spanisch zu erscheinen.",Umfassende KI-Kernüberholung
+greek,"- **🧠 Αναμόρφωση Πυρήνα Τεχνητής Νοημοσύνης**
+  - ⚡ **Ταχύτερες απαντήσεις:** Έχω ξαναγράψει τον ""εγκέφαλο"" του παιχνιδιού ώστε η ΤΝ να θυμάται καλύτερα ό,τι έχει ήδη επεξεργαστεί. Πρακτικά: λιγότερος χρόνος αναμονής στην οθόνη φόρτωσης μεταξύ των γύρων. Ο μηχανισμός πλέον επαναχρησιμοποιεί την προηγούμενη εργασία αντί να ξεκινά από το μηδέν κάθε φορά που δράτε. (Ναι, το έκανε πριν. Όχι, δεν είμαι περήφανος γι' αυτό.)
+  - 🧹 **Καθαρότερη μνήμη:** Το ιστορικό του παιχνιδιού αποθηκεύεται πλέον χωρίς τεχνικά ""σκουπίδια"" από τη στιγμή που γράφεται, όχι όταν διαβάζεται. Αποτέλεσμα: η ΤΝ έχει περισσότερο χώρο για να θυμάται την ιστορία σας και λιγότερα ""tokens"" που σπαταλώνται σε εσωτερικά δεδομένα που ποτέ δεν χρειαζόταν να δει.
+  - 🎯 **Κανόνες στη θέση τους:** Οι συμπληρωματικοί κανόνες που συμβουλεύεται η ΤΝ για να εμπλουτίσει τις απαντήσεις της έχουν μεταφερθεί ώστε να μην παρεμβαίνουν στο σύστημα ""cache"". Το αποτέλεσμα είναι αόρατο για εσάς, αλλά ο μηχανισμός το εκτιμά σε κάθε γύρο (λίγη παραπάνω ταχύτητα ποτέ δεν βλάπτει).
+
+- ** Qwen3 απελευθερωμένο: πλήρης συλλογισμός ενεργοποιημένος**
+  - 🚀 **Βαθιά σκέψη:** Τα μοντέλα με δυνατότητα συλλογισμού (Qwen3, DeepSeek-R1...) έχουν πλέον πλήρως ξεκλειδωμένο το δυναμικό τους. Αντί να προχωρά ""στα τυφλά"", η ΤΝ συλλογίζεται εσωτερικά πριν από κάθε απάντηση: σχεδιάζει τα χαρακτηριστικά των χαρακτήρων, αξιολογεί την αφηγηματική συνοχή με την ιστορία σας και αποφεύγει λάθη όπως διπλά αντικείμενα στο απόθεμα ή ελλιπή χαρακτηριστικά. Το αποτέλεσμα είναι μια αισθητά πιο έξυπνη και συνεπής ΤΝ.
+  - 🧹 **Διαφανές για εσάς:** Όλος αυτός ο συλλογισμός συμβαίνει παρασκηνιακά. Ο μηχανισμός καθαρίζει αυτόματα τον ""εσωτερικό μονόλογο"" της ΤΝ πριν σας δείξει την απάντηση. Εσείς βλέπετε μόνο το τελικό, πιο εκλεπτυσμένο αποτέλεσμα.
+
+- **⚡ Πιο αξιόπιστη εκκίνηση παιχνιδιού**
+  - 🛡️ **Αντίο στα ""κολλήματα"" του πρώτου γύρου:** Έχουμε εξαλείψει μια αιτία αιώνιων αναμονών κατά την έναρξη ενός νέου παιχνιδιού. Πριν, αν η ΤΝ δημιουργούσε έναν χαρακτήρα εμπόρου χωρίς να γνωρίζει τους κανόνες εμπορίου (επειδή δεν τους είχε στον πρώτο γύρο), ο μηχανισμός προσπαθούσε να τους διορθώσει 3 φορές πριν τα παρατήσει, προκαλώντας πάνω από ένα λεπτό άχρηστη αναμονή. Τώρα το λύνει άμεσα.
+  - 📖 **Lore ανθεκτικό στην δημιουργική ΤΝ:** Αν η ΤΝ ενθουσιαστεί και δημιουργήσει το υπόβαθρο του κόσμου σε τεχνική μορφή αντί για αφηγηματικό κείμενο, ο μηχανισμός το εντοπίζει και εξάγει την καθαρή ιστορία αυτόματα. Το lore σας φτάνει πάντα όπως πρέπει.
+  - 🧹 **Αψεγάδιαστο interface:** Έχω διδάξει στην ΤΝ να μην ""μιλάει με κώδικα"". Πριν, μερικές φορές τα κουμπιά απόφασης ή τα σχόλια του αφηγητή εμφάνιζαν περίεργες εσωτερικές μεταβλητές (όπως *Φύγε (move to loc_cripta)*). Τώρα όλα είναι καθαρά και το μοντέλο αναγκάζεται να επικοινωνεί μαζί σας χρησιμοποιώντας τον τόνο χιούμορ που έχετε επιλέξει (το αν θα σεβαστεί αυτήν την παράμετρο εξαρτάται από τη διάθεση της ΤΝ).
+
+- **🌍 Διορθώσεις γλώσσας**
+  - 🗣️ **Τοποθεσίες στη γλώσσα σας:** Οι τοποθεσίες που δημιουργούνται από την ΤΝ πλέον σέβονται τη γλώσσα που έχει ρυθμιστεί στο παιχνίδι. Αν παίζετε στα Αγγλικά, δεν θα βλέπετε πλέον ""Distrito de la Costa Oeste"" αλλά το όνομα στα Αγγλικά. (Ουπς.)
+  - 🔘 **Εντοπισμένα κουμπιά:** Το κουμπί έκτακτης ανάγκης ""Συνέχεια"" πλέον μιλάει τη γλώσσα σας αντί να εμφανίζεται πάντα στα Ισπανικά.",Ολοκληρωτική Αναμόρφωση Πυρήνα Τεχνητής Νοημοσύνης
+english,"- **🧠 AI Core Overhaul**
+  - ⚡ **Faster Responses:** I've rewritten the game's brain so the AI remembers what it's already processed better. In practical terms: less time staring at the loading screen between turns. The engine now reuses previous work instead of starting from scratch every time you act. (Yes, it used to do that. No, I'm not proud of it.)
+  - 🧹 **Cleaner Memory:** The game history is now stored without technical junk from the moment it's written, not when it's read. Result: the AI has more space to remember your story and fewer tokens wasted on internal data it never needed to see.
+  - 🎯 **Rules Where They Belong:** Supplementary rules the AI consults to enrich its responses have been relocated to avoid interfering with the caching system. The effect is invisible to you, but the engine appreciates it every turn (a little extra speed never hurts).
+
+- ** Qwen3 Unleashed: Full Reasoning Activated**
+  - 🚀 **Deep Thinking:** Models with reasoning capabilities (Qwen3, DeepSeek-R1...) now have their potential fully unlocked. Instead of going in ""blind,"" the AI reasons internally before each response: it plans character sheets, evaluates narrative consistency with your story, and avoids errors like duplicate inventories or incomplete attributes. The result is a noticeably smarter and more consistent AI.
+  - 🧹 **Transparent to You:** All that reasoning happens behind the scenes. The engine automatically cleans up the AI's ""internal monologue"" before showing you the response. You only see the final, more polished result.
+
+- **⚡ More Reliable Game Start**
+  - 🛡️ **Goodbye First Turn Freezes:** We've eliminated a cause of eternal waiting when starting a new game. Previously, if the AI generated a merchant character without knowing the trading rules (because it doesn't have them on the first turn), the engine would try to correct it 3 times before giving up, causing over a minute of useless waiting. Now it's resolved instantly.
+  - 📖 **Creative AI-Proof Lore:** If the AI gets carried away and generates the world's backstory in technical format instead of narrative text, the engine detects it and automatically extracts the clean story. Your lore always arrives as it should.
+  - 🧹 **Impeccable Interface:** I've taught the AI not to ""speak in code."" Before, decision buttons or master comments sometimes showed weird internal variables (like *Flee (move to loc_crypt)*). Now everything is clean, and the model has been forced to communicate with you using the humor tone you've chosen (whether it respects this parameter depends on the AI's mood).
+
+- **🌍 Language Fixes**
+  - 🗣️ **Locations in Your Language:** Locations generated by the AI now respect the language set in the game. If you play in English, you'll no longer see ""Distrito de la Costa Oeste"" but the English name. (Oops.)
+  - 🔘 **Localized Buttons:** The emergency ""Continue"" button now speaks your language instead of always appearing in Spanish.",Complete AI Core Overhaul
+spanish,"- **🧠 Reforma del Núcleo de IA**
+  - ⚡ **Respuestas más rápidas:** He reescrito el cerebro del juego para que la IA recuerde mejor lo que ya ha procesado. En términos prácticos: menos tiempo mirando la pantalla de carga entre turno y turno. El motor ahora reutiliza trabajo previo en vez de empezar de cero cada vez que actúas. (Sí, antes lo hacía. No, no me enorgullezco de ello.)
+  - 🧹 **Memoria más limpia:** El historial de la partida ahora se almacena sin basura técnica desde el momento en que se escribe, no cuando se lee. Resultado: la IA tiene más espacio para recordar tu historia y menos tokens desperdiciados en datos internos que nunca necesitó ver.
+  - 🎯 **Reglas donde tocan:** Las reglas complementarias que la IA consulta para enriquecer sus respuestas se han reubicado para no interferir con el sistema de caché. El efecto es invisible para ti, pero el motor lo agradece en cada turno (un poquito más de velocidad no viene mal).
+
+- **� Qwen3 desatado: razonamiento completo activado**
+  - 🚀 **Pensamiento profundo:** Los modelos con capacidad de razonamiento (Qwen3, DeepSeek-R1...) ahora tienen su potencial completamente desbloqueado. En vez de ir ""a ciegas"", la IA razona internamente antes de cada respuesta: planifica las fichas de personaje, evalúa la coherencia narrativa con tu historia, y evita errores como inventarios duplicados o atributos incompletos. El resultado es una IA notablemente más inteligente y consistente.
+  - 🧹 **Transparente para ti:** Todo ese razonamiento ocurre entre bastidores. El motor limpia automáticamente el ""monólogo interno"" de la IA antes de mostrarte la respuesta. Tú solo ves el resultado final, más pulido.
+
+- **⚡ Arranque de partida más fiable**
+  - 🛡️ **Adiós a los bloqueos del primer turno:** Hemos eliminado una causa de esperas eternas al comenzar una partida nueva. Antes, si la IA generaba un personaje comerciante sin saber las reglas de comercio (porque no las tiene en el primer turno), el motor intentaba corregirlo 3 veces antes de rendirse, causando más de un minuto de espera inútil. Ahora lo resuelve al instante.
+  - 📖 **Lore a prueba de IA creativa:** Si la IA se emociona y genera el trasfondo del mundo en formato técnico en vez de texto narrativo, el motor lo detecta y extrae la historia limpia automáticamente. Tu lore siempre llega como debe.
+  - 🧹 **Interfaz impecable:** He enseñado a la IA a no ""hablar en código"". Antes, a veces los botones de decisión o los comentarios del máster mostraban variables internas raras (como *Huir (move to loc_cripta)*). Ahora todo está limpio y se ha forzado al modelo a comunicarse contigo usando el tono de humor que hayas elegido (lo de respetar este parámetro depende del humor que tenga la IA).
+
+- **🌍 Correcciones de idioma**
+  - 🗣️ **Lugares en tu idioma:** Las ubicaciones generadas por la IA ahora respetan el idioma configurado en el juego. Si juegas en inglés, ya no verás ""Distrito de la Costa Oeste"" sino el nombre en inglés. (Ups.)
+  - 🔘 **Botones localizados:** El botón de emergencia ""Continuar"" ahora habla tu idioma en vez de aparecer siempre en castellano.",Reforma Integral del Núcleo de IA
+latam,"- **🧠 Reforma del Núcleo de IA**
+  - ⚡ **Respuestas más rápidas:** He reescrito el cerebro del juego para que la IA recuerde mejor lo que ya ha procesado. En términos prácticos: menos tiempo mirando la pantalla de carga entre turno y turno. El motor ahora reutiliza trabajo previo en vez de empezar de cero cada vez que actúas. (Sí, antes lo hacía. No, no me enorgullezco de ello.)
+  - 🧹 **Memoria más limpia:** El historial de la partida ahora se almacena sin basura técnica desde el momento en que se escribe, no cuando se lee. Resultado: la IA tiene más espacio para recordar tu historia y menos tokens desperdiciados en datos internos que nunca necesitó ver.
+  - 🎯 **Reglas donde tocan:** Las reglas complementarias que la IA consulta para enriquecer sus respuestas se han reubicado para no interferir con el sistema de caché. El efecto es invisible para ti, pero el motor lo agradece en cada turno (un poquito más de velocidad no viene mal).
+
+- ** Qwen3 desatado: razonamiento completo activado**
+  - 🚀 **Pensamiento profundo:** Los modelos con capacidad de razonamiento (Qwen3, DeepSeek-R1...) ahora tienen su potencial completamente desbloqueado. En vez de ir ""a ciegas"", la IA razona internamente antes de cada respuesta: planifica las fichas de personaje, evalúa la coherencia narrativa con tu historia, y evita errores como inventarios duplicados o atributos incompletos. El resultado es una IA notablemente más inteligente y consistente.
+  - 🧹 **Transparente para ti:** Todo ese razonamiento ocurre entre bastidores. El motor limpia automáticamente el ""monólogo interno"" de la IA antes de mostrarte la respuesta. Tú solo ves el resultado final, más pulido.
+
+- **⚡ Arranque de partida más fiable**
+  - 🛡️ **Adiós a los bloqueos del primer turno:** Hemos eliminado una causa de esperas eternas al comenzar una partida nueva. Antes, si la IA generaba un personaje comerciante sin saber las reglas de comercio (porque no las tiene en el primer turno), el motor intentaba corregirlo 3 veces antes de rendirse, causando más de un minuto de espera inútil. Ahora lo resuelve al instante.
+  - 📖 **Lore a prueba de IA creativa:** Si la IA se emociona y genera el trasfondo del mundo en formato técnico en vez de texto narrativo, el motor lo detecta y extrae la historia limpia automáticamente. Tu lore siempre llega como debe.
+  - 🧹 **Interfaz impecable:** He enseñado a la IA a no ""hablar en código"". Antes, a veces los botones de decisión o los comentarios del máster mostraban variables internas raras (como *Huir (move to loc_cripta)*). Ahora todo está limpio y se ha forzado al modelo a comunicarse contigo usando el tono de humor que hayas elegido (lo de respetar este parámetro depende del humor que tenga la IA).
+
+- **🌍 Correcciones de idioma**
+  - 🗣️ **Lugares en tu idioma:** Las ubicaciones generadas por la IA ahora respetan el idioma configurado en el juego. Si juegas en inglés, ya no verás ""Distrito de la Costa Oeste"" sino el nombre en inglés. (Ups.)
+  - 🔘 **Botones localizados:** El botón de emergencia ""Continuar"" ahora habla tu idioma en vez de aparecer siempre en castellano.",Reforma Integral del Núcleo de IA
+finnish,"- **🧠 Tekoäly-ytimen uudistus**
+  - ⚡ **Nopeammat vastaukset:** Pelin aivot on kirjoitettu uusiksi niin, että tekoäly muistaa paremmin jo käsitellyn tiedon. Käytännössä tämä tarkoittaa: vähemmän odottelua latausnäytöllä vuoron välissä. Moottori hyödyntää nyt aiempaa työtä sen sijaan, että aloittaisi alusta joka kerta kun toimit. (Kyllä, se teki niin ennen. Ei, en ole siitä ylpeä.)
+  - 🧹 **Puhtaampi muisti:** Pelin historia tallennetaan nyt teknisestä ""roskasta"" vapaana kirjoitushetkellä, ei lukemishetkellä. Tuloksena: tekoälyllä on enemmän tilaa muistaa tarinasi ja vähemmän tokeneita menee hukkaan sisäisiin tietoihin, joita se ei koskaan tarvinnut. 
+  - 🎯 **Säännöt paikallaan:** Tekoälyn käyttämät täydentävät säännöt, joilla se rikastuttaa vastauksiaan, on siirretty niin, etteivät ne häiritse välimuistijärjestelmää. Vaikutus on sinulle näkymätön, mutta moottori arvostaa sitä joka vuorolla (pieni nopeuslisä ei haittaa).
+
+- ** Qwen3 valloilleen: täysi päättelykyky käyttöön**
+  - 🚀 **Syvällinen ajattelu:** Päättelykykyiset mallit (Qwen3, DeepSeek-R1...) saavat nyt täyden potentiaalinsa käyttöön. Sen sijaan, että tekoäly toimisi ""sokeasti"", se syventyy päättelyyn ennen jokaista vastausta: suunnittelee hahmokortteja, arvioi tarinan johdonmukaisuutta kanssasi ja välttää virheitä, kuten kaksoiskappaleita inventaariossa tai puutteellisia ominaisuuksia. Tuloksena on huomattavasti älykkäämpi ja johdonmukaisempi tekoäly.
+  - 🧹 **Sinulle läpinäkyvää:** Kaikki tämä päättely tapahtuu kulissien takana. Moottori puhdistaa automaattisesti tekoälyn ""sisäisen monologin"" ennen vastauksen näyttämistä. Näet vain hiotun lopputuloksen.
+
+- **⚡ Luotettavampi pelin aloitus**
+  - 🛡️ **Hyvästit ensimmäisen vuoron jumituksille:** Olemme poistaneet yhden syyn loputtomiin odotuksiin uuden pelin alussa. Aiemmin, jos tekoäly loi kauppiaan tietämättä kauppasääntöjä (koska niitä ei ole ensimmäisellä vuorolla), moottori yritti korjata sitä 3 kertaa ennen luovuttamista, aiheuttaen yli minuutin turhan odotuksen. Nyt se ratkaistaan hetkessä.
+  - 📖 **Luova tekoäly-kestävä taustatarina:** Jos tekoäly innostuu ja luo maailman taustatiedot teknisessä muodossa pelkän kertomuksen sijaan, moottori havaitsee sen ja poimii puhtaan tarinan automaattisesti. Taustatarinasi toimitetaan aina asianmukaisesti.
+  - 🧹 **Virheetön käyttöliittymä:** Olen opettanut tekoälylle, ettei se ""puhua koodia"". Aiemmin päätöspainikkeet tai mestarin kommentit saattoivat näyttää outoja sisäisiä muuttujia (kuten *Pakeneminen (move to loc_cripta)*). Nyt kaikki on puhdasta, ja malli on pakotettu kommunikoimaan kanssasi valitsemallasi huumorisävyllä (tämän parametrin kunnioittaminen riippuu tekoälyn omasta huumorintajusta).
+
+- **🌍 Kielikorjaukset**
+  - 🗣️ **Paikat omalla kielelläsi:** Tekoälyn luomat sijainnit noudattavat nyt pelin asetettua kieltä. Jos pelaat englanniksi, et enää näe ""Distrito de la Costa Oeste"" vaan englanninkielisen nimen. (Hups.)
+  - 🔘 **Paikannetut painikkeet:** Hätäpainike ""Jatka"" puhuu nyt kieltäsi sen sijaan, että se ilmestyisi aina espanjaksi.",Tekoäly-ytimen täysi uudistus
+french,"- **🧠 Refonte du Noyau d'IA**
+  - ⚡ **Réponses plus rapides :** J'ai réécrit le cerveau du jeu pour que l'IA se souvienne mieux de ce qu'elle a déjà traité. En termes pratiques : moins de temps passé à regarder l'écran de chargement entre chaque tour. Le moteur réutilise désormais le travail précédent au lieu de repartir de zéro à chaque action. (Oui, c'est ce qu'il faisait avant. Non, je n'en suis pas fier.)
+  - 🧹 **Mémoire plus propre :** L'historique de la partie est désormais stocké sans déchets techniques dès l'écriture, et non à la lecture. Résultat : l'IA a plus d'espace pour se souvenir de votre histoire et moins de tokens perdus dans des données internes qu'elle n'a jamais eu besoin de voir.
+  - 🎯 **Règles à leur place :** Les règles complémentaires que l'IA consulte pour enrichir ses réponses ont été déplacées afin de ne pas interférer avec le système de cache. L'effet est invisible pour vous, mais le moteur apprécie à chaque tour (un peu plus de vitesse ne fait jamais de mal).
+
+- ** Qwen3 libéré : raisonnement complet activé**
+  - 🚀 **Réflexion approfondie :** Les modèles dotés de capacités de raisonnement (Qwen3, DeepSeek-R1...) voient désormais leur potentiel pleinement exploité. Au lieu d'agir ""à l'aveugle"", l'IA raisonne en interne avant chaque réponse : elle planifie les fiches de personnage, évalue la cohérence narrative avec votre histoire, et évite les erreurs comme les inventaires dupliqués ou les attributs incomplets. Le résultat est une IA notablement plus intelligente et cohérente.
+  - 🧹 **Transparence pour vous :** Tout ce raisonnement se déroule en coulisses. Le moteur nettoie automatiquement le ""monologue intérieur"" de l'IA avant de vous afficher la réponse. Vous ne voyez que le résultat final, plus peaufiné.
+
+- **⚡ Démarrage de partie plus fiable**
+  - 🛡️ **Adieu les blocages du premier tour :** Nous avons éliminé une cause d'attentes interminables au début d'une nouvelle partie. Auparavant, si l'IA générait un personnage marchand sans connaître les règles de commerce (car il ne les a pas au premier tour), le moteur tentait de corriger l'erreur 3 fois avant d'abandonner, provoquant plus d'une minute d'attente inutile. Désormais, le problème est résolu instantanément.
+  - 📖 **Lore à l'épreuve de l'IA créative :** Si l'IA s'emballe et génère l'historique du monde au format technique au lieu d'un texte narratif, le moteur le détecte et extrait automatiquement l'histoire propre. Votre lore vous parvient toujours comme il se doit.
+  - 🧹 **Interface impeccable :** J'ai appris à l'IA à ne pas ""parler en code"". Avant, les boutons de décision ou les commentaires du maître de jeu affichaient parfois des variables internes étranges (comme *Fuir (move to loc_cripta)*). Désormais, tout est propre et le modèle est contraint de communiquer avec vous en utilisant le ton d'humour que vous avez choisi (le respect de ce paramètre dépend de l'humeur de l'IA).
+
+- **🌍 Corrections linguistiques**
+  - 🗣️ **Lieux dans votre langue :** Les lieux générés par l'IA respectent désormais la langue configurée dans le jeu. Si vous jouez en anglais, vous ne verrez plus ""Distrito de la Costa Oeste"" mais son nom en anglais. (Oups.)
+  - 🔘 **Boutons localisés :** Le bouton d'urgence ""Continuer"" parle désormais votre langue au lieu d'apparaître toujours en castillan.",Refonte Complète du Noyau d'IA
+hungarian,"- **🧠 AI Mag Alapvető Újraépítése**
+  - ⚡ **Gyorsabb válaszok:** Újjáépítettem a játék agyát, hogy az AI jobban emlékezzen arra, amit már feldolgozott. Gyakorlatiasan: kevesebb időt töltesz a töltőképernyő előtt ülve körök között. A motor most már újra felhasználja a korábbi munkát, ahelyett, hogy nulláról indulna minden egyes lépésnél. (Igen, korábban ezt tette. Nem, nem vagyok büszke rá.)
+  - 🧹 **Tisztább memória:** A játéktörténet mostantól a technikai ""szemét"" nélkül tárolódik el, attól a pillanattól kezdve, ahogy megíródik, nem pedig olvasáskor. Eredmény: az AI-nak több helye marad a történeted megjegyzésére, és kevesebb ""token"" vész kárba belső adatokon, amelyeket soha nem kellett volna látnia.
+  - 🎯 **Szabályok a helyükön:** Az AI által használt kiegészítő szabályok, amelyek gazdagítják a válaszait, áthelyezésre kerültek, hogy ne zavarják a gyorsítótár rendszert. A hatás láthatatlan az Ön számára, de a motor minden körben hálás érte (egy kis plusz sebesség sosem árt).
+
+- ** Qwen3 szabadon: teljes érvelés aktiválva**
+  - 🚀 **Mély gondolkodás:** Az érvelési képességgel rendelkező modellek (Qwen3, DeepSeek-R1...) mostantól teljes potenciáljukat ki tudják aknázni. A ""vakon"" haladás helyett az AI minden válasz előtt belsőleg érvel: megtervezi a karakterkártyákat, értékeli a narratív koherenciát a történeteddel, és elkerüli az olyan hibákat, mint az ismétlődő leltárak vagy a hiányos attribútumok. Az eredmény egy észrevehetően intelligensebb és következetesebb AI.
+  - 🧹 **Átlátszó az Ön számára:** Ez az érvelés mind a színfalak mögött történik. A motor automatikusan megtisztítja az AI ""belső monológját"", mielőtt megmutatná Önnek a választ. Ön csak a végeredményt látja, amely csiszoltabb.
+
+- **⚡ Megbízhatóbb játékindítás**
+  - 🛡️ **Búcsú az első körös lefagyásoktól:** Elhárítottunk egy okot az örök várakozásokra egy új játék megkezdésekor. Korábban, ha az AI generált egy kereskedő karaktert anélkül, hogy ismerte volna a kereskedelmi szabályokat (mivel az első körben nincsenek meg), a motor 3-szor próbálta meg kijavítani, mielőtt feladta volna, ami több mint egy percnyi haszontalan várakozást eredményezett. Most azonnal megoldja.
+  - 📖 **AI által generált lore próbára téve:** Ha az AI túlságosan belemelegszik, és a világ hátterét technikai formátumban generálja a narratív szöveg helyett, a motor ezt érzékeli, és automatikusan kinyeri a tiszta történetet. A lore mindig úgy érkezik, ahogy kell.
+  - 🧹 **Hibátlan felület:** Megtanítottam az AI-t, hogy ne ""beszéljen kódul"". Korábban néha a döntési gombok vagy a mester kommentjei furcsa belső változókat jelenítettek meg (pl. *Elmenekülni (move to loc_cripta)*). Most minden tiszta, és a modellt arra kényszerítettük, hogy az Ön által választott humoros hangnemben kommunikáljon Önnel (ennek a paraméternek a tiszteletben tartása az AI hangulatától függ).
+
+- **🌍 Nyelvi javítások**
+  - 🗣️ **Helyszínek a nyelvén:** Az AI által generált helyszínek mostantól tiszteletben tartják a játékban beállított nyelvet. Ha angolul játszik, már nem fogja látni a ""Nyugati Parti Parti Kerület"" helyett az angol nevét. (Upsz.)
+  - 🔘 **Lokalizált gombok:** Az ""Folytatás"" vészhelyzeti gomb mostantól az Ön nyelvén beszél ahelyett, hogy mindig spanyolul jelenne meg.",AI Mag Alapvető Újraépítése
+indonesian,"- **🧠 Perombakan Inti AI**
+  - ⚡ **Respons Lebih Cepat:** Saya telah menulis ulang otak game agar AI lebih mengingat apa yang telah diproses sebelumnya. Dalam praktiknya: lebih sedikit waktu menunggu layar pemuatan antar giliran. Mesin sekarang menggunakan kembali pekerjaan sebelumnya alih-alih memulai dari nol setiap kali Anda bertindak. (Ya, sebelumnya memang begitu. Tidak, saya tidak bangga karenanya.)
+  - 🧹 **Memori Lebih Bersih:** Riwayat permainan sekarang disimpan tanpa sampah teknis sejak ditulis, bukan saat dibaca. Hasilnya: AI memiliki lebih banyak ruang untuk mengingat cerita Anda dan lebih sedikit token terbuang untuk data internal yang tidak pernah perlu dilihatnya.
+  - 🎯 **Aturan yang Tepat:** Aturan pelengkap yang dikonsultasikan AI untuk memperkaya responsnya telah dipindahkan agar tidak mengganggu sistem cache. Efeknya tidak terlihat oleh Anda, tetapi mesin berterima kasih setiap giliran (sedikit lebih cepat tidak ada salahnya).
+
+- ** Qwen3 Dibebaskan: Penalaran Penuh Diaktifkan**
+  - 🚀 **Pemikiran Mendalam:** Model yang mampu bernalar (Qwen3, DeepSeek-R1...) kini potensinya telah sepenuhnya terbuka. Alih-alih bertindak ""buta"", AI bernalar secara internal sebelum setiap respons: merencanakan lembar karakter, mengevaluasi koherensi naratif dengan cerita Anda, dan menghindari kesalahan seperti inventaris ganda atau atribut yang tidak lengkap. Hasilnya adalah AI yang secara signifikan lebih cerdas dan konsisten.
+  - 🧹 **Transparan Bagi Anda:** Semua penalaran itu terjadi di balik layar. Mesin secara otomatis membersihkan ""monolog internal"" AI sebelum menampilkan respons kepada Anda. Anda hanya melihat hasil akhir yang lebih halus.
+
+- **⚡ Memulai Permainan Lebih Andal**
+  - 🛡️ **Selamat Tinggal Freeze Giliran Pertama:** Kami telah menghilangkan penyebab penantian yang tak berujung saat memulai permainan baru. Sebelumnya, jika AI menghasilkan karakter pedagang tanpa mengetahui aturan perdagangan (karena tidak memilikinya di giliran pertama), mesin akan mencoba memperbaikinya 3 kali sebelum menyerah, menyebabkan lebih dari satu menit penantian yang sia-sia. Sekarang terselesaikan secara instan.
+  - 📖 **Lore Kebal AI Kreatif:** Jika AI terlalu bersemangat dan menghasilkan latar belakang dunia dalam format teknis alih-alih teks naratif, mesin akan mendeteksinya dan secara otomatis mengekstrak cerita yang bersih. Lore Anda selalu tersaji sebagaimana mestinya.
+  - 🧹 **Antarmuka Sempurna:** Saya telah mengajari AI untuk tidak ""berbicara dalam kode"". Sebelumnya, terkadang tombol keputusan atau komentar master menampilkan variabel internal yang aneh (seperti *Melarikan diri (move to loc_cripta)*). Sekarang semuanya bersih dan model dipaksa untuk berkomunikasi dengan Anda menggunakan nada humor yang Anda pilih (menghormati parameter ini tergantung pada suasana hati AI).
+
+- **🌍 Perbaikan Bahasa**
+  - 🗣️ **Lokasi dalam Bahasa Anda:** Lokasi yang dihasilkan AI sekarang menghormati bahasa yang diatur dalam game. Jika Anda bermain dalam bahasa Inggris, Anda tidak akan lagi melihat ""Distrito de la Costa Oeste"" tetapi nama dalam bahasa Inggris. (Ups.)
+  - 🔘 **Tombol Terlokalisasi:** Tombol darurat ""Lanjutkan"" sekarang berbicara dalam bahasa Anda alih-alih selalu muncul dalam bahasa Spanyol.",Perombakan Total Inti AI
+italian,"- **🧠 Ristrutturazione del Nucleo IA**
+  - ⚡ **Risposte più veloci:** Ho riscritto il ""cervello"" del gioco affinché l'IA ricordi meglio ciò che ha già elaborato. In termini pratici: meno tempo a fissare la schermata di caricamento tra un turno e l'altro. Il motore ora riutilizza il lavoro precedente invece di ricominciare da zero ogni volta che agisci. (Sì, prima lo faceva. No, non ne sono orgoglioso.)
+  - 🧹 **Memoria più pulita:** La cronologia della partita viene ora memorizzata senza ""spazzatura"" tecnica dal momento in cui viene scritta, non quando viene letta. Risultato: l'IA ha più spazio per ricordare la tua storia e meno ""token"" sprecati in dati interni che non aveva mai bisogno di vedere.
+  - 🎯 **Regole al loro posto:** Le regole supplementari consultate dall'IA per arricchire le sue risposte sono state ricollocate per non interferire con il sistema di cache. L'effetto è invisibile per te, ma il motore lo apprezza ad ogni turno (un po' più di velocità non guasta).
+
+- ** Qwen3 scatenato: ragionamento completo attivato**
+  - 🚀 **Pensiero profondo:** I modelli con capacità di ragionamento (Qwen3, DeepSeek-R1...) ora hanno il loro potenziale completamente sbloccato. Invece di procedere ""alla cieca"", l'IA ragiona internamente prima di ogni risposta: pianifica le schede dei personaggi, valuta la coerenza narrativa con la tua storia ed evita errori come inventari duplicati o attributi incompleti. Il risultato è un'IA notevolmente più intelligente e coerente.
+  - 🧹 **Trasparente per te:** Tutto questo ragionamento avviene ""dietro le quinte"". Il motore pulisce automaticamente il ""monologo interiore"" dell'IA prima di mostrarti la risposta. Tu vedi solo il risultato finale, più rifinito.
+
+- **⚡ Avvio di partita più affidabile**
+  - 🛡️ **Addio ai blocchi del primo turno:** Abbiamo eliminato una causa di attese infinite all'inizio di una nuova partita. Prima, se l'IA generava un personaggio mercante senza conoscere le regole del commercio (perché non le ha nel primo turno), il motore tentava di correggerlo 3 volte prima di arrendersi, causando più di un minuto di attesa inutile. Ora lo risolve all'istante.
+  - 📖 **Lore a prova di IA creativa:** Se l'IA si emoziona e genera il background del mondo in formato tecnico invece che in testo narrativo, il motore lo rileva ed estrae automaticamente la storia pulita. Il tuo lore arriva sempre come dovrebbe.
+  - 🧹 **Interfaccia impeccabile:** Ho insegnato all'IA a non ""parlare in codice"". Prima, a volte i pulsanti di decisione o i commenti del master mostravano strane variabili interne (come *Fuggire (move to loc_cripta)*). Ora tutto è pulito e il modello è stato forzato a comunicare con te usando il tono umoristico che hai scelto (il rispetto di questo parametro dipende dall'umore dell'IA).
+
+- **🌍 Correzioni linguistiche**
+  - 🗣️ **Luoghi nella tua lingua:** Le località generate dall'IA ora rispettano la lingua impostata nel gioco. Se giochi in inglese, non vedrai più ""Distretto della Costa Ovest"" ma il nome in inglese. (Ops.)
+  - 🔘 **Pulsanti localizzati:** Il pulsante di emergenza ""Continua"" ora parla la tua lingua invece di apparire sempre in castigliano.",Ristrutturazione Completa del Nucleo IA
+japanese,"- **🧠 AIコアの全面改修**
+  - ⚡ **より高速な応答:** ゲームの頭脳を書き直し、AIが処理済みの内容をよりよく記憶できるようにしました。具体的には、ターン間のロード画面での待ち時間が短縮されます。エンジンは、アクションを起こすたびにゼロから始めるのではなく、以前の作業を再利用するようになりました。（はい、以前はそうでした。いいえ、誇りに思ってはいません。）
+  - 🧹 **よりクリーンなメモリ:** ゲームの履歴は、読み取り時ではなく、書き込み時から技術的なゴミなしで保存されるようになりました。結果として、AIはあなたのストーリーを記憶するためのより多くのスペースを持ち、決して必要としなかった内部データにトークンを無駄にすることが少なくなります。
+  - 🎯 **ルールは適切な場所に:** AIが応答を豊かにするために参照する補足ルールは、キャッシュシステムを妨げないように再配置されました。効果はあなたには見えませんが、エンジンは毎ターン感謝しています（少しでも速くなるのは良いことです）。
+
+- ** Qwen3解禁：完全な推論を有効化**
+  - 🚀 **深い思考:** 推論能力を持つモデル（Qwen3、DeepSeek-R1…）は、その潜在能力を完全に解き放ちました。AIは「盲目的に」進むのではなく、応答する前に内部で推論します。キャラクターシートを計画し、あなたのストーリーとの物語の一貫性を評価し、重複したインベントリや不完全な属性のようなエラーを回避します。結果として、著しく賢く、一貫性のあるAIになります。
+  - 🧹 **あなたにとっては透明:** そのすべての推論は舞台裏で行われます。エンジンは、応答を表示する前にAIの「内部モノローグ」を自動的にクリーンアップします。あなたは最終結果、より洗練されたものだけを見ることができます。
+
+- **⚡ より信頼性の高いゲーム開始**
+  - 🛡️ **最初のターンのクラッシュよ、さようなら:** 新しいゲームを開始する際の永遠の待ち時間の原因を排除しました。以前は、AIが取引ルールを知らずに商人キャラクターを生成した場合（最初のターンにはそれがないため）、エンジンは3回修正を試みてから諦め、1分以上の無駄な待ち時間を引き起こしました。今では、それは瞬時に解決されます。
+  - 📖 **クリエイティブなAIでも安全なローレ:** AIが興奮して世界の背景を物語テキストではなく技術形式で生成した場合、エンジンはそれを検出し、クリーンなストーリーを自動的に抽出します。あなたのローレは常に正しく届きます。
+  - 🧹 **完璧なインターフェース:** AIに「コードで話さない」ように教えました。以前は、決定ボタンやマスターのコメントに、まれに奇妙な内部変数（*逃げる (move to loc_cripta)* など）が表示されることがありました。今ではすべてクリーンになり、モデルはあなたが選択したユーモアのトーンであなたとコミュニケーションをとるように強制されます（このパラメータを尊重するかどうかは、AIの気分次第です）。
+
+- **🌍 言語の修正**
+  - 🗣️ **あなたの言語での場所:** AIが生成した場所は、ゲームで設定された言語を尊重するようになりました。英語でプレイしている場合、「West Coast District」ではなく、英語の名前が表示されるようになります。（うぷ。）
+  - 🔘 **ローカライズされたボタン:** 緊急ボタン「続行」は、常にスペイン語で表示されるのではなく、あなたの言語で話すようになりました。",AIコアの全面改修
+korean,"- **🧠 AI Core Overhaul**
+  - ⚡ **Faster Responses:** I've rewritten the game's brain so the AI remembers what it has already processed better. In practical terms: less time staring at the loading screen between turns. The engine now reuses previous work instead of starting from scratch every time you act. (Yes, it did that before. No, I'm not proud of it.)
+  - 🧹 **Cleaner Memory:** The game history is now stored without technical garbage from the moment it's written, not when it's read. Result: the AI has more space to remember your story and fewer tokens are wasted on internal data it never needed to see.
+  - 🎯 **Rules Where They Belong:** Supplementary rules that the AI consults to enrich its responses have been relocated so they don't interfere with the caching system. The effect is invisible to you, but the engine appreciates it every turn (a little extra speed never hurts).
+
+- ** Qwen3 Unleashed: Full Reasoning Activated**
+  - 🚀 **Deep Thinking:** Models with reasoning capabilities (Qwen3, DeepSeek-R1...) now have their potential fully unlocked. Instead of going ""blind"", the AI reasons internally before each response: it plans character sheets, evaluates narrative coherence with your story, and avoids errors like duplicate inventories or incomplete attributes. The result is a notably more intelligent and consistent AI.
+  - 🧹 **Transparent to You:** All that reasoning happens behind the scenes. The engine automatically cleans up the AI's ""internal monologue"" before showing you the response. You only see the final, more polished result.
+
+- **⚡ More Reliable Game Start**
+  - 🛡️ **Goodbye First-Turn Freezes:** We've eliminated a cause of eternal waiting when starting a new game. Before, if the AI generated a merchant character without knowing the trading rules (because it doesn't have them on the first turn), the engine would try to correct it 3 times before giving up, causing over a minute of useless waiting. Now it resolves it instantly.
+  - 📖 **AI-Creative-Proof Lore:** If the AI gets carried away and generates the world's backstory in technical format instead of narrative text, the engine detects it and automatically extracts the clean story. Your lore always arrives as it should.
+  - 🧹 **Impeccable Interface:** I've taught the AI not to ""speak in code."" Before, decision buttons or master comments sometimes displayed strange internal variables (like *Flee (move to loc_crypt)*). Now everything is clean, and the model has been forced to communicate with you using the humor tone you've chosen (whether it respects this parameter depends on the AI's mood).
+
+- **🌍 Language Fixes**
+  - 🗣️ **Locations in Your Language:** Locations generated by the AI now respect the language set in the game. If you play in English, you'll no longer see ""Distrito de la Costa Oeste"" but the name in English. (Oops.)
+  - 🔘 **Localized Buttons:** The emergency ""Continue"" button now speaks your language instead of always appearing in Spanish.",AI Core Full Overhaul
+dutch,"- **🧠 Grondige Herziening van de AI-Kern**
+  - ⚡ **Snellere antwoorden:** Ik heb de motor van het spel herschreven zodat de AI beter onthoudt wat het al heeft verwerkt. Praktisch gezien: minder tijd staren naar het laadscherm tussen beurten. De motor hergebruikt nu eerdere berekeningen in plaats van helemaal opnieuw te beginnen telkens als je een actie onderneemt. (Ja, dat deed het eerst. Nee, ik ben er niet trots op.)
+  - 🧹 **Schonere geheugen:** De spelgeschiedenis wordt nu opgeslagen zonder technische ruis vanaf het moment dat het wordt geschreven, niet pas bij het lezen. Resultaat: de AI heeft meer ruimte om je verhaal te onthouden en minder tokens verspild aan interne gegevens die het nooit had hoeven zien.
+  - 🎯 **Regels waar ze horen:** Aanvullende regels die de AI raadpleegt om zijn antwoorden te verrijken, zijn verplaatst zodat ze het cachine-systeem niet verstoren. Het effect is voor jou onzichtbaar, maar de motor is er bij elke beurt blij mee (een beetje extra snelheid kan geen kwaad).
+
+- ** Qwen3 ontketend: volledig redeneren ingeschakeld**
+  - 🚀 **Diepgaande reflectie:** Modellen met redeneervermogen (Qwen3, DeepSeek-R1...) hebben nu hun volledige potentieel ontsloten. In plaats van ""blind"" te gaan, redeneert de AI intern vóór elk antwoord: het plant personagekaarten, beoordeelt de narratieve consistentie met jouw verhaal, en vermijdt fouten zoals dubbele inventarissen of onvolledige attributen. Het resultaat is een merkbaar intelligentere en consistentere AI.
+  - 🧹 **Transparant voor jou:** Al dat redeneren gebeurt achter de schermen. De motor ruimt automatisch de ""interne monoloog"" van de AI op voordat het antwoord wordt weergegeven. Jij ziet alleen het eindresultaat, gepolijster.
+
+- **⚡ Betrouwbaarder spel starten**
+  - 🛡️ **Vaarwel vastlopers bij de eerste beurt:** We hebben een oorzaak van eeuwig wachten bij het starten van een nieuw spel weggenomen. Vroeger, als de AI een handelspersonage genereerde zonder de handelsregels te kennen (omdat die er in de eerste beurt niet zijn), probeerde de motor dit 3 keer te corrigeren voordat hij opgaf, wat leidde tot meer dan een minuut nutteloos wachten. Nu lost het dit onmiddellijk op.
+  - 📖 **Lore bestand tegen creatieve AI:** Als de AI enthousiast raakt en de achtergrond van de wereld in technisch formaat genereert in plaats van narratieve tekst, detecteert de motor dit en extraheert automatisch de schone geschiedenis. Jouw lore komt altijd zoals het hoort.
+  - 🧹 **Onberispelijke interface:** Ik heb de AI geleerd om niet ""in code te praten"". Vroeger toonden beslissingsknoppen of opmerkingen van de meester soms vreemde interne variabelen (zoals *Vluchten (move to loc_cripta)*). Nu is alles schoon en is het model gedwongen om met je te communiceren in de humoristische toon die je hebt gekozen (of de AI deze parameter respecteert, hangt af van zijn humeur).
+
+- **🌍 Taalcorrecties**
+  - 🗣️ **Locaties in jouw taal:** Locaties gegenereerd door de AI respecteren nu de ingestelde speltaal. Als je in het Engels speelt, zie je niet langer ""Distrito de la Costa Oeste"" maar de Engelse naam. (Oops.)
+  - 🔘 **Gelokaliseerde knoppen:** De noodknop ""Doorgaan"" spreekt nu jouw taal in plaats van altijd in het Spaans te verschijnen.",Grondige Herziening van de AI-Kern
+norwegian,"- **🧠 Omarbeiding av AI-kjernen**
+  - ⚡ **Raskere svar:** Jeg har omskrevet spillets hjerne slik at KI-en husker bedre hva den allerede har behandlet. I praksis betyr dette: mindre tid brukt på å se på lasteskjermen mellom trekkene. Motoren gjenbruker nå tidligere arbeid i stedet for å starte fra bunnen av hver gang du handler. (Ja, den gjorde det før. Nei, jeg er ikke stolt av det.)
+  - 🧹 **Renere minne:** Spillets historikk lagres nå uten teknisk søppel fra det øyeblikket den skrives, ikke når den leses. Resultatet er at KI-en har mer plass til å huske historien din, og færre tokens blir sløst bort på interne data den aldri trengte å se.
+  - 🎯 **Regler der de hører hjemme:** Supplerende regler som KI-en konsulterer for å berike svarene sine, har blitt flyttet slik at de ikke forstyrrer hurtigbufferen. Effekten er usynlig for deg, men motoren setter pris på det for hvert trekk (litt mer hastighet skader aldri).
+
+- ** Qwen3 løs: full resonnering aktivert**
+  - 🚀 **Dyp tenkning:** Modeller med resonneringsevne (Qwen3, DeepSeek-R1...) har nå sitt fulle potensial ulåst. I stedet for å gå ""blindt"", resonnerer KI-en internt før hvert svar: den planlegger karakterkortene, vurderer narrativ konsistens med historien din, og unngår feil som dupliserte inventarer eller ufullstendige attributter. Resultatet er en merkbart smartere og mer konsistent KI.
+  - 🧹 **Gjennomsiktig for deg:** All denne resonneringen skjer bak kulissene. Motoren rydder automatisk opp i KI-ens ""indre monolog"" før den viser deg svaret. Du ser bare sluttresultatet, mer polert.
+
+- **⚡ Mer pålitelig spillstart**
+  - 🛡️ **Farvel til krasj ved første trekk:** Vi har fjernet en årsak til evig venting ved starten av et nytt spill. Før, hvis KI-en genererte en handelskarakter uten å kjenne til handelsreglene (fordi den ikke har dem ved første trekk), prøvde motoren å rette det 3 ganger før den ga opp, noe som forårsaket over et minutt med unødvendig venting. Nå løses det umiddelbart.
+  - 📖 **Lore som tåler kreativ KI:** Hvis KI-en blir ivrig og genererer verdens bakgrunn i teknisk format i stedet for narrativ tekst, oppdager motoren dette og trekker ut den rene historien automatisk. Lore-en din kommer alltid som den skal.
+  - 🧹 **Feilfri grensesnitt:** Jeg har lært KI-en å ikke ""snakke i kode"". Før viste beslutningsknapper eller GM-kommentarer noen ganger rare interne variabler (som *Flykt (move to loc_scripture)*). Nå er alt rent, og modellen er tvunget til å kommunisere med deg i den humortonen du har valgt (om denne parameteren respekteres avhenger av KI-ens humør).
+
+- **🌍 Språklige korreksjoner**
+  - 🗣️ **Steder på ditt språk:** Lokasjoner generert av KI-en respekterer nå språket som er konfigurert i spillet. Hvis du spiller på engelsk, vil du ikke lenger se ""Distrito de la Costa Oeste"" men navnet på engelsk. (Ups.)
+  - 🔘 **Lokaliserte knapper:** Nødknappen ""Fortsett"" snakker nå ditt språk i stedet for å alltid vises på kastiljansk.",Omfattende omarbeiding av AI-kjernen
+polish,"- **🧠 Kompleksowa przebudowa rdzenia SI**
+  - ⚡ **Szybsze odpowiedzi:** Przepisałem ""mózg"" gry, aby SI lepiej pamiętała to, co już przetworzyła. W praktyce oznacza to mniej czasu spędzonego na ekranie ładowania między turami. Silnik teraz ponownie wykorzystuje poprzednie obliczenia, zamiast zaczynać od zera przy każdym ruchu. (Tak, wcześniej tak robił. Nie, nie jestem z tego dumny.)
+  - 🧹 **Czysta pamięć:** Historia gry jest teraz zapisywana bez technicznych ""śmieci"" od momentu jej utworzenia, a nie dopiero w momencie odczytu. Efekt: SI ma więcej miejsca na zapamiętanie Twojej historii i mniej ""tokenów"" marnowanych na wewnętrzne dane, których nigdy nie potrzebowała widzieć.
+  - 🎯 **Reguły na swoim miejscu:** Dodatkowe reguły, z których SI korzysta, aby wzbogacić swoje odpowiedzi, zostały przeniesione, aby nie zakłócały systemu buforowania. Efekt jest dla Ciebie niewidoczny, ale silnik docenia go w każdej turze (nieco więcej prędkości zawsze się przyda).
+
+- ** Qwen3 odblokowany: pełne rozumowanie aktywowane**
+  - 🚀 **Głębokie myślenie:** Modele z możliwością rozumowania (Qwen3, DeepSeek-R1...) mają teraz w pełni odblokowany potencjał. Zamiast działać ""na ślepo"", SI rozumuje wewnętrznie przed każdą odpowiedzią: planuje karty postaci, ocenia spójność narracyjną z Twoją historią i unika błędów, takich jak zduplikowane ekwipunki czy niekompletne atrybuty. Rezultat: znacznie inteligentniejsza i spójniejsza SI.
+  - 🧹 **Dla Ciebie przejrzyste:** Całe to rozumowanie odbywa się ""za kulisami"". Silnik automatycznie czyści ""wewnętrzny monolog"" SI przed pokazaniem Ci odpowiedzi. Ty widzisz tylko dopracowany efekt końcowy.
+
+- **⚡ Niezawodniejsze rozpoczynanie gry**
+  - 🛡️ **Koniec z zawieszaniem się w pierwszej turze:** Wyeliminowaliśmy przyczynę wiecznego czekania na początku nowej gry. Wcześniej, jeśli SI wygenerowała postać kupca, nie znając zasad handlu (ponieważ nie miała ich w pierwszej turze), silnik próbował to naprawić 3 razy, zanim się poddał, powodując ponad minutę niepotrzebnego czekania. Teraz rozwiązuje to natychmiast.
+  - 📖 **Lore odporne na kreatywną SI:** Jeśli SI się ""rozpędzi"" i wygeneruje tło świata w formacie technicznym zamiast narracyjnego tekstu, silnik to wykryje i automatycznie wyodrębni czystą historię. Twoje lore zawsze dociera w odpowiedniej formie.
+  - 🧹 **Nieskazitelny interfejs:** Nauczyłem SI, aby nie ""mówiła kodem"". Wcześniej przyciski decyzyjne lub komentarze Mistrza Gry czasami wyświetlały dziwne zmienne wewnętrzne (jak *Ucieknij (move to loc_cripta)*). Teraz wszystko jest czyste, a model został zmuszony do komunikowania się z Tobą w wybranym przez Ciebie tonie humoru (respektowanie tego parametru zależy od nastroju SI).
+
+- **🌍 Poprawki językowe**
+  - 🗣️ **Miejsca w Twoim języku:** Lokalizacje generowane przez SI teraz respektują język ustawiony w grze. Jeśli grasz po angielsku, nie zobaczysz już ""Dzielnica Zachodniego Wybrzeża"", ale angielską nazwę. (Ups.)
+  - 🔘 **Zlokalizowane przyciski:** Przycisk awaryjny ""Kontynuuj"" teraz mówi Twoim językiem, zamiast pojawiać się zawsze po hiszpańsku.",Kompleksowa przebudowa rdzenia SI
+portuguese,"- **🧠 Reforma do Núcleo de IA**
+  - ⚡ **Respostas mais rápidas:** Reescrevi o cérebro do jogo para que a IA se lembre melhor do que já processou. Em termos práticos: menos tempo olhando a tela de carregamento entre um turno e outro. O motor agora reutiliza trabalho anterior em vez de começar do zero a cada ação. (Sim, antes fazia isso. Não, não me orgulho.)
+  - 🧹 **Memória mais limpa:** O histórico da partida agora é armazenado sem lixo técnico desde o momento em que é escrito, não quando é lido. Resultado: a IA tem mais espaço para lembrar sua história e menos tokens desperdiçados em dados internos que nunca precisou ver.
+  - 🎯 **Regras onde devem estar:** As regras complementares que a IA consulta para enriquecer suas respostas foram realocadas para não interferir com o sistema de cache. O efeito é invisível para você, mas o motor agradece a cada turno (um pouquinho mais de velocidade nunca é demais).
+
+- ** Qwen3 liberado: raciocínio completo ativado**
+  - 🚀 **Pensamento profundo:** Modelos com capacidade de raciocínio (Qwen3, DeepSeek-R1...) agora têm seu potencial completamente desbloqueado. Em vez de ""ir às cegas"", a IA raciocina internamente antes de cada resposta: planeja as fichas de personagem, avalia a coerência narrativa com sua história e evita erros como inventários duplicados ou atributos incompletos. O resultado é uma IA notavelmente mais inteligente e consistente.
+  - 🧹 **Transparente para você:** Todo esse raciocínio acontece nos bastidores. O motor limpa automaticamente o ""monólogo interno"" da IA antes de mostrar a resposta. Você vê apenas o resultado final, mais polido.
+
+- **⚡ Início de partida mais confiável**
+  - 🛡️ **Adeus aos travamentos no primeiro turno:** Eliminamos uma causa de esperas eternas ao começar uma nova partida. Antes, se a IA gerava um personagem mercador de sem conhecer as regras de comércio (porque não as tem no primeiro turno), o motor tentava corrigi-lo 3 vezes antes de desistir, causando mais de um minuto de espera inútil. Agora ele resolve instantaneamente.
+  - 📖 **Lore à prova de IA criativa:** Se a IA se empolga e gera o background do mundo em formato técnico em vez de texto narrativo, o motor detecta e extrai a história limpa automaticamente. Seu lore sempre chega como deve.
+  - 🧹 **Interface impecável:** Ensinei a IA a não ""falar em código"". Antes, às vezes os botões de decisão ou os comentários do mestre exibiam variáveis internas estranhas (como *Fugir (move to loc_cripta)*). Agora tudo está limpo e forçamos o modelo a se comunicar com você usando o tom de humor que você escolheu (o respeito a este parâmetro depende do humor da IA).
+
+- **🌍 Correções de idioma**
+  - 🗣️ **Locais no seu idioma:** As localizações geradas pela IA agora respeitam o idioma configurado no jogo. Se você joga em inglês, não verá mais ""Distrito da Costa Oeste"" e sim o nome em inglês. (Opa.)
+  - 🔘 **Botões localizados:** O botão de emergência ""Continuar"" agora fala seu idioma em vez de aparecer sempre em espanhol.",Reforma Integral do Núcleo de IA
+romanian,"- **🧠 Refacerea Nucleului AI**
+  - ⚡ **Răspunsuri mai rapide:** Am rescris creierul jocului pentru ca AI-ul să își amintească mai bine ce a procesat deja. În termeni practici: mai puțin timp petrecut în fața ecranului de încărcare între ture. Motorul reutilizează acum munca anterioară în loc să înceapă de la zero de fiecare dată când acționezi. (Da, înainte făcea asta. Nu, nu mă mândresc cu asta.)
+  - 🧹 **Memorie mai curată:** Istoricul jocului este acum stocat fără „gunoi” tehnic din momentul scrierii, nu din momentul citirii. Rezultat: AI-ul are mai mult spațiu pentru a-și aminti istoricul tău și mai puține token-uri irosite pe date interne pe care nu a trebuit niciodată să le vadă.
+  - 🎯 **Reguli la locul lor:** Regulile complementare pe care AI-ul le consultă pentru a-și îmbogăți răspunsurile au fost relocate pentru a nu interfera cu sistemul de caching. Efectul este invizibil pentru tine, dar motorul îl apreciază la fiecare tură (un pic de viteză în plus nu strică niciodată).
+
+- ** Qwen3 dezlănțuit: raționamentul complet activat**
+  - 🚀 **Gândire profundă:** Modelele cu capacitate de raționament (Qwen3, DeepSeek-R1...) își au acum potențialul complet deblocat. În loc să meargă „orb”, AI-ul raționează intern înainte de fiecare răspuns: planifică fișele personajelor, evaluează coerența narativă cu istoria ta și evită erori precum inventare duplicate sau atribute incomplete. Rezultatul este un AI remarcabil de mai inteligent și mai consistent.
+  - 🧹 **Transparent pentru tine:** Tot acest raționament se întâmplă în culise. Motorul curăță automat „monologul intern” al AI-ului înainte de a-ți afișa răspunsul. Tu vezi doar rezultatul final, mai șlefuit.
+
+- **⚡ Pornire de joc mai fiabilă**
+  - 🛡️ **Adio blocajelor din prima tură:** Am eliminat o cauză a așteptărilor eterne la începutul unui joc nou. Înainte, dacă AI-ul genera un personaj comerciant fără să știe regulile de comerț (deoarece nu le are în prima tură), motorul încerca să corecteze de 3 ori înainte de a renunța, provocând mai mult de un minut de așteptare inutilă. Acum se rezolvă instantaneu.
+  - 📖 **Lore la testul AI-ului creativ:** Dacă AI-ul se entuziasmează și generează fundalul lumii în format tehnic în loc de text narativ, motorul îl detectează și extrage automat povestea curată. Lore-ul tău ajunge întotdeauna așa cum trebuie.
+  - 🧹 **Interfață impecabilă:** L-am învățat pe AI să nu „vorbească în cod”. Înainte, uneori butoanele de decizie sau comentariile maestrului de joc afișau variabile interne ciudate (precum *Fugi (move to loc_cripta)*). Acum totul este curat și modelul a fost forțat să comunice cu tine folosind tonul de umor pe care l-ai ales (respectarea acestui parametru depinde de starea de spirit a AI-ului).
+
+- **🌍 Corectări de limbaj**
+  - 🗣️ **Locații în limba ta:** Locațiile generate de AI respectă acum limba configurată în joc. Dacă joci în engleză, nu vei mai vedea „Distrito de la Costa Oeste” ci numele în engleză. (Ups.)
+  - 🔘 **Butoane localizate:** Butonul de urgență „Continuare” acum vorbește limba ta în loc să apară mereu în castiliană.",Refacerea Completă a Nucleului AI
+russian,"- **🧠 Переработка ядра ИИ**
+  - ⚡ **Более быстрые ответы:** Я переписал ""мозг"" игры, чтобы ИИ лучше запоминал то, что уже обработал. На практике это означает меньше времени ожидания загрузочного экрана между ходами. Движок теперь повторно использует предыдущие расчеты вместо того, чтобы начинать с нуля каждый раз, когда вы совершаете действие. (Да, раньше он так делал. Нет, я этим не горжусь.)
+  - 🧹 **Более чистая память:** История игры теперь сохраняется без технических ""артефактов"" с момента записи, а не считывания. Результат: у ИИ больше места для запоминания вашей истории и меньше ""токенов"" тратится на внутренние данные, которые ему никогда не нужно было видеть.
+  - 🎯 **Правила на своих местах:** Дополнительные правила, к которым ИИ обращается для улучшения своих ответов, были перемещены, чтобы не мешать системе кэширования. Эффект для вас незаметен, но движок благодарен за это в каждом ходу (дополнительная скорость никогда не помешает).
+
+- ** Qwen3 на свободе: полное логическое рассуждение активировано**
+  - 🚀 **Глубокое размышление:** Модели с возможностью логического рассуждения (Qwen3, DeepSeek-R1...) теперь полностью раскрыли свой потенциал. Вместо того, чтобы действовать ""вслепую"", ИИ внутренне рассуждает перед каждым ответом: планирует карточки персонажей, оценивает нарративную согласованность с вашей историей и избегает таких ошибок, как дублирование инвентаря или неполные характеристики. Результат: значительно более умный и последовательный ИИ.
+  - 🧹 **Прозрачность для вас:** Все эти рассуждения происходят ""за кулисами"". Движок автоматически очищает ""внутренний монолог"" ИИ перед тем, как показать вам ответ. Вы видите только окончательный, доработанный результат.
+
+- **⚡ Более надежный старт игры**
+  - 🛡️ **Прощайте, зависания на первом ходу:** Мы устранили причину бесконечных ожиданий при начале новой игры. Раньше, если ИИ создавал персонажа-торговца, не зная правил торговли (потому что их нет на первом ходу), движок пытался исправить это 3 раза, прежде чем сдаться, вызывая более минуты бесполезного ожидания. Теперь это решается мгновенно.
+  - 📖 **Лор, устойчивый к креативности ИИ:** Если ИИ слишком увлечется и сгенерирует предысторию мира в техническом формате вместо нарративного текста, движок обнаружит это и автоматически извлечет чистую историю. Ваш лор всегда будет представлен правильно.
+  - 🧹 **Безупречный интерфейс:** Я научил ИИ не ""говорить на языке кода"". Раньше кнопки выбора или комментарии мастера иногда отображали странные внутренние переменные (например, *Бежать (move to loc_cripta)*). Теперь все чисто, и модель заставлена общаться с вами в выбранном вами юмористическом тоне (соблюдение этого параметра зависит от настроения ИИ).
+
+- **🌍 Исправления языка**
+  - 🗣️ **Места на вашем языке:** Локации, сгенерированные ИИ, теперь уважают язык, установленный в игре. Если вы играете на английском, вы больше не увидите ""Район Западного Побережья"", а увидите название на английском. (Упс.)
+  - 🔘 **Локализованные кнопки:** Кнопка ""Продолжить"" теперь говорит на вашем языке вместо того, чтобы всегда появляться на испанском.",Полная переработка ядра ИИ
+swedish,"- **🧠 Omarbetning av AI-kärnan**
+  - ⚡ **Snabbare svar:** Jag har skrivit om spelets hjärna så att AI:n kommer ihåg bättre vad den redan har bearbetat. Praktiskt sett: mindre tid att stirra på laddningsskärmen mellan turer. Motorn återanvänder nu tidigare arbete istället för att börja från noll varje gång du agerar. (Ja, den gjorde det förut. Nej, jag är inte stolt över det.)
+  - 🧹 **Renare minne:** Spelhistoriken lagras nu utan tekniskt skräp från det ögonblick den skrivs, inte när den läses. Resultat: AI:n har mer utrymme att minnas din historia och mindre tokens slösas på interna data som den aldrig behövde se.
+  - 🎯 **Regler där de hör hemma:** Kompletterande regler som AI:n konsulterar för att berika sina svar har flyttats så att de inte stör cache-systemet. Effekten är osynlig för dig, men motorn uppskattar det vid varje tur (lite extra hastighet skadar aldrig).
+
+- ** Qwen3 släppt: fullständigt resonemang aktiverat**
+  - 🚀 **Djupgående tänkande:** Modeller med resonemangsförmåga (Qwen3, DeepSeek-R1...) har nu sin fulla potential upplåst. Istället för att gå ""på måfå"" resonerar AI:n internt före varje svar: den planerar karaktärsblocket, utvärderar den narrativa överensstämmelsen med din historia och undviker fel som dubbletter i inventariet eller ofullständiga attribut. Resultatet är en anmärkningsvärt intelligentare och mer konsekvent AI.
+  - 🧹 **Transparent för dig:** Allt detta resonemang sker bakom kulisserna. Motorn rensar automatiskt AI:ns ""inre monolog"" innan den visar dig svaret. Du ser bara det färdiga resultatet, mer polerat.
+
+- **⚡ Mer pålitlig spelstart**
+  - 🛡️ **Adjö till ""första turens låsningar"":** Vi har eliminerat en orsak till eviga väntetider när man startar ett nytt spel. Tidigare, om AI:n genererade en köpman utan att känna till handelsreglerna (eftersom den inte har dem på första turen), försökte motorn korrigera det 3 gånger innan den gav upp, vilket orsakade mer än en minuts meningslös väntan. Nu löser den det omedelbart.
+  - 📖 **Lore bevisat mot kreativ AI:** Om AI:n blir exalterad och genererar världens bakgrund i tekniskt format istället för narrativ text, upptäcker motorn det och extraherar den rena historien automatiskt. Din lore kommer alltid fram som den ska.
+  - 🧹 **Oklanderligt gränssnitt:** Jag har lärt AI:n att inte ""tala kod"". Tidigare visade ibland beslutsknappar eller spelledarens kommentarer konstiga interna variabler (som *Fly (move to loc_cripta)*). Nu är allt rent och modellen har tvingats att kommunicera med dig med den humoristiska ton du har valt (att respektera denna parameter beror på AI:ns humör).
+
+- **🌍 Språkkorrigeringar**
+  - 🗣️ **Platser på ditt språk:** Platser som genereras av AI:n respekterar nu det språk som är inställt i spelet. Om du spelar på engelska kommer du inte längre att se ""Distrito de la Costa Oeste"" utan det engelska namnet. (Ups.)
+  - 🔘 **Lokaliserade knappar:** Nödknappen ""Fortsätt"" talar nu ditt språk istället för att alltid visas på spanska.",Omfattande omarbetning av AI-kärnan
+thai,"- **🧠 ปรับปรุงแกนหลัก AI**
+  - ⚡ **ตอบสนองเร็วขึ้น:** ได้เขียนสมองของเกมใหม่ เพื่อให้ AI จำสิ่งที่ประมวลผลไปแล้วได้ดีขึ้น ในทางปฏิบัติหมายถึง: ใช้เวลารอหน้าจอโหลดระหว่างเทิร์นน้อยลง เอ็นจิ้นจะนำงานที่ทำไว้แล้วมาใช้ซ้ำ แทนที่จะเริ่มใหม่ทุกครั้งที่คุณดำเนินการ (ใช่ ก่อนหน้านี้ทำแบบนั้น และไม่ภูมิใจเลย)
+  - 🧹 **หน่วยความจำสะอาดขึ้น:** ประวัติการเล่นจะถูกบันทึกโดยไม่มีข้อมูลทางเทคนิคที่ไม่จำเป็นตั้งแต่ตอนที่เขียน ไม่ใช่ตอนที่อ่าน ส่งผลให้ AI มีพื้นที่ในการจำประวัติของคุณมากขึ้น และใช้โทเค็นน้อยลงสำหรับข้อมูลภายในที่ไม่จำเป็นต้องเห็น
+  - 🎯 **กฎอยู่ที่ที่ของมัน:** กฎเสริมที่ AI ใช้ในการตอบสนองให้สมบูรณ์ ได้ถูกย้ายไปยังตำแหน่งที่เหมาะสม เพื่อไม่ให้รบกวนระบบแคช ผลกระทบนี้จะมองไม่เห็นสำหรับคุณ แต่เอ็นจิ้นจะขอบคุณในทุกๆ เทิร์น (ความเร็วที่เพิ่มขึ้นเล็กน้อยนั้นไม่เสียหาย)
+
+- ** Qwen3 ปลดปล่อยพลัง: เปิดใช้งานการให้เหตุผลเต็มรูปแบบ**
+  - 🚀 **คิดอย่างลึกซึ้ง:** โมเดลที่มีความสามารถในการให้เหตุผล (Qwen3, DeepSeek-R1...) ตอนนี้ปลดล็อกศักยภาพได้อย่างเต็มที่ แทนที่จะดำเนินการแบบ ""สุ่มสี่สุ่มห้า"" AI จะให้เหตุผลภายในก่อนการตอบสนองแต่ละครั้ง: วางแผนการ์ดตัวละคร ประเมินความสอดคล้องของเนื้อเรื่องกับประวัติของคุณ และหลีกเลี่ยงข้อผิดพลาด เช่น การมีไอเทมซ้ำ หรือข้อมูลคุณลักษณะไม่ครบถ้วน ส่งผลให้ AI ฉลาดและสอดคล้องกันมากขึ้นอย่างเห็นได้ชัด
+  - 🧹 **โปร่งใสสำหรับคุณ:** การให้เหตุผลทั้งหมดนี้เกิดขึ้นเบื้องหลัง เอ็นจิ้นจะล้าง ""ความคิดในใจ"" ของ AI โดยอัตโนมัติก่อนที่จะแสดงผลลัพธ์ให้คุณเห็น คุณจะเห็นเพียงผลลัพธ์สุดท้ายที่สมบูรณ์ยิ่งขึ้นเท่านั้น
+
+- **⚡ เริ่มต้นเกมได้น่าเชื่อถือยิ่งขึ้น**
+  - 🛡️ **บอกลาอาการค้างในเทิร์นแรก:** เราได้แก้ไขสาเหตุหนึ่งที่ทำให้เกิดการรอคอยนานอย่างไม่จำเป็นเมื่อเริ่มเกมใหม่ ก่อนหน้านี้ หาก AI สร้างตัวละครพ่อค้าโดยไม่ทราบกฎการค้า (เพราะยังไม่มีในเทิร์นแรก) เอ็นจิ้นจะพยายามแก้ไข 3 ครั้งก่อนจะยอมแพ้ ทำให้เสียเวลารอไปกว่านาทีโดยเปล่าประโยชน์ ตอนนี้แก้ไขได้ทันที
+  - 📖 **เนื้อเรื่องที่ทนทานต่อ AI สร้างสรรค์:** หาก AI เกิดอารมณ์ดีแล้วสร้างภูมิหลังของโลกในรูปแบบทางเทคนิคแทนที่จะเป็นข้อความเล่าเรื่อง เอ็นจิ้นจะตรวจจับและดึงเอาเรื่องราวที่สะอาดออกมาโดยอัตโนมัติ เนื้อเรื่องของคุณจะมาถึงอย่างถูกต้องเสมอ
+  - 🧹 **อินเทอร์เฟซไร้ที่ติ:** ได้สอน AI ไม่ให้ ""พูดภาษาโค้ด"" ก่อนหน้านี้ บางครั้งปุ่มตัดสินใจหรือความคิดเห็นของมาสเตอร์จะแสดงตัวแปรภายในที่แปลกๆ (เช่น *หนี (move to loc_cripta)*) ตอนนี้ทุกอย่างสะอาดและบังคับให้โมเดลสื่อสารกับคุณด้วยน้ำเสียงอารมณ์ขันที่คุณเลือก (การเคารพพารามิเตอร์นี้ขึ้นอยู่กับอารมณ์ของ AI)
+
+- **🌍 แก้ไขข้อผิดพลาดด้านภาษา**
+  - 🗣️ **สถานที่ในภาษาของคุณ:** สถานที่ที่ AI สร้างขึ้นตอนนี้จะเคารพภาษาที่ตั้งค่าไว้ในเกม หากคุณเล่นเป็นภาษาอังกฤษ คุณจะไม่เห็น ""Distrito de la Costa Oeste"" อีกต่อไป แต่จะเป็นชื่อภาษาอังกฤษ (อุ๊ปส์)
+  - 🔘 **ปุ่มปรับตามภาษา:** ปุ่มฉุกเฉิน ""ดำเนินการต่อ"" ตอนนี้จะแสดงเป็นภาษาของคุณแทนที่จะแสดงเป็นภาษาสเปนเสมอ",ปรับปรุงแกนหลัก AI ครั้งใหญ่
+turkish,"- **🧠 Yapay Zeka Çekirdeği Yeniden Yapılandırması**
+  - ⚡ **Daha Hızlı Yanıtlar:** Yapay zekanın daha önce işlediği şeyleri daha iyi hatırlamasını sağlamak için oyunun beynini yeniden yazdım. Pratik terimlerle: sıra geçişleri arasındaki yükleme ekranına bakma süresi azaldı. Motor artık her hamlenizde sıfırdan başlamak yerine önceki çalışmaları yeniden kullanıyor. (Evet, eskiden böyle yapıyordu. Hayır, bununla gurur duymuyorum.)
+  - 🧹 **Daha Temiz Bellek:** Oyun geçmişi, yazıldığı andan itibaren teknik çöp olmadan saklanıyor, okunduğu zaman değil. Sonuç: yapay zekanın hikayenizi hatırlaması için daha fazla alanı var ve hiç görmesi gerekmeyen dahili verilerle boşa harcanan daha az token var.
+  - 🎯 **Kurallar Yerli Yerinde:** Yapay zekanın yanıtlarını zenginleştirmek için başvurduğu ek kurallar, önbellek sistemine müdahale etmemeleri için yeniden düzenlendi. Etkisi sizden gizli, ancak motor her turda bunu takdir ediyor (biraz daha hız fena olmaz).
+
+- ** Qwen3 Serbest Bırakıldı: Tam Akıl Yürütme Etkinleştirildi**
+  - 🚀 **Derin Düşünme:** Akıl yürütme yeteneğine sahip modeller (Qwen3, DeepSeek-R1...) artık potansiyellerini tam olarak ortaya çıkarıyor. Yapay zeka ""körlemesine"" gitmek yerine, her yanıttan önce dahili olarak akıl yürütüyor: karakter kartlarını planlıyor, hikayenizle anlatısal tutarlılığı değerlendiriyor ve yinelenen envanterler veya eksik özellikler gibi hatalardan kaçınıyor. Sonuç, dikkate değer ölçüde daha akıllı ve tutarlı bir yapay zeka.
+  - 🧹 **Sizin İçin Şeffaf:** Tüm bu akıl yürütme perde arkasında gerçekleşiyor. Motor, yanıtı size göstermeden önce yapay zekanın ""iç monologunu"" otomatik olarak temizliyor. Siz sadece daha cilalı olan nihai sonucu görüyorsunuz.
+
+- **⚡ Daha Güvenilir Oyun Başlangıcı**
+  - 🛡️ **İlk Tur Kilitlenmelerine Elveda:** Yeni bir oyuna başlarken yaşanan sonsuz beklemelerin bir nedenini ortadan kaldırdık. Eskiden, yapay zeka ticaret kurallarını bilmeden (çünkü ilk turda yok) bir tüccar karakteri oluşturursa, motor pes etmeden önce bunu 3 kez düzeltmeye çalışır, bu da faydasız bir dakikadan fazla beklemeye neden olurdu. Şimdi anında çözüyor.
+  - 📖 **Yaratıcı Yapay Zekaya Karşı Dayanıklı Lore:** Yapay zeka heyecanlanıp dünya arka planını anlatısal metin yerine teknik formatta oluşturursa, motor bunu tespit eder ve temiz hikayeyi otomatik olarak çıkarır. Lore'unuz her zaman olması gerektiği gibi geliyor.
+  - 🧹 **Kusursuz Arayüz:** Yapay zekaya ""kodla konuşmamayı"" öğrettim. Eskiden, karar düğmeleri veya oyun yöneticisi yorumları bazen tuhaf dahili değişkenler gösteriyordu (örneğin *Kaç (move to loc_cripta)*). Şimdi her şey temiz ve modelin sizinle seçtiğiniz mizah tonunu kullanarak iletişim kurması zorlandı (bu parametreyi dikkate alması, yapay zekanın ruh haline bağlıdır).
+
+- **🌍 Dil Düzeltmeleri**
+  - 🗣️ **Yereller Dilinizde:** Yapay zeka tarafından oluşturulan konumlar artık oyunda yapılandırılan dile saygı duyuyor. İngilizce oynuyorsanız, artık ""West Coast District"" yerine İngilizce adı göreceksiniz. (Ups.)
+  - 🔘 **Yerelleştirilmiş Düğmeler:** ""Devam Et"" acil durum düğmesi artık her zaman İspanyolca görünmek yerine sizin dilinizde konuşuyor.",Yapay Zeka Çekirdeğinde Kapsamlı Yeniden Yapılandırma
+ukrainian,"- **🧠 Реформа Ядра ШІ**
+  - ⚡ **Швидші відповіді:** Я переписав мозок гри, щоб ШІ краще пам'ятав те, що він вже обробив. На практиці: менше часу на екрані завантаження між ходами. Двигун тепер повторно використовує попередні напрацювання замість того, щоб починати з нуля щоразу, коли ви дієте. (Так, раніше він так робив. Ні, я цим не пишаюся.)
+  - 🧹 **Чистіша пам'ять:** Історія гри тепер зберігається без технічного сміття з моменту написання, а не під час читання. Результат: у ШІ більше місця для запам'ятовування вашої історії та менше марних токенів на внутрішні дані, які йому ніколи не потрібно було бачити.
+  - 🎯 **Правила там, де їм місце:** Додаткові правила, до яких ШІ звертається для збагачення своїх відповідей, були переміщені, щоб не заважати системі кешування. Ефект для вас невидимий, але двигун вдячний за це на кожному кроці (трохи більше швидкості ніколи не завадить).
+
+- ** Qwen3 розкрито: повне міркування активовано**
+  - 🚀 **Глибоке мислення:** Моделі зі здатністю до міркування (Qwen3, DeepSeek-R1...) тепер повністю розкрили свій потенціал. Замість того, щоб діяти ""наосліп"", ШІ внутрішньо міркує перед кожною відповіддю: планує картки персонажів, оцінює наративну послідовність з вашою історією та уникає таких помилок, як дублікати інвентарю або неповні атрибути. Результат – помітно розумніший та послідовніший ШІ.
+  - 🧹 **Прозоро для вас:** Усі ці міркування відбуваються за лаштунками. Двигун автоматично очищає ""внутрішній монолог"" ШІ перед тим, як показати вам відповідь. Ви бачите лише остаточний, більш відшліфований результат.
+
+- **⚡ Надійніший старт гри**
+  - 🛡️ **Прощавай, зависання першого ходу:** Ми усунули причину вічного очікування на початку нової гри. Раніше, якщо ШІ генерував торгового персонажа, не знаючи правил торгівлі (бо їх немає на першому ході), двигун намагався виправити це 3 рази, перш ніж здатися, спричиняючи більше хвилини марного очікування. Тепер це вирішується миттєво.
+  - 📖 **Лор, стійкий до креативного ШІ:** Якщо ШІ захоплюється і генерує передісторію світу у технічному форматі замість наративного тексту, двигун це виявляє та автоматично витягує чисту історію. Ваш лор завжди надходить як слід.
+  - 🧹 **Бездоганний інтерфейс:** Я навчив ШІ не ""говорити кодом"". Раніше іноді кнопки рішень або коментарі майстра відображали дивні внутрішні змінні (як *Втекти (move to loc_cripta)*). Тепер все чисто, і модель змушена спілкуватися з вами у вибраному вами гумористичному тоні (дотримання цього параметра залежить від настрою ШІ).
+
+- **🌍 Виправлення мови**
+  - 🗣️ **Місця вашою мовою:** Місця, згенеровані ШІ, тепер поважають мову, встановлену в грі. Якщо ви граєте англійською, ви більше не побачите ""Район Західного узбережжя"", а замість нього – назву англійською. (Упс.)
+  - 🔘 **Локалізовані кнопки:** Кнопка екстреного ""Продовжити"" тепер говорить вашою мовою, а не завжди відображається іспанською.",Інтегральна Реформа Ядра ШІ
+vietnamese,"- **🧠 Đại tu Cốt lõi AI**
+  - ⚡ **Phản hồi nhanh hơn:** Tôi đã viết lại bộ não của trò chơi để AI ghi nhớ tốt hơn những gì đã xử lý. Nói một cách thực tế: ít thời gian chờ màn hình tải hơn giữa các lượt. Bộ máy giờ tái sử dụng công việc trước đó thay vì bắt đầu lại từ đầu mỗi khi bạn hành động. (Vâng, trước đây nó đã làm vậy. Không, tôi không tự hào về điều đó.)
+  - 🧹 **Bộ nhớ sạch hơn:** Lịch sử trò chơi giờ được lưu trữ không có rác kỹ thuật ngay từ thời điểm nó được ghi, chứ không phải khi nó được đọc. Kết quả: AI có nhiều không gian hơn để ghi nhớ lịch sử của bạn và ít token bị lãng phí vào dữ liệu nội bộ mà nó chưa bao giờ cần xem.
+  - 🎯 **Quy tắc đúng chỗ:** Các quy tắc bổ sung mà AI tham khảo để làm phong phú thêm phản hồi của nó đã được di chuyển để không can thiệp vào hệ thống bộ nhớ đệm. Hiệu ứng này là vô hình đối với bạn, nhưng bộ máy sẽ cảm ơn bạn trong mỗi lượt (thêm một chút tốc độ cũng không hại gì).
+
+- ** Qwen3 được giải phóng: kích hoạt suy luận toàn diện**
+  - 🚀 **Suy nghĩ sâu sắc:** Các mô hình có khả năng suy luận (Qwen3, DeepSeek-R1...) giờ đây đã được mở khóa hoàn toàn tiềm năng. Thay vì đi ""mù quáng"", AI suy luận nội bộ trước mỗi phản hồi: lên kế hoạch cho các thẻ nhân vật, đánh giá sự mạch lạc của cốt truyện với câu chuyện của bạn, và tránh các lỗi như trùng lặp kho hoặc thuộc tính không đầy đủ. Kết quả là một AI thông minh và nhất quán hơn đáng kể.
+  - 🧹 **Minh bạch với bạn:** Tất cả quá trình suy luận đó diễn ra hậu trường. Bộ máy tự động làm sạch ""độc thoại nội tâm"" của AI trước khi hiển thị phản hồi cho bạn. Bạn chỉ thấy kết quả cuối cùng, được trau chuốt hơn.
+
+- **⚡ Khởi động trò chơi đáng tin cậy hơn**
+  - 🛡️ **Tạm biệt tình trạng treo lượt đầu:** Chúng tôi đã loại bỏ một nguyên nhân gây ra thời gian chờ đợi vĩnh viễn khi bắt đầu một trò chơi mới. Trước đây, nếu AI tạo ra một nhân vật thương nhân mà không biết quy tắc giao dịch (vì nó không có chúng ở lượt đầu), bộ máy sẽ cố gắng sửa nó 3 lần trước khi bỏ cuộc, gây ra hơn một phút chờ đợi vô ích. Giờ đây, nó giải quyết ngay lập tức.
+  - 📖 **Lore chống lại AI sáng tạo:** Nếu AI quá hứng thú và tạo ra bối cảnh thế giới ở định dạng kỹ thuật thay vì văn bản tường thuật, bộ máy sẽ phát hiện và tự động trích xuất câu chuyện sạch sẽ. Lore của bạn luôn được truyền tải đúng cách.
+  - 🧹 **Giao diện hoàn hảo:** Tôi đã dạy AI không ""nói chuyện bằng mã"". Trước đây, đôi khi các nút quyết định hoặc bình luận của người dẫn chuyện hiển thị các biến nội bộ kỳ lạ (như *Bỏ chạy (move to loc_crypta)*). Giờ đây, mọi thứ đều sạch sẽ và mô hình đã bị buộc phải giao tiếp với bạn bằng giọng điệu hài hước mà bạn đã chọn (việc tôn trọng tham số này phụ thuộc vào tâm trạng của AI).
+
+- **🌍 Sửa lỗi ngôn ngữ**
+  - 🗣️ **Địa điểm bằng ngôn ngữ của bạn:** Các địa điểm do AI tạo ra giờ đây sẽ tôn trọng ngôn ngữ đã được cài đặt trong trò chơi. Nếu bạn chơi bằng tiếng Anh, bạn sẽ không còn thấy ""Distrito de la Costa Oeste"" mà sẽ là tên tiếng Anh. (Ối.)
+  - 🔘 **Nút đã được bản địa hóa:** Nút khẩn cấp ""Tiếp tục"" giờ đây sẽ nói ngôn ngữ của bạn thay vì luôn hiển thị bằng tiếng Tây Ban Nha.",Đại tu cốt lõi AI
+schinese,"- **🧠 AI 核心大修**
+  - ⚡ **响应更快：** 我重写了游戏的大脑，让 AI 能够更好地记住它已经处理过的内容。具体来说：减少了回合之间等待加载画面的时间。现在引擎会复用之前的工作，而不是在你每次行动时从头开始。（是的，以前就是这样做的。不，我对此并不感到骄傲。）
+  - 🧹 **更干净的记忆：** 游戏历史现在从创建时就被存储，而不是读取时，避免了技术垃圾。结果：AI 有更多空间记住你的故事，并减少了因不需要的内部数据而浪费的 token。
+  - 🎯 **规则各归其位：** AI 用于丰富其响应的辅助规则已重新定位，以避免干扰缓存系统。这对你来说效果是看不见的，但引擎在每个回合都会因此受益（多一点速度总归是好的）。
+
+- ** Qwen3 解锁：完整推理已开启**
+  - 🚀 **深度思考：** 具备推理能力的模型（Qwen3、DeepSeek-R1...）现在已完全解锁其潜力。AI 在每次响应前会进行内部推理，而不是“盲目”行动：它会规划角色卡片，评估叙事与你故事的一致性，并避免出现重复物品栏或属性不全等错误。结果是 AI 变得明显更智能、更一致。
+  - 🧹 **对你透明：** 所有这些推理都在后台进行。引擎会在显示响应之前自动清理 AI 的“内心独白”。你只会看到更完善的最终结果。
+
+- **⚡ 更可靠的游戏启动**
+  - 🛡️ **告别首回合卡死：** 我们消除了新游戏开始时无限等待的原因。之前，如果 AI 生成了一个商人角色，但不知道贸易规则（因为首回合没有这些规则），引擎会尝试纠正 3 次才放弃，导致超过一分钟的无用等待。现在它会立即解决。
+  - 📖 **创意 AI 也能遵守的背景设定：** 如果 AI 过于兴奋，将世界背景生成为技术格式而不是叙述文本，引擎会检测到并自动提取干净的故事。你的背景设定将始终以正确的方式呈现。
+  - 🧹 **界面整洁：** 我已教会 AI 不要“说代码”。以前，决策按钮或游戏大师的评论有时会显示奇怪的内部变量（例如 *逃跑 (move to loc_cripta)*）。现在一切都已干净，并强制模型使用你选择的幽默语气与你交流（是否尊重这个参数取决于 AI 当时的心情）。
+
+- **🌍 语言修复**
+  - 🗣️ **地点使用你的语言：** AI 生成的地点现在会遵循游戏中设置的语言。如果你用英语玩游戏，将不再看到“Distrito de la Costa Oeste”，而是其英文名称。（糟糕。）
+  - 🔘 **本地化按钮：** 紧急按钮“继续”现在会用你的语言显示，而不是一直显示西班牙语。",AI 核心大修
+tchinese,"- **🧠 AI 核心重大翻新**
+  - ⚡ **更快的回應：** 我重寫了遊戲的大腦，讓 AI 能更好地記住它已經處理過的內容。實際應用上：減少載入畫面等待的時間。引擎現在會重複利用先前的工作，而不是每次您採取行動時都從頭開始。（是的，以前就是這樣做的。不，我對此並不感到自豪。）
+  - 🧹 **更乾淨的記憶體：** 遊戲歷史記錄現在從寫入時就開始儲存，而不是讀取時，這能避免技術垃圾。結果：AI 有更多空間記住您的故事，並減少浪費在內部資料上的 token，而這些資料它其實不需要看到。
+  - 🎯 **規則歸位：** AI 用來豐富回應的補充規則已被重新安置，以免干擾快取系統。這個效果對您來說是看不見的，但引擎在每個回合都會因此受益（稍微快一點總是好的）。
+
+- **🚀 Qwen3 釋放：完整推理已啟用**
+  - 🚀 **深度思考：** 具備推理能力的模型（Qwen3、DeepSeek-R1...）現在已完全解鎖其潛力。AI 在每次回應前都會進行內部推理，而不是「盲目」進行：它會規劃角色卡片、評估與您故事的敘事一致性，並避免出現重複的物品欄或不完整的屬性等錯誤。結果是 AI 的智慧和一致性明顯提高。
+  - 🧹 **對您來說是透明的：** 所有這些推理都在幕後進行。引擎會在向您顯示最終回應之前自動清除 AI 的「內部獨白」。您只會看到更完善的最終結果。
+
+- **⚡ 更可靠的遊戲開局**
+  - 🛡️ **告別首回合當機：** 我們已經消除了一個導致新遊戲開始時無窮無盡等待的原因。以前，如果 AI 生成了一個商人角色，但不知道交易規則（因為在首回合沒有這些規則），引擎會在放棄前嘗試糾正 3 次，導致浪費了一分多鐘的無用等待。現在它會立即解決。
+  - 📖 **富有創意的 AI 也能駕馭的背景故事：** 如果 AI 過於興奮，以技術格式而不是敘事文本生成世界背景，引擎會偵測到並自動提取乾淨的故事。您的背景故事將始終以正確的方式呈現。
+  - 🧹 **無瑕的使用者介面：** 我已經教會 AI 不要「說程式碼」。以前，決策按鈕或大師的評論有時會顯示奇怪的內部變數（例如 *逃跑 (move to loc_cripta)*）。現在一切都乾淨了，並且強制模型使用您選擇的幽默語氣與您溝通（是否遵守此參數取決於 AI 的心情）。
+
+- **🌍 語言修正**
+  - 🗣️ **您語言的地點：** AI 生成的地點現在會尊重遊戲中設定的語言。如果您以英文遊玩，您將不再看到「西區海岸區」而是英文名稱。（糟糕。）
+  - 🔘 **在地化按鈕：** 緊急按鈕「繼續」現在會說您的語言，而不是總是顯示西班牙文。",AI 核心重大翻新
