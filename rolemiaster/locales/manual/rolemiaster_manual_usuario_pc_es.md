@@ -31,14 +31,15 @@ La **VRAM (Memoria de Vídeo)** es la gasolina de la IA.
 
 Gestiona tus IAs en **Configuración → IA Local Integrada → Gestionar Modelos**.
 
-#### 🏆 Familia Qwen 2.5 (La crème de la crème)
+#### 🏆 Familia Qwen 3.5 — Entrenados específicamente para RolemIAster
+
+Estos modelos han sido entrenados con **Fine-Tuning Supervisado (SFT)** para dominar las reglas narrativas del juego. No son modelos genéricos: conocen el contrato JSON de RolemIAster, los NPCs, el inventario y el combate de memoria.
 
 | Modelo | Tamaño | VRAM Mínima | Tier | Veredicto |
 |--------|--------|-------------|------|-----------|
-| **Qwen2.5-3B** | ~2.5GB | **8GB** | B | 👶 **El Becario.** Cumple, pero no le pidas que escriba Shakespeare. A veces se lía. |
-| **Qwen2.5-7B** | ~5.5GB | **12GB** | A | ✅ **EL ELEGIDO.** Equilibrado, listo y rápido. Es el modelo recomendado por defecto. |
-| **Qwen2.5-14B** | ~10GB | **16GB** | S | 🧐 **El Catedrático.** Narrativa rica, profunda y diálogos muy naturales. |
-| **Qwen2.5-32B** | ~22GB | **32GB** | S+ | 👑 **Nivel Dios.** Necesitas una nave espacial (RTX 3090/4090) para mover esto. |
+| **Qwen3.5-2B** | ~1.5GB | **3GB** | B | ⚡ **El Velocista.** El más rápido de todos. Ideal para GPUs básicas o para jugar sin GPU dedicada. |
+| **Qwen3.5-4B** | ~2.8GB | **4GB** | A | ✅ **EL EQUILIBRADO.** Velocidad y calidad óptimas. Modelo estándar recomendado para la mayoría de jugadores. |
+| **Qwen3.5-9B** | ~5.5GB | **8GB** | S | 🌟 **El Narrador.** Narrativa rica y coherencia superior. Para quienes tienen una RTX 3070 o mejor. |
 
 ---
 
@@ -46,12 +47,11 @@ Gestiona tus IAs en **Configuración → IA Local Integrada → Gestionar Modelo
 
 | Tu Gráfica | VRAM | Modelo Recomendado | Resultado |
 |------------|------|--------------------|-----------|
-| GTX 1050/1060 | 4GB | Qwen2.5-3B | 🆗 Justito pero jugable (Contexto bajo) |
-| GTX 1070/1660 | 6GB | Qwen2.5-3B | 🆗 Va bien |
-| RTX 2060/3060 | 8GB | Qwen2.5-3B | 🚀 Vuela |
-| RTX 3070/4060Ti | 12GB | **Qwen2.5-7B** | ✅ La experiencia ideal |
-| RTX 3090/4080 | 16-24GB | Qwen2.5-14B | 🌟 Lujazo |
-| RTX 4090 | 24GB | Qwen2.5-32B | 👑 Máxima calidad |
+| GTX 1050/1060 / Sin GPU | 2-4GB | **Qwen3.5-2B** | 🆗 Justito pero jugable |
+| GTX 1070/1660 / RX 580 | 4-6GB | **Qwen3.5-4B** | ✅ Muy buena experiencia |
+| RTX 2060/3060 / RX 6600 | 6-8GB | **Qwen3.5-4B** | 🚀 Rápido y preciso |
+| RTX 3070/4060Ti / RX 6700 | 8-12GB | **Qwen3.5-9B** | 🌟 La experiencia ideal |
+| RTX 3090/4080/4090 | 16GB+ | **Qwen3.5-9B** | 👑 Máxima calidad, respuestas ultra-rápidas |
 
 **💡 Pro Tip:** Deja siempre unos **2GB de VRAM libres** para el sistema operativo, o Windows empezará a llorar y a cerrar cosas.
 
@@ -74,7 +74,7 @@ Si la cosa va mal, sigue estos pasos en orden:
 2.  **🧹 Limpieza:** Cierra ese navegador con 40 pestañas abiertas. Se están comiendo tu memoria.
 3.  **🛑 El Límite del 70%:** Nunca bajes del **70%** de VRAM asignada.
     *   *¿Por qué?* Porque la IA necesita espacio para "pensar" (la caché KV). Si le das menos del 70%, se quedará en blanco y dará error.
-4.  **🔙 Retirada Táctica:** Si nada funciona, baja a un modelo más pequeño (pasa del 7B al 3B).
+4.  **🔙 Retirada Táctica:** Si nada funciona, baja a un modelo más pequeño (pasa del 9B al 4B, o del 4B al 2B).
 
 ---
 

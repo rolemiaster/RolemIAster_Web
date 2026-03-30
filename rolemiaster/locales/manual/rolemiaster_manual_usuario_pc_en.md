@@ -27,37 +27,37 @@ RolemIAster runs on **Local Artificial Intelligence**. That means your PC will d
 
 ---
 
-### 📊 MODEL CATALOG (Pick your poison)
+### MODEL CATALOG (Pick your poison)
 
 Manage your AIs in **Settings → Integrated Local AI → Manage Models**.
 
-#### 🏆 Qwen 2.5 Family (La crème de la crème)
+#### Qwen 3.5 Family — Fine-tuned specifically for RolemIAster
+
+These models have been trained with **Supervised Fine-Tuning (SFT)** to master the game's narrative rules. These are not generic models: they know RolemIAster's JSON contract, NPCs, inventory, and combat by heart.
 
 | Model | Size | Minimum VRAM | Tier | Verdict |
 |--------|--------|-------------|------|-----------|
-| **Qwen2.5-3B** | ~2.5GB | **8GB** | B | 👶 **The Intern.** It complies, but don't ask it to write Shakespeare. Sometimes it gets confused. |
-| **Qwen2.5-7B** | ~5.5GB | **12GB** | A | ✅ **THE CHOSEN ONE.** Balanced, smart, and fast. It is the default recommended model. |
-| **Qwen2.5-14B** | ~10GB | **16GB** | S | 🧐 **The Professor.** Rich, profound narrative and very natural dialogues. |
-| **Qwen2.5-32B** | ~22GB | **32GB** | S+ | 👑 **God Level.** You need a spaceship (RTX 3090/4090) to run this. |
+| **Qwen3.5-2B** | ~1.5GB | **3GB** | B | ⚡ **The Sprinter.** The fastest of all. Ideal for basic GPUs or playing without a dedicated GPU. |
+| **Qwen3.5-4B** | ~2.8GB | **4GB** | A | ✅ **THE BALANCED ONE.** Optimal speed and quality. Standard recommended model for most players. |
+| **Qwen3.5-9B** | ~5.5GB | **8GB** | S | 🌟 **The Narrator.** Rich narrative and superior coherence. For those with an RTX 3070 or better. |
 
 ---
 
-### 🎮 QUICK CHOICE GUIDE
+### QUICK CHOICE GUIDE
 
 | Your Card | VRAM | Recommended Model | Result |
 |------------|------|--------------------|-----------|
-| GTX 1050/1060 | 4GB | Qwen2.5-3B | 🆗 Barely but playable (Low context) |
-| GTX 1070/1660 | 6GB | Qwen2.5-3B | 🆗 Runs well |
-| RTX 2060/3060 | 8GB | Qwen2.5-3B | 🚀 Flies |
-| RTX 3070/4060Ti | 12GB | **Qwen2.5-7B** | ✅ The ideal experience |
-| RTX 3090/4080 | 16-24GB | Qwen2.5-14B | 🌟 Luxury |
-| RTX 4090 | 24GB | Qwen2.5-32B | 👑 Maximum quality |
+| GTX 1050/1060 / No GPU | 2-4GB | **Qwen3.5-2B** | 🆗 Barely but playable |
+| GTX 1070/1660 / RX 580 | 4-6GB | **Qwen3.5-4B** | ✅ Very good experience |
+| RTX 2060/3060 / RX 6600 | 6-8GB | **Qwen3.5-4B** | 🚀 Fast and precise |
+| RTX 3070/4060Ti / RX 6700 | 8-12GB | **Qwen3.5-9B** | 🌟 The ideal experience |
+| RTX 3090/4080/4090 | 16GB+ | **Qwen3.5-9B** | 👑 Maximum quality, ultra-fast responses |
 
 **💡 Pro Tip:** Always leave about **2GB of VRAM free** for the operating system, or Windows will start crying and closing things.
 
 ---
 
-### 🚨 HELP! MY PC IS SLOW! (VRAM Problems)
+### HELP! MY PC IS SLOW! (VRAM Problems)
 
 If the game takes longer to respond than your crush on WhatsApp, you've probably run out of VRAM.
 
@@ -74,7 +74,7 @@ If things go wrong, follow these steps in order:
 2.  **🧹 Cleanup:** Close that browser with 40 tabs open. They are eating your memory.
 3.  **🛑 The 70% Limit:** Never go below **70%** of assigned VRAM.
     *   *Why?* Because the AI needs space to "think" (the KV cache). If you give it less than 70%, it will go blank and error out.
-4.  **🔙 Tactical Retreat:** If nothing works, downgrade to a smaller model (switch from 7B to 3B).
+4.  **🔙 Tactical Retreat:** If nothing works, downgrade to a smaller model (switch from 9B to 4B, or from 4B to 2B).
 
 ---
 
