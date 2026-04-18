@@ -8,7 +8,7 @@ Soy un desarrollador solitario —sí, solo yo, mi teclado y litros de café—,
 ## ⚠️ Aviso Importante sobre Hardware (Local vs Cloud)
 Aquí hay dos formas de jugar, y tu experiencia depende de cuál elijas:
 
-*   **Modo Local (Gratis, Privado):** Si quieres ejecutar la IA en tu propio PC, los requisitos de la tienda (Mínimo 12GB VRAM) son sagrados. Menos de eso y la IA se arrastrará o bloqueará tu equipo. Es pura matemática, no magia.
+*   **Modo Local (Gratis, Privado):** Si quieres ejecutar la IA en tu propio PC, los requisitos de la tienda (Mínimo 8GB VRAM) son sagrados para empezar con buen pie. Menos de eso y la IA se arrastrará o bloqueará tu equipo. Es pura matemática, no magia, aunque ahora con Turbo Quant, esto puede cambiar a mejor.
 *   **Modo Cloud (API de Gemini, GPT, etc. solo si inicias con comando `--advanced`):** ¡Aquí cambia la película! Si configuras el juego para usar servicios en la nube (como Google Gemini o OpenAI), el trabajo pesado se hace en sus servidores, no en el tuyo. En este modo, el juego funciona fluido en prácticamente cualquier equipo, ya que tu tarjeta gráfica descansa.
 
 ## Gestión de Expectativas
@@ -25,7 +25,7 @@ Dicho esto, mi agradecimiento es infinito para los que decidís quedaros. Vuestr
 
 
 *********************************************************************************
-#  ¡ACTUALIZAMOS A QWEN 3.5 + TURBO QUANT! NUEVO MOTOR, NUEVA TECNOLOGÍA, NUEVA ERA 🚀
+# 📢 ¡ACTUALIZAMOS A QWEN 3.5 + TURBO QUANT! NUEVO MOTOR, NUEVA TECNOLOGÍA, NUEVA ERA 🚀
 *********************************************************************************
 
 🚧 ZONA DE OBRAS: LOBOTOMÍA COMPLETADA (Y FUNCIONA) 🧠🔧
@@ -53,4 +53,4 @@ Si hasta los gigantes de Silicon Valley (Gemini, ChatGPT...) a veces ven elefant
 ¡Gracias por la paciencia mientras ajustaba las tuercas! 🛠️✨
 *********************************************************************************
 
-<!-- source_hash: b7968a3e -->
+<!-- source_hash: 1f0f19c3 -->

@@ -22,7 +22,7 @@ RolemIAster funciona con **Inteligencia Artificial Local**. Eso significa que tu
 ### ⚙️ Conceptos para no iniciados
 
 La **VRAM (Memoria de Vídeo)** es la gasolina de la IA.
-*   RolemIAster necesita "recordar" de **12,000 a 16,000 palabras (tokens)** para no perder el hilo de la historia.
+*   Gracias a **TurboQuant**, RolemIAster puede recordar ahora **más de 100,000 palabras (tokens)** —casi el triple que antes— sin colapsar tu gráfica.
 *   Si tu GPU se queda sin memoria, el juego irá más lento que un caracol con asma.
 
 ---
@@ -47,10 +47,10 @@ Estos modelos han sido entrenados con **Fine-Tuning Supervisado (SFT)** para dom
 
 | Tu Gráfica | VRAM | Modelo Recomendado | Resultado |
 |------------|------|--------------------|-----------|
-| GTX 1050/1060 / Sin GPU | 2-4GB | **Qwen3.5-2B** | 🆗 Justito pero jugable |
-| GTX 1070/1660 / RX 580 | 4-6GB | **Qwen3.5-4B** | ✅ Muy buena experiencia |
-| RTX 2060/3060 / RX 6600 | 6-8GB | **Qwen3.5-4B** | 🚀 Rápido y preciso |
-| RTX 3070/4060Ti / RX 6700 | 8-12GB | **Qwen3.5-9B** | 🌟 La experiencia ideal |
+| GTX 1050/1060 / Sin GPU | 4GB | **Qwen3.5-2B** | 🆗 Justito pero jugable, muy justito... |
+| GTX 1070/1660 / RX 580 | 6GB | **Qwen3.5-4B** | ✅ Buena experiencia |
+| RTX 2060/3060 / RX 6600 | 8GB | **Qwen3.5-4B** | 🚀 Rápido y preciso |
+| RTX 3070/4060Ti / RX 6700 | 12GB | **Qwen3.5-9B** | 🌟 La experiencia ideal |
 | RTX 3090/4080/4090 | 16GB+ | **Qwen3.5-9B** | 👑 Máxima calidad, respuestas ultra-rápidas |
 
 **💡 Pro Tip:** Deja siempre unos **2GB de VRAM libres** para el sistema operativo, o Windows empezará a llorar y a cerrar cosas.
@@ -292,4 +292,4 @@ RolemIAster está en **desarrollo activo**, cocinándose a fuego lento.
 
 ¡Ahora ve, tira iniciativa y crea tu leyenda!
 
-<!-- source_hash: 9af75cff -->
+<!-- source_hash: 4b8ac77b -->
