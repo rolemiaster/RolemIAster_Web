@@ -1,295 +1,295 @@
 # 🐉 Vítejte v RolemIAster!
 
-Chopte se kostek (nebo myši) a připravte se na dobrodružství, kde jediným limitem je zvrácenost vaší představivosti! **RolemIAster** je nekonečná RPG hra poháněná umělou inteligencí, která vám umožní být hrdinou (nebo padouchem) vašich vlastních příběhů.
+Popadněte své kostky (nebo myš) a připravte se na dobrodružství, kde jediným limitem je pokřivenost vaší fantazie! **RolemIAster** je nekonečná hra na hrdiny poháněná umělou inteligencí, která vám umožní být hrdinou (nebo padouchem) vašich vlastních příběhů.
 
 ---
 
 ## ⚠️ PRÁVNÍ UPOZORNĚNÍ (Ta nudná, ale nutná část)
 
-**PŘEČTI SI MĚ, NEBO POCÍTÍŠ HNĚV KOSTEK:**
+**PŘEČTI NEBO UTRPÍŠ HNEDV KRÁLŮ KOSTEK:**
 
-1.  **🤖 Integrovaná lokální AI:** RolemIAster si přináší vlastní digitální mozek. Funguje **bez internetu** a bez nutnosti sahat na cokoliv divného. Nainstaluj a hraj!
-2.  **☁️ Volitelný Cloud:** Pokud raději utrácíte peníze za externí AI (OpenAI, Gemini...), je to vaše věc a vaše kreditka. Náklady jdou za vámi.
-3.  **🎲 Generativní chaos:** AI vymýšlí příběh za pochodu. Pokud se vypravěč zblázní a řekne, že prší krávy, na nás se nedívejte. Vývojář nenese odpovědnost za šílenosti, které model vygeneruje.
-4.  **🏗️ Předběžný přístup:** Stále se na tom pracuje. Pokud najdete chybu (bug), není to chyba, je to překvapení v podobě "funkce"! (Pošlete nám prosím zpětnou vazbu, hodně nám to pomáhá).
+1.  **🤖 Integrovaná lokální AI:** RolemIAster má svůj vlastní digitální mozek. Funguje **bez internetu** a bez nutnosti provádět složitá nastavení. Nainstalujte a hrajte!
+2.  **☁️ Volitelný Cloud:** Pokud raději utrácíte peníze za externí AI (OpenAI, Gemini...), je to vaše věc s vaší kreditní kartou. Náklady jsou na vás.
+3.  **🎲 Generativní chaos:** AI si příběh vymýšlí za pochodu. Pokud se vypravěč pomátne a řekne, že padají krávy, nedívejte se na nás. Vývojář nenese odpovědnost za šílenosti, které model vygeneruje.
+4.  **🏗️ Early Access:** Toto je stále ve výstavbě. Pokud narazíte na chybu, není to chyba, je to "překvapivá funkce"! (Pošlete nám zpětnou vazbu, prosím, velmi nám pomůže).
 
 ---
 
 ## 🖥️ SYSTÉMOVÉ POŽADAVKY A DIGITÁLNÍ MOZKY (AI)
 
-RolemIAster funguje na **Lokální Umělé Inteligenci**. To znamená, že váš PC oddře tu těžkou práci s myšlením. Nepotřebujete internet, ale potřebujete grafickou kartu, která nepochází z dob dinosaurů. (Poznámka: Pokud je ve vašem pokoji zima, tato hra funguje jako topení zdarma).
+RolemIAster funguje s **lokální umělou inteligencí**. To znamená, že váš PC odvede těžkou práci s přemýšlením. Nepotřebujete internet, ale potřebujete grafickou kartu, která není z doby dinosaurů. (Poznámka: Pokud je ve vaší místnosti zima, tato hra funguje jako bezplatné topení).
 
-### ⚙️ Pojmy pro nezasvěcené
+### ⚙️ Koncepty pro začátečníky
 
-**VRAM (Video paměť)** je palivo pro AI.
+**VRAM (Video RAM)** je palivo pro AI.
 *   RolemIAster si potřebuje "pamatovat" **12 000 až 16 000 slov (tokenů)**, aby neztratil nit příběhu.
-*   Pokud vaší GPU dojde paměť, hra poběží pomaleji než hlemýžď s astmatem.
+*   Pokud vaší GPU dojde paměť, hra poběží pomaleji než šnek s astmatem.
 
 ---
 
-### 📊 KATALOG MODELŮ (Vyber si svůj jed)
+### 📊 KATALOG MODELŮ (Vyberte si svůj jed)
 
-Spravujte své AI v **Nastavení → Integrovaná lokální AI → Správa modelů**.
+Spravujte své AI v **Nastavení → Integrovaná lokální AI → Spravovat modely**.
 
-#### 🏆 Rodina Qwen 2.5 (La crème de la crème)
+#### 🏆 Rodina Qwen 3.5 — Speciálně trénováno pro RolemIAster
 
-| Model | Velikost | Min. VRAM | Tier | Verdikt |
-|--------|--------|-------------|------|-----------|
-| **Qwen2.5-3B** | ~2.5GB | **8GB** | B | 👶 **Stážista.** Snaží se, ale nechtějte po něm, aby psal Shakespeara. Občas se zamotá. |
-| **Qwen2.5-7B** | ~5.5GB | **12GB** | A | ✅ **VYVOLENÝ.** Vyvážený, chytrý a rychlý. Je to výchozí doporučený model. |
-| **Qwen2.5-14B** | ~10GB | **16GB** | S | 🧐 **Profesor.** Bohaté vyprávění, hloubka a velmi přirozené dialogy. |
-| **Qwen2.5-32B** | ~22GB | **32GB** | S+ | 👑 **Božská úroveň.** K rozběhnutí tohoto potřebujete vesmírnou loď (RTX 3090/4090). |
+Tyto modely byly trénovány pomocí **řízeného doladění (SFT)**, aby zvládly narativní pravidla hry. Nejsou to generické modely: znají JSON kontrakt RolemIAsteru, NPC, inventář a boj zpaměti.
+
+| Model | Velikost | Min. VRAM | Úroveň | Verdikt |
+|--------|-----------|-----------|--------|---------|
+| **Qwen3.5-2B** | ~1,5 GB | **3 GB** | B | ⚡ **Rychlík.** Nejrychlejší ze všech. Ideální pro základní GPU nebo pro hraní bez dedikované GPU. |
+| **Qwen3.5-4B** | ~2,8 GB | **4 GB** | A | ✅ **VYVÁŽENÝ.** Optimální rychlost a kvalita. Doporučený standardní model pro většinu hráčů. |
+| **Qwen3.5-9B** | ~5,5 GB | **8 GB** | S | 🌟 **Vypravěč.** Bohatý narativ a vynikající koherence. Pro ty, co mají RTX 3070 nebo lepší. |
 
 ---
 
 ### 🎮 RYCHLÝ PRŮVODCE VÝBĚREM
 
-| Vaše Grafika | VRAM | Doporučený Model | Výsledek |
-|------------|------|--------------------|-----------|
-| GTX 1050/1060 | 4GB | Qwen2.5-3B | 🆗 Těsné, ale hratelné (Nízký kontext) |
-| GTX 1070/1660 | 6GB | Qwen2.5-3B | 🆗 Jde to dobře |
-| RTX 2060/3060 | 8GB | Qwen2.5-3B | 🚀 Vuela |
-| RTX 3070/4060Ti | 12GB | **Qwen2.5-7B** | ✅ Ideální zážitek |
-| RTX 3090/4080 | 16-24GB | Qwen2.5-14B | 🌟 Luxus |
-| RTX 4090 | 24GB | Qwen2.5-32B | 👑 Maximální kvalita |
+| Vaše grafika | VRAM | Doporučený model | Výsledek |
+|------------|------|-------------------|-----------|
+| GTX 1050/1060 / Bez GPU | 2-4 GB | **Qwen3.5-2B** | 🆗 Těsné, ale hratelné |
+| GTX 1070/1660 / RX 580 | 4-6 GB | **Qwen3.5-4B** | ✅ Velmi dobrá zkušenost |
+| RTX 2060/3060 / RX 6600 | 6-8 GB | **Qwen3.5-4B** | 🚀 Rychlé a přesné |
+| RTX 3070/4060Ti / RX 6700 | 8-12 GB | **Qwen3.5-9B** | 🌟 Ideální zážitek |
+| RTX 3090/4080/4090 | 16 GB+ | **Qwen3.5-9B** | 👑 Maximální kvalita, ultra-rychlé odpovědi |
 
-**💡 Pro Tip:** Vždy nechte asi **2 GB VRAM volné** pro operační systém, jinak Windows začne brečet a zavírat věci.
+**💡 Pro tip:** Vždy nechte volných cca **2 GB VRAM** pro operační systém, jinak začne Windows naříkat a zavírat věci.
 
 ---
 
 ### 🚨 POMOC! MŮJ PC JE POMALÝ! (Problémy s VRAM)
 
-Pokud hra reaguje pomaleji než váš "crush" na WhatsAppu, pravděpodobně vám došla VRAM.
+Pokud hře trvá odpověď déle než vaší crush na WhatsAppu, pravděpodobně jste vyčerpali VRAM.
 
 **Příznaky, že jste to přehnali:**
-1.  **Model se přesune do RAM:** PC používá normální paměť místo grafické. Výsledek: EXTRÉMNÍ ZPOMALENÍ.
-2.  **Mírné přetečení (1-2 GB):** Odpověď potrvá 30-60 sekund.
-3.  **Střední přetečení (3-5 GB):** 2-5 minut. Můžete si dojít pro kafe.
-4.  **Vážné přetečení:** 10-30 minut. Nehratelné.
+1.  **Model se přesune do RAM:** Počítač používá běžnou paměť místo grafické. Výsledek: EXTRÉMNÍ POMALOST.
+2.  **Mírné přetečení (1-2 GB):** 30-60 sekund na odpověď.
+3.  **Střední přetečení (3-5 GB):** 2-5 minut. Můžete si jít pro kávu.
+4.  **Těžké přetečení:** 10-30 minut. Nehratelné.
 
 #### 🛡️ Nouzový protokol
-Pokud to jde z kopce, postupujte podle těchto kroků:
+Pokud se věci pokazí, postupujte v tomto pořadí:
 
-1.  **📉 Snižte % VRAM:** Jděte do Nastavení a snižte to na **85 %**. Restartujte a vyzkoušejte.
-2.  **🧹 Úklid:** Zavřete ten prohlížeč se 40 otevřenými záložkami. Požírají vaši paměť.
-3.  **🛑 Limit 70 %:** Nikdy nechoďte pod **70 %** přidělené VRAM.
-    *   *Proč?* Protože AI potřebuje prostor na "přemýšlení" (KV cache). Pokud jí dáte méně než 70 %, zasekne se a vyhodí chybu.
-4.  **🔙 Taktický ústup:** Pokud nic nezabere, přejděte na menší model (z 7B na 3B).
+1.  **📉 Snižte % VRAM:** Přejděte do Nastavení a snižte ji na **85 %**. Restartujte a zkuste.
+2.  **🧹 Vyčištění:** Zavřete ten prohlížeč se 40 otevřenými záložkami. Požírají vaši paměť.
+3.  **🛑 Limit 70 %:** Nikdy neklesejte pod **70 %** přidělené VRAM.
+    *   *Proč?* Protože AI potřebuje prostor k "myšlení" (KV cache). Pokud jí dáte méně než 70 %, zůstane prázdná a dá chybu.
+4.  **🔙 Taktický ústup:** Pokud nic jiného nefunguje, přejděte na menší model (z 9B na 4B, nebo z 4B na 2B).
 
 ---
 
-### ⚙️ POKROČILÁ KONFIGURACE MODELU ("Maximální geekovina")
+### ⚙️ POKROČILÉ NASTAVENÍ MODELU ("Maximální bláznivost")
 
-> **EXPERT MÓD:** Pokud jste profík a chcete přistupovat k pokročilému nastavení modelů (přidávat vlastní GGUF modely stažené z HuggingFace, upravovat vrstvy atd.), musíte hru spustit s příkazem: `--advanced`.
+> **EXPERT REŽIM:** Pokud jste profík a chcete přistoupit k pokročilému nastavení modelů (přidání vlastních GGUF modelů stažených z HuggingFace, úprava vrstev atd.), musíte hru spustit příkazem: `--advanced`.
 
 Pro ty, kteří rádi mačkají tlačítka v **Nastavení → Integrovaná lokální AI**:
 
 | Možnost | Funkce | Doporučení |
 |--------|---------|---------------|
-| **GPU Layers** | Kolik z modelu se načte do grafiky | **-1** (Znamená "VŠE". Nesahejte na to, pokud nevíte, co děláte) |
-| **Kontext Maximum** | "Krátkodobá paměť" AI | **16384 - 32768** (Méně než toto a AI bude mít amnézii) |
-| **Teplota (Temperature)** | Kreativita vs Šílenství | **0.7 - 0.8** (Vyšší = šílenější; Nižší = robotičtější) |
-| **Historie RAG** | Pamatování si věcí z dávné minulosti | **Ano** (Nezbytné pro dlouhé kampaně) |
-| **Cacheování Embeddings** | Zrychluje vyhledávání vzpomínek | **Ano** (Hra běží rychleji) |
+| **GPU vrstvy** | Kolik modelu se načte do grafiky | **-1** (Znamená "VŠE". Neměňte, pokud nevíte, co děláte) |
+| **Maximální kontext** | "Krátkodobá paměť" AI | **16384 - 32768** (Méně než toto a AI bude trpět amnézií) |
+| **Teplota** | Kreativita vs. Šílenství | **0,7 - 0,8** (Vyšší = bláznivější; Nižší = robotickejší) |
+| **RAG historie** | Pamatování si dávných událostí | **Ano** (Nezbytné pro dlouhé kampaně) |
+| **Cacheovat Embeddings** | Zrychluje vyhledávání vzpomínek | **Ano** (Zrychluje běh) |
 
 ---
 
-### 🔧 ŘEŠENÍ PROBLÉMŮ (Troubleshooting)
+### 🔧 ODSTRAŇOVÁNÍ PROBLÉMŮ (Troubleshooting)
 
-| Pifia (Chyba) | Řešení |
+| Problém | Řešení |
 |-------|---------|
-| **AI Pomalá / Lagy** | Ověřte, že `GPU Layers` je -1. Zavřete Chrome. Snižte `Contexto Máximo`. |
-| **Chyba Paměti (OOM)** | Snižte `Contexto Máximo` nebo zvolte menší model (3B). |
-| **AI blouzní / Halucinuje** | Snižte `Temperatura` na 0.6. Pokud je stále šílená, restartujte aplikaci. |
+| **Pomalá AI / Lagy** | Zkontrolujte, zda je `GPU Layers` -1. Zavřete Chrome. Snižte `Contexto Máximo`. |
+| **Chyba paměti (OOM)** | Snižte `Contexto Máximo` nebo zvolte menší model (3B). |
+| **AI blouzní / Halucinuje** | Snižte `Temperatura` na 0,6. Pokud je stále bláznivá, restartujte aplikaci. |
 
 ---
 
-### 🌐 ALTERNATIVNÍ POSKYTOVATELÉ (Pouze experti)
+### 🌐 ALTERNATIVNÍ POSKYTOVATELÉ (Pouze pro experty)
 
-> **Poznámka:** Lokální AI, kterou hra obsahuje, bohatě stačí. Toto je pouze pro pokročilé nebo odvážné uživatele.
+> **Poznámka:** Lokální AI dodávaná se hrou je dostatečná. Toto je pouze pro pokročilé uživatele nebo odvážné.
 
-*   **Externí Lokální Motory:**
-    *   **Ollama / LM Studio:** Pokud už máte své vlastní geekovské modely, můžete je použít.
-*   **Cloudové API (Placené):**
-    *   **OpenAI (GPT), Gemini, Claude, DeepSeek:** Vyžaduje internet a utrácení peněz.
+*   **Externí lokální enginy:**
+    *   **Ollama / LM Studio:** Pokud už máte své vlastní obskurní modely, můžete je použít.
+*   **Cloudové API (placené):**
+    *   **OpenAI (GPT), Gemini, Claude, DeepSeek:** Vyžaduje internet a placení.
     *   Nastavte v: **Nastavení → AI → Přidat nového poskytovatele**.
 
 ---
 
 ### 🌍 JAK HRÁT? (Multivesmír a vy)
 
-Při otevření hry máte dvě cesty:
+Po spuštění hry máte dvě možnosti:
 
-1.  **🆕 Nové dobrodružství**: Vytvořte svou legendu od nuly. Hra po vás bude chtít **Jméno, Povolání (Profes), Fyzický popis, Psychologický popis a Pozadí/Záminku** vašeho příběhu. Navíc si vyberete **Úroveň obtížnosti** a **Tón humoru**, které povedou kampaň.
-2.  **💾 Pokračovat ve hře**: RolemIAster **ukládá v reálném čase**. Tady není žádné "načíst před smrtí" ani cesta zpět. Každé rozhodnutí, každá chyba a každé zranění je do příběhu vryto ohněm. Je to **VÝZVA**: co uděláte, to se stane. Žijte s následky... nebo s nimi zemřete.
+1.  **🆕 Nové dobrodružství**: Vytvořte si legendu od nuly. Hra si vyžádá **Jméno, Povolání, Fyzický popis, Psychologický popis a Pozadí/Předstíraný důvod** vašeho příběhu. Navíc si zvolíte **Úroveň obtížnosti** a **Tón humoru**, které budou řídit kampaň.
+2.  **💾 Pokračovat ve hře**: RolemIAster **ukládá v reálném čase**. Zde není žádné "načíst před smrtí" ani návrat zpět. Každé rozhodnutí, každá chyba a každé zranění je navždy vryto do historie. Je to **VÝZVA**: co uděláte, je hotovo. Žijte s následky... nebo s nimi zemřete.
 
-RolemIAster není izolovaná hra; je to **Trvalý Multivesmír**.
-*   **Nekonečné světy:** Vytvářejte vlastní vesmíry (**Středověká fantasy** nebo **Cyberpunk**) s vlastním Lore.
-*   **Nekonečné postavy:** Uvnitř každého světa můžete mít tolik hrdinů, kolik chcete.
-*   **Sdílená časová osa:** Pozor! To, co udělá jedna postava, ovlivní svět ostatních. AI si je vědoma vašich dalších hrdinů a rozpozná je jako obyvatele světa.
-*   **AI se "smysly" (Super RAG):** Systém RAG (Retrieval-Augmented Generation) funguje jako "práskač" pro AI, dává jí vzpomínky na svět, kdo vás doprovází, kde jste a co se právě stalo, aby byl příběh 100% koherentní.
+RolemIAster není izolovaná hra; je to **Trvalý multivesmír**.
+*   **Nekonečné světy:** Vytvořte si vlastní vesmíry (**Středověká fantasy** nebo **Cyberpunk**) s vlastním lore.
+*   **Nekonečné postavy:** V každém světě můžete mít tolik hrdinů, kolik chcete.
+*   **Sdílená časová osa:** Pozor! Co udělá jedna postava, ovlivní svět ostatních. AI si je vědoma vašich ostatních hrdinů a rozpozná je jako obyvatele světa.
+*   **AI s "Vědomostmi" (Super RAG):** Systém RAG (Retrieval-Augmented Generation) funguje jako "špion" pro AI, poskytuje jí vzpomínky na svět, kdo je s vámi, kde jste a co se právě stalo, aby byl příběh 100% koherentní.
 
-### Rozhraní (Váš kokpit)
+### Rozhraní (Vaše velitelské centrum)
 
-*   **Levý panel (VY):** Váš deník postavy. Životy, mana, dovednosti a jak jste krásní (Charisma).
-*   **Centrální panel (PŘÍBĚH):**
-    *   **Nahoře:** Kde vypravěč líčí, co se děje.
-    *   **Dole:** Vaše rozhodovací tlačítka a textové pole pro psaní toho, co chcete dělat.
+*   **Levý panel (VY):** Vaše karta postavy. Život, mana, dovednosti a jak jste pohlední (Charisma).
+*   **Střední panel (PŘÍBĚH):**
+    *   **Nahoře:** Kde vypravěč vypráví, co se děje.
+    *   **Dole:** Vaše tlačítka pro rozhodování a textové pole pro psaní, co chcete dělat.
 *   **Pravý panel (VAŠE VĚCI):** Inventář a vybavení. Ráj digitálního Diogena.
 
 ---
 
-## 📜 PRAVIDLA HRY (Ano, jsou tu pravidla)
+## 📜 PRAVIDLA HRY (Ano, existují pravidla)
 
-RolemIAster používá klasický a robustní systém d100 (stostěnná kostka).
+RolemIAster používá klasický a robustní systém d100 (sto stěnné kostky).
 
-### 1. Vaše Atributy (To, co vás definuje)
-AI generuje vaše atributy na základě kontextu, profese a popisu, který jste zadali. Jakmile jsou vygenerovány, máte **10 BODŮ NAVÍC**, které můžete rozdělit dle libosti.
-*   **Stupňované náklady:** Zvýšení atributu do 14 stojí 1 bod. Z 15 na 16 stojí 2 body. Od 17 výše stojí 3 body! Dobře si rozmyslete, kam dáte svaly.
+### 1. Vaše atributy (Co vás definuje)
+AI generuje vaše atributy na základě kontextu, profese a popisu, které jste zadali. Jakmile jsou vygenerovány, máte **10 EXTRA BODŮ**, které můžete rozdělit dle libosti.
+*   **Stupňované náklady:** Zvýšení atributu na 14 stojí 1 bod. Od 15 do 16 stojí 2 body. Od 17 výše stojí 3 body! Dobře si rozmyslete, kam vrazíte svaly.
 
-*   💪 **Síla (FUE):** Vaše čistá fyzická síla. Ovlivňuje poškození zblízka a nosnost.
-*   ❤️ **Odolnost (CON):** Vaše výdrž. Pro snášení úderů, nemocí a jedů.
-*   🐘 **Velikost (TAM):** Váš rozsah. Velký a těžký, nebo malý a mrštný.
-*   🏃 **Obratnost (DES):** Hbitost, přesnost a schopnost nezakopávat o vlastní nohy.
+*   💪 **Síla (SÍL):** Vaše čistá fyzická síla. Ovlivňuje poškození v boji zblízka a vaši nosnost.
+*   ❤️ **Odolnost (ODL):** Vaše výdrž. Pro snášení úderů, nemocí a jedů.
+*   🐘 **Velikost (VEL):** Vaše mohutnost. Velký a těžký, nebo malý a mrštný.
+*   🏃 **Obratnost (OBR):** Hbitost, přesnost a schopnost nezakopnout o vlastní nohy.
 *   🧠 **Inteligence (INT):** Učení, pamatování a řešení hádanek.
-*   🔮 **Moc (POD):** Vaše duše, štěstí, síla vůle a zásoba magie.
-*   😎 **Charisma (CAR):** Vůdcovství, přitažlivost a schopnost klamat (nebo svádět) lidi.
+*   🔮 **Síla vůle (VŮL):** Vaše duše, štěstí, síla vůle a vaše magická zásoba.
+*   😎 **Charisma (CHA):** Vůdcovství, přitažlivost a schopnost lhát (nebo svádět) lidi.
 
-### 2. Rychlá matematika (Odvozené vlastnosti)
-Motor tyto čísla vypočítá automaticky na základě vašich atributů:
+### 2. Rychlé matematiky (Odvozené vlastnosti)
+Motor tyto hodnoty automaticky vypočítává na základě vašich atributů:
 
-*   🩸 **Životy (PV):** `CON * 10`. Pokud klesnou na 0... no, však víte. F.
-*   ✨ **Mana (PM):** `(POD * 10) + INT`. Palivo pro vaše kouzelnické triky. Bez many nejsou triky. (Mág bez many je jen chlápek v županu, co si hraje na cosplay).
-*   ⚡ **Výdrž (STA):** `((CON+FUE+DES)/3)*10 + POD`. Vaše energie pro boj a pohyb, aniž byste u toho zemřeli.
-*   🧠 **Lidskost (HUM):** `(CON+POD) * 5`. (Pouze v Cyberpunku: Měří, kolik z člověka ve vás zbývá, než vás kabely připraví o rozum).
-*   ⚔️ **Akční body (PA):** `(INT + DES) / 2`. Určuje vaši Iniciativu. Kdo udeří první, udeří dvakrát.
+*   🩸 **Život (ŽIV):** `CON * 10`. Pokud klesne na 0... no, víte. F.
+*   ✨ **Mana (MAN):** `(POD * 10) + INT`. Palivo pro vaše kouzla. Bez many žádná kouzla. (Mág bez many je jen chlapík v róbě dějící cosplay).
+*   ⚡ **Stamina (STA):** `((CON+FUE+DES)/3)*10 + POD`. Vaše energie pro boj a pohyb, aniž byste se při tom zranili.
+*   🧠 **Lidskost (LID):** `(CON+POD) * 5`. (Pouze v Cyberpunku: Měří, kolik vám zbylo z lidskosti, než vás kabely přivedou k šílenství).
+*   ⚔️ **Akční body (AP):** `(INT + DES) / 2`. Určuje vaši iniciativu. Kdo udeří první, udeří dvakrát.
 
-### 3. Vaše Dovednosti
-Začínají na základní hodnotě (např.: Plížení = DES + INT) a zlepšují se používáním. Je to procento (%).
+### 3. Vaše dovednosti
+Začínají se základní hodnotou (např. Plížení = OBR + INT) a zlepšují se používáním. Je to procento (%).
 
-### 4. Vyhodnocení akcí (Kostka)
-Když se pokusíte o něco riskantního (šplhání, lhaní, útok...), AI vás požádá o hod. Hra hodí neviditelnou **d100**. **(Pamatujte: Kostky vás nenávidí. Je to osobní).**
+### 4. Řešení akcí (Kostka)
+Když se pokusíte o něco riskantního (šplhat, lhát, útočit...), AI si vyžádá hod. Hra hodí neviditelnou **d100**. **(Pamatujte: Kostky vás nenávidí. Je to osobní).**
 
 *   **Váš cíl:** Hodit číslo **MENŠÍ NEBO ROVNÉ** vaší úrovni dovednosti.
-    *   *Příklad:* Máte 45 % ve Šplhání.
+    *   *Příklad:* Máte 45 % v Lezení.
     *   Hodíte 30: ✅ **Úspěch**. Šplháte jako opice.
-    *   Hodíte 80: ❌ **Neúspěch**. Spadnete na záda.
-    *   **Kritický úspěch:** Hodit méně nebo rovno **1/5 vaší dovednosti** (nebo 01). Epické! Předvedete mimořádný parkour s saltem.
-    *   **Pifia (Kritické selhání):** **99 nebo 100**. Kostky rozhodly, že dnes není váš den. V polovině cesty vám spadnou kalhoty a spadnete na pusu.
+    *   Hodíte 80: ❌ **Neúspěch**. Spadnete s žuchnutím.
+    *   **Kritický úspěch:** Hodit méně nebo rovno **1/5 vaší dovednosti** (nebo 01). Epické! Uděláte mimořádný parkour s přemetem.
+    *   **Chyba:** **99 nebo 100**. Kostky rozhodly, že dnes není váš den. V půlce cesty vám spadnou kalhoty a vy se zřítíte obličejem napřed.
 
 ---
 
-## 💡 TIPY, JAK NEZEMŘÍT (RYCHLE)
+## 💡 TIPY, JAK NEUMŘÍT (RYCHLE)
 
-*   **✍️ Buďte popisní:** Nepište jen "útočím". Napište: *"Pokusím se vyhnout jeho sekeře kotoulem po zemi a bodnu ho dýkou do kotníku"*. AI vás odmění.
-*   **🧪 Experimentujte:** Nejste omezeni jen tlačítky. Pište šílenosti! AI bude improvizovat.
-*   **🎭 Roleplay:** Vžijte se do role. Čtěte popisy a jednejte tak, jak by to dělala vaše postava, ne jak byste to dělali vy v pyžamu.
+*   **✍️ Buďte popisní:** Nepište jen "útočím". Napište: *"Snažím se uhnout jeho sekeře tím, že se skutálím po zemi a vrazím mu dýku do kotníku."* AI vás odmění.
+*   **🧪 Experimentujte:** Nejste omezeni tlačítky. Pište šílenosti! AI bude improvizovat.
+*   **🎭 Hrajte roli:** Vžijte se do postavy. Čtěte popisy a jednejte jako vaše postava, ne jako vy v pyžamu.
 
 ---
 
-## ⚔️ SOUBOJ (Do zbraně!)
+## ⚔️ BOJ (Do zbraní!)
 
-Když slova selžou, přichází čas na rány. Souboj je **taktický** a funguje na **Ticky** (čas).
+Když slova nestačí, nastává čas na bitku. Boj je **taktický** a funguje na **Ticky** (čas).
 
 ### 🕹️ Jak to funguje:
 *   **Ticky:** Každá akce stojí čas. Těžké zbraně jsou pomalé (spotřebují mnoho ticků). Dýky jsou rychlé.
-*   **Vaše rychlost:** Závisí na vašich Akčních bodech (PA).
+*   **Vaše rychlost:** Závisí na vašich Akčních bodech (AP).
 
 ### Základní akce:
-*   **🗡️ Útočit:** Prašťte tím, co máte tasené.
-*   **🛡️ Blokovat:** Přejdete do defenzivy. Snižuje poškození, ale spotřebovává Výdrž.
-*   **🏃 Utéct:** Pro zbabělce (nebo moudré, kteří chtějí žít).
-*   **🏳️ Vzdát se:** Pokud vidíte, že nevyhrajete, můžete prosit o milost.
-*   **✨ Magie / Cyberware:** Oheň, laserové paprsky, hackování...
+*   **🗡️ Útok:** Udeřte tím, co máte vytaženo.
+*   **🛡️ Blok:** Postavte se do obrany. Snižuje poškození, ale spotřebovává Staminu.
+*   **🏃 Útěk:** Pro zbabělce (nebo pro chytré, kteří chtějí žít).
+*   **🏳️ Vzdání se:** Pokud vidíte, že nevyhrajete, můžete prosit o milost.
+*   **✨ Kouzla / Cyberware:** Oheň, laserové paprsky, hackování...
 
 ### 💬 Akce volným textem (NOVINKA!)
-Nelíbí se vám tlačítka? Napište, co chcete dělat, jako byste mluvili s živým Pánem jeskyně!
-*   **Příklady:** *"Hodit ohnivou kouli na goblina"*, *"Tasit můj runový meč"*, *"Použít lektvar na sebe"*.
-*   **Režisér scény:** Souboj nyní ožívá. AI generuje enviromentální události a reakce, které obohacují vyprávění: padající trámy, ustupující nepřátelé, padající pochodně. Bojiště už není statické!
-*   **Pokud AI nerozumí:** Požádá vás o přeformulování. Váš tah NEPROPADÁ!
-*   **⚠️ Omezení:** Přesouvání předmětů mezi sloty (vybavení z batohu, nabíjení munice) se provádí pomocí **Drag & Drop** v rozhraní, nikoliv textem.
+Nelíbí se vám tlačítka? Napište, co chcete udělat, jako byste mluvili s živým mistrem!
+*   **Příklady:** *"Hoď ohnivou kouli na goblina"*, *"Vytas můj runový meč"*, *"Použij na sebe lektvar"*.
+*   **Režisér scény:** Boj nyní ožívá. AI generuje okolní události a reakce, které obohacují narativ: padající trámy, ustupující nepřátelé, padající pochodně. Bojiště už není statické!
+*   **Pokud AI nerozumí:** Požádá vás o přeformulování. Váš tah NEPROPADE!
+*   **⚠️ Omezení:** Přesouvání předmětů mezi sloty (vybavení z batohu, nabíjení munice) se provádí **Drag & Drop** v rozhraní, nikoli textem.
 
 ### ⚠️ ZLATÉ PRAVIDLO PŘEŽITÍ
-**TASIT ZBRAŇ PŘED BOJEM!**
-Vytažení zbraně uprostřed boje spotřebovává čas (Ticky). Pokud vás chytí s mečem v pochvě, dostanete nakládačku, zatímco se ho budete snažit nešikovně vytáhnout. NEBO JEŠTĚ HŮŘ, POKUD MÁTE ZBRANĚ V BATOHU MÍSTO VE SLOTU VYBAVENÍ (Omluvte mě na vteřinku, musím vyndat obouručák z batohu, vím, že jsem ho tu někde měl... někde...) 🤦‍♂️
-👉 Klikněte na **štítek vybavené zbraně** (pravý panel), abyste ji tasili. Rozsvítí se zeleně.
+**VYTAHNI ZBRAŇ PŘED BOJEM!**
+Vytahování zbraně uprostřed boje spotřebovává čas (Ticky). Pokud vás chytí s mečem v pochvě, dostanete takové rány, že vám to zlomí občanku, zatímco se neohrabaně snažíte ho vytáhnout. NEBO HORŠÍ NEŽ TO!, POKUD MÁTE ZBRANĚ V BATOHU MÍSTO VE SLOTU VYBAVENÍ (Prosím, promiňte, musím vytáhnout z batohu, myslím, že jsem ho měl tady... někde...) 🤦‍♂️
+👉 Klikněte na **štítek vybavené zbraně** (pravý panel) pro její vytažení. Rozsvítí se zeleně.
 
-Pokus o přesun zbraní v boji spotřebovává čas (Ticky) a může vyústit v překvapivý útok, navíc je velmi pravděpodobné, že ztratíte tah, že minete kvůli nervům ze sekery blížící se k vašemu obočí, nebo že vám zbraň spadne na zem. (Možná nebyl dobrý nápad vytvořit si postavu s ADHD).
+Pokus o přesun zbraní v boji spotřebovává čas (Ticky) a může vést k překvapivému útoku, navíc je velmi pravděpodobné, že ztratíte tah, minete kvůli nervům z sekery, která se blíží k vašemu obočí, nebo ji upustíte na zem. (Možná nebylo dobré si vytvořit postavu s ADHD)
 
 ---
 
-## ✨ MAGIE A KYBERNETIKA
+## ✨ KOUZLA A KYBERNETIKA
 
 V závislosti na tom, zda je váš svět "Středověká fantasy" nebo "Cyberpunk":
 
 ### 🧙‍♂️ Fantasy: Očarování
-Jste čaroděj? Můžete očarovat své vybavení.
+Jste kouzelník? Můžete očarovat své vybavení.
 1.  **Naučte se:** Potřebujete kouzlo ve svém grimoáru.
-2.  **Sešlete (Drag & Drop):** Přetáhněte kouzlo ze seznamu na předmět ve vašem inventáři.
-3.  **Cena:** Udržování aktivního očarování **spotřebovává Manu každé kolo**.
-4.  **Upozornění:** Pokud vám uprostřed boje dojde mana, ohnivý meč se změní zpět na kus rezavého železa.
+2.  **Hoďte (Drag & Drop):** Přetáhněte kouzlo ze svého seznamu na předmět ve svém inventáři.
+3.  **Náklady:** Udržování aktivního očarování **spotřebovává manu za tah**.
+4.  **Upozornění:** Pokud vám uprostřed boje dojde mana, ohnivý meč se opět stane rezavým kusem železa.
 
-### 🦾 Cyberpunk: Implantáty
-Chcete oči se zoomem nebo gorilí paže?
-1.  Najděte **Technochirurga** (NPC služba).
-2.  Zaplaťte kredity (v budoucnosti není nic zadarmo).
-3.  **Cena Lidskosti:** Každý implantát vám vezme kus duše (**Lidskost**).
-    *   Pokud si jich pořídíte příliš mnoho, propadnete **Kyberpsychóze** (vražedný toustovač na nožičkách) a ztratíte kontrolu nad postavou.
+### 🦾 Cyberpunk: Implantační
+Chcete oči s zoomem nebo gorilí paže?
+1.  Najděte **Technosirurga** (NPC služebníka).
+2.  Zaplaťte kredity (v budoucnosti nic není zadarmo).
+3.  **Náklady na lidskost:** Každý implantát vám ubere kousek duše (**Lidskost**).
+    *   Pokud jich nasadíte příliš mnoho, stanete se **Cyberpsychikem** (vrahounský topinkovač na nožičkách) a ztratíte kontrolu nad svou postavou.
 
 ---
 
 ## 🛒 OBCHODY A SLUŽBY (SIS)
 
 Mluvte s NPC a obchodujte.
-*   **AI navrhuje, Vy rozhodujete:** Když mluvíte s obchodníkem nebo léčitelem, AI vám navrhne jejich služby (oprava, prodej, léčení), ale objeví se tlačítko **"Zobrazit služby"**, abyste vy rozhodli, kdy vstoupit do transakčního režimu.
-*   **Smlouvání:** Vaše dovednost **Obchod** (založená na Charismatu) určuje ceny. Pokud jste oškliví nebo nepříjemní, natáhnou vás.
-*   **Prodej:** Klikněte **pravým tlačítkem** na předmět v inventáři, abyste ho prodali obchodníkovi, nebo ho na něj přetáhněte.
+*   **AI navrhne, vy rozhodujete:** Když budete mluvit s obchodníkem nebo léčitelem, AI navrhne jeho služby (opravit, prodat, léčit), ale objeví se tlačítko **"Zobrazit služby"**, abyste se sami rozhodli, kdy vstoupit do transakčního režimu.
+*   **Smlouvání:** Vaše dovednost **Obchodování** (založená na Charismatu) určuje ceny. Pokud jste oškliví nebo nepříjemní, podvedou vás.
+*   **Prodej:** Klikněte **pravým tlačítkem** na předmět ve svém inventáři, abyste ho prodali obchodníkovi, nebo ho na něj přetáhněte.
 
 ---
 
 ## 🎒 SPRÁVA INVENTÁŘE (Tetris)
 
-*   **Váha:** Máte limit nosnosti (Síla + Velikost). Pokud nesete příliš mnoho harampádí, budete pomalí a penalizovaní (Diogenes není váš přítel).
+*   **Váha:** Máte limit pro nošení (Síla + Velikost). Pokud nesete příliš mnoho šrotu, budete se pohybovat pomalu a s postihy (Diogen není váš přítel).
 *   **Panely:**
     *   **Vybavení:** Co máte na sobě.
-    *   **Opasek:** Rychlý přístup v boji (použití lektvarů odtud stojí méně času).
-    *   **Batoh:** Dno pytle.
-*   **Plynulé použití:** Přetáhněte lektvar nebo jídlo přímo na **svůj obličej** (portrét) pro okamžitou konzumaci. Můžete také použít kontextové menu (pravý klik -> Použít).
+    *   **Opasek:** Rychlý přístup v boji (použití lektvarů odsud stojí méně času).
+    *   **Batoh:** Dno batohu.
+*   **Plynulé použití:** Přetáhněte lektvar nebo jídlo přímo na **vaši tvář** (portrét) pro okamžitou spotřebu. Můžete také použít kontextové menu (pravé kliknutí -> Použít).
 
 ---
 
-## 🛠️ ZÁVĚREČNÁ NASTAVENÍ
+## 🛠️ FINÁLNÍ ÚPRAVY
 
 V menu **Nastavení** můžete upravit vše:
 *   **🌍 Jazyk:** AI vám přeloží celou hru a odpovědi za letu. Režim polyglota aktivován.
-*   **👁️ Vzhled:** Velikost písma a barvy, abyste neoslepli. Neonové okraje a vyhlazené stíny pro totální imerzi.
-*   **🧠 Nastavení AI:** Změňte model, teplotu atd. (Pamatujte na to, co jsme viděli na začátku manuálu ohledně flagu `--advanced`, pokud patříte k těm, co chtějí na všechno sahat).
+*   **👁️ Vzhled:** Velikost písma a barvy, abyste neoslepli. Neonové okraje a vyhlazené stíny pro plné ponoření.
+*   **🧠 Nastavení AI:** Změňte model, teplotu atd. (Pamatujte, co jsme si řekli na začátku manuálu o příznaku `--advanced`, pokud jste z těch, kteří chtějí všechno upravovat).
 
 ---
 
-## 🎭 OBTÍŽNOST A HUMOR (Přizpůsob si své utrpení)
+## 🎭 OBTÍŽNOST A HUMOR (Přizpůsobte si své utrpení)
 
-Před začátkem si pamatujte, že AI nejen vypráví, ale **upravuje svět** podle vašich preferencí. Tyto parametry se vybírají při vytváření světa a jsou pro daný svět trvalé:
+Než začnete, pamatujte, že AI nejen vypráví, ale také **přizpůsobuje svět** vašim preferencím. Tyto parametry se volí při vytváření světa a jsou pro daný svět trvalé:
 
-*   **🎮 Obtížnost (Spravovaná AI):** Není to jen jednoduchý násobič poškození. Hra řekne AI: "Hele, obtížnost je taková, chovej se podle toho".
-    *   **Lehká:** Nikdy nezemřete (nebo to bude téměř nemožné), situace jsou jednodušší, ceny levnější a nepřátelé tupější. AI odůvodní každou scénu tak, aby vaše cesta byla procházkou růžovým sadem.
+*   **🎮 Obtížnost (Řízená AI):** Není to jednoduchý násobitel poškození. Hra říká AI: "Hele, obtížnost je tato, jednej podle toho."
+    *   **Snadná:** Nikdy nezemřete (nebo to bude téměř nemožné), situace jsou jednodušší, ceny jsou levnější a nepřátelé jsou nešikovnější. AI bude u každé scény uvažovat, aby vaše cesta byla růžová.
     *   **Normální:** Standardní rovnováha.
-    *   **Výzva:** AI bude neúprosná, ceny prohibitivní a každá chyba může být poslední.
+    *   **Výzva:** AI bude neúprosná, ceny neúnosné a každá chyba může být poslední.
 
-*   **🃏 Tón humoru:** Definuje, jak s vámi AI mluví a jaký typ událostí nastává. Ačkoliv má každý model svůj způsob interpretace pojmu "humor", AI se pokusí přizpůsobit tomu, co zvolíte... nebo ne:
-    *   **Vážný:** Epické, temné a formální vyprávění.
-    *   **Sarkastický:** AI se bude smát vašim chybám, neustále si do vás rýpat a používat ironický tón.
-    *   **Delirium (Šílený):** Připravte se na absurdno. Létající krávy, surrealistické situace a totální chaos řízený tou nejzvrácenější logikou AI.
+*   **🃏 Tón humoru:** Definuje, jak s vámi AI mluví a jaké události se dějí. Ačkoli každý model má svůj způsob interpretace konceptu "humoru", AI se pokusí přizpůsobit tomu, co zvolíte... nebo ne:
+    *   **Vážný:** Epický, temný a formální narativ.
+    *   **Sarkastický:** AI se bude smát vašim chybám, bude vám neustále házet špínu a používat ironický tón.
+    *   **Delirantní:** Připravte se na absurditu. Létající krávy, surreálné situace a totální chaos řízený tím nejzkřivenějším logikou AI.
 
 ---
 
-## 🚧 Upozornění: Předběžný přístup
+## 🚧 Upozornění: Early Access
 
-RolemIAster je v **aktivním vývoji**, vaří se na mírném ohni.
-*   Můžete narazit na chyby (nebo "nečekané funkce").
+RolemIAster je v **aktivním vývoji**, pomalu se vaří.
+*   Můžete najít chyby (nebo "neočekávané funkce").
 *   Každý týden přidávám nové věci.
-*   Vaše zpětná vazba má cenu zlata! Řekněte mi, co se vám líbí a co se vám líbí hodně. (Pokud se vám něco nelíbí, řekněte mi to taky, ale s láskou).
+*   Vaše zpětná vazba je k nezaplacení! Řekněte mi, co se vám líbí a co se vám líbí hodně. (Pokud se vám něco nelíbí, řekněte mi to také, ale s láskou).
 
-Teď běžte, hoďte si na iniciativu a stvořte svou legendu!
+Teď jděte, hoďte iniciativu a vytvořte si svou legendu!
 
-<!-- source_hash: f3494f05 -->
+<!-- source_hash: 9af75cff -->

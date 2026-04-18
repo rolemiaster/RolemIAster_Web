@@ -1,6 +1,6 @@
 # 🐉 ¡Bienvenido a RolemIAster!
 
-¡Agarra tus dados (o tu mouse) y prepárate para vivir aventuras donde el único límite es lo retorcida que sea tu imaginación! **RolemIAster** es un juego de rol infinito impulsado por Inteligencia Artificial que te permite ser el héroe (o el villano) de tus propias historias.
+¡Agarra tus dados (o tu ratón) y prepárate para vivir aventuras donde el único límite es lo retorcida que sea tu imaginación! **RolemIAster** es un juego de rol infinito impulsado por Inteligencia Artificial que te permite ser el héroe (o el villano) de tus propias historias.
 
 ---
 
@@ -9,9 +9,9 @@
 **LÉEME O SUFRIRÁS LA IRA DE LOS DADOS:**
 
 1.  **🤖 IA Local Integrada:** RolemIAster trae su propio cerebro digital. Funciona **sin internet** y sin que tengas que tocar nada raro. ¡Instalar y jugar!
-2.  **☁️ Nube Opcional:** Si prefieres gastar el dinero en IAs externas (OpenAI, Gemini...), allá tú con tu tarjeta de crédito. Los costos son cosa tuya.
+2.  **☁️ Nube Opcional:** Si prefieres gastar los dineros en IAs externas (OpenAI, Gemini...), allá tú con tu tarjeta de crédito. Los costes son cosa tuya.
 3.  **🎲 Caos Generativo:** La IA inventa la historia sobre la marcha. Si el narrador se vuelve loco y dice que llueven vacas, no nos mires a nosotros. El desarrollador no se hace responsable de las locuras que genere el modelo.
-4.  **🏗️ Early Access:** Esto está en construcción. Si encuentras un bug, no es un fallo, ¡es una "feature" sorpresa! (Mándanos feedback, porfa, que nos ayuda mucho).
+4.  **🏗️ Early Access:** Esto está en obras. Si encuentras un bug, no es un fallo, ¡es una "feature" sorpresa! (Mándanos feedback, porfa, que nos ayuda mucho).
 
 ---
 
@@ -21,24 +21,25 @@ RolemIAster funciona con **Inteligencia Artificial Local**. Eso significa que tu
 
 ### ⚙️ Conceptos para no iniciados
 
-La **VRAM (Memoria de Video)** es la gasolina de la IA.
+La **VRAM (Memoria de Vídeo)** es la gasolina de la IA.
 *   RolemIAster necesita "recordar" de **12,000 a 16,000 palabras (tokens)** para no perder el hilo de la historia.
 *   Si tu GPU se queda sin memoria, el juego irá más lento que un caracol con asma.
 
 ---
 
-### 📊 CATÁLOGO DE MODELOS (Escoge tu veneno)
+### 📊 CATÁLOGO DE MODELOS (Elige tu veneno)
 
 Gestiona tus IAs en **Configuración → IA Local Integrada → Gestionar Modelos**.
 
-#### 🏆 Familia Qwen 2.5 (La crème de la crème)
+#### 🏆 Familia Qwen 3.5 — Entrenados específicamente para RolemIAster
+
+Estos modelos han sido entrenados con **Fine-Tuning Supervisado (SFT)** para dominar las reglas narrativas del juego. No son modelos genéricos: conocen el contrato JSON de RolemIAster, los NPCs, el inventario y el combate de memoria.
 
 | Modelo | Tamaño | VRAM Mínima | Tier | Veredicto |
 |--------|--------|-------------|------|-----------|
-| **Qwen2.5-3B** | ~2.5GB | **8GB** | B | 👶 **El Pasante.** Cumple, pero no le pidas que escriba Shakespeare. A veces se confunde. |
-| **Qwen2.5-7B** | ~5.5GB | **12GB** | A | ✅ **EL ELEGIDO.** Equilibrado, listo y rápido. Es el modelo recomendado por defecto. |
-| **Qwen2.5-14B** | ~10GB | **16GB** | S | 🧐 **El Catedrático.** Narrativa rica, profunda y diálogos muy naturales. |
-| **Qwen2.5-32B** | ~22GB | **32GB** | S+ | 👑 **Nivel Dios.** Necesitas una nave espacial (RTX 3090/4090) para mover esto. |
+| **Qwen3.5-2B** | ~1.5GB | **3GB** | B | ⚡ **El Velocista.** El más rápido de todos. Ideal para GPUs básicas o para jugar sin GPU dedicada. |
+| **Qwen3.5-4B** | ~2.8GB | **4GB** | A | ✅ **EL EQUILIBRADO.** Velocidad y calidad óptimas. Modelo estándar recomendado para la mayoría de jugadores. |
+| **Qwen3.5-9B** | ~5.5GB | **8GB** | S | 🌟 **El Narrador.** Narrativa rica y coherencia superior. Para quienes tienen una RTX 3070 o mejor. |
 
 ---
 
@@ -46,14 +47,13 @@ Gestiona tus IAs en **Configuración → IA Local Integrada → Gestionar Modelo
 
 | Tu Gráfica | VRAM | Modelo Recomendado | Resultado |
 |------------|------|--------------------|-----------|
-| GTX 1050/1060 | 4GB | Qwen2.5-3B | 🆗 Apenas pero jugable (Contexto bajo) |
-| GTX 1070/1660 | 6GB | Qwen2.5-3B | 🆗 Va bien |
-| RTX 2060/3060 | 8GB | Qwen2.5-3B | 🚀 Vuela |
-| RTX 3070/4060Ti | 12GB | **Qwen2.5-7B** | ✅ La experiencia ideal |
-| RTX 3090/4080 | 16-24GB | Qwen2.5-14B | 🌟 Un lujo |
-| RTX 4090 | 24GB | Qwen2.5-32B | 👑 Máxima calidad |
+| GTX 1050/1060 / Sin GPU | 2-4GB | **Qwen3.5-2B** | 🆗 Justito pero jugable |
+| GTX 1070/1660 / RX 580 | 4-6GB | **Qwen3.5-4B** | ✅ Muy buena experiencia |
+| RTX 2060/3060 / RX 6600 | 6-8GB | **Qwen3.5-4B** | 🚀 Rápido y preciso |
+| RTX 3070/4060Ti / RX 6700 | 8-12GB | **Qwen3.5-9B** | 🌟 La experiencia ideal |
+| RTX 3090/4080/4090 | 16GB+ | **Qwen3.5-9B** | 👑 Máxima calidad, respuestas ultra-rápidas |
 
-**💡 Consejo Pro:** Deja siempre unos **2GB de VRAM libres** para el sistema operativo, o Windows empezará a llorar y a cerrar cosas.
+**💡 Pro Tip:** Deja siempre unos **2GB de VRAM libres** para el sistema operativo, o Windows empezará a llorar y a cerrar cosas.
 
 ---
 
@@ -61,10 +61,10 @@ Gestiona tus IAs en **Configuración → IA Local Integrada → Gestionar Modelo
 
 Si el juego tarda más en responder que tu crush en WhatsApp, seguramente te has quedado sin VRAM.
 
-**Síntomas de que te quisiste pasar de listo:**
+**Síntomas de que te has pasado de listo:**
 1.  **El modelo se vuelca a la RAM:** El PC usa la memoria normal en vez de la gráfica. Resultado: LENTITUD EXTREMA.
 2.  **Desbordamiento leve (1-2GB):** Tardará 30-60 segundos por respuesta.
-3.  **Desbordamiento moderado (3-5GB):** 2-5 minutos. Puedes irte por un café.
+3.  **Desbordamiento moderado (3-5GB):** 2-5 minutos. Puedes irte a por un café.
 4.  **Desbordamiento severo:** 10-30 minutos. Injugable.
 
 #### 🛡️ Protocolo de Emergencia
@@ -74,11 +74,11 @@ Si la cosa va mal, sigue estos pasos en orden:
 2.  **🧹 Limpieza:** Cierra ese navegador con 40 pestañas abiertas. Se están comiendo tu memoria.
 3.  **🛑 El Límite del 70%:** Nunca bajes del **70%** de VRAM asignada.
     *   *¿Por qué?* Porque la IA necesita espacio para "pensar" (la caché KV). Si le das menos del 70%, se quedará en blanco y dará error.
-4.  **🔙 Retirada Táctica:** Si nada funciona, baja a un modelo más pequeño (pasa del 7B al 3B).
+4.  **🔙 Retirada Táctica:** Si nada funciona, baja a un modelo más pequeño (pasa del 9B al 4B, o del 4B al 2B).
 
 ---
 
-### ⚙️ CONFIGURACIÓN AVANZADA DEL MODELO ("Modo Nerd Máximo")
+### ⚙️ CONFIGURACIÓN AVANZADA DEL MODELO ("Frikeo Máximo")
 
 > **MODO EXPERTO:** Si eres un pro y quieres acceder a la configuración de modelos avanzados (añadir tus propios modelos GGUF descargados desde HuggingFace, tocar capas, etc.), debes iniciar el juego con el comando: `--advanced`.
 
@@ -96,7 +96,7 @@ Para los que les gusta tocar botones en **Configuración → IA Local Integrada*
 
 ### 🔧 SOLUCIÓN DE PROBLEMAS (Troubleshooting)
 
-| Fallo | Arreglo |
+| Pifia | Arreglo |
 |-------|---------|
 | **IA Lenta / Lag** | Verifica que `GPU Layers` sea -1. Cierra Chrome. Baja el `Contexto Máximo`. |
 | **Error de Memoria (OOM)** | Reduce el `Contexto Máximo` o elige un modelo más pequeño (3B). |
@@ -106,12 +106,12 @@ Para los que les gusta tocar botones en **Configuración → IA Local Integrada*
 
 ### 🌐 PROVEEDORES ALTERNATIVOS (Solo Expertos)
 
-> **Nota:** La IA local que trae el juego es más que suficiente. Esto es solo para usuarios avanzados o valientes.
+> **Nota:** La IA local que trae el juego sobra y basta. Esto es solo para usuarios avanzados o valientes.
 
 *   **Motores Locales Externos:**
-    *   **Ollama / LM Studio:** Si ya tienes tus propios modelos raros, puedes usarlos.
+    *   **Ollama / LM Studio:** Si ya tienes tus propios modelos frikis, puedes usarlos.
 *   **APIs en la Nube (De pago):**
-    *   **OpenAI (GPT), Gemini, Claude, DeepSeek:** Requiere internet y soltar la plata.
+    *   **OpenAI (GPT), Gemini, Claude, DeepSeek:** Requiere internet y soltar dinero.
     *   Configúralo en: **Configuración → IA → Añadir Nuevo Proveedor**.
 
 ---
@@ -121,13 +121,13 @@ Para los que les gusta tocar botones en **Configuración → IA Local Integrada*
 Al abrir el juego, tienes dos caminos:
 
 1.  **🆕 Nueva Aventura**: Crea tu leyenda desde cero. El juego te pedirá **Nombre, Oficio (Profesión), Descripción Física, Descripción Psicológica y el Trasfondo/Pretexto** de tu historia. Además, elegirás el **Nivel de Dificultad** y el **Tono de Humor** que guiarán la campaña.
-2.  **💾 Continuar Partida**: RolemIAster **guarda en tiempo real**. Aquí no hay "cargar antes de morir" ni vuelta atrás. Cada decisión, cada fallo y cada herida queda grabada a fuego en la historia. Es un **DESAFÍO**: lo que hagas, hecho queda. Vive con las consecuencias... o muere con ellas.
+2.  **💾 Continuar Partida**: RolemIAster **guarda en tiempo real**. Aquí no hay "cargar antes de morir" ni vuelta atrás. Cada decisión, cada pifia y cada herida queda grabada a fuego en la historia. Es un **DESAFÍO**: lo que hagas, hecho queda. Vive con las consecuencias... o muere con ellas.
 
 RolemIAster no es una partida aislada; es un **Multiverso Persistente**.
 *   **Mundos Infinitos:** Crea tus propios universos (**Fantasía Medieval** o **Cyberpunk**) con su propio Lore.
 *   **Personajes Infinitos:** Dentro de cada mundo, puedes tener todos los héroes que quieras.
 *   **Línea Temporal Compartida:** ¡Ojo! Lo que hace un personaje afecta al mundo de los demás. La IA es consciente de tus otros héroes y los reconocerá como habitantes del mundo.
-*   **IA con "Sentidos" (Súper RAG):** El sistema RAG (Retrieval-Augmented Generation) actúa como el "soplón" de la IA, dándole recuerdos sobre el mundo, quién te acompaña, dónde estás y qué acaba de pasar para que la historia sea 100% coherente.
+*   **IA con "Sentidos" (Súper RAG):** El sistema RAG (Retrieval-Augmented Generation) actúa como el "chivato" de la IA, dándole recuerdos sobre el mundo, quién te acompaña, dónde estás y qué acaba de pasar para que la historia sea 100% coherente.
 
 ### La Interfaz (Tu cabina de mando)
 
@@ -135,7 +135,7 @@ RolemIAster no es una partida aislada; es un **Multiverso Persistente**.
 *   **Panel Central (LA HISTORIA):**
     *   **Arriba:** Donde el narrador cuenta lo que pasa.
     *   **Abajo:** Tus botones de decisión y la caja de texto para escribir lo que quieras hacer.
-*   **Panel Derecho (TUS COSAS):** Inventario y equipo. El paraíso del acumulador (Diógenes) digital.
+*   **Panel Derecho (TUS COSAS):** Inventario y equipo. El paraíso del Diógenes digital.
 
 ---
 
@@ -145,13 +145,13 @@ RolemIAster usa un sistema d100 (dado de cien caras) clásico y robusto.
 
 ### 1. Tus Atributos (Lo que te define)
 La IA genera tus atributos basándose en el contexto, profesión y descripción que hayas introducido. Una vez generados, tienes **10 PUNTOS EXTRA** para repartir a tu gusto.
-*   **Costos Escalonados:** Subir un atributo hasta 14 cuesta 1 punto. De 15 a 16 cuesta 2 puntos. ¡A partir de 17 cuesta 3 puntos! Piensa bien dónde pones el músculo.
+*   **Costes Escalonados:** Subir un atributo hasta 14 cuesta 1 punto. De 15 a 16 cuesta 2 puntos. ¡A partir de 17 cuesta 3 puntos! Piensa bien dónde pones el músculo.
 
 *   💪 **Fuerza (FUE):** Tu potencia física pura. Influye en el daño cuerpo a cuerpo y tu capacidad de carga.
 *   ❤️ **Constitución (CON):** Tu resistencia. Para aguantar golpes, enfermedades y venenos.
 *   🐘 **Tamaño (TAM):** Tu envergadura. Grande y pesado, o pequeño y escurridizo.
 *   🏃 **Destreza (DES):** Agilidad, puntería y no tropezarte con tus propios pies.
-*   🧠 **Inteligencia (INT):** Aprender, recordar y resolver acertijos.
+*   🧠 **Inteligencia (INT):** Aprender, recordar y resolver puzles.
 *   🔮 **Poder (POD):** Tu alma, tu suerte, fuerza de voluntad y tu reserva mágica.
 *   😎 **Carisma (CAR):** Liderazgo, atractivo y capacidad de engañar (o seducir) a la gente.
 
@@ -173,7 +173,7 @@ Cuando intentas hacer algo arriesgado (escalar, mentir, atacar...), la IA te ped
 *   **Tu Objetivo:** Sacar un número **MENOR O IGUAL** a tu nivel de habilidad.
     *   *Ejemplo:* Tienes 45% en Trepar.
     *   Sacas un 30: ✅ **Éxito**. Subes como un mono.
-    *   Sacas un 80: ❌ **Fallo**. Te das un golpazo.
+    *   Sacas un 80: ❌ **Fallo**. Te das un costalazo.
     *   **Crítico:** Sacar menos o igual a **1/5 de tu habilidad** (o un 01). ¡Épico! Haces un parkour extraordinario con voltereta.
     *   **Pifia:** Un **99 o 100**. Los dados han decidido que hoy no es tu día. Se te caen los pantalones a mitad de camino y te caes de boca.
 
@@ -189,7 +189,7 @@ Cuando intentas hacer algo arriesgado (escalar, mentir, atacar...), la IA te ped
 
 ## ⚔️ EL COMBATE (¡A las armas!)
 
-Cuando las palabras fallan, llega la hora de los golpes. El combate es **táctico** y funciona por **Ticks** (tiempo).
+Cuando las palabras fallan, llega la hora de las tortas. El combate es **táctico** y funciona por **Ticks** (tiempo).
 
 ### 🕹️ Cómo funciona:
 *   **Ticks:** Cada acción cuesta tiempo. Las armas pesadas son lentas (gastan muchos ticks). Las dagas son rápidas.
@@ -211,7 +211,7 @@ Cuando las palabras fallan, llega la hora de los golpes. El combate es **táctic
 
 ### ⚠️ REGLA DE ORO DE SUPERVIVENCIA
 **¡DESENFUNDA ANTES DE PELEAR!**
-Sacar el arma en medio del combate consume tiempo (Ticks). Si te pillan con la espada en la vaina, te van a dar hasta en la cédula mientras intentas sacarla torpemente. O PEOR AÚN, ¡SI VAS CON TUS ARMAS EN LA MOCHILA EN LUGAR DE EN SU SLOT DE EQUIPAMIENTO! (Espere un segundo, tengo que sacar el mandoble de la mochila, sé que lo tenía por aquí... en alguna parte...) 🤦‍♂️
+Sacar el arma en medio del combate consume tiempo (Ticks). Si te pillan con la espada en la vaina, te van a dar hasta en el carnet de identidad mientras intentas sacarla torpemente. O PEOR AÚN!, SI VAS CON TUS ARMAS EN LA MOCHILA EN LUGAR DE EN SU SLOT DE EQUIPAMIENTO (Escuse un segundo, tengo que sacar el mandoble de la mochila, sé que lo tenía por aquí... en alguna parte...) 🤦‍♂️
 👉 Haz **Click en la etiqueta del arma equipada** (panel derecho) para desenfundarla. Se iluminará en verde.
 
 Intentar mover armas en combate consume tiempo (Ticks) y puede resultar en un ataque de sorpresa, además es muy probable que pierdas el turno, que falles por los nervios del hacha que se te aproxima al entrecejo o que se te caiga al suelo. (Quizá no fue buena idea crearte un personaje con TDAH)
@@ -226,14 +226,14 @@ Dependiendo de si tu mundo es de "Fantasía Medieval" o "Cyberpunk":
 ¿Eres hechicero? Puedes encantar tu equipo.
 1.  **Aprende:** Necesitas el hechizo en tu grimorio.
 2.  **Lanza (Drag & Drop):** Arrastra el hechizo desde tu lista sobre el objeto en tu inventario.
-3.  **Costo:** Mantener un encantamiento activo **gasta Maná por turno**.
+3.  **Coste:** Mantener un encantamiento activo **gasta Maná por turno**.
 4.  **Aviso:** Si te quedas seco de maná en mitad del combate, la espada de fuego vuelve a ser un trozo de hierro oxidado.
 
 ### 🦾 Cyberpunk: Implantes
 ¿Quieres ojos con zoom o brazos de gorila?
 1.  Busca un **Tecnocirujano** (NPC de servicio).
 2.  Paga los créditos (nada es gratis en el futuro).
-3.  **Costo de Humanidad:** Cada implante te quita un trozo de alma (**Humanidad**).
+3.  **Coste de Humanidad:** Cada implante te quita un trozo de alma (**Humanidad**).
     *   Si te pones demasiados, te convertirás en una **Cyberpsicosis** (una tostadora con patas asesina) y perderás el control de tu personaje.
 
 ---
@@ -242,7 +242,7 @@ Dependiendo de si tu mundo es de "Fantasía Medieval" o "Cyberpunk":
 
 Habla con NPCs para comerciar.
 *   **IA Sugiere, Tú Mandas:** Cuando hables con un mercader o sanador, la IA te sugerirá sus servicios (reparar, vender, sanar), pero aparecerá un botón de **"Ver Servicios"** para que tú decidas cuándo entrar en el modo transaccional.
-*   **Regateo:** Tu habilidad de **Comercio** (basada en Carisma) decide los precios. Si eres feo o antipático, te estafarán.
+*   **Regateo:** Tu habilidad de **Comercio** (basada en Carisma) decide los precios. Si eres feo o antipático, te timarán.
 *   **Vender:** Haz **Click Derecho** en un objeto de tu inventario para venderlo al tendero o arrástralo sobre él.
 
 ---
@@ -278,8 +278,8 @@ Antes de empezar, recuerda que la IA no solo narra, sino que **ajusta el mundo**
 
 *   **🃏 Tono de Humor:** Define cómo te habla la IA y qué tipo de eventos ocurren. Aunque cada modelo tiene su forma de interpretar el concepto "humor", la IA intentará adaptarse a lo que elijas... o no:
     *   **Serio:** Una narrativa épica, oscura y formal.
-    *   **Sarcástico:** La IA se reirá de tus fallos, te lanzará burlas constantes y usará un tono irónico.
-    *   **Delirante:** Prepárate para lo absurdo. Vacas voladoras, situaciones surrealistas y caos total gestionado por la lógica más retorcida de la IA.
+    *   **Sarcástico:** La IA se reirá de tus fallos, te lanzará pullas constantes y usará un tono irónico.
+    *   **Delirante:** Prepárate para lo absurdo. Vacas volantes, situaciones surrealistas y caos total gestionado por la lógica más retorcida de la IA.
 
 ---
 
@@ -292,4 +292,4 @@ RolemIAster está en **desarrollo activo**, cocinándose a fuego lento.
 
 ¡Ahora ve, tira iniciativa y crea tu leyenda!
 
-<!-- source_hash: f3494f05 -->
+<!-- source_hash: 9af75cff -->

@@ -291,3 +291,5 @@ RolemIAster está en **desarrollo activo**, cocinándose a fuego lento.
 *   ¡Tu feedback vale oro! Dime qué te gusta y qué te gusta mucho. (Si no te gusta algo, dímelo también, pero con cariño).
 
 ¡Ahora ve, tira iniciativa y crea tu leyenda!
+
+<!-- source_hash: 9af75cff -->

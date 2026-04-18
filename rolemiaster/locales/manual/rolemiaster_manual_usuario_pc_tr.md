@@ -1,295 +1,295 @@
 # 🐉 RolemIAster'a Hoş Geldiniz!
 
-Zarlarını (veya fareni) kap ve tek sınırın hayal gücünün ne kadar çarpık olduğu maceraları yaşamaya hazırlan! **RolemIAster**, kendi hikayelerinin kahramanı (veya kötüsü) olmanı sağlayan, Yapay Zeka destekli sonsuz bir rol yapma oyunudur.
+Zarlarınızı (veya farenizi) kapın ve hayal gücünüzün ne kadar kıvrak olduğuna bağlı olarak tek sınırın olduğu maceralara atılmaya hazır olun! **RolemIAster**, kendi hikayelerinizin kahramanı (veya kötü adamı) olmanızı sağlayan, yapay zeka tarafından desteklenen sonsuz bir rol yapma oyunudur.
 
 ---
 
 ## ⚠️ YASAL UYARI (Sıkıcı ama gerekli kısım)
 
-**BENİ OKU YOKSA ZARLARIN ÖFKESİNE UĞRARSIN:**
+**OKU YA DA ZARLARIN GAZABINA UĞRA:**
 
-1.  **🤖 Entegre Yerel YZ:** RolemIAster kendi dijital beyniyle gelir. **İnternet olmadan** ve garip şeylere dokunmana gerek kalmadan çalışır. Yükle ve oyna!
-2.  **☁️ İsteğe Bağlı Bulut:** Paranı harici YZ'lere (OpenAI, Gemini...) harcamayı tercih ediyorsan, kredi kartınla baş başasın. Masraflar sana ait.
-3.  **🎲 Üretken Kaos:** YZ hikayeyi anında uydurur. Eğer anlatıcı delirir ve gökten inek yağdığını söylerse, bize bakma. Geliştirici, modelin ürettiği çılgınlıklardan sorumlu değildir.
-4.  **🏗️ Erken Erişim (Early Access):** Burası hala inşaat halinde. Bir hata (bug) bulursan, o bir hata değil, sürpriz bir "özellik"tir (feature)! (Lütfen bize geri bildirim gönder, çok yardımcı oluyor).
-
----
-
-## 🖥️ SİSTEM GEREKSİNİMLERİ VE DİJİTAL BEYİNLER (YZ)
-
-RolemIAster **Yerel Yapay Zeka** ile çalışır. Bu, düşünme işini PC'nin yapacağı anlamına gelir. İnternete ihtiyacın yok, ancak dinozorlar çağından kalma olmayan bir ekran kartına ihtiyacın var. (Not: Odan soğuksa, bu oyun bedava ısıtma işlevi görür).
-
-### ⚙️ Başlangıç Seviyesindekiler İçin Kavramlar
-
-**VRAM (Video Belleği)** YZ'nin benzinidir.
-*   RolemIAster'ın hikayenin ipin ucunu kaçırmaması için **12.000 ila 16.000 kelimeyi (token)** "hatırlaması" gerekir.
-*   GPU'nun belleği biterse, oyun astımlı bir salyangozdan daha yavaş çalışır.
+1.  **🤖 Yerleşik Yerel Yapay Zeka:** RolemIAster kendi dijital beynini getiriyor. **İnternet olmadan** ve tuhaf bir şeye dokunmanıza gerek kalmadan çalışır. Kurun ve oynayın!
+2.  **☁️ İsteğe Bağlı Bulut:** Dış yapay zekalara (OpenAI, Gemini...) para harcamayı tercih ederseniz, kredi kartınızla baş başasınız. Maliyetler size aittir.
+3.  **🎲 Üretken Kaos:** Yapay zeka hikayeyi anında icat eder. Anlatıcı çıldırıp inek yağdığını söylerse, bize bakmayın. Geliştirici, modelin ürettiği çılgınlıklardan sorumlu değildir.
+4.  **🏗️ Erken Erişim:** Bu yer inşaat halinde. Bir hata bulursanız, bu bir kusur değil, sürpriz bir "özellik"! (Lütfen bize geri bildirim gönderin, bize çok yardımcı olur).
 
 ---
 
-### 📊 MODEL KATALOĞU (Zehirini seç)
+## 🖥️ SİSTEM GEREKSİNİMLERİ VE DİJİTAL BEYİNLER (YAPAY ZEKA)
 
-YZ'lerini **Ayarlar → Entegre Yerel YZ → Modelleri Yönet** bölümünden yönet.
+RolemIAster **Yerel Yapay Zeka** ile çalışır. Bu, PC'nizin düşünme işinin zorluğunu üstleneceği anlamına gelir. İnternete ihtiyacınız yok, ancak dinozor döneminden kalma olmayan bir ekran kartına ihtiyacınız var. (Not: Odanız soğuksa, bu oyun ücretsiz ısıtma görevi görür).
 
-#### 🏆 Qwen 2.5 Ailesi (Kaymağın da kaymağı)
+### ⚙️ Yeni Başlayanlar İçin Kavramlar
 
-| Model | Boyut | Min. VRAM | Kademe | Karar |
-|--------|--------|-------------|------|-----------|
-| **Qwen2.5-3B** | ~2.5GB | **8GB** | B | 👶 **Stajyer.** İş görür ama ondan Shakespeare yazmasını bekleme. Bazen kafası karışır. |
-| **Qwen2.5-7B** | ~5.5GB | **12GB** | A | ✅ **SEÇİLMİŞ KİŞİ.** Dengeli, zeki ve hızlı. Varsayılan olarak önerilen modeldir. |
-| **Qwen2.5-14B** | ~10GB | **16GB** | S | 🧐 **Profesör.** Zengin, derin anlatım ve çok doğal diyaloglar. |
-| **Qwen2.5-32B** | ~22GB | **32GB** | S+ | 👑 **Tanrı Seviyesi.** Bunu çalıştırmak için bir uzay gemisine (RTX 3090/4090) ihtiyacın var. |
+**VRAM (Video Belleği)** yapay zekanın benzini gibidir.
+*   RolemIAster, hikayenin akışını kaybetmemek için **12.000 ila 16.000 kelimeyi (token)** "hatırlaması" gerekir.
+*   GPU'nuzun belleği tükenirse, oyun astımlı bir salyangozdan daha yavaş gider.
 
 ---
 
-### 🎮 HIZLI SEÇİM REHBERİ
+### 📊 MODEL KATALOĞU (Zehri Seçin)
 
-| Ekran Kartın | VRAM | Önerilen Model | Sonuç |
-|------------|------|--------------------|-----------|
-| GTX 1050/1060 | 4GB | Qwen2.5-3B | 🆗 Ucu ucuna ama oynanabilir (Düşük bağlam) |
-| GTX 1070/1660 | 6GB | Qwen2.5-3B | 🆗 İyi çalışır |
-| RTX 2060/3060 | 8GB | Qwen2.5-3B | 🚀 Uçar |
-| RTX 3070/4060Ti | 12GB | **Qwen2.5-7B** | ✅ İdeal deneyim |
-| RTX 3090/4080 | 16-24GB | Qwen2.5-14B | 🌟 Büyük lüks |
-| RTX 4090 | 24GB | Qwen2.5-32B | 👑 Maksimum kalite |
+Yapay zekalarınızı **Ayarlar → Yerleşik Yerel Yapay Zeka → Modelleri Yönet** altından yönetin.
 
-**💡 Profesyonel İpucu:** İşletim sistemi için her zaman **2GB VRAM boş bırak**, yoksa Windows ağlamaya ve bir şeyleri kapatmaya başlar.
+#### 🏆 Qwen 3.5 Ailesi — RolemIAster için özel olarak eğitildi
+
+Bu modeller, oyunun anlatısal kurallarını ustalaşmaları için **Denetimli İnce Ayar (SFT)** ile eğitilmiştir. Bunlar genel modeller değildir: RolemIAster'ın JSON sözleşmesini, NPC'leri, envanteri ve savaşı ezbere bilirler.
+
+| Model        | Boyut  | Minimum VRAM | Seviye | Karar        |
+|--------------|--------|--------------|--------|--------------|
+| **Qwen3.5-2B** | ~1.5GB | **3GB**      | B      | ⚡ **Hızcı.** Hepsinin en hızlısı. Temel GPU'lar veya özel GPU olmadan oynamak için idealdir. |
+| **Qwen3.5-4B** | ~2.8GB | **4GB**      | A      | ✅ **DENGELİ.** Optimal hız ve kalite. Çoğu oyuncu için önerilen standart model. |
+| **Qwen3.5-9B** | ~5.5GB | **8GB**      | S      | 🌟 **Anlatıcı.** Zengin anlatım ve üstün tutarlılık. RTX 3070 veya üstü olanlar için. |
 
 ---
 
-### 🚨 İMDAT! BİLGİSAYARIM YAVAŞLADI! (VRAM Sorunları)
+### 🎮 HIZLI SEÇİM KILAVUZU
 
-Oyun, hoşlandığın kişinin WhatsApp'ta cevap vermesinden daha geç yanıt veriyorsa, muhtemelen VRAM'in bitmiştir.
+| Grafiğiniz | VRAM  | Önerilen Model | Sonuç               |
+|-------------|-------|----------------|---------------------|
+| GTX 1050/1060 / GPU Yok | 2-4GB | **Qwen3.5-2B** | 🆗 Zor ama oynanabilir |
+| GTX 1070/1660 / RX 580 | 4-6GB | **Qwen3.5-4B** | ✅ Çok iyi deneyim     |
+| RTX 2060/3060 / RX 6600 | 6-8GB | **Qwen3.5-4B** | 🚀 Hızlı ve doğru      |
+| RTX 3070/4060Ti / RX 6700 | 8-12GB | **Qwen3.5-9B** | 🌟 İdeal deneyim      |
+| RTX 3090/4080/4090 | 16GB+ | **Qwen3.5-9B** | 👑 Maksimum kalite, ultra hızlı yanıtlar |
 
-**Boyundan büyük işe kalkıştığının belirtileri:**
-1.  **Model RAM'e taşıyor:** Bilgisayar ekran kartı yerine normal belleği kullanıyor. Sonuç: AŞIRI YAVAŞLIK.
-2.  **Hafif taşma (1-2GB):** Cevap başına 30-60 saniye sürer.
-3.  **Orta seviye taşma (3-5GB):** 2-5 dakika. Gidip bir kahve alabilirsin.
-4.  **Şiddetli taşma:** 10-30 dakika. Oynanmaz.
+**💡 İpucu:** İşletim sistemi için her zaman yaklaşık **2 GB VRAM boş bırakın**, aksi takdirde Windows ağlamaya ve uygulamaları kapatmaya başlayacaktır.
+
+---
+
+### 🚨 İMDAT! BİLGİSAYARIM YAVAŞ! (VRAM Sorunları)
+
+Oyunun yanıt vermesi WhatsApp'taki crush'ınızdan daha uzun sürüyorsa, muhtemelen VRAM'iniz tükenmiştir.
+
+**Çok akıllı olduğunuzun belirtileri:**
+1.  **Model RAM'e dökülüyor:** Bilgisayar grafik yerine normal belleği kullanıyor. Sonuç: AŞIRI YAVAŞLIK.
+2.  **Hafif taşma (1-2GB):** Yanıt başına 30-60 saniye sürer.
+3.  **Orta taşma (3-5GB):** 2-5 dakika. Kahve almaya gidebilirsiniz.
+4.  **Ciddi taşma:** 10-30 dakika. Oynanamaz.
 
 #### 🛡️ Acil Durum Protokolü
-İşler kötü giderse, şu adımları sırasıyla izle:
+İşler ters giderse, şu adımları sırayla izleyin:
 
-1.  **📉 VRAM %'sini düşür:** Ayarlara git ve **%85**'e düşür. Yeniden başlat ve dene.
-2.  **🧹 Temizlik:** 40 sekmenin açık olduğu o tarayıcıyı kapat. Belleğini yiyorlar.
-3.  **🛑 %70 Sınırı:** Atanan VRAM'de asla **%70**'in altına düşme.
-    *   *Neden?* Çünkü YZ'nin "düşünmek" için alana (KV önbelleği) ihtiyacı var. %70'ten az verirsen, boş bakar ve hata verir.
-4.  **🔙 Taktiksel Geri Çekilme:** Hiçbiri işe yaramazsa, daha küçük bir modele geç (7B'den 3B'ye düş).
+1.  **📉 VRAM yüzdesini düşürün:** Ayarlara gidin ve %**85**'e düşürün. Yeniden başlatın ve deneyin.
+2.  **🧹 Temizlik:** 40 sekmesi açık olan tarayıcıyı kapatın. Belleğinizi yiyorlar.
+3.  **🛑 %70 Limiti:** Asla atanan VRAM'in **%70**'inin altına düşmeyin.
+    *   *Neden mi?* Yapay zekanın "düşünmesi" için alana ihtiyacı var (KV önbelleği). %70'ten az verirseniz, boş kalır ve hata verir.
+4.  **🔙 Taktik Geri Çekilme:** Hiçbir işe yaramazsa, daha küçük bir modele geçin (9B'den 4B'ye veya 4B'den 2B'ye).
 
 ---
 
-### ⚙️ GELİŞMİŞ MODEL YAPILANDIRMASI ("Maksimum İneklik")
+### ⚙️ GELİŞMİŞ MODEL AYARLARI ("Maksimum Çılgınlık")
 
-> **UZMAN MODU:** Eğer bir profesyonelsen ve gelişmiş model ayarlarına (HuggingFace'ten indirilen kendi GGUF modellerini eklemek, katmanlara dokunmak vb.) erişmek istiyorsan, oyunu şu komutla başlatmalısın: `--advanced`.
+> **UZMAN MODU:** Bir profesyonelseniz ve gelişmiş model ayarlarına (HuggingFace'den indirdiğiniz kendi GGUF modellerinizi ekleme, katmanlarla oynama vb.) erişmek istiyorsanız, oyunu şu komutla başlatmanız gerekir: `--advanced`.
 
-**Ayarlar → Entegre Yerel YZ** bölümünde düğmelere basmayı sevenler için:
+Düğmelere dokunmayı sevenler için **Ayarlar → Yerleşik Yerel Yapay Zeka** altında:
 
-| Seçenek | İşlev | Öneri |
-|--------|---------|---------------|
-| **GPU Layers** | Modelin ne kadarının ekran kartına yüklendiği | **-1** ("HEPSİ" demektir. Ne yaptığını bilmiyorsan dokunma) |
-| **Maksimum Bağlam** | YZ'nin "kısa süreli hafızası" | **16384 - 32768** (Bundan az olursa YZ amnezi geçirir) |
-| **Sıcaklık (Temperature)** | Yaratıcılık vs Çılgınlık | **0.7 - 0.8** (Daha yüksek = daha çılgın; Daha düşük = daha robotik) |
-| **Geçmiş RAG** | Çok eski şeyleri hatırlamak | **Evet** (Uzun kampanyalar için şart) |
-| **Gömüleri Önbelleğe Al** | Anı aramayı hızlandırır | **Evet** (Daha hızlı çalışmasını sağlar) |
+| Seçenek         | İşlev                                       | Öneri                                    |
+|-----------------|---------------------------------------------|------------------------------------------|
+| **GPU Katmanları** | Modelin ne kadarının grafiklere yüklendiği | **-1** (Bu "HER ŞEY" anlamına gelir. Ne yaptığınızı bilmiyorsanız dokunmayın) |
+| **Maksimum Bağlam** | Yapay zekanın "kısa süreli belleği"        | **16384 - 32768** (Bundan azı yapay zekanın hafıza kaybı yaşamasına neden olur) |
+| **Sıcaklık**    | Yaratıcılık vs Çılgınlık                    | **0.7 - 0.8** (Daha yüksek = daha çılgın; Daha düşük = daha robotik) |
+| **Geçmiş RAG'ı** | Uzun süredir unutulmuş şeyleri hatırlama  | **Evet** (Uzun kampanyalar için olmazsa olmaz) |
+| **Embeddings Önbelleğe Alma** | Anıları daha hızlı arama olanağı sağlar | **Evet** (Daha hızlı çalışmasını sağlar) |
 
 ---
 
 ### 🔧 SORUN GİDERME (Troubleshooting)
 
-| Hata/Fiyasko | Çözüm |
-|-------|---------|
-| **Yavaş YZ / Gecikme** | `GPU Layers` değerinin -1 olduğunu doğrula. Chrome'u kapat. `Contexto Máximo` ayarını düşür. |
-| **Bellek Hatası (OOM)** | `Contexto Máximo` ayarını düşür veya daha küçük bir model (3B) seç. |
-| **YZ sayıklıyor / Halüsinasyon** | `Temperatura` ayarını 0.6'ya düşür. Hala çıldırıyorsa, uygulamayı yeniden başlat. |
+| Sorun          | Çözüm                                                               |
+|----------------|---------------------------------------------------------------------|
+| **Yapay Zeka Yavaş / Gecikme** | `GPU Layers` değerinin -1 olduğunu doğrulayın. Chrome'u kapatın. `Contexto Máximo`'i düşürün. |
+| **Bellek Hatası (OOM)** | `Contexto Máximo`'ü azaltın veya daha küçük bir model (3B) seçin. |
+| **Yapay Zeka Deliriyor / Halüsinasyon Görüyor** | `Temperatura`'i 0.6'ya düşürün. Hâlâ çılgınsa, uygulamayı yeniden başlatın. |
 
 ---
 
 ### 🌐 ALTERNATİF SAĞLAYICILAR (Sadece Uzmanlar)
 
-> **Not:** Oyunun getirdiği yerel YZ fazlasıyla yeterlidir. Bu sadece ileri düzey veya cesur kullanıcılar içindir.
+> **Not:** Oyunun yerleşik yerel yapay zekası fazlasıyla yeterlidir. Bu sadece gelişmiş veya cesur kullanıcılar içindir.
 
 *   **Harici Yerel Motorlar:**
-    *   **Ollama / LM Studio:** Kendi inek modellerin varsa, onları kullanabilirsin.
+    *   **Ollama / LM Studio:** Zaten kendi çılgın modelleriniz varsa kullanabilirsiniz.
 *   **Bulut API'leri (Ücretli):**
-    *   **OpenAI (GPT), Gemini, Claude, DeepSeek:** İnternet ve para harcamayı gerektirir.
-    *   Şuradan yapılandır: **Ayarlar → YZ → Yeni Sağlayıcı Ekle**.
+    *   **OpenAI (GPT), Gemini, Claude, DeepSeek:** İnternet ve para gerektirir.
+    *   Şuradan ayarlayın: **Ayarlar → Yapay Zeka → Yeni Sağlayıcı Ekle**.
 
 ---
 
-### 🌍 NASIL OYNANIR? (Çoklu Evren ve Sen)
+### 🌍 NASIL OYNANIR? (Çoklu Evren ve Siz)
 
-Oyunu açtığında iki yolun var:
+Oyunu açtığınızda iki yolunuz var:
 
-1.  **🆕 Yeni Macera**: Efsaneni sıfırdan yarat. Oyun senden **İsim, Meslek, Fiziksel Tasvir, Psikolojik Tasvir ve hikayenin Arka Planını/Bahanesini** isteyecek. Ayrıca, kampanyaya yön verecek **Zorluk Seviyesi** ve **Mizah Tonu**'nu seçeceksin.
-2.  **💾 Oyuna Devam Et**: RolemIAster **gerçek zamanlı kaydeder**. Burada "ölmeden önce yükle" veya geri dönüş yoktur. Her karar, her hata ve her yara hikayeye kazınır. Bu bir **MEYDAN OKUMA**: Yaptığın şey yapılmış demektir. Sonuçlarıyla yaşa... ya da onlarla öl.
+1.  **🆕 Yeni Macera**: Efsanenizi sıfırdan yaratın. Oyun sizden **İsim, Meslek, Fiziksel Tanım, Psikolojik Tanım ve hikayenizin Arka Planı/Gerekçesi**ni isteyecektir. Ayrıca, kampanyaya rehberlik edecek **Zorluk Seviyesini** ve **Mizah Tonunu** seçeceksiniz.
+2.  **💾 Oyuna Devam Et**: RolemIAster **gerçek zamanlı kaydeder**. Burada "ölmeden önce yükle" veya geri dönüş yok. Her karar, her hata ve her yara, hikayeye ateşle kazınır. Bu bir **MEYDAN OKUMADIR**: Ne yaparsanız, yapılmıştır. Sonuçlarıyla yaşayın... ya da onlarla ölün.
 
-RolemIAster izole bir oyun değil; **Kalıcı bir Çoklu Evrendir**.
-*   **Sonsuz Dünyalar:** Kendi Lore'una sahip kendi evrenlerini (**Orta Çağ Fantezisi** veya **Cyberpunk**) yarat.
-*   **Sonsuz Karakterler:** Her dünyanın içinde istediğin kadar kahramana sahip olabilirsin.
-*   **Paylaşılan Zaman Çizelges:** Dikkat! Bir karakterin yaptığı şey diğerlerinin dünyasını etkiler. YZ diğer kahramanlarının farkındadır ve onları dünyada yaşayanlar olarak tanır.
-*   **"Duyguları" Olan YZ (Süper RAG):** RAG (Retrieval-Augmented Generation) sistemi, YZ'nin "ispiyoncusu" gibi davranır; ona dünya, sana kimin eşlik ettiği, nerede olduğun ve az önce ne olduğu hakkında anılar vererek hikayenin %100 tutarlı olmasını sağlar.
+RolemIAster izole bir oyun değildir; **Kalıcı Bir Çoklu Evrendir**.
+*   **Sonsuz Dünyalar:** Kendi evrenlerinizi (**Ortaçağ Fantastik** veya **Cyberpunk**) kendi Lore'ları ile yaratın.
+*   **Sonsuz Karakterler:** Her dünyanın içinde istediğiniz kadar kahramana sahip olabilirsiniz.
+*   **Paylaşılan Zaman Çizgisi:** Dikkat! Bir karakterin yaptıkları diğerlerinin dünyasını etkiler. Yapay zeka, diğer kahramanlarınızın farkındadır ve onları dünyanın sakinleri olarak tanıyacaktır.
+*   **"Duyuları" Olan Yapay Zeka (Süper RAG):** RAG (Retrieval-Augmented Generation) sistemi, yapay zekanın "muhbir"i olarak görev yapar, ona dünya, kiminle birlikte olduğu, nerede olduğu ve hikayenin %100 tutarlı olması için az önce ne olduğu hakkında anıları verir.
 
-### Arayüz (Kumanda kabinin)
+### Arayüz (Komuta Merkeziniz)
 
-*   **Sol Panel (SEN):** Karakter Kağıdın. Can, mana, yetenekler ve ne kadar yakışıklı olduğun (Karizma).
+*   **Sol Panel (SİZ):** Karakter Sayfanız. Can, mana, yetenekler ve ne kadar yakışıklı olduğunuz (Karizma).
 *   **Orta Panel (HİKAYE):**
-    *   **Üst:** Anlatıcının olan biteni anlattığı yer.
-    *   **Alt:** Karar düğmelerin ve ne yapmak istediğini yazman için metin kutusu.
-*   **Sağ Panel (EŞYALARIN):** Envanter ve ekipman. Dijital istifçinin cenneti.
+    *   **Yukarıda:** Anlatıcının ne olduğunu anlattığı yer.
+    *   **Aşağıda:** Karar düğmeleriniz ve ne yapmak istediğinizi yazacağınız metin kutusu.
+*   **Sağ Panel (EŞYALARINIZ):** Envanter ve ekipman. Dijital Cinayet Yiyicilerin cenneti.
 
 ---
 
 ## 📜 OYUN KURALLARI (Evet, kurallar var)
 
-RolemIAster klasik ve sağlam bir d100 (yüz yüzlü zar) sistemi kullanır.
+RolemIAster, klasik ve sağlam bir d100 (yüzlü zar) sistemi kullanır.
 
-### 1. Niteliklerin (Seni tanımlayan şeyler)
-YZ; bağlam, meslek ve girdiğin açıklamaya dayanarak niteliklerini oluşturur. Bir kez oluşturulduğunda, keyfine göre dağıtmak için **10 EKSTRA PUANIN** olur.
-*   **Kademeli Maliyetler:** Bir niteliği 14'e kadar yükseltmek 1 puana mal olur. 15'ten 16'ya 2 puan. 17 ve sonrası 3 puan! Kasları nereye koyacağını iyi düşün.
+### 1. Nitelikleriniz (Sizi tanımlayan şeyler)
+Yapay zeka, girdiğiniz bağlam, meslek ve tanıma göre niteliklerinizi oluşturur. Oluşturulduktan sonra, keyfinize göre dağıtmak için **10 EK PUANINIZ** olur.
+*   **Aşamalı Maliyetler:** Bir niteliği 14'e kadar yükseltmek 1 puan sürer. 15 ila 16 arasında 2 puan sürer. 17'den itibaren 3 puan! Nereye kas koyacağınızı iyi düşünün.
 
-*   💪 **Güç (GÜÇ):** Saf fiziksel gücün. Yakın dövüş hasarını ve taşıma kapasiteni etkiler.
-*   ❤️ **Dayanıklılık (DAY):** Direncin. Darbelere, hastalıklara ve zehirlere dayanmak için.
-*   🐘 **Boyut (BOY):** Cüsseni belirler. Büyük ve ağır mı, yoksa küçük ve kaygan mı.
-*   🏃 **Çeviklik (ÇEV):** Atiklik, nişan alma ve kendi ayaklarına takılmama.
-*   🧠 **Zeka (ZEK):** Öğrenmek, hatırlamak ve bulmacaları çözmek.
-*   🔮 **Kudret (KUD):** Ruhun, şansın, irade gücün ve büyü rezervin.
+*   💪 **Güç (GÜÇ):** Saf fiziksel gücünüz. Yakın dövüş hasarını ve taşıma kapasitenizi etkiler.
+*   ❤️ **Dayanıklılık (DAY):** Direncİniz. Darbelere, hastalıklara ve zehirlere dayanmak için.
+*   🐘 **Boyut (BOY):** Büyüklüğünüz. Büyük ve ağır veya küçük ve çevik.
+*   🏃 **Çeviklik (ÇEV):** Çeviklik, nişan alma ve kendi ayaklarınıza takılmama.
+*   🧠 **Zeka (ZEK):** Öğrenme, hatırlama ve bulmaca çözme.
+*   🔮 **İrade (İR):** Ruhunuz, şansınız, irade gücünüz ve sihir rezerviniz.
 *   😎 **Karizma (KAR):** Liderlik, çekicilik ve insanları kandırma (veya baştan çıkarma) yeteneği.
 
-### 2. Hızlı Matematik (Türetilmiş Özellikler)
-Motor, niteliklerine dayanarak bu rakamları otomatik olarak hesaplar:
+### 2. Hızlı Matematikler (Türetilmiş Özellikler)
+Motor, bu rakamları niteliklerinize göre otomatik olarak hesaplar:
 
-*   🩸 **Can Puanı (CP):** `CON * 10`. Eğer 0'a ulaşırsa... eh, biliyorsun. F.
-*   ✨ **Mana Puanı (MP):** `(POD * 10) + INT`. Sihirbazlık numaraların için yakıt. Mana yoksa numara da yok. (Manasız bir büyücü, sadece bornoz giyip cosplay yapan bir tiptir).
-*   ⚡ **Stamina (STA):** `((CON+FUE+DES)/3)*10 + POD`. Denerken ölmeden savaşmak ve hareket etmek için enerjin.
-*   🧠 **İnsanlık (İNS):** `(CON+POD) * 5`. (Sadece Cyberpunk'ta: Kablolar seni delirtmeden önce ne kadar insan kaldığını ölçer).
-*   ⚔️ **Eylem Puanı (EP):** `(INT + DES) / 2`. İnisiyatifini belirler. İlk vuran, iki kez vurur.
+*   🩸 **Can (CAN):** `CON * 10`. 0'a ulaşırsa... bilirsiniz. F.
+*   ✨ **Mana (MAN):** `(POD * 10) + INT`. Sihirli numaralarınız için yakıt. Mana olmadan numara olmaz. (Mana olmayan büyücü sadece cübbeli bir cosplayci).
+*   ⚡ **Enerji (ENA):** `((CON+FUE+DES)/3)*10 + POD`. Savaşmak ve ölmeden hareket etmek için enerjiniz.
+*   🧠 **İnsanlık (INS):** `(CON+POD) * 5`. (Sadece Cyberpunk'ta: Kabloların sizi deli etmesinden önce ne kadar insan kaldığınızı ölçer).
+*   ⚔️ **Eylem Puanları (EP):** `(INT + DES) / 2`. Girişiminizi belirler. İlk vuran iki kez vurur.
 
-### 3. Yeteneklerin
-Temel bir değerle başlar (örn: Gizlilik = ÇEV + ZEK) ve kullandıkça gelişir. Bir yüzdedir (%).
+### 3. Yetenekleriniz
+Temel bir değerle başlarlar (örneğin, Gizlilik = ÇEV + ZEK) ve kullanılarak geliştirilirler. Bir yüzdedir (%).
 
-### 4. Eylem Çözümleme (Zar)
-Riskli bir şey yapmaya çalıştığında (tırmanmak, yalan söylemek, saldırmak...), YZ senden bir zar atmanı isteyecek. Oyun görünmez bir **d100** atar. **(Unutma: Zarlar senden nefret ediyor. Bu kişisel bir mesele).**
+### 4. Aksiyon Çözümü (Zar)
+Riskli bir şey yapmaya çalıştığınızda (tırmanma, yalan söyleme, saldırma...), yapay zeka sizden bir zar atmanızı isteyecektir. Oyun, görünmez bir **d100** atar. **(Unutmayın: Zarlar sizden nefret ediyor. Kişisel bir durum.)**
 
-*   **Hedefin:** Yetenek seviyene **EŞİT VEYA DAHA KÜÇÜK** bir sayı atmak.
-    *   *Örnek:* Tırmanma yeteneğin %45.
-    *   30 attın: ✅ **Başarılı**. Maymun gibi tırmanıyorsun.
-    *   80 attın: ❌ **Başarısız**. Yere yapışıyorsun.
-    *   **Kritik:** Yeteneğinin **1/5'ine eşit veya daha az** (veya 01) atmak. Epik! Taklalar atarak olağanüstü bir parkur yapıyorsun.
-    *   **Fiyasko:** Bir **99 veya 100**. Zarlar bugün senin günün olmadığına karar verdi. Yolun yarısında pantolonun düşüyor ve yüzüstü kapaklanıyorsun.
-
----
-
-## 💡 (ÇABUK) ÖLMEMEK İÇİN İPUÇLARI
-
-*   **✍️ Betimleyici Ol:** Sadece "saldırıyorum" yazma. Şunu yaz: *"Baltasından yerde yuvarlanarak kaçmaya çalışıyorum ve hançerimi ayak bileğine saplıyorum"*. YZ seni ödüllendirecektir.
-*   **🧪 Deney Yap:** Düğmelerle sınırlı değilsin. Çılgınca şeyler yaz! YZ doğaçlama yapacaktır.
-*   **🎭 Rol Yap:** Role gir. Açıklamaları oku ve pijamalı halin gibi değil, karakterinin yapacağı gibi davran.
+*   **Hedefiniz:** Yetenek seviyenize **eşit veya daha düşük** bir sayı atmak.
+    *   *Örnek:* Tırmanmada %45'iniz var.
+    *   30 atarsanız: ✅ **Başarı**. Bir maymun gibi tırmanırsınız.
+    *   80 atarsanız: ❌ **Başarısızlık**. Kendinizi bir yerlere çarparsınız.
+    *   **Kritik:** Yeteneğinizin **1/5'ine veya daha azına** (veya 01'e) atmak. Destansı! Takla atarak olağanüstü bir parkur yaparsınız.
+    *   **Hata:** **99 veya 100**. Zarlar bugün sizin gününüz olmadığını söyledi. Yolda pantolonunuz düşer ve yüzüstü yuvarlanırsınız.
 
 ---
 
-## ⚔️ SAVAŞ (Silah başına!)
+## 💡 ÖLMEMEK İÇİN İPUÇLARI (HIZLI)
 
-Kelimeler tükendiğinde, dayak vakti gelir. Savaş **taktikseldir** ve **Tikler** (zaman) ile çalışır.
+*   **✍️ Açıklayıcı Olun:** Sadece "saldır" yazmayın. Şunu yazın: *"Yerden yuvarlanarak baltasından sıyrılmaya çalışıyorum ve ayak bileğine hançerimi saplıyorum"*. Yapay zeka sizi ödüllendirecektir.
+*   **🧪 Deneyin:** Butonlarla sınırlı değilsiniz. Çılgınca şeyler yazın! Yapay zeka doğaçlama yapacaktır.
+*   **🎭 Rol yapın:** Karakterin içine girin. Tanımları okuyun ve pijamalı haliniz gibi değil, karakterinizin yapacağı gibi davranın.
+
+---
+
+## ⚔️ SAVAŞ (Silahları kuşanın!)
+
+Sözler yetersiz kaldığında, kavga zamanı gelir. Savaş **taktiktir** ve **Tick'ler** (zaman) üzerinden çalışır.
 
 ### 🕹️ Nasıl çalışır:
-*   **Tikler:** Her eylem zaman harcar. Ağır silahlar yavaştır (çok tik harcar). Hançerler hızlıdır.
-*   **Hızın:** Eylem Puanlarına (EP) bağlıdır.
+*   **Tick'ler:** Her eylem zaman alır. Ağır silahlar yavaştır (çok tick harcarlar). Hançerler hızlıdır.
+*   **Hızınız:** Eylem Puanlarınıza (EP) bağlıdır.
 
 ### Temel Eylemler:
-*   **🗡️ Saldır:** Elinde kınından çıkmış ne varsa onunla vur.
-*   **🛡️ Blokla:** Savunmaya geçersin. Hasarı azaltır ama Stamina harcar.
-*   **🏃 Kaç:** Korkaklar (veya yaşamak isteyen bilgeler) için.
-*   **🏳️ Teslim Ol:** Kazanamayacağını görürsen merhamet dilenebilirsin.
-*   **✨ Büyü / Cyberware:** Ateş, lazer ışınları, hacklemeler...
+*   **🗡️ Saldır:** Elinizde ne varsa onunla vurun.
+*   **🛡️ Engelle:** Savunmaya geçersiniz. Hasarı azaltır ama Enerji harcar.
+*   **🏃 Kaç:** Korkakların (veya yaşamak isteyen akıllıların) işi.
+*   **🏳️ Teslim Ol:** Kaybettiğinizi görürseniz, merhamet dileyebilirsiniz.
+*   **✨ Sihir / Siber Donanım:** Ateş, lazer ışınları, hackler...
 
 ### 💬 Serbest Metin Eylemleri (YENİ!)
-Düğmeleri sevmiyor musun? Kanlı canlı bir Game Master ile konuşuyormuşsun gibi ne yapmak istediğini yaz!
-*   **Örnekler:** *"Gobline ateş topu at"*, *"Rünlü kılıcımı kınından çıkar"*, *"Üzerimde iksir kullan"*.
-*   **Sahne Yönetmeni:** Savaş artık hayat buluyor. YZ, anlatımı zenginleştiren çevresel olaylar ve tepkiler üretir: düşen kirişler, geri çekilen düşmanlar, düşen meşaleler. Savaş alanı artık statik değil!
-*   **YZ anlamazsa:** Senden yeniden ifade etmeni isteyecektir. Sıran KAYBOLMAZ!
-*   **⚠️ Sınırlama:** Slotlar arası nesne taşımak (sırt çantasından kuşanmak, cephane yüklemek), metinle değil arayüzdeki **Sürükle ve Bırak (Drag & Drop)** ile yapılır.
+Düğmeleri sevmiyor musunuz? Sanki gerçek bir Usta ile konuşuyormuş gibi ne yapmak istediğinizi yazın!
+*   **Örnekler:** *"Gobline ateş topu at"*, *"Rünlü kılıcımı kınından çıkar"*, *"Kendime iksir kullan"*.
+*   **Sahne Yönetmeni:** Savaş artık hayat buluyor. Yapay zeka, anlatıyı zenginleştiren çevresel olaylar ve tepkiler oluşturur: düşen kirişler, geri çekilen düşmanlar, sönen meşaleler. Savaş alanı artık statik değil!
+*   **Yapay zeka anlamazsa:** Yeniden ifade etmenizi isteyecektir. Sıranız KAYBOLMAZ!
+*   **⚠️ Sınırlama:** Eşyaları slotlar arasında taşımak (çantadan kuşanmak, mühimmat yüklemek) arayüzdeki **Sürükle ve Bırak** ile yapılır, metinle değil.
 
-### ⚠️ ALTIN HAYATTA KALMA KURALI
-**SAVAŞMADAN ÖNCE SİLAHINI ÇEK!**
-Savaşın ortasında silah çekmek zaman (Tik) harcar. Eğer kılıcın kınındayken yakalanırsan, sen sakarca onu çıkarmaya çalışırken nüfus cüzdanına kadar dayak yersin. VEYA DAHA KÖTÜSÜ, SİLAHLARIN EKİPMAN YUVASI YERİNE SIRT ÇANTANDA İSE (Bir saniye bekleyin, şu koca kılıcı sırt çantamdan çıkarmam lazım, buralarda bir yerde olduğunu biliyorum... bir yerlerde...) 🤦‍♂️
-👉 Silahı kınından çıkarmak için (sağ paneldeki) **kuşanılmış silahın etiketine tıkla**. Yeşil yanacaktır.
+### ⚠️ HAYATTA KALMAK İÇİN ALTIN KURAL
+**SAVAŞMADAN ÖNCE KININDAN ÇIKAR!**
+Savaşın ortasında silahı kınından çıkarmak zaman (Tick) alır. Eğer kınında kılıçla yakalanırsan, beceriksizce çıkarmaya çalışırken dayak yersin. VEYA DAHA KÖTÜSÜ!, SİLAHLARINIZ ÇANTANIZDA OLMAK YERİNE KUŞANMA SLOTUNUZDA OLURSA (Bir saniye müsaade edin, devasa kılıcı çantadan çıkarmam lazım, sanırım buradaydı... bir yerde...) 🤦‍♂️
+👉 Kuşanılmış silahın etiketine **tıklayın** (sağ panel) çekmek için. Yeşil yanacaktır.
 
-Savaşta silahları taşımaya çalışmak zaman (Tik) tüketir ve sürpriz bir saldırıya uğramana, ayrıca sıranı kaybetmene, kaşlarının arasına yaklaşan baltanın verdiği gerginlikle hata yapmana veya silahı yere düşürmene neden olabilir. (Belki de DEHB'li bir karakter yaratmak iyi bir fikir değildi).
+Savaş sırasında silahları hareket ettirmeye çalışmak zaman (Tick) alır ve sürpriz bir saldırıya yol açabilir, ayrıca sıranızı kaybetme, alnınıza yaklaşan baltanın gerginliği nedeniyle ıskalama veya yere düşürme olasılığınız yüksektir. (Belki de TDAH'lı bir karakter yaratmak iyi bir fikir değildi)
 
 ---
 
-## ✨ BÜYÜ VE SİBERNETİK
+## ✨ SİHİR VE SİBERNETİK
 
-Dünyanın "Orta Çağ Fantezisi" mi yoksa "Cyberpunk" mı olduğuna bağlı olarak:
+Dünyanızın "Ortaçağ Fantastik" veya "Cyberpunk" olmasına bağlı olarak:
 
-### 🧙‍♂️ Fantezi: Efsunlar
-Büyücü müsün? Ekipmanını efsunlayabilirsin.
-1.  **Öğren:** Büyünün büyü kitabında (grimoire) olması gerekir.
-2.  **Yap (Sürükle ve Bırak):** Büyüyü listenden envanterindeki nesnenin üzerine sürükle.
-3.  **Maliyet:** Bir efsunu aktif tutmak **tur başına Mana harcar**.
-4.  **Uyarı:** Savaşın ortasında manasız kalırsan, ateşten kılıç tekrar paslı bir demir parçasına dönüşür.
+### 🧙‍♂️ Fantastik: Tılsımlar
+Büyücü müsünüz? Eşyalarınızı tılsımlayabilirsiniz.
+1.  **Öğrenin:** Büyüyü kütüphanenizde bulundurmanız gerekir.
+2.  **Fırlatın (Sürükle ve Bırak):** Büyüyü kendi listenizden envanterinizdeki nesnenin üzerine sürükleyin.
+3.  **Maliyet:** Aktif bir tılsımı korumak **savaş başına Mana harcar**.
+4.  **Uyarı:** Savaşın ortasında mana biterse, ateş kılıcı tekrar paslı bir demir parçasına dönüşür.
 
 ### 🦾 Cyberpunk: İmplantlar
-Zoom özellikli gözler veya goril kolları mı istiyorsun?
-1.  Bir **Tekno-cerrah** (Hizmet veren NPC) bul.
-2.  Kredileri öde (gelecekte hiçbir şey bedava değildir).
-3.  **İnsanlık Maliyeti:** Her implant ruhundan (**İnsanlık**) bir parça götürür.
-    *   Çok fazla taktırırsan, **Siberpsikoza** (bacaklı katil bir tost makinesine) dönüşürsün ve karakterinin kontrolünü kaybedersin.
+Yakın gözlere veya goril kollarına mı sahip olmak istiyorsunuz?
+1.  Bir **Tekno Cerrah** (hizmet veren NPC) bulun.
+2.  Kredileri ödeyin (gelecekte hiçbir şey bedava değildir).
+3.  **İnsanlık Maliyeti:** Her implant ruhunuzun bir parçasını alır (**İnsanlık**).
+    *   Çok fazla takarsanız, **Cyberpsikoz** (katil bir tost makinesi) haline gelirsiniz ve karakterinizin kontrolünü kaybedersiniz.
 
 ---
 
-## 🛒 DÜKKANLAR VE HİZMETLER (SİS)
+## 🛒 MAĞAZALAR VE HİZMETLER (HİZ)
 
-Ticaret yapmak için NPC'lerle konuş.
-*   **YZ Önerir, Sen Yönetirsin:** Bir tüccar veya şifacıyla konuştuğunda, YZ hizmetlerini (tamir, satış, iyileştirme) önerecektir, ancak işlemsel moda ne zaman gireceğine karar vermen için bir **"Hizmetleri Gör"** düğmesi belirecektir.
-*   **Pazarlık:** **Ticaret** yeteneğin (Karizmaya dayalı) fiyatları belirler. Çirkin veya antipatiksen, kazıklanırsın.
-*   **Satış:** Envanterindeki bir nesneye **Sağ Tıklayarak** dükkan sahibine sat veya üzerine sürükle.
+Ticaret yapmak için NPC'lerle konuşun.
+*   **Yapay Zeka Önerir, Siz Emir Verirsiniz:** Bir tüccar veya şifacı ile konuştuğunuzda, yapay zeka hizmetlerini (tamir etme, satma, iyileştirme) önerecektir, ancak işlem moduna ne zaman gireceğinize sizin karar vermeniz için bir **"Hizmetleri Gör"** düğmesi görünecektir.
+*   **Pazarlık:** **Ticaret** yeteneğiniz (Karizmaya dayanır) fiyatları belirler. Çirkin veya antipatikseniz, dolandırılırsınız.
+*   **Satma:** Bir envanter nesnesini satıcıya satmak için **Sağ Tıklayın** veya üzerine sürükleyin.
 
 ---
 
 ## 🎒 ENVANTER YÖNETİMİ (Tetris)
 
-*   **Ağırlık:** Bir yük sınırın var (Güç + Boyut). Çok fazla hurda taşırsan, yavaşlarsın ve ceza alırsın (Diyojen senin arkadaşın değil).
+*   **Ağırlık:** Bir taşıma limitiniz var (Güç + Boyut). Çok fazla hurda taşırsanız, yavaş ve cezalı gidersiniz (Cinayet Yiyici arkadaşınız değildir).
 *   **Paneller:**
-    *   **Ekipman:** Üzerinde taşıdıkların.
-    *   **Kemer:** Savaşta hızlı erişim (buradan iksir kullanmak daha az zaman harcar).
-    *   **Sırt Çantası:** Çuvalın dibi.
-*   **Akıcı Kullanım:** Bir iksiri veya yiyeceği anında tüketmek için doğrudan **yüzüne** (portreye) sürükle. Bağlam menüsünü de kullanabilirsin (sağ tık -> Kullan).
+    *   **Ekipman:** Giydikleriniz.
+    *   **Kuşak:** Savaşta hızlı erişim (buradan iksir kullanmak daha az zaman alır).
+    *   **Sırt Çantası:** Çantanın dibi.
+*   **Akıcı Kullanım:** Anında tüketmek için bir iksir veya yiyeceği doğrudan **yüzünüze** (portreye) sürükleyin. Bağlam menüsünü (sağ tıklama -> Kullan) de kullanabilirsiniz.
 
 ---
 
 ## 🛠️ SON AYARLAR
 
-**Ayarlar** menüsünde her şeyi kurcalayabilirsin:
-*   **🌍 Dil:** YZ tüm oyunu ve cevapları anında çevirir. Çok dilli mod devrede.
-*   **👁️ Görünüm:** Kör olmaman için yazı boyutu ve renkler. Tam daldırma (immersion) için neon kenarlar ve yumuşatılmış gölgeler.
-*   **🧠 YZ Ayarları:** Modeli, sıcaklığı vb. değiştir. (Her şeyi kurcalamak isteyen biriysen, kılavuzun başında `--advanced` bayrağı hakkında gördüklerimizi hatırla).
+**Ayarlar** menüsünde her şeye dokunabilirsiniz:
+*   **🌍 Dil:** Yapay zeka tüm oyunu ve yanıtları anında çevirecektir. Çok dilli mod etkin.
+*   **👁️ Görünüm:** Yazı tipi boyutu ve renkleri, kör olmamak için. Tam dalma için neon kenarlar ve yumuşatılmış gölgeler.
+*   **🧠 Yapay Zeka Ayarları:** Modeli, sıcaklığı vb. değiştirin (Her şeye dokunmak isteyenler için kılavuzun başındaki `--advanced` bayrağı hakkında gördüklerimizi unutmayın).
 
 ---
 
-## 🎭 ZORLUK VE MİZAH (Istırabını Kişiselleştir)
+## 🎭 ZORLUK VE MİZAH (Acınızı kişiselleştirin)
 
-Başlamadan önce, YZ'nin sadece anlatmadığını, dünyayı tercihlerinize göre **ayarladığını** unutma. Bu parametreler dünya yaratılırken seçilir ve o dünya için kalıcıdır:
+Başlamadan önce, yapay zekanın sadece anlatıcı değil, aynı zamanda tercihlerinize göre **dünyayı ayarladığını** unutmayın. Bu parametreler dünya oluşturulurken seçilir ve o dünya için kalıcıdır:
 
-*   **🎮 Zorluk (YZ tarafından yönetilir):** Bu basit bir hasar çarpanı değildir. Oyun YZ'ye şöyle der: "Hey, zorluk bu, ona göre davran".
-    *   **Kolay:** Asla ölmezsin (veya neredeyse imkansızdır), durumlar daha basittir, fiyatlar daha ucuzdur ve düşmanlar daha sakardır. YZ, yolun güllerle dolu olsun diye her sahneyi mantık çerçevesinde kolaylaştırır.
+*   **🎮 Zorluk (Yapay Zeka tarafından yönetilir):** Basit bir hasar çarpanı değildir. Oyun yapay zekaya şöyle der: "Hey, zorluk bu, buna göre hareket et."
+    *   **Kolay:** Asla ölmezsiniz (veya neredeyse imkansızdır), durumlar daha basittir, fiyatlar daha ucuzdur ve düşmanlar daha sakardır. Yapay zeka, yolunuzun güllerle dolu olması için her sahneyi mantıklı hale getirecektir.
     *   **Normal:** Standart denge.
-    *   **Mücadele:** YZ acımasız olacaktır, fiyatlar el yakar ve herhangi bir hata son hatan olabilir.
+    *   **Meydan Okuma:** Yapay zeka acımasız olacak, fiyatlar yasaklayıcı olacak ve herhangi bir hata sonuncusu olabilir.
 
-*   **🃏 Mizah Tonu:** YZ'nin seninle nasıl konuştuğunu ve ne tür olayların gerçekleştiğini tanımlar. Her modelin "mizah" kavramını yorumlama şekli farklı olsa da, YZ seçtiğine uyum sağlamaya çalışacaktır... ya da sağlamayacaktır:
-    *   **Ciddi:** Epik, karanlık ve resmi bir anlatı.
-    *   **İğneleyici (Sarkastik):** YZ hatalarına güler, sürekli laf sokar ve ironik bir ton kullanır.
-    *   **Çılgın:** Saçmalıklara hazır ol. Uçan inekler, sürrealist durumlar ve YZ'nin en çarpık mantığıyla yönetilen tam bir kaos.
+*   **🃏 Mizah Tonu:** Yapay zekanın size nasıl konuştuğunu ve ne tür olayların meydana geldiğini tanımlar. Her modelin "mizah" kavramını yorumlama şekli olsa da, yapay zeka seçtiğinize uyum sağlamaya çalışacaktır... ya da uyum sağlamayacaktır:
+    *   **Ciddi:** Epik, karanlık ve resmi bir anlatım.
+    *   **Alaycı:** Yapay zeka hatalarınızla dalga geçecek, size sürekli laf sokacak ve ironik bir ton kullanacaktır.
+    *   **Çılgınca:** Absürtlüğe hazır olun. Uçan inekler, gerçeküstü durumlar ve yapay zekanın en çarpık mantığı tarafından yönetilen toplam kaos.
 
 ---
 
-## 🚧 Uyarı: Erken Erişim (Early Access)
+## 🚧 Uyarı: Erken Erişim
 
-RolemIAster **aktif geliştirme** aşamasındadır, kısık ateşte pişiyor.
-*   Hatalar (veya "beklenmedik özellikler") bulabilirsin.
+RolemIAster **aktif gelişimde**, yavaş ateş üzerinde pişiyor.
+*   Hatalar (veya "beklenmedik özellikler") bulabilirsiniz.
 *   Her hafta yeni şeyler ekliyorum.
-*   Geri bildirimin altın değerinde! Neyi sevdiğini ve neyi çok sevdiğini söyle. (Bir şeyi sevmediysen onu da söyle, ama nazikçe).
+*   Geri bildirimleriniz altın değerinde! Neyi sevdiğinizi ve neyi çok sevdiğinizi bana söyleyin. (Bir şeyi sevmezseniz, bana da söyleyin, ama nazikçe).
 
-Şimdi git, inisiyatif at ve efsaneni yarat!
+Şimdi gidin, giriş atın ve efsanenizi yaratın!
 
-<!-- source_hash: f3494f05 -->
+<!-- source_hash: 9af75cff -->
