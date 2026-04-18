@@ -1,23 +1,23 @@
-# 📢 Zpráva od vývojáře (Předběžný přístup)
+# 📢 Zpráva od vývojáře (Early Access)
 
-Vítejte v RolemIAster. Než se ponoříte do svého dalšího velkého dobrodružství, chci vás okrást o minutu, abych ujasnil pár věcí (slibuji, že budu stručný, kostky už na vás čekají).
+Vítejte v RolemIAster. Než se ponoříte do svého dalšího velkého dobrodružství, chci vám ukrást minutku a ujasnit pár věcí (slibuji, že budu stručný, kostky na vás čekají).
 
-Tato hra je ve fázi **Předběžného přístupu (Early Access)**.
-Jsem sólo vývojář — ano, jen já, moje klávesnice a litry kávy —, což znamená, že dělám vše, co můžu, ale někdy nestíhám všechno. Předem se omlouvám, pokud mi bude trvat déle opravit nějakou zákeřnou chybu, implementovat funkci, po které toužíte, nebo okamžitě odpovědět na Discordu. Dělám žonglování, ale zatím mi nenarostly žádné další chapadla.
+Tato hra je ve fázi **předběžného přístupu (Early Access)**.
+Jsem sólový vývojář — ano, jen já, můj klávesnice a litry kávy — což znamená, že dělám vše, co můžu, ale někdy nestíhám všechno včas. Předem se omlouvám, pokud mi bude trvat déle opravit nějakého záludného buga, implementovat funkci, po které toužíte, nebo okamžitě odpovědět na Discordu. Žongluji, ale ještě mi nenarostly další chapadla.
 
 ## ⚠️ Důležité upozornění ohledně hardwaru (Lokální vs. Cloud)
 Existují dva způsoby hraní a vaše zkušenost závisí na tom, který si vyberete:
 
-*   **Lokální režim (Zdarma, Soukromý):** Pokud chcete spustit AI na svém vlastním PC, požadavky obchodu (minimálně 12 GB VRAM) jsou posvátné. Méně než to a AI se bude šourat nebo váš systém zablokuje. Je to čistá matematika, žádná magie.
-*   **Cloudový režim (API Gemini, GPT atd. pouze pokud spustíte pomocí příkazu `--advanced`):** Tady se film mění! Pokud nastavíte hru tak, aby používala cloudové služby (jako Google Gemini nebo OpenAI), těžká práce se provádí na jejich serverech, ne na vašem. V tomto režimu hra běží plynule na prakticky jakémkoli zařízení, protože vaše grafická karta odpočívá.
+*   **Lokální režim (Zdarma, Soukromý):** Pokud chcete spouštět AI na svém vlastním PC, požadavky obchodu (minimálně 12 GB VRAM) jsou posvátné. Méně než to a AI se bude vleče nebo zablokuje váš počítač. Je to čistá matematika, ne magie.
+*   **Režim Cloud (API Gemini, GPT atd. pouze pokud spustíte příkazem `--advanced`):** Tady se film mění! Pokud nastavíte hru tak, aby používala cloudové služby (jako Google Gemini nebo OpenAI), těžkou práci odvedou jejich servery, ne váš. V tomto režimu hra běží plynule prakticky na jakémkoli počítači, protože vaše grafická karta odpočívá.
 
 ## Řízení očekávání
-Pokud jste čekali bezchybnou AAA produkci, obávám se, že jste na špatném místě (prozatím). Hra je v rané fázi a upřímně řečeno, trpělivost ji nyní užít mají jen ti odvážní, kteří chápou a podporují tento typ experimentálních projektů.
+Pokud jste čekali bezchybný AAA titul, obávám se, že jste na špatném místě (prozatím). Hra je v rané fázi a upřímně, jen ti odvážní, kteří rozumí a podporují tento typ experimentálních projektů, mají nyní trpělivost si ji užít.
 
 ## Záruka spokojenosti
-Pokud máte pocit, že je hra pro vás příliš syrová nebo váš hardware příliš trpí, nikdo se nebude zlobit, pokud požádáte o vrácení peněz. Naopak, budu rád, když se v budoucnu vrátíte — a zaplatíte 40 nebo 60 USD, až bude hra vyleštěná a dokončená 😉—. Aktuální cena je dárek za důvěru ve mě v této fázi.
+Pokud máte pocit, že je hra pro vás příliš "zelená" nebo váš hardware příliš trpí, nikdo se nebude zlobit, když požádáte o vrácení peněz. Naopak, rád vás v budoucnu znovu přivítám — a že zaplatíte 40 nebo 60 USD, až bude hra vyleštěná a dokončená 😉. Aktuální cena je dárek za důvěru ve mě v této fázi.
 
-S tímto řečeno, moje vděčnost je nekonečná pro ty, kteří se rozhodnou zůstat. Vaše hlášení a návrhy jsou skutečným motorem tohoto projektu. Díky vám se hra za pár týdnů brutálně zlepšila.
+To jsem řekl, mé poděkování je nekonečné pro ty, kteří se rozhodnou zůstat. Vaše hlášení a návrhy jsou skutečným motorem tohoto projektu. Díky vám se hra za pár týdnů brutálně zlepšila.
 
 **RolemIAster se staví na míru pro vás.**
 
@@ -25,27 +25,32 @@ S tímto řečeno, moje vděčnost je nekonečná pro ty, kteří se rozhodnou z
 
 
 *********************************************************************************
-🚧 STAVBIŠTĚ: "LOBOTOMIZUJI" AI (K DOBRÉMU) 🧠🔧
-Na čem pracuji?
-Měním herní engine, a to není žádná maličkost.
-Dosud, pokaždé, když odehrajete tah, systém nahraje do AI "hroudu" pravidel o 15 000 až 20 000 tokenech. V podstatě je to jako nutit vypravěče, aby si před každou větou přečetl celou příručku. 📚🥵
-
-Problém:
-S tolika daty najednou se AI někdy "opije" kontextem. Plete se, vymýšlí si jazyky, ničí předměty nebo se přímo halucinuje (slavné bludy). Je to digitální ekvivalent "modré obrazovky smrti", ale narativní.
-
-Řešení: Striktní dieta! 🥗
-Model osobně přeškoluji (domácí fine-tuning), aby si pravidla zapamatoval.
-
-Plán: Aby AI již věděla, jak hrát, aniž by musela pokaždé číst příručku.
-
-Cíl: Snížit spotřebu z 20k na pouhých 5k tokenů za tah.
-
-Výsledek: Brutálně vyšší rychlost a mnohem soustředěnější (a střízlivější) AI. 🚀
-
-Poznámka k realitě (Vyloučení odpovědnosti 🧐):
-Toto je práce trojitého smrtelného inženýrství: trénování, testování a zabezpečení. A buďme upřímní: pokud i giganti ze Silicon Valley (Gemini, ChatGPT...) občas vidí růžové slony, můj lokální model nebude 100% dokonalý. Ale cílem je, aby se z "opilého strýce na svatbě" stal kompetentní Mistr RPG.
-
-Děkuji za trpělivost, zatímco dolaďuji šroubky! 🛠️✨
+#  AKTUALIZUJEME NA QWEN 3.5 + TURBO QUANT! NOVÝ MOTOR, NOVÁ TECHNOLOGIE, NOVÁ ÉRA 🚀
 *********************************************************************************
 
-<!-- source_hash: 5c341f4e -->
+🚧 STAVBA: LOBOTOMIE DOKONČENA (A FUNGUJE) 🧠🔧
+Na čem pracuji?
+Měním herní motor a není to žádná maličkost.
+Doposud při každém vašem tahu hodil systém AI "balík" pravidel o 15 000 až 20 000 tokenech. V podstatě to bylo jako nutit mistra číst celý manuál před každou větou. 📚🥵
+Implementoval jsem dvě technologie, které pracují společně:
+
+1. 🧠 **TurboQuant — Komprimovaná paměť**
+   - Integroval jsem technologii od Googlu (představenou na ICLR 2026), která komprimuje paměť AI na téměř třetinu původní velikosti.
+   - Pokud máte RTX z řady 3000, 4000 nebo 5000, hra ji automaticky využije.
+   - ⚠️ **DŮLEŽITÁ POZNÁMKA OHLEDNĚ AMD GPU:** AČKOLI EXISTUJÍ NÁZNAKY FUNKČNOSTI TURBO QUANT NA KARTÁCH AMD/INTEL (VULKAN), V PRAXI ZPŮSOBUJE MNOHO CHYB A PROTO PRO NÁS NEBUDE IMPLEMENTOVÁNA. DOUFÁME, ŽE KOMUNITA UDĚLÁ TO SAMÉ A BRZY BUDEME MÍT NOVINKY.
+   - **Výsledek:** AI si pamatuje více a spotřebuje méně VRAM. Je to čistá digitální magie. ✨
+
+2. 📖 **Masivní kontext (+200%)**
+   - Přepsal jsem výpočet konverzační paměti chirurgicky: nyní hra čte technické specifikace každého modelu a přesně vypočítá, kolik se vejde na vaši GPU.
+   - Model 9B jde z paměti ~36 000 slov na více než ~110 000 na GPU s 16 GB VRAM. 🚀
+   - Navíc jsem zvýšil limit odpovědi ze 4 096 na 8 192 tokenů: delší vyprávění bez přerušení uprostřed věty.
+
+Konečný výsledek: Většinou vyšší rychlost, dlouhé hry, které neztrácejí nit, a mnohem soustředěnější (a střízlivější) AI. 🎯
+
+Poznámka k realitě (Disclaimer 🧐):
+Pokud i giganti ze Silicon Valley (Gemini, ChatGPT...) občas vidí růžové slony, můj lokální model nebude 100% dokonalý. Ale už to není "opilý strýc na svatbě" — je to nyní kompetentní Mistr hry se skutečnou sloní pamětí. 🐘
+
+Děkuji za trpělivost, zatímco jsem ladil šroubky! 🛠️✨
+*********************************************************************************
+
+<!-- source_hash: b7968a3e -->

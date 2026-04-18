@@ -1,51 +1,56 @@
-# 📢 Kehittäjän viesti (Early Access)
+# 📢 Kehittäjän viesti (Ennakkojulkaisu)
 
-Tervetuloa RolemIAsteriin. Ennen kuin syöksyt seuraavaan suureen seikkailuusi, haluan varastaa minuutin selvittääkseni pari asiaa (lupaan olla lyhytsanainen, nopat odottavat).
+Tervetuloa RolemIAsteriin. Ennen kuin sukellat seuraavaan suureen seikkailuusi, haluan varastaa minuutin selvittääkseni pari asiaa (lupaan olla lyhyt, noppasi odottavat).
 
-Tämä peli on **Early Access (Varhaisjakelu)** -vaiheessa.
-Olen yksinäinen kehittäjä —kyllä, vain minä, näppäimistöni ja litrat kahvia—, mikä tarkoittaa, että teen kaikkeni, mutta en aina ehdi kaiken parissa. Pahoittelen etukäteen, jos korjaan hitaasti jotain hankalaa bugia, toteutan kauan toivomaasi ominaisuutta tai vastaan heti Discordissa. Jyrään jonglööritemppuja, mutta en ole vielä saanut ylimääräisiä lonkeroita.
+Tämä peli on **ennakkojulkaisu (Early Access)** -vaiheessa.
+Olen yhden miehen kehittäjä – kyllä, vain minä, näppäimistöni ja litratolkulla kahvia – mikä tarkoittaa, että teen parhaani, mutta en aina ehdi kaiken kanssa ajoissa. Pahoittelen etukäteen, jos kestää jonkin sitkeän bugin korjaamisessa, haluamasi ominaisuuden toteuttamisessa tai Discord-viesteihin vastaamisessa. Tasapainottelen, mutta en ole vielä saanut ylimääräisiä lonkeroita.
 
-## ⚠️ Tärkeä huomautus laitteistosta (Paikallinen vs. Pilvi)
-Peliä voi pelata kahdella tavalla, ja kokemuksesi riippuu valinnastasi:
+## ⚠️ Tärkeä ilmoitus laitteistosta (Paikallinen vs. Pilvi)
+Tässä on kaksi tapaa pelata, ja kokemuksesi riippuu valinnastasi:
 
-*   **Paikallinen tila (Ilmainen, Yksityinen):** Jos haluat suorittaa tekoälyn omalla tietokoneellasi, myymälän vaatimukset (vähintään 12 Gt VRAM) ovat pyhiä. Sitä vähemmän ja tekoäly raahautuu tai lukitsee laitteesi. Se on puhdasta matematiikkaa, ei taikuutta.
-*   **Pilvitila (Gemini, GPT jne. API vain, jos käynnistät komennolla `--advanced`):** Tässä kohtaa peli muuttuu! Jos konfiguroit pelin käyttämään pilvipalveluita (kuten Google Gemini tai OpenAI), raskas työ tehdään heidän palvelimillaan, ei sinun. Tässä tilassa peli toimii sulavasti käytännössä millä tahansa laitteella, koska näytönohjaimesi lepää.
+*   **Paikallinen tila (Ilmainen, yksityinen):** Jos haluat ajaa tekoälyn omalla tietokoneellasi, kaupan vaatimukset (vähintään 12 Gt VRAM) ovat pyhiä. Alle sen ja tekoäly joko ryömii tai jumittaa laitteesi. Se on puhdasta matematiikkaa, ei magiaa.
+*   **Pilvitila (Gemini, GPT jne. API vain, jos käynnistät komennolla `--advanced`):** Tässä elokuva muuttuu! Jos konfiguroit pelin käyttämään pilvipalveluita (kuten Google Gemini tai OpenAI), raskas työ tehdään heidän palvelimillaan, ei sinun. Tässä tilassa peli toimii sujuvasti käytännössä millä tahansa laitteella, koska näytönohjaimesi lepää.
 
 ## Odotusten hallinta
-Jos tulit odottaen saumatonta AAA-tuotantoa, pelkään, että olet väärässä paikassa (tällä hetkellä). Peli on varhaisessa vaiheessa, ja rehellisesti sanottuna vain rohkeat, jotka ymmärtävät ja tukevat tällaisia kokeellisia projekteja, jaksavat nauttia siitä juuri nyt.
+Jos tulit odottaen saumattomasti toimivaa AAA-tuotantoa, pelkäänpä, että olet väärässä paikassa (toistaiseksi). Peli on varhaisessa vaiheessa, ja rehellisesti sanottuna vain rohkeat, jotka ymmärtävät ja tukevat tämänkaltaisia kokeellisia projekteja, jaksavat nauttia siitä nyt.
 
 ## Tyytyväisyystakuu
-Jos koet pelin olevan liian kesken sinulle tai laitteistosi kärsii liikaa, kukaan ei suutu, jos pyydät palautusta. Päinvastoin, otan sinut mielelläni takaisin tulevaisuudessa —ja maksamaan 40 tai 60 USD, kun peli on hiottu ja valmis 😉—. Nykyinen hinta on lahja luottamuksestasi tässä vaiheessa.
+Jos koet pelin olevan liian raaka sinulle tai laitteistosi kärsii liikaa, kukaan ei pahastu, jos pyydät palautusta. Päinvastoin, otan sinut ilomielin takaisin tulevaisuudessa – ja maksamaan 40 tai 60 dollaria, kun peli on hiottu ja valmis 😉. Nykyinen hinta on lahja luottamuksesta tässä vaiheessa.
 
-Silti, kiitollisuuteni on rajaton niille, jotka päätätte jäädä. Raporttinne ja ehdotuksenne ovat tämän projektin todellinen moottori. Teidän ansiostanne peli on parantunut brutaalisti muutamassa viikossa.
+Silti, kiitollisuuteni on rajaton niille, jotka päätätte jäädä. Teidän ilmoituksenne ja ehdotuksenne ovat tämän projektin todellinen moottori. Teidän ansiostanne peli on parantunut huimasti muutamassa viikossa.
 
-**RolemIAster rakennetaan mittatilaustyönä teitä varten.**
+**RolemIAster rakennetaan räätälöidysti teille.**
 
 *Kiitos kärsivällisyydestä, tuesta ja siitä, että kriitikot ovat puolellanne!*
 
 
 *********************************************************************************
-🚧 RAKENNUSTYÖMAA: "LOBOTOMISOIN" TEKOÄLYÄ (PAREMPAAN SUUNTAAN) 🧠🔧
-Mitä olen puuhaamassa?
-Olen vaihtamassa pelimoottoria, ja se ei ole helppoa.
-Toistaiseksi jokaisella pelikierroksella järjestelmä lähettää tekoälylle "möhkäleen" sääntöjä, 15 000–20 000 tokenia. Pohjimmiltaan se on kuin pakottaisi pelinjohtajan lukemaan koko manuaalin jokaisen lauseen ennen. 📚🥵
-
-Ongelma:
-Niin paljon dataa kerralla ja tekoäly "humaltuu" kontekstista. Se sekoittuu, keksii kieliä, rikkoo esineitä tai suoraan alkaa hallusinoida (kuuluisat harhakuvat). Se on digitaalinen vastine "siniselle ruudulle", mutta narratiivinen.
-
-Ratkaisu: Tiukka ruokavalio! 🥗
-Olen uudelleenkouluttamassa mallia henkilökohtaisesti (kotitekoinen hienosäätö), jotta se oppii säännöt muistiin.
-
-Suunnitelma: Tekoäly osaa jo pelata ilman, että sen tarvitsee lukea manuaalia joka kerta.
-
-Tavoite: Vähentää kulutusta 20k:sta vain 5k:iin tokeneihin per vuoro.
-
-Tulos: Brutaalisti parempi nopeus ja paljon keskittyneempi (ja selkeämpi) tekoäly. 🚀
-
-Todellisuus (Vastuuvapauslauseke 🧐):
-Tämä on kolminkertaisen kuoleman riskin insinöörityötä: koulutus, testaus ja suojaus. Ja ollaan rehellisiä: jos jopa Piilaakson jättiläiset (Gemini, ChatGPT...) joskus näkevät vaaleanpunaisia ​​elefantteja, paikallinen mallini ei ole 100% täydellinen joka kerta. Mutta tavoitteena on, että se siirtyy "häiden humalaisesta sedästä" päteväksi roolipelimestariksi.
-
-Kiitos kärsivällisyydestä samalla kun säädän ruuveja! 🛠️✨
+#  PÄIVITIMME QWEN 3.5 + TURBO QUANT! UUSI MOOTTORI, UUSI TEKNOLOGIA, UUSI AIKA 🚀
 *********************************************************************************
 
-<!-- source_hash: 5c341f4e -->
+🚧 RAKENNUSTYÖMAA: LOBOTOMIA VALMIS (JA SE TOIMII) 🧠🔧
+Mitä olen puuhaillut?
+Olen vaihtamassa pelimoottoria, eikä se ole pikkujuttu.
+Tähän asti joka kerta, kun pelasin vuoron, järjestelmä heitti tekoälylle 15 000–20 000 tokenin sääntöpaketin. Pohjimmiltaan se oli kuin pakottaisi pelinjohtajan lukemaan koko käsikirjan ennen jokaista lausetta. 📚🥵
+Olen ottanut käyttöön kaksi teknologiaa, jotka työskentelevät yhdessä:
+
+1. 🧠 **TurboQuant — Pakattu muisti**
+   - Integroin Googlen teknologian (esitelty ICLR 2026), joka pakkaa tekoälyn muistin lähes kolmasosaan alkuperäisestä koosta.
+   - Jos sinulla on RTX-sarjan 3000, 4000 tai 5000 -näytönohjain, peli hyödyntää sitä automaattisesti.
+   - ⚠️ **TÄRKEÄ HUOMAUTUS AMD GPU:STA:** VAIKKA TURBO QUANTIN TOIMINNASTA AMD/INTEL-KORTEILLA (VULKAN) ON MERKKEJÄ, KÄYTÄNNÖSSÄ SE AIHEUTTAA PALJON VIRHEITÄ JA SIKSI SITÄ EI TÄLLÄ HETKELLÄ KÄYTETÄ. TOIVOMME YHTEISÖN TEKEVÄN SAMOIN JA SAAMME PIAN UUTISIA.
+   - **Tulos:** Tekoäly muistaa enemmän kuluttaen vähemmän VRAMia. Se on puhdasta digitaalista taikuutta. ✨
+
+2. 📖 **Massiivinen konteksti (+200%)**
+   - Kirjoitin keskustelumuistin laskennan uudelleen kirurgisesti: nyt peli lukee jokaisen mallin tekniset tiedot ja laskee tarkasti, kuinka paljon siihen mahtuu GPU:llesi.
+   - 9B-malli muistaa 16 Gt VRAMin GPU:lla ~36 000 sanasta yli ~110 000 sanaan. 🚀
+   - Lisäksi nostin vastausrajainta 4 096:sta 8 192:een tokeniin: pidempiä kertomuksia ilman keskeytyksiä lauseen keskellä.
+
+Lopputulos: Ylivoimainen nopeus useimmissa tapauksissa, pitkät pelit, jotka eivät menetä lankaa, ja paljon keskittyneempi (ja selkeämpi) tekoäly. 🎯
+
+Todellisuus (Vastuuvapauslauseke 🧐):
+Jos jopa Piilaakson jättiläiset (Gemini, ChatGPT...) näkevät joskus vaaleanpunaisia ​​elefantteja, paikallinen mallini ei ole 100 % täydellinen aina. Mutta se ei ole enää "hääjuhlien humalainen kaveri" – nyt se on pätevä roolipelimestari, jolla on todellisen elefantin muisti. 🐘
+
+Kiitos kärsivällisyydestä, kun säädin ruuveja! 🛠️✨
+*********************************************************************************
+
+<!-- source_hash: b7968a3e -->

@@ -1,51 +1,55 @@
-# 📢 Melding fra Utvikleren (Tidlig Tilgang)
+# 📢 Utviklermelding (Tidlig tilgang)
 
-Velkommen til RolemIAster. Før du kaster deg ut i ditt neste store eventyr, vil jeg stjele et minutt av tiden din for å klargjøre et par ting (jeg lover å være kort, terningene venter).
+Velkommen til RolemIAster. Før du kaster deg ut i ditt neste store eventyr, vil jeg stjele ett minutt av tiden din for å avklare et par ting (jeg lover å være kort, terningene venter på deg).
 
-Dette spillet er i **Tidlig Tilgang (Early Access)**-fasen.
-Jeg er en enslig utvikler – ja, bare meg, tastaturet mitt og liter med kaffe – noe som betyr at jeg gjør alt jeg kan, men noen ganger rekker jeg ikke alt. Jeg beklager på forhånd hvis det tar tid å fikse en vanskelig bug, implementere funksjonen du ønsker deg, eller svare umiddelbart på Discord. Jeg sjonglerer, men har ennå ikke fått ekstra tentakler.
+Dette spillet er i fase **Tidlig Tilgang (Early Access)**.
+Jeg er en ensporet utvikler — ja, bare meg, tastaturet mitt og liter med kaffe — noe som betyr at jeg gjør alt jeg kan, men noen ganger rekker jeg ikke alt. Jeg beklager på forhånd hvis det tar tid å fikse en snikete feil, implementere funksjonen du så inderlig ønsker, eller svare umiddelbart på Discord. Jeg sjonglerer, men jeg har ennå ikke fått ekstra tentakler.
 
-## ⚠️ Viktig Varsel om Maskinvare (Lokalt vs. Sky)
-Her er to måter å spille på, og opplevelsen din avhenger av hvilken du velger:
+## ⚠️ Viktig merknad om maskinvare (lokalt vs. skyen)
+Her er to måter å spille på, og opplevelsen din avhenger av hva du velger:
 
-*   **Lokal Modus (Gratis, Privat):** Hvis du vil kjøre KI-en på din egen PC, er kravene i butikken (minimum 12 GB VRAM) hellige. Mindre enn det, og KI-en vil slepe seg av gårde eller låse maskinen din. Det er ren matematikk, ikke magi.
-*   **Sky Modus (API for Gemini, GPT, etc. kun hvis du starter med kommandoen `--advanced`):** Her endrer filmen seg! Hvis du konfigurerer spillet til å bruke skytjenester (som Google Gemini eller OpenAI), gjøres det tunge arbeidet på deres servere, ikke dine. I denne modusen kjører spillet flytende på praktisk talt ethvert utstyr, siden grafikkortet ditt får hvile.
+*   **Lokal modus (gratis, privat):** Hvis du vil kjøre AI-en på din egen PC, er kravene i butikken (Minimum 12 GB VRAM) hellige. Mindre enn det, og AI-en vil krype eller låse maskinen din. Det er ren matematikk, ikke magi.
+*   **Skymodus (Gemini, GPT API osv. kun hvis du starter med kommandoen `--advanced`):** Her snur filmen! Hvis du konfigurerer spillet til å bruke skytjenester (som Google Gemini eller OpenAI), gjøres det tunge arbeidet på deres servere, ikke dine. I denne modusen kjører spillet jevnt på praktisk talt alle enheter, siden grafikkortet ditt hviler.
 
-## Forventningsstyring
-Hvis du kom hit og forventet et sømløst AAA-storproduksjon, frykter jeg at du er på feil sted (for øyeblikket). Spillet er i en tidlig fase, og ærlig talt, bare de modige som forstår og støtter denne typen eksperimentelle prosjekter har tålmodigheten til å nyte det akkurat nå.
+## Håndtering av forventninger
+Hvis du kom hit og forventet en sømløs AAA-produksjon, frykter jeg at du er på feil sted (foreløpig). Spillet er i en tidlig fase, og ærlig talt, bare de modige som forstår og støtter denne typen eksperimentelle prosjekter, har tålmodigheten til å nyte det akkurat nå.
 
-## Tilfredshetsgaranti
-Hvis du føler at spillet er for uferdig for deg, eller maskinvaren din sliter for mye, blir ingen sure hvis du ber om refusjon. Tvert imot, jeg vil være glad for å ta deg imot igjen i fremtiden – og at du betaler 40 eller 60 USD når spillet er polert og ferdig 😉. Den nåværende prisen er en gave for å stole på meg i denne fasen.
+## Garanti for tilfredshet
+Hvis du føler at spillet er for "grønt" for deg, eller maskinvaren din lider for mye, vil ingen bli sinte hvis du ber om refusjon. Tvert imot, jeg vil gjerne ønske deg velkommen tilbake i fremtiden — og at du betaler 40 eller 60 USD når spillet er polert og ferdig 😉. Den nåværende prisen er en gave for å stole på meg i denne fasen.
 
-Når det er sagt, er min takknemlighet uendelig for de som velger å bli værende. Deres rapporter og forslag er den virkelige motoren i dette prosjektet. Takket være dere har spillet blitt utrolig mye bedre på få uker.
+Når det er sagt, er min takknemlighet uendelig for de som velger å bli værende. Deres rapporter og forslag er den virkelige motoren i dette prosjektet. Takket være dere har spillet forbedret seg utrolig på få uker.
 
-**RolemIAster bygges skreddersydd for dere.**
+**RolemIAster blir bygget skreddersydd for dere.**
 
-*Takk for tålmodigheten, støtten og at kritikerne er på deres side!*
-
+*Takk for tålmodigheten, støtten og må kritikerne være på din side!*
 
 *********************************************************************************
-🚧 BYGGEPLASS: JEG ER I FERD MED Å "LOBOTOMERE" KI-EN (TIL DET BEDRE) 🧠🔧
-Hva holder jeg på med?
-Jeg bytter ut spillets motor, og det er ikke noe småtteri.
-Så langt, hver gang du spiller en runde, kaster systemet et "tykt" regelsett på 15 000 til 20 000 tokens til KI-en. I bunn og grunn er det som å tvinge mesteren til å lese hele manualen før hver setning. 📚🥵
-
-Problemet:
-Med så mye data på en gang, blir KI-en noen ganger "full" av kontekst. Den blir forvirret, finner opp språk, ødelegger objekter eller hallusinerer direkte (de berømte vrangforestillingene). Det er det digitale ekvivalentet til en "blåskjerm" men narrativt.
-
-Løsningen: Streng diett! 🥗
-Jeg omskolerer modellen personlig (hjemmelaget Fine-Tuning) slik at den lærer seg reglene utenat.
-
-Planen: At KI-en allerede kan spille uten å måtte lese manualen hver gang.
-
-Målet: Å redusere forbruket fra 20k til bare 5k tokens per runde.
-
-Resultatet: Brutalt mye høyere hastighet og en mye mer sentrert (og edru) KI. 🚀
-
-Realitetsmerknad (Ansvarsfraskrivelse 🧐):
-Dette er en tredoble dødsdømt ingeniøroppgave: trene, teste og beskytte. Og la oss være ærlige: hvis selv gigantene i Silicon Valley (Gemini, ChatGPT...) noen ganger ser rosa elefanter, vil ikke min lokale modell være perfekt 100% av gangene. Men målet er at den går fra å være "brudgommens fulle onkel" til en kompetent Rollespillmester.
-
-Takk for tålmodigheten mens jeg justerer skruene! 🛠️✨
+#  VI OPPDATERER TIL QWEN 3.5 + TURBO QUANT! NY MOTOR, NY TEKNOLOGI, NY ERA 🚀
 *********************************************************************************
 
-<!-- source_hash: 5c341f4e -->
+🚧 BYGGEPLASS: LOBOTOMI FULLFØRT (OG DET FUNKERER) 🧠🔧
+Hva driver jeg med?
+Jeg bytter ut spillmotoren, og det er ingen enkel sak.
+Fram til nå, hver gang du spilte en runde, kastet systemet en "blokk" med regler på 15 000 til 20 000 tokens til AI-en. I hovedsak var det som å tvinge spillmesteren til å lese hele manualen før hver setning. 📚🥵
+Jeg har implementert to teknologier som jobber sammen:
+
+1. 🧠 **TurboQuant — Komprimert minne**
+   - Jeg integrerte en teknologi fra Google (presentert på ICLR 2026) som komprimerer AI-ens minne til nesten en tredjedel av original størrelse.
+   - Hvis du har et RTX-kort fra 3000-, 4000- eller 5000-serien, vil spillet automatisk utnytte det.
+   - ⚠️ **VIKTIG MERKNAD OM AMD GPU:** SELV OM DET ER INDIKASJONER PÅ AT TURBOQUANT FUNGERER PÅ AMD/INTEL-KORT (VULKAN), GIR DET I PRAKSIS MANGE FEIL OG VIL DERFOR IKKE BLI IMPLEMENTERT FOR NÅ. VI HÅPER AT FELLESSKAPET GJØR SAMME OG AT VI SNART FÅR NYHETER.
+   - **Resultat:** AI-en husker mer mens den bruker mindre VRAM. Det er ren digital magi. ✨
+
+2. 📖 **Massiv kontekst (+200%)**
+   - Jeg har omskrevet beregningen av konversasjonsminne kirurgisk: nå leser spillet de tekniske spesifikasjonene for hver modell og beregner nøyaktig hvor mye som passer på GPU-en din.
+   - 9B-modellen går fra å huske ~36 000 ord til over ~110 000 på en GPU med 16 GB VRAM. 🚀
+   - I tillegg har jeg økt svargrensen fra 4 096 til 8 192 tokens: lengre fortellinger uten avbrudd midt i en setning.
+
+Sluttresultatet: Overlegen hastighet i de fleste tilfeller, lange spill som ikke mister tråden, og en mye mer fokusert (og edru) AI. 🎯
+
+Virkelighetsmerknad (Ansvarsfraskrivelse 🧐):
+Hvis selv gigantene i Silicon Valley (Gemini, ChatGPT...) noen ganger ser rosa elefanter, vil ikke min lokale modell være perfekt 100 % av tiden. Men den er ikke lenger "den fulle fyren i bryllupet" — nå er den en kompetent rollespillmester med en ekte elefantminne. 🐘
+
+Takk for tålmodigheten mens jeg justerte skruene! 🛠️✨
+*********************************************************************************
+
+<!-- source_hash: b7968a3e -->

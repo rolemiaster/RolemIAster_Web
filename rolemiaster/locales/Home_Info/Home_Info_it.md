@@ -1,21 +1,21 @@
 # 📢 Messaggio dello Sviluppatore (Accesso Anticipato)
 
-Benvenuto in RolemIAster. Prima di tuffarti nella tua prossima grande avventura, vorrei rubarti un minuto per chiarire un paio di cose (prometto di essere breve, che i dadi ti aspettano).
+Benvenuto in RolemIAster. Prima che tu ti tuffi nella tua prossima grande avventura, voglio rubarti un minuto per chiarire un paio di cose (prometto di essere breve, che i dadi ti aspettano).
 
 Questo gioco è in fase di **Accesso Anticipato (Early Access)**.
-Sono uno sviluppatore solitario —sì, solo io, la mia tastiera e litri di caffè—, il che significa che faccio tutto quello che posso, ma a volte non riesco a stare al passo con tutto. Mi scuso in anticipo se dovessi tardare a risolvere qualche bug sfuggente, implementare quella funzione che desideri tanto, o rispondere immediatamente su Discord. Faccio il giocoliere, ma non ho ancora sviluppato tentacoli extra.
+Sono uno sviluppatore solitario —sì, solo io, la mia tastiera e litri di caffè—, il che significa che faccio tutto quello che posso, ma a volte non riesco a fare tutto in tempo. Mi scuso in anticipo se dovessi tardare a correggere qualche bug sfuggente, implementare quella funzione che tanto desideri, o rispondere immediatamente su Discord. Faccio il giocoliere, ma non ho ancora ottenuto tentacoli extra.
 
 ## ⚠️ Avviso Importante sull'Hardware (Locale vs Cloud)
 Ci sono due modi per giocare, e la tua esperienza dipende da quale scegli:
 
-*   **Modalità Locale (Gratis, Privata):** Se vuoi eseguire l'IA sul tuo PC, i requisiti dello store (Minimo 12GB VRAM) sono sacri. Meno di così e l'IA arranzerà o bloccherà il tuo computer. È pura matematica, non magia.
-*   **Modalità Cloud (API di Gemini, GPT, ecc. solo se avvii con comando `--advanced`):** Qui la musica cambia! Se configuri il gioco per usare servizi cloud (come Google Gemini o OpenAI), il lavoro pesante viene svolto sui loro server, non sul tuo. In questa modalità, il gioco funziona fluidamente su praticamente qualsiasi computer, dato che la tua scheda grafica riposa.
+*   **Modalità Locale (Gratis, Privata):** Se vuoi eseguire l'IA sul tuo PC, i requisiti dello store (12GB VRAM Minimo) sono sacri. Meno di così e l'IA si trascinerà o bloccherà il tuo computer. È pura matematica, non magia.
+*   **Modalità Cloud (API Gemini, GPT, ecc. solo se avvii con il comando `--advanced`):** Qui cambia la musica! Se configuri il gioco per utilizzare servizi cloud (come Google Gemini o OpenAI), il lavoro pesante viene svolto sui loro server, non sul tuo. In questa modalità, il gioco funziona fluidamente su praticamente qualsiasi computer, dato che la tua scheda grafica è a riposo.
 
 ## Gestione delle Aspettative
-Se sei venuto aspettandoti una superproduzione AAA senza difetti, temo che tu sia nel posto sbagliato (per il momento). Il gioco si trova in una fase iniziale, e sinceramente, solo i coraggiosi che capiscono e supportano questo tipo di progetti sperimentali hanno la pazienza per goderselo adesso.
+Se sei venuto aspettandoti una super produzione AAA senza intoppi, temo che tu sia nel posto sbagliato (per il momento). Il gioco si trova in una fase iniziale, e onestamente, solo i coraggiosi che comprendono e supportano questo tipo di progetti sperimentali hanno la pazienza di goderselo ora.
 
 ## Garanzia di Soddisfazione
-Se senti che il gioco è troppo "verde" per te o il tuo hardware soffre troppo, nessuno si arrabbierà se chiedi un rimborso. Al contrario, sarò felice di accoglierti di nuovo in futuro —e che tu paghi 40 o 60 USD quando il gioco sarà rifinito e completato 😉—. Il prezzo attuale è un regalo per esserti fidato di me in questa fase.
+Se senti che il gioco è troppo acerbo per te o il tuo hardware ne risente troppo, nessuno si arrabbierà se chiedi un rimborso. Al contrario, sarò lieto di accoglierti di nuovo in futuro —e che tu paghi 40 o 60 USD quando il gioco sarà rifinito e completo 😉—. Il prezzo attuale è un regalo per chi ha fiducia in me in questa fase.
 
 Detto questo, la mia gratitudine è infinita per coloro che decidono di rimanere. I vostri report e suggerimenti sono il vero motore di questo progetto. Grazie a voi, il gioco è migliorato brutalmente in poche settimane.
 
@@ -25,27 +25,32 @@ Detto questo, la mia gratitudine è infinita per coloro che decidono di rimanere
 
 
 *********************************************************************************
-🚧 CANTIERE: STO "LOBOTOMIZZANDO" L'IA (PER IL MEGLIO) 🧠🔧
-Cosa sto facendo?
-Sto cambiando il motore del gioco, e non è roba da poco.
-Fino ad ora, ogni volta che giochi un turno, il sistema lancia all'IA un "tomone" di regole da 15.000 a 20.000 token. In pratica, è come obbligare il master a leggersi l'intero manuale prima di ogni frase. 📚🥵
-
-Il problema:
-Con così tanti dati in una volta, l'IA a volte si "ubriaca" di contesto. Si confonde, inventa lingue, rompe oggetti o semplicemente delira (i famosi deliri). È l'equivalente digitale di un "blocco schermo blu" ma narrativo.
-
-La Soluzione: Dieta rigorosa! 🥗
-Sto riaddestrando il modello personalmente (Fine-Tuning casalingo) affinché impari le regole a memoria.
-
-Il piano: Far sì che l'IA sappia già giocare senza dover leggere il manuale ogni volta.
-
-L'obiettivo: Ridurre il consumo da 20k a soli 5k token per turno.
-
-Il risultato: Una velocità brutalmente superiore e un'IA molto più concentrata (e sobria). 🚀
-
-Nota di Realtà (Disclaimer 🧐):
-Questo è un lavoro di ingegneria triplo mortale: addestrare, testare e blindare. E siamo onesti: se anche i giganti della Silicon Valley (Gemini, ChatGPT...) a volte vedono elefanti rosa, il mio modello locale non sarà perfetto al 100% delle volte. Ma l'obiettivo è che passi dall'essere il "tipo ubriaco al matrimonio" a un Master di Ruolo competente.
-
-Grazie per la pazienza mentre stringo le viti! 🛠️✨
+#  AGGIORNIAMO A QWEN 3.5 + TURBO QUANT! NUOVO MOTORE, NUOVA TECNOLOGIA, NUOVA ERA 🚀
 *********************************************************************************
 
-<!-- source_hash: 5c341f4e -->
+🚧 AREA DI LAVORO: LOBOTOMIA COMPLETATA (E FUNZIONA) 🧠🔧
+In cosa sono impegnato?
+Sto cambiando il motore del gioco, e non è cosa da poco.
+Finora, ogni volta che giocavi un turno, il sistema caricava nell'IA un "mattone" di regole da 15.000 a 20.000 token. In pratica, era come obbligare il master a rileggersi l'intero manuale prima di ogni frase. 📚🥵
+Ho implementato due tecnologie che lavorano in sinergia:
+
+1. 🧠 **TurboQuant — La memoria compressa**
+   - Ho integrato una tecnologia di Google (presentata all'ICLR 2026) che comprime la memoria dell'IA a quasi un terzo della sua dimensione originale.
+   - Se hai una RTX delle serie 3000, 4000 o 5000, il gioco la sfrutterà automaticamente.
+   - ⚠️ **NOTA IMPORTANTE SULLE GPU AMD:** SEBBENE CI SIANO INDIZI DI FUNZIONAMENTO DI TURBO QUANT SU SCHEDE AMD/INTEL (VULKAN), IN PRATICA PRESENTA MOLTI ERRORI E QUINDI PER ORA NON VERRÀ IMPLEMENTATO. CI ASPETTIAMO CHE LA COMMUNITY FACCIA LA SUA PARTE E CHE ABBIA PRESTO NOVITÀ.
+   - **Risultato:** L'IA ricorda di più spendendo meno VRAM. È pura magia digitale. ✨
+
+2. 📖 **Contesto massivo (+200%)**
+   - Ho riscritto il calcolo della memoria conversazionale in modo chirurgico: ora il gioco legge le specifiche tecniche di ogni modello e calcola con precisione quanto entra nella tua GPU.
+   - Il modello da 9B passa da ricordare ~36.000 parole a oltre ~110.000 su una GPU con 16GB di VRAM. 🚀
+   - Inoltre, ho aumentato il limite di risposta da 4.096 a 8.192 token: narrazioni più lunghe senza interruzioni a metà frase.
+
+Il risultato finale: Una velocità superiore nella maggior parte dei casi, partite lunghe che non perdono il filo, e un'IA molto più concentrata (e sobria). 🎯
+
+Nota di Realtà (Disclaimer 🧐):
+Se anche i giganti della Silicon Valley (Gemini, ChatGPT...) a volte vedono elefanti rosa, il mio modello locale non sarà perfetto il 100% delle volte. Ma non è più il "tipo ubriaco al matrimonio" — ora è un Master di Ruolo competente con memoria da elefante vero. 🐘
+
+Grazie per la pazienza mentre aggiustavo i bulloni! 🛠️✨
+*********************************************************************************
+
+<!-- source_hash: b7968a3e -->

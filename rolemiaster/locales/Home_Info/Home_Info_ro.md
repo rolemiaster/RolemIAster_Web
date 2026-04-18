@@ -1,50 +1,55 @@
 # 📢 Mesaje de la Dezvoltator (Acces Anticipat)
 
-Bine ai venit la RolemIAster. Înainte de a te scufunda în următoarea ta mare aventură, vreau să-ți fur un minut pentru a clarifica câteva lucruri (promit să fiu scurt, zarurile te așteaptă).
+Bun venit la RolemIAster. Înainte să te arunci în următoarea ta mare aventură, vreau să-ți fur un minut pentru a clarifica câteva lucruri (promit să fiu scurt, zarurile te așteaptă).
 
-Acest joc este în **Acces Anticipat (Early Access)**.
-Sunt un dezvoltator singuratic —da, doar eu, tastatura mea și litri de cafea—, ceea ce înseamnă că fac tot ce pot, dar uneori nu reușesc să fac totul la timp. Îmi cer scuze dinainte dacă durează să repar vreun bug evaziv, să implementez acea funcție pe care o dorești atât de mult sau să răspund imediat pe Discord. Fac jonglerii, dar încă nu mi-au crescut tentacule extra.
+Acest joc este în fază de **Acces Anticipat (Early Access)**.
+Sunt un dezvoltator singuratic — da, doar eu, tastatura mea și litri de cafea — ceea ce înseamnă că fac tot ce pot, dar uneori nu ajung la timp la tot. Mă scuz în avans dacă durează să repar un bug evaziv, să implementez acea funcție pe care o dorești atât de mult, sau să răspund imediat pe Discord. Fac jonglerii, dar încă nu mi-au crescut tentacule suplimentare.
 
 ## ⚠️ Notificare Importantă despre Hardware (Local vs Cloud)
 Există două moduri de a juca, iar experiența ta depinde de alegerea pe care o faci:
 
-*   **Modul Local (Gratuit, Privat):** Dacă vrei să rulezi IA pe propriul tău PC, cerințele magazinului (Minim 12GB VRAM) sunt sacre. Mai puțin de atât și IA va merge greu sau îți va bloca echipamentul. E pură matematică, nu magie.
-*   **Modul Cloud (API Gemini, GPT, etc. doar dacă pornești cu comanda `--advanced`):** Aici filmul se schimbă! Dacă configurezi jocul să folosească servicii cloud (cum ar fi Google Gemini sau OpenAI), munca grea se face pe serverele lor, nu pe al tău. În acest mod, jocul rulează fluid pe practic orice echipament, deoarece placa ta grafică se odihnește.
+*   **Mod Local (Gratuit, Privat):** Dacă vrei să rulezi AI-ul pe propriul tău PC, cerințele magazinului (minim 12GB VRAM) sunt sacrosante. Mai puțin de atât și AI-ul se va târî sau îți va bloca computerul. Este pură matematică, nu magie.
+*   **Mod Cloud (API Gemini, GPT, etc. doar dacă pornești cu comanda `--advanced`):** Aici se schimbă filmul! Dacă configurezi jocul să folosească servicii cloud (cum ar fi Google Gemini sau OpenAI), munca grea se face pe serverele lor, nu pe al tău. În acest mod, jocul rulează fluid pe practic orice computer, deoarece placa ta grafică se odihnește.
 
 ## Gestionarea Așteptărilor
-Dacă ai venit așteptând o producție AAA impecabilă, îmi pare rău, dar ai nimerit greșit (deocamdată). Jocul se află într-un stadiu incipient și, sincer, doar cei curajoși care înțeleg și susțin astfel de proiecte experimentale au răbdarea necesară pentru a se bucura de el acum.
+Dacă ai venit așteptând o producție AAA fără cusur, mă tem că ai ajuns în locul greșit (deocamdată). Jocul se află într-o etapă timpurie și, sincer, doar cei curajoși care înțeleg și susțin acest tip de proiecte experimentale au răbdarea necesară pentru a se bucura de el acum.
 
 ## Garanția Satisfacției
-Dacă simți că jocul este prea "verde" pentru tine sau hardware-ul tău suferă prea mult, nimeni nu se va supăra dacă soliciți o rambursare. Dimpotrivă, te voi primi cu bucurie înapoi în viitor —și te voi bucura să plătești 40 sau 60 USD când jocul va fi finisat și complet 😉—. Prețul actual este un cadou pentru că ai avut încredere în mine în această etapă.
+Dacă simți că jocul este prea "verde" pentru tine sau hardware-ul tău suferă prea mult, nimeni nu se va supăra dacă ceri o rambursare. Dimpotrivă, voi fi încântat să te primesc înapoi în viitor — și să plătești 40 sau 60 USD când jocul va fi lustruit și finalizat 😉. Prețul actual este un cadou pentru că ai avut încredere în mine în această etapă.
 
-Acestea fiind spuse, recunoștința mea este infinită pentru cei care decid să rămână. Rapoartele și sugestiile voastre sunt motorul real al acestui proiect. Datorită vouă, jocul s-a îmbunătățit brusc în doar câteva săptămâni.
+Acestea fiind spuse, mulțumirile mele sunt infinite pentru cei care decid să rămână. Rapoartele și sugestiile voastre sunt motorul real al acestui proiect. Datorită vouă, jocul s-a îmbunătățit brutal în câteva săptămâni.
 
-**RolemIAster se construiește personalizat pentru voi.**
+**RolemIAster este construit pe măsură pentru voi.**
 
-*Mulțumesc pentru răbdare, sprijin și ca criticii să fie de partea voastră!*
+*Mulțumim pentru răbdare, sprijin și fie ca criticii să fie de partea voastră!*
 
 *********************************************************************************
-🚧 ZONA DE ȘANTIER: "LOBOTOMIZEZ" IA (PENTRU BINE) 🧠🔧
-Cu ce mă ocup?
-Schimb motorul jocului și nu e lucru ușor.
-Până acum, de fiecare dată când joci o rundă, sistemul trimite IA-ului un "torpedo" de reguli de 15.000 până la 20.000 de tokeni. Practic, e ca și cum ai obliga masterul să citească manualul întreg înainte de fiecare frază. 📚🥵
+#  ACTUALIZARE LA QWEN 3.5 + TURBO QUANT! MOTOR NOU, TEHNOLOGIE NOUĂ, ERA NOUĂ 🚀
+*********************************************************************************
 
-Problema:
-Cu atâtea date dintr-o dată, IA-ul uneori se "îmbată" de context. Se încurcă, inventează limbi, sparge obiecte sau pur și simplu halucinează (faimoasele deliruri). E echivalentul digital al unui "ecran albastru" dar narativ.
+🚧 ZONĂ DE LUCRĂRI: LOBOTOMIE FINALIZATĂ (ȘI FUNCȚIONEAZĂ) 🧠🔧
+La ce lucrez?
+Schimb motorul jocului și nu este un lucru ușor.
+Până acum, de fiecare dată când jucai o tură, sistemul îi arunca AI-ului un "bloc" de reguli de 15.000 până la 20.000 de tokeni. Practic, era ca și cum ai obliga maestrul să citească manualul întreg înainte de fiecare frază. 📚🥵
+Am implementat două tehnologii care lucrează în echipă:
 
-Soluția: Dietă strictă! 🥗
-Reînvăț modelul personal (Fine-Tuning casnic) pentru ca acesta să învețe regulile pe de rost.
+1. 🧠 **TurboQuant — Memoria comprimată**
+   - Am integrat o tehnologie de la Google (prezentată la ICLR 2026) care comprimă memoria AI-ului la aproape o treime din dimensiunea originală.
+   - Dacă ai o placă RTX din seriile 3000, 4000 sau 5000, jocul o va folosi automat.
+   - ⚠️ **NOTĂ IMPORTANTĂ PRIVIND GPU-urile AMD:** DEȘI EXISTĂ INDICAȚII DE FUNCȚIONARE A TURBOQUANT PE PLĂCILE AMD/INTEL (VULKAN), ÎN PRACTICĂ GENEREAZĂ MULTE ERORI ȘI, PRIN URMARE, DEocamDATĂ NU VA FI IMPLEMENTAT. SPERĂM CĂ COMUNITATEA VA FACE PROPRIUL LUCRU ȘI VOM AVEA ÎN CURÂND ȘTIRI.
+   - **Rezultat:** AI-ul își amintește mai mult, consumând mai puțin VRAM. Este pură magie digitală. ✨
 
-Planul: Ca IA-ul să știe deja să joace fără să fie nevoit să citească manualul de fiecare dată.
+2. 📖 **Context masiv (+200%)**
+   - Am rescris calculul memoriei conversaționale în mod chirurgical: acum jocul citește specificațiile tehnice ale fiecărui model și calculează cu precizie cât încape pe GPU-ul tău.
+   - Modelul de 9B trece de la a-și aminti ~36.000 de cuvinte la peste ~110.000 pe un GPU cu 16GB VRAM. 🚀
+   - În plus, am mărit limita de răspuns de la 4.096 la 8.192 de tokeni: narațiuni mai lungi, fără întreruperi la jumătatea frazei.
 
-Obiectivul: Reducerea consumului de la 20k la doar 5k tokeni pe rundă.
-
-Rezultatul: O viteză brutal superioară și o IA mult mai concentrată (și trează). 🚀
+Rezultatul final: O viteză superioară în majoritatea cazurilor, sesiuni de joc lungi care nu pierd firul poveștii, și un AI mult mai concentrat (și sobru). 🎯
 
 Notă de Realitate (Disclaimer 🧐):
-Aceasta este o muncă de inginerie cu risc ridicat: antrenare, testare și securizare. Și să fim sinceri: dacă până și giganții din Silicon Valley (Gemini, ChatGPT...) văd uneori elefanți roz, modelul meu local nu va fi perfect 100% din timp. Dar obiectivul este să treacă de la a fi "tipul beat de la nuntă" la un competent Game Master de Rol.
+Dacă și giganții din Silicon Valley (Gemini, ChatGPT...) văd uneori elefănți roz, modelul meu local nu va fi perfect 100% din timp. Dar nu mai este "tipul beat de la nuntă" — acum este un Maestru de Rol competent, cu memoria unui elefant real. 🐘
 
-Mulțumesc pentru răbdare în timp ce reglez șuruburile! 🛠️✨
+Mulțumim pentru răbdare în timp ce ajustam șuruburile! 🛠️✨
 *********************************************************************************
 
-<!-- source_hash: 5c341f4e -->
+<!-- source_hash: b7968a3e -->

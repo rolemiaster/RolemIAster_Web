@@ -25,27 +25,32 @@ Dicho esto, mi agradecimiento es infinito para los que decidís quedaros. Vuestr
 
 
 *********************************************************************************
-🚧 ZONA DE OBRAS: ESTOY "LOBOTOMIZANDO" A LA IA (PARA BIEN) 🧠🔧
-¿En qué ando metido?
-Estoy cambiando el motor del juego, y no es moco de pavo.
-Hasta ahora, cada vez que juegas un turno, el sistema le lanza a la IA un "tocho" de reglas de 15.000 a 20.000 tokens. Básicamente, es como obligar al máster a leerse el manual entero antes de cada frase. 📚🥵
-
-El problema:
-Con tanto dato de golpe, la IA a veces se "emborracha" de contexto. Se lía, inventa idiomas, rompe objetos o directamente alucina (los famosos delirios). Es el equivalente digital a un "pantallazo azul" pero narrativo.
-
-La Solución: ¡A dieta estricta! 🥗
-Estoy reentrenando al modelo personalmente (Fine-Tuning casero) para que se aprenda las reglas de memoria.
-
-El plan: Que la IA ya sepa jugar sin tener que leerse el manual cada vez.
-
-El objetivo: Bajar el consumo de 20k a solo 5k tokens por turno.
-
-El resultado: Una velocidad brutalmente superior y una IA mucho más centrada (y sobria). 🚀
-
-Nota de Realidad (Disclaimer 🧐):
-Esto es un trabajo de ingeniería triple mortal: entrenar, probar y blindar. Y seamos honestos: si hasta los gigantes de Silicon Valley (Gemini, ChatGPT...) a veces ven elefantes rosas, mi modelo local no va a ser perfecto el 100% de las veces. Pero el objetivo es que pase de ser el "tío borracho de la boda" a un Máster de Rol competente.
-
-¡Gracias por la paciencia mientras ajusto las tuercas! 🛠️✨
+#  ¡ACTUALIZAMOS A QWEN 3.5 + TURBO QUANT! NUEVO MOTOR, NUEVA TECNOLOGÍA, NUEVA ERA 🚀
 *********************************************************************************
 
-<!-- source_hash: 5c341f4e -->
+🚧 ZONA DE OBRAS: LOBOTOMÍA COMPLETADA (Y FUNCIONA) 🧠🔧
+¿En qué ando metido?
+Estoy cambiando el motor del juego, y no es moco de pavo.
+Hasta ahora, cada vez que juegas un turno, el sistema le lanzaba a la IA un "tocho" de reglas de 15.000 a 20.000 tokens. Básicamente, era como obligar al máster a leerse el manual entero antes de cada frase. 📚🥵
+He implementado dos tecnologías que trabajan en equipo:
+
+1. 🧠 **TurboQuant — La memoria comprimida**
+   - Integré una tecnología de Google (presentada en ICLR 2026) que comprime la memoria de la IA a casi un tercio de su tamaño original.
+   - Si tienes una RTX de las series 3000, 4000 o 5000, el juego la aprovechará automáticamente.
+   - ⚠️ **NOTA IMPORTANTE SOBRE GPU AMD:** AUNQUE HAY INDICIOS DE FUNCIONAMIENTO DE TURBO QUANT EN TARJETAS AMD/INTEL (VULKAN), EN LA PRÁCTICA DA MUCHOS FALLOS Y POR TANTO POR AHORA NO SE IMPLEMENTARÁ. ESPERAMOS QUE LA COMUNIDAD HAGA LO PROPIO Y TENGAMOS PRONTO NOVEDADES.
+   - **Resultado:** La IA recuerda más gastando menos VRAM. Es pura magia digital. ✨
+
+2. 📖 **Contexto masivo (+200%)**
+   - Reescribí el cálculo de memoria conversacional de forma quirúrgica: ahora el juego lee las especificaciones técnicas de cada modelo y calcula con precisión cuánto cabe en tu GPU.
+   - El modelo de 9B pasa de recordar ~36.000 palabras a más de ~110.000 en una GPU con 16GB VRAM. 🚀
+   - Además, subí el límite de respuesta de 4.096 a 8.192 tokens: narraciones más largas sin cortes a mitad de frase.
+
+El resultado final: Una velocidad superior en la mayoría de los casos, partidas largas que no pierden el hilo, y una IA mucho más centrada (y sobria). 🎯
+
+Nota de Realidad (Disclaimer 🧐):
+Si hasta los gigantes de Silicon Valley (Gemini, ChatGPT...) a veces ven elefantes rosas, mi modelo local no va a ser perfecto el 100% de las veces. Pero ya no es el "tío borracho de la boda" — ahora es un Máster de Rol competente con memoria de elefante real. 🐘
+
+¡Gracias por la paciencia mientras ajustaba las tuercas! 🛠️✨
+*********************************************************************************
+
+<!-- source_hash: b7968a3e -->
