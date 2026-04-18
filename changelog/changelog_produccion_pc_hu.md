@@ -1,0 +1,13 @@
+****************************************************************************************************
+18/04/2026 04:06 - TurboQuant integráció – Extrém KV Cache tömörítés - EXPERIMENTAL_v061
+****************************************************************************************************
+- What's New (HU):
+  - **🗜️ Új memóriatömörítő motor (TurboQuant)**
+    - 🧠 **Az AI többre emlékszik, kevesebbet költ:** Integráltam egy fejlett tömörítési technológiát (TurboQuant, egy a Google által az ICLR 2026-on bemutatott cikkből), amely lehetővé teszi az AI számára, hogy a "munkamemóriáját" a korábbi méretének közel egyharmadát foglalja el. A gyakorlatban: több hely jut arra, hogy emlékezzen a történetedre, döntéseidre és a játék kontextusára anélkül, hogy a grafikus kártyád panaszkodna.
+    - ⚡ **Kompatibilis a GPU-ddal:** NVIDIA RTX 3000-es, 4000-es és 5000-es sorozatú kártyákon működik. Ha rendelkezel egy ilyen kártyával, a játék automatikusan kihasználja. Ha nem, minden a szokásos módon működik a standard tömörítéssel (ami szintén nem volt rossz).
+    - 🔧 **Vízvezeték munka:** Ez a frissítés az AI motor nulláról történő újrafordítását igényelte, specifikus Windows patch-ekkel. Ez nem valami, amit közvetlenül észrevennél, de ez az alapja a következő verziók kontextusjavításainak. (Igen, sok időt töltöttem veszekedéssel az NVIDIA fordítójával. Nem, nem akarok róla beszélni.)
+  - **🧠 Masszív kontextus optimalizálás (+200%)**
+    - 📖 **Az AI (el)olvassa a háromszorosát:** Teljesen átírtam a számítást, hogy mennyi "beszélgetési memóriát" használhat az AI. Korábban egy konzervatív becslés sok kihasználatlan helyet hagyott. Most a játék közvetlenül olvassa az egyes modellek technikai specifikációit, és pontosan kiszámítja, mennyi kontextus fér el a GPU-don. Eredmény: a 9B modell ~36.000 szóról több mint ~110.000 szóra emlékezik egy 16GB VRAM-os GPU-n. A hosszú játékaid már nem veszítik el a fonalat olyan könnyen, és az alacsony VRAM-mal rendelkezők fagyási problémáinak is meg kellene oldódniuk.
+    - 📝 **Hosszabb válaszok:** A válaszok hosszának limitjét 4.096-ról 8.192 tokenre növeltem. Ez azt jelenti, hogy részletesebb leírások, kidolgozottabb párbeszédek és elbeszélések, amelyek nem szakadnak félbe egy mondat közepén, amikor a dolgok érdekessé válnak.
+    - 🔄 **Minden modellnél működik:** A fejlesztés automatikusan érvényes bármely támogatott modellre (2B, 4B, 9B...). Ha régebbi vagy harmadik féltől származó modellt használsz, minden pontosan ugyanúgy működik, mint korábban — az optimalizálás csak akkor aktiválódik, amikor érzékeli, hogy a modell támogatja azt.
+

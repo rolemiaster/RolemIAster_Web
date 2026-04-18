@@ -1,0 +1,13 @@
+****************************************************************************************************
+18/04/2026 04:06 - Integrazione TurboQuant — Compressione Estrema della KV Cache con - EXPERIMENTAL_v061
+****************************************************************************************************
+- What's New (IT):
+  - **🗜️ Nuovo motore di compressione della memoria (TurboQuant)**
+    - 🧠 **L'IA ricorda di più spendendo meno:** Ho integrato una tecnologia di compressione avanzata (TurboQuant, da un paper di Google presentato a ICLR 2026) che permette all'IA di immagazzinare la sua "memoria di lavoro" occupando quasi un terzo di quanto occupasse prima. In pratica: più spazio per ricordare la tua storia, le tue decisioni e il contesto di gioco senza che la scheda grafica si lamenti.
+    - ⚡ **Compatibile con la tua GPU:** Funziona su schede NVIDIA RTX delle serie 3000, 4000 e 5000. Se ne possiedi una, il gioco la sfrutterà automaticamente. Altrimenti, tutto continuerà a funzionare come prima con la compressione standard (che comunque non era affatto male).
+    - 🔧 **Lavoro di "idraulica" avanzata:** Questo aggiornamento ha richiesto la ricompilazione del motore IA da zero con patch specifiche per Windows. Non è qualcosa che noterai direttamente, ma è la base su cui verranno costruiti i miglioramenti del contesto nelle prossime versioni. (Sì, ho passato un bel po' di tempo a discutere con il compilatore NVIDIA. No, non voglio parlarne.)
+  - **🧠 Ottimizzazione massiva del contesto (+200%)**
+    - 📖 **L'IA legge (e ricorda) il triplo:** Ho riscritto completamente il calcolo di quanta "memoria di conversazione" può usare l'IA. Prima, una stima conservativa lasciava molto spazio inutilizzato. Ora, il gioco legge direttamente le specifiche tecniche di ogni modello e calcola con precisione quanto contesto entra nella tua GPU. Risultato: il modello da 9B passa dal ricordare ~36.000 parole a oltre ~110.000 su una GPU con 16GB di VRAM. Le tue partite lunghe non perderanno più il filo così facilmente e i blocchi per chi ha poca VRAM dovrebbero risolversi.
+    - 📝 **Risposte più lunghe:** Ho aumentato il limite di lunghezza delle risposte dell'IA da 4.096 a 8.192 token. Ciò significa descrizioni più dettagliate, dialoghi più elaborati e narrazioni che non si interrompono a metà frase quando la situazione si fa interessante.
+    - 🔄 **Funziona per tutti i modelli:** Il miglioramento si applica automaticamente a qualsiasi modello supportato (2B, 4B, 9B...). Se usi un modello più vecchio o di terze parti, tutto continuerà a funzionare esattamente come prima — l'ottimizzazione si attiva solo quando rileva che il modello la supporta.
+

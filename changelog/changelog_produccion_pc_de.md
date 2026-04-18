@@ -1,0 +1,13 @@
+****************************************************************************************************
+18/04/2026 04:06 - TurboQuant-Integration — Extreme KV-Cache-Kompression mit - EXPERIMENTAL_v061
+****************************************************************************************************
+- What's New (DE):
+  - **🗜️ Neue Speicherkompressionstechnologie (TurboQuant)**
+    - 🧠 **KI erinnert sich an mehr und verbraucht weniger:** Ich habe eine fortschrittliche Kompressionstechnologie (TurboQuant, aus einem Google-Paper, vorgestellt auf der ICLR 2026) integriert, die es der KI ermöglicht, ihr "Arbeitsgedächtnis" mit fast einem Drittel des bisherigen Speicherbedarfs zu speichern. In der Praxis bedeutet das: mehr Platz, um deine Geschichte, deine Entscheidungen und den Spielkontext zu speichern, ohne dass die Grafikkarte schlappmacht.
+    - ⚡ **Kompatibel mit deiner GPU:** Funktioniert auf NVIDIA RTX-Karten der Serien 3000, 4000 und 5000. Wenn du eine davon besitzt, wird das Spiel sie automatisch nutzen. Andernfalls funktioniert alles wie bisher mit der Standardkompression (die auch nicht schlecht war).
+    - 🔧 **Klempnerarbeit:** Dieses Update erforderte eine vollständige Neukompilierung der KI-Engine mit spezifischen Patches für Windows. Das ist nichts, was du direkt bemerkst, aber es ist die Grundlage für die Kontextverbesserungen in zukünftigen Versionen. (Ja, ich habe viel Zeit damit verbracht, mit dem NVIDIA-Compiler zu diskutieren. Nein, ich möchte nicht darüber reden.)
+  - **🧠 Massive Kontextoptimierung (+200%)**
+    - 📖 **KI liest (und merkt sich) dreimal so viel:** Ich habe die Berechnung, wie viel "Gesprächsgedächtnis" die KI nutzen kann, komplett überarbeitet. Zuvor ließ eine konservative Schätzung viel ungenutzten Speicherplatz übrig. Jetzt liest das Spiel die technischen Spezifikationen jedes Modells direkt aus und berechnet präzise, wie viel Kontext auf deine GPU passt. Ergebnis: Das 9B-Modell kann von ~36.000 Wörtern auf über ~110.000 Wörter auf einer GPU mit 16 GB VRAM umstellen. Deine langen Spiele verlieren nicht mehr so leicht den Faden, und die Abbrüche bei Nutzern mit wenig VRAM sollten behoben sein.
+    - 📝 **Längere Antworten:** Ich habe das Antwortlängenlimit der KI von 4.096 auf 8.192 Tokens erhöht. Das bedeutet detailliertere Beschreibungen, ausgefeiltere Dialoge und Erzählungen, die nicht mitten im Satz abgebrochen werden, wenn es spannend wird.
+    - 🔄 **Funktioniert für alle Modelle:** Die Verbesserung wird automatisch auf jedes unterstützte Modell (2B, 4B, 9B...) angewendet. Wenn du ein älteres oder ein Modell von Drittanbietern verwendest, funktioniert alles genau wie bisher – die Optimierung wird nur aktiviert, wenn das Modell sie unterstützt.
+
