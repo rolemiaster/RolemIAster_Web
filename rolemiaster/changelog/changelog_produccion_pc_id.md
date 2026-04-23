@@ -1,13 +1,19 @@
 ****************************************************************************************************
-18/04/2026 04:06 - Integrasi TurboQuant — Kompresi KV Cache Ekstrim dengan - EXPERIMENTAL_v061
+23/04/2026 03:01 - Perbaikan gameplay - Beta_v061
 ****************************************************************************************************
 - What's New (ID):
-  - **🗜️ Mesin kompresi memori baru (TurboQuant)**
-    - 🧠 **AI mengingat lebih banyak dengan biaya lebih sedikit:** Saya telah mengintegrasikan teknologi kompresi canggih (TurboQuant, dari makalah Google yang dipresentasikan di ICLR 2026) yang memungkinkan AI untuk menyimpan "memori kerja"-nya hanya dengan memakan sepertiga dari ruang yang dibutuhkan sebelumnya. Dalam praktiknya: lebih banyak ruang untuk mengingat riwayat Anda, keputusan Anda, dan konteks permainan tanpa membuat kartu grafis Anda mengeluh.
-    - ⚡ **Kompatibel dengan GPU Anda:** Berfungsi pada kartu NVIDIA RTX seri 3000, 4000, dan 5000. Jika Anda memiliki salah satu dari kartu tersebut, game akan memanfaatkannya secara otomatis. Jika tidak, semuanya akan tetap berfungsi seperti sebelumnya dengan kompresi standar (yang juga tidak buruk).
-    - 🔧 **Pekerjaan perpipaan:** Pembaruan ini memerlukan kompilasi ulang mesin AI dari awal dengan patch khusus untuk Windows. Ini bukan sesuatu yang terlihat secara langsung, tetapi merupakan dasar di mana peningkatan konteks versi mendatang akan dibangun. (Ya, saya menghabiskan banyak waktu berdebat dengan kompilator NVIDIA. Tidak, saya tidak ingin membicarakannya.)
-  - **🧠 Optimasi Konteks Massal (+200%)**
-    - 📖 **AI membaca (dan mengingat) tiga kali lipat:** Saya telah menulis ulang sepenuhnya perhitungan berapa banyak "memori percakapan" yang dapat digunakan AI. Sebelumnya, perkiraan konservatif menyisakan banyak ruang yang tidak terpakai. Sekarang, game membaca langsung spesifikasi teknis setiap model dan secara akurat menghitung berapa banyak konteks yang muat di GPU Anda. Hasilnya: model 9B beralih dari mengingat ~36.000 kata menjadi lebih dari ~110.000 pada GPU dengan 16GB VRAM. Sesi permainan panjang Anda tidak lagi kehilangan alur dengan mudah, dan masalah jeda (freeze) bagi mereka yang memiliki vram terbatas seharusnya teratasi.
-    - 📝 **Respons lebih panjang:** Saya telah meningkatkan batas panjang respons AI dari 4.096 menjadi 8.192 token. Ini berarti deskripsi yang lebih rinci, dialog yang lebih rumit, dan narasi yang tidak terpotong di tengah kalimat ketika keadaan menjadi menarik.
-    - 🔄 **Berfungsi untuk semua model:** Peningkatan diterapkan secara otomatis ke model yang kompatibel (2B, 4B, 9B...). Jika Anda menggunakan model yang lebih lama atau pihak ketiga, semuanya akan tetap berfungsi persis seperti sebelumnya — optimasi hanya aktif ketika mendeteksi bahwa model mendukungnya.
+  - **📖 Eksplorasi dengan tempo yang lebih baik**
+    - Saya telah mencegah giliran eksplorasi membawa aturan dari momen permainan lainnya. Hal ini mengurangi respons yang bertele-tele, pengulangan yang aneh, dan adegan yang sebelumnya terkesan berputar-putar padahal semuanya sudah tersampaikan.
+    - Saya juga telah menyesuaikan nada agar narasi tetap memiliki bobot, namun tanpa harus menulis novel di setiap interaksi.
+  - **🎯 Tombol yang lebih konsisten dengan apa yang terjadi**
+    - Saya telah memperbaiki beberapa kasus di mana AI membiarkan antarmuka menggunakan tombol generik.
+    - Sekarang permainan dapat menangkap rute tersebut dengan lebih baik dan mengubahnya menjadi keputusan nyata, sehingga seharusnya tidak ada lagi momen “bagus sekali, tapi harus klik di mana”.
+  - **🦾 Cyberpunk kembali terdengar dan berfungsi seperti cyberpunk**
+    - Saya telah memperbaiki pencampuran latar yang terkadang memasukkan elemen abad pertengahan saat membuat karakter di dunia cyberpunk.
+    - Saya juga telah memperbaiki Kemanusiaan (Humanity) agar kembali dihitung dan ditampilkan sebagaimana mestinya, bahkan di dunia dengan nama khusus. Jika karakter memiliki implan, permainan seharusnya tidak lagi memperlakukannya seolah masalah terbesarnya adalah kehabisan mana.
+  - **💰 Perdagangan yang lebih andal**
+    - Saya telah memastikan pedagang yang dinarasikan sebagai pedagang kini dikenali dengan benar sebagai penjual oleh sistem, sehingga menghindari kebuntuan konyol saat membuka toko.
+    - Selain itu, saat menjual barang ke pedagang generik, harganya kembali normal dan bukan tawaran yang membuat Anda ingin menyarungkan pedang dan pergi begitu saja.
+  - **🎬 Awal permainan yang lebih konsisten**
+    - Saya telah memperkuat konsistensi adegan pembuka saat permainan menghadirkan seseorang secara fisik di depan karakter, untuk mengurangi kasus di mana narasi mengisyaratkan kehadiran yang jelas namun sistem tidak mendukungnya dengan baik di latar belakang.
 

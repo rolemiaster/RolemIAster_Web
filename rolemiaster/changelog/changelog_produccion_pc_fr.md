@@ -1,13 +1,19 @@
 ****************************************************************************************************
-18/04/2026 04:06 - Intégration TurboQuant — Compression extrême du KV Cache avec - EXPERIMENTAL_v061
+23/04/2026 03:01 - Corrections de gameplay - Beta_v061
 ****************************************************************************************************
 - What's New (FR):
-  - **🗜️ Nouveau moteur de compression mémoire (TurboQuant)**
-    - 🧠 **L'IA se souvient de plus en dépensant moins :** J'ai intégré une technologie de compression avancée (TurboQuant, issue d'un article de Google présenté à l'ICLR 2026) qui permet à l'IA de stocker sa « mémoire de travail » en occupant près d'un tiers de l'espace précédent. En pratique : plus de place pour se souvenir de votre histoire, de vos décisions et du contexte de la partie sans que la carte graphique ne se plaigne.
-    - ⚡ **Compatible avec votre GPU :** Fonctionne sur les cartes NVIDIA RTX des séries 3000, 4000 et 5000. Si vous en possédez une, le jeu en profitera automatiquement. Sinon, tout continuera de fonctionner comme avant avec la compression standard (qui n'était pas mal non plus).
-    - 🔧 **Travail de plomberie :** Cette mise à jour a nécessité une recompilation du moteur d'IA depuis zéro avec des correctifs spécifiques pour Windows. Ce n'est pas quelque chose que vous remarquerez directement, mais c'est la base sur laquelle seront construites les améliorations de contexte des prochaines versions. (Oui, j'ai passé un bon moment à discuter avec le compilateur NVIDIA. Non, je ne souhaite pas en parler.)
-  - **🧠 Optimisation massive du contexte (+200%)**
-    - 📖 **L'IA lit (et se souvient de) trois fois plus :** J'ai réécrit entièrement le calcul de la quantité de « mémoire conversationnelle » que l'IA peut utiliser. Auparavant, une estimation conservatrice laissait beaucoup d'espace inexploité. Désormais, le jeu lit directement les spécifications techniques de chaque modèle et calcule précisément la quantité de contexte qui rentre dans votre GPU. Résultat : le modèle 9B passe de ~36 000 mots à plus de ~110 000 mots sur un GPU avec 16 Go de VRAM. Vos longues parties ne perdent plus le fil aussi facilement et les blocages pour ceux qui ont peu de VRAM devraient être résolus.
-    - 📝 **Réponses plus longues :** J'ai augmenté la limite de longueur de réponse de l'IA de 4 096 à 8 192 tokens. Cela signifie des descriptions plus détaillées, des dialogues plus élaborés et des récits qui ne sont pas coupés en plein milieu d'une phrase lorsque les choses deviennent intéressantes.
-    - 🔄 **Fonctionne pour tous les modèles :** L'amélioration s'applique automatiquement à tout modèle compatible (2B, 4B, 9B...). Si vous utilisez un modèle plus ancien ou tiers, tout continue de fonctionner exactement comme avant — l'optimisation ne s'active que lorsqu'elle détecte que le modèle la prend en charge.
+  - **📖 Exploration au rythme amélioré**
+    - J'ai empêché les tours d'exploration d'hériter de règles provenant d'autres moments du jeu. Cela réduit les réponses trop longues, les répétitions étranges et les scènes qui semblaient s'éterniser alors que tout avait déjà été dit.
+    - J'ai également ajusté le ton pour que la narration conserve sa consistance, sans pour autant écrire un roman à chaque interaction.
+  - **🎯 Boutons plus cohérents avec le contexte**
+    - J'ai corrigé plusieurs cas où l'IA laissait l'interface se reposer sur des boutons génériques.
+    - Le jeu récupère désormais mieux ces chemins pour les transformer en véritables décisions ; il devrait donc y avoir moins de moments du type « tout ça est très joli, mais sur quoi suis-je censé cliquer ? ».
+  - **🦾 Le cyberpunk retrouve son âme et ses mécaniques**
+    - J'ai corrigé le mélange d'ambiances qui pouvait insérer des éléments médiévaux lors de la création de personnages dans des mondes cyberpunk.
+    - J'ai également corrigé l'Humanité pour qu'elle soit à nouveau calculée et affichée correctement, même dans les mondes avec un nom propre. Si un personnage possède des implants, le jeu ne devrait plus le traiter comme si son problème principal était de manquer de mana.
+  - **💰 Commerce plus fiable**
+    - J'ai fait en sorte qu'un marchand décrit comme tel soit à nouveau correctement reconnu comme vendeur par le système, évitant ainsi des blocages absurdes lors de l'ouverture d'une boutique.
+    - De plus, lors de la vente d'objets à un marchand générique, le prix est de nouveau correct et ne ressemble plus à une offre qui donne envie de rengainer son épée et de partir en silence.
+  - **🎬 Débuts de partie plus cohérents**
+    - J'ai renforcé la cohérence des scènes initiales lorsque le jeu présente physiquement quelqu'un face au personnage, afin de réduire les cas où la narration suggérait une présence claire sans que le système ne l'appuie correctement en arrière-plan.
 

@@ -1,13 +1,19 @@
 ****************************************************************************************************
-18/04/2026 04:06 - Integrace TurboQuant — Extrémní komprese KV Cache s - EXPERIMENTAL_v061
+23/04/2026 03:01 - Opravy hratelnosti - Beta_v061
 ****************************************************************************************************
 - What's New (CS):
-  - **🗜️ Nový kompresní engine paměti (TurboQuant)**
-    - 🧠 **AI si pamatuje více a utrácí méně:** Integroval jsem pokročilou kompresní technologii (TurboQuant, z publikace Google prezentované na ICLR 2026), která umožňuje AI ukládat svou "pracovní paměť" s téměř třetinovou spotřebou oproti dřívějšku. V praxi to znamená: více prostoru pro zapamatování si vaší historie, rozhodnutí a kontextu hry, aniž by si grafická karta stěžovala.
-    - ⚡ **Kompatibilní s vaší GPU:** Funguje na kartách NVIDIA RTX sérií 3000, 4000 a 5000. Pokud máte jednu z nich, hra ji automaticky využije. Pokud ne, vše funguje jako dříve se standardní kompresí (která také nebyla špatná).
-    - 🔧 **Instalatérská práce:** Tato aktualizace vyžadovala přeložení AI enginu od nuly se specifickými záplatami pro Windows. Není to něco, čeho byste si přímo všimli, ale je to základ, na kterém budou stavěna vylepšení kontextu v budoucích verzích. (Ano, strávil jsem hodně času hádkami s kompilátorem NVIDIA. Ne, nechci o tom mluvit.)
-  - **🧠 Masivní optimalizace kontextu (+200 %)**
-    - 📖 **AI čte (a pamatuje si) trojnásobně:** Zcela jsem přepsal výpočet toho, kolik "paměti konverzace" může AI využít. Dříve konzervativní odhad ponechával spoustu nevyužitého prostoru. Nyní hra přímo čte technické specifikace každého modelu a přesně vypočítá, kolik kontextu se na vaši GPU vejde. Výsledek: model 9B přejde z paměti ~36 000 slov na více než ~110 000 slov na GPU s 16 GB VRAM. Vaše dlouhé hry už tak snadno neztratí nit a problémy s nízkou VRAM by se měly vyřešit.
-    - 📝 **Delší odpovědi:** Zvýšil jsem limit délky odpovědi AI z 4 096 na 8 192 tokenů. To znamená podrobnější popisy, propracovanější dialogy a příběhy, které se nepřeruší uprostřed věty, když se to začne zajímavě vyvíjet.
-    - 🔄 **Funguje pro všechny modely:** Vylepšení se automaticky aplikuje na jakýkoli podporovaný model (2B, 4B, 9B...). Pokud používáte starší nebo model třetí strany, vše funguje přesně jako dříve — optimalizace se aktivuje pouze tehdy, když detekuje, že ji model podporuje.
+  - **📖 Průzkum s lepším tempem**
+    - Zamezil jsem tomu, aby průzkumné tahy přebíraly pravidla z jiných částí hry. To snižuje nadbytečné odpovědi, podivná opakování a scény, které dříve působily dojmem, že chtějí pokračovat dál, i když už bylo vše řečeno.
+    - Také jsem vyladil tón tak, aby si vyprávění zachovalo svou hloubku, ale přitom se nesnažilo v každé interakci napsat celý román.
+  - **🎯 Tlačítka, která lépe odpovídají situaci**
+    - Opravil jsem několik případů, kdy AI nechala rozhraní využívat generická tlačítka.
+    - Hra nyní lépe rozpozná tyto cesty a přetvoří je ve skutečná rozhodnutí, takže by mělo být méně momentů, kdy si říkáte: „všechno hezké, ale na co mám sakra kliknout“.
+  - **🦾 Kyberpunk opět zní a funguje jako kyberpunk**
+    - Opravil jsem mixování prostředí, které mohlo při tvorbě postav ve světech kyberpunku zahrnout středověké prvky.
+    - Také jsem opravil ukazatel Lidskosti, aby se opět správně vypočítával a zobrazoval, a to i ve světech s vlastním jménem. Pokud má postava implantáty, hra by se k ní už neměla chovat, jako by jejím největším problémem byl nedostatek many.
+  - **💰 Spolehlivější obchodování**
+    - Zajistil jsem, aby obchodník, který je takto vykreslen v příběhu, byl systémem správně rozpoznán jako prodejce, čímž se předchází absurdním blokacím při otevření obchodu.
+    - Navíc při prodeji předmětů generickému obchodníkovi je cena opět správná a nejedná se o nabídku, která vás nutí raději tasit meč a v tichosti odejít.
+  - **🎬 Konzistentnější začátky hry**
+    - Posílil jsem koherenci úvodních scén, kdy hra někoho fyzicky představí před postavou, abych omezil případy, kdy příběh naznačoval jasnou přítomnost, ale systém ji pod kapotou nedokázal dostatečně podpořit.
 

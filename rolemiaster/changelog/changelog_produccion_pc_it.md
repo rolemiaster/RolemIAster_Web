@@ -1,13 +1,19 @@
 ****************************************************************************************************
-18/04/2026 04:06 - Integrazione TurboQuant — Compressione Estrema della KV Cache con - EXPERIMENTAL_v061
+23/04/2026 03:01 - Correzioni di gameplay - Beta_v061
 ****************************************************************************************************
 - What's New (IT):
-  - **🗜️ Nuovo motore di compressione della memoria (TurboQuant)**
-    - 🧠 **L'IA ricorda di più spendendo meno:** Ho integrato una tecnologia di compressione avanzata (TurboQuant, da un paper di Google presentato a ICLR 2026) che permette all'IA di immagazzinare la sua "memoria di lavoro" occupando quasi un terzo di quanto occupasse prima. In pratica: più spazio per ricordare la tua storia, le tue decisioni e il contesto di gioco senza che la scheda grafica si lamenti.
-    - ⚡ **Compatibile con la tua GPU:** Funziona su schede NVIDIA RTX delle serie 3000, 4000 e 5000. Se ne possiedi una, il gioco la sfrutterà automaticamente. Altrimenti, tutto continuerà a funzionare come prima con la compressione standard (che comunque non era affatto male).
-    - 🔧 **Lavoro di "idraulica" avanzata:** Questo aggiornamento ha richiesto la ricompilazione del motore IA da zero con patch specifiche per Windows. Non è qualcosa che noterai direttamente, ma è la base su cui verranno costruiti i miglioramenti del contesto nelle prossime versioni. (Sì, ho passato un bel po' di tempo a discutere con il compilatore NVIDIA. No, non voglio parlarne.)
-  - **🧠 Ottimizzazione massiva del contesto (+200%)**
-    - 📖 **L'IA legge (e ricorda) il triplo:** Ho riscritto completamente il calcolo di quanta "memoria di conversazione" può usare l'IA. Prima, una stima conservativa lasciava molto spazio inutilizzato. Ora, il gioco legge direttamente le specifiche tecniche di ogni modello e calcola con precisione quanto contesto entra nella tua GPU. Risultato: il modello da 9B passa dal ricordare ~36.000 parole a oltre ~110.000 su una GPU con 16GB di VRAM. Le tue partite lunghe non perderanno più il filo così facilmente e i blocchi per chi ha poca VRAM dovrebbero risolversi.
-    - 📝 **Risposte più lunghe:** Ho aumentato il limite di lunghezza delle risposte dell'IA da 4.096 a 8.192 token. Ciò significa descrizioni più dettagliate, dialoghi più elaborati e narrazioni che non si interrompono a metà frase quando la situazione si fa interessante.
-    - 🔄 **Funziona per tutti i modelli:** Il miglioramento si applica automaticamente a qualsiasi modello supportato (2B, 4B, 9B...). Se usi un modello più vecchio o di terze parti, tutto continuerà a funzionare esattamente come prima — l'ottimizzazione si attiva solo quando rileva che il modello la supporta.
+  - **📖 Esplorazione con un ritmo migliore**
+    - Ho fatto in modo che i turni di esplorazione non trascendessero regole di altri momenti di gioco. Ciò riduce risposte gonfiate, ripetizioni insolite e scene che prima sembravano determinate a fare un altro giro quando ormai era tutto detto.
+    - Ho anche affinato il tono in modo che la narrazione mantenga il suo spessore, senza però trasformarsi nella scrittura di un romanzo per ogni interazione.
+  - **🎯 Pulsanti più coerenti con ciò che sta accadendo**
+    - Ho corretto diversi casi in cui l'IA lasciava l'interfaccia con pulsanti generici.
+    - Ora il gioco recupera meglio questi percorsi e li trasforma in decisioni reali, quindi dovrebbero esserci meno momenti di "bello tutto, ma dove diavolo clicco".
+  - **🦾 Cyberpunk suona e funziona di nuovo come cyberpunk**
+    - Ho corretto il mix di ambientazione che poteva inserire elementi medievali nella creazione di personaggi in mondi cyberpunk.
+    - Ho anche sistemato l'Umanità in modo che venga ricalcolata e visualizzata correttamente, anche in mondi con nomi propri. Se un personaggio porta impianti, il gioco non dovrebbe più trattarlo come se il suo problema più grande fosse rimanere senza mana.
+  - **💰 Commercio più affidabile**
+    - Ho fatto in modo che un mercante narrato come tale venga nuovamente riconosciuto correttamente come venditore dal sistema, evitando blocchi assurdi all'apertura di un commercio.
+    - Inoltre, vendendo oggetti al mercante generico, il prezzo torna ad essere corretto e non un'offerta di quelle che invitano a riporre la spada e andarsene in silenzio.
+  - **🎬 Avvii di partita più coerenti**
+    - Ho rafforzato la coerenza delle scene iniziali quando il gioco presenta qualcuno fisicamente di fronte al personaggio, per ridurre i casi in cui la narrazione suggeriva una presenza chiara ma il sistema non la supportava adeguatamente.
 

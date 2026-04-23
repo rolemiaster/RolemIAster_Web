@@ -1,13 +1,19 @@
 ****************************************************************************************************
-18/04/2026 04:06 - TurboQuant-integration — Extrem komprimering av KV Cache med - EXPERIMENTAL_v061
+23/04/2026 03:01 - Spelbarhetskorrigeringar - Beta_v061
 ****************************************************************************************************
 - What's New (SV):
-  - **🗜️ Ny motor för minneskomprimering (TurboQuant)**
-    - 🧠 **AI minns mer, spenderar mindre:** Jag har integrerat avancerad kompressionsteknik (TurboQuant, från ett Google-papper presenterat på ICLR 2026) som gör att AI:n kan lagra sitt "arbetsminne" och uppta nästan en tredjedel av vad det tog tidigare. I praktiken: mer utrymme för att komma ihåg din historia, dina beslut och spelets kontext utan att grafikkortet klagar.
-    - ⚡ **Kompatibel med din GPU:** Fungerar på NVIDIA RTX-kort i serierna 3000, 4000 och 5000. Om du har ett av dessa kommer spelet automatiskt att utnyttja det. Om inte, fortsätter allt att fungera som förut med standardkomprimering (som inte heller var dålig).
-    - 🔧 **Rörläggningsarbete:** Denna uppdatering krävde en fullständig omkompilering av AI-motorn med specifika patchar för Windows. Det är inget du märker direkt, men det är grunden som de kommande versionernas kontextförbättringar kommer att byggas på. (Ja, jag tillbringade en bra stund med att tjafsa med NVIDIAs kompilator. Nej, jag vill inte prata om det.)
-  - **🧠 Massiv kontextoptimering (+200%)**
-    - 📖 **AI läser (och minns) tre gånger mer:** Jag har helt skrivit om beräkningen av hur mycket "konversationsminne" AI:n kan använda. Tidigare lämnade en konservativ uppskattning mycket outnyttjat utrymme. Nu läser spelet direkt de tekniska specifikationerna för varje modell och beräknar exakt hur mycket kontext som får plats på din GPU. Resultat: 9B-modellen går från att minnas ~36 000 ord till över ~110 000 på en GPU med 16 GB VRAM. Dina långa spelomgångar tappar inte tråden lika lätt, och frysningar för de med lite vram bör lösas.
-    - 📝 **Längre svar:** Jag har ökat gränsen för AI:ns svarstext från 4 096 till 8 192 tokens. Det innebär mer detaljerade beskrivningar, mer utarbetade dialoger och berättelser som inte avbryts mitt i en mening när det blir intressant.
-    - 🔄 **Fungerar för alla modeller:** Förbättringen tillämpas automatiskt på alla kompatibla modeller (2B, 4B, 9B...). Om du använder en äldre modell eller en tredjepartsmodell fortsätter allt att fungera precis som förut – optimeringen aktiveras bara när den upptäcker att modellen stöder den.
+  - **📖 Utforskning med bättre tempo**
+    - Jag har förhindrat att utforskningsturner drar med sig regler från andra delar av spelet. Det minskar uppblåsta svar, sällsynta upprepningar och scener som tidigare verkade envisas med att ta ytterligare ett varv när allt redan var sagt.
+    - Jag har också finjusterat tonen så att berättandet fortfarande har substans, men utan att förvandlas till en roman i varje interaktion.
+  - **🎯 Knappar som stämmer bättre med vad som händer**
+    - Jag har korrigerat flera fall där AI:n lämnade gränssnittet med generiska knappar.
+    - Spelet återhämtar nu dessa vägar bättre och omvandlar dem till faktiska beslut, så det borde vara färre stunder av "allt är vackert, men var i helvete ska jag klicka".
+  - **🦾 Cyberpunk låter och fungerar som cyberpunk igen**
+    - Jag har korrigerat blandningen av atmosfär som kunde införa medeltida element vid skapandet av karaktärer i cyberpunk-världar.
+    - Jag har också fixat Mänskligheten så att den beräknas och visas korrekt igen, även i världar med egna namn. Om en karaktär har implantat, bör spelet inte längre behandla dem som om deras största problem var att få slut på mana.
+  - **💰 Mer pålitlig handel**
+    - Jag har sett till att en köpman som beskrivs som sådan återigen känns igen korrekt som säljare av systemet, vilket förhindrar absurda blockeringar vid handel.
+    - Dessutom, när man säljer föremål till en generell köpman, är priset nu korrekt igen och inte ett erbjudande som inbjuder till att spara svärdet och tyst lämna.
+  - **🎬 Mer konsekventa startsekvenser**
+    - Jag har förstärkt konsekvensen i inledande scener när spelet presenterar någon fysiskt framför karaktären, för att minska fall där berättelsen antydde en tydlig närvaro men systemet inte stödde den ordentligt under ytan.
 

@@ -1,13 +1,19 @@
 ****************************************************************************************************
-18/04/2026 04:06 - Integración TurboQuant — Compresión Extrema de KV Cache con - EXPERIMENTAL_v061
+23/04/2026 03:01 - Correcciones de jugabilidad - Beta_v061
 ****************************************************************************************************
 - What's New (ES-419):
-  - **🗜️ Nuevo motor de compresión de memoria (TurboQuant)**
-    - 🧠 **La IA recuerda más gastando menos:** He integrado una tecnología de compresión avanzada (TurboQuant, de un paper de Google presentado en ICLR 2026) que permite a la IA almacenar su "memoria de trabajo" ocupando casi un tercio de lo que ocupaba antes. En la práctica: más espacio para recordar tu historia, tus decisiones y el contexto de la partida sin que la tarjeta gráfica se queje.
-    - ⚡ **Compatible con tu GPU:** Funciona en tarjetas NVIDIA RTX de las series 3000, 4000 y 5000. Si tienes una de esas, el juego la aprovechará automáticamente. Si no, todo sigue funcionando como antes con la compresión estándar (que tampoco estaba nada mal).
-    - 🔧 **Trabajo de fontanería:** Esta actualización ha requerido recompilar el motor de IA desde cero con parches específicos para Windows. No es algo que se note directamente, pero es la base sobre la que se construirán las mejoras de contexto de las próximas versiones. (Sí, he pasado un buen rato discutiendo con el compilador de NVIDIA. No, no quiero hablar de ello.)
-  - **🧠 Optimización masiva de contexto (+200%)**
-    - 📖 **La IA lee (y recuerda) el triple:** He reescrito por completo el cálculo de cuánta "memoria de conversación" puede usar la IA. Antes, una estimación conservadora dejaba mucho espacio sin aprovechar. Ahora, el juego lee directamente las especificaciones técnicas de cada modelo y calcula con precisión cuánto contexto cabe en tu GPU. Resultado: el modelo de 9B pasa de recordar ~36.000 palabras a más de ~110.000 en una GPU con 16GB VRAM. Tus partidas largas ya no pierden el hilo tan fácilmente y los bloqueos para los que tienen poca vram se deberían solucionar.
-    - 📝 **Respuestas más largas:** He aumentado el límite de longitud de respuesta de la IA de 4.096 a 8.192 tokens. Esto significa descripciones más detalladas, diálogos más elaborados y narraciones que no se cortan a mitad de frase cuando la cosa se pone interesante.
-    - 🔄 **Funciona para todos los modelos:** La mejora se aplica automáticamente a cualquier modelo compatible (2B, 4B, 9B...). Si usas un modelo más antiguo o de terceros, todo sigue funcionando exactamente igual que antes — la optimización solo se activa cuando detecta que el modelo la soporta.
+  - **📖 Exploración con mejor ritmo**
+    - He evitado que los turnos de exploración arrastren reglas de otros momentos del juego. Esto reduce respuestas redundantes, repeticiones extrañas y escenas que antes parecían empeñadas en extenderse cuando ya estaba todo dicho.
+    - También he ajustado el tono para que la narración siga teniendo peso, pero sin redactar una novela en cada interacción.
+  - **🎯 Botones más coherentes con la situación**
+    - He corregido varios casos en los que la IA dejaba a la interfaz con botones genéricos.
+    - Ahora el juego recupera mejor esas rutas y las convierte en decisiones reales, así que debería haber menos momentos de "todo muy bonito, pero ¿dónde demonios pulso?".
+  - **🦾 Cyberpunk vuelve a sonar y funcionar como cyberpunk**
+    - He corregido la mezcla de ambientación que podía introducir elementos medievales al crear personajes en mundos cyberpunk.
+    - También he arreglado el cálculo y visualización de la Humanidad, incluso en mundos con nombre propio. Si un personaje lleva implantes, el juego ya no debería tratarlo como si su mayor problema fuera quedarse sin maná.
+  - **💰 Comercio más fiable**
+    - He hecho que un mercader narrado como tal sea reconocido correctamente como vendedor por el sistema, evitando bloqueos absurdos al intentar comerciar.
+    - Además, al vender objetos al comerciante genérico, el precio vuelve a ser el correcto y no una oferta de esas que invitan a guardar la espada y marcharse en silencio.
+  - **🎬 Arranques de partida más consistentes**
+    - He reforzado la coherencia de las escenas iniciales cuando el juego presenta a alguien físicamente frente al personaje, para reducir casos en los que la narración sugería una presencia clara pero el sistema no la respaldaba adecuadamente.
 

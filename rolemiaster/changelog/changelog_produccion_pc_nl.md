@@ -1,13 +1,19 @@
 ****************************************************************************************************
-18/04/2026 04:06 - Integración TurboQuant — Extrema Compresión de KV Cache con - EXPERIMENTAL_v061
+23/04/2026 03:01 - Gameplay-correcties - Beta_v061
 ****************************************************************************************************
 - What's New (NL):
-  - **🗜️ Nuevo motor de compresión de memoria (TurboQuant)**
-    - 🧠 **La IA recuerda más gastando menos:** He integrado una tecnología de compresión avanzada (TurboQuant, de un paper de Google presentado en ICLR 2026) que permite a la IA almacenar su "memoria de trabajo" ocupando casi un tercio de lo que ocupaba antes. En la práctica: más espacio para recordar tu historia, tus decisiones y el contexto de la partida sin que la tarjeta gráfica se queje.
-    - ⚡ **Compatible con tu GPU:** Funciona en tarjetas NVIDIA RTX de las series 3000, 4000 y 5000. Si tienes una de esas, el juego la aprovechará automáticamente. Si no, todo sigue funcionando como antes con la compresión estándar (que tampoco estaba nada mal).
-    - 🔧 **Trabajo de fontanería:** Esta actualización ha requerido recompilar el motor de IA desde cero con parches específicos para Windows. No es algo que se note directamente, pero es la base sobre la que se construirán las mejoras de contexto de las próximas versiones. (Sí, he pasado un buen rato discutiendo con el compilador de NVIDIA. No, no quiero hablar de ello.)
-  - **🧠 Optimización masiva de contexto (+200%)**
-    - 📖 **La IA lee (y recuerda) el triple:** He reescrito por completo el cálculo de cuánta "memoria de conversación" puede usar la IA. Antes, una estimación conservadora dejaba mucho espacio sin aprovechar. Ahora, el juego lee directamente las especificaciones técnicas de cada modelo y calcula con precisión cuánto contexto cabe en tu GPU. Resultado: el modelo de 9B pasa de recordar ~36.000 palabras a más de ~110.000 en una GPU con 16GB VRAM. Tus partidas largas ya no pierden el hilo tan fácilmente y los bloqueos para los que tienen poca vram se deberían solucionar.
-    - 📝 **Respuestas más largas:** He aumentado el límite de longitud de respuesta de la IA de 4.096 a 8.192 tokens. Esto significa descripciones más detalladas, diálogos más elaborados y narraciones que no se cortan a mitad de frase cuando la cosa se pone interesante.
-    - 🔄 **Funciona para todos los modelos:** La mejora se aplica automáticamente a cualquier modelo compatible (2B, 4B, 9B...). Si usas un modelo más antiguo o de terceros, todo sigue funcionando exactamente igual que antes — la optimización solo se activa cuando detecta que el modelo la soporta.
+  - **📖 Verkenning met een beter tempo**
+    - Ik heb voorkomen dat verkenningsbeurten regels uit andere spelfases overnemen. Dit vermindert opgeblazen reacties, vreemde herhalingen en scènes die voorheen bleven doorgaan terwijl alles al gezegd was.
+    - Ik heb ook de toon aangescherpt, zodat het verhaal inhoudelijk blijft zonder bij elke interactie een halve roman te schrijven.
+  - **🎯 Knoppen die beter aansluiten bij wat er gebeurt**
+    - Ik heb diverse gevallen opgelost waarin de AI de interface liet vastzitten op generieke knoppen.
+    - Het spel herstelt nu beter de juiste paden en zet deze om in echte beslissingen, dus er zouden minder momenten moeten zijn van "leuk allemaal, maar waar moet ik in hemelsnaam op klikken".
+  - **🦾 Cyberpunk klinkt en werkt weer als cyberpunk**
+    - Ik heb de fout in de sfeerinstellingen verholpen die ervoor kon zorgen dat er middeleeuwse elementen in cyberpunk-personages slopen.
+    - Ook heb ik de Menselijkheid hersteld, zodat deze weer correct wordt berekend en weergegeven, zelfs in werelden met een eigen naam. Als een personage implantaten heeft, zou het spel deze niet langer moeten behandelen alsof zijn grootste probleem een tekort aan mana is.
+  - **💰 Betrouwbaardere handel**
+    - Ik heb ervoor gezorgd dat een handelaar die als zodanig wordt beschreven weer correct door het systeem wordt herkend als verkoper, waardoor absurde blokkades bij het openen van een winkel worden voorkomen.
+    - Daarnaast is de prijs bij het verkopen van items aan de generieke handelaar weer correct, in plaats van die belachelijke aanbiedingen waarbij je je zwaard zou willen trekken en stilletjes zou vertrekken.
+  - **🎬 Consistente starts van het spel**
+    - Ik heb de consistentie van de beginscènes versterkt wanneer het spel iemand fysiek voor het personage introduceert, om situaties te verminderen waarin het verhaal een duidelijke aanwezigheid suggereerde, maar het systeem dit onderhuids niet goed ondersteunde.
 

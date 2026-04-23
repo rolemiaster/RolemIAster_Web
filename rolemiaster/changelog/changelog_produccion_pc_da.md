@@ -1,13 +1,19 @@
 ****************************************************************************************************
-18/04/2026 04:06 - TurboQuant Integration — Extreme KV Cache Compression with - EXPERIMENTAL_v061
+23/04/2026 03:01 - Gameplay-rettelser - Beta_v061
 ****************************************************************************************************
 - What's New (DA):
-  - **🗜️ Ny hukommelseskomprimeringsmotor (TurboQuant)**
-    - 🧠 **AI husker mere for mindre:** Jeg har integreret en avanceret kompressionsteknologi (TurboQuant, fra et Google-forskningspapir præsenteret på ICLR 2026), der gør det muligt for AI'en at gemme sit "arbejdshukommelse" med næsten en tredjedel af den plads, det tidligere optog. I praksis betyder det: mere plads til at huske din historie, dine valg og spillets kontekst, uden at grafikkortet klager.
-    - ⚡ **Kompatibel med din GPU:** Fungerer på NVIDIA RTX grafikkort i serierne 3000, 4000 og 5000. Hvis du har et af disse, vil spillet automatisk udnytte det. Ellers fortsætter alt med at fungere som før med standardkomprimering (som heller ikke var dårlig).
-    - 🔧 **VVS-arbejde:** Denne opdatering har krævet en fuldstændig genkompilering af AI-motoren med specifikke patches til Windows. Det er ikke noget, du direkte vil bemærke, men det er grundlaget, hvorpå fremtidige forbedringer af kontekst i de kommende versioner vil blive bygget. (Ja, jeg har brugt lang tid på at diskutere med NVIDIAs compiler. Nej, jeg ønsker ikke at tale om det.)
-  - **🧠 Massiv kontekstoptimering (+200%)**
-    - 📖 **AI læser (og husker) tre gange så meget:** Jeg har fuldstændig omskrevet beregningen af, hvor meget "samtalehukommelse" AI'en kan bruge. Før lod en konservativ estimering meget plads uudnyttet. Nu læser spillet direkte de tekniske specifikationer for hver model og beregner præcist, hvor meget kontekst der passer på din GPU. Resultat: 9B-modellen går fra at huske ~36.000 ord til over ~110.000 på en GPU med 16 GB VRAM. Dine lange spilsessioner mister ikke længere tråden så let, og nedlukninger for dem med begrænset VRAM burde blive løst.
-    - 📝 **Længere svar:** Jeg har øget AI'ens svarlængde-grænse fra 4.096 til 8.192 tokens. Dette betyder mere detaljerede beskrivelser, mere udarbejdede dialoger og fortællinger, der ikke bliver afbrudt midt i en sætning, når det hele bliver interessant.
-    - 🔄 **Fungerer for alle modeller:** Forbedringen anvendes automatisk på enhver kompatibel model (2B, 4B, 9B...). Hvis du bruger en ældre eller tredjepartsmodel, fortsætter alt præcis som før – optimeringen aktiveres kun, når den registrerer, at modellen understøtter den.
+  - **📖 Mere velafbalanceret udforskning**
+    - Jeg har forhindret udforskningsture i at trække regler med fra andre dele af spillet. Det reducerer oppustede svar, mærkelige gentagelser og scener, der før virkede fast besluttede på at tage en ekstra runde, når alt allerede var sagt.
+    - Jeg har også finjusteret tonen, så fortællingen stadig har substans, uden at det føles som om, vi skriver en roman ved hver interaktion.
+  - **🎯 Knapper der passer bedre til situationen**
+    - Jeg har rettet flere tilfælde, hvor AI'en efterlod interfacet med generiske knapper.
+    - Nu genkender spillet disse stier bedre og omdanner dem til reelle valg, så der burde være færre øjeblikke af “rigtig fint alt sammen, men hvor pokker trykker jeg henne?”.
+  - **🦾 Cyberpunk lyder og fungerer igen som cyberpunk**
+    - Jeg har rettet blandingen af settings, der kunne snige middelalderlige elementer ind, når man skaber figurer i cyberpunk-verdener.
+    - Jeg har også fikset Humanity (menneskelighed), så den beregnes og vises korrekt igen, selv i verdener med deres egne navne. Hvis en figur har implantater, bør spillet ikke længere behandle dem, som om deres største problem er at løbe tør for mana.
+  - **💰 Mere pålidelig handel**
+    - Jeg har sørget for, at en købmand, der er beskrevet som sådan, igen bliver korrekt genkendt som sælger af systemet, hvilket undgår absurde blokeringer ved åbning af handel.
+    - Desuden er prisen ved salg af genstande til den generiske købmand nu korrekt igen, fremfor de tilbud der mest af alt indbyder til at stikke sværdet i skeden og gå i stilhed.
+  - **🎬 Mere konsistent start på spillet**
+    - Jeg har styrket sammenhængen i startscenerne, når spillet præsenterer nogen fysisk foran figuren, for at reducere tilfælde, hvor fortællingen antydede en klar tilstedeværelse, men hvor systemet ikke understøttede det ordentligt i baggrunden.
 

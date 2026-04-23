@@ -1,13 +1,19 @@
 ****************************************************************************************************
-18/04/2026 04:06 - Tích hợp TurboQuant — Nén KV Cache Cực Đại với - EXPERIMENTAL_v061
+23/04/2026 03:01 - Sửa lỗi lối chơi - Beta_v061
 ****************************************************************************************************
 - What's New (VI):
-  - **🗜️ Công cụ nén bộ nhớ mới (TurboQuant)**
-    - 🧠 **AI ghi nhớ nhiều hơn với chi phí thấp hơn:** Tôi đã tích hợp công nghệ nén tiên tiến (TurboQuant, từ một bài báo của Google được trình bày tại ICLR 2026) cho phép AI lưu trữ "bộ nhớ làm việc" của nó với dung lượng chỉ bằng một phần ba dung lượng trước đây. Thực tế: có nhiều không gian hơn để ghi nhớ lịch sử, quyết định và bối cảnh của ván chơi mà không khiến card đồ họa kêu ca.
-    - ⚡ **Tương thích với GPU của bạn:** Hoạt động trên card NVIDIA RTX dòng 3000, 4000 và 5000. Nếu bạn có một trong số đó, trò chơi sẽ tự động tận dụng nó. Nếu không, mọi thứ vẫn hoạt động như trước với công nghệ nén tiêu chuẩn (vốn cũng không tệ).
-    - 🔧 **Công việc sửa ống nước:** Bản cập nhật này yêu cầu biên dịch lại toàn bộ engine AI với các bản vá dành riêng cho Windows. Đây không phải là thứ bạn thấy trực tiếp, nhưng nó là nền tảng để xây dựng các cải tiến về ngữ cảnh cho các phiên bản sắp tới. (Vâng, tôi đã dành khá nhiều thời gian tranh cãi với trình biên dịch của NVIDIA. Không, tôi không muốn nói về điều đó.)
-  - **🧠 Tối ưu hóa ngữ cảnh hàng loạt (+200%)**
-    - 📖 **AI đọc (và nhớ) gấp ba lần:** Tôi đã viết lại hoàn toàn việc tính toán "bộ nhớ hội thoại" mà AI có thể sử dụng. Trước đây, một ước tính bảo thủ đã để lại nhiều không gian chưa được sử dụng. Bây giờ, trò chơi đọc trực tiếp thông số kỹ thuật của từng mô hình và tính toán chính xác lượng ngữ cảnh có thể chứa trong GPU của bạn. Kết quả: mô hình 9B tăng từ khả năng ghi nhớ ~36.000 từ lên hơn ~110.000 từ trên GPU với 16GB VRAM. Các ván chơi dài của bạn sẽ không còn mất mạch dễ dàng như trước và các hiện tượng treo máy đối với những người có VRAM thấp sẽ được khắc phục.
-    - 📝 **Phản hồi dài hơn:** Tôi đã tăng giới hạn độ dài phản hồi của AI từ 4.096 lên 8.192 token. Điều này có nghĩa là các mô tả chi tiết hơn, các đoạn hội thoại công phu hơn và các câu chuyện không bị cắt ngang giữa chừng khi mọi thứ trở nên thú vị.
-    - 🔄 **Hoạt động cho tất cả các mô hình:** Cải tiến này được áp dụng tự động cho bất kỳ mô hình nào được hỗ trợ (2B, 4B, 9B...). Nếu bạn sử dụng mô hình cũ hơn hoặc của bên thứ ba, mọi thứ vẫn hoạt động giống hệt như trước — quá trình tối ưu hóa chỉ được kích hoạt khi phát hiện mô hình hỗ trợ nó.
+  - **📖 Cải thiện nhịp độ khám phá**
+    - Tôi đã ngăn chặn các lượt khám phá bị ảnh hưởng bởi các quy tắc từ những thời điểm khác trong trò chơi. Điều này giúp giảm bớt các phản hồi dài dòng, sự lặp lại kỳ lạ và những phân cảnh vốn dĩ đã kết thúc nhưng vẫn cố kéo dài thêm.
+    - Tôi cũng đã tinh chỉnh tông giọng để phần tường thuật vẫn giữ được độ sâu mà không cần phải viết thành một cuốn tiểu thuyết trong mỗi lần tương tác.
+  - **🎯 Các nút bấm nhất quán hơn với ngữ cảnh**
+    - Tôi đã sửa một số trường hợp AI khiến giao diện hiển thị các nút chung chung.
+    - Giờ đây, trò chơi xử lý các lộ trình này tốt hơn và biến chúng thành các quyết định thực tế, vì vậy sẽ không còn những khoảnh khắc kiểu “mọi thứ trông rất tuyệt, nhưng mình phải nhấn vào đâu cơ chứ”.
+  - **🦾 Cyberpunk đã hoạt động và mang âm hưởng đúng chất cyberpunk trở lại**
+    - Tôi đã sửa lỗi trộn lẫn bối cảnh, vốn có thể làm xuất hiện các yếu tố thời trung cổ khi tạo nhân vật trong các thế giới cyberpunk.
+    - Tôi cũng đã sửa lại chỉ số Nhân tính (Humanity) để nó tính toán và hiển thị chính xác như mong đợi, ngay cả trong các thế giới có tên riêng. Nếu một nhân vật có cấy ghép, trò chơi sẽ không còn coi họ như thể vấn đề lớn nhất của họ là hết mana nữa.
+  - **💰 Giao dịch đáng tin cậy hơn**
+    - Tôi đã đảm bảo các thương nhân được mô tả trong cốt truyện sẽ được hệ thống công nhận đúng là người bán hàng, tránh các lỗi treo khi mở giao diện buôn bán.
+    - Ngoài ra, khi bán vật phẩm cho thương nhân thông thường, giá cả hiện đã chính xác thay vì những mức giá khiến bạn chỉ muốn cất kiếm và lặng lẽ rời đi.
+  - **🎬 Khởi đầu trò chơi nhất quán hơn**
+    - Tôi đã củng cố sự nhất quán của các phân cảnh đầu game khi trò chơi giới thiệu một ai đó xuất hiện trực tiếp trước mặt nhân vật, nhằm giảm thiểu các trường hợp tường thuật gợi ý rõ ràng về sự hiện diện của họ nhưng hệ thống bên dưới lại không hỗ trợ tốt.
 
