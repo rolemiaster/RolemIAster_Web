@@ -1,4 +1,24 @@
 ****************************************************************************************************
+27/04/2026 18:22 - Mundos compartidos, incorporación y combate más coherentes - Beta_v062
+****************************************************************************************************
+- What's New (ES-419):
+  - **🌍 Mundos compartidos mucho más sensatos**
+    - He mejorado la continuidad cuando varios personajes comparten el mismo mundo. Ahora el juego reutiliza mejor las ubicaciones ya válidas y deja menos margen para inventarse "la misma zona, pero con otro nombre y otro sombrero".
+    - También he corregido la información de ubicación en el selector y en la ficha, para que cada personaje muestre su localización real y no una prestada del vecino.
+  - **👥 PNJs más coherentes y menos dados al desdoblamiento**
+    - He reforzado la lógica para que un PNJ ya existente vuelva a aparecer como él mismo cuando corresponde, en lugar de reinventarse con otro nombre, otra cara o una tarjeta nueva salida de la nada.
+    - Además, una enemistad provocada por un personaje ya no debería contaminar a todos los demás de forma mágica. Si Kaelen se enfada contigo, la idea es que se enfade contigo... no con la especie humana entera.
+  - **🎬 Entradas de partida y exploración con menos teatro extraño**
+    - He corregido varios casos en los que la narración insinuaba que alguien estaba delante de ti, pero el sistema no lo respaldaba. Ahora hay menos vendedores fantasma, menos interlocutores evaporados y menos escenas que parecen una obra experimental sin presupuesto.
+    - También he reducido casos en los que la IA colaba regalos, existencias o elementos narrativos donde no correspondía, especialmente en las llegadas y primeras escenas.
+  - **⚔️ Combate y decisiones con menos tropiezos**
+    - He reforzado la continuidad entre exploración y combate para que la entrada en pelea dependa mejor de PNJs realmente presentes y no de humo narrativo.
+    - También he corregido varios atascos donde la escena seguía activa, pero la interfaz caía en decisiones pobres o genéricas. Menos "Continuar" porque sí, más opciones con intención real.
+  - **🧬 Creación de personaje y ambientaciones más fiables**
+    - La creación aleatoria de personaje vuelve a ser más estable y respeta mejor el formato biográfico que espera el juego.
+    - He ajustado varias incoherencias de ambientación y recursos para que cyberpunk, fantasía y sus derivados no se mezclen como si una taberna medieval y un quirófano clandestino hubieran decidido alquilar el mismo local.
+
+****************************************************************************************************
 23/04/2026 03:01 - Correcciones de jugabilidad - Beta_v061
 ****************************************************************************************************
 - What's New (ES-419):

@@ -1,4 +1,24 @@
 ****************************************************************************************************
+27/04/2026 18:22 - Yhteisemmät maailmat, johdonmukaisempi perehdytys ja taistelu - Beta_v062
+****************************************************************************************************
+- What's New (FI):
+  - **🌍 Selvästi järkevämpiä yhteisiä maailmoja**
+    - Olen parantanut jatkuvuutta, kun useampi hahmo jakaa saman maailman. Nyt peli hyödyntää paremmin jo olemassa olevia paikkoja ja jättää vähemmän tilaa mielikuvituksellisille "samalle alueelle eri nimellä ja eri hatulla".
+    - Olen myös korjannut sijaintitietoja valitsimessa ja hahmokortissa, jotta jokainen hahmo näyttää todellisen sijaintinsa eikä naapurin lainaamaansa.
+  - **👥 Johdonmukaisemmat NPC:t ja vähemmän kaksoisolentoja**
+    - Olen vahvistanut logiikkaa niin, että jo olemassa oleva NPC ilmestyy takaisin omana itsenään silloin kun sen pitäisi, sen sijaan että se keksittäisiin uudelleen eri nimellä, eri kasvoilla tai sumusta ilmestyneenä uutena korttina.
+    - Lisäksi hahmon aiheuttaman vihamielisyyden ei pitäisi enää maagisesti levitä kaikkiin muihin. Jos Kaelen suuttuu sinulle, ideana on, että hän suuttuu sinulle... ei koko ihmislajille.
+  - **🎬 Vähemmän outoa teatteria aloituksissa ja tutkimusmatkoilla**
+    - Olen korjannut useita tapauksia, joissa kerronta antoi ymmärtää jonkun olevan edessäsi, mutta järjestelmä ei tukenut sitä. Nyt on vähemmän kummitusmyyjiä, vähemmän haihtuneita keskustelukumppaneita ja vähemmän kohtauksia, jotka muistuttavat budjetiltaan köyhää kokeellista näytelmää.
+    - Olen myös vähentänyt tapauksia, joissa tekoäly ujutti lahjoja, varastoa tai tarinallisia esineitä vääriin paikkoihin, erityisesti saapumis- ja alkukohtauksissa.
+  - **⚔️ Vähemmän kompasteluja taistelussa ja päätöksissä**
+    - Olen vahvistanut jatkuvuutta tutkimisen ja taistelun välillä, jotta taisteluun siirtyminen riippuu paremmin todella läsnä olevista NPC:istä eikä tarinallisesta savusta.
+    - Olen myös korjannut useita jumituksia, joissa kohtaus jatkui, mutta käyttöliittymä päätyi huonoihin tai yleisiin päätöksiin. Vähemmän "Jatka" ilman syytä, enemmän todellisia ja tarkoituksellisia valintoja.
+  - **🧬 Luotettavampi hahmonluonti ja ympäristöt**
+    - Hahmon satunnainen luonti on taas vakaampi ja kunnioittaa paremmin pelin odottamaa elämäkertamuotoa.
+    - Olen korjannut useita ympäristö- ja resurssien epäjohdonmukaisuuksia, jotta cyberpunk, fantasia ja niiden johdannaiset eivät sekoitu kuin keskiaikainen taverna ja salainen leikkaussali olisivat vuokranneet saman tilan.
+
+****************************************************************************************************
 23/04/2026 03:01 - Pelattavuuskorjauksia - Beta_v061
 ****************************************************************************************************
 - What's New (FI):

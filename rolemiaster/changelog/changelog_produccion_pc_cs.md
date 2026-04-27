@@ -1,4 +1,24 @@
 ****************************************************************************************************
+27/04/2026 18:22 - Sdílené světy, nástup a boj soudržnější - Beta_v062
+****************************************************************************************************
+- What's New (CS):
+  - **🌍 Sdílené světy mnohem rozumnější**
+    - Vylepšil jsem kontinuitu, když více postav sdílí stejný svět. Hra nyní lépe znovu používá již platná místa a ponechává méně prostoru pro vymýšlení „stejné oblasti, ale s jiným názvem a jiným kloboukem“.
+    - Opravil jsem také informace o poloze v selektoru a na kartě, aby každá postava zobrazovala svou skutečnou polohu, nikoli půjčenou od souseda.
+  - **👥 Soudržnější NPC a méně náchylní k rozštěpení osobnosti**
+    - Posílil jsem logiku, aby se již existující NPC vrátil jako sám sebou, když má, místo aby se vymýšlel s jiným jménem, jinou tváří nebo novou kartou vyšlou z mlhy.
+    - Navíc nepřátelství vyvolané postavou by již nemělo magicky kontaminovat všechny ostatní. Pokud se na vás Kaelen naštve, je záměr, aby se naštval na vás... ne na celý lidský rod.
+  - **🎬 Nástupy do hry a průzkum s menším podivným divadlem**
+    - Opravil jsem několik případů, kdy vyprávění naznačovalo, že před vámi někdo stojí, ale systém to zespodu nepodporoval. Nyní je méně přízračných prodejců, méně mizících mluvčích a méně scén, které vypadají jako nízkorozpočtová experimentální hra.
+    - Také jsem snížil počet případů, kdy AI vkládala dárky, zásoby nebo narativní předměty tam, kam neměla, zejména při příchodech a v prvních scénách.
+  - **⚔️ Boj a rozhodnutí s menším počtem zakopnutí**
+    - Posílil jsem kontinuitu mezi průzkumem a bojem, takže vstup do boje lépe závisí na skutečně přítomných NPC a ne na narativním kouři.
+    - Opravil jsem také několik záseků, kde scéna běžela dál, ale rozhraní upadlo do špatných nebo obecných rozhodnutí. Méně „Pokračovat“ jen tak, více možností se skutečným záměrem.
+  - **🧬 Spolehlivější tvorba postav a prostředí**
+    - Náhodná tvorba postav je opět stabilnější a lépe respektuje biografický formát, který hra očekává.
+    - Upravil jsem několik nesrovnalostí v prostředí a zdrojích, aby se kyberpunk, fantasy a jejich odvozeniny nemíchaly, jako by se středověká krčma a ilegální operační sál rozhodly pronajmout si stejný prostor.
+
+****************************************************************************************************
 23/04/2026 03:01 - Opravy hratelnosti - Beta_v061
 ****************************************************************************************************
 - What's New (CS):

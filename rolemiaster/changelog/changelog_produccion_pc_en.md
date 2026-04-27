@@ -1,4 +1,24 @@
 ****************************************************************************************************
+27/04/2026 18:22 - More Consistent Shared Worlds, Onboarding, and Combat - Beta_v062
+****************************************************************************************************
+- What's New (EN):
+  - **🌍 Much More Sensible Shared Worlds**
+    - I've improved continuity when multiple characters share the same world. The game now reuses valid locations better, leaving less room for inventing "the same zone, but with a different name and hat."
+    - I've also corrected location information in the selector and character sheet, so each character shows their real location, not one borrowed from their neighbor.
+  - **👥 More Consistent NPCs and Less Prone to Splitting**
+    - I've reinforced the logic so that an existing NPC reappears as themselves when appropriate, instead of reinventing themselves with a new name, face, or a card pulled from the mist.
+    - Furthermore, an enmity triggered by one character should no longer magically contaminate all others. If Kaelen gets angry with you, the idea is that they get angry with you... not with the entire human race.
+  - **🎬 Smoother Starting Scenes and Exploration with Less Weirdness**
+    - I've fixed several cases where the narration implied someone was in front of you, but the system didn't support it underneath. There are now fewer ghost vendors, fewer evaporated interlocutors, and fewer scenes that feel like a low-budget experimental play.
+    - I've also reduced instances where the AI inserted gifts, stock, or narrative items where they didn't belong, especially during arrivals and initial scenes.
+  - **⚔️ Combat and Decisions with Fewer Stumbles**
+    - I've reinforced continuity between exploration and combat so that entering a fight depends better on actually present NPCs and not narrative smoke.
+    - I've also fixed several stalls where the scene remained active, but the interface fell into poor or generic decisions. Less "Continue" for the sake of it, more options with real intent.
+  - **🧬 More Reliable Character Creation and Settings**
+    - Random character creation is now more stable and better respects the biographical format the game expects.
+    - I've adjusted several inconsistencies in setting and resources so that cyberpunk, fantasy, and their derivatives don't blend as if a medieval tavern and a clandestine operating room had decided to rent the same space.
+
+****************************************************************************************************
 23/04/2026 03:01 - Gameplay Fixes - Beta_v061
 ****************************************************************************************************
 - What's New (EN):

@@ -1,4 +1,24 @@
 ****************************************************************************************************
+27/04/2026 18:22 - Mer sammenhengende delte verdener, onboarding og kamp - Beta_v062
+****************************************************************************************************
+- What's New (NO):
+  - **🌍 Mer fornuftige delte verdener**
+    - Jeg har forbedret kontinuiteten når flere karakterer deler samme verden. Spillet gjenbruker nå bedre eksisterende steder og gir mindre rom for å finne opp «samme område, bare med et annet navn og hatt».
+    - Jeg har også korrigert plasseringsinformasjon i velgeren og på profilen, slik at hver karakter viser sin virkelige plassering og ikke en som er lånt fra naboen.
+  - **👥 Mer sammenhengende NPC-er og mindre tilbøyelighet til dobbelgjengere**
+    - Jeg har styrket logikken slik at en eksisterende NPC dukker opp igjen som seg selv når det er meningen, i stedet for å finne opp en ny med et annet navn, et annet ansikt eller et nytt kort som dukker opp fra intet.
+    - Dessuten burde en fiendtlighet forårsaket av én karakter ikke lenger «smitte» til alle andre magisk. Hvis Kaelen blir sint på deg, er meningen at hun skal bli sint på deg… ikke på hele menneskeheten.
+  - **🎬 Oppstart og utforskning med mindre rar teater**
+    - Jeg har korrigert flere tilfeller der fortellingen antydet at noen sto foran deg, men systemet ikke støttet det under. Nå er det færre spøkelsesselgere, færre forsvinnende samtalepartnere og færre scener som virker som et lavbudsjetts eksperimentelt teaterstykke.
+    - Jeg har også redusert tilfeller der AI-en plasserte gaver, lager eller narrative gjenstander der de ikke hørte hjemme, spesielt ved ankomster og innledende scener.
+  - **⚔️ Mer feilfri kamp og avgjørelser**
+    - Jeg har styrket kontinuiteten mellom utforskning og kamp slik at inngangen til kamp i bedre grad avhenger av faktisk tilstedeværende NPC-er og ikke av narrativ røyk.
+    - Jeg har også korrigert flere hikke der scenen fortsatte, men grensesnittet falt inn i dårlige eller generiske avgjørelser. Mindre «Fortsett» bare for å fortsette, mer valg med reell intensjon.
+  - **🧬 Mer pålitelig karakteropprettelse og miljøer**
+    - Tilfeldig karakteropprettelse er mer stabil igjen og respekterer bedre det biografiske formatet spillet forventer.
+    - Jeg har justert flere inkonsekvenser i miljø og ressurser slik at cyberpunk, fantasi og deres derivater ikke blandes som om en middelaldersk taverna og en hemmelig operasjonssal hadde bestemt seg for å leie samme lokale.
+
+****************************************************************************************************
 23/04/2026 03:01 - Forbedringer av spillmekanikken - Beta_v061
 ****************************************************************************************************
 - What's New (NO):
