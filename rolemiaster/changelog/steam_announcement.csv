@@ -1,233 +1,436 @@
 language,Description,Title
-arabic,"- **🗜️ محرك جديد لضغط الذاكرة (TurboQuant)**
-  - 🧠 **الذكاء الاصطناعي يتذكر المزيد بمصروف أقل:** لقد دمجت تقنية ضغط متقدمة (TurboQuant، من ورقة بحثية لجوجل مقدمة في ICLR 2026) تسمح للذكاء الاصطناعي بتخزين ""ذاكرة العمل"" الخاصة به في مساحة أقل بكثير من ذي قبل (ثلث المساحة تقريبًا). عمليًا: مساحة أكبر لتذكر تاريخك، قراراتك، وسياق اللعبة دون أن تشتكي بطاقة الرسوميات.
-  - ⚡ **متوافق مع بطاقة الرسوميات الخاصة بك:** يعمل على بطاقات NVIDIA RTX من السلسلة 3000 و 4000 و 5000. إذا كنت تمتلك واحدة من هذه البطاقات، فسيستفيد منها اللعبة تلقائيًا. إذا لم تكن كذلك، فكل شيء سيظل يعمل كما كان من قبل مع الضغط القياسي (والذي لم يكن سيئًا في حد ذاته).
-  - 🔧 **عمل داخلي:** تطلب هذا التحديث إعادة تجميع محرك الذكاء الاصطناعي من الصفر مع تصحيحات خاصة لنظام Windows. هذا ليس شيئًا ستلاحظه مباشرة، ولكنه الأساس الذي ستبنى عليه تحسينات السياق في الإصدارات القادمة. (نعم، لقد أمضيت وقتًا طويلاً في النقاش مع مترجم NVIDIA. لا، لا أريد التحدث عن ذلك.)
-- **🧠 تحسين هائل للسياق (+200%)**
-  - 📖 **الذكاء الاصطناعي يقرأ (ويتذكر) ثلاثة أضعاف:** لقد أعدت كتابة حساب مقدار ""ذاكرة المحادثة"" التي يمكن للذكاء الاصطناعي استخدامها بالكامل. سابقًا، كان تقدير متحفظ يترك الكثير من المساحة غير مستغلة. الآن، يقرأ اللعبة المواصفات التقنية لكل نموذج ويحسب بدقة مقدار السياق الذي يمكن أن يتسع في بطاقة الرسوميات الخاصة بك. النتيجة: نموذج 9B ينتقل من تذكر حوالي 36,000 كلمة إلى أكثر من 110,000 كلمة على بطاقة رسوميات بذاكرة 16 جيجابايت. لن تفقد ألعابك الطويلة الخيط بهذه السهولة، ويجب أن يتم حل مشكلة التجميد لمن يمتلكون ذاكرة VRAM قليلة.
-  - 📝 **ردود أطول:** لقد زدت حد طول استجابة الذكاء الاصطناعي من 4,096 إلى 8,192 رمزًا (tokens). هذا يعني أوصافًا أكثر تفصيلاً، وحوارات أكثر تعقيدًا، وسردًا لا ينقطع في منتصف الجملة عندما تصبح الأمور مثيرة للاهتمام.
-  - 🔄 **يعمل مع جميع النماذج:** ينطبق التحسين تلقائيًا على أي نموذج مدعوم (2B، 4B، 9B...). إذا كنت تستخدم نموذجًا أقدم أو نموذجًا من طرف ثالث، فسيظل كل شيء يعمل تمامًا كما كان في السابق — يتم تنشيط التحسين فقط عندما يكتشف أن النموذج يدعمه.",تكامل TurboQuant — ضغط ذاكرة التخزين المؤقت KV بحد أقصى
-bulgarian,"- **🗜️ Нов двигател за компресиране на паметта (TurboQuant)**
-  - 🧠 **AI помни повече, харчи по-малко:** Интегрирах усъвършенствана технология за компресиране (TurboQuant, от публикация на Google, представена на ICLR 2026), която позволява на AI да съхранява своята ""работна памет"", като заема почти една трета от предишното място. На практика: повече място за запаметяване на вашата история, вашите решения и контекста на играта, без вашата видеокарта да се оплаква.
-  - ⚡ **Съвместим с вашата GPU:** Работи на NVIDIA RTX видеокарти от серии 3000, 4000 и 5000. Ако имате някоя от тях, играта автоматично ще се възползва от нея. Ако не, всичко продължава да работи както преди със стандартното компресиране (което също не беше никак лошо).
-  - 🔧 **Сантехническа работа:** Тази актуализация изискваше прекомпилиране на AI двигателя от нулата със специфични кръпки за Windows. Това не е нещо, което ще забележите директно, но е основата, върху която ще бъдат изградени подобренията на контекста в следващите версии. (Да, прекарах доста време в спор с компилатора на NVIDIA. Не, не искам да говоря за това.)
-- **🧠 Масивна оптимизация на контекста (+200%)**
-  - 📖 **AI чете (и помни) три пъти повече:** Напълно пренаписах изчисляването на това колко ""контекст на разговора"" може да използва AI. Преди, консервативната оценка оставяше много неизползвано място. Сега играта чете директно техническите спецификации на всеки модел и прецизно изчислява колко контекст се побира във вашата GPU. Резултат: моделът 9B преминава от запаметяване на ~36 000 думи до повече от ~110 000 на GPU с 16GB VRAM. Вашите дълги игри вече не губят нишката толкова лесно, а прекъсванията за тези с малко VRAM би трябвало да се отстранят.
-  - 📝 **По-дълги отговори:** Увеличих лимита за дължина на отговорите на AI от 4 096 на 8 192 токена. Това означава по-подробни описания, по-сложни диалози и разкази, които не се прекъсват по средата на изречението, когато нещата станат интересни.
-  - 🔄 **Работи за всички модели:** Подобрението се прилага автоматично към всеки съвместим модел (2B, 4B, 9B...). Ако използвате по-стар модел или такъв от трети страни, всичко продължава да работи точно както преди — оптимизацията се активира само когато засече, че моделът я поддържа.",Интеграция TurboQuant — Екстремно компресиране на KV Cache с
-czech,"- **🗜️ Nový kompresní engine paměti (TurboQuant)**
-  - 🧠 **AI si pamatuje více a utrácí méně:** Integroval jsem pokročilou kompresní technologii (TurboQuant, z publikace Google prezentované na ICLR 2026), která umožňuje AI ukládat svou ""pracovní paměť"" s téměř třetinovou spotřebou oproti dřívějšku. V praxi to znamená: více prostoru pro zapamatování si vaší historie, rozhodnutí a kontextu hry, aniž by si grafická karta stěžovala.
-  - ⚡ **Kompatibilní s vaší GPU:** Funguje na kartách NVIDIA RTX sérií 3000, 4000 a 5000. Pokud máte jednu z nich, hra ji automaticky využije. Pokud ne, vše funguje jako dříve se standardní kompresí (která také nebyla špatná).
-  - 🔧 **Instalatérská práce:** Tato aktualizace vyžadovala přeložení AI enginu od nuly se specifickými záplatami pro Windows. Není to něco, čeho byste si přímo všimli, ale je to základ, na kterém budou stavěna vylepšení kontextu v budoucích verzích. (Ano, strávil jsem hodně času hádkami s kompilátorem NVIDIA. Ne, nechci o tom mluvit.)
-- **🧠 Masivní optimalizace kontextu (+200 %)**
-  - 📖 **AI čte (a pamatuje si) trojnásobně:** Zcela jsem přepsal výpočet toho, kolik ""paměti konverzace"" může AI využít. Dříve konzervativní odhad ponechával spoustu nevyužitého prostoru. Nyní hra přímo čte technické specifikace každého modelu a přesně vypočítá, kolik kontextu se na vaši GPU vejde. Výsledek: model 9B přejde z paměti ~36 000 slov na více než ~110 000 slov na GPU s 16 GB VRAM. Vaše dlouhé hry už tak snadno neztratí nit a problémy s nízkou VRAM by se měly vyřešit.
-  - 📝 **Delší odpovědi:** Zvýšil jsem limit délky odpovědi AI z 4 096 na 8 192 tokenů. To znamená podrobnější popisy, propracovanější dialogy a příběhy, které se nepřeruší uprostřed věty, když se to začne zajímavě vyvíjet.
-  - 🔄 **Funguje pro všechny modely:** Vylepšení se automaticky aplikuje na jakýkoli podporovaný model (2B, 4B, 9B...). Pokud používáte starší nebo model třetí strany, vše funguje přesně jako dříve — optimalizace se aktivuje pouze tehdy, když detekuje, že ji model podporuje.",Integrace TurboQuant — Extrémní komprese KV Cache s
-danish,"- **🗜️ Ny hukommelseskomprimeringsmotor (TurboQuant)**
-  - 🧠 **AI husker mere for mindre:** Jeg har integreret en avanceret kompressionsteknologi (TurboQuant, fra et Google-forskningspapir præsenteret på ICLR 2026), der gør det muligt for AI'en at gemme sit ""arbejdshukommelse"" med næsten en tredjedel af den plads, det tidligere optog. I praksis betyder det: mere plads til at huske din historie, dine valg og spillets kontekst, uden at grafikkortet klager.
-  - ⚡ **Kompatibel med din GPU:** Fungerer på NVIDIA RTX grafikkort i serierne 3000, 4000 og 5000. Hvis du har et af disse, vil spillet automatisk udnytte det. Ellers fortsætter alt med at fungere som før med standardkomprimering (som heller ikke var dårlig).
-  - 🔧 **VVS-arbejde:** Denne opdatering har krævet en fuldstændig genkompilering af AI-motoren med specifikke patches til Windows. Det er ikke noget, du direkte vil bemærke, men det er grundlaget, hvorpå fremtidige forbedringer af kontekst i de kommende versioner vil blive bygget. (Ja, jeg har brugt lang tid på at diskutere med NVIDIAs compiler. Nej, jeg ønsker ikke at tale om det.)
-- **🧠 Massiv kontekstoptimering (+200%)**
-  - 📖 **AI læser (og husker) tre gange så meget:** Jeg har fuldstændig omskrevet beregningen af, hvor meget ""samtalehukommelse"" AI'en kan bruge. Før lod en konservativ estimering meget plads uudnyttet. Nu læser spillet direkte de tekniske specifikationer for hver model og beregner præcist, hvor meget kontekst der passer på din GPU. Resultat: 9B-modellen går fra at huske ~36.000 ord til over ~110.000 på en GPU med 16 GB VRAM. Dine lange spilsessioner mister ikke længere tråden så let, og nedlukninger for dem med begrænset VRAM burde blive løst.
-  - 📝 **Længere svar:** Jeg har øget AI'ens svarlængde-grænse fra 4.096 til 8.192 tokens. Dette betyder mere detaljerede beskrivelser, mere udarbejdede dialoger og fortællinger, der ikke bliver afbrudt midt i en sætning, når det hele bliver interessant.
-  - 🔄 **Fungerer for alle modeller:** Forbedringen anvendes automatisk på enhver kompatibel model (2B, 4B, 9B...). Hvis du bruger en ældre eller tredjepartsmodel, fortsætter alt præcis som før – optimeringen aktiveres kun, når den registrerer, at modellen understøtter den.",TurboQuant Integration — Extreme KV Cache Compression with
-german,"- **🗜️ Neue Speicherkompressionstechnologie (TurboQuant)**
-  - 🧠 **KI erinnert sich an mehr und verbraucht weniger:** Ich habe eine fortschrittliche Kompressionstechnologie (TurboQuant, aus einem Google-Paper, vorgestellt auf der ICLR 2026) integriert, die es der KI ermöglicht, ihr ""Arbeitsgedächtnis"" mit fast einem Drittel des bisherigen Speicherbedarfs zu speichern. In der Praxis bedeutet das: mehr Platz, um deine Geschichte, deine Entscheidungen und den Spielkontext zu speichern, ohne dass die Grafikkarte schlappmacht.
-  - ⚡ **Kompatibel mit deiner GPU:** Funktioniert auf NVIDIA RTX-Karten der Serien 3000, 4000 und 5000. Wenn du eine davon besitzt, wird das Spiel sie automatisch nutzen. Andernfalls funktioniert alles wie bisher mit der Standardkompression (die auch nicht schlecht war).
-  - 🔧 **Klempnerarbeit:** Dieses Update erforderte eine vollständige Neukompilierung der KI-Engine mit spezifischen Patches für Windows. Das ist nichts, was du direkt bemerkst, aber es ist die Grundlage für die Kontextverbesserungen in zukünftigen Versionen. (Ja, ich habe viel Zeit damit verbracht, mit dem NVIDIA-Compiler zu diskutieren. Nein, ich möchte nicht darüber reden.)
-- **🧠 Massive Kontextoptimierung (+200%)**
-  - 📖 **KI liest (und merkt sich) dreimal so viel:** Ich habe die Berechnung, wie viel ""Gesprächsgedächtnis"" die KI nutzen kann, komplett überarbeitet. Zuvor ließ eine konservative Schätzung viel ungenutzten Speicherplatz übrig. Jetzt liest das Spiel die technischen Spezifikationen jedes Modells direkt aus und berechnet präzise, wie viel Kontext auf deine GPU passt. Ergebnis: Das 9B-Modell kann von ~36.000 Wörtern auf über ~110.000 Wörter auf einer GPU mit 16 GB VRAM umstellen. Deine langen Spiele verlieren nicht mehr so leicht den Faden, und die Abbrüche bei Nutzern mit wenig VRAM sollten behoben sein.
-  - 📝 **Längere Antworten:** Ich habe das Antwortlängenlimit der KI von 4.096 auf 8.192 Tokens erhöht. Das bedeutet detailliertere Beschreibungen, ausgefeiltere Dialoge und Erzählungen, die nicht mitten im Satz abgebrochen werden, wenn es spannend wird.
-  - 🔄 **Funktioniert für alle Modelle:** Die Verbesserung wird automatisch auf jedes unterstützte Modell (2B, 4B, 9B...) angewendet. Wenn du ein älteres oder ein Modell von Drittanbietern verwendest, funktioniert alles genau wie bisher – die Optimierung wird nur aktiviert, wenn das Modell sie unterstützt.",TurboQuant-Integration — Extreme KV-Cache-Kompression mit
-greek,"- **🗜️ Νέα μηχανή συμπίεσης μνήμης (TurboQuant)**
-  - 🧠 **Η AI θυμάται περισσότερα ξοδεύοντας λιγότερα:** Έχω ενσωματώσει μια προηγμένη τεχνολογία συμπίεσης (TurboQuant, από μια δημοσίευση της Google που παρουσιάστηκε στην ICLR 2026) η οποία επιτρέπει στην AI να αποθηκεύει την ""ενεργή της μνήμη"" καταλαμβάνοντας σχεδόν το ένα τρίτο του χώρου που καταλάμβανε προηγουμένως. Στην πράξη: περισσότερος χώρος για να θυμάται την ιστορία σας, τις αποφάσεις σας και το πλαίσιο του παιχνιδιού, χωρίς να παραπονιέται η κάρτα γραφικών σας.
-  - ⚡ **Συμβατό με την GPU σας:** Λειτουργεί σε κάρτες NVIDIA RTX των σειρών 3000, 4000 και 5000. Αν έχετε μία από αυτές, το παιχνίδι θα την εκμεταλλευτεί αυτόματα. Αν όχι, όλα συνεχίζουν να λειτουργούν όπως πριν με την τυπική συμπίεση (που ούτως ή άλλως δεν ήταν κακή).
-  - 🔧 **Εργασία σωληνώσεων:** Αυτή η ενημέρωση απαιτούσε την επαν-μεταγλώττιση της μηχανής AI από την αρχή με ειδικές επιδιορθώσεις για Windows. Δεν είναι κάτι που θα παρατηρήσετε άμεσα, αλλά είναι η βάση πάνω στην οποία θα χτιστούν οι βελτιώσεις πλαισίου στις επόμενες εκδόσεις. (Ναι, πέρασα αρκετό χρόνο να μαλώνω με τον μεταγλωττιστή της NVIDIA. Όχι, δεν θέλω να μιλήσω γι' αυτό.)
-- **🧠 Μαζική βελτιστοποίηση πλαισίου (+200%)**
-  - 📖 **Η AI διαβάζει (και θυμάται) τριπλάσια:** Έχω ξαναγράψει πλήρως τον υπολογισμό για το πόση ""μνήμη συνομιλίας"" μπορεί να χρησιμοποιήσει η AI. Παλαιότερα, μια συντηρητική εκτίμηση άφηνε πολύ χώρο αναξιοποίητο. Τώρα, το παιχνίδι διαβάζει απευθείας τις τεχνικές προδιαγραφές κάθε μοντέλου και υπολογίζει με ακρίβεια πόσο πλαίσιο χωράει στην GPU σας. Αποτέλεσμα: το μοντέλο 9B περνά από τη μνήμη ~36.000 λέξεων σε πάνω από ~110.000 σε μια GPU με 16GB VRAM. Τα μακρά παιχνίδια σας δεν χάνουν πλέον το νήμα τόσο εύκολα και τα κολλήματα για όσους έχουν λίγη vram θα πρέπει να λυθούν.
-  - 📝 **Μεγαλύτερες απαντήσεις:** Έχω αυξήσει το όριο μήκους απάντησης της AI από 4.096 σε 8.192 tokens. Αυτό σημαίνει πιο λεπτομερείς περιγραφές, πιο περίπλοκους διαλόγους και αφηγήσεις που δεν κόβονται στα μισά της πρότασης όταν τα πράγματα γίνονται ενδιαφέροντα.
-  - 🔄 **Λειτουργεί για όλα τα μοντέλα:** Η βελτίωση εφαρμόζεται αυτόματα σε οποιοδήποτε συμβατό μοντέλο (2B, 4B, 9B...). Αν χρησιμοποιείτε ένα παλαιότερο μοντέλο ή μοντέλο τρίτων, όλα συνεχίζουν να λειτουργούν ακριβώς όπως πριν — η βελτιστοποίηση ενεργοποιείται μόνο όταν ανιχνεύσει ότι το μοντέλο την υποστηρίζει.",Ενσωμάτωση TurboQuant — Εξαιρετική Συμπίεση KV Cache με
-english,"- **🗜️ New Memory Compression Engine (TurboQuant)**
-  - 🧠 **AI Remembers More While Spending Less:** I've integrated advanced compression technology (TurboQuant, from a Google paper presented at ICLR 2026) that allows the AI to store its ""working memory"" using nearly a third of the space it did before. In practice: more room to remember your history, your decisions, and the game's context without your graphics card complaining.
-  - ⚡ **GPU Friendly:** Works on NVIDIA RTX 3000, 4000, and 5000 series cards. If you have one of those, the game will automatically leverage it. If not, everything continues to run as before with the standard compression (which wasn't too shabby either).
-  - 🔧 **Plumbing Work:** This update required recompiling the AI engine from scratch with specific patches for Windows. It's not something you'll notice directly, but it's the foundation upon which context improvements for future versions will be built. (Yes, I spent a good amount of time arguing with the NVIDIA compiler. No, I don't want to talk about it.)
-- **🧠 Massive Context Optimization (+200%)**
-  - 📖 **AI Reads (and Remembers) Triple:** I've completely rewritten the calculation of how much ""conversation memory"" the AI can use. Previously, a conservative estimate left a lot of space unused. Now, the game directly reads the technical specifications of each model and accurately calculates how much context fits on your GPU. Result: the 9B model goes from remembering ~36,000 words to over ~110,000 on a 16GB VRAM GPU. Your long games will no longer lose track as easily, and crashes for those with low VRAM should be resolved.
-  - 📝 **Longer Responses:** I've increased the AI response length limit from 4,096 to 8,192 tokens. This means more detailed descriptions, more elaborate dialogues, and narratives that don't cut off mid-sentence when things get interesting.
-  - 🔄 **Works for All Models:** The improvement automatically applies to any compatible model (2B, 4B, 9B...). If you use an older or third-party model, everything continues to work exactly as before — the optimization only activates when it detects that the model supports it.",TurboQuant Integration — Extreme KV Cache Compression with
-spanish,"- **🗜️ Nuevo motor de compresión de memoria (TurboQuant)**
-  - 🧠 **La IA recuerda más gastando menos:** He integrado una tecnología de compresión avanzada (TurboQuant, de un paper de Google presentado en ICLR 2026) que permite a la IA almacenar su ""memoria de trabajo"" ocupando casi un tercio de lo que ocupaba antes. En la práctica: más espacio para recordar tu historia, tus decisiones y el contexto de la partida sin que la tarjeta gráfica se queje.
-  - ⚡ **Compatible con tu GPU:** Funciona en tarjetas NVIDIA RTX de las series 3000, 4000 y 5000. Si tienes una de esas, el juego la aprovechará automáticamente. Si no, todo sigue funcionando como antes con la compresión estándar (que tampoco estaba nada mal).
-  - 🔧 **Trabajo de fontanería:** Esta actualización ha requerido recompilar el motor de IA desde cero con parches específicos para Windows. No es algo que se note directamente, pero es la base sobre la que se construirán las mejoras de contexto de las próximas versiones. (Sí, he pasado un buen rato discutiendo con el compilador de NVIDIA. No, no quiero hablar de ello.)
-- **🧠 Optimización masiva de contexto (+200%)**
-  - 📖 **La IA lee (y recuerda) el triple:** He reescrito por completo el cálculo de cuánta ""memoria de conversación"" puede usar la IA. Antes, una estimación conservadora dejaba mucho espacio sin aprovechar. Ahora, el juego lee directamente las especificaciones técnicas de cada modelo y calcula con precisión cuánto contexto cabe en tu GPU. Resultado: el modelo de 9B pasa de recordar ~36.000 palabras a más de ~110.000 en una GPU con 16GB VRAM. Tus partidas largas ya no pierden el hilo tan fácilmente y los bloqueos para los que tienen poca vram se deberían solucionar.
-  - 📝 **Respuestas más largas:** He aumentado el límite de longitud de respuesta de la IA de 4.096 a 8.192 tokens. Esto significa descripciones más detalladas, diálogos más elaborados y narraciones que no se cortan a mitad de frase cuando la cosa se pone interesante.
-  - 🔄 **Funciona para todos los modelos:** La mejora se aplica automáticamente a cualquier modelo compatible (2B, 4B, 9B...). Si usas un modelo más antiguo o de terceros, todo sigue funcionando exactamente igual que antes — la optimización solo se activa cuando detecta que el modelo la soporta.",Integración TurboQuant — Compresión Extrema de KV Cache con
-latam,"- **🗜️ Nuevo motor de compresión de memoria (TurboQuant)**
-  - 🧠 **La IA recuerda más gastando menos:** He integrado una tecnología de compresión avanzada (TurboQuant, de un paper de Google presentado en ICLR 2026) que permite a la IA almacenar su ""memoria de trabajo"" ocupando casi un tercio de lo que ocupaba antes. En la práctica: más espacio para recordar tu historia, tus decisiones y el contexto de la partida sin que la tarjeta gráfica se queje.
-  - ⚡ **Compatible con tu GPU:** Funciona en tarjetas NVIDIA RTX de las series 3000, 4000 y 5000. Si tienes una de esas, el juego la aprovechará automáticamente. Si no, todo sigue funcionando como antes con la compresión estándar (que tampoco estaba nada mal).
-  - 🔧 **Trabajo de fontanería:** Esta actualización ha requerido recompilar el motor de IA desde cero con parches específicos para Windows. No es algo que se note directamente, pero es la base sobre la que se construirán las mejoras de contexto de las próximas versiones. (Sí, he pasado un buen rato discutiendo con el compilador de NVIDIA. No, no quiero hablar de ello.)
-- **🧠 Optimización masiva de contexto (+200%)**
-  - 📖 **La IA lee (y recuerda) el triple:** He reescrito por completo el cálculo de cuánta ""memoria de conversación"" puede usar la IA. Antes, una estimación conservadora dejaba mucho espacio sin aprovechar. Ahora, el juego lee directamente las especificaciones técnicas de cada modelo y calcula con precisión cuánto contexto cabe en tu GPU. Resultado: el modelo de 9B pasa de recordar ~36.000 palabras a más de ~110.000 en una GPU con 16GB VRAM. Tus partidas largas ya no pierden el hilo tan fácilmente y los bloqueos para los que tienen poca vram se deberían solucionar.
-  - 📝 **Respuestas más largas:** He aumentado el límite de longitud de respuesta de la IA de 4.096 a 8.192 tokens. Esto significa descripciones más detalladas, diálogos más elaborados y narraciones que no se cortan a mitad de frase cuando la cosa se pone interesante.
-  - 🔄 **Funciona para todos los modelos:** La mejora se aplica automáticamente a cualquier modelo compatible (2B, 4B, 9B...). Si usas un modelo más antiguo o de terceros, todo sigue funcionando exactamente igual que antes — la optimización solo se activa cuando detecta que el modelo la soporta.",Integración TurboQuant — Compresión Extrema de KV Cache con
-finnish,"- **🗜️ Uusi muistinkompression moottori (TurboQuant)**
-  - 🧠 **Tekoäly muistaa enemmän käyttäen vähemmän:** Olen integroinut edistyneen pakkaustekniikan (TurboQuant, Googlelta ICLR 2026 -konferenssissa esitellystä julkaisusta), jonka avulla tekoäly voi tallentaa ""työmuistinsa"" käyttäen lähes kolmanneksen aiemmasta tilasta. Käytännössä: enemmän tilaa pelihistorian, päätöksiesi ja pelin kontekstin muistamiseen ilman, että näytönohjain valittaa.
-  - ⚡ **Yhteensopiva GPU:si kanssa:** Toimii NVIDIA RTX 3000-, 4000- ja 5000-sarjan korteilla. Jos sinulla on yksi niistä, peli hyödyntää sitä automaattisesti. Jos ei, kaikki toimii kuten ennenkin standardipaktauksen kanssa (mikä ei ollut huono sekään).
-  - 🔧 **Putkityötä:** Tämä päivitys vaati tekoälymoottorin uudelleenkääntämistä tyhjästä Windows-spesifisillä patchauksilla. Se ei ole suoraan havaittavissa, mutta se on perusta, jolle tulevien versioiden kontekstiparannuksia rakennetaan. (Kyllä, olen viettänyt hyvän tovin keskustellen NVIDIA:n kääntäjän kanssa. En halua puhua siitä.)
-- **🧠 Massiivinen kontekstin optimointi (+200%)**
-  - 📖 **Tekoäly lukee (ja muistaa) kolminkertaisesti:** Olen kirjoittanut kokonaan uusiksi laskennan siitä, kuinka paljon ""keskustelumuistia"" tekoäly voi käyttää. Aiemmin konservatiivinen arvio jätti paljon hyödyntämätöntä tilaa. Nyt peli lukee suoraan jokaisen mallin tekniset tiedot ja laskee tarkasti, kuinka paljon kontekstia GPU:llesi mahtuu. Tulos: 9B-malli muistaa aiemman ~36 000 sanan sijaan yli ~110 000 sanaa 16GB VRAM -näytönohjaimella. Pitkät pelisi eivät enää menetä säiettä niin helposti, ja vähäisellä VRAMilla pelattaessa ilmenevien pysähdysten pitäisi ratketa.
-  - 📝 **Pidemmät vastaukset:** Olen kasvattanut tekoälyn vastausten pituusrajoitusta 4 096:sta 8 192 tokeniin. Tämä tarkoittaa yksityiskohtaisempia kuvauksia, monikerroksisempia dialogeja ja kertomuksia, jotka eivät katkea kesken lauseen silloin, kun asiat alkavat käydä mielenkiintoisiksi.
-  - 🔄 **Toimii kaikille malleille:** Parannus koskee automaattisesti kaikkia yhteensopivia malleja (2B, 4B, 9B...). Jos käytät vanhempaa tai kolmannen osapuolen mallia, kaikki toimii täsmälleen kuten ennenkin — optimointi aktivoituu vain, kun se havaitsee mallin tukevan sitä.",TurboQuant-integraatio — KV-välimuistin äärimmäinen pakkaus
-french,"- **🗜️ Nouveau moteur de compression mémoire (TurboQuant)**
-  - 🧠 **L'IA se souvient de plus en dépensant moins :** J'ai intégré une technologie de compression avancée (TurboQuant, issue d'un article de Google présenté à l'ICLR 2026) qui permet à l'IA de stocker sa « mémoire de travail » en occupant près d'un tiers de l'espace précédent. En pratique : plus de place pour se souvenir de votre histoire, de vos décisions et du contexte de la partie sans que la carte graphique ne se plaigne.
-  - ⚡ **Compatible avec votre GPU :** Fonctionne sur les cartes NVIDIA RTX des séries 3000, 4000 et 5000. Si vous en possédez une, le jeu en profitera automatiquement. Sinon, tout continuera de fonctionner comme avant avec la compression standard (qui n'était pas mal non plus).
-  - 🔧 **Travail de plomberie :** Cette mise à jour a nécessité une recompilation du moteur d'IA depuis zéro avec des correctifs spécifiques pour Windows. Ce n'est pas quelque chose que vous remarquerez directement, mais c'est la base sur laquelle seront construites les améliorations de contexte des prochaines versions. (Oui, j'ai passé un bon moment à discuter avec le compilateur NVIDIA. Non, je ne souhaite pas en parler.)
-- **🧠 Optimisation massive du contexte (+200%)**
-  - 📖 **L'IA lit (et se souvient de) trois fois plus :** J'ai réécrit entièrement le calcul de la quantité de « mémoire conversationnelle » que l'IA peut utiliser. Auparavant, une estimation conservatrice laissait beaucoup d'espace inexploité. Désormais, le jeu lit directement les spécifications techniques de chaque modèle et calcule précisément la quantité de contexte qui rentre dans votre GPU. Résultat : le modèle 9B passe de ~36 000 mots à plus de ~110 000 mots sur un GPU avec 16 Go de VRAM. Vos longues parties ne perdent plus le fil aussi facilement et les blocages pour ceux qui ont peu de VRAM devraient être résolus.
-  - 📝 **Réponses plus longues :** J'ai augmenté la limite de longueur de réponse de l'IA de 4 096 à 8 192 tokens. Cela signifie des descriptions plus détaillées, des dialogues plus élaborés et des récits qui ne sont pas coupés en plein milieu d'une phrase lorsque les choses deviennent intéressantes.
-  - 🔄 **Fonctionne pour tous les modèles :** L'amélioration s'applique automatiquement à tout modèle compatible (2B, 4B, 9B...). Si vous utilisez un modèle plus ancien ou tiers, tout continue de fonctionner exactement comme avant — l'optimisation ne s'active que lorsqu'elle détecte que le modèle la prend en charge.",Intégration TurboQuant — Compression extrême du KV Cache avec
-hungarian,"- **🗜️ Új memóriatömörítő motor (TurboQuant)**
-  - 🧠 **Az AI többre emlékszik, kevesebbet költ:** Integráltam egy fejlett tömörítési technológiát (TurboQuant, egy a Google által az ICLR 2026-on bemutatott cikkből), amely lehetővé teszi az AI számára, hogy a ""munkamemóriáját"" a korábbi méretének közel egyharmadát foglalja el. A gyakorlatban: több hely jut arra, hogy emlékezzen a történetedre, döntéseidre és a játék kontextusára anélkül, hogy a grafikus kártyád panaszkodna.
-  - ⚡ **Kompatibilis a GPU-ddal:** NVIDIA RTX 3000-es, 4000-es és 5000-es sorozatú kártyákon működik. Ha rendelkezel egy ilyen kártyával, a játék automatikusan kihasználja. Ha nem, minden a szokásos módon működik a standard tömörítéssel (ami szintén nem volt rossz).
-  - 🔧 **Vízvezeték munka:** Ez a frissítés az AI motor nulláról történő újrafordítását igényelte, specifikus Windows patch-ekkel. Ez nem valami, amit közvetlenül észrevennél, de ez az alapja a következő verziók kontextusjavításainak. (Igen, sok időt töltöttem veszekedéssel az NVIDIA fordítójával. Nem, nem akarok róla beszélni.)
-- **🧠 Masszív kontextus optimalizálás (+200%)**
-  - 📖 **Az AI (el)olvassa a háromszorosát:** Teljesen átírtam a számítást, hogy mennyi ""beszélgetési memóriát"" használhat az AI. Korábban egy konzervatív becslés sok kihasználatlan helyet hagyott. Most a játék közvetlenül olvassa az egyes modellek technikai specifikációit, és pontosan kiszámítja, mennyi kontextus fér el a GPU-don. Eredmény: a 9B modell ~36.000 szóról több mint ~110.000 szóra emlékezik egy 16GB VRAM-os GPU-n. A hosszú játékaid már nem veszítik el a fonalat olyan könnyen, és az alacsony VRAM-mal rendelkezők fagyási problémáinak is meg kellene oldódniuk.
-  - 📝 **Hosszabb válaszok:** A válaszok hosszának limitjét 4.096-ról 8.192 tokenre növeltem. Ez azt jelenti, hogy részletesebb leírások, kidolgozottabb párbeszédek és elbeszélések, amelyek nem szakadnak félbe egy mondat közepén, amikor a dolgok érdekessé válnak.
-  - 🔄 **Minden modellnél működik:** A fejlesztés automatikusan érvényes bármely támogatott modellre (2B, 4B, 9B...). Ha régebbi vagy harmadik féltől származó modellt használsz, minden pontosan ugyanúgy működik, mint korábban — az optimalizálás csak akkor aktiválódik, amikor érzékeli, hogy a modell támogatja azt.",TurboQuant integráció – Extrém KV Cache tömörítés
-indonesian,"- **🗜️ Mesin kompresi memori baru (TurboQuant)**
-  - 🧠 **AI mengingat lebih banyak dengan biaya lebih sedikit:** Saya telah mengintegrasikan teknologi kompresi canggih (TurboQuant, dari makalah Google yang dipresentasikan di ICLR 2026) yang memungkinkan AI untuk menyimpan ""memori kerja""-nya hanya dengan memakan sepertiga dari ruang yang dibutuhkan sebelumnya. Dalam praktiknya: lebih banyak ruang untuk mengingat riwayat Anda, keputusan Anda, dan konteks permainan tanpa membuat kartu grafis Anda mengeluh.
-  - ⚡ **Kompatibel dengan GPU Anda:** Berfungsi pada kartu NVIDIA RTX seri 3000, 4000, dan 5000. Jika Anda memiliki salah satu dari kartu tersebut, game akan memanfaatkannya secara otomatis. Jika tidak, semuanya akan tetap berfungsi seperti sebelumnya dengan kompresi standar (yang juga tidak buruk).
-  - 🔧 **Pekerjaan perpipaan:** Pembaruan ini memerlukan kompilasi ulang mesin AI dari awal dengan patch khusus untuk Windows. Ini bukan sesuatu yang terlihat secara langsung, tetapi merupakan dasar di mana peningkatan konteks versi mendatang akan dibangun. (Ya, saya menghabiskan banyak waktu berdebat dengan kompilator NVIDIA. Tidak, saya tidak ingin membicarakannya.)
-- **🧠 Optimasi Konteks Massal (+200%)**
-  - 📖 **AI membaca (dan mengingat) tiga kali lipat:** Saya telah menulis ulang sepenuhnya perhitungan berapa banyak ""memori percakapan"" yang dapat digunakan AI. Sebelumnya, perkiraan konservatif menyisakan banyak ruang yang tidak terpakai. Sekarang, game membaca langsung spesifikasi teknis setiap model dan secara akurat menghitung berapa banyak konteks yang muat di GPU Anda. Hasilnya: model 9B beralih dari mengingat ~36.000 kata menjadi lebih dari ~110.000 pada GPU dengan 16GB VRAM. Sesi permainan panjang Anda tidak lagi kehilangan alur dengan mudah, dan masalah jeda (freeze) bagi mereka yang memiliki vram terbatas seharusnya teratasi.
-  - 📝 **Respons lebih panjang:** Saya telah meningkatkan batas panjang respons AI dari 4.096 menjadi 8.192 token. Ini berarti deskripsi yang lebih rinci, dialog yang lebih rumit, dan narasi yang tidak terpotong di tengah kalimat ketika keadaan menjadi menarik.
-  - 🔄 **Berfungsi untuk semua model:** Peningkatan diterapkan secara otomatis ke model yang kompatibel (2B, 4B, 9B...). Jika Anda menggunakan model yang lebih lama atau pihak ketiga, semuanya akan tetap berfungsi persis seperti sebelumnya — optimasi hanya aktif ketika mendeteksi bahwa model mendukungnya.",Integrasi TurboQuant — Kompresi KV Cache Ekstrim dengan
-italian,"- **🗜️ Nuovo motore di compressione della memoria (TurboQuant)**
-  - 🧠 **L'IA ricorda di più spendendo meno:** Ho integrato una tecnologia di compressione avanzata (TurboQuant, da un paper di Google presentato a ICLR 2026) che permette all'IA di immagazzinare la sua ""memoria di lavoro"" occupando quasi un terzo di quanto occupasse prima. In pratica: più spazio per ricordare la tua storia, le tue decisioni e il contesto di gioco senza che la scheda grafica si lamenti.
-  - ⚡ **Compatibile con la tua GPU:** Funziona su schede NVIDIA RTX delle serie 3000, 4000 e 5000. Se ne possiedi una, il gioco la sfrutterà automaticamente. Altrimenti, tutto continuerà a funzionare come prima con la compressione standard (che comunque non era affatto male).
-  - 🔧 **Lavoro di ""idraulica"" avanzata:** Questo aggiornamento ha richiesto la ricompilazione del motore IA da zero con patch specifiche per Windows. Non è qualcosa che noterai direttamente, ma è la base su cui verranno costruiti i miglioramenti del contesto nelle prossime versioni. (Sì, ho passato un bel po' di tempo a discutere con il compilatore NVIDIA. No, non voglio parlarne.)
-- **🧠 Ottimizzazione massiva del contesto (+200%)**
-  - 📖 **L'IA legge (e ricorda) il triplo:** Ho riscritto completamente il calcolo di quanta ""memoria di conversazione"" può usare l'IA. Prima, una stima conservativa lasciava molto spazio inutilizzato. Ora, il gioco legge direttamente le specifiche tecniche di ogni modello e calcola con precisione quanto contesto entra nella tua GPU. Risultato: il modello da 9B passa dal ricordare ~36.000 parole a oltre ~110.000 su una GPU con 16GB di VRAM. Le tue partite lunghe non perderanno più il filo così facilmente e i blocchi per chi ha poca VRAM dovrebbero risolversi.
-  - 📝 **Risposte più lunghe:** Ho aumentato il limite di lunghezza delle risposte dell'IA da 4.096 a 8.192 token. Ciò significa descrizioni più dettagliate, dialoghi più elaborati e narrazioni che non si interrompono a metà frase quando la situazione si fa interessante.
-  - 🔄 **Funziona per tutti i modelli:** Il miglioramento si applica automaticamente a qualsiasi modello supportato (2B, 4B, 9B...). Se usi un modello più vecchio o di terze parti, tutto continuerà a funzionare esattamente come prima — l'ottimizzazione si attiva solo quando rileva che il modello la supporta.",Integrazione TurboQuant — Compressione Estrema della KV Cache con
-japanese,"- **🗜️ 新しいメモリ圧縮エンジン (TurboQuant)**
-  - 🧠 **AIはより多くのことを、より少なく消費して記憶:** GoogleがICLR 2026で発表した論文の先進的な圧縮技術 (TurboQuant) を統合しました。これにより、AIは「作業メモリ」を以前の約3分の1の容量で保存できるようになります。実際には、グラフィックカードに負担をかけずに、あなたの履歴、決定、ゲームのコンテキストを記憶するためのより多くのスペースが確保されます。
-  - ⚡ **GPUに対応:** NVIDIA RTX 3000、4000、5000シリーズのカードで動作します。これらのカードをお持ちの場合、ゲームは自動的にそれを利用します。それ以外の場合は、標準圧縮 (これも悪くありませんでした) でこれまで通り動作します。
-  - 🔧 **配管工事:** このアップデートでは、Windows専用のパッチを適用してAIエンジンをゼロから再コンパイルする必要がありました。これは直接目に見えるものではありませんが、次期バージョンでのコンテキスト改善の基盤となります。(はい、NVIDIAのコンパイラとかなりの時間格闘しました。その話はしたくありません。)
-- **🧠 大幅なコンテキスト最適化 (+200%)**
-  - 📖 **AIは3倍多く読み込み (そして記憶):** AIが使用できる「会話メモリ」の量を計算する方法を完全に書き直しました。以前は、控えめな見積もりにより多くのスペースが無駄になっていました。現在、ゲームは各モデルの技術仕様を直接読み込み、GPUにどれだけのコンテキストが収まるかを正確に計算します。結果: 16GB VRAMのGPUで9Bモデルが約36,000語から約110,000語以上を記憶できるようになります。長いセッションでも話の流れが失われにくくなり、VRAMが少ないユーザーのブロックも解消されるはずです。
-  - 📝 **より長い応答:** AIの応答長制限を4,096トークンから8,192トークンに増やしました。これは、より詳細な説明、より洗練された対話、そして話が面白くなってきたときに途中で途切れない物語を意味します。
-  - 🔄 **すべてのモデルに対応:** この改善は、互換性のあるあらゆるモデル (2B、4B、9B...) に自動的に適用されます。古いモデルやサードパーティ製のモデルを使用している場合でも、これまでとまったく同じように機能します。最適化は、モデルがそれをサポートしていることを検出した場合にのみ有効になります。",TurboQuant統合 — KVキャッシュの極限圧縮
-korean,"- **🗜️ 새로운 메모리 압축 엔진 (TurboQuant)**
-  - 🧠 **AI가 더 적은 비용으로 더 많은 것을 기억합니다:** Google이 ICLR 2026에 발표한 논문의 고급 압축 기술(TurboQuant)을 통합하여 AI가 이전보다 거의 1/3의 공간만 차지하는 ""작업 기억""을 저장할 수 있도록 했습니다. 실제로는 그래픽 카드가 불평하더라도 더 많은 공간을 확보하여 플레이어의 스토리, 결정 및 게임 컨텍스트를 기억할 수 있습니다.
-  - ⚡ **GPU와 호환됩니다:** NVIDIA RTX 3000, 4000, 5000 시리즈 카드에서 작동합니다. 해당 GPU를 가지고 있다면 게임이 자동으로 활용합니다. 그렇지 않다면 표준 압축(이것도 나쁘지 않았습니다)으로 모든 것이 이전과 같이 작동합니다.
-  - 🔧 **배관 작업:** 이번 업데이트를 위해 Windows용 특정 패치를 적용하여 AI 엔진을 처음부터 다시 컴파일해야 했습니다. 직접적으로 눈에 띄는 부분은 아니지만, 다음 버전의 컨텍스트 개선을 위한 기반이 될 것입니다. (네, NVIDIA 컴파일러와 오랜 시간 씨름했습니다. 그 이야기는 하고 싶지 않습니다.)
-- **🧠 대규모 컨텍스트 최적화 (+200%)**
-  - 📖 **AI가 3배 더 많이 읽고(기억합니다):** AI가 사용할 수 있는 ""대화 메모리""의 양을 계산하는 방식을 완전히 재작성했습니다. 이전에는 보수적인 추정치로 인해 많은 공간이 활용되지 못했습니다. 이제 게임은 각 모델의 기술 사양을 직접 읽고 GPU에 얼마나 많은 컨텍스트가 들어갈 수 있는지 정확하게 계산합니다. 결과: 16GB VRAM GPU에서 9B 모델은 약 36,000단어에서 110,000단어 이상을 기억할 수 있게 됩니다. 긴 게임에서도 흐름을 잃는 일이 줄어들고, VRAM이 부족한 사용자들의 멈춤 현상이 해결될 것입니다.
-  - 📝 **더 긴 응답:** AI 응답 길이 제한을 4,096 토큰에서 8,192 토큰으로 늘렸습니다. 이는 더 자세한 설명, 더 풍부한 대화, 그리고 흥미진진해질 때 문장이 갑자기 끊기지 않는 서사를 의미합니다.
-  - 🔄 **모든 모델에 적용됩니다:** 개선 사항은 지원되는 모든 모델(2B, 4B, 9B...)에 자동으로 적용됩니다. 이전 버전 또는 타사 모델을 사용하는 경우에도 모든 것이 이전과 동일하게 작동합니다. 최적화는 모델이 지원하는지 감지할 때만 활성화됩니다.",TurboQuant 통합 — KV 캐시의 극심한 압축
-dutch,"- **🗜️ Nuevo motor de compresión de memoria (TurboQuant)**
-  - 🧠 **La IA recuerda más gastando menos:** He integrado una tecnología de compresión avanzada (TurboQuant, de un paper de Google presentado en ICLR 2026) que permite a la IA almacenar su ""memoria de trabajo"" ocupando casi un tercio de lo que ocupaba antes. En la práctica: más espacio para recordar tu historia, tus decisiones y el contexto de la partida sin que la tarjeta gráfica se queje.
-  - ⚡ **Compatible con tu GPU:** Funciona en tarjetas NVIDIA RTX de las series 3000, 4000 y 5000. Si tienes una de esas, el juego la aprovechará automáticamente. Si no, todo sigue funcionando como antes con la compresión estándar (que tampoco estaba nada mal).
-  - 🔧 **Trabajo de fontanería:** Esta actualización ha requerido recompilar el motor de IA desde cero con parches específicos para Windows. No es algo que se note directamente, pero es la base sobre la que se construirán las mejoras de contexto de las próximas versiones. (Sí, he pasado un buen rato discutiendo con el compilador de NVIDIA. No, no quiero hablar de ello.)
-- **🧠 Optimización masiva de contexto (+200%)**
-  - 📖 **La IA lee (y recuerda) el triple:** He reescrito por completo el cálculo de cuánta ""memoria de conversación"" puede usar la IA. Antes, una estimación conservadora dejaba mucho espacio sin aprovechar. Ahora, el juego lee directamente las especificaciones técnicas de cada modelo y calcula con precisión cuánto contexto cabe en tu GPU. Resultado: el modelo de 9B pasa de recordar ~36.000 palabras a más de ~110.000 en una GPU con 16GB VRAM. Tus partidas largas ya no pierden el hilo tan fácilmente y los bloqueos para los que tienen poca vram se deberían solucionar.
-  - 📝 **Respuestas más largas:** He aumentado el límite de longitud de respuesta de la IA de 4.096 a 8.192 tokens. Esto significa descripciones más detalladas, diálogos más elaborados y narraciones que no se cortan a mitad de frase cuando la cosa se pone interesante.
-  - 🔄 **Funciona para todos los modelos:** La mejora se aplica automáticamente a cualquier modelo compatible (2B, 4B, 9B...). Si usas un modelo más antiguo o de terceros, todo sigue funcionando exactamente igual que antes — la optimización solo se activa cuando detecta que el modelo la soporta.",Integración TurboQuant — Extrema Compresión de KV Cache con
-norwegian,"- **🗜️ Nytt kompresjonsmotor for minne (TurboQuant)**
-  - 🧠 **AI husker mer for mindre kostnad:** Jeg har integrert avansert komprimeringsteknologi (TurboQuant, fra en Google-artikkel presentert på ICLR 2026) som lar AI-en lagre sitt ""arbeidsminne"" ved å bruke nesten en tredjedel av plassen den brukte før. I praksis betyr dette mer plass til å huske din historie, dine valg og spillkonteksten uten at skjermkortet klager.
-  - ⚡ **Kompatibel med GPU-en din:** Fungerer på NVIDIA RTX-kort i 3000-, 4000- og 5000-serien. Hvis du har et slikt kort, vil spillet automatisk dra nytte av det. Hvis ikke, fungerer alt som før med standard komprimering (som heller ikke var verst).
-  - 🔧 **Rørleggerarbeid:** Denne oppdateringen krevde at AI-motoren ble kompilert fra bunnen av med spesifikke patcher for Windows. Dette er ikke noe du merker direkte, men det er grunnlaget for fremtidige forbedringer av kontekst i kommende versjoner. (Ja, jeg har brukt mye tid på å diskutere med NVIDIAs kompilator. Nei, jeg ønsker ikke å snakke om det.)
-- **🧠 Massiv kontekstoptimalisering (+200%)**
-  - 📖 **AI leser (og husker) trippelt:** Jeg har fullstendig omskrevet beregningen av hvor mye ""samtaleminne"" AI-en kan bruke. Før lot et konservativt estimat mye plass være uutnyttet. Nå leser spillet direkte de tekniske spesifikasjonene for hver modell og beregner nøyaktig hvor mye kontekst som får plass på GPU-en din. Resultat: 9B-modellen går fra å huske ca. 36 000 ord til over ca. 110 000 ord på en GPU med 16 GB VRAM. Dine lange spilløkter mister ikke tråden like lett, og krasj for de med lite VRAM bør bli løst.
-  - 📝 **Lengre svar:** Jeg har økt grensen for lengden på AI-ens svar fra 4 096 til 8 192 tokens. Dette betyr mer detaljerte beskrivelser, mer utarbeidede dialoger og fortellinger som ikke kuttes midt i en setning når det blir interessant.
-  - 🔄 **Fungerer for alle modeller:** Forbedringen gjelder automatisk for alle kompatible modeller (2B, 4B, 9B...). Hvis du bruker en eldre eller tredjepartsmodell, fungerer alt akkurat som før — optimaliseringen aktiveres kun når den oppdager at modellen støtter den.",TurboQuant-integrasjon — Ekstrem komprimering av KV Cache med
-polish,"- **🗜️ Nowy silnik kompresji pamięci (TurboQuant)**
-  - 🧠 **AI pamięta więcej, wydając mniej:** Zintegrowałem zaawansowaną technologię kompresji (TurboQuant, z artykułu Google zaprezentowanego na ICLR 2026), która pozwala AI przechowywać swoją ""pamięć roboczą"" zajmując prawie jedną trzecią poprzedniej przestrzeni. W praktyce: więcej miejsca na zapamiętanie Twojej historii, decyzji i kontekstu gry, bez narzekania karty graficznej.
-  - ⚡ **Kompatybilne z Twoim GPU:** Działa na kartach NVIDIA RTX serii 3000, 4000 i 5000. Jeśli masz jedną z nich, gra automatycznie ją wykorzysta. Jeśli nie, wszystko nadal działa jak wcześniej ze standardową kompresją (która też nie była zła).
-  - 🔧 **Prace hydrauliczne:** Ta aktualizacja wymagała rekompilacji silnika AI od podstaw ze specyficznymi łatkami dla Windows. Nie jest to coś, co od razu widać, ale jest to podstawa, na której będą budowane ulepszenia kontekstu w przyszłych wersjach. (Tak, spędziłem sporo czasu kłócąc się z kompilatorem NVIDII. Nie, nie chcę o tym rozmawiać.)
-- **🧠 Masowa optymalizacja kontekstu (+200%)**
-  - 📖 **AI czyta (i pamięta) potrójnie:** Całkowicie przepisałem algorytm obliczania, ile ""pamięci rozmowy"" może wykorzystać AI. Wcześniej konserwatywne szacunki pozostawiały dużo niewykorzystanego miejsca. Teraz gra odczytuje bezpośrednio specyfikacje techniczne każdego modelu i precyzyjnie oblicza, ile kontekstu mieści się na Twoim GPU. Wynik: model 9B zamiast pamiętać ~36 000 słów, teraz pamięta ponad ~110 000 na GPU z 16 GB VRAM. Twoje długie gry już tak łatwo nie tracą wątku, a zablokowania dla tych z małą ilością VRAM powinny zostać rozwiązane.
-  - 📝 **Dłuższe odpowiedzi:** Zwiększyłem limit długości odpowiedzi AI z 4 096 do 8 192 tokenów. Oznacza to bardziej szczegółowe opisy, bardziej rozbudowane dialogi i narracje, które nie przerywają w połowie zdania, gdy robi się ciekawie.
-  - 🔄 **Działa dla wszystkich modeli:** Ulepszenie jest automatycznie stosowane do każdego kompatybilnego modelu (2B, 4B, 9B...). Jeśli używasz starszego modelu lub modelu strony trzeciej, wszystko nadal działa dokładnie tak samo jak wcześniej — optymalizacja aktywuje się tylko wtedy, gdy wykryje, że model ją obsługuje.",Integracja TurboQuant — Ekstremalna kompresja KV Cache z
-portuguese,"- **🗜️ Novo motor de compressão de memória (TurboQuant)**
-  - 🧠 **IA lembra mais gastando menos:** Integrei uma tecnologia de compressão avançada (TurboQuant, de um artigo do Google apresentado no ICLR 2026) que permite à IA armazenar sua ""memória de trabalho"" ocupando quase um terço do espaço que ocupava antes. Na prática: mais espaço para lembrar seu histórico, suas decisões e o contexto da partida sem que a placa de vídeo reclame.
-  - ⚡ **Compatível com sua GPU:** Funciona em placas NVIDIA RTX das séries 3000, 4000 e 5000. Se você tem uma dessas, o jogo a aproveitará automaticamente. Caso contrário, tudo continua funcionando como antes com a compressão padrão (que também não era ruim).
-  - 🔧 **Trabalho de encanamento:** Esta atualização exigiu recompilar o motor de IA do zero com patches específicos para Windows. Não é algo que se note diretamente, mas é a base sobre a qual as melhorias de contexto das próximas versões serão construídas. (Sim, passei um bom tempo discutindo com o compilador da NVIDIA. Não, não quero falar sobre isso.)
-- **🧠 Otimização massiva de contexto (+200%)**
-  - 📖 **IA lê (e lembra) o triplo:** Reescrevi completamente o cálculo de quanta ""memória de conversa"" a IA pode usar. Antes, uma estimativa conservadora deixava muito espaço inexplorado. Agora, o jogo lê diretamente as especificações técnicas de cada modelo e calcula com precisão quanto contexto cabe na sua GPU. Resultado: o modelo de 9B passa de lembrar ~36.000 palavras para mais de ~110.000 em uma GPU com 16GB de VRAM. Suas partidas longas não perdem o fio da meada tão facilmente e os travamentos para quem tem pouca VRAM devem ser resolvidos.
-  - 📝 **Respostas mais longas:** Aumentei o limite de comprimento de resposta da IA de 4.096 para 8.192 tokens. Isso significa descrições mais detalhadas, diálogos mais elaborados e narrativas que não são cortadas no meio da frase quando a coisa fica interessante.
-  - 🔄 **Funciona para todos os modelos:** A melhoria é aplicada automaticamente a qualquer modelo compatível (2B, 4B, 9B...). Se você usa um modelo mais antigo ou de terceiros, tudo continua funcionando exatamente igual antes — a otimização só é ativada quando detecta que o modelo a suporta.",Integração TurboQuant — Compressão Extrema de KV Cache com
-romanian,"- **🗜️ Motor nou de compresie a memoriei (TurboQuant)**
-  - 🧠 **AI-ul își amintește mai mult, cheltuind mai puțin:** Am integrat o tehnologie avansată de compresie (TurboQuant, dintr-un paper Google prezentat la ICLR 2026) care permite AI-ului să-și stocheze ""memoria de lucru"" ocupând aproape o treime din spațiul anterior. În practică: mai mult spațiu pentru a-ți aminti istoria, deciziile și contextul jocului, fără ca placa grafică să se plângă.
-  - ⚡ **Compatibil cu GPU-ul tău:** Funcționează pe plăci NVIDIA RTX din seriile 3000, 4000 și 5000. Dacă ai una dintre acestea, jocul o va folosi automat. Dacă nu, totul continuă să funcționeze ca înainte cu compresia standard (care oricum nu era rea).
-  - 🔧 **Muncă de „instalator”:** Această actualizare a necesitat recompilarea motorului AI de la zero cu patch-uri specifice pentru Windows. Nu este ceva ce se observă direct, dar este baza pe care se vor construi îmbunătățirile de context din versiunile viitoare. (Da, am petrecut destul timp certându-mă cu compilatorul NVIDIA. Nu, nu vreau să vorbesc despre asta.)
-- **🧠 Optimizare masivă a contextului (+200%)**
-  - 📖 **AI-ul citește (și își amintește) de trei ori mai mult:** Am rescris complet calculul pentru câtă „memorie de conversație” poate folosi AI-ul. Înainte, o estimare conservatoare lăsa mult spațiu nefolosit. Acum, jocul citește direct specificațiile tehnice ale fiecărui model și calculează cu precizie cât context încape pe GPU-ul tău. Rezultat: modelul 9B trece de la a-și aminti ~36.000 de cuvinte la peste ~110.000 pe un GPU cu 16GB VRAM. Jocurile tale lungi nu mai pierd firul atât de ușor, iar blocajele pentru cei cu puțin VRAM ar trebui să se rezolve.
-  - 📝 **Răspunsuri mai lungi:** Am mărit limita lungimii răspunsului AI de la 4.096 la 8.192 tokeni. Asta înseamnă descrieri mai detaliate, dialoguri mai elaborate și narațiuni care nu se opresc la jumătatea frazei când lucrurile devin interesante.
-  - 🔄 **Funcționează pentru toate modelele:** Îmbunătățirea se aplică automat oricărui model compatibil (2B, 4B, 9B...). Dacă folosești un model mai vechi sau de la terți, totul continuă să funcționeze exact ca înainte — optimizarea se activează doar când detectează că modelul o suportă.",Integrare TurboQuant — Compresie Extremă a KV Cache cu
-russian,"- **🗜️ Новый движок сжатия памяти (TurboQuant)**
-  - 🧠 **ИИ запоминает больше, тратя меньше:** Я интегрировал передовую технологию сжатия (TurboQuant, из статьи Google, представленной на ICLR 2026), которая позволяет ИИ хранить свою ""рабочую память"", занимая почти в три раза меньше места, чем раньше. На практике: больше пространства для запоминания вашей истории, ваших решений и игрового контекста, без жалоб со стороны видеокарты.
-  - ⚡ **Совместимо с вашим GPU:** Работает на видеокартах NVIDIA RTX серий 3000, 4000 и 5000. Если у вас одна из них, игра автоматически задействует эту возможность. Если нет, все будет работать как прежде со стандартным сжатием (которое тоже было неплохим).
-  - 🔧 **Черновая работа:** Это обновление потребовало полной перекомпиляции движка ИИ с нуля с использованием специфических патчей для Windows. Это не то, что вы заметите напрямую, но это основа, на которой будут строиться улучшения контекста в будущих версиях. (Да, я провел немало времени, споря с компилятором NVIDIA. Нет, я не хочу об этом говорить.)
-- **🧠 Масштабная оптимизация контекста (+200%)**
-  - 📖 **ИИ читает (и запоминает) втрое больше:** Я полностью переписал расчет того, сколько ""памяти для диалогов"" может использовать ИИ. Раньше консервативная оценка оставляла много неиспользованного пространства. Теперь игра напрямую считывает технические характеристики каждой модели и точно рассчитывает, сколько контекста поместится на вашем GPU. Результат: модель 9B переходит от запоминания ~36 000 слов до более чем ~110 000 на GPU с 16 ГБ VRAM. Ваши долгие игровые сессии больше не будут терять нить повествования так легко, и проблемы с зависаниями у тех, у кого мало VRAM, должны быть решены.
-  - 📝 **Более длинные ответы:** Я увеличил лимит длины ответа ИИ с 4096 до 8192 токенов. Это означает более подробные описания, более проработанные диалоги и повествования, которые не обрываются на полуслове, когда ситуация становится интересной.
-  - 🔄 **Работает для всех моделей:** Улучшение автоматически применяется к любой поддерживаемой модели (2B, 4B, 9B...). Если вы используете более старую модель или стороннюю модель, все будет работать точно так же, как и раньше — оптимизация активируется только тогда, когда она обнаружит, что модель ее поддерживает.",Интеграция TurboQuant — Экстремальное сжатие KV Cache с
-swedish,"- **🗜️ Ny motor för minneskomprimering (TurboQuant)**
-  - 🧠 **AI minns mer, spenderar mindre:** Jag har integrerat avancerad kompressionsteknik (TurboQuant, från ett Google-papper presenterat på ICLR 2026) som gör att AI:n kan lagra sitt ""arbetsminne"" och uppta nästan en tredjedel av vad det tog tidigare. I praktiken: mer utrymme för att komma ihåg din historia, dina beslut och spelets kontext utan att grafikkortet klagar.
-  - ⚡ **Kompatibel med din GPU:** Fungerar på NVIDIA RTX-kort i serierna 3000, 4000 och 5000. Om du har ett av dessa kommer spelet automatiskt att utnyttja det. Om inte, fortsätter allt att fungera som förut med standardkomprimering (som inte heller var dålig).
-  - 🔧 **Rörläggningsarbete:** Denna uppdatering krävde en fullständig omkompilering av AI-motorn med specifika patchar för Windows. Det är inget du märker direkt, men det är grunden som de kommande versionernas kontextförbättringar kommer att byggas på. (Ja, jag tillbringade en bra stund med att tjafsa med NVIDIAs kompilator. Nej, jag vill inte prata om det.)
-- **🧠 Massiv kontextoptimering (+200%)**
-  - 📖 **AI läser (och minns) tre gånger mer:** Jag har helt skrivit om beräkningen av hur mycket ""konversationsminne"" AI:n kan använda. Tidigare lämnade en konservativ uppskattning mycket outnyttjat utrymme. Nu läser spelet direkt de tekniska specifikationerna för varje modell och beräknar exakt hur mycket kontext som får plats på din GPU. Resultat: 9B-modellen går från att minnas ~36 000 ord till över ~110 000 på en GPU med 16 GB VRAM. Dina långa spelomgångar tappar inte tråden lika lätt, och frysningar för de med lite vram bör lösas.
-  - 📝 **Längre svar:** Jag har ökat gränsen för AI:ns svarstext från 4 096 till 8 192 tokens. Det innebär mer detaljerade beskrivningar, mer utarbetade dialoger och berättelser som inte avbryts mitt i en mening när det blir intressant.
-  - 🔄 **Fungerar för alla modeller:** Förbättringen tillämpas automatiskt på alla kompatibla modeller (2B, 4B, 9B...). Om du använder en äldre modell eller en tredjepartsmodell fortsätter allt att fungera precis som förut – optimeringen aktiveras bara när den upptäcker att modellen stöder den.",TurboQuant-integration — Extrem komprimering av KV Cache med
-thai,"- **🗜️ กลไกการบีบอัดหน่วยความจำใหม่ (TurboQuant)**
-  - 🧠 **AI จดจำได้มากขึ้นโดยใช้ทรัพยากรน้อยลง:** ฉันได้รวมเทคโนโลยีการบีบอัดขั้นสูง (TurboQuant จากเปเปอร์ของ Google ที่นำเสนอในงาน ICLR 2026) ซึ่งช่วยให้ AI สามารถจัดเก็บ ""หน่วยความจำในการทำงาน"" ของตัวเองได้ โดยใช้พื้นที่น้อยกว่าเดิมเกือบหนึ่งในสาม ในทางปฏิบัติ: มีพื้นที่มากขึ้นสำหรับการจดจำประวัติการเล่น การตัดสินใจ และบริบทของเกม โดยที่การ์ดจอก็ไม่ต้องทำงานหนักเกินไป
-  - ⚡ **รองรับ GPU ของคุณ:** ทำงานได้บนการ์ด NVIDIA RTX ซีรีส์ 3000, 4000 และ 5000 หากคุณมีการ์ดเหล่านี้ เกมจะใช้ประโยชน์จากมันโดยอัตโนมัติ หากไม่มี การทำงานทุกอย่างจะยังคงเหมือนเดิมกับการบีบอัดมาตรฐาน (ซึ่งก็ไม่เลวเลยทีเดียว)
-  - 🔧 **การปรับปรุงโครงสร้างพื้นฐาน:** การอัปเดตนี้ต้องมีการคอมไพล์เอ็นจิ้น AI ใหม่ทั้งหมดพร้อมแพตช์เฉพาะสำหรับ Windows คุณอาจไม่เห็นการเปลี่ยนแปลงโดยตรง แต่นี่คือรากฐานสำหรับการปรับปรุงบริบทในเวอร์ชันต่อๆ ไป (ใช่ ฉันใช้เวลามากกับการต่อสู้กับคอมไพเลอร์ของ NVIDIA ไม่ ฉันไม่อยากพูดถึงเรื่องนี้)
-- **🧠 การปรับปรุงบริบทครั้งใหญ่ (+200%)**
-  - 📖 **AI อ่าน (และจดจำ) ได้มากขึ้นเป็นสามเท่า:** ฉันได้เขียนการคำนวณใหม่ทั้งหมดเกี่ยวกับปริมาณ ""หน่วยความจำบทสนทนา"" ที่ AI สามารถใช้ได้ ก่อนหน้านี้ การประมาณการที่ค่อนข้างจะระมัดระวัง ทำให้มีพื้นที่ที่ไม่ได้ใช้ประโยชน์มากนัก ตอนนี้ เกมจะอ่านสเปคทางเทคนิคของแต่ละโมเดลโดยตรง และคำนวณได้อย่างแม่นยำว่าบริบทจะพอดีกับ GPU ของคุณได้มากน้อยเพียงใด ผลลัพธ์: โมเดล 9B จะเปลี่ยนจากการจดจำคำได้ประมาณ ~36,000 คำ เป็นมากกว่า ~110,000 คำบน GPU ที่มี VRAM 16GB การเล่นเกมยาวๆ ของคุณจะไม่สูญเสียความต่อเนื่องได้ง่ายอีกต่อไป และปัญหาค้างสำหรับผู้ที่มี VRAM น้อยก็ควรจะได้รับการแก้ไข
-  - 📝 **คำตอบที่ยาวขึ้น:** ฉันได้เพิ่มขีดจำกัดความยาวของการตอบสนองของ AI จาก 4,096 เป็น 8,192 โทเค็น ซึ่งหมายถึงคำอธิบายที่ละเอียดขึ้น บทสนทนาที่ซับซ้อนขึ้น และการบรรยายที่ไม่ขาดตอนกลางประโยค เมื่อเรื่องราวกำลังเข้มข้น
-  - 🔄 **ทำงานได้กับทุกโมเดล:** การปรับปรุงจะถูกนำไปใช้โดยอัตโนมัติกับโมเดลที่รองรับทุกรุ่น (2B, 4B, 9B...) หากคุณใช้โมเดลเก่าหรือโมเดลจากบุคคลที่สาม การทำงานทุกอย่างจะยังคงเหมือนเดิมทุกประการ — การปรับปรุงจะทำงานเมื่อตรวจพบว่าโมเดลรองรับเท่านั้น",การผสานรวม TurboQuant — การบีบอัด KV Cache ขั้นสูง
-turkish,"- **🗜️ Yeni Hafıza Sıkıştırma Motoru (TurboQuant)**
-  - 🧠 **Yapay Zeka Daha Az Kaynakla Daha Fazla Hatırlıyor:** Yapay zekanın ""çalışma belleğini"" öncekine göre yaklaşık üçte biri kadar yer kaplamasını sağlayan gelişmiş bir sıkıştırma teknolojisi (Google'ın ICLR 2026'da sunduğu bir bildiriden TurboQuant) entegre ettim. Pratik anlamda: Grafik kartının şikayet etmesine gerek kalmadan hikayenizi, kararlarınızı ve oyunun bağlamını hatırlamak için daha fazla alan.
-  - ⚡ **GPU'nuzla Uyumlu:** 3000, 4000 ve 5000 serisi NVIDIA RTX kartlarda çalışır. Bunlardan birine sahipseniz, oyun otomatik olarak bundan faydalanacaktır. Yoksa, her şey standart sıkıştırmayla eskisi gibi çalışmaya devam eder (ki bu da hiç fena değildi).
-  - 🔧 **Tesisat İşleri:** Bu güncelleme, yapay zeka motorunun sıfırdan özel Windows yamalarıyla yeniden derlenmesini gerektirdi. Doğrudan fark edilen bir şey değil ama gelecek sürümlerdeki bağlam geliştirmelerinin temelini oluşturacak. (Evet, NVIDIA derleyicisiyle uzun süre tartıştım. Hayır, bu konu hakkında konuşmak istemiyorum.)
-- **🧠 Dev Bağlam Optimizasyonu (+%200)**
-  - 📖 **Yapay Zeka Üç Katını Okuyor (ve Hatırlıyor):** Yapay zekanın ne kadar ""konuşma belleği"" kullanabileceğine dair hesaplamayı tamamen yeniden yazdım. Eskiden muhafazakar bir tahmin, bolca boş alan bırakıyordu. Şimdi oyun, her modelin teknik özelliklerini doğrudan okuyor ve GPU'nuza ne kadar bağlamın sığacağını hassas bir şekilde hesaplıyor. Sonuç: 16GB VRAM'li bir GPU'da 9B'lik model, yaklaşık ~36.000 kelimeden ~110.000 kelimeye kadar hatırlayabilir hale geliyor. Uzun oyunlarınız artık ipin ucunu bu kadar kolay kaybetmiyor ve düşük VRAM'li sistemlerde yaşanan takılmalar çözülmeli.
-  - 📝 **Daha Uzun Yanıtlar:** Yapay zekanın yanıt uzunluğu sınırını 4.096'dan 8.192 token'a çıkardım. Bu, daha ayrıntılı açıklamalar, daha karmaşık diyaloglar ve işler ilginçleştiğinde cümlenin ortasında kesilmeyen anlatılar anlamına gelir.
-  - 🔄 **Tüm Modeller İçin Çalışır:** Geliştirme, uyumlu herhangi bir modele (2B, 4B, 9B...) otomatik olarak uygulanır. Daha eski veya üçüncü taraf bir model kullanıyorsanız, her şey eskisi gibi çalışmaya devam eder — optimizasyon yalnızca modelin desteklediğini algıladığında etkinleşir.",TurboQuant Entegrasyonu — KV Önbelleğinin Aşırı Sıkıştırılması
-ukrainian,"- **🗜️ Новий двигун стиснення пам'яті (TurboQuant)**
-  - 🧠 **ШІ запам'ятовує більше, витрачаючи менше:** Я інтегрував передову технологію стиснення (TurboQuant, з наукової роботи Google, представленої на ICLR 2026), яка дозволяє ШІ зберігати свою ""оперативну пам'ять"", займаючи майже третину попереднього об'єму. На практиці: більше місця для збереження вашої історії, ваших рішень та контексту гри, без скарг з боку відеокарти.
-  - ⚡ **Сумісно з вашою відеокартою:** Працює на відеокартах NVIDIA RTX серій 3000, 4000 та 5000. Якщо у вас одна з них, гра автоматично її використає. Якщо ні, все працюватиме як і раніше зі стандартним стисненням (яке теж було непоганим).
-  - 🔧 **Колосальна робота:** Це оновлення вимагало перекомпіляції двигуна ШІ з нуля зі специфічними патчами для Windows. Це не те, що ви помітите безпосередньо, але це основа, на якій будуватимуться покращення контексту в майбутніх версіях. (Так, я добре подовбався з компілятором NVIDIA. Ні, я не хочу про це говорити.)
-- **🧠 Масова оптимізація контексту (+200%)**
-  - 📖 **ШІ читає (і пам'ятає) втричі більше:** Я повністю переписав розрахунок обсягу ""пам'яті розмови"", яку може використовувати ШІ. Раніше консервативна оцінка залишала багато невикористаного простору. Тепер гра безпосередньо читає технічні характеристики кожної моделі та точно розраховує, скільки контексту вміщується у вашу відеокарту. Результат: модель 9B переходить від запам'ятовування ~36 000 слів до понад ~110 000 на відеокарті з 16 ГБ VRAM. Ваші довгі ігри більше не втрачають нитку так легко, і проблеми з зависаннями для тих, хто має мало VRAM, мають бути вирішені.
-  - 📝 **Довші відповіді:** Я збільшив ліміт довжини відповідей ШІ з 4 096 до 8 192 токенів. Це означає більш детальні описи, складніші діалоги та оповіді, які не обриваються на півслові, коли стає цікаво.
-  - 🔄 **Працює для всіх моделей:** Покращення автоматично застосовується до будь-якої сумісної моделі (2B, 4B, 9B...). Якщо ви використовуєте старішу модель або сторонню, все працюватиме так само, як і раніше — оптимізація вмикається тільки тоді, коли вона виявить, що модель її підтримує.",Інтеграція TurboQuant — Екстремальне стиснення KV Cache з
-vietnamese,"- **🗜️ Công cụ nén bộ nhớ mới (TurboQuant)**
-  - 🧠 **AI ghi nhớ nhiều hơn với chi phí thấp hơn:** Tôi đã tích hợp công nghệ nén tiên tiến (TurboQuant, từ một bài báo của Google được trình bày tại ICLR 2026) cho phép AI lưu trữ ""bộ nhớ làm việc"" của nó với dung lượng chỉ bằng một phần ba dung lượng trước đây. Thực tế: có nhiều không gian hơn để ghi nhớ lịch sử, quyết định và bối cảnh của ván chơi mà không khiến card đồ họa kêu ca.
-  - ⚡ **Tương thích với GPU của bạn:** Hoạt động trên card NVIDIA RTX dòng 3000, 4000 và 5000. Nếu bạn có một trong số đó, trò chơi sẽ tự động tận dụng nó. Nếu không, mọi thứ vẫn hoạt động như trước với công nghệ nén tiêu chuẩn (vốn cũng không tệ).
-  - 🔧 **Công việc sửa ống nước:** Bản cập nhật này yêu cầu biên dịch lại toàn bộ engine AI với các bản vá dành riêng cho Windows. Đây không phải là thứ bạn thấy trực tiếp, nhưng nó là nền tảng để xây dựng các cải tiến về ngữ cảnh cho các phiên bản sắp tới. (Vâng, tôi đã dành khá nhiều thời gian tranh cãi với trình biên dịch của NVIDIA. Không, tôi không muốn nói về điều đó.)
-- **🧠 Tối ưu hóa ngữ cảnh hàng loạt (+200%)**
-  - 📖 **AI đọc (và nhớ) gấp ba lần:** Tôi đã viết lại hoàn toàn việc tính toán ""bộ nhớ hội thoại"" mà AI có thể sử dụng. Trước đây, một ước tính bảo thủ đã để lại nhiều không gian chưa được sử dụng. Bây giờ, trò chơi đọc trực tiếp thông số kỹ thuật của từng mô hình và tính toán chính xác lượng ngữ cảnh có thể chứa trong GPU của bạn. Kết quả: mô hình 9B tăng từ khả năng ghi nhớ ~36.000 từ lên hơn ~110.000 từ trên GPU với 16GB VRAM. Các ván chơi dài của bạn sẽ không còn mất mạch dễ dàng như trước và các hiện tượng treo máy đối với những người có VRAM thấp sẽ được khắc phục.
-  - 📝 **Phản hồi dài hơn:** Tôi đã tăng giới hạn độ dài phản hồi của AI từ 4.096 lên 8.192 token. Điều này có nghĩa là các mô tả chi tiết hơn, các đoạn hội thoại công phu hơn và các câu chuyện không bị cắt ngang giữa chừng khi mọi thứ trở nên thú vị.
-  - 🔄 **Hoạt động cho tất cả các mô hình:** Cải tiến này được áp dụng tự động cho bất kỳ mô hình nào được hỗ trợ (2B, 4B, 9B...). Nếu bạn sử dụng mô hình cũ hơn hoặc của bên thứ ba, mọi thứ vẫn hoạt động giống hệt như trước — quá trình tối ưu hóa chỉ được kích hoạt khi phát hiện mô hình hỗ trợ nó.",Tích hợp TurboQuant — Nén KV Cache Cực Đại với
-schinese,"- **🗜️ 全新内存压缩引擎 (TurboQuant)**
-  - 🧠 **AI 记忆更多，花费更少：** 我集成了一项先进的压缩技术（TurboQuant，来自 Google 在 ICLR 2026 上发表的论文），能让 AI 存储其“工作记忆”时占用的空间不到原来的三分之一。实际效果：为你的游戏历史、你的决策和游戏背景提供了更多存储空间，而不会让你的显卡抱怨。
-  - ⚡ **兼容你的 GPU：** 该功能适用于 NVIDIA RTX 3000、4000 和 5000 系列显卡。如果你有这些显卡，游戏会自动利用该功能。如果没有，一切将继续按原样运行，使用标准的压缩方式（那也相当不错）。
-  - 🔧 **底层优化：** 此更新需要使用 Windows 特定补丁从头开始重新编译 AI 引擎。这可能不是最直接能看到的变化，但它是构建下一版本上下文增强功能的基础。（是的，我和 NVIDIA 编译器斗争了很久。不，我不想谈论它。）
-- **🧠 海量上下文优化 (+200%)**
-  - 📖 **AI 阅读（并记住）三倍内容：** 我已完全重写了 AI 可以使用的“对话记忆”的计算方式。过去，保守的估计留下了很多未被利用的空间。现在，游戏会直接读取每个模型的技术规格，并精确计算出你的 GPU 能容纳多少上下文。结果：在拥有 16GB 显存的 GPU 上，9B 模型能从大约 36,000 字的记忆量提升到超过 110,000 字。你的长局游戏不会再轻易失去线索，而显存较低的玩家遇到的卡顿问题也应该会得到解决。
-  - 📝 **更长的回复：** 我已将 AI 的回复长度限制从 4,096 个 token 增加到 8,192 个 token。这意味着更详细的描述、更丰富的对话和更有趣的叙事，而不会在关键时刻戛然而止。
-  - 🔄 **适用于所有模型：** 该优化会自动应用于任何支持的模型（2B、4B、9B...）。如果你使用旧模型或第三方模型，一切将与之前完全一样——优化仅在检测到模型支持时激活。",TurboQuant 集成 — KV Cache 极度压缩，
-tchinese,"- **🗜️ 全新記憶體壓縮引擎 (TurboQuant)**
-  - 🧠 **AI 記憶更多，花費更少：** 我整合了一項先進的壓縮技術 (TurboQuant，源自 Google 在 ICLR 2026 的一篇論文)，讓 AI 儲存其「工作記憶」時佔用的空間不到原來的 1/3。實際效果：有更多空間記住你的歷史、你的決定以及遊戲的背景，而不會讓你的顯示卡抱怨。
-  - ⚡ **相容你的 GPU：** 可用於 NVIDIA RTX 3000、4000 和 5000 系列顯示卡。如果你有其中一款，遊戲將自動利用它。如果沒有，一切都會像以前一樣以標準壓縮 (也算不錯) 繼續運作。
-  - 🔧 **底層架構更新：** 這次更新需要從頭重新編譯 AI 引擎，並為 Windows 套用特定補丁。這不是你直接能注意到的，但它是未來版本上下文改進的基礎。(是的，我花了很多時間和 NVIDIA 編譯器搏鬥。不，我不想談論它。)
-- **🧠 大規模上下文優化 (+200%)**
-  - 📖 **AI 閱讀 (並記住) 三倍長的內容：** 我徹底重寫了 AI 可使用的「對話記憶」計算方式。之前，一個保守的估計留下了很多未使用的空間。現在，遊戲直接讀取每個模型的技術規格，並精確計算出你的 GPU 能容納多少上下文。結果：在 16GB VRAM 的 GPU 上，9B 模型從記憶約 36,000 字增加到超過 110,000 字。你長時間的遊戲體驗不再容易失去連貫性，並且應該能解決低 VRAM 使用者遇到的凍結問題。
-  - 📝 **更長的回答：** 我將 AI 的回答長度限制從 4,096 個 token 增加到 8,192 個 token。這意味著更詳細的描述、更豐富的對話以及在情節變得有趣時不會在半句話中中斷的敘事。
-  - 🔄 **適用於所有模型：** 此優化會自動套用到任何支援的模型 (2B, 4B, 9B...)。如果你使用較舊的或第三方模型，一切都將像以前一樣運作 — 該優化僅在偵測到模型支援時才會啟用。",TurboQuant 整合 — KV Cache 極致壓縮
+arabic,"- **🌍 عوالم مشتركة أكثر منطقية بشكل ملحوظ**
+  - لقد قمت بتحسين الاستمرارية عندما يشارك العديد من الشخصيات نفس العالم. الآن، يعيد استخدام اللعبة بشكل أفضل للأماكن الصالحة بالفعل ويترك مجالًا أقل لاختراع ""نفس المنطقة، ولكن باسم مختلف وقبعة مختلفة"".
+  - قمت أيضًا بتصحيح معلومات الموقع في المحدد وفي الملف الشخصي، بحيث تعرض كل شخصية موقعها الفعلي وليس موقعًا مستعارًا من الجيران.
+- **👥 شخصيات غير قابلة للعب (NPCs) أكثر اتساقًا وأقل ميلًا للانقسام**
+  - لقد عززت المنطق بحيث تعود شخصية غير قابلة للعب موجودة للظهور كذاتها عندما يحين الوقت، بدلاً من إعادة اختراع نفسها باسم آخر أو بوجه آخر أو ببطاقة جديدة تظهر من العدم.
+  - علاوة على ذلك، العداء الذي تسببه شخصية لم يعد من المفترض أن يلوث جميع الآخرين بالسحر. إذا غضب كايلين منك، فالفكرة هي أن يغضب منك... وليس من الجنس البشري بأكمله.
+- **🎬 بداية اللعبة والاستكشاف مع قدر أقل من الدراما الغريبة**
+  - لقد قمت بتصحيح حالات متعددة حيث ألمح السرد إلى وجود شخص أمامك، لكن النظام لم يدعمه من الأسفل. الآن هناك عدد أقل من البائعين الوهميين، وعدد أقل من المتحدثين الذين يتبخرون، وعدد أقل من المشاهد التي تبدو وكأنها مسرحية تجريبية بميزانية محدودة.
+  - قللت أيضًا من الحالات التي كانت فيها الذكاء الاصطناعي يضع هدايا أو مخزونًا أو عناصر سردية في أماكن غير مناسبة، خاصة عند الوصول والمشاهد الأولى.
+- **⚔️ قتال وقرارات مع عدد أقل من التعثرات**
+  - لقد عززت الاستمرارية بين الاستكشاف والقتال بحيث يعتمد الدخول في معركة بشكل أفضل على الشخصيات غير القابلة للعب الموجودة بالفعل وليس على دخان السرد.
+  - قمت أيضًا بتصحيح حالات تعثر متعددة حيث استمر المشهد، لكن الواجهة وقعت في قرارات ضعيفة أو عامة. عدد أقل من ""متابعة"" لمجرد السبب، والمزيد من الخيارات ذات النية الحقيقية.
+- **🧬 إنشاء شخصية وإعدادات أكثر موثوقية**
+  - أصبح إنشاء الشخصية العشوائي أكثر استقرارًا ويعيد احترام تنسيق السيرة الذاتية الذي تتوقعه اللعبة بشكل أفضل.
+  - لقد قمت بتعديل العديد من التناقضات في الإعدادات والموارد حتى لا تختلط السايبربانك، والفانتازيا، ومشتقاتها كما لو أن حانة القرون الوسطى وغرفة عمليات سرية قررت استئجار نفس المكان.",عوالم مشتركة، بدء تشغيل، وقتال أكثر اتساقًا
+bulgarian,"- **🌍 Доста по-смислени споделени светове**
+  - Подобрих последователността, когато няколко героя споделят един и същ свят. Сега играта по-добре използва повторно вече валидни места и оставя по-малко място за измисляне на „същата зона, но с друго име и друга шапка“.
+  - Коригирах и информацията за местоположението в селектора и в досието, така че всеки герой да показва реалното си местоположение, а не заето от съседа.
+- **👥 По-последователни и по-малко раздвояващи се NPC**
+  - Подсилих логиката, така че вече съществуващ NPC да се появява отново като себе си, когато е уместно, вместо да се преоткрива с друго име, друго лице или нова карта, изплувала от мъглата.
+  - Освен това, вражда, предизвикана от един герой, вече не би трябвало да заразява всички останали по магически път. Ако Каелън ти се ядоса, идеята е той да ти се ядоса на теб... а не на целия човешки род.
+- **🎬 Въвеждане в игра и изследване с по-малко странен театър**
+  - Коригирах няколко случая, в които наративът подсказваше, че някой е пред теб, но системата не го подкрепяше отдолу. Сега има по-малко призрачни търговци, по-малко изпаряващи се събеседници и по-малко сцени, които приличат на експериментална пиеса без бюджет.
+  - Също така намалих случаите, в които AI е вмъквал подаръци, стоки или наративни предмети, където не им е мястото, особено при влизания и първи сцени.
+- **⚔️ Битки и решения с по-малко спънки**
+  - Подсилих последователността между изследване и битка, така че влизането в бой да зависи по-добре от реално присъстващи NPC, а не от наративен дим.
+  - Коригирах и няколко заклещвания, при които сцената продължаваше да е активна, но интерфейсът попадаше в лоши или общи решения. По-малко „Продължи“ ей така, повече опции с реално намерение.
+- **🧬 Създаване на герои и по-надеждни обстановки**
+  - Случайното създаване на герои отново е по-стабилно и по-добре спазва биографичния формат, който играта очаква.
+  - Нагласих няколко несъответствия в обстановката и ресурсите, така че киберпънк, фентъзи и техните производни да не се смесват, сякаш средновековна таверна и подполен хирургически кабинет са решили да наемат едно и също място.","Споделени светове, по-последователно въвеждане и битки"
+czech,"- **🌍 Sdílené světy mnohem rozumnější**
+  - Vylepšil jsem kontinuitu, když více postav sdílí stejný svět. Hra nyní lépe znovu používá již platná místa a ponechává méně prostoru pro vymýšlení „stejné oblasti, ale s jiným názvem a jiným kloboukem“.
+  - Opravil jsem také informace o poloze v selektoru a na kartě, aby každá postava zobrazovala svou skutečnou polohu, nikoli půjčenou od souseda.
+- **👥 Soudržnější NPC a méně náchylní k rozštěpení osobnosti**
+  - Posílil jsem logiku, aby se již existující NPC vrátil jako sám sebou, když má, místo aby se vymýšlel s jiným jménem, jinou tváří nebo novou kartou vyšlou z mlhy.
+  - Navíc nepřátelství vyvolané postavou by již nemělo magicky kontaminovat všechny ostatní. Pokud se na vás Kaelen naštve, je záměr, aby se naštval na vás... ne na celý lidský rod.
+- **🎬 Nástupy do hry a průzkum s menším podivným divadlem**
+  - Opravil jsem několik případů, kdy vyprávění naznačovalo, že před vámi někdo stojí, ale systém to zespodu nepodporoval. Nyní je méně přízračných prodejců, méně mizících mluvčích a méně scén, které vypadají jako nízkorozpočtová experimentální hra.
+  - Také jsem snížil počet případů, kdy AI vkládala dárky, zásoby nebo narativní předměty tam, kam neměla, zejména při příchodech a v prvních scénách.
+- **⚔️ Boj a rozhodnutí s menším počtem zakopnutí**
+  - Posílil jsem kontinuitu mezi průzkumem a bojem, takže vstup do boje lépe závisí na skutečně přítomných NPC a ne na narativním kouři.
+  - Opravil jsem také několik záseků, kde scéna běžela dál, ale rozhraní upadlo do špatných nebo obecných rozhodnutí. Méně „Pokračovat“ jen tak, více možností se skutečným záměrem.
+- **🧬 Spolehlivější tvorba postav a prostředí**
+  - Náhodná tvorba postav je opět stabilnější a lépe respektuje biografický formát, který hra očekává.
+  - Upravil jsem několik nesrovnalostí v prostředí a zdrojích, aby se kyberpunk, fantasy a jejich odvozeniny nemíchaly, jako by se středověká krčma a ilegální operační sál rozhodly pronajmout si stejný prostor.","Sdílené světy, nástup a boj soudržnější"
+danish,"- **🌍 Fælles verdener, der giver meget mere mening**
+  - Jeg har forbedret kontinuiteten, når flere karakterer deler den samme verden. Spillet genbruger nu bedre eksisterende steder og giver mindre spillerum for at opfinde ""det samme område, men med et andet navn og en anden hat"".
+  - Jeg har også rettet op på placeringsinformationen i vælgeren og på karakterkortet, så hver karakter viser sin faktiske placering og ikke en lånt fra naboen.
+- **👥 Mere sammenhængende NPC'er og mindre tilbøjelige til at fordoble sig**
+  - Jeg har styrket logikken, så en eksisterende NPC dukker op igen som sig selv, når det er meningen, i stedet for at opfinde sig selv med et andet navn, et andet ansigt eller et nyt kort ud af det blå.
+  - Desuden bør en fjendtlighed fremprovokeret af én karakter ikke længere smitte alle andre som ved et trylleslag. Hvis Kaelen bliver vred på dig, er meningen, at han bliver vred på dig... ikke på hele menneskeheden.
+- **🎬 Startscener og udforskning med mindre underlig teater**
+  - Jeg har rettet flere tilfælde, hvor fortællingen antydede, at nogen stod foran dig, men systemet ikke understøttede det. Nu er der færre spøgelsesforhandlere, færre forsvindende samtalepartnere og færre scener, der ligner et eksperimentelt teaterstykke uden budget.
+  - Jeg har også reduceret tilfælde, hvor AI'en placerede gaver, inventar eller narrative genstande, hvor de ikke hørte hjemme, især ved ankomster og indledende scener.
+- **⚔️ Kamp og beslutninger med færre snublesten**
+  - Jeg har styrket kontinuiteten mellem udforskning og kamp, så kampopstart afhænger bedre af faktisk tilstedeværende NPC'er og ikke af narrativ røg.
+  - Jeg har også rettet flere fastlåste situationer, hvor scenen fortsatte, men brugergrænsefladen faldt tilbage til dårlige eller generiske valg. Mindre ""Fortsæt"" for ingenting, flere valg med reel hensigt.
+- **🧬 Karakteroprettelse og mere pålidelige omgivelser**
+  - Tilfældig karakteroprettelse er igen mere stabil og respekterer bedre det biografiske format, spillet forventer.
+  - Jeg har justeret flere uoverensstemmelser i omgivelser og ressourcer, så cyberpunk, fantasy og deres derivater ikke blandes, som om en middelalderlig kro og en hemmelig operationsstue havde besluttet at leje samme lokale.","Fælles verdener, onboarding og kamp mere sammenhængende"
+german,"- **🌍 Geteilte Welten deutlich sinnvoller**
+  - Ich habe die Kontinuität verbessert, wenn mehrere Charaktere dieselbe Welt teilen. Das Spiel verwendet nun bereits gültige Orte besser wieder und lässt weniger Raum für die Erfindung von „derselben Zone, aber mit anderem Namen und anderem Hut“.
+  - Außerdem habe ich die Standortinformationen in der Auswahl und im Profil korrigiert, sodass jeder Charakter seinen tatsächlichen Standort anzeigt und nicht den des Nachbarn.
+- **👥 Kohärentere und weniger zwiespältige NPCs**
+  - Ich habe die Logik verstärkt, damit ein bereits existierender NPC wieder als er selbst erscheint, wenn es an der Zeit ist, anstatt sich mit einem anderen Namen, einem anderen Gesicht oder einer neuen, aus dem Nebel aufgetauchten Karte neu zu erfinden.
+  - Darüber hinaus sollte eine durch einen Charakter verursachte Feindschaft nicht mehr magisch alle anderen kontaminieren. Wenn Kaelen sauer auf dich ist, soll er sauer auf dich sein... nicht auf die gesamte menschliche Spezies.
+- **🎬 Weniger seltsame theatralische Startsequenzen und Erkundung**
+  - Ich habe verschiedene Fälle korrigiert, in denen die Erzählung andeutete, dass jemand vor dir stand, das System dies aber nicht unterstützte. Es gibt nun weniger Geisterverkäufer, weniger verdampfte Gesprächspartner und weniger Szenen, die wie ein experimentelles Theaterstück ohne Budget wirken.
+  - Ich habe auch Fälle reduziert, in denen die KI Geschenke, Vorräte oder erzählerische Gegenstände an ungünstigen Stellen platzierte, insbesondere bei Ankünften und in den ersten Szenen.
+- **⚔️ Weniger stolpernde Kämpfe und Entscheidungen**
+  - Ich habe die Kontinuität zwischen Erkundung und Kampf verstärkt, damit der Kampf besser von tatsächlich vorhandenen NPCs und nicht von erzählerischem Rauch abhängt.
+  - Ich habe auch verschiedene Blockaden behoben, bei denen die Szene noch lief, die Benutzeroberfläche aber in schlechte oder generische Entscheidungen verfiel. Weniger „Weiter“ um des Weiterseins willen, mehr Optionen mit echter Absicht.
+- **🧬 Zuverlässigere Charaktererstellung und Umgebungen**
+  - Die zufällige Charaktererstellung ist wieder stabiler und respektiert das vom Spiel erwartete biografische Format besser.
+  - Ich habe verschiedene Inkonsistenzen bei Umgebungen und Ressourcen angepasst, damit Cyberpunk, Fantasy und ihre Derivate nicht vermischt werden, als hätten eine mittelalterliche Taverne und ein illegaler Operationssaal beschlossen, denselben Ort zu mieten.","Geteilte Welten, kohärenteres Onboarding und Kampfsystem"
+greek,"- **🌍 Σημαντικά πιο λογικοί κοινοί κόσμοι**
+  - Βελτίωσα τη συνέπεια όταν πολλοί χαρακτήρες μοιράζονται τον ίδιο κόσμο. Τώρα το παιχνίδι επαναχρησιμοποιεί καλύτερα υπάρχουσες, έγκυρες τοποθεσίες και αφήνει λιγότερα περιθώρια για εφεύρεση «της ίδιας περιοχής, αλλά με άλλο όνομα και άλλο καπέλο».
+  - Επίσης, διόρθωσα τις πληροφορίες τοποθεσίας στον επιλογέα και στην κάρτα, ώστε κάθε χαρακτήρας να εμφανίζει την πραγματική του τοποθεσία και όχι αυτή ενός γείτονα.
+- **👥 Πιο λογικοί και λιγότερο επιρρεπείς σε διπλοπροσωπίες NPCs**
+  - Ενίσχυσα τη λογική ώστε ένας υπάρχων NPC να επανεμφανίζεται ως ο εαυτός του όταν πρέπει, αντί να επινοεί εκ νέου με άλλο όνομα, άλλο πρόσωπο ή νέα κάρτα που ξεπροβάλλει από την ομίχλη.
+  - Επιπλέον, μια εχθρότητα που προκλήθηκε από έναν χαρακτήρα δεν θα πρέπει πλέον να μολύνει μαγικά όλους τους άλλους. Αν ο Kaelen θυμώσει μαζί σου, η ιδέα είναι να θυμώσει μαζί σου... όχι με ολόκληρο το ανθρώπινο είδος.
+- **🎬 Λιγότερο παράξενες εισαγωγές και εξερευνήσεις**
+  - Διόρθωσα διάφορες περιπτώσεις όπου η αφήγηση υπαινισσόταν ότι κάποιος βρισκόταν μπροστά σου, αλλά το σύστημα δεν το υποστήριζε από κάτω. Τώρα υπάρχουν λιγότεροι φανταστικοί πωλητές, λιγότεροι εξαφανιζόμενοι συνομιλητές και λιγότερες σκηνές που μοιάζουν με πειραματικό έργο χωρίς προϋπολογισμό.
+  - Επίσης, μείωσα τις περιπτώσεις όπου η AI τοποθετούσε δώρα, αποθέματα ή αφηγηματικά αντικείμενα όπου δεν έπρεπε, ειδικά στις εισόδους και στις πρώτες σκηνές.
+- **⚔️ Λιγότερα εμπόδια στη μάχη και στις αποφάσεις**
+  - Ενίσχυσα τη συνέχεια μεταξύ εξερεύνησης και μάχης, ώστε η έναρξη μιας μάχης να βασίζεται καλύτερα σε πραγματικά παρόντες NPCs και όχι σε αφηγηματικό καπνό.
+  - Επίσης, διόρθωσα διάφορα μπλοκαρίσματα όπου η σκηνή συνέχιζε να είναι ενεργή, αλλά η διεπαφή έπεφτε σε κακές ή γενικές αποφάσεις. Λιγότερο «Συνέχεια» από μόνο του, περισσότερες επιλογές με πραγματική πρόθεση.
+- **🧬 Πιο αξιόπιστη δημιουργία χαρακτήρα και ατμόσφαιρες**
+  - Η τυχαία δημιουργία χαρακτήρα είναι και πάλι πιο σταθερή και σέβεται καλύτερα τη βιογραφική μορφή που αναμένει το παιχνίδι.
+  - Προσάρμοσα διάφορες ασυνέπειες ατμόσφαιρας και πόρων, ώστε το cyberpunk, η φαντασία και τα παράγωγά τους να μην αναμειγνύονται σαν μια μεσαιωνική ταβέρνα και ένα παράνομο χειρουργείο να αποφάσισαν να νοικιάσουν τον ίδιο χώρο.","Κοινότεροι κόσμοι, συνεπέστερη εισαγωγή και μάχη"
+english,"- **🌍 Much More Sensible Shared Worlds**
+  - I've improved continuity when multiple characters share the same world. The game now reuses valid locations better, leaving less room for inventing ""the same zone, but with a different name and hat.""
+  - I've also corrected location information in the selector and character sheet, so each character shows their real location, not one borrowed from their neighbor.
+- **👥 More Consistent NPCs and Less Prone to Splitting**
+  - I've reinforced the logic so that an existing NPC reappears as themselves when appropriate, instead of reinventing themselves with a new name, face, or a card pulled from the mist.
+  - Furthermore, an enmity triggered by one character should no longer magically contaminate all others. If Kaelen gets angry with you, the idea is that they get angry with you... not with the entire human race.
+- **🎬 Smoother Starting Scenes and Exploration with Less Weirdness**
+  - I've fixed several cases where the narration implied someone was in front of you, but the system didn't support it underneath. There are now fewer ghost vendors, fewer evaporated interlocutors, and fewer scenes that feel like a low-budget experimental play.
+  - I've also reduced instances where the AI inserted gifts, stock, or narrative items where they didn't belong, especially during arrivals and initial scenes.
+- **⚔️ Combat and Decisions with Fewer Stumbles**
+  - I've reinforced continuity between exploration and combat so that entering a fight depends better on actually present NPCs and not narrative smoke.
+  - I've also fixed several stalls where the scene remained active, but the interface fell into poor or generic decisions. Less ""Continue"" for the sake of it, more options with real intent.
+- **🧬 More Reliable Character Creation and Settings**
+  - Random character creation is now more stable and better respects the biographical format the game expects.
+  - I've adjusted several inconsistencies in setting and resources so that cyberpunk, fantasy, and their derivatives don't blend as if a medieval tavern and a clandestine operating room had decided to rent the same space.","More Consistent Shared Worlds, Onboarding, and Combat"
+spanish,"- **🌍 Mundos compartidos bastante más sensatos**
+  - He mejorado la continuidad cuando varios personajes comparten el mismo mundo. Ahora el juego reaprovecha mejor lugares ya válidos y deja menos margen para inventarse “la misma zona, pero con otro nombre y otro sombrero”.
+  - También he corregido la información de ubicación en el selector y en la ficha, para que cada personaje muestre su localización real y no una prestada del vecino.
+- **👥 PNJs más coherentes y menos dados al desdoblamiento**
+  - He reforzado la lógica para que un PNJ ya existente vuelva a aparecer como él mismo cuando toca, en vez de reinventarse con otro nombre, otra cara o una tarjeta nueva salida de la niebla.
+  - Además, una enemistad provocada por un personaje ya no debería contaminar a todos los demás por arte de magia. Si Kaelen se enfada contigo, la idea es que se enfade contigo... no con la especie humana entera.
+- **🎬 Entradas de partida y exploración con menos teatro raro**
+  - He corregido varios casos en los que la narración insinuaba que alguien estaba delante de ti, pero el sistema no lo sostenía por debajo. Ahora hay menos vendedores fantasma, menos interlocutores evaporados y menos escenas que parecen una obra experimental sin presupuesto.
+  - También he reducido casos en los que la IA colaba regalos, stock o ítems narrativos donde no tocaba, especialmente en las llegadas y primeras escenas.
+- **⚔️ Combate y decisiones con menos tropiezos**
+  - He reforzado la continuidad entre exploración y combate para que la entrada en pelea dependa mejor de PNJs realmente presentes y no de humo narrativo.
+  - También he corregido varios atascos donde la escena seguía viva, pero la interfaz caía en decisiones pobres o genéricas. Menos “Continuar” porque sí, más opciones con intención real.
+- **🧬 Creación de personaje y ambientaciones más fiables**
+  - La creación aleatoria de personaje vuelve a ser más estable y respeta mejor el formato biográfico que espera el juego.
+  - He ajustado varias incoherencias de ambientación y recursos para que cyberpunk, fantasía y sus derivados no se mezclen como si una taberna medieval y un quirófano clandestino hubieran decidido alquilar el mismo local.","Mundos compartidos, onboarding y combate más coherentes"
+latam,"- **🌍 Mundos compartidos mucho más sensatos**
+  - He mejorado la continuidad cuando varios personajes comparten el mismo mundo. Ahora el juego reutiliza mejor las ubicaciones ya válidas y deja menos margen para inventarse ""la misma zona, pero con otro nombre y otro sombrero"".
+  - También he corregido la información de ubicación en el selector y en la ficha, para que cada personaje muestre su localización real y no una prestada del vecino.
+- **👥 PNJs más coherentes y menos dados al desdoblamiento**
+  - He reforzado la lógica para que un PNJ ya existente vuelva a aparecer como él mismo cuando corresponde, en lugar de reinventarse con otro nombre, otra cara o una tarjeta nueva salida de la nada.
+  - Además, una enemistad provocada por un personaje ya no debería contaminar a todos los demás de forma mágica. Si Kaelen se enfada contigo, la idea es que se enfade contigo... no con la especie humana entera.
+- **🎬 Entradas de partida y exploración con menos teatro extraño**
+  - He corregido varios casos en los que la narración insinuaba que alguien estaba delante de ti, pero el sistema no lo respaldaba. Ahora hay menos vendedores fantasma, menos interlocutores evaporados y menos escenas que parecen una obra experimental sin presupuesto.
+  - También he reducido casos en los que la IA colaba regalos, existencias o elementos narrativos donde no correspondía, especialmente en las llegadas y primeras escenas.
+- **⚔️ Combate y decisiones con menos tropiezos**
+  - He reforzado la continuidad entre exploración y combate para que la entrada en pelea dependa mejor de PNJs realmente presentes y no de humo narrativo.
+  - También he corregido varios atascos donde la escena seguía activa, pero la interfaz caía en decisiones pobres o genéricas. Menos ""Continuar"" porque sí, más opciones con intención real.
+- **🧬 Creación de personaje y ambientaciones más fiables**
+  - La creación aleatoria de personaje vuelve a ser más estable y respeta mejor el formato biográfico que espera el juego.
+  - He ajustado varias incoherencias de ambientación y recursos para que cyberpunk, fantasía y sus derivados no se mezclen como si una taberna medieval y un quirófano clandestino hubieran decidido alquilar el mismo local.","Mundos compartidos, incorporación y combate más coherentes"
+finnish,"- **🌍 Selvästi järkevämpiä yhteisiä maailmoja**
+  - Olen parantanut jatkuvuutta, kun useampi hahmo jakaa saman maailman. Nyt peli hyödyntää paremmin jo olemassa olevia paikkoja ja jättää vähemmän tilaa mielikuvituksellisille ""samalle alueelle eri nimellä ja eri hatulla"".
+  - Olen myös korjannut sijaintitietoja valitsimessa ja hahmokortissa, jotta jokainen hahmo näyttää todellisen sijaintinsa eikä naapurin lainaamaansa.
+- **👥 Johdonmukaisemmat NPC:t ja vähemmän kaksoisolentoja**
+  - Olen vahvistanut logiikkaa niin, että jo olemassa oleva NPC ilmestyy takaisin omana itsenään silloin kun sen pitäisi, sen sijaan että se keksittäisiin uudelleen eri nimellä, eri kasvoilla tai sumusta ilmestyneenä uutena korttina.
+  - Lisäksi hahmon aiheuttaman vihamielisyyden ei pitäisi enää maagisesti levitä kaikkiin muihin. Jos Kaelen suuttuu sinulle, ideana on, että hän suuttuu sinulle... ei koko ihmislajille.
+- **🎬 Vähemmän outoa teatteria aloituksissa ja tutkimusmatkoilla**
+  - Olen korjannut useita tapauksia, joissa kerronta antoi ymmärtää jonkun olevan edessäsi, mutta järjestelmä ei tukenut sitä. Nyt on vähemmän kummitusmyyjiä, vähemmän haihtuneita keskustelukumppaneita ja vähemmän kohtauksia, jotka muistuttavat budjetiltaan köyhää kokeellista näytelmää.
+  - Olen myös vähentänyt tapauksia, joissa tekoäly ujutti lahjoja, varastoa tai tarinallisia esineitä vääriin paikkoihin, erityisesti saapumis- ja alkukohtauksissa.
+- **⚔️ Vähemmän kompasteluja taistelussa ja päätöksissä**
+  - Olen vahvistanut jatkuvuutta tutkimisen ja taistelun välillä, jotta taisteluun siirtyminen riippuu paremmin todella läsnä olevista NPC:istä eikä tarinallisesta savusta.
+  - Olen myös korjannut useita jumituksia, joissa kohtaus jatkui, mutta käyttöliittymä päätyi huonoihin tai yleisiin päätöksiin. Vähemmän ""Jatka"" ilman syytä, enemmän todellisia ja tarkoituksellisia valintoja.
+- **🧬 Luotettavampi hahmonluonti ja ympäristöt**
+  - Hahmon satunnainen luonti on taas vakaampi ja kunnioittaa paremmin pelin odottamaa elämäkertamuotoa.
+  - Olen korjannut useita ympäristö- ja resurssien epäjohdonmukaisuuksia, jotta cyberpunk, fantasia ja niiden johdannaiset eivät sekoitu kuin keskiaikainen taverna ja salainen leikkaussali olisivat vuokranneet saman tilan.","Yhteisemmät maailmat, johdonmukaisempi perehdytys ja taistelu"
+french,"- **🌍 Mondes partagés beaucoup plus sensés**
+  - J'ai amélioré la continuité lorsque plusieurs personnages partagent le même monde. Le jeu réutilise désormais mieux les lieux déjà valides et laisse moins de place à l'invention de « la même zone, mais avec un autre nom et un autre chapeau ».
+  - J'ai également corrigé les informations de localisation dans le sélecteur et sur la fiche, afin que chaque personnage affiche sa localisation réelle et non celle d'un voisin.
+- **👥 PNJ plus cohérents et moins sujets au dédoublement**
+  - J'ai renforcé la logique afin qu'un PNJ déjà existant réapparaisse en tant que lui-même lorsque cela est approprié, au lieu de se réinventer avec un autre nom, un autre visage ou une nouvelle carte sortie du néant.
+  - De plus, une inimitié provoquée par un personnage ne devrait plus contaminer tous les autres par magie. Si Kaelen est en colère contre vous, l'idée est qu'il soit en colère contre vous... pas contre l'espèce humaine entière.
+- **🎬 Entrées de partie et exploration avec moins de théâtre étrange**
+  - J'ai corrigé plusieurs cas où la narration insinuait que quelqu'un était devant vous, mais que le système ne le soutenait pas en arrière-plan. Il y a désormais moins de marchands fantômes, moins d'interlocuteurs évaporés et moins de scènes qui ressemblent à une pièce expérimentale sans budget.
+  - J'ai également réduit les cas où l'IA plaçait des cadeaux, des stocks ou des objets narratifs là où ils n'avaient pas leur place, en particulier lors des arrivées et des premières scènes.
+- **⚔️ Combat et décisions avec moins de faux pas**
+  - J'ai renforcé la continuité entre l'exploration et le combat afin que l'entrée en combat dépende mieux des PNJ réellement présents et non d'une fumée narrative.
+  - J'ai également corrigé plusieurs blocages où la scène restait active, mais où l'interface tombait sur des décisions médiocres ou génériques. Moins de « Continuer » pour le plaisir, plus d'options avec une intention réelle.
+- **🧬 Création de personnage et ambiances plus fiables**
+  - La création aléatoire de personnage est de nouveau plus stable et respecte mieux le format biographique attendu par le jeu.
+  - J'ai ajusté plusieurs incohérences d'ambiance et de ressources afin que le cyberpunk, la fantasy et leurs dérivés ne se mélangent pas comme si une taverne médiévale et un bloc opératoire clandestin avaient décidé de louer le même local.","Mondes partagés, onboarding et combat plus cohérents"
+hungarian,"- **🌍 Sokkal értelmesebb megosztott világok**
+  - Javítottam a folytonosságot, amikor több karakter osztozik ugyanazon a világon. A játék most jobban újrahasznosítja a már érvényes helyszíneket, és kisebb teret enged az „ugyanaz a terület, csak más névvel és más kalappal” jelenségnek.
+  - Javítottam a helyszíninformációkat is a kiválasztóban és az adatlapokon, így minden karakter a saját valós tartózkodási helyét mutatja, nem a szomszéd kölcsönbe adottját.
+- **👥 Koherensebb NPC-k és kevésbé hajlamosak kettőződésre**
+  - Megerősítettem a logikát, hogy egy már létező NPC akkor jelenjen meg újra önmagaként, amikor kell, ahelyett, hogy új névvel, új arccal vagy a ködből előkerült új kártyával újulna meg.
+  - Ezenkívül egy karakter által kiváltott ellenségeskedés már nem fertőz meg varázslatos módon mindenkit. Ha Kaelen megharagszik rád, az az elképzelés, hogy rád haragszik... nem az egész emberi fajra.
+- **🎬 Kevesebb furcsa színházi előadás indítás és felfedezés**
+  - Javítottam több olyan esetet, amikor a narráció azt sugallta, hogy valaki előtted áll, de a rendszer nem támasztotta alá. Most kevesebb a kísértetárus, kevesebb az eltűnő beszélgetőpartner és kevesebb a nem költségvetésű kísérleti színdarabnak tűnő jelenet.
+  - Csökkentettem azokat az eseteket is, amikor az AI nem odaillő ajándékokat, készleteket vagy narratív tárgyakat dobott be, különösen az érkezésekkor és az első jelenetekben.
+- **⚔️ Kevésbé akadozó harc és döntések**
+  - Megerősítettem a felfedezés és a harc közötti folytonosságot, hogy a harcba lépés jobban függjön a valóban jelenlévő NPC-ktől, és ne narratív füsttől.
+  - Javítottam több olyan megrekedést is, ahol a jelenet tovább futott, de az interfész rossz vagy általános döntésekbe esett. Kevesebb a „Folytatás” csak úgy, több a valódi szándékú opció.
+- **🧬 Megbízhatóbb karakteralkotás és környezetek**
+  - A véletlenszerű karakteralkotás ismét stabilabb lett, és jobban tiszteletben tartja a játék által elvárt életrajzi formátumot.
+  - Beállítottam több környezeti és erőforrásbeli inkonzisztenciát, hogy a cyberpunk, a fantasy és azok származékai ne keveredjenek úgy, mintha egy középkori kocsmát és egy illegális sebészeti rendelőt béreltek volna ugyanazt a helyet.","Koherensebb megosztott világok, onboarding és harc"
+indonesian,"- **🌍 Dunia bersama yang jauh lebih masuk akal**
+  - Saya telah meningkatkan kontinuitas ketika beberapa karakter berbagi dunia yang sama. Permainan sekarang memanfaatkan lokasi yang sudah valid dengan lebih baik dan menyisakan lebih sedikit ruang untuk ""zona yang sama, tetapi dengan nama dan topi yang berbeda"".
+  - Saya juga telah memperbaiki informasi lokasi di pemilih dan di kartu karakter, sehingga setiap karakter menampilkan lokasi sebenarnya dan bukan pinjaman dari tetangga.
+- **👥 NPC yang lebih koheren dan tidak mudah terpecah belah**
+  - Saya telah memperkuat logika sehingga NPC yang sudah ada akan muncul kembali sebagai dirinya sendiri ketika waktunya tepat, alih-alih diciptakan kembali dengan nama lain, wajah lain, atau kartu baru yang muncul dari kabut.
+  - Selain itu, permusuhan yang disebabkan oleh satu karakter seharusnya tidak lagi secara ajaib mencemari semua orang. Jika Kaelen marah padamu, idenya adalah dia marah padamu... bukan pada seluruh umat manusia.
+- **🎬 Entri awal dan eksplorasi dengan lebih sedikit teater aneh**
+  - Saya telah memperbaiki beberapa kasus di mana narasi menyiratkan bahwa seseorang ada di depan Anda, tetapi sistem tidak mendukungnya di bawahnya. Sekarang ada lebih sedikit pedagang hantu, lebih sedikit lawan bicara yang menguap, dan lebih sedikit adegan yang tampak seperti drama eksperimental tanpa anggaran.
+  - Saya juga telah mengurangi kasus di mana AI menyusupkan hadiah, stok, atau item naratif di tempat yang tidak seharusnya, terutama saat kedatangan dan adegan awal.
+- **⚔️ Pertempuran dan keputusan dengan lebih sedikit hambatan**
+  - Saya telah memperkuat kontinuitas antara eksplorasi dan pertempuran sehingga masuk ke dalam pertarungan lebih baik bergantung pada NPC yang benar-benar ada dan bukan asap naratif.
+  - Saya juga telah memperbaiki beberapa kemacetan di mana adegan masih aktif, tetapi antarmuka menghasilkan keputusan yang buruk atau umum. Lebih sedikit ""Lanjutkan"" begitu saja, lebih banyak pilihan dengan niat sebenarnya.
+- **🧬 Pembuatan karakter dan pengaturan yang lebih andal**
+  - Pembuatan karakter acak sekarang lebih stabil dan menghormati format biografis yang diharapkan permainan dengan lebih baik.
+  - Saya telah menyesuaikan beberapa inkonsistensi pengaturan dan sumber daya sehingga cyberpunk, fantasi, dan turunannya tidak bercampur seolah-olah sebuah kedai minum abad pertengahan dan ruang operasi ilegal telah memutuskan untuk menyewa tempat yang sama.","Dunia bersama, onboarding, dan pertempuran yang lebih koheren"
+italian,"- **🌍 Mondi condivisi molto più sensati**
+  - Ho migliorato la continuità quando più personaggi condividono lo stesso mondo. Ora il gioco riutilizza meglio luoghi già validi e lascia meno spazio all'invenzione di ""stessa zona, ma con un altro nome e un altro cappello"".
+  - Ho anche corretto le informazioni sulla posizione nel selettore e nella scheda, in modo che ogni personaggio mostri la sua reale localizzazione e non una prestata dal vicino.
+- **👥 PNG più coerenti e meno inclini al doppio gioco**
+  - Ho rafforzato la logica in modo che un PNG già esistente riappaia come se stesso quando necessario, invece di reinventarsi con un altro nome, un'altra faccia o una nuova carta uscita dalla nebbia.
+  - Inoltre, un'inimicizia provocata da un personaggio non dovrebbe più contaminare magicamente tutti gli altri. Se Kaelen si arrabbia con te, l'idea è che si arrabbi con te... non con l'intera specie umana.
+- **🎬 Ingressi di gioco ed esplorazione con meno teatro strano**
+  - Ho corretto diversi casi in cui la narrazione insinuava che qualcuno fosse davanti a te, ma il sistema non lo supportava sottostantemente. Ora ci sono meno venditori fantasma, meno interlocutori evaporati e meno scene che sembrano un'opera sperimentale a basso budget.
+  - Ho anche ridotto i casi in cui l'IA inseriva regali, scorte o oggetti narrativi dove non c'entravano, specialmente negli arrivi e nelle prime scene.
+- **⚔️ Combattimento e decisioni con meno inciampi**
+  - Ho rafforzato la continuità tra esplorazione e combattimento in modo che l'entrata in battaglia dipenda meglio da PNG realmente presenti e non da fumo narrativo.
+  - Ho anche corretto diversi blocchi in cui la scena rimaneva attiva, ma l'interfaccia cadeva in decisioni povere o generiche. Meno ""Continua"" perché sì, più opzioni con un intento reale.
+- **🧬 Creazione del personaggio e ambientazioni più affidabili**
+  - La creazione casuale del personaggio è di nuovo più stabile e rispetta meglio il formato biografico che il gioco si aspetta.
+  - Ho corretto diverse incoerenze di ambientazione e risorse in modo che cyberpunk, fantasy e i loro derivati non si mescolino come se una taverna medievale e un ospedale clandestino avessero deciso di affittare lo stesso locale.","Mondi condivisi, onboarding e combattimento più coerenti"
+japanese,"- **🌍 より的確になった共有ワールド**
+  - 複数のキャラクターが同じワールドを共有する際の連続性を改善しました。ゲームは有効な場所をより効率的に再利用するようになり、「同じエリアだが名前と帽子が違う」といった状況が起こりにくくなりました。
+  - また、セレクターとプロフィール画面の場所情報を修正し、各キャラクターが借り物の場所ではなく、実際の現在地を表示するようにしました。
+- **👥 より一貫性があり、分裂しにくいNPC**
+  - 既存のNPCが、新しい名前、顔、または霧の中から現れた新規カードではなく、本来の自分として再登場するロジックを強化しました。
+  - さらに、あるキャラクターによって引き起こされた敵対関係が、魔法のように他の全員に影響を与えることはなくなりました。カレンがあなたに怒った場合、それはあなたに怒っているのであって、人類全体に怒っているわけではない、という想定です。
+- **🎬 奇妙な演出の少ない開始イベントと探索**
+  - 物語上、目の前に誰かがいると示唆されているにも関わらず、システムがそれを支えていないといったケースを複数修正しました。幽霊のような売り手、蒸発する会話相手、予算のない実験演劇のようなシーンが少なくなりました。
+  - また、特に開始時や最初のシーンで、AIが不適切な場所にギフト、在庫、物語上のアイテムを配置してしまうケースを削減しました。
+- **⚔️ つまずきが減った戦闘と決断**
+  - 探索と戦闘の連続性を強化し、戦闘への突入が物語上の架空の存在ではなく、実際に存在するNPCに依存するようにしました。
+  - また、シーンは続いているのに、インターフェースが貧弱または一般的な決断に陥ってしまうといった複数の行き詰まりを修正しました。理由もなく「続ける」のではなく、より意図のある選択肢が増えました。
+- **🧬 信頼性の高いキャラクター作成と環境設定**
+  - キャラクターのランダム作成がより安定し、ゲームが期待する伝記形式をより尊重するようになりました。
+  - サイバーパンク、ファンタジー、およびそれらの派生系が、中世の酒場と違法な手術室が同じ場所を借りたかのように混ざり合わないよう、環境設定とリソースの矛盾をいくつか調整しました。",共有ワールド、オンボーディング、戦闘の一貫性向上
+korean,"- **🌍 훨씬 더 합리적인 공유 월드**
+  - 여러 캐릭터가 같은 월드를 공유할 때의 연속성을 개선했습니다. 이제 게임은 유효한 장소를 더 잘 재활용하고, ""같은 지역이지만 이름과 외형만 다른"" 식의 어색함을 줄입니다.
+  - 또한 셀렉터와 프로필의 위치 정보를 수정하여 각 캐릭터가 이웃의 위치가 아닌 실제 위치를 표시하도록 했습니다.
+- **👥 더 일관되고 분열되지 않는 NPC**
+  - 기존 NPC가 다시 자신으로 등장하는 로직을 강화했습니다. 이름, 얼굴, 또는 안개 속에서 나온 새 카드로 재창조되는 대신, 적절한 시점에 자신으로 다시 나타납니다.
+  - 또한, 한 캐릭터로 인해 발생한 적대감이 다른 모든 캐릭터에게 마법처럼 오염되지 않도록 했습니다. Kaelen이 당신에게 화를 낸다면, 그것은 인간 전체가 아닌 당신에게 화를 내는 것입니다.
+- **🎬 덜 이상한 연극 같은 시작 장면 및 탐험**
+  - 당신 앞에 누군가가 있는 것처럼 암시했지만 시스템은 이를 뒷받침하지 못했던 여러 경우를 수정했습니다. 이제 유령 판매원, 증발하는 대화 상대, 예산 없는 실험 연극 같은 장면이 줄어듭니다.
+  - 또한 AI가 특히 시작 장면이나 첫 장면에서, 부적절한 곳에 선물, 재고 또는 내러티브 아이템을 배치하는 경우를 줄였습니다.
+- **⚔️ 덜 걸리는 전투 및 결정**
+  - 탐험과 전투 간의 연속성을 강화하여, 전투 시작이 내러티브적인 연기보다는 실제로 존재하는 NPC에 더 잘 의존하도록 했습니다.
+  - 또한 장면은 계속 진행되지만 인터페이스는 잘못되거나 일반적인 결정으로 빠지는 여러 막힘 현상을 수정했습니다. 이유 없는 ""계속""보다는 실제 의도가 있는 옵션을 더 많이 제공합니다.
+- **🧬 더 신뢰할 수 있는 캐릭터 생성 및 배경 설정**
+  - 랜덤 캐릭터 생성이 다시 더 안정적으로 작동하고 게임에서 기대하는 전기의 형식을 더 잘 존중합니다.
+  - 사이버펑크, 판타지 및 파생 장르가 중세 술집과 불법 수술실이 같은 장소를 임대한 것처럼 섞이지 않도록 여러 배경 및 자원 불일치를 조정했습니다.","더 일관된 공유 월드, 온보딩 및 전투"
+dutch,"- **🌍 Gedeelde werelden een stuk logischer**
+  - De continuïteit is verbeterd wanneer meerdere personages dezelfde wereld delen. De game hergebruikt nu bestaande locaties beter en laat minder ruimte voor het verzinnen van ""dezelfde zone, maar dan met een andere naam en een andere hoed"".
+  - Ook de locatie-informatie in de selector en op de profielkaart is gecorrigeerd, zodat elk personage zijn werkelijke locatie toont en niet die van de buurman.
+- **👥 Logischere NPC's en minder geneigd tot splitsing**
+  - De logica is versterkt, zodat een reeds bestaande NPC weer als zichzelf verschijnt wanneer het tijd is, in plaats van zichzelf opnieuw uit te vinden met een andere naam, een ander gezicht of een nieuwe kaart die uit de mist tevoorschijn komt.
+  - Bovendien zou een vijandigheid die door een personage is veroorzaakt, niet langer magisch alle anderen moeten besmetten. Als Kaelen boos op je wordt, is het de bedoeling dat hij boos op jou wordt... niet op de hele mensheid.
+- **🎬 Startscènes en verkenning met minder rare capriolen**
+  - Verschillende gevallen zijn gecorrigeerd waarbij de vertelling suggereerde dat iemand voor je stond, maar het systeem dit niet ondersteunde. Er zijn nu minder spookverkopers, minder verdwijnende gesprekspartners en minder scènes die lijken op een experimenteel toneelstuk met een beperkt budget.
+  - Ook is het aantal gevallen verminderd waarbij de AI cadeaus, voorraad of narratieve items op onbedoelde plekken plaatste, vooral bij aankomsten en eerste scènes.
+- **⚔️ Gevechten en beslissingen met minder struikelblokken**
+  - De continuïteit tussen verkenning en gevechten is versterkt, zodat het starten van een gevecht beter afhangt van daadwerkelijk aanwezige NPC's en niet van narratieve rookgordijnen.
+  - Verschillende vastlopers zijn ook gecorrigeerd waarbij de scène bleef draaien, maar de interface verviel in slechte of generieke keuzes. Minder ""Ga door"" omwille van het 'ga door', meer opties met echte intentie.
+- **🧬 Betrouwbaardere personagecreatie en settings**
+  - Willekeurige personagecreatie is weer stabieler en respecteert het biografische formaat dat de game verwacht beter.
+  - Verschillende incoherenties in settings en middelen zijn aangepast, zodat cyberpunk, fantasy en hun afgeleiden niet vermengd worden alsof een middeleeuwse taverne en een clandestiene operatiekamer besloten hadden dezelfde ruimte te huren.","Gedeelde werelden, onboarding en gevechten logischer"
+norwegian,"- **🌍 Mer fornuftige delte verdener**
+  - Jeg har forbedret kontinuiteten når flere karakterer deler samme verden. Spillet gjenbruker nå bedre eksisterende steder og gir mindre rom for å finne opp «samme område, bare med et annet navn og hatt».
+  - Jeg har også korrigert plasseringsinformasjon i velgeren og på profilen, slik at hver karakter viser sin virkelige plassering og ikke en som er lånt fra naboen.
+- **👥 Mer sammenhengende NPC-er og mindre tilbøyelighet til dobbelgjengere**
+  - Jeg har styrket logikken slik at en eksisterende NPC dukker opp igjen som seg selv når det er meningen, i stedet for å finne opp en ny med et annet navn, et annet ansikt eller et nytt kort som dukker opp fra intet.
+  - Dessuten burde en fiendtlighet forårsaket av én karakter ikke lenger «smitte» til alle andre magisk. Hvis Kaelen blir sint på deg, er meningen at hun skal bli sint på deg… ikke på hele menneskeheten.
+- **🎬 Oppstart og utforskning med mindre rar teater**
+  - Jeg har korrigert flere tilfeller der fortellingen antydet at noen sto foran deg, men systemet ikke støttet det under. Nå er det færre spøkelsesselgere, færre forsvinnende samtalepartnere og færre scener som virker som et lavbudsjetts eksperimentelt teaterstykke.
+  - Jeg har også redusert tilfeller der AI-en plasserte gaver, lager eller narrative gjenstander der de ikke hørte hjemme, spesielt ved ankomster og innledende scener.
+- **⚔️ Mer feilfri kamp og avgjørelser**
+  - Jeg har styrket kontinuiteten mellom utforskning og kamp slik at inngangen til kamp i bedre grad avhenger av faktisk tilstedeværende NPC-er og ikke av narrativ røyk.
+  - Jeg har også korrigert flere hikke der scenen fortsatte, men grensesnittet falt inn i dårlige eller generiske avgjørelser. Mindre «Fortsett» bare for å fortsette, mer valg med reell intensjon.
+- **🧬 Mer pålitelig karakteropprettelse og miljøer**
+  - Tilfeldig karakteropprettelse er mer stabil igjen og respekterer bedre det biografiske formatet spillet forventer.
+  - Jeg har justert flere inkonsekvenser i miljø og ressurser slik at cyberpunk, fantasi og deres derivater ikke blandes som om en middelaldersk taverna og en hemmelig operasjonssal hadde bestemt seg for å leie samme lokale.","Mer sammenhengende delte verdener, onboarding og kamp"
+polish,"**🌍 Znacznie sensowniejsze wspólne światy**
+  - Poprawiono ciągłość sytuacji, gdy wielu bohaterów dzieli ten sam świat. Gra teraz lepiej wykorzystuje już istniejące lokacje i zostawia mniej miejsca na tworzenie „tej samej strefy, ale pod inną nazwą i z innym kapeluszem”.
+  - Poprawiono również informacje o lokalizacji w selektorze i na karcie postaci, aby każdy bohater pokazywał swoje rzeczywiste położenie, a nie pożyczone od sąsiada.
+- **👥 Bardziej spójni NPC-e i mniej skłonni do podwójnego odradzania się**
+  - Wzmocniono logikę, aby istniejący NPC pojawiał się ponownie jako ta sama postać, gdy jest to wymagane, zamiast odradzać się pod innym imieniem, z inną twarzą lub jako nowa karta wyłaniająca się z mgły.
+  - Ponadto, wrogość wywołana przez jedną postać nie powinna już magicznie przenosić się na wszystkich innych. Jeśli Kaelen jest na ciebie zły, ma być zły na ciebie... a nie na cały gatunek ludzki.
+- **🎬 Wejścia do gry i eksploracja z mniejszą ilością dziwacznych teatrów**
+  - Naprawiono kilka przypadków, w których narracja sugerowała, że ktoś stał przed tobą, ale system tego nie podtrzymywał. Teraz jest mniej widmowych sprzedawców, mniej ewaporujących rozmówców i mniej scen przypominających niskobudżetową sztukę eksperymentalną.
+  - Zredukowano również przypadki, w których SI umieszczała prezenty, zapasy lub elementy narracyjne tam, gdzie nie powinny się pojawić, zwłaszcza podczas wejść do gry i pierwszych scen.
+- **⚔️ Walka i decyzje z mniejszą ilością potknięć**
+  - Wzmocniono ciągłość między eksploracją a walką, aby rozpoczęcie potyczki lepiej zależało od faktycznie obecnych NPC-ów, a nie od narracyjnych mgieł.
+  - Naprawiono również kilka zacięć, w których scena nadal trwała, ale interfejs prezentował słabe lub generyczne decyzje. Mniej „Kontynuuj” bez powodu, więcej opcji z realnym zamysłem.
+- **🧬 Tworzenie postaci i otoczenie - bardziej wiarygodne**
+  - Losowe tworzenie postaci jest ponownie bardziej stabilne i lepiej respektuje format biograficzny oczekiwany przez grę.
+  - Dostosowano kilka niespójności w otoczeniu i zasobach, aby cyberpunk, fantasy i ich pochodne nie mieszały się, jakby średniowieczna tawerna i nielegalna klinika postanowiły wynająć ten sam lokal.","Wspólne światy, onboarding i walka - bardziej spójne"
+portuguese,"- **🌍 Mundos compartilhados bem mais sensatos**
+  - Melhorei a continuidade quando vários personagens compartilham o mesmo mundo. Agora o jogo reaproveita melhor locais já válidos e deixa menos margem para inventar ""a mesma zona, mas com outro nome e outro chapéu"".
+  - Também corrigi a informação de localização no seletor e na ficha, para que cada personagem mostre sua localização real e não uma emprestada do vizinho.
+- **👥 NPCs mais coerentes e menos propensos ao desdobramento**
+  - Reforcei a lógica para que um NPC já existente reapareça como ele mesmo quando deve, em vez de se reinventar com outro nome, outra cara ou uma nova carta surgida da névoa.
+  - Além disso, uma inimizade provocada por um personagem não deveria mais contaminar todos os outros por arte de magia. Se Kaelen fica bravo com você, a ideia é que ele fique bravo com você... não com a espécie humana inteira.
+- **🎬 Entradas de partida e exploração com menos teatro bizarro**
+  - Corrigi vários casos em que a narrativa insinuava que alguém estava à sua frente, mas o sistema não o sustentava por baixo. Agora há menos vendedores fantasmas, menos interlocutores evaporados e menos cenas que parecem uma obra experimental sem orçamento.
+  - Também reduzi casos em que a IA colocava presentes, estoque ou itens narrativos onde não devia, especialmente nas chegadas e primeiras cenas.
+- **⚔️ Combate e decisões com menos tropeços**
+  - Reforcei a continuidade entre exploração e combate para que a entrada na briga dependa melhor de NPCs realmente presentes e não de fumaça narrativa.
+  - Também corrigi vários impasses onde a cena continuava ativa, mas a interface caía em decisões ruins ou genéricas. Menos ""Continuar"" sem motivo, mais opções com intenção real.
+- **🧬 Criação de personagem e ambientações mais confiáveis**
+  - A criação aleatória de personagem volta a ser mais estável e respeita melhor o formato biográfico que o jogo espera.
+  - Ajustei várias inconsistências de ambientação e recursos para que cyberpunk, fantasia e seus derivados não se misturem como se uma taverna medieval e um centro cirúrgico clandestino tivessem decidido alugar o mesmo local.","Mundos compartilhados, onboarding e combate mais coerentes"
+romanian,"- **🌍 Lumi partajate mult mai sensate**
+  - Am îmbunătățit continuitatea atunci când mai multe personaje partajează aceeași lume. Jocul refolosește acum mai bine locațiile deja valide și lasă mai puțin loc pentru a inventa „aceeași zonă, dar cu alt nume și alt pălărie”.
+  - Am corectat, de asemenea, informațiile despre locație în selector și pe fișă, astfel încât fiecare personaj să își afișeze locația reală și nu una împrumutată de la vecin.
+- **👥 NPC-uri mai coerente și mai puțin predispuse la dublare**
+  - Am întărit logica pentru ca un NPC existent să reapară ca el însuși atunci când este cazul, în loc să se reinventeze cu alt nume, altă față sau o carte nouă ieșită din ceață.
+  - În plus, o dușmănie provocată de un personaj nu ar trebui să îi contamineze pe toți ceilalți prin magie. Dacă Kaelen se supără pe tine, ideea este să se supere pe tine... nu pe întreaga specie umană.
+- **🎬 Intrări în joc și explorare cu mai puțin teatru ciudat**
+  - Am corectat mai multe cazuri în care narațiunea sugera că cineva era în fața ta, dar sistemul nu o susținea. Acum există mai puțini vânzători fantomatici, mai puțini interlocutori evaporați și mai puține scene care par o piesă experimentală fără buget.
+  - Am redus, de asemenea, cazurile în care AI-ul introducea cadouri, stocuri sau obiecte narative unde nu era cazul, în special la sosiri și în scenele de început.
+- **⚔️ Luptă și decizii cu mai puține poticneli**
+  - Am întărit continuitatea dintre explorare și luptă, astfel încât intrarea în luptă să depindă mai bine de NPC-urile efectiv prezente și nu de fum narativ.
+  - Am corectat, de asemenea, mai multe blocaje în care scena continua să ruleze, dar interfața cădea în decizii slabe sau generice. Mai puțin „Continuă” de dragul continuării, mai multe opțiuni cu intenție reală.
+- **🧬 Creare de personaje și ambientări mai fiabile**
+  - Crearea aleatorie de personaje este din nou mai stabilă și respectă mai bine formatul biografic pe care îl așteaptă jocul.
+  - Am ajustat mai multe inconsecvențe de ambientare și resurse, astfel încât cyberpunk, fantezie și derivatele lor să nu se amestece ca și cum o tavernă medievală și un cabinet clandestin ar fi decis să închirieze același spațiu.","Lumi mai coerente, onboarding și luptă"
+russian,"- **🌍 Более разумные общие миры**
+  - Я улучшил связность, когда несколько персонажей делят один и тот же мир. Теперь игра лучше использует уже существующие локации и оставляет меньше места для изобретения «той же зоны, но с другим именем и другой шляпой».
+  - Я также исправил информацию о местоположении в селекторе и профиле, чтобы каждый персонаж отображал свое реальное местоположение, а не заимствованное у соседа.
+- **👥 Более последовательные и менее склонные к раздвоению личности NPC**
+  - Я усилил логику, чтобы существующий NPC снова появлялся как сам собой, когда это необходимо, вместо того, чтобы изобретать себя заново с другим именем, лицом или новой карточкой, появившейся из ниоткуда.
+  - Кроме того, вражда, вызванная одним персонажем, больше не должна магическим образом затрагивать всех остальных. Если Каэлен злится на вас, идея в том, чтобы он злился на вас... а не на весь человеческий род.
+- **🎬 Меньше странного театра в начале игры и исследовании**
+  - Я исправил несколько случаев, когда повествование намекало, что кто-то перед вами, но система не поддерживала это. Теперь меньше призрачных торговцев, меньше испаряющихся собеседников и меньше сцен, похожих на экспериментальную постановку с нулевым бюджетом.
+  - Я также сократил количество случаев, когда ИИ вставлял подарки, товары или сюжетные предметы не туда, куда следует, особенно при входе и в первых сценах.
+- **⚔️ Меньше спотыканий в бою и решениях**
+  - Я усилил связь между исследованием и боем, чтобы начало сражения лучше зависело от реально присутствующих NPC, а не от повествовательного тумана.
+  - Я также исправил несколько затыков, когда сцена продолжалась, но интерфейс приводил к плохим или общим решениям. Меньше «Продолжить» просто так, больше вариантов с реальным намерением.
+- **🧬 Более надежное создание персонажей и атмосфера**
+  - Случайное создание персонажей снова стало более стабильным и лучше соответствует биографическому формату, который ожидает игра.
+  - Я исправил несколько несоответствий в атмосфере и ресурсах, чтобы киберпанк, фэнтези и их производные не смешивались так, как будто средневековая таверна и подпольная операционная решили арендовать одно и то же помещение.","Общие миры, обучение и более последовательный бой"
+swedish,"- **🌍 Delade världar som fungerar bättre**
+  - Jag har förbättrat kontinuiteten när flera karaktärer delar samma värld. Spelet återanvänder nu befintliga platser bättre och minskar risken för att skapa ""samma zon, men med ett annat namn och en annan hatt"".
+  - Jag har också korrigerat platsinformationen i väljaren och på karaktärssidan, så att varje karaktär visar sin verkliga position och inte en som tillhör grannen.
+- **👥 Mer konsekventa och mindre splittrade NPC:er**
+  - Jag har förstärkt logiken så att en befintlig NPC dyker upp igen som sig själv när det är dags, istället för att återuppfinnas med ett nytt namn, ett nytt ansikte eller ett nytt kort som dykt upp ur dimman.
+  - Dessutom borde en fiendskap orsakad av en karaktär inte längre magiskt smitta av sig på alla andra. Om Kaelen blir arg på dig, är tanken att hon ska vara arg på dig... inte på hela mänskligheten.
+- **🎬 Startsekvenser och utforskning med mindre konstigt skådespel**
+  - Jag har korrigerat flera fall där berättelsen antydde att någon stod framför dig, men systemet inte kunde stödja det. Nu finns det färre spökförsäljare, färre försvinnande samtalspartners och färre scener som känns som ett budgetexperiment.
+  - Jag har också minskat antalet fall där AI:n placerade gåvor, lager eller narrativt innehåll där det inte hörde hemma, särskilt vid ankomster och i tidiga scener.
+- **⚔️ Mer pålitlig strid och beslut**
+  - Jag har förstärkt kopplingen mellan utforskning och strid så att inledandet av strid bättre beror på faktiskt närvarande NPC:er och inte på narrativ rökridå.
+  - Jag har också korrigerat flera låsningar där scenen fortsatte att vara aktiv, men gränssnittet fastnade i dåliga eller generiska beslut. Mindre ""Fortsätt"" bara för sakens skull, fler alternativ med verklig mening.
+- **🧬 Mer pålitlig karaktärsskapande och miljöer**
+  - Slumpmässig karaktärsskapande är nu stabilare igen och respekterar bättre det biografiska format som spelet förväntar sig.
+  - Jag har justerat flera inkonsekvenser i miljöer och resurser så att cyberpunk, fantasy och deras derivat inte blandas som om en medeltida taverna och en hemlig operationssal hade beslutat sig för att hyra samma lokal.","Delade världar, mer konsekvent onboarding och strid"
+thai,"- **🌍 โลกที่ใช้ร่วมกันที่สมเหตุสมผลมากขึ้น**
+  - ฉันได้ปรับปรุงความต่อเนื่องเมื่อตัวละครหลายตัวใช้โลกเดียวกัน ตอนนี้เกมสามารถนำสถานที่ที่ถูกต้องกลับมาใช้ใหม่ได้ดีขึ้น และมีช่องว่างน้อยลงสำหรับการสร้าง ""โซนเดียวกัน แต่มีชื่ออื่นและหมวกอื่น""
+  - ฉันยังได้แก้ไขข้อมูลตำแหน่งในตัวเลือกและรายละเอียด เพื่อให้ตัวละครแต่ละตัวแสดงตำแหน่งจริงของตนเอง ไม่ใช่ตำแหน่งที่ยืมมาจากเพื่อนบ้าน
+- **👥 NPC ที่สอดคล้องกันมากขึ้น และลดการแยกตัว**
+  - ฉันได้เสริมความแข็งแกร่งให้กับตรรกะเพื่อให้ NPC ที่มีอยู่แล้วปรากฏตัวอีกครั้งในฐานะตัวเองเมื่อถึงเวลา แทนที่จะสร้างใหม่ด้วยชื่ออื่น ใบหน้าอื่น หรือการ์ดใหม่ที่ลอยออกมาจากหมอก
+  - นอกจากนี้ ความบาดหมางที่เกิดจากตัวละครจะไม่ควรส่งผลกระทบต่อผู้อื่นทั้งหมดอย่างมหัศจรรย์อีกต่อไป หาก Kaelen โกรธคุณ แนวคิดคือเขาจะโกรธคุณ... ไม่ใช่เผ่ามนุษย์ทั้งหมด
+- **🎬 การเริ่มต้นและสำรวจโดยมีการแสดงที่แปลกประหลาดน้อยลง**
+  - ฉันได้แก้ไขหลายกรณีที่การบรรยายบอกเป็นนัยว่ามีคนอยู่ตรงหน้าคุณ แต่ระบบไม่รองรับอยู่เบื้องหลัง ตอนนี้มีผู้ขายที่ไม่มีตัวตนน้อยลง ผู้พูดที่หายไปน้อยลง และฉากที่ดูเหมือนละครทดลองที่ไม่มีงบประมาณน้อยลง
+  - ฉันยังได้ลดกรณีที่ AI ใส่ของขวัญ สต็อก หรือไอเท็มตามเนื้อเรื่องผิดที่ โดยเฉพาะอย่างยิ่งในฉากเริ่มต้นและฉากแรก
+- **⚔️ การต่อสู้และการตัดสินใจที่ติดขัดน้อยลง**
+  - ฉันได้เสริมความแข็งแกร่งให้กับความต่อเนื่องระหว่างการสำรวจและการต่อสู้ เพื่อให้การเข้าสู่การต่อสู้ขึ้นอยู่กับ NPC ที่มีอยู่จริงมากขึ้น ไม่ใช่ควันตามเนื้อเรื่อง
+  - ฉันยังได้แก้ไขหลายกรณีที่ฉากยังคงดำเนินอยู่ แต่ส่วนต่อประสานผู้ใช้ตกอยู่ในสถานการณ์ที่ต้องตัดสินใจที่แย่หรือไม่เฉพาะเจาะจง ""ดำเนินการต่อ"" แบบสุ่มน้อยลง ตัวเลือกที่มีความตั้งใจจริงมากขึ้น
+- **🧬 การสร้างตัวละครและบรรยากาศที่น่าเชื่อถือมากขึ้น**
+  - การสร้างตัวละครแบบสุ่มมีความเสถียรมากขึ้นและเคารพรูปแบบชีวประวัติที่เกมคาดหวังได้ดีขึ้น
+  - ฉันได้ปรับปรุงความไม่สอดคล้องกันของบรรยากาศและทรัพยากรต่างๆ เพื่อให้ไซเบอร์พังก์ แฟนตาซี และสิ่งที่เกี่ยวข้องไม่ผสมปนเปกันราวกับว่าโรงเตี๊ยมยุคกลางและห้องผ่าตัดที่ผิดกฎหมายตัดสินใจเช่าพื้นที่เดียวกัน",โลกที่ใช้ร่วมกัน การเริ่มต้นใช้งาน และการต่อสู้ที่สอดคล้องกันมากขึ้น
+turkish,"- **🌍 Oldukça Daha Mantıklı Paylaşılan Dünyalar**
+  - Birden fazla karakter aynı dünyayı paylaştığında devamlılığı iyileştirdim. Oyun artık geçerli yerleri daha iyi yeniden kullanıyor ve ""aynı bölge, farklı isim ve şapkayla"" icat etmeye daha az yer bırakıyor.
+  - Ayrıca seçicideki ve profildeki konum bilgilerini düzelttim, böylece her karakter komşusundan ödünç alınan değil, kendi gerçek konumunu gösteriyor.
+- **👥 Daha Tutarlı ve Daha Az Parçalanan NPC'ler**
+  - Mevcut bir NPC'nin zamanı geldiğinde, başka bir isim, yüz veya sisin içinden çıkan yeni bir kartla yeniden icat edilmek yerine, kendisi olarak yeniden görünmesi için mantığı güçlendirdim.
+  - Ayrıca, bir karakter tarafından tetiklenen bir düşmanlığın artık sihirli bir şekilde diğerlerinin hepsini kirletmemesi gerekiyor. Kaelen sana kızarsa, tüm insan türüne kızması değil, sana kızması amaçlanıyor.
+- **🎬 Daha Az Tuhaf Tiyatro İçeren Başlangıçlar ve Keşifler**
+  - Birinin önünüzde olduğunu ima eden ancak sistemin bunu desteklemediği birkaç durumu düzelttim. Artık hayalet satıcılar, buharlaşan diyalog partnerleri ve bütçesiz deneysel bir oyun gibi görünen sahneler daha az.
+  - Ayrıca, özellikle başlangıçlarda ve ilk sahnelerde, yapay zekanın hediyeleri, stokları veya anlatısal öğeleri yanlış yerlere yerleştirdiği durumları da azalttım.
+- **⚔️ Daha Az Tökezleyen Savaş ve Kararlar**
+  - Keşif ve savaş arasındaki devamlılığı güçlendirdim, böylece dövüşe giriş, anlatısal dumandan ziyade gerçekten mevcut NPC'lere daha iyi dayanıyor.
+  - Ayrıca, sahnenin canlı kaldığı ancak arayüzün kötü veya genel kararlara düştüğü birkaç takılmayı düzelttim. Nedensiz yere ""Devam et"" yerine, gerçek niyeti olan daha fazla seçenek.
+- **🧬 Daha Güvenilir Karakter Oluşturma ve Ortamlar**
+  - Rastgele karakter oluşturma artık daha kararlı ve oyunun beklediği biyografik formata daha iyi uyuyor.
+  - Siberpunk, fantezi ve bunların türevlerinin, ortaçağ bir han ile gizli bir ameliyathanenin aynı mekanı kiralamaya karar vermiş gibi karışmaması için ortam ve kaynak tutarsızlıklarını düzelttim.","Paylaşılan Dünyalar, Daha Tutarlı Başlangıçlar ve Savaş"
+ukrainian,"- **🌍 Більш логічні спільні світи**
+  - Покращено послідовність, коли кілька персонажів перебувають в одному світі. Тепер гра краще повторно використовує вже наявні локації та залишає менше місця для вигадування «однієї й тієї ж зони, але з іншою назвою та іншим капелюхом».
+  - Також виправлено інформацію про розташування в селекторі та профілі, щоб кожен персонаж показував своє справжнє місцезнаходження, а не позичене у сусіда.
+- **👥 Більш послідовні та менш схильні до роздвоєння NPC**
+  - Посилено логіку, щоб існуючий NPC знову з'являвся як сам собою, коли це потрібно, замість того, щоб вигадувати себе з новою назвою, новим обличчям або новою карткою, що випливає з туману.
+  - Крім того, ворожнеча, спричинена одним персонажем, більше не повинна магічним чином поширюватися на всіх інших. Якщо Каелен злиться на вас, то ця злість має бути спрямована на вас... а не на весь людський рід.
+- **🎬 Менш дивні сюжетні вставки та дослідження**
+  - Виправлено кілька випадків, коли оповідь натякала на присутність когось перед вами, але система не підтримувала це. Тепер менше фантомних продавців, менше зниклих співрозмовників та менше сцен, які виглядають як експериментальна п'єса без бюджету.
+  - Також зменшено випадки, коли ШІ вставляв подарунки, товари або сюжетні предмети не там, де слід, особливо під час прибуття та в перших сценах.
+- **⚔️ Менш спотикаючі бої та рішення**
+  - Посилено послідовність між дослідженням та боєм, щоб вхід у бій краще залежав від реально присутніх NPC, а не від сюжетного туману.
+  - Також виправлено кілька застрягань, коли сцена продовжувала існувати, але інтерфейс давав погані або загальні рішення. Менше «Продовжити» заради продовження, більше рішень із справжнім наміром.
+- **🧬 Більш надійне створення персонажів та оточення**
+  - Випадкове створення персонажів знову стало стабільнішим і краще дотримується біографічного формату, якого очікує гра.
+  - Налаштовано кілька невідповідностей оточення та ресурсів, щоб кіберпанк, фентезі та їх похідні не змішувалися так, ніби середньовічна таверна та підпільний операційний блок вирішили орендувати одне й те саме приміщення.","Спільні світи, узгоджений онбординг та бої"
+vietnamese,"- **🌍 Thế giới chung hợp lý hơn hẳn**
+  - Tôi đã cải thiện tính liên tục khi nhiều nhân vật cùng chia sẻ một thế giới. Giờ đây, trò chơi tái sử dụng tốt hơn các địa điểm đã tồn tại và ít để lại khoảng trống để bịa ra “cùng một khu vực, nhưng với tên gọi khác và cái mũ khác”.
+  - Tôi cũng đã sửa thông tin vị trí trong bộ chọn và hồ sơ, để mỗi nhân vật hiển thị vị trí thực tế của mình chứ không phải vị trí mượn của người hàng xóm.
+- **👥 NPC mạch lạc hơn và ít bị phân thân**
+  - Tôi đã củng cố logic để một NPC hiện có sẽ xuất hiện trở lại chính nó khi đến lúc, thay vì tự tạo ra với một cái tên khác, khuôn mặt khác hoặc một thẻ mới xuất hiện từ hư không.
+  - Ngoài ra, sự thù địch do một nhân vật gây ra sẽ không còn lây lan sang tất cả những người khác một cách thần kỳ nữa. Nếu Kaelen tức giận với bạn, ý tưởng là cô ấy tức giận với bạn... chứ không phải với toàn bộ loài người.
+- **🎬 Nhập cảnh và khám phá ít ""kịch"" kỳ quái hơn**
+  - Tôi đã sửa nhiều trường hợp mà lời kể ám chỉ rằng có ai đó đang ở trước mặt bạn, nhưng hệ thống lại không hỗ trợ điều đó từ bên dưới. Giờ đây, có ít người bán hàng ma quái hơn, ít người đối thoại bốc hơi hơn và ít cảnh trông giống như một vở kịch thử nghiệm không có ngân sách.
+  - Tôi cũng đã giảm thiểu các trường hợp AI chèn quà tặng, hàng tồn kho hoặc vật phẩm tường thuật vào những chỗ không phù hợp, đặc biệt là trong các cảnh đến và cảnh đầu tiên.
+- **⚔️ Chiến đấu và quyết định ít vấp ngã hơn**
+  - Tôi đã củng cố tính liên tục giữa khám phá và chiến đấu để việc tham gia chiến đấu phụ thuộc tốt hơn vào các NPC thực sự có mặt chứ không phải dựa vào khói tường thuật.
+  - Tôi cũng đã sửa nhiều điểm kẹt nơi cảnh vẫn diễn ra, nhưng giao diện lại đưa ra các quyết định tồi tệ hoặc chung chung. Ít lựa chọn ""Tiếp tục"" vì đã xong, nhiều lựa chọn có ý định thực sự hơn.
+- **🧬 Tạo nhân vật và bối cảnh đáng tin cậy hơn**
+  - Tạo nhân vật ngẫu nhiên đã ổn định hơn và tôn trọng định dạng tiểu sử mà trò chơi mong đợi.
+  - Tôi đã điều chỉnh nhiều sự không nhất quán về bối cảnh và tài nguyên để cyberpunk, giả tưởng và các thể loại phái sinh của chúng không bị trộn lẫn như thể một quán rượu thời trung cổ và một phòng phẫu thuật bí mật đã quyết định thuê cùng một địa điểm.","Thế giới chung, nhập cuộc và chiến đấu mạch lạc hơn"
+schinese,"- **🌍 共享世界更加合理**
+  - 改进了多个角色共享同一个世界时的连贯性。现在游戏能更好地重复利用已有的有效地点，减少了“同一个区域，换个名字和帽子”的情况。
+  - 还修正了选择器和角色卡中的位置信息，让每个角色都显示其真实位置，而不是邻居的位置。
+- **👥 更连贯、不易“分裂”的 NPC**
+  - 加强了逻辑，让已存在的 NPC 在需要时能以自己的身份再次出现，而不是以另一个名字、另一张脸或凭空出现的新卡片重新出现。
+  - 此外，一个角色引起的敌对关系不再会“魔法般”地污染所有其他人。如果凯伦对你不满，那么她应该对你不满……而不是对整个人类不满。
+- **🎬 更少的奇怪“戏剧性”的开场和探索**
+  - 修正了多种情况，过去叙事暗示某人就在你面前，但系统并不支持。现在幽灵般的商人、消失的对话者以及那些看起来像廉价实验剧的场景都减少了。
+  - 还减少了 AI 在不恰当的地方（尤其是在进入游戏和初始场景中）塞入礼物、库存或叙事物品的情况。
+- **⚔️ 更少“绊脚石”的战斗和决策**
+  - 加强了探索和战斗之间的连贯性，让进入战斗更能依赖于实际存在的 NPC，而不是叙事上的“烟雾”。
+  - 还修正了多个卡死的情况，当时场景仍在继续，但界面却陷入了糟糕或通用的决策。更少的“随便继续”，更多的有真实意图的选择。
+- **🧬 更可靠的角色创建和设定**
+  - 角色随机创建现在更加稳定，并能更好地遵循游戏期望的传记格式。
+  - 调整了多种设定和资源上的不一致之处，让赛博朋克、奇幻及其衍生风格不会混杂在一起，就像一家中世纪酒馆和一家非法手术室决定租用同一处房产一样。",共享世界、新手引导和更连贯的战斗
+tchinese,"- **🌍 更合乎逻辑的共享世界**
+  - 我改进了多个角色共享同一世界时的连续性。现在游戏能更好地重复利用已有的有效地点，减少了“同一个区域，只是换个名字和外观”的情况。
+  - 我还修正了选择器和角色卡上的位置信息，让每个角色都显示其真实位置，而不是借用邻居的位置。
+- **👥 更连贯且不易“分裂”的 NPC**
+  - 我加强了逻辑，确保已存在的 NPC 在该出现时能以其自身身份再次出现，而不是以另一个名字、另一副面孔或凭空出现的全新身份“复活”。
+  - 此外，由某个角色引起的敌对关系不再应该“魔法般”地影响到所有其他角色。如果凯伦对你不满，那应该只是对你个人不满……而不是对整个人类种族。
+- **🎬 更少奇怪“剧场化”的开场和探索**
+  - 我修正了几个情况，在这些情况下，叙事暗示某人出现在你面前，但系统却无法支撑。现在“幽灵卖家”、“消失的对话者”以及像低成本实验剧一样的场景会大大减少。
+  - 我还减少了 AI 在不恰当的地方（尤其是开场和早期场景）插入礼物、物品或叙事道具的情况。
+- **⚔️ 更少“卡顿”的战斗和决策**
+  - 我加强了探索与战斗之间的连续性，让进入战斗更能基于真正存在的 NPC，而非叙事上的“烟雾弹”。
+  - 我还修正了几个卡死的情况，即场景仍在进行，但界面却陷入了糟糕或通用的选择。更少“随便继续”，更多真正有意义的选项。
+- **🧬 更可靠的角色创建和世界设定**
+  - 随机角色创建功能现在更加稳定，并能更好地遵循游戏期望的传记格式。
+  - 我调整了各种世界设定和资源上的不一致之处，使赛博朋克、奇幻及其衍生风格不再混杂，就像一家中世纪酒馆和一家黑市手术室决定合租同一个地方。",共享世界、上手体验与更连贯的战斗
