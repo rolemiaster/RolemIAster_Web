@@ -1,4 +1,38 @@
 ****************************************************************************************************
+10/05/2026 02:24 - Long Playtests: Actions Linked to Real Mechanics - Beta_v063
+****************************************************************************************************
+- What's New (EN):
+  - **🧩 Actions with More Realistic Consequences**
+    - I have fixed cases where the adventure narrative stated you used a skill, item, implant, or resource, but the sheet did not always accurately reflect what happened.
+    - From now on, it should be clearer when an action consumes stamina, ammunition, or consumables, when it affects an enemy, and when a character gains progress based on what they just did.
+  - **🛒 More Reliable Commerce and Services**
+    - Buying, installing implants, using consumables, and dealing with vendors should feel more consistent.
+    - If a scene indicates a service is available, the game should respond better with useful options and fewer moments of "okay, so where do I press now?".
+  - **🌍 Fantasy and Cyberpunk with Clearer Identities**
+    - I have reduced rare blends between settings. Medieval worlds should speak more like medieval worlds, and cyberpunk worlds should rely more on technology, implants, urban services, and equipment specific to their style.
+    - This primarily affects shops, scenes, resources, and environmental details.
+  - **🎲 More Pleasant Game Start**
+    - The screen between creating a character and starting the story should no longer display huge blocks of internal information.
+    - It now resembles a role-playing loading screen, changes based on the setting, and can show brief manual tips while preparing the first scene.
+    - It can also prepare a context-related image without making you wait longer: if it arrives in time, it appears; if not, the game starts anyway.
+  - **🛡️ Defeat and Unconsciousness Better Resolved**
+    - I have corrected what happens when reaching 0 HP depending on the difficulty.
+    - In easy and normal modes, the character falls unconscious and the story continues with a contextual time jump. In hard mode, if resistance fails, the game shows a contextual death and a clear screen to accept and return to selection.
+    - This prevents the adventure from continuing as if nothing happened when the character is already on the ground. It is fine for a defeat to hurt; it is not fine for the game to ignore it.
+  - **🧩 Sessions with More Memory**
+    - When loading a game or advancing several turns, the game should continue better from where you last saw on screen.
+    - It should also better remember the true intent of your decisions, reducing responses that seem to go backward or interpret an option too generically.
+  - **✂️ More Comfortable Narration to Read**
+    - I have adjusted exploration responses so they do not turn into huge walls of text again.
+    - Narration can remain rich, but it should breathe better between paragraphs and be more pleasant to read during long sessions.
+  - **🧼 Fewer Strange Remnants on Screen**
+    - I have cleaned up cases where tags, strange formats, duplicate options, or text that should not reach the player could appear.
+    - Generally, the interface should show more adventure and fewer seams.
+  - **🔧 More Stability in Long Sessions**
+    - I have reviewed prolonged sessions involving character creation, commerce, implants, combat, consumables, ammunition, game loading, and continuity.
+    - The goal of this block is clear: fewer interruptions, fewer inconsistencies, and more of a sense that what you do in the story has weight within the game.
+
+****************************************************************************************************
 27/04/2026 18:22 - More Consistent Shared Worlds, Onboarding, and Combat - Beta_v062
 ****************************************************************************************************
 - What's New (EN):

@@ -1,4 +1,38 @@
 ****************************************************************************************************
+10/05/2026 02:24 - Playtest largos: azioni collegate a meccaniche reali - Beta_v063
+****************************************************************************************************
+- What's New (IT):
+  - **🧩 Azioni con conseguenze più realistiche**
+    - Ho corretto casi in cui l'avventura raccontava di aver usato una abilità, un oggetto, un impianto o una risorsa, ma poi il foglio non rifletteva sempre bene ciò che era accaduto.
+    - Da ora in poi dovrebbe essere più evidente quando un'azione consuma resistenza, munizioni o consumabili, quando colpisce un nemico e quando il personaggio guadagna progresso per ciò che ha appena fatto.
+  - **🛒 Commercio e servizi più affidabili**
+    - Comprare, installare impianti, usare consumabili e trattare con venditori dovrebbe sentirsi più coerente.
+    - Se la scena dice che c'è un servizio disponibile, il gioco dovrebbe rispondere meglio con opzioni utili e meno momenti di "ok, e ora dove premo?".
+  - **🌍 Fantasy e cyberpunk con identità più chiara**
+    - Ho ridotto le strane mescolanze tra ambientazioni. I mondi medievali dovrebbero parlare più come mondi medievali, e i mondi cyberpunk dovrebbero basarsi di più su tecnologia, impianti, servizi urbani e equipaggiamento tipico del loro stile.
+    - Questo riguarda soprattutto negozi, scene, risorse e dettagli dell'ambiente.
+  - **🎲 Inizio partita più gradevole**
+    - Lo schermo tra la creazione del personaggio e l'inizio della storia non dovrebbe più mostrare enormi blocchi di informazioni interne.
+    - Ora ha l'aspetto di uno schermo di caricamento a tema, cambia in base all'ambientazione e può mostrare brevi consigli del manuale mentre prepara la prima scena.
+    - Può anche preparare un'immagine legata al contesto senza farti aspettare di più: se arriva in tempo, appare; se no, la partita inizia comunque.
+  - **🛡️ Sconfitta e incoscienza meglio gestite**
+    - Ho corretto cosa succede quando si arriva a 0 PV in base alla difficoltà.
+    - In facile e normale, il personaggio cade incosciente e la storia continua con un salto temporale contestuale. In difficile, se fallisce la resistenza, la partita mostra una morte contestuale e uno schermo chiaro per accettare e tornare alla selezione.
+    - Questo evita che l'avventura continui come se nulla fosse quando il personaggio era già a terra. Che una sconfitta faccia male va bene; che il gioco la ignori, meno tanto.
+  - **🧠 Partite con più memoria**
+    - Al caricare una partita o avanzare più turni, il gioco dovrebbe continuare meglio da dove si è lasciati sullo schermo.
+    - Dovrebbe anche ricordare meglio l'intenzione reale delle tue decisioni, riducendo risposte che sembrano tornare indietro o interpretare un'opzione in modo troppo generico.
+  - **✂️ Narrazione più comoda da leggere**
+    - Ho regolato le risposte di esplorazione per evitare che diventino di nuovo enormi muri di testo.
+    - La narrazione può rimanere ricca, ma dovrebbe respirare meglio tra i paragrafi e essere più piacevole da leggere durante partite lunghe.
+  - **🧼 Meno residui strani a schermo**
+    - Ho pulito casi in cui potevano apparire etichette, formati strani, opzioni duplicate o testi che non dovrebbero arrivare al giocatore.
+    - In generale, l'interfaccia dovrebbe mostrare più avventura e meno cuciture.
+  - **🔧 Più stabilità nelle sessioni lunghe**
+    - Ho rivisto sessioni prolungate giocando con creazione del personaggio, commercio, impianti, combattimento, consumabili, munizioni, caricamento della partita e continuità.
+    - L'obiettivo di questo blocco è chiaro: meno interruzioni, meno incoerenze e più sensazione di ciò che fai nella storia ha peso all'interno della partita.
+
+****************************************************************************************************
 27/04/2026 18:22 - Mondi condivisi, onboarding e combattimento più coerenti - Beta_v062
 ****************************************************************************************************
 - What's New (IT):

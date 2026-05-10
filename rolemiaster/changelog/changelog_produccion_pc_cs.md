@@ -1,4 +1,38 @@
 ****************************************************************************************************
+10/05/2026 02:24 - Testy hráčů: propojené akce s reálnými mechanikami - Beta_v063
+****************************************************************************************************
+- What's New (CS):
+  - **🧩 Akce s reálnějšími důsledky**
+    - Opravil jsem případy, kdy příběh uváděl, že jste použili schopnost, předmět, implantát nebo zdroj, ale následně list nezobrazoval události správně.
+    - Od teď by se mělo lépe poznat, kdy akce spotřebovává vytrvalost, munici nebo spotřební materiál, kdy ovlivňuje nepřítele a kdy postava získává pokrok za to, co právě udělala.
+  - **🛒 Spolehlivější obchody a služby**
+    - Koupě, instalace implantátů, používání spotřebního materiálu a jednání s prodavači by mělo působit konzistentněji.
+    - Pokud scénář uvádí, že je k dispozici služba, hra by měla lépe reagovat užitečnými možnostmi a méně situacemi typu "dobře, a teď kde stisknu?".
+  - **🌍 Jasněji definovaná fantasy a cyberpunk atmosféra**
+    - Snížil jsem zvláštní smíšení různých ambient. Světová nastavení ve stylu fantasy by měla více připomínat středověké světy, zatímco cyberpunk světy by se měly více opírat o technologii, implantáty, městské služby a vybavení typické pro jejich styl.
+    - To se týká především obchodů, scénářů, zdrojů a detailů prostředí.
+  - **🎲 Příjemnější začátek hry**
+    - Obrazovka mezi vytvořením postavy a začátkem příběhu již by neměla zobrazovat obrovské bloky vnitřních informací.
+    - Nyní má vzhled role-playing obrazovky načítání, mění se podle ambientu a může zobrazit stručné rady z manuálu během přípravy první scény.
+    - Může také připravit obrázek související s kontextem bez nutnosti dlouhé čekání: pokud stihne, objeví se; pokud ne, hra se stejně začne.
+  - **🛡️ Lepší řešení porážky a bezvědomí**
+    - Opravil jsem, co se děje při dosažení 0 životů podle obtížnosti.
+    - V obtížnosti lehké a střední postava padne do bezvědomí a příběh pokračuje s kontextuálním časovým skokem. V obtížnosti těžké, pokud selže odolnost, hra zobrazí kontextuální smrt a jasnou obrazovku pro potvrzení a návrat k výběru.
+    - To zabraňuje situaci, kdy by příběh pokračoval jako nic, když je postava již na zemi. Že porážka bolí, je v pořádku; že hra tuto porážku ignoruje, to už ne.
+  - **🧩 Hry s větší pamětí**
+    - Při načítání hry nebo přechodu několika tahů by hra měla lépe pokračovat od toho, co jste naposledy viděli na obrazovce.
+    - Také by měla lépe pamatovat skutečný záměr vašich rozhodnutí, čímž sníží odpovědi, které působí, že se vrací zpět, nebo interpretuje možnost příliš obecně.
+  - **✂️ Příběh snazší k čtení**
+    - Upravil jsem odpovědi na průzkum, aby se již znovu nestaly obrovskými stěnami textu.
+    - Příběh může stále bohatý, ale měl by lépe dýchat mezi odstavci a být čitelnější během dlouhých her.
+  - **🧼 Méně zvláštních zbytků na obrazovce**
+    - Vyčistil jsem případy, kdy se mohly objevovat štítky, zvláštní formáty, duplikované možnosti nebo texty, které by neměly dorazit k hráči.
+    - Obecně by rozhraní mělo zobrazovat více příběhu a méně švů.
+  - **🔧 Více stability v dlouhých relacích**
+    - Prohlídl jsem si prodloužené relace hraní s tvorbou postavy, obchodem, implantáty, bojem, spotřebním materiálem, municí, načítáním hry a pokračováním.
+    - Cílem tohoto bloku je jasný: méně přerušení, méně nekoherencí a více pocitu, že to, co děláte ve příběhu, má váhu uvnitř hry.
+
+****************************************************************************************************
 27/04/2026 18:22 - Sdílené světy, nástup a boj soudržnější - Beta_v062
 ****************************************************************************************************
 - What's New (CS):

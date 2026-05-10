@@ -1,4 +1,38 @@
 ****************************************************************************************************
+10/05/2026 02:24 - Pitkätestit: todellisiin mekaniikoihin kytketyt toimet - Beta_v063
+****************************************************************************************************
+- What's New (FI):
+  - **🧩 Todellisemmat seuraukset toimille**
+    - Olen korjannut tilanteita, joissa tarina kertoi käyttäneesi taitoa, esinettä, implanttia tai resurssia, mutta pelilappu ei aina heijastanut tapahtunutta tarkasti.
+    - Tämän jälkeen toimien kuluttamaa kestävyyttä, ammusmääriä tai kulutettavia esineitä, vihollisia koskevia vaikutuksia sekä hahmon saavuttamaa edistymistä tulisi havaita paremmin.
+  - **🛒 Luotettavampi kauppa ja palvelut**
+    - Ostaminen, implanttien asentaminen, kulutettavien esineiden käyttö ja myyjien kohtaaminen tuntuisivat johdonmukaisemmilta.
+    - Jos tilanteessa mainitaan olevan palvelu saatavilla, peli tulisi vastata paremmin hyödyllisillä vaihtoehdoilla ja vähemmän hetkillä, joita kysellään: "No, missä nyt painan?".
+  - **🌍 Selkeämpi identiteetti fantasia- ja cyberpunk-aiheisissa**
+    - Olen vähentänyt harvinaisia sekoituksia ympäristötyylejä välillä. Keski-aiheiset maailmat puhuisivat enemmän keski-aiheisten maailmojen kielellä, ja cyberpunk-maailmat nojautuisivat enemmän teknologiaan, implantteihin, kaupunkipalveluihin ja tyylinsä mukaiseen varusteeseen.
+    - Tämä vaikuttaa erityisesti kauppoihin, tilanteisiin, resursseihin ja ympäristön yksityiskohtiin.
+  - **🎲 Miellyttävämpi pelin alku**
+    - Hahmon luomisen ja tarinan aloittamisen välillä olevalla ruudulla ei enää pitäisi näkyä valtavia sisäisiä tietopaketteja.
+    - Se näyttää nyt roolipelin latausruudulta, muuttuu ympäristötyylin mukaan ja voi näyttää lyhyitä oppeja käsikirjasta valmistauduttuaan ensimmäiseen tilanteeseen.
+    - Se voi myös valmistella kontekstiin liittyvää kuvaa ilman, että joudut odottamaan: jos se ehtii ajoissa, se ilmestyy; jos ei, peli alkaa silti.
+  - **🛡️ Paremmat ratkaisut tappioon ja tajunnan menetykseen**
+    - Olen korjannut sitä, mitä tapahtuu, kun elopisteet (PV) laskevat nollaan vaikeustasosta riippuen.
+    - Helppoa ja normaalia vaikeutta hahmo menee tajuttomuuteen ja tarina jatkuu kontekstuaalisella aikasaltilla. Vaikeassa vaikeustasossa, jos vastustuskyky epäonnistuu, peli näyttää kontekstuaalisen kuoleman ja selkeän ruudun hyväksymistä ja uudelleenvalintaa varten.
+    - Tämä estää tarinan jatkumisen kuin mitään ei olisi tapahtunut, vaikka hahmo olisi jo maassa. Tappion tunteminen on hyvä; pelin ohittaminen ei ole.
+  - **🧩 Muistisavuisemmat pelit**
+    - Pelin lataaminen tai useiden vuorojen eteneminen tulisi jatkua paremmin siitä, mitä näit viimeksi ruudulla.
+    - Se tulisi myös muistaa paremmin päätösi todellisia aikeita, vähentämällä vastauksia, jotka näyttävät palaavan taaksepäin tai tulkitsevat vaihtoehdon liian yleisesti.
+  - **✂️ Lue helpompi tarinankertoja**
+    - Olen säätänyt tutkimusvastauksia, jotta ne eivät muuttuisi uudelleen valtaviksi tekstiseiniksi.
+    - Tarinankertoja voi olla rikasta, mutta se tulisi hengittää paremmin kappaleiden välillä ja olla helpompi lukea pitkissä peleissä.
+  - **🧼 Vähemmän harvinaisia jäämiä ruudulla**
+    - Olen siivonut tilanteita, joissa voitiin näkyä etikettejä, outoja muotoiluja, toistuvia vaihtoehtoja tai tekstejä, jotka eivät tulisi pelaajalle.
+    - Yleisesti ottaen käyttöliittymä tulisi näyttää enemmän tarinaa ja vähemmän saumoja.
+  - **🔧 Stabiilimpi pitkiä istuntoja**
+    - Olen tarkistanut pitkät istunnot pelaamalla hahmon luomista, kauppaa, implantteja, taistelua, kulutettavia esineitä, ammusmääriä, pelin latausta ja jatkuvuutta varten.
+    - Tämän osion tavoite on selvä: vähemmän keskeytyksiä, vähemmän ristiriitoja ja enemmän tunnetta siitä, että tekemäsi asiat tarinassa painavat pelissä.
+
+****************************************************************************************************
 27/04/2026 18:22 - Yhteisemmät maailmat, johdonmukaisempi perehdytys ja taistelu - Beta_v062
 ****************************************************************************************************
 - What's New (FI):

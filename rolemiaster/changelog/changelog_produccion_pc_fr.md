@@ -1,4 +1,38 @@
 ****************************************************************************************************
+10/05/2026 02:24 - Tests de jeu prolongés : actions liées à de vraies mécaniques - Beta_v063
+****************************************************************************************************
+- What's New (FR):
+  - **🧩 Des actions aux conséquences plus réalistes**
+    - J'ai corrigé des cas où l'aventure indiquait que vous aviez utilisé une compétence, un objet, un implant ou une ressource, mais où la fiche ne reflétait pas toujours correctement ce qui s'était passé.
+    - Désormais, il devrait être plus clair quand une action consomme de la résistance, des munitions ou des consommables, quand elle affecte un ennemi et quand le personnage gagne du progrès grâce à ce qu'il vient de faire.
+  - **🛒 Commerce et services plus fiables**
+    - Acheter, installer des implants, utiliser des consommables et interagir avec des vendeurs devrait se sentir plus cohérent.
+    - Si une scène indique qu'un service est disponible, le jeu devrait mieux répondre avec des options utiles et moins de moments de « bon, et maintenant où je clique ? ».
+  - **🌍 Fantasy et cyberpunk avec une identité plus marquée**
+    - J'ai réduit les mélanges rares entre les univers. Les mondes médiévaux devraient davantage évoquer l'ambiance médiévale, et les mondes cyberpunk devraient s'appuyer plus sur la technologie, les implants, les services urbains et l'équipement typique de leur style.
+    - Cela concerne surtout les boutiques, les scènes, les ressources et les détails de l'environnement.
+  - **🎲 Un démarrage de partie plus agréable**
+    - L'écran situé entre la création du personnage et le début de l'histoire ne devrait plus afficher de blocs énormes d'informations internes.
+    - Il ressemble désormais à un écran de chargement de rôle, il varie selon l'univers et peut afficher de brèves conseils du manuel pendant la préparation de la première scène.
+    - Il peut également préparer une image liée au contexte sans vous faire attendre davantage : si elle est prête à temps, elle apparaît ; sinon, la partie commence quand même.
+  - **🛡️ Défaite et inconscience mieux gérées**
+    - J'ai corrigé ce qui se produit en arrivant à 0 PV selon la difficulté.
+    - En facile et normal, le personnage s'évanouit et l'histoire continue avec un saut temporel contextuel. En difficile, si la résistance échoue, la partie affiche une mort contextuelle et un écran clair pour accepter et revenir au menu de sélection.
+    - Cela évite que l'aventure se poursuive comme si de rien n'était alors que le personnage est déjà au sol. Qu'une défaite fasse mal, c'est bien ; que le jeu l'ignore, c'est moins bien.
+  - **🧩 Parties avec plus de mémoire**
+    - Au chargement d'une partie ou lors d'avancées de plusieurs tours, le jeu devrait mieux reprendre là où vous vous étiez arrêté à l'écran.
+    - Il devrait également mieux se souvenir de l'intention réelle de vos décisions, réduisant les réponses qui semblent revenir en arrière ou interpréter une option de manière trop générique.
+  - **✂️ Narration plus facile à lire**
+    - J'ai ajusté les réponses d'exploration pour qu'elles ne redeviennent pas de murs de texte énormes.
+    - La narration peut rester riche, mais elle devrait mieux respirer entre les paragraphes et être plus agréable à lire lors de longues parties.
+  - **🧼 Moins de traces étranges à l'écran**
+    - J'ai nettoyé les cas où des étiquettes, des formats bizarres, des options dupliquées ou des textes qui ne devaient pas atteindre le joueur pouvaient apparaître.
+    - En général, l'interface devrait montrer plus d'aventure et moins de coutures.
+  - **🔧 Plus de stabilité lors des sessions longues**
+    - J'ai révisé les sessions prolongées en jouant avec la création de personnage, le commerce, les implants, le combat, les consommables, les munitions, le chargement de partie et la continuité.
+    - L'objectif de ce bloc est clair : moins d'interruptions, moins d'incohérences et plus de sensation que ce que vous faites dans l'histoire a du poids au sein de la partie.
+
+****************************************************************************************************
 27/04/2026 18:22 - Mondes partagés, onboarding et combat plus cohérents - Beta_v062
 ****************************************************************************************************
 - What's New (FR):

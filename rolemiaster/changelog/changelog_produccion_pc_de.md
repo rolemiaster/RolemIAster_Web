@@ -1,4 +1,38 @@
 ****************************************************************************************************
+10/05/2026 02:24 - Lange Playtests: Aktionen, die mit echten Mechaniken verbunden sind - Beta_v063
+****************************************************************************************************
+- What's New (DE):
+  - **🧩 Aktionen mit realistischeren Konsequenzen**
+    - Ich habe Fälle behoben, in denen die Geschichte berichtete, dass du eine Fähigkeit, ein Objekt, einen Implantat oder eine Ressource verwendet hast, die Spielkarte dies jedoch nicht immer korrekt widerspiegelte.
+    - Ab jetzt sollte besser ersichtlich sein, wann eine Aktion Ausdauer, Munition oder Verbrauchsmaterial verbraucht, wann sie einen Gegner beeinflusst und wann der Charakter Fortschritt durch das gerade Getane gewinnt.
+  - **🛒 Zuverlässigerer Handel und Dienstleistungen**
+    - Kaufen, Implantate installieren, Verbrauchsmaterial nutzen und mit Verkäufern interagieren sollte sich konsistenter anfühlen.
+    - Wenn eine Szene angibt, dass ein Dienst verfügbar ist, sollte das Spiel besser mit nützlichen Optionen reagieren und weniger Momente des "Okay, wo drücke ich jetzt?" aufweisen.
+  - **🌍 Fantasy und Cyberpunk mit klarerer Identität**
+    - Ich habe seltsame Vermischungen zwischen Settings reduziert. Mittelalterliche Welten sollten sich mehr wie mittelalterliche Welten anfühlen, und Cyberpunk-Welten sollten sich stärker auf Technologie, Implantate, städtische Dienstleistungen und Ausrüstung stützen, die zu ihrem Stil passt.
+    - Dies betrifft vor allem Geschäfte, Szenen, Ressourcen und Umgebungsdetails.
+  - **🎲 Angenehmere Spielstart-Erfahrung**
+    - Der Bildschirm zwischen der Charaktererstellung und dem Beginn der Geschichte sollte keine riesigen Blöcke interner Informationen mehr anzeigen.
+    - Er sieht nun aus wie ein Rollenspiel-Ladebildschirm, passt sich dem Setting an und kann während der Vorbereitung der ersten Szene kurze Handbuchtipps anzeigen.
+    - Er kann auch ein bildhaftes Element im Kontext vorbereiten, ohne dich länger warten zu lassen: Wenn es rechtzeitig fertig ist, erscheint es; wenn nicht, beginnt das Spiel trotzdem.
+  - **🛡️ Verbesserte Behandlung von Niederlagen und Bewusstlosigkeit**
+    - Ich habe korrigiert, was bei 0 Leben je nach Schwierigkeitsgrad passiert.
+    - Bei einfacher und normaler Schwierigkeit wird der Charakter bewusstlos, und die Geschichte setzt mit einem kontextuellen Zeitsprung fort. Bei schwieriger Schwierigkeit zeigt das Spiel bei fehlgeschlagener Widerstandsprüfung einen kontextuellen Tod und eine klare Benutzeroberfläche zum Akzeptieren und Neustarten.
+    - Dies verhindert, dass die Geschichte weitergeht, als wäre nichts passiert, obwohl der Charakter bereits am Boden lag. Dass eine Niederlage wehtut, ist gut; dass das Spiel sie ignoriert, weniger.
+  - **🧩 Partien mit besserem Gedächtnis**
+    - Beim Laden einer Partie oder beim Vorantasten mehrerer Runden sollte das Spiel besser von dort weitermachen, wo du zuletzt auf dem Bildschirm gesehen hast.
+    - Es sollte auch die eigentliche Absicht deiner Entscheidungen besser merken und Antworten reduzieren, die sich zurückwenden oder eine Option zu allgemein interpretieren.
+  - **✂️ Bequemer zu lesende Erzählung**
+    - Ich habe die Erkundungsantworten angepasst, damit sie nicht wieder zu riesigen Textwänden werden.
+    - Die Erzählung kann weiterhin reichhaltig sein, sollte aber zwischen Absätzen besser atmen und bei langen Partien angenehmer zu lesen sein.
+  - **🧼 Weniger seltsame Reste auf dem Bildschirm**
+    - Ich habe Fälle bereinigt, in denen Etiketten, seltsame Formate, doppelte Optionen oder Texte erscheinen konnten, die nicht zum Spieler gelangen sollten.
+    - Insgesamt sollte die Benutzeroberfläche mehr Abenteuer und weniger Nähte zeigen.
+  - **🔧 Mehr Stabilität in langen Sitzungen**
+    - Ich habe lange Sitzungen überprüft, indem ich Charaktererstellung, Handel, Implantate, Kampf, Verbrauchsmaterial, Munition, Partieladen und Kontinuität gespielt habe.
+    - Das Ziel dieses Blocks ist klar: weniger Unterbrechungen, weniger Inkonsistenzen und mehr das Gefühl, dass das, was du in der Geschichte tust, Gewicht innerhalb der Partie hat.
+
+****************************************************************************************************
 27/04/2026 18:22 - Geteilte Welten, kohärenteres Onboarding und Kampfsystem - Beta_v062
 ****************************************************************************************************
 - What's New (DE):

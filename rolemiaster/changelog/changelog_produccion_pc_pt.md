@@ -1,4 +1,38 @@
 ****************************************************************************************************
+10/05/2026 02:24 - Testes de jogo amplos: ações conectadas a mecânicas reais - Beta_v063
+****************************************************************************************************
+- What's New (PT):
+  - **🧩 Ações com consequências mais reais**
+    - Corrigi casos em que a aventura contava que você havia usado uma habilidade, um objeto, um implante ou um recurso, mas depois o cartão nem sempre refletia bem o que ocorreu.
+    - A partir de agora, deve ficar mais claro quando uma ação consome resistência, munição ou itens de consumo, quando afeta um inimigo e quando o personagem ganha progresso pelo que acabou de fazer.
+  - **🛒 Comércio e serviços mais confiáveis**
+    - Comprar, instalar implantes, usar itens de consumo e lidar com vendedores deve parecer mais consistente.
+    - Se a cena diz que há um serviço disponível, o jogo deve responder melhor com opções úteis e menos momentos de "tá, e agora onde eu clico?".
+  - **🌍 Fantasia e cyberpunk com identidade mais clara**
+    - Reduzi misturas raras entre ambientações. Os mundos medievais devem soar mais como mundos medievais, e os mundos cyberpunk devem se apoiar mais em tecnologia, implantes, serviços urbanos e equipamentos típicos de seu estilo.
+    - Isso afeta principalmente lojas, cenas, recursos e detalhes do ambiente.
+  - **🎲 Início de partida mais agradável**
+    - A tela entre criar o personagem e começar a história não deve mais mostrar blocos enormes de informações internas.
+    - Agora ela tem a aparência de uma tela de carregamento de RPG, muda conforme a ambientação e pode mostrar dicas breves do manual enquanto prepara a primeira cena.
+    - Também pode preparar uma imagem relacionada ao contexto sem fazer você esperar mais: se chegar a tempo, aparece; se não, a partida começa igualmente.
+  - **🛡️ Derrota e inconsciência melhor resolvidas**
+    - Corrigi o que ocorre ao chegar a 0 PV conforme a dificuldade.
+    - Em fácil e normal, o personagem cai inconsciente e a história continua com um salto temporal contextual. Em difícil, se falhar na resistência, a partida mostra uma morte contextual e uma tela clara para aceitar e voltar à seleção.
+    - Isso evita que a aventura continue como se nada tivesse acontecido quando o personagem já estava no chão. Que uma derrota doer é bom; que o jogo a ignore, não tanto.
+  - **🧠 Partidas com mais memória**
+    - Ao carregar uma partida ou avançar vários turnos, o jogo deve continuar melhor do que o último que você viu na tela.
+    - Também deve lembrar melhor a intenção real de suas decisões, reduzindo respostas que parecem voltar atrás ou interpretar uma opção de forma muito genérica.
+  - **✂️ Narrativa mais confortável de ler**
+    - Ajustei as respostas de exploração para que não se transformem novamente em paredes enormes de texto.
+    - A narrativa pode continuar sendo rica, mas deve "respirar" melhor entre parágrafos e ser mais agradável de ler durante partidas longas.
+  - **🧼 Menos restos raros na tela**
+    - Limpei casos em que podiam aparecer etiquetas, formatos estranhos, opções duplicadas ou textos que não deveriam chegar ao jogador.
+    - Em geral, a interface deve mostrar mais aventura e menos costuras.
+  - **🔧 Mais estabilidade em sessões longas**
+    - Revisei sessões prolongadas jogando com criação de personagem, comércio, implantes, combate, itens de consumo, munição, carregamento de partida e continuidade.
+    - O objetivo deste bloco é claro: menos interrupções, menos incoerências e mais sensação de que o que você faz na história tem peso dentro da partida.
+
+****************************************************************************************************
 27/04/2026 18:22 - Mundos compartilhados, onboarding e combate mais coerentes - Beta_v062
 ****************************************************************************************************
 - What's New (PT):

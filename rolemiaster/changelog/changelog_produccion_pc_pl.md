@@ -1,4 +1,38 @@
 ****************************************************************************************************
+10/05/2026 02:24 - Testy graczów: działania powiązane z rzeczywistymi mechanikami - Beta_v063
+****************************************************************************************************
+- What's New (PL):
+  - **🧩 Działania z bardziej realistycznymi konsekwencjami**
+    - Naprawiłem przypadki, w których opowieść informowała, że użyłeś umiejętności, przedmiotu, implantu lub zasobu, ale później karta nie zawsze odzwierciedlała to, co się stało.
+    - Od teraz powinno być lepiej widoczne, kiedy działanie zużywa wytrzymałość, amunicję lub przedmioty jednorazowe, kiedy wpływa na wroga, a kiedy postać zyskuje postęp dzięki ostatnim czynnościom.
+  - **🛒 Wiarygodniejszy handel i usługi**
+    - Zakupy, instalacja implantów, używanie przedmiotów jednorazowych oraz kontakt z sprzedawcami powinny czuć się bardziej spójne.
+    - Jeśli scena informuje o dostępnej usłudze, gra powinna lepiej reagować użytecznymi opcjami i mniej momentami typu "dobrze, a teraz gdzie klikam?".
+  - **🌍 Fantasy i cyberpunk z wyraźniejszą tożsamością**
+    - Zmniejszyłem dziwne mieszanki między ambientacjami. Światy średniowieczne powinny brzmieć bardziej jak światy średniowieczne, a światy cyberpunk powinny opierać się bardziej na technologii, implantach, usługach miejskich oraz sprzęcie charakterystycznym dla ich stylu.
+    - Dotyczy to głównie sklepów, scen, zasobów oraz szczegółów otoczenia.
+  - **🎲 Przyjemniejsze rozpoczęcie gry**
+    - Ekran między tworzeniem postaci a rozpoczęciem historii nie powinien już wyświetlać ogromnych bloków informacji wewnętrznych.
+    - Teraz wygląda jak ekran ładowania ról, zmienia się w zależności od ambientacji i może pokazywać krótkie wskazówki z podręcznika podczas przygotowywania pierwszej sceny.
+    - Może również przygotować obraz powiązany z kontekstem bez dłuższego oczekiwania: jeśli zdąży na czas, pojawi się; jeśli nie, gra rozpocznie się tak samo.
+  - **🛡️ Lepsze rozwiązanie porażki i nieprzytomności**
+    - Naprawiłem to, co dzieje się przy osiągnięciu 0 PV w zależności od trudności.
+    - W łatwej i normalnej trudności postać pada w nieprzytomność, a historia kontynuuje się z kontekstowym skokiem czasowym. W trudnej, jeśli odporność zostanie nieudana, gra wyświetla kontekstową śmierć oraz wyraźny ekran do potwierdzenia i powrotu do wyboru.
+    - Zapobiega to sytuacji, w której opowieść kontynuuje się, jakby nic się nie stało, mimo że postać już leżała na ziemi. To, że porażka boli, jest w porządku; to, że gra ją ignoruje, już nie.
+  - **🧩 Gry z większą pamięcią**
+    - Przy ładowaniu gry lub przechodzeniu kilku tur, gra powinna lepiej kontynuować od tego, co ostatnio było widoczne na ekranie.
+    - Powinna również lepiej pamiętać rzeczywiste intencje Twoich decyzji, redukując odpowiedzi, które wydają się cofać lub interpretować opcję zbyt ogólnie.
+  - **✂️ Narracja łatwiejsza do czytania**
+    - Dostosowałem odpowiedzi eksploracji, aby nie zamieniały się ponownie w ogromne ściany tekstu.
+    - Narracja może nadal być bogata, ale powinna lepiej "oddychać" między akapitami i być bardziej przyjazna do czytania podczas długich partii.
+  - **🧼 Mniej dziwnych resztek na ekranie**
+    - Wyczyściłem przypadki, w których mogły pojawiać się etykiety, dziwne formaty, podwójne opcje lub teksty, które nie powinny trafiać do gracza.
+    - Ogólnie interfejs powinien pokazywać więcej opowieści i mniej szwów.
+  - **🔧 Większa stabilność w długich sesjach**
+    - Przeglądałem przedłużone sesje gry z tworzeniem postaci, handlem, implantami, walką, przedmiotami jednorazowymi, amunicją, ładowaniem gry oraz ciągłością.
+    - Cel tego bloku jest jasny: mniej przerw, mniej niespójności i większe poczucie, że to, co robisz w opowieści, ma wagę wewnątrz gry.
+
+****************************************************************************************************
 27/04/2026 18:22 - Wspólne światy, onboarding i walka - bardziej spójne - Beta_v062
 ****************************************************************************************************
 - What's New (PL):
