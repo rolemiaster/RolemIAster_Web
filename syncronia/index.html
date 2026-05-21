@@ -286,6 +286,23 @@
             transform: translateY(-3px);
         }
 
+        .pc-beta-warning {
+            max-width: 720px;
+            margin: 1.25rem auto 0;
+            padding: 1rem 1.2rem;
+            border: 1px solid rgba(0, 229, 255, 0.28);
+            border-left: 3px solid var(--cyan);
+            background: rgba(0, 229, 255, 0.06);
+            color: var(--text-main);
+            font-size: 0.9rem;
+            line-height: 1.55;
+            text-align: left;
+        }
+
+        .pc-beta-warning b {
+            color: var(--cyan);
+        }
+
         /* ===== HOW IT WORKS ===== */
         .how-it-works {
             position: relative;
@@ -592,6 +609,9 @@
                 <a href="privacy.html" class="btn-sync btn-sync-secondary"
                     data-i18n="btn_privacy">Privacidad</a>
             </div>
+            <p class="pc-beta-warning" data-i18n="pc_beta_warning">
+                <b>Aviso Windows beta:</b> si aparece "Windows protegio su PC", pulsa <b>Mas informacion</b> y despues <b>Ejecutar de todas formas</b>. El aviso aparece porque la beta de escritorio aun no esta firmada por Microsoft. Descarga SyncronIA solo desde esta pagina.
+            </p>
         </div>
     </section>
 
@@ -684,6 +704,7 @@
                 btn_play: "Descargar APK",
                 btn_pc: "Descargar App PC",
                 btn_privacy: "Privacidad",
+                pc_beta_warning: "<b>Aviso Windows beta:</b> si aparece \"Windows protegio su PC\", pulsa <b>Mas informacion</b> y despues <b>Ejecutar de todas formas</b>. El aviso aparece porque la beta de escritorio aun no esta firmada por Microsoft. Descarga SyncronIA solo desde esta pagina.",
                 benefits_title: "Que puedes hacer con SyncronIA",
                 ben1_title: "Sincroniza con todas tus nubes",
                 ben1_desc: "Elige una carpeta y SyncronIA la mantiene actualizada en Google Drive, OneDrive, Dropbox, tu NAS o cualquier servicio que uses. Todo a la vez.",
@@ -720,6 +741,7 @@
                 btn_play: "Download APK",
                 btn_pc: "Download PC App",
                 btn_privacy: "Privacy",
+                pc_beta_warning: "<b>Windows beta notice:</b> if \"Windows protected your PC\" appears, click <b>More info</b> and then <b>Run anyway</b>. This appears because the desktop beta is not signed by Microsoft yet. Download SyncronIA only from this page.",
                 benefits_title: "What you can do with SyncronIA",
                 ben1_title: "Sync with all your clouds",
                 ben1_desc: "Pick a folder and SyncronIA keeps it updated on Google Drive, OneDrive, Dropbox, your NAS or any service you use. All at once.",
