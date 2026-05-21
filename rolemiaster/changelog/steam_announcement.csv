@@ -1,436 +1,842 @@
 language,Description,Title
-arabic,"- **🌍 عوالم مشتركة أكثر منطقية بشكل ملحوظ**
-  - لقد قمت بتحسين الاستمرارية عندما يشارك العديد من الشخصيات نفس العالم. الآن، يعيد استخدام اللعبة بشكل أفضل للأماكن الصالحة بالفعل ويترك مجالًا أقل لاختراع ""نفس المنطقة، ولكن باسم مختلف وقبعة مختلفة"".
-  - قمت أيضًا بتصحيح معلومات الموقع في المحدد وفي الملف الشخصي، بحيث تعرض كل شخصية موقعها الفعلي وليس موقعًا مستعارًا من الجيران.
-- **👥 شخصيات غير قابلة للعب (NPCs) أكثر اتساقًا وأقل ميلًا للانقسام**
-  - لقد عززت المنطق بحيث تعود شخصية غير قابلة للعب موجودة للظهور كذاتها عندما يحين الوقت، بدلاً من إعادة اختراع نفسها باسم آخر أو بوجه آخر أو ببطاقة جديدة تظهر من العدم.
-  - علاوة على ذلك، العداء الذي تسببه شخصية لم يعد من المفترض أن يلوث جميع الآخرين بالسحر. إذا غضب كايلين منك، فالفكرة هي أن يغضب منك... وليس من الجنس البشري بأكمله.
-- **🎬 بداية اللعبة والاستكشاف مع قدر أقل من الدراما الغريبة**
-  - لقد قمت بتصحيح حالات متعددة حيث ألمح السرد إلى وجود شخص أمامك، لكن النظام لم يدعمه من الأسفل. الآن هناك عدد أقل من البائعين الوهميين، وعدد أقل من المتحدثين الذين يتبخرون، وعدد أقل من المشاهد التي تبدو وكأنها مسرحية تجريبية بميزانية محدودة.
-  - قللت أيضًا من الحالات التي كانت فيها الذكاء الاصطناعي يضع هدايا أو مخزونًا أو عناصر سردية في أماكن غير مناسبة، خاصة عند الوصول والمشاهد الأولى.
-- **⚔️ قتال وقرارات مع عدد أقل من التعثرات**
-  - لقد عززت الاستمرارية بين الاستكشاف والقتال بحيث يعتمد الدخول في معركة بشكل أفضل على الشخصيات غير القابلة للعب الموجودة بالفعل وليس على دخان السرد.
-  - قمت أيضًا بتصحيح حالات تعثر متعددة حيث استمر المشهد، لكن الواجهة وقعت في قرارات ضعيفة أو عامة. عدد أقل من ""متابعة"" لمجرد السبب، والمزيد من الخيارات ذات النية الحقيقية.
-- **🧬 إنشاء شخصية وإعدادات أكثر موثوقية**
-  - أصبح إنشاء الشخصية العشوائي أكثر استقرارًا ويعيد احترام تنسيق السيرة الذاتية الذي تتوقعه اللعبة بشكل أفضل.
-  - لقد قمت بتعديل العديد من التناقضات في الإعدادات والموارد حتى لا تختلط السايبربانك، والفانتازيا، ومشتقاتها كما لو أن حانة القرون الوسطى وغرفة عمليات سرية قررت استئجار نفس المكان.",عوالم مشتركة، بدء تشغيل، وقتال أكثر اتساقًا
-bulgarian,"- **🌍 Доста по-смислени споделени светове**
-  - Подобрих последователността, когато няколко героя споделят един и същ свят. Сега играта по-добре използва повторно вече валидни места и оставя по-малко място за измисляне на „същата зона, но с друго име и друга шапка“.
-  - Коригирах и информацията за местоположението в селектора и в досието, така че всеки герой да показва реалното си местоположение, а не заето от съседа.
-- **👥 По-последователни и по-малко раздвояващи се NPC**
-  - Подсилих логиката, така че вече съществуващ NPC да се появява отново като себе си, когато е уместно, вместо да се преоткрива с друго име, друго лице или нова карта, изплувала от мъглата.
-  - Освен това, вражда, предизвикана от един герой, вече не би трябвало да заразява всички останали по магически път. Ако Каелън ти се ядоса, идеята е той да ти се ядоса на теб... а не на целия човешки род.
-- **🎬 Въвеждане в игра и изследване с по-малко странен театър**
-  - Коригирах няколко случая, в които наративът подсказваше, че някой е пред теб, но системата не го подкрепяше отдолу. Сега има по-малко призрачни търговци, по-малко изпаряващи се събеседници и по-малко сцени, които приличат на експериментална пиеса без бюджет.
-  - Също така намалих случаите, в които AI е вмъквал подаръци, стоки или наративни предмети, където не им е мястото, особено при влизания и първи сцени.
-- **⚔️ Битки и решения с по-малко спънки**
-  - Подсилих последователността между изследване и битка, така че влизането в бой да зависи по-добре от реално присъстващи NPC, а не от наративен дим.
-  - Коригирах и няколко заклещвания, при които сцената продължаваше да е активна, но интерфейсът попадаше в лоши или общи решения. По-малко „Продължи“ ей така, повече опции с реално намерение.
-- **🧬 Създаване на герои и по-надеждни обстановки**
-  - Случайното създаване на герои отново е по-стабилно и по-добре спазва биографичния формат, който играта очаква.
-  - Нагласих няколко несъответствия в обстановката и ресурсите, така че киберпънк, фентъзи и техните производни да не се смесват, сякаш средновековна таверна и подполен хирургически кабинет са решили да наемат едно и също място.","Споделени светове, по-последователно въвеждане и битки"
-czech,"- **🌍 Sdílené světy mnohem rozumnější**
-  - Vylepšil jsem kontinuitu, když více postav sdílí stejný svět. Hra nyní lépe znovu používá již platná místa a ponechává méně prostoru pro vymýšlení „stejné oblasti, ale s jiným názvem a jiným kloboukem“.
-  - Opravil jsem také informace o poloze v selektoru a na kartě, aby každá postava zobrazovala svou skutečnou polohu, nikoli půjčenou od souseda.
-- **👥 Soudržnější NPC a méně náchylní k rozštěpení osobnosti**
-  - Posílil jsem logiku, aby se již existující NPC vrátil jako sám sebou, když má, místo aby se vymýšlel s jiným jménem, jinou tváří nebo novou kartou vyšlou z mlhy.
-  - Navíc nepřátelství vyvolané postavou by již nemělo magicky kontaminovat všechny ostatní. Pokud se na vás Kaelen naštve, je záměr, aby se naštval na vás... ne na celý lidský rod.
-- **🎬 Nástupy do hry a průzkum s menším podivným divadlem**
-  - Opravil jsem několik případů, kdy vyprávění naznačovalo, že před vámi někdo stojí, ale systém to zespodu nepodporoval. Nyní je méně přízračných prodejců, méně mizících mluvčích a méně scén, které vypadají jako nízkorozpočtová experimentální hra.
-  - Také jsem snížil počet případů, kdy AI vkládala dárky, zásoby nebo narativní předměty tam, kam neměla, zejména při příchodech a v prvních scénách.
-- **⚔️ Boj a rozhodnutí s menším počtem zakopnutí**
-  - Posílil jsem kontinuitu mezi průzkumem a bojem, takže vstup do boje lépe závisí na skutečně přítomných NPC a ne na narativním kouři.
-  - Opravil jsem také několik záseků, kde scéna běžela dál, ale rozhraní upadlo do špatných nebo obecných rozhodnutí. Méně „Pokračovat“ jen tak, více možností se skutečným záměrem.
-- **🧬 Spolehlivější tvorba postav a prostředí**
-  - Náhodná tvorba postav je opět stabilnější a lépe respektuje biografický formát, který hra očekává.
-  - Upravil jsem několik nesrovnalostí v prostředí a zdrojích, aby se kyberpunk, fantasy a jejich odvozeniny nemíchaly, jako by se středověká krčma a ilegální operační sál rozhodly pronajmout si stejný prostor.","Sdílené světy, nástup a boj soudržnější"
-danish,"- **🌍 Fælles verdener, der giver meget mere mening**
-  - Jeg har forbedret kontinuiteten, når flere karakterer deler den samme verden. Spillet genbruger nu bedre eksisterende steder og giver mindre spillerum for at opfinde ""det samme område, men med et andet navn og en anden hat"".
-  - Jeg har også rettet op på placeringsinformationen i vælgeren og på karakterkortet, så hver karakter viser sin faktiske placering og ikke en lånt fra naboen.
-- **👥 Mere sammenhængende NPC'er og mindre tilbøjelige til at fordoble sig**
-  - Jeg har styrket logikken, så en eksisterende NPC dukker op igen som sig selv, når det er meningen, i stedet for at opfinde sig selv med et andet navn, et andet ansigt eller et nyt kort ud af det blå.
-  - Desuden bør en fjendtlighed fremprovokeret af én karakter ikke længere smitte alle andre som ved et trylleslag. Hvis Kaelen bliver vred på dig, er meningen, at han bliver vred på dig... ikke på hele menneskeheden.
-- **🎬 Startscener og udforskning med mindre underlig teater**
-  - Jeg har rettet flere tilfælde, hvor fortællingen antydede, at nogen stod foran dig, men systemet ikke understøttede det. Nu er der færre spøgelsesforhandlere, færre forsvindende samtalepartnere og færre scener, der ligner et eksperimentelt teaterstykke uden budget.
-  - Jeg har også reduceret tilfælde, hvor AI'en placerede gaver, inventar eller narrative genstande, hvor de ikke hørte hjemme, især ved ankomster og indledende scener.
-- **⚔️ Kamp og beslutninger med færre snublesten**
-  - Jeg har styrket kontinuiteten mellem udforskning og kamp, så kampopstart afhænger bedre af faktisk tilstedeværende NPC'er og ikke af narrativ røg.
-  - Jeg har også rettet flere fastlåste situationer, hvor scenen fortsatte, men brugergrænsefladen faldt tilbage til dårlige eller generiske valg. Mindre ""Fortsæt"" for ingenting, flere valg med reel hensigt.
-- **🧬 Karakteroprettelse og mere pålidelige omgivelser**
-  - Tilfældig karakteroprettelse er igen mere stabil og respekterer bedre det biografiske format, spillet forventer.
-  - Jeg har justeret flere uoverensstemmelser i omgivelser og ressourcer, så cyberpunk, fantasy og deres derivater ikke blandes, som om en middelalderlig kro og en hemmelig operationsstue havde besluttet at leje samme lokale.","Fælles verdener, onboarding og kamp mere sammenhængende"
-german,"- **🌍 Geteilte Welten deutlich sinnvoller**
-  - Ich habe die Kontinuität verbessert, wenn mehrere Charaktere dieselbe Welt teilen. Das Spiel verwendet nun bereits gültige Orte besser wieder und lässt weniger Raum für die Erfindung von „derselben Zone, aber mit anderem Namen und anderem Hut“.
-  - Außerdem habe ich die Standortinformationen in der Auswahl und im Profil korrigiert, sodass jeder Charakter seinen tatsächlichen Standort anzeigt und nicht den des Nachbarn.
-- **👥 Kohärentere und weniger zwiespältige NPCs**
-  - Ich habe die Logik verstärkt, damit ein bereits existierender NPC wieder als er selbst erscheint, wenn es an der Zeit ist, anstatt sich mit einem anderen Namen, einem anderen Gesicht oder einer neuen, aus dem Nebel aufgetauchten Karte neu zu erfinden.
-  - Darüber hinaus sollte eine durch einen Charakter verursachte Feindschaft nicht mehr magisch alle anderen kontaminieren. Wenn Kaelen sauer auf dich ist, soll er sauer auf dich sein... nicht auf die gesamte menschliche Spezies.
-- **🎬 Weniger seltsame theatralische Startsequenzen und Erkundung**
-  - Ich habe verschiedene Fälle korrigiert, in denen die Erzählung andeutete, dass jemand vor dir stand, das System dies aber nicht unterstützte. Es gibt nun weniger Geisterverkäufer, weniger verdampfte Gesprächspartner und weniger Szenen, die wie ein experimentelles Theaterstück ohne Budget wirken.
-  - Ich habe auch Fälle reduziert, in denen die KI Geschenke, Vorräte oder erzählerische Gegenstände an ungünstigen Stellen platzierte, insbesondere bei Ankünften und in den ersten Szenen.
-- **⚔️ Weniger stolpernde Kämpfe und Entscheidungen**
-  - Ich habe die Kontinuität zwischen Erkundung und Kampf verstärkt, damit der Kampf besser von tatsächlich vorhandenen NPCs und nicht von erzählerischem Rauch abhängt.
-  - Ich habe auch verschiedene Blockaden behoben, bei denen die Szene noch lief, die Benutzeroberfläche aber in schlechte oder generische Entscheidungen verfiel. Weniger „Weiter“ um des Weiterseins willen, mehr Optionen mit echter Absicht.
-- **🧬 Zuverlässigere Charaktererstellung und Umgebungen**
-  - Die zufällige Charaktererstellung ist wieder stabiler und respektiert das vom Spiel erwartete biografische Format besser.
-  - Ich habe verschiedene Inkonsistenzen bei Umgebungen und Ressourcen angepasst, damit Cyberpunk, Fantasy und ihre Derivate nicht vermischt werden, als hätten eine mittelalterliche Taverne und ein illegaler Operationssaal beschlossen, denselben Ort zu mieten.","Geteilte Welten, kohärenteres Onboarding und Kampfsystem"
-greek,"- **🌍 Σημαντικά πιο λογικοί κοινοί κόσμοι**
-  - Βελτίωσα τη συνέπεια όταν πολλοί χαρακτήρες μοιράζονται τον ίδιο κόσμο. Τώρα το παιχνίδι επαναχρησιμοποιεί καλύτερα υπάρχουσες, έγκυρες τοποθεσίες και αφήνει λιγότερα περιθώρια για εφεύρεση «της ίδιας περιοχής, αλλά με άλλο όνομα και άλλο καπέλο».
-  - Επίσης, διόρθωσα τις πληροφορίες τοποθεσίας στον επιλογέα και στην κάρτα, ώστε κάθε χαρακτήρας να εμφανίζει την πραγματική του τοποθεσία και όχι αυτή ενός γείτονα.
-- **👥 Πιο λογικοί και λιγότερο επιρρεπείς σε διπλοπροσωπίες NPCs**
-  - Ενίσχυσα τη λογική ώστε ένας υπάρχων NPC να επανεμφανίζεται ως ο εαυτός του όταν πρέπει, αντί να επινοεί εκ νέου με άλλο όνομα, άλλο πρόσωπο ή νέα κάρτα που ξεπροβάλλει από την ομίχλη.
-  - Επιπλέον, μια εχθρότητα που προκλήθηκε από έναν χαρακτήρα δεν θα πρέπει πλέον να μολύνει μαγικά όλους τους άλλους. Αν ο Kaelen θυμώσει μαζί σου, η ιδέα είναι να θυμώσει μαζί σου... όχι με ολόκληρο το ανθρώπινο είδος.
-- **🎬 Λιγότερο παράξενες εισαγωγές και εξερευνήσεις**
-  - Διόρθωσα διάφορες περιπτώσεις όπου η αφήγηση υπαινισσόταν ότι κάποιος βρισκόταν μπροστά σου, αλλά το σύστημα δεν το υποστήριζε από κάτω. Τώρα υπάρχουν λιγότεροι φανταστικοί πωλητές, λιγότεροι εξαφανιζόμενοι συνομιλητές και λιγότερες σκηνές που μοιάζουν με πειραματικό έργο χωρίς προϋπολογισμό.
-  - Επίσης, μείωσα τις περιπτώσεις όπου η AI τοποθετούσε δώρα, αποθέματα ή αφηγηματικά αντικείμενα όπου δεν έπρεπε, ειδικά στις εισόδους και στις πρώτες σκηνές.
-- **⚔️ Λιγότερα εμπόδια στη μάχη και στις αποφάσεις**
-  - Ενίσχυσα τη συνέχεια μεταξύ εξερεύνησης και μάχης, ώστε η έναρξη μιας μάχης να βασίζεται καλύτερα σε πραγματικά παρόντες NPCs και όχι σε αφηγηματικό καπνό.
-  - Επίσης, διόρθωσα διάφορα μπλοκαρίσματα όπου η σκηνή συνέχιζε να είναι ενεργή, αλλά η διεπαφή έπεφτε σε κακές ή γενικές αποφάσεις. Λιγότερο «Συνέχεια» από μόνο του, περισσότερες επιλογές με πραγματική πρόθεση.
-- **🧬 Πιο αξιόπιστη δημιουργία χαρακτήρα και ατμόσφαιρες**
-  - Η τυχαία δημιουργία χαρακτήρα είναι και πάλι πιο σταθερή και σέβεται καλύτερα τη βιογραφική μορφή που αναμένει το παιχνίδι.
-  - Προσάρμοσα διάφορες ασυνέπειες ατμόσφαιρας και πόρων, ώστε το cyberpunk, η φαντασία και τα παράγωγά τους να μην αναμειγνύονται σαν μια μεσαιωνική ταβέρνα και ένα παράνομο χειρουργείο να αποφάσισαν να νοικιάσουν τον ίδιο χώρο.","Κοινότεροι κόσμοι, συνεπέστερη εισαγωγή και μάχη"
-english,"- **🌍 Much More Sensible Shared Worlds**
-  - I've improved continuity when multiple characters share the same world. The game now reuses valid locations better, leaving less room for inventing ""the same zone, but with a different name and hat.""
-  - I've also corrected location information in the selector and character sheet, so each character shows their real location, not one borrowed from their neighbor.
-- **👥 More Consistent NPCs and Less Prone to Splitting**
-  - I've reinforced the logic so that an existing NPC reappears as themselves when appropriate, instead of reinventing themselves with a new name, face, or a card pulled from the mist.
-  - Furthermore, an enmity triggered by one character should no longer magically contaminate all others. If Kaelen gets angry with you, the idea is that they get angry with you... not with the entire human race.
-- **🎬 Smoother Starting Scenes and Exploration with Less Weirdness**
-  - I've fixed several cases where the narration implied someone was in front of you, but the system didn't support it underneath. There are now fewer ghost vendors, fewer evaporated interlocutors, and fewer scenes that feel like a low-budget experimental play.
-  - I've also reduced instances where the AI inserted gifts, stock, or narrative items where they didn't belong, especially during arrivals and initial scenes.
-- **⚔️ Combat and Decisions with Fewer Stumbles**
-  - I've reinforced continuity between exploration and combat so that entering a fight depends better on actually present NPCs and not narrative smoke.
-  - I've also fixed several stalls where the scene remained active, but the interface fell into poor or generic decisions. Less ""Continue"" for the sake of it, more options with real intent.
-- **🧬 More Reliable Character Creation and Settings**
-  - Random character creation is now more stable and better respects the biographical format the game expects.
-  - I've adjusted several inconsistencies in setting and resources so that cyberpunk, fantasy, and their derivatives don't blend as if a medieval tavern and a clandestine operating room had decided to rent the same space.","More Consistent Shared Worlds, Onboarding, and Combat"
-spanish,"- **🌍 Mundos compartidos bastante más sensatos**
-  - He mejorado la continuidad cuando varios personajes comparten el mismo mundo. Ahora el juego reaprovecha mejor lugares ya válidos y deja menos margen para inventarse “la misma zona, pero con otro nombre y otro sombrero”.
-  - También he corregido la información de ubicación en el selector y en la ficha, para que cada personaje muestre su localización real y no una prestada del vecino.
-- **👥 PNJs más coherentes y menos dados al desdoblamiento**
-  - He reforzado la lógica para que un PNJ ya existente vuelva a aparecer como él mismo cuando toca, en vez de reinventarse con otro nombre, otra cara o una tarjeta nueva salida de la niebla.
-  - Además, una enemistad provocada por un personaje ya no debería contaminar a todos los demás por arte de magia. Si Kaelen se enfada contigo, la idea es que se enfade contigo... no con la especie humana entera.
-- **🎬 Entradas de partida y exploración con menos teatro raro**
-  - He corregido varios casos en los que la narración insinuaba que alguien estaba delante de ti, pero el sistema no lo sostenía por debajo. Ahora hay menos vendedores fantasma, menos interlocutores evaporados y menos escenas que parecen una obra experimental sin presupuesto.
-  - También he reducido casos en los que la IA colaba regalos, stock o ítems narrativos donde no tocaba, especialmente en las llegadas y primeras escenas.
-- **⚔️ Combate y decisiones con menos tropiezos**
-  - He reforzado la continuidad entre exploración y combate para que la entrada en pelea dependa mejor de PNJs realmente presentes y no de humo narrativo.
-  - También he corregido varios atascos donde la escena seguía viva, pero la interfaz caía en decisiones pobres o genéricas. Menos “Continuar” porque sí, más opciones con intención real.
-- **🧬 Creación de personaje y ambientaciones más fiables**
-  - La creación aleatoria de personaje vuelve a ser más estable y respeta mejor el formato biográfico que espera el juego.
-  - He ajustado varias incoherencias de ambientación y recursos para que cyberpunk, fantasía y sus derivados no se mezclen como si una taberna medieval y un quirófano clandestino hubieran decidido alquilar el mismo local.","Mundos compartidos, onboarding y combate más coherentes"
-latam,"- **🌍 Mundos compartidos mucho más sensatos**
-  - He mejorado la continuidad cuando varios personajes comparten el mismo mundo. Ahora el juego reutiliza mejor las ubicaciones ya válidas y deja menos margen para inventarse ""la misma zona, pero con otro nombre y otro sombrero"".
-  - También he corregido la información de ubicación en el selector y en la ficha, para que cada personaje muestre su localización real y no una prestada del vecino.
-- **👥 PNJs más coherentes y menos dados al desdoblamiento**
-  - He reforzado la lógica para que un PNJ ya existente vuelva a aparecer como él mismo cuando corresponde, en lugar de reinventarse con otro nombre, otra cara o una tarjeta nueva salida de la nada.
-  - Además, una enemistad provocada por un personaje ya no debería contaminar a todos los demás de forma mágica. Si Kaelen se enfada contigo, la idea es que se enfade contigo... no con la especie humana entera.
-- **🎬 Entradas de partida y exploración con menos teatro extraño**
-  - He corregido varios casos en los que la narración insinuaba que alguien estaba delante de ti, pero el sistema no lo respaldaba. Ahora hay menos vendedores fantasma, menos interlocutores evaporados y menos escenas que parecen una obra experimental sin presupuesto.
-  - También he reducido casos en los que la IA colaba regalos, existencias o elementos narrativos donde no correspondía, especialmente en las llegadas y primeras escenas.
-- **⚔️ Combate y decisiones con menos tropiezos**
-  - He reforzado la continuidad entre exploración y combate para que la entrada en pelea dependa mejor de PNJs realmente presentes y no de humo narrativo.
-  - También he corregido varios atascos donde la escena seguía activa, pero la interfaz caía en decisiones pobres o genéricas. Menos ""Continuar"" porque sí, más opciones con intención real.
-- **🧬 Creación de personaje y ambientaciones más fiables**
-  - La creación aleatoria de personaje vuelve a ser más estable y respeta mejor el formato biográfico que espera el juego.
-  - He ajustado varias incoherencias de ambientación y recursos para que cyberpunk, fantasía y sus derivados no se mezclen como si una taberna medieval y un quirófano clandestino hubieran decidido alquilar el mismo local.","Mundos compartidos, incorporación y combate más coherentes"
-finnish,"- **🌍 Selvästi järkevämpiä yhteisiä maailmoja**
-  - Olen parantanut jatkuvuutta, kun useampi hahmo jakaa saman maailman. Nyt peli hyödyntää paremmin jo olemassa olevia paikkoja ja jättää vähemmän tilaa mielikuvituksellisille ""samalle alueelle eri nimellä ja eri hatulla"".
-  - Olen myös korjannut sijaintitietoja valitsimessa ja hahmokortissa, jotta jokainen hahmo näyttää todellisen sijaintinsa eikä naapurin lainaamaansa.
-- **👥 Johdonmukaisemmat NPC:t ja vähemmän kaksoisolentoja**
-  - Olen vahvistanut logiikkaa niin, että jo olemassa oleva NPC ilmestyy takaisin omana itsenään silloin kun sen pitäisi, sen sijaan että se keksittäisiin uudelleen eri nimellä, eri kasvoilla tai sumusta ilmestyneenä uutena korttina.
-  - Lisäksi hahmon aiheuttaman vihamielisyyden ei pitäisi enää maagisesti levitä kaikkiin muihin. Jos Kaelen suuttuu sinulle, ideana on, että hän suuttuu sinulle... ei koko ihmislajille.
-- **🎬 Vähemmän outoa teatteria aloituksissa ja tutkimusmatkoilla**
-  - Olen korjannut useita tapauksia, joissa kerronta antoi ymmärtää jonkun olevan edessäsi, mutta järjestelmä ei tukenut sitä. Nyt on vähemmän kummitusmyyjiä, vähemmän haihtuneita keskustelukumppaneita ja vähemmän kohtauksia, jotka muistuttavat budjetiltaan köyhää kokeellista näytelmää.
-  - Olen myös vähentänyt tapauksia, joissa tekoäly ujutti lahjoja, varastoa tai tarinallisia esineitä vääriin paikkoihin, erityisesti saapumis- ja alkukohtauksissa.
-- **⚔️ Vähemmän kompasteluja taistelussa ja päätöksissä**
-  - Olen vahvistanut jatkuvuutta tutkimisen ja taistelun välillä, jotta taisteluun siirtyminen riippuu paremmin todella läsnä olevista NPC:istä eikä tarinallisesta savusta.
-  - Olen myös korjannut useita jumituksia, joissa kohtaus jatkui, mutta käyttöliittymä päätyi huonoihin tai yleisiin päätöksiin. Vähemmän ""Jatka"" ilman syytä, enemmän todellisia ja tarkoituksellisia valintoja.
-- **🧬 Luotettavampi hahmonluonti ja ympäristöt**
-  - Hahmon satunnainen luonti on taas vakaampi ja kunnioittaa paremmin pelin odottamaa elämäkertamuotoa.
-  - Olen korjannut useita ympäristö- ja resurssien epäjohdonmukaisuuksia, jotta cyberpunk, fantasia ja niiden johdannaiset eivät sekoitu kuin keskiaikainen taverna ja salainen leikkaussali olisivat vuokranneet saman tilan.","Yhteisemmät maailmat, johdonmukaisempi perehdytys ja taistelu"
-french,"- **🌍 Mondes partagés beaucoup plus sensés**
-  - J'ai amélioré la continuité lorsque plusieurs personnages partagent le même monde. Le jeu réutilise désormais mieux les lieux déjà valides et laisse moins de place à l'invention de « la même zone, mais avec un autre nom et un autre chapeau ».
-  - J'ai également corrigé les informations de localisation dans le sélecteur et sur la fiche, afin que chaque personnage affiche sa localisation réelle et non celle d'un voisin.
-- **👥 PNJ plus cohérents et moins sujets au dédoublement**
-  - J'ai renforcé la logique afin qu'un PNJ déjà existant réapparaisse en tant que lui-même lorsque cela est approprié, au lieu de se réinventer avec un autre nom, un autre visage ou une nouvelle carte sortie du néant.
-  - De plus, une inimitié provoquée par un personnage ne devrait plus contaminer tous les autres par magie. Si Kaelen est en colère contre vous, l'idée est qu'il soit en colère contre vous... pas contre l'espèce humaine entière.
-- **🎬 Entrées de partie et exploration avec moins de théâtre étrange**
-  - J'ai corrigé plusieurs cas où la narration insinuait que quelqu'un était devant vous, mais que le système ne le soutenait pas en arrière-plan. Il y a désormais moins de marchands fantômes, moins d'interlocuteurs évaporés et moins de scènes qui ressemblent à une pièce expérimentale sans budget.
-  - J'ai également réduit les cas où l'IA plaçait des cadeaux, des stocks ou des objets narratifs là où ils n'avaient pas leur place, en particulier lors des arrivées et des premières scènes.
-- **⚔️ Combat et décisions avec moins de faux pas**
-  - J'ai renforcé la continuité entre l'exploration et le combat afin que l'entrée en combat dépende mieux des PNJ réellement présents et non d'une fumée narrative.
-  - J'ai également corrigé plusieurs blocages où la scène restait active, mais où l'interface tombait sur des décisions médiocres ou génériques. Moins de « Continuer » pour le plaisir, plus d'options avec une intention réelle.
-- **🧬 Création de personnage et ambiances plus fiables**
-  - La création aléatoire de personnage est de nouveau plus stable et respecte mieux le format biographique attendu par le jeu.
-  - J'ai ajusté plusieurs incohérences d'ambiance et de ressources afin que le cyberpunk, la fantasy et leurs dérivés ne se mélangent pas comme si une taverne médiévale et un bloc opératoire clandestin avaient décidé de louer le même local.","Mondes partagés, onboarding et combat plus cohérents"
-hungarian,"- **🌍 Sokkal értelmesebb megosztott világok**
-  - Javítottam a folytonosságot, amikor több karakter osztozik ugyanazon a világon. A játék most jobban újrahasznosítja a már érvényes helyszíneket, és kisebb teret enged az „ugyanaz a terület, csak más névvel és más kalappal” jelenségnek.
-  - Javítottam a helyszíninformációkat is a kiválasztóban és az adatlapokon, így minden karakter a saját valós tartózkodási helyét mutatja, nem a szomszéd kölcsönbe adottját.
-- **👥 Koherensebb NPC-k és kevésbé hajlamosak kettőződésre**
-  - Megerősítettem a logikát, hogy egy már létező NPC akkor jelenjen meg újra önmagaként, amikor kell, ahelyett, hogy új névvel, új arccal vagy a ködből előkerült új kártyával újulna meg.
-  - Ezenkívül egy karakter által kiváltott ellenségeskedés már nem fertőz meg varázslatos módon mindenkit. Ha Kaelen megharagszik rád, az az elképzelés, hogy rád haragszik... nem az egész emberi fajra.
-- **🎬 Kevesebb furcsa színházi előadás indítás és felfedezés**
-  - Javítottam több olyan esetet, amikor a narráció azt sugallta, hogy valaki előtted áll, de a rendszer nem támasztotta alá. Most kevesebb a kísértetárus, kevesebb az eltűnő beszélgetőpartner és kevesebb a nem költségvetésű kísérleti színdarabnak tűnő jelenet.
-  - Csökkentettem azokat az eseteket is, amikor az AI nem odaillő ajándékokat, készleteket vagy narratív tárgyakat dobott be, különösen az érkezésekkor és az első jelenetekben.
-- **⚔️ Kevésbé akadozó harc és döntések**
-  - Megerősítettem a felfedezés és a harc közötti folytonosságot, hogy a harcba lépés jobban függjön a valóban jelenlévő NPC-ktől, és ne narratív füsttől.
-  - Javítottam több olyan megrekedést is, ahol a jelenet tovább futott, de az interfész rossz vagy általános döntésekbe esett. Kevesebb a „Folytatás” csak úgy, több a valódi szándékú opció.
-- **🧬 Megbízhatóbb karakteralkotás és környezetek**
-  - A véletlenszerű karakteralkotás ismét stabilabb lett, és jobban tiszteletben tartja a játék által elvárt életrajzi formátumot.
-  - Beállítottam több környezeti és erőforrásbeli inkonzisztenciát, hogy a cyberpunk, a fantasy és azok származékai ne keveredjenek úgy, mintha egy középkori kocsmát és egy illegális sebészeti rendelőt béreltek volna ugyanazt a helyet.","Koherensebb megosztott világok, onboarding és harc"
-indonesian,"- **🌍 Dunia bersama yang jauh lebih masuk akal**
-  - Saya telah meningkatkan kontinuitas ketika beberapa karakter berbagi dunia yang sama. Permainan sekarang memanfaatkan lokasi yang sudah valid dengan lebih baik dan menyisakan lebih sedikit ruang untuk ""zona yang sama, tetapi dengan nama dan topi yang berbeda"".
-  - Saya juga telah memperbaiki informasi lokasi di pemilih dan di kartu karakter, sehingga setiap karakter menampilkan lokasi sebenarnya dan bukan pinjaman dari tetangga.
-- **👥 NPC yang lebih koheren dan tidak mudah terpecah belah**
-  - Saya telah memperkuat logika sehingga NPC yang sudah ada akan muncul kembali sebagai dirinya sendiri ketika waktunya tepat, alih-alih diciptakan kembali dengan nama lain, wajah lain, atau kartu baru yang muncul dari kabut.
-  - Selain itu, permusuhan yang disebabkan oleh satu karakter seharusnya tidak lagi secara ajaib mencemari semua orang. Jika Kaelen marah padamu, idenya adalah dia marah padamu... bukan pada seluruh umat manusia.
-- **🎬 Entri awal dan eksplorasi dengan lebih sedikit teater aneh**
-  - Saya telah memperbaiki beberapa kasus di mana narasi menyiratkan bahwa seseorang ada di depan Anda, tetapi sistem tidak mendukungnya di bawahnya. Sekarang ada lebih sedikit pedagang hantu, lebih sedikit lawan bicara yang menguap, dan lebih sedikit adegan yang tampak seperti drama eksperimental tanpa anggaran.
-  - Saya juga telah mengurangi kasus di mana AI menyusupkan hadiah, stok, atau item naratif di tempat yang tidak seharusnya, terutama saat kedatangan dan adegan awal.
-- **⚔️ Pertempuran dan keputusan dengan lebih sedikit hambatan**
-  - Saya telah memperkuat kontinuitas antara eksplorasi dan pertempuran sehingga masuk ke dalam pertarungan lebih baik bergantung pada NPC yang benar-benar ada dan bukan asap naratif.
-  - Saya juga telah memperbaiki beberapa kemacetan di mana adegan masih aktif, tetapi antarmuka menghasilkan keputusan yang buruk atau umum. Lebih sedikit ""Lanjutkan"" begitu saja, lebih banyak pilihan dengan niat sebenarnya.
-- **🧬 Pembuatan karakter dan pengaturan yang lebih andal**
-  - Pembuatan karakter acak sekarang lebih stabil dan menghormati format biografis yang diharapkan permainan dengan lebih baik.
-  - Saya telah menyesuaikan beberapa inkonsistensi pengaturan dan sumber daya sehingga cyberpunk, fantasi, dan turunannya tidak bercampur seolah-olah sebuah kedai minum abad pertengahan dan ruang operasi ilegal telah memutuskan untuk menyewa tempat yang sama.","Dunia bersama, onboarding, dan pertempuran yang lebih koheren"
-italian,"- **🌍 Mondi condivisi molto più sensati**
-  - Ho migliorato la continuità quando più personaggi condividono lo stesso mondo. Ora il gioco riutilizza meglio luoghi già validi e lascia meno spazio all'invenzione di ""stessa zona, ma con un altro nome e un altro cappello"".
-  - Ho anche corretto le informazioni sulla posizione nel selettore e nella scheda, in modo che ogni personaggio mostri la sua reale localizzazione e non una prestata dal vicino.
-- **👥 PNG più coerenti e meno inclini al doppio gioco**
-  - Ho rafforzato la logica in modo che un PNG già esistente riappaia come se stesso quando necessario, invece di reinventarsi con un altro nome, un'altra faccia o una nuova carta uscita dalla nebbia.
-  - Inoltre, un'inimicizia provocata da un personaggio non dovrebbe più contaminare magicamente tutti gli altri. Se Kaelen si arrabbia con te, l'idea è che si arrabbi con te... non con l'intera specie umana.
-- **🎬 Ingressi di gioco ed esplorazione con meno teatro strano**
-  - Ho corretto diversi casi in cui la narrazione insinuava che qualcuno fosse davanti a te, ma il sistema non lo supportava sottostantemente. Ora ci sono meno venditori fantasma, meno interlocutori evaporati e meno scene che sembrano un'opera sperimentale a basso budget.
-  - Ho anche ridotto i casi in cui l'IA inseriva regali, scorte o oggetti narrativi dove non c'entravano, specialmente negli arrivi e nelle prime scene.
-- **⚔️ Combattimento e decisioni con meno inciampi**
-  - Ho rafforzato la continuità tra esplorazione e combattimento in modo che l'entrata in battaglia dipenda meglio da PNG realmente presenti e non da fumo narrativo.
-  - Ho anche corretto diversi blocchi in cui la scena rimaneva attiva, ma l'interfaccia cadeva in decisioni povere o generiche. Meno ""Continua"" perché sì, più opzioni con un intento reale.
-- **🧬 Creazione del personaggio e ambientazioni più affidabili**
-  - La creazione casuale del personaggio è di nuovo più stabile e rispetta meglio il formato biografico che il gioco si aspetta.
-  - Ho corretto diverse incoerenze di ambientazione e risorse in modo che cyberpunk, fantasy e i loro derivati non si mescolino come se una taverna medievale e un ospedale clandestino avessero deciso di affittare lo stesso locale.","Mondi condivisi, onboarding e combattimento più coerenti"
-japanese,"- **🌍 より的確になった共有ワールド**
-  - 複数のキャラクターが同じワールドを共有する際の連続性を改善しました。ゲームは有効な場所をより効率的に再利用するようになり、「同じエリアだが名前と帽子が違う」といった状況が起こりにくくなりました。
-  - また、セレクターとプロフィール画面の場所情報を修正し、各キャラクターが借り物の場所ではなく、実際の現在地を表示するようにしました。
-- **👥 より一貫性があり、分裂しにくいNPC**
-  - 既存のNPCが、新しい名前、顔、または霧の中から現れた新規カードではなく、本来の自分として再登場するロジックを強化しました。
-  - さらに、あるキャラクターによって引き起こされた敵対関係が、魔法のように他の全員に影響を与えることはなくなりました。カレンがあなたに怒った場合、それはあなたに怒っているのであって、人類全体に怒っているわけではない、という想定です。
-- **🎬 奇妙な演出の少ない開始イベントと探索**
-  - 物語上、目の前に誰かがいると示唆されているにも関わらず、システムがそれを支えていないといったケースを複数修正しました。幽霊のような売り手、蒸発する会話相手、予算のない実験演劇のようなシーンが少なくなりました。
-  - また、特に開始時や最初のシーンで、AIが不適切な場所にギフト、在庫、物語上のアイテムを配置してしまうケースを削減しました。
-- **⚔️ つまずきが減った戦闘と決断**
-  - 探索と戦闘の連続性を強化し、戦闘への突入が物語上の架空の存在ではなく、実際に存在するNPCに依存するようにしました。
-  - また、シーンは続いているのに、インターフェースが貧弱または一般的な決断に陥ってしまうといった複数の行き詰まりを修正しました。理由もなく「続ける」のではなく、より意図のある選択肢が増えました。
-- **🧬 信頼性の高いキャラクター作成と環境設定**
-  - キャラクターのランダム作成がより安定し、ゲームが期待する伝記形式をより尊重するようになりました。
-  - サイバーパンク、ファンタジー、およびそれらの派生系が、中世の酒場と違法な手術室が同じ場所を借りたかのように混ざり合わないよう、環境設定とリソースの矛盾をいくつか調整しました。",共有ワールド、オンボーディング、戦闘の一貫性向上
-korean,"- **🌍 훨씬 더 합리적인 공유 월드**
-  - 여러 캐릭터가 같은 월드를 공유할 때의 연속성을 개선했습니다. 이제 게임은 유효한 장소를 더 잘 재활용하고, ""같은 지역이지만 이름과 외형만 다른"" 식의 어색함을 줄입니다.
-  - 또한 셀렉터와 프로필의 위치 정보를 수정하여 각 캐릭터가 이웃의 위치가 아닌 실제 위치를 표시하도록 했습니다.
-- **👥 더 일관되고 분열되지 않는 NPC**
-  - 기존 NPC가 다시 자신으로 등장하는 로직을 강화했습니다. 이름, 얼굴, 또는 안개 속에서 나온 새 카드로 재창조되는 대신, 적절한 시점에 자신으로 다시 나타납니다.
-  - 또한, 한 캐릭터로 인해 발생한 적대감이 다른 모든 캐릭터에게 마법처럼 오염되지 않도록 했습니다. Kaelen이 당신에게 화를 낸다면, 그것은 인간 전체가 아닌 당신에게 화를 내는 것입니다.
-- **🎬 덜 이상한 연극 같은 시작 장면 및 탐험**
-  - 당신 앞에 누군가가 있는 것처럼 암시했지만 시스템은 이를 뒷받침하지 못했던 여러 경우를 수정했습니다. 이제 유령 판매원, 증발하는 대화 상대, 예산 없는 실험 연극 같은 장면이 줄어듭니다.
-  - 또한 AI가 특히 시작 장면이나 첫 장면에서, 부적절한 곳에 선물, 재고 또는 내러티브 아이템을 배치하는 경우를 줄였습니다.
-- **⚔️ 덜 걸리는 전투 및 결정**
-  - 탐험과 전투 간의 연속성을 강화하여, 전투 시작이 내러티브적인 연기보다는 실제로 존재하는 NPC에 더 잘 의존하도록 했습니다.
-  - 또한 장면은 계속 진행되지만 인터페이스는 잘못되거나 일반적인 결정으로 빠지는 여러 막힘 현상을 수정했습니다. 이유 없는 ""계속""보다는 실제 의도가 있는 옵션을 더 많이 제공합니다.
-- **🧬 더 신뢰할 수 있는 캐릭터 생성 및 배경 설정**
-  - 랜덤 캐릭터 생성이 다시 더 안정적으로 작동하고 게임에서 기대하는 전기의 형식을 더 잘 존중합니다.
-  - 사이버펑크, 판타지 및 파생 장르가 중세 술집과 불법 수술실이 같은 장소를 임대한 것처럼 섞이지 않도록 여러 배경 및 자원 불일치를 조정했습니다.","더 일관된 공유 월드, 온보딩 및 전투"
-dutch,"- **🌍 Gedeelde werelden een stuk logischer**
-  - De continuïteit is verbeterd wanneer meerdere personages dezelfde wereld delen. De game hergebruikt nu bestaande locaties beter en laat minder ruimte voor het verzinnen van ""dezelfde zone, maar dan met een andere naam en een andere hoed"".
-  - Ook de locatie-informatie in de selector en op de profielkaart is gecorrigeerd, zodat elk personage zijn werkelijke locatie toont en niet die van de buurman.
-- **👥 Logischere NPC's en minder geneigd tot splitsing**
-  - De logica is versterkt, zodat een reeds bestaande NPC weer als zichzelf verschijnt wanneer het tijd is, in plaats van zichzelf opnieuw uit te vinden met een andere naam, een ander gezicht of een nieuwe kaart die uit de mist tevoorschijn komt.
-  - Bovendien zou een vijandigheid die door een personage is veroorzaakt, niet langer magisch alle anderen moeten besmetten. Als Kaelen boos op je wordt, is het de bedoeling dat hij boos op jou wordt... niet op de hele mensheid.
-- **🎬 Startscènes en verkenning met minder rare capriolen**
-  - Verschillende gevallen zijn gecorrigeerd waarbij de vertelling suggereerde dat iemand voor je stond, maar het systeem dit niet ondersteunde. Er zijn nu minder spookverkopers, minder verdwijnende gesprekspartners en minder scènes die lijken op een experimenteel toneelstuk met een beperkt budget.
-  - Ook is het aantal gevallen verminderd waarbij de AI cadeaus, voorraad of narratieve items op onbedoelde plekken plaatste, vooral bij aankomsten en eerste scènes.
-- **⚔️ Gevechten en beslissingen met minder struikelblokken**
-  - De continuïteit tussen verkenning en gevechten is versterkt, zodat het starten van een gevecht beter afhangt van daadwerkelijk aanwezige NPC's en niet van narratieve rookgordijnen.
-  - Verschillende vastlopers zijn ook gecorrigeerd waarbij de scène bleef draaien, maar de interface verviel in slechte of generieke keuzes. Minder ""Ga door"" omwille van het 'ga door', meer opties met echte intentie.
-- **🧬 Betrouwbaardere personagecreatie en settings**
-  - Willekeurige personagecreatie is weer stabieler en respecteert het biografische formaat dat de game verwacht beter.
-  - Verschillende incoherenties in settings en middelen zijn aangepast, zodat cyberpunk, fantasy en hun afgeleiden niet vermengd worden alsof een middeleeuwse taverne en een clandestiene operatiekamer besloten hadden dezelfde ruimte te huren.","Gedeelde werelden, onboarding en gevechten logischer"
-norwegian,"- **🌍 Mer fornuftige delte verdener**
-  - Jeg har forbedret kontinuiteten når flere karakterer deler samme verden. Spillet gjenbruker nå bedre eksisterende steder og gir mindre rom for å finne opp «samme område, bare med et annet navn og hatt».
-  - Jeg har også korrigert plasseringsinformasjon i velgeren og på profilen, slik at hver karakter viser sin virkelige plassering og ikke en som er lånt fra naboen.
-- **👥 Mer sammenhengende NPC-er og mindre tilbøyelighet til dobbelgjengere**
-  - Jeg har styrket logikken slik at en eksisterende NPC dukker opp igjen som seg selv når det er meningen, i stedet for å finne opp en ny med et annet navn, et annet ansikt eller et nytt kort som dukker opp fra intet.
-  - Dessuten burde en fiendtlighet forårsaket av én karakter ikke lenger «smitte» til alle andre magisk. Hvis Kaelen blir sint på deg, er meningen at hun skal bli sint på deg… ikke på hele menneskeheten.
-- **🎬 Oppstart og utforskning med mindre rar teater**
-  - Jeg har korrigert flere tilfeller der fortellingen antydet at noen sto foran deg, men systemet ikke støttet det under. Nå er det færre spøkelsesselgere, færre forsvinnende samtalepartnere og færre scener som virker som et lavbudsjetts eksperimentelt teaterstykke.
-  - Jeg har også redusert tilfeller der AI-en plasserte gaver, lager eller narrative gjenstander der de ikke hørte hjemme, spesielt ved ankomster og innledende scener.
-- **⚔️ Mer feilfri kamp og avgjørelser**
-  - Jeg har styrket kontinuiteten mellom utforskning og kamp slik at inngangen til kamp i bedre grad avhenger av faktisk tilstedeværende NPC-er og ikke av narrativ røyk.
-  - Jeg har også korrigert flere hikke der scenen fortsatte, men grensesnittet falt inn i dårlige eller generiske avgjørelser. Mindre «Fortsett» bare for å fortsette, mer valg med reell intensjon.
-- **🧬 Mer pålitelig karakteropprettelse og miljøer**
-  - Tilfeldig karakteropprettelse er mer stabil igjen og respekterer bedre det biografiske formatet spillet forventer.
-  - Jeg har justert flere inkonsekvenser i miljø og ressurser slik at cyberpunk, fantasi og deres derivater ikke blandes som om en middelaldersk taverna og en hemmelig operasjonssal hadde bestemt seg for å leie samme lokale.","Mer sammenhengende delte verdener, onboarding og kamp"
-polish,"**🌍 Znacznie sensowniejsze wspólne światy**
-  - Poprawiono ciągłość sytuacji, gdy wielu bohaterów dzieli ten sam świat. Gra teraz lepiej wykorzystuje już istniejące lokacje i zostawia mniej miejsca na tworzenie „tej samej strefy, ale pod inną nazwą i z innym kapeluszem”.
-  - Poprawiono również informacje o lokalizacji w selektorze i na karcie postaci, aby każdy bohater pokazywał swoje rzeczywiste położenie, a nie pożyczone od sąsiada.
-- **👥 Bardziej spójni NPC-e i mniej skłonni do podwójnego odradzania się**
-  - Wzmocniono logikę, aby istniejący NPC pojawiał się ponownie jako ta sama postać, gdy jest to wymagane, zamiast odradzać się pod innym imieniem, z inną twarzą lub jako nowa karta wyłaniająca się z mgły.
-  - Ponadto, wrogość wywołana przez jedną postać nie powinna już magicznie przenosić się na wszystkich innych. Jeśli Kaelen jest na ciebie zły, ma być zły na ciebie... a nie na cały gatunek ludzki.
-- **🎬 Wejścia do gry i eksploracja z mniejszą ilością dziwacznych teatrów**
-  - Naprawiono kilka przypadków, w których narracja sugerowała, że ktoś stał przed tobą, ale system tego nie podtrzymywał. Teraz jest mniej widmowych sprzedawców, mniej ewaporujących rozmówców i mniej scen przypominających niskobudżetową sztukę eksperymentalną.
-  - Zredukowano również przypadki, w których SI umieszczała prezenty, zapasy lub elementy narracyjne tam, gdzie nie powinny się pojawić, zwłaszcza podczas wejść do gry i pierwszych scen.
-- **⚔️ Walka i decyzje z mniejszą ilością potknięć**
-  - Wzmocniono ciągłość między eksploracją a walką, aby rozpoczęcie potyczki lepiej zależało od faktycznie obecnych NPC-ów, a nie od narracyjnych mgieł.
-  - Naprawiono również kilka zacięć, w których scena nadal trwała, ale interfejs prezentował słabe lub generyczne decyzje. Mniej „Kontynuuj” bez powodu, więcej opcji z realnym zamysłem.
-- **🧬 Tworzenie postaci i otoczenie - bardziej wiarygodne**
-  - Losowe tworzenie postaci jest ponownie bardziej stabilne i lepiej respektuje format biograficzny oczekiwany przez grę.
-  - Dostosowano kilka niespójności w otoczeniu i zasobach, aby cyberpunk, fantasy i ich pochodne nie mieszały się, jakby średniowieczna tawerna i nielegalna klinika postanowiły wynająć ten sam lokal.","Wspólne światy, onboarding i walka - bardziej spójne"
-portuguese,"- **🌍 Mundos compartilhados bem mais sensatos**
-  - Melhorei a continuidade quando vários personagens compartilham o mesmo mundo. Agora o jogo reaproveita melhor locais já válidos e deixa menos margem para inventar ""a mesma zona, mas com outro nome e outro chapéu"".
-  - Também corrigi a informação de localização no seletor e na ficha, para que cada personagem mostre sua localização real e não uma emprestada do vizinho.
-- **👥 NPCs mais coerentes e menos propensos ao desdobramento**
-  - Reforcei a lógica para que um NPC já existente reapareça como ele mesmo quando deve, em vez de se reinventar com outro nome, outra cara ou uma nova carta surgida da névoa.
-  - Além disso, uma inimizade provocada por um personagem não deveria mais contaminar todos os outros por arte de magia. Se Kaelen fica bravo com você, a ideia é que ele fique bravo com você... não com a espécie humana inteira.
-- **🎬 Entradas de partida e exploração com menos teatro bizarro**
-  - Corrigi vários casos em que a narrativa insinuava que alguém estava à sua frente, mas o sistema não o sustentava por baixo. Agora há menos vendedores fantasmas, menos interlocutores evaporados e menos cenas que parecem uma obra experimental sem orçamento.
-  - Também reduzi casos em que a IA colocava presentes, estoque ou itens narrativos onde não devia, especialmente nas chegadas e primeiras cenas.
-- **⚔️ Combate e decisões com menos tropeços**
-  - Reforcei a continuidade entre exploração e combate para que a entrada na briga dependa melhor de NPCs realmente presentes e não de fumaça narrativa.
-  - Também corrigi vários impasses onde a cena continuava ativa, mas a interface caía em decisões ruins ou genéricas. Menos ""Continuar"" sem motivo, mais opções com intenção real.
-- **🧬 Criação de personagem e ambientações mais confiáveis**
-  - A criação aleatória de personagem volta a ser mais estável e respeita melhor o formato biográfico que o jogo espera.
-  - Ajustei várias inconsistências de ambientação e recursos para que cyberpunk, fantasia e seus derivados não se misturem como se uma taverna medieval e um centro cirúrgico clandestino tivessem decidido alugar o mesmo local.","Mundos compartilhados, onboarding e combate mais coerentes"
-romanian,"- **🌍 Lumi partajate mult mai sensate**
-  - Am îmbunătățit continuitatea atunci când mai multe personaje partajează aceeași lume. Jocul refolosește acum mai bine locațiile deja valide și lasă mai puțin loc pentru a inventa „aceeași zonă, dar cu alt nume și alt pălărie”.
-  - Am corectat, de asemenea, informațiile despre locație în selector și pe fișă, astfel încât fiecare personaj să își afișeze locația reală și nu una împrumutată de la vecin.
-- **👥 NPC-uri mai coerente și mai puțin predispuse la dublare**
-  - Am întărit logica pentru ca un NPC existent să reapară ca el însuși atunci când este cazul, în loc să se reinventeze cu alt nume, altă față sau o carte nouă ieșită din ceață.
-  - În plus, o dușmănie provocată de un personaj nu ar trebui să îi contamineze pe toți ceilalți prin magie. Dacă Kaelen se supără pe tine, ideea este să se supere pe tine... nu pe întreaga specie umană.
-- **🎬 Intrări în joc și explorare cu mai puțin teatru ciudat**
-  - Am corectat mai multe cazuri în care narațiunea sugera că cineva era în fața ta, dar sistemul nu o susținea. Acum există mai puțini vânzători fantomatici, mai puțini interlocutori evaporați și mai puține scene care par o piesă experimentală fără buget.
-  - Am redus, de asemenea, cazurile în care AI-ul introducea cadouri, stocuri sau obiecte narative unde nu era cazul, în special la sosiri și în scenele de început.
-- **⚔️ Luptă și decizii cu mai puține poticneli**
-  - Am întărit continuitatea dintre explorare și luptă, astfel încât intrarea în luptă să depindă mai bine de NPC-urile efectiv prezente și nu de fum narativ.
-  - Am corectat, de asemenea, mai multe blocaje în care scena continua să ruleze, dar interfața cădea în decizii slabe sau generice. Mai puțin „Continuă” de dragul continuării, mai multe opțiuni cu intenție reală.
-- **🧬 Creare de personaje și ambientări mai fiabile**
-  - Crearea aleatorie de personaje este din nou mai stabilă și respectă mai bine formatul biografic pe care îl așteaptă jocul.
-  - Am ajustat mai multe inconsecvențe de ambientare și resurse, astfel încât cyberpunk, fantezie și derivatele lor să nu se amestece ca și cum o tavernă medievală și un cabinet clandestin ar fi decis să închirieze același spațiu.","Lumi mai coerente, onboarding și luptă"
-russian,"- **🌍 Более разумные общие миры**
-  - Я улучшил связность, когда несколько персонажей делят один и тот же мир. Теперь игра лучше использует уже существующие локации и оставляет меньше места для изобретения «той же зоны, но с другим именем и другой шляпой».
-  - Я также исправил информацию о местоположении в селекторе и профиле, чтобы каждый персонаж отображал свое реальное местоположение, а не заимствованное у соседа.
-- **👥 Более последовательные и менее склонные к раздвоению личности NPC**
-  - Я усилил логику, чтобы существующий NPC снова появлялся как сам собой, когда это необходимо, вместо того, чтобы изобретать себя заново с другим именем, лицом или новой карточкой, появившейся из ниоткуда.
-  - Кроме того, вражда, вызванная одним персонажем, больше не должна магическим образом затрагивать всех остальных. Если Каэлен злится на вас, идея в том, чтобы он злился на вас... а не на весь человеческий род.
-- **🎬 Меньше странного театра в начале игры и исследовании**
-  - Я исправил несколько случаев, когда повествование намекало, что кто-то перед вами, но система не поддерживала это. Теперь меньше призрачных торговцев, меньше испаряющихся собеседников и меньше сцен, похожих на экспериментальную постановку с нулевым бюджетом.
-  - Я также сократил количество случаев, когда ИИ вставлял подарки, товары или сюжетные предметы не туда, куда следует, особенно при входе и в первых сценах.
-- **⚔️ Меньше спотыканий в бою и решениях**
-  - Я усилил связь между исследованием и боем, чтобы начало сражения лучше зависело от реально присутствующих NPC, а не от повествовательного тумана.
-  - Я также исправил несколько затыков, когда сцена продолжалась, но интерфейс приводил к плохим или общим решениям. Меньше «Продолжить» просто так, больше вариантов с реальным намерением.
-- **🧬 Более надежное создание персонажей и атмосфера**
-  - Случайное создание персонажей снова стало более стабильным и лучше соответствует биографическому формату, который ожидает игра.
-  - Я исправил несколько несоответствий в атмосфере и ресурсах, чтобы киберпанк, фэнтези и их производные не смешивались так, как будто средневековая таверна и подпольная операционная решили арендовать одно и то же помещение.","Общие миры, обучение и более последовательный бой"
-swedish,"- **🌍 Delade världar som fungerar bättre**
-  - Jag har förbättrat kontinuiteten när flera karaktärer delar samma värld. Spelet återanvänder nu befintliga platser bättre och minskar risken för att skapa ""samma zon, men med ett annat namn och en annan hatt"".
-  - Jag har också korrigerat platsinformationen i väljaren och på karaktärssidan, så att varje karaktär visar sin verkliga position och inte en som tillhör grannen.
-- **👥 Mer konsekventa och mindre splittrade NPC:er**
-  - Jag har förstärkt logiken så att en befintlig NPC dyker upp igen som sig själv när det är dags, istället för att återuppfinnas med ett nytt namn, ett nytt ansikte eller ett nytt kort som dykt upp ur dimman.
-  - Dessutom borde en fiendskap orsakad av en karaktär inte längre magiskt smitta av sig på alla andra. Om Kaelen blir arg på dig, är tanken att hon ska vara arg på dig... inte på hela mänskligheten.
-- **🎬 Startsekvenser och utforskning med mindre konstigt skådespel**
-  - Jag har korrigerat flera fall där berättelsen antydde att någon stod framför dig, men systemet inte kunde stödja det. Nu finns det färre spökförsäljare, färre försvinnande samtalspartners och färre scener som känns som ett budgetexperiment.
-  - Jag har också minskat antalet fall där AI:n placerade gåvor, lager eller narrativt innehåll där det inte hörde hemma, särskilt vid ankomster och i tidiga scener.
-- **⚔️ Mer pålitlig strid och beslut**
-  - Jag har förstärkt kopplingen mellan utforskning och strid så att inledandet av strid bättre beror på faktiskt närvarande NPC:er och inte på narrativ rökridå.
-  - Jag har också korrigerat flera låsningar där scenen fortsatte att vara aktiv, men gränssnittet fastnade i dåliga eller generiska beslut. Mindre ""Fortsätt"" bara för sakens skull, fler alternativ med verklig mening.
-- **🧬 Mer pålitlig karaktärsskapande och miljöer**
-  - Slumpmässig karaktärsskapande är nu stabilare igen och respekterar bättre det biografiska format som spelet förväntar sig.
-  - Jag har justerat flera inkonsekvenser i miljöer och resurser så att cyberpunk, fantasy och deras derivat inte blandas som om en medeltida taverna och en hemlig operationssal hade beslutat sig för att hyra samma lokal.","Delade världar, mer konsekvent onboarding och strid"
-thai,"- **🌍 โลกที่ใช้ร่วมกันที่สมเหตุสมผลมากขึ้น**
-  - ฉันได้ปรับปรุงความต่อเนื่องเมื่อตัวละครหลายตัวใช้โลกเดียวกัน ตอนนี้เกมสามารถนำสถานที่ที่ถูกต้องกลับมาใช้ใหม่ได้ดีขึ้น และมีช่องว่างน้อยลงสำหรับการสร้าง ""โซนเดียวกัน แต่มีชื่ออื่นและหมวกอื่น""
-  - ฉันยังได้แก้ไขข้อมูลตำแหน่งในตัวเลือกและรายละเอียด เพื่อให้ตัวละครแต่ละตัวแสดงตำแหน่งจริงของตนเอง ไม่ใช่ตำแหน่งที่ยืมมาจากเพื่อนบ้าน
-- **👥 NPC ที่สอดคล้องกันมากขึ้น และลดการแยกตัว**
-  - ฉันได้เสริมความแข็งแกร่งให้กับตรรกะเพื่อให้ NPC ที่มีอยู่แล้วปรากฏตัวอีกครั้งในฐานะตัวเองเมื่อถึงเวลา แทนที่จะสร้างใหม่ด้วยชื่ออื่น ใบหน้าอื่น หรือการ์ดใหม่ที่ลอยออกมาจากหมอก
-  - นอกจากนี้ ความบาดหมางที่เกิดจากตัวละครจะไม่ควรส่งผลกระทบต่อผู้อื่นทั้งหมดอย่างมหัศจรรย์อีกต่อไป หาก Kaelen โกรธคุณ แนวคิดคือเขาจะโกรธคุณ... ไม่ใช่เผ่ามนุษย์ทั้งหมด
-- **🎬 การเริ่มต้นและสำรวจโดยมีการแสดงที่แปลกประหลาดน้อยลง**
-  - ฉันได้แก้ไขหลายกรณีที่การบรรยายบอกเป็นนัยว่ามีคนอยู่ตรงหน้าคุณ แต่ระบบไม่รองรับอยู่เบื้องหลัง ตอนนี้มีผู้ขายที่ไม่มีตัวตนน้อยลง ผู้พูดที่หายไปน้อยลง และฉากที่ดูเหมือนละครทดลองที่ไม่มีงบประมาณน้อยลง
-  - ฉันยังได้ลดกรณีที่ AI ใส่ของขวัญ สต็อก หรือไอเท็มตามเนื้อเรื่องผิดที่ โดยเฉพาะอย่างยิ่งในฉากเริ่มต้นและฉากแรก
-- **⚔️ การต่อสู้และการตัดสินใจที่ติดขัดน้อยลง**
-  - ฉันได้เสริมความแข็งแกร่งให้กับความต่อเนื่องระหว่างการสำรวจและการต่อสู้ เพื่อให้การเข้าสู่การต่อสู้ขึ้นอยู่กับ NPC ที่มีอยู่จริงมากขึ้น ไม่ใช่ควันตามเนื้อเรื่อง
-  - ฉันยังได้แก้ไขหลายกรณีที่ฉากยังคงดำเนินอยู่ แต่ส่วนต่อประสานผู้ใช้ตกอยู่ในสถานการณ์ที่ต้องตัดสินใจที่แย่หรือไม่เฉพาะเจาะจง ""ดำเนินการต่อ"" แบบสุ่มน้อยลง ตัวเลือกที่มีความตั้งใจจริงมากขึ้น
-- **🧬 การสร้างตัวละครและบรรยากาศที่น่าเชื่อถือมากขึ้น**
-  - การสร้างตัวละครแบบสุ่มมีความเสถียรมากขึ้นและเคารพรูปแบบชีวประวัติที่เกมคาดหวังได้ดีขึ้น
-  - ฉันได้ปรับปรุงความไม่สอดคล้องกันของบรรยากาศและทรัพยากรต่างๆ เพื่อให้ไซเบอร์พังก์ แฟนตาซี และสิ่งที่เกี่ยวข้องไม่ผสมปนเปกันราวกับว่าโรงเตี๊ยมยุคกลางและห้องผ่าตัดที่ผิดกฎหมายตัดสินใจเช่าพื้นที่เดียวกัน",โลกที่ใช้ร่วมกัน การเริ่มต้นใช้งาน และการต่อสู้ที่สอดคล้องกันมากขึ้น
-turkish,"- **🌍 Oldukça Daha Mantıklı Paylaşılan Dünyalar**
-  - Birden fazla karakter aynı dünyayı paylaştığında devamlılığı iyileştirdim. Oyun artık geçerli yerleri daha iyi yeniden kullanıyor ve ""aynı bölge, farklı isim ve şapkayla"" icat etmeye daha az yer bırakıyor.
-  - Ayrıca seçicideki ve profildeki konum bilgilerini düzelttim, böylece her karakter komşusundan ödünç alınan değil, kendi gerçek konumunu gösteriyor.
-- **👥 Daha Tutarlı ve Daha Az Parçalanan NPC'ler**
-  - Mevcut bir NPC'nin zamanı geldiğinde, başka bir isim, yüz veya sisin içinden çıkan yeni bir kartla yeniden icat edilmek yerine, kendisi olarak yeniden görünmesi için mantığı güçlendirdim.
-  - Ayrıca, bir karakter tarafından tetiklenen bir düşmanlığın artık sihirli bir şekilde diğerlerinin hepsini kirletmemesi gerekiyor. Kaelen sana kızarsa, tüm insan türüne kızması değil, sana kızması amaçlanıyor.
-- **🎬 Daha Az Tuhaf Tiyatro İçeren Başlangıçlar ve Keşifler**
-  - Birinin önünüzde olduğunu ima eden ancak sistemin bunu desteklemediği birkaç durumu düzelttim. Artık hayalet satıcılar, buharlaşan diyalog partnerleri ve bütçesiz deneysel bir oyun gibi görünen sahneler daha az.
-  - Ayrıca, özellikle başlangıçlarda ve ilk sahnelerde, yapay zekanın hediyeleri, stokları veya anlatısal öğeleri yanlış yerlere yerleştirdiği durumları da azalttım.
-- **⚔️ Daha Az Tökezleyen Savaş ve Kararlar**
-  - Keşif ve savaş arasındaki devamlılığı güçlendirdim, böylece dövüşe giriş, anlatısal dumandan ziyade gerçekten mevcut NPC'lere daha iyi dayanıyor.
-  - Ayrıca, sahnenin canlı kaldığı ancak arayüzün kötü veya genel kararlara düştüğü birkaç takılmayı düzelttim. Nedensiz yere ""Devam et"" yerine, gerçek niyeti olan daha fazla seçenek.
-- **🧬 Daha Güvenilir Karakter Oluşturma ve Ortamlar**
-  - Rastgele karakter oluşturma artık daha kararlı ve oyunun beklediği biyografik formata daha iyi uyuyor.
-  - Siberpunk, fantezi ve bunların türevlerinin, ortaçağ bir han ile gizli bir ameliyathanenin aynı mekanı kiralamaya karar vermiş gibi karışmaması için ortam ve kaynak tutarsızlıklarını düzelttim.","Paylaşılan Dünyalar, Daha Tutarlı Başlangıçlar ve Savaş"
-ukrainian,"- **🌍 Більш логічні спільні світи**
-  - Покращено послідовність, коли кілька персонажів перебувають в одному світі. Тепер гра краще повторно використовує вже наявні локації та залишає менше місця для вигадування «однієї й тієї ж зони, але з іншою назвою та іншим капелюхом».
-  - Також виправлено інформацію про розташування в селекторі та профілі, щоб кожен персонаж показував своє справжнє місцезнаходження, а не позичене у сусіда.
-- **👥 Більш послідовні та менш схильні до роздвоєння NPC**
-  - Посилено логіку, щоб існуючий NPC знову з'являвся як сам собою, коли це потрібно, замість того, щоб вигадувати себе з новою назвою, новим обличчям або новою карткою, що випливає з туману.
-  - Крім того, ворожнеча, спричинена одним персонажем, більше не повинна магічним чином поширюватися на всіх інших. Якщо Каелен злиться на вас, то ця злість має бути спрямована на вас... а не на весь людський рід.
-- **🎬 Менш дивні сюжетні вставки та дослідження**
-  - Виправлено кілька випадків, коли оповідь натякала на присутність когось перед вами, але система не підтримувала це. Тепер менше фантомних продавців, менше зниклих співрозмовників та менше сцен, які виглядають як експериментальна п'єса без бюджету.
-  - Також зменшено випадки, коли ШІ вставляв подарунки, товари або сюжетні предмети не там, де слід, особливо під час прибуття та в перших сценах.
-- **⚔️ Менш спотикаючі бої та рішення**
-  - Посилено послідовність між дослідженням та боєм, щоб вхід у бій краще залежав від реально присутніх NPC, а не від сюжетного туману.
-  - Також виправлено кілька застрягань, коли сцена продовжувала існувати, але інтерфейс давав погані або загальні рішення. Менше «Продовжити» заради продовження, більше рішень із справжнім наміром.
-- **🧬 Більш надійне створення персонажів та оточення**
-  - Випадкове створення персонажів знову стало стабільнішим і краще дотримується біографічного формату, якого очікує гра.
-  - Налаштовано кілька невідповідностей оточення та ресурсів, щоб кіберпанк, фентезі та їх похідні не змішувалися так, ніби середньовічна таверна та підпільний операційний блок вирішили орендувати одне й те саме приміщення.","Спільні світи, узгоджений онбординг та бої"
-vietnamese,"- **🌍 Thế giới chung hợp lý hơn hẳn**
-  - Tôi đã cải thiện tính liên tục khi nhiều nhân vật cùng chia sẻ một thế giới. Giờ đây, trò chơi tái sử dụng tốt hơn các địa điểm đã tồn tại và ít để lại khoảng trống để bịa ra “cùng một khu vực, nhưng với tên gọi khác và cái mũ khác”.
-  - Tôi cũng đã sửa thông tin vị trí trong bộ chọn và hồ sơ, để mỗi nhân vật hiển thị vị trí thực tế của mình chứ không phải vị trí mượn của người hàng xóm.
-- **👥 NPC mạch lạc hơn và ít bị phân thân**
-  - Tôi đã củng cố logic để một NPC hiện có sẽ xuất hiện trở lại chính nó khi đến lúc, thay vì tự tạo ra với một cái tên khác, khuôn mặt khác hoặc một thẻ mới xuất hiện từ hư không.
-  - Ngoài ra, sự thù địch do một nhân vật gây ra sẽ không còn lây lan sang tất cả những người khác một cách thần kỳ nữa. Nếu Kaelen tức giận với bạn, ý tưởng là cô ấy tức giận với bạn... chứ không phải với toàn bộ loài người.
-- **🎬 Nhập cảnh và khám phá ít ""kịch"" kỳ quái hơn**
-  - Tôi đã sửa nhiều trường hợp mà lời kể ám chỉ rằng có ai đó đang ở trước mặt bạn, nhưng hệ thống lại không hỗ trợ điều đó từ bên dưới. Giờ đây, có ít người bán hàng ma quái hơn, ít người đối thoại bốc hơi hơn và ít cảnh trông giống như một vở kịch thử nghiệm không có ngân sách.
-  - Tôi cũng đã giảm thiểu các trường hợp AI chèn quà tặng, hàng tồn kho hoặc vật phẩm tường thuật vào những chỗ không phù hợp, đặc biệt là trong các cảnh đến và cảnh đầu tiên.
-- **⚔️ Chiến đấu và quyết định ít vấp ngã hơn**
-  - Tôi đã củng cố tính liên tục giữa khám phá và chiến đấu để việc tham gia chiến đấu phụ thuộc tốt hơn vào các NPC thực sự có mặt chứ không phải dựa vào khói tường thuật.
-  - Tôi cũng đã sửa nhiều điểm kẹt nơi cảnh vẫn diễn ra, nhưng giao diện lại đưa ra các quyết định tồi tệ hoặc chung chung. Ít lựa chọn ""Tiếp tục"" vì đã xong, nhiều lựa chọn có ý định thực sự hơn.
-- **🧬 Tạo nhân vật và bối cảnh đáng tin cậy hơn**
-  - Tạo nhân vật ngẫu nhiên đã ổn định hơn và tôn trọng định dạng tiểu sử mà trò chơi mong đợi.
-  - Tôi đã điều chỉnh nhiều sự không nhất quán về bối cảnh và tài nguyên để cyberpunk, giả tưởng và các thể loại phái sinh của chúng không bị trộn lẫn như thể một quán rượu thời trung cổ và một phòng phẫu thuật bí mật đã quyết định thuê cùng một địa điểm.","Thế giới chung, nhập cuộc và chiến đấu mạch lạc hơn"
-schinese,"- **🌍 共享世界更加合理**
-  - 改进了多个角色共享同一个世界时的连贯性。现在游戏能更好地重复利用已有的有效地点，减少了“同一个区域，换个名字和帽子”的情况。
-  - 还修正了选择器和角色卡中的位置信息，让每个角色都显示其真实位置，而不是邻居的位置。
-- **👥 更连贯、不易“分裂”的 NPC**
-  - 加强了逻辑，让已存在的 NPC 在需要时能以自己的身份再次出现，而不是以另一个名字、另一张脸或凭空出现的新卡片重新出现。
-  - 此外，一个角色引起的敌对关系不再会“魔法般”地污染所有其他人。如果凯伦对你不满，那么她应该对你不满……而不是对整个人类不满。
-- **🎬 更少的奇怪“戏剧性”的开场和探索**
-  - 修正了多种情况，过去叙事暗示某人就在你面前，但系统并不支持。现在幽灵般的商人、消失的对话者以及那些看起来像廉价实验剧的场景都减少了。
-  - 还减少了 AI 在不恰当的地方（尤其是在进入游戏和初始场景中）塞入礼物、库存或叙事物品的情况。
-- **⚔️ 更少“绊脚石”的战斗和决策**
-  - 加强了探索和战斗之间的连贯性，让进入战斗更能依赖于实际存在的 NPC，而不是叙事上的“烟雾”。
-  - 还修正了多个卡死的情况，当时场景仍在继续，但界面却陷入了糟糕或通用的决策。更少的“随便继续”，更多的有真实意图的选择。
-- **🧬 更可靠的角色创建和设定**
-  - 角色随机创建现在更加稳定，并能更好地遵循游戏期望的传记格式。
-  - 调整了多种设定和资源上的不一致之处，让赛博朋克、奇幻及其衍生风格不会混杂在一起，就像一家中世纪酒馆和一家非法手术室决定租用同一处房产一样。",共享世界、新手引导和更连贯的战斗
-tchinese,"- **🌍 更合乎逻辑的共享世界**
-  - 我改进了多个角色共享同一世界时的连续性。现在游戏能更好地重复利用已有的有效地点，减少了“同一个区域，只是换个名字和外观”的情况。
-  - 我还修正了选择器和角色卡上的位置信息，让每个角色都显示其真实位置，而不是借用邻居的位置。
-- **👥 更连贯且不易“分裂”的 NPC**
-  - 我加强了逻辑，确保已存在的 NPC 在该出现时能以其自身身份再次出现，而不是以另一个名字、另一副面孔或凭空出现的全新身份“复活”。
-  - 此外，由某个角色引起的敌对关系不再应该“魔法般”地影响到所有其他角色。如果凯伦对你不满，那应该只是对你个人不满……而不是对整个人类种族。
-- **🎬 更少奇怪“剧场化”的开场和探索**
-  - 我修正了几个情况，在这些情况下，叙事暗示某人出现在你面前，但系统却无法支撑。现在“幽灵卖家”、“消失的对话者”以及像低成本实验剧一样的场景会大大减少。
-  - 我还减少了 AI 在不恰当的地方（尤其是开场和早期场景）插入礼物、物品或叙事道具的情况。
-- **⚔️ 更少“卡顿”的战斗和决策**
-  - 我加强了探索与战斗之间的连续性，让进入战斗更能基于真正存在的 NPC，而非叙事上的“烟雾弹”。
-  - 我还修正了几个卡死的情况，即场景仍在进行，但界面却陷入了糟糕或通用的选择。更少“随便继续”，更多真正有意义的选项。
-- **🧬 更可靠的角色创建和世界设定**
-  - 随机角色创建功能现在更加稳定，并能更好地遵循游戏期望的传记格式。
-  - 我调整了各种世界设定和资源上的不一致之处，使赛博朋克、奇幻及其衍生风格不再混杂，就像一家中世纪酒馆和一家黑市手术室决定合租同一个地方。",共享世界、上手体验与更连贯的战斗
+arabic,"- **🧩 إجراءات ذات عواقب أكثر واقعية**
+  - قمت بإصلاح حالات كانت فيها القصة تُشير إلى أنك استخدمت مهارة أو كائناً أو غرساً أو مورداً، لكن البطاقة لم تعكس ما حدث بدقة دائماً.
+  - من الآن فصاعداً، يجب أن يكون من الواضح أكثر متى تستهلك الإجراء نقاط التحمل أو الذخيرة أو المواد الاستهلاكية، ومتى يؤثر على عدو، ومتى يكتسب الشخص تقدماً نتيجة ما قام به.
+- **🛒 تجارة وخدمات أكثر موثوقية**
+  - شراء وتركيب الأغراس واستخدام المواد الاستهلاكية والتعامل مع البائعين يجب أن يشعر بتناسق أكبر.
+  - إذا ذكرت المشهد أن خدمة متاحة، يجب أن يستجيب اللعبة بشكل أفضل بخيارات مفيدة وأقل لحظات من ""حسناً، وأين أضغط الآن؟"".
+- **🌍 خيال علمي وسيبربانك بهوية أكثر وضوحاً**
+  - قمت بتقليل الخلطات النادرة بين الأجواء. يجب أن تتحدث العوالم الوعرة أكثر مثل العوالم الوعرة، ويجب أن تستند عوالم السيبربانك أكثر إلى التكنولوجيا والأغراس والخدمات الحضرية والمعدات الخاصة بنمطها.
+  - هذا يؤثر بشكل أساسي على المتاجر والمشاهد والموارد وتفاصيل البيئة.
+- **🎲 بداية لعب أكثر متعة**
+  - الشاشة بين إنشاء الشخصية وبدء القصة يجب ألا تعرض الآن كتل ضخمة من المعلومات الداخلية.
+  - تبدو الآن كشاشة تحميل للأدوار، وتتغير حسب الجو، ويمكنها عرض نصائح مختصرة من الدليل أثناء إعداد المشهد الأول.
+  - كما يمكنها إعداد صورة مرتبطة بالسياق دون جعلك تنتظر أكثر: إذا وصلت في الوقت المحدد، تظهر؛ إذا لم تصل، تبدأ اللعبة على أي حال.
+- **🛡️ الهزيمة والإغماء محلولة بشكل أفضل**
+  - قمت بإصلاح ما يحدث عند الوصول إلى 0 نقطة صحة حسب الصعوبة.
+  - في السهل والسهل جداً، يفقد الشخص وعيه وتستمر القصة بقفزة زمنية سياقية. في الصعب، إذا فشلت المقاومة، تظهر اللعبة موتاً سياقياً وشاشة واضحة لقبول العودة إلى القائمة.
+  - هذا يمنع استمرار القصة وكأن شيئاً لم يحدث بينما كان الشخص بالفعل على الأرض. أن تكون الهزيمة مؤلمة أمر جيد؛ أن تتجاهل اللعبة ذلك، ليس ذلك.
+- **🧩 ألعاب ذاكرة أطول**
+  - عند تحميل لعبة أو التقدم عدة دورات، يجب أن تستمر اللعبة بشكل أفضل من حيث آخر شيء رأيته على الشاشة.
+  - كما يجب أن تتذكر بشكل أفضل النية الحقيقية لقراراتك، مما يقلل من الردود التي تبدو وكأنها تعود للخلف أو تفسر خياراً بشكل عام جداً.
+- **✂️ سرد أكثر راحة للقراءة**
+  - قمت بضبط ردود الاستكشاف حتى لا تتحول مرة أخرى إلى جدران ضخمة من النص.
+  - يمكن أن يظل السرد غنياً، لكنه يجب أن يتنفس بشكل أفضل بين الفقرات ويكون أكثر لطافة للقراءة أثناء الألعاب الطويلة.
+- **🧼 بقايا أقل غريبة على الشاشة**
+  - قمت بتنظيف الحالات التي يمكن أن تظهر فيها العلامات، وتنسيقات غريبة، وخيارات مكررة، أو نصوص لا يجب أن تصل إلى اللاعب.
+  - بشكل عام، يجب أن تعرض الواجهة أكثر من القصة وأقل من الخياطة.
+- **🔧 استقرار أكبر في الجلسات الطويلة**
+  - قمت بمراجعة الجلسات المطولة أثناء اللعب مع إنشاء الشخصية، والتجارة، والأغراس، والمعارك، والمواد الاستهلاكية، والذخيرة، وتحميل اللعبة، والاستمرارية.
+  - هدف هذا القسم واضح: انقطاعات أقل، وأقل تضارباً، وشعور أكبر بأن ما تفعله في القصة له وزن داخل اللعبة.",اختبارات اللعب المطولة: إجراءات مرتبطة بآليات حقيقية
+bulgarian,"- **🧩 По-реалистични действия с последствия**
+  - Поправих случаи, при които приключението е разказвало, че сте използвали умение, предмет, имплант или ресурс, но картата не винаги е отразявала правилно случилото се.
+  - От сега нататък трябва да се забележи по-добре кога едно действие изразходва издръжливост, патрони или консумабилни продукти, кога засяга враг и кога персонажът печели прогрес заради това, което току-що е направил.
+- **🛒 По-надежден търговия и услуги**
+  - Купуването, инсталирането на импланти, използването на консумабилни продукти и разговарянето с търговци трябва да се усеща по-консистентно.
+  - Ако сцената казва, че има налична услуга, играта трябва да реагира по-добре с полезни опции и по-малко моменти на ""добре, а сега къде натискам?"".
+- **🌍 По-ясна идентичност на фентъзи и киберпанк**
+  - Намалих странните смеси между атмосферите. Средновековните светове трябва да звучат повече като средновековни светове, а киберпанк световете трябва да се опират повече на технология, импланти, градски услуги и оборудване, характерно за техния стил.
+  - Това засяга предимно магазини, сцени, ресурси и детайли на околната среда.
+- **🎲 По-приятно начало на играта**
+  - Екранът между създаването на персонажа и започването на историята вече не трябва да показва огромни блокове с вътрешна информация.
+  - Сега изглежда като екран за зареждане на ролева игра, променя се според атмосферата и може да показва кратки съвети от ръководството, докато подготвя първата сцена.
+  - Също така може да подготви изображение, свързано с контекста, без да ви кара да чакате повече: ако навреме, се появява; ако не, играта започва все пак.
+- **🛡️ По-добре решени поражението и безсъзнанието**
+  - Поправих какво се случва при достигане до 0 HP според трудността.
+  - При лесна и нормална трудност персонажът пада в безсъзнание и историята продължава с контекстуален скок във времето. При трудна трудност, ако се провали издръжливостта, играта показва контекстуална смърт и ясен екран за приемане и връщане към селекцията.
+  - Това предотвратява приключението да продължава сякаш нищо не се е случило, докато персонажът вече е бил на пода. Добре е поражението да боли; но играта да го игнорира, това не е толкова добре.
+- **🧐 Игри с повече памет**
+  - При зареждане на игра или преминаване през няколко хода, играта трябва да продължи по-добре от последното, което сте видели на екрана.
+  - Също така трябва да помни по-добре реалната цел на вашите решения, намалявайки отговорите, които изглеждат като връщане назад или тълкуване на опция твърде общо.
+- **✂️ По-удобна за четене разказ**
+  - Настройих отговорите за разследване, за да не се превръщат отново в огромни стени от текст.
+  - Разказът може да остане богат, но трябва да диша по-добре между абзаци и да бъде по-приятен за четене по време на дълги игри.
+- **🧼 По-малко странни остатъци на екрана**
+  - Почистих случаи, при които можеха да се появят етикети, странни формати, дублирани опции или текстове, които не бива да достигнат до играча.
+  - Общо взето, интерфейса трябва да показва повече приключение и по-малко шевове.
+- **🔧 По-голяма стабилност при дълги сесии**
+  - Прегледах продължителни сесии, играейки с създаване на персонаж, търговия, импланти, бой, консумабилни продукти, патрони, зареждане на игра и продължение.
+  - Целта на този блок е ясна: по-малко прекъсвания, по-малко несъответствия и по-голяма усещане, че това, което правите в историята, има тежест вътре в играта.","Дълги игрови тестове: действия, свързани с реални механики"
+czech,"- **🧩 Akce s reálnějšími důsledky**
+  - Opravil jsem případy, kdy příběh uváděl, že jste použili schopnost, předmět, implantát nebo zdroj, ale následně list nezobrazoval události správně.
+  - Od teď by se mělo lépe poznat, kdy akce spotřebovává vytrvalost, munici nebo spotřební materiál, kdy ovlivňuje nepřítele a kdy postava získává pokrok za to, co právě udělala.
+- **🛒 Spolehlivější obchody a služby**
+  - Koupě, instalace implantátů, používání spotřebního materiálu a jednání s prodavači by mělo působit konzistentněji.
+  - Pokud scénář uvádí, že je k dispozici služba, hra by měla lépe reagovat užitečnými možnostmi a méně situacemi typu ""dobře, a teď kde stisknu?"".
+- **🌍 Jasněji definovaná fantasy a cyberpunk atmosféra**
+  - Snížil jsem zvláštní smíšení různých ambient. Světová nastavení ve stylu fantasy by měla více připomínat středověké světy, zatímco cyberpunk světy by se měly více opírat o technologii, implantáty, městské služby a vybavení typické pro jejich styl.
+  - To se týká především obchodů, scénářů, zdrojů a detailů prostředí.
+- **🎲 Příjemnější začátek hry**
+  - Obrazovka mezi vytvořením postavy a začátkem příběhu již by neměla zobrazovat obrovské bloky vnitřních informací.
+  - Nyní má vzhled role-playing obrazovky načítání, mění se podle ambientu a může zobrazit stručné rady z manuálu během přípravy první scény.
+  - Může také připravit obrázek související s kontextem bez nutnosti dlouhé čekání: pokud stihne, objeví se; pokud ne, hra se stejně začne.
+- **🛡️ Lepší řešení porážky a bezvědomí**
+  - Opravil jsem, co se děje při dosažení 0 životů podle obtížnosti.
+  - V obtížnosti lehké a střední postava padne do bezvědomí a příběh pokračuje s kontextuálním časovým skokem. V obtížnosti těžké, pokud selže odolnost, hra zobrazí kontextuální smrt a jasnou obrazovku pro potvrzení a návrat k výběru.
+  - To zabraňuje situaci, kdy by příběh pokračoval jako nic, když je postava již na zemi. Že porážka bolí, je v pořádku; že hra tuto porážku ignoruje, to už ne.
+- **🧩 Hry s větší pamětí**
+  - Při načítání hry nebo přechodu několika tahů by hra měla lépe pokračovat od toho, co jste naposledy viděli na obrazovce.
+  - Také by měla lépe pamatovat skutečný záměr vašich rozhodnutí, čímž sníží odpovědi, které působí, že se vrací zpět, nebo interpretuje možnost příliš obecně.
+- **✂️ Příběh snazší k čtení**
+  - Upravil jsem odpovědi na průzkum, aby se již znovu nestaly obrovskými stěnami textu.
+  - Příběh může stále bohatý, ale měl by lépe dýchat mezi odstavci a být čitelnější během dlouhých her.
+- **🧼 Méně zvláštních zbytků na obrazovce**
+  - Vyčistil jsem případy, kdy se mohly objevovat štítky, zvláštní formáty, duplikované možnosti nebo texty, které by neměly dorazit k hráči.
+  - Obecně by rozhraní mělo zobrazovat více příběhu a méně švů.
+- **🔧 Více stability v dlouhých relacích**
+  - Prohlídl jsem si prodloužené relace hraní s tvorbou postavy, obchodem, implantáty, bojem, spotřebním materiálem, municí, načítáním hry a pokračováním.
+  - Cílem tohoto bloku je jasný: méně přerušení, méně nekoherencí a více pocitu, že to, co děláte ve příběhu, má váhu uvnitř hry.",Testy hráčů: propojené akce s reálnými mechanikami
+danish,"- **🧩 Acciones con consecuencias más reales**
+  - He corregido casos en los que la aventura contaba que habías usado una habilidad, un objeto, un implante o un recurso, pero luego la ficha no siempre reflejaba bien lo ocurrido.
+  - A partir de ahora debería notarse mejor cuándo una acción consume aguante, munición o consumibles, cuándo afecta a un enemigo y cuándo el personaje gana progreso por lo que acaba de hacer.
+- **🛒 Comercio y servicios más fiables**
+  - Comprar, instalar implantes, usar consumibles y tratar con vendedores debería sentirse más consistente.
+  - Si la escena dice que hay un servicio disponible, el juego debería responder mejor con opciones útiles y menos momentos de ""vale, ¿y ahora dónde pulso?"".
+- **🌍 Fantasía y cyberpunk con identidad más clara**
+  - He reducido mezclas raras entre ambientaciones. Los mundos medievales deberían hablar más como mundos medievales, y los mundos cyberpunk deberían apoyarse más en tecnología, implantes, servicios urbanos y equipo propio de su estilo.
+  - Esto afecta sobre todo a tiendas, escenas, recursos y detalles del entorno.
+- **🎲 Inicio de partida más agradable**
+  - La pantalla entre crear personaje y empezar la historia ya no debería enseñar bloques enormes de información interna.
+  - Ahora tiene aspecto de pantalla de carga de rol, cambia según la ambientación y puede mostrar consejos breves del manual mientras prepara la primera escena.
+  - También puede preparar una imagen relacionada con el contexto sin hacerte esperar más: si llega a tiempo, aparece; si no, la partida empieza igualmente.
+- **🛡️ Derrota e inconsciencia mejor resueltas**
+  - He corregido qué ocurre al llegar a 0 PV según la dificultad.
+  - En fácil y normal, el personaje cae inconsciente y la historia continúa con un salto temporal contextual. En difícil, si falla la resistencia, la partida muestra una muerte contextual y una pantalla clara para aceptar y volver a selección.
+  - Esto evita que la aventura siga como si nada cuando el personaje ya estaba en el suelo. Que una derrota duela está bien; que el juego la ignore, no tanto.
+- **🧠 Partidas con más memoria**
+  - Al cargar una partida o avanzar varios turnos, el juego debería continuar mejor desde lo último que viste en pantalla.
+  - También debería recordar mejor la intención real de tus decisiones, reduciendo respuestas que parecen volver atrás o interpretar una opción de forma demasiado genérica.
+- **✂️ Narración más cómoda de leer**
+  - He ajustado las respuestas de exploración para que no vuelvan a convertirse en paredes enormes de texto.
+  - La narración puede seguir siendo rica, pero debería respirar mejor entre párrafos y ser más amable de leer durante partidas largas.
+- **🧼 Menos restos raros en pantalla**
+  - He limpiado casos en los que podían aparecer etiquetas, formatos extraños, opciones duplicadas o textos que no deberían llegar al jugador.
+  - En general, la interfaz debería mostrar más aventura y menos costuras.
+- **🔧 Más estabilidad en sesiones largas**
+  - He revisado sesiones prolongadas jugando con creación de personaje, comercio, implantes, combate, consumibles, munición, carga de partida y continuidad.
+  - El objetivo de este bloque es claro: menos interrupciones, menos incoherencias y más sensación de que lo que haces en la historia tiene peso dentro de la partida.",Test de juego prolongados: acciones conectadas a mecánicas reales
+german,"- **🧩 Aktionen mit realistischeren Konsequenzen**
+  - Ich habe Fälle behoben, in denen die Geschichte berichtete, dass du eine Fähigkeit, ein Objekt, einen Implantat oder eine Ressource verwendet hast, die Spielkarte dies jedoch nicht immer korrekt widerspiegelte.
+  - Ab jetzt sollte besser ersichtlich sein, wann eine Aktion Ausdauer, Munition oder Verbrauchsmaterial verbraucht, wann sie einen Gegner beeinflusst und wann der Charakter Fortschritt durch das gerade Getane gewinnt.
+- **🛒 Zuverlässigerer Handel und Dienstleistungen**
+  - Kaufen, Implantate installieren, Verbrauchsmaterial nutzen und mit Verkäufern interagieren sollte sich konsistenter anfühlen.
+  - Wenn eine Szene angibt, dass ein Dienst verfügbar ist, sollte das Spiel besser mit nützlichen Optionen reagieren und weniger Momente des ""Okay, wo drücke ich jetzt?"" aufweisen.
+- **🌍 Fantasy und Cyberpunk mit klarerer Identität**
+  - Ich habe seltsame Vermischungen zwischen Settings reduziert. Mittelalterliche Welten sollten sich mehr wie mittelalterliche Welten anfühlen, und Cyberpunk-Welten sollten sich stärker auf Technologie, Implantate, städtische Dienstleistungen und Ausrüstung stützen, die zu ihrem Stil passt.
+  - Dies betrifft vor allem Geschäfte, Szenen, Ressourcen und Umgebungsdetails.
+- **🎲 Angenehmere Spielstart-Erfahrung**
+  - Der Bildschirm zwischen der Charaktererstellung und dem Beginn der Geschichte sollte keine riesigen Blöcke interner Informationen mehr anzeigen.
+  - Er sieht nun aus wie ein Rollenspiel-Ladebildschirm, passt sich dem Setting an und kann während der Vorbereitung der ersten Szene kurze Handbuchtipps anzeigen.
+  - Er kann auch ein bildhaftes Element im Kontext vorbereiten, ohne dich länger warten zu lassen: Wenn es rechtzeitig fertig ist, erscheint es; wenn nicht, beginnt das Spiel trotzdem.
+- **🛡️ Verbesserte Behandlung von Niederlagen und Bewusstlosigkeit**
+  - Ich habe korrigiert, was bei 0 Leben je nach Schwierigkeitsgrad passiert.
+  - Bei einfacher und normaler Schwierigkeit wird der Charakter bewusstlos, und die Geschichte setzt mit einem kontextuellen Zeitsprung fort. Bei schwieriger Schwierigkeit zeigt das Spiel bei fehlgeschlagener Widerstandsprüfung einen kontextuellen Tod und eine klare Benutzeroberfläche zum Akzeptieren und Neustarten.
+  - Dies verhindert, dass die Geschichte weitergeht, als wäre nichts passiert, obwohl der Charakter bereits am Boden lag. Dass eine Niederlage wehtut, ist gut; dass das Spiel sie ignoriert, weniger.
+- **🧩 Partien mit besserem Gedächtnis**
+  - Beim Laden einer Partie oder beim Vorantasten mehrerer Runden sollte das Spiel besser von dort weitermachen, wo du zuletzt auf dem Bildschirm gesehen hast.
+  - Es sollte auch die eigentliche Absicht deiner Entscheidungen besser merken und Antworten reduzieren, die sich zurückwenden oder eine Option zu allgemein interpretieren.
+- **✂️ Bequemer zu lesende Erzählung**
+  - Ich habe die Erkundungsantworten angepasst, damit sie nicht wieder zu riesigen Textwänden werden.
+  - Die Erzählung kann weiterhin reichhaltig sein, sollte aber zwischen Absätzen besser atmen und bei langen Partien angenehmer zu lesen sein.
+- **🧼 Weniger seltsame Reste auf dem Bildschirm**
+  - Ich habe Fälle bereinigt, in denen Etiketten, seltsame Formate, doppelte Optionen oder Texte erscheinen konnten, die nicht zum Spieler gelangen sollten.
+  - Insgesamt sollte die Benutzeroberfläche mehr Abenteuer und weniger Nähte zeigen.
+- **🔧 Mehr Stabilität in langen Sitzungen**
+  - Ich habe lange Sitzungen überprüft, indem ich Charaktererstellung, Handel, Implantate, Kampf, Verbrauchsmaterial, Munition, Partieladen und Kontinuität gespielt habe.
+  - Das Ziel dieses Blocks ist klar: weniger Unterbrechungen, weniger Inkonsistenzen und mehr das Gefühl, dass das, was du in der Geschichte tust, Gewicht innerhalb der Partie hat.","Lange Playtests: Aktionen, die mit echten Mechaniken verbunden sind"
+greek,"- **🧩 Acciones con consecuencias más realistas**
+  - He corregido casos en los que la aventura contaba que habías usado una habilidad, un objeto, un implante o un recurso, pero luego la ficha no siempre reflejaba bien lo ocurrido.
+  - A partir de ahora debería notarse mejor cuándo una acción consume aguante, munición o consumibles, cuándo afecta a un enemigo y cuándo el personaje gana progreso por lo que acaba de hacer.
+- **🛒 Comercio y servicios más fiables**
+  - Comprar, instalar implantes, usar consumibles y tratar con vendedores debería sentirse más consistente.
+  - Si la escena dice que hay un servicio disponible, el juego debería responder mejor con opciones útiles y menos momentos de ""vale, ¿y ahora dónde pulso?"".
+- **🌍 Fantasía y cyberpunk con identidad más clara**
+  - He reducido mezclas raras entre ambientaciones. Los mundos medievales deberían hablar más como mundos medievales, y los mundos cyberpunk deberían apoyarse más en tecnología, implantes, servicios urbanos y equipo propio de su estilo.
+  - Esto afecta sobre todo a tiendas, escenas, recursos y detalles del entorno.
+- **🎲 Inicio de partida más agradable**
+  - La pantalla entre crear personaje y empezar la historia ya no debería enseñar bloques enormes de información interna.
+  - Ahora tiene aspecto de pantalla de carga de rol, cambia según la ambientación y puede mostrar consejos breves del manual mientras prepara la primera escena.
+  - También puede preparar una imagen relacionada con el contexto sin hacerte esperar más: si llega a tiempo, aparece; si no, la partida empieza igualmente.
+- **🛡️ Derrota e inconsciencia mejor resueltas**
+  - He corregido qué ocurre al llegar a 0 PV según la dificultad.
+  - En fácil y normal, el personaje cae inconsciente y la historia continúa con un salto temporal contextual. En difícil, si falla la resistencia, la partida muestra una muerte contextual y una pantalla clara para aceptar y volver a selección.
+  - Esto evita que la aventura siga como si nada cuando el personaje ya estaba en el suelo. Que una derrota duela está bien; que el juego la ignore, no tanto.
+- **🧠 Partidas con más memoria**
+  - Al cargar una partida o avanzar varios turnos, el juego debería continuar mejor desde lo último que viste en pantalla.
+  - También debería recordar mejor la intención real de tus decisiones, reduciendo respuestas que parecen volver atrás o interpretar una opción de forma demasiado genérica.
+- **✂️ Narración más cómoda de leer**
+  - He ajustado las respuestas de exploración para que no vuelvan a convertirse en paredes enormes de texto.
+  - La narración puede seguir siendo rica, pero debería respirar mejor entre párrafos y ser más amable de leer durante partidas largas.
+- **🧼 Menos restos raros en pantalla**
+  - He limpiado casos en los que podían aparecer etiquetas, formatos extraños, opciones duplicadas o textos que no deberían llegar al jugador.
+  - En general, la interfaz debería mostrar más aventura y menos costuras.
+- **🔧 Más estabilidad en sesiones largas**
+  - He revisado sesiones prolongadas jugando con creación de personaje, comercio, implantes, combate, consumibles, munición, carga de partida y continuidad.
+  - El objetivo de este bloque es claro: menos interrupciones, menos incoherencias y más sensación de que lo que haces en la historia tiene peso dentro de la partida.",Pruebas largas: acciones conectadas a mecánicas reales
+english,"- **🧩 Actions with More Realistic Consequences**
+  - I have fixed cases where the adventure narrative stated you used a skill, item, implant, or resource, but the sheet did not always accurately reflect what happened.
+  - From now on, it should be clearer when an action consumes stamina, ammunition, or consumables, when it affects an enemy, and when a character gains progress based on what they just did.
+- **🛒 More Reliable Commerce and Services**
+  - Buying, installing implants, using consumables, and dealing with vendors should feel more consistent.
+  - If a scene indicates a service is available, the game should respond better with useful options and fewer moments of ""okay, so where do I press now?"".
+- **🌍 Fantasy and Cyberpunk with Clearer Identities**
+  - I have reduced rare blends between settings. Medieval worlds should speak more like medieval worlds, and cyberpunk worlds should rely more on technology, implants, urban services, and equipment specific to their style.
+  - This primarily affects shops, scenes, resources, and environmental details.
+- **🎲 More Pleasant Game Start**
+  - The screen between creating a character and starting the story should no longer display huge blocks of internal information.
+  - It now resembles a role-playing loading screen, changes based on the setting, and can show brief manual tips while preparing the first scene.
+  - It can also prepare a context-related image without making you wait longer: if it arrives in time, it appears; if not, the game starts anyway.
+- **🛡️ Defeat and Unconsciousness Better Resolved**
+  - I have corrected what happens when reaching 0 HP depending on the difficulty.
+  - In easy and normal modes, the character falls unconscious and the story continues with a contextual time jump. In hard mode, if resistance fails, the game shows a contextual death and a clear screen to accept and return to selection.
+  - This prevents the adventure from continuing as if nothing happened when the character is already on the ground. It is fine for a defeat to hurt; it is not fine for the game to ignore it.
+- **🧩 Sessions with More Memory**
+  - When loading a game or advancing several turns, the game should continue better from where you last saw on screen.
+  - It should also better remember the true intent of your decisions, reducing responses that seem to go backward or interpret an option too generically.
+- **✂️ More Comfortable Narration to Read**
+  - I have adjusted exploration responses so they do not turn into huge walls of text again.
+  - Narration can remain rich, but it should breathe better between paragraphs and be more pleasant to read during long sessions.
+- **🧼 Fewer Strange Remnants on Screen**
+  - I have cleaned up cases where tags, strange formats, duplicate options, or text that should not reach the player could appear.
+  - Generally, the interface should show more adventure and fewer seams.
+- **🔧 More Stability in Long Sessions**
+  - I have reviewed prolonged sessions involving character creation, commerce, implants, combat, consumables, ammunition, game loading, and continuity.
+  - The goal of this block is clear: fewer interruptions, fewer inconsistencies, and more of a sense that what you do in the story has weight within the game.",Long Playtests: Actions Linked to Real Mechanics
+spanish,"- **🧩 Acciones con consecuencias más reales**
+  - He corregido casos en los que la aventura contaba que habías usado una habilidad, un objeto, un implante o un recurso, pero luego la ficha no siempre reflejaba bien lo ocurrido.
+  - A partir de ahora debería notarse mejor cuándo una acción consume aguante, munición o consumibles, cuándo afecta a un enemigo y cuándo el personaje gana progreso por lo que acaba de hacer.
+- **🛒 Comercio y servicios más fiables**
+  - Comprar, instalar implantes, usar consumibles y tratar con vendedores debería sentirse más consistente.
+  - Si la escena dice que hay un servicio disponible, el juego debería responder mejor con opciones útiles y menos momentos de “vale, ¿y ahora dónde pulso?”.
+- **🌍 Fantasía y cyberpunk con identidad más clara**
+  - He reducido mezclas raras entre ambientaciones. Los mundos medievales deberían hablar más como mundos medievales, y los mundos cyberpunk deberían apoyarse más en tecnología, implantes, servicios urbanos y equipo propio de su estilo.
+  - Esto afecta sobre todo a tiendas, escenas, recursos y detalles del entorno.
+- **🎲 Inicio de partida más agradable**
+  - La pantalla entre crear personaje y empezar la historia ya no debería enseñar bloques enormes de información interna.
+  - Ahora tiene aspecto de pantalla de carga de rol, cambia según la ambientación y puede mostrar consejos breves del manual mientras prepara la primera escena.
+  - También puede preparar una imagen relacionada con el contexto sin hacerte esperar más: si llega a tiempo, aparece; si no, la partida empieza igualmente.
+- **🛡️ Derrota e inconsciencia mejor resueltas**
+  - He corregido qué ocurre al llegar a 0 PV según la dificultad.
+  - En fácil y normal, el personaje cae inconsciente y la historia continúa con un salto temporal contextual. En difícil, si falla la resistencia, la partida muestra una muerte contextual y una pantalla clara para aceptar y volver a selección.
+  - Esto evita que la aventura siga como si nada cuando el personaje ya estaba en el suelo. Que una derrota duela está bien; que el juego la ignore, no tanto.
+- **🧠 Partidas con más memoria**
+  - Al cargar una partida o avanzar varios turnos, el juego debería continuar mejor desde lo último que viste en pantalla.
+  - También debería recordar mejor la intención real de tus decisiones, reduciendo respuestas que parecen volver atrás o interpretar una opción de forma demasiado genérica.
+- **✂️ Narración más cómoda de leer**
+  - He ajustado las respuestas de exploración para que no vuelvan a convertirse en paredes enormes de texto.
+  - La narración puede seguir siendo rica, pero debería respirar mejor entre párrafos y ser más amable de leer durante partidas largas.
+- **🧼 Menos restos raros en pantalla**
+  - He limpiado casos en los que podían aparecer etiquetas, formatos extraños, opciones duplicadas o textos que no deberían llegar al jugador.
+  - En general, la interfaz debería mostrar más aventura y menos costuras.
+- **🔧 Más estabilidad en sesiones largas**
+  - He revisado sesiones prolongadas jugando con creación de personaje, comercio, implantes, combate, consumibles, munición, carga de partida y continuidad.
+  - El objetivo de este bloque es claro: menos interrupciones, menos incoherencias y más sensación de que lo que haces en la historia tiene peso dentro de la partida.",Playtests largos: acciones conectadas a mecánicas reales
+latam,"- **🧩 Acciones con consecuencias más reales**
+  - He corregido casos en los que la aventura contaba que habías usado una habilidad, un objeto, un implante o un recurso, pero luego la ficha no siempre reflejaba bien lo ocurrido.
+  - A partir de ahora debería notarse mejor cuándo una acción consume aguante, munición o consumibles, cuándo afecta a un enemigo y cuándo el personaje gana progreso por lo que acaba de hacer.
+- **🛒 Comercio y servicios más fiables**
+  - Comprar, instalar implantes, usar consumibles y tratar con vendedores debería sentirse más consistente.
+  - Si la escena dice que hay un servicio disponible, el juego debería responder mejor con opciones útiles y menos momentos de ""vale, ¿y ahora dónde pulso?"".
+- **🌍 Fantasía y cyberpunk con identidad más clara**
+  - He reducido mezclas raras entre ambientaciones. Los mundos medievales deberían hablar más como mundos medievales, y los mundos cyberpunk deberían apoyarse más en tecnología, implantes, servicios urbanos y equipo propio de su estilo.
+  - Esto afecta sobre todo a tiendas, escenas, recursos y detalles del entorno.
+- **🎲 Inicio de partida más agradable**
+  - La pantalla entre crear personaje y empezar la historia ya no debería enseñar bloques enormes de información interna.
+  - Ahora tiene aspecto de pantalla de carga de rol, cambia según la ambientación y puede mostrar consejos breves del manual mientras prepara la primera escena.
+  - También puede preparar una imagen relacionada con el contexto sin hacerte esperar más: si llega a tiempo, aparece; si no, la partida empieza igualmente.
+- **🛡️ Derrota e inconsciencia mejor resueltas**
+  - He corregido qué ocurre al llegar a 0 PV según la dificultad.
+  - En fácil y normal, el personaje cae inconsciente y la historia continúa con un salto temporal contextual. En difícil, si falla la resistencia, la partida muestra una muerte contextual y una pantalla clara para aceptar y volver a selección.
+  - Esto evita que la aventura siga como si nada cuando el personaje ya estaba en el suelo. Que una derrota duela está bien; que el juego la ignore, no tanto.
+- **🧠 Partidas con más memoria**
+  - Al cargar una partida o avanzar varios turnos, el juego debería continuar mejor desde lo último que viste en pantalla.
+  - También debería recordar mejor la intención real de tus decisiones, reduciendo respuestas que parecen volver atrás o interpretar una opción de forma demasiado genérica.
+- **✂️ Narración más cómoda de leer**
+  - He ajustado las respuestas de exploración para que no vuelvan a convertirse en paredes enormes de texto.
+  - La narración puede seguir siendo rica, pero debería respirar mejor entre párrafos y ser más amable de leer durante partidas largas.
+- **🧼 Menos restos raros en pantalla**
+  - He limpiado casos en los que podían aparecer etiquetas, formatos extraños, opciones duplicadas o textos que no deberían llegar al jugador.
+  - En general, la interfaz debería mostrar más aventura y menos costuras.
+- **🔧 Más estabilidad en sesiones largas**
+  - He revisado sesiones prolongadas jugando con creación de personaje, comercio, implantes, combate, consumibles, munición, carga de partida y continuidad.
+  - El objetivo de este bloque es claro: menos interrupciones, menos incoherencias y más sensación de que lo que haces en la historia tiene peso dentro de la partida.",Pruebas largas: acciones conectadas a mecánicas reales
+finnish,"- **🧩 Todellisemmat seuraukset toimille**
+  - Olen korjannut tilanteita, joissa tarina kertoi käyttäneesi taitoa, esinettä, implanttia tai resurssia, mutta pelilappu ei aina heijastanut tapahtunutta tarkasti.
+  - Tämän jälkeen toimien kuluttamaa kestävyyttä, ammusmääriä tai kulutettavia esineitä, vihollisia koskevia vaikutuksia sekä hahmon saavuttamaa edistymistä tulisi havaita paremmin.
+- **🛒 Luotettavampi kauppa ja palvelut**
+  - Ostaminen, implanttien asentaminen, kulutettavien esineiden käyttö ja myyjien kohtaaminen tuntuisivat johdonmukaisemmilta.
+  - Jos tilanteessa mainitaan olevan palvelu saatavilla, peli tulisi vastata paremmin hyödyllisillä vaihtoehdoilla ja vähemmän hetkillä, joita kysellään: ""No, missä nyt painan?"".
+- **🌍 Selkeämpi identiteetti fantasia- ja cyberpunk-aiheisissa**
+  - Olen vähentänyt harvinaisia sekoituksia ympäristötyylejä välillä. Keski-aiheiset maailmat puhuisivat enemmän keski-aiheisten maailmojen kielellä, ja cyberpunk-maailmat nojautuisivat enemmän teknologiaan, implantteihin, kaupunkipalveluihin ja tyylinsä mukaiseen varusteeseen.
+  - Tämä vaikuttaa erityisesti kauppoihin, tilanteisiin, resursseihin ja ympäristön yksityiskohtiin.
+- **🎲 Miellyttävämpi pelin alku**
+  - Hahmon luomisen ja tarinan aloittamisen välillä olevalla ruudulla ei enää pitäisi näkyä valtavia sisäisiä tietopaketteja.
+  - Se näyttää nyt roolipelin latausruudulta, muuttuu ympäristötyylin mukaan ja voi näyttää lyhyitä oppeja käsikirjasta valmistauduttuaan ensimmäiseen tilanteeseen.
+  - Se voi myös valmistella kontekstiin liittyvää kuvaa ilman, että joudut odottamaan: jos se ehtii ajoissa, se ilmestyy; jos ei, peli alkaa silti.
+- **🛡️ Paremmat ratkaisut tappioon ja tajunnan menetykseen**
+  - Olen korjannut sitä, mitä tapahtuu, kun elopisteet (PV) laskevat nollaan vaikeustasosta riippuen.
+  - Helppoa ja normaalia vaikeutta hahmo menee tajuttomuuteen ja tarina jatkuu kontekstuaalisella aikasaltilla. Vaikeassa vaikeustasossa, jos vastustuskyky epäonnistuu, peli näyttää kontekstuaalisen kuoleman ja selkeän ruudun hyväksymistä ja uudelleenvalintaa varten.
+  - Tämä estää tarinan jatkumisen kuin mitään ei olisi tapahtunut, vaikka hahmo olisi jo maassa. Tappion tunteminen on hyvä; pelin ohittaminen ei ole.
+- **🧩 Muistisavuisemmat pelit**
+  - Pelin lataaminen tai useiden vuorojen eteneminen tulisi jatkua paremmin siitä, mitä näit viimeksi ruudulla.
+  - Se tulisi myös muistaa paremmin päätösi todellisia aikeita, vähentämällä vastauksia, jotka näyttävät palaavan taaksepäin tai tulkitsevat vaihtoehdon liian yleisesti.
+- **✂️ Lue helpompi tarinankertoja**
+  - Olen säätänyt tutkimusvastauksia, jotta ne eivät muuttuisi uudelleen valtaviksi tekstiseiniksi.
+  - Tarinankertoja voi olla rikasta, mutta se tulisi hengittää paremmin kappaleiden välillä ja olla helpompi lukea pitkissä peleissä.
+- **🧼 Vähemmän harvinaisia jäämiä ruudulla**
+  - Olen siivonut tilanteita, joissa voitiin näkyä etikettejä, outoja muotoiluja, toistuvia vaihtoehtoja tai tekstejä, jotka eivät tulisi pelaajalle.
+  - Yleisesti ottaen käyttöliittymä tulisi näyttää enemmän tarinaa ja vähemmän saumoja.
+- **🔧 Stabiilimpi pitkiä istuntoja**
+  - Olen tarkistanut pitkät istunnot pelaamalla hahmon luomista, kauppaa, implantteja, taistelua, kulutettavia esineitä, ammusmääriä, pelin latausta ja jatkuvuutta varten.
+  - Tämän osion tavoite on selvä: vähemmän keskeytyksiä, vähemmän ristiriitoja ja enemmän tunnetta siitä, että tekemäsi asiat tarinassa painavat pelissä.",Pitkätestit: todellisiin mekaniikoihin kytketyt toimet
+french,"- **🧩 Des actions aux conséquences plus réalistes**
+  - J'ai corrigé des cas où l'aventure indiquait que vous aviez utilisé une compétence, un objet, un implant ou une ressource, mais où la fiche ne reflétait pas toujours correctement ce qui s'était passé.
+  - Désormais, il devrait être plus clair quand une action consomme de la résistance, des munitions ou des consommables, quand elle affecte un ennemi et quand le personnage gagne du progrès grâce à ce qu'il vient de faire.
+- **🛒 Commerce et services plus fiables**
+  - Acheter, installer des implants, utiliser des consommables et interagir avec des vendeurs devrait se sentir plus cohérent.
+  - Si une scène indique qu'un service est disponible, le jeu devrait mieux répondre avec des options utiles et moins de moments de « bon, et maintenant où je clique ? ».
+- **🌍 Fantasy et cyberpunk avec une identité plus marquée**
+  - J'ai réduit les mélanges rares entre les univers. Les mondes médiévaux devraient davantage évoquer l'ambiance médiévale, et les mondes cyberpunk devraient s'appuyer plus sur la technologie, les implants, les services urbains et l'équipement typique de leur style.
+  - Cela concerne surtout les boutiques, les scènes, les ressources et les détails de l'environnement.
+- **🎲 Un démarrage de partie plus agréable**
+  - L'écran situé entre la création du personnage et le début de l'histoire ne devrait plus afficher de blocs énormes d'informations internes.
+  - Il ressemble désormais à un écran de chargement de rôle, il varie selon l'univers et peut afficher de brèves conseils du manuel pendant la préparation de la première scène.
+  - Il peut également préparer une image liée au contexte sans vous faire attendre davantage : si elle est prête à temps, elle apparaît ; sinon, la partie commence quand même.
+- **🛡️ Défaite et inconscience mieux gérées**
+  - J'ai corrigé ce qui se produit en arrivant à 0 PV selon la difficulté.
+  - En facile et normal, le personnage s'évanouit et l'histoire continue avec un saut temporel contextuel. En difficile, si la résistance échoue, la partie affiche une mort contextuelle et un écran clair pour accepter et revenir au menu de sélection.
+  - Cela évite que l'aventure se poursuive comme si de rien n'était alors que le personnage est déjà au sol. Qu'une défaite fasse mal, c'est bien ; que le jeu l'ignore, c'est moins bien.
+- **🧩 Parties avec plus de mémoire**
+  - Au chargement d'une partie ou lors d'avancées de plusieurs tours, le jeu devrait mieux reprendre là où vous vous étiez arrêté à l'écran.
+  - Il devrait également mieux se souvenir de l'intention réelle de vos décisions, réduisant les réponses qui semblent revenir en arrière ou interpréter une option de manière trop générique.
+- **✂️ Narration plus facile à lire**
+  - J'ai ajusté les réponses d'exploration pour qu'elles ne redeviennent pas de murs de texte énormes.
+  - La narration peut rester riche, mais elle devrait mieux respirer entre les paragraphes et être plus agréable à lire lors de longues parties.
+- **🧼 Moins de traces étranges à l'écran**
+  - J'ai nettoyé les cas où des étiquettes, des formats bizarres, des options dupliquées ou des textes qui ne devaient pas atteindre le joueur pouvaient apparaître.
+  - En général, l'interface devrait montrer plus d'aventure et moins de coutures.
+- **🔧 Plus de stabilité lors des sessions longues**
+  - J'ai révisé les sessions prolongées en jouant avec la création de personnage, le commerce, les implants, le combat, les consommables, les munitions, le chargement de partie et la continuité.
+  - L'objectif de ce bloc est clair : moins d'interruptions, moins d'incohérences et plus de sensation que ce que vous faites dans l'histoire a du poids au sein de la partie.",Tests de jeu prolongés : actions liées à de vraies mécaniques
+hungarian,"- **🧩 Acciones con consecuencias más reales**
+  - He corregido casos en los que la aventura contaba que habías usado una habilidad, un objeto, un implante o un recurso, pero luego la ficha no siempre reflejaba bien lo ocurrido.
+  - A partir de ahora debería notarse mejor cuándo una acción consume aguante, munición o consumibles, cuándo afecta a un enemigo y cuándo el personaje gana progreso por lo que acaba de hacer.
+- **🛒 Comercio y servicios más fiables**
+  - Comprar, instalar implantes, usar consumibles y tratar con vendedores debería sentirse más consistente.
+  - Si la escena dice que hay un servicio disponible, el juego debería responder mejor con opciones útiles y menos momentos de ""vale, ¿y ahora dónde pulso?"".
+- **🌍 Fantasía y cyberpunk con identidad más clara**
+  - He reducido mezclas raras entre ambientaciones. Los mundos medievales deberían hablar más como mundos medievales, y los mundos cyberpunk deberían apoyarse más en tecnología, implantes, servicios urbanos y equipo propio de su estilo.
+  - Esto afecta sobre todo a tiendas, escenas, recursos y detalles del entorno.
+- **🎲 Inicio de partida más agradable**
+  - La pantalla entre crear personaje y empezar la historia ya no debería enseñar bloques enormes de información interna.
+  - Ahora tiene aspecto de pantalla de carga de rol, cambia según la ambientación y puede mostrar consejos breves del manual mientras prepara la primera escena.
+  - También puede preparar una imagen relacionada con el contexto sin hacerte esperar más: si llega a tiempo, aparece; si no, la partida empieza igualmente.
+- **🛡️ Derrota e inconsciencia mejor resueltas**
+  - He corregido qué ocurre al llegar a 0 PV según la dificultad.
+  - En fácil y normal, el personaje cae inconsciente y la historia continúa con un salto temporal contextual. En difícil, si falla la resistencia, la partida muestra una muerte contextual y una pantalla clara para aceptar y volver a selección.
+  - Esto evita que la aventura siga como si nada cuando el personaje ya estaba en el suelo. Que una derrota duela está bien; que el juego la ignore, no tanto.
+- **🧠 Partidas con más memoria**
+  - Al cargar una partida o avanzar varios turnos, el juego debería continuar mejor desde lo último que viste en pantalla.
+  - También debería recordar mejor la intención real de tus decisiones, reduciendo respuestas que parecen volver atrás o interpretar una opción de forma demasiado genérica.
+- **✂️ Narración más cómoda de leer**
+  - He ajustado las respuestas de exploración para que no vuelvan a convertirse en paredes enormes de texto.
+  - La narración puede seguir siendo rica, pero debería respirar mejor entre párrafos y ser más amable de leer durante partidas largas.
+- **🧼 Menos restos raros en pantalla**
+  - He limpiado casos en los que podían aparecer etiquetas, formatos extraños, opciones duplicadas o textos que no deberían llegar al jugador.
+  - En general, la interfaz debería mostrar más aventura y menos costuras.
+- **🔧 Más estabilidad en sesiones largas**
+  - He revisado sesiones prolongadas jugando con creación de personaje, comercio, implantes, combate, consumibles, munición, carga de partida y continuidad.
+  - El objetivo de este bloque es claro: menos interrupciones, menos incoherencias y más sensación de que lo que haces en la historia tiene peso dentro de la partida.",Testeo prolongado: acciones conectadas a mecánicas reales
+indonesian,"- **🧩 Acciones con consecuencias más reales**
+  - He corregido casos en los que la aventura contaba que habías usado una habilidad, un objeto, un implante o un recurso, pero luego la ficha no siempre reflejaba bien lo ocurrido.
+  - A partir de ahora debería notarse mejor cuándo una acción consume aguante, munición o consumibles, cuándo afecta a un enemigo y cuándo el personaje gana progreso por lo que acaba de hacer.
+- **🛒 Comercio y servicios más fiables**
+  - Comprar, instalar implantes, usar consumibles y tratar con vendedores debería sentirse más consistente.
+  - Si la escena dice que hay un servicio disponible, el juego debería responder mejor con opciones útiles y menos momentos de ""vale, ¿y ahora dónde pulso?"".
+- **🌍 Fantasía y cyberpunk con identidad más clara**
+  - He reducido mezclas raras entre ambientaciones. Los mundos medievales deberían hablar más como mundos medievales, y los mundos cyberpunk deberían apoyarse más en tecnología, implantes, servicios urbanos y equipo propio de su estilo.
+  - Esto afecta sobre todo a tiendas, escenas, recursos y detalles del entorno.
+- **🎲 Inicio de partida más agradable**
+  - La pantalla entre crear personaje y empezar la historia ya no debería enseñar bloques enormes de información interna.
+  - Ahora tiene aspecto de pantalla de carga de rol, cambia según la ambientación y puede mostrar consejos breves del manual mientras prepara la primera escena.
+  - También puede preparar una imagen relacionada con el contexto sin hacerte esperar más: si llega a tiempo, aparece; si no, la partida empieza igualmente.
+- **🛡️ Derrota e inconsciencia mejor resueltas**
+  - He corregido qué ocurre al llegar a 0 PV según la dificultad.
+  - En fácil y normal, el personaje cae inconsciente y la historia continúa con un salto temporal contextual. En difícil, si falla la resistencia, la partida muestra una muerte contextual y una pantalla clara para aceptar y volver a selección.
+  - Esto evita que la aventura siga como si nada cuando el personaje ya estaba en el suelo. Que una derrota duela está bien; que el juego la ignore, no tanto.
+- **🧠 Partidas con más memoria**
+  - Al cargar una partida o avanzar varios turnos, el juego debería continuar mejor desde lo último que viste en pantalla.
+  - También debería recordar mejor la intención real de tus decisiones, reduciendo respuestas que parecen volver atrás o interpretar una opción de forma demasiado genérica.
+- **✂️ Narración más cómoda de leer**
+  - He ajustado las respuestas de exploración para que no vuelvan a convertirse en paredes enormes de texto.
+  - La narración puede seguir siendo rica, pero debería respirar mejor entre párrafos y ser más amable de leer durante partidas largas.
+- **🧼 Menos restos raros en pantalla**
+  - He limpiado casos en los que podían aparecer etiquetas, formatos extraños, opciones duplicadas o textos que no deberían llegar al jugador.
+  - En general, la interfaz debería mostrar más aventura y menos costuras.
+- **🔧 Más estabilidad en sesiones largas**
+  - He revisado sesiones prolongadas jugando con creación de personaje, comercio, implantes, combate, consumibles, munición, carga de partida y continuidad.
+  - El objetivo de este bloque es claro: menos interrupciones, menos incoherencias y más sensación de que lo que haces en la historia tiene peso dentro de la partida.",Playtests largos: acciones conectadas a mecánicas reales
+italian,"- **🧩 Azioni con conseguenze più realistiche**
+  - Ho corretto casi in cui l'avventura raccontava di aver usato una abilità, un oggetto, un impianto o una risorsa, ma poi il foglio non rifletteva sempre bene ciò che era accaduto.
+  - Da ora in poi dovrebbe essere più evidente quando un'azione consuma resistenza, munizioni o consumabili, quando colpisce un nemico e quando il personaggio guadagna progresso per ciò che ha appena fatto.
+- **🛒 Commercio e servizi più affidabili**
+  - Comprare, installare impianti, usare consumabili e trattare con venditori dovrebbe sentirsi più coerente.
+  - Se la scena dice che c'è un servizio disponibile, il gioco dovrebbe rispondere meglio con opzioni utili e meno momenti di ""ok, e ora dove premo?"".
+- **🌍 Fantasy e cyberpunk con identità più chiara**
+  - Ho ridotto le strane mescolanze tra ambientazioni. I mondi medievali dovrebbero parlare più come mondi medievali, e i mondi cyberpunk dovrebbero basarsi di più su tecnologia, impianti, servizi urbani e equipaggiamento tipico del loro stile.
+  - Questo riguarda soprattutto negozi, scene, risorse e dettagli dell'ambiente.
+- **🎲 Inizio partita più gradevole**
+  - Lo schermo tra la creazione del personaggio e l'inizio della storia non dovrebbe più mostrare enormi blocchi di informazioni interne.
+  - Ora ha l'aspetto di uno schermo di caricamento a tema, cambia in base all'ambientazione e può mostrare brevi consigli del manuale mentre prepara la prima scena.
+  - Può anche preparare un'immagine legata al contesto senza farti aspettare di più: se arriva in tempo, appare; se no, la partita inizia comunque.
+- **🛡️ Sconfitta e incoscienza meglio gestite**
+  - Ho corretto cosa succede quando si arriva a 0 PV in base alla difficoltà.
+  - In facile e normale, il personaggio cade incosciente e la storia continua con un salto temporale contestuale. In difficile, se fallisce la resistenza, la partita mostra una morte contestuale e uno schermo chiaro per accettare e tornare alla selezione.
+  - Questo evita che l'avventura continui come se nulla fosse quando il personaggio era già a terra. Che una sconfitta faccia male va bene; che il gioco la ignori, meno tanto.
+- **🧠 Partite con più memoria**
+  - Al caricare una partita o avanzare più turni, il gioco dovrebbe continuare meglio da dove si è lasciati sullo schermo.
+  - Dovrebbe anche ricordare meglio l'intenzione reale delle tue decisioni, riducendo risposte che sembrano tornare indietro o interpretare un'opzione in modo troppo generico.
+- **✂️ Narrazione più comoda da leggere**
+  - Ho regolato le risposte di esplorazione per evitare che diventino di nuovo enormi muri di testo.
+  - La narrazione può rimanere ricca, ma dovrebbe respirare meglio tra i paragrafi e essere più piacevole da leggere durante partite lunghe.
+- **🧼 Meno residui strani a schermo**
+  - Ho pulito casi in cui potevano apparire etichette, formati strani, opzioni duplicate o testi che non dovrebbero arrivare al giocatore.
+  - In generale, l'interfaccia dovrebbe mostrare più avventura e meno cuciture.
+- **🔧 Più stabilità nelle sessioni lunghe**
+  - Ho rivisto sessioni prolungate giocando con creazione del personaggio, commercio, impianti, combattimento, consumabili, munizioni, caricamento della partita e continuità.
+  - L'obiettivo di questo blocco è chiaro: meno interruzioni, meno incoerenze e più sensazione di ciò che fai nella storia ha peso all'interno della partita.",Playtest largos: azioni collegate a meccaniche reali
+japanese,"- **🧩 より現実的な結果を持つアクション**
+  - アドベンチャーがスキル、オブジェクト、インプラント、またはリソースを使用したと伝えていたのに、シートが常に正確にその出来事を反映しなかったケースを修正しました。
+  - これからは、アクションがスタミナ、弾薬、または消耗品を消費するタイミング、敵に影響を与えるタイミング、そしてキャラクターが直前に行ったことによる進捗を獲得するタイミングがより明確になるはずです。
+- **🛒 より信頼性の高い取引とサービス**
+  - 購入、インプラントのインストール、消耗品の使用、および販売者とのやり取りがより一貫した感覚になるはずです。
+  - シーンが利用可能なサービスがあると述べている場合、ゲームはより適切に役立つオプションで応答し、「よし、ではどこを押せばいいんだ？」という瞬間を減らすはずです。
+- **🌍 明確なアイデンティティを持つファンタジーとサイバーパンク**
+  - 設定間の奇妙な混ざり合いを削減しました。中世の世界は中世の世界らしく話すべきであり、サイバーパンクの世界は技術、インプラント、都市サービス、およびそのスタイル固有の装備に更多に依存するべきです。
+  - これは主に店舗、シーン、リソース、および環境の詳細に影響します。
+- **🎲 より楽しいゲーム開始**
+  - キャラクター作成と物語開始の間の画面は、もはや巨大な内部情報ブロックを表示するべきではありません。
+  - 現在はロールプレイのロード画面のように見え、設定に応じて変化し、最初のシーンを準備する間にマニュアルの簡潔なアドバイスを表示できます。
+  - 文脈に関連する画像を準備することもでき、待たせることなく表示できます：時間が合えば表示されます；そうでなければ、ゲームは通常通り開始されます。
+- **🛡️ 敗北と無意識状態の改善**
+  - 難易度に応じて 0 HP に達した際に何が起きるかを修正しました。
+  - 容易と通常では、キャラクターは無意識になり、物語は文脈的な時間跳躍で続きます。困難では、耐性が失敗した場合、ゲームは文脈的な死と、受け入れと再選択のための明確な画面を表示します。
+  - キャラクターがすでに地面に倒れているのにアドベンチャーがまるで何事もなかったかのように続くのを防ぐためです。敗北が痛みを伴うことは良いことです；ゲームがそれを無視することは、それほどではありません。
+- **🧩 より多くのメモリを持つセッション**
+  - ゲームをロードするか、複数のターンを進める場合、ゲームは画面で最後に見たところからより良く継続するはずです。
+  - また、あなたの決定の実際の意図をより良く記憶し、後戻りするように見える回答や、選択肢を過度に一般的に解釈するのを減らすはずです。
+- **✂️ より読みやすいナレーション**
+  - 探索の回答を調整し、再び巨大なテキストの壁にならないようにしました。
+  - ナレーションは依然として豊かであることができますが、段落間でより呼吸しやすく、長期間のセッション中に読みやすく優しいものになるはずです。
+- **🧼 画面に残る奇妙な残りの削減**
+  - ラベル、奇妙なフォーマット、重複したオプション、またはプレイヤーに到達すべきでないテキストが表示されるケースをクリーンアップしました。
+  - 一般的に、インターフェースはより多くのアドベンチャーを表示し、より少ない縫い目を示すはずです。
+- **🔧 長期間のセッションでのより多くの安定性**
+  - キャラクター作成、取引、インプラント、戦闘、消耗品、弾薬、ゲームロード、および継続性を含む長期間のセッションをプレイしてレビューしました。
+  - このブロックの目標は明確です：より少ない中断、より少ない不整合、そしてあなたが物語で行うことがセッション内で重みを持つという感覚の増加。",プレイテスト長期間：現実的なメカニクスに接続されたアクション
+korean,"- **🧩 더 현실적인 결과의 액션**
+  - 모험이 당신이 능력, 물체, 임플란트 또는 리소스를 사용했다고 말했지만, 이후 시트가 항상 발생한 일을 잘 반영하지 못했던 사례를 수정했습니다.
+  - 앞으로는 액션이 체력, 탄약 또는 소모품을 소비할 때, 적에게 영향을 줄 때, 그리고 캐릭터가 방금 한 행동으로 진전을 얻을 때 더 명확하게 표시되어야 합니다.
+- **🛒 더 신뢰할 수 있는 상거래 및 서비스**
+  - 구매, 임플란트 설치, 소모품 사용 및 판매자와의 상호작용이 더 일관된 느낌을 주어야 합니다.
+  - 장면에서 이용 가능한 서비스가 있다고 언급되면, 게임은 유용한 옵션으로 더 잘 반응하고 ""좋아, 그럼 이제 어디를 누르면 되나요?"" 하는 순간이 줄어들어야 합니다.
+- **🌍 정체성이 더 명확한 판타지와 사이버펑크**
+  - 배경 설정 간의 이질적인 혼합을 줄였습니다. 중세 세계는 중세 세계답게 말해야 하며, 사이버펑크 세계는 기술, 임플란트, 도시 서비스 및 해당 스타일의 고유 장비에 더 의존해야 합니다.
+  - 이는 주로 상점, 장면, 리소스 및 환경 세부 사항에 영향을 미칩니다.
+- **🎲 더 즐거운 게임 시작**
+  - 캐릭터 생성과 이야기 시작 사이의 화면은 이제 거대한 내부 정보 블록을 보여주지 않습니다.
+  - 이제 역할극 로딩 화면처럼 보이며, 배경 설정에 따라 달라지고 첫 장면을 준비하는 동안 짧은 매뉴얼 팁을 표시할 수 있습니다.
+  - 또한 컨텍스트와 관련된 이미지를 준비하여 더 오래 기다리게 하지 않습니다: 시간이 되면 나타납니다. 그렇지 않더라도 게임은 시작됩니다.
+- **🛡️ 개선된 패배 및 무의식 상태 처리**
+  - 난이도에 따라 0 체력 (PV) 에 도달했을 때 발생하는 상황을 수정했습니다.
+  - 쉽고 보통 난이도에서는 캐릭터가 무의식 상태가 되고 이야기가 맥락적 시간 점프와 함께 계속됩니다. 어렵게 난이도에서는 저항이 실패하면 게임이 맥락적 사망과 선택을 다시 받기 위해 명확한 화면을 표시합니다.
+  - 캐릭터가 이미 바닥에 누워있는데 모험이 아무 일도 없었다는 듯이 계속되는 것을 방지합니다. 패배가 아픈 것은 좋지만, 게임이 이를 무시하는 것은 그렇지 않습니다.
+- **🧩 더 많은 기억력을 가진 게임 세션**
+  - 게임 세션을 로드하거나 여러 턴을 진행할 때, 게임은 화면에서 마지막으로 보았던 내용에서 더 잘 이어져야 합니다.
+  - 또한 당신의 결정의 진정한 의도를 더 잘 기억하여 뒤로 돌아가는 것처럼 보이는 응답이나 너무 일반적으로 해석되는 옵션을 줄여야 합니다.
+- **✂️ 더 읽기 쉬운 서사**
+  - 탐험 응답을 조정하여 다시 거대한 텍스트 벽이 되지 않도록 했습니다.
+  - 서사는 여전히 풍부할 수 있지만, 장기간의 게임 세션 동안 단락 사이에서 더 잘 숨을 쉬고 읽기 더 친절해야 합니다.
+- **🧼 화면의 이질적인 잔여물 감소**
+  - 라벨, 이질적인 형식, 중복 옵션 또는 플레이어에게 도달해서는 안 되는 텍스트가 나타날 수 있는 사례를 정리했습니다.
+  - 전반적으로 인터페이스는 더 많은 모험을 보여주고 더 적은 이음매를 보여야 합니다.
+- **🔧 긴 세션에서 더 많은 안정성**
+  - 캐릭터 생성, 상거래, 임플란트, 전투, 소모품, 탄약, 게임 세션 로드 및 연속성을 통해 긴 세션을 플레이하며 검토했습니다.
+  - 이 블록의 목표는 명확합니다: 더 적은 중단, 더 많은 불일치, 그리고 당신이 이야기에서 하는 행동이 게임 세션 내에서 무게감을 갖는다는 느낌.",장기 플레이테스트: 실제 메커니즘과 연결된 액션
+dutch,"- **🧩 Acciones con consecuencias más reales**
+  - He corregido casos en los que la aventura contaba que habías usado una habilidad, un objeto, un implante o un recurso, pero luego la ficha no siempre reflejaba bien lo ocurrido.
+  - A partir de ahora debería notarse mejor cuándo una acción consume aguante, munición o consumibles, cuándo afecta a un enemigo y cuándo el personaje gana progreso por lo que acaba de hacer.
+- **🛒 Comercio y servicios más fiables**
+  - Comprar, instalar implantes, usar consumibles y tratar con vendedores debería sentirse más consistente.
+  - Si la escena dice que hay un servicio disponible, el juego debería responder mejor con opciones útiles y menos momentos de ""vale, ¿y ahora dónde pulso?"".
+- **🌍 Fantasía y cyberpunk con identidad más clara**
+  - He reducido mezclas raras entre ambientaciones. Los mundos medievales deberían hablar más como mundos medievales, y los mundos cyberpunk deberían apoyarse más en tecnología, implantes, servicios urbanos y equipo propio de su estilo.
+  - Esto afecta sobre todo a tiendas, escenas, recursos y detalles del entorno.
+- **🎲 Inicio de partida más agradable**
+  - La pantalla entre crear personaje y empezar la historia ya no debería enseñar bloques enormes de información interna.
+  - Ahora tiene aspecto de pantalla de carga de rol, cambia según la ambientación y puede mostrar consejos breves del manual mientras prepara la primera escena.
+  - También puede preparar una imagen relacionada con el contexto sin hacerte esperar más: si llega a tiempo, aparece; si no, la partida empieza igualmente.
+- **🛡️ Derrota e inconsciencia mejor resueltas**
+  - He corregido qué ocurre al llegar a 0 PV según la dificultad.
+  - En fácil y normal, el personaje cae inconsciente y la historia continúa con un salto temporal contextual. En difícil, si falla la resistencia, la partida muestra una muerte contextual y una pantalla clara para aceptar y volver a selección.
+  - Esto evita que la aventura siga como si nada cuando el personaje ya estaba en el suelo. Que una derrota duela está bien; que el juego la ignore, no tanto.
+- **🧠 Partidas con más memoria**
+  - Al cargar una partida o avanzar varios turnos, el juego debería continuar mejor desde lo último que viste en pantalla.
+  - También debería recordar mejor la intención real de tus decisiones, reduciendo respuestas que parecen volver atrás o interpretar una opción de forma demasiado genérica.
+- **✂️ Narración más cómoda de leer**
+  - He ajustado las respuestas de exploración para que no vuelvan a convertirse en paredes enormes de texto.
+  - La narración puede seguir siendo rica, pero debería respirar mejor entre párrafos y ser más amable de leer durante partidas largas.
+- **🧼 Menos restos raros en pantalla**
+  - He limpiado casos en los que podían aparecer etiquetas, formatos extraños, opciones duplicadas o textos que no deberían llegar al jugador.
+  - En general, la interfaz debería mostrar más aventura y menos costuras.
+- **🔧 Más estabilidad en sesiones largas**
+  - He revisado sesiones prolongadas jugando con creación de personaje, comercio, implantes, combate, consumibles, munición, carga de partida y continuidad.
+  - El objetivo de este bloque es claro: menos interrupciones, menos incoherencias y más sensación de que lo que haces en la historia tiene peso dentro de la partida.",Test de juego largos: acciones conectadas a mecánicas reales
+norwegian,"- **🧩 Acciones con consecuencias más reales**
+  - He corregido casos en los que la aventura contaba que habías usado una habilidad, un objeto, un implante o un recurso, pero luego la ficha no siempre reflejaba bien lo ocurrido.
+  - A partir de ahora debería notarse mejor cuándo una acción consume aguante, munición o consumibles, cuándo afecta a un enemigo y cuándo el personaje gana progreso por lo que acaba de hacer.
+- **🛒 Comercio y servicios más fiables**
+  - Comprar, instalar implantes, usar consumibles y tratar con vendedores debería sentirse más consistente.
+  - Si la escena dice que hay un servicio disponible, el juego debería responder mejor con opciones útiles y menos momentos de ""vale, ¿y ahora dónde pulso?"".
+- **🌍 Fantasía y cyberpunk con identidad más clara**
+  - He reducido mezclas raras entre ambientaciones. Los mundos medievales deberían hablar más como mundos medievales, y los mundos cyberpunk deberían apoyarse más en tecnología, implantes, servicios urbanos y equipo propio de su estilo.
+  - Esto afecta sobre todo a tiendas, escenas, recursos y detalles del entorno.
+- **🎲 Inicio de partida más agradable**
+  - La pantalla entre crear personaje y empezar la historia ya no debería enseñar bloques enormes de información interna.
+  - Ahora tiene aspecto de pantalla de carga de rol, cambia según la ambientación y puede mostrar consejos breves del manual mientras prepara la primera escena.
+  - También puede preparar una imagen relacionada con el contexto sin hacerte esperar más: si llega a tiempo, aparece; si no, la partida empieza igualmente.
+- **🛡️ Derrota e inconsciencia mejor resueltas**
+  - He corregido qué ocurre al llegar a 0 PV según la dificultad.
+  - En fácil y normal, el personaje cae inconsciente y la historia continúa con un salto temporal contextual. En difícil, si falla la resistencia, la partida muestra una muerte contextual y una pantalla clara para aceptar y volver a selección.
+  - Esto evita que la aventura siga como si nada cuando el personaje ya estaba en el suelo. Que una derrota duela está bien; que el juego la ignore, no tanto.
+- **🧠 Partidas con más memoria**
+  - Al cargar una partida o avanzar varios turnos, el juego debería continuar mejor desde lo último que viste en pantalla.
+  - También debería recordar mejor la intención real de tus decisiones, reduciendo respuestas que parecen volver atrás o interpretar una opción de forma demasiado genérica.
+- **✂️ Narración más cómoda de leer**
+  - He ajustado las respuestas de exploración para que no vuelvan a convertirse en paredes enormes de texto.
+  - La narración puede seguir siendo rica, pero debería respirar mejor entre párrafos y ser más amable de leer durante partidas largas.
+- **🧼 Menos restos raros en pantalla**
+  - He limpiado casos en los que podían aparecer etiquetas, formatos extraños, opciones duplicadas o textos que no deberían llegar al jugador.
+  - En general, la interfaz debería mostrar más aventura y menos costuras.
+- **🔧 Más estabilidad en sesiones largas**
+  - He revisado sesiones prolongadas jugando con creación de personaje, comercio, implantes, combate, consumibles, munición, carga de partida y continuidad.
+  - El objetivo de este bloque es claro: menos interrupciones, menos incoherencias y más sensación de que lo que haces en la historia tiene peso dentro de la partida.",Test de juego ampliado: acciones conectadas a mecánicas reales
+polish,"- **🧩 Działania z bardziej realistycznymi konsekwencjami**
+  - Naprawiłem przypadki, w których opowieść informowała, że użyłeś umiejętności, przedmiotu, implantu lub zasobu, ale później karta nie zawsze odzwierciedlała to, co się stało.
+  - Od teraz powinno być lepiej widoczne, kiedy działanie zużywa wytrzymałość, amunicję lub przedmioty jednorazowe, kiedy wpływa na wroga, a kiedy postać zyskuje postęp dzięki ostatnim czynnościom.
+- **🛒 Wiarygodniejszy handel i usługi**
+  - Zakupy, instalacja implantów, używanie przedmiotów jednorazowych oraz kontakt z sprzedawcami powinny czuć się bardziej spójne.
+  - Jeśli scena informuje o dostępnej usłudze, gra powinna lepiej reagować użytecznymi opcjami i mniej momentami typu ""dobrze, a teraz gdzie klikam?"".
+- **🌍 Fantasy i cyberpunk z wyraźniejszą tożsamością**
+  - Zmniejszyłem dziwne mieszanki między ambientacjami. Światy średniowieczne powinny brzmieć bardziej jak światy średniowieczne, a światy cyberpunk powinny opierać się bardziej na technologii, implantach, usługach miejskich oraz sprzęcie charakterystycznym dla ich stylu.
+  - Dotyczy to głównie sklepów, scen, zasobów oraz szczegółów otoczenia.
+- **🎲 Przyjemniejsze rozpoczęcie gry**
+  - Ekran między tworzeniem postaci a rozpoczęciem historii nie powinien już wyświetlać ogromnych bloków informacji wewnętrznych.
+  - Teraz wygląda jak ekran ładowania ról, zmienia się w zależności od ambientacji i może pokazywać krótkie wskazówki z podręcznika podczas przygotowywania pierwszej sceny.
+  - Może również przygotować obraz powiązany z kontekstem bez dłuższego oczekiwania: jeśli zdąży na czas, pojawi się; jeśli nie, gra rozpocznie się tak samo.
+- **🛡️ Lepsze rozwiązanie porażki i nieprzytomności**
+  - Naprawiłem to, co dzieje się przy osiągnięciu 0 PV w zależności od trudności.
+  - W łatwej i normalnej trudności postać pada w nieprzytomność, a historia kontynuuje się z kontekstowym skokiem czasowym. W trudnej, jeśli odporność zostanie nieudana, gra wyświetla kontekstową śmierć oraz wyraźny ekran do potwierdzenia i powrotu do wyboru.
+  - Zapobiega to sytuacji, w której opowieść kontynuuje się, jakby nic się nie stało, mimo że postać już leżała na ziemi. To, że porażka boli, jest w porządku; to, że gra ją ignoruje, już nie.
+- **🧩 Gry z większą pamięcią**
+  - Przy ładowaniu gry lub przechodzeniu kilku tur, gra powinna lepiej kontynuować od tego, co ostatnio było widoczne na ekranie.
+  - Powinna również lepiej pamiętać rzeczywiste intencje Twoich decyzji, redukując odpowiedzi, które wydają się cofać lub interpretować opcję zbyt ogólnie.
+- **✂️ Narracja łatwiejsza do czytania**
+  - Dostosowałem odpowiedzi eksploracji, aby nie zamieniały się ponownie w ogromne ściany tekstu.
+  - Narracja może nadal być bogata, ale powinna lepiej ""oddychać"" między akapitami i być bardziej przyjazna do czytania podczas długich partii.
+- **🧼 Mniej dziwnych resztek na ekranie**
+  - Wyczyściłem przypadki, w których mogły pojawiać się etykiety, dziwne formaty, podwójne opcje lub teksty, które nie powinny trafiać do gracza.
+  - Ogólnie interfejs powinien pokazywać więcej opowieści i mniej szwów.
+- **🔧 Większa stabilność w długich sesjach**
+  - Przeglądałem przedłużone sesje gry z tworzeniem postaci, handlem, implantami, walką, przedmiotami jednorazowymi, amunicją, ładowaniem gry oraz ciągłością.
+  - Cel tego bloku jest jasny: mniej przerw, mniej niespójności i większe poczucie, że to, co robisz w opowieści, ma wagę wewnątrz gry.",Testy graczów: działania powiązane z rzeczywistymi mechanikami
+portuguese,"- **🧩 Ações com consequências mais reais**
+  - Corrigi casos em que a aventura contava que você havia usado uma habilidade, um objeto, um implante ou um recurso, mas depois o cartão nem sempre refletia bem o que ocorreu.
+  - A partir de agora, deve ficar mais claro quando uma ação consome resistência, munição ou itens de consumo, quando afeta um inimigo e quando o personagem ganha progresso pelo que acabou de fazer.
+- **🛒 Comércio e serviços mais confiáveis**
+  - Comprar, instalar implantes, usar itens de consumo e lidar com vendedores deve parecer mais consistente.
+  - Se a cena diz que há um serviço disponível, o jogo deve responder melhor com opções úteis e menos momentos de ""tá, e agora onde eu clico?"".
+- **🌍 Fantasia e cyberpunk com identidade mais clara**
+  - Reduzi misturas raras entre ambientações. Os mundos medievais devem soar mais como mundos medievais, e os mundos cyberpunk devem se apoiar mais em tecnologia, implantes, serviços urbanos e equipamentos típicos de seu estilo.
+  - Isso afeta principalmente lojas, cenas, recursos e detalhes do ambiente.
+- **🎲 Início de partida mais agradável**
+  - A tela entre criar o personagem e começar a história não deve mais mostrar blocos enormes de informações internas.
+  - Agora ela tem a aparência de uma tela de carregamento de RPG, muda conforme a ambientação e pode mostrar dicas breves do manual enquanto prepara a primeira cena.
+  - Também pode preparar uma imagem relacionada ao contexto sem fazer você esperar mais: se chegar a tempo, aparece; se não, a partida começa igualmente.
+- **🛡️ Derrota e inconsciência melhor resolvidas**
+  - Corrigi o que ocorre ao chegar a 0 PV conforme a dificuldade.
+  - Em fácil e normal, o personagem cai inconsciente e a história continua com um salto temporal contextual. Em difícil, se falhar na resistência, a partida mostra uma morte contextual e uma tela clara para aceitar e voltar à seleção.
+  - Isso evita que a aventura continue como se nada tivesse acontecido quando o personagem já estava no chão. Que uma derrota doer é bom; que o jogo a ignore, não tanto.
+- **🧠 Partidas com mais memória**
+  - Ao carregar uma partida ou avançar vários turnos, o jogo deve continuar melhor do que o último que você viu na tela.
+  - Também deve lembrar melhor a intenção real de suas decisões, reduzindo respostas que parecem voltar atrás ou interpretar uma opção de forma muito genérica.
+- **✂️ Narrativa mais confortável de ler**
+  - Ajustei as respostas de exploração para que não se transformem novamente em paredes enormes de texto.
+  - A narrativa pode continuar sendo rica, mas deve ""respirar"" melhor entre parágrafos e ser mais agradável de ler durante partidas longas.
+- **🧼 Menos restos raros na tela**
+  - Limpei casos em que podiam aparecer etiquetas, formatos estranhos, opções duplicadas ou textos que não deveriam chegar ao jogador.
+  - Em geral, a interface deve mostrar mais aventura e menos costuras.
+- **🔧 Mais estabilidade em sessões longas**
+  - Revisei sessões prolongadas jogando com criação de personagem, comércio, implantes, combate, itens de consumo, munição, carregamento de partida e continuidade.
+  - O objetivo deste bloco é claro: menos interrupções, menos incoerências e mais sensação de que o que você faz na história tem peso dentro da partida.",Testes de jogo amplos: ações conectadas a mecânicas reais
+romanian,"- **🧩 Acciones con consecuencias más realistas**
+  - He corregido casos en los que la aventura contaba que habías usado una habilidad, un objeto, un implante o un recurso, pero luego la ficha no siempre reflejaba bien lo ocurrido.
+  - A partir de ahora debería notarse mejor cuándo una acción consume aguante, munición o consumibles, cuándo afecta a un enemigo y cuándo el personaje gana progreso por lo que acaba de hacer.
+- **🛒 Comercio y servicios más fiables**
+  - Comprar, instalar implantes, usar consumibles y tratar con vendedores debería sentirse más consistente.
+  - Si la escena indica que hay un servicio disponible, el juego debería responder mejor con opciones útiles y menos momentos de ""vale, ¿y ahora dónde pulso?"".
+- **🌍 Fantasía y cyberpunk con identidad más clara**
+  - He reducido mezclas extrañas entre ambientaciones. Los mundos medievales deberían sonar más como mundos medievales, y los mundos cyberpunk deberían apoyarse más en tecnología, implantes, servicios urbanos y equipo propio de su estilo.
+  - Esto afecta principalmente a tiendas, escenas, recursos y detalles del entorno.
+- **🎲 Inicio de partida más agradable**
+  - La pantalla entre crear personaje y empezar la historia ya no debería mostrar bloques enormes de información interna.
+  - Ahora tiene aspecto de pantalla de carga de rol, cambia según la ambientación y puede mostrar consejos breves del manual mientras prepara la primera escena.
+  - También puede preparar una imagen relacionada con el contexto sin hacerte esperar más: si llega a tiempo, aparece; si no, la partida empieza igualmente.
+- **🛡️ Derrota e inconsciencia mejor resueltas**
+  - He corregido qué ocurre al llegar a 0 PV según la dificultad.
+  - En fácil y normal, el personaje cae inconsciente y la historia continúa con un salto temporal contextual. En difícil, si falla la resistencia, la partida muestra una muerte contextual y una pantalla clara para aceptar y volver a la selección.
+  - Esto evita que la aventura siga como si nada cuando el personaje ya estaba en el suelo. Que una derrota duela está bien; que el juego la ignore, no tanto.
+- **🧠 Partidas con más memoria**
+  - Al cargar una partida o avanzar varios turnos, el juego debería continuar mejor desde lo último que viste en pantalla.
+  - También debería recordar mejor la intención real de tus decisiones, reduciendo respuestas que parecen volver atrás o interpretar una opción de forma demasiado genérica.
+- **✂️ Narración más cómoda de leer**
+  - He ajustado las respuestas de exploración para que no vuelvan a convertirse en paredes enormes de texto.
+  - La narración puede seguir siendo rica, pero debería respirar mejor entre párrafos y ser más amable de leer durante partidas largas.
+- **🧼 Menos restos raros en pantalla**
+  - He limpiado casos en los que podían aparecer etiquetas, formatos extraños, opciones duplicadas o textos que no deberían llegar al jugador.
+  - En general, la interfaz debería mostrar más aventura y menos costuras.
+- **🔧 Más estabilidad en sesiones largas**
+  - He revisado sesiones prolongadas jugando con creación de personaje, comercio, implantes, combate, consumibles, munición, carga de partida y continuidad.
+  - El objetivo de este bloque es claro: menos interrupciones, menos incoherencias y más sensación de que lo que haces en la historia tiene peso dentro de la partida.",Test de larga duración: acciones conectadas a mecánicas reales
+russian,"- **🧩 Действия с более реалистичными последствиями**
+  - Исправлены случаи, когда сюжет сообщал о использовании навыка, предмета, импланта или ресурса, но затем карточка персонажа не всегда корректно отражала произошедшее.
+  - Теперь должно быть лучше заметно, когда действие тратит выносливость, патроны или расходники, когда оно влияет на врага и когда персонаж получает прогресс за только что совершенное.
+- **🛒 Более надежная торговля и услуги**
+  - Покупка, установка имплантов, использование расходников и общение с торговцами должно ощущаться более последовательно.
+  - Если сцена сообщает о наличии услуги, игра должна лучше реагировать полезными опциями и реже создавать ситуации «ладно, а теперь куда нажимать?».
+- **🌍 Фэнтези и киберпанк с более четкой идентичностью**
+  - Уменьшено количество странных смешений сеттингов. Медиевальные миры должны звучать более как медиевальные миры, а киберпанковые миры должны больше опираться на технологии, импланты, городские услуги и собственное оборудование в стиле жанра.
+  - Это касается в основном магазинов, сцен, ресурсов и деталей окружения.
+- **🎲 Более приятный старт игры**
+  - Экран между созданием персонажа и началом истории больше не должен показывать огромные блоки внутренней информации.
+  - Теперь он выглядит как экран загрузки ролевой игры, меняется в зависимости от сеттинга и может показывать краткие советы из руководства во время подготовки первой сцены.
+  - Также он может подготовить изображение, связанное с контекстом, не заставляя вас ждать дольше: если успевает, оно появляется; если нет, игра начинается в любом случае.
+- **🛡️ Улучшенное решение поражения и бессознательного состояния**
+  - Исправлено то, что происходит при достижении 0 ОЗ в зависимости от сложности.
+  - На легкой и нормальной сложности персонаж падает в обморок, а история продолжается с временным скачком в контексте. На высокой сложности, если сопротивление не проходит, игра показывает контекстную смерть и четкий экран для принятия и возврата к выбору.
+  - Это предотвращает ситуацию, когда приключение продолжается как ни в чем не бывало, хотя персонаж уже лежит на земле. То, что поражение должно болеть, нормально; то, что игра его игнорирует, — нет.
+- **🧩 Игры с большей памятью**
+  - При загрузке игры или переходе через несколько ходов игра должна лучше продолжать с того места, где вы остановились на экране.
+  - Также она должна лучше помнить реальное намерение ваших решений, уменьшая ответы, которые кажутся возвратом назад или слишком общим толкованием опции.
+- **✂️ Удобнее читаемая наррация**
+  - Отрегулированы ответы исследования, чтобы они больше не превращались в огромные стены текста.
+  - Наррация может оставаться богатой, но должна лучше «дышать» между абзацами и быть более удобной для чтения во время длительных игр.
+- **🧼 Меньше редких остатков на экране**
+  - Убраны случаи, когда могли появляться метки, странные форматы, дублированные опции или текст, который не должен был доходить до игрока.
+  - В целом интерфейс должен показывать больше приключения и меньше швов.
+- **🔧 Больше стабильности в длительных сессиях**
+  - Пересмотрены длительные сессии игры с созданием персонажа, торговлей, имплантами, боем, расходниками, патронами, загрузкой игры и продолжением.
+  - Цель этого блока ясна: меньше прерываний, меньше несоответствий и больше ощущения того, что то, что вы делаете в истории, имеет вес внутри игры.",Тестирование: связанные действия и реальные механики
+swedish,"- **🧩 Acciones con consecuencias más realistas**
+  - He corregido casos en los que la aventura narraba que habías usado una habilidad, un objeto, un implante o un recurso, pero luego la ficha no siempre reflejaba bien lo ocurrido.
+  - A partir de ahora debería notarse mejor cuándo una acción consume aguante, munición o consumibles, cuándo afecta a un enemigo y cuándo el personaje gana progreso por lo que acaba de hacer.
+- **🛒 Comercio y servicios más fiables**
+  - Comprar, instalar implantes, usar consumibles y tratar con vendedores debería sentirse más consistente.
+  - Si la escena indica que hay un servicio disponible, el juego debería responder mejor con opciones útiles y menos momentos de ""vale, ¿y ahora dónde pulso?"".
+- **🌍 Fantasía y cyberpunk con identidad más clara**
+  - He reducido mezclas raras entre ambientaciones. Los mundos medievales deberían hablar más como mundos medievales, y los mundos cyberpunk deberían apoyarse más en tecnología, implantes, servicios urbanos y equipo propio de su estilo.
+  - Esto afecta sobre todo a tiendas, escenas, recursos y detalles del entorno.
+- **🎲 Inicio de partida más agradable**
+  - La pantalla entre crear personaje y empezar la historia ya no debería mostrar bloques enormes de información interna.
+  - Ahora tiene aspecto de pantalla de carga de rol, cambia según la ambientación y puede mostrar consejos breves del manual mientras prepara la primera escena.
+  - También puede preparar una imagen relacionada con el contexto sin hacerte esperar más: si llega a tiempo, aparece; si no, la partida empieza igualmente.
+- **🛡️ Derrota e inconsciencia mejor resueltas**
+  - He corregido qué ocurre al llegar a 0 PV según la dificultad.
+  - En fácil y normal, el personaje cae inconsciente y la historia continúa con un salto temporal contextual. En difícil, si falla la resistencia, la partida muestra una muerte contextual y una pantalla clara para aceptar y volver a la selección.
+  - Esto evita que la aventura siga como si nada cuando el personaje ya estaba en el suelo. Que una derrota duela está bien; que el juego la ignore, no tanto.
+- **🧠 Partidas con más memoria**
+  - Al cargar una partida o avanzar varios turnos, el juego debería continuar mejor desde lo último que viste en pantalla.
+  - También debería recordar mejor la intención real de tus decisiones, reduciendo respuestas que parecen volver atrás o interpretar una opción de forma demasiado genérica.
+- **✂️ Narración más cómoda de leer**
+  - He ajustado las respuestas de exploración para que no vuelvan a convertirse en paredes enormes de texto.
+  - La narración puede seguir siendo rica, pero debería respirar mejor entre párrafos y ser más amable de leer durante partidas largas.
+- **🧼 Menos restos raros en pantalla**
+  - He limpiado casos en los que podían aparecer etiquetas, formatos extraños, opciones duplicadas o textos que no deberían llegar al jugador.
+  - En general, la interfaz debería mostrar más aventura y menos costuras.
+- **🔧 Más estabilidad en sesiones largas**
+  - He revisado sesiones prolongadas jugando con creación de personaje, comercio, implantes, combate, consumibles, munición, carga de partida y continuidad.
+  - El objetivo de este bloque es claro: menos interrupciones, menos incoherencias y más sensación de que lo que haces en la historia tiene peso dentro de la partida.",Test de juego prolongado: acciones conectadas a mecánicas reales
+thai,"- **🧩 การกระทำที่มีผลลัพธ์ที่สมจริงยิ่งขึ้น**
+  - แก้ไขกรณีหลายกรณีที่เรื่องราวบอกว่าคุณใช้ทักษะ วัตถุ การฝังชิป หรือทรัพยากรไปแล้ว แต่แผ่นข้อมูลกลับไม่สะท้อนสิ่งที่เกิดขึ้นอย่างถูกต้องเสมอไป
+  - จากนี้ไป ควรจะสังเกตเห็นได้ชัดเจนขึ้นว่าเมื่อใดที่การกระทำใช้ความอดทน กระสุน หรือของใช้ เมื่อใดที่ส่งผลกระทบต่อศัตรู และเมื่อใดที่ตัวละครได้รับความก้าวหน้าจากสิ่งที่เพิ่งทำไป
+- **🛒 การค้าและบริการที่เชื่อถือได้มากขึ้น**
+  - การซื้อ ติดตั้งการฝังชิป ใช้ของใช้ และติดต่อผู้ขาย ควรจะรู้สึกมีความสม่ำเสมอมากขึ้น
+  - หากฉากบอกว่ามีบริการพร้อมให้บริการ เกมควรจะตอบสนองด้วยตัวเลือกที่เป็นประโยชน์มากขึ้น และลดช่วงเวลาของ ""โอเค แล้วตอนนี้ฉันต้องกดตรงไหน?""
+- **🌍 แฟนตาซีและไซเบอร์พังค์ที่มีอัตลักษณ์ชัดเจนขึ้น**
+  - ลดการผสมผสานบรรยากาศที่แปลกประหลาดลง โลกยุคกลางควรจะพูดภาษาของโลกยุคกลางมากขึ้น และโลกไซเบอร์พังค์ควรจะพึ่งพาเทคโนโลยี การฝังชิป บริการในเมือง และอุปกรณ์ที่เป็นเอกลักษณ์ของสไตล์นั้นๆ มากขึ้น
+  - สิ่งนี้ส่งผลกระทบต่อร้านค้า ฉาก ทรัพยากร และรายละเอียดของสภาพแวดล้อมเป็นหลัก
+- **🎲 การเริ่มต้นเกมที่ดีขึ้น**
+  - หน้าจอระหว่างสร้างตัวละครและเริ่มเรื่องราวไม่ควรจะแสดงข้อมูลภายในขนาดใหญ่เป็นบล็อกๆ อีกต่อไป
+  - ตอนนี้จะมีลักษณะเหมือนหน้าโหลดบทบาท เปลี่ยนไปตามบรรยากาศ และอาจแสดงคำแนะนำสั้นๆ จากคู่มือขณะเตรียมฉากแรก
+  - นอกจากนี้ยังสามารถเตรียมรูปภาพที่เกี่ยวข้องกับบริบทได้โดยไม่ทำให้คุณรอคอยนาน: หากทันเวลา จะปรากฏขึ้น; หากไม่ เกมก็ยังคงเริ่มต้นได้เช่นเดิม
+- **🛡️ การจัดการความพ่ายแพ้และความหมดสติที่ดีขึ้น**
+  - แก้ไขสิ่งที่เกิดขึ้นเมื่อค่าพลังชีวิต (PV) เหลือ 0 ตามระดับความยาก
+  - ในระดับง่ายและปานกลาง ตัวละครจะหมดสติ และเรื่องราวจะดำเนินต่อไปด้วยการกระโดดข้ามเวลาตามบริบท ในระดับยาก หากการดื้อแพ่งล้มเหลว เกมจะแสดงการตายตามบริบทและหน้าจอที่ชัดเจนสำหรับการยอมรับและกลับไปที่การเลือก
+  - สิ่งนี้ป้องกันไม่ให้เรื่องราวดำเนินต่อไปราวกับไม่มีอะไรเกิดขึ้นเมื่อตัวละครกำลังนอนอยู่บนพื้น การที่ความพ่ายแพ้เจ็บปวดเป็นเรื่องดี; แต่การที่เกมเพิกเฉยต่อมัน ไม่ใช่เรื่องดีเท่าไร
+- **🧩 เกมที่มีหน่วยความจำมากขึ้น**
+  - เมื่อโหลดเกมหรือข้ามหลายรอบ การเกมควรจะดำเนินต่อได้ดีขึ้นจากสิ่งที่คุณเห็นบนหน้าจอครั้งล่าสุด
+  - นอกจากนี้ควรจะจำเจตนาจริงของคุณในการตัดสินใจได้ดีขึ้น ลดการตอบสนองที่ดูเหมือนย้อนหลังหรือตีความตัวเลือกในลักษณะทั่วไปเกินไป
+- **✂️ การเล่าเรื่องที่ยากต่อการอ่านน้อยลง**
+  - ปรับการตอบสนองของการสำรวจใหม่เพื่อไม่ให้กลายเป็นกำแพงข้อความขนาดใหญ่อีกต่อไป
+  - การเล่าเรื่องยังคงสามารถมีความอุดมสมบูรณ์ได้ แต่ควรจะหายใจได้ดีขึ้นระหว่างย่อหน้า และอ่านง่ายขึ้นในช่วงเกมที่ยาวนาน
+- **🧼 มีเศษซากแปลกๆ บนหน้าจอลดลง**
+  - ทำความสะอาดกรณีต่างๆ ที่อาจปรากฏป้ายกำกับ รูปแบบแปลกๆ ตัวเลือกที่ซ้ำซ้อน หรือข้อความที่ไม่ควรไปถึงผู้เล่น
+  - โดยรวมแล้ว อินเทอร์เฟซควรจะแสดงเรื่องราวมากขึ้นและแสดงรอยต่อให้น้อยลง
+- **🔧 ความเสถียรมากขึ้นในเซสชันที่ยาวนาน**
+  - ทบทวนเซสชันที่ยาวนานโดยการเล่นการสร้างตัวละคร การค้า การฝังชิป การต่อสู้ ของใช้ กระสุน การโหลดเกม และความต่อเนื่อง
+  - เป้าหมายของบล็อกนี้ชัดเจน: การหยุดชะงักน้อยลง ความไม่สอดคล้องน้อยลง และความรู้สึกมากขึ้นว่าสิ่งที่ทำในเรื่องราวมีน้ำหนักภายในเกม",การทดสอบเล่นระยะยาว: การกระทำที่เชื่อมโยงกับกลไกจริง
+turkish,"- **🧩 Acciones con consecuencias más reales**
+  - He corregido casos en los que la aventura contaba que habías usado una habilidad, un objeto, un implante o un recurso, pero luego la ficha no siempre reflejaba bien lo ocurrido.
+  - A partir de ahora debería notarse mejor cuándo una acción consume aguante, munición o consumibles, cuándo afecta a un enemigo y cuándo el personaje gana progreso por lo que acaba de hacer.
+- **🛒 Comercio y servicios más fiables**
+  - Comprar, instalar implantes, usar consumibles y tratar con vendedores debería sentirse más consistente.
+  - Si la escena dice que hay un servicio disponible, el juego debería responder mejor con opciones útiles y menos momentos de ""vale, ¿y ahora dónde pulso?"".
+- **🌍 Fantasía y cyberpunk con identidad más clara**
+  - He reducido mezclas raras entre ambientaciones. Los mundos medievales deberían hablar más como mundos medievales, y los mundos cyberpunk deberían apoyarse más en tecnología, implantes, servicios urbanos y equipo propio de su estilo.
+  - Esto afecta sobre todo a tiendas, escenas, recursos y detalles del entorno.
+- **🎲 Inicio de partida más agradable**
+  - La pantalla entre crear personaje y empezar la historia ya no debería enseñar bloques enormes de información interna.
+  - Ahora tiene aspecto de pantalla de carga de rol, cambia según la ambientación y puede mostrar consejos breves del manual mientras prepara la primera escena.
+  - También puede preparar una imagen relacionada con el contexto sin hacerte esperar más: si llega a tiempo, aparece; si no, la partida empieza igualmente.
+- **🛡️ Derrota e inconsciencia mejor resueltas**
+  - He corregido qué ocurre al llegar a 0 PV según la dificultad.
+  - En fácil y normal, el personaje cae inconsciente y la historia continúa con un salto temporal contextual. En difícil, si falla la resistencia, la partida muestra una muerte contextual y una pantalla clara para aceptar y volver a selección.
+  - Esto evita que la aventura siga como si nada cuando el personaje ya estaba en el suelo. Que una derrota duela está bien; que el juego la ignore, no tanto.
+- **🧠 Partidas con más memoria**
+  - Al cargar una partida o avanzar varios turnos, el juego debería continuar mejor desde lo último que viste en pantalla.
+  - También debería recordar mejor la intención real de tus decisiones, reduciendo respuestas que parecen volver atrás o interpretar una opción de forma demasiado genérica.
+- **✂️ Narración más cómoda de leer**
+  - He ajustado las respuestas de exploración para que no vuelvan a convertirse en paredes enormes de texto.
+  - La narración puede seguir siendo rica, pero debería respirar mejor entre párrafos y ser más amable de leer durante partidas largas.
+- **🧼 Menos restos raros en pantalla**
+  - He limpiado casos en los que podían aparecer etiquetas, formatos extraños, opciones duplicadas o textos que no deberían llegar al jugador.
+  - En general, la interfaz debería mostrar más aventura y menos costuras.
+- **🔧 Más estabilidad en sesiones largas**
+  - He revisado sesiones prolongadas jugando con creación de personaje, comercio, implantes, combate, consumibles, munición, carga de partida y continuidad.
+  - El objetivo de este bloque es claro: menos interrupciones, menos incoherencias y más sensación de que lo que haces en la historia tiene peso dentro de la partida.",Test de juego ampliado: acciones conectadas a mecánicas reales
+ukrainian,"- **🧩 Дії з більш реальними наслідками**
+  - Виправлено випадки, коли історія повідомляла, що ви використали навичку, предмет, імплант або ресурс, але картка не завжди коректно відображала те, що сталося.
+  - Зараз має краще помітатися, коли дія витрачає витривалість, патрони чи вживані предмети, коли вона впливає на ворога та коли персонаж отримує прогрес завдяки останнім діям.
+- **🛒 Надійніший торгівля та послуги**
+  - Купівля, встановлення імплантів, використання вживаних предметів та спілкування з продавцями мають відчуватися більш послідовними.
+  - Якщо сцена вказує на наявність послуги, гра має краще реагувати корисними варіантами та менше моментів «добре, а тепер де натиснути?».
+- **🌍 Чіткіша ідентичність фентезі та кіберпанку**
+  - Зменшено рідкісні змішування середовищ. Середньовічні світи мають більше нагадувати середньовіччя, а кіберпанк-світи — більше спиратися на технології, імпланти, міські послуги та унікальне обладнання свого стилю.
+  - Це стосується переважно магазинів, сцен, ресурсів та деталей оточення.
+- **🎲 Приємніший старт гри**
+  - Екран між створенням персонажа та початком історії більше не має показувати величезні блоки внутрішньої інформації.
+  - Зараз він виглядає як екран завантаження ролі, змінюється залежно від середовища та може показувати короткі поради з підручника під час підготовки першої сцени.
+  - Також може підготувати зображення, пов'язане з контекстом, не затримуючи вас: якщо встигає — з'являється; якщо ні — гра починається як і раніше.
+- **🛡️ Краще вирішені поразка та безсвідомість**
+  - Виправлено те, що відбувається при досягненні 0 ОЗ залежно від складності.
+  - На легкій та середній складності персонаж втрачає свідомість, а історія продовжується з часовим стрибком у контексті. На складній, якщо не вдається витримати удар, гра показує контекстну смерть та чіткий екран для прийняття рішення та повернення до вибору.
+  - Це уникне ситуації, коли історія продовжується ніби нічого не сталося, тоді як персонаж вже лежав на землі. Те, що поразка болить — це добре; те, що гра її ігнорує — це не дуже.
+- **🧩 Граві з більшою пам'яттю**
+  - При завантаженні гри або переході кількох ходів гра має краще продовжуватися від того, що ви бачили на екрані.
+  - Також має краще запам'ятовувати реальне намір ваших рішень, зменшуючи відповіді, які здаються поверненням назад або занадто загальною інтерпретацією варіанту.
+- **✂️ Зручніша для читання розповідь**
+  - Налаштовано відповіді на дослідження, щоб вони більше не перетворювалися на величезні стіни тексту.
+  - Розповідь може залишатися багатшою, але має краще «дихати» між абзацами та бути зручнішою для читання під час довгих ігор.
+- **🧼 Менше рідкісних залишків на екрані**
+  - Очистлено випадки, коли могли з'являтися мітки, дивні форматування, дубльовані варіанти або тексти, які не мали б потрапляти до гравця.
+  - Загалом інтерфейс має показувати більше історії та менше швів.
+- **🔧 Більша стабільність у довгих сесіях**
+  - Перевірено тривалі сесії гри зі створенням персонажа, торгівлею, імплантами, боєм, вживаними предметами, патронами, завантаженням гри та продовженням.
+  - Мета цього блоку чітка: менше перерв, менше невідповідностей та більше відчуття того, що те, що ви робите в історії, має вагу всередині гри.",Тестування гри: дії пов'язані з реальними механіками
+vietnamese,"- **🧩 Acciones con consecuencias más reales**
+  - He corregido casos en los que la aventura contaba que habías usado una habilidad, un objeto, un implante o un recurso, pero luego la ficha no siempre reflejaba bien lo ocurrido.
+  - A partir de ahora debería notarse mejor cuándo una acción consume aguante, munición o consumibles, cuándo afecta a un enemigo y cuándo el personaje gana progreso por lo que acaba de hacer.
+- **🛒 Comercio y servicios más fiables**
+  - Comprar, instalar implantes, usar consumibles y tratar con vendedores debería sentirse más consistente.
+  - Si la escena dice que hay un servicio disponible, el juego debería responder mejor con opciones útiles y menos momentos de ""vale, ¿y ahora dónde pulso?"".
+- **🌍 Fantasía y cyberpunk con identidad más clara**
+  - He reducido mezclas raras entre ambientaciones. Los mundos medievales deberían hablar más como mundos medievales, y los mundos cyberpunk deberían apoyarse más en tecnología, implantes, servicios urbanos y equipo propio de su estilo.
+  - Esto afecta sobre todo a tiendas, escenas, recursos y detalles del entorno.
+- **🎲 Inicio de partida más agradable**
+  - La pantalla entre crear personaje y empezar la historia ya no debería enseñar bloques enormes de información interna.
+  - Ahora tiene aspecto de pantalla de carga de rol, cambia según la ambientación y puede mostrar consejos breves del manual mientras prepara la primera escena.
+  - También puede preparar una imagen relacionada con el contexto sin hacerte esperar más: si llega a tiempo, aparece; si no, la partida empieza igualmente.
+- **🛡️ Derrota e inconsciencia mejor resueltas**
+  - He corregido qué ocurre al llegar a 0 PV según la dificultad.
+  - En fácil y normal, el personaje cae inconsciente y la historia continúa con un salto temporal contextual. En difícil, si falla la resistencia, la partida muestra una muerte contextual y una pantalla clara para aceptar y volver a selección.
+  - Esto evita que la aventura siga como si nada cuando el personaje ya estaba en el suelo. Que una derrota duela está bien; que el juego la ignore, no tanto.
+- **🧠 Partidas con más memoria**
+  - Al cargar una partida o avanzar varios turnos, el juego debería continuar mejor desde lo último que viste en pantalla.
+  - También debería recordar mejor la intención real de tus decisiones, reduciendo respuestas que parecen volver atrás o interpretar una opción de forma demasiado genérica.
+- **✂️ Narración más cómoda de leer**
+  - He ajustado las respuestas de exploración para que no vuelvan a convertirse en paredes enormes de texto.
+  - La narración puede seguir siendo rica, pero debería respirar mejor entre párrafos y ser más amable de leer durante partidas largas.
+- **🧼 Menos restos raros en pantalla**
+  - He limpiado casos en los que podían aparecer etiquetas, formatos extraños, opciones duplicadas o textos que no deberían llegar al jugador.
+  - En general, la interfaz debería mostrar más aventura y menos costuras.
+- **🔧 Más estabilidad en sesiones largas**
+  - He revisado sesiones prolongadas jugando con creación de personaje, comercio, implantes, combate, consumibles, munición, carga de partida y continuidad.
+  - El objetivo de este bloque es claro: menos interrupciones, menos incoherencias y más sensación de que lo que haces en la historia tiene peso dentro de la partida.",Juegos de prueba largos: acciones conectadas a mecánicas reales
+schinese,"- **🧩 后果更真实的行动**
+  - 已修复冒险中叙述你使用了技能、物品、植入物或资源，但角色卡未能准确反映情况的案例。
+  - 从现在起，行动消耗耐力、弹药或消耗品、影响敌人以及角色因行动获得进度等情况应更加清晰明确。
+- **🛒 更可靠的贸易与服务**
+  - 购买、安装植入物、使用消耗品以及与商人交易的操作应感觉更加一致。
+  - 如果场景显示有可用服务，游戏应能更好地提供有用的选项，减少“好吧，那我该点哪里？”的困惑时刻。
+- **🌍 身份更鲜明的奇幻与赛博朋克**
+  - 已减少不同背景设定之间的生硬混搭。中世纪世界应更具中世纪特色，而赛博朋克世界则应更多依托技术、植入物、城市服务及符合其风格的专属装备。
+  - 这主要影响商店、场景、资源及环境细节。
+- **🎲 更愉快的开局体验**
+  - 创建角色与开始故事之间的屏幕不再展示巨大的内部信息块。
+  - 现在它看起来像角色扮演游戏的加载界面，会根据背景设定变化，并在准备第一幕时展示手册中的简短建议。
+  - 它还可以准备一张与上下文相关的图片而不让你久等：如果时间允许则显示；否则，游戏照常开始。
+- **🛡️ 更完善的败北与昏迷处理**
+  - 已根据难度修正生命值归零时的情况。
+  - 在简单和正常难度下，角色会陷入昏迷，故事通过上下文的时间跳跃继续；在困难难度下，若抵抗失败，游戏将展示情境化的死亡画面及清晰的接受并返回选择菜单的界面。
+  - 这避免了角色已倒地而冒险却仿佛无事发生的情况。让失败感到痛苦是合理的；让游戏无视失败则不然。
+- **🧠 记忆更佳的战役**
+  - 加载战役或跳过多个回合时，游戏应能更好地从屏幕上最后看到的位置继续。
+  - 它还应更好地记住你决策的真实意图，减少出现看似倒退或对选项进行过于泛化解读的情况。
+- **✂️ 更易阅读的叙述**
+  - 已调整探索回复，避免再次变成巨大的文字墙。
+  - 叙述依然可以丰富，但在段落之间应呼吸感更强，在长时间战役中更易阅读。
+- **🧼 屏幕上的罕见残留更少**
+  - 已清理可能导致标签、奇怪格式、重复选项或不该到达玩家手中的文本出现的案例。
+  - 总体而言，界面应展示更多冒险内容，减少接缝感。
+- **🔧 长时间会话更稳定**
+  - 已通过创建角色、贸易、植入物、战斗、消耗品、弹药、战役加载及连续性等环节进行了长时间会话的测试。
+  - 本更新的目标十分明确：减少中断，减少不一致，增强你在故事中行动在战役中分量的感觉。",长期测试：将操作与真实机制相连
+tchinese,"- **🧩 更具真實後果的行動**
+  - 已修正冒險敘事中提及你使用了技能、物品、植入物或資源，但角色卡卻未能準確反映情況的錯誤。
+  - 從現在起，行動消耗體力、子彈或消耗品、影響敵人以及角色因行動獲得進度等情況，應該會更加清晰明確。
+- **🛒 更可靠的貿易與服務**
+  - 購買、安裝植入物、使用消耗品以及與商人互動，應該會感覺更加一致。
+  - 若場景顯示有可用服務，遊戲應能更好地提供實用選項，減少「好吧，那現在按哪裡？」的困惑時刻。
+- **🌍 風格更鮮明的奇幻與賽博龐克**
+  - 已減少不同背景設定間的奇怪混搭。中世紀世界應更具中世紀特色，而賽博龐克世界則應更依賴科技、植入物、都市服務及專屬裝備。
+  - 此調整主要影響商店、場景、資源及環境細節。
+- **🎲 更愉快的遊戲開始體驗**
+  - 建立角色與開始故事之間的畫面，不再顯示龐大的內部資訊區塊。
+  - 現在它看起來像角色扮演遊戲的載入畫面，會隨背景設定變化，並在準備首場場景時顯示簡短的書籍建議。
+  - 同時，它也能準備與情境相關的圖片而不讓你久等：若及時完成則顯示；若未完成，遊戲仍會正常開始。
+- **🛡️ 更妥善處理的敗北與昏迷**
+  - 已根據難度修正生命值歸零時的處理方式。
+  - 在簡單與普通難度下，角色會陷入昏迷，故事則透過情境時間跳躍繼續。在困難難度下，若抵抗失敗，遊戲將顯示情境死亡畫面及清晰的接受與重選介面。
+  - 這避免了冒險在角色已倒地時仍如常進行。讓敗北感到痛楚是合理的；但遊戲忽視敗北則不可取。
+- **🧠 記憶力更強的遊戲進行**
+  - 載入遊戲或推進多個回合時，遊戲應能更好地從你最後在畫面上看到的位置繼續。
+  - 同時，它應能更準確地記住你決策的真實意圖，減少看似倒退或對選項進行過於泛化解讀的回應。
+- **✂️ 更易閱讀的敘事**
+  - 已調整探索回應，避免再次出現巨大的文字牆。
+  - 敘事仍可豐富多彩，但段落間應更通順，在長時間遊戲中更易於閱讀。
+- **🧼 減少螢幕上的異常殘留**
+  - 已清理可能出現標籤、異常格式、重複選項或不應顯示給玩家的文字等情況。
+  - 總體而言，介面應展現更多冒險內容，減少技術瑕疵。
+- **🔧 更穩定的長時會話**
+  - 已針對包含角色建立、貿易、植入物、戰鬥、消耗品、子彈、遊戲載入及連續性的長時間會話進行審查。
+  - 此更新區塊的目標十分明確：減少中斷、減少不一致性，並增強你在故事中行動對遊戲進程影響的真實感。",測試版更新：將實際機制與行動緊密連結

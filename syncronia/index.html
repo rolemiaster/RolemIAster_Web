@@ -587,7 +587,7 @@
                     data-i18n="btn_beta">Unete a la Beta</a>
                 <a href="https://play.google.com/apps/testing/com.rolemiaster.syncronia" class="btn-sync btn-sync-primary" target="_blank"
                     data-i18n="btn_play">Descargar APK</a>
-                <a href="https://rolemiaster.com/syncronia/Release/SyncronIA_Setup.exe" class="btn-sync btn-sync-primary"
+                <a id="btn-download-pc" href="https://rolemiaster.com/syncronia/Release/SyncronIA_Setup_v0.20.0.exe" class="btn-sync btn-sync-primary"
                     data-i18n="btn_pc">Descargar App PC</a>
                 <a href="privacy.html" class="btn-sync btn-sync-secondary"
                     data-i18n="btn_privacy">Privacidad</a>
@@ -774,7 +774,29 @@
         document.addEventListener('DOMContentLoaded', () => {
             changeLang(currentLang);
             document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+            loadLatestDesktopDownload();
         });
+
+        async function loadLatestDesktopDownload() {
+            const button = document.getElementById('btn-download-pc');
+            if (!button) {
+                return;
+            }
+
+            try {
+                const response = await fetch('Release/latest.json?ts=' + Date.now(), { cache: 'no-store' });
+                if (!response.ok) {
+                    return;
+                }
+
+                const manifest = await response.json();
+                if (manifest && typeof manifest.download_url === 'string' && manifest.download_url.trim()) {
+                    button.href = manifest.download_url.trim();
+                }
+            } catch (error) {
+                console.warn('Could not load SyncronIA desktop release manifest', error);
+            }
+        }
     </script>
 
 </body>
