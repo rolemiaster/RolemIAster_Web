@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -242,22 +242,88 @@
         }
 
         .hero-buttons {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+            align-items: stretch;
+            margin-top: 1.8rem;
+        }
+
+        .download-step {
             display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 0.85rem;
+            min-height: 188px;
+            padding: 1rem;
+            border: 1px solid rgba(0, 229, 255, 0.18);
+            background: rgba(15, 15, 32, 0.72);
+            text-align: left;
+        }
+
+        .download-step-number {
+            width: 34px;
+            height: 34px;
+            display: inline-grid;
+            place-items: center;
+            border: 1px solid rgba(0, 229, 255, 0.45);
+            color: var(--cyan);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .download-step-title {
+            font-family: 'Orbitron', sans-serif;
+            color: #fff;
+            font-size: 0.82rem;
+            line-height: 1.35;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .download-step-action {
+            margin-top: auto;
+        }
+
+        .desktop-download-controls {
+            display: grid;
+            gap: 0.55rem;
+            margin-top: auto;
+        }
+
+        .download-source-select {
+            width: 100%;
+            min-height: 56px;
+            padding: 0 40px 0 18px;
+            border: 2px solid var(--cyan);
+            border-radius: 8px;
+            background: rgba(5, 5, 16, 0.95);
+            color: var(--text-main);
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            cursor: pointer;
         }
 
         .btn-sync {
+            width: 100%;
+            min-height: 56px;
             font-family: 'Rajdhani', sans-serif;
-            font-size: 1rem;
+            font-size: 0.95rem;
             font-weight: 700;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
+            line-height: 1.25;
+            text-align: center;
             text-transform: uppercase;
-            padding: 14px 36px;
+            padding: 14px 18px;
             border-radius: 8px;
             text-decoration: none;
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             transition: all 0.3s;
             cursor: pointer;
         }
@@ -527,6 +593,14 @@
                 width: 140px;
             }
 
+            .hero-buttons {
+                grid-template-columns: 1fr;
+            }
+
+            .download-step {
+                min-height: 0;
+            }
+
             .steps {
                 grid-template-columns: 1fr;
             }
@@ -599,19 +673,32 @@
                 </p>
             </div>
             
-            <div class="hero-buttons">
-                <a href="https://groups.google.com/u/2/g/rolemiaster-beta-testers" class="btn-sync btn-sync-secondary" target="_blank"
-                    data-i18n="btn_beta">Unete a la Beta</a>
-                <a href="https://play.google.com/apps/testing/com.rolemiaster.syncronia" class="btn-sync btn-sync-primary" target="_blank"
-                    data-i18n="btn_play">Descargar APK</a>
-                <a id="btn-download-store" href="https://apps.microsoft.com/detail/9PLG9KH25L3W" class="btn-sync btn-sync-primary" target="_blank" rel="noopener"
-                    data-i18n="btn_store">Descargar desde Microsoft Store</a>
-                <a id="btn-download-pc" href="https://rolemiaster.com/syncronia/Release/SyncronIA_Setup_v0.20.4.exe" class="btn-sync btn-sync-secondary"
-                    data-i18n="btn_pc">Instalador directo sin firma</a>
-                <a href="privacy.html" class="btn-sync btn-sync-secondary"
-                    data-i18n="btn_privacy">Privacidad</a>
+            <div class="hero-buttons" aria-label="Pasos de descarga">
+                <div class="download-step">
+                    <div class="download-step-number">1</div>
+                    <h2 class="download-step-title" data-i18n="step_beta_title">Unete a la beta</h2>
+                    <a href="https://groups.google.com/u/2/g/rolemiaster-beta-testers" class="btn-sync btn-sync-secondary download-step-action" target="_blank" rel="noopener"
+                        data-i18n="btn_beta">Unete a la Beta</a>
+                </div>
+                <div class="download-step">
+                    <div class="download-step-number">2</div>
+                    <h2 class="download-step-title" data-i18n="step_apk_title">Descarga APK</h2>
+                    <a href="https://play.google.com/apps/testing/com.rolemiaster.syncronia" class="btn-sync btn-sync-primary download-step-action" target="_blank" rel="noopener"
+                        data-i18n="btn_play">Descargar APK</a>
+                </div>
+                <div class="download-step">
+                    <div class="download-step-number">3</div>
+                    <h2 class="download-step-title" data-i18n="step_desktop_title">Descarga app de escritorio</h2>
+                    <div class="desktop-download-controls download-step-action">
+                        <select id="desktop-download-source" class="download-source-select" aria-label="Descargar app de escritorio desde">
+                            <option value="" data-i18n="download_select">Seleccionar</option>
+                            <option value="store" data-i18n="download_from_store">Microsoft Store</option>
+                            <option value="direct" data-i18n="download_from_direct">Instalador directo sin firma</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <p class="pc-beta-warning" data-i18n="pc_beta_warning">
+            <p class="pc-beta-warning" data-i18n="pc_beta_warning" hidden>
                 <b>Windows:</b> la descarga recomendada es Microsoft Store. Usa el instalador directo solo si necesitas la beta clasica; puede mostrar "Windows protegio su PC" por ausencia de firma Microsoft. En ese caso pulsa <b>Mas informacion</b> y despues <b>Ejecutar de todas formas</b>.
             </p>
         </div>
@@ -703,11 +790,14 @@
                 status_beta: "Apuntate a la beta cerrada",
                 beta_instructions_android: "<b>Android:</b> Unete primero al <a href=\"https://groups.google.com/u/2/g/rolemiaster-beta-testers\" style=\"color: var(--magenta);\">grupo de testers</a>, luego descarga la APK desde Google Play.",
                 beta_notice: "<i>Nota: Aunque veras precios de suscripcion, son ficticios para betatesters. Al instalar aparecera como fuente de pago una tarjeta regalo, por lo que nunca se te cobrara nada durante la beta.</i>",
+                step_beta_title: "Unete a la beta",
+                step_apk_title: "Descarga APK",
+                step_desktop_title: "Descarga app de escritorio",
                 btn_beta: "Unete a la Beta",
                 btn_play: "Descargar APK",
-                btn_store: "Descargar desde Microsoft Store",
-                btn_pc: "Instalador directo sin firma",
-                btn_privacy: "Privacidad",
+                download_select: "Seleccionar",
+                download_from_store: "Microsoft Store",
+                download_from_direct: "Instalador directo sin firma",
                 pc_beta_warning: "<b>Windows:</b> la descarga recomendada es Microsoft Store. Usa el instalador directo solo si necesitas la beta clasica; puede mostrar \"Windows protegio su PC\" por ausencia de firma Microsoft. En ese caso pulsa <b>Mas informacion</b> y despues <b>Ejecutar de todas formas</b>.",
                 benefits_title: "Que puedes hacer con SyncronIA",
                 ben1_title: "Sincroniza con todas tus nubes",
@@ -741,11 +831,14 @@
                 status_beta: "Join the Closed Beta",
                 beta_instructions_android: "<b>Android:</b> First join our <a href=\"https://groups.google.com/u/2/g/rolemiaster-beta-testers\" style=\"color: var(--magenta);\">testers group</a>, then download the APK from Google Play.",
                 beta_notice: "<i>Note: Although you will see subscription prices, they are fictitious for beta testers. During installation, a gift card will appear as the payment source, so you will never be charged during the beta.</i>",
+                step_beta_title: "Join the beta",
+                step_apk_title: "Download APK",
+                step_desktop_title: "Download desktop app",
                 btn_beta: "Join Beta",
                 btn_play: "Download APK",
-                btn_store: "Download from Microsoft Store",
-                btn_pc: "Unsigned direct installer",
-                btn_privacy: "Privacy",
+                download_select: "Select",
+                download_from_store: "Microsoft Store",
+                download_from_direct: "Unsigned direct installer",
                 pc_beta_warning: "<b>Windows:</b> Microsoft Store is the recommended download. Use the direct installer only if you need the classic beta; it may show \"Windows protected your PC\" because it is not signed by Microsoft. In that case, click <b>More info</b> and then <b>Run anyway</b>.",
                 benefits_title: "What you can do with SyncronIA",
                 ben1_title: "Sync with all your clouds",
@@ -775,6 +868,8 @@
         };
 
         let currentLang = localStorage.getItem('rolemiaster_lang') || 'es';
+        let directInstallerUrl = 'https://rolemiaster.com/syncronia/Release/SyncronIA_Setup_v0.20.4.exe';
+        const microsoftStoreUrl = 'https://apps.microsoft.com/detail/9PLG9KH25L3W';
 
         function changeLang(lang) {
             currentLang = lang;
@@ -787,6 +882,31 @@
                     el.innerHTML = translations[lang][key];
                 }
             });
+            updateDesktopDownload();
+        }
+
+        function updateDesktopDownload() {
+            const selector = document.getElementById('desktop-download-source');
+            const warning = document.querySelector('.pc-beta-warning');
+            if (!selector || !warning) {
+                return;
+            }
+
+            const isDirectInstaller = selector.value === 'direct';
+            warning.hidden = !isDirectInstaller;
+        }
+
+        function handleDesktopDownloadSelection() {
+            const selector = document.getElementById('desktop-download-source');
+            if (!selector || !selector.value) {
+                updateDesktopDownload();
+                return;
+            }
+
+            updateDesktopDownload();
+            const url = selector.value === 'direct' ? directInstallerUrl : microsoftStoreUrl;
+            window.open(url, selector.value === 'direct' ? '_self' : '_blank', 'noopener');
+            selector.value = '';
         }
 
         // ===== SCROLL ANIMATIONS =====
@@ -802,14 +922,11 @@
             changeLang(currentLang);
             document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
             loadLatestDesktopDownload();
+            document.getElementById('desktop-download-source')?.addEventListener('change', handleDesktopDownloadSelection);
+            updateDesktopDownload();
         });
 
         async function loadLatestDesktopDownload() {
-            const button = document.getElementById('btn-download-pc');
-            if (!button) {
-                return;
-            }
-
             try {
                 const response = await fetch('Release/latest.json?ts=' + Date.now(), { cache: 'no-store' });
                 if (!response.ok) {
@@ -818,7 +935,8 @@
 
                 const manifest = await response.json();
                 if (manifest && typeof manifest.download_url === 'string' && manifest.download_url.trim()) {
-                    button.href = manifest.download_url.trim();
+                    directInstallerUrl = manifest.download_url.trim();
+                    updateDesktopDownload();
                 }
             } catch (error) {
                 console.warn('Could not load SyncronIA desktop release manifest', error);
