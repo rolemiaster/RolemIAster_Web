@@ -232,9 +232,12 @@
         <h2 data-i18n="priv_s4_title">4. Almacenamiento en la Nube</h2>
         <p data-i18n="priv_s4_text">La sincronizacion de partidas guardadas (Cloud Save) utiliza exclusivamente la carpeta de datos de aplicacion de SU cuenta personal de Google Drive (auth/drive.appdata). Nosotros no tenemos acceso a sus archivos, no gestionamos servidores de datos ni podemos ver su contenido.</p>
 
-        <h2 data-i18n="priv_s5_title">5. Codigo Abierto y Contacto</h2>
-        <p data-i18n="priv_s5_text">EmulAItor es software de codigo abierto bajo licencia GPLv3. El codigo fuente es auditable publicamente.</p>
-        <p data-i18n="priv_s5_contact">Para dudas: <span id="contact-link"></span></p>
+        <h2 data-i18n="priv_s5_title">5. Pruebas y Compras</h2>
+        <p data-i18n="priv_s5_text">EmulAItor ofrece un periodo de prueba gratuito por tiempo limitado de juego acumulado. Tras agotarse el tiempo de prueba, requerira un pago a traves de Google Play para continuar su uso y desbloquear las funciones sin restriccion de tiempo. Todas las transacciones son procesadas de forma segura por Google.</p>
+
+        <h2 data-i18n="priv_s6_title">6. Codigo Abierto y Contacto</h2>
+        <p data-i18n="priv_s6_text">EmulAItor es software de codigo abierto bajo licencia GPLv3. El codigo fuente es auditable publicamente.</p>
+        <p data-i18n="priv_s6_contact">Para dudas: <span id="contact-link"></span></p>
     </div>
 
     <footer>
@@ -259,9 +262,11 @@
                 priv_s3_li3: "<strong>Mandos/Gamepads:</strong> Acceso a controladores Bluetooth y USB para la experiencia de juego.",
                 priv_s4_title: "4. Almacenamiento en la Nube",
                 priv_s4_text: "La sincronizacion de partidas guardadas (Cloud Save) utiliza exclusivamente la carpeta de datos de aplicacion de <strong>SU cuenta personal</strong> de Google Drive (auth/drive.appdata). Nosotros no tenemos acceso a sus archivos, no gestionamos servidores de datos ni podemos ver su contenido.",
-                priv_s5_title: "5. Codigo Abierto y Contacto",
-                priv_s5_text: "EmulAItor es software de codigo abierto bajo licencia GPLv3. El codigo fuente es auditable publicamente.",
-                priv_s5_contact: "Para dudas: <span id='contact-link-es'></span>"
+                priv_s5_title: "5. Pruebas y Compras",
+                priv_s5_text: "EmulAItor ofrece un periodo de prueba gratuito por tiempo limitado de juego acumulado. Tras agotarse el tiempo de prueba, requerira un pago a traves de Google Play para continuar su uso y desbloquear las funciones sin restriccion de tiempo. Todas las transacciones son procesadas de forma segura por Google.",
+                priv_s6_title: "6. Codigo Abierto y Contacto",
+                priv_s6_text: "EmulAItor es software de codigo abierto bajo licencia GPLv3. El codigo fuente es auditable publicamente.",
+                priv_s6_contact: "Para dudas: <span id='contact-link-es'></span>"
             },
             en: {
                 btn_back: "\u2190 EmulAItor",
@@ -279,9 +284,11 @@
                 priv_s3_li3: "<strong>Gamepads:</strong> Access to Bluetooth and USB controllers for the gaming experience.",
                 priv_s4_title: "4. Cloud Storage",
                 priv_s4_text: "Cloud Save synchronization exclusively uses the application data folder of <strong>YOUR personal</strong> Google Drive account (auth/drive.appdata). We do not have access to your files, we do not manage data servers, and we cannot see your content.",
-                priv_s5_title: "5. Open Source & Contact",
-                priv_s5_text: "EmulAItor is open-source software under the GPLv3 license. The source code is publicly auditable.",
-                priv_s5_contact: "Questions: <span id='contact-link-en'></span>"
+                priv_s5_title: "5. Trials and Purchases",
+                priv_s5_text: "EmulAItor offers a free trial period based on cumulative playtime. Once the trial time runs out, a payment via Google Play is required to continue using the app and unlock its features without time restrictions. All transactions are securely processed by Google.",
+                priv_s6_title: "6. Open Source & Contact",
+                priv_s6_text: "EmulAItor is open-source software under the GPLv3 license. The source code is publicly auditable.",
+                priv_s6_contact: "Questions: <span id='contact-link-en'></span>"
             }
         };
 
@@ -298,7 +305,7 @@
                 const key = el.getAttribute('data-i18n');
                 if (translations[lang] && translations[lang][key]) {
                     el.innerHTML = translations[lang][key];
-                    if (key === 'priv_s5_contact') {
+                    if (key === 'priv_s6_contact') {
                         const span = el.querySelector('#contact-link-es') || el.querySelector('#contact-link-en');
                         if (span) span.innerHTML = emailLink;
                     }
