@@ -510,6 +510,82 @@
             text-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
         }
 
+        /* ===== REVIEWS CAROUSEL ===== */
+        .reviews-section {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: var(--bg-black);
+            border-top: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        .reviews-section h2 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: clamp(0.8rem, 2vw, 1.1rem);
+            color: var(--neon-green);
+            margin-bottom: 3rem;
+            text-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+        }
+
+        .carousel-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        }
+
+        .carousel-track {
+            display: flex;
+            gap: 2rem;
+            animation: scroll 20s linear infinite;
+            width: max-content;
+        }
+
+        .carousel-track:hover {
+            animation-play-state: paused;
+        }
+
+        .review-card {
+            background: var(--bg-panel);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            width: 300px;
+            text-align: left;
+            border-left: 3px solid var(--neon-amber);
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .review-stars {
+            color: var(--neon-amber);
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+
+        .review-text {
+            color: var(--text-main);
+            font-size: 0.9rem;
+            font-style: italic;
+            flex-grow: 1;
+        }
+
+        .review-author {
+            color: var(--neon-green);
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.55rem;
+            margin-top: 1rem;
+            text-transform: uppercase;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-50% - 1rem)); }
+        }
+
         /* ===== RESPONSIVE ===== */
         @media (max-width: 768px) {
             nav {
@@ -582,7 +658,7 @@
                 <a href="https://play.google.com/store/apps/details?id=com.rolemiaster.emulaitor" target="_blank"
                     class="btn-retro btn-primary-retro" data-i18n="btn_play">Google Play</a>
                 <a href="https://play.google.com/apps/testing/com.rolemiaster.emulaitor" target="_blank"
-                    class="btn-retro btn-secondary-retro" data-i18n="btn_beta">Unirse a la Beta</a>
+                    class="btn-retro btn-secondary-retro" data-i18n="btn_beta" style="display: none;">Unirse a la Beta</a>
             </div>
         </div>
     </section>
@@ -681,6 +757,57 @@
         </div>
     </section>
 
+    <!-- REVIEWS -->
+    <section class="reviews-section fade-in">
+        <h2 data-i18n="reviews_title">Lo que dicen los jugadores</h2>
+        <div class="carousel-wrapper">
+            <div class="carousel-track">
+                <!-- Original set -->
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"I've tried a few emulators to play some old-school games. This one is my favorite. It runs smoothly, and the controls work well. Thanks."</p>
+                    <div class="review-author">- Gail Cali</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"exelente!!"</p>
+                    <div class="review-author">- Jose Calderon</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"самый лучший эмулятор что я пользовался"</p>
+                    <div class="review-author">- Илья Муромец</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"e interessante super recomendo"</p>
+                    <div class="review-author">- Darkson José</div>
+                </div>
+                <!-- Duplicated set for seamless loop -->
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"I've tried a few emulators to play some old-school games. This one is my favorite. It runs smoothly, and the controls work well. Thanks."</p>
+                    <div class="review-author">- Gail Cali</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"exelente!!"</p>
+                    <div class="review-author">- Jose Calderon</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"самый лучший эмулятор что я пользовался"</p>
+                    <div class="review-author">- Илья Муромец</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"e interessante super recomendo"</p>
+                    <div class="review-author">- Darkson José</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <footer>
         <p>&copy; 2024-2026 EmulAItor &mdash; <a href="../">RolemIAster Universe</a></p>
@@ -722,7 +849,8 @@
                 gal_gamelist: "Listado",
                 footer_disclaimer: "EmulAItor no incluye juegos ni archivos BIOS. El usuario debe proporcionar sus propias copias legales.",
                 footer_privacy: "Politica de Privacidad",
-                btn_enter: "Entrar"
+                btn_enter: "Entrar",
+                reviews_title: "Lo que dicen los jugadores"
             },
             en: {
                 btn_portal: "< Portal",
@@ -753,7 +881,8 @@
                 gal_gamelist: "Game List",
                 footer_disclaimer: "EmulAItor does not include games or BIOS files. Users must provide their own legal backup copies.",
                 footer_privacy: "Privacy Policy",
-                btn_enter: "Enter"
+                btn_enter: "Enter",
+                reviews_title: "What players are saying"
             }
         };
 
