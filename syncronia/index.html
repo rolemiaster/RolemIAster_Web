@@ -243,7 +243,7 @@
 
         .hero-buttons {
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 1rem;
             align-items: stretch;
             margin-top: 1.8rem;
@@ -352,7 +352,7 @@
             transform: translateY(-3px);
         }
 
-        .pc-beta-warning {
+        .pc-direct-warning {
             max-width: 720px;
             margin: 1.25rem auto 0;
             padding: 1rem 1.2rem;
@@ -365,7 +365,7 @@
             text-align: left;
         }
 
-        .pc-beta-warning b {
+        .pc-direct-warning b {
             color: var(--cyan);
         }
 
@@ -664,30 +664,21 @@
             <p class="hero-desc" data-i18n="hero_desc">Deja de hacer malabarismos entre Dropbox, Google Drive y OneDrive. SyncronIA sincroniza tus carpetas con todas tus nubes a la vez, las cifra automaticamente y te deja organizarlo todo con un asistente IA que funciona sin internet. <b>Usa la app de escritorio para la version Free o instala la APK complementaria para desbloquear las licencias y funciones Premium.</b> Sin anuncios, sin complicaciones.</p>
             
             <div style="margin-bottom: 1.5rem;">
-                <p style="font-family: 'Orbitron', sans-serif; font-weight: 700; color: var(--cyan); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.8rem;" data-i18n="status_beta">Apuntate a la beta cerrada</p>
-                <p style="font-size: 0.9rem; color: var(--text-muted); max-width: 550px; margin: 0 auto 0.5rem; line-height: 1.6;" data-i18n="beta_instructions_android">
-                    <b>Android:</b> Unete primero al <a href="https://groups.google.com/u/2/g/rolemiaster-beta-testers" style="color: var(--magenta);">grupo de testers</a>, luego descarga la APK desde Google Play.
-                </p>
-                <p style="font-size: 0.85rem; color: var(--text-muted); max-width: 550px; margin: 0 auto; line-height: 1.5; opacity: 0.8;" data-i18n="beta_notice">
-                    <i>Nota: Aunque veras precios de suscripcion, son ficticios para betatesters. Al instalar aparecera como fuente de pago una tarjeta regalo, por lo que nunca se te cobrara nada durante la beta.</i>
+                <p style="font-family: 'Orbitron', sans-serif; font-weight: 700; color: var(--cyan); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.8rem;" data-i18n="status_available">Disponible en Google Play</p>
+                <p style="font-size: 0.9rem; color: var(--text-muted); max-width: 550px; margin: 0 auto 0.5rem; line-height: 1.6;" data-i18n="android_instructions">
+                    <b>Android:</b> Instala SyncronIA directamente desde su ficha publica de Google Play para gestionar licencias y funciones Premium.
                 </p>
             </div>
             
-            <div class="hero-buttons" aria-label="Pasos de descarga">
+            <div class="hero-buttons" aria-label="Opciones de descarga">
                 <div class="download-step">
                     <div class="download-step-number">1</div>
-                    <h2 class="download-step-title" data-i18n="step_beta_title">Unete a la beta</h2>
-                    <a href="https://groups.google.com/u/2/g/rolemiaster-beta-testers" class="btn-sync btn-sync-secondary download-step-action" target="_blank" rel="noopener"
-                        data-i18n="btn_beta">Unete a la Beta</a>
+                    <h2 class="download-step-title" data-i18n="step_android_title">Descarga APK Android</h2>
+                    <a href="https://play.google.com/store/apps/details?id=com.rolemiaster.syncronia" class="btn-sync btn-sync-primary download-step-action" target="_blank" rel="noopener"
+                        data-i18n="btn_play">Ver en Google Play</a>
                 </div>
                 <div class="download-step">
                     <div class="download-step-number">2</div>
-                    <h2 class="download-step-title" data-i18n="step_apk_title">Descarga APK</h2>
-                    <a href="https://play.google.com/apps/testing/com.rolemiaster.syncronia" class="btn-sync btn-sync-primary download-step-action" target="_blank" rel="noopener"
-                        data-i18n="btn_play">Descargar APK</a>
-                </div>
-                <div class="download-step">
-                    <div class="download-step-number">3</div>
                     <h2 class="download-step-title" data-i18n="step_desktop_title">Descarga app de escritorio</h2>
                     <div class="desktop-download-controls download-step-action">
                         <select id="desktop-download-source" class="download-source-select" aria-label="Descargar app de escritorio desde">
@@ -698,8 +689,8 @@
                     </div>
                 </div>
             </div>
-            <p class="pc-beta-warning" data-i18n="pc_beta_warning" hidden>
-                <b>Windows:</b> la descarga recomendada es Microsoft Store. Usa el instalador directo solo si necesitas la beta clasica; puede mostrar "Windows protegio su PC" por ausencia de firma Microsoft. En ese caso pulsa <b>Mas informacion</b> y despues <b>Ejecutar de todas formas</b>.
+            <p class="pc-direct-warning" data-i18n="pc_direct_warning" hidden>
+                <b>Windows:</b> la descarga recomendada es Microsoft Store. Usa el instalador directo solo si necesitas instalar fuera de la Store; puede mostrar "Windows protegio su PC" por ausencia de firma Microsoft. En ese caso pulsa <b>Mas informacion</b> y despues <b>Ejecutar de todas formas</b>.
             </p>
         </div>
     </section>
@@ -787,18 +778,15 @@
                 btn_portal: "\u2190 Portal",
                 hero_tagline: "Todos tus archivos. Todas tus nubes. Un solo lugar.",
                 hero_desc: "Deja de hacer malabarismos entre Dropbox, Google Drive y OneDrive. SyncronIA sincroniza tus carpetas con todas tus nubes a la vez, las cifra automaticamente y te deja organizarlo todo con un asistente IA que funciona sin internet. <b>Usa la app de escritorio para la version Free o instala la APK complementaria para desbloquear las licencias y funciones Premium.</b> Sin anuncios, sin complicaciones.",
-                status_beta: "Apuntate a la beta cerrada",
-                beta_instructions_android: "<b>Android:</b> Unete primero al <a href=\"https://groups.google.com/u/2/g/rolemiaster-beta-testers\" style=\"color: var(--magenta);\">grupo de testers</a>, luego descarga la APK desde Google Play.",
-                beta_notice: "<i>Nota: Aunque veras precios de suscripcion, son ficticios para betatesters. Al instalar aparecera como fuente de pago una tarjeta regalo, por lo que nunca se te cobrara nada durante la beta.</i>",
-                step_beta_title: "Unete a la beta",
-                step_apk_title: "Descarga APK",
+                status_available: "Disponible en Google Play",
+                android_instructions: "<b>Android:</b> Instala SyncronIA directamente desde su ficha publica de Google Play para gestionar licencias y funciones Premium.",
+                step_android_title: "Descarga APK Android",
                 step_desktop_title: "Descarga app de escritorio",
-                btn_beta: "Unete a la Beta",
-                btn_play: "Descargar APK",
+                btn_play: "Ver en Google Play",
                 download_select: "Seleccionar",
                 download_from_store: "Microsoft Store",
                 download_from_direct: "Instalador directo sin firma",
-                pc_beta_warning: "<b>Windows:</b> la descarga recomendada es Microsoft Store. Usa el instalador directo solo si necesitas la beta clasica; puede mostrar \"Windows protegio su PC\" por ausencia de firma Microsoft. En ese caso pulsa <b>Mas informacion</b> y despues <b>Ejecutar de todas formas</b>.",
+                pc_direct_warning: "<b>Windows:</b> la descarga recomendada es Microsoft Store. Usa el instalador directo solo si necesitas instalar fuera de la Store; puede mostrar \"Windows protegio su PC\" por ausencia de firma Microsoft. En ese caso pulsa <b>Mas informacion</b> y despues <b>Ejecutar de todas formas</b>.",
                 benefits_title: "Que puedes hacer con SyncronIA",
                 ben1_title: "Sincroniza con tus nubes",
                 ben1_desc: "Elige una carpeta y SyncronIA la mantiene actualizada en tu nube, en varias cuentas o en servicios distintos. Todo a la vez.",
@@ -828,18 +816,15 @@
                 btn_portal: "\u2190 Portal",
                 hero_tagline: "All your files. All your clouds. One place.",
                 hero_desc: "Stop juggling between Dropbox, Google Drive and OneDrive. SyncronIA syncs your folders with all your clouds at once, encrypts them automatically and lets you organize everything with an AI assistant that works offline. <b>Use the desktop app for the Free version or install the companion APK to unlock Premium licenses and features.</b> No ads, no hassle.",
-                status_beta: "Join the Closed Beta",
-                beta_instructions_android: "<b>Android:</b> First join our <a href=\"https://groups.google.com/u/2/g/rolemiaster-beta-testers\" style=\"color: var(--magenta);\">testers group</a>, then download the APK from Google Play.",
-                beta_notice: "<i>Note: Although you will see subscription prices, they are fictitious for beta testers. During installation, a gift card will appear as the payment source, so you will never be charged during the beta.</i>",
-                step_beta_title: "Join the beta",
-                step_apk_title: "Download APK",
+                status_available: "Available on Google Play",
+                android_instructions: "<b>Android:</b> Install SyncronIA directly from its public Google Play listing to manage licenses and Premium features.",
+                step_android_title: "Download Android APK",
                 step_desktop_title: "Download desktop app",
-                btn_beta: "Join Beta",
-                btn_play: "Download APK",
+                btn_play: "View on Google Play",
                 download_select: "Select",
                 download_from_store: "Microsoft Store",
                 download_from_direct: "Unsigned direct installer",
-                pc_beta_warning: "<b>Windows:</b> Microsoft Store is the recommended download. Use the direct installer only if you need the classic beta; it may show \"Windows protected your PC\" because it is not signed by Microsoft. In that case, click <b>More info</b> and then <b>Run anyway</b>.",
+                pc_direct_warning: "<b>Windows:</b> Microsoft Store is the recommended download. Use the direct installer only if you need to install outside the Store; it may show \"Windows protected your PC\" because it is not signed by Microsoft. In that case, click <b>More info</b> and then <b>Run anyway</b>.",
                 benefits_title: "What you can do with SyncronIA",
                 ben1_title: "Sync with your clouds",
                 ben1_desc: "Pick a folder and SyncronIA keeps it updated in your cloud, across multiple accounts or across different services. All at once.",
@@ -887,7 +872,7 @@
 
         function updateDesktopDownload() {
             const selector = document.getElementById('desktop-download-source');
-            const warning = document.querySelector('.pc-beta-warning');
+            const warning = document.querySelector('.pc-direct-warning');
             if (!selector || !warning) {
                 return;
             }

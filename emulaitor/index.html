@@ -761,49 +761,7 @@
     <section class="reviews-section fade-in">
         <h2 data-i18n="reviews_title">Lo que dicen los jugadores</h2>
         <div class="carousel-wrapper">
-            <div class="carousel-track">
-                <!-- Original set -->
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"I've tried a few emulators to play some old-school games. This one is my favorite. It runs smoothly, and the controls work well. Thanks."</p>
-                    <div class="review-author">- Gail Cali</div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"exelente!!"</p>
-                    <div class="review-author">- Jose Calderon</div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"самый лучший эмулятор что я пользовался"</p>
-                    <div class="review-author">- Илья Муромец</div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"e interessante super recomendo"</p>
-                    <div class="review-author">- Darkson José</div>
-                </div>
-                <!-- Duplicated set for seamless loop -->
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"I've tried a few emulators to play some old-school games. This one is my favorite. It runs smoothly, and the controls work well. Thanks."</p>
-                    <div class="review-author">- Gail Cali</div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"exelente!!"</p>
-                    <div class="review-author">- Jose Calderon</div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"самый лучший эмулятор что я пользовался"</p>
-                    <div class="review-author">- Илья Муромец</div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"e interessante super recomendo"</p>
-                    <div class="review-author">- Darkson José</div>
-                </div>
+            <div class="carousel-track" id="reviews-track">
             </div>
         </div>
     </section>
@@ -910,9 +868,36 @@
             });
         }, { threshold: 0.1 });
 
+        // ===== TRANSLATION AND INIT =====
         document.addEventListener('DOMContentLoaded', () => {
             changeLang(currentLang);
             document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        });
+
+        // ===== LOAD REVIEWS =====
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('reviews.json')
+                .then(response => response.json())
+                .then(reviews => {
+                    const track = document.getElementById('reviews-track');
+                    if (!track) return;
+                    
+                    const renderCard = (r) => {
+                        return `
+                        <div class="review-card">
+                            <div class="review-stars">${'★'.repeat(r.stars)}${'☆'.repeat(5 - r.stars)}</div>
+                            <p class="review-text">"${r.text}"</p>
+                            <div class="review-author">- ${r.author}</div>
+                        </div>`;
+                    };
+
+                    let htmlContent = '';
+                    reviews.forEach(r => htmlContent += renderCard(r));
+                    reviews.forEach(r => htmlContent += renderCard(r)); // Duplicate for seamless loop
+
+                    track.innerHTML = htmlContent;
+                })
+                .catch(err => console.error('Error loading reviews:', err));
         });
     </script>
 
