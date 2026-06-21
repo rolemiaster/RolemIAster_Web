@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "enabled": true,
+  "enabled": false,
   "message_id": "codex-e2e-20260621-1930",
   "source_language": "en",
   "updated_at": "2026-06-21T17:35:08+00:00",
