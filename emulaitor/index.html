@@ -4,7 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EmulAItor - Retro Gaming Reimagined</title>
+    <title>EmulAItor — Hub retro online, Android TV y más de 20 sistemas</title>
+    <meta name="description" content="Juega y comparte aventuras retro con EmulAItor Hub, Android TV, mandos móviles por QR, Google Drive, catálogo homebrew y más de 20 sistemas clásicos.">
+    <link rel="canonical" href="https://rolemiaster.com/emulaitor/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="EmulAItor — Miles de aventuras retro, en todas tus pantallas">
+    <meta property="og:description" content="Crea salas con EmulAItor Hub, convierte hasta cuatro móviles en mandos para Android TV y reúne tu biblioteca retro.">
+    <meta property="og:url" content="https://rolemiaster.com/emulaitor/">
+    <meta property="og:image" content="https://rolemiaster.com/emulaitor/assets/imagenes/banner1920x1080.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EmulAItor — Tu partida retro, compartida">
+    <meta name="twitter:description" content="Hub online, Android TV, mandos móviles, nube, catálogo homebrew y más de 20 sistemas.">
+    <meta name="twitter:image" content="https://rolemiaster.com/emulaitor/assets/imagenes/banner1920x1080.jpg">
     <link
         href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
         rel="stylesheet">
@@ -341,6 +352,11 @@
             transition: opacity 0.3s;
         }
 
+        .feature-card-highlight {
+            border-color: rgba(57, 255, 20, 0.55);
+            background: linear-gradient(145deg, rgba(57, 255, 20, 0.08), var(--bg-panel));
+        }
+
         .feature-card:hover {
             border-color: rgba(57, 255, 20, 0.3);
             box-shadow: 0 0 20px rgba(57, 255, 20, 0.05);
@@ -623,6 +639,20 @@
             transform: translateY(0);
         }
     </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "EmulAItor",
+      "operatingSystem": "Android",
+      "applicationCategory": "GameApplication",
+      "description": "Retro emulator with EmulAItor Hub, Android TV, phone controllers, cloud saves, a homebrew catalog and more than 20 classic systems.",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.rolemiaster.emulaitor",
+      "image": "https://rolemiaster.com/emulaitor/assets/imagenes/banner1920x1080.jpg",
+      "url": "https://rolemiaster.com/emulaitor/"
+    }
+    </script>
 </head>
 
 <body>
@@ -651,8 +681,8 @@
                 <img src="assets/imagenes/Logo.png" alt="EmulAItor Logo">
             </div>
             <h1>EmulAItor</h1>
-            <p class="hero-tagline" data-i18n="hero_tagline">Tu colección. Todas tus pantallas. Tu forma de jugar.</p>
-            <p class="hero-desc" data-i18n="hero_desc">Convierte tu Android en una biblioteca retro para móvil y TV. Juega con controles táctiles o mando, sincroniza tus partidas y elige entre tiempo gratuito con anuncios, suscripción mensual o desbloqueo permanente.</p>
+            <p class="hero-tagline" data-i18n="hero_tagline">Miles de aventuras retro. Todas tus pantallas. Tu forma de jugar.</p>
+            <p class="hero-desc" data-i18n="hero_desc">Crea salas con EmulAItor Hub, convierte hasta cuatro móviles en mandos para Android TV, descubre homebrew y continúa tus partidas entre dispositivos.</p>
             <div class="hero-buttons">
                 <a href="https://play.google.com/store/apps/details?id=com.rolemiaster.emulaitor" target="_blank"
                     class="btn-retro btn-primary-retro" data-i18n="btn_play">Google Play</a>
@@ -669,7 +699,7 @@
             <div class="feature-card">
                 <div class="feature-icon">&#x23F3;</div>
                 <h3 data-i18n="access_free_title">Tiempo gratis con anuncios</h3>
-                <p data-i18n="access_free_desc">Gana tiempo de juego por cada anuncio completado cuando haya disponibilidad en tu país y dispositivo.</p>
+                <p data-i18n="access_free_desc">Consigue tiempo de juego completando anuncios bonificados.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">&#x1F4C5;</div>
@@ -695,55 +725,62 @@
     </section>
 
     <!-- FEATURES -->
-    <section class="features fade-in">
-        <h2 data-i18n="features_title">Caracteristicas</h2>
+    <section class="features fade-in" id="features">
+        <h2 data-i18n="features_title">Todo un universo retro</h2>
         <div class="features-grid">
+            <div class="feature-card feature-card-highlight">
+                <div class="feature-icon">&#x1F310;</div>
+                <h3 data-i18n="feat_hub_title">EmulAItor Hub</h3>
+                <p data-i18n="feat_hub_desc">Crea una sala desde una partida, comparte imagen y sonido, recibe los controles de tus invitados y activa voz opcional.</p>
+            </div>
+            <div class="feature-card feature-card-highlight">
+                <div class="feature-icon">&#x1F4F1;</div>
+                <h3 data-i18n="feat_phonepad_title">Hasta cuatro móviles como mandos</h3>
+                <p data-i18n="feat_phonepad_desc">Escanea un QR y convierte teléfonos o tabletas en mandos para Android TV. El diseño se adapta al sistema jugado.</p>
+            </div>
             <div class="feature-card">
                 <div class="feature-icon">&#x2601;&#xFE0F;</div>
-                <h3 data-i18n="feat_cloud_title">Cloud Save</h3>
-                <p data-i18n="feat_cloud_desc">Sincroniza partidas entre todos tus dispositivos via Google Drive.
-                    Empieza en el movil, continua en la TV.</p>
+                <h3 data-i18n="feat_cloud_title">Continúa en otra pantalla</h3>
+                <p data-i18n="feat_cloud_desc">Sincroniza partidas mediante Google Drive. Empieza en el móvil y continúa en Android TV.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">&#x1F4FA;</div>
-                <h3 data-i18n="feat_tv_title">Android TV</h3>
-                <p data-i18n="feat_tv_desc">Interfaz optimizada para television con navegacion completa por mando. Sin
-                    interfaces tactiles incomodas.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">&#x1F3AE;</div>
-                <h3 data-i18n="feat_gamepad_title">Soporte Mandos</h3>
-                <p data-i18n="feat_gamepad_desc">Compatible con PS4/5, Xbox, 8BitDo y casi cualquier mando Bluetooth o
-                    USB. Incluso marca blanca.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">&#x1F3E0;</div>
-                <h3 data-i18n="feat_nas_title">NAS / SMB</h3>
-                <p data-i18n="feat_nas_desc">Juega directamente desde tu servidor NAS a traves de red local WiFi. Sin
-                    llenar la memoria del dispositivo.</p>
+                <div class="feature-icon">&#x1F4E6;</div>
+                <h3 data-i18n="feat_catalog_title">Catálogo y homebrew</h3>
+                <p data-i18n="feat_catalog_desc">Descubre juegos homebrew y reúne fuentes integradas, carpetas locales y colecciones NAS/SMB.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">&#x1F4DA;</div>
-                <h3 data-i18n="feat_library_title">Biblioteca Inteligente</h3>
-                <p data-i18n="feat_library_desc">Escanea e identifica tus juegos automaticamente. Descarga caratulas e
-                    informacion de cada titulo.</p>
+                <h3 data-i18n="feat_library_title">Biblioteca visual</h3>
+                <p data-i18n="feat_library_desc">Carátulas, metadatos online, búsqueda, favoritos, recientes, descubrimiento y más de veinte sistemas.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">&#x23EA;</div>
-                <h3 data-i18n="feat_rewind_title">Rebobinado</h3>
-                <p data-i18n="feat_rewind_desc">Rebobina el tiempo cuando quieras. Moriste en ese salto imposible?
-                    Vuelve atras y reintentalo.</p>
+                <div class="feature-icon">&#x1F4BE;</div>
+                <h3 data-i18n="feat_saves_title">Guardados avanzados</h3>
+                <p data-i18n="feat_saves_desc">Autosave, ranuras con vista previa, guardado rápido, carga rápida y cambio de disco.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#x1F3AE;</div>
+                <h3 data-i18n="feat_gamepad_title">Juega como quieras</h3>
+                <p data-i18n="feat_gamepad_desc">Controles táctiles editables, mandos Bluetooth/USB, reasignación, vibración y multijugador local.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#x2728;</div>
+                <h3 data-i18n="feat_visual_title">Tu imagen retro</h3>
+                <p data-i18n="feat_visual_desc">Filtros CRT, LCD, nítido y suave, además de modo HD con calidad ajustable.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#x23E9;</div>
+                <h3 data-i18n="feat_fast_title">Avance rápido</h3>
+                <p data-i18n="feat_fast_desc">Acelera las partes lentas en los sistemas compatibles y vuelve antes a la acción.</p>
             </div>
         </div>
     </section>
 
     <!-- SYSTEMS -->
     <section class="systems fade-in">
-        <h2 data-i18n="systems_title">Sistemas compatibles</h2>
+        <h2 data-i18n="systems_title">Más de 20 sistemas clásicos</h2>
         <div class="systems-list">
-            <span>NES</span><span>SNES</span><span>Game Boy</span><span>GBA</span><span>N64</span><span>NDS</span><span>Genesis</span><span>Master
-                System</span><span>PSX</span><span>PSP</span><span>Arcade</span><span>Atari
-                2600</span><span>Atari 7800</span><span>Neo Geo</span><span>PC Engine</span><span>WonderSwan</span><span>Neo Geo Pocket</span>
+            <span>NES</span><span>SNES</span><span>Game Boy</span><span>GBC</span><span>GBA</span><span>N64</span><span>NDS</span><span>Genesis</span><span>Sega CD</span><span>Master System</span><span>Game Gear</span><span>PlayStation</span><span>PSP</span><span>Arcade</span><span>Atari 2600</span><span>Atari 7800</span><span>PC Engine</span><span>WonderSwan</span><span>Neo Geo Pocket</span><span>DOS</span><span>Nintendo 3DS</span>
         </div>
     </section>
 
@@ -795,9 +832,8 @@
             <a href="https://www.youtube.com/@RoleMIAster" target="_blank" rel="noopener" aria-label="EmulAItor en YouTube">YouTube</a>
             <a href="https://x.com/RolemIAster" target="_blank" rel="noopener" aria-label="EmulAItor en X">X</a>
         </p>
-        <p data-i18n="footer_disclaimer">EmulAItor no incluye juegos ni archivos BIOS. El usuario debe proporcionar sus
-            propias copias legales.</p>
-        <p style="margin-top: 0.3rem;"><a href="privacy.html" data-i18n="footer_privacy">Politica de Privacidad</a></p>
+        <p data-i18n="footer_disclaimer">Reúne tu colección, descubre homebrew y comparte tu próxima aventura retro.</p>
+        <p style="margin-top: 0.3rem;"><a href="press-kit.html" data-i18n="footer_press">Press kit</a> &middot; <a href="privacy.html" data-i18n="footer_privacy">Politica de Privacidad</a></p>
     </footer>
 
     <script>
@@ -805,81 +841,75 @@
         const translations = {
             es: {
                 btn_portal: "< Portal",
-                hero_tagline: "Tu colección. Todas tus pantallas. Tu forma de jugar.",
-                hero_desc: "Convierte tu Android en una biblioteca retro para móvil y TV. Juega con controles táctiles o mando, sincroniza tus partidas y elige entre tiempo gratuito con anuncios, suscripción mensual o desbloqueo permanente.",
-                access_title: "Elige cómo jugar",
-                access_free_title: "Tiempo gratis con anuncios",
-                access_free_desc: "Gana tiempo de juego por cada anuncio completado cuando haya disponibilidad en tu país y dispositivo.",
+                hero_tagline: "Miles de aventuras retro. Todas tus pantallas. Tu forma de jugar.",
+                hero_desc: "Crea salas con EmulAItor Hub, convierte hasta cuatro móviles en mandos para Android TV, descubre homebrew y continúa tus partidas entre dispositivos.",
+                access_title: "Tres formas. Tú decides.",
+                access_free_title: "Tiempo de juego con anuncios",
+                access_free_desc: "Consigue tiempo de juego completando anuncios bonificados.",
                 access_subscription_title: "Suscripción mensual",
                 access_subscription_desc: "Acceso completo sin anuncios mientras tu suscripción permanezca activa.",
                 access_lifetime_title: "Desbloqueo permanente",
                 access_lifetime_desc: "Un único pago para mantener el acceso completo permanente sin anuncios.",
-                btn_play: "Google Play",
-                btn_beta: "Unirse a la Beta",
-                video_title: "Vista previa",
-                features_title: "Caracteristicas",
-                feat_cloud_title: "Cloud Save",
-                feat_cloud_desc: "Sincroniza partidas entre todos tus dispositivos via Google Drive. Empieza en el movil, continua en la TV.",
-                feat_tv_title: "Android TV",
-                feat_tv_desc: "Interfaz optimizada para television con navegacion completa por mando. Sin interfaces tactiles incomodas.",
-                feat_gamepad_title: "Soporte Mandos",
-                feat_gamepad_desc: "Compatible con PS4/5, Xbox, 8BitDo y casi cualquier mando Bluetooth o USB. Incluso marca blanca.",
-                feat_nas_title: "NAS / SMB",
-                feat_nas_desc: "Juega directamente desde tu servidor NAS a traves de red local WiFi. Sin llenar la memoria del dispositivo.",
-                feat_library_title: "Biblioteca Inteligente",
-                feat_library_desc: "Escanea e identifica tus juegos automaticamente. Descarga caratulas e informacion de cada titulo.",
-                feat_rewind_title: "Rebobinado",
-                feat_rewind_desc: "Rebobina el tiempo cuando quieras. Moriste en ese salto imposible? Vuelve atras y reintentalo.",
-                systems_title: "Sistemas compatibles",
-                gallery_title: "Galeria",
-                gal_catalog: "Catalogo",
-                gal_library: "Biblioteca",
-                gal_tablet: "Tablet",
-                gal_systems: "Sistemas",
-                gal_gamelist: "Listado",
-                footer_disclaimer: "EmulAItor no incluye juegos ni archivos BIOS. El usuario debe proporcionar sus propias copias legales.",
-                footer_privacy: "Politica de Privacidad",
-                btn_enter: "Entrar",
-                reviews_title: "Lo que dicen los jugadores"
+                btn_play: "Google Play", btn_beta: "Unirse a la Beta", video_title: "Vista previa",
+                features_title: "Todo un universo retro",
+                feat_hub_title: "EmulAItor Hub",
+                feat_hub_desc: "Crea una sala desde una partida, comparte imagen y sonido, recibe los controles de tus invitados y activa voz opcional.",
+                feat_phonepad_title: "Hasta cuatro móviles como mandos",
+                feat_phonepad_desc: "Escanea un QR y convierte teléfonos o tabletas en mandos para Android TV. El diseño se adapta al sistema jugado.",
+                feat_cloud_title: "Continúa en otra pantalla",
+                feat_cloud_desc: "Sincroniza partidas mediante Google Drive. Empieza en el móvil y continúa en Android TV.",
+                feat_catalog_title: "Catálogo y homebrew",
+                feat_catalog_desc: "Descubre juegos homebrew y reúne fuentes integradas, carpetas locales y colecciones NAS/SMB.",
+                feat_library_title: "Biblioteca visual",
+                feat_library_desc: "Carátulas, metadatos online, búsqueda, favoritos, recientes, descubrimiento y más de veinte sistemas.",
+                feat_saves_title: "Guardados avanzados",
+                feat_saves_desc: "Autosave, ranuras con vista previa, guardado rápido, carga rápida y cambio de disco.",
+                feat_gamepad_title: "Juega como quieras",
+                feat_gamepad_desc: "Controles táctiles editables, mandos Bluetooth/USB, reasignación, vibración y multijugador local.",
+                feat_visual_title: "Tu imagen retro",
+                feat_visual_desc: "Filtros CRT, LCD, nítido y suave, además de modo HD con calidad ajustable.",
+                feat_fast_title: "Avance rápido",
+                feat_fast_desc: "Acelera las partes lentas en los sistemas compatibles y vuelve antes a la acción.",
+                systems_title: "Más de 20 sistemas clásicos", gallery_title: "Galería",
+                gal_catalog: "Catálogo", gal_library: "Biblioteca", gal_tablet: "Tablet", gal_systems: "Sistemas", gal_gamelist: "Listado",
+                footer_disclaimer: "Reúne tu colección, descubre homebrew y comparte tu próxima aventura retro.",
+                footer_press: "Press kit", footer_privacy: "Política de Privacidad", btn_enter: "Entrar", reviews_title: "Lo que dicen los jugadores"
             },
             en: {
                 btn_portal: "< Portal",
-                hero_tagline: "Your library. Every screen. Your way to play.",
-                hero_desc: "Turn Android into your retro library for mobile and TV. Play with touch controls or a gamepad, sync your saves, and choose rewarded-ad game time, a monthly subscription, or permanent unlock.",
-                access_title: "Choose how you play",
-                access_free_title: "Free game time with ads",
-                access_free_desc: "Earn game time after each completed ad when ads are available in your country and on your device.",
+                hero_tagline: "Thousands of retro adventures. Every screen. Your way to play.",
+                hero_desc: "Create rooms with EmulAItor Hub, turn up to four phones into Android TV controllers, discover homebrew, and continue your games across devices.",
+                access_title: "Three ways. You decide.",
+                access_free_title: "Game time with ads",
+                access_free_desc: "Earn game time by completing rewarded ads.",
                 access_subscription_title: "Monthly subscription",
                 access_subscription_desc: "Full ad-free access while your subscription remains active.",
                 access_lifetime_title: "Permanent unlock",
                 access_lifetime_desc: "One payment for permanent full ad-free access.",
-                btn_play: "Google Play",
-                btn_beta: "Join Beta",
-                video_title: "Preview",
-                features_title: "Features",
-                feat_cloud_title: "Cloud Save",
-                feat_cloud_desc: "Sync saves across all your devices via Google Drive. Start on mobile, continue on TV.",
-                feat_tv_title: "Android TV",
-                feat_tv_desc: "TV-optimized interface with full gamepad navigation. No awkward touch interfaces.",
-                feat_gamepad_title: "Gamepad Support",
-                feat_gamepad_desc: "Compatible with PS4/5, Xbox, 8BitDo and almost any Bluetooth or USB controller.",
-                feat_nas_title: "NAS / SMB",
-                feat_nas_desc: "Play directly from your NAS server over local WiFi. No filling up device storage.",
-                feat_library_title: "Smart Library",
-                feat_library_desc: "Scans and identifies your games automatically. Downloads cover art and info for each title.",
-                feat_rewind_title: "Rewind",
-                feat_rewind_desc: "Rewind time whenever you want. Died on that impossible jump? Go back and try again.",
-                systems_title: "Supported Systems",
-                gallery_title: "Gallery",
-                gal_catalog: "Catalog",
-                gal_library: "Library",
-                gal_tablet: "Tablet",
-                gal_systems: "Systems",
-                gal_gamelist: "Game List",
-                footer_disclaimer: "EmulAItor does not include games or BIOS files. Users must provide their own legal backup copies.",
-                footer_privacy: "Privacy Policy",
-                btn_enter: "Enter",
-                reviews_title: "What players are saying"
+                btn_play: "Google Play", btn_beta: "Join Beta", video_title: "Preview",
+                features_title: "A complete retro universe",
+                feat_hub_title: "EmulAItor Hub",
+                feat_hub_desc: "Create a room from a running game, share video and audio, receive guest controls, and enable optional voice.",
+                feat_phonepad_title: "Up to four phones as controllers",
+                feat_phonepad_desc: "Scan a QR code and turn phones or tablets into Android TV controllers. The layout adapts to the system being played.",
+                feat_cloud_title: "Continue on another screen",
+                feat_cloud_desc: "Sync saves through Google Drive. Start on mobile and continue on Android TV.",
+                feat_catalog_title: "Catalog and homebrew",
+                feat_catalog_desc: "Discover homebrew games and bring together built-in sources, local folders, and NAS/SMB collections.",
+                feat_library_title: "Visual library",
+                feat_library_desc: "Cover art, online metadata, search, favorites, recent games, discovery, and more than twenty systems.",
+                feat_saves_title: "Advanced saves",
+                feat_saves_desc: "Autosave, preview slots, quick save, quick load, and disc switching.",
+                feat_gamepad_title: "Play your way",
+                feat_gamepad_desc: "Editable touch controls, Bluetooth/USB gamepads, remapping, rumble, and local multiplayer.",
+                feat_visual_title: "Your retro picture",
+                feat_visual_desc: "CRT, LCD, sharp, and smooth filters plus HD mode with adjustable quality.",
+                feat_fast_title: "Fast-forward",
+                feat_fast_desc: "Speed through slower sections on supported systems and get back to the action.",
+                systems_title: "More than 20 classic systems", gallery_title: "Gallery",
+                gal_catalog: "Catalog", gal_library: "Library", gal_tablet: "Tablet", gal_systems: "Systems", gal_gamelist: "Game List",
+                footer_disclaimer: "Bring your collection together, discover homebrew, and share your next retro adventure.",
+                footer_press: "Press kit", footer_privacy: "Privacy Policy", btn_enter: "Enter", reviews_title: "What players are saying"
             }
         };
 
