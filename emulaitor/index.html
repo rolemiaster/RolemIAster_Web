@@ -7,11 +7,19 @@
     <title>EmulAItor — Hub retro online, Android TV y más de 20 sistemas</title>
     <meta name="description" content="Juega y comparte aventuras retro con EmulAItor Hub, Android TV, mandos móviles por QR, Google Drive, catálogo homebrew y más de 20 sistemas clásicos.">
     <link rel="canonical" href="https://rolemiaster.com/emulaitor/">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="alternate" hreflang="es" href="https://rolemiaster.com/emulaitor/?lang=es">
+    <link rel="alternate" hreflang="en" href="https://rolemiaster.com/emulaitor/?lang=en">
+    <link rel="alternate" hreflang="x-default" href="https://rolemiaster.com/emulaitor/">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="RolemIAster">
     <meta property="og:title" content="EmulAItor — Miles de aventuras retro, en todas tus pantallas">
     <meta property="og:description" content="Crea salas con EmulAItor Hub, convierte hasta cuatro móviles en mandos para Android TV y reúne tu biblioteca retro.">
     <meta property="og:url" content="https://rolemiaster.com/emulaitor/">
     <meta property="og:image" content="https://rolemiaster.com/emulaitor/assets/imagenes/banner1920x1080.jpg">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
+    <meta property="og:locale" content="es_ES">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="EmulAItor — Tu partida retro, compartida">
     <meta name="twitter:description" content="Hub online, Android TV, mandos móviles, nube, catálogo homebrew y más de 20 sistemas.">
@@ -297,7 +305,7 @@
         }
 
         .video-container {
-            max-width: 900px;
+            max-width: 430px;
             margin: 0 auto;
             border: 2px solid var(--neon-green);
             box-shadow: 0 0 30px rgba(57, 255, 20, 0.1);
@@ -305,9 +313,12 @@
             overflow: hidden;
         }
 
-        .video-container video {
+        .video-container video,
+        .video-container iframe {
             width: 100%;
             display: block;
+            aspect-ratio: 9 / 16;
+            border: 0;
         }
 
         /* ===== FEATURES ===== */
@@ -627,6 +638,29 @@
             }
         }
 
+        .final-cta {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+
+        .final-cta h2 {
+            font-family: 'Press Start 2P', monospace;
+            color: var(--neon-green);
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            line-height: 1.8;
+            margin-bottom: 1.3rem;
+        }
+
+        .final-cta p {
+            color: #aaa;
+            margin: 0 auto 2rem;
+            max-width: 720px;
+            font-size: 1.08rem;
+        }
+
         /* ===== ENTRANCE ANIMATIONS ===== */
         .fade-in {
             opacity: 0;
@@ -651,6 +685,29 @@
       "downloadUrl": "https://play.google.com/store/apps/details?id=com.rolemiaster.emulaitor",
       "image": "https://rolemiaster.com/emulaitor/assets/imagenes/banner1920x1080.jpg",
       "url": "https://rolemiaster.com/emulaitor/"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Se puede jugar online con EmulAItor?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Sí. EmulAItor Hub permite crear una sala desde una partida y compartir imagen, sonido, controles de invitados y comunicación de voz opcional."}
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo usar móviles como mandos para Android TV?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Sí. Hasta cuatro teléfonos o tabletas pueden emparejarse mediante QR en la misma red Wi-Fi y funcionar como mandos táctiles."}
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué formas de acceso ofrece EmulAItor?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Puedes conseguir tiempo de juego mediante anuncios bonificados cuando estén disponibles, usar una suscripción mensual o elegir una compra única lifetime."}
+        }
+      ]
     }
     </script>
 </head>
@@ -684,8 +741,8 @@
             <p class="hero-tagline" data-i18n="hero_tagline">Miles de aventuras retro. Todas tus pantallas. Tu forma de jugar.</p>
             <p class="hero-desc" data-i18n="hero_desc">Crea salas con EmulAItor Hub, convierte hasta cuatro móviles en mandos para Android TV, descubre homebrew y continúa tus partidas entre dispositivos.</p>
             <div class="hero-buttons">
-                <a href="https://play.google.com/store/apps/details?id=com.rolemiaster.emulaitor" target="_blank"
-                    class="btn-retro btn-primary-retro" data-i18n="btn_play">Google Play</a>
+                <a href="https://play.google.com/store/apps/details?id=com.rolemiaster.emulaitor&amp;utm_source=rolemiaster.com&amp;utm_medium=organic&amp;utm_campaign=emulaitor_landing" target="_blank" rel="noopener noreferrer"
+                    class="btn-retro btn-primary-retro" data-i18n="btn_play">Descargar en Google Play</a>
                 <a href="https://play.google.com/apps/testing/com.rolemiaster.emulaitor" target="_blank"
                     class="btn-retro btn-secondary-retro" data-i18n="btn_beta" style="display: none;">Unirse a la Beta</a>
             </div>
@@ -699,7 +756,7 @@
             <div class="feature-card">
                 <div class="feature-icon">&#x23F3;</div>
                 <h3 data-i18n="access_free_title">Tiempo gratis con anuncios</h3>
-                <p data-i18n="access_free_desc">Consigue tiempo de juego completando anuncios bonificados.</p>
+                <p data-i18n="access_free_desc">Consigue tiempo de juego mediante anuncios bonificados cuando estén disponibles.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">&#x1F4C5;</div>
@@ -716,11 +773,9 @@
 
     <!-- VIDEO -->
     <section class="video-section fade-in">
-        <h2 data-i18n="video_title">Vista previa</h2>
+        <h2 data-i18n="video_title">EmulAItor en acción</h2>
         <div class="video-container">
-            <video controls preload="metadata" poster="assets/imagenes/banner1920x1080.jpg">
-                <source src="assets/videos/intro Emulaitor.mp4" type="video/mp4">
-            </video>
+            <iframe src="https://www.youtube-nocookie.com/embed/UTIzr3AmCHE" title="EmulAItor Hub, Android TV y juego retro en todas tus pantallas" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </section>
 
@@ -815,6 +870,35 @@
         </div>
     </section>
 
+    <!-- FAQ -->
+    <section class="features fade-in" id="preguntas">
+        <h2 data-i18n="faq_title">Preguntas frecuentes</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3 data-i18n="faq_online_q">¿Se puede jugar online?</h3>
+                <p data-i18n="faq_online_a">Sí. EmulAItor Hub crea una sala desde una partida y comparte imagen, sonido, controles de invitados y voz opcional.</p>
+            </div>
+            <div class="feature-card">
+                <h3 data-i18n="faq_controllers_q">¿Puedo usar móviles como mandos?</h3>
+                <p data-i18n="faq_controllers_a">Sí. Hasta cuatro teléfonos o tabletas pueden emparejarse mediante QR para jugar en Android TV dentro de la misma red Wi-Fi.</p>
+            </div>
+            <div class="feature-card">
+                <h3 data-i18n="faq_homebrew_q">¿Qué puedo descubrir?</h3>
+                <p data-i18n="faq_homebrew_a">Explora el catálogo homebrew integrado y organiza tu biblioteca compatible con carátulas, metadatos, favoritos y búsqueda.</p>
+            </div>
+            <div class="feature-card">
+                <h3 data-i18n="faq_multidisc_q">¿Admite juegos multidisco?</h3>
+                <p data-i18n="faq_multidisc_a">Sí. Importa juegos multidisco conservando sus archivos asociados y cambia de disco desde las herramientas de juego.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-cta fade-in">
+        <h2 data-i18n="cta_title">Tu próxima aventura retro empieza aquí</h2>
+        <p data-i18n="cta_desc">Reúne tu colección, descubre homebrew, conecta tus pantallas y elige tu forma de acceso.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.rolemiaster.emulaitor&amp;utm_source=rolemiaster.com&amp;utm_medium=organic&amp;utm_campaign=emulaitor_landing" target="_blank" rel="noopener noreferrer" class="btn-retro btn-primary-retro" data-i18n="cta_button">Descargar EmulAItor</a>
+    </section>
+
     <!-- REVIEWS -->
     <section class="reviews-section fade-in">
         <h2 data-i18n="reviews_title">Lo que dicen los jugadores</h2>
@@ -840,17 +924,19 @@
         // ===== I18N =====
         const translations = {
             es: {
+                page_title: "EmulAItor — Hub retro online, Android TV y más de 20 sistemas",
+                page_description: "Juega y comparte aventuras retro con EmulAItor Hub, Android TV, mandos móviles por QR, Google Drive, catálogo homebrew y más de 20 sistemas clásicos.",
                 btn_portal: "< Portal",
                 hero_tagline: "Miles de aventuras retro. Todas tus pantallas. Tu forma de jugar.",
                 hero_desc: "Crea salas con EmulAItor Hub, convierte hasta cuatro móviles en mandos para Android TV, descubre homebrew y continúa tus partidas entre dispositivos.",
                 access_title: "Tres formas. Tú decides.",
-                access_free_title: "Tiempo de juego con anuncios",
-                access_free_desc: "Consigue tiempo de juego completando anuncios bonificados.",
+                access_free_title: "Tiempo de juego",
+                access_free_desc: "Consigue tiempo de juego mediante anuncios bonificados cuando estén disponibles.",
                 access_subscription_title: "Suscripción mensual",
                 access_subscription_desc: "Acceso completo sin anuncios mientras tu suscripción permanezca activa.",
                 access_lifetime_title: "Desbloqueo permanente",
                 access_lifetime_desc: "Un único pago para mantener el acceso completo permanente sin anuncios.",
-                btn_play: "Google Play", btn_beta: "Unirse a la Beta", video_title: "Vista previa",
+                btn_play: "Descargar en Google Play", btn_beta: "Unirse a la Beta", video_title: "EmulAItor en acción",
                 features_title: "Todo un universo retro",
                 feat_hub_title: "EmulAItor Hub",
                 feat_hub_desc: "Crea una sala desde una partida, comparte imagen y sonido, recibe los controles de tus invitados y activa voz opcional.",
@@ -872,21 +958,29 @@
                 feat_fast_desc: "Acelera las partes lentas en los sistemas compatibles y vuelve antes a la acción.",
                 systems_title: "Más de 20 sistemas clásicos", gallery_title: "Galería",
                 gal_catalog: "Catálogo", gal_library: "Biblioteca", gal_tablet: "Tablet", gal_systems: "Sistemas", gal_gamelist: "Listado",
+                faq_title: "Preguntas frecuentes",
+                faq_online_q: "¿Se puede jugar online?", faq_online_a: "Sí. EmulAItor Hub crea una sala desde una partida y comparte imagen, sonido, controles de invitados y voz opcional.",
+                faq_controllers_q: "¿Puedo usar móviles como mandos?", faq_controllers_a: "Sí. Hasta cuatro teléfonos o tabletas pueden emparejarse mediante QR para jugar en Android TV dentro de la misma red Wi-Fi.",
+                faq_homebrew_q: "¿Qué puedo descubrir?", faq_homebrew_a: "Explora el catálogo homebrew integrado y organiza tu biblioteca compatible con carátulas, metadatos, favoritos y búsqueda.",
+                faq_multidisc_q: "¿Admite juegos multidisco?", faq_multidisc_a: "Sí. Importa juegos multidisco conservando sus archivos asociados y cambia de disco desde las herramientas de juego.",
+                cta_title: "Tu próxima aventura retro empieza aquí", cta_desc: "Reúne tu colección, descubre homebrew, conecta tus pantallas y elige tu forma de acceso.", cta_button: "Descargar EmulAItor",
                 footer_disclaimer: "Reúne tu colección, descubre homebrew y comparte tu próxima aventura retro.",
                 footer_press: "Press kit", footer_privacy: "Política de Privacidad", btn_enter: "Entrar", reviews_title: "Lo que dicen los jugadores"
             },
             en: {
+                page_title: "EmulAItor — online retro hub, Android TV and 20+ systems",
+                page_description: "Play and share retro adventures with EmulAItor Hub, Android TV, phone controllers by QR, Google Drive, a homebrew catalogue and more than 20 classic systems.",
                 btn_portal: "< Portal",
                 hero_tagline: "Thousands of retro adventures. Every screen. Your way to play.",
                 hero_desc: "Create rooms with EmulAItor Hub, turn up to four phones into Android TV controllers, discover homebrew, and continue your games across devices.",
                 access_title: "Three ways. You decide.",
-                access_free_title: "Game time with ads",
-                access_free_desc: "Earn game time by completing rewarded ads.",
+                access_free_title: "Play time",
+                access_free_desc: "Earn game time through rewarded ads when they are available.",
                 access_subscription_title: "Monthly subscription",
                 access_subscription_desc: "Full ad-free access while your subscription remains active.",
                 access_lifetime_title: "Permanent unlock",
                 access_lifetime_desc: "One payment for permanent full ad-free access.",
-                btn_play: "Google Play", btn_beta: "Join Beta", video_title: "Preview",
+                btn_play: "Get it on Google Play", btn_beta: "Join Beta", video_title: "EmulAItor in action",
                 features_title: "A complete retro universe",
                 feat_hub_title: "EmulAItor Hub",
                 feat_hub_desc: "Create a room from a running game, share video and audio, receive guest controls, and enable optional voice.",
@@ -908,16 +1002,30 @@
                 feat_fast_desc: "Speed through slower sections on supported systems and get back to the action.",
                 systems_title: "More than 20 classic systems", gallery_title: "Gallery",
                 gal_catalog: "Catalog", gal_library: "Library", gal_tablet: "Tablet", gal_systems: "Systems", gal_gamelist: "Game List",
+                faq_title: "Frequently asked questions",
+                faq_online_q: "Can I play online?", faq_online_a: "Yes. EmulAItor Hub creates a room from a running game and shares video, audio, guest controls, and optional voice.",
+                faq_controllers_q: "Can I use phones as controllers?", faq_controllers_a: "Yes. Up to four phones or tablets can pair by QR code for Android TV play on the same Wi-Fi network.",
+                faq_homebrew_q: "What can I discover?", faq_homebrew_a: "Explore the integrated homebrew catalogue and organize your compatible library with covers, metadata, favorites, and search.",
+                faq_multidisc_q: "Does it support multi-disc games?", faq_multidisc_a: "Yes. Import multi-disc games while keeping their associated files and change discs from the in-game tools.",
+                cta_title: "Your next retro adventure starts here", cta_desc: "Bring your collection together, discover homebrew, connect your screens, and choose your way to access.", cta_button: "Download EmulAItor",
                 footer_disclaimer: "Bring your collection together, discover homebrew, and share your next retro adventure.",
                 footer_press: "Press kit", footer_privacy: "Privacy Policy", btn_enter: "Enter", reviews_title: "What players are saying"
             }
         };
 
-        let currentLang = localStorage.getItem('rolemiaster_lang') || 'es';
+        const requestedLang = new URLSearchParams(window.location.search).get('lang');
+        let currentLang = ['es', 'en'].includes(requestedLang) ? requestedLang : (localStorage.getItem('rolemiaster_lang') || 'es');
 
         function changeLang(lang) {
             currentLang = lang;
             localStorage.setItem('rolemiaster_lang', lang);
+            document.documentElement.lang = lang;
+            document.title = translations[lang].page_title;
+            const descriptionMeta = document.querySelector('meta[name="description"]');
+            if (descriptionMeta) descriptionMeta.setAttribute('content', translations[lang].page_description);
+            const langUrl = new URL(window.location.href);
+            langUrl.searchParams.set('lang', lang);
+            history.replaceState({}, '', langUrl);
             document.querySelectorAll('.btn-lang').forEach(b => b.classList.remove('active'));
             document.getElementById('btn-' + lang).classList.add('active');
             document.querySelectorAll('[data-i18n]').forEach(el => {
