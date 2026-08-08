@@ -390,6 +390,8 @@
             line-height: 1.6;
         }
 
+        .guide-card { text-decoration: none; color: inherit; display: block; }
+
         .feature-card p {
             font-size: 0.95rem;
             color: #999;
@@ -870,6 +872,22 @@
         </div>
     </section>
 
+    <!-- ORGANIC GUIDES -->
+    <section class="features fade-in" id="guias">
+        <h2 data-i18n="guides_title">Guías para disfrutar más de EmulAItor</h2>
+        <div class="features-grid">
+            <a class="feature-card guide-card" href="hub-juego-online.html" data-href-es="hub-juego-online.html" data-href-en="play-retro-online.html">
+                <div class="feature-icon">&#x1F310;</div><h3 data-i18n="guide_hub_title">Juega a distancia con Hub</h3><p data-i18n="guide_hub_desc">Crea una sala, invita a tus amigos y comparte la partida.</p>
+            </a>
+            <a class="feature-card guide-card" href="android-tv-moviles-mando.html" data-href-es="android-tv-moviles-mando.html" data-href-en="android-tv-phone-controllers.html">
+                <div class="feature-icon">&#x1F4F1;</div><h3 data-i18n="guide_tv_title">Móviles como mandos para Android TV</h3><p data-i18n="guide_tv_desc">Convierte hasta cuatro teléfonos o tabletas en mandos mediante QR.</p>
+            </a>
+            <a class="feature-card guide-card" href="homebrew-biblioteca-retro.html" data-href-es="homebrew-biblioteca-retro.html" data-href-en="homebrew-retro-library.html">
+                <div class="feature-icon">&#x1F4DA;</div><h3 data-i18n="guide_homebrew_title">Descubre homebrew y organiza tu biblioteca</h3><p data-i18n="guide_homebrew_desc">Carátulas, metadatos, favoritos, búsqueda y NAS/SMB.</p>
+            </a>
+        </div>
+    </section>
+
     <!-- FAQ -->
     <section class="features fade-in" id="preguntas">
         <h2 data-i18n="faq_title">Preguntas frecuentes</h2>
@@ -958,6 +976,10 @@
                 feat_fast_desc: "Acelera las partes lentas en los sistemas compatibles y vuelve antes a la acción.",
                 systems_title: "Más de 20 sistemas clásicos", gallery_title: "Galería",
                 gal_catalog: "Catálogo", gal_library: "Biblioteca", gal_tablet: "Tablet", gal_systems: "Sistemas", gal_gamelist: "Listado",
+                guides_title: "Guías para disfrutar más de EmulAItor",
+                guide_hub_title: "Juega a distancia con Hub", guide_hub_desc: "Crea una sala, invita a tus amigos y comparte la partida.",
+                guide_tv_title: "Móviles como mandos para Android TV", guide_tv_desc: "Convierte hasta cuatro teléfonos o tabletas en mandos mediante QR.",
+                guide_homebrew_title: "Descubre homebrew y organiza tu biblioteca", guide_homebrew_desc: "Carátulas, metadatos, favoritos, búsqueda y NAS/SMB.",
                 faq_title: "Preguntas frecuentes",
                 faq_online_q: "¿Se puede jugar online?", faq_online_a: "Sí. EmulAItor Hub crea una sala desde una partida y comparte imagen, sonido, controles de invitados y voz opcional.",
                 faq_controllers_q: "¿Puedo usar móviles como mandos?", faq_controllers_a: "Sí. Hasta cuatro teléfonos o tabletas pueden emparejarse mediante QR para jugar en Android TV dentro de la misma red Wi-Fi.",
@@ -1002,6 +1024,10 @@
                 feat_fast_desc: "Speed through slower sections on supported systems and get back to the action.",
                 systems_title: "More than 20 classic systems", gallery_title: "Gallery",
                 gal_catalog: "Catalog", gal_library: "Library", gal_tablet: "Tablet", gal_systems: "Systems", gal_gamelist: "Game List",
+                guides_title: "Guides to get more from EmulAItor",
+                guide_hub_title: "Play remotely with Hub", guide_hub_desc: "Create a room, invite friends, and share the game.",
+                guide_tv_title: "Phones as Android TV controllers", guide_tv_desc: "Turn up to four phones or tablets into controllers by QR.",
+                guide_homebrew_title: "Discover homebrew and organize your library", guide_homebrew_desc: "Cover art, metadata, favorites, search, and NAS/SMB.",
                 faq_title: "Frequently asked questions",
                 faq_online_q: "Can I play online?", faq_online_a: "Yes. EmulAItor Hub creates a room from a running game and shares video, audio, guest controls, and optional voice.",
                 faq_controllers_q: "Can I use phones as controllers?", faq_controllers_a: "Yes. Up to four phones or tablets can pair by QR code for Android TV play on the same Wi-Fi network.",
@@ -1033,6 +1059,10 @@
                 if (translations[lang] && translations[lang][key]) {
                     el.innerHTML = translations[lang][key];
                 }
+            });
+            document.querySelectorAll('[data-href-es][data-href-en]').forEach(el => {
+                const localizedHref = el.getAttribute('data-href-' + lang);
+                if (localizedHref) el.setAttribute('href', localizedHref);
             });
         }
 
