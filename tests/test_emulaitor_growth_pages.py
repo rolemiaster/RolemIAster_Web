@@ -68,6 +68,13 @@ class GrowthPagesTest(unittest.TestCase):
         robots = (ROOT / "robots.txt").read_text(encoding="utf-8")
         self.assertIn("Sitemap: https://rolemiaster.com/emulaitor/sitemap.xml", robots)
 
+    def test_indexnow_key_is_publishable_and_valid(self):
+        key_file = EMULAITOR / "indexnow-key.txt"
+        self.assertTrue(key_file.is_file(), "missing IndexNow ownership key")
+        key = key_file.read_text(encoding="utf-8").strip()
+        self.assertRegex(key, r"^[A-Za-z0-9-]{8,128}$")
+        self.assertEqual(key_file.read_text(encoding="utf-8"), key + "\n")
+
     def test_all_json_ld_blocks_are_valid(self):
         block = re.compile(r'<script type="application/ld\+json">(.*?)</script>', re.S)
         for pair in GUIDE_PAIRS.values():
