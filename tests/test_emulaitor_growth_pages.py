@@ -186,5 +186,74 @@ class GrowthPagesTest(unittest.TestCase):
                         json.loads(payload)
 
 
+class LocalizedPressKitsTest(unittest.TestCase):
+    KITS = {
+        "en": ("press-kit.html", "https://rolemiaster.com/emulaitor/press-kit.html", ["Official Press Kit", "Rewarded play time when available"]),
+        "es": ("press-kit-es.html", "https://rolemiaster.com/emulaitor/press-kit-es.html", ["Kit de prensa oficial", "anuncios bonificados cuando estén disponibles"]),
+        "pt-BR": ("press-kit-pt-BR.html", "https://rolemiaster.com/emulaitor/press-kit-pt-BR.html", ["Kit de imprensa oficial", "anúncios recompensados, quando disponíveis"]),
+        "de": ("press-kit-de.html", "https://rolemiaster.com/emulaitor/press-kit-de.html", ["Offizielles Presse-Kit", "Spielzeit über Rewarded Ads, sofern verfügbar"]),
+        "ja": ("press-kit-ja.html", "https://rolemiaster.com/emulaitor/press-kit-ja.html", ["公式プレスキット", "リワード広告でプレイ時間を獲得できる無料モード"]),
+    }
+
+    def test_press_kits_are_separate_localized_pages_with_self_canonical_and_hreflang(self):
+        urls = {lang: canonical for lang, (_, canonical, _) in self.KITS.items()}
+        for lang, (filename, canonical, required) in self.KITS.items():
+            with self.subTest(lang=lang):
+                page = EMULAITOR / filename
+                self.assertTrue(page.is_file(), f"missing localized press kit {filename}")
+                html = page.read_text(encoding="utf-8")
+                StrictHTMLParser().feed(html)
+                self.assertIn(f'<html lang="{lang}">', html)
+                self.assertIn(f'<link rel="canonical" href="{canonical}">', html)
+                for alternate_lang, alternate_url in urls.items():
+                    self.assertIn(
+                        f'<link rel="alternate" hreflang="{alternate_lang}" href="{alternate_url}">',
+                        html,
+                    )
+                self.assertIn(
+                    f'<link rel="alternate" hreflang="x-default" href="{urls["en"]}">',
+                    html,
+                )
+                for phrase in required + ["EmulAItor Hub", "Android TV", "Google Drive", "NAS/SMB", "20+"]:
+                    self.assertIn(phrase, html)
+                self.assertIn('assets/videos/emulaitor-product-overview-en-1920x1080.mp4', html)
+                self.assertIn('play.google.com/store/apps/details?id=com.rolemiaster.emulaitor', html)
+
+    def test_press_kit_master_and_localizations_do_not_mix_visible_language_blocks(self):
+        english = (EMULAITOR / "press-kit.html").read_text(encoding="utf-8")
+        self.assertNotIn("<h2>Resumen en español</h2>", english)
+        localized_markers = {
+            "press-kit-es.html": ["Product in one paragraph", "公式プレスキット"],
+            "press-kit-pt-BR.html": ["Resumen en español", "Offizielles Presse-Kit", "公式プレスキット"],
+            "press-kit-de.html": ["Resumen en español", "Kit de imprensa oficial", "公式プレスキット"],
+            "press-kit-ja.html": ["Resumen en español", "Kit de imprensa oficial", "Offizielles Presse-Kit"],
+        }
+        for filename, forbidden in localized_markers.items():
+            html = (EMULAITOR / filename).read_text(encoding="utf-8")
+            for marker in forbidden:
+                self.assertNotIn(marker, html, f"{filename}: mixed-language marker {marker}")
+
+    def test_localized_press_kit_play_ctas_have_locale_specific_earned_media_attribution(self):
+        import html as html_module
+        from urllib.parse import parse_qs, urlparse
+
+        for lang, (filename, _, _) in self.KITS.items():
+            with self.subTest(lang=lang):
+                source = (EMULAITOR / filename).read_text(encoding="utf-8")
+                match = re.search(r'<a class="cta primary" href="([^"]*play\.google\.com[^"]*)"', source)
+                self.assertIsNotNone(match, f"missing primary Play CTA in {filename}")
+                outer = parse_qs(urlparse(html_module.unescape(match.group(1))).query)
+                self.assertEqual(outer["id"], ["com.rolemiaster.emulaitor"])
+                referrer = parse_qs(outer["referrer"][0])
+                self.assertEqual(referrer["utm_source"], ["rolemiaster.com"])
+                self.assertEqual(referrer["utm_medium"], ["earned_media"])
+                self.assertEqual(referrer["utm_campaign"], [f"emulaitor_press_kit_{lang}"])
+
+    def test_localized_press_kits_are_in_sitemap(self):
+        sitemap = (EMULAITOR / "sitemap.xml").read_text(encoding="utf-8")
+        for _, canonical, _ in self.KITS.values():
+            self.assertIn(f"<loc>{canonical}</loc>", sitemap)
+
+
 if __name__ == "__main__":
     unittest.main()

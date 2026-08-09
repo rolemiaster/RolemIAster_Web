@@ -183,7 +183,11 @@ class EmulaitorGlobalLandingLanguageTest(unittest.TestCase):
         self.assertIn('Monthly subscription', html)
         self.assertIn('Lifetime unlock', html)
         self.assertIn('https://youtube.com/shorts/BTLio1X5MbA', html)
-        self.assertIn('<h2>Resumen en español</h2>', html)
+        self.assertNotIn('<h2>Resumen en español</h2>', html)
+        self.assertIn('press-kit-es.html', html)
+        self.assertIn('press-kit-pt-BR.html', html)
+        self.assertIn('press-kit-de.html', html)
+        self.assertIn('press-kit-ja.html', html)
 
     def test_press_kit_publishes_downloadable_english_product_overview(self):
         html = (ROOT / 'emulaitor' / 'press-kit.html').read_text(encoding='utf-8')
@@ -199,13 +203,13 @@ class EmulaitorGlobalLandingLanguageTest(unittest.TestCase):
         from urllib.parse import parse_qs, urlparse
 
         html = (ROOT / 'emulaitor' / 'press-kit.html').read_text(encoding='utf-8')
-        match = re.search(r'<a class="cta" href="([^"]*play\.google\.com[^"]*)"', html)
+        match = re.search(r'<a class="cta primary" href="([^"]*play\.google\.com[^"]*)"', html)
         self.assertIsNotNone(match)
         outer = parse_qs(urlparse(html_module.unescape(match.group(1))).query)
         referrer = parse_qs(outer['referrer'][0])
         self.assertEqual(referrer['utm_source'], ['rolemiaster.com'])
         self.assertEqual(referrer['utm_medium'], ['earned_media'])
-        self.assertEqual(referrer['utm_campaign'], ['emulaitor_press_kit'])
+        self.assertEqual(referrer['utm_campaign'], ['emulaitor_press_kit_en'])
 
     def test_global_hero_uses_textless_asset(self):
         from PIL import Image

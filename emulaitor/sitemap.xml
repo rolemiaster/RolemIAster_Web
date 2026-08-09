@@ -27,4 +27,29 @@
       <video:publication_date>2026-08-09T09:17:24+02:00</video:publication_date>
     </video:video>
   </url>
+
+  <url>
+    <loc>https://rolemiaster.com/emulaitor/press-kit-es.html</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rolemiaster.com/emulaitor/press-kit-pt-BR.html</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rolemiaster.com/emulaitor/press-kit-de.html</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rolemiaster.com/emulaitor/press-kit-ja.html</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
