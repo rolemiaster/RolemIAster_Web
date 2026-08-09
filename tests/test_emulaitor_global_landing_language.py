@@ -31,6 +31,25 @@ class EmulaitorGlobalLandingLanguageTest(unittest.TestCase):
         self.assertIn('<meta property="og:locale" content="en_US">', html)
         self.assertIn('Create rooms with EmulAItor Hub', html)
 
+    def test_visible_video_matches_global_english_video_object(self):
+        html = INDEX.read_text(encoding='utf-8')
+        blocks = re.findall(
+            r'<script type="application/ld\+json">(.*?)</script>',
+            html,
+            re.S,
+        )
+        payloads = [json.loads(block) for block in blocks]
+        video = next((item for item in payloads if item.get('@type') == 'VideoObject'), None)
+        self.assertIsNotNone(video, 'missing VideoObject')
+        iframe_match = re.search(
+            r'<iframe[^>]+src="https://www\.youtube-nocookie\.com/embed/([^"?]+)"',
+            html,
+        )
+        self.assertIsNotNone(iframe_match, 'missing privacy-enhanced visible video')
+        self.assertEqual(video['embedUrl'].rsplit('/', 1)[-1], iframe_match.group(1))
+        self.assertEqual('BTLio1X5MbA', iframe_match.group(1))
+        self.assertNotIn('UTIzr3AmCHE', html)
+
     def test_language_resolution_prioritizes_explicit_then_campaign_then_preference(self):
         html = INDEX.read_text(encoding='utf-8')
         match = re.search(r'function resolveInitialLanguage\(search, storedLanguage\) \{.*?\n        \}', html, re.S)
