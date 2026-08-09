@@ -36,5 +36,17 @@ class EmulaitorGlobalLandingLanguageTest(unittest.TestCase):
         html = INDEX.read_text(encoding='utf-8')
         self.assertIn("resolveInitialLanguage(window.location.search, localStorage.getItem('rolemiaster_lang'))", html)
 
+    def test_press_kit_is_english_first_and_commercially_current(self):
+        html = (ROOT / 'emulaitor' / 'press-kit.html').read_text(encoding='utf-8')
+        self.assertIn('<html lang="en">', html)
+        self.assertIn('Official EmulAItor press kit', html)
+        self.assertIn('Online rooms with EmulAItor Hub', html)
+        self.assertIn('Up to four phones as Android TV controllers', html)
+        self.assertIn('Rewarded play time when available', html)
+        self.assertIn('Monthly subscription', html)
+        self.assertIn('Lifetime unlock', html)
+        self.assertIn('https://youtube.com/shorts/BTLio1X5MbA', html)
+        self.assertIn('<h2>Resumen en español</h2>', html)
+
 
 if __name__ == '__main__': unittest.main()
