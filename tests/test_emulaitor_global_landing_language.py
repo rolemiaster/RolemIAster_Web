@@ -117,6 +117,15 @@ class EmulaitorGlobalLandingLanguageTest(unittest.TestCase):
         self.assertIn('https://youtube.com/shorts/BTLio1X5MbA', html)
         self.assertIn('<h2>Resumen en español</h2>', html)
 
+    def test_press_kit_publishes_downloadable_english_product_overview(self):
+        html = (ROOT / 'emulaitor' / 'press-kit.html').read_text(encoding='utf-8')
+        relative = 'assets/videos/emulaitor-product-overview-en-1920x1080.mp4'
+        asset = ROOT / 'emulaitor' / relative
+        self.assertTrue(asset.is_file(), asset)
+        self.assertGreater(asset.stat().st_size, 1_000_000)
+        self.assertIn(f'href="{relative}"', html)
+        self.assertIn('Download the 16:9 English product overview', html)
+
     def test_press_kit_play_cta_has_earned_media_referrer(self):
         import html as html_module
         from urllib.parse import parse_qs, urlparse
