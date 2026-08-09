@@ -20,6 +20,14 @@ GUIDE_PAIRS = {
         "es": ("homebrew-biblioteca-retro.html", "https://rolemiaster.com/emulaitor/homebrew-biblioteca-retro.html", ["homebrew", "carátulas", "metadatos", "NAS/SMB"]),
         "en": ("homebrew-retro-library.html", "https://rolemiaster.com/emulaitor/homebrew-retro-library.html", ["homebrew", "cover art", "metadata", "NAS/SMB"]),
     },
+    "cloud": {
+        "es": ("partidas-guardadas-google-drive.html", "https://rolemiaster.com/emulaitor/partidas-guardadas-google-drive.html", ["Google Drive", "Android TV", "estados seleccionados", "vistas previas"]),
+        "en": ("cloud-saves-google-drive.html", "https://rolemiaster.com/emulaitor/cloud-saves-google-drive.html", ["Google Drive", "Android TV", "selected states", "previews"]),
+    },
+    "nas": {
+        "es": ("biblioteca-retro-nas-smb.html", "https://rolemiaster.com/emulaitor/biblioteca-retro-nas-smb.html", ["NAS/SMB", "red local", "carátulas", "metadatos"]),
+        "en": ("nas-smb-retro-library.html", "https://rolemiaster.com/emulaitor/nas-smb-retro-library.html", ["NAS/SMB", "local network", "cover art", "metadata"]),
+    },
 }
 
 
