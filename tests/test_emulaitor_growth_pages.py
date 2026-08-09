@@ -110,6 +110,53 @@ class GrowthPagesTest(unittest.TestCase):
         sitemap = (EMULAITOR / "sitemap.xml").read_text(encoding="utf-8")
         self.assertNotIn('/emulaitor/tiktok/', sitemap)
 
+    def test_english_product_overview_is_a_primary_video_watch_page(self):
+        import html as html_module
+        from urllib.parse import parse_qs, urlparse
+
+        page = EMULAITOR / "product-overview.html"
+        self.assertTrue(page.is_file(), "missing English product-overview watch page")
+        html = page.read_text(encoding="utf-8")
+        StrictHTMLParser().feed(html)
+        self.assertIn('<html lang="en">', html)
+        self.assertIn('<link rel="canonical" href="https://rolemiaster.com/emulaitor/product-overview.html">', html)
+        self.assertIn('<video controls playsinline', html)
+        self.assertIn('src="assets/videos/emulaitor-product-overview-en-1920x1080.mp4"', html)
+        self.assertIn('Online retro rooms', html)
+        self.assertIn('Up to four phones', html)
+        self.assertIn('Google Drive', html)
+        self.assertIn('NAS/SMB', html)
+        self.assertIn('20+ classic systems', html)
+
+        blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)
+        payloads = [json.loads(block) for block in blocks]
+        video = next((item for item in payloads if item.get('@type') == 'VideoObject'), None)
+        self.assertIsNotNone(video, 'missing VideoObject')
+        self.assertEqual(video['duration'], 'PT27S')
+        self.assertEqual(video['contentUrl'], 'https://rolemiaster.com/emulaitor/assets/videos/emulaitor-product-overview-en-1920x1080.mp4')
+        self.assertEqual(video['thumbnailUrl'], 'https://rolemiaster.com/emulaitor/assets/imagenes/hero-global-textless-1920x1080.webp')
+
+        match = re.search(r'<a class="cta primary" href="([^"]*play\.google\.com[^"]*)"', html)
+        self.assertIsNotNone(match, 'missing attributed Google Play CTA')
+        outer = parse_qs(urlparse(html_module.unescape(match.group(1))).query)
+        referrer = parse_qs(outer['referrer'][0])
+        self.assertEqual(referrer['utm_source'], ['rolemiaster.com'])
+        self.assertEqual(referrer['utm_medium'], ['video'])
+        self.assertEqual(referrer['utm_campaign'], ['emulaitor_product_overview'])
+        self.assertEqual(referrer['utm_content'], ['watch_page_cta'])
+
+    def test_video_watch_page_is_linked_and_published_in_video_sitemap(self):
+        watch_url = 'https://rolemiaster.com/emulaitor/product-overview.html'
+        landing = (EMULAITOR / 'index.html').read_text(encoding='utf-8')
+        press = (EMULAITOR / 'press-kit.html').read_text(encoding='utf-8')
+        sitemap = (EMULAITOR / 'sitemap.xml').read_text(encoding='utf-8')
+        self.assertIn('href="product-overview.html"', landing)
+        self.assertIn('href="product-overview.html"', press)
+        self.assertIn('xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"', sitemap)
+        self.assertIn(f'<loc>{watch_url}</loc>', sitemap)
+        self.assertIn('<video:content_loc>https://rolemiaster.com/emulaitor/assets/videos/emulaitor-product-overview-en-1920x1080.mp4</video:content_loc>', sitemap)
+        self.assertIn('<video:thumbnail_loc>https://rolemiaster.com/emulaitor/assets/imagenes/hero-global-textless-1920x1080.webp</video:thumbnail_loc>', sitemap)
+
     def test_indexnow_key_is_publishable_and_valid(self):
         key_file = EMULAITOR / "indexnow-key.txt"
         self.assertTrue(key_file.is_file(), "missing IndexNow ownership key")
