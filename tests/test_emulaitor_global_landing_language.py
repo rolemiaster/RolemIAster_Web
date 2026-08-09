@@ -48,5 +48,19 @@ class EmulaitorGlobalLandingLanguageTest(unittest.TestCase):
         self.assertIn('https://youtube.com/shorts/BTLio1X5MbA', html)
         self.assertIn('<h2>Resumen en español</h2>', html)
 
+    def test_global_hero_uses_textless_asset(self):
+        from PIL import Image
+        asset_name = 'hero-global-textless-1920x1080.webp'
+        asset = ROOT / 'emulaitor' / 'assets' / 'imagenes' / asset_name
+        self.assertTrue(asset.is_file())
+        with Image.open(asset) as image:
+            self.assertEqual((1920, 1080), image.size)
+        index = INDEX.read_text(encoding='utf-8')
+        press = (ROOT / 'emulaitor' / 'press-kit.html').read_text(encoding='utf-8')
+        self.assertIn(asset_name, index)
+        self.assertIn(asset_name, press)
+        self.assertNotIn('banner1920x1080.jpg', index)
+        self.assertNotIn('banner1920x1080.jpg', press)
+
 
 if __name__ == '__main__': unittest.main()
