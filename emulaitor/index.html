@@ -697,20 +697,33 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "¿Se puede jugar online con EmulAItor?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Sí. EmulAItor Hub permite crear una sala desde una partida y compartir imagen, sonido, controles de invitados y comunicación de voz opcional."}
+          "name": "Can I play online with EmulAItor?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. EmulAItor Hub creates an online room from a running game and shares video, audio, guest controls and optional voice."}
         },
         {
           "@type": "Question",
-          "name": "¿Puedo usar móviles como mandos para Android TV?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Sí. Hasta cuatro teléfonos o tabletas pueden emparejarse mediante QR en la misma red Wi-Fi y funcionar como mandos táctiles."}
+          "name": "Can I use phones as Android TV controllers?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Up to four phones or tablets can pair by QR code over the same Wi-Fi network and work as touch controllers."}
         },
         {
           "@type": "Question",
-          "name": "¿Qué formas de acceso ofrece EmulAItor?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Puedes conseguir tiempo de juego mediante anuncios bonificados cuando estén disponibles, usar una suscripción mensual o elegir una compra única lifetime."}
+          "name": "Which access options does EmulAItor offer?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Choose rewarded play time when available, a monthly subscription with full access while active, or a lifetime unlock through one payment."}
         }
       ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "Play Retro Together with EmulAItor Hub",
+      "description": "A short overview of EmulAItor Hub online rooms, Android TV phone controllers, Google Drive saves, 20+ systems and homebrew.",
+      "thumbnailUrl": "https://rolemiaster.com/emulaitor/assets/imagenes/hero-global-textless-1920x1080.webp",
+      "uploadDate": "2026-08-09T05:22:00+02:00",
+      "duration": "PT15S",
+      "contentUrl": "https://youtube.com/shorts/BTLio1X5MbA?feature=share",
+      "embedUrl": "https://www.youtube.com/embed/BTLio1X5MbA"
     }
     </script>
 </head>
@@ -727,8 +740,8 @@
             </a>
         </div>
         <div class="nav-right">
-            <button id="btn-es" class="btn-lang active" onclick="changeLang('es')">ES</button>
-            <button id="btn-en" class="btn-lang" onclick="changeLang('en')">EN</button>
+            <button id="btn-es" class="btn-lang" onclick="changeLang('es')">ES</button>
+            <button id="btn-en" class="btn-lang active" onclick="changeLang('en')">EN</button>
         </div>
     </nav>
 
@@ -741,42 +754,42 @@
                 <img src="assets/imagenes/Logo.png" alt="EmulAItor Logo">
             </div>
             <h1>EmulAItor</h1>
-            <p class="hero-tagline" data-i18n="hero_tagline">Miles de aventuras retro. Todas tus pantallas. Tu forma de jugar.</p>
-            <p class="hero-desc" data-i18n="hero_desc">Crea salas con EmulAItor Hub, convierte hasta cuatro móviles en mandos para Android TV, descubre homebrew y continúa tus partidas entre dispositivos.</p>
+            <p class="hero-tagline" data-i18n="hero_tagline">Thousands of retro adventures. Every screen. Your way to play.</p>
+            <p class="hero-desc" data-i18n="hero_desc">Create rooms with EmulAItor Hub, turn up to four phones into Android TV controllers, discover homebrew, and continue your games across devices.</p>
             <div class="hero-buttons">
                 <a href="https://play.google.com/store/apps/details?id=com.rolemiaster.emulaitor&amp;utm_source=rolemiaster.com&amp;utm_medium=organic&amp;utm_campaign=emulaitor_landing" target="_blank" rel="noopener noreferrer"
-                    class="btn-retro btn-primary-retro" data-i18n="btn_play">Descargar en Google Play</a>
+                    class="btn-retro btn-primary-retro" data-i18n="btn_play">Get it on Google Play</a>
                 <a href="https://play.google.com/apps/testing/com.rolemiaster.emulaitor" target="_blank"
-                    class="btn-retro btn-secondary-retro" data-i18n="btn_beta" style="display: none;">Unirse a la Beta</a>
+                    class="btn-retro btn-secondary-retro" data-i18n="btn_beta" style="display: none;">Join Beta</a>
             </div>
         </div>
     </section>
 
     <!-- ACCESS OPTIONS -->
     <section class="features fade-in" aria-labelledby="access-title">
-        <h2 id="access-title" data-i18n="access_title">Elige cómo jugar</h2>
+        <h2 id="access-title" data-i18n="access_title">Three ways. You decide.</h2>
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">&#x23F3;</div>
-                <h3 data-i18n="access_free_title">Tiempo gratis con anuncios</h3>
-                <p data-i18n="access_free_desc">Consigue tiempo de juego mediante anuncios bonificados cuando estén disponibles.</p>
+                <h3 data-i18n="access_free_title">Play time</h3>
+                <p data-i18n="access_free_desc">Earn game time through rewarded ads when they are available.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">&#x1F4C5;</div>
-                <h3 data-i18n="access_subscription_title">Suscripción mensual</h3>
-                <p data-i18n="access_subscription_desc">Acceso completo sin anuncios mientras tu suscripción permanezca activa.</p>
+                <h3 data-i18n="access_subscription_title">Monthly subscription</h3>
+                <p data-i18n="access_subscription_desc">Full ad-free access while your subscription remains active.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">&#x267E;&#xFE0F;</div>
-                <h3 data-i18n="access_lifetime_title">Desbloqueo permanente</h3>
-                <p data-i18n="access_lifetime_desc">Un único pago para mantener el acceso completo permanente sin anuncios.</p>
+                <h3 data-i18n="access_lifetime_title">Permanent unlock</h3>
+                <p data-i18n="access_lifetime_desc">One payment for permanent full ad-free access.</p>
             </div>
         </div>
     </section>
 
     <!-- VIDEO -->
     <section class="video-section fade-in">
-        <h2 data-i18n="video_title">EmulAItor en acción</h2>
+        <h2 data-i18n="video_title">EmulAItor in action</h2>
         <div class="video-container">
             <iframe src="https://www.youtube-nocookie.com/embed/UTIzr3AmCHE" title="EmulAItor Hub, Android TV y juego retro en todas tus pantallas" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
@@ -784,59 +797,59 @@
 
     <!-- FEATURES -->
     <section class="features fade-in" id="features">
-        <h2 data-i18n="features_title">Todo un universo retro</h2>
+        <h2 data-i18n="features_title">A complete retro universe</h2>
         <div class="features-grid">
             <div class="feature-card feature-card-highlight">
                 <div class="feature-icon">&#x1F310;</div>
                 <h3 data-i18n="feat_hub_title">EmulAItor Hub</h3>
-                <p data-i18n="feat_hub_desc">Crea una sala desde una partida, comparte imagen y sonido, recibe los controles de tus invitados y activa voz opcional.</p>
+                <p data-i18n="feat_hub_desc">Create a room from a running game, share video and audio, receive guest controls, and enable optional voice.</p>
             </div>
             <div class="feature-card feature-card-highlight">
                 <div class="feature-icon">&#x1F4F1;</div>
-                <h3 data-i18n="feat_phonepad_title">Hasta cuatro móviles como mandos</h3>
-                <p data-i18n="feat_phonepad_desc">Escanea un QR y convierte teléfonos o tabletas en mandos para Android TV. El diseño se adapta al sistema jugado.</p>
+                <h3 data-i18n="feat_phonepad_title">Up to four phones as controllers</h3>
+                <p data-i18n="feat_phonepad_desc">Scan a QR code and turn phones or tablets into Android TV controllers. The layout adapts to the system being played.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">&#x2601;&#xFE0F;</div>
-                <h3 data-i18n="feat_cloud_title">Continúa en otra pantalla</h3>
-                <p data-i18n="feat_cloud_desc">Sincroniza partidas mediante Google Drive. Empieza en el móvil y continúa en Android TV.</p>
+                <h3 data-i18n="feat_cloud_title">Continue on another screen</h3>
+                <p data-i18n="feat_cloud_desc">Sync saves through Google Drive. Start on mobile and continue on Android TV.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">&#x1F4E6;</div>
-                <h3 data-i18n="feat_catalog_title">Catálogo y homebrew</h3>
-                <p data-i18n="feat_catalog_desc">Descubre juegos homebrew y reúne fuentes integradas, carpetas locales y colecciones NAS/SMB.</p>
+                <h3 data-i18n="feat_catalog_title">Catalog and homebrew</h3>
+                <p data-i18n="feat_catalog_desc">Discover homebrew games and bring together built-in sources, local folders, and NAS/SMB collections.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">&#x1F4DA;</div>
-                <h3 data-i18n="feat_library_title">Biblioteca visual</h3>
-                <p data-i18n="feat_library_desc">Carátulas, metadatos online, búsqueda, favoritos, recientes, descubrimiento y más de veinte sistemas.</p>
+                <h3 data-i18n="feat_library_title">Visual library</h3>
+                <p data-i18n="feat_library_desc">Cover art, online metadata, search, favorites, recent games, discovery, and more than twenty systems.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">&#x1F4BE;</div>
-                <h3 data-i18n="feat_saves_title">Guardados avanzados</h3>
-                <p data-i18n="feat_saves_desc">Autosave, ranuras con vista previa, guardado rápido, carga rápida y cambio de disco.</p>
+                <h3 data-i18n="feat_saves_title">Advanced saves</h3>
+                <p data-i18n="feat_saves_desc">Autosave, preview slots, quick save, quick load, and disc switching.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">&#x1F3AE;</div>
-                <h3 data-i18n="feat_gamepad_title">Juega como quieras</h3>
-                <p data-i18n="feat_gamepad_desc">Controles táctiles editables, mandos Bluetooth/USB, reasignación, vibración y multijugador local.</p>
+                <h3 data-i18n="feat_gamepad_title">Play your way</h3>
+                <p data-i18n="feat_gamepad_desc">Editable touch controls, Bluetooth/USB gamepads, remapping, rumble, and local multiplayer.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">&#x2728;</div>
-                <h3 data-i18n="feat_visual_title">Tu imagen retro</h3>
-                <p data-i18n="feat_visual_desc">Filtros CRT, LCD, nítido y suave, además de modo HD con calidad ajustable.</p>
+                <h3 data-i18n="feat_visual_title">Your retro picture</h3>
+                <p data-i18n="feat_visual_desc">CRT, LCD, sharp, and smooth filters plus HD mode with adjustable quality.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">&#x23E9;</div>
-                <h3 data-i18n="feat_fast_title">Avance rápido</h3>
-                <p data-i18n="feat_fast_desc">Acelera las partes lentas en los sistemas compatibles y vuelve antes a la acción.</p>
+                <h3 data-i18n="feat_fast_title">Fast-forward</h3>
+                <p data-i18n="feat_fast_desc">Speed through slower sections on supported systems and get back to the action.</p>
             </div>
         </div>
     </section>
 
     <!-- SYSTEMS -->
     <section class="systems fade-in">
-        <h2 data-i18n="systems_title">Más de 20 sistemas clásicos</h2>
+        <h2 data-i18n="systems_title">More than 20 classic systems</h2>
         <div class="systems-list">
             <span>NES</span><span>SNES</span><span>Game Boy</span><span>GBC</span><span>GBA</span><span>N64</span><span>NDS</span><span>Genesis</span><span>Sega CD</span><span>Master System</span><span>Game Gear</span><span>PlayStation</span><span>PSP</span><span>Arcade</span><span>Atari 2600</span><span>Atari 7800</span><span>PC Engine</span><span>WonderSwan</span><span>Neo Geo Pocket</span><span>DOS</span><span>Nintendo 3DS</span>
         </div>
@@ -844,15 +857,15 @@
 
     <!-- GALLERY -->
     <section class="gallery fade-in">
-        <h2 data-i18n="gallery_title">Galeria</h2>
+        <h2 data-i18n="gallery_title">Gallery</h2>
         <div class="gallery-grid">
             <div class="gallery-item">
                 <img src="assets/imagenes/Catalog.png" alt="Catalog">
-                <div class="caption" data-i18n="gal_catalog">Catalogo</div>
+                <div class="caption" data-i18n="gal_catalog">Catalog</div>
             </div>
             <div class="gallery-item">
                 <img src="assets/imagenes/biblioteca.jpg" alt="Library">
-                <div class="caption" data-i18n="gal_library">Biblioteca</div>
+                <div class="caption" data-i18n="gal_library">Library</div>
             </div>
             <div class="gallery-item">
                 <img src="assets/imagenes/tablet_cap_inicio.png" alt="Tablet Home">
@@ -864,69 +877,69 @@
             </div>
             <div class="gallery-item">
                 <img src="assets/imagenes/tablet_sistemas.png" alt="Systems">
-                <div class="caption" data-i18n="gal_systems">Sistemas</div>
+                <div class="caption" data-i18n="gal_systems">Systems</div>
             </div>
             <div class="gallery-item">
                 <img src="assets/imagenes/tablet_listado.png" alt="Game List">
-                <div class="caption" data-i18n="gal_gamelist">Listado</div>
+                <div class="caption" data-i18n="gal_gamelist">Game List</div>
             </div>
         </div>
     </section>
 
     <!-- ORGANIC GUIDES -->
     <section class="features fade-in" id="guias">
-        <h2 data-i18n="guides_title">Guías para disfrutar más de EmulAItor</h2>
+        <h2 data-i18n="guides_title">Guides to get more from EmulAItor</h2>
         <div class="features-grid">
-            <a class="feature-card guide-card" href="hub-juego-online.html" data-href-es="hub-juego-online.html" data-href-en="play-retro-online.html">
-                <div class="feature-icon">&#x1F310;</div><h3 data-i18n="guide_hub_title">Juega a distancia con Hub</h3><p data-i18n="guide_hub_desc">Crea una sala, invita a tus amigos y comparte la partida.</p>
+            <a class="feature-card guide-card" href="play-retro-online.html" data-href-es="hub-juego-online.html" data-href-en="play-retro-online.html">
+                <div class="feature-icon">&#x1F310;</div><h3 data-i18n="guide_hub_title">Play remotely with Hub</h3><p data-i18n="guide_hub_desc">Create a room, invite friends, and share the game.</p>
             </a>
-            <a class="feature-card guide-card" href="android-tv-moviles-mando.html" data-href-es="android-tv-moviles-mando.html" data-href-en="android-tv-phone-controllers.html">
-                <div class="feature-icon">&#x1F4F1;</div><h3 data-i18n="guide_tv_title">Móviles como mandos para Android TV</h3><p data-i18n="guide_tv_desc">Convierte hasta cuatro teléfonos o tabletas en mandos mediante QR.</p>
+            <a class="feature-card guide-card" href="android-tv-phone-controllers.html" data-href-es="android-tv-moviles-mando.html" data-href-en="android-tv-phone-controllers.html">
+                <div class="feature-icon">&#x1F4F1;</div><h3 data-i18n="guide_tv_title">Phones as Android TV controllers</h3><p data-i18n="guide_tv_desc">Turn up to four phones or tablets into controllers by QR.</p>
             </a>
-            <a class="feature-card guide-card" href="homebrew-biblioteca-retro.html" data-href-es="homebrew-biblioteca-retro.html" data-href-en="homebrew-retro-library.html">
-                <div class="feature-icon">&#x1F4DA;</div><h3 data-i18n="guide_homebrew_title">Descubre homebrew y organiza tu biblioteca</h3><p data-i18n="guide_homebrew_desc">Carátulas, metadatos, favoritos, búsqueda y NAS/SMB.</p>
+            <a class="feature-card guide-card" href="homebrew-retro-library.html" data-href-es="homebrew-biblioteca-retro.html" data-href-en="homebrew-retro-library.html">
+                <div class="feature-icon">&#x1F4DA;</div><h3 data-i18n="guide_homebrew_title">Discover homebrew and organize your library</h3><p data-i18n="guide_homebrew_desc">Cover art, metadata, favorites, search, and NAS/SMB.</p>
             </a>
-            <a class="feature-card guide-card" href="partidas-guardadas-google-drive.html" data-href-es="partidas-guardadas-google-drive.html" data-href-en="cloud-saves-google-drive.html">
-                <div class="feature-icon">&#x2601;&#xFE0F;</div><h3 data-i18n="guide_cloud_title">Continúa tus partidas con Google Drive</h3><p data-i18n="guide_cloud_desc">Sincroniza guardados, estados seleccionados y vistas previas entre dispositivos.</p>
+            <a class="feature-card guide-card" href="cloud-saves-google-drive.html" data-href-es="partidas-guardadas-google-drive.html" data-href-en="cloud-saves-google-drive.html">
+                <div class="feature-icon">&#x2601;&#xFE0F;</div><h3 data-i18n="guide_cloud_title">Continue your games with Google Drive</h3><p data-i18n="guide_cloud_desc">Sync saves, selected states, and previews between devices.</p>
             </a>
-            <a class="feature-card guide-card" href="biblioteca-retro-nas-smb.html" data-href-es="biblioteca-retro-nas-smb.html" data-href-en="nas-smb-retro-library.html">
-                <div class="feature-icon">&#x1F5A7;&#xFE0F;</div><h3 data-i18n="guide_nas_title">Tu biblioteca desde NAS/SMB</h3><p data-i18n="guide_nas_desc">Convierte una colección de red compatible en una biblioteca visual.</p>
+            <a class="feature-card guide-card" href="nas-smb-retro-library.html" data-href-es="biblioteca-retro-nas-smb.html" data-href-en="nas-smb-retro-library.html">
+                <div class="feature-icon">&#x1F5A7;&#xFE0F;</div><h3 data-i18n="guide_nas_title">Your library from NAS/SMB</h3><p data-i18n="guide_nas_desc">Turn a compatible network collection into a visual library.</p>
             </a>
         </div>
     </section>
 
     <!-- FAQ -->
     <section class="features fade-in" id="preguntas">
-        <h2 data-i18n="faq_title">Preguntas frecuentes</h2>
+        <h2 data-i18n="faq_title">Frequently asked questions</h2>
         <div class="features-grid">
             <div class="feature-card">
-                <h3 data-i18n="faq_online_q">¿Se puede jugar online?</h3>
-                <p data-i18n="faq_online_a">Sí. EmulAItor Hub crea una sala desde una partida y comparte imagen, sonido, controles de invitados y voz opcional.</p>
+                <h3 data-i18n="faq_online_q">Can I play online?</h3>
+                <p data-i18n="faq_online_a">Yes. EmulAItor Hub creates a room from a running game and shares video, audio, guest controls, and optional voice.</p>
             </div>
             <div class="feature-card">
-                <h3 data-i18n="faq_controllers_q">¿Puedo usar móviles como mandos?</h3>
-                <p data-i18n="faq_controllers_a">Sí. Hasta cuatro teléfonos o tabletas pueden emparejarse mediante QR para jugar en Android TV dentro de la misma red Wi-Fi.</p>
+                <h3 data-i18n="faq_controllers_q">Can I use phones as controllers?</h3>
+                <p data-i18n="faq_controllers_a">Yes. Up to four phones or tablets can pair by QR code for Android TV play on the same Wi-Fi network.</p>
             </div>
             <div class="feature-card">
-                <h3 data-i18n="faq_homebrew_q">¿Qué puedo descubrir?</h3>
-                <p data-i18n="faq_homebrew_a">Explora el catálogo homebrew integrado y organiza tu biblioteca compatible con carátulas, metadatos, favoritos y búsqueda.</p>
+                <h3 data-i18n="faq_homebrew_q">What can I discover?</h3>
+                <p data-i18n="faq_homebrew_a">Explore the integrated homebrew catalogue and organize your compatible library with covers, metadata, favorites, and search.</p>
             </div>
             <div class="feature-card">
-                <h3 data-i18n="faq_multidisc_q">¿Admite juegos multidisco?</h3>
-                <p data-i18n="faq_multidisc_a">Sí. Importa juegos multidisco conservando sus archivos asociados y cambia de disco desde las herramientas de juego.</p>
+                <h3 data-i18n="faq_multidisc_q">Does it support multi-disc games?</h3>
+                <p data-i18n="faq_multidisc_a">Yes. Import multi-disc games while keeping their associated files and change discs from the in-game tools.</p>
             </div>
         </div>
     </section>
 
     <section class="final-cta fade-in">
-        <h2 data-i18n="cta_title">Tu próxima aventura retro empieza aquí</h2>
-        <p data-i18n="cta_desc">Reúne tu colección, descubre homebrew, conecta tus pantallas y elige tu forma de acceso.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.rolemiaster.emulaitor&amp;utm_source=rolemiaster.com&amp;utm_medium=organic&amp;utm_campaign=emulaitor_landing" target="_blank" rel="noopener noreferrer" class="btn-retro btn-primary-retro" data-i18n="cta_button">Descargar EmulAItor</a>
+        <h2 data-i18n="cta_title">Your next retro adventure starts here</h2>
+        <p data-i18n="cta_desc">Bring your collection together, discover homebrew, connect your screens, and choose your way to access.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.rolemiaster.emulaitor&amp;utm_source=rolemiaster.com&amp;utm_medium=organic&amp;utm_campaign=emulaitor_landing" target="_blank" rel="noopener noreferrer" class="btn-retro btn-primary-retro" data-i18n="cta_button">Download EmulAItor</a>
     </section>
 
     <!-- REVIEWS -->
     <section class="reviews-section fade-in">
-        <h2 data-i18n="reviews_title">Lo que dicen los jugadores</h2>
+        <h2 data-i18n="reviews_title">What players are saying</h2>
         <div class="carousel-wrapper">
             <div class="carousel-track" id="reviews-track">
             </div>
@@ -941,8 +954,8 @@
             <a href="https://www.youtube.com/@RoleMIAster" target="_blank" rel="noopener" aria-label="EmulAItor en YouTube">YouTube</a>
             <a href="https://x.com/RolemIAster" target="_blank" rel="noopener" aria-label="EmulAItor en X">X</a>
         </p>
-        <p data-i18n="footer_disclaimer">Reúne tu colección, descubre homebrew y comparte tu próxima aventura retro.</p>
-        <p style="margin-top: 0.3rem;"><a href="press-kit.html" data-i18n="footer_press">Press kit</a> &middot; <a href="privacy.html" data-i18n="footer_privacy">Politica de Privacidad</a></p>
+        <p data-i18n="footer_disclaimer">Bring your collection together, discover homebrew, and share your next retro adventure.</p>
+        <p style="margin-top: 0.3rem;"><a href="press-kit.html" data-i18n="footer_press">Press kit</a> &middot; <a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a></p>
     </footer>
 
     <script>

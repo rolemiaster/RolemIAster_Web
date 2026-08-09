@@ -62,5 +62,15 @@ class EmulaitorGlobalLandingLanguageTest(unittest.TestCase):
         self.assertNotIn('banner1920x1080.jpg', index)
         self.assertNotIn('banner1920x1080.jpg', press)
 
+    def test_static_x_default_content_and_structured_data_are_english(self):
+        html = INDEX.read_text(encoding='utf-8')
+        self.assertIn('id="btn-es" class="btn-lang"', html)
+        self.assertIn('id="btn-en" class="btn-lang active"', html)
+        self.assertIn('data-i18n="hero_tagline">Thousands of retro adventures. Every screen. Your way to play.</', html)
+        self.assertIn('"name": "Can I play online with EmulAItor?"', html)
+        self.assertIn('"@type": "VideoObject"', html)
+        self.assertIn('"embedUrl": "https://www.youtube.com/embed/BTLio1X5MbA"', html)
+        self.assertNotIn('"name": "¿Se puede jugar online con EmulAItor?"', html)
+
 
 if __name__ == '__main__': unittest.main()
