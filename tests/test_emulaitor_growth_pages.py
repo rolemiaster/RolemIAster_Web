@@ -76,6 +76,20 @@ class GrowthPagesTest(unittest.TestCase):
         robots = (ROOT / "robots.txt").read_text(encoding="utf-8")
         self.assertIn("Sitemap: https://rolemiaster.com/emulaitor/sitemap.xml", robots)
 
+    def test_tiktok_short_route_is_measurable_and_not_indexed(self):
+        route = EMULAITOR / "tiktok" / "index.html"
+        self.assertTrue(route.is_file())
+        html = route.read_text(encoding="utf-8")
+        StrictHTMLParser().feed(html)
+        self.assertIn('<html lang="en">', html)
+        self.assertIn('name="robots" content="noindex, nofollow"', html)
+        self.assertIn('utm_source=tiktok', html)
+        self.assertIn('utm_medium=organic_social', html)
+        self.assertIn('utm_campaign=emulaitor_tiktok', html)
+        self.assertIn('utm_content=profile_link', html)
+        sitemap = (EMULAITOR / "sitemap.xml").read_text(encoding="utf-8")
+        self.assertNotIn('/emulaitor/tiktok/', sitemap)
+
     def test_indexnow_key_is_publishable_and_valid(self):
         key_file = EMULAITOR / "indexnow-key.txt"
         self.assertTrue(key_file.is_file(), "missing IndexNow ownership key")

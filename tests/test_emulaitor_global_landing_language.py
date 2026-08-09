@@ -36,6 +36,41 @@ class EmulaitorGlobalLandingLanguageTest(unittest.TestCase):
         html = INDEX.read_text(encoding='utf-8')
         self.assertIn("resolveInitialLanguage(window.location.search, localStorage.getItem('rolemiaster_lang'))", html)
 
+    def test_play_store_links_preserve_social_attribution_in_referrer(self):
+        from urllib.parse import parse_qs, urlparse
+
+        html = INDEX.read_text(encoding='utf-8')
+        match = re.search(r'function buildPlayStoreUrl\(search\) \{.*?\n        \}', html, re.S)
+        self.assertIsNotNone(match, 'missing buildPlayStoreUrl')
+        cases = [
+            '?utm_source=tiktok&utm_medium=organic_social&utm_campaign=hub_global&utm_content=profile_link',
+            '?utm_source=x&utm_campaign=hub_global',
+            '',
+        ]
+        script = match.group(0) + '\nconsole.log(JSON.stringify(' + json.dumps(cases) + '.map(buildPlayStoreUrl)));'
+        result = subprocess.run(['node', '-e', script], text=True, capture_output=True, check=True)
+        urls = json.loads(result.stdout)
+
+        first = parse_qs(urlparse(urls[0]).query)
+        self.assertEqual(first['id'], ['com.rolemiaster.emulaitor'])
+        first_referrer = parse_qs(first['referrer'][0])
+        self.assertEqual(first_referrer['utm_source'], ['tiktok'])
+        self.assertEqual(first_referrer['utm_medium'], ['organic_social'])
+        self.assertEqual(first_referrer['utm_campaign'], ['hub_global'])
+        self.assertEqual(first_referrer['utm_content'], ['profile_link'])
+
+        second_referrer = parse_qs(parse_qs(urlparse(urls[1]).query)['referrer'][0])
+        self.assertEqual(second_referrer['utm_source'], ['x'])
+        self.assertEqual(second_referrer['utm_medium'], ['organic_social'])
+        self.assertEqual(second_referrer['utm_campaign'], ['hub_global'])
+
+        fallback_referrer = parse_qs(parse_qs(urlparse(urls[2]).query)['referrer'][0])
+        self.assertEqual(fallback_referrer['utm_source'], ['rolemiaster.com'])
+        self.assertEqual(fallback_referrer['utm_medium'], ['organic'])
+        self.assertEqual(fallback_referrer['utm_campaign'], ['emulaitor_landing'])
+        self.assertEqual(2, len(re.findall(r'<a[^>]*data-play-store-link', html)))
+        self.assertIn("document.querySelectorAll('[data-play-store-link]')", html)
+
     def test_press_kit_is_english_first_and_commercially_current(self):
         html = (ROOT / 'emulaitor' / 'press-kit.html').read_text(encoding='utf-8')
         self.assertIn('<html lang="en">', html)

@@ -757,7 +757,7 @@
             <p class="hero-tagline" data-i18n="hero_tagline">Thousands of retro adventures. Every screen. Your way to play.</p>
             <p class="hero-desc" data-i18n="hero_desc">Create rooms with EmulAItor Hub, turn up to four phones into Android TV controllers, discover homebrew, and continue your games across devices.</p>
             <div class="hero-buttons">
-                <a href="https://play.google.com/store/apps/details?id=com.rolemiaster.emulaitor&amp;utm_source=rolemiaster.com&amp;utm_medium=organic&amp;utm_campaign=emulaitor_landing" target="_blank" rel="noopener noreferrer"
+                <a href="https://play.google.com/store/apps/details?id=com.rolemiaster.emulaitor&amp;utm_source=rolemiaster.com&amp;utm_medium=organic&amp;utm_campaign=emulaitor_landing" target="_blank" rel="noopener noreferrer" data-play-store-link
                     class="btn-retro btn-primary-retro" data-i18n="btn_play">Get it on Google Play</a>
                 <a href="https://play.google.com/apps/testing/com.rolemiaster.emulaitor" target="_blank"
                     class="btn-retro btn-secondary-retro" data-i18n="btn_beta" style="display: none;">Join Beta</a>
@@ -934,7 +934,7 @@
     <section class="final-cta fade-in">
         <h2 data-i18n="cta_title">Your next retro adventure starts here</h2>
         <p data-i18n="cta_desc">Bring your collection together, discover homebrew, connect your screens, and choose your way to access.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.rolemiaster.emulaitor&amp;utm_source=rolemiaster.com&amp;utm_medium=organic&amp;utm_campaign=emulaitor_landing" target="_blank" rel="noopener noreferrer" class="btn-retro btn-primary-retro" data-i18n="cta_button">Download EmulAItor</a>
+        <a href="https://play.google.com/store/apps/details?id=com.rolemiaster.emulaitor&amp;utm_source=rolemiaster.com&amp;utm_medium=organic&amp;utm_campaign=emulaitor_landing" target="_blank" rel="noopener noreferrer" data-play-store-link class="btn-retro btn-primary-retro" data-i18n="cta_button">Download EmulAItor</a>
     </section>
 
     <!-- REVIEWS -->
@@ -1072,6 +1072,30 @@
             return 'en';
         }
 
+        function buildPlayStoreUrl(search) {
+            const params = new URLSearchParams(search);
+            const source = params.get('utm_source') || 'rolemiaster.com';
+            const medium = params.get('utm_medium') || (params.has('utm_source') ? 'organic_social' : 'organic');
+            const campaign = params.get('utm_campaign') || 'emulaitor_landing';
+            const content = params.get('utm_content');
+            const referrer = new URLSearchParams();
+            referrer.set('utm_source', source);
+            referrer.set('utm_medium', medium);
+            referrer.set('utm_campaign', campaign);
+            if (content) referrer.set('utm_content', content);
+            const playUrl = new URL('https://play.google.com/store/apps/details');
+            playUrl.searchParams.set('id', 'com.rolemiaster.emulaitor');
+            playUrl.searchParams.set('referrer', referrer.toString());
+            return playUrl.toString();
+        }
+
+        function applyPlayStoreAttribution(search) {
+            const playUrl = buildPlayStoreUrl(search);
+            document.querySelectorAll('[data-play-store-link]').forEach(link => {
+                link.setAttribute('href', playUrl);
+            });
+        }
+
         let currentLang = resolveInitialLanguage(window.location.search, localStorage.getItem('rolemiaster_lang'));
 
         function changeLang(lang) {
@@ -1109,6 +1133,7 @@
 
         // ===== TRANSLATION AND INIT =====
         document.addEventListener('DOMContentLoaded', () => {
+            applyPlayStoreAttribution(window.location.search);
             changeLang(currentLang);
             document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
         });
