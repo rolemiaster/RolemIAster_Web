@@ -41,13 +41,29 @@ class EmulaitorGlobalLandingLanguageTest(unittest.TestCase):
         payloads = [json.loads(block) for block in blocks]
         video = next((item for item in payloads if item.get('@type') == 'VideoObject'), None)
         self.assertIsNotNone(video, 'missing VideoObject')
-        iframe_match = re.search(
-            r'<iframe[^>]+src="https://www\.youtube-nocookie\.com/embed/([^"?]+)"',
+        source_match = re.search(
+            r'<video[^>]+poster="assets/imagenes/emulaitor-product-overview-thumbnail-en\.png"[^>]*>\s*<source src="([^"]+)" type="video/mp4">',
             html,
+            re.S,
         )
-        self.assertIsNotNone(iframe_match, 'missing privacy-enhanced visible video')
-        self.assertEqual(video['embedUrl'].rsplit('/', 1)[-1], iframe_match.group(1))
-        self.assertEqual('BTLio1X5MbA', iframe_match.group(1))
+        self.assertIsNotNone(source_match, 'missing visible 16:9 self-hosted product overview')
+        relative = source_match.group(1)
+        self.assertEqual('assets/videos/emulaitor-product-overview-en-1920x1080.mp4', relative)
+        self.assertEqual(
+            'https://rolemiaster.com/emulaitor/' + relative,
+            video['contentUrl'],
+        )
+        self.assertEqual('PT27S', video['duration'])
+        self.assertEqual(
+            'https://rolemiaster.com/emulaitor/assets/imagenes/emulaitor-product-overview-thumbnail-en.png',
+            video['thumbnailUrl'],
+        )
+        self.assertIn('aspect-ratio: 16 / 9;', html)
+        self.assertRegex(
+            html,
+            r'\.video-container video,\s*\.video-container iframe \{[^}]*height: auto;',
+        )
+        self.assertNotIn('youtube-nocookie.com/embed/BTLio1X5MbA', html)
         self.assertNotIn('UTIzr3AmCHE', html)
 
     def test_language_resolution_prioritizes_explicit_then_campaign_then_preference(self):
@@ -160,7 +176,7 @@ class EmulaitorGlobalLandingLanguageTest(unittest.TestCase):
         self.assertIn('data-i18n="hero_tagline">Thousands of retro adventures. Every screen. Your way to play.</', html)
         self.assertIn('"name": "Can I play online with EmulAItor?"', html)
         self.assertIn('"@type": "VideoObject"', html)
-        self.assertIn('"embedUrl": "https://www.youtube.com/embed/BTLio1X5MbA"', html)
+        self.assertIn('"embedUrl": "https://rolemiaster.com/emulaitor/product-overview.html"', html)
         self.assertNotIn('"name": "¿Se puede jugar online con EmulAItor?"', html)
 
 
