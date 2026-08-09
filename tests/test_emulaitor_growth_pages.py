@@ -134,7 +134,16 @@ class GrowthPagesTest(unittest.TestCase):
         self.assertIsNotNone(video, 'missing VideoObject')
         self.assertEqual(video['duration'], 'PT27S')
         self.assertEqual(video['contentUrl'], 'https://rolemiaster.com/emulaitor/assets/videos/emulaitor-product-overview-en-1920x1080.mp4')
-        self.assertEqual(video['thumbnailUrl'], 'https://rolemiaster.com/emulaitor/assets/imagenes/hero-global-textless-1920x1080.webp')
+        thumbnail_name = 'emulaitor-product-overview-thumbnail-en.png'
+        thumbnail = EMULAITOR / 'assets' / 'imagenes' / thumbnail_name
+        self.assertTrue(thumbnail.is_file(), thumbnail)
+        self.assertGreater(thumbnail.stat().st_size, 1_000_000)
+        from PIL import Image
+        with Image.open(thumbnail) as image:
+            self.assertLess(abs((image.width / image.height) - (16 / 9)), 0.002)
+        thumbnail_url = f'https://rolemiaster.com/emulaitor/assets/imagenes/{thumbnail_name}'
+        self.assertEqual(video['thumbnailUrl'], thumbnail_url)
+        self.assertIn(f'poster="assets/imagenes/{thumbnail_name}"', html)
 
         match = re.search(r'<a class="cta primary" href="([^"]*play\.google\.com[^"]*)"', html)
         self.assertIsNotNone(match, 'missing attributed Google Play CTA')
@@ -155,7 +164,8 @@ class GrowthPagesTest(unittest.TestCase):
         self.assertIn('xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"', sitemap)
         self.assertIn(f'<loc>{watch_url}</loc>', sitemap)
         self.assertIn('<video:content_loc>https://rolemiaster.com/emulaitor/assets/videos/emulaitor-product-overview-en-1920x1080.mp4</video:content_loc>', sitemap)
-        self.assertIn('<video:thumbnail_loc>https://rolemiaster.com/emulaitor/assets/imagenes/hero-global-textless-1920x1080.webp</video:thumbnail_loc>', sitemap)
+        self.assertIn('<video:thumbnail_loc>https://rolemiaster.com/emulaitor/assets/imagenes/emulaitor-product-overview-thumbnail-en.png</video:thumbnail_loc>', sitemap)
+        self.assertIn('href="assets/imagenes/emulaitor-product-overview-thumbnail-en.png"', press)
 
     def test_indexnow_key_is_publishable_and_valid(self):
         key_file = EMULAITOR / "indexnow-key.txt"
