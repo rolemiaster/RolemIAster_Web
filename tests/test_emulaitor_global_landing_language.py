@@ -6,9 +6,24 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / 'emulaitor' / 'index.html'
+ROOT_INDEX = ROOT / 'index.html'
 
 
 class EmulaitorGlobalLandingLanguageTest(unittest.TestCase):
+    def test_rolemiaster_home_crosspromo_is_current_truthful_and_measurable(self):
+        html = ROOT_INDEX.read_text(encoding='utf-8')
+        self.assertNotIn('Sin anuncios, sin rastreo', html)
+        self.assertNotIn('No ads, no tracking', html)
+        self.assertIn('EmulAItor Hub', html)
+        self.assertIn('hasta cuatro móviles', html)
+        self.assertIn('up to four phones', html)
+        self.assertIn('Google Drive', html)
+        self.assertIn('20+ systems', html)
+        self.assertIn(
+            'href="emulaitor/?utm_source=rolemiaster_home&amp;utm_medium=owned&amp;utm_campaign=emulaitor_crosspromo"',
+            html,
+        )
+
     def test_x_default_metadata_is_english(self):
         html = INDEX.read_text(encoding='utf-8')
         self.assertIn('<html lang="en">', html)
