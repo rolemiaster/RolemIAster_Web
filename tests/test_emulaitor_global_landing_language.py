@@ -73,18 +73,51 @@ class EmulaitorGlobalLandingLanguageTest(unittest.TestCase):
         cases = [
             ['?lang=es&utm_source=x', 'en'],
             ['?lang=en', 'es'],
-            ['?utm_source=x', 'es'],
-            ['?utm_campaign=hub_global', 'es'],
+            ['?lang=pt-BR', 'en'],
+            ['?lang=de', 'en'],
+            ['?lang=ja', 'en'],
+            ['?utm_source=x', 'pt-BR'],
+            ['?utm_campaign=hub_global', 'de'],
+            ['', 'pt-BR'],
+            ['', 'de'],
+            ['', 'ja'],
             ['', 'es'],
             ['', None],
         ]
         script = match.group(0) + '\nconsole.log(JSON.stringify(' + json.dumps(cases) + '.map(([q,s]) => resolveInitialLanguage(q,s))));'
         result = subprocess.run(['node', '-e', script], text=True, capture_output=True, check=True)
-        self.assertEqual(['es', 'en', 'en', 'en', 'es', 'en'], json.loads(result.stdout))
+        self.assertEqual(
+            ['es', 'en', 'pt-BR', 'de', 'ja', 'en', 'en', 'pt-BR', 'de', 'ja', 'es', 'en'],
+            json.loads(result.stdout),
+        )
 
     def test_current_language_uses_resolver(self):
         html = INDEX.read_text(encoding='utf-8')
         self.assertIn("resolveInitialLanguage(window.location.search, localStorage.getItem('rolemiaster_lang'))", html)
+
+    def test_top_revenue_markets_have_complete_separate_localizations(self):
+        html = INDEX.read_text(encoding='utf-8')
+        for lang in ('pt-BR', 'de', 'ja'):
+            self.assertIn(f'id="btn-{lang}"', html)
+
+        match = re.search(r'const translations = (\{.*?\n        \});', html, re.S)
+        self.assertIsNotNone(match, 'missing translations object')
+        script = (
+            'const translations = ' + match.group(1) + ';\n'
+            'console.log(JSON.stringify(Object.fromEntries('
+            'Object.entries(translations).map(([lang, values]) => [lang, Object.keys(values).sort()]))));'
+        )
+        result = subprocess.run(['node', '-e', script], text=True, capture_output=True, check=True)
+        keys = json.loads(result.stdout)
+        self.assertEqual({'es', 'en', 'pt-BR', 'de', 'ja'}, set(keys))
+        for lang in ('es', 'pt-BR', 'de', 'ja'):
+            self.assertEqual(keys['en'], keys[lang], f'incomplete translation: {lang}')
+
+        self.assertIn('Jogue aventuras retrô', html)
+        self.assertIn('Spiele Retro-Abenteuer', html)
+        self.assertIn('レトロの冒険', html)
+        self.assertIn('html[lang="ja"] .hero-tagline', html)
+        self.assertEqual(1, html.count('<meta property="og:locale:alternate" content="es_ES">'))
 
     def test_play_store_links_preserve_social_attribution_in_referrer(self):
         from urllib.parse import parse_qs, urlparse

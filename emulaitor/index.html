@@ -8,8 +8,11 @@
     <meta name="description" content="Play and share retro adventures with EmulAItor Hub, Android TV phone controllers, Google Drive cloud saves, homebrew and 20+ classic systems.">
     <link rel="canonical" href="https://rolemiaster.com/emulaitor/">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <link rel="alternate" hreflang="es" href="https://rolemiaster.com/emulaitor/?lang=es">
     <link rel="alternate" hreflang="en" href="https://rolemiaster.com/emulaitor/?lang=en">
+    <link rel="alternate" hreflang="es" href="https://rolemiaster.com/emulaitor/?lang=es">
+    <link rel="alternate" hreflang="pt-BR" href="https://rolemiaster.com/emulaitor/?lang=pt-BR">
+    <link rel="alternate" hreflang="de" href="https://rolemiaster.com/emulaitor/?lang=de">
+    <link rel="alternate" hreflang="ja" href="https://rolemiaster.com/emulaitor/?lang=ja">
     <link rel="alternate" hreflang="x-default" href="https://rolemiaster.com/emulaitor/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="RolemIAster">
@@ -21,6 +24,9 @@
     <meta property="og:image:height" content="1080">
     <meta property="og:locale" content="en_US">
     <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="ja_JP">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="EmulAItor — Play retro together">
     <meta name="twitter:description" content="Online rooms, Android TV phone controllers, cloud saves, homebrew and 20+ classic systems.">
@@ -227,6 +233,14 @@
             text-shadow: 0 0 10px rgba(255, 176, 0, 0.4);
             margin-bottom: 2rem;
             line-height: 2;
+        }
+
+        html[lang="ja"] .hero-tagline {
+            font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+            font-size: clamp(0.78rem, 2.5vw, 1rem);
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            line-height: 1.8;
         }
 
         .hero-desc {
@@ -742,8 +756,11 @@
             </a>
         </div>
         <div class="nav-right">
-            <button id="btn-es" class="btn-lang" onclick="changeLang('es')">ES</button>
-            <button id="btn-en" class="btn-lang active" onclick="changeLang('en')">EN</button>
+            <button id="btn-en" class="btn-lang active" onclick="changeLang('en')" title="English">EN</button>
+            <button id="btn-es" class="btn-lang" onclick="changeLang('es')" title="Español">ES</button>
+            <button id="btn-pt-BR" class="btn-lang" onclick="changeLang('pt-BR')" title="Português do Brasil">PT</button>
+            <button id="btn-de" class="btn-lang" onclick="changeLang('de')" title="Deutsch">DE</button>
+            <button id="btn-ja" class="btn-lang" onclick="changeLang('ja')" title="日本語">JA</button>
         </div>
     </nav>
 
@@ -1017,6 +1034,222 @@
                 footer_disclaimer: "Reúne tu colección, descubre homebrew y comparte tu próxima aventura retro.",
                 footer_press: "Press kit", footer_privacy: "Política de Privacidad", btn_enter: "Entrar", reviews_title: "Lo que dicen los jugadores"
             },
+            "pt-BR": {
+                "page_title": "EmulAItor — Salas retrô online, Android TV e mais de 20 sistemas",
+                "page_description": "Jogue e compartilhe aventuras retrô com o EmulAItor Hub, celulares como controles para Android TV, saves no Google Drive, homebrew e mais de 20 sistemas clássicos.",
+                "btn_portal": "< Portal",
+                "hero_tagline": "Jogue aventuras retrô em milhares de possibilidades. Em todas as telas. Do seu jeito.",
+                "hero_desc": "Crie salas com o EmulAItor Hub, transforme até quatro celulares em controles para Android TV, descubra homebrew e continue suas partidas entre dispositivos.",
+                "access_title": "Três formas de jogar. Você escolhe.",
+                "access_free_title": "Tempo de jogo",
+                "access_free_desc": "Ganhe tempo de jogo com anúncios premiados quando estiverem disponíveis.",
+                "access_subscription_title": "Assinatura mensal",
+                "access_subscription_desc": "Acesso completo sem anúncios enquanto sua assinatura estiver ativa.",
+                "access_lifetime_title": "Desbloqueio permanente",
+                "access_lifetime_desc": "Um único pagamento para manter acesso completo permanente sem anúncios.",
+                "btn_play": "Baixar no Google Play",
+                "btn_beta": "Participar da Beta",
+                "video_title": "EmulAItor em ação",
+                "video_full": "Abrir a página completa do vídeo em inglês",
+                "features_title": "Um universo retrô completo",
+                "feat_hub_title": "EmulAItor Hub",
+                "feat_hub_desc": "Crie uma sala a partir de uma partida em andamento, compartilhe vídeo e áudio, receba os controles dos convidados e ative voz opcional.",
+                "feat_phonepad_title": "Até quatro celulares como controles",
+                "feat_phonepad_desc": "Escaneie um QR code e transforme celulares ou tablets em controles para Android TV. O layout se adapta ao sistema em uso.",
+                "feat_cloud_title": "Continue em outra tela",
+                "feat_cloud_desc": "Sincronize saves pelo Google Drive. Comece no celular e continue na Android TV.",
+                "feat_catalog_title": "Catálogo e homebrew",
+                "feat_catalog_desc": "Descubra jogos homebrew e reúna fontes integradas, pastas locais e coleções NAS/SMB.",
+                "feat_library_title": "Biblioteca visual",
+                "feat_library_desc": "Capas, metadados online, busca, favoritos, jogos recentes, descoberta e mais de vinte sistemas.",
+                "feat_saves_title": "Saves avançados",
+                "feat_saves_desc": "Salvamento automático, slots com prévia, save rápido, carregamento rápido e troca de disco.",
+                "feat_gamepad_title": "Jogue do seu jeito",
+                "feat_gamepad_desc": "Controles de toque editáveis, gamepads Bluetooth/USB, remapeamento, vibração e multijogador local.",
+                "feat_visual_title": "Sua imagem retrô",
+                "feat_visual_desc": "Filtros CRT, LCD, nítido e suave, além de modo HD com qualidade ajustável.",
+                "feat_fast_title": "Avanço rápido",
+                "feat_fast_desc": "Acelere os trechos mais lentos nos sistemas compatíveis e volte logo à ação.",
+                "systems_title": "Mais de 20 sistemas clássicos",
+                "gallery_title": "Galeria",
+                "gal_catalog": "Catálogo",
+                "gal_library": "Biblioteca",
+                "gal_tablet": "Tablet",
+                "gal_systems": "Sistemas",
+                "gal_gamelist": "Lista de jogos",
+                "guides_title": "Guias para aproveitar ainda mais o EmulAItor",
+                "guide_hub_title": "Jogue à distância com o Hub",
+                "guide_hub_desc": "Crie uma sala, convide amigos e compartilhe a partida.",
+                "guide_tv_title": "Celulares como controles para Android TV",
+                "guide_tv_desc": "Transforme até quatro celulares ou tablets em controles por QR code.",
+                "guide_homebrew_title": "Descubra homebrew e organize sua biblioteca",
+                "guide_homebrew_desc": "Capas, metadados, favoritos, busca e NAS/SMB.",
+                "guide_cloud_title": "Continue suas partidas com o Google Drive",
+                "guide_cloud_desc": "Sincronize saves, estados selecionados e prévias entre dispositivos.",
+                "guide_nas_title": "Sua biblioteca via NAS/SMB",
+                "guide_nas_desc": "Transforme uma coleção de rede compatível em uma biblioteca visual.",
+                "faq_title": "Perguntas frequentes",
+                "faq_online_q": "Posso jogar online?",
+                "faq_online_a": "Sim. O EmulAItor Hub cria uma sala a partir de uma partida em andamento e compartilha vídeo, áudio, controles dos convidados e voz opcional.",
+                "faq_controllers_q": "Posso usar celulares como controles?",
+                "faq_controllers_a": "Sim. Até quatro celulares ou tablets podem ser pareados por QR code para jogar na Android TV pela mesma rede Wi-Fi.",
+                "faq_homebrew_q": "O que posso descobrir?",
+                "faq_homebrew_a": "Explore o catálogo integrado de homebrew e organize sua biblioteca compatível com capas, metadados, favoritos e busca.",
+                "faq_multidisc_q": "Há suporte para jogos com vários discos?",
+                "faq_multidisc_a": "Sim. Importe jogos com vários discos mantendo os arquivos associados e troque de disco pelas ferramentas durante a partida.",
+                "cta_title": "Sua próxima aventura retrô começa aqui",
+                "cta_desc": "Reúna sua coleção, descubra homebrew, conecte suas telas e escolha sua forma de acesso.",
+                "cta_button": "Baixar o EmulAItor",
+                "footer_disclaimer": "Reúna sua coleção, descubra homebrew e compartilhe sua próxima aventura retrô.",
+                "footer_press": "Kit de imprensa",
+                "footer_privacy": "Política de Privacidade",
+                "btn_enter": "Entrar",
+                "reviews_title": "O que os jogadores estão dizendo"
+            },
+            "de": {
+                "page_title": "EmulAItor — Online-Retro-Räume, Android TV und über 20 Systeme",
+                "page_description": "Spiele und teile Retro-Abenteuer mit EmulAItor Hub, Smartphones als Android-TV-Controller, Google-Drive-Spielständen, Homebrew und über 20 klassischen Systemen.",
+                "btn_portal": "< Portal",
+                "hero_tagline": "Spiele Retro-Abenteuer auf jedem Bildschirm. Tausende Möglichkeiten. Auf deine Art.",
+                "hero_desc": "Erstelle Räume mit EmulAItor Hub, verwandle bis zu vier Smartphones in Android-TV-Controller, entdecke Homebrew und setze Spiele auf anderen Geräten fort.",
+                "access_title": "Drei Möglichkeiten. Du entscheidest.",
+                "access_free_title": "Spielzeit",
+                "access_free_desc": "Erhalte Spielzeit über Belohnungsanzeigen, wenn sie verfügbar sind.",
+                "access_subscription_title": "Monatsabo",
+                "access_subscription_desc": "Voller werbefreier Zugriff, solange dein Abonnement aktiv ist.",
+                "access_lifetime_title": "Dauerhafte Freischaltung",
+                "access_lifetime_desc": "Eine einmalige Zahlung für dauerhaften, vollständigen und werbefreien Zugriff.",
+                "btn_play": "Bei Google Play herunterladen",
+                "btn_beta": "Beta beitreten",
+                "video_title": "EmulAItor in Aktion",
+                "video_full": "Die vollständige englische Videoübersicht öffnen",
+                "features_title": "Ein vollständiges Retro-Universum",
+                "feat_hub_title": "EmulAItor Hub",
+                "feat_hub_desc": "Erstelle aus einem laufenden Spiel einen Raum, teile Bild und Ton, empfange Gaststeuerungen und aktiviere optional Sprache.",
+                "feat_phonepad_title": "Bis zu vier Smartphones als Controller",
+                "feat_phonepad_desc": "Scanne einen QR-Code und verwandle Smartphones oder Tablets in Android-TV-Controller. Das Layout passt sich dem gespielten System an.",
+                "feat_cloud_title": "Auf einem anderen Bildschirm weiterspielen",
+                "feat_cloud_desc": "Synchronisiere Spielstände über Google Drive. Beginne mobil und spiele auf Android TV weiter.",
+                "feat_catalog_title": "Katalog und Homebrew",
+                "feat_catalog_desc": "Entdecke Homebrew-Spiele und bündele integrierte Quellen, lokale Ordner sowie NAS-/SMB-Sammlungen.",
+                "feat_library_title": "Visuelle Bibliothek",
+                "feat_library_desc": "Cover, Online-Metadaten, Suche, Favoriten, zuletzt gespielte Titel, Entdeckungen und mehr als zwanzig Systeme.",
+                "feat_saves_title": "Erweiterte Spielstände",
+                "feat_saves_desc": "Automatisches Speichern, Slots mit Vorschau, Schnellspeichern, Schnellladen und Disc-Wechsel.",
+                "feat_gamepad_title": "Spiele auf deine Art",
+                "feat_gamepad_desc": "Bearbeitbare Touch-Steuerung, Bluetooth-/USB-Gamepads, Tastenbelegung, Vibration und lokaler Mehrspielermodus.",
+                "feat_visual_title": "Dein Retro-Bild",
+                "feat_visual_desc": "CRT-, LCD-, Scharf- und Weichfilter sowie ein HD-Modus mit einstellbarer Qualität.",
+                "feat_fast_title": "Schneller Vorlauf",
+                "feat_fast_desc": "Beschleunige langsamere Abschnitte auf unterstützten Systemen und kehre schneller zur Action zurück.",
+                "systems_title": "Mehr als 20 klassische Systeme",
+                "gallery_title": "Galerie",
+                "gal_catalog": "Katalog",
+                "gal_library": "Bibliothek",
+                "gal_tablet": "Tablet",
+                "gal_systems": "Systeme",
+                "gal_gamelist": "Spieleliste",
+                "guides_title": "Anleitungen für noch mehr EmulAItor",
+                "guide_hub_title": "Mit Hub aus der Ferne spielen",
+                "guide_hub_desc": "Erstelle einen Raum, lade Freunde ein und teile das Spiel.",
+                "guide_tv_title": "Smartphones als Android-TV-Controller",
+                "guide_tv_desc": "Verwandle bis zu vier Smartphones oder Tablets per QR-Code in Controller.",
+                "guide_homebrew_title": "Homebrew entdecken und die Bibliothek organisieren",
+                "guide_homebrew_desc": "Cover, Metadaten, Favoriten, Suche und NAS/SMB.",
+                "guide_cloud_title": "Mit Google Drive weiterspielen",
+                "guide_cloud_desc": "Synchronisiere Spielstände, ausgewählte States und Vorschauen zwischen Geräten.",
+                "guide_nas_title": "Deine Bibliothek über NAS/SMB",
+                "guide_nas_desc": "Verwandle eine kompatible Netzwerksammlung in eine visuelle Bibliothek.",
+                "faq_title": "Häufig gestellte Fragen",
+                "faq_online_q": "Kann ich online spielen?",
+                "faq_online_a": "Ja. EmulAItor Hub erstellt aus einem laufenden Spiel einen Raum und teilt Video, Audio, Gaststeuerungen sowie optionale Sprache.",
+                "faq_controllers_q": "Kann ich Smartphones als Controller verwenden?",
+                "faq_controllers_a": "Ja. Bis zu vier Smartphones oder Tablets lassen sich per QR-Code koppeln und im selben WLAN als Controller für Android TV nutzen.",
+                "faq_homebrew_q": "Was kann ich entdecken?",
+                "faq_homebrew_a": "Entdecke den integrierten Homebrew-Katalog und organisiere deine kompatible Bibliothek mit Covern, Metadaten, Favoriten und Suche.",
+                "faq_multidisc_q": "Werden Spiele mit mehreren Discs unterstützt?",
+                "faq_multidisc_a": "Ja. Importiere Multi-Disc-Spiele zusammen mit ihren zugehörigen Dateien und wechsle die Disc über die Werkzeuge im Spiel.",
+                "cta_title": "Dein nächstes Retro-Abenteuer beginnt hier",
+                "cta_desc": "Bündele deine Sammlung, entdecke Homebrew, verbinde deine Bildschirme und wähle deinen Zugriff.",
+                "cta_button": "EmulAItor herunterladen",
+                "footer_disclaimer": "Bündele deine Sammlung, entdecke Homebrew und teile dein nächstes Retro-Abenteuer.",
+                "footer_press": "Pressekit",
+                "footer_privacy": "Datenschutzerklärung",
+                "btn_enter": "Öffnen",
+                "reviews_title": "Das sagen die Spieler"
+            },
+            "ja": {
+                "page_title": "EmulAItor — オンラインレトロルーム、Android TV、20種類以上のシステム",
+                "page_description": "EmulAItor Hubのオンラインルーム、Android TV用スマートフォンコントローラー、Google Driveのセーブ同期、ホームブリュー、20種類以上のクラシックシステムを楽しめます。",
+                "btn_portal": "< ポータル",
+                "hero_tagline": "何千ものレトロの冒険を、すべての画面で、自分らしく。",
+                "hero_desc": "EmulAItor Hubでルームを作成し、最大4台のスマートフォンをAndroid TVのコントローラーにして、ホームブリューを見つけ、端末をまたいで続きを楽しめます。",
+                "access_title": "3つの遊び方。選ぶのはあなた。",
+                "access_free_title": "プレイ時間",
+                "access_free_desc": "利用可能な場合、リワード広告でプレイ時間を獲得できます。",
+                "access_subscription_title": "月額サブスクリプション",
+                "access_subscription_desc": "サブスクリプションが有効な間は、広告なしですべての機能を利用できます。",
+                "access_lifetime_title": "永久アンロック",
+                "access_lifetime_desc": "1回の支払いで、広告なしのフルアクセスを永続的に利用できます。",
+                "btn_play": "Google Playで入手",
+                "btn_beta": "ベータ版に参加",
+                "video_title": "EmulAItorの実際の動作",
+                "video_full": "英語版の製品紹介動画ページを開く",
+                "features_title": "充実したレトロの世界",
+                "feat_hub_title": "EmulAItor Hub",
+                "feat_hub_desc": "プレイ中のゲームからルームを作成し、映像と音声を共有して、ゲストの操作を受け取り、必要に応じてボイス機能を有効にできます。",
+                "feat_phonepad_title": "最大4台のスマートフォンをコントローラーに",
+                "feat_phonepad_desc": "QRコードを読み取り、スマートフォンやタブレットをAndroid TVのコントローラーにできます。レイアウトはプレイするシステムに合わせて変わります。",
+                "feat_cloud_title": "別の画面で続きをプレイ",
+                "feat_cloud_desc": "Google Driveでセーブデータを同期。モバイルで始めてAndroid TVで続けられます。",
+                "feat_catalog_title": "カタログとホームブリュー",
+                "feat_catalog_desc": "ホームブリューゲームを見つけ、内蔵ソース、ローカルフォルダー、NAS/SMBコレクションをまとめられます。",
+                "feat_library_title": "ビジュアルライブラリ",
+                "feat_library_desc": "カバー画像、オンラインメタデータ、検索、お気に入り、最近遊んだゲーム、発見機能、20種類以上のシステム。",
+                "feat_saves_title": "高度なセーブ機能",
+                "feat_saves_desc": "オートセーブ、プレビュー付きスロット、クイックセーブ、クイックロード、ディスク交換に対応します。",
+                "feat_gamepad_title": "好きな操作方法でプレイ",
+                "feat_gamepad_desc": "編集可能なタッチ操作、Bluetooth/USBゲームパッド、ボタン割り当て、振動、ローカルマルチプレイに対応します。",
+                "feat_visual_title": "好みのレトロ映像",
+                "feat_visual_desc": "CRT、LCD、シャープ、スムーズの各フィルターに加え、品質を調整できるHDモードを利用できます。",
+                "feat_fast_title": "早送り",
+                "feat_fast_desc": "対応システムでは遅い場面を高速化し、すぐにゲームへ戻れます。",
+                "systems_title": "20種類以上のクラシックシステム",
+                "gallery_title": "ギャラリー",
+                "gal_catalog": "カタログ",
+                "gal_library": "ライブラリ",
+                "gal_tablet": "タブレット",
+                "gal_systems": "システム",
+                "gal_gamelist": "ゲーム一覧",
+                "guides_title": "EmulAItorをもっと楽しむためのガイド",
+                "guide_hub_title": "Hubで離れた相手とプレイ",
+                "guide_hub_desc": "ルームを作成し、友達を招待してゲームを共有します。",
+                "guide_tv_title": "スマートフォンをAndroid TVのコントローラーに",
+                "guide_tv_desc": "最大4台のスマートフォンやタブレットをQRコードでコントローラーにできます。",
+                "guide_homebrew_title": "ホームブリューを見つけてライブラリを整理",
+                "guide_homebrew_desc": "カバー画像、メタデータ、お気に入り、検索、NAS/SMBを利用できます。",
+                "guide_cloud_title": "Google Driveで続きをプレイ",
+                "guide_cloud_desc": "セーブデータ、選択したステート、プレビューを端末間で同期します。",
+                "guide_nas_title": "NAS/SMBからライブラリを作成",
+                "guide_nas_desc": "互換性のあるネットワークコレクションをビジュアルライブラリにできます。",
+                "faq_title": "よくある質問",
+                "faq_online_q": "オンラインで遊べますか？",
+                "faq_online_a": "はい。EmulAItor Hubはプレイ中のゲームからルームを作成し、映像、音声、ゲスト操作、任意のボイス機能を共有します。",
+                "faq_controllers_q": "スマートフォンをコントローラーにできますか？",
+                "faq_controllers_a": "はい。最大4台のスマートフォンやタブレットをQRコードでペアリングし、同じWi-Fiネットワーク上でAndroid TVのコントローラーとして使用できます。",
+                "faq_homebrew_q": "どんなゲームを見つけられますか？",
+                "faq_homebrew_a": "内蔵のホームブリューカタログを探し、互換性のあるライブラリをカバー画像、メタデータ、お気に入り、検索で整理できます。",
+                "faq_multidisc_q": "複数ディスクのゲームに対応していますか？",
+                "faq_multidisc_a": "はい。関連ファイルを保持したまま複数ディスクのゲームを取り込み、ゲーム内ツールからディスクを交換できます。",
+                "cta_title": "次のレトロの冒険をここから",
+                "cta_desc": "コレクションをまとめ、ホームブリューを見つけ、画面をつなぎ、自分に合う利用方法を選べます。",
+                "cta_button": "EmulAItorをダウンロード",
+                "footer_disclaimer": "コレクションをまとめ、ホームブリューを見つけ、次のレトロの冒険を共有しましょう。",
+                "footer_press": "プレスキット",
+                "footer_privacy": "プライバシーポリシー",
+                "btn_enter": "開く",
+                "reviews_title": "プレイヤーの声"
+            },
             en: {
                 page_title: "EmulAItor — online retro hub, Android TV and 20+ systems",
                 page_description: "Play and share retro adventures with EmulAItor Hub, Android TV, phone controllers by QR, Google Drive, a homebrew catalogue and more than 20 classic systems.",
@@ -1072,9 +1305,9 @@
         function resolveInitialLanguage(search, storedLanguage) {
             const params = new URLSearchParams(search);
             const requestedLanguage = params.get('lang');
-            if (['es', 'en'].includes(requestedLanguage)) return requestedLanguage;
+            if (['en', 'es', 'pt-BR', 'de', 'ja'].includes(requestedLanguage)) return requestedLanguage;
             if (params.has('utm_source') || params.has('utm_campaign')) return 'en';
-            if (['es', 'en'].includes(storedLanguage)) return storedLanguage;
+            if (['en', 'es', 'pt-BR', 'de', 'ja'].includes(storedLanguage)) return storedLanguage;
             return 'en';
         }
 
