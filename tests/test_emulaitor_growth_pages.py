@@ -59,6 +59,26 @@ class GrowthPagesTest(unittest.TestCase):
                     for text in required:
                         self.assertIn(text, html)
 
+    def test_guide_ctas_pass_page_attribution_through_play_referrer(self):
+        import html as html_module
+        from urllib.parse import parse_qs, urlparse
+
+        for pair_name, pair in GUIDE_PAIRS.items():
+            for lang in ("es", "en"):
+                name = pair[lang][0]
+                with self.subTest(pair=pair_name, lang=lang):
+                    source = (EMULAITOR / name).read_text(encoding="utf-8")
+                    match = re.search(r'<a class="cta" href="([^"]*play\.google\.com[^"]*)"', source)
+                    self.assertIsNotNone(match, f"missing Play CTA in {name}")
+                    outer = parse_qs(urlparse(html_module.unescape(match.group(1))).query)
+                    self.assertEqual(outer['id'], ['com.rolemiaster.emulaitor'])
+                    self.assertIn('referrer', outer)
+                    referrer = parse_qs(outer['referrer'][0])
+                    self.assertEqual(referrer['utm_source'], ['rolemiaster.com'])
+                    self.assertEqual(referrer['utm_medium'], ['organic_search'])
+                    self.assertTrue(referrer['utm_campaign'][0])
+                    self.assertEqual(referrer['utm_content'], [f'guide_{lang}'])
+
     def test_main_landing_routes_guides_by_language(self):
         html = (EMULAITOR / "index.html").read_text(encoding="utf-8")
         for pair in GUIDE_PAIRS.values():

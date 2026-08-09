@@ -83,6 +83,19 @@ class EmulaitorGlobalLandingLanguageTest(unittest.TestCase):
         self.assertIn('https://youtube.com/shorts/BTLio1X5MbA', html)
         self.assertIn('<h2>Resumen en español</h2>', html)
 
+    def test_press_kit_play_cta_has_earned_media_referrer(self):
+        import html as html_module
+        from urllib.parse import parse_qs, urlparse
+
+        html = (ROOT / 'emulaitor' / 'press-kit.html').read_text(encoding='utf-8')
+        match = re.search(r'<a class="cta" href="([^"]*play\.google\.com[^"]*)"', html)
+        self.assertIsNotNone(match)
+        outer = parse_qs(urlparse(html_module.unescape(match.group(1))).query)
+        referrer = parse_qs(outer['referrer'][0])
+        self.assertEqual(referrer['utm_source'], ['rolemiaster.com'])
+        self.assertEqual(referrer['utm_medium'], ['earned_media'])
+        self.assertEqual(referrer['utm_campaign'], ['emulaitor_press_kit'])
+
     def test_global_hero_uses_textless_asset(self):
         from PIL import Image
         asset_name = 'hero-global-textless-1920x1080.webp'
