@@ -119,6 +119,25 @@ class EmulaitorGlobalLandingLanguageTest(unittest.TestCase):
         self.assertIn('html[lang="ja"] .hero-tagline', html)
         self.assertEqual(1, html.count('<meta property="og:locale:alternate" content="es_ES">'))
 
+    def test_localized_canonical_is_self_referencing_and_strips_campaign_parameters(self):
+        html = INDEX.read_text(encoding='utf-8')
+        match = re.search(r'function buildLocalizedCanonicalUrl\(lang\) \{.*?\n        \}', html, re.S)
+        self.assertIsNotNone(match, 'missing localized canonical builder')
+        script = match.group(0) + "\nconsole.log(JSON.stringify(['en','es','pt-BR','de','ja'].map(buildLocalizedCanonicalUrl)));"
+        result = subprocess.run(['node', '-e', script], text=True, capture_output=True, check=True)
+        self.assertEqual(
+            [
+                'https://rolemiaster.com/emulaitor/?lang=en',
+                'https://rolemiaster.com/emulaitor/?lang=es',
+                'https://rolemiaster.com/emulaitor/?lang=pt-BR',
+                'https://rolemiaster.com/emulaitor/?lang=de',
+                'https://rolemiaster.com/emulaitor/?lang=ja',
+            ],
+            json.loads(result.stdout),
+        )
+        self.assertIn("document.querySelector('link[rel=\"canonical\"]')", html)
+        self.assertIn("document.querySelector('meta[property=\"og:url\"]')", html)
+
     def test_play_store_links_preserve_social_attribution_in_referrer(self):
         from urllib.parse import parse_qs, urlparse
 

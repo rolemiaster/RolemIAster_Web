@@ -1311,6 +1311,12 @@
             return 'en';
         }
 
+        function buildLocalizedCanonicalUrl(lang) {
+            const localizedUrl = new URL('https://rolemiaster.com/emulaitor/');
+            localizedUrl.searchParams.set('lang', lang);
+            return localizedUrl.toString();
+        }
+
         function buildPlayStoreUrl(search) {
             const params = new URLSearchParams(search);
             const source = params.get('utm_source') || 'rolemiaster.com';
@@ -1344,6 +1350,11 @@
             document.title = translations[lang].page_title;
             const descriptionMeta = document.querySelector('meta[name="description"]');
             if (descriptionMeta) descriptionMeta.setAttribute('content', translations[lang].page_description);
+            const localizedCanonicalUrl = buildLocalizedCanonicalUrl(lang);
+            const canonicalLink = document.querySelector('link[rel="canonical"]');
+            if (canonicalLink) canonicalLink.setAttribute('href', localizedCanonicalUrl);
+            const openGraphUrl = document.querySelector('meta[property="og:url"]');
+            if (openGraphUrl) openGraphUrl.setAttribute('content', localizedCanonicalUrl);
             const langUrl = new URL(window.location.href);
             langUrl.searchParams.set('lang', lang);
             history.replaceState({}, '', langUrl);
