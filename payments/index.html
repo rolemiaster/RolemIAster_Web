@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07101d">
   <meta name="robots" content="noindex,nofollow">
-  <meta name="description" content="Acceso directo al entorno online de pruebas de la pasarela de pagos Solana de Universo RolemIAster.">
-  <title>Pasarela Solana · Pruebas de integración</title>
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Pasarela Solana de Universo RolemIAster. Los cobros se abren desde una aplicación o enlace de pago.">
+  <title>Pasarela Solana</title>
   <link rel="stylesheet" href="payments.css">
   <script defer src="payments.js"></script>
 </head>
@@ -23,108 +24,32 @@
   </header>
 
   <main>
-    <section class="hero" aria-labelledby="page-title">
-      <span class="test-label">ENTORNO ONLINE DE PRUEBAS · SOLANA DEVNET</span>
-      <h1 id="page-title">Crea una prueba con los datos de tu compra</h1>
-      <p>Indica el concepto, el activo y el importe que deseas cobrar. La pasarela no inventa el importe: guarda esos datos y fija internamente solo la ruta segura de pago.</p>
-    </section>
+    <section class="processing-card" aria-labelledby="page-title">
+      <span class="test-label">PASARELA DE PAGO · SOLANA</span>
+      <h1 id="page-title">Preparando tu checkout seguro</h1>
+      <p id="checkout-description" class="lead">Los datos de este cobro proceden de la aplicación o enlace que lo abrió. No se pueden editar aquí.</p>
 
-    <section class="checkout-panel" aria-labelledby="checkout-heading">
-      <div class="panel-heading">
-        <span class="step">1</span>
+      <div class="state" aria-live="polite">
+        <span class="spinner" aria-hidden="true"></span>
         <div>
-          <h2 id="checkout-heading">Datos del cobro de prueba</h2>
-          <p>Estos son los datos que cualquier aplicación, web o enlace directo puede enviar a la pasarela.</p>
+          <strong id="checkout-state">Validando el cobro</strong>
+          <p id="checkout-status">Comprobando los datos recibidos para abrir el checkout.</p>
         </div>
       </div>
 
-      <form id="checkout-form" novalidate>
-        <div class="field-grid">
-          <label class="field field-wide" for="checkout-title">
-            <span>Concepto del cobro</span>
-            <input id="checkout-title" name="title" type="text" maxlength="160" autocomplete="off" placeholder="Ej.: Licencia de EmulAItor" required>
-          </label>
-
-          <label class="field" for="checkout-amount">
-            <span>Importe</span>
-            <input id="checkout-amount" name="amount" type="text" inputmode="decimal" autocomplete="off" placeholder="Ej.: 0,01" aria-describedby="amount-help" required>
-            <small id="amount-help">Usa punto o coma decimal. No se asigna ninguna cantidad automáticamente.</small>
-          </label>
-
-          <label class="field" for="checkout-asset">
-            <span>Activo</span>
-            <select id="checkout-asset" name="assetCode">
-              <option value="SOL">SOL</option>
-              <option value="USDC">USDC</option>
-              <option value="USDT">USDT</option>
-            </select>
-          </label>
-
-          <label class="field field-wide" for="checkout-description">
-            <span>Detalle opcional</span>
-            <input id="checkout-description" name="description" type="text" maxlength="500" autocomplete="off" placeholder="Ej.: Pago de prueba creado desde la web de integración">
-          </label>
-
-          <label class="field field-wide" for="checkout-reference">
-            <span>Referencia del pedido <em>opcional</em></span>
-            <input id="checkout-reference" name="externalOrderId" type="text" maxlength="200" autocomplete="off" placeholder="Si se deja vacía, se crea una referencia de prueba única">
-          </label>
-        </div>
-
-        <div class="form-footer">
-          <p class="form-note"><strong>Devnet no mueve dinero real.</strong> Después de crear el checkout podrás abrirlo con Phantom, pagar y comprobar la recepción.</p>
-          <button id="create-checkout" type="submit">Crear checkout de prueba</button>
-        </div>
-      </form>
-    </section>
-
-    <section class="asset-grid" aria-labelledby="assets-heading">
-      <div class="section-heading">
-        <span class="step">2</span>
-        <div>
-          <h2 id="assets-heading">Elige el activo que quieres probar</h2>
-          <p>Estas opciones solo rellenan el activo del formulario. Tú sigues indicando el importe y el concepto.</p>
-        </div>
-      </div>
-
-      <div class="asset-cards">
-        <article class="asset-card sol">
-          <div class="asset-top"><span class="asset-icon" aria-hidden="true">◎</span><span class="network">SOLANA DEVNET</span></div>
-          <h3>SOL</h3>
-          <p>Pago nativo de Solana en la red de pruebas.</p>
-          <button type="button" class="asset-choice" data-asset="SOL">Usar SOL</button>
-        </article>
-
-        <article class="asset-card usdc">
-          <div class="asset-top"><span class="asset-icon" aria-hidden="true">$</span><span class="network">TOKEN SPL DE PRUEBA</span></div>
-          <h3>USDC</h3>
-          <p>Validación del pago SPL configurado para USDC en Devnet.</p>
-          <button type="button" class="asset-choice" data-asset="USDC">Usar USDC</button>
-        </article>
-
-        <article class="asset-card usdt">
-          <div class="asset-top"><span class="asset-icon" aria-hidden="true">₮</span><span class="network">TOKEN SPL DE PRUEBA</span></div>
-          <h3>USDT</h3>
-          <p>Validación del pago SPL configurado para USDT en Devnet.</p>
-          <button type="button" class="asset-choice" data-asset="USDT">Usar USDT</button>
-        </article>
-      </div>
-    </section>
-
-    <section class="explanation" aria-label="Cómo funciona">
-      <div><span>1</span><p><strong>Datos bajo demanda</strong>La aplicación que cobra define el concepto y el importe de cada operación.</p></div>
-      <div><span>2</span><p><strong>Ruta protegida</strong>La pasarela resuelve el activo, mint, decimales y cuenta receptora desde su propia configuración.</p></div>
-      <div><span>3</span><p><strong>Resultado verificable</strong>El checkout conserva su estado y devuelve una URL de resultado para que la aplicación consulte el pago.</p></div>
+      <section class="explanation" aria-label="Cómo funciona">
+        <div><span>1</span><p><strong>Datos preestablecidos</strong>La aplicación o enlace define el proyecto, concepto, importe, red y activo antes de abrir esta página.</p></div>
+        <div><span>2</span><p><strong>Ruta protegida</strong>La pasarela decide internamente la cuenta receptora, mint y decimales autorizados.</p></div>
+        <div><span>3</span><p><strong>Resultado verificable</strong>Tras el pago, el pedido conserva su estado para que la aplicación pueda consultar el resultado.</p></div>
+      </section>
     </section>
 
     <aside class="security">
       <span aria-hidden="true">✓</span>
-      <p><strong>No introduzcas ninguna credencial.</strong> Ninguna prueba te pedirá tu frase semilla ni tu clave privada. Solo confirma en Phantom los datos que correspondan al checkout que acabas de crear.</p>
+      <p><strong>No introduzcas ninguna credencial.</strong> La pasarela nunca te pedirá la frase semilla ni la clave privada. Confirma únicamente los datos que veas en Phantom cuando se abra el checkout.</p>
     </aside>
-
-    <div id="status" class="status" role="status" aria-live="polite" hidden></div>
   </main>
 
-  <footer>Universo RolemIAster · Pasarela Solana · Pruebas controladas sobre Devnet</footer>
+  <footer>Universo RolemIAster · Pasarela Solana</footer>
 </body>
 </html>
