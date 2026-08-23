@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07101d">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Acceso directo al entorno de pruebas de la pasarela Solana de Universo RolemIAster.">
+  <title>Pasarela Solana · Universo RolemIAster</title>
+  <link rel="stylesheet" href="payments.css">
+  <script defer src="payments.js"></script>
+</head>
+<body>
+  <div class="glow glow-a" aria-hidden="true"></div>
+  <div class="glow glow-b" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="brand" aria-label="Universo RolemIAster">
+      <span class="mark">UR</span>
+      <span><strong>Universo RolemIAster</strong><small>Pasarela Solana</small></span>
+    </div>
+    <span class="direct-badge">Acceso directo</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <span class="test-label">ENTORNO ONLINE DE PRUEBAS · DEVNET</span>
+      <h1>Prueba el flujo de pago completo</h1>
+      <p>Elige un activo para crear un pedido de prueba. La pasarela fijará el importe, la red, el mint y la cuenta receptora antes de mostrar el QR.</p>
+    </section>
+
+    <section class="asset-grid" aria-labelledby="assets-heading">
+      <h2 id="assets-heading" class="sr-only">Activos disponibles</h2>
+
+      <article class="asset-card sol">
+        <div class="asset-top"><span class="asset-icon">◎</span><span class="network">SOLANA DEVNET</span></div>
+        <h3>SOL</h3>
+        <p>Comprueba el pago nativo de Solana con una cantidad de prueba sin valor real.</p>
+        <button type="button" data-product="sol-dev">Crear prueba con SOL</button>
+      </article>
+
+      <article class="asset-card usdc">
+        <div class="asset-top"><span class="asset-icon">$</span><span class="network">TOKEN SPL DE PRUEBA</span></div>
+        <h3>USDC</h3>
+        <p>Valida el flujo SPL configurado para USDC mediante un token efímero de Devnet.</p>
+        <button type="button" data-product="usdc-dev">Crear prueba con USDC</button>
+      </article>
+
+      <article class="asset-card usdt">
+        <div class="asset-top"><span class="asset-icon">₮</span><span class="network">TOKEN SPL DE PRUEBA</span></div>
+        <h3>USDT</h3>
+        <p>Valida el flujo SPL configurado para USDT mediante un token efímero de Devnet.</p>
+        <button type="button" data-product="usdt-dev">Crear prueba con USDT</button>
+      </article>
+    </section>
+
+    <section class="explanation">
+      <div><span>1</span><p><strong>Pedido protegido</strong>Los datos económicos proceden exclusivamente del servidor.</p></div>
+      <div><span>2</span><p><strong>Pago desde tu wallet</strong>Escanea el QR o abre el enlace Solana Pay.</p></div>
+      <div><span>3</span><p><strong>Verificación automática</strong>El Worker comprueba la transacción y registra su firma.</p></div>
+    </section>
+
+    <aside class="security">
+      <span aria-hidden="true">✓</span>
+      <p><strong>No introduzcas ninguna credencial.</strong> Universo RolemIAster nunca solicitará tu frase semilla ni tu clave privada.</p>
+    </aside>
+
+    <div id="status" class="status" role="status" aria-live="polite" hidden></div>
+  </main>
+
+  <footer>Universo RolemIAster · Pruebas controladas sobre Solana Devnet</footer>
+</body>
+</html>
