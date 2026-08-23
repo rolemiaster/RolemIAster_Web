@@ -28,6 +28,10 @@ class ParameterizedPaymentsPageTest(unittest.TestCase):
         self.assertNotIn('productCode', script)
         self.assertIn('No hay ningún checkout pendiente', script)
 
+    def test_page_versions_its_static_assets_so_browsers_do_not_reuse_the_removed_form_logic(self):
+        html = PAGE.read_text(encoding="utf-8")
+        self.assertRegex(html, r'href="payments\.css\?v=[^"]+"')
+        self.assertRegex(html, r'src="payments\.js\?v=[^"]+"')
     def test_page_explains_that_only_the_calling_app_or_link_defines_the_purchase(self):
         html = PAGE.read_text(encoding="utf-8")
         normalized = html.lower()
