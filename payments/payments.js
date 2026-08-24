@@ -41,6 +41,7 @@
   function showError(message) {
     state.classList.add("error");
     title.textContent = t("entryErrorTitle");
+    description.textContent = t("errorDetail");
     stateTitle.textContent = t("entryInvalidLink");
     status.textContent = message;
   }

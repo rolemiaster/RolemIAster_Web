@@ -65,6 +65,7 @@ setTimeout(() => process.stdout.write(JSON.stringify({
   fetchCalls,
   lang: sandbox.document.documentElement.lang,
   title: elements.get("page-title").textContent,
+  description: elements.get("checkout-description").textContent,
   stateTitle: elements.get("checkout-state").textContent,
   status: elements.get("checkout-status").textContent,
 })), 20);
@@ -135,6 +136,7 @@ class ParameterizedPaymentsPageTest(unittest.TestCase):
         self.assertEqual(result["fetchCalls"], 0)
         self.assertEqual(result["lang"], "ru")
         self.assertEqual(result["title"], "Не удалось открыть страницу оплаты")
+        self.assertEqual(result["description"], "Проверьте ссылку и попробуйте снова.")
         self.assertEqual(result["stateTitle"], "Недействительная ссылка на оплату")
         self.assertEqual(result["status"], "Ссылка содержит параметр, который не поддерживается платёжным шлюзом.")
 
