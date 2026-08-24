@@ -98,9 +98,9 @@ process.stdout.write(JSON.stringify({ locales: api.supportedLocaleCodes, missing
 
     def test_page_versions_its_assets_and_blocks_automatic_translation(self):
         html = PAGE.read_text(encoding="utf-8")
-        self.assertIn('payments.css?v=20260824-03', html)
-        self.assertIn('payments-i18n.js?v=20260824-03', html)
-        self.assertIn('payments.js?v=20260824-03', html)
+        self.assertIn('payments.css?v=20260824-04', html)
+        self.assertIn('payments-i18n.js?v=20260824-04', html)
+        self.assertIn('payments.js?v=20260824-04', html)
         self.assertIn('translate="no"', html)
         self.assertIn('name="google" content="notranslate"', html)
 
