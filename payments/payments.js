@@ -1,18 +1,36 @@
 (() => {
   "use strict";
 
-  const API_BASE = "https://universo-rolemiaster-pagos-dev.rolemiaster.workers.dev";
+  const API_BASE_BY_NETWORK = Object.freeze({
+    devnet: "https://universo-rolemiaster-pagos-dev.rolemiaster.workers.dev",
+    "mainnet-beta": "https://pay.rolemiaster.com",
+  });
   const ALLOWED_FIELDS = new Set([
     "projectCode",
     "externalOrderId",
     "customerReference",
     "title",
     "description",
+    "localizedContent",
     "network",
     "assetCode",
     "amount",
+    "lang",
   ]);
-  const REQUIRED_FIELDS = ["projectCode", "externalOrderId", "title", "network", "assetCode", "amount"];
+  const REQUIRED_FIELDS = [
+    "projectCode",
+    "externalOrderId",
+    "title",
+    "localizedContent",
+    "network",
+    "assetCode",
+    "amount",
+  ];
+
+  const i18n = window.PaymentEntryI18n;
+  const locale = i18n.resolveLocale(window.location.search, navigator.languages ?? []);
+  const t = (key) => i18n.translate(locale, key);
+  i18n.applyDocument(document, locale);
 
   const title = document.getElementById("page-title");
   const description = document.getElementById("checkout-description");
@@ -22,27 +40,32 @@
 
   function showError(message) {
     state.classList.add("error");
-    title.textContent = "No se ha podido abrir el checkout";
-    stateTitle.textContent = "El enlace de pago no es válido";
+    title.textContent = t("entryErrorTitle");
+    stateTitle.textContent = t("entryInvalidLink");
     status.textContent = message;
   }
 
   function showIdleState() {
     state.classList.remove("error");
-    title.textContent = "Pasarela Solana";
-    description.textContent = "Los cobros se abren desde una aplicación o enlace de pago. Sus datos no se pueden editar aquí.";
-    stateTitle.textContent = "No hay ningún checkout pendiente";
-    status.textContent = "Esta página no permite crear ni modificar cobros manualmente.";
+    title.textContent = t("entryIdleTitle");
+    description.textContent = t("entryIdleDescription");
+    stateTitle.textContent = t("entryIdleState");
+    status.textContent = t("entryIdleStatus");
   }
 
   function readPresetCheckout() {
     const params = new URLSearchParams(window.location.search);
     if ([...params.keys()].length === 0) return null;
 
+    const seen = new Set();
     for (const key of params.keys()) {
       if (!ALLOWED_FIELDS.has(key)) {
-        throw new Error("El enlace contiene un dato no admitido por la pasarela.");
+        throw new Error(t("entryUnsupportedField"));
       }
+      if (seen.has(key)) {
+        throw new Error(t("entryDuplicateField"));
+      }
+      seen.add(key);
     }
 
     const payload = {};
@@ -53,19 +76,32 @@
 
     for (const field of REQUIRED_FIELDS) {
       if (typeof payload[field] !== "string" || payload[field].trim() === "") {
-        throw new Error("El enlace no incluye todos los datos necesarios para el cobro.");
+        throw new Error(t("entryMissingFields"));
       }
+    }
+
+    if (!Object.hasOwn(API_BASE_BY_NETWORK, payload.network)) {
+      throw new Error(t("entryNetwork"));
+    }
+
+    try {
+      const localizedContent = JSON.parse(payload.localizedContent);
+      if (typeof localizedContent !== "object" || localizedContent === null || Array.isArray(localizedContent)) {
+        throw new Error();
+      }
+    } catch {
+      throw new Error(t("entryLocalized"));
     }
 
     return payload;
   }
 
-  async function openCheckout() {
+  function openCheckout() {
     let payload;
     try {
       payload = readPresetCheckout();
     } catch (error) {
-      showError(error instanceof Error ? error.message : "No se han podido leer los datos del enlace.");
+      showError(error instanceof Error ? error.message : t("entryRead"));
       return;
     }
 
@@ -74,27 +110,14 @@
       return;
     }
 
-    window.history.replaceState(null, "", window.location.pathname);
-    description.textContent = "Los datos de este cobro ya están fijados por la aplicación o enlace que lo abrió. Preparando el checkout seguro.";
-    stateTitle.textContent = "Creando el checkout";
-    status.textContent = "La pasarela está fijando la ruta de pago autorizada.";
+    description.textContent = t("entryOpeningDescription");
+    stateTitle.textContent = t("entryOpeningState");
+    status.textContent = t("entryOpeningStatus");
 
-    try {
-      const response = await fetch(`${API_BASE}/api/v1/checkouts`, {
-        method: "POST",
-        headers: { "content-type": "application/json", accept: "application/json" },
-        body: JSON.stringify(payload),
-        credentials: "omit",
-      });
-      const body = await response.json().catch(() => null);
-      if (!response.ok || !body || typeof body.checkoutUrl !== "string") {
-        throw new Error(body && body.message ? body.message : `La pasarela respondió con HTTP ${response.status}.`);
-      }
-      window.location.replace(body.checkoutUrl);
-    } catch (error) {
-      showError(error instanceof Error ? error.message : "No se ha podido abrir el checkout seguro.");
-    }
+    const target = new URL("/pay", API_BASE_BY_NETWORK[payload.network]);
+    for (const [field, value] of Object.entries(payload)) target.searchParams.set(field, value);
+    window.location.replace(target.toString());
   }
 
-  void openCheckout();
+  openCheckout();
 })();

@@ -1,55 +1,50 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07101d">
   <meta name="robots" content="noindex,nofollow">
   <meta name="referrer" content="no-referrer">
-  <meta name="description" content="Pasarela Solana de Universo RolemIAster. Los cobros se abren desde una aplicación o enlace de pago.">
-  <title>Pasarela Solana</title>
-  <link rel="stylesheet" href="payments.css?v=20260823-3">
-  <script defer src="payments.js?v=20260823-3"></script>
+  <meta name="description" content="Secure, direct checkout on the Solana network." data-i18n-content="siteDescription">
+  <title>Secure payment · Solana Gateway</title>
+  <link rel="stylesheet" href="payments.css?v=20260824-01">
+  <script defer src="payments-i18n.js?v=20260824-01"></script>
+  <script defer src="payments.js?v=20260824-01"></script>
 </head>
 <body>
   <div class="glow glow-a" aria-hidden="true"></div>
   <div class="glow glow-b" aria-hidden="true"></div>
 
   <header class="header">
-    <div class="brand" aria-label="Pasarela Solana de Universo RolemIAster">
+    <div class="brand">
       <span class="mark" aria-hidden="true">◎</span>
-      <span><strong>Pasarela Solana</strong><small>Universo RolemIAster</small></span>
+      <span><strong data-i18n="brandTitle">Solana Gateway</strong><small data-i18n="brandSubtitle">Direct payment on Solana</small></span>
     </div>
-    <span class="direct-badge">Acceso directo</span>
+    <span class="direct-badge" data-i18n="headerTrust">Direct payment to the recipient account</span>
   </header>
 
   <main>
     <section class="processing-card" aria-labelledby="page-title">
-      <span class="test-label">PASARELA DE PAGO · SOLANA</span>
-      <h1 id="page-title">Preparando tu checkout seguro</h1>
-      <p id="checkout-description" class="lead">Los datos de este cobro proceden de la aplicación o enlace que lo abrió. No se pueden editar aquí.</p>
+      <span class="test-label" data-i18n="summaryEyebrow">Order summary</span>
+      <h1 id="page-title" data-i18n="loadingTitle">Preparing your payment</h1>
+      <p id="checkout-description" class="lead" data-i18n="loadingDetail">Retrieving the secure order details…</p>
 
       <div class="state" aria-live="polite">
         <span class="spinner" aria-hidden="true"></span>
         <div>
-          <strong id="checkout-state">Validando el cobro</strong>
-          <p id="checkout-status">Comprobando los datos recibidos para abrir el checkout.</p>
+          <strong id="checkout-state" data-i18n="loadingTitle">Preparing your payment</strong>
+          <p id="checkout-status" data-i18n="loadingDetail">Retrieving the secure order details…</p>
         </div>
       </div>
-
-      <section class="explanation" aria-label="Cómo funciona">
-        <div><span>1</span><p><strong>Datos preestablecidos</strong>La aplicación o enlace define el proyecto, concepto, importe, red y activo antes de abrir esta página.</p></div>
-        <div><span>2</span><p><strong>Ruta protegida</strong>La pasarela decide internamente la cuenta receptora, mint y decimales autorizados.</p></div>
-        <div><span>3</span><p><strong>Resultado verificable</strong>Tras el pago, el pedido conserva su estado para que la aplicación pueda consultar el resultado.</p></div>
-      </section>
     </section>
 
     <aside class="security">
       <span aria-hidden="true">✓</span>
-      <p><strong>No introduzcas ninguna credencial.</strong> La pasarela nunca te pedirá la frase semilla ni la clave privada. Confirma únicamente los datos que veas en Phantom cuando se abra el checkout.</p>
+      <p><strong data-i18n="securityTitle">Your wallet remains under your control</strong> <span data-i18n="securityDetail">The gateway will never ask for your recovery phrase or private key.</span></p>
     </aside>
   </main>
 
-  <footer>Universo RolemIAster · Pasarela Solana</footer>
+  <footer><span data-i18n="footerIndependent">Independent Solana gateway</span> · <span data-i18n="footerVerified">Payments verified on the Solana network</span></footer>
 </body>
 </html>
