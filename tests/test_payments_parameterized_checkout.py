@@ -164,8 +164,11 @@ process.stdout.write(JSON.stringify({ locales: api.supportedLocaleCodes, missing
 
     def test_page_versions_its_static_assets_so_browsers_do_not_reuse_the_removed_form_logic(self):
         html = PAGE.read_text(encoding="utf-8")
-        self.assertRegex(html, r'href="payments\.css\?v=[^"]+"')
-        self.assertRegex(html, r'src="payments\.js\?v=[^"]+"')
+        self.assertIn('href="payments.css?v=20260824-02"', html)
+        self.assertIn('src="payments-i18n.js?v=20260824-02"', html)
+        self.assertIn('src="payments.js?v=20260824-02"', html)
+        self.assertIn('translate="no"', html)
+        self.assertIn('name="google" content="notranslate"', html)
     def test_page_explains_that_only_the_calling_app_or_link_defines_the_purchase(self):
         html = PAGE.read_text(encoding="utf-8")
         i18n = I18N.read_text(encoding="utf-8")
