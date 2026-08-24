@@ -6,26 +6,17 @@
     "mainnet-beta": "https://pay.rolemiaster.com",
   });
   const ALLOWED_FIELDS = new Set([
-    "projectCode",
-    "externalOrderId",
+    "originId",
+    "originLabel",
+    "paymentId",
     "customerReference",
-    "title",
-    "description",
-    "localizedContent",
+    "amountUsdt",
     "network",
     "assetCode",
-    "amount",
+    "returnUrl",
     "lang",
   ]);
-  const REQUIRED_FIELDS = [
-    "projectCode",
-    "externalOrderId",
-    "title",
-    "localizedContent",
-    "network",
-    "assetCode",
-    "amount",
-  ];
+  const REQUIRED_FIELDS = ["originId", "originLabel", "paymentId", "amountUsdt", "network", "assetCode"];
 
   const i18n = window.PaymentEntryI18n;
   const locale = i18n.resolveLocale(window.location.search, navigator.languages ?? []);
@@ -60,12 +51,8 @@
 
     const seen = new Set();
     for (const key of params.keys()) {
-      if (!ALLOWED_FIELDS.has(key)) {
-        throw new Error(t("entryUnsupportedField"));
-      }
-      if (seen.has(key)) {
-        throw new Error(t("entryDuplicateField"));
-      }
+      if (!ALLOWED_FIELDS.has(key)) throw new Error(t("entryUnsupportedField"));
+      if (seen.has(key)) throw new Error(t("entryDuplicateField"));
       seen.add(key);
     }
 
@@ -74,26 +61,10 @@
       const value = params.get(field);
       if (value !== null && value !== "") payload[field] = value;
     }
-
     for (const field of REQUIRED_FIELDS) {
-      if (typeof payload[field] !== "string" || payload[field].trim() === "") {
-        throw new Error(t("entryMissingFields"));
-      }
+      if (typeof payload[field] !== "string" || payload[field].trim() === "") throw new Error(t("entryMissingFields"));
     }
-
-    if (!Object.hasOwn(API_BASE_BY_NETWORK, payload.network)) {
-      throw new Error(t("entryNetwork"));
-    }
-
-    try {
-      const localizedContent = JSON.parse(payload.localizedContent);
-      if (typeof localizedContent !== "object" || localizedContent === null || Array.isArray(localizedContent)) {
-        throw new Error();
-      }
-    } catch {
-      throw new Error(t("entryLocalized"));
-    }
-
+    if (!Object.hasOwn(API_BASE_BY_NETWORK, payload.network)) throw new Error(t("entryNetwork"));
     return payload;
   }
 
@@ -105,7 +76,6 @@
       showError(error instanceof Error ? error.message : t("entryRead"));
       return;
     }
-
     if (payload === null) {
       showIdleState();
       return;
