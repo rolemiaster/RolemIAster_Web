@@ -66,6 +66,14 @@ function startPage() {
     // API propia de solo lectura. Android no expone ningún objeto nativo al iframe.
     window.emulaitorChatSnapshot = () => currentState === 'checking' ? null : ({enabled:currentState === 'enabled', messages:feed.snapshot()});
     const receive = event => feed.receive(event);
+    // Acceso por mando a la misma identificación del proveedor; sin crear otra sesión.
+    window.emulaitorChatLogin = () => {
+        if (!nativeLifecycle || document.body.dataset.mode === 'feed' || currentState !== 'enabled') return false;
+        const frame = frameHost.querySelector('iframe');
+        if (!frame?.contentWindow) return false;
+        frame.contentWindow.postMessage(JSON.stringify({widgetbot:true, id:instance, event:'login'}), 'https://e.widgetbot.io');
+        return true;
+    };
 
     const messages = {
         enabled: '', disabled: 'El chat comunitario está desactivado en este momento.',
