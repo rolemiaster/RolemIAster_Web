@@ -72,7 +72,7 @@ function startPage() {
             typeof event.data === 'string' && event.data.length <= 65536) {
             try {
                 const packet = JSON.parse(event.data);
-                if (packet?.widgetbot === true && packet.id === instance && packet.event === 'ready' && packet.data === true) frameReady = true;
+                if (packet?.widgetbot === true && packet.id === instance && packet.event === 'ready' && (packet.data === undefined || packet.data === true)) frameReady = true;
             } catch { /* Un mensaje inválido no habilita comandos. */ }
         }
         return feed.receive(event);
