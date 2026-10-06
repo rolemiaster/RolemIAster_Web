@@ -58,6 +58,7 @@ function startPage() {
     let pending;
     const feedMode = new URLSearchParams(location.search).get('mode') === 'feed';
     const nativeLifecycle = new URLSearchParams(location.search).get('native') === '1';
+    if (nativeLifecycle) document.body.dataset.native = 'true';
     const instance = Array.from(crypto.getRandomValues(new Uint8Array(16)), x => x.toString(16).padStart(2, '0')).join('');
     const feed = new CommunityChatFeed({instance, source:() => frameHost.querySelector('iframe')?.contentWindow});
     let currentState = 'checking';
