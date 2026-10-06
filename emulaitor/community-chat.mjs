@@ -65,10 +65,21 @@ function startPage() {
     if (feedMode) document.body.dataset.mode = 'feed';
     // API propia de solo lectura. Android no expone ningún objeto nativo al iframe.
     window.emulaitorChatSnapshot = () => currentState === 'checking' ? null : ({enabled:currentState === 'enabled', messages:feed.snapshot()});
-    const receive = event => feed.receive(event);
+    let frameReady = false;
+    const receive = event => {
+        if (!frameReady && event.origin === 'https://e.widgetbot.io' && event.source &&
+            event.source === frameHost.querySelector('iframe')?.contentWindow &&
+            typeof event.data === 'string' && event.data.length <= 65536) {
+            try {
+                const packet = JSON.parse(event.data);
+                if (packet?.widgetbot === true && packet.id === instance && packet.event === 'ready' && packet.data === true) frameReady = true;
+            } catch { /* Un mensaje inválido no habilita comandos. */ }
+        }
+        return feed.receive(event);
+    };
     // Acceso por mando a la misma identificación del proveedor; sin crear otra sesión.
     window.emulaitorChatLogin = () => {
-        if (!nativeLifecycle || document.body.dataset.mode === 'feed' || currentState !== 'enabled') return false;
+        if (!nativeLifecycle || !frameReady || document.body.dataset.mode === 'feed' || currentState !== 'enabled') return false;
         const frame = frameHost.querySelector('iframe');
         if (!frame?.contentWindow) return false;
         frame.contentWindow.postMessage(JSON.stringify({widgetbot:true, id:instance, event:'login'}), 'https://e.widgetbot.io');
@@ -91,6 +102,7 @@ function startPage() {
             } finally {clearTimeout(timeout); if (pending === request) pending = undefined;}
         },
         openChat: () => {
+            frameReady = false;
             const frame = document.createElement('iframe');
             frame.title = 'Chat comunitario de EmulAItor';
             const endpoint = 'https://e.widgetbot.io/channels/1470216161223508123/1509161917430763601';
@@ -102,6 +114,7 @@ function startPage() {
             frameHost.replaceChildren(frame);
         },
         closeChat: () => {
+            frameReady = false;
             window.removeEventListener('message', receive); feed.clear(); frameHost.replaceChildren();
         },
         onState: state => {
