@@ -1,4 +1,5 @@
 {
   "trial_time_millis": 10800000,
-  "active_pasarela_ripto": false
+  "active_pasarela_ripto": false,
+  "community_chat_enabled": true
 }

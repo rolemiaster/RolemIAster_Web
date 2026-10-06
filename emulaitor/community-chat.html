@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; frame-src https://e.widgetbot.io https://emerald.widgetbot.io; base-uri 'none'; form-action 'none'">
+    <title>Chat comunitario — EmulAItor</title>
+    <link rel="stylesheet" href="./community-chat.css">
+    <script type="module" src="./community-chat.mjs"></script>
+</head>
+<body>
+    <header>
+        <p>Comunidad de EmulAItor · WidgetBot y Discord</p>
+        <details><summary>Información y normas</summary>
+            <p>El chat es público para los participantes de la comunidad. No publiques datos personales. Usa un alias como invitado o, si lo prefieres, tu cuenta de Discord.</p>
+            <p>Respeta a los demás y comunica al equipo de moderación cualquier abuso. No envíes información privada por este canal.</p>
+            <p>Los mensajes y la sesión los gestionan WidgetBot y Discord, no un servidor propio de EmulAItor. Sus condiciones y políticas de privacidad son aplicables.</p>
+            <p><a href="https://widgetbot.io/" target="_blank" rel="noopener noreferrer">WidgetBot</a> · <a href="https://discord.com/privacy" target="_blank" rel="noopener noreferrer">Privacidad de Discord</a> · <a href="./privacy.html" target="_blank" rel="noopener noreferrer">Privacidad de EmulAItor</a></p>
+        </details>
+    </header>
+    <main>
+        <p id="chat-status" role="status">Comprobando si el chat está disponible…</p>
+        <button id="chat-retry" type="button" hidden>Reintentar</button>
+        <div id="chat-frame" hidden></div>
+        <noscript>Para usar el chat es necesario activar JavaScript.</noscript>
+    </main>
+</body>
+</html>
