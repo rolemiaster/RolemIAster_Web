@@ -1,9 +1,11 @@
-import {CommunityChatFeed} from './community-chat-feed.mjs';
+import {CHAT_SERVER, LEGACY_CHANNEL, readChannels, initialChannel} from './community-chat-channels.mjs?v=9d1260e3749c';
+import {CommunityChatFeed} from './community-chat-feed.mjs?v=e102cc5efbfb';
 // El interruptor se comparte con Android, pero no reutiliza ajustes comerciales.
-export function isChatEnabled(config) {
-    return config === null || typeof config !== 'object' || Array.isArray(config)
-        || typeof config.community_chat_enabled !== 'boolean' || config.community_chat_enabled;
+export function configuredChatEnabled(config) {
+    return config !== null && typeof config === 'object' && !Array.isArray(config)
+        && typeof config.community_chat_enabled === 'boolean' ? config.community_chat_enabled : null;
 }
+export function isChatEnabled(config) { return configuredChatEnabled(config) === true; }
 
 export async function readChatConfiguration(response) {
     const reader = response.body?.getReader();
@@ -28,16 +30,18 @@ export async function readChatConfiguration(response) {
 export class CommunityChatController {
     #generation = 0;
     #opened = false;
-    constructor({readConfig, openChat, closeChat, onState}) {
-        Object.assign(this, {readConfig, openChat, closeChat, onState});
+    constructor({readConfig, openChat, closeChat, onState, onConfig}) {
+        Object.assign(this, {readConfig, openChat, closeChat, onState, onConfig});
     }
     async refresh() {
         const generation = ++this.#generation;
-        let enabled = true;
+        let enabled = null, config;
         // Fallar al leer configuración no equivale a que falle el proveedor o el renderer.
-        try { enabled = isChatEnabled(await this.readConfig()); } catch { /* Respaldo activo. */ }
+        try { config = await this.readConfig(); enabled = configuredChatEnabled(config); } catch { /* Mantener la decisión confirmada de esta página. */ }
         if (generation !== this.#generation) return;
+        if (enabled === null) { this.onState(this.#opened ? 'enabled' : 'disabled'); return; }
         try {
+            if (enabled && this.onConfig?.(config) === false) enabled = false;
             if (enabled && !this.#opened) { this.openChat(); this.#opened = true; }
             if (!enabled) { this.closeChat(); this.#opened = false; }
             this.onState(enabled ? 'enabled' : 'disabled');
@@ -57,7 +61,9 @@ function startPage() {
     const retry = document.getElementById('chat-retry');
     let pending;
     const feedMode = new URLSearchParams(location.search).get('mode') === 'feed';
-    const nativeLifecycle = new URLSearchParams(location.search).get('native') === '1';
+    const parameters = new URLSearchParams(location.search);
+    const nativeLifecycle = parameters.get('native') === '1';
+    let rooms = [], activeChannel, loadedChannel;
     if (nativeLifecycle) document.body.dataset.native = 'true';
     const instance = Array.from(crypto.getRandomValues(new Uint8Array(16)), x => x.toString(16).padStart(2, '0')).join('');
     const feed = new CommunityChatFeed({instance, source:() => frameHost.querySelector('iframe')?.contentWindow});
@@ -66,13 +72,52 @@ function startPage() {
     // API propia de solo lectura. Android no expone ningún objeto nativo al iframe.
     window.emulaitorChatSnapshot = () => currentState === 'checking' ? null : ({enabled:currentState === 'enabled', messages:feed.snapshot()});
     let frameReady = false;
+    const sendNavigation = channel => {
+        const frame = frameHost.querySelector('iframe');
+        if (!frameReady || !frame?.contentWindow) return false;
+        frame.contentWindow.postMessage(JSON.stringify({widgetbot:true,id:instance,event:'navigate',data:{guild:CHAT_SERVER,channel}}),'https://e.widgetbot.io');
+        loadedChannel = channel;
+        return true;
+    };
+    const remember = room => {
+        if (room.type === 'lounge') try { globalThis.localStorage?.setItem('emulaitor.chat.lounge',room.id); } catch { /* El almacenamiento opcional no bloquea el chat. */ }
+    };
+    const configureChannels = config => {
+        rooms = readChannels(config);
+        if (!rooms.length) return false;
+        let preferred;
+        try { preferred = globalThis.localStorage?.getItem('emulaitor.chat.lounge'); } catch { /* Preferencia opcional. */ }
+        const requested = parameters.get('channel');
+        const selected = rooms.find(room => room.id === activeChannel?.id)
+            ?? rooms.find(room => room.id === requested)
+            ?? (nativeLifecycle && parameters.get('channels') !== '1' ? rooms.find(room => room.id === LEGACY_CHANNEL) : undefined)
+            ?? initialChannel(rooms,preferred,parameters.get('lang') ?? globalThis.navigator?.language ?? 'en');
+        if (!selected) return false;
+        activeChannel = selected;
+        feed.setChannel(selected.id);
+        if (frameReady && loadedChannel !== selected.id) sendNavigation(selected.id);
+        return true;
+    };
+    // Solo destinos del directorio vigente y dentro del iframe existente.
+    window.emulaitorChatSelectChannel = channel => {
+        if (!nativeLifecycle || !frameReady || currentState !== 'enabled') return false;
+        const selected = rooms.find(room => room.id === channel);
+        if (!selected) return false;
+        if (activeChannel?.id === channel) return true;
+        if (!sendNavigation(channel)) return false;
+        activeChannel = selected; feed.setChannel(channel); remember(selected);
+        return true;
+    };
     const receive = event => {
         if (!frameReady && event.origin === 'https://e.widgetbot.io' && event.source &&
             event.source === frameHost.querySelector('iframe')?.contentWindow &&
             typeof event.data === 'string' && event.data.length <= 65536) {
             try {
                 const packet = JSON.parse(event.data);
-                if (packet?.widgetbot === true && packet.id === instance && packet.event === 'ready' && (packet.data === undefined || packet.data === true)) frameReady = true;
+                if (packet?.widgetbot === true && packet.id === instance && packet.event === 'ready' && (packet.data === undefined || packet.data === true)) {
+                    frameReady = true;
+                    if (activeChannel && loadedChannel !== activeChannel.id) sendNavigation(activeChannel.id);
+                }
             } catch { /* Un mensaje inválido no habilita comandos. */ }
         }
         return feed.receive(event);
@@ -91,6 +136,7 @@ function startPage() {
         error: 'No se ha podido comprobar la disponibilidad del chat. Puedes reintentarlo.',
     };
     const controller = new CommunityChatController({
+        onConfig: configureChannels,
         readConfig: async () => {
             pending?.abort();
             const request = new AbortController(); pending = request;
@@ -105,7 +151,8 @@ function startPage() {
             frameReady = false;
             const frame = document.createElement('iframe');
             frame.title = 'Chat comunitario de EmulAItor';
-            const endpoint = 'https://e.widgetbot.io/channels/1470216161223508123/1509161917430763601';
+            const endpoint = `https://e.widgetbot.io/channels/${CHAT_SERVER}/${activeChannel.id}`;
+            loadedChannel = activeChannel.id;
             frame.src = `${endpoint}/?api=${encodeURIComponent(instance)}&emitLatestMessage=1`;
             window.addEventListener('message', receive);
 
