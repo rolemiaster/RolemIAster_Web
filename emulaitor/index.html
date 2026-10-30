@@ -302,6 +302,48 @@
             box-shadow: 6px 6px 0 #664400, 0 0 20px rgba(255, 176, 0, 0.3);
         }
 
+        /* ===== ACCESO A UNLEASHED ===== */
+        .unleashed {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            background: var(--bg-panel);
+            border-block: 1px solid var(--border);
+        }
+
+        .unleashed-logo {
+            width: 96px;
+            height: 64px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+
+        .unleashed-copy {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .unleashed h2 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: clamp(0.65rem, 1.5vw, 0.85rem);
+            line-height: 1.8;
+            color: var(--neon-amber);
+            margin-bottom: 0.35rem;
+        }
+
+        .unleashed .btn-retro {
+            font-size: 0.6rem;
+            text-align: center;
+        }
+
+        .unleashed .btn-retro:focus-visible {
+            outline: 2px solid var(--neon-green);
+            outline-offset: 5px;
+        }
+
         /* ===== VIDEO SECTION ===== */
         .video-section {
             padding: 4rem 2rem;
@@ -648,6 +690,22 @@
                 width: 120px;
             }
 
+            .unleashed {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+                padding: 1.25rem;
+            }
+
+            .unleashed-logo {
+                width: 72px;
+                height: 48px;
+            }
+
+            .unleashed-copy {
+                flex: 1 1 160px;
+            }
+
             .features-grid {
                 grid-template-columns: 1fr;
             }
@@ -782,6 +840,22 @@
                     class="btn-retro btn-secondary-retro" data-i18n="btn_beta" style="display: none;">Join Beta</a>
             </div>
         </div>
+    </section>
+
+    <!-- ACCESO A UNLEASHED -->
+    <section class="unleashed" id="unleashed" aria-labelledby="unleashed-title">
+        <img class="unleashed-logo" src="https://emulaitor.unleashed.rolemiaster.com/assets/logo-unleashed.png" alt="" width="96" height="64" loading="lazy" decoding="async">
+        <div class="unleashed-copy">
+            <h2 id="unleashed-title">EmulAItor Unleashed</h2>
+            <p data-i18n="unleashed_desc">Your games. Your chaos. Watch and share the community’s best moments.</p>
+        </div>
+        <a class="btn-retro btn-secondary-retro" href="https://emulaitor.unleashed.rolemiaster.com/?lang=en"
+            data-href-en="https://emulaitor.unleashed.rolemiaster.com/?lang=en"
+            data-href-es="https://emulaitor.unleashed.rolemiaster.com/?lang=es"
+            data-href-pt-BR="https://emulaitor.unleashed.rolemiaster.com/?lang=pt-BR"
+            data-href-de="https://emulaitor.unleashed.rolemiaster.com/?lang=de"
+            data-href-ja="https://emulaitor.unleashed.rolemiaster.com/?lang=ja"
+            data-i18n="unleashed_cta">Explore Unleashed</a>
     </section>
 
     <!-- ACCESS OPTIONS -->
@@ -990,6 +1064,8 @@
                 btn_portal: "< Portal",
                 hero_tagline: "Miles de aventuras retro. Todas tus pantallas. Tu forma de jugar.",
                 hero_desc: "Crea salas con EmulAItor Hub, convierte hasta cuatro móviles en mandos para Android TV, descubre homebrew y continúa tus partidas entre dispositivos.",
+                unleashed_desc: "Tus juegos. Tu caos. Mira y comparte los mejores momentos de la comunidad.",
+                unleashed_cta: "Explorar Unleashed",
                 access_title: "Tres formas. Tú decides.",
                 access_free_title: "Tiempo de juego",
                 access_free_desc: "Consigue tiempo de juego mediante anuncios bonificados cuando estén disponibles.",
@@ -1040,6 +1116,8 @@
                 "btn_portal": "< Portal",
                 "hero_tagline": "Jogue aventuras retrô em milhares de possibilidades. Em todas as telas. Do seu jeito.",
                 "hero_desc": "Crie salas com o EmulAItor Hub, transforme até quatro celulares em controles para Android TV, descubra homebrew e continue suas partidas entre dispositivos.",
+                "unleashed_desc": "Seus jogos. Seu caos. Assista e compartilhe os melhores momentos da comunidade.",
+                "unleashed_cta": "Explorar o Unleashed",
                 "access_title": "Três formas de jogar. Você escolhe.",
                 "access_free_title": "Tempo de jogo",
                 "access_free_desc": "Ganhe tempo de jogo com anúncios premiados quando estiverem disponíveis.",
@@ -1112,6 +1190,8 @@
                 "btn_portal": "< Portal",
                 "hero_tagline": "Spiele Retro-Abenteuer auf jedem Bildschirm. Tausende Möglichkeiten. Auf deine Art.",
                 "hero_desc": "Erstelle Räume mit EmulAItor Hub, verwandle bis zu vier Smartphones in Android-TV-Controller, entdecke Homebrew und setze Spiele auf anderen Geräten fort.",
+                "unleashed_desc": "Deine Spiele. Dein Chaos. Schau dir die besten Momente der Community an und teile sie.",
+                "unleashed_cta": "Unleashed entdecken",
                 "access_title": "Drei Möglichkeiten. Du entscheidest.",
                 "access_free_title": "Spielzeit",
                 "access_free_desc": "Erhalte Spielzeit über Belohnungsanzeigen, wenn sie verfügbar sind.",
@@ -1184,6 +1264,8 @@
                 "btn_portal": "< ポータル",
                 "hero_tagline": "何千ものレトロの冒険を、すべての画面で、自分らしく。",
                 "hero_desc": "EmulAItor Hubでルームを作成し、最大4台のスマートフォンをAndroid TVのコントローラーにして、ホームブリューを見つけ、端末をまたいで続きを楽しめます。",
+                "unleashed_desc": "あなたのゲーム。あなたのカオス。コミュニティの最高の瞬間を見て、シェアしよう。",
+                "unleashed_cta": "Unleashedを見る",
                 "access_title": "3つの遊び方。選ぶのはあなた。",
                 "access_free_title": "プレイ時間",
                 "access_free_desc": "利用可能な場合、リワード広告でプレイ時間を獲得できます。",
@@ -1256,6 +1338,8 @@
                 btn_portal: "< Portal",
                 hero_tagline: "Thousands of retro adventures. Every screen. Your way to play.",
                 hero_desc: "Create rooms with EmulAItor Hub, turn up to four phones into Android TV controllers, discover homebrew, and continue your games across devices.",
+                unleashed_desc: "Your games. Your chaos. Watch and share the community’s best moments.",
+                unleashed_cta: "Explore Unleashed",
                 access_title: "Three ways. You decide.",
                 access_free_title: "Play time",
                 access_free_desc: "Earn game time through rewarded ads when they are available.",

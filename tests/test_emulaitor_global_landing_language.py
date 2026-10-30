@@ -2,6 +2,7 @@ import json
 import re
 import subprocess
 import unittest
+from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -90,6 +91,110 @@ class EmulaitorGlobalLandingLanguageTest(unittest.TestCase):
             ['es', 'en', 'pt-BR', 'de', 'ja', 'en', 'en', 'pt-BR', 'de', 'ja', 'es', 'en'],
             json.loads(result.stdout),
         )
+
+    def test_unleashed_has_a_public_english_default_entry(self):
+        html = INDEX.read_text(encoding='utf-8')
+        section = re.search(r'<section\b[^>]*id="unleashed"[^>]*>(.*?)</section>', html, re.S)
+        self.assertIsNotNone(section, 'falta el acceso a EmulAItor Unleashed en la landing')
+        self.assertIn('aria-labelledby="unleashed-title"', section.group(0))
+        self.assertIn('id="unleashed-title">EmulAItor Unleashed</h2>', section.group(1))
+        self.assertIn('>Your games. Your chaos. Watch and share the community’s best moments.</p>', section.group(1))
+        self.assertIn('>Explore Unleashed</a>', section.group(1))
+        self.assertIn(
+            'href="https://emulaitor.unleashed.rolemiaster.com/?lang=en"',
+            section.group(1),
+        )
+
+    def test_unleashed_link_and_copy_follow_the_existing_language_flow(self):
+        html = INDEX.read_text(encoding='utf-8')
+        section = re.search(r'<section\b[^>]*id="unleashed"[^>]*>(.*?)</section>', html, re.S)
+        self.assertIsNotNone(section, 'falta el acceso a EmulAItor Unleashed en la landing')
+
+        class SectionElements(HTMLParser):
+            def __init__(self):
+                super().__init__()
+                self.elements = []
+
+            def handle_starttag(self, tag, attrs):
+                self.elements.append({'tag': tag, 'attrs': dict(attrs)})
+
+        markup = SectionElements()
+        markup.feed(section.group(1))
+        anchors = [element for element in markup.elements if element['tag'] == 'a']
+        self.assertEqual(1, len(anchors), 'el acceso debe ser único y navegable')
+        source = re.search(r'const translations = .*?(?=        // ===== SCROLL ANIMATIONS)', html, re.S)
+        self.assertIsNotNone(source)
+        cases = [
+            {'search': '', 'stored': None, 'expected': 'en'},
+            {'search': '?utm_campaign=hub_global', 'stored': 'ja', 'expected': 'en'},
+            {'search': '?lang=invalid', 'stored': 'de', 'expected': 'de'},
+        ]
+        for lang in ('en', 'es', 'pt-BR', 'de', 'ja'):
+            cases.append({'search': '?lang=' + lang + '&utm_source=x', 'stored': 'ja' if lang != 'ja' else 'en', 'expected': lang})
+            cases.append({'search': '', 'stored': lang, 'expected': lang})
+        script = r"""
+const vm = require('node:vm');
+const source = SOURCE;
+const markup = MARKUP;
+const cases = CASES;
+const results = cases.map(testCase => {
+    const nodes = markup.map(node => ({
+        ...node, attrs: {...node.attrs}, innerHTML: '',
+        getAttribute(key) { return this.attrs[key.toLowerCase()] ?? null; },
+        setAttribute(key, value) { this.attrs[key.toLowerCase()] = value; }
+    }));
+    const storage = new Map([['rolemiaster_lang', testCase.stored]]);
+    const window = {location: {search: testCase.search, href: 'https://rolemiaster.com/emulaitor/' + testCase.search}};
+    const document = {
+        documentElement: {lang: 'en'},
+        querySelector() { return null; },
+        getElementById() { return {classList: {add() {}}}; },
+        querySelectorAll(selector) {
+            if (selector === '[data-i18n]') return nodes.filter(node => 'data-i18n' in node.attrs);
+            if (selector === '[data-href-es][data-href-en]') return nodes.filter(node => 'data-href-es' in node.attrs && 'data-href-en' in node.attrs);
+            return [];
+        }
+    };
+    const context = vm.createContext({
+        URL, URLSearchParams, window, document,
+        localStorage: {getItem(key) { return storage.get(key); }, setItem(key, value) { storage.set(key, value); }},
+        history: {replaceState(_state, _unused, url) { window.location.href = url.toString(); }}
+    });
+    vm.runInContext(source, context);
+    const snapshot = () => ({
+        lang: document.documentElement.lang,
+        href: nodes.find(node => node.tag === 'a').attrs.href,
+        label: nodes.find(node => node.tag === 'a').innerHTML,
+        description: nodes.find(node => node.attrs['data-i18n'] === 'unleashed_desc')?.innerHTML,
+        pageLang: new URL(window.location.href).searchParams.get('lang')
+    });
+    vm.runInContext('changeLang(currentLang)', context);
+    const initial = snapshot();
+    const changes = ['ja', 'de', 'pt-BR', 'es', 'en'].map(lang => {
+        vm.runInContext('changeLang(' + JSON.stringify(lang) + ')', context);
+        return snapshot();
+    });
+    return {initial, changes};
+});
+console.log(JSON.stringify(results));
+"""
+        script = script.replace('SOURCE', json.dumps(source.group(0))).replace('MARKUP', json.dumps(markup.elements)).replace('CASES', json.dumps(cases))
+        result = subprocess.run(['node'], input=script, text=True, encoding='utf-8', capture_output=True, check=True)
+        expected_copy = {
+            'en': ('Explore Unleashed', 'Your games. Your chaos. Watch and share the community’s best moments.'),
+            'es': ('Explorar Unleashed', 'Tus juegos. Tu caos. Mira y comparte los mejores momentos de la comunidad.'),
+            'pt-BR': ('Explorar o Unleashed', 'Seus jogos. Seu caos. Assista e compartilhe os melhores momentos da comunidade.'),
+            'de': ('Unleashed entdecken', 'Deine Spiele. Dein Chaos. Schau dir die besten Momente der Community an und teile sie.'),
+            'ja': ('Unleashedを見る', 'あなたのゲーム。あなたのカオス。コミュニティの最高の瞬間を見て、シェアしよう。'),
+        }
+        for case, actual in zip(cases, json.loads(result.stdout), strict=True):
+            expected_languages = [case['expected'], 'ja', 'de', 'pt-BR', 'es', 'en']
+            for lang, snapshot in zip(expected_languages, [actual['initial'], *actual['changes']], strict=True):
+                with self.subTest(case=case, lang=lang):
+                    self.assertEqual(lang, snapshot['lang'])
+                    self.assertEqual(lang, snapshot['pageLang'])
+                    self.assertEqual('https://emulaitor.unleashed.rolemiaster.com/?lang=' + lang, snapshot['href'])
+                    self.assertEqual(expected_copy[lang], (snapshot['label'], snapshot['description']))
 
     def test_current_language_uses_resolver(self):
         html = INDEX.read_text(encoding='utf-8')
