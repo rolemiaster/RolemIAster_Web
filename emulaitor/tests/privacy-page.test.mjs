@@ -47,3 +47,19 @@ test('separa la aplicación Android de la web comunitaria',()=>{
  assert.match(p.translations.es.priv_community_scope,/no recibe/);
  assert.match(html,/data-i18n="priv_community_scope"/);
 });
+
+
+test('acota la licencia al software derivado sin prometer que todo el producto sea abierto',()=>{
+ const p=page();
+ const expected={
+  es:{title:'7. Licencias y contacto',text:'EmulAItor está desarrollado a partir de Lemuroid, un proyecto de software libre bajo licencia GNU GPLv3. El código derivado de Lemuroid está sujeto a los términos de esa licencia.'},
+  en:{title:'7. Licenses & Contact',text:'EmulAItor is developed from Lemuroid, a free software project licensed under the GNU GPLv3. Code derived from Lemuroid is subject to the terms of that license.'}
+ };
+ for(const lang of ['es','en']){
+  assert.equal(p.translations[lang].priv_s6_title,expected[lang].title);
+  assert.equal(p.translations[lang].priv_s6_text,expected[lang].text);
+ }
+ assert.ok(html.includes('<h2 data-i18n="priv_s6_title">'+expected.en.title+'</h2>'));
+ assert.ok(html.includes('<p data-i18n="priv_s6_text">'+expected.en.text+'</p>'));
+ assert.equal(p.elements.get('priv_s6_text').innerHTML,expected.en.text);
+});
