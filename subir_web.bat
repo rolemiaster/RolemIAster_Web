@@ -2,7 +2,7 @@
 :: Configuración de página de códigos para caracteres especiales
 chcp 65001 >nul
 
-:: Cambiar al directorio donde reside este script (Carpeta Web)
+:: Cambiar al directorio donde reside este script (repo web)
 cd /d "%~dp0"
 
 echo ==========================================

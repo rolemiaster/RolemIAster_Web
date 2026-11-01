@@ -1,0 +1,7 @@
+# Configuracion local Codex Desktop para repo web estatico/GitHub Pages.
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."creative-production@openai-curated-remote"]
+enabled = true

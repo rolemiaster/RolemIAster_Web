@@ -1,0 +1,31 @@
+# Runtime / local
+archive/
+.tmp*/
+*.log
+*.tmp
+
+# Dependencies / builds
+node_modules/
+dist/
+build/
+.venv/
+__pycache__/
+
+# Codex/generated caches
+.agents/*
+!.agents/skills/
+.codegraph/
+
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+*.token
+
+# OS / editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/

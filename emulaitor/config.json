@@ -1,5 +1,147 @@
 {
   "trial_time_millis": 10800000,
   "active_pasarela_ripto": true,
-  "community_chat_enabled": true
+  "community_chat_enabled": true,
+  "community_chat_channels": [
+    {
+      "id": "1509161917430763601",
+      "name": "General (English)",
+      "language": "en",
+      "flag": "🇺🇸",
+      "type": "lounge"
+    },
+    {
+      "id": "1559976528228524052",
+      "name": "Español",
+      "language": "es",
+      "flag": "🇪🇸",
+      "type": "lounge"
+    },
+    {
+      "id": "1559977092119011409",
+      "name": "Français",
+      "language": "fr",
+      "flag": "🇫🇷",
+      "type": "lounge"
+    },
+    {
+      "id": "1559977314442289162",
+      "name": "Português",
+      "language": "pt",
+      "flag": "🇵🇹",
+      "type": "lounge"
+    },
+    {
+      "id": "1559982484794376263",
+      "name": "Deutsch",
+      "language": "de",
+      "flag": "🇩🇪",
+      "type": "lounge"
+    },
+    {
+      "id": "1559982937318101072",
+      "name": "العربية",
+      "language": "ar",
+      "flag": "🇸🇦",
+      "type": "lounge"
+    },
+    {
+      "id": "1559983109531901952",
+      "name": "বাংলা",
+      "language": "bn",
+      "flag": "🇧🇩",
+      "type": "lounge"
+    },
+    {
+      "id": "1559983382690267156",
+      "name": "中文",
+      "language": "zh",
+      "flag": "🇨🇳",
+      "type": "lounge"
+    },
+    {
+      "id": "1559983680338796575",
+      "name": "한국어",
+      "language": "ko",
+      "flag": "🇰🇷",
+      "type": "lounge"
+    },
+    {
+      "id": "1559983738245480459",
+      "name": "हिन्दी",
+      "language": "hi",
+      "flag": "🇮🇳",
+      "type": "lounge"
+    },
+    {
+      "id": "1559983758172495984",
+      "name": "Bahasa Indonesia",
+      "language": "id",
+      "flag": "🇮🇩",
+      "type": "lounge"
+    },
+    {
+      "id": "1559983828506779698",
+      "name": "Italiano",
+      "language": "it",
+      "flag": "🇮🇹",
+      "type": "lounge"
+    },
+    {
+      "id": "1559983848333254729",
+      "name": "日本語",
+      "language": "ja",
+      "flag": "🇯🇵",
+      "type": "lounge"
+    },
+    {
+      "id": "1559983868948385992",
+      "name": "فارسی",
+      "language": "fa",
+      "flag": "🇮🇷",
+      "type": "lounge"
+    },
+    {
+      "id": "1559983931913273354",
+      "name": "Русский",
+      "language": "ru",
+      "flag": "🇷🇺",
+      "type": "lounge"
+    },
+    {
+      "id": "1559984061882179674",
+      "name": "Kiswahili",
+      "language": "sw",
+      "flag": "🇹🇿",
+      "type": "lounge"
+    },
+    {
+      "id": "1559984082019033208",
+      "name": "ไทย",
+      "language": "th",
+      "flag": "🇹🇭",
+      "type": "lounge"
+    },
+    {
+      "id": "1559984151988404244",
+      "name": "Türkçe",
+      "language": "tr",
+      "flag": "🇹🇷",
+      "type": "lounge"
+    },
+    {
+      "id": "1559984255944097812",
+      "name": "اردو",
+      "language": "ur",
+      "flag": "🇵🇰",
+      "type": "lounge"
+    },
+    {
+      "id": "1559984277318271046",
+      "name": "Tiếng Việt",
+      "language": "vi",
+      "flag": "🇻🇳",
+      "type": "lounge"
+    }
+  ]
 }

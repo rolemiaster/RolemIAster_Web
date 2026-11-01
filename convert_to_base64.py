@@ -1,7 +1,8 @@
 import base64
 import os
 
-file_path = r"Y:\---NUBE---\Google Drive\Programacion\RolemIAster\Web\assets\logo Powered by gemini_512x512.jpg"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(BASE_DIR, "assets", "logo Powered by gemini_512x512.jpg")
 
 if not os.path.exists(file_path):
     print(f"Error: File not found at {file_path}")
@@ -16,7 +17,8 @@ with open(file_path, "rb") as image_file:
     
     result = f"data:{mime_type};base64,{encoded_string}"
     
-    with open("logo_base64.txt", "w") as f:
+    output_path = os.path.join(BASE_DIR, "logo_base64.txt")
+    with open(output_path, "w") as f:
         f.write(result)
         
-    print("Base64 string written to logo_base64.txt")
+    print(f"Base64 string written to {output_path}")

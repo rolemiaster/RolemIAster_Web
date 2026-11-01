@@ -1,17 +1,22 @@
 // Adaptador mínimo del contrato público de @widgetbot/embed-api 1.2.18.
-// No importa librerías ni accede al DOM del iframe. Solo conserva texto de lounge.
+// No importa librerías ni accede al DOM del iframe. Solo conserva texto del canal seleccionado.
 const CHANNEL = '1509161917430763601';
 const clean = (value, limit) => typeof value === 'string'
     ? value.replace(/[\u0000-\u001f\u007f\u202a-\u202e\u2066-\u2069]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, limit) : '';
 export class CommunityChatFeed {
     #messages = [];
-    constructor({source, instance}) { this.source = source; this.instance = instance; }
+    constructor({source, instance}) { this.source = source; this.instance = instance; this.channel = CHANNEL; }
+    setChannel(channel) {
+        if (typeof channel !== 'string' || !/^[0-9]{17,22}$/.test(channel)) return false;
+        if (channel !== this.channel) { this.channel = channel; this.clear(); }
+        return true;
+    }
     receive(event) {
         if (event.origin !== 'https://e.widgetbot.io' || !event.source || event.source !== this.source()
             || typeof event.data !== 'string' || event.data.length > 65536) return false;
         let packet;
         try {packet = JSON.parse(event.data);} catch {return false;}
-        if (packet?.widgetbot !== true || packet.id !== this.instance || (packet.data?.channel?.id ?? packet.data?.message?.channelId) !== CHANNEL) return false;
+        if (packet?.widgetbot !== true || packet.id !== this.instance || (packet.data?.channel?.id ?? packet.data?.message?.channelId) !== this.channel) return false;
         const data = packet.data;
         if (packet.event === 'messageDelete' || packet.event === 'messageDeleteBulk') {
             const ids = packet.event === 'messageDelete' ? [data.id] : Array.isArray(data.ids) ? data.ids : [];
@@ -20,7 +25,7 @@ export class CommunityChatFeed {
         if (packet.event !== 'message' && packet.event !== 'latestMessage' && packet.event !== 'messageUpdate') return false;
         const message = data.message;
         if (!message || typeof message.id !== 'string' || !/^\d{1,22}$/.test(message.id)
-            || (message.channelId !== undefined && message.channelId !== CHANNEL)) return false;
+            || (message.channelId !== undefined && message.channelId !== this.channel)) return false;
         const prior = this.#messages.findIndex(m => m.id === message.id);
         if (packet.event === 'messageUpdate' && prior < 0) return false;
         if (typeof message.content !== 'string') return false;
