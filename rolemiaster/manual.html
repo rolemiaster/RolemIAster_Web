@@ -281,14 +281,16 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="../assets/site.css?v=1bacf7ea5eac">
+    <script src="../assets/site.js?v=dee026ece59a" defer></script>
 </head>
 
-<body>
+<body data-site="rolemiaster" data-page="manual">
 
     <nav>
         <a href="../" class="logo" style="margin-right: 0.5rem; font-size: 0.9rem; opacity: 0.6;" title="Portal">&larr;</a>
         <a href="index.html" class="logo">
-            <img src="https://lh3.googleusercontent.com/d/1v1KGBnV6JTR2wVSUWwRN07nMLgg98WBZ" alt="RolemIAster Logo">
+            <img src="assets/logo_rolemiaster_centrado_sinFondo_150x150.png" alt="RolemIAster Logo">
             <span>RolemIAster</span>
         </a>
         <div class="nav-links">
@@ -345,7 +347,9 @@
     <script>
         // Load preferences or defaults
         let currentPlatform = localStorage.getItem('rolemiaster_platform') || 'pc';
-        let currentLang = localStorage.getItem('rolemiaster_lang') || 'es';
+        // Cada página admite sólo sus idiomas, sin borrar la preferencia compartida.
+        const savedInterfaceLanguage = localStorage.getItem('rolemiaster_lang');
+        let currentLang = ['es', 'en'].includes(savedInterfaceLanguage) ? savedInterfaceLanguage : 'es';
 
         // Manual Language Logic: Default to currentLang mapped, or use persisted override
         const langMap = {

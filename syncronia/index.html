@@ -629,9 +629,11 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="../assets/site.css?v=1bacf7ea5eac">
+    <script src="../assets/site.js?v=dee026ece59a" defer></script>
 </head>
 
-<body>
+<body data-site="syncronia" data-page="landing">
 
     <!-- CIRCUIT BG -->
     <div class="circuit-bg"></div>
@@ -701,25 +703,21 @@
         <div class="steps">
             <div class="step">
                 <div class="step-number">01</div>
-                <div class="step-icon">&#x2601;&#xFE0F;</div>
                 <h3 data-i18n="ben1_title">Sincroniza con tus nubes</h3>
                 <p data-i18n="ben1_desc">Elige una carpeta y SyncronIA la mantiene actualizada en tu nube, en varias cuentas o en servicios distintos. Todo a la vez.</p>
             </div>
             <div class="step">
                 <div class="step-number">02</div>
-                <div class="step-icon">&#x1F4BE;</div>
                 <h3 data-i18n="ben2_title">Suma espacio entre nubes</h3>
                 <p data-i18n="ben2_desc">Combina el espacio libre de tus proveedores como si fuese una sola biblioteca. Anade cuentas, reparte cargas y sigue creciendo.</p>
             </div>
             <div class="step">
                 <div class="step-number">03</div>
-                <div class="step-icon">&#x1F512;</div>
                 <h3 data-i18n="ben3_title">Tus archivos, cifrados</h3>
                 <p data-i18n="ben3_desc">Cifra antes de subir, conserva versiones y evita que un proveedor lea tus archivos. Tu privacidad viaja con cada copia.</p>
             </div>
             <div class="step">
                 <div class="step-number">04</div>
-                <div class="step-icon">&#x1F916;</div>
                 <h3 data-i18n="ben4_title">Un asistente que organiza por ti</h3>
                 <p data-i18n="ben4_desc">Pidele que busque, clasifique, renombre o mueva archivos. Trabaja por chat, offline y sin enviar tu contenido a servidores externos.</p>
             </div>
@@ -731,32 +729,26 @@
         <h2 data-i18n="kf_title">Mas razones para usarla</h2>
         <div class="kf-grid">
             <div class="kf-item">
-                <div class="kf-icon">&#x23F1;&#xFE0F;</div>
                 <h3 data-i18n="kf1_title">Tu decides cuando</h3>
                 <p data-i18n="kf1_desc">Sincroniza al instante, cada cierto tiempo, a una hora fija del dia o solo cuando tu quieras. 4 modos que se adaptan a tu ritmo.</p>
             </div>
             <div class="kf-item">
-                <div class="kf-icon">&#x1F4F1;</div>
                 <h3 data-i18n="kf2_title">Envia desde el movil</h3>
                 <p data-i18n="kf2_desc">Manda archivos desde Telegram a tu PC y se sincronizan al instante. La IA los ordena en la carpeta correcta.</p>
             </div>
             <div class="kf-item">
-                <div class="kf-icon">&#x1F4C2;</div>
                 <h3 data-i18n="kf3_title">Filtra lo que importa</h3>
                 <p data-i18n="kf3_desc">Perfiles listos para oficina, fotografia, desarrollo o estudios. O crea tus propias reglas de lo que quieres sincronizar.</p>
             </div>
             <div class="kf-item">
-                <div class="kf-icon">&#x1F504;</div>
                 <h3 data-i18n="kf4_title">Nunca pierdas un archivo</h3>
                 <p data-i18n="kf4_desc">Historial de versiones automatico. Si algo sale mal, recupera versiones anteriores de cualquier archivo.</p>
             </div>
             <div class="kf-item">
-                <div class="kf-icon">&#x1F6E1;&#xFE0F;</div>
                 <h3 data-i18n="kf5_title">A prueba de fallos</h3>
                 <p data-i18n="kf5_desc">Si una nube se cae, las demas siguen funcionando. Si apagas el PC a mitad de sync, retoma donde lo dejo al encender.</p>
             </div>
             <div class="kf-item">
-                <div class="kf-icon">&#x1F3AF;</div>
                 <h3 data-i18n="kf6_title">Configura una vez</h3>
                 <p data-i18n="kf6_desc">Arranca con el sistema y trabaja en silencio desde la bandeja. Asistente de configuracion guiado para empezar en minutos.</p>
             </div>
@@ -852,7 +844,9 @@
             }
         };
 
-        let currentLang = localStorage.getItem('rolemiaster_lang') || 'es';
+        // Cada página admite sólo sus idiomas, sin borrar la preferencia compartida.
+        const savedInterfaceLanguage = localStorage.getItem('rolemiaster_lang');
+        let currentLang = ['es', 'en'].includes(savedInterfaceLanguage) ? savedInterfaceLanguage : 'es';
         let directInstallerUrl = 'https://rolemiaster.com/syncronia/Release/SyncronIA_Setup_v0.20.4.exe';
         const microsoftStoreUrl = 'https://apps.microsoft.com/detail/9PLG9KH25L3W';
 

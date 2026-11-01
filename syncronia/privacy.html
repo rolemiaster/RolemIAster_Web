@@ -205,9 +205,11 @@
             .privacy-container { padding-top: 9rem; }
         }
     </style>
+    <link rel="stylesheet" href="../assets/site.css?v=1bacf7ea5eac">
+    <script src="../assets/site.js?v=dee026ece59a" defer></script>
 </head>
 
-<body>
+<body data-site="syncronia" data-page="privacy">
 
     <nav>
         <div class="nav-left">
@@ -297,7 +299,9 @@
             }
         };
 
-        let currentLang = localStorage.getItem('rolemiaster_lang') || 'es';
+        // Cada página admite sólo sus idiomas, sin borrar la preferencia compartida.
+        const savedInterfaceLanguage = localStorage.getItem('rolemiaster_lang');
+        let currentLang = ['es', 'en'].includes(savedInterfaceLanguage) ? savedInterfaceLanguage : 'es';
 
         function changeLang(lang) {
             currentLang = lang;

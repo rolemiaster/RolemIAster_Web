@@ -184,7 +184,7 @@
         .hero h1 {
             font-size: 4rem;
             margin-bottom: 1rem;
-            text-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+
         }
 
         .hero p {
@@ -212,7 +212,7 @@
 
         .btn:hover {
             background: #fff;
-            box-shadow: 0 0 15px var(--primary);
+
         }
 
         .btn-secondary {
@@ -285,7 +285,7 @@
 
         .version-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
         }
 
         .card-pc {
@@ -294,7 +294,7 @@
 
         .card-pc:hover {
             border-color: var(--primary);
-            box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
+
         }
 
         .card-android {
@@ -305,7 +305,7 @@
 
         .card-android:hover {
             border-color: #4285f4;
-            box-shadow: 0 0 20px rgba(66, 133, 244, 0.3);
+
         }
 
         .version-icon {
@@ -382,7 +382,7 @@
             position: absolute;
             background-color: var(--bg-panel);
             min-width: 160px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+
             z-index: 1000;
             border: 1px solid var(--border);
             border-radius: 4px;
@@ -409,16 +409,18 @@
             color: var(--primary);
         }
     </style>
+    <link rel="stylesheet" href="../assets/site.css?v=1bacf7ea5eac">
+    <script src="../assets/site.js?v=dee026ece59a" defer></script>
 </head>
 
-<body>
+<body data-site="rolemiaster" data-page="landing">
 
     <nav>
         <a href="../" class="logo" style="margin-right: 0.5rem;" title="Portal">
             <span style="font-size: 0.9rem; opacity: 0.6;">&larr;</span>
         </a>
         <a href="#" class="logo" onclick="window.location.reload(); return false;">
-            <img src="https://lh3.googleusercontent.com/d/1v1KGBnV6JTR2wVSUWwRN07nMLgg98WBZ" alt="RolemIAster Logo">
+            <img src="assets/logo_rolemiaster_centrado_sinFondo_150x150.png" alt="RolemIAster Logo">
             <span>RolemIAster</span>
         </a>
         <div class="nav-links">
@@ -489,31 +491,28 @@
         <!-- HOME SECTION WITH VIDEO HERO -->
         <section id="home" class="active" style="padding: 0; max-width: none;">
             <div class="hero">
-                <!-- VIDEO BACKGROUND: Replace src with your PUBLIC Google Drive or Host Link -->
-                <video class="hero-video-bg" autoplay muted loop playsinline
-                    poster="https://lh3.googleusercontent.com/d/1agus9Rqxrq2v6738m0Xl5P31o2LH164C">
-                    <source src="https://drive.google.com/uc?export=download&id=1pioXpzyAY4Y67rq02MIovkVebQuZRY9z"
-                        type="video/mp4">
-                </video>
 
                 <div class="hero-content glass">
-                    <h1 style="font-size: 3.5rem; margin-bottom: 0.5rem; text-shadow: 0 0 20px rgba(255,255,255,0.2);">
-                        EL JUEGO DE
-                        ROL INFINITO</h1>
-                    <p data-i18n="hero_subtitle" style="font-size: 1.4rem; color: #eee; margin-bottom: 2rem;">
+                    <h1>
+                        El juego de rol infinito</h1>
+                    <p data-i18n="hero_subtitle">
                         potenciado por Inteligencia Artificial
                     </p>
 
-                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <div class="hero-actions">
                         <a href="https://store.steampowered.com/app/4210600/RolemIAster/" target="_blank" class="btn"
                             data-i18n="btn_steam">Jugar en Steam</a>
-                        <button class="btn btn-secondary"
-                            style="border-color: #00d2ff; color: #00d2ff; cursor: not-allowed;" disabled
-                            data-i18n="btn_play">Ver en Play Store (Próximamente)</button>
+
                         <a onclick="scrollToId('about')" class="btn btn-secondary" data-i18n="btn_discover">Descubrir
                             Secretos</a>
                     </div>
+                    <p class="availability-note" data-i18n="btn_play">Ver en Play Store (Próximamente)</p>
                 </div>
+                <video class="hero-video-bg" controls playsinline preload="none"
+                    poster="assets/Luchaenlaoficinabanner.jpg">
+                    <source src="https://drive.google.com/uc?export=download&id=1pioXpzyAY4Y67rq02MIovkVebQuZRY9z"
+                        type="video/mp4">
+                </video>
             </div>
 
             <!-- CONTAINER FOR CENTERED CONTENT -->
@@ -545,9 +544,9 @@
                 <!-- INFINITE CONTEXT DEMO -->
                 <!-- INFINITE CONTEXT DEMO (RAG CARD) -->
                 <div id="features-demo"
-                    style="padding: 2.5rem; background: var(--bg-panel); border: 2px solid var(--primary); border-radius: 12px; margin-bottom: 4rem; box-shadow: 0 0 20px rgba(0, 210, 255, 0.1);">
+                    style="padding: 2.5rem; background: var(--bg-panel); border: 2px solid var(--primary); border-radius: 12px; margin-bottom: 4rem; ">
                     <h2
-                        style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem; text-shadow: 0 0 10px rgba(0,210,255,0.3);">
+                        style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem; ">
                         RAG Semántico Nativo</h2>
                     <p
                         style="text-align: center; color: var(--text-muted); margin-bottom: 2rem; max-width: 900px; margin-left: auto; margin-right: auto;">
@@ -558,10 +557,10 @@
                     </p>
 
                     <div class="chat-sim glass">
-                        <div class="chat-msg msg-user" style="animation-delay: 0.5s;">
+                        <div class="chat-msg msg-user" style="">
                             <p>Hola posadero. ¿Recuerdas esa espada oxidada que te vendí hace 3 semanas?</p>
                         </div>
-                        <div class="chat-msg msg-ai" style="animation-delay: 2.5s;">
+                        <div class="chat-msg msg-ai" style="">
                             <p><strong>[Memoria Activada: Día 4, Turno 152]</strong></p>
                             <p>¡Vaya si me acuerdo! Esa chatarra casi me da el tétanos. Se la vendí al herrero del Valle
                                 Bajo por 5
@@ -581,7 +580,7 @@
                         experiencia
                         coherente.</p>
 
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 2rem;">
 
                         <!-- Architecture -->
                         <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 8px;">
@@ -645,7 +644,6 @@
                     <div class="versions-grid">
                         <!-- PC Card -->
                         <div class="version-card card-pc">
-                            <span class="version-icon">🖥️</span>
                             <h3 class="version-title" data-i18n="ver_pc_title">PC (Steam Edition)</h3>
                             <div class="version-sub pc-sub" data-i18n="ver_pc_sub">Tu Hardware, Tu Reino</div>
                             <p class="version-desc" data-i18n="ver_pc_desc">Control total y privacidad. Ejecuta modelos
@@ -664,7 +662,6 @@
                         <div class="version-card card-android">
                             <div
                                 style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem;">
-                                <span class="version-icon" style="margin-bottom: 0;">📱</span>
                                 <img src="https://lh3.googleusercontent.com/d/1g4JFmmWon1ahZnVIjB4U1yZYvzLGhWuf"
                                     alt="Powered by Gemini" style="height: 110px; width: auto; object-fit: contain;">
                             </div>
@@ -712,9 +709,9 @@
             <div
                 style="margin-top: 6rem; position: relative; width: 100%; padding-bottom: 40%; overflow: hidden; background: #000;">
                 <iframe
-                    src="https://www.youtube.com/embed/KV_Ij0FY7qU?autoplay=1&mute=1&loop=1&playlist=KV_Ij0FY7qU&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
-                    style="position: absolute; top: 50%; left: 50%; width: 120%; height: 120%; transform: translate(-50%, -50%); border: none; pointer-events: none;"
-                    allow="autoplay; encrypted-media" allowfullscreen>
+                    src="https://www.youtube.com/embed/KV_Ij0FY7qU?controls=1&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+                    style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; transform: translate(-50%, -50%); border: none;"
+                    title="Demostración de RolemIAster" loading="lazy" allow="encrypted-media" allowfullscreen>
                 </iframe>
             </div>
         </section>
@@ -745,11 +742,11 @@
         <div style="margin-bottom: 1rem;">
             <a href="https://www.youtube.com/@RolemIAster" target="_blank"
                 style="margin: 0 10px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
-                <img src="https://www.youtube.com/favicon.ico" alt="YouTube Logo" style="height: 1.2rem;"> YouTube
+                YouTube
             </a>
             <a href="https://x.com/RolemIAster" target="_blank"
                 style="margin: 0 10px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
-                <img src="https://x.com/favicon.ico" alt="X Logo" style="height: 1.2rem; border-radius: 50%;"> X (antes
+                X (antes
                 Twitter)
             </a>
             <a href="https://discord.gg/w3m6Y5bfPE" target="_blank" rel="noopener"
@@ -875,7 +872,9 @@
             }
         };
 
-        let currentLang = localStorage.getItem('rolemiaster_lang') || 'es';
+        // Cada página admite sólo sus idiomas, sin borrar la preferencia compartida.
+        const savedInterfaceLanguage = localStorage.getItem('rolemiaster_lang');
+        let currentLang = ['es', 'en'].includes(savedInterfaceLanguage) ? savedInterfaceLanguage : 'es';
 
         function changeLanguage(lang) {
             currentLang = lang;
